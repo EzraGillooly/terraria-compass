@@ -37,7 +37,7 @@ describe('Phase page', () => {
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/pre-plantera/mage']}
+        initialEntries={['/phase/pre-golem/mage']}
       >
         <ThemeProvider>
           <Routes>
@@ -122,6 +122,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Crystal Serpent')).toBeInTheDocument();
     expect(screen.getByText('Forbidden Armor')).toBeInTheDocument();
+  });
+
+  it('renders authored content for pre-plantera routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-plantera/ranger']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-plantera · ranger/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Megashark')).toBeInTheDocument();
+    expect(screen.getByText('Sniper Scope')).toBeInTheDocument();
   });
 
   it('filters subclass-specific items when a subclass toggle is selected', async () => {

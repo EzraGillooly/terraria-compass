@@ -37,7 +37,15 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Crystal Serpent');
   });
 
+  it('returns authored data for pre-plantera loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-plantera', 'ranger');
+
+    expect(loadout?.phase).toBe('pre-plantera');
+    expect(loadout?.class).toBe('ranger');
+    expect(loadout?.weapons[0]?.name).toBe('Megashark');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('pre-plantera', 'mage')).toBeUndefined();
+    expect(getLoadoutByPhaseAndClass('pre-golem', 'mage')).toBeUndefined();
   });
 });

@@ -1,0 +1,706 @@
+[
+  {
+    "phase": "pre-plantera",
+    "class": "melee",
+    "weapons": [
+      {
+        "id": "terra-blade",
+        "name": "Terra Blade",
+        "slot": "weapon",
+        "icon": "items/terra-blade.png",
+        "source": "Crafted from True Excalibur and True Night's Edge",
+        "why": "This is the defining melee weapon of the phase because its ranged slashes stay powerful without forcing reckless positioning.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "death-sickle",
+        "name": "Death Sickle",
+        "slot": "weapon",
+        "icon": "items/death-sickle.png",
+        "source": "Dropped by Reapers during a Solar Eclipse",
+        "why": "The wall-piercing scythe projectiles make this one of the best event-farm melee payoffs before Plantera.",
+        "tags": ["hardmode", "event"],
+        "topPick": false,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "chlorophyte-saber",
+        "name": "Chlorophyte Saber",
+        "slot": "weapon",
+        "icon": "items/chlorophyte-saber.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "If you want a simpler ore-route upgrade, the leaf projectile gives this a strong all-purpose boss profile.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "chik",
+        "name": "Chik",
+        "slot": "weapon",
+        "icon": "items/chik.png",
+        "source": "Crafted from late pre-mech yoyo upgrades",
+        "why": "Yoyo-focused melee players can keep that subclass online here instead of fully abandoning it for swords.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "yoyo"
+      }
+    ],
+    "armor": [
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "The leaf crystal bonus and strong baseline stats make this the most broadly useful pre-Plantera melee set.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "turtle-armor",
+        "name": "Turtle Armor",
+        "slot": "armor",
+        "icon": "armor/turtle-armor.png",
+        "source": "Crafted from Turtle Shells and Chlorophyte Bars",
+        "why": "If you want the tankiest route into the Jungle, this is the defensive ceiling before Plantera.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The dodge proc still gives it real value if your Chlorophyte route is not ready yet.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "fire-gauntlet",
+        "name": "Fire Gauntlet",
+        "slot": "accessory",
+        "icon": "accessories/fire-gauntlet.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "This is the best melee accessory of the phase because it stacks several offensive bonuses into one clean slot.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "mechanical-glove",
+        "name": "Mechanical Glove",
+        "slot": "accessory",
+        "icon": "accessories/mechanical-glove.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "It is both a real accessory in its own right and the natural stepping stone toward Fire Gauntlet.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "avenger-emblem",
+        "name": "Avenger Emblem",
+        "slot": "accessory",
+        "icon": "accessories/avenger-emblem.png",
+        "source": "Combined from a class emblem and mech-boss materials",
+        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Mid-Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from established Hardmode wing routes",
+        "why": "Flight is still mandatory because Jungle movement and Plantera prep punish grounded loadouts.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "flask-of-ichor",
+        "name": "Flask of Ichor",
+        "slot": "buff",
+        "icon": "potions/flask-of-ichor.png",
+        "source": "Crafted at an Imbuing Station",
+        "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Even with stronger armor, the baseline defense boost is still valuable in every meaningful fight.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Damage reduction remains one of the best ways to make difficult Jungle and event attempts more forgiving.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wrath-potion",
+        "name": "Wrath Potion",
+        "slot": "buff",
+        "icon": "potions/wrath-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "A direct damage increase helps shorten fights where melee still has to spend time in danger.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-plantera",
+    "class": "ranger",
+    "weapons": [
+      {
+        "id": "megashark",
+        "name": "Megashark",
+        "slot": "weapon",
+        "icon": "items/megashark.png",
+        "source": "Crafted from the Minishark, Illegal Gun Parts, Souls of Might, and Shark Fins",
+        "why": "This is the workhorse ranger gun for the entire stretch because it gives reliable pressure in nearly every fight.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "gun"
+      },
+      {
+        "id": "chlorophyte-shotbow",
+        "name": "Chlorophyte Shotbow",
+        "slot": "weapon",
+        "icon": "items/chlorophyte-shotbow.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "Bow builds get a clean burst-fire upgrade here, especially when paired with strong arrow choices.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "bow"
+      },
+      {
+        "id": "daedalus-stormbow",
+        "name": "Daedalus Stormbow",
+        "slot": "weapon",
+        "icon": "items/daedalus-stormbow.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "Even after mech progression, the arrow-rain pattern still solves several large-target encounters elegantly.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "bow"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "slot": "weapon",
+        "icon": "items/uzi.png",
+        "source": "Dropped by Angry Trappers in the Hardmode Jungle",
+        "why": "If you farm it, the fire rate gives gun ranger another elite option before Plantera.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "gun"
+      }
+    ],
+    "armor": [
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "The armor stats and leaf crystal bonus make this the cleanest general pre-Plantera ranger set.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The dodge effect still earns this a place when survivability matters more than a pure offense step.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor/titanium-armor.png",
+        "source": "Crafted from Titanium Bars",
+        "why": "It remains a valid carry-over if you want to delay the Chlorophyte grind a little longer.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "sniper-scope",
+        "name": "Sniper Scope",
+        "slot": "accessory",
+        "icon": "accessories/sniper-scope.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "This is the premium ranger accessory here because it boosts ranged performance while also improving target control.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "ranger-emblem",
+        "name": "Ranger Emblem",
+        "slot": "accessory",
+        "icon": "accessories/ranger-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "A direct ranged-damage boost is still an easy slot-in when your weapon options are already strong.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "magic-quiver",
+        "name": "Magic Quiver",
+        "slot": "accessory",
+        "icon": "accessories/magic-quiver.png",
+        "source": "Dropped by Skeleton Archers",
+        "why": "Bow-focused ranger builds still feel the damage and arrow-speed bump immediately.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Mid-Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from established Hardmode wing routes",
+        "why": "Ranger uptime depends on movement consistency, and this phase keeps punishing grounded play.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity is particularly welcome once Jungle enemies start layering crowd-control on top of boss pressure.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "archery-potion",
+        "name": "Archery Potion",
+        "slot": "buff",
+        "icon": "potions/archery-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The research consistently calls this out as the best dedicated ranger buff in the phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ammo-reservation-potion",
+        "name": "Ammo Reservation Potion",
+        "slot": "buff",
+        "icon": "potions/ammo-reservation-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Ammo efficiency matters once your best ammo types and long boss attempts start stacking up in cost.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-box",
+        "name": "Ammo Box",
+        "slot": "buff",
+        "icon": "potions/ammo-box.png",
+        "source": "Placed station buff",
+        "why": "It is effectively free ranged value before any important fight and stacks nicely with the potion support.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Even ranged builds benefit a lot from damage reduction once the Jungle starts punishing mistakes harder.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-plantera",
+    "class": "mage",
+    "weapons": [
+      {
+        "id": "rainbow-rod",
+        "name": "Rainbow Rod",
+        "slot": "weapon",
+        "icon": "items/rainbow-rod.png",
+        "source": "Found through Hallowed progression sources and Hardmode exploration",
+        "why": "Its controllable projectile path makes it one of the most dependable single-target mage tools before Plantera.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "wand"
+      },
+      {
+        "id": "crystal-serpent",
+        "name": "Crystal Serpent",
+        "slot": "weapon",
+        "icon": "items/crystal-serpent.png",
+        "source": "Caught by fishing in the Hallow",
+        "why": "It remains an elite carry-over because the split projectile still scales well into this phase.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      },
+      {
+        "id": "magnet-sphere",
+        "name": "Magnet Sphere",
+        "slot": "weapon",
+        "icon": "items/magnet-sphere.png",
+        "source": "Dropped in the Hardmode Dungeon",
+        "why": "The lingering sphere gives mage another way to keep damage flowing while repositioning aggressively.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      },
+      {
+        "id": "sky-fracture",
+        "name": "Sky Fracture",
+        "slot": "weapon",
+        "icon": "items/sky-fracture.png",
+        "source": "Crafted from Light Shards, Souls of Light, and the Magic Missile",
+        "why": "It is still a respectable burst option if you want a craftable spell that rewards good aim.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      }
+    ],
+    "armor": [
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "This is the most straightforward high-end magic armor step before Plantera because it is sturdy and broadly effective.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The dodge effect is still strong when you care more about safety than pushing fully into Chlorophyte.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "forbidden-armor",
+        "name": "Forbidden Armor",
+        "slot": "armor",
+        "icon": "armor/forbidden-armor.png",
+        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
+        "why": "The hybrid identity keeps it relevant if your build likes mixing in summon support or event mobility.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "celestial-emblem",
+        "name": "Celestial Emblem",
+        "slot": "accessory",
+        "icon": "accessories/celestial-emblem.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "It is the cleanest mage accessory upgrade here because it boosts damage while smoothing mana utility at the same time.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "mana-flower",
+        "name": "Mana Flower",
+        "slot": "accessory",
+        "icon": "accessories/mana-flower.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Mid-Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from established Hardmode wing routes",
+        "why": "Flight still buys mage the room it needs to cast safely through difficult Jungle and event movement.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity is a real quality-of-life and survivability gain once the Jungle starts stacking status effects.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It remains the most direct and valuable magic buff you can bring into this phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "mana-regeneration-potion",
+        "name": "Mana Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/mana-regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Longer fights and higher-tier spells both make mana sustain more important than it was before.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "crystal-ball",
+        "name": "Crystal Ball",
+        "slot": "buff",
+        "icon": "potions/crystal-ball.png",
+        "source": "Placed station buff from the Wizard",
+        "why": "It is free pre-fight magic value, so there is little reason to skip it once available.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Mage still benefits from a simple defensive floor because burst damage remains a constant threat.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-plantera",
+    "class": "summoner",
+    "weapons": [
+      {
+        "id": "optic-staff",
+        "name": "Optic Staff",
+        "slot": "weapon",
+        "icon": "items/optic-staff.png",
+        "source": "Crafted from Black Lenses, Hallowed Bars, and Souls",
+        "why": "This is the premier summon of the phase because the twin minions stay aggressive and versatile across boss and Jungle encounters.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "minions"
+      },
+      {
+        "id": "sanguine-staff",
+        "name": "Sanguine Staff",
+        "slot": "weapon",
+        "icon": "items/sanguine-staff.png",
+        "source": "Dropped by Dreadnautilus during Blood Moon fishing",
+        "why": "It remains a very strong carry-over if you already invested in the Blood Moon fishing route.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "minions"
+      },
+      {
+        "id": "firecracker",
+        "name": "Firecracker",
+        "slot": "weapon",
+        "icon": "items/firecracker.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "The tag explosion keeps this whip relevant well past the point where many earlier summon tools drop off.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "whip"
+      },
+      {
+        "id": "durendal",
+        "name": "Durendal",
+        "slot": "weapon",
+        "icon": "items/durendal.png",
+        "source": "Crafted from Hallowed Bars and Souls of Might",
+        "why": "Its faster whip cadence makes it a reliable alternative if you prefer smoother direct control over bigger explosions.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "whip"
+      }
+    ],
+    "armor": [
+      {
+        "id": "spider-armor",
+        "name": "Spider Armor",
+        "slot": "armor",
+        "icon": "armor/spider-armor.png",
+        "source": "Crafted from Spider Fangs",
+        "why": "Until post-Plantera armor opens up, this is still the cleanest dedicated summoner set for raw minion throughput.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The dodge bonus gives it a niche if you want more personal survivability while keeping summon support online.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "forbidden-armor",
+        "name": "Forbidden Armor",
+        "slot": "armor",
+        "icon": "armor/forbidden-armor.png",
+        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
+        "why": "It stays a viable hybrid route if your build wants a little more flexibility than pure summoner gear provides.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "summoner-emblem",
+        "name": "Summoner Emblem",
+        "slot": "accessory",
+        "icon": "accessories/summoner-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "This is still the easiest and most efficient direct summon-damage upgrade available in the phase.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "pygmy-necklace",
+        "name": "Pygmy Necklace",
+        "slot": "accessory",
+        "icon": "accessories/pygmy-necklace.png",
+        "source": "Bought from the Witch Doctor",
+        "why": "An extra minion slot remains one of the highest-value single accessory effects a summoner can get.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Mid-Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from established Hardmode wing routes",
+        "why": "You still win summon fights by staying alive long enough for minions and whips to do their work.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "feral-claws",
+        "name": "Feral Claws",
+        "slot": "accessory",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity and knockback protection reduce the number of runs that fall apart to messy Jungle attrition.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "summoning-potion",
+        "name": "Summoning Potion",
+        "slot": "buff",
+        "icon": "potions/summoning-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "An extra minion is still the single best buff you can bring to a summoner loadout in this phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "bewitching-table",
+        "name": "Bewitching Table",
+        "slot": "buff",
+        "icon": "potions/bewitching-table.png",
+        "source": "Placed station buff from the Dungeon",
+        "why": "It stacks perfectly with your potion support and should be part of every serious summon setup.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Summoner is still fragile enough that the universal defense potion remains mandatory in practice.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Damage reduction buys the breathing room you need while your minions and whips ramp up real damage.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  }
+]
