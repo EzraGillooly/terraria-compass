@@ -1,4 +1,5 @@
 import preBossesLoadoutsJson from '../data/loadouts/pre-bosses.json';
+import preCultistLoadoutsJson from '../data/loadouts/pre-cultist.json';
 import preGolemLoadoutsJson from '../data/loadouts/pre-golem.json';
 import preMechLoadoutsJson from '../data/loadouts/pre-mech.json';
 import prePlanteraLoadoutsJson from '../data/loadouts/pre-plantera.json';
@@ -18,6 +19,7 @@ export const phases = PhaseCollection.parse(phasesJson);
 export const classes = ClassCollection.parse(classesJson);
 export const loadouts = LoadoutCollection.parse([
   ...preBossesLoadoutsJson,
+  ...preCultistLoadoutsJson,
   ...preGolemLoadoutsJson,
   ...preMechLoadoutsJson,
   ...prePlanteraLoadoutsJson,

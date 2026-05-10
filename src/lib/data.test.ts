@@ -53,7 +53,15 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Razorblade Typhoon');
   });
 
+  it('returns authored data for pre-cultist loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-cultist', 'ranger');
+
+    expect(loadout?.phase).toBe('pre-cultist');
+    expect(loadout?.class).toBe('ranger');
+    expect(loadout?.weapons[0]?.name).toBe('Xenopopper');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('pre-cultist', 'mage')).toBeUndefined();
+    expect(getLoadoutByPhaseAndClass('pre-moonlord', 'mage')).toBeUndefined();
   });
 });

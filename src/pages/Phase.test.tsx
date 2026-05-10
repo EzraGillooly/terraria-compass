@@ -37,7 +37,7 @@ describe('Phase page', () => {
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/pre-cultist/mage']}
+        initialEntries={['/phase/pre-moonlord/mage']}
       >
         <ThemeProvider>
           <Routes>
@@ -170,6 +170,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Razorblade Typhoon')).toBeInTheDocument();
     expect(screen.getByText('Spectre Armor')).toBeInTheDocument();
+  });
+
+  it('renders authored content for pre-cultist routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-cultist/ranger']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-cultist · ranger/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Xenopopper')).toBeInTheDocument();
+    expect(screen.getByText('Shroomite Armor')).toBeInTheDocument();
   });
 
   it('filters subclass-specific items when a subclass toggle is selected', async () => {
