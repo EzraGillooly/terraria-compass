@@ -21,6 +21,14 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Space Gun');
   });
 
+  it('returns authored data for pre-wof loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-wof', 'ranger');
+
+    expect(loadout?.phase).toBe('pre-wof');
+    expect(loadout?.class).toBe('ranger');
+    expect(loadout?.weapons[0]?.name).toBe('Molten Fury');
+  });
+
   it('returns undefined for missing loadouts', () => {
     expect(getLoadoutByPhaseAndClass('pre-mech', 'mage')).toBeUndefined();
   });
