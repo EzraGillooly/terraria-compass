@@ -1,0 +1,636 @@
+[
+  {
+    "phase": "pre-golem",
+    "class": "melee",
+    "weapons": [
+      {
+        "id": "terra-blade",
+        "name": "Terra Blade",
+        "slot": "weapon",
+        "icon": "items/terra-blade.png",
+        "source": "Crafted from True Excalibur and True Night's Edge",
+        "why": "It remains the best all-around projectile sword for the phase and still handles both Jungle Temple prep and general bossing cleanly.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "vampire-knives",
+        "name": "Vampire Knives",
+        "slot": "weapon",
+        "icon": "items/vampire-knives.png",
+        "source": "Found in the Crimson biome chest of the Hardmode Dungeon",
+        "why": "The lifesteal keeps melee surprisingly stable in messy post-Plantera farming and event encounters.",
+        "tags": ["hardmode", "crimson-only"],
+        "topPick": false,
+        "subclass": "true-melee"
+      },
+      {
+        "id": "seedler",
+        "name": "Seedler",
+        "slot": "weapon",
+        "icon": "items/seedler.png",
+        "source": "Dropped by Plantera",
+        "why": "This is a strong immediate Plantera reward and another reliable projectile-heavy sword option for the phase.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "paladins-hammer",
+        "name": "Paladin's Hammer",
+        "slot": "weapon",
+        "icon": "items/paladins-hammer.png",
+        "source": "Dropped by Paladins in the Hardmode Dungeon",
+        "why": "It gives melee a high-damage thrown option that fits well if you still like flail-like or returning weapon patterns.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "flail"
+      }
+    ],
+    "armor": [
+      {
+        "id": "turtle-armor",
+        "name": "Turtle Armor",
+        "slot": "armor",
+        "icon": "armor/turtle-armor.png",
+        "source": "Crafted from Turtle Shells and Chlorophyte Bars",
+        "why": "This is the safest conventional pre-Golem melee set because the research around Beetle timing is still a little contested.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "If you prefer a more generalist route, Chlorophyte still performs well through this entire phase.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "fire-gauntlet",
+        "name": "Fire Gauntlet",
+        "slot": "accessory",
+        "icon": "accessories/fire-gauntlet.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "It is still the easiest best-in-slot melee accessory to justify because it rolls several offensive benefits into one slot.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Post-Plantera enemies and events apply enough debuffs that this becomes even more comfortable than before.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "celestial-stone",
+        "name": "Celestial Stone",
+        "slot": "accessory",
+        "icon": "accessories/celestial-stone.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "The broad stat bonus is valuable for any melee build that has already stabilized its core survival tools.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Steampunk or Hoverboard Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Obtained from strong post-Plantera mobility routes",
+        "why": "Flight is still mandatory when your farming loop now includes the Hardmode Dungeon, events, and Temple approach.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "flask-of-ichor",
+        "name": "Flask of Ichor",
+        "slot": "buff",
+        "icon": "potions/flask-of-ichor.png",
+        "source": "Crafted at an Imbuing Station",
+        "why": "The defense shred is still the most efficient weapon imbue you can carry into hard targets.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It remains the universal baseline buff because every new event or Temple pull can hit hard.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Damage reduction continues to scale beautifully once you are tackling denser enemy packs and longer encounters.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wrath-potion",
+        "name": "Wrath Potion",
+        "slot": "buff",
+        "icon": "potions/wrath-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "A direct damage increase helps speed up event waves and cut down awkward boss phases.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-golem",
+    "class": "ranger",
+    "weapons": [
+      {
+        "id": "chain-gun",
+        "name": "Chain Gun",
+        "slot": "weapon",
+        "icon": "items/chain-gun.png",
+        "source": "Dropped by Santa-NK1 during Frost Moon",
+        "why": "The research repeatedly treats this as the top pre-Golem gun if you can clear the event for it.",
+        "tags": ["hardmode", "event"],
+        "topPick": true,
+        "subclass": "gun"
+      },
+      {
+        "id": "megashark",
+        "name": "Megashark",
+        "slot": "weapon",
+        "icon": "items/megashark.png",
+        "source": "Crafted from the Minishark, Illegal Gun Parts, Souls of Might, and Shark Fins",
+        "why": "It stays relevant for players who have not gone deep on Frost Moon or event-specific farming yet.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "gun"
+      },
+      {
+        "id": "stake-launcher",
+        "name": "Stake Launcher",
+        "slot": "weapon",
+        "icon": "items/stake-launcher.png",
+        "source": "Dropped by Vampires during Solar Eclipse",
+        "why": "Its high per-shot damage gives ranger another strong event-farm payoff before Golem.",
+        "tags": ["hardmode", "event"],
+        "topPick": false,
+        "subclass": "gun"
+      },
+      {
+        "id": "tactical-shotgun",
+        "name": "Tactical Shotgun",
+        "slot": "weapon",
+        "icon": "items/tactical-shotgun.png",
+        "source": "Dropped by Skeleton Commandos in the Hardmode Dungeon",
+        "why": "It is the best broadly available non-event shotgun and works nicely if you want a close-range ranger route.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "gun"
+      }
+    ],
+    "armor": [
+      {
+        "id": "shroomite-armor",
+        "name": "Shroomite Armor",
+        "slot": "armor",
+        "icon": "armor/shroomite-armor.png",
+        "source": "Crafted from Shroomite Bars",
+        "why": "This is the consensus best ranger set in the phase because its helmet specialization and stealth utility are both real upgrades.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "It remains a respectable fallback if your glowing mushroom setup or bar conversion route is not ready.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "sniper-scope",
+        "name": "Sniper Scope",
+        "slot": "accessory",
+        "icon": "accessories/sniper-scope.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "It is still the cleanest premium ranger accessory because the crit and aim support both stay relevant.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "ranger-emblem",
+        "name": "Ranger Emblem",
+        "slot": "accessory",
+        "icon": "accessories/ranger-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "The direct damage bonus remains easy to slot into nearly every build in the phase.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "celestial-stone",
+        "name": "Celestial Stone",
+        "slot": "accessory",
+        "icon": "accessories/celestial-stone.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "A broad stat increase is especially nice once your weapon choices are already very strong.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity is valuable in the post-Plantera farming loop where random hits can stack ugly statuses fast.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "archery-potion",
+        "name": "Archery Potion",
+        "slot": "buff",
+        "icon": "potions/archery-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It stays the best simple class buff for ranger, especially if your setup still leans on bows anywhere in the phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ammo-reservation-potion",
+        "name": "Ammo Reservation Potion",
+        "slot": "buff",
+        "icon": "potions/ammo-reservation-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Ammo savings matter more once rapid-fire endgame-adjacent weapons enter the picture.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-box",
+        "name": "Ammo Box",
+        "slot": "buff",
+        "icon": "potions/ammo-box.png",
+        "source": "Placed station buff",
+        "why": "This is free ranged value before every major encounter and stacks with the potion nicely.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Even ranger benefits from a sturdier baseline once events and Temple pulls get chaotic.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-golem",
+    "class": "mage",
+    "weapons": [
+      {
+        "id": "razorblade-typhoon",
+        "name": "Razorblade Typhoon",
+        "slot": "weapon",
+        "icon": "items/razorblade-typhoon.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "This is the consensus top mage weapon of the phase because the homing blades stay oppressive in almost every encounter.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "spell-tome"
+      },
+      {
+        "id": "shadowbeam-staff",
+        "name": "Shadowbeam Staff",
+        "slot": "weapon",
+        "icon": "items/shadowbeam-staff.png",
+        "source": "Dropped by Necromancers in the Hardmode Dungeon",
+        "why": "The bouncing beam pattern is excellent in tighter rooms and event funnels.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      },
+      {
+        "id": "inferno-fork",
+        "name": "Inferno Fork",
+        "slot": "weapon",
+        "icon": "items/inferno-fork.png",
+        "source": "Dropped by Diabolists in the Hardmode Dungeon",
+        "why": "It gives mage another high-impact projectile option with strong area denial for clustered targets.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      },
+      {
+        "id": "magnet-sphere",
+        "name": "Magnet Sphere",
+        "slot": "weapon",
+        "icon": "items/magnet-sphere.png",
+        "source": "Dropped in the Hardmode Dungeon",
+        "why": "It remains a useful carry-over because it keeps dealing damage while you reposition.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      }
+    ],
+    "armor": [
+      {
+        "id": "spectre-armor-mask",
+        "name": "Spectre Armor",
+        "slot": "armor",
+        "icon": "armor/spectre-armor.png",
+        "source": "Crafted from Spectre Bars",
+        "why": "The damage-focused Spectre route is the default bossing answer here and the strongest overall mage upgrade before Golem.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "spectre-armor-hood",
+        "name": "Spectre Hood Loadout",
+        "slot": "armor",
+        "icon": "armor/spectre-armor.png",
+        "source": "Crafted from Spectre Bars",
+        "why": "Swapping to the hood is still worthwhile when you want the lifesteal safety valve for messy content.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "celestial-emblem",
+        "name": "Celestial Emblem",
+        "slot": "accessory",
+        "icon": "accessories/celestial-emblem.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "It is still the cleanest premium mage accessory because it boosts damage while supporting mana flow.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "celestial-stone",
+        "name": "Celestial Stone",
+        "slot": "accessory",
+        "icon": "accessories/celestial-stone.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Mage appreciates the broad stat lift once the core mana accessories are already in place.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "mana-flower",
+        "name": "Mana Flower",
+        "slot": "accessory",
+        "icon": "accessories/mana-flower.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Auto-potions continue to remove a lot of execution friction during the phase's longer fights.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity remains a big comfort upgrade when so much of the content now involves status-heavy enemies.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It stays the best direct mage buff because the phase rewards squeezing extra value out of already-strong weapons.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "mana-regeneration-potion",
+        "name": "Mana Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/mana-regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Sustain matters more than ever once the premium mage tools start draining mana aggressively.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "crystal-ball",
+        "name": "Crystal Ball",
+        "slot": "buff",
+        "icon": "potions/crystal-ball.png",
+        "source": "Placed station buff from the Wizard",
+        "why": "It is still free magic power before every serious attempt, so it belongs in the routine.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The extra forgiveness is welcome because post-Plantera content can punish mage instantly when positioning slips.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-golem",
+    "class": "summoner",
+    "weapons": [
+      {
+        "id": "xeno-staff",
+        "name": "Xeno Staff",
+        "slot": "weapon",
+        "icon": "items/xeno-staff.png",
+        "source": "Dropped by the Martian Saucer during Martian Madness",
+        "why": "This is the consensus best summoner minion for the phase because the UFOs stay accurate and aggressive.",
+        "tags": ["hardmode", "event"],
+        "topPick": true,
+        "subclass": "minions"
+      },
+      {
+        "id": "tempest-staff",
+        "name": "Tempest Staff",
+        "slot": "weapon",
+        "icon": "items/tempest-staff.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "It offers another strong late-phase minion option if you have already gone through Fishron farming.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "minions"
+      },
+      {
+        "id": "dark-harvest",
+        "name": "Dark Harvest",
+        "slot": "weapon",
+        "icon": "items/dark-harvest.png",
+        "source": "Dropped by Pumpking during Pumpkin Moon",
+        "why": "This is one of the best accessible late summoner whips and a major reason to farm Pumpkin Moon before Golem.",
+        "tags": ["hardmode", "event"],
+        "topPick": false,
+        "subclass": "whip"
+      },
+      {
+        "id": "morning-star",
+        "name": "Morning Star",
+        "slot": "weapon",
+        "icon": "items/morning-star.png",
+        "source": "Earned from Old One's Army Tier 2 or 3 progression",
+        "why": "If you invest in Old One's Army, this gives summoner another excellent whip route with strong direct control.",
+        "tags": ["hardmode", "event"],
+        "topPick": false,
+        "subclass": "whip"
+      }
+    ],
+    "armor": [
+      {
+        "id": "tiki-armor",
+        "name": "Tiki Armor",
+        "slot": "armor",
+        "icon": "armor/tiki-armor.png",
+        "source": "Bought from the Witch Doctor after Plantera",
+        "why": "This is the standard best pre-Golem summoner set because the extra minion capacity is too valuable to ignore.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "spooky-armor",
+        "name": "Spooky Armor",
+        "slot": "armor",
+        "icon": "armor/spooky-armor.png",
+        "source": "Crafted from Spooky Wood from Pumpkin Moon",
+        "why": "If you are farming the event anyway, this is a strong damage-focused alternative to Tiki.",
+        "tags": ["hardmode", "event"],
+        "topPick": false
+      },
+      {
+        "id": "spider-armor",
+        "name": "Spider Armor",
+        "slot": "armor",
+        "icon": "armor/spider-armor.png",
+        "source": "Crafted from Spider Fangs",
+        "why": "It remains the reasonable fallback if your post-Plantera summon progression is still catching up.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "papyrus-scarab",
+        "name": "Papyrus Scarab",
+        "slot": "accessory",
+        "icon": "accessories/papyrus-scarab.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "This is the standout summoner accessory because it adds both slot value and direct minion scaling.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "pygmy-necklace",
+        "name": "Pygmy Necklace",
+        "slot": "accessory",
+        "icon": "accessories/pygmy-necklace.png",
+        "source": "Bought from the Witch Doctor",
+        "why": "An extra minion remains one of the cleanest pure-value upgrades available to summoner.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "necromantic-scroll",
+        "name": "Necromantic Scroll",
+        "slot": "accessory",
+        "icon": "accessories/necromantic-scroll.png",
+        "source": "Dropped by Mourning Wood during Pumpkin Moon",
+        "why": "It is both a real summon upgrade and the natural step toward the Papyrus Scarab.",
+        "tags": ["hardmode", "event"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity gives summoner a lot of breathing room in the phase's messier event content.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "summoning-potion",
+        "name": "Summoning Potion",
+        "slot": "buff",
+        "icon": "potions/summoning-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "An extra minion is still the best single buff you can bring into a summoner build.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "bewitching-table",
+        "name": "Bewitching Table",
+        "slot": "buff",
+        "icon": "potions/bewitching-table.png",
+        "source": "Placed station buff from the Dungeon",
+        "why": "It stacks cleanly with the potion and remains part of every real summoner pre-fight routine.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Summoner still needs all the baseline survivability help it can get.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The damage reduction is especially welcome when a summoner gets clipped by dense event patterns.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  }
+]

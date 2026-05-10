@@ -45,7 +45,15 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Megashark');
   });
 
+  it('returns authored data for pre-golem loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-golem', 'mage');
+
+    expect(loadout?.phase).toBe('pre-golem');
+    expect(loadout?.class).toBe('mage');
+    expect(loadout?.weapons[0]?.name).toBe('Razorblade Typhoon');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('pre-golem', 'mage')).toBeUndefined();
+    expect(getLoadoutByPhaseAndClass('pre-cultist', 'mage')).toBeUndefined();
   });
 });

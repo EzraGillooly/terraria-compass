@@ -37,7 +37,7 @@ describe('Phase page', () => {
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/pre-golem/mage']}
+        initialEntries={['/phase/pre-cultist/mage']}
       >
         <ThemeProvider>
           <Routes>
@@ -146,6 +146,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Megashark')).toBeInTheDocument();
     expect(screen.getByText('Sniper Scope')).toBeInTheDocument();
+  });
+
+  it('renders authored content for pre-golem routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-golem/mage']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-golem · mage/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Razorblade Typhoon')).toBeInTheDocument();
+    expect(screen.getByText('Spectre Armor')).toBeInTheDocument();
   });
 
   it('filters subclass-specific items when a subclass toggle is selected', async () => {
