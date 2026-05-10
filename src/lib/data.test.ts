@@ -69,7 +69,17 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Nebula Blaze');
   });
 
+  it('returns authored data for endgame loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('endgame', 'mage');
+
+    expect(loadout?.phase).toBe('endgame');
+    expect(loadout?.class).toBe('mage');
+    expect(loadout?.weapons[0]?.name).toBe('Last Prism');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('endgame', 'mage')).toBeUndefined();
+    expect(
+      getLoadoutByPhaseAndClass('not-a-phase' as never, 'mage'),
+    ).toBeUndefined();
   });
 });

@@ -30,26 +30,25 @@ describe('Phase page', () => {
     expect(screen.getAllByText(/top pick/i)).toHaveLength(4);
   });
 
-  it('shows a placeholder when a loadout has not been authored yet', () => {
+  it('redirects invalid phase routes to 404 content', () => {
     render(
       <MemoryRouter
         future={{
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/endgame/mage']}
+        initialEntries={['/phase/not-a-phase/mage']}
       >
         <ThemeProvider>
           <Routes>
             <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+            <Route path="/404" element={<p>Not found</p>} />
           </Routes>
         </ThemeProvider>
       </MemoryRouter>,
     );
 
-    expect(
-      screen.getByText(/loadout content for this phase and class is coming next/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Not found')).toBeInTheDocument();
   });
 
   it('renders authored content for pre-skeletron too', () => {
@@ -217,6 +216,30 @@ describe('Phase page', () => {
       screen.getByRole('heading', { name: /pre-moon lord · mage/i }),
     ).toBeInTheDocument();
     expect(screen.getByText('Nebula Blaze')).toBeInTheDocument();
+    expect(screen.getByText('Nebula Armor')).toBeInTheDocument();
+  });
+
+  it('renders authored content for endgame routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/endgame/mage']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /endgame · mage/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Last Prism')).toBeInTheDocument();
     expect(screen.getByText('Nebula Armor')).toBeInTheDocument();
   });
 
