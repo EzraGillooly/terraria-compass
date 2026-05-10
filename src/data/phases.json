@@ -1,0 +1,110 @@
+[
+  {
+    "id": "pre-bosses",
+    "order": 0,
+    "name": "Pre-Bosses",
+    "triggeredBy": "Defeating Eye of Cthulhu or your world evil boss",
+    "description": "You are still in the early exploration stretch where movement, ore upgrades, and your first reliable weapon matter more than specialization.",
+    "cues": [
+      "You have not defeated any boss yet.",
+      "Your NPC roster is still early and the Dryad has not arrived.",
+      "Your gear is mostly ore, chest loot, and simple crafted upgrades."
+    ]
+  },
+  {
+    "id": "pre-skeletron",
+    "order": 1,
+    "name": "Pre-Skeletron",
+    "triggeredBy": "Defeating Skeletron",
+    "description": "Your first boss kills have opened up better mobility, evil-biome materials, and stronger class identity, but the Dungeon is still gated.",
+    "cues": [
+      "You have beaten at least one early boss such as Eye of Cthulhu or Eater of Worlds/Brain of Cthulhu.",
+      "The Dryad and Goblin Tinkerer can appear, unlocking better support gear.",
+      "You are preparing for Skeletron so you can enter the Dungeon safely."
+    ]
+  },
+  {
+    "id": "pre-wof",
+    "order": 2,
+    "name": "Pre-Wall of Flesh",
+    "triggeredBy": "Defeating the Wall of Flesh",
+    "description": "The Dungeon is open, underworld crafting becomes important, and you are preparing for the boss that flips the world into Hardmode.",
+    "cues": [
+      "Skeletron is defeated and the Dungeon is part of your gear route.",
+      "You can craft milestone items like Night's Edge or class-specific Dungeon gear.",
+      "Hellstone, Obsidian, and Underworld farming are central to your upgrades."
+    ]
+  },
+  {
+    "id": "pre-mech",
+    "order": 3,
+    "name": "Pre-Mech",
+    "triggeredBy": "Defeating all three Mechanical Bosses",
+    "description": "Hardmode has started, new ores and souls are available, and your next goal is surviving the first major wall of Hardmode bosses.",
+    "cues": [
+      "The Wall of Flesh is dead and your world has converted to Hardmode.",
+      "Altars can be smashed and Hardmode ores begin appearing.",
+      "Mechanical boss summons, Souls, and early Hardmode weapons define your grind."
+    ]
+  },
+  {
+    "id": "pre-plantera",
+    "order": 4,
+    "name": "Pre-Plantera",
+    "triggeredBy": "Defeating Plantera",
+    "description": "The mech bosses are down, Hallowed-tier progression is online, and the Jungle becomes the next major gate.",
+    "cues": [
+      "All three Mechanical Bosses have been defeated.",
+      "Hallowed Bars and Souls of Fright, Might, and Sight are part of your recipes.",
+      "Plantera Bulbs and Jungle survival are now your main progression focus."
+    ]
+  },
+  {
+    "id": "pre-golem",
+    "order": 5,
+    "name": "Pre-Golem",
+    "triggeredBy": "Defeating Golem",
+    "description": "Plantera has unlocked late-Jungle content, the Dungeon is upgraded, and you are collecting stronger gear before raiding the Temple.",
+    "cues": [
+      "Plantera is defeated and the Jungle Temple key is available.",
+      "Post-Plantera Dungeon enemies and drops are now part of your progression.",
+      "You are gearing around Temple access, Chlorophyte-tier weapons, and event upgrades."
+    ]
+  },
+  {
+    "id": "pre-cultist",
+    "order": 6,
+    "name": "Pre-Cultist",
+    "triggeredBy": "Defeating the Lunatic Cultist",
+    "description": "Golem is down, event farming peaks here, and you are polishing your build before opening the Lunar Events.",
+    "cues": [
+      "Golem has been defeated and the Jungle Temple is no longer your blocker.",
+      "Pumpkin Moon, Frost Moon, Martian Madness, or Duke Fishron farming can all matter a lot here.",
+      "You are preparing for the Lunatic Cultist and the pillar sequence that follows."
+    ]
+  },
+  {
+    "id": "pre-moonlord",
+    "order": 7,
+    "name": "Pre-Moon Lord",
+    "triggeredBy": "Defeating the Moon Lord",
+    "description": "The Lunar Events are active, fragments are flowing in, and every upgrade is aimed at your Moon Lord attempt.",
+    "cues": [
+      "The Lunatic Cultist is dead and the Celestial Pillars have started appearing.",
+      "Lunar Fragments and Ancient Manipulator crafting are available.",
+      "Your build decisions are centered around clearing pillars and surviving Moon Lord."
+    ]
+  },
+  {
+    "id": "endgame",
+    "order": 8,
+    "name": "Endgame",
+    "triggeredBy": "No further progression gate in vanilla v1",
+    "description": "Moon Lord has fallen, so the focus shifts to best-in-slot cleanup, completion goals, and optional event or challenge farming.",
+    "cues": [
+      "Moon Lord is defeated and the strongest vanilla drops are in reach.",
+      "You are chasing weapons like Zenith or polishing class loadouts instead of unlocking new progression tiers.",
+      "Remaining goals are optimization, events, building, or challenge runs."
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+.details {
+  border: 2px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-4);
+}
+
+.summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--font-xl);
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.content {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+}
+
+.description {
+  color: var(--color-text-secondary);
+}

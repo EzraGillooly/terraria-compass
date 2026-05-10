@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-12);
+  padding: var(--space-8) 0 var(--space-12);
+}
+
+.inner {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-3);
+  color: var(--color-text-secondary);
+  font-size: var(--font-sm);
+}
+
+.inner a {
+  color: var(--color-accent);
+}
+
+.inner a:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}

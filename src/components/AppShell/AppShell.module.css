@@ -1,0 +1,23 @@
+.skipLink {
+  position: absolute;
+  left: var(--space-4);
+  top: -64px;
+  z-index: 20;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--color-border-strong);
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+}
+
+.skipLink:focus {
+  top: var(--space-4);
+}
+
+.main {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: var(--space-8) 0;
+}

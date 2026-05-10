@@ -1,0 +1,110 @@
+[
+  {
+    "id": "melee",
+    "name": "Melee",
+    "blurb": "Close-range damage with strong durability, plus several weapon families that still let you fight from relative safety.",
+    "subclasses": [
+      {
+        "id": "true-melee",
+        "name": "True Melee",
+        "description": "Short-range swords, spears, and contact-focused melee weapons."
+      },
+      {
+        "id": "yoyo",
+        "name": "Yoyo",
+        "description": "Cursor-controlled yoyos that trade reach and safety for sustained control."
+      },
+      {
+        "id": "boomerang",
+        "name": "Boomerang",
+        "description": "Thrown melee weapons that arc out and return."
+      },
+      {
+        "id": "flail",
+        "name": "Flail",
+        "description": "Chain-based melee options with awkward but powerful area control."
+      },
+      {
+        "id": "projectile-sword",
+        "name": "Projectile Sword",
+        "description": "Sword builds whose main value comes from ranged slashes or beams."
+      }
+    ]
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "blurb": "Ammo-based damage with strong boss safety, flexible weapon types, and easy specialization once mobility is online.",
+    "subclasses": [
+      {
+        "id": "bow",
+        "name": "Bows",
+        "description": "Arrow-based ranged setups that scale especially well with ammo effects."
+      },
+      {
+        "id": "gun",
+        "name": "Guns",
+        "description": "Bullet-firing ranged builds built around sustained pressure."
+      },
+      {
+        "id": "throwing",
+        "name": "Thrown",
+        "description": "Consumable explosives, knives, and other thrown ranged options."
+      },
+      {
+        "id": "launcher",
+        "name": "Launchers",
+        "description": "Rocket-heavy ranged weapons with explosive crowd control."
+      }
+    ]
+  },
+  {
+    "id": "mage",
+    "name": "Mage",
+    "blurb": "Mana-based burst and utility with high ceiling, strong progression spikes, and lower survivability if positioning slips.",
+    "subclasses": [
+      {
+        "id": "wand",
+        "name": "Wands / Staves",
+        "description": "Single-shot spellcasters such as staves and focused magic projectiles."
+      },
+      {
+        "id": "magic-gun",
+        "name": "Magic Guns",
+        "description": "Rapid-fire magic weapons that behave more like sustained ranged tools."
+      },
+      {
+        "id": "spell-tome",
+        "name": "Spell Tomes",
+        "description": "Book-based spells that often bring piercing, arcs, or unusual behavior."
+      },
+      {
+        "id": "summon-magic",
+        "name": "Summon Magic",
+        "description": "Magic tools that create persistent hazards or supporting summons."
+      }
+    ]
+  },
+  {
+    "id": "summoner",
+    "name": "Summoner",
+    "blurb": "Minion-focused pressure with whips and support tools that reward positioning, tagging, and encounter knowledge.",
+    "subclasses": [
+      {
+        "id": "minions",
+        "name": "Minions",
+        "description": "Persistent summon slots spent on orbiting or pursuing allies."
+      },
+      {
+        "id": "whip",
+        "name": "Whips",
+        "description": "Tag-focused melee tools that boost minion target priority and damage."
+      },
+      {
+        "id": "sentries",
+        "name": "Sentries",
+        "description": "Stationary summons that add area control to boss arenas and events."
+      }
+    ]
+  }
+]
