@@ -9,79 +9,18 @@ interface LoadoutGridProps {
   selectedSubclassSet: Set<string>;
 }
 
-const groups: Array<{
-  key: keyof Pick<Loadout, 'weapons' | 'armor' | 'accessories' | 'buffs'>;
-  title: string;
-}> = [
-  { key: 'weapons', title: 'Weapons' },
-  { key: 'armor', title: 'Armor' },
-  { key: 'accessories', title: 'Accessories' },
-  { key: 'buffs', title: 'Buffs' },
-];
-
 const fallbackIcon =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%233D2864'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%23B87CF8' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%234A6830'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 const fallbackArmorIcon =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%233D2864'/%3E%3Ctext x='40' y='52' text-anchor='middle' font-size='40' fill='%23B87CF8' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Crect width='72' height='72' fill='%234A6830'/%3E%3Ctext x='36' y='48' text-anchor='middle' font-size='36' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-function ArmorCard({
-  difficulty,
-  item,
-}: {
-  difficulty: DifficultyFilter;
-  item: Item;
-}) {
-  const isRelevant = isItemRelevantToDifficulty(item.tags, difficulty);
-
-  return (
-    <article
-      aria-labelledby={`item-${item.id}-name`}
-      className={styles.armorCard}
-      data-dimmed={String(!isRelevant)}
-      data-top-pick={item.topPick || undefined}
-    >
-      <img
-        alt={item.name}
-        className={`${styles.armorSprite} pixel-img`}
-        decoding="async"
-        height="80"
-        loading="lazy"
-        onError={(e) => {
-          e.currentTarget.src = fallbackArmorIcon;
-        }}
-        src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
-        width="80"
-      />
-      <div className={styles.armorInfo}>
-        <div className={styles.armorName} id={`item-${item.id}-name`}>
-          {item.name}
-          {item.topPick && <span className={styles.badge}>★ Top</span>}
-        </div>
-        <details className={styles.details}>
-          <summary className={styles.summary}>Details</summary>
-          <div className={styles.detailBody}>
-            <div className={styles.source}>{item.source}</div>
-            <div>{item.why}</div>
-          </div>
-        </details>
-      </div>
-    </article>
-  );
-}
-
-function ItemRow({
-  difficulty,
-  item,
-}: {
-  difficulty: DifficultyFilter;
-  item: Item;
-}) {
-  const isRelevant = isItemRelevantToDifficulty(item.tags, difficulty);
-
+/* ── Shared compact item row ── */
+function ItemRow({ item, difficulty }: { item: Item; difficulty: DifficultyFilter }) {
+  const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
   return (
     <li
       className={styles.row}
-      data-dimmed={String(!isRelevant)}
+      data-dimmed={String(!relevant)}
       data-top-pick={item.topPick || undefined}
     >
       <img
@@ -90,21 +29,15 @@ function ItemRow({
         decoding="async"
         height="36"
         loading="lazy"
-        onError={(e) => {
-          e.currentTarget.src = fallbackIcon;
-        }}
+        onError={(e) => { e.currentTarget.src = fallbackIcon; }}
         src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
         width="36"
       />
       <div className={styles.rowBody}>
         <div className={styles.rowHeader}>
-          <span className={styles.itemName} id={`item-${item.id}-name`}>
-            {item.name}
-          </span>
-          {item.topPick && <span className={styles.badge}>★ Top</span>}
-          {item.subclass && (
-            <span className={styles.subclassTag}>{item.subclass}</span>
-          )}
+          <span className={styles.itemName}>{item.name}</span>
+          {item.topPick && <span className={styles.badge}>★</span>}
+          {item.subclass && <span className={styles.subTag}>{item.subclass}</span>}
         </div>
         <details className={styles.details}>
           <summary className={styles.summary}>{item.source}</summary>
@@ -115,50 +48,170 @@ function ItemRow({
   );
 }
 
-function filterItems(items: Item[], selectedSubclassSet: Set<string>) {
-  if (selectedSubclassSet.size === 0) return items;
-  return items.filter(
-    (item) => !item.subclass || selectedSubclassSet.has(item.subclass),
+/* ── Armor column ── */
+function ArmorColumn({ items, difficulty }: { items: Item[]; difficulty: DifficultyFilter }) {
+  return (
+    <div className={styles.col}>
+      <div className={styles.colHeader}>
+        <span className={styles.colTitle}>Armor</span>
+      </div>
+      <ul className={styles.armorList}>
+        {items.map((item) => {
+          const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
+          return (
+            <li
+              key={item.id}
+              className={styles.armorCard}
+              data-dimmed={String(!relevant)}
+              data-top-pick={item.topPick || undefined}
+            >
+              <img
+                alt={item.name}
+                className={`${styles.armorSprite} pixel-img`}
+                decoding="async"
+                height="72"
+                loading="lazy"
+                onError={(e) => { e.currentTarget.src = fallbackArmorIcon; }}
+                src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+                width="72"
+              />
+              <div className={styles.armorInfo}>
+                <div className={styles.armorName}>
+                  {item.name}
+                  {item.topPick && <span className={styles.badge}>★ Top</span>}
+                </div>
+                <div className={styles.source}>{item.source}</div>
+                <details className={styles.details}>
+                  <summary className={styles.summary}>Why</summary>
+                  <div className={styles.detailBody}>{item.why}</div>
+                </details>
+              </div>
+            </li>
+          );
+        })}
+        {items.length === 0 && <li className={styles.empty}>No armor data yet.</li>}
+      </ul>
+    </div>
   );
 }
 
-export function LoadoutGrid({
+/* ── Weapons column ── */
+function WeaponsColumn({
+  items,
   difficulty,
-  loadout,
   selectedSubclassSet,
-}: LoadoutGridProps) {
+}: {
+  items: Item[];
+  difficulty: DifficultyFilter;
+  selectedSubclassSet: Set<string>;
+}) {
+  const filtered =
+    selectedSubclassSet.size === 0
+      ? items
+      : items.filter((i) => !i.subclass || selectedSubclassSet.has(i.subclass));
+
   return (
-    <section aria-labelledby="loadout-grid-heading" className={styles.root}>
-      <h2 id="loadout-grid-heading">Loadout</h2>
-      {groups.map((group) => {
-        const items = filterItems(loadout[group.key], selectedSubclassSet);
-        const isArmor = group.key === 'armor';
+    <div className={styles.col}>
+      <div className={styles.colHeader}>
+        <span className={styles.colTitle}>Weapons</span>
+        <span className={styles.colCount}>{filtered.length}</span>
+      </div>
+      <ul className={styles.itemList}>
+        {filtered.map((item) => (
+          <ItemRow key={item.id} item={item} difficulty={difficulty} />
+        ))}
+        {filtered.length === 0 && (
+          <li className={styles.empty}>No weapons match your filters.</li>
+        )}
+      </ul>
+    </div>
+  );
+}
 
-        return (
-          <details className={styles.groupDetails} key={group.key} open>
-            <summary className={styles.groupSummary}>
-              <span className={styles.groupTitle}>{group.title}</span>
-              <span className={styles.count}>{items.length}</span>
-            </summary>
+/* ── Accessories column — always 5 slots ── */
+const SLOTS = 5;
 
-            {items.length === 0 ? (
-              <div className={styles.empty}>No items authored yet.</div>
-            ) : isArmor ? (
-              <div className={styles.armorGrid}>
-                {items.map((item) => (
-                  <ArmorCard difficulty={difficulty} item={item} key={item.id} />
-                ))}
-              </div>
-            ) : (
-              <ul className={styles.list}>
-                {items.map((item) => (
-                  <ItemRow difficulty={difficulty} item={item} key={item.id} />
-                ))}
-              </ul>
-            )}
-          </details>
-        );
-      })}
+function AccessoriesColumn({
+  items,
+  difficulty,
+}: {
+  items: Item[];
+  difficulty: DifficultyFilter;
+}) {
+  const slots = Array.from({ length: SLOTS }, (_, i) => items[i] ?? null);
+
+  return (
+    <div className={styles.col}>
+      <div className={styles.colHeader}>
+        <span className={styles.colTitle}>Accessories</span>
+        <span className={styles.colCount}>
+          {Math.min(items.length, SLOTS)}/{SLOTS}
+        </span>
+      </div>
+      <ul className={styles.itemList}>
+        {slots.map((item, i) =>
+          item ? (
+            <ItemRow key={item.id} item={item} difficulty={difficulty} />
+          ) : (
+            <li key={`slot-${i}`} className={`${styles.row} ${styles.emptySlot}`}>
+              <span className={styles.slotNum}>{i + 1}</span>
+              <span className={styles.emptySlotLabel}>Empty slot</span>
+            </li>
+          ),
+        )}
+      </ul>
+    </div>
+  );
+}
+
+/* ── Buffs ── */
+function BuffsSection({ items, difficulty }: { items: Item[]; difficulty: DifficultyFilter }) {
+  if (items.length === 0) return null;
+  return (
+    <div className={styles.buffsSection}>
+      <div className={styles.colHeader}>
+        <span className={styles.colTitle}>Buffs</span>
+        <span className={styles.colCount}>{items.length}</span>
+      </div>
+      <ul className={styles.buffsList}>
+        {items.map((item) => {
+          const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
+          return (
+            <li key={item.id} className={styles.buffRow} data-dimmed={String(!relevant)}>
+              <img
+                alt=""
+                className={`${styles.buffIcon} pixel-img`}
+                decoding="async"
+                height="28"
+                loading="lazy"
+                onError={(e) => { e.currentTarget.src = fallbackIcon; }}
+                src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+                width="28"
+              />
+              <span className={styles.buffName}>{item.name}</span>
+              <span className={styles.source}>{item.source}</span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+/* ── Root export ── */
+export function LoadoutGrid({ difficulty, loadout, selectedSubclassSet }: LoadoutGridProps) {
+  return (
+    <section aria-label="Loadout" className={styles.root}>
+      <div className={styles.grid}>
+        <ArmorColumn items={loadout.armor} difficulty={difficulty} />
+        <WeaponsColumn
+          items={loadout.weapons}
+          difficulty={difficulty}
+          selectedSubclassSet={selectedSubclassSet}
+        />
+        <AccessoriesColumn items={loadout.accessories} difficulty={difficulty} />
+      </div>
+      <BuffsSection items={loadout.buffs} difficulty={difficulty} />
     </section>
   );
 }

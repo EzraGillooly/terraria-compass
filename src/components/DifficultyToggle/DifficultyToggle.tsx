@@ -1,34 +1,33 @@
 import type { DifficultyFilter } from '../../lib/difficulty';
 import styles from './DifficultyToggle.module.css';
 
-const options: DifficultyFilter[] = ['normal', 'expert', 'master'];
+const OPTIONS: Array<{ value: DifficultyFilter; label: string }> = [
+  { value: 'normal', label: 'Classic' },
+  { value: 'expert', label: 'Expert' },
+  { value: 'master', label: 'Master' },
+];
 
 interface DifficultyToggleProps {
   difficulty: DifficultyFilter;
   onChange: (difficulty: DifficultyFilter) => void;
 }
 
-export function DifficultyToggle({
-  difficulty,
-  onChange,
-}: DifficultyToggleProps) {
+export function DifficultyToggle({ difficulty, onChange }: DifficultyToggleProps) {
   return (
-    <section className={styles.wrap} aria-labelledby="difficulty-toggle-heading">
-      <h2 id="difficulty-toggle-heading">Difficulty</h2>
-      <div className={styles.row} role="group" aria-label="Filter by difficulty">
-        {options.map((option) => (
-          <button
-            aria-pressed={difficulty === option}
-            className={styles.button}
-            data-active={difficulty === option}
-            key={option}
-            onClick={() => onChange(option)}
-            type="button"
-          >
-            {option[0]!.toUpperCase() + option.slice(1)}
-          </button>
-        ))}
-      </div>
-    </section>
+    <div className={styles.banner} role="group" aria-label="Select difficulty">
+      <span className={styles.bannerLabel}>Difficulty</span>
+      {OPTIONS.map(({ value, label }) => (
+        <button
+          key={value}
+          type="button"
+          className={styles.option}
+          data-active={String(difficulty === value)}
+          aria-pressed={difficulty === value}
+          onClick={() => onChange(value)}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
   );
 }

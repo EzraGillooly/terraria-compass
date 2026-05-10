@@ -1,0 +1,73 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .root {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-3);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  text-align: center;
+  box-shadow: var(--shadow-card), var(--shadow-inset);
+  transition:
+    background-color 160ms ease-out,
+    border-color 160ms ease-out,
+    color 160ms ease-out,
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out;
+}
+
+.card[data-active='true'] {
+  border-color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+  color: var(--color-text-primary);
+  box-shadow: 0 0 10px 2px color-mix(in srgb, var(--color-accent) 35%, transparent), var(--shadow-card);
+}
+
+.card:hover:not([data-active='true']) {
+  border-color: var(--color-border-strong);
+  color: var(--color-text-primary);
+  transform: translateY(-2px);
+  background: var(--color-surface-elevated);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+.glyph {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--font-base);
+  color: inherit;
+}
+
+.blurb {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  max-width: 18ch;
+}
+
+.card[data-active='true'] .blurb {
+  color: var(--color-text-secondary);
+}

@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import { Footer } from '../Footer';
 import { Header } from '../Header';
 import styles from './AppShell.module.css';
 
@@ -17,7 +16,6 @@ export function AppShell({ children }: AppShellProps) {
       <main className={styles.main} id="main">
         {children}
       </main>
-      <Footer />
     </>
   );
 }

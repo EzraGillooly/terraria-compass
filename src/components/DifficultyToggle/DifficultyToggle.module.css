@@ -1,24 +1,56 @@
-.wrap {
-  display: grid;
-  gap: var(--space-3);
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-
-.button {
-  min-height: 44px;
-  padding: var(--space-2) var(--space-4);
-  border: 2px solid var(--color-border);
-  border-radius: 999px;
+/* Fixed floating banner — top-right, always visible */
+.banner {
+  position: fixed;
+  top: 70px;
+  right: var(--space-4);
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
   background: var(--color-surface-elevated);
-  color: var(--color-text-primary);
+  box-shadow: var(--shadow-card), var(--shadow-inset);
+  overflow: hidden;
 }
 
-.button[data-active='true'] {
-  border-color: var(--color-accent);
+.bannerLabel {
+  padding: 4px var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  border-right: 1px solid var(--color-border);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.option {
+  padding: 4px var(--space-3);
+  border: none;
+  border-left: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--font-xs);
+  font-family: var(--font-body);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color 150ms ease-out,
+    color 150ms ease-out;
+}
+
+.option[data-active='true'] {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  font-weight: 700;
+}
+
+.option:hover:not([data-active='true']) {
   background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: -2px;
 }

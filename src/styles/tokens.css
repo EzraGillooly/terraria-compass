@@ -1,58 +1,48 @@
 /* ============================================================
-   LIGHT (day) — inspired by the daytime bridge screenshot:
-   soft periwinkle sky, forest greens, blue water, stone gray
+   LIGHT (day) — warm earthy meadow: greens, parchment, wood
    ============================================================ */
 :root {
   color-scheme: light;
 
-  /* Surfaces */
-  --color-bg:               #C8D9EC;  /* day-sky blue-gray */
-  --color-surface:          #E6EFF8;  /* light stone/cloud */
-  --color-surface-elevated: #F2F7FD;  /* floating panel */
+  --color-bg:               #C8D4A4;
+  --color-surface:          #E4ECCC;
+  --color-surface-elevated: #EEF6DC;
 
-  /* Borders */
-  --color-border:           #8DAFC8;  /* slate-blue stone edge */
-  --color-border-strong:    #3A6E9E;  /* deep water outline */
+  --color-border:           #8CA870;
+  --color-border-strong:    #4A6830;
 
-  /* Text */
-  --color-text-primary:     #0D1B2A;  /* forest-dark */
-  --color-text-secondary:   #2A4A6B;
-  --color-text-muted:       #486482;
-  --color-text-dimmed:      #8AABCC;
-  --color-text-inverse:     #F0F7FF;
+  --color-text-primary:     #1A2808;
+  --color-text-secondary:   #3A5018;
+  --color-text-muted:       #567030;
+  --color-text-dimmed:      #8AAA68;
+  --color-text-inverse:     #EEF6DC;
 
-  /* Accent (blue water) */
-  --color-accent:           #1D62B0;
-  --color-accent-hover:     #164E8C;
-  --color-accent-soft:      #C5DCF0;
+  --color-accent:           #2E7818;
+  --color-accent-hover:     #206010;
+  --color-accent-soft:      #C0DCA0;
 
-  /* Terraria biome palette */
   --color-demonite:         #5B21B6;
-  --color-hallowed:         #0AAFBD;  /* holy teal */
+  --color-hallowed:         #0AAFBD;
   --color-corruption:       #6D28D9;
   --color-crimson:          #BE123C;
   --color-success:          #16803C;
   --color-warning:          #B45309;
   --color-danger:           #BE123C;
-  --color-top-pick-glow:    rgba(10, 175, 189, 0.45);
-  --color-focus-ring:       #1D62B0;
+  --color-top-pick-glow:    rgba(10, 175, 189, 0.55);
+  --color-focus-ring:       #2E7818;
 
-  /* Shadows — pixel style: hard offset, no blur */
-  --shadow-card:    2px 2px 0 var(--color-border-strong);
-  --shadow-inset:   inset 1px 1px 0 rgba(255,255,255,0.5), inset -1px -1px 0 rgba(0,0,0,0.15);
+  --shadow-card:   2px 2px 0 var(--color-border-strong);
+  --shadow-inset:  inset 1px 1px 0 rgba(255,255,255,0.5), inset -1px -1px 0 rgba(0,0,0,0.15);
 
-  /* Border radii — tight, pixel-ish */
-  --radius-sm:  2px;
-  --radius-md:  4px;
-  --radius-lg:  6px;
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   6px;
   --radius-pill: 4px;
 
-  /* Typography */
   --font-display: 'Pixelify Sans', 'Press Start 2P', system-ui, sans-serif;
   --font-body:    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-  /* Scale */
   --font-xs:   0.70rem;
   --font-sm:   0.825rem;
   --font-base: 1rem;
@@ -60,7 +50,6 @@
   --font-xl:   1.6rem;
   --font-2xl:  2.2rem;
 
-  /* Spacing */
   --space-1:  4px;
   --space-2:  8px;
   --space-3:  12px;
@@ -76,55 +65,49 @@
 }
 
 /* ============================================================
-   DARK (night) — inspired by the purple-magenta sunset tower:
-   deep violet sky, stone buildings, orange torch glow
+   DARK (sunset) — warm evening sky: deep plum, rose, coral
    ============================================================ */
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  /* Surfaces */
-  --color-bg:               #0B0817;  /* near-black deep purple */
-  --color-surface:          #14102A;  /* dungeon stone */
-  --color-surface-elevated: #1D1740;  /* raised panel */
+  --color-bg:               #1A0E20;
+  --color-surface:          #261428;
+  --color-surface-elevated: #341C38;
 
-  /* Borders */
-  --color-border:           #3D2864;  /* purple stone edge */
-  --color-border-strong:    #7A52BF;  /* glowing purple */
+  --color-border:           #6A3050;
+  --color-border-strong:    #C85870;
 
-  /* Text */
-  --color-text-primary:     #EDE8FF;  /* soft lavender white */
-  --color-text-secondary:   #C0ACEA;
-  --color-text-muted:       #8E78BC;
-  --color-text-dimmed:      #5E4E80;
-  --color-text-inverse:     #0B0817;
+  --color-text-primary:     #F8E0D8;
+  --color-text-secondary:   #D8A8B0;
+  --color-text-muted:       #9A6870;
+  --color-text-dimmed:      #6A4850;
+  --color-text-inverse:     #1A0E20;
 
-  /* Accent (magic purple) */
-  --color-accent:           #B87CF8;
-  --color-accent-hover:     #CE9FFF;
-  --color-accent-soft:      #251A46;
+  --color-accent:           #E07050;
+  --color-accent-hover:     #F08060;
+  --color-accent-soft:      #3A1828;
 
-  /* Terraria biome palette */
   --color-demonite:         #B08EE8;
-  --color-hallowed:         #F59E0B;  /* golden torch */
+  --color-hallowed:         #F5A030;
   --color-corruption:       #A855F7;
   --color-crimson:          #FB7185;
   --color-success:          #34D399;
   --color-warning:          #FBB040;
   --color-danger:           #FB7185;
-  --color-top-pick-glow:    rgba(245, 158, 11, 0.50);
-  --color-focus-ring:       #CE9FFF;
+  --color-top-pick-glow:    rgba(245, 160, 48, 0.6);
+  --color-focus-ring:       #E07050;
 
-  --shadow-card:    2px 2px 0 #000000;
-  --shadow-inset:   inset 1px 1px 0 rgba(255,255,255,0.08), inset -1px -1px 0 rgba(0,0,0,0.6);
+  --shadow-card:   2px 2px 0 #000000;
+  --shadow-inset:  inset 1px 1px 0 rgba(255,255,255,0.06), inset -1px -1px 0 rgba(0,0,0,0.6);
 }
 
-/* ============================================================
-   BASE STYLES
-   ============================================================ */
-html {
-  min-height: 100%;
-  background: var(--color-bg);
+/* ── Animated glow for top-pick items ── */
+@keyframes top-pick-pulse {
+  0%, 100% { box-shadow: 0 0 4px 2px var(--color-top-pick-glow), var(--shadow-card); }
+  50%       { box-shadow: 0 0 16px 6px var(--color-top-pick-glow), var(--shadow-card); }
 }
+
+html { min-height: 100%; background: var(--color-bg); }
 
 body {
   background: var(--color-bg);
@@ -133,36 +116,13 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  margin: 0;
-  line-height: 1.2;
-}
-
-h1, h2 {
-  font-family: var(--font-display);
-}
-
-h1 {
-  font-size: var(--font-2xl);
-  margin-bottom: var(--space-4);
-}
-
-h2 {
-  font-size: var(--font-xl);
-  margin-bottom: var(--space-3);
-}
-
-p, ul {
-  margin-top: 0;
-}
-
-section + section {
-  margin-top: var(--space-8);
-}
-
-ul {
-  padding-left: 1.25rem;
-}
+h1, h2, h3 { margin: 0; line-height: 1.2; }
+h1, h2 { font-family: var(--font-display); }
+h1 { font-size: var(--font-2xl); margin-bottom: var(--space-4); }
+h2 { font-size: var(--font-xl); margin-bottom: var(--space-3); }
+p, ul { margin-top: 0; }
+ul { padding-left: 1.25rem; }
+section + section { margin-top: var(--space-8); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

@@ -30,8 +30,8 @@ export function SubclassToggles({
   onToggle,
 }: SubclassTogglesProps) {
   return (
-    <section className={styles.wrap} aria-labelledby="subclass-toggles-heading">
-      <h2 id="subclass-toggles-heading">Subclasses</h2>
+    <div className={styles.wrap}>
+      <span className={styles.label}>Subclass filter</span>
       <div aria-label="Filter by subclass" className={styles.row} role="group">
         <button
           aria-pressed={isAllSelected}
@@ -62,6 +62,6 @@ export function SubclassToggles({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }
