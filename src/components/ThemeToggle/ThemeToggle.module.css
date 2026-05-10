@@ -1,32 +1,48 @@
+.group {
+  display: inline-flex;
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-surface-elevated);
+  box-shadow: var(--shadow-card), var(--shadow-inset);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 2px solid var(--color-border-strong);
-  border-radius: 12px;
-  background: var(--color-surface-elevated);
-  color: var(--color-text-primary);
-  box-shadow: var(--shadow-card);
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
   transition:
-    background-color 220ms ease-out,
-    border-color 220ms ease-out,
-    transform 160ms ease-out;
+    background-color 180ms ease-out,
+    color 180ms ease-out;
 }
 
-.button:hover {
+.button + .button {
+  border-left: 1px solid var(--color-border);
+}
+
+.button[data-active='true'] {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.button:hover:not([data-active='true']) {
   background: var(--color-accent-soft);
-  border-color: var(--color-accent);
-  transform: translateY(-1px);
+  color: var(--color-accent);
 }
 
 .button:focus-visible {
   outline: 2px solid var(--color-focus-ring);
-  outline-offset: 2px;
+  outline-offset: -2px;
+  z-index: 1;
 }
 
 .glyph {
-  font-size: var(--font-lg);
+  font-size: 1rem;
   line-height: 1;
 }

@@ -1,83 +1,129 @@
+/* ============================================================
+   LIGHT (day) — inspired by the daytime bridge screenshot:
+   soft periwinkle sky, forest greens, blue water, stone gray
+   ============================================================ */
 :root {
   color-scheme: light;
-  --color-bg: #f4ead3;
-  --color-surface: #ffffff;
-  --color-surface-elevated: #fbf3dd;
-  --color-border: #c9b58a;
-  --color-border-strong: #6f5a36;
-  --color-text-primary: #2a2118;
-  --color-text-secondary: #5b4a32;
-  --color-text-muted: #736248;
-  --color-text-dimmed: #666666;
-  --color-text-inverse: #f4ead3;
-  --color-accent: #1d5eb8;
-  --color-accent-hover: #174da0;
-  --color-accent-soft: #d6e4fb;
-  --color-demonite: #6c4ea6;
-  --color-hallowed: #d8a533;
-  --color-corruption: #6a3aa0;
-  --color-crimson: #b03a3a;
-  --color-success: #2f8a4f;
-  --color-warning: #c47a18;
-  --color-danger: #b03a3a;
-  --color-top-pick-glow: rgba(216, 165, 51, 0.55);
-  --color-focus-ring: #2a6ed4;
-  --shadow-card: 0 1px 0 #c9b58a, 0 2px 0 rgba(0, 0, 0, 0.06);
-  --font-display: 'Pixelify Sans', system-ui, sans-serif;
-  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif;
-  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
+
+  /* Surfaces */
+  --color-bg:               #C8D9EC;  /* day-sky blue-gray */
+  --color-surface:          #E6EFF8;  /* light stone/cloud */
+  --color-surface-elevated: #F2F7FD;  /* floating panel */
+
+  /* Borders */
+  --color-border:           #8DAFC8;  /* slate-blue stone edge */
+  --color-border-strong:    #3A6E9E;  /* deep water outline */
+
+  /* Text */
+  --color-text-primary:     #0D1B2A;  /* forest-dark */
+  --color-text-secondary:   #2A4A6B;
+  --color-text-muted:       #486482;
+  --color-text-dimmed:      #8AABCC;
+  --color-text-inverse:     #F0F7FF;
+
+  /* Accent (blue water) */
+  --color-accent:           #1D62B0;
+  --color-accent-hover:     #164E8C;
+  --color-accent-soft:      #C5DCF0;
+
+  /* Terraria biome palette */
+  --color-demonite:         #5B21B6;
+  --color-hallowed:         #0AAFBD;  /* holy teal */
+  --color-corruption:       #6D28D9;
+  --color-crimson:          #BE123C;
+  --color-success:          #16803C;
+  --color-warning:          #B45309;
+  --color-danger:           #BE123C;
+  --color-top-pick-glow:    rgba(10, 175, 189, 0.45);
+  --color-focus-ring:       #1D62B0;
+
+  /* Shadows — pixel style: hard offset, no blur */
+  --shadow-card:    2px 2px 0 var(--color-border-strong);
+  --shadow-inset:   inset 1px 1px 0 rgba(255,255,255,0.5), inset -1px -1px 0 rgba(0,0,0,0.15);
+
+  /* Border radii — tight, pixel-ish */
+  --radius-sm:  2px;
+  --radius-md:  4px;
+  --radius-lg:  6px;
+  --radius-pill: 4px;
+
+  /* Typography */
+  --font-display: 'Pixelify Sans', 'Press Start 2P', system-ui, sans-serif;
+  --font-body:    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Scale */
+  --font-xs:   0.70rem;
+  --font-sm:   0.825rem;
   --font-base: 1rem;
-  --font-lg: 1.25rem;
-  --font-xl: 1.75rem;
-  --font-2xl: 2.5rem;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-6: 24px;
-  --space-8: 32px;
+  --font-lg:   1.15rem;
+  --font-xl:   1.6rem;
+  --font-2xl:  2.2rem;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
   --space-12: 48px;
   --space-16: 64px;
+
   font-family: var(--font-body);
   background: var(--color-bg);
   color: var(--color-text-primary);
 }
 
+/* ============================================================
+   DARK (night) — inspired by the purple-magenta sunset tower:
+   deep violet sky, stone buildings, orange torch glow
+   ============================================================ */
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --color-bg: #0e1622;
-  --color-surface: #18243a;
-  --color-surface-elevated: #1f2e49;
-  --color-border: #2c3e63;
-  --color-border-strong: #5a7bb0;
-  --color-text-primary: #e8eef8;
-  --color-text-secondary: #b6c2d8;
-  --color-text-muted: #8092ae;
-  --color-text-dimmed: #9eaac0;
-  --color-text-inverse: #0e1622;
-  --color-accent: #6aa2ff;
-  --color-accent-hover: #8ebcff;
-  --color-accent-soft: #1d2f54;
-  --color-demonite: #b08ee8;
-  --color-hallowed: #f0c861;
-  --color-corruption: #a07ce0;
-  --color-crimson: #e07070;
-  --color-success: #6dd391;
-  --color-warning: #f0b95b;
-  --color-danger: #e07070;
-  --color-top-pick-glow: rgba(240, 200, 97, 0.55);
-  --color-focus-ring: #8ebcff;
-  --shadow-card: 0 1px 0 #2c3e63, 0 2px 0 rgba(0, 0, 0, 0.4);
+
+  /* Surfaces */
+  --color-bg:               #0B0817;  /* near-black deep purple */
+  --color-surface:          #14102A;  /* dungeon stone */
+  --color-surface-elevated: #1D1740;  /* raised panel */
+
+  /* Borders */
+  --color-border:           #3D2864;  /* purple stone edge */
+  --color-border-strong:    #7A52BF;  /* glowing purple */
+
+  /* Text */
+  --color-text-primary:     #EDE8FF;  /* soft lavender white */
+  --color-text-secondary:   #C0ACEA;
+  --color-text-muted:       #8E78BC;
+  --color-text-dimmed:      #5E4E80;
+  --color-text-inverse:     #0B0817;
+
+  /* Accent (magic purple) */
+  --color-accent:           #B87CF8;
+  --color-accent-hover:     #CE9FFF;
+  --color-accent-soft:      #251A46;
+
+  /* Terraria biome palette */
+  --color-demonite:         #B08EE8;
+  --color-hallowed:         #F59E0B;  /* golden torch */
+  --color-corruption:       #A855F7;
+  --color-crimson:          #FB7185;
+  --color-success:          #34D399;
+  --color-warning:          #FBB040;
+  --color-danger:           #FB7185;
+  --color-top-pick-glow:    rgba(245, 158, 11, 0.50);
+  --color-focus-ring:       #CE9FFF;
+
+  --shadow-card:    2px 2px 0 #000000;
+  --shadow-inset:   inset 1px 1px 0 rgba(255,255,255,0.08), inset -1px -1px 0 rgba(0,0,0,0.6);
 }
 
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
 html {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top, var(--color-accent-soft), transparent 35%),
-    var(--color-bg);
+  background: var(--color-bg);
 }
 
 body {
@@ -87,15 +133,12 @@ body {
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin: 0;
   line-height: 1.2;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: var(--font-display);
 }
 
@@ -109,8 +152,7 @@ h2 {
   margin-bottom: var(--space-3);
 }
 
-p,
-ul {
+p, ul {
   margin-top: 0;
 }
 
@@ -123,9 +165,7 @@ ul {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;

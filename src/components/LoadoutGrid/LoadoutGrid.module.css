@@ -1,126 +1,254 @@
-.group {
-  margin-top: var(--space-8);
+.root {
+  margin-top: var(--space-6);
+}
+
+/* ── Collapsible group ── */
+.groupDetails {
+  margin-top: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.groupSummary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  background: var(--color-surface-elevated);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.groupSummary::-webkit-details-marker { display: none; }
+
+.groupDetails[open] .groupSummary {
+  border-bottom-color: var(--color-border);
+}
+
+.groupTitle {
+  font-family: var(--font-display);
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+  flex: 1;
 }
 
 .count {
-  color: var(--color-text-secondary);
-  font-size: var(--font-sm);
-  margin-left: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+  font-weight: 700;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-4);
+/* ── Compact item list ── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
-.card {
-  display: grid;
-  gap: var(--space-2);
-  height: 100%;
-  padding: var(--space-4);
-  border: 2px solid var(--color-border);
-  border-radius: 16px;
-  background: var(--color-surface);
-  box-shadow: var(--shadow-card);
-  transition:
-    opacity 200ms ease-out,
-    transform 160ms ease-out,
-    border-color 160ms ease-out;
-}
-
-.card[data-top-pick='true'] {
-  border-color: var(--color-hallowed);
-  box-shadow:
-    var(--shadow-card),
-    0 0 0 2px var(--color-top-pick-glow);
-}
-
-.card[data-dimmed='true'] {
-  --color-text-primary: var(--color-text-dimmed);
-  --color-text-secondary: var(--color-text-dimmed);
-  --color-text-muted: var(--color-text-dimmed);
-  border-color: var(--color-border);
-  box-shadow: none;
-}
-
-.card:hover {
-  transform: translateY(-1px);
-  border-color: var(--color-border-strong);
-}
-
-.cardHeader {
+.row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 150ms ease-out, opacity 200ms ease-out;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row[data-top-pick='true'] {
+  background: color-mix(in srgb, var(--color-hallowed) 8%, var(--color-surface));
+  border-left: 3px solid var(--color-hallowed);
+}
+
+.row[data-dimmed='true'] {
+  opacity: 0.45;
+}
+
+.row:hover {
+  background: var(--color-surface-elevated);
+}
+
+/* ── Item icon ── */
+.icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-elevated);
+  object-fit: contain;
+  padding: 2px;
+  margin-top: 2px;
+}
+
+/* ── Row body ── */
+.rowBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.rowHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  min-height: 36px;
 }
 
 .itemName {
   font-family: var(--font-display);
-  font-size: var(--font-lg);
+  font-size: var(--font-sm);
+  color: var(--color-text-primary);
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
+.badge {
+  white-space: nowrap;
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-hallowed) 20%, var(--color-surface));
+  color: var(--color-hallowed);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  border: 1px solid var(--color-hallowed);
+}
+
+.subclassTag {
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
+/* ── Expandable details ── */
+.details {
+  margin-top: 2px;
+}
+
+.summary {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  list-style: none;
+  padding: 2px 0;
+}
+
+.summary::-webkit-details-marker { display: none; }
+
+.summary::before {
+  content: '▶ ';
+  font-size: 0.55rem;
+}
+
+details[open] .summary::before {
+  content: '▼ ';
+}
+
+.detailBody {
+  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-left: 2px solid var(--color-border);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.source {
+  color: var(--color-text-muted);
+  font-size: var(--font-xs);
+  font-style: italic;
+}
+
+/* ── Armor section — set showcase ── */
+.armorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0;
+  padding: 0;
+}
+
+.armorCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 150ms ease-out, opacity 200ms ease-out;
+}
+
+.armorCard:last-child {
+  border-right: none;
+}
+
+.armorCard[data-top-pick='true'] {
+  background: color-mix(in srgb, var(--color-hallowed) 8%, var(--color-surface));
+  border-left: 3px solid var(--color-hallowed);
+}
+
+.armorCard[data-dimmed='true'] {
+  opacity: 0.45;
+}
+
+.armorCard:hover {
+  background: var(--color-surface-elevated);
+}
+
+.armorSprite {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
   border: 2px solid var(--color-border);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   background: var(--color-surface-elevated);
   object-fit: contain;
   padding: var(--space-1);
 }
 
-.titleBlock {
+.armorInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.armorName {
+  font-family: var(--font-display);
+  font-size: var(--font-sm);
+  color: var(--color-text-primary);
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-}
-
-.badge {
-  white-space: nowrap;
-  padding: 2px var(--space-2);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--color-hallowed) 20%, var(--color-surface));
-  color: var(--color-text-primary);
-  font-size: var(--font-xs);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.source {
-  color: var(--color-text-secondary);
-  font-size: var(--font-sm);
-}
-
-.meta {
-  color: var(--color-text-muted);
-  font-size: var(--font-sm);
-}
-
-.tags {
-  display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  padding: 0;
-  list-style: none;
+  margin-bottom: var(--space-1);
 }
 
-.tag {
-  padding: 2px var(--space-2);
-  border-radius: 999px;
-  background: var(--color-surface-elevated);
-  color: var(--color-text-secondary);
-  font-size: var(--font-xs);
-  text-transform: lowercase;
-}
-
+/* ── Empty state ── */
 .empty {
   padding: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-sm);
+  font-style: italic;
   border: 2px dashed var(--color-border);
-  border-radius: 16px;
-  background: var(--color-surface-elevated);
-  color: var(--color-text-secondary);
+  border-radius: var(--radius-md);
+  margin: var(--space-3);
 }

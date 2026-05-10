@@ -1,21 +1,32 @@
-import { useTheme } from '../../lib/theme';
+import { type ThemeMode, useTheme } from '../../lib/theme';
 import styles from './ThemeToggle.module.css';
 
+const modes: Array<{ value: ThemeMode; glyph: string; label: string }> = [
+  { value: 'light', glyph: '☀', label: 'Light theme' },
+  { value: 'system', glyph: '⊙', label: 'System theme' },
+  { value: 'dark', glyph: '☾', label: 'Dark theme' },
+];
+
 export function ThemeToggle() {
-  const { theme, toggle } = useTheme();
-  const isDark = theme === 'dark';
+  const { mode, setMode } = useTheme();
 
   return (
-    <button
-      type="button"
-      className={styles.button}
-      aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-      aria-pressed={isDark}
-      onClick={toggle}
-    >
-      <span className={styles.glyph} aria-hidden="true">
-        {isDark ? '☾' : '☀'}
-      </span>
-    </button>
+    <div className={styles.group} role="group" aria-label="Theme selection">
+      {modes.map(({ value, glyph, label }) => (
+        <button
+          key={value}
+          type="button"
+          className={styles.button}
+          data-active={String(mode === value)}
+          aria-label={label}
+          aria-pressed={mode === value}
+          onClick={() => setMode(value)}
+        >
+          <span className={styles.glyph} aria-hidden="true">
+            {glyph}
+          </span>
+        </button>
+      ))}
+    </div>
   );
 }

@@ -1,4 +1,3 @@
-import { BossRoadmap } from '../components/BossRoadmap';
 import { ClassSelector } from '../components/ClassSelector';
 import { DifficultyToggle } from '../components/DifficultyToggle';
 import { LoadoutGrid } from '../components/LoadoutGrid';
@@ -51,8 +50,6 @@ export function Phase() {
         classId={classDef.id}
         phases={phases}
       />
-
-      <BossRoadmap classId={classDef.id} phases={phases} />
 
       <ClassSelector
         activeClassId={classDef.id}

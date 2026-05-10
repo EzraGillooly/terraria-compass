@@ -20,9 +20,11 @@ const groups: Array<{
 ];
 
 const fallbackIcon =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23c9b58a'/%3E%3Ctext x='20' y='26' text-anchor='middle' font-size='22' fill='%232a2118' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%233D2864'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%23B87CF8' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+const fallbackArmorIcon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%233D2864'/%3E%3Ctext x='40' y='52' text-anchor='middle' font-size='40' fill='%23B87CF8' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-function ItemCard({
+function ArmorCard({
   difficulty,
   item,
 }: {
@@ -34,53 +36,87 @@ function ItemCard({
   return (
     <article
       aria-labelledby={`item-${item.id}-name`}
-      className={styles.card}
+      className={styles.armorCard}
       data-dimmed={String(!isRelevant)}
       data-top-pick={item.topPick || undefined}
     >
-      <div className={styles.cardHeader}>
-        <div className={styles.titleBlock}>
-          <img
-            alt=""
-            className={`${styles.icon} pixel-img`}
-            decoding="async"
-            height="40"
-            loading="lazy"
-            onError={(event) => {
-              event.currentTarget.src = fallbackIcon;
-            }}
-            src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
-            width="40"
-          />
-          <div className={styles.itemName} id={`item-${item.id}-name`}>
-            {item.name}
-          </div>
+      <img
+        alt={item.name}
+        className={`${styles.armorSprite} pixel-img`}
+        decoding="async"
+        height="80"
+        loading="lazy"
+        onError={(e) => {
+          e.currentTarget.src = fallbackArmorIcon;
+        }}
+        src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+        width="80"
+      />
+      <div className={styles.armorInfo}>
+        <div className={styles.armorName} id={`item-${item.id}-name`}>
+          {item.name}
+          {item.topPick && <span className={styles.badge}>★ Top</span>}
         </div>
-        {item.topPick ? <span className={styles.badge}>Top pick</span> : null}
+        <details className={styles.details}>
+          <summary className={styles.summary}>Details</summary>
+          <div className={styles.detailBody}>
+            <div className={styles.source}>{item.source}</div>
+            <div>{item.why}</div>
+          </div>
+        </details>
       </div>
-      <div className={styles.source}>{item.source}</div>
-      <div>{item.why}</div>
-      {item.subclass ? (
-        <div className={styles.meta}>Subclass: {item.subclass}</div>
-      ) : null}
-      {item.tags.length > 0 ? (
-        <ul aria-label="Tags" className={styles.tags}>
-          {item.tags.map((tag) => (
-            <li className={styles.tag} key={tag}>
-              {tag}
-            </li>
-          ))}
-        </ul>
-      ) : null}
     </article>
   );
 }
 
-function filterItems(items: Item[], selectedSubclassSet: Set<string>) {
-  if (selectedSubclassSet.size === 0) {
-    return items;
-  }
+function ItemRow({
+  difficulty,
+  item,
+}: {
+  difficulty: DifficultyFilter;
+  item: Item;
+}) {
+  const isRelevant = isItemRelevantToDifficulty(item.tags, difficulty);
 
+  return (
+    <li
+      className={styles.row}
+      data-dimmed={String(!isRelevant)}
+      data-top-pick={item.topPick || undefined}
+    >
+      <img
+        alt=""
+        className={`${styles.icon} pixel-img`}
+        decoding="async"
+        height="36"
+        loading="lazy"
+        onError={(e) => {
+          e.currentTarget.src = fallbackIcon;
+        }}
+        src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+        width="36"
+      />
+      <div className={styles.rowBody}>
+        <div className={styles.rowHeader}>
+          <span className={styles.itemName} id={`item-${item.id}-name`}>
+            {item.name}
+          </span>
+          {item.topPick && <span className={styles.badge}>★ Top</span>}
+          {item.subclass && (
+            <span className={styles.subclassTag}>{item.subclass}</span>
+          )}
+        </div>
+        <details className={styles.details}>
+          <summary className={styles.summary}>{item.source}</summary>
+          <div className={styles.detailBody}>{item.why}</div>
+        </details>
+      </div>
+    </li>
+  );
+}
+
+function filterItems(items: Item[], selectedSubclassSet: Set<string>) {
+  if (selectedSubclassSet.size === 0) return items;
   return items.filter(
     (item) => !item.subclass || selectedSubclassSet.has(item.subclass),
   );
@@ -92,29 +128,35 @@ export function LoadoutGrid({
   selectedSubclassSet,
 }: LoadoutGridProps) {
   return (
-    <section aria-labelledby="loadout-grid-heading">
+    <section aria-labelledby="loadout-grid-heading" className={styles.root}>
       <h2 id="loadout-grid-heading">Loadout</h2>
       {groups.map((group) => {
         const items = filterItems(loadout[group.key], selectedSubclassSet);
+        const isArmor = group.key === 'armor';
 
         return (
-          <section className={styles.group} key={group.key}>
-            <h3>
-              {group.title}
-              <span className={styles.count}>({items.length})</span>
-            </h3>
+          <details className={styles.groupDetails} key={group.key} open>
+            <summary className={styles.groupSummary}>
+              <span className={styles.groupTitle}>{group.title}</span>
+              <span className={styles.count}>{items.length}</span>
+            </summary>
+
             {items.length === 0 ? (
-              <div className={styles.empty}>No items authored in this slot yet.</div>
-            ) : (
-              <ul className={styles.grid}>
+              <div className={styles.empty}>No items authored yet.</div>
+            ) : isArmor ? (
+              <div className={styles.armorGrid}>
                 {items.map((item) => (
-                  <li key={item.id}>
-                    <ItemCard difficulty={difficulty} item={item} />
-                  </li>
+                  <ArmorCard difficulty={difficulty} item={item} key={item.id} />
+                ))}
+              </div>
+            ) : (
+              <ul className={styles.list}>
+                {items.map((item) => (
+                  <ItemRow difficulty={difficulty} item={item} key={item.id} />
                 ))}
               </ul>
             )}
-          </section>
+          </details>
         );
       })}
     </section>
