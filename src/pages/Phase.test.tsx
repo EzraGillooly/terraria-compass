@@ -52,6 +52,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
   });
 
+  it('renders authored content for pre-skeletron too', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-skeletron/mage']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-skeletron · mage/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Space Gun')).toBeInTheDocument();
+    expect(screen.getByText('Meteor Armor')).toBeInTheDocument();
+  });
+
   it('filters subclass-specific items when a subclass toggle is selected', async () => {
     const user = userEvent.setup();
 

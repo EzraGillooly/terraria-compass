@@ -1,4 +1,5 @@
 import preBossesLoadoutsJson from '../data/loadouts/pre-bosses.json';
+import preSkeletronLoadoutsJson from '../data/loadouts/pre-skeletron.json';
 import classesJson from '../data/classes.json';
 import phasesJson from '../data/phases.json';
 import {
@@ -11,7 +12,10 @@ import {
 
 export const phases = PhaseCollection.parse(phasesJson);
 export const classes = ClassCollection.parse(classesJson);
-export const loadouts = LoadoutCollection.parse(preBossesLoadoutsJson);
+export const loadouts = LoadoutCollection.parse([
+  ...preBossesLoadoutsJson,
+  ...preSkeletronLoadoutsJson,
+]);
 
 export function getPhaseById(phaseId: string) {
   return phases.find((phase) => phase.id === phaseId);

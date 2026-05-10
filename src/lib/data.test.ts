@@ -13,6 +13,14 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Starfury');
   });
 
+  it('returns authored data for the next progression phase too', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-skeletron', 'mage');
+
+    expect(loadout?.phase).toBe('pre-skeletron');
+    expect(loadout?.class).toBe('mage');
+    expect(loadout?.weapons[0]?.name).toBe('Space Gun');
+  });
+
   it('returns undefined for missing loadouts', () => {
     expect(getLoadoutByPhaseAndClass('pre-mech', 'mage')).toBeUndefined();
   });

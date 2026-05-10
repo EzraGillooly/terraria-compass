@@ -1,0 +1,626 @@
+[
+  {
+    "phase": "pre-skeletron",
+    "class": "melee",
+    "weapons": [
+      {
+        "id": "nights-edge",
+        "name": "Night's Edge",
+        "slot": "weapon",
+        "icon": "items/nights-edge.png",
+        "source": "Crafted from Blade of Grass, Muramasa, and your world-evil sword at a Demon or Crimson Altar",
+        "why": "This is the big melee goal for the phase because it outclasses other broadswords and stays relevant deep into pre-Hardmode.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "true-melee"
+      },
+      {
+        "id": "bee-keeper",
+        "name": "Bee Keeper",
+        "slot": "weapon",
+        "icon": "items/bee-keeper.png",
+        "source": "Dropped by Queen Bee",
+        "why": "The released bees add burst and make this one of the strongest bossing swords before Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee"
+      },
+      {
+        "id": "flamarang",
+        "name": "Flamarang",
+        "slot": "weapon",
+        "icon": "items/flamarang.png",
+        "source": "Crafted from an Enchanted Boomerang and Hellstone Bars",
+        "why": "If you like the boomerang route, this is the best version available before Wall of Flesh prep takes over.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "boomerang"
+      },
+      {
+        "id": "amazon",
+        "name": "Amazon",
+        "slot": "weapon",
+        "icon": "items/amazon.png",
+        "source": "Crafted from Rich Mahogany, Jungle Spores, Stingers, and a Vine",
+        "why": "It is the cleanest yoyo progression step if you want to stay on that subclass path.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo"
+      }
+    ],
+    "armor": [
+      {
+        "id": "shadow-armor",
+        "name": "Shadow Armor",
+        "slot": "armor",
+        "icon": "armor/shadow-armor.png",
+        "source": "Crafted from Demonite Bars and Shadow Scales",
+        "why": "In Corruption worlds this is the signature melee set because the speed bonus makes early swords and yoyos feel much better.",
+        "tags": ["corruption-only"],
+        "topPick": true
+      },
+      {
+        "id": "crimson-armor",
+        "name": "Crimson Armor",
+        "slot": "armor",
+        "icon": "armor/crimson-armor.png",
+        "source": "Crafted from Crimtane Bars and Tissue Samples",
+        "why": "Crimson players get a tankier alternative with life-regen utility that is still excellent for melee.",
+        "tags": ["crimson-only"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
+        "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Dropped by the Eye of Cthulhu treasure bag",
+        "why": "The dash gives both offense and survivability, especially for melee builds that need to stay in range.",
+        "tags": ["expert-only"],
+        "topPick": false
+      },
+      {
+        "id": "spectre-boots",
+        "name": "Spectre Boots",
+        "slot": "accessory",
+        "icon": "accessories/spectre-boots.png",
+        "source": "Combined from Hermes Boots and Rocket Boots",
+        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "feral-claws",
+        "name": "Feral Claws",
+        "slot": "accessory",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle chests",
+        "why": "The melee speed boost is still a big deal and carries naturally into later melee progression.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It stays the most universal and reliable early combat buff for melee.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "swiftness-potion",
+        "name": "Swiftness Potion",
+        "slot": "buff",
+        "icon": "potions/swiftness-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "More movement speed means more uptime and fewer mistakes during boss fights.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "regeneration-potion",
+        "name": "Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It smooths out incoming damage during long arena fights and exploration loops.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "sharpening-station",
+        "name": "Sharpening Station",
+        "slot": "buff",
+        "icon": "potions/sharpening-station.png",
+        "source": "Placed station buff",
+        "why": "The armor penetration bonus is one of the best class-specific pre-Hardmode melee boosts.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-skeletron",
+    "class": "ranger",
+    "weapons": [
+      {
+        "id": "molten-fury",
+        "name": "Molten Fury",
+        "slot": "weapon",
+        "icon": "items/molten-fury.png",
+        "source": "Crafted from Hellstone Bars",
+        "why": "This is the standout bow of the phase and stays excellent through Wall of Flesh prep.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow"
+      },
+      {
+        "id": "phoenix-blaster",
+        "name": "Phoenix Blaster",
+        "slot": "weapon",
+        "icon": "items/phoenix-blaster.png",
+        "source": "Crafted from the Handgun and Hellstone Bars",
+        "why": "It is the cleanest gun upgrade once Dungeon access and Hellstone are both online.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun"
+      },
+      {
+        "id": "beenades",
+        "name": "Beenades",
+        "slot": "weapon",
+        "icon": "items/beenades.png",
+        "source": "Crafted from Grenades and Bee Wax",
+        "why": "They define several pre-Hardmode boss kills because the damage output is absurd for the effort.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "throwing"
+      },
+      {
+        "id": "boomstick",
+        "name": "Boomstick",
+        "slot": "weapon",
+        "icon": "items/boomstick.png",
+        "source": "Found in Jungle Shrine chests",
+        "why": "It still hits hard enough to remain worth using if your gun progression is not fully online yet.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun"
+      }
+    ],
+    "armor": [
+      {
+        "id": "platinum-armor",
+        "name": "Platinum Armor",
+        "slot": "armor",
+        "icon": "armor/platinum-armor.png",
+        "source": "Crafted from Platinum Bars",
+        "why": "Until later ranger-specific armor becomes realistic, high defense remains the safest answer.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "jungle-armor",
+        "name": "Jungle Armor",
+        "slot": "armor",
+        "icon": "armor/jungle-armor.png",
+        "source": "Crafted from Jungle Spores, Stingers, and Rich Mahogany",
+        "why": "It is a viable hybrid set if your run leans more into utility than pure ranged scaling.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
+        "why": "It solves knockback and fire-block problems in one slot, which is huge for a ranged class setting up longer fights.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "spectre-boots",
+        "name": "Spectre Boots",
+        "slot": "accessory",
+        "icon": "accessories/spectre-boots.png",
+        "source": "Combined from Hermes Boots and Rocket Boots",
+        "why": "Ranger feels dramatically better once horizontal and vertical repositioning both improve.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "magic-quiver",
+        "name": "Magic Quiver",
+        "slot": "accessory",
+        "icon": "accessories/magic-quiver.png",
+        "source": "Dropped by Skeleton Archers",
+        "why": "Bow builds spike hard with this because the arrow speed and damage bonuses are immediately noticeable.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Dropped by the Eye of Cthulhu treasure bag",
+        "why": "The dash is still strong for quick spacing corrections and emergency saves.",
+        "tags": ["expert-only"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "archery-potion",
+        "name": "Archery Potion",
+        "slot": "buff",
+        "icon": "potions/archery-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Bow-focused ranger setups should almost always have this running.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "More defense gives you room to play imperfectly while still keeping ranged uptime.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "swiftness-potion",
+        "name": "Swiftness Potion",
+        "slot": "buff",
+        "icon": "potions/swiftness-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It helps kiting, arena recovery, and general boss consistency.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-reservation-potion",
+        "name": "Ammo Reservation Potion",
+        "slot": "buff",
+        "icon": "potions/ammo-reservation-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Ammo consumption adds up quickly on the strongest guns, so this stretches your best supplies further.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-skeletron",
+    "class": "mage",
+    "weapons": [
+      {
+        "id": "space-gun",
+        "name": "Space Gun",
+        "slot": "weapon",
+        "icon": "items/space-gun.png",
+        "source": "Crafted from Meteorite Bars",
+        "why": "Meteor Armor turns this into a zero-mana workhorse, which is why the set-and-weapon combo defines the phase.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "magic-gun"
+      },
+      {
+        "id": "demon-scythe",
+        "name": "Demon Scythe",
+        "slot": "weapon",
+        "icon": "items/demon-scythe.png",
+        "source": "Dropped by Demons in the Underworld",
+        "why": "It pierces and deals huge damage when you can aim it well, making it a standout for serious boss prep.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spell-tome"
+      },
+      {
+        "id": "water-bolt",
+        "name": "Water Bolt",
+        "slot": "weapon",
+        "icon": "items/water-bolt.png",
+        "source": "Found on Dungeon bookshelves",
+        "why": "Its bounce and piercing keep it extremely efficient in arenas and enclosed spaces.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spell-tome"
+      },
+      {
+        "id": "flower-of-fire",
+        "name": "Flower of Fire",
+        "slot": "weapon",
+        "icon": "items/flower-of-fire.png",
+        "source": "Dropped in the Underworld",
+        "why": "This gives you a flexible fireball option if you want a more direct casting rhythm than Water Bolt or Demon Scythe.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "magic-gun"
+      }
+    ],
+    "armor": [
+      {
+        "id": "meteor-armor",
+        "name": "Meteor Armor",
+        "slot": "armor",
+        "icon": "armor/meteor-armor.png",
+        "source": "Crafted from Meteorite Bars",
+        "why": "This is the defining mage armor here because the Space Gun set bonus completely changes your mana economy.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "jungle-armor",
+        "name": "Jungle Armor",
+        "slot": "armor",
+        "icon": "armor/jungle-armor.png",
+        "source": "Crafted from Jungle Spores, Stingers, and Rich Mahogany",
+        "why": "It remains a strong fallback if you have not committed to the Meteor route.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "mana-flower",
+        "name": "Mana Flower",
+        "slot": "accessory",
+        "icon": "accessories/mana-flower.png",
+        "source": "Crafted from Nature's Gift and a Mana Regeneration Band",
+        "why": "Mage becomes much easier to pilot once potion use is automatic instead of one more thing to manage manually.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "magic-cuffs",
+        "name": "Magic Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/magic-cuffs.png",
+        "source": "Combined from a Mana Regeneration Band and Shackle",
+        "why": "The max mana and on-hit mana return are both excellent on longer fights.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
+        "why": "It keeps you from getting bullied by knockback while exploring lava-heavy areas and setting up later fights.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "spectre-boots",
+        "name": "Spectre Boots",
+        "slot": "accessory",
+        "icon": "accessories/spectre-boots.png",
+        "source": "Combined from Hermes Boots and Rocket Boots",
+        "why": "Mobility is still a major survivability multiplier for a fragile class.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The damage bonus is straightforward and strong, which makes it the first mage buff to value consistently.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "mana-regeneration-potion",
+        "name": "Mana Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/mana-regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "It reduces downtime and makes spell chains much easier to sustain.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Even mages need some room for mistakes, and defense is the easiest way to buy it.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "lesser-mana-potion",
+        "name": "Lesser Mana Potion",
+        "slot": "buff",
+        "icon": "potions/lesser-mana-potion.png",
+        "source": "Crafted from Fallen Stars and Bottled Water",
+        "why": "You still want a large stack ready for sustained arena or underworld attempts.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-skeletron",
+    "class": "summoner",
+    "weapons": [
+      {
+        "id": "imp-staff",
+        "name": "Imp Staff",
+        "slot": "weapon",
+        "icon": "items/imp-staff.png",
+        "source": "Crafted from Hellstone Bars",
+        "why": "This is the defining summon of the phase because it stays powerful well beyond the moment you first craft it.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions"
+      },
+      {
+        "id": "hornet-staff",
+        "name": "Hornet Staff",
+        "slot": "weapon",
+        "icon": "items/hornet-staff.png",
+        "source": "Dropped by Queen Bee",
+        "why": "It is a strong minion option if your route leans into Queen Bee before full Hellstone progression.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions"
+      },
+      {
+        "id": "snapthorn",
+        "name": "Snapthorn",
+        "slot": "weapon",
+        "icon": "items/snapthorn.png",
+        "source": "Crafted from Jungle materials",
+        "why": "The whip tag damage is still a huge multiplier, so this remains a core piece of the loadout.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip"
+      },
+      {
+        "id": "abigails-flower",
+        "name": "Abigail's Flower",
+        "slot": "weapon",
+        "icon": "items/abigails-flower.png",
+        "source": "Found growing on grass at night",
+        "why": "It is situational, but still worth knowing about because some fights and setups suit it surprisingly well.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions"
+      }
+    ],
+    "armor": [
+      {
+        "id": "obsidian-armor",
+        "name": "Obsidian Armor",
+        "slot": "armor",
+        "icon": "armor/obsidian-armor.png",
+        "source": "Crafted from Obsidian, Shadow Scales or Tissue Samples, and Silk",
+        "why": "It is the pre-Hardmode summoner benchmark because the minion and whip bonuses are both excellent.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "bee-armor",
+        "name": "Bee Armor",
+        "slot": "armor",
+        "icon": "armor/bee-armor.png",
+        "source": "Crafted from Bee Wax",
+        "why": "This is the natural alternative when your progression moves through Queen Bee first.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
+        "why": "Summoner has less margin for getting bounced around, so knockback immunity matters a lot.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "pygmy-necklace",
+        "name": "Pygmy Necklace",
+        "slot": "accessory",
+        "icon": "accessories/pygmy-necklace.png",
+        "source": "Bought from the Witch Doctor at night in the Jungle",
+        "why": "The extra minion slot is one of the highest-value accessories a summoner can equip.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "spectre-boots",
+        "name": "Spectre Boots",
+        "slot": "accessory",
+        "icon": "accessories/spectre-boots.png",
+        "source": "Combined from Hermes Boots and Rocket Boots",
+        "why": "Mobility continues to solve a lot of early summoner survivability problems.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Dropped by the Eye of Cthulhu treasure bag",
+        "why": "The dash is especially helpful for a class that often wins by staying alive while summons do the work.",
+        "tags": ["expert-only"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "summoning-potion",
+        "name": "Summoning Potion",
+        "slot": "buff",
+        "icon": "potions/summoning-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "An extra minion slot is too important to leave on the table for this class.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "bewitching-table",
+        "name": "Bewitching Table",
+        "slot": "buff",
+        "icon": "potions/bewitching-table.png",
+        "source": "Found in Dungeon chests",
+        "why": "This station buff is one of the best pre-Hardmode power spikes available to summoner.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Defense still matters because summoner is often punished hardest for every positioning mistake.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "well-fed",
+        "name": "Well Fed",
+        "slot": "buff",
+        "icon": "potions/well-fed.png",
+        "source": "Any cooked food buff",
+        "why": "It is a low-friction global buff that should be active basically all the time.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  }
+]
