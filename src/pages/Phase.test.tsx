@@ -37,7 +37,7 @@ describe('Phase page', () => {
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/pre-mech/mage']}
+        initialEntries={['/phase/pre-plantera/mage']}
       >
         <ThemeProvider>
           <Routes>
@@ -98,6 +98,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Molten Fury')).toBeInTheDocument();
     expect(screen.getByText('Necro Armor')).toBeInTheDocument();
+  });
+
+  it('renders authored content for pre-mech routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-mech/mage']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-mech · mage/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Crystal Serpent')).toBeInTheDocument();
+    expect(screen.getByText('Forbidden Armor')).toBeInTheDocument();
   });
 
   it('filters subclass-specific items when a subclass toggle is selected', async () => {

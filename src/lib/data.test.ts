@@ -29,7 +29,15 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Molten Fury');
   });
 
+  it('returns authored data for pre-mech loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-mech', 'mage');
+
+    expect(loadout?.phase).toBe('pre-mech');
+    expect(loadout?.class).toBe('mage');
+    expect(loadout?.weapons[0]?.name).toBe('Crystal Serpent');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('pre-mech', 'mage')).toBeUndefined();
+    expect(getLoadoutByPhaseAndClass('pre-plantera', 'mage')).toBeUndefined();
   });
 });

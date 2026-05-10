@@ -1,0 +1,706 @@
+[
+  {
+    "phase": "pre-mech",
+    "class": "melee",
+    "weapons": [
+      {
+        "id": "amarok",
+        "name": "Amarok",
+        "slot": "weapon",
+        "icon": "items/amarok.png",
+        "source": "Dropped by Snow biome enemies in Hardmode",
+        "why": "This is the standout pre-mech yoyo because it keeps strong pressure on mobile bosses without forcing risky positioning.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "yoyo"
+      },
+      {
+        "id": "ice-sickle",
+        "name": "Ice Sickle",
+        "slot": "weapon",
+        "icon": "items/ice-sickle.png",
+        "source": "Dropped by Ice Mimics",
+        "why": "Its ranged arc makes it one of the safest melee answers for worm segments and crowded Hardmode fights.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "projectile-sword"
+      },
+      {
+        "id": "bladetongue",
+        "name": "Bladetongue",
+        "slot": "weapon",
+        "icon": "items/bladetongue.png",
+        "source": "Dropped by Blood Zombies and Drippers during a Hardmode Blood Moon",
+        "why": "Applying Ichor is a huge damage multiplier for mech progression, so Crimson melee builds get real value from this.",
+        "tags": ["hardmode", "crimson-only"],
+        "topPick": false,
+        "subclass": "true-melee"
+      },
+      {
+        "id": "dao-of-pow",
+        "name": "Dao of Pow",
+        "slot": "weapon",
+        "icon": "items/dao-of-pow.png",
+        "source": "Crafted from Souls of Light, Souls of Night, and a Dark Shard",
+        "why": "If you want a true flail route in early Hardmode, this is the cleanest dedicated option before the mechs fall.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "flail"
+      }
+    ],
+    "armor": [
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor/titanium-armor.png",
+        "source": "Crafted from Titanium Bars",
+        "why": "This is the premium ore armor for pre-mech melee because it brings strong defense and offensive scaling together.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "adamantite-armor",
+        "name": "Adamantite Armor",
+        "slot": "armor",
+        "icon": "armor/adamantite-armor.png",
+        "source": "Crafted from Adamantite Bars",
+        "why": "Adamantite is the world-variant fallback and still gives melee everything it needs to break into mech fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "palladium-armor",
+        "name": "Palladium Armor",
+        "slot": "armor",
+        "icon": "armor/palladium-armor.png",
+        "source": "Crafted from Palladium Bars",
+        "why": "If your ore route is still mid-tier, the on-hit healing effect can smooth out early Hardmode mistakes.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "warrior-emblem",
+        "name": "Warrior Emblem",
+        "slot": "accessory",
+        "icon": "accessories/warrior-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "The raw melee damage bonus is immediate and efficient, which makes it the easiest offensive slot to justify in this phase.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "wings",
+        "name": "Early Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from early Hardmode wing routes",
+        "why": "Flight stops feeling optional once mech arenas and Hardmode enemy pressure show up.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "You still need top-tier horizontal movement because every mech fight punishes sloppy spacing.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Knockback immunity remains one of the most reliable survival upgrades you can carry into Hardmode.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Dropped by the Eye of Cthulhu treasure bag",
+        "why": "Expert players still get a lot out of the dash even after wings enter the build.",
+        "tags": ["expert-only"],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "This is still the easiest always-worth-it potion in a phase where every boss hits much harder.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Damage reduction scales beautifully once Hardmode boss patterns start punishing every mistake.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wrath-potion",
+        "name": "Wrath Potion",
+        "slot": "buff",
+        "icon": "potions/wrath-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "A flat damage increase is especially valuable when you are trying to shorten difficult mech attempts.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "lifeforce-potion",
+        "name": "Lifeforce Potion",
+        "slot": "buff",
+        "icon": "potions/lifeforce-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Extra max life gives you more room to survive burst damage while learning early Hardmode fights.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-mech",
+    "class": "ranger",
+    "weapons": [
+      {
+        "id": "daedalus-stormbow",
+        "name": "Daedalus Stormbow",
+        "slot": "weapon",
+        "icon": "items/daedalus-stormbow.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "This is the phase-defining bow because the falling-arrow pattern melts The Destroyer and stays excellent elsewhere.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "bow"
+      },
+      {
+        "id": "onyx-blaster",
+        "name": "Onyx Blaster",
+        "slot": "weapon",
+        "icon": "items/onyx-blaster.png",
+        "source": "Crafted from the Shotgun, Souls of Night, and a Dark Shard",
+        "why": "Gun-focused ranger builds get a huge burst upgrade here, especially for close to mid-range mech damage windows.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "gun"
+      },
+      {
+        "id": "dart-rifle",
+        "name": "Dart Rifle",
+        "slot": "weapon",
+        "icon": "items/dart-rifle.png",
+        "source": "Dropped by Crimson Mimics",
+        "why": "Crystal or ichor darts make this unusually strong for the phase, particularly against targets that reward piercing.",
+        "tags": ["hardmode", "crimson-only"],
+        "topPick": false,
+        "subclass": "gun"
+      },
+      {
+        "id": "clockwork-assault-rifle",
+        "name": "Clockwork Assault Rifle",
+        "slot": "weapon",
+        "icon": "items/clockwork-assault-rifle.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "It is a dependable carry-over weapon that stays relevant until your better Hardmode drops come online.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "gun"
+      }
+    ],
+    "armor": [
+      {
+        "id": "adamantite-armor",
+        "name": "Adamantite Armor",
+        "slot": "armor",
+        "icon": "armor/adamantite-armor.png",
+        "source": "Crafted from Adamantite Bars",
+        "why": "The ranged helmet and solid defense make this the most broadly recommended pre-mech ranger set.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor/titanium-armor.png",
+        "source": "Crafted from Titanium Bars",
+        "why": "Titanium is still fully viable if that is your world ore route and you value the set bonus.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "mythril-armor",
+        "name": "Mythril Armor",
+        "slot": "armor",
+        "icon": "armor/mythril-armor.png",
+        "source": "Crafted from Mythril Bars",
+        "why": "This is the midpoint option if you are not yet at top-tier Hardmode ore but need a real class set now.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "ranger-emblem",
+        "name": "Ranger Emblem",
+        "slot": "accessory",
+        "icon": "accessories/ranger-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "It is the cleanest direct damage increase available to ranger as soon as Hardmode begins.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "magic-quiver",
+        "name": "Magic Quiver",
+        "slot": "accessory",
+        "icon": "accessories/magic-quiver.png",
+        "source": "Dropped by Skeleton Archers",
+        "why": "Bow players feel the arrow speed and damage boost immediately, especially with Daedalus online.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Early Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from early Hardmode wing routes",
+        "why": "Flight is a practical requirement for staying safe while maintaining ranged uptime against the mechs.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "You still need strong horizontal movement to keep distance and reposition between volley windows.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Knockback immunity still saves runs, especially in tighter arenas or while learning the bosses.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "archery-potion",
+        "name": "Archery Potion",
+        "slot": "buff",
+        "icon": "potions/archery-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "If you are using bows, this is the most efficient class-specific buff you can bring into mech fights.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ammo-reservation-potion",
+        "name": "Ammo Reservation Potion",
+        "slot": "buff",
+        "icon": "potions/ammo-reservation-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Saving ammo matters a lot once Hardmode weapons and special arrows start getting expensive.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-box",
+        "name": "Ammo Box",
+        "slot": "buff",
+        "icon": "potions/ammo-box.png",
+        "source": "Placed station buff",
+        "why": "It stacks with potion support and is basically free value before any major ranged boss attempt.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Ranger still benefits from the universal defense bump because avoiding every hit is unrealistic.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-mech",
+    "class": "mage",
+    "weapons": [
+      {
+        "id": "crystal-serpent",
+        "name": "Crystal Serpent",
+        "slot": "weapon",
+        "icon": "items/crystal-serpent.png",
+        "source": "Caught by fishing in the Hallow",
+        "why": "This is the mage standout for the phase because the splitting projectile gives excellent boss damage without awkward setup.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "wand"
+      },
+      {
+        "id": "meteor-staff",
+        "name": "Meteor Staff",
+        "slot": "weapon",
+        "icon": "items/meteor-staff.png",
+        "source": "Crafted from Meteorite Bars, Pixie Dust, and Souls of Light",
+        "why": "The falling projectile pattern is excellent when bosses hold still long enough for repeated hits.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "wand"
+      },
+      {
+        "id": "golden-shower",
+        "name": "Golden Shower",
+        "slot": "weapon",
+        "icon": "items/golden-shower.png",
+        "source": "Crafted from Ichor, Souls of Night, and a Spell Tome at a Bookcase",
+        "why": "Even when it is not your main damage tool, the Ichor debuff is one of the strongest support effects mage can bring into this phase.",
+        "tags": ["hardmode", "crimson-only"],
+        "topPick": false,
+        "subclass": "spell-tome"
+      },
+      {
+        "id": "nimbus-rod",
+        "name": "Nimbus Rod",
+        "slot": "weapon",
+        "icon": "items/nimbus-rod.png",
+        "source": "Dropped by Angry Nimbus during rain",
+        "why": "It gives you a persistent damage zone that can keep ticking while you focus on survival and mana management.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "summon-magic"
+      }
+    ],
+    "armor": [
+      {
+        "id": "forbidden-armor",
+        "name": "Forbidden Armor",
+        "slot": "armor",
+        "icon": "armor/forbidden-armor.png",
+        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
+        "why": "This hybrid set is widely loved in early Hardmode because it gives mage strong offense while leaving room for summon support.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "adamantite-armor",
+        "name": "Adamantite Armor",
+        "slot": "armor",
+        "icon": "armor/adamantite-armor.png",
+        "source": "Crafted from Adamantite Bars",
+        "why": "If you want a straightforward magic armor route, the Adamantite headgear is still a strong conventional choice.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor/titanium-armor.png",
+        "source": "Crafted from Titanium Bars",
+        "why": "Titanium remains a valid defensive fallback when you need more survivability than a pure offense set gives.",
+        "tags": ["hardmode"],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "sorcerer-emblem",
+        "name": "Sorcerer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/sorcerer-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "The damage boost is immediate and efficient, which is exactly what mage wants from an early Hardmode accessory slot.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Mana on hit plus better star pickup smooths out one of mage's biggest pain points during long boss attempts.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "mana-flower",
+        "name": "Mana Flower",
+        "slot": "accessory",
+        "icon": "accessories/mana-flower.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Auto-potion support keeps your spell uptime higher and reduces how often you get punished while juggling resources.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Early Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from early Hardmode wing routes",
+        "why": "Mage especially benefits from cleaner flight paths because it buys room to cast while avoiding burst damage.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Knockback immunity is still extremely useful when a fragile class gets clipped during a dangerous pattern.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "This is the cleanest direct magic damage buff and the easiest class-specific consumable to justify.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "mana-regeneration-potion",
+        "name": "Mana Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/mana-regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Sustain matters a lot once your stronger Hardmode spells begin chewing through mana pools.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "crystal-ball",
+        "name": "Crystal Ball",
+        "slot": "buff",
+        "icon": "potions/crystal-ball.png",
+        "source": "Placed station buff from the Wizard",
+        "why": "It is a free pre-fight magic buff, so there is very little reason not to pick it up before boss attempts.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Mage still needs baseline defense because one mistake can turn into a very short attempt.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  },
+  {
+    "phase": "pre-mech",
+    "class": "summoner",
+    "weapons": [
+      {
+        "id": "sanguine-staff",
+        "name": "Sanguine Staff",
+        "slot": "weapon",
+        "icon": "items/sanguine-staff.png",
+        "source": "Dropped by Dreadnautilus during Blood Moon fishing",
+        "why": "This is the consensus pre-mech minion because the bats stay aggressive and reliable through difficult boss movement.",
+        "tags": ["hardmode"],
+        "topPick": true,
+        "subclass": "minions"
+      },
+      {
+        "id": "blade-staff",
+        "name": "Blade Staff",
+        "slot": "weapon",
+        "icon": "items/blade-staff.png",
+        "source": "Dropped by Queen Slime",
+        "why": "With defense reduction support, the fast-hit pattern can outperform bulkier summons on several bosses.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "minions"
+      },
+      {
+        "id": "firecracker",
+        "name": "Firecracker",
+        "slot": "weapon",
+        "icon": "items/firecracker.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "The tag explosion is build-defining in this phase and gives summon loadouts a real offensive identity.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "whip"
+      },
+      {
+        "id": "cool-whip",
+        "name": "Cool Whip",
+        "slot": "weapon",
+        "icon": "items/cool-whip.png",
+        "source": "Crafted from Souls of Light, Souls of Night, and Frost Cores",
+        "why": "It is a strong alternative whip that adds extra pressure and fits naturally into early Hardmode summon routing.",
+        "tags": ["hardmode"],
+        "topPick": false,
+        "subclass": "whip"
+      }
+    ],
+    "armor": [
+      {
+        "id": "spider-armor",
+        "name": "Spider Armor",
+        "slot": "armor",
+        "icon": "armor/spider-armor.png",
+        "source": "Crafted from Spider Fangs",
+        "why": "This is the straightforward pre-mech best-in-slot armor because the extra minions matter more than almost anything else.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "forbidden-armor",
+        "name": "Forbidden Armor",
+        "slot": "armor",
+        "icon": "armor/forbidden-armor.png",
+        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
+        "why": "If you want a hybrid route, this is the reasonable alternative that still gives summoner useful stats.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-armor",
+        "name": "Obsidian Armor",
+        "slot": "armor",
+        "icon": "armor/obsidian-armor.png",
+        "source": "Crafted from Obsidian, Silk, and Shadow Scales or Tissue Samples",
+        "why": "It is weaker once Hardmode opens, but it remains a plausible carry-over if your spider route is not ready yet.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "summoner-emblem",
+        "name": "Summoner Emblem",
+        "slot": "accessory",
+        "icon": "accessories/summoner-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "Summoner gets a clean damage spike here, which is why this is the first offensive accessory you slot in.",
+        "tags": ["hardmode"],
+        "topPick": true
+      },
+      {
+        "id": "pygmy-necklace",
+        "name": "Pygmy Necklace",
+        "slot": "accessory",
+        "icon": "accessories/pygmy-necklace.png",
+        "source": "Bought from the Witch Doctor at night",
+        "why": "An extra minion slot is one of the most efficient upgrades any summoner can buy in this phase.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "wings",
+        "name": "Early Hardmode Wings",
+        "slot": "accessory",
+        "icon": "accessories/any-wings.png",
+        "source": "Crafted or obtained from early Hardmode wing routes",
+        "why": "You still need strong aerial control because summon builds win by staying alive while minions keep working.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "feral-claws",
+        "name": "Feral Claws",
+        "slot": "accessory",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "Whip speed is a simple but meaningful quality-of-life increase for the parts of summoner gameplay you control directly.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "obsidian-shield",
+        "name": "Obsidian Shield",
+        "slot": "accessory",
+        "icon": "accessories/obsidian-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Knockback immunity keeps your whip windows and recovery movement from getting interrupted at the worst time.",
+        "tags": [],
+        "topPick": false
+      }
+    ],
+    "buffs": [
+      {
+        "id": "summoning-potion",
+        "name": "Summoning Potion",
+        "slot": "buff",
+        "icon": "potions/summoning-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "An extra minion is too good to pass up, so this is the baseline summoner buff for every serious boss attempt.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "bewitching-table",
+        "name": "Bewitching Table",
+        "slot": "buff",
+        "icon": "potions/bewitching-table.png",
+        "source": "Placed station buff from the Dungeon",
+        "why": "The free extra minion slot stacks perfectly with your potion support and should be active whenever possible.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ironskin-potion",
+        "name": "Ironskin Potion",
+        "slot": "buff",
+        "icon": "potions/ironskin-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Summoner is fragile, so the universal defense potion stays mandatory in practice.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "endurance-potion",
+        "name": "Endurance Potion",
+        "slot": "buff",
+        "icon": "potions/endurance-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Damage reduction is especially helpful for the squishiest class while you learn aggressive Hardmode fights.",
+        "tags": [],
+        "topPick": false
+      }
+    ]
+  }
+]
