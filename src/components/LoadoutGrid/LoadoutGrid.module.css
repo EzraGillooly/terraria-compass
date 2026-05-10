@@ -39,7 +39,11 @@
 }
 
 .card[data-dimmed='true'] {
-  opacity: 0.58;
+  --color-text-primary: var(--color-text-dimmed);
+  --color-text-secondary: var(--color-text-dimmed);
+  --color-text-muted: var(--color-text-dimmed);
+  border-color: var(--color-border);
+  box-shadow: none;
 }
 
 .card:hover {
