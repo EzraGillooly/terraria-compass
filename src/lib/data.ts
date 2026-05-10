@@ -2,6 +2,7 @@ import preBossesLoadoutsJson from '../data/loadouts/pre-bosses.json';
 import preCultistLoadoutsJson from '../data/loadouts/pre-cultist.json';
 import preGolemLoadoutsJson from '../data/loadouts/pre-golem.json';
 import preMechLoadoutsJson from '../data/loadouts/pre-mech.json';
+import preMoonlordLoadoutsJson from '../data/loadouts/pre-moonlord.json';
 import prePlanteraLoadoutsJson from '../data/loadouts/pre-plantera.json';
 import preSkeletronLoadoutsJson from '../data/loadouts/pre-skeletron.json';
 import preWofLoadoutsJson from '../data/loadouts/pre-wof.json';
@@ -22,6 +23,7 @@ export const loadouts = LoadoutCollection.parse([
   ...preCultistLoadoutsJson,
   ...preGolemLoadoutsJson,
   ...preMechLoadoutsJson,
+  ...preMoonlordLoadoutsJson,
   ...prePlanteraLoadoutsJson,
   ...preSkeletronLoadoutsJson,
   ...preWofLoadoutsJson,

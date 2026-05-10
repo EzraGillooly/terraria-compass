@@ -61,7 +61,15 @@ describe('data helpers', () => {
     expect(loadout?.weapons[0]?.name).toBe('Xenopopper');
   });
 
+  it('returns authored data for pre-moonlord loadouts', () => {
+    const loadout = getLoadoutByPhaseAndClass('pre-moonlord', 'mage');
+
+    expect(loadout?.phase).toBe('pre-moonlord');
+    expect(loadout?.class).toBe('mage');
+    expect(loadout?.weapons[0]?.name).toBe('Nebula Blaze');
+  });
+
   it('returns undefined for missing loadouts', () => {
-    expect(getLoadoutByPhaseAndClass('pre-moonlord', 'mage')).toBeUndefined();
+    expect(getLoadoutByPhaseAndClass('endgame', 'mage')).toBeUndefined();
   });
 });

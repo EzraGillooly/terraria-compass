@@ -37,7 +37,7 @@ describe('Phase page', () => {
           v7_relativeSplatPath: true,
           v7_startTransition: true,
         }}
-        initialEntries={['/phase/pre-moonlord/mage']}
+        initialEntries={['/phase/endgame/mage']}
       >
         <ThemeProvider>
           <Routes>
@@ -194,6 +194,30 @@ describe('Phase page', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('Xenopopper')).toBeInTheDocument();
     expect(screen.getByText('Shroomite Armor')).toBeInTheDocument();
+  });
+
+  it('renders authored content for pre-moonlord routes', () => {
+    render(
+      <MemoryRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+        initialEntries={['/phase/pre-moonlord/mage']}
+      >
+        <ThemeProvider>
+          <Routes>
+            <Route path="/phase/:phaseId/:classId" element={<Phase />} />
+          </Routes>
+        </ThemeProvider>
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByRole('heading', { name: /pre-moon lord · mage/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Nebula Blaze')).toBeInTheDocument();
+    expect(screen.getByText('Nebula Armor')).toBeInTheDocument();
   });
 
   it('filters subclass-specific items when a subclass toggle is selected', async () => {
