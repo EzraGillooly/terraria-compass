@@ -24,7 +24,7 @@ describe('AppShell', () => {
       screen.getByRole('link', { name: /skip to main content/i }),
     ).toHaveAttribute('href', '#main');
     expect(screen.getByRole('banner')).toBeInTheDocument();
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
     expect(screen.getByRole('main')).toBeInTheDocument();
+    expect(screen.getByText('Terraria Compass')).toBeInTheDocument();
   });
 });

@@ -8,7 +8,7 @@ export function Header() {
         <div className={styles.brand}>
           <span className={styles.brandMark} aria-hidden="true">✦</span>
           <span className={styles.brandText}>
-            <span className={styles.title}>Terraria Compass</span>
+            <h1 className={styles.title}>Terraria Compass</h1>
             <span className={styles.subtitle}>Class builds by progression phase</span>
           </span>
         </div>

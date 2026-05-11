@@ -67,7 +67,15 @@
 .armorCard[data-top-pick='true'] {
   border-left: 3px solid var(--color-hallowed);
 }
-.armorCard[data-dimmed='true'] { opacity: 0.45; }
+.armorCard[data-dimmed='true'] {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0 10px,
+      color-mix(in srgb, var(--color-border) 12%, transparent) 10px 12px
+    ),
+    var(--color-surface);
+}
 .armorCard:hover { background: var(--color-surface-elevated); }
 
 .armorSprite {
@@ -114,7 +122,15 @@
 .row[data-top-pick='true'] {
   border-left: 3px solid var(--color-hallowed);
 }
-.row[data-dimmed='true'] { opacity: 0.45; }
+.row[data-dimmed='true'] {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0 10px,
+      color-mix(in srgb, var(--color-border) 12%, transparent) 10px 12px
+    ),
+    var(--color-surface);
+}
 .row:hover { background: var(--color-surface-elevated); }
 
 .icon {

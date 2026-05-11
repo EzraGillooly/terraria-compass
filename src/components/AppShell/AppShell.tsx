@@ -15,9 +15,9 @@ export function AppShell({ children, topBar }: AppShellProps) {
       </a>
       <Header />
       {topBar && (
-        <div className={styles.topBar}>
+        <section aria-label="Planner preferences" className={styles.topBar}>
           {topBar}
-        </div>
+        </section>
       )}
       <main className={styles.main} id="main">
         {children}

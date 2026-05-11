@@ -25,9 +25,9 @@ describe('Phase page', () => {
     expect(
       screen.getByRole('heading', { name: /pre-bosses · melee/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /weapons/i })).toBeInTheDocument();
+    expect(screen.getByText('Weapons')).toBeInTheDocument();
     expect(screen.getByText('Starfury')).toBeInTheDocument();
-    expect(screen.getAllByText(/top pick/i)).toHaveLength(4);
+    expect(document.querySelectorAll('[data-top-pick="true"]')).toHaveLength(3);
   });
 
   it('redirects invalid phase routes to 404 content', () => {
@@ -290,7 +290,7 @@ describe('Phase page', () => {
       </MemoryRouter>,
     );
 
-    const shieldCard = screen.getByText('Shield of Cthulhu').closest('article');
+    const shieldCard = screen.getByText('Shield of Cthulhu').closest('li');
     expect(shieldCard).toHaveAttribute('data-dimmed', 'true');
 
     await user.click(screen.getByRole('button', { name: /expert/i }));

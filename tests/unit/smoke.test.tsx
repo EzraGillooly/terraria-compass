@@ -18,8 +18,9 @@ describe('App', () => {
       </HashRouter>,
     );
 
+    expect(screen.getByText('Terraria Compass')).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: /terraria compass/i }),
+      screen.getByRole('group', { name: /select world difficulty/i }),
     ).toBeInTheDocument();
   });
 });

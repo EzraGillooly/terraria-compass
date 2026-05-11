@@ -1,6 +1,7 @@
 import type { DifficultyFilter } from '../../lib/difficulty';
 import { isItemRelevantToDifficulty } from '../../lib/difficulty';
 import type { Item, Loadout } from '../../data/schema';
+import type { SyntheticEvent } from 'react';
 import styles from './LoadoutGrid.module.css';
 
 interface LoadoutGridProps {
@@ -16,21 +17,100 @@ const fallbackIcon =
 const fallbackArmorIcon =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Crect width='72' height='72' fill='%234A6830'/%3E%3Ctext x='36' y='48' text-anchor='middle' font-size='36' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-/** Build a wiki URL from an icon filename, e.g. "items/Zenith.png" → wiki path */
+// Must mirror the WIKI_NAMES map in scripts/fetch-icons.mjs
+const WIKI_NAMES: Record<string, string> = {
+  "nights-edge":             "Night's_Edge",
+  "abigails-flower":         "Abigail's_Flower",
+  "horsemans-blade":         "Horseman's_Blade",
+  "paladins-hammer":         "Paladin's_Hammer",
+  "natures-gift":            "Nature's_Gift",
+  "dao-of-pow":              "Dao_of_Pow",
+  "shield-of-cthulhu":       "Shield_of_Cthulhu",
+  "cloud-in-a-bottle":       "Cloud_in_a_Bottle",
+  "flower-of-fire":          "Flower_of_Fire",
+  "band-of-regeneration":    "Band_of_Regeneration",
+  "blade-of-grass":          "Blade_of_Grass",
+  "code-1":                  "Code_1",
+  "sdmg":                    "S.D.M.G",
+  "uzi":                     "Uzi",
+  "star-cannon":             "Star_Cannon",
+  "celebration-mk2":         "Celebration_Mk2",
+  "platinum-armor":          "Platinum_armor",
+  "gold-armor":              "Gold_armor",
+  "shadow-armor":            "Shadow_armor",
+  "crimson-armor":           "Crimson_armor",
+  "jungle-armor":            "Jungle_armor",
+  "ancient-cobalt-armor":    "Ancient_Cobalt_armor",
+  "flinx-fur-coat":          "Flinx_Fur_Coat",
+  "meteor-armor":            "Meteor_armor",
+  "obsidian-armor":          "Obsidian_armor",
+  "bee-armor":               "Bee_armor",
+  "molten-armor":            "Molten_armor",
+  "adamantite-armor":        "Adamantite_armor",
+  "mythril-armor":           "Mythril_armor",
+  "palladium-armor":         "Palladium_armor",
+  "titanium-armor":          "Titanium_armor",
+  "hallowed-armor":          "Hallowed_armor",
+  "chlorophyte-armor":       "Chlorophyte_armor",
+  "turtle-armor":            "Turtle_armor",
+  "beetle-armor":            "Beetle_armor",
+  "necro-armor":             "Necro_armor",
+  "forbidden-armor":         "Forbidden_armor",
+  "spider-armor":            "Spider_armor",
+  "tiki-armor":              "Tiki_armor",
+  "spooky-armor":            "Spooky_armor",
+  "shroomite-armor":         "Shroomite_armor",
+  "spectre-armor":           "Spectre_armor",
+  "solar-flare-armor":       "Solar_Flare_armor",
+  "vortex-armor":            "Vortex_armor",
+  "nebula-armor":            "Nebula_armor",
+  "stardust-armor":          "Stardust_armor",
+  "bewitching-table":        "Bewitching_Table",
+  "crystal-ball":            "Crystal_Ball",
+  "ammo-box":                "Ammo_Box",
+  "sharpening-station":      "Sharpening_Station",
+  "crystal-bullets":         "Crystal_Bullet",
+  "flask-of-ichor":          "Flask_of_Ichor",
+  "golden-delight":          "Golden_Delight",
+  "mana-regeneration-potion":"Mana_Regeneration_Potion",
+  "lesser-mana-potion":      "Lesser_Mana_Potion",
+  "ammo-reservation-potion": "Ammo_Reservation_Potion",
+  "lifeforce-potion":        "Lifeforce_Potion",
+  "endurance-potion":        "Endurance_Potion",
+  "magic-power-potion":      "Magic_Power_Potion",
+  "rage-potion":             "Rage_Potion",
+  "wrath-potion":            "Wrath_Potion",
+  "well-fed":                "Well_Fed",
+};
+
+function toWikiName(stem: string): string {
+  if (WIKI_NAMES[stem]) return WIKI_NAMES[stem];
+  return stem.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
+}
+
+/** Build a wiki URL from an icon path, e.g. "items/starfury.png" to wiki URL. */
 function wikiUrl(iconPath: string): string {
-  // Strip any leading directory and use just the filename
   const filename = iconPath.split('/').pop() ?? iconPath;
-  return `${WIKI_BASE}/${filename}`;
+  const stem = filename.replace(/\.png$/i, '');
+  return `${WIKI_BASE}/${toWikiName(stem)}.png`;
 }
 
 function makeErrorHandler(wikiSrc: string, finalFallback: string) {
-  return (e: React.SyntheticEvent<HTMLImageElement>) => {
+  return (e: SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
-    if (img.src !== wikiSrc && !img.src.startsWith('data:')) {
-      img.src = wikiSrc;
-    } else {
-      img.src = finalFallback;
+
+    if (img.dataset.iconFallbackStage === 'placeholder') {
+      return;
     }
+
+    if (img.dataset.iconFallbackStage !== 'wiki') {
+      img.dataset.iconFallbackStage = 'wiki';
+      img.src = wikiSrc;
+      return;
+    }
+
+    img.dataset.iconFallbackStage = 'placeholder';
+    img.src = finalFallback;
   };
 }
 

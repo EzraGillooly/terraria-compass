@@ -43,9 +43,11 @@ test('reduced-motion: phase change completes without CSS animation', async ({
   await page.goto('/#/phase/pre-bosses/melee');
   await page.waitForLoadState('networkidle');
 
-  await page.getByRole('link', { name: /ranger/i }).click();
+  await page.getByRole('button', { name: /^Ranger/ }).click();
 
-  await expect(page).toHaveURL(/#\/phase\/pre-bosses\/ranger$/);
+  await expect(
+    page.getByRole('button', { name: /^Ranger/ }),
+  ).toHaveAttribute('aria-pressed', 'true');
 
   const longestAnimationMs = await page.evaluate(() => {
     const values = [...document.querySelectorAll<HTMLElement>('*')]

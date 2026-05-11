@@ -19,6 +19,8 @@
   position: sticky;
   top: var(--header-height, 60px);
   z-index: 9;
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
 }
 
 .main {

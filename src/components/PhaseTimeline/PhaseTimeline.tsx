@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { SyntheticEvent } from 'react';
 import type { PhaseDef, PhaseId } from '../../data/schema';
 import styles from './PhaseTimeline.module.css';
 
@@ -16,18 +17,21 @@ const ERA_GROUPS: Array<{ label: string; ids: PhaseId[] }> = [
 ];
 
 const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
+const BASE = import.meta.env.BASE_URL;
+const fallbackBossIcon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%234A6830'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-/** Boss sprite that represents "you are working toward this checkpoint" */
-const BOSS_ICONS: Record<PhaseId, string> = {
-  'pre-bosses':   `${WIKI}/King_Slime.png`,
-  'pre-skeletron':`${WIKI}/Eye_of_Cthulhu_Head_Boss.png`,
-  'pre-wof':      `${WIKI}/Skeletron_Head_Boss.png`,
-  'pre-mech':     `${WIKI}/Wall_of_Flesh.png`,
-  'pre-plantera': `${WIKI}/Skeletron_Prime_Head_Boss.png`,
-  'pre-golem':    `${WIKI}/Plantera.png`,
-  'pre-cultist':  `${WIKI}/Golem.png`,
-  'pre-moonlord': `${WIKI}/Lunatic_Cultist.png`,
-  'endgame':      `${WIKI}/Moon_Lord_Head_Boss.png`,
+/** Maps each phase to local and wiki boss head/portrait icons. */
+const BOSS_ICONS: Record<PhaseId, [string, string]> = {
+  'pre-bosses':   [`${BASE}icons/bosses/king-slime.png`,       `${WIKI}/King_Slime_Head_Boss.png`],
+  'pre-skeletron':[`${BASE}icons/bosses/eye-of-cthulhu.png`,   `${WIKI}/Eye_of_Cthulhu_Head_Boss.png`],
+  'pre-wof':      [`${BASE}icons/bosses/skeletron.png`,         `${WIKI}/Skeletron_Head_Boss.png`],
+  'pre-mech':     [`${BASE}icons/bosses/wall-of-flesh.png`,     `${WIKI}/Wall_of_Flesh_Head_Boss.png`],
+  'pre-plantera': [`${BASE}icons/bosses/skeletron-prime.png`,   `${WIKI}/Skeletron_Prime_Head_Boss.png`],
+  'pre-golem':    [`${BASE}icons/bosses/plantera.png`,          `${WIKI}/Plantera_Head_Boss.png`],
+  'pre-cultist':  [`${BASE}icons/bosses/golem.png`,             `${WIKI}/Golem_Head_Boss.png`],
+  'pre-moonlord': [`${BASE}icons/bosses/lunatic-cultist.png`,   `${WIKI}/Lunatic_Cultist_Head_Boss.png`],
+  'endgame':      [`${BASE}icons/bosses/moon-lord.png`,         `${WIKI}/Moon_Lord_Head_Boss.png`],
 };
 
 interface PhaseNodeProps {
@@ -38,9 +42,26 @@ interface PhaseNodeProps {
 }
 
 function PhaseNode({ phaseDef, activePhaseId, activeOrder, onSelect }: PhaseNodeProps) {
-  const isActive = phaseDef.id === activePhaseId;
-  const isPast   = phaseDef.order < activeOrder;
-  const iconSrc  = BOSS_ICONS[phaseDef.id as PhaseId];
+  const isActive              = phaseDef.id === activePhaseId;
+  const isPast                = phaseDef.order < activeOrder;
+  const [localSrc, wikiFallback] = BOSS_ICONS[phaseDef.id as PhaseId];
+
+  const handleError = (e: SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+
+    if (img.dataset.iconFallbackStage === 'placeholder') {
+      return;
+    }
+
+    if (img.dataset.iconFallbackStage !== 'wiki') {
+      img.dataset.iconFallbackStage = 'wiki';
+      img.src = wikiFallback;
+      return;
+    }
+
+    img.dataset.iconFallbackStage = 'placeholder';
+    img.src = fallbackBossIcon;
+  };
 
   return (
     <button
@@ -53,7 +74,7 @@ function PhaseNode({ phaseDef, activePhaseId, activeOrder, onSelect }: PhaseNode
       onClick={() => onSelect(phaseDef.id as PhaseId)}
     >
       <img
-        src={iconSrc}
+        src={localSrc}
         alt=""
         aria-hidden="true"
         className={`${styles.nodeIcon} pixel-img`}
@@ -61,6 +82,7 @@ function PhaseNode({ phaseDef, activePhaseId, activeOrder, onSelect }: PhaseNode
         height="36"
         loading="lazy"
         decoding="async"
+        onError={handleError}
       />
       {/* Tooltip on hover */}
       <span className={styles.tooltip} role="tooltip">

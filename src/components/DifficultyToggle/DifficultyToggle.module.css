@@ -1,23 +1,24 @@
-/* Full-width sticky bar — sits directly below the sticky header */
 .banner {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0;
-  border-bottom: 2px solid var(--color-border-strong);
+  align-self: flex-start;
+  width: max-content;
+  max-width: 100%;
+  margin-block: 0 var(--space-4);
+  border: 2px solid var(--color-border-strong);
+  border-top: 0;
+  border-radius: 0 0 var(--space-2) var(--space-2);
   background: var(--color-surface-elevated);
   overflow: hidden;
 }
 
-/* Inner centering wrapper — matches main content width */
 .bannerInner {
-  width: min(1200px, calc(100% - 32px));
-  margin: 0 auto;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0;
 }
 
-/* "World Difficulty" label — visually distinct from the toggle buttons */
 .bannerLabel {
   padding: 6px var(--space-4) 6px var(--space-2);
   font-family: var(--font-display);
@@ -63,4 +64,27 @@
 .option:focus-visible {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: -2px;
+}
+
+@media (max-width: 520px) {
+  .banner {
+    max-width: calc(100vw - 32px);
+  }
+
+  .bannerInner {
+    max-width: 100%;
+  }
+
+  .bannerLabel {
+    flex: 1 0 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .option {
+    flex: 1 1 auto;
+    padding-inline: var(--space-2);
+  }
 }

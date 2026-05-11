@@ -9,7 +9,7 @@ describe('ThemeToggle', () => {
     document.documentElement.removeAttribute('data-theme');
   });
 
-  it('toggles the theme and updates the aria-label', async () => {
+  it('selects a theme mode', async () => {
     const user = userEvent.setup();
 
     render(
@@ -19,7 +19,7 @@ describe('ThemeToggle', () => {
     );
 
     const button = screen.getByRole('button', {
-      name: 'Switch to dark theme',
+      name: 'Dark theme',
     });
 
     expect(button).toHaveAttribute('aria-pressed', 'false');
@@ -27,7 +27,7 @@ describe('ThemeToggle', () => {
     await user.click(button);
 
     expect(
-      screen.getByRole('button', { name: 'Switch to light theme' }),
+      screen.getByRole('button', { name: 'Dark theme' }),
     ).toHaveAttribute('aria-pressed', 'true');
   });
 });
