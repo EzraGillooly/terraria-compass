@@ -9,11 +9,16 @@
   background: var(--color-surface);
   color: var(--color-text-primary);
   text-decoration: none;
-  box-shadow: var(--shadow-card);
 }
 
 .skipLink:focus {
   top: var(--space-4);
+}
+
+.topBar {
+  position: sticky;
+  top: var(--header-height, 60px);
+  z-index: 9;
 }
 
 .main {

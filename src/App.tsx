@@ -39,9 +39,7 @@ export default function App() {
   };
 
   return (
-    <AppShell>
-      <DifficultyToggle difficulty={difficulty} onChange={setDifficulty} />
-
+    <AppShell topBar={<DifficultyToggle difficulty={difficulty} onChange={setDifficulty} />}>
       <PhaseTimeline
         activePhaseId={phaseId}
         onSelect={setPhaseId}

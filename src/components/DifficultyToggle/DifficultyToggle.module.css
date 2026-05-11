@@ -1,31 +1,37 @@
-/* Fixed floating banner — top-right, always visible */
+/* Full-width sticky bar — sits directly below the sticky header */
 .banner {
-  position: fixed;
-  top: 70px;
-  right: var(--space-4);
-  z-index: 50;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0;
-  border: 2px solid var(--color-border-strong);
-  border-radius: var(--radius-md);
+  border-bottom: 2px solid var(--color-border-strong);
   background: var(--color-surface-elevated);
-  box-shadow: var(--shadow-card), var(--shadow-inset);
   overflow: hidden;
 }
 
+/* Inner centering wrapper — matches main content width */
+.bannerInner {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* "World Difficulty" label — visually distinct from the toggle buttons */
 .bannerLabel {
-  padding: 4px var(--space-3);
+  padding: 6px var(--space-4) 6px var(--space-2);
   font-family: var(--font-display);
   font-size: var(--font-xs);
-  color: var(--color-text-muted);
-  border-right: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-weight: 700;
   white-space: nowrap;
   pointer-events: none;
+  border-right: 2px solid var(--color-border-strong);
+  margin-right: var(--space-2);
 }
 
 .option {
-  padding: 4px var(--space-3);
+  padding: 6px var(--space-4);
   border: none;
   border-left: 1px solid var(--color-border);
   background: transparent;
@@ -37,6 +43,10 @@
   transition:
     background-color 150ms ease-out,
     color 150ms ease-out;
+}
+
+.option:first-of-type {
+  border-left: none;
 }
 
 .option[data-active='true'] {

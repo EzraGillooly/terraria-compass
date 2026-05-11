@@ -22,20 +22,17 @@
   color: var(--color-text-secondary);
   cursor: pointer;
   text-align: center;
-  box-shadow: var(--shadow-card), var(--shadow-inset);
   transition:
     background-color 160ms ease-out,
     border-color 160ms ease-out,
     color 160ms ease-out,
     transform 160ms ease-out,
-    box-shadow 160ms ease-out;
 }
 
 .card[data-active='true'] {
   border-color: var(--color-accent);
   background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
   color: var(--color-text-primary);
-  box-shadow: 0 0 10px 2px color-mix(in srgb, var(--color-accent) 35%, transparent), var(--shadow-card);
 }
 
 .card:hover:not([data-active='true']) {
@@ -48,11 +45,6 @@
 .card:focus-visible {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
-}
-
-.glyph {
-  font-size: 1.6rem;
-  line-height: 1;
 }
 
 .name {

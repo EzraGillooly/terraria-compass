@@ -15,7 +15,6 @@
       color-mix(in srgb, var(--color-surface) 92%, var(--color-accent-soft)),
       var(--color-surface)
     );
-  box-shadow: var(--shadow-card);
 }
 
 .kicker {
@@ -48,7 +47,6 @@
   background: var(--color-surface);
   color: var(--color-text-primary);
   text-decoration: none;
-  box-shadow: var(--shadow-card);
   transition:
     transform 160ms ease-out,
     border-color 160ms ease-out;

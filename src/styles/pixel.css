@@ -1,49 +1,5 @@
-/* Pixel-rendered game sprites */
+/* Pixel-rendered game sprites — always crisp */
 .pixel-img {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-}
-
-/* Hard pixel border — Terraria UI panel look */
-.pixel-border {
-  border: 2px solid var(--color-border-strong);
-  box-shadow: var(--shadow-card), var(--shadow-inset);
-  border-radius: var(--radius-md);
-}
-
-/* Pixel button look — raised 3D effect */
-.pixel-btn {
-  border: 2px solid var(--color-border-strong);
-  box-shadow:
-    inset 1px 1px 0 rgba(255,255,255,0.25),
-    inset -1px -1px 0 rgba(0,0,0,0.35),
-    2px 2px 0 rgba(0,0,0,0.5);
-  border-radius: var(--radius-sm);
-}
-
-/* Subtle scanline overlay — applied to the root */
-html::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 3px,
-    rgba(0, 0, 0, 0.04) 3px,
-    rgba(0, 0, 0, 0.04) 4px
-  );
-  pointer-events: none;
-  z-index: 9999;
-}
-
-[data-theme='dark'] html::before,
-html[data-theme='dark']::before {
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 3px,
-    rgba(0, 0, 0, 0.10) 3px,
-    rgba(0, 0, 0, 0.10) 4px
-  );
 }

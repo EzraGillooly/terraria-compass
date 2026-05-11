@@ -14,20 +14,22 @@ interface DifficultyToggleProps {
 
 export function DifficultyToggle({ difficulty, onChange }: DifficultyToggleProps) {
   return (
-    <div className={styles.banner} role="group" aria-label="Select difficulty">
-      <span className={styles.bannerLabel}>Difficulty</span>
-      {OPTIONS.map(({ value, label }) => (
-        <button
-          key={value}
-          type="button"
-          className={styles.option}
-          data-active={String(difficulty === value)}
-          aria-pressed={difficulty === value}
-          onClick={() => onChange(value)}
-        >
-          {label}
-        </button>
-      ))}
+    <div className={styles.banner}>
+      <div className={styles.bannerInner} role="group" aria-label="Select world difficulty">
+        <span className={styles.bannerLabel}>World Difficulty</span>
+        {OPTIONS.map(({ value, label }) => (
+          <button
+            key={value}
+            type="button"
+            className={styles.option}
+            data-active={String(difficulty === value)}
+            aria-pressed={difficulty === value}
+            onClick={() => onChange(value)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

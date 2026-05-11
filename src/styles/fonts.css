@@ -1,0 +1,35 @@
+/* ── IBM Plex Mono — secondary font, must come before @font-face ── */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
+/* ── Dogica — primary pixel font throughout the app ── */
+@font-face {
+  font-family: 'Dogica';
+  src: url('/terraria-compass/fonts/dogica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dogica';
+  src: url('/terraria-compass/fonts/dogicabold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dogica Pixel';
+  src: url('/terraria-compass/fonts/dogicapixel.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dogica Pixel';
+  src: url('/terraria-compass/fonts/dogicapixelbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

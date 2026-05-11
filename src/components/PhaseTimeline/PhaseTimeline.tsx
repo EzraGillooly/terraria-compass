@@ -15,16 +15,19 @@ const ERA_GROUPS: Array<{ label: string; ids: PhaseId[] }> = [
   { label: 'Endgame',      ids: ['pre-cultist', 'pre-moonlord', 'endgame'] },
 ];
 
-const NODE_LABELS: Record<PhaseId, string> = {
-  'pre-bosses':   'Pre\nBoss',
-  'pre-skeletron':'Skel-\ntron',
-  'pre-wof':      'WoF',
-  'pre-mech':     'Mech',
-  'pre-plantera': 'Plan-\ntera',
-  'pre-golem':    'Golem',
-  'pre-cultist':  'Cult-\nist',
-  'pre-moonlord': 'Moon\nLord',
-  'endgame':      'End\nGame',
+const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
+
+/** Boss sprite that represents "you are working toward this checkpoint" */
+const BOSS_ICONS: Record<PhaseId, string> = {
+  'pre-bosses':   `${WIKI}/King_Slime.png`,
+  'pre-skeletron':`${WIKI}/Eye_of_Cthulhu_Head_Boss.png`,
+  'pre-wof':      `${WIKI}/Skeletron_Head_Boss.png`,
+  'pre-mech':     `${WIKI}/Wall_of_Flesh.png`,
+  'pre-plantera': `${WIKI}/Skeletron_Prime_Head_Boss.png`,
+  'pre-golem':    `${WIKI}/Plantera.png`,
+  'pre-cultist':  `${WIKI}/Golem.png`,
+  'pre-moonlord': `${WIKI}/Lunatic_Cultist.png`,
+  'endgame':      `${WIKI}/Moon_Lord_Head_Boss.png`,
 };
 
 interface PhaseNodeProps {
@@ -37,7 +40,7 @@ interface PhaseNodeProps {
 function PhaseNode({ phaseDef, activePhaseId, activeOrder, onSelect }: PhaseNodeProps) {
   const isActive = phaseDef.id === activePhaseId;
   const isPast   = phaseDef.order < activeOrder;
-  const label    = NODE_LABELS[phaseDef.id as PhaseId] ?? phaseDef.name;
+  const iconSrc  = BOSS_ICONS[phaseDef.id as PhaseId];
 
   return (
     <button
@@ -47,14 +50,18 @@ function PhaseNode({ phaseDef, activePhaseId, activeOrder, onSelect }: PhaseNode
       data-past={String(isPast)}
       aria-label={phaseDef.name}
       aria-pressed={isActive}
-      title={phaseDef.name}
       onClick={() => onSelect(phaseDef.id as PhaseId)}
     >
-      <span className={styles.nodeLabel} aria-hidden="true">
-        {label.split('\n').map((line, i) => (
-          <span key={i}>{line}</span>
-        ))}
-      </span>
+      <img
+        src={iconSrc}
+        alt=""
+        aria-hidden="true"
+        className={`${styles.nodeIcon} pixel-img`}
+        width="36"
+        height="36"
+        loading="lazy"
+        decoding="async"
+      />
       {/* Tooltip on hover */}
       <span className={styles.tooltip} role="tooltip">
         {phaseDef.name}

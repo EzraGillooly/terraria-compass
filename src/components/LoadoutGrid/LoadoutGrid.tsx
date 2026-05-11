@@ -9,14 +9,36 @@ interface LoadoutGridProps {
   selectedSubclassSet: Set<string>;
 }
 
+const WIKI_BASE = 'https://terraria.wiki.gg/wiki/Special:FilePath';
+
 const fallbackIcon =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%234A6830'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 const fallbackArmorIcon =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Crect width='72' height='72' fill='%234A6830'/%3E%3Ctext x='36' y='48' text-anchor='middle' font-size='36' fill='%23C8D4A4' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
+/** Build a wiki URL from an icon filename, e.g. "items/Zenith.png" → wiki path */
+function wikiUrl(iconPath: string): string {
+  // Strip any leading directory and use just the filename
+  const filename = iconPath.split('/').pop() ?? iconPath;
+  return `${WIKI_BASE}/${filename}`;
+}
+
+function makeErrorHandler(wikiSrc: string, finalFallback: string) {
+  return (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    if (img.src !== wikiSrc && !img.src.startsWith('data:')) {
+      img.src = wikiSrc;
+    } else {
+      img.src = finalFallback;
+    }
+  };
+}
+
 /* ── Shared compact item row ── */
 function ItemRow({ item, difficulty }: { item: Item; difficulty: DifficultyFilter }) {
   const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
+  const localSrc = `${import.meta.env.BASE_URL}icons/${item.icon}`;
+  const wiki     = wikiUrl(item.icon);
   return (
     <li
       className={styles.row}
@@ -29,8 +51,8 @@ function ItemRow({ item, difficulty }: { item: Item; difficulty: DifficultyFilte
         decoding="async"
         height="36"
         loading="lazy"
-        onError={(e) => { e.currentTarget.src = fallbackIcon; }}
-        src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+        onError={makeErrorHandler(wiki, fallbackIcon)}
+        src={localSrc}
         width="36"
       />
       <div className={styles.rowBody}>
@@ -39,10 +61,8 @@ function ItemRow({ item, difficulty }: { item: Item; difficulty: DifficultyFilte
           {item.topPick && <span className={styles.badge}>★</span>}
           {item.subclass && <span className={styles.subTag}>{item.subclass}</span>}
         </div>
-        <details className={styles.details}>
-          <summary className={styles.summary}>{item.source}</summary>
-          <div className={styles.detailBody}>{item.why}</div>
-        </details>
+        {item.source && <div className={styles.source}>{item.source}</div>}
+        {item.why && <div className={styles.detailBody}>{item.why}</div>}
       </div>
     </li>
   );
@@ -57,7 +77,9 @@ function ArmorColumn({ items, difficulty }: { items: Item[]; difficulty: Difficu
       </div>
       <ul className={styles.armorList}>
         {items.map((item) => {
-          const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
+          const relevant  = isItemRelevantToDifficulty(item.tags, difficulty);
+          const localSrc  = `${import.meta.env.BASE_URL}icons/${item.icon}`;
+          const wiki      = wikiUrl(item.icon);
           return (
             <li
               key={item.id}
@@ -71,8 +93,8 @@ function ArmorColumn({ items, difficulty }: { items: Item[]; difficulty: Difficu
                 decoding="async"
                 height="72"
                 loading="lazy"
-                onError={(e) => { e.currentTarget.src = fallbackArmorIcon; }}
-                src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+                onError={makeErrorHandler(wiki, fallbackArmorIcon)}
+                src={localSrc}
                 width="72"
               />
               <div className={styles.armorInfo}>
@@ -80,11 +102,8 @@ function ArmorColumn({ items, difficulty }: { items: Item[]; difficulty: Difficu
                   {item.name}
                   {item.topPick && <span className={styles.badge}>★ Top</span>}
                 </div>
-                <div className={styles.source}>{item.source}</div>
-                <details className={styles.details}>
-                  <summary className={styles.summary}>Why</summary>
-                  <div className={styles.detailBody}>{item.why}</div>
-                </details>
+                {item.source && <div className={styles.source}>{item.source}</div>}
+                {item.why && <div className={styles.detailBody}>{item.why}</div>}
               </div>
             </li>
           );
@@ -176,6 +195,8 @@ function BuffsSection({ items, difficulty }: { items: Item[]; difficulty: Diffic
       <ul className={styles.buffsList}>
         {items.map((item) => {
           const relevant = isItemRelevantToDifficulty(item.tags, difficulty);
+          const localSrc = `${import.meta.env.BASE_URL}icons/${item.icon}`;
+          const wiki     = wikiUrl(item.icon);
           return (
             <li key={item.id} className={styles.buffRow} data-dimmed={String(!relevant)}>
               <img
@@ -184,8 +205,8 @@ function BuffsSection({ items, difficulty }: { items: Item[]; difficulty: Diffic
                 decoding="async"
                 height="28"
                 loading="lazy"
-                onError={(e) => { e.currentTarget.src = fallbackIcon; }}
-                src={`${import.meta.env.BASE_URL}icons/${item.icon}`}
+                onError={makeErrorHandler(wiki, fallbackIcon)}
+                src={localSrc}
                 width="28"
               />
               <span className={styles.buffName}>{item.name}</span>
