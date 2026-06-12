@@ -3,7 +3,9 @@
   min-height: 100vh;
 }
 
-/* ── Hero ── */
+/* ════════════════════════════════════════════════
+   HERO — layered pixel day / night scene
+═══════════════════════════════════════════════════ */
 .hero {
   position: relative;
   width: 100%;
@@ -15,42 +17,174 @@
   isolation: isolate;
 }
 
-.heroPhoto {
+/* Sky gradient — daytime by default */
+.sky {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg,#2B4A1F 0%,#1A3A2A 20%,#0F2030 50%,#1A1A3A 80%,#0A0A1A 100%);
-  background-size: cover;
-  background-position: center;
   z-index: 0;
-  transform: scale(1.04);
+  background:
+    linear-gradient(to bottom,
+      #6FB7E8 0%,
+      #87C5EC 32%,
+      #BCE0F0 60%,
+      #E9F2DE 100%);
+  transition: background .6s ease;
+}
+.page[data-night='true'] .sky {
+  background:
+    linear-gradient(to bottom,
+      #0B1030 0%,
+      #161B45 38%,
+      #2A2154 68%,
+      #3A2A52 100%);
+}
+
+/* Starfields — only visible at night */
+.starsFar,
+.starsNear {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.page[data-night='true'] .starsFar { opacity: .9; }
+.page[data-night='true'] .starsNear { opacity: 1; }
+
+.starsFar::before,
+.starsNear::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 2px; height: 2px;
+  border-radius: 0;       /* pixel squares */
+}
+.starsFar::before {
+  box-shadow: 1309px 187px 0 0 #fff, 1260px 497px 0 0 #fff, 874px 755px 0 0 #9fb8ff, 69px 779px 0 0 #fff, 336px 168px 0 0 #fff, 1180px 671px 0 0 #9fb8ff, 335px 16px 0 0 #9fb8ff, 1265px 481px 0 0 #9fb8ff, 52px 617px 0 0 #9fb8ff, 598px 818px 0 0 #fff, 1577px 652px 0 0 #fff, 813px 781px 0 0 #fff, 383px 621px 0 0 #9fb8ff, 1010px 218px 0 0 #cfe0ff, 618px 379px 0 0 #cfe0ff, 1199px 544px 0 0 #cfe0ff, 210px 439px 0 0 #cfe0ff, 321px 829px 0 0 #9fb8ff, 1214px 247px 0 0 #9fb8ff, 1278px 462px 0 0 #cfe0ff, 1439px 58px 0 0 #9fb8ff, 1153px 121px 0 0 #cfe0ff, 580px 5px 0 0 #fff, 699px 476px 0 0 #fff, 373px 25px 0 0 #cfe0ff, 715px 424px 0 0 #9fb8ff, 1406px 591px 0 0 #cfe0ff, 730px 310px 0 0 #fff, 838px 32px 0 0 #cfe0ff, 1461px 558px 0 0 #cfe0ff, 307px 330px 0 0 #cfe0ff, 860px 353px 0 0 #fff, 1112px 192px 0 0 #9fb8ff, 266px 892px 0 0 #9fb8ff, 1388px 589px 0 0 #cfe0ff, 828px 739px 0 0 #9fb8ff, 1312px 859px 0 0 #cfe0ff, 408px 64px 0 0 #9fb8ff, 974px 772px 0 0 #9fb8ff, 1434px 56px 0 0 #fff;
+  animation: twinkle 5s steps(2) infinite;
+}
+.starsNear::before {
+  width: 3px; height: 3px;
+  box-shadow: 1435px 236px 0 0 #fff, 320px 833px 0 0 #bcd4ff, 164px 638px 0 0 #bcd4ff, 925px 163px 0 0 #bcd4ff, 160px 289px 0 0 #fff, 858px 419px 0 0 #ffe9b0, 1233px 320px 0 0 #fff, 568px 617px 0 0 #ffe9b0, 330px 58px 0 0 #ffe9b0, 587px 852px 0 0 #fff, 1080px 200px 0 0 #fff, 113px 275px 0 0 #fff, 1329px 766px 0 0 #fff, 846px 651px 0 0 #ffe9b0, 867px 529px 0 0 #bcd4ff, 1392px 90px 0 0 #fff, 661px 710px 0 0 #fff, 603px 396px 0 0 #bcd4ff, 1219px 235px 0 0 #fff, 1131px 390px 0 0 #bcd4ff, 122px 2px 0 0 #fff, 450px 860px 0 0 #bcd4ff;
+  animation: twinkle 3.2s steps(2) infinite reverse;
+}
+@keyframes twinkle { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* Sun (day) / Moon (night) — a chunky pixel disc */
+.celestial {
+  position: absolute;
+  z-index: 2;
+  top: 12%;
+  right: 12%;
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  image-rendering: pixelated;
+  /* Day: warm sun with a soft halo */
+  background:
+    radial-gradient(circle at 50% 50%, #FFE08A 0 38%, #FFC94A 38% 50%, transparent 52%);
+  filter: drop-shadow(0 0 26px rgba(255, 210, 110, .7));
+  transition: filter .6s ease, background .6s ease, transform .6s ease;
+}
+.page[data-night='true'] .celestial {
+  /* Night: clean pixel crescent — a disc with an offset disc masked out */
+  background: radial-gradient(circle at 50% 50%, #EEF1FF 0 47%, transparent 49%);
+  -webkit-mask: radial-gradient(circle at 66% 36%, transparent 0 40%, #000 42%);
+          mask: radial-gradient(circle at 66% 36%, transparent 0 40%, #000 42%);
+  filter: drop-shadow(0 0 20px rgba(190, 200, 255, .5));
+  transform: scale(.82);
+}
+
+/* Hero scene image — drops in over the gradient when --hero-img is set.
+   To use a real Terraria background: place a wide PNG at
+   public/hero/forest-day.png (and forest-night.png) and set
+   --hero-img on .hero (see commented rules below). */
+.horizon {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 96px;
+  z-index: 3;
+  pointer-events: none;
+  background: #16361F;
+  border-top: 3px solid #2F6B3F;   /* grass line */
+  transition: background .6s ease, border-color .6s ease;
+}
+.page[data-night='true'] .horizon { background: #0A1A12; border-top-color: #1B3A28; }
+
+/* When a real hero image is provided, it covers the whole sky.
+.hero[style*='--hero-img'] .horizon { display: none; }
+*/
+
+/* Real Terraria scene art — crossfades with the toggle, sits above the
+   CSS-sky fallback. If the PNG is missing the layer is simply transparent
+   and the animated sky/stars show through. */
+.sceneDay,
+.sceneNight {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transition: opacity .6s ease;
+}
+.sceneDay { opacity: 1; }
+.sceneNight { opacity: 0; }
+.page[data-night='true'] .sceneDay { opacity: 0; }
+.page[data-night='true'] .sceneNight { opacity: 1; }
+
+/* Subtle pixel dither/grid overlay for texture */
+.dither {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  opacity: .35;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 4px 4px;
+  mix-blend-mode: overlay;
 }
 
 .heroWash {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 5;
   pointer-events: none;
-  background: linear-gradient(to bottom,rgba(0,0,0,.18) 0%,rgba(0,0,0,.08) 30%,rgba(0,0,0,.55) 75%,rgba(0,0,0,.75) 100%);
+  background: linear-gradient(to bottom,
+    rgba(8,10,30,0) 35%,
+    rgba(8,10,30,.28) 70%,
+    rgba(8,10,30,.62) 100%);
 }
 
+/* ── Hero content ── */
 .heroBody {
   position: relative;
-  z-index: 5;
+  z-index: 6;
   margin-top: auto;
   padding: 0 56px;
   max-width: 1040px;
 }
 
 .kicker {
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .28em;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--pixel);
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--accent);
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   text-shadow: 0 2px 12px rgba(0,0,0,.5);
 }
+.compassMark { color: var(--accent); image-rendering: pixelated; animation: bob 3s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
 
 .heroTitle {
   font-family: var(--display);
@@ -62,7 +196,6 @@
   color: #fff;
   text-shadow: 0 6px 40px rgba(0,0,0,.5);
 }
-
 .heroTitle em { font-style: normal; color: var(--accent); }
 
 .heroLede {
@@ -74,44 +207,51 @@
   text-shadow: 0 2px 10px rgba(0,0,0,.45);
 }
 
-.ctaRow { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.ctaRow { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
 
-.btnLine {
+/* Chunky pixel CTA button — beveled, hard-shadow pop */
+.btnPixel {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .2em;
+  gap: 12px;
+  font-family: var(--pixel);
+  font-size: 21px;
+  letter-spacing: .04em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--ink);
   text-decoration: none;
-  border-bottom: 1.5px solid var(--accent);
-  padding: 0 4px 8px;
-  transition: gap .2s;
+  background: var(--accent);
+  padding: 11px 22px;
+  border: 2px solid var(--line);
+  box-shadow: 4px 4px 0 0 var(--line);
+  transition: transform .12s steps(2), box-shadow .12s steps(2), background .15s;
 }
-.btnLine::after { content: '→'; font-size: 16px; color: var(--accent); }
-.btnLine:hover { gap: 20px; }
+.btnPixel::after { content: '\2192'; }
+.btnPixel:hover {
+  transform: translate(-2px,-2px);
+  box-shadow: 6px 6px 0 0 var(--line);
+  background: #F4D27A;
+}
+.btnPixel:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 0 var(--line); }
 
 .btnGhost {
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .2em;
+  font-family: var(--pixel);
+  font-size: 20px;
+  letter-spacing: .04em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.78);
+  color: rgba(255,255,255,.82);
   text-decoration: none;
-  padding: 0 4px 8px;
-  border-bottom: 1.5px solid transparent;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
   transition: color .15s, border-color .15s;
 }
-.btnGhost:hover { color: #fff; border-bottom-color: rgba(255,255,255,.4); }
+.btnGhost:hover { color: #fff; border-bottom-color: var(--accent); }
 
 .heroFoot {
   position: relative;
-  z-index: 5;
-  margin-top: 48px;
+  z-index: 6;
+  margin-top: 44px;
   padding: 0 56px 40px;
   display: flex;
   align-items: center;
@@ -126,51 +266,52 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--body);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: .08em;
+  font-family: var(--pixel);
+  font-size: 15px;
+  letter-spacing: .06em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.85);
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.18);
-  padding: 9px 15px;
-  border-radius: 999px;
+  color: rgba(255,255,255,.9);
+  background: rgba(10,12,30,.4);
+  border: 2px solid rgba(255,255,255,.22);
+  padding: 5px 12px;
   cursor: pointer;
-  backdrop-filter: blur(10px);
   text-decoration: none;
-  transition: background .15s, transform .15s;
+  transition: background .12s, border-color .12s, transform .12s steps(2);
 }
-.bChip:hover { background: rgba(255,255,255,.16); transform: translateY(-1px); }
-
-.bChipDot { width: 7px; height: 7px; border-radius: 50%; }
+.bChip:hover {
+  background: rgba(10,12,30,.6);
+  border-color: var(--chip-accent, #fff);
+  transform: translateY(-2px);
+}
+.bChipDot { width: 8px; height: 8px; }
 
 .heroReading {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
-  letter-spacing: .14em;
+  font-family: var(--pixel);
+  font-size: 16px;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.78);
   white-space: nowrap;
 }
+.hrPip { width: 9px; height: 9px; box-shadow: 0 0 10px currentColor; }
 
-.hrPip { width: 8px; height: 8px; border-radius: 50%; }
+/* ════════════════════════════════════════════════
+   EXPLORE — item-slot chapter cards
+═══════════════════════════════════════════════════ */
+.exploreSection { padding: 96px 56px; max-width: 1340px; margin: 0 auto; }
 
-/* ── Explore section ── */
-.exploreSection { padding: 88px 56px; max-width: 1340px; margin: 0 auto; }
-
-.sectionHead { max-width: 760px; margin: 0 auto 50px; text-align: center; }
+.sectionHead { max-width: 760px; margin: 0 auto 56px; text-align: center; }
 
 .sectionKicker {
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .26em;
+  font-family: var(--pixel);
+  font-size: 18px;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--deep);
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .sectionHead h2 {
@@ -182,44 +323,71 @@
   color: var(--ink-soft);
 }
 .sectionHead h2 em { font-style: normal; color: var(--deep); }
-
 .sectionLede { font-size: 17px; color: var(--ink-mute); margin: 0; }
 
 .exploreGrid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 22px;
+  gap: 26px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+/* The slot: beveled pixel frame, hard-edged */
 .xcard {
   position: relative;
   overflow: hidden;
-  border-radius: 18px;
-  min-height: 260px;
+  min-height: 248px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 28px;
-  background: linear-gradient(160deg,var(--card) 0%,var(--card-2) 100%);
-  border: 1px solid var(--hair);
-  box-shadow: var(--shadow-md);
+  padding: 30px;
+  background: var(--card);
+  border: 2px solid var(--line);
+  /* inset bevel highlight + drop pixel shadow */
+  box-shadow:
+    inset 2px 2px 0 0 rgba(255,255,255,.6),
+    inset -2px -2px 0 0 rgba(31,26,18,.14),
+    5px 5px 0 0 rgba(31,26,18,.22);
   text-decoration: none;
   color: var(--ink-soft);
-  transition: transform .18s ease, box-shadow .18s ease;
+  transition: transform .12s steps(2), box-shadow .12s steps(2);
 }
-.xcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.xcard:hover {
+  transform: translate(-3px,-3px);
+  box-shadow:
+    inset 2px 2px 0 0 rgba(255,255,255,.6),
+    inset -2px -2px 0 0 rgba(31,26,18,.14),
+    8px 8px 0 0 var(--xcard-color);
+}
 
-.xcardTint { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+/* Colored top accent bar */
+.xcardBar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: var(--xcard-color, var(--accent));
+}
+
+/* Corner pixel pips in the card color */
+.pip {
+  position: absolute;
+  width: 6px; height: 6px;
+  background: var(--xcard-color, var(--accent));
+  z-index: 2;
+}
+.pipTR { top: 14px; right: 14px; }
+.pipBL { bottom: 14px; left: 14px; opacity: .5; }
+
 .xcardBody { position: relative; z-index: 1; }
 
 .xcardNum {
   font-family: var(--pixel);
-  font-size: 28px;
-  color: var(--xcard-color, var(--accent));
-  margin-bottom: 6px;
+  font-size: 40px;
   line-height: 1;
+  color: var(--xcard-color, var(--accent));
+  margin-bottom: 4px;
+  text-shadow: 2px 2px 0 rgba(31,26,18,.15);
 }
 
 .xcardTitle {
@@ -235,7 +403,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: var(--ink-mute);
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   max-width: 340px;
 }
 
@@ -243,18 +411,18 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: .2em;
+  font-family: var(--pixel);
+  font-size: 16px;
+  letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--xcard-color, var(--deep));
 }
-.xcardGo::after { content: '→'; font-size: 15px; transition: transform .2s; }
-.xcard:hover .xcardGo::after { transform: translateX(5px); }
+.xcardGo::after { content: '\2192'; transition: transform .15s steps(2); }
+.xcard:hover .xcardGo::after { transform: translateX(6px); }
 
 @media (max-width: 900px) {
   .heroBody, .heroFoot { padding-left: 24px; padding-right: 24px; }
-  .exploreSection { padding: 60px 24px; }
+  .exploreSection { padding: 64px 24px; }
   .exploreGrid { grid-template-columns: 1fr; }
+  .celestial { width: 48px; height: 48px; top: 10%; right: 10%; }
 }

@@ -1,8 +1,9 @@
 .footer {
   background: var(--line);
   color: rgba(244, 237, 219, .75);
-  padding: 52px 48px;
+  padding: 44px 48px;
   margin-top: var(--space-12);
+  border-top: 4px solid var(--accent);
 }
 
 .inner {
@@ -27,23 +28,23 @@
 }
 
 .brandDot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 9px;
+  height: 9px;
   background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
 }
 
 .links {
   display: flex;
-  gap: 22px;
+  gap: 20px;
 }
 
 .link {
-  font-family: var(--body);
-  font-size: 12px;
-  letter-spacing: .12em;
+  font-family: var(--pixel);
+  font-size: 16px;
+  letter-spacing: .08em;
   text-transform: uppercase;
-  color: rgba(244, 237, 219, .55);
+  color: rgba(244, 237, 219, .6);
   text-decoration: none;
   transition: color .15s;
 }
@@ -53,8 +54,10 @@
 }
 
 .note {
-  font-size: 12px;
-  color: rgba(244, 237, 219, .4);
+  font-family: var(--pixel);
+  font-size: 14px;
+  letter-spacing: .03em;
+  color: rgba(244, 237, 219, .5);
   margin: 0;
 }
 

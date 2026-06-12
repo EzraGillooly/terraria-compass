@@ -33,14 +33,16 @@ function BossCard({ boss }: { boss: BossDef }) {
       className={styles.bossCard}
       style={{ '--boss-c': boss.color } as React.CSSProperties}
     >
+      <span className={styles.bossBar} aria-hidden="true" />
+      <span className={styles.bossPip} aria-hidden="true" />
       <div className={styles.bossCardHead}>
         <div className={styles.bossIcon}>
           <img
             src={localIcon}
             alt=""
             aria-hidden="true"
-            width="36"
-            height="36"
+            width="40"
+            height="40"
             className="pixel-img"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
@@ -88,17 +90,22 @@ export function Bosses() {
   const stageBosses = bosses.filter((b) => b.stage === activeStage);
   const main  = stageBosses.filter((b) => !b.side);
   const sides = stageBosses.filter((b) => b.side);
+  const activeIndex = STAGE_ORDER.indexOf(activeStage as typeof STAGE_ORDER[number]);
 
   return (
     <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
       {/* ── Banner ── */}
       <div className={styles.banner}>
-        <div className={styles.bannerPhoto} />
+        <div
+          className={styles.bannerPhoto}
+          style={{ backgroundImage: `url(${BASE}hero/bosses.png)` }}
+        />
+        <div className={styles.dither} aria-hidden="true" />
         <div className={styles.bannerWash} />
         <Header variant="photo" />
         <div className={styles.bannerBody}>
           <p className={styles.bannerCrumb}>
-            <a href="/#/">Home</a> › Boss Progression
+            <a href="/#/">Home</a> <span className={styles.crumbSep}>/</span> Boss Progression
           </p>
           <h1 className={styles.bannerTitle}>
             Boss <em>Progression</em>
@@ -111,16 +118,24 @@ export function Bosses() {
 
       {/* ── Stage selector ── */}
       <section className={styles.section}>
-        <div className={styles.stageTrack}>
-          {STAGE_ORDER.map((stage) => {
+        <div className={styles.trackHead}>
+          <span className={styles.trackKicker}>{'// Progression'}</span>
+          <span className={styles.trackProgress}>
+            Stage {String(activeIndex + 1).padStart(2, '0')} / {String(STAGE_ORDER.length).padStart(2, '0')}
+          </span>
+        </div>
+        <div className={styles.stageTrack} role="tablist" aria-label="Progression stage">
+          {STAGE_ORDER.map((stage, i) => {
             const count = bosses.filter((b) => b.stage === stage).length;
+            const done = i < activeIndex;
             return (
               <button
                 key={stage}
                 type="button"
-                className={`${styles.stageNode} ${activeStage === stage ? styles.active : ''}`}
+                role="tab"
+                className={`${styles.stageNode} ${activeStage === stage ? styles.active : ''} ${done ? styles.done : ''}`}
                 onClick={() => setActiveStage(stage)}
-                aria-pressed={activeStage === stage}
+                aria-selected={activeStage === stage}
               >
                 <span className={styles.nodeDot} aria-hidden="true" />
                 <span className={styles.nodeLabel}>{STAGE_LABELS[stage]}</span>
@@ -131,10 +146,6 @@ export function Bosses() {
         </div>
 
         {/* ── Boss columns ── */}
-        <div className={styles.stageHeader}>
-          <span className={styles.stageTag}>{STAGE_LABELS[activeStage]}</span>
-        </div>
-
         <div className={styles.bossColumns}>
           <div className={styles.bossCol}>
             <div className={styles.bossColTitle}>
