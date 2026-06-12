@@ -13,19 +13,64 @@ const TIER_LABELS: Record<string, string> = {
 
 const TIERS = ['pre-boss', 'pre-hm', 'hardmode', 'endgame'] as const;
 
-const TYPE_ICONS: Record<string, string> = {
-  weapon:    '⚔',
-  armor:     '🛡',
-  accessory: '💍',
-  material:  '⚗',
-};
+const BASE = import.meta.env.BASE_URL;
+
+/* Tiny pixel-art type marks (no emoji) */
+function TypeMark({ type }: { type: string }) {
+  const common = { width: 18, height: 18, viewBox: '0 0 8 8', shapeRendering: 'crispEdges' as const, 'aria-hidden': true };
+  if (type === 'weapon') {
+    return (
+      <svg {...common}>
+        <rect x="5" y="0" width="2" height="2" fill="currentColor" />
+        <rect x="4" y="1" width="1" height="1" fill="currentColor" />
+        <rect x="3" y="2" width="1" height="1" fill="currentColor" />
+        <rect x="2" y="3" width="1" height="1" fill="currentColor" />
+        <rect x="1" y="4" width="1" height="1" fill="currentColor" />
+        <rect x="0" y="5" width="2" height="2" fill="currentColor" />
+        <rect x="2" y="5" width="2" height="1" fill="currentColor" />
+        <rect x="1" y="6" width="2" height="2" fill="currentColor" />
+      </svg>
+    );
+  }
+  if (type === 'armor') {
+    return (
+      <svg {...common}>
+        <rect x="1" y="0" width="6" height="1" fill="currentColor" />
+        <rect x="1" y="1" width="6" height="3" fill="currentColor" />
+        <rect x="2" y="4" width="4" height="2" fill="currentColor" />
+        <rect x="3" y="6" width="2" height="1" fill="currentColor" />
+      </svg>
+    );
+  }
+  if (type === 'accessory') {
+    return (
+      <svg {...common}>
+        <rect x="3" y="0" width="2" height="1" fill="currentColor" />
+        <rect x="2" y="2" width="4" height="1" fill="currentColor" />
+        <rect x="1" y="3" width="1" height="3" fill="currentColor" />
+        <rect x="6" y="3" width="1" height="3" fill="currentColor" />
+        <rect x="2" y="6" width="4" height="1" fill="currentColor" />
+      </svg>
+    );
+  }
+  // material — flask
+  return (
+    <svg {...common}>
+      <rect x="3" y="0" width="2" height="2" fill="currentColor" />
+      <rect x="2" y="2" width="1" height="2" fill="currentColor" />
+      <rect x="5" y="2" width="1" height="2" fill="currentColor" />
+      <rect x="1" y="4" width="6" height="3" fill="currentColor" />
+      <rect x="2" y="5" width="4" height="1" fill="#FFFFFF" opacity="0.5" />
+    </svg>
+  );
+}
 
 function CraftCard({ tree }: { tree: CraftingTree }) {
   return (
     <div className={styles.craftCard}>
       <div className={styles.craftOutput}>
         <div className={styles.craftIcon} aria-hidden="true">
-          {TYPE_ICONS[tree.type]}
+          <TypeMark type={tree.type} />
         </div>
         <div className={styles.craftOutputInfo}>
           <div className={styles.craftTags}>
@@ -67,11 +112,17 @@ export function Crafting() {
     <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
       {/* ── Banner ── */}
       <div className={styles.banner}>
-        <div className={styles.bannerPhoto} />
+        <div
+          className={styles.bannerPhoto}
+          style={{ backgroundImage: `url(${BASE}hero/crafting.png)` }}
+        />
+        <div className={styles.dither} aria-hidden="true" />
         <div className={styles.bannerWash} />
         <Header variant="photo" />
         <div className={styles.bannerBody}>
-          <p className={styles.bannerCrumb}><a href="/#/">Home</a> › Crafting Trees</p>
+          <p className={styles.bannerCrumb}>
+            <a href="/#/">Home</a> <span className={styles.crumbSep}>/</span> Crafting Trees
+          </p>
           <h1 className={styles.bannerTitle}>Crafting <em>Trees</em></h1>
           <p className={styles.bannerLede}>
             The recipes behind milestone weapons, armor sets, and key accessories.
@@ -81,6 +132,7 @@ export function Crafting() {
 
       {/* ── Content ── */}
       <section className={styles.section}>
+        <p className={styles.sectionKicker}>{'// Recipe tier'}</p>
         {/* Tier tabs */}
         <div className={styles.tierTabs}>
           {TIERS.map((tier) => (
