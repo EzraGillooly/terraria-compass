@@ -127,11 +127,17 @@ export function Loadouts() {
     <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
       {/* ── Banner ── */}
       <div className={styles.banner}>
-        <div className={styles.bannerPhoto} />
+        <div
+          className={styles.bannerPhoto}
+          style={{ backgroundImage: `url(${BASE}hero/loadouts.png)` }}
+        />
+        <div className={styles.dither} aria-hidden="true" />
         <div className={styles.bannerWash} />
         <Header variant="photo" />
         <div className={styles.bannerBody}>
-          <p className={styles.bannerCrumb}><a href="/#/">Home</a> › Class Loadouts</p>
+          <p className={styles.bannerCrumb}>
+            <a href="/#/">Home</a> <span className={styles.crumbSep}>/</span> Class Loadouts
+          </p>
           <h1 className={styles.bannerTitle}>Class <em>Loadouts</em></h1>
           <p className={styles.bannerLede}>
             Pick your class and stage. Hover weapon tiles for full stats. Accessory and armor recommendations update with every choice.
@@ -144,7 +150,7 @@ export function Loadouts() {
 
         {/* Choose your class */}
         <div className={styles.sectionHead}>
-          <p className={styles.sectionKicker}>Step 01</p>
+          <p className={styles.sectionKicker}>{'// Step 01'}</p>
           <h2>Choose your <em>class</em></h2>
           <p className={styles.sectionLede}>Each class plays differently. Subclass filters narrow to your preferred weapon style.</p>
         </div>
@@ -176,7 +182,7 @@ export function Loadouts() {
 
         {/* Phase tabs */}
         <div className={styles.sectionHead} style={{ marginTop: 'var(--space-8)' }}>
-          <p className={styles.sectionKicker}>Step 02</p>
+          <p className={styles.sectionKicker}>{'// Step 02'}</p>
           <h2>Select your <em>phase</em></h2>
         </div>
 
