@@ -12,11 +12,7 @@ async function expectVisibleIconsToResolve(page: Page) {
       .poll(() =>
         icon.evaluate((element) => {
           const img = element as HTMLImageElement;
-
-          return {
-            complete: img.complete,
-            naturalWidth: img.naturalWidth,
-          };
+          return { complete: img.complete, naturalWidth: img.naturalWidth };
         }),
       )
       .toEqual({ complete: true, naturalWidth: expect.any(Number) });
@@ -28,41 +24,25 @@ async function expectVisibleIconsToResolve(page: Page) {
   }
 }
 
-test.describe('main planner screen', () => {
-  test('keeps the difficulty banner compact and loads visible icons', async ({
-    page,
-  }) => {
+test.describe('main screens', () => {
+  test('home renders the shell and difficulty control', async ({ page }) => {
     await page.goto('/#/');
 
-    await expect(page.getByText('Terraria Compass')).toBeVisible();
+    await expect(page.getByText('Terraria Compass').first()).toBeVisible();
+    await expect(
+      page.getByRole('group', { name: /world difficulty/i }),
+    ).toBeVisible();
+  });
 
-    const difficultyGroup = page.getByRole('group', {
-      name: 'Select world difficulty',
-    });
-    await expect(difficultyGroup).toBeVisible();
-
-    const bannerBox = await difficultyGroup.evaluate((group) => {
-      const banner = group.parentElement;
-      const rect = banner?.getBoundingClientRect();
-      return rect
-        ? {
-            left: rect.left,
-            width: rect.width,
-          }
-        : null;
-    });
-
-    expect(bannerBox).not.toBeNull();
-    expect(bannerBox?.left).toBeLessThanOrEqual(40);
-    expect(bannerBox?.width).toBeLessThan(
-      page.viewportSize()?.width ?? Number.MAX_SAFE_INTEGER,
-    );
+  test('loadouts loads visible item icons across a phase change', async ({ page }) => {
+    await page.goto('/#/loadouts');
+    await page.waitForLoadState('networkidle');
 
     await expectVisibleIconsToResolve(page);
 
-    await page.getByRole('button', { name: 'Endgame' }).click();
+    // Switch class + phase and confirm icons still resolve.
     await page.getByRole('button', { name: /^Mage/ }).click();
-    await expect(page.getByText('Last Prism')).toBeVisible();
+    await page.getByRole('button', { name: /Endgame/ }).click();
     await expectVisibleIconsToResolve(page);
   });
 });

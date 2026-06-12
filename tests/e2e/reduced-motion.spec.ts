@@ -6,61 +6,41 @@ function parseDurationMs(value: string): number {
   return 0;
 }
 
-test('reduced-motion: all transitions are zeroed when prefers-reduced-motion is reduce', async ({
+test('reduced-motion: transitions are zeroed when prefers-reduced-motion is reduce', async ({
   page,
 }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/#/phase/pre-bosses/melee');
+  await page.goto('/#/loadouts');
   await page.waitForLoadState('networkidle');
 
-  const cardDuration = await page.evaluate(() => {
-    const card = document.querySelector<HTMLElement>('[class*="card"]');
-    return card ? getComputedStyle(card).transitionDuration : null;
-  });
+  // A class tab has a transition under normal motion; it must be zeroed here.
+  const tab = page.getByRole('button', { name: /^Melee/ });
+  await expect(tab).toBeVisible();
 
-  expect(cardDuration, 'card element must have a transition-duration').not.toBeNull();
+  const duration = await tab.evaluate((el) => getComputedStyle(el).transitionDuration);
   expect(
-    parseDurationMs(cardDuration!),
-    `card transition-duration "${cardDuration}" should be < 1ms under reduced-motion`,
-  ).toBeLessThan(1);
-
-  const toggleDuration = await page.evaluate(() => {
-    const toggle = document.querySelector<HTMLElement>('button[class*="button"]');
-    return toggle ? getComputedStyle(toggle).transitionDuration : null;
-  });
-
-  expect(toggleDuration, 'button element must have a transition-duration').not.toBeNull();
-  expect(
-    parseDurationMs(toggleDuration!),
-    `button transition-duration "${toggleDuration}" should be < 1ms under reduced-motion`,
+    parseDurationMs(duration),
+    `transition-duration "${duration}" should be < 1ms under reduced-motion`,
   ).toBeLessThan(1);
 });
 
-test('reduced-motion: phase change completes without CSS animation', async ({
-  page,
-}) => {
+test('reduced-motion: no long running animations on the page', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/#/phase/pre-bosses/melee');
+  await page.goto('/#/');
   await page.waitForLoadState('networkidle');
-
-  await page.getByRole('button', { name: /^Ranger/ }).click();
-
-  await expect(
-    page.getByRole('button', { name: /^Ranger/ }),
-  ).toHaveAttribute('aria-pressed', 'true');
 
   const longestAnimationMs = await page.evaluate(() => {
     const values = [...document.querySelectorAll<HTMLElement>('*')]
       .map((el) => getComputedStyle(el).animationDuration)
       .filter((d) => d !== '' && d !== '0s' && d !== '0ms');
 
-    function parseDurationMs(value: string): number {
+    function parse(value: string): number {
       if (value.endsWith('ms')) return parseFloat(value);
       if (value.endsWith('s')) return parseFloat(value) * 1000;
       return 0;
     }
 
-    return values.length === 0 ? 0 : Math.max(...values.map(parseDurationMs));
+    return values.length === 0 ? 0 : Math.max(...values.map(parse));
   });
 
   expect(

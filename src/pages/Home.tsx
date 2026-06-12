@@ -88,14 +88,13 @@ export function Home() {
         </div>
 
         <div className={styles.heroFoot}>
-          <div className={styles.biomeSwitcher} role="list">
+          <div className={styles.biomeSwitcher}>
             {BIOME_CHIPS.map((b) => (
               <Link
                 key={b.id}
                 to="/biomes"
                 className={styles.bChip}
                 style={{ '--chip-accent': b.palette.mid } as React.CSSProperties}
-                role="listitem"
               >
                 <span
                   className={styles.bChipDot}
