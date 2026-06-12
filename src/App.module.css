@@ -6,10 +6,12 @@
 
 .noLoadout {
   margin-top: var(--space-8);
-  padding: var(--space-6);
-  border: 2px dashed var(--color-border);
-  border-radius: var(--radius-md);
-  color: var(--color-text-muted);
+  padding: var(--space-6) var(--space-8);
+  border: 1px solid var(--hair);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  color: var(--ink-mute);
   text-align: center;
   font-style: italic;
+  box-shadow: var(--shadow-sm);
 }

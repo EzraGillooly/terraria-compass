@@ -1,100 +1,198 @@
+/* ── Base header shell ── */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid var(--color-border);
-  background:
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--color-surface) 94%, transparent),
-      color-mix(in srgb, var(--color-bg) 90%, transparent)
-    );
-  backdrop-filter: blur(10px);
-}
-
-.inner {
-  width: min(1200px, calc(100% - 32px));
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-4);
-  padding: var(--space-3) 0;
+  gap: 24px;
+  padding: 22px 48px;
+  position: relative;
+  z-index: 20;
 }
 
+/* ── On-photo variant: transparent, white text, floats over hero ── */
+.onPhoto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+/* ── On-paper variant: sticky, blurred parchment ── */
+.onPaper {
+  position: sticky;
+  top: 0;
+  color: var(--ink-soft);
+  background: color-mix(in oklab, var(--paper) 88%, transparent);
+  backdrop-filter: blur(14px) saturate(1.1);
+  border-bottom: 1px solid var(--hair);
+}
+
+/* ── Inner layout ── */
+.inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* ── Brand ── */
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: var(--space-3);
-  color: inherit;
+  gap: 12px;
   text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
 }
 
-.brandMark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 2px solid var(--color-border-strong);
-  border-radius: 12px;
-  background: var(--color-surface-elevated);
-  font-size: var(--font-lg);
+.brandDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--accent) 28%, transparent);
+  flex-shrink: 0;
 }
 
-.brandText {
-  display: grid;
-  gap: 2px;
+.brandName {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: .04em;
 }
 
-.title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: var(--font-lg);
-  color: var(--color-text-primary);
-}
+.onPhoto .brandName { color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.5); }
 
-.subtitle {
-  font-size: var(--font-sm);
-  color: var(--color-text-secondary);
-}
-
-.nav {
-  display: none;
-  gap: var(--space-4);
+/* ── Top nav ── */
+.topnav {
+  display: flex;
+  gap: 26px;
 }
 
 .navLink {
-  color: var(--color-text-secondary);
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid transparent;
+  opacity: .8;
   text-decoration: none;
+  color: inherit;
+  transition: opacity .15s, border-color .15s;
 }
 
 .navLink:hover,
-.navLink:focus-visible {
-  color: var(--color-accent);
+.navLink.active {
+  opacity: 1;
+  border-bottom-color: var(--accent);
 }
 
-.actions {
+.onPaper .navLink.active {
+  color: var(--deep);
+  border-bottom-color: var(--deep);
+}
+
+/* ── Controls row ── */
+.topctrl {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ── Difficulty segmented control ── */
+.diffSeg {
+  display: flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(20,14,6,.26);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.onPaper .diffSeg {
+  background: rgba(20,14,6,.06);
+  border-color: var(--hair);
+}
+
+.diffPill {
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: inherit;
+  opacity: .72;
+  background: transparent;
+  border: 0;
+  padding: 7px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity .15s, background .15s;
+}
+
+.diffPill:hover { opacity: 1; }
+
+.diffClassic { opacity: 1; color: #fff; background: linear-gradient(180deg,#6FA8FF,#4A7AC0); }
+.diffExpert  { opacity: 1; color: #fff; background: linear-gradient(180deg,#FFB36A,#E07A4A); }
+.diffMaster  { opacity: 1; color: #fff; background: linear-gradient(180deg,#E84A4A,#B53030); }
+
+/* ── Day/Night toggle ── */
+.dayNight {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: 10px;
+  padding: 4px 16px 4px 4px;
+  border-radius: 999px;
+  background: rgba(20,14,6,.26);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.18);
+  cursor: pointer;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: inherit;
+  transition: background .2s;
 }
 
-.repoLink {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: var(--color-text-secondary);
-  text-decoration: none;
+.onPaper .dayNight {
+  background: rgba(20,14,6,.06);
+  border-color: var(--hair);
 }
 
-.repoLink:hover,
-.repoLink:focus-visible {
-  color: var(--color-accent);
+.dnTrack {
+  width: 34px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(127,100,50,.2);
+  display: grid;
+  place-items: center;
 }
 
-@media (min-width: 768px) {
-  .nav {
-    display: inline-flex;
-  }
+.dnKnob {
+  font-size: 13px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink-soft);
+  display: grid;
+  place-items: center;
+  transition: background .25s;
+}
+
+.isNight .dnKnob { background: #1F2A4A; color: #FFE08A; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .header { padding: 18px 24px; }
+  .topnav { display: none; }
+}
+
+@media (max-width: 600px) {
+  .dayNight span:last-child { display: none; }
 }

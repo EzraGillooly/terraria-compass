@@ -1,0 +1,67 @@
+.banner { position: relative; width: 100%; min-height: 56vh; display: flex; flex-direction: column; overflow: hidden; color: #fff; isolation: isolate; }
+.bannerPhoto { position: absolute; inset: 0; background: linear-gradient(135deg,#3A2A0A 0%,#5A3A18 40%,#2A1A08 100%); background-size: cover; z-index: 0; transform: scale(1.04); }
+.bannerWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom,rgba(0,0,0,.2) 0%,rgba(0,0,0,.65) 100%); }
+.bannerBody { position: relative; z-index: 5; margin-top: auto; padding: 0 56px 44px; max-width: 1040px; }
+.bannerCrumb { font-family: var(--body); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin: 0 0 16px; }
+.bannerCrumb a { color: rgba(255,255,255,.75); text-decoration: none; }
+.bannerTitle { font-family: var(--display); font-weight: 800; font-size: clamp(38px,6vw,76px); line-height: 1.0; margin: 0 0 14px; color: #fff; text-shadow: 0 6px 40px rgba(0,0,0,.5); }
+.bannerTitle em { font-style: normal; color: var(--accent); }
+.bannerLede { font-size: clamp(14px,1.3vw,17px); max-width: 600px; color: rgba(255,255,255,.92); margin: 0; }
+
+.section { padding: 60px 56px 88px; max-width: 1340px; margin: 0 auto; }
+
+/* ── Tier tabs ── */
+.tierTabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+.tierTab { font-family: var(--body); font-weight: 600; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; padding: 9px 20px; background: var(--card); border: 1px solid var(--hair); border-radius: 999px; cursor: pointer; box-shadow: var(--shadow-sm); color: var(--ink-mute); transition: all .15s; }
+.tierTab:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.tierTab.on { background: var(--deep); border-color: var(--deep); color: #fff; }
+.tierCount { font-family: var(--pixel); font-size: 16px; color: var(--accent); margin-left: 8px; }
+.tierTab.on .tierCount { color: rgba(255,255,255,.75); }
+
+/* ── Craft list ── */
+.craftList { display: flex; flex-direction: column; gap: 24px; max-width: 1000px; margin: 0 auto; }
+
+.craftCard {
+  background: var(--card);
+  border: 1px solid var(--hair);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: minmax(240px,1fr) 80px 2fr;
+  gap: 0;
+  align-items: start;
+}
+
+.craftOutput { display: flex; align-items: flex-start; gap: 16px; }
+.craftIcon { width: 52px; height: 52px; border-radius: 12px; background: color-mix(in oklab,var(--accent) 16%,var(--card-2)); border: 1px solid var(--hair); display: grid; place-items: center; font-size: 24px; flex-shrink: 0; box-shadow: var(--shadow-sm); }
+.craftOutputInfo { flex: 1; }
+.craftTags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
+.craftType { font-family: var(--body); font-weight: 700; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; padding: 3px 9px; background: color-mix(in oklab,var(--accent) 16%,transparent); color: color-mix(in oklab,var(--accent) 55%,var(--ink-soft)); border: 1px solid color-mix(in oklab,var(--accent) 35%,transparent); border-radius: 999px; }
+.craftClass { font-family: var(--body); font-weight: 700; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; padding: 3px 9px; background: color-mix(in oklab,var(--deep) 12%,transparent); color: var(--deep); border: 1px solid color-mix(in oklab,var(--deep) 28%,transparent); border-radius: 999px; }
+.craftName { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--ink-soft); }
+.craftDmg { font-family: var(--pixel); font-size: 22px; color: var(--deep); margin-top: 4px; line-height: 1; }
+.craftStation { font-size: 12px; color: var(--ink-mute); margin-top: 6px; font-style: italic; }
+
+.craftArrow { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--ink-mute); font-family: var(--body); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding-top: 14px; }
+
+.craftParts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.craftPart { display: flex; flex-direction: column; gap: 3px; padding: 10px 12px; background: var(--card-2); border: 1px solid var(--hair); border-radius: 10px; }
+.craftPartName { font-family: var(--body); font-weight: 600; font-size: 12px; color: var(--ink-soft); }
+.craftPartFrom { font-size: 11px; color: var(--ink-mute); font-style: italic; }
+
+.craftNote { grid-column: 1 / -1; margin: 16px 0 0; padding: 10px 14px; background: color-mix(in oklab,var(--accent) 8%,var(--card-2)); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; font-size: 13px; color: var(--ink-soft); font-style: italic; }
+
+.empty { color: var(--ink-mute); font-style: italic; font-size: 13px; padding: var(--space-4); }
+
+@media (max-width: 900px) {
+  .craftCard { grid-template-columns: 1fr; gap: 16px; }
+  .craftArrow { display: none; }
+  .craftParts { grid-template-columns: 1fr 1fr; }
+  .craftNote { grid-column: 1; }
+}
+@media (max-width: 768px) {
+  .section { padding: 40px 24px 60px; }
+  .bannerBody { padding: 0 24px 36px; }
+  .craftParts { grid-template-columns: 1fr; }
+}

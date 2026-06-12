@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
-import { ThemeProvider } from './lib/theme';
+import { AppProvider } from './lib/app-context';
 import './styles/fonts.css';
 import './styles/reset.css';
 import './styles/tokens.css';
@@ -16,9 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         v7_startTransition: true,
       }}
     >
-      <ThemeProvider>
+      <AppProvider>
         <App />
-      </ThemeProvider>
+      </AppProvider>
     </HashRouter>
   </React.StrictMode>,
 );

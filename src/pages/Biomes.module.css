@@ -1,0 +1,51 @@
+.banner { position: relative; width: 100%; min-height: 56vh; display: flex; flex-direction: column; overflow: hidden; color: #fff; isolation: isolate; }
+.bannerPhoto { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 0; transform: scale(1.04); transition: background .7s ease; }
+.bannerWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom,rgba(0,0,0,.2) 0%,rgba(0,0,0,.65) 100%); }
+.bannerBody { position: relative; z-index: 5; margin-top: auto; padding: 0 56px 44px; max-width: 1040px; }
+.bannerCrumb { font-family: var(--body); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin: 0 0 16px; }
+.bannerCrumb a { color: rgba(255,255,255,.75); text-decoration: none; }
+.bannerTitle { font-family: var(--display); font-weight: 800; font-size: clamp(38px,6vw,76px); line-height: 1.0; margin: 0 0 14px; color: #fff; text-shadow: 0 6px 40px rgba(0,0,0,.5); }
+.bannerTitle em { font-style: normal; color: var(--accent); }
+.bannerLede { font-size: clamp(14px,1.3vw,17px); max-width: 600px; color: rgba(255,255,255,.92); margin: 0; }
+
+.section { padding: 60px 56px 88px; max-width: 1340px; margin: 0 auto; }
+
+/* ── Biome tabs ── */
+.biomeTabs { display: grid; grid-template-columns: repeat(auto-fit,minmax(148px,1fr)); gap: 10px; margin-bottom: 28px; }
+.biomeTab { background: var(--card); border: 1px solid var(--hair); border-radius: 12px; padding: 13px 14px; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s, border-color .15s; }
+.biomeTab:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.biomeTab.on { border-color: var(--bt-deep,var(--deep)); box-shadow: 0 0 0 2px color-mix(in oklab,var(--bt-deep,var(--deep)) 30%,transparent), var(--shadow-md); }
+.biomeTabSwatch { display: flex; width: 100%; height: 14px; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px rgba(0,0,0,.1); }
+.biomeTabSwatch span { flex: 1; }
+.biomeTabName { font-family: var(--display); font-weight: 700; font-size: 13px; color: var(--ink-soft); }
+.biomeTabDanger { display: flex; gap: 3px; }
+.pip { width: 8px; height: 8px; background: var(--hair); border-radius: 2px; }
+.pipOn { background: #C0392B; }
+.biomeTab.on .pipOn { background: var(--bt-deep,var(--deep)); }
+
+/* ── Bestiary panel ── */
+.bestiary { border: 1px solid var(--hair); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.bestiaryHead { padding: 36px 36px 32px; color: #fff; min-height: 220px; display: flex; align-items: flex-end; }
+.bestiaryHeadBody {}
+.bestiaryEyebrow { font-family: var(--body); font-weight: 700; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; display: block; margin-bottom: 8px; color: rgba(255,255,255,.8); }
+.bestiaryTitle { font-family: var(--display); font-weight: 700; font-size: 36px; margin: 0 0 8px; text-shadow: 0 3px 0 rgba(0,0,0,.4); color: #fff; }
+.bestiaryBlurb { font-size: 14px; max-width: 560px; opacity: .9; margin: 0; }
+.hardmodeTag { display: inline-block; margin-top: 10px; font-family: var(--body); font-weight: 700; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding: 4px 10px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3); border-radius: 999px; color: #fff; }
+
+.bestiaryBody { display: grid; grid-template-columns: 1fr 1fr; background: var(--card); }
+.bestiaryCol { padding: 28px 32px; }
+.bestiaryCol + .bestiaryCol { border-left: 1px solid var(--hair); }
+.bestiaryColTitle { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--ink-soft); margin-bottom: 18px; letter-spacing: .04em; text-transform: uppercase; }
+.mobGrid { display: grid; grid-template-columns: repeat(auto-fill,minmax(120px,1fr)); gap: 10px; }
+.mobCard { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 12px 8px; background: var(--card-2); border: 1px solid var(--hair); border-radius: 10px; box-shadow: var(--shadow-sm); }
+.mobIcon { font-size: 18px; }
+.mobName { font-size: 11px; font-weight: 600; color: var(--ink-soft); line-height: 1.3; }
+
+@media (max-width: 1100px) {
+  .bestiaryBody { grid-template-columns: 1fr; }
+  .bestiaryCol + .bestiaryCol { border-left: 0; border-top: 1px solid var(--hair); }
+}
+@media (max-width: 768px) {
+  .section { padding: 40px 24px 60px; }
+  .bannerBody { padding: 0 24px 36px; }
+}

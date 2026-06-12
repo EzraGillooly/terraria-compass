@@ -1,0 +1,70 @@
+/* ── Shared banner ── */
+.banner { position: relative; width: 100%; min-height: 56vh; display: flex; flex-direction: column; overflow: hidden; color: #fff; isolation: isolate; }
+.bannerPhoto { position: absolute; inset: 0; background: linear-gradient(135deg,#4A0A0A 0%,#2A1A1A 40%,#1A0A0A 100%); background-size: cover; background-position: center; z-index: 0; transform: scale(1.04); }
+.bannerWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom,rgba(0,0,0,.2) 0%,rgba(0,0,0,.65) 100%); }
+.bannerBody { position: relative; z-index: 5; margin-top: auto; padding: 0 56px 44px; max-width: 1040px; }
+.bannerCrumb { font-family: var(--body); font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin: 0 0 16px; }
+.bannerCrumb a { color: rgba(255,255,255,.75); text-decoration: none; }
+.bannerTitle { font-family: var(--display); font-weight: 800; font-size: clamp(38px,6vw,76px); line-height: 1.0; margin: 0 0 14px; color: #fff; text-shadow: 0 6px 40px rgba(0,0,0,.5); }
+.bannerTitle em { font-style: normal; color: var(--accent); }
+.bannerLede { font-size: clamp(14px,1.3vw,17px); line-height: 1.55; max-width: 600px; color: rgba(255,255,255,.92); text-shadow: 0 2px 10px rgba(0,0,0,.45); margin: 0; }
+
+/* ── Section ── */
+.section { padding: 60px 56px 88px; max-width: 1340px; margin: 0 auto; }
+
+/* ── Stage track ── */
+.stageTrack { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 48px; }
+.stageNode { display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: var(--card); border: 1px solid var(--hair); border-radius: 999px; cursor: pointer; box-shadow: var(--shadow-sm); transition: transform .15s, box-shadow .15s, border-color .15s; font-family: var(--body); font-size: 12px; color: var(--ink-mute); }
+.stageNode:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.stageNode.active { border-color: var(--deep); color: var(--deep); background: color-mix(in oklab,var(--deep) 8%,var(--card)); font-weight: 700; }
+.nodeDot { width: 8px; height: 8px; border-radius: 50%; background: var(--hair); flex-shrink: 0; }
+.stageNode.active .nodeDot { background: var(--deep); }
+.nodeLabel { font-size: 12px; font-weight: 600; letter-spacing: .03em; }
+.nodeCount { font-family: var(--pixel); font-size: 16px; color: var(--accent); margin-left: 4px; }
+
+/* ── Stage header ── */
+.stageHeader { text-align: center; margin-bottom: 32px; }
+.stageTag { font-family: var(--body); font-weight: 700; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; padding: 6px 14px; background: color-mix(in oklab,var(--deep) 10%,transparent); color: var(--deep); border-radius: 999px; border: 1px solid color-mix(in oklab,var(--deep) 22%,transparent); }
+
+/* ── Boss columns ── */
+.bossColumns { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; align-items: start; }
+.bossCol {}
+.bossColTitle { font-family: var(--body); font-weight: 700; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--hair); }
+.bossGrid { display: flex; flex-direction: column; gap: 16px; }
+
+/* ── Boss card ── */
+.bossCard {
+  position: relative;
+  background: linear-gradient(160deg,var(--card) 0%,var(--card-2) 100%);
+  border: 1px solid var(--hair);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--shadow-md);
+}
+.bossCard::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--boss-c,var(--accent)); border-radius: 16px 16px 0 0; }
+
+.bossCardHead { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.bossIcon { width: 48px; height: 48px; border-radius: 10px; border: 1px solid var(--hair); background: color-mix(in oklab,var(--boss-c,var(--accent)) 12%,var(--card)); display: grid; place-items: center; flex-shrink: 0; box-shadow: var(--shadow-sm); }
+.bossInfo { flex: 1; min-width: 0; }
+.bossLabel { font-family: var(--body); font-weight: 600; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mute); display: block; }
+.bossName { font-family: var(--display); font-weight: 700; font-size: 17px; margin-top: 3px; color: var(--ink-soft); line-height: 1.1; }
+.bossToggle { margin-left: auto; width: 28px; height: 28px; border-radius: 50%; background: var(--card-2); border: 1px solid var(--hair); color: var(--ink-mute); font-size: 14px; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; transition: transform .2s, background .15s; }
+.bossToggle.open { transform: rotate(180deg); }
+
+.bossBlurb { font-size: 13.5px; line-height: 1.5; margin: 0 0 0; color: var(--ink-mute); }
+.bossMeta { border-top: 1px solid var(--hair); margin-top: 12px; padding-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+.bossRow { display: flex; flex-direction: column; gap: 4px; }
+.bossRowKey { font-family: var(--body); font-weight: 700; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mute); }
+.bossRowVal { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+.dropPills { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.dropPill { font-size: 11px; background: color-mix(in oklab,var(--accent) 16%,transparent); color: color-mix(in oklab,var(--accent) 55%,var(--ink-soft)); border: 1px solid color-mix(in oklab,var(--accent) 35%,transparent); padding: 3px 9px; border-radius: 999px; }
+
+.empty { color: var(--ink-mute); font-style: italic; font-size: 13px; padding: var(--space-4); }
+
+@media (max-width: 1100px) {
+  .bossColumns { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .section { padding: 40px 24px 60px; }
+  .bannerBody { padding: 0 24px 36px; }
+}

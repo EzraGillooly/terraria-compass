@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 import App from '../../src/App';
-import { ThemeProvider } from '../../src/lib/theme';
+import { AppProvider } from '../../src/lib/app-context';
 
 describe('App', () => {
   it('renders the home route by default', () => {
@@ -12,15 +12,15 @@ describe('App', () => {
           v7_startTransition: true,
         }}
       >
-        <ThemeProvider>
+        <AppProvider>
           <App />
-        </ThemeProvider>
+        </AppProvider>
       </HashRouter>,
     );
 
-    expect(screen.getByText('Terraria Compass')).toBeInTheDocument();
+    expect(screen.getAllByText('Terraria Compass').length).toBeGreaterThan(0);
     expect(
-      screen.getByRole('group', { name: /select world difficulty/i }),
+      screen.getByRole('group', { name: /world difficulty/i }),
     ).toBeInTheDocument();
   });
 });

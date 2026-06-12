@@ -14,6 +14,18 @@ body {
   margin: 0;
 }
 
+/* Subtle paper-grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .45;
+  background-image: radial-gradient(rgba(120, 90, 40, .06) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
 body,
 button,
 input,
