@@ -35,10 +35,15 @@ export interface LootItem {
 
 export type BestiaryEntry = Enemy | LootItem;
 
+// terraria.wiki.gg keeps these connecting words lowercase in file names
+const SMALL_WORDS = new Set(['of', 'in', 'a', 'an', 'the', 'and', 'or', 'to', 'with', 'on']);
+
 /** wiki file stem for an entry (uses `wiki` override, else the name). */
 export function spriteStem(entry: BestiaryEntry): string {
-  return entry.wiki
-    ?? entry.name.split(' ').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
+  if (entry.wiki) return entry.wiki;
+  return entry.name.split(' ')
+    .map((w, i) => (i > 0 && SMALL_WORDS.has(w.toLowerCase())) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1))
+    .join('_');
 }
 
 /** Locally-hosted sprite (populated under public/icons/bestiary/). */
@@ -343,7 +348,7 @@ const SNOW: BestiaryEntry[] = [
   { kind: 'enemy', name: 'Ice Slime', hp: 30, damage: 8, defense: 4,
     description: 'A frosty slime that inflicts Chilled, slowing you down. Otherwise a normal slime.',
     drops: [{ name: 'Gel', rate: '1–2, 100%' }, { name: 'Ice Cream', rate: '0.67%' }] },
-  { kind: 'enemy', name: 'Zombie Eskimo', wiki: 'Eskimo_Zombie', hp: 45, damage: 14, defense: 6,
+  { kind: 'enemy', name: 'Zombie Eskimo', wiki: 'Zombie_Eskimo', hp: 45, damage: 14, defense: 6,
     description: 'The Snow biome zombie, bundled up against the cold. Same threat as a normal Zombie.',
     drops: [{ name: 'Shackle', rate: '2%' }] },
   { kind: 'enemy', name: 'Wolf', hp: 300, damage: 65, defense: 30, hardmode: true,
