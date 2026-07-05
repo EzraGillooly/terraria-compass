@@ -26,12 +26,6 @@ const EXPLORE_CARDS = [
     to: '/loadouts',
     icon: 'items/blade-of-grass.png',
   },
-  {
-    title: 'Crafting',
-    blurb: 'The recipes behind milestone weapons, armor sets, and key accessories.',
-    to: '/crafting',
-    icon: 'items/bee-keeper.png',
-  },
 ];
 
 // Deterministic star field (stable across renders, no layout jitter)
@@ -104,7 +98,7 @@ export function Home() {
           <p className={styles.sectionKicker}>The Guide</p>
           <h2 id="explore-heading">Where do you <em>want to start?</em></h2>
           <p className={styles.sectionLede}>
-            Four chapters covering everything from your first night to the Moon Lord.
+            Three chapters covering everything from your first night to the Moon Lord.
           </p>
         </div>
         <div className={styles.exploreGrid}>

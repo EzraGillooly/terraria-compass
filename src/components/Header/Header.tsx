@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { to: '/bosses',   label: 'Bosses'   },
   { to: '/biomes',   label: 'Biomes'   },
   { to: '/loadouts', label: 'Loadouts' },
-  { to: '/crafting', label: 'Crafting' },
 ];
 
 const DIFF_OPTIONS = [
