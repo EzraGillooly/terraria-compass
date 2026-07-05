@@ -1,25 +1,25 @@
 /* ════════════════════════════════════════════════════════════
-   TERRARIA COMPASS — "Guide Green" design system
-   Light default + dark mode via [data-mode="dark"].
-   Blue-green "structure + growth" palette with a warm accent.
+   TERRARIA COMPASS — "Terraria" design system
+   Derived from the game's title art: sky blue, grass green,
+   sun gold, earthy surfaces. Light default + dark mode.
 ════════════════════════════════════════════════════════════ */
 :root {
   /* ── Core palette (light) ── */
-  --sky:    #5DA9E9;                 /* legacy hero accents (reskin pending) */
-  --mid:    #69B96B;
-  --deep:   #0A6B4E;                 /* darker green: active / positive */
-  --accent: #0E9E77;                 /* teal-green primary */
-  --warm:   #F2994A;                 /* warm accent: top-pick / CTA */
-  --ink:    #0F2820;
+  --sky:    #3E9BE0;                 /* Terraria sky blue (hero / scene) */
+  --mid:    #5BA130;                 /* grass green */
+  --deep:   #3A7A2E;                 /* darker grass: active / positive */
+  --accent: #4E9E3E;                 /* grass green primary (interactive) */
+  --warm:   #F5C23E;                 /* sun gold: top-pick / highlight */
+  --ink:    #12283B;
 
-  --paper:    #F1F8F5;               /* page background */
-  --paper-2:  #E6F2ED;
+  --paper:    #EAF4FB;               /* light sky-tinted page */
+  --paper-2:  #DCEBF7;
   --card:     #FFFFFF;
-  --card-2:   #E6F2ED;
-  --ink-soft: #0F2820;
-  --ink-mute: #4F6E60;
-  --line:     #CFE4DB;               /* soft border */
-  --hair:     rgba(15, 40, 32, .08);
+  --card-2:   #EAF4FB;
+  --ink-soft: #12283B;
+  --ink-mute: #4A6373;
+  --line:     #CFE0EC;               /* soft blue-grey border */
+  --hair:     rgba(18, 40, 59, .08);
 
   /* ── Typography ── */
   --display: 'Cormorant Garamond', Georgia, serif;
@@ -28,20 +28,20 @@
   --pixel:   'Mulish', ui-sans-serif, sans-serif;
 
   /* ── Elevation ── */
-  --shadow-sm: 0 1px 2px rgba(15, 40, 32, .06), 0 8px 20px -14px rgba(15, 40, 32, .3);
-  --shadow-md: 0 2px 6px rgba(15, 40, 32, .08), 0 14px 30px -18px rgba(15, 40, 32, .35);
-  --shadow-lg: 0 8px 24px rgba(15, 40, 32, .1), 0 28px 60px -24px rgba(15, 40, 32, .4);
+  --shadow-sm: 0 1px 2px rgba(18, 40, 59, .06), 0 8px 20px -14px rgba(18, 40, 59, .3);
+  --shadow-md: 0 2px 6px rgba(18, 40, 59, .08), 0 14px 30px -18px rgba(18, 40, 59, .35);
+  --shadow-lg: 0 8px 24px rgba(18, 40, 59, .1), 0 28px 60px -24px rgba(18, 40, 59, .4);
 
   /* ── Color aliases (keep component CSS modules working) ── */
   --color-bg:               var(--paper);
   --color-surface:          var(--card);
   --color-surface-elevated: var(--card-2);
   --color-border:           var(--hair);
-  --color-border-strong:    rgba(15, 40, 32, .2);
+  --color-border-strong:    rgba(18, 40, 59, .2);
   --color-text-primary:     var(--ink-soft);
   --color-text-secondary:   var(--ink-mute);
   --color-text-muted:       var(--ink-mute);
-  --color-text-dimmed:      rgba(79, 110, 96, .55);
+  --color-text-dimmed:      rgba(74, 99, 115, .55);
   --color-text-inverse:     #fff;
   --color-accent:           var(--accent);
   --color-accent-hover:     color-mix(in oklab, var(--accent) 80%, var(--ink));
@@ -87,24 +87,24 @@
   --radius-pill: 999px;
 }
 
-/* ── Dark mode ── */
+/* ── Dark mode (Terraria night — dormant, for future full dark mode) ── */
 [data-mode="dark"] {
-  --deep:     #33C08C;
-  --accent:   #25C0A0;
-  --warm:     #F2A65A;
-  --ink:      #E3F1EB;
+  --deep:     #4E9E3E;
+  --accent:   #5BB04A;
+  --warm:     #F5C23E;
+  --ink:      #E6EEF8;
 
-  --paper:    #0B1A16;
-  --paper-2:  #18332B;
-  --card:     #12251F;
-  --card-2:   #18332B;
-  --ink-soft: #E3F1EB;
-  --ink-mute: #88A79A;
-  --line:     #234238;
+  --paper:    #0C1830;
+  --paper-2:  #16294F;
+  --card:     #132244;
+  --card-2:   #16294F;
+  --ink-soft: #E6EEF8;
+  --ink-mute: #93A6C4;
+  --line:     #2A3A5E;
   --hair:     rgba(255, 255, 255, .07);
 
   --color-border-strong: rgba(255, 255, 255, .18);
-  --color-text-dimmed:   rgba(136, 167, 154, .55);
+  --color-text-dimmed:   rgba(147, 166, 196, .55);
 }
 
 html {
