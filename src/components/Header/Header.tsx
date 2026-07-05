@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
+import type { DifficultyFilter } from '../../lib/difficulty';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -16,12 +17,12 @@ const DIFF_OPTIONS = [
 ];
 
 interface HeaderProps {
-  /** 'photo' = transparent overlay on hero; 'paper' = sticky parchment */
+  /** 'photo' = transparent overlay on hero; 'paper' = solid bar */
   variant?: 'photo' | 'paper';
 }
 
 export function Header({ variant = 'paper' }: HeaderProps) {
-  const { difficulty, setDifficulty, isDayMode, setIsDayMode } = useAppState();
+  const { difficulty, setDifficulty } = useAppState();
   const isPhoto = variant === 'photo';
 
   return (
@@ -49,38 +50,20 @@ export function Header({ variant = 'paper' }: HeaderProps) {
           ))}
         </nav>
 
-        {/* Controls */}
-        <div className={styles.topctrl}>
-          {/* Difficulty segmented control */}
-          <div className={styles.diffSeg} role="group" aria-label="World difficulty">
-            {DIFF_OPTIONS.map(({ value, label }) => (
-              <button
-                key={value}
-                type="button"
-                className={`${styles.diffPill} ${difficulty === value ? styles[`diff${label}`] : ''}`}
-                aria-pressed={difficulty === value}
-                onClick={() => setDifficulty(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-
-          {/* Day / Night toggle */}
-          <button
-            type="button"
-            className={`${styles.dayNight} ${isDayMode ? '' : styles.isNight}`}
-            aria-label={isDayMode ? 'Switch to night' : 'Switch to day'}
-            onClick={() => setIsDayMode(!isDayMode)}
+        {/* World difficulty */}
+        <label className={styles.diffSelect}>
+          <span className={styles.diffCap}>World</span>
+          <select
+            className={styles.diffField}
+            value={difficulty}
+            onChange={(e) => setDifficulty(e.target.value as DifficultyFilter)}
+            aria-label="World difficulty"
           >
-            <span className={styles.dnTrack}>
-              <span className={styles.dnKnob} aria-hidden="true">
-                {isDayMode ? '☀' : '☾'}
-              </span>
-            </span>
-            <span>{isDayMode ? 'Day' : 'Night'}</span>
-          </button>
-        </div>
+            {DIFF_OPTIONS.map(({ value, label }) => (
+              <option key={value} value={value}>{label}</option>
+            ))}
+          </select>
+        </label>
 
       </div>
     </header>
