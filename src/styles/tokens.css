@@ -1,23 +1,25 @@
 /* ════════════════════════════════════════════════════════════
-   TERRARIA COMPASS — parchment design system
-   Ported from shared.css reference design
+   TERRARIA COMPASS — "Guide Green" design system
+   Light default + dark mode via [data-mode="dark"].
+   Blue-green "structure + growth" palette with a warm accent.
 ════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Core palette ── */
-  --sky:    #5DA9E9;
+  /* ── Core palette (light) ── */
+  --sky:    #5DA9E9;                 /* legacy hero accents (reskin pending) */
   --mid:    #69B96B;
-  --deep:   #2F6B3F;
-  --accent: #E7C66B;
-  --ink:    #1B2A1F;
+  --deep:   #0A6B4E;                 /* darker green: active / positive */
+  --accent: #0E9E77;                 /* teal-green primary */
+  --warm:   #F2994A;                 /* warm accent: top-pick / CTA */
+  --ink:    #0F2820;
 
-  --paper:    #F3EAD6;
-  --paper-2:  #EADFC6;
-  --card:     #FBF6EA;
-  --card-2:   #F4EDDB;
-  --ink-soft: #2C2719;
-  --ink-mute: #6F664F;
-  --line:     #1F1A12;
-  --hair:     rgba(31, 26, 18, .13);
+  --paper:    #F1F8F5;               /* page background */
+  --paper-2:  #E6F2ED;
+  --card:     #FFFFFF;
+  --card-2:   #E6F2ED;
+  --ink-soft: #0F2820;
+  --ink-mute: #4F6E60;
+  --line:     #CFE4DB;               /* soft border */
+  --hair:     rgba(15, 40, 32, .08);
 
   /* ── Typography ── */
   --display: 'Cormorant Garamond', Georgia, serif;
@@ -26,36 +28,33 @@
   --pixel:   'Mulish', ui-sans-serif, sans-serif;
 
   /* ── Elevation ── */
-  --shadow-sm: 0 2px 8px -2px rgba(40, 30, 12, .16);
-  --shadow-md: 0 10px 30px -12px rgba(40, 30, 12, .28);
-  --shadow-lg: 0 28px 60px -20px rgba(20, 14, 6, .42);
-
-  /* ── Difficulty theme overrides (applied to a parent element) ── */
-  /* [data-difficulty="expert"] { --accent: #F0A24E; }  */
-  /* [data-difficulty="master"] { --accent: #E8694A; }  */
+  --shadow-sm: 0 1px 2px rgba(15, 40, 32, .06), 0 8px 20px -14px rgba(15, 40, 32, .3);
+  --shadow-md: 0 2px 6px rgba(15, 40, 32, .08), 0 14px 30px -18px rgba(15, 40, 32, .35);
+  --shadow-lg: 0 8px 24px rgba(15, 40, 32, .1), 0 28px 60px -24px rgba(15, 40, 32, .4);
 
   /* ── Color aliases (keep component CSS modules working) ── */
   --color-bg:               var(--paper);
   --color-surface:          var(--card);
   --color-surface-elevated: var(--card-2);
   --color-border:           var(--hair);
-  --color-border-strong:    rgba(31, 26, 18, .28);
+  --color-border-strong:    rgba(15, 40, 32, .2);
   --color-text-primary:     var(--ink-soft);
   --color-text-secondary:   var(--ink-mute);
   --color-text-muted:       var(--ink-mute);
-  --color-text-dimmed:      rgba(111, 100, 79, .55);
+  --color-text-dimmed:      rgba(79, 110, 96, .55);
   --color-text-inverse:     #fff;
   --color-accent:           var(--accent);
   --color-accent-hover:     color-mix(in oklab, var(--accent) 80%, var(--ink));
   --color-accent-soft:      color-mix(in oklab, var(--accent) 18%, var(--paper));
+  --color-warm:             var(--warm);
   --color-hallowed:         var(--deep);
   --color-demonite:         #7C5CBF;
   --color-corruption:       #6D28D9;
   --color-crimson:          #BE123C;
   --color-success:          var(--deep);
-  --color-warning:          var(--accent);
+  --color-warning:          var(--warm);
   --color-danger:           #BE123C;
-  --color-top-pick-glow:    rgba(47, 107, 63, .35);
+  --color-top-pick-glow:    color-mix(in oklab, var(--warm) 45%, transparent);
   --color-focus-ring:       var(--accent);
 
   /* ── Font aliases ── */
@@ -81,15 +80,32 @@
   --space-12: 48px;
   --space-16: 64px;
 
-  /* ── Border radius (parchment aesthetic — soft, not pixel-sharp) ── */
+  /* ── Border radius (soft, modern) ── */
   --radius-sm:   6px;
   --radius-md:   10px;
   --radius-lg:   16px;
   --radius-pill: 999px;
 }
 
-[data-difficulty="expert"] { --accent: #F0A24E; --color-accent: #F0A24E; }
-[data-difficulty="master"] { --accent: #E8694A; --color-accent: #E8694A; }
+/* ── Dark mode ── */
+[data-mode="dark"] {
+  --deep:     #33C08C;
+  --accent:   #25C0A0;
+  --warm:     #F2A65A;
+  --ink:      #E3F1EB;
+
+  --paper:    #0B1A16;
+  --paper-2:  #18332B;
+  --card:     #12251F;
+  --card-2:   #18332B;
+  --ink-soft: #E3F1EB;
+  --ink-mute: #88A79A;
+  --line:     #234238;
+  --hair:     rgba(255, 255, 255, .07);
+
+  --color-border-strong: rgba(255, 255, 255, .18);
+  --color-text-dimmed:   rgba(136, 167, 154, .55);
+}
 
 html {
   min-height: 100%;
