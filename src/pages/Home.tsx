@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { useAppState } from '../lib/app-context';
 import styles from './Home.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -43,14 +43,14 @@ const STARS = Array.from({ length: 46 }, (_, i) => ({
 }));
 
 export function Home() {
-  const [night, setNight] = useState(false);
+  const { isDayMode } = useAppState();
 
   return (
     <div className={styles.page}>
-      {/* ── Animated hero ── */}
+      {/* ── Animated hero (follows the global day/night toggle) ── */}
       <section
         className={styles.hero}
-        data-night={night ? 'true' : 'false'}
+        data-night={isDayMode ? 'false' : 'true'}
         aria-label="Homepage hero"
       >
         <div className={styles.sky} aria-hidden="true" />
@@ -79,17 +79,6 @@ export function Home() {
         <div className={styles.grass} aria-hidden="true" />
 
         <Header variant="photo" />
-
-        <button
-          type="button"
-          className={styles.dayToggle}
-          aria-pressed={night}
-          aria-label={night ? 'Switch hero to daytime' : 'Switch hero to nighttime'}
-          onClick={() => setNight((v) => !v)}
-        >
-          {night ? <MoonMark /> : <SunMark />}
-          <span>{night ? 'Night' : 'Day'}</span>
-        </button>
 
         <div className={styles.heroBody}>
           <p className={styles.kicker}>Your compass through Terraria</p>
@@ -140,24 +129,5 @@ export function Home() {
 
       <Footer />
     </div>
-  );
-}
-
-/* Toggle icons (SVG, not emoji) */
-function SunMark() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="12" cy="12" r="5" fill="currentColor" />
-      <g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-        <path d="M12 1v3M12 20v3M1 12h3M20 12h3M4 4l2 2M18 18l2 2M20 4l-2 2M6 18l-2 2" />
-      </g>
-    </svg>
-  );
-}
-function MoonMark() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
-    </svg>
   );
 }

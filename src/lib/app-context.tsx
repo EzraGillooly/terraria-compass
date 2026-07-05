@@ -19,6 +19,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       difficulty === 'normal' ? '' : difficulty;
   }, [difficulty]);
 
+  useEffect(() => {
+    document.documentElement.dataset.mode = isDayMode ? 'day' : 'dark';
+  }, [isDayMode]);
+
   return (
     <AppContext.Provider value={{ difficulty, setDifficulty, isDayMode, setIsDayMode }}>
       {children}

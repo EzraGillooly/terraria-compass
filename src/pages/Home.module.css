@@ -90,28 +90,6 @@
 .hero[data-night='true'] .dayOnly { opacity: 0; pointer-events: none; }
 .hero[data-night='false'] .nightOnly { opacity: 0; pointer-events: none; }
 
-/* Day/night toggle */
-.dayToggle {
-  position: absolute;
-  top: 80px;
-  right: 32px;
-  z-index: 6;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: rgba(8,18,36,.32);
-  border: 1px solid rgba(255,255,255,.3);
-  color: #fff;
-  border-radius: var(--radius-pill);
-  padding: 6px 14px 6px 11px;
-  font-weight: 700;
-  font-size: 13px;
-  cursor: pointer;
-  backdrop-filter: blur(6px);
-  transition: background .15s;
-}
-.dayToggle:hover { background: rgba(8,18,36,.5); }
-
 .heroBody {
   position: relative;
   z-index: 5;
@@ -254,7 +232,6 @@
 
 @media (max-width: 820px) {
   .exploreGrid { grid-template-columns: 1fr 1fr; }
-  .dayToggle { top: 74px; right: 20px; }
 }
 @media (max-width: 480px) {
   .exploreGrid { grid-template-columns: 1fr; }
