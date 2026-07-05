@@ -20,9 +20,10 @@
   --hair:     rgba(31, 26, 18, .13);
 
   /* ── Typography ── */
-  --display: 'Cinzel', Georgia, serif;
-  --body:    'Inter', ui-sans-serif, sans-serif;
-  --pixel:   'VT323', monospace;
+  --display: 'Cormorant Garamond', Georgia, serif;
+  --body:    'Mulish', ui-sans-serif, sans-serif;
+  /* "label voice" — formerly VT323 pixel; now Mulish caps (uppercase + tracking set per use) */
+  --pixel:   'Mulish', ui-sans-serif, sans-serif;
 
   /* ── Elevation ── */
   --shadow-sm: 0 2px 8px -2px rgba(40, 30, 12, .16);
