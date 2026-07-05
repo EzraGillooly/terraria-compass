@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -33,18 +34,62 @@ const EXPLORE_CARDS = [
   },
 ];
 
+// Deterministic star field (stable across renders, no layout jitter)
+const STARS = Array.from({ length: 46 }, (_, i) => ({
+  left: 6 + (i * 97) % 88,
+  top: 5 + (i * 53) % 60,
+  big: i % 6 === 0,
+  delay: ((i * 0.37) % 3).toFixed(2),
+}));
+
 export function Home() {
+  const [night, setNight] = useState(false);
+
   return (
     <div className={styles.page}>
-      {/* ── Hero ── */}
+      {/* ── Animated hero ── */}
       <section
         className={styles.hero}
-        style={{ backgroundImage: `url(${BASE}hero/loadouts.png)` }}
+        data-night={night ? 'true' : 'false'}
         aria-label="Homepage hero"
       >
-        <div className={styles.heroWash} aria-hidden="true" />
+        <div className={styles.sky} aria-hidden="true" />
+        <div className={styles.topWash} aria-hidden="true" />
+
+        {/* Day scene */}
+        <div className={`${styles.clouds} ${styles.dayOnly}`} aria-hidden="true">
+          <span className={`${styles.cloud} ${styles.c1}`} />
+          <span className={`${styles.cloud} ${styles.c2}`} />
+          <span className={`${styles.cloud} ${styles.c3}`} />
+        </div>
+        <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true" />
+
+        {/* Night scene */}
+        <div className={`${styles.stars} ${styles.nightOnly}`} aria-hidden="true">
+          {STARS.map((s, i) => (
+            <span
+              key={i}
+              className={`${styles.star} ${s.big ? styles.starBig : ''}`}
+              style={{ left: `${s.left}%`, top: `${s.top}%`, animationDelay: `${s.delay}s` }}
+            />
+          ))}
+        </div>
+        <div className={`${styles.moon} ${styles.nightOnly}`} aria-hidden="true" />
+
+        <div className={styles.grass} aria-hidden="true" />
 
         <Header variant="photo" />
+
+        <button
+          type="button"
+          className={styles.dayToggle}
+          aria-pressed={night}
+          aria-label={night ? 'Switch hero to daytime' : 'Switch hero to nighttime'}
+          onClick={() => setNight((v) => !v)}
+        >
+          {night ? <MoonMark /> : <SunMark />}
+          <span>{night ? 'Night' : 'Day'}</span>
+        </button>
 
         <div className={styles.heroBody}>
           <p className={styles.kicker}>Your compass through Terraria</p>
@@ -62,16 +107,6 @@ export function Home() {
             <Link to="/loadouts" className={styles.btnSecondary}>Browse loadouts</Link>
           </div>
         </div>
-
-        <img
-          src={sprite('bosses/eye-of-cthulhu.png')}
-          alt=""
-          aria-hidden="true"
-          className={`${styles.heroSprite} pixel-img`}
-          width="96"
-          height="96"
-          loading="lazy"
-        />
       </section>
 
       {/* ── Explore section ── */}
@@ -105,5 +140,24 @@ export function Home() {
 
       <Footer />
     </div>
+  );
+}
+
+/* Toggle icons (SVG, not emoji) */
+function SunMark() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="5" fill="currentColor" />
+      <g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+        <path d="M12 1v3M12 20v3M1 12h3M20 12h3M4 4l2 2M18 18l2 2M20 4l-2 2M6 18l-2 2" />
+      </g>
+    </svg>
+  );
+}
+function MoonMark() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+    </svg>
   );
 }
