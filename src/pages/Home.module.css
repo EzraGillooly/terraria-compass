@@ -72,7 +72,7 @@
   color: #fff;
   background: var(--accent);
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 13px 24px;
   text-decoration: none;
   transition: background .15s, transform .12s;
@@ -90,7 +90,7 @@
   color: #fff;
   background: transparent;
   border: 1px solid rgba(255,255,255,.55);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 13px 22px;
   text-decoration: none;
   transition: background .15s, border-color .15s;
@@ -147,7 +147,7 @@
   text-align: center;
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px 18px;
   text-decoration: none;
   box-shadow: var(--shadow-sm);

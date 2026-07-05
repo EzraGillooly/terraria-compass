@@ -20,7 +20,7 @@
   cursor: pointer; box-shadow: var(--shadow-sm); transition: background .15s, border-color .15s, color .15s;
 }
 .cbtn:hover { border-color: var(--accent); }
-.cdot { width: 20px; height: 20px; border-radius: 7px; flex: none; }
+.cdot { width: 20px; height: 20px; border-radius: 4px; flex: none; }
 .cbtn.on { background: var(--accent); color: #fff; border-color: transparent; }
 
 /* ── Phase stepper ── */
@@ -60,7 +60,7 @@
 }
 .wtile:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .wtile.best { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.wIcon { width: 44px; height: 44px; margin: 0 auto 8px; background: var(--card); border: 1px solid var(--line); border-radius: 9px; display: grid; place-items: center; }
+.wIcon { width: 44px; height: 44px; margin: 0 auto 8px; background: var(--card); border: 1px solid var(--line); border-radius: 5px; display: grid; place-items: center; }
 .wtileImg { width: 34px; height: 34px; object-fit: contain; }
 .wName { font-weight: 700; font-size: 12px; line-height: 1.15; color: var(--ink-soft); }
 .wSource { font-size: 10px; color: var(--ink-mute); margin-top: 2px; }
@@ -69,7 +69,7 @@
 
 /* ── Armor ── */
 .armor { display: flex; gap: 14px; align-items: flex-start; }
-.armorDoll { width: 60px; height: 60px; flex: none; border-radius: 14px; background: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); display: grid; place-items: center; box-shadow: var(--shadow-sm); }
+.armorDoll { width: 60px; height: 60px; flex: none; border-radius: 7px; background: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); display: grid; place-items: center; box-shadow: var(--shadow-sm); }
 .armorSprite { width: 44px; height: 44px; object-fit: contain; }
 .armorInfo { flex: 1; min-width: 0; }
 .armorEntry { padding: 6px 0; border-bottom: 1px solid var(--hair); }
@@ -82,7 +82,7 @@
 .accList { list-style: none; padding: 0; margin: 0; }
 .accRow { display: flex; align-items: center; gap: 11px; padding: 9px 0; border-bottom: 1px solid var(--hair); }
 .accRow:last-of-type { border-bottom: 0; }
-.accIcon { width: 30px; height: 30px; flex: none; object-fit: contain; padding: 3px; background: var(--card-2); border: 1px solid var(--line); border-radius: 7px; }
+.accIcon { width: 30px; height: 30px; flex: none; object-fit: contain; padding: 3px; background: var(--card-2); border: 1px solid var(--line); border-radius: 4px; }
 .accInfo { flex: 1; min-width: 0; }
 .accName { font-weight: 700; font-size: 13px; color: var(--ink-soft); }
 .accFrom { font-size: 10px; color: var(--ink-mute); margin-top: 1px; }
