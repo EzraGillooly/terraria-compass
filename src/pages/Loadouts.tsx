@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { ItemModal } from '../components/ItemModal/ItemModal';
 import { useAppState } from '../lib/app-context';
 import { classes, getLoadoutByPhaseAndClass, phases } from '../lib/data';
 import { isItemRelevantToDifficulty } from '../lib/difficulty';
@@ -40,15 +41,16 @@ function iconSrcs(icon: string) {
 }
 
 /* ── Weapon tile ── */
-function WeaponTile({ item, difficulty }: { item: Item; difficulty: string }) {
+function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: string; onOpen: (i: Item) => void }) {
   const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
   const { local, wiki } = iconSrcs(item.icon);
 
   return (
-    <div
+    <button
+      type="button"
       className={`${styles.wtile} ${item.topPick ? styles.best : ''}`}
       style={{ opacity: relevant ? 1 : 0.45 }}
-      title={item.why ?? item.name}
+      onClick={() => onOpen(item)}
     >
       {item.topPick && <span className={styles.wStar} aria-label="Top pick">★</span>}
       <div className={styles.wIcon}>
@@ -62,29 +64,34 @@ function WeaponTile({ item, difficulty }: { item: Item; difficulty: string }) {
       <div className={styles.wName}>{item.name}</div>
       {item.source && <div className={styles.wSource}>{item.source}</div>}
       {item.subclass && <span className={styles.wSub}>{item.subclass}</span>}
-    </div>
+    </button>
   );
 }
 
-/* ── Accessory row ── */
-function AccRow({ item, difficulty }: { item: Item; difficulty: string }) {
-  const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
-  const { local, wiki } = iconSrcs(item.icon);
+/* ── Accessory slot ── */
+const HARDMODE_PHASES = new Set<PhaseId>([
+  'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
+]);
 
+function AccSlot({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
+  if (!item) {
+    return (
+      <div className={`${styles.accSlot} ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
+        <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
+      </div>
+    );
+  }
+  const { local, wiki } = iconSrcs(item.icon);
   return (
-    <li className={styles.accRow} style={{ opacity: relevant ? 1 : 0.45 }}>
+    <button type="button" className={`${styles.accSlot} ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
       <img
         src={local} alt="" aria-hidden="true"
-        className={`${styles.accIcon} pixel-img`}
+        className={`${styles.accSlotImg} pixel-img`}
         width="30" height="30" loading="lazy"
         onError={makeErrorHandler(wiki, FALLBACK_ICON)}
       />
-      <div className={styles.accInfo}>
-        <div className={styles.accName}>{item.name}</div>
-        {item.source && <div className={styles.accFrom}>{item.source}</div>}
-      </div>
-      {item.subclass && <span className={styles.accType}>{item.subclass}</span>}
-    </li>
+      <span className={styles.accSlotName}>{item.name}</span>
+    </button>
   );
 }
 
@@ -92,6 +99,7 @@ export function Loadouts() {
   const { difficulty } = useAppState();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
+  const [modalItem, setModalItem] = useState<Item | null>(null);
 
   const loadout = getLoadoutByPhaseAndClass(phaseId, classId);
   const classDef = classes.find((c) => c.id === classId)!;
@@ -110,6 +118,12 @@ export function Loadouts() {
 
   const armorSprite = safeLoadout.armor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
+
+  // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
+  const demonHeartUnlocked = HARDMODE_PHASES.has(phaseId) && (difficulty === 'expert' || difficulty === 'master');
+  const slotCount = demonHeartUnlocked ? 6 : 5;
+  const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
+  const extraAccessories = safeLoadout.accessories.slice(slotCount);
 
   return (
     <div className={styles.page}>
@@ -189,7 +203,7 @@ export function Loadouts() {
               <div className={styles.weaponGroup}>
                 <div className={styles.weaponGroupLabel}>Best in Slot</div>
                 <div className={styles.weaponRow}>
-                  {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} />)}
+                  {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                 </div>
               </div>
             )}
@@ -198,7 +212,7 @@ export function Loadouts() {
               <div className={styles.weaponGroup}>
                 <div className={styles.weaponGroupLabel}>Also Great</div>
                 <div className={styles.weaponRow}>
-                  {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} />)}
+                  {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                 </div>
               </div>
             )}
@@ -223,10 +237,10 @@ export function Loadouts() {
                 </div>
                 <div className={styles.armorInfo}>
                   {safeLoadout.armor.map((a) => (
-                    <div key={a.id} className={styles.armorEntry}>
+                    <button key={a.id} type="button" className={styles.armorEntry} onClick={() => setModalItem(a)}>
                       <div className={styles.armorName}>{a.name}</div>
                       {a.why && <div className={styles.armorPerk}>{a.why}</div>}
-                    </div>
+                    </button>
                   ))}
                   {safeLoadout.armor.length > 1 && (
                     <span className={styles.setBadge}>{safeLoadout.armor.length} sets</span>
@@ -240,11 +254,25 @@ export function Loadouts() {
 
           {/* Accessories + Buffs */}
           <div className={styles.tile}>
-            <div className={styles.tlabel}><span>Accessories</span></div>
-            <ul className={styles.accList}>
-              {safeLoadout.accessories.map((acc) => <AccRow key={acc.id} item={acc} difficulty={difficulty} />)}
-              {safeLoadout.accessories.length === 0 && <li className={styles.empty}>No accessories data yet.</li>}
-            </ul>
+            <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
+            <div className={styles.accGrid}>
+              {accSlots.map((acc, i) => (
+                <AccSlot
+                  key={acc?.id ?? `empty-${i}`}
+                  item={acc}
+                  demonHeart={demonHeartUnlocked && i === 5}
+                  onOpen={setModalItem}
+                />
+              ))}
+            </div>
+            {extraAccessories.length > 0 && (
+              <div className={styles.accAlts}>
+                <span className={styles.accAltsLabel}>Also good:</span>
+                {extraAccessories.map((a) => (
+                  <button key={a.id} type="button" className={styles.accAlt} onClick={() => setModalItem(a)}>{a.name}</button>
+                ))}
+              </div>
+            )}
             {safeLoadout.buffs.length > 0 && (
               <div className={styles.buffWrap}>
                 <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
@@ -257,6 +285,8 @@ export function Loadouts() {
 
         </div>
       </section>
+
+      <ItemModal item={modalItem} onClose={() => setModalItem(null)} />
 
       <Footer />
     </div>
