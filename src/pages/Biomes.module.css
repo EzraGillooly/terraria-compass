@@ -146,9 +146,10 @@
   border-radius: var(--radius-pill);
   padding: 4px 11px 4px 8px;
 }
-.mark { flex: none; }
-.enemy .mark { color: var(--warm); }
-.loot .mark { color: var(--accent); }
+.chipIcon { width: 20px; height: 20px; flex: none; object-fit: contain; }
+.chipDot { width: 7px; height: 7px; border-radius: 50%; flex: none; margin: 0 3px; }
+.enemy .chipDot { background: var(--warm); }
+.loot .chipDot { background: var(--accent); }
 
 /* clickable chips (have bestiary detail) */
 .chipBtn { cursor: pointer; font-family: var(--body); transition: border-color .15s, background .15s, transform .12s; }

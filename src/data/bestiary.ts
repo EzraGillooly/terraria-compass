@@ -35,6 +35,22 @@ export interface LootItem {
 
 export type BestiaryEntry = Enemy | LootItem;
 
+/** wiki file stem for an entry (uses `wiki` override, else the name). */
+export function spriteStem(entry: BestiaryEntry): string {
+  return entry.wiki
+    ?? entry.name.split(' ').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
+}
+
+/** Locally-hosted sprite (populated under public/icons/bestiary/). */
+export function localSprite(entry: BestiaryEntry): string {
+  return `${import.meta.env.BASE_URL}icons/bestiary/${spriteStem(entry)}.png`;
+}
+
+/** terraria.wiki.gg sprite (single-image fallback only; do not bulk-load). */
+export function wikiSprite(entry: BestiaryEntry): string {
+  return `https://terraria.wiki.gg/wiki/Special:FilePath/${spriteStem(entry)}.png`;
+}
+
 /* ── Forest ── */
 const FOREST: BestiaryEntry[] = [
   {

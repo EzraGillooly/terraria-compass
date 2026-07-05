@@ -1,19 +1,17 @@
 import { useEffect, useRef } from 'react';
 import type { SyntheticEvent } from 'react';
-import type { BestiaryEntry } from '../../data/bestiary';
+import { localSprite, wikiSprite, type BestiaryEntry } from '../../data/bestiary';
+import { useAppState } from '../../lib/app-context';
 import styles from './BestiaryModal.module.css';
 
-const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
-
-function wikiStem(entry: BestiaryEntry): string {
-  if (entry.wiki) return entry.wiki;
-  return entry.name.split(' ').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
-}
+const SCALE = { normal: 1, expert: 2, master: 3 } as const;
+const MODE_LABEL = { normal: 'Classic', expert: 'Expert', master: 'Master' } as const;
 
 const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='48' height='48' fill='%23EAF4FB'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24' fill='%234A6373' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
 export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
+  const { difficulty } = useAppState();
 
   useEffect(() => {
     if (!entry) return;
@@ -25,12 +23,11 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
 
   if (!entry) return null;
 
-  const wiki = `${WIKI}/${wikiStem(entry)}.png`;
+  const mult = SCALE[difficulty];
   const onImgError = (e: SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
-    if (img.dataset.stage === 'fallback') return;
-    img.dataset.stage = 'fallback';
-    img.src = FALLBACK;
+    if (!img.dataset.stage) { img.dataset.stage = 'wiki'; img.src = wikiSprite(entry); return; }
+    if (img.dataset.stage === 'wiki') { img.dataset.stage = 'fallback'; img.src = FALLBACK; }
   };
 
   return (
@@ -50,7 +47,7 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
 
         <div className={styles.head}>
           <span className={styles.sprite}>
-            <img src={wiki} alt={entry.name} width="48" height="48" className="pixel-img" onError={onImgError} />
+            <img src={localSprite(entry)} alt={entry.name} width="48" height="48" className="pixel-img" onError={onImgError} />
           </span>
           <div>
             <h2 id="bestiary-title" className={styles.name}>{entry.name}</h2>
@@ -65,8 +62,8 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
         {entry.kind === 'enemy' ? (
           <>
             <div className={styles.stats}>
-              <div className={styles.stat}><span className={styles.statNum}>{entry.hp}</span><span className={styles.statLbl}>HP</span></div>
-              <div className={styles.stat}><span className={styles.statNum}>{entry.damage}</span><span className={styles.statLbl}>Damage</span></div>
+              <div className={styles.stat}><span className={styles.statNum}>{entry.hp * mult}</span><span className={styles.statLbl}>HP</span></div>
+              <div className={styles.stat}><span className={styles.statNum}>{entry.damage * mult}</span><span className={styles.statLbl}>Damage</span></div>
               <div className={styles.stat}><span className={styles.statNum}>{entry.defense}</span><span className={styles.statLbl}>Defense</span></div>
             </div>
             <div className={styles.section}>
@@ -84,7 +81,9 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
                 <p className={styles.empty}>Drops nothing.</p>
               )}
             </div>
-            <p className={styles.note}>Stats shown for Classic mode.</p>
+            <p className={styles.note}>
+              HP &amp; damage shown for {MODE_LABEL[difficulty]} mode. Change it with the World selector.
+            </p>
           </>
         ) : (
           <div className={styles.kv}>

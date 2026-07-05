@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 import { BestiaryModal } from '../components/BestiaryModal/BestiaryModal';
 import { biomes } from '../data/biomes';
 import type { BiomeDef } from '../data/biomes';
-import { bestiary, type BestiaryEntry } from '../data/bestiary';
+import { bestiary, localSprite, type BestiaryEntry } from '../data/bestiary';
 import styles from './Biomes.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -21,15 +21,30 @@ function DangerMeter({ level }: { level: number }) {
   );
 }
 
+function ChipIcon({ entry, kind }: { entry: BestiaryEntry; kind: 'enemy' | 'loot' }) {
+  const [broken, setBroken] = useState(false);
+  if (broken) return <span className={`${styles.chipDot} ${kind === 'enemy' ? styles.enemy : styles.loot}`} aria-hidden="true" />;
+  return (
+    <img
+      className={`${styles.chipIcon} pixel-img`}
+      src={localSprite(entry)}
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      onError={() => setBroken(true)}
+    />
+  );
+}
+
 function Chip({ name, kind, onOpen }: { name: string; kind: 'enemy' | 'loot'; onOpen: (e: BestiaryEntry) => void }) {
   const entry = bestiary[name];
-  const Mark = kind === 'enemy' ? SwordMark : GemMark;
   const cls = `${styles.chip} ${kind === 'enemy' ? styles.enemy : styles.loot}`;
 
-  if (!entry) return <span className={cls}><Mark />{name}</span>;
+  if (!entry) return <span className={cls}>{name}</span>;
   return (
     <button type="button" className={`${cls} ${styles.chipBtn}`} onClick={() => onOpen(entry)}>
-      <Mark />{name}
+      <ChipIcon entry={entry} kind={kind} />
+      {name}
     </button>
   );
 }
@@ -114,32 +129,5 @@ export function Biomes() {
 
       <Footer />
     </div>
-  );
-}
-
-/* Tiny pixel-art markers (no emoji) */
-function SwordMark() {
-  return (
-    <svg width="12" height="12" viewBox="0 0 8 8" shapeRendering="crispEdges" aria-hidden="true" className={styles.mark}>
-      <rect x="5" y="0" width="2" height="2" fill="currentColor" />
-      <rect x="4" y="1" width="1" height="1" fill="currentColor" />
-      <rect x="3" y="2" width="1" height="1" fill="currentColor" />
-      <rect x="2" y="3" width="1" height="1" fill="currentColor" />
-      <rect x="1" y="4" width="1" height="1" fill="currentColor" />
-      <rect x="0" y="5" width="2" height="2" fill="currentColor" />
-      <rect x="2" y="5" width="2" height="1" fill="currentColor" />
-      <rect x="1" y="6" width="2" height="2" fill="currentColor" />
-    </svg>
-  );
-}
-function GemMark() {
-  return (
-    <svg width="12" height="12" viewBox="0 0 8 8" shapeRendering="crispEdges" aria-hidden="true" className={styles.mark}>
-      <rect x="2" y="1" width="4" height="1" fill="currentColor" />
-      <rect x="1" y="2" width="6" height="1" fill="currentColor" />
-      <rect x="1" y="3" width="6" height="2" fill="currentColor" />
-      <rect x="2" y="5" width="4" height="1" fill="currentColor" />
-      <rect x="3" y="6" width="2" height="1" fill="currentColor" />
-    </svg>
   );
 }

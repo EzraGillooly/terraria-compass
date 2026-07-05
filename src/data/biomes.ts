@@ -33,7 +33,7 @@ export const biomes: BiomeDef[] = [
     palette: { sky: '#7BB36A', mid: '#3F7A3A', deep: '#1F4222', accent: '#F2D45A' },
     mobs: ['Hornet', 'Man Eater', 'Jungle Slime', 'Piranha', 'Angry Trapper', 'Derpling'],
     items: ['Jungle Spores', 'Stinger', 'Vine', 'Rich Mahogany', 'Moonglow'],
-    danger: 3,
+    danger: 5,
   },
   {
     id: 'sky',
@@ -105,7 +105,7 @@ export const biomes: BiomeDef[] = [
     palette: { sky: '#B998FF', mid: '#FFB7E2', deep: '#6B47C9', accent: '#FFF4A8' },
     mobs: ['Pixie', 'Unicorn', 'Gastropod', 'Chaos Elemental', 'Enchanted Sword'],
     items: ['Crystal Shard', 'Pixie Dust', 'Unicorn Horn', 'Holy Water', 'Rainbow Rod'],
-    danger: 4,
+    danger: 3,
     hardmodeOnly: true,
   },
   {
