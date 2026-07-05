@@ -239,6 +239,62 @@ const JUNGLE: BestiaryEntry[] = [
   },
 ];
 
+/* ── Sky Islands ── */
+const SKY: BestiaryEntry[] = [
+  {
+    kind: 'enemy',
+    name: 'Harpy',
+    hp: 100, damage: 25, defense: 8,
+    description: 'Winged humanoids that circle at high altitude and fling feathers. Common around Floating Islands and Space.',
+    drops: [
+      { name: 'Feather', rate: '50%' },
+      { name: 'Giant Harpy Feather', rate: '0.67%' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Wyvern',
+    hp: 4000, damage: 80, defense: 20, hardmode: true,
+    description: 'A Hardmode sky serpent that flies through blocks with worm-type AI. Head hits hardest; its Souls of Flight craft wings.',
+    drops: [
+      { name: 'Soul of Flight', rate: '5, 100%' },
+      { name: 'Wyvern Kite', rate: '4% (Windy Days)' },
+    ],
+  },
+  {
+    kind: 'loot',
+    name: 'Sky Crate',
+    type: 'Crate',
+    description: 'A crate that yields floating-island loot when opened.',
+    source: 'Fished up from water in the Sky and Space layers.',
+    usedFor: 'Open for sky treasures: Starfury, Shiny Red Balloon, Lucky Horseshoe, and sky furniture.',
+  },
+  {
+    kind: 'loot',
+    name: 'Skyware Chest',
+    type: 'Chest',
+    description: 'The treasure chest found on Floating Islands and in Sky Lakes.',
+    source: 'Found on Floating Islands and in Sky Lakes.',
+    usedFor: 'Holds one island treasure (Starfury, Shiny Red Balloon, Lucky Horseshoe, or Fledgling Wings) plus Skyware furniture.',
+  },
+  {
+    kind: 'loot',
+    name: 'Shiny Red Balloon',
+    type: 'Accessory',
+    description: 'A festive balloon that increases jump height.',
+    source: 'Found in Skyware Chests and Sky Crates.',
+    usedFor: 'Crafts Cloud in a Balloon and later balloon mobility accessories.',
+  },
+  {
+    kind: 'loot',
+    name: 'Lucky Horseshoe',
+    type: 'Accessory',
+    description: 'A charm that negates all fall damage.',
+    source: 'Found on Floating Islands, in Skyware Chests and Sky Crates.',
+    usedFor: 'Combines into Obsidian Horseshoe, wings, and other mobility accessories.',
+  },
+];
+
 export const bestiary: Record<string, BestiaryEntry> = Object.fromEntries(
-  [...FOREST, ...JUNGLE].map((e) => [e.name, e]),
+  [...FOREST, ...JUNGLE, ...SKY].map((e) => [e.name, e]),
 );
