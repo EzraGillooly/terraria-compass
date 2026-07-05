@@ -41,12 +41,16 @@ function BiomeBand({ biome, onOpen }: { biome: BiomeDef; onOpen: (e: BestiaryEnt
     <article className={styles.band}>
       <div className={styles.art} style={{ background: gradient }}>
         <img
-          src={`${BASE}biomes/${biome.id}.png`}
+          src={`${BASE}biomes/${biome.id}.webp`}
           alt=""
           aria-hidden="true"
           className={styles.artImg}
           loading="lazy"
-          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (img.dataset.stage !== 'png') { img.dataset.stage = 'png'; img.src = `${BASE}biomes/${biome.id}.png`; return; }
+            img.style.display = 'none';
+          }}
         />
         <div className={styles.artWash} aria-hidden="true" />
         <div className={styles.artText}>

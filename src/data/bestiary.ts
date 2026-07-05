@@ -134,6 +134,111 @@ const FOREST: BestiaryEntry[] = [
   },
 ];
 
+/* ── Jungle ── */
+const JUNGLE: BestiaryEntry[] = [
+  {
+    kind: 'enemy',
+    name: 'Hornet',
+    hp: 48, damage: 26, defense: 12,
+    description: 'Flying insects that dart around and fire stingers from a distance. Common and a real nuisance in swarms.',
+    drops: [
+      { name: 'Stinger', rate: '66%' },
+      { name: 'Bezoar', rate: '1%' },
+      { name: 'Ancient Cobalt Armor', rate: '0.33% each piece' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Man Eater',
+    hp: 110, damage: 34, defense: 10,
+    description: 'A rooted jungle plant with a snapping pincher. The stem is safe to walk through; only the head bites.',
+    drops: [
+      { name: 'Vine', rate: '50%' },
+      { name: 'Ancient Cobalt Armor', rate: '0.33% each piece' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Jungle Slime',
+    hp: 60, damage: 18, defense: 6,
+    description: 'A tougher green slime tinted for the jungle. Behaves like any slime, just with more health.',
+    drops: [
+      { name: 'Gel', rate: '1–2, 100%' },
+      { name: 'Slime Staff', rate: '0.01% (very rare)' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Piranha',
+    hp: 30, damage: 25, defense: 2,
+    description: 'Swims in straight lines through jungle water. Dangerous out of water, where it flops around wildly.',
+    drops: [
+      { name: 'Hook', rate: '3.3%' },
+      { name: 'Compass', rate: '1.33%' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Angry Trapper',
+    hp: 300, damage: 100, defense: 30, hardmode: true,
+    description: 'A Hardmode jungle vine-plant that lashes out at range. Hits hard, so clear it before it stacks up.',
+    drops: [
+      { name: 'Uzi', rate: '1%' },
+      { name: 'Coffee', rate: '3.33%' },
+    ],
+  },
+  {
+    kind: 'enemy',
+    name: 'Derpling',
+    hp: 300, damage: 80, defense: 26, hardmode: true,
+    description: 'A Hardmode jungle beetle that spawns fast during the day and can quickly overwhelm you.',
+    drops: [
+      { name: 'Grapes', rate: '2.5%' },
+      { name: "Glommer's Flower", rate: '1%' },
+    ],
+  },
+  {
+    kind: 'loot',
+    name: 'Jungle Spores',
+    type: 'Material',
+    description: 'Glowing spores that grow on jungle background walls.',
+    source: 'Break the glowing spore clusters on Jungle walls with any tool.',
+    usedFor: 'Jungle armor and the Blade of Grass.',
+  },
+  {
+    kind: 'loot',
+    name: 'Stinger',
+    type: 'Material',
+    description: 'A sharp barb dropped by jungle creatures.',
+    source: 'Dropped by Hornets, Man Eaters, and Spiked Jungle Slimes.',
+    usedFor: 'Blade of Grass, Snapthorn, Thorn Chakram, and Stinger gear.',
+  },
+  {
+    kind: 'loot',
+    name: 'Vine',
+    type: 'Material',
+    description: 'A length of living jungle vine.',
+    source: 'Dropped by Man Eaters and Snatchers.',
+    usedFor: 'The Ivy Whip grappling hook.',
+  },
+  {
+    kind: 'loot',
+    name: 'Rich Mahogany',
+    type: 'Material (Wood)',
+    description: 'The reddish wood of jungle trees.',
+    source: 'Chop down Jungle trees.',
+    usedFor: 'Rich Mahogany furniture and early jungle-themed builds.',
+  },
+  {
+    kind: 'loot',
+    name: 'Moonglow',
+    type: 'Herb',
+    description: 'A glowing blue herb that blooms at night.',
+    source: 'Grows in the Jungle; harvest while it glows for seeds too.',
+    usedFor: 'Many potions, including summoning and utility brews.',
+  },
+];
+
 export const bestiary: Record<string, BestiaryEntry> = Object.fromEntries(
-  [...FOREST].map((e) => [e.name, e]),
+  [...FOREST, ...JUNGLE].map((e) => [e.name, e]),
 );

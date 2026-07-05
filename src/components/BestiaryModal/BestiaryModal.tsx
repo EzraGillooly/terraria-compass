@@ -42,7 +42,11 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
         aria-modal="true"
         aria-labelledby="bestiary-title"
       >
-        <button ref={closeRef} type="button" className={styles.close} aria-label="Close" onClick={onClose}>×</button>
+        <button ref={closeRef} type="button" className={styles.close} aria-label="Close" onClick={onClose}>
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+            <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
+        </button>
 
         <div className={styles.head}>
           <span className={styles.sprite}>
