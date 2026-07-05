@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { BestiaryModal } from '../components/BestiaryModal/BestiaryModal';
 import { biomes } from '../data/biomes';
 import type { BiomeDef } from '../data/biomes';
+import { bestiary, type BestiaryEntry } from '../data/bestiary';
 import styles from './Biomes.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -18,7 +21,20 @@ function DangerMeter({ level }: { level: number }) {
   );
 }
 
-function BiomeBand({ biome }: { biome: BiomeDef }) {
+function Chip({ name, kind, onOpen }: { name: string; kind: 'enemy' | 'loot'; onOpen: (e: BestiaryEntry) => void }) {
+  const entry = bestiary[name];
+  const Mark = kind === 'enemy' ? SwordMark : GemMark;
+  const cls = `${styles.chip} ${kind === 'enemy' ? styles.enemy : styles.loot}`;
+
+  if (!entry) return <span className={cls}><Mark />{name}</span>;
+  return (
+    <button type="button" className={`${cls} ${styles.chipBtn}`} onClick={() => onOpen(entry)}>
+      <Mark />{name}
+    </button>
+  );
+}
+
+function BiomeBand({ biome, onOpen }: { biome: BiomeDef; onOpen: (e: BestiaryEntry) => void }) {
   const gradient = `linear-gradient(135deg, ${biome.palette.deep} 0%, ${biome.palette.sky} 100%)`;
 
   return (
@@ -47,17 +63,13 @@ function BiomeBand({ biome }: { biome: BiomeDef }) {
         <div className={styles.colh}>Enemies</div>
         <div className={styles.chips}>
           {biome.mobs.map((mob) => (
-            <span key={mob} className={`${styles.chip} ${styles.enemy}`}>
-              <SwordMark />{mob}
-            </span>
+            <Chip key={mob} name={mob} kind="enemy" onOpen={onOpen} />
           ))}
         </div>
         <div className={`${styles.colh} ${styles.colhLoot}`}>Notable Loot</div>
         <div className={styles.chips}>
           {biome.items.map((item) => (
-            <span key={item} className={`${styles.chip} ${styles.loot}`}>
-              <GemMark />{item}
-            </span>
+            <Chip key={item} name={item} kind="loot" onOpen={onOpen} />
           ))}
         </div>
       </div>
@@ -66,6 +78,8 @@ function BiomeBand({ biome }: { biome: BiomeDef }) {
 }
 
 export function Biomes() {
+  const [entry, setEntry] = useState<BestiaryEntry | null>(null);
+
   return (
     <div className={styles.page}>
       {/* ── Hero ── */}
@@ -89,8 +103,10 @@ export function Biomes() {
 
       {/* ── Scene bands ── */}
       <section className={styles.bandWrap} aria-label="Biomes">
-        {biomes.map((biome) => <BiomeBand key={biome.id} biome={biome} />)}
+        {biomes.map((biome) => <BiomeBand key={biome.id} biome={biome} onOpen={setEntry} />)}
       </section>
+
+      <BestiaryModal entry={entry} onClose={() => setEntry(null)} />
 
       <Footer />
     </div>
