@@ -31,7 +31,6 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Brand */}
         <NavLink to="/" className={styles.brand}>
-          <span className={styles.brandDot} aria-hidden="true" />
           <span className={styles.brandName}>Terraria Compass</span>
         </NavLink>
 

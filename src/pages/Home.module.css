@@ -24,7 +24,7 @@
   z-index: 2;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 56px 32px 72px;
+  padding: 104px 32px 76px;
 }
 .kicker {
   font-weight: 800;
@@ -132,7 +132,7 @@
   margin: 0 0 8px;
   color: var(--ink-soft);
 }
-.sectionHead h2 em { font-style: normal; color: var(--accent); }
+.sectionHead h2 em { font-style: normal; color: inherit; }
 .sectionLede { font-size: 15px; color: var(--ink-mute); margin: 0; }
 
 .exploreGrid {

@@ -8,7 +8,6 @@ export function Footer() {
         {/* Left: brand */}
         <div className={styles.left}>
           <div className={styles.brand}>
-            <span className={styles.brandDot} aria-hidden="true" />
             Terraria Compass
           </div>
           <p className={styles.tagline}>Your compass through Terraria.</p>
