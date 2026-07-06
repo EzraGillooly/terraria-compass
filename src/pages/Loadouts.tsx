@@ -229,7 +229,7 @@ export function Loadouts() {
               <div className={styles.armor}>
                 <div className={styles.armorDoll}>
                   <img
-                    src={armorImg.local} alt={safeLoadout.armor[0].name}
+                    src={armorImg.local} alt={safeLoadout.armor[0]?.name ?? ''}
                     className={`${styles.armorSprite} pixel-img`}
                     width="44" height="44" loading="lazy"
                     onError={makeErrorHandler(armorImg.wiki, FALLBACK_ICON)}
