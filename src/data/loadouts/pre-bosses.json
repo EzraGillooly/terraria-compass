@@ -12,7 +12,8 @@
         "why": "Falls a star on swing, which gives melee a safe ranged answer before your build really comes together.",
         "tags": [],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "blade-of-grass",
@@ -23,7 +24,8 @@
         "why": "It is one of the strongest fully craftable pre-bosses melee weapons and gives you reliable Poison damage.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       },
       {
         "id": "trimarang",
@@ -34,7 +36,8 @@
         "why": "Its returning triple-hit pattern makes it the standout boomerang option for early boss attempts.",
         "tags": [],
         "topPick": false,
-        "subclass": "boomerang"
+        "subclass": "boomerang",
+        "modifier": "Legendary"
       },
       {
         "id": "code-1",
@@ -45,7 +48,8 @@
         "why": "If you want an early yoyo route, this is the cleanest and most reliable entry point.",
         "tags": [],
         "topPick": false,
-        "subclass": "yoyo"
+        "subclass": "yoyo",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -79,7 +83,8 @@
         "source": "Dropped from the Eye of Cthulhu treasure bag",
         "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
         "tags": ["expert-only"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "hermes-boots",
@@ -89,7 +94,8 @@
         "source": "Found in surface chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -99,7 +105,8 @@
         "source": "Found in surface chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "feral-claws",
@@ -109,7 +116,8 @@
         "source": "Found in Ivy Chests or Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "band-of-regeneration",
@@ -119,7 +127,8 @@
         "source": "Found in surface chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -178,7 +187,8 @@
         "why": "Its shotgun spread and close-range burst make it the consensus early ranger standout.",
         "tags": [],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "platinum-bow",
@@ -189,7 +199,8 @@
         "why": "This is the cleanest high-tier bow you can craft from common early materials.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "minishark",
@@ -200,7 +211,8 @@
         "why": "Its absurd fire rate melts early enemies and bosses if you can support the ammo cost.",
         "tags": [],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "grenade",
@@ -211,7 +223,8 @@
         "why": "Grenades are the practical early throwing option when you want AoE or strong burst without a rare find.",
         "tags": [],
         "topPick": false,
-        "subclass": "throwing"
+        "subclass": "throwing",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -245,7 +258,8 @@
         "source": "Found in surface chests",
         "why": "Rangers live and die by spacing, so this is the first accessory you feel immediately.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -255,7 +269,8 @@
         "source": "Found in surface chests",
         "why": "The vertical reset helps you reposition while continuing to fire.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "lucky-horseshoe",
@@ -265,7 +280,8 @@
         "source": "Found in Sky Crates or Floating Island chests",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -324,7 +340,8 @@
         "why": "It is the best craftable pre-bosses magic staff and gives early mages real single-target punch.",
         "tags": [],
         "topPick": true,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "ruby-staff",
@@ -335,7 +352,8 @@
         "why": "Ruby is the practical fallback when Diamonds are slow to find but you still want a strong gem staff.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "thunder-zapper",
@@ -346,7 +364,8 @@
         "why": "Its piercing shot stays relevant through multiple encounters if you find it early.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "water-bolt",
@@ -357,7 +376,8 @@
         "why": "If you can get it early, the bouncing projectile is one of the most oppressive pre-Hardmode mage weapons.",
         "tags": [],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -391,7 +411,8 @@
         "source": "Crafted from Nature's Gift and a Mana Regeneration Band",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "natures-gift",
@@ -401,7 +422,8 @@
         "source": "Found in the Jungle",
         "why": "The mana-cost reduction helps even before you can turn it into Mana Flower.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "hermes-boots",
@@ -411,7 +433,8 @@
         "source": "Found in surface chests",
         "why": "Mages are fragile, so dependable mobility is still one of your biggest upgrades.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -470,7 +493,8 @@
         "why": "It is the consensus pre-bosses summoner top pick because the whip tag damage multiplies your minion output immediately.",
         "tags": [],
         "topPick": true,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "flinx-staff",
@@ -503,7 +527,8 @@
         "why": "This is the first whip and a good fallback until Snapthorn is online.",
         "tags": [],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -537,7 +562,8 @@
         "source": "Found in surface chests",
         "why": "Summoner is vulnerable early, so this is still the most practical first accessory slot.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -547,7 +573,8 @@
         "source": "Found in surface chests",
         "why": "It gives you one more emergency reposition while your minions keep working.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "feral-claws",
@@ -557,7 +584,8 @@
         "source": "Found in Jungle chests",
         "why": "Whip speed matters, so this is a strong pickup once you lean into the whip-minion combo.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [

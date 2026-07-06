@@ -12,7 +12,8 @@
         "why": "The research is very consistent here: this is the strongest single-target melee sword before the Cultist fight.",
         "tags": ["hardmode", "event"],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "terra-blade",
@@ -23,7 +24,8 @@
         "why": "It remains an excellent AoE and general-purpose melee answer even after stronger event weapons appear.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "horsemans-blade",
@@ -34,7 +36,8 @@
         "why": "Its summoned pumpkins scale well in sustained fights and it also matters later as a Zenith ingredient.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "psycho-knife",
@@ -45,7 +48,8 @@
         "why": "If you like fast direct-contact melee, this gives a high-pressure option that still fits the phase well.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -79,7 +83,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It continues to be the easiest best-in-slot melee accessory to justify all the way into the Lunar path.",
         "tags": ["hardmode"],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "destroyer-emblem",
@@ -89,7 +94,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The damage and crit boost stacks perfectly with melee's now-mature weapon pool.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "master-ninja-gear",
@@ -99,7 +105,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The dodge and dash are both very relevant once event pressure and fast boss patterns dominate the phase.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "celestial-stone",
@@ -109,7 +116,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "A broad stat bump remains strong once your class-specific melee slots are already established.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -168,7 +176,8 @@
         "why": "The consensus top gun here is Xenopopper because of how absurdly well it scales with strong bullet choices.",
         "tags": ["hardmode", "event"],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "tsunami",
@@ -179,7 +188,8 @@
         "why": "Bow players still have a premier route here, and Tsunami is the standout choice when paired with strong arrows.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "electrosphere-launcher",
@@ -190,7 +200,8 @@
         "why": "It gives ranger a real high-end launcher option for crowded waves and arena control.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "launcher"
+        "subclass": "launcher",
+        "modifier": "Unreal"
       },
       {
         "id": "chain-gun",
@@ -201,7 +212,8 @@
         "why": "It remains an excellent event-gated gun if you already did the Frost Moon grind earlier.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -225,7 +237,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the top ranger accessory thanks to its crit and aim support on already strong weapons.",
         "tags": ["hardmode"],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "ranger-emblem",
@@ -235,7 +248,8 @@
         "source": "Dropped by the Wall of Flesh",
         "why": "A direct ranged-damage boost still fits cleanly into nearly every serious setup.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "celestial-stone",
@@ -245,7 +259,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The broad stat boost remains useful once your core ranger pieces are already locked in.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "ankh-shield",
@@ -255,7 +270,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity keeps its value in the event-heavy and Dungeon-adjacent parts of the phase.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -314,7 +330,8 @@
         "why": "It is still the elite mage carry here because the homing blades remain incredible on both bosses and events.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "razorpine",
@@ -325,7 +342,8 @@
         "why": "If you farm Frost Moon, this gives mage one of its highest-DPS rapid-fire spells before the Lunar tier.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "blizzard-staff",
@@ -336,7 +354,8 @@
         "why": "The overhead barrage is useful both for events and for fights where you can keep the target inside the storm.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "bat-scepter",
@@ -347,7 +366,8 @@
         "why": "This is another strong event reward if your mage route leans more on homing swarms than fixed beams.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -381,7 +401,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This remains the cleanest premium mage accessory because it combines damage and mana utility without any downside.",
         "tags": ["hardmode"],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "celestial-stone",
@@ -391,7 +412,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat lift is still useful once the core mage resource slots are already solved.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "mana-flower",
@@ -401,7 +423,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Auto-potion support stays valuable because the strongest mage weapons still chew through mana rapidly.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "ankh-shield",
@@ -411,7 +434,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is a meaningful comfort boost during the phase's event-heavy grind.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
@@ -492,7 +516,8 @@
         "why": "This remains one of the best realistic late whips and a major reason to clear Pumpkin Moon before Cultist.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "morning-star",
@@ -503,7 +528,8 @@
         "why": "If you invest in Old One's Army, this is another excellent whip that stays viable right up to Lunar progression.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -537,7 +563,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the best summoner accessory because it improves both minion count and direct summon scaling.",
         "tags": ["hardmode"],
-        "topPick": true
+        "topPick": true,
+        "modifier": "Menacing"
       },
       {
         "id": "pygmy-necklace",
@@ -547,7 +574,8 @@
         "source": "Bought from the Witch Doctor",
         "why": "An extra minion remains simple, obvious value this late into the game.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "celestial-stone",
@@ -557,7 +585,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The broad stat bonus supports both your summon output and your ability to stay in control of the fight.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       },
       {
         "id": "ankh-shield",
@@ -567,7 +596,8 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is still a big quality-of-life and survivability gain for the class.",
         "tags": ["hardmode"],
-        "topPick": false
+        "topPick": false,
+        "modifier": "Menacing"
       }
     ],
     "buffs": [
