@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
+import type { DifficultyFilter } from '../../lib/difficulty';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
   { to: '/bosses',   label: 'Bosses'   },
   { to: '/biomes',   label: 'Biomes'   },
   { to: '/loadouts', label: 'Loadouts' },
-  { to: '/crafting', label: 'Crafting' },
 ];
 
 const DIFF_OPTIONS = [
@@ -16,7 +16,7 @@ const DIFF_OPTIONS = [
 ];
 
 interface HeaderProps {
-  /** 'photo' = transparent overlay on hero; 'paper' = sticky parchment */
+  /** 'photo' = transparent overlay on hero; 'paper' = solid bar */
   variant?: 'photo' | 'paper';
 }
 
@@ -30,7 +30,6 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Brand */}
         <NavLink to="/" className={styles.brand}>
-          <span className={styles.brandDot} aria-hidden="true" />
           <span className={styles.brandName}>Terraria Compass</span>
         </NavLink>
 
@@ -50,39 +49,55 @@ export function Header({ variant = 'paper' }: HeaderProps) {
         </nav>
 
         {/* Controls */}
-        <div className={styles.topctrl}>
-          {/* Difficulty segmented control */}
-          <div className={styles.diffSeg} role="group" aria-label="World difficulty">
-            {DIFF_OPTIONS.map(({ value, label }) => (
-              <button
-                key={value}
-                type="button"
-                className={`${styles.diffPill} ${difficulty === value ? styles[`diff${label}`] : ''}`}
-                aria-pressed={difficulty === value}
-                onClick={() => setDifficulty(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+        <div className={styles.controls}>
+          {/* World difficulty */}
+          <label className={styles.diffSelect}>
+            <span className={styles.diffCap}>World</span>
+            <select
+              className={styles.diffField}
+              value={difficulty}
+              onChange={(e) => setDifficulty(e.target.value as DifficultyFilter)}
+              aria-label="World difficulty"
+            >
+              {DIFF_OPTIONS.map(({ value, label }) => (
+                <option key={value} value={value}>{label}</option>
+              ))}
+            </select>
+          </label>
 
-          {/* Day / Night toggle */}
+          {/* Day / night */}
           <button
             type="button"
-            className={`${styles.dayNight} ${isDayMode ? '' : styles.isNight}`}
-            aria-label={isDayMode ? 'Switch to night' : 'Switch to day'}
+            className={styles.modeToggle}
+            aria-pressed={!isDayMode}
+            aria-label={isDayMode ? 'Switch to night mode' : 'Switch to day mode'}
+            title={isDayMode ? 'Night mode' : 'Day mode'}
             onClick={() => setIsDayMode(!isDayMode)}
           >
-            <span className={styles.dnTrack}>
-              <span className={styles.dnKnob} aria-hidden="true">
-                {isDayMode ? '☀' : '☾'}
-              </span>
-            </span>
-            <span>{isDayMode ? 'Day' : 'Night'}</span>
+            {isDayMode ? <SunMark /> : <MoonMark />}
           </button>
         </div>
 
       </div>
     </header>
+  );
+}
+
+/* Toggle icons (SVG, not emoji) */
+function SunMark() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="5" fill="currentColor" />
+      <g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+        <path d="M12 1v3M12 20v3M1 12h3M20 12h3M4 4l2 2M18 18l2 2M20 4l-2 2M6 18l-2 2" />
+      </g>
+    </svg>
+  );
+}
+function MoonMark() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+    </svg>
   );
 }

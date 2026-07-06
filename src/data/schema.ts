@@ -26,6 +26,10 @@ export const Item = z.object({
   source: z.string(),
   why: z.string(),
   notes: z.string().optional(),
+  /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
+  modifier: z.string().optional(),
+  /** short display stats, e.g. "42 melee damage · fast" */
+  stats: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
   subclass: SubclassId.optional(),

@@ -12,7 +12,8 @@
         "why": "This is the unquestioned melee endgame centerpiece because nothing else matches its screen-wide damage and reach.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "meowmere",
@@ -23,7 +24,8 @@
         "why": "Even before you finish Zenith, this is a top-tier Moon Lord drop and an important ingredient in the final craft.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "star-wrath",
@@ -34,7 +36,8 @@
         "why": "It remains a premier sword on its own and also matters as one of the last Zenith ingredients.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "terrarian",
@@ -45,7 +48,8 @@
         "why": "If you want the strongest yoyo route instead of the sword route, this is the one that defines it.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "yoyo"
+        "subclass": "yoyo",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -110,6 +114,26 @@
         "why": "The dodge and dash are still excellent even in the very last content the game offers.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "destroyer-emblem",
+        "name": "Destroyer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/destroyer-emblem.png",
+        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
+        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -168,7 +192,8 @@
         "why": "The research resolves the endgame ranger debate in favor of S.D.M.G. as the default top pick.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "phantasm",
@@ -179,7 +204,8 @@
         "why": "It remains a co-best weapon in practice and still defines the endgame bow route.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "vortex-beater",
@@ -190,7 +216,8 @@
         "why": "This remains a premier gun option if you prefer its burst-fire pattern over the Moon Lord drop route.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "celebration-mk2",
@@ -201,7 +228,8 @@
         "why": "It is a spectacular late launcher pick and one of ranger's most fun optional endgame weapons.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "launcher"
+        "subclass": "launcher",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -266,6 +294,26 @@
         "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "destroyer-emblem",
+        "name": "Destroyer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/destroyer-emblem.png",
+        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
+        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -324,7 +372,8 @@
         "why": "This is the consensus top endgame mage weapon because its sustained beam damage still sits above everything else.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "lunar-flare",
@@ -335,7 +384,8 @@
         "why": "It remains a powerful alternative when you want a more positional, targeted mage tool instead of a pure beam.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "nebula-blaze",
@@ -346,7 +396,8 @@
         "why": "It is still a great carry-over even after Moon Lord drops open the final tier.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "razorblade-typhoon",
@@ -357,7 +408,8 @@
         "why": "Its homing pressure remains useful enough that it still deserves a place in the final pool.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -421,6 +473,26 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Auto-potion support remains useful even when your mana tools are otherwise maximized.",
         "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted from Magic Cuffs and Celestial Magnet.",
+        "why": "Turns damage taken into mana and pulls in nearby mana stars.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
         "topPick": false
       }
     ],
@@ -502,7 +574,8 @@
         "why": "This is the best whip in the game and the natural pairing for a fully optimized endgame summoner.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "morning-star",
@@ -513,7 +586,8 @@
         "why": "It remains a very strong carry-over whip if you are not routing the hardest optional Empress drops.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -577,6 +651,26 @@
         "source": "Bought from the Witch Doctor",
         "why": "An extra minion remains valuable enough that it still deserves a place in the final pool.",
         "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "necromantic-scroll",
+        "name": "Necromantic Scroll",
+        "slot": "accessory",
+        "icon": "accessories/necromantic-scroll.png",
+        "source": "Dropped by Mourning Wood during the Pumpkin Moon.",
+        "why": "+1 minion and +10% minion damage, a core summoner slot.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
         "topPick": false
       }
     ],

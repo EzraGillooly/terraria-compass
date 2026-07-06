@@ -12,7 +12,8 @@
         "why": "The research is very consistent here: this is the strongest single-target melee sword before the Cultist fight.",
         "tags": ["hardmode", "event"],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "terra-blade",
@@ -23,7 +24,8 @@
         "why": "It remains an excellent AoE and general-purpose melee answer even after stronger event weapons appear.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "horsemans-blade",
@@ -34,7 +36,8 @@
         "why": "Its summoned pumpkins scale well in sustained fights and it also matters later as a Zenith ingredient.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "psycho-knife",
@@ -45,7 +48,8 @@
         "why": "If you like fast direct-contact melee, this gives a high-pressure option that still fits the phase well.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -110,6 +114,26 @@
         "why": "A broad stat bump remains strong once your class-specific melee slots are already established.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "charm-of-myths",
+        "name": "Charm of Myths",
+        "slot": "accessory",
+        "icon": "accessories/charm-of-myths.png",
+        "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
+        "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -168,7 +192,8 @@
         "why": "The consensus top gun here is Xenopopper because of how absurdly well it scales with strong bullet choices.",
         "tags": ["hardmode", "event"],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "tsunami",
@@ -179,7 +204,8 @@
         "why": "Bow players still have a premier route here, and Tsunami is the standout choice when paired with strong arrows.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "electrosphere-launcher",
@@ -190,7 +216,8 @@
         "why": "It gives ranger a real high-end launcher option for crowded waves and arena control.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "launcher"
+        "subclass": "launcher",
+        "modifier": "Unreal"
       },
       {
         "id": "chain-gun",
@@ -201,7 +228,8 @@
         "why": "It remains an excellent event-gated gun if you already did the Frost Moon grind earlier.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -254,6 +282,26 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity keeps its value in the event-heavy and Dungeon-adjacent parts of the phase.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "destroyer-emblem",
+        "name": "Destroyer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/destroyer-emblem.png",
+        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
+        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
         "tags": ["hardmode"],
         "topPick": false
       }
@@ -314,7 +362,8 @@
         "why": "It is still the elite mage carry here because the homing blades remain incredible on both bosses and events.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "razorpine",
@@ -325,7 +374,8 @@
         "why": "If you farm Frost Moon, this gives mage one of its highest-DPS rapid-fire spells before the Lunar tier.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "blizzard-staff",
@@ -336,7 +386,8 @@
         "why": "The overhead barrage is useful both for events and for fights where you can keep the target inside the storm.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "bat-scepter",
@@ -347,7 +398,8 @@
         "why": "This is another strong event reward if your mage route leans more on homing swarms than fixed beams.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -410,6 +462,26 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is a meaningful comfort boost during the phase's event-heavy grind.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted from Magic Cuffs and Celestial Magnet.",
+        "why": "Turns damage taken into mana and pulls in nearby mana stars.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "charm-of-myths",
+        "name": "Charm of Myths",
+        "slot": "accessory",
+        "icon": "accessories/charm-of-myths.png",
+        "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
+        "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
         "tags": ["hardmode"],
         "topPick": false
       }
@@ -492,7 +564,8 @@
         "why": "This remains one of the best realistic late whips and a major reason to clear Pumpkin Moon before Cultist.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "morning-star",
@@ -503,7 +576,8 @@
         "why": "If you invest in Old One's Army, this is another excellent whip that stays viable right up to Lunar progression.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -566,6 +640,26 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is still a big quality-of-life and survivability gain for the class.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "necromantic-scroll",
+        "name": "Necromantic Scroll",
+        "slot": "accessory",
+        "icon": "accessories/necromantic-scroll.png",
+        "source": "Dropped by Mourning Wood during the Pumpkin Moon.",
+        "why": "+1 minion and +10% minion damage, a core summoner slot.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
         "tags": ["hardmode"],
         "topPick": false
       }

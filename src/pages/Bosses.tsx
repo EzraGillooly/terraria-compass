@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { bosses, type BossDef } from '../data/bosses';
 import styles from './Bosses.module.css';
+
+const BASE = import.meta.env.BASE_URL;
 
 const STAGE_ORDER = [
   'pre-bosses', 'pre-skeletron', 'pre-wof',
@@ -14,7 +17,7 @@ const STAGE_LABELS: Record<string, string> = {
   'pre-bosses':    'Pre-Bosses',
   'pre-skeletron': 'Pre-Skeletron',
   'pre-wof':       'Pre-Wall of Flesh',
-  'pre-mech':      'Hardmode — Mechs',
+  'pre-mech':      'Hardmode · Mechs',
   'pre-plantera':  'Pre-Plantera',
   'pre-golem':     'Pre-Golem',
   'pre-cultist':   'Pre-Cultist',
@@ -22,152 +25,101 @@ const STAGE_LABELS: Record<string, string> = {
   'endgame':       'Endgame',
 };
 
-const BASE = import.meta.env.BASE_URL;
+const orderedBosses = STAGE_ORDER.flatMap((stage) => {
+  const inStage = bosses.filter((b) => b.stage === stage);
+  const main = inStage.filter((b) => !b.side);
+  const sides = inStage.filter((b) => b.side);
+  return [...main, ...sides].map((boss) => ({ boss, stage }));
+});
 
-function BossCard({ boss }: { boss: BossDef }) {
+function BossNode({ boss, stage }: { boss: BossDef; stage: string }) {
   const [open, setOpen] = useState(false);
   const localIcon = `${BASE}icons/bosses/${boss.id}.png`;
+  const worldLabel = boss.world
+    ? (boss.world === 'corruption' ? 'Corruption only' : 'Crimson only')
+    : null;
 
   return (
-    <div
-      className={styles.bossCard}
-      style={{ '--boss-c': boss.color } as React.CSSProperties}
-    >
-      <span className={styles.bossBar} aria-hidden="true" />
-      <span className={styles.bossPip} aria-hidden="true" />
-      <div className={styles.bossCardHead}>
-        <div className={styles.bossIcon}>
-          <img
-            src={localIcon}
-            alt=""
-            aria-hidden="true"
-            width="40"
-            height="40"
-            className="pixel-img"
-            onError={(e) => { e.currentTarget.style.display = 'none'; }}
-          />
-        </div>
-        <div className={styles.bossInfo}>
-          {boss.side && <span className={styles.bossLabel}>Optional</span>}
-          {boss.world && <span className={styles.bossLabel}>{boss.world === 'corruption' ? 'Corruption only' : 'Crimson only'}</span>}
-          <div className={styles.bossName}>{boss.name}</div>
-        </div>
+    <li className={styles.node}>
+      <span className={styles.dot} aria-hidden="true" />
+      <div className={styles.card}>
         <button
           type="button"
-          className={`${styles.bossToggle} ${open ? styles.open : ''}`}
+          className={styles.cardHead}
           aria-expanded={open}
-          aria-label={`${open ? 'Hide' : 'Show'} ${boss.name} details`}
           onClick={() => setOpen((v) => !v)}
         >
-          ▾
+          <span className={styles.icon}>
+            <img
+              src={localIcon}
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+              className="pixel-img"
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
+          </span>
+          <span className={styles.info}>
+            <span className={styles.name}>
+              {boss.name}
+              {boss.side && <span className={styles.tagOpt}>Optional</span>}
+              {worldLabel && <span className={styles.tagWorld}>{worldLabel}</span>}
+            </span>
+            <span className={styles.blurb}>{boss.blurb}</span>
+          </span>
+          <span className={styles.stage}>{STAGE_LABELS[stage]}</span>
+          <span className={`${styles.chev} ${open ? styles.chevOpen : ''}`} aria-hidden="true">▾</span>
         </button>
-      </div>
 
-      <p className={styles.bossBlurb}>{boss.blurb}</p>
-
-      {open && (
-        <div className={styles.bossMeta}>
-          <div className={styles.bossRow}>
-            <span className={styles.bossRowKey}>Summon</span>
-            <span className={styles.bossRowVal}>{boss.summon}</span>
-          </div>
-          <div className={styles.bossRow}>
-            <span className={styles.bossRowKey}>Key Drops</span>
-            <div className={styles.dropPills}>
-              {boss.drops.map((d) => (
-                <span key={d} className={styles.dropPill}>{d}</span>
-              ))}
+        {open && (
+          <div className={styles.meta}>
+            <div className={styles.metaRow}>
+              <span className={styles.metaKey}>Summon</span>
+              <span className={styles.metaVal}>{boss.summon}</span>
+            </div>
+            <div className={styles.metaRow}>
+              <span className={styles.metaKey}>Key Drops</span>
+              <span className={styles.drops}>
+                {boss.drops.map((d) => <span key={d} className={styles.dropPill}>{d}</span>)}
+              </span>
             </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </li>
   );
 }
 
 export function Bosses() {
-  const [activeStage, setActiveStage] = useState<string>('pre-bosses');
-  const stageBosses = bosses.filter((b) => b.stage === activeStage);
-  const main  = stageBosses.filter((b) => !b.side);
-  const sides = stageBosses.filter((b) => b.side);
-  const activeIndex = STAGE_ORDER.indexOf(activeStage as typeof STAGE_ORDER[number]);
-
   return (
-    <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
-      {/* ── Banner ── */}
-      <div className={styles.banner}>
-        <div
-          className={styles.bannerPhoto}
-          style={{ backgroundImage: `url(${BASE}hero/bosses.png)` }}
-        />
-        <div className={styles.dither} aria-hidden="true" />
-        <div className={styles.bannerWash} />
+    <div className={styles.page}>
+      {/* ── Hero ── */}
+      <section
+        className={styles.hero}
+        style={{ backgroundImage: `url(${BASE}hero/bosses.png)` }}
+        aria-label="Boss Progression"
+      >
+        <div className={styles.heroWash} aria-hidden="true" />
         <Header variant="photo" />
-        <div className={styles.bannerBody}>
-          <p className={styles.bannerCrumb}>
-            <a href="/#/">Home</a> <span className={styles.crumbSep}>/</span> Boss Progression
+        <div className={styles.heroBody}>
+          <p className={styles.crumb}>
+            <Link to="/">Home</Link> <span className={styles.crumbSep}>/</span> Boss Progression
           </p>
-          <h1 className={styles.bannerTitle}>
-            Boss <em>Progression</em>
-          </h1>
-          <p className={styles.bannerLede}>
-            Every boss, in order. Summon methods, key drops, and what each fight unlocks.
+          <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
+          <p className={styles.heroLede}>
+            The road from your first fight to the Moon Lord. Tap any boss for summon methods and key drops.
           </p>
         </div>
-      </div>
+      </section>
 
-      {/* ── Stage selector ── */}
-      <section className={styles.section}>
-        <div className={styles.trackHead}>
-          <span className={styles.trackKicker}>{'// Progression'}</span>
-          <span className={styles.trackProgress}>
-            Stage {String(activeIndex + 1).padStart(2, '0')} / {String(STAGE_ORDER.length).padStart(2, '0')}
-          </span>
-        </div>
-        <div className={styles.stageTrack} role="tablist" aria-label="Progression stage">
-          {STAGE_ORDER.map((stage, i) => {
-            const count = bosses.filter((b) => b.stage === stage).length;
-            const done = i < activeIndex;
-            return (
-              <button
-                key={stage}
-                type="button"
-                role="tab"
-                className={`${styles.stageNode} ${activeStage === stage ? styles.active : ''} ${done ? styles.done : ''}`}
-                onClick={() => setActiveStage(stage)}
-                aria-selected={activeStage === stage}
-              >
-                <span className={styles.nodeDot} aria-hidden="true" />
-                <span className={styles.nodeLabel}>{STAGE_LABELS[stage]}</span>
-                <span className={styles.nodeCount}>{count}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* ── Boss columns ── */}
-        <div className={styles.bossColumns}>
-          <div className={styles.bossCol}>
-            <div className={styles.bossColTitle}>
-              {main.length > 0 ? 'Main Bosses' : 'No main bosses this stage'}
-            </div>
-            <div className={styles.bossGrid}>
-              {main.map((b) => <BossCard key={b.id} boss={b} />)}
-              {main.length === 0 && (
-                <p className={styles.empty}>No required bosses in this stage.</p>
-              )}
-            </div>
-          </div>
-
-          {sides.length > 0 && (
-            <div className={styles.bossCol}>
-              <div className={styles.bossColTitle}>Optional / Side Bosses</div>
-              <div className={styles.bossGrid}>
-                {sides.map((b) => <BossCard key={b.id} boss={b} />)}
-              </div>
-            </div>
-          )}
-        </div>
+      {/* ── Roadmap ── */}
+      <section className={styles.roadWrap} aria-label="Boss order">
+        <ol className={styles.road}>
+          {orderedBosses.map(({ boss, stage }) => (
+            <BossNode key={boss.id} boss={boss} stage={stage} />
+          ))}
+        </ol>
       </section>
 
       <Footer />

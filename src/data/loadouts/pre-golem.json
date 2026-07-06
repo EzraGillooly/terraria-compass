@@ -12,7 +12,8 @@
         "why": "It remains the best all-around projectile sword for the phase and still handles both Jungle Temple prep and general bossing cleanly.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "vampire-knives",
@@ -23,7 +24,8 @@
         "why": "The lifesteal keeps melee surprisingly stable in messy post-Plantera farming and event encounters.",
         "tags": ["hardmode", "crimson-only"],
         "topPick": false,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       },
       {
         "id": "seedler",
@@ -34,7 +36,8 @@
         "why": "This is a strong immediate Plantera reward and another reliable projectile-heavy sword option for the phase.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "paladins-hammer",
@@ -45,7 +48,8 @@
         "why": "It gives melee a high-damage thrown option that fits well if you still like flail-like or returning weapon patterns.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "flail"
+        "subclass": "flail",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -110,6 +114,26 @@
         "why": "Flight is still mandatory when your farming loop now includes the Hardmode Dungeon, events, and Temple approach.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "destroyer-emblem",
+        "name": "Destroyer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/destroyer-emblem.png",
+        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
+        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -168,7 +192,8 @@
         "why": "The research repeatedly treats this as the top pre-Golem gun if you can clear the event for it.",
         "tags": ["hardmode", "event"],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "megashark",
@@ -179,7 +204,8 @@
         "why": "It stays relevant for players who have not gone deep on Frost Moon or event-specific farming yet.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "stake-launcher",
@@ -190,7 +216,8 @@
         "why": "Its high per-shot damage gives ranger another strong event-farm payoff before Golem.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "tactical-shotgun",
@@ -201,7 +228,8 @@
         "why": "It is the best broadly available non-event shotgun and works nicely if you want a close-range ranger route.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -266,6 +294,26 @@
         "why": "Debuff immunity is valuable in the post-Plantera farming loop where random hits can stack ugly statuses fast.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "destroyer-emblem",
+        "name": "Destroyer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/destroyer-emblem.png",
+        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
+        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -324,7 +372,8 @@
         "why": "This is the consensus top mage weapon of the phase because the homing blades stay oppressive in almost every encounter.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "shadowbeam-staff",
@@ -335,7 +384,8 @@
         "why": "The bouncing beam pattern is excellent in tighter rooms and event funnels.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "inferno-fork",
@@ -346,7 +396,8 @@
         "why": "It gives mage another high-impact projectile option with strong area denial for clustered targets.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "magnet-sphere",
@@ -357,7 +408,8 @@
         "why": "It remains a useful carry-over because it keeps dealing damage while you reposition.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -420,6 +472,26 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity remains a big comfort upgrade when so much of the content now involves status-heavy enemies.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted from Magic Cuffs and Celestial Magnet.",
+        "why": "Turns damage taken into mana and pulls in nearby mana stars.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
         "tags": ["hardmode"],
         "topPick": false
       }
@@ -502,7 +574,8 @@
         "why": "This is one of the best accessible late summoner whips and a major reason to farm Pumpkin Moon before Golem.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "morning-star",
@@ -513,7 +586,8 @@
         "why": "If you invest in Old One's Army, this gives summoner another excellent whip route with strong direct control.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -586,6 +660,26 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity gives summoner a lot of breathing room in the phase's messier event content.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "celestial-stone",
+        "name": "Celestial Stone",
+        "slot": "accessory",
+        "icon": "accessories/celestial-stone.png",
+        "source": "Crafted from Sun Stone and Moon Stone.",
+        "why": "A well-rounded boost to damage, crit, regen, and speed.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
         "tags": ["hardmode"],
         "topPick": false
       }

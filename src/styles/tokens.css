@@ -1,23 +1,25 @@
 /* ════════════════════════════════════════════════════════════
-   TERRARIA COMPASS — parchment design system
-   Ported from shared.css reference design
+   TERRARIA COMPASS — "Terraria" design system
+   Derived from the game's title art: sky blue, grass green,
+   sun gold, earthy surfaces. Light default + dark mode.
 ════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Core palette ── */
-  --sky:    #5DA9E9;
-  --mid:    #69B96B;
-  --deep:   #2F6B3F;
-  --accent: #E7C66B;
-  --ink:    #1B2A1F;
+  /* ── Core palette (light) ── */
+  --sky:    #3E9BE0;                 /* Terraria sky blue (hero / scene) */
+  --mid:    #5BA130;                 /* grass green */
+  --deep:   #3A7A2E;                 /* darker grass: active / positive */
+  --accent: #4E9E3E;                 /* grass green primary (interactive) */
+  --warm:   #F5C23E;                 /* sun gold: top-pick / highlight */
+  --ink:    #12283B;
 
-  --paper:    #F3EAD6;
-  --paper-2:  #EADFC6;
-  --card:     #FBF6EA;
-  --card-2:   #F4EDDB;
-  --ink-soft: #2C2719;
-  --ink-mute: #6F664F;
-  --line:     #1F1A12;
-  --hair:     rgba(31, 26, 18, .13);
+  --paper:    #EAF4FB;               /* light sky-tinted page */
+  --paper-2:  #DCEBF7;
+  --card:     #FFFFFF;
+  --card-2:   #EAF4FB;
+  --ink-soft: #12283B;
+  --ink-mute: #4A6373;
+  --line:     #CFE0EC;               /* soft blue-grey border */
+  --hair:     rgba(18, 40, 59, .08);
 
   /* ── Typography ── */
   --display: 'Cormorant Garamond', Georgia, serif;
@@ -26,36 +28,33 @@
   --pixel:   'Mulish', ui-sans-serif, sans-serif;
 
   /* ── Elevation ── */
-  --shadow-sm: 0 2px 8px -2px rgba(40, 30, 12, .16);
-  --shadow-md: 0 10px 30px -12px rgba(40, 30, 12, .28);
-  --shadow-lg: 0 28px 60px -20px rgba(20, 14, 6, .42);
-
-  /* ── Difficulty theme overrides (applied to a parent element) ── */
-  /* [data-difficulty="expert"] { --accent: #F0A24E; }  */
-  /* [data-difficulty="master"] { --accent: #E8694A; }  */
+  --shadow-sm: 0 1px 2px rgba(18, 40, 59, .06), 0 8px 20px -14px rgba(18, 40, 59, .3);
+  --shadow-md: 0 2px 6px rgba(18, 40, 59, .08), 0 14px 30px -18px rgba(18, 40, 59, .35);
+  --shadow-lg: 0 8px 24px rgba(18, 40, 59, .1), 0 28px 60px -24px rgba(18, 40, 59, .4);
 
   /* ── Color aliases (keep component CSS modules working) ── */
   --color-bg:               var(--paper);
   --color-surface:          var(--card);
   --color-surface-elevated: var(--card-2);
   --color-border:           var(--hair);
-  --color-border-strong:    rgba(31, 26, 18, .28);
+  --color-border-strong:    rgba(18, 40, 59, .2);
   --color-text-primary:     var(--ink-soft);
   --color-text-secondary:   var(--ink-mute);
   --color-text-muted:       var(--ink-mute);
-  --color-text-dimmed:      rgba(111, 100, 79, .55);
+  --color-text-dimmed:      rgba(74, 99, 115, .55);
   --color-text-inverse:     #fff;
   --color-accent:           var(--accent);
   --color-accent-hover:     color-mix(in oklab, var(--accent) 80%, var(--ink));
   --color-accent-soft:      color-mix(in oklab, var(--accent) 18%, var(--paper));
+  --color-warm:             var(--warm);
   --color-hallowed:         var(--deep);
   --color-demonite:         #7C5CBF;
   --color-corruption:       #6D28D9;
   --color-crimson:          #BE123C;
   --color-success:          var(--deep);
-  --color-warning:          var(--accent);
+  --color-warning:          var(--warm);
   --color-danger:           #BE123C;
-  --color-top-pick-glow:    rgba(47, 107, 63, .35);
+  --color-top-pick-glow:    color-mix(in oklab, var(--warm) 45%, transparent);
   --color-focus-ring:       var(--accent);
 
   /* ── Font aliases ── */
@@ -81,15 +80,32 @@
   --space-12: 48px;
   --space-16: 64px;
 
-  /* ── Border radius (parchment aesthetic — soft, not pixel-sharp) ── */
-  --radius-sm:   6px;
-  --radius-md:   10px;
-  --radius-lg:   16px;
+  /* ── Border radius (soft, modern — halved for a tighter look) ── */
+  --radius-sm:   3px;
+  --radius-md:   5px;
+  --radius-lg:   8px;
   --radius-pill: 999px;
 }
 
-[data-difficulty="expert"] { --accent: #F0A24E; --color-accent: #F0A24E; }
-[data-difficulty="master"] { --accent: #E8694A; --color-accent: #E8694A; }
+/* ── Dark mode (Terraria night — dormant, for future full dark mode) ── */
+[data-mode="dark"] {
+  --deep:     #4E9E3E;
+  --accent:   #5BB04A;
+  --warm:     #F5C23E;
+  --ink:      #E6EEF8;
+
+  --paper:    #0C1830;
+  --paper-2:  #16294F;
+  --card:     #132244;
+  --card-2:   #16294F;
+  --ink-soft: #E6EEF8;
+  --ink-mute: #93A6C4;
+  --line:     #2A3A5E;
+  --hair:     rgba(255, 255, 255, .07);
+
+  --color-border-strong: rgba(255, 255, 255, .18);
+  --color-text-dimmed:   rgba(147, 166, 196, .55);
+}
 
 html {
   min-height: 100%;

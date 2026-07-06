@@ -12,7 +12,8 @@
         "why": "This is the defining melee weapon of the phase because its ranged slashes stay powerful without forcing reckless positioning.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "death-sickle",
@@ -23,7 +24,8 @@
         "why": "The wall-piercing scythe projectiles make this one of the best event-farm melee payoffs before Plantera.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "chlorophyte-saber",
@@ -34,7 +36,8 @@
         "why": "If you want a simpler ore-route upgrade, the leaf projectile gives this a strong all-purpose boss profile.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "chik",
@@ -45,7 +48,8 @@
         "why": "Yoyo-focused melee players can keep that subclass online here instead of fully abandoning it for swords.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "yoyo"
+        "subclass": "yoyo",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -130,6 +134,16 @@
         "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "star-veil",
+        "name": "Star Veil",
+        "slot": "accessory",
+        "icon": "accessories/star-veil.png",
+        "source": "Crafted from Cross Necklace and Star Cloak.",
+        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -188,7 +202,8 @@
         "why": "This is the workhorse ranger gun for the entire stretch because it gives reliable pressure in nearly every fight.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "chlorophyte-shotbow",
@@ -199,7 +214,8 @@
         "why": "Bow builds get a clean burst-fire upgrade here, especially when paired with strong arrow choices.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "daedalus-stormbow",
@@ -210,7 +226,8 @@
         "why": "Even after mech progression, the arrow-rain pattern still solves several large-target encounters elegantly.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "uzi",
@@ -221,7 +238,8 @@
         "why": "If you farm it, the fire rate gives gun ranger another elite option before Plantera.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -306,6 +324,16 @@
         "why": "Debuff immunity is particularly welcome once Jungle enemies start layering crowd-control on top of boss pressure.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "star-veil",
+        "name": "Star Veil",
+        "slot": "accessory",
+        "icon": "accessories/star-veil.png",
+        "source": "Crafted from Cross Necklace and Star Cloak.",
+        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -364,7 +392,8 @@
         "why": "Its controllable projectile path makes it one of the most dependable single-target mage tools before Plantera.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "crystal-serpent",
@@ -375,7 +404,8 @@
         "why": "It remains an elite carry-over because the split projectile still scales well into this phase.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "magnet-sphere",
@@ -386,7 +416,8 @@
         "why": "The lingering sphere gives mage another way to keep damage flowing while repositioning aggressively.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "sky-fracture",
@@ -397,7 +428,8 @@
         "why": "It is still a respectable burst option if you want a craftable spell that rewards good aim.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -482,6 +514,16 @@
         "why": "Debuff immunity is a real quality-of-life and survivability gain once the Jungle starts stacking status effects.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "mana-cloak",
+        "name": "Mana Cloak",
+        "slot": "accessory",
+        "icon": "accessories/mana-cloak.png",
+        "source": "Crafted from Mana Flower and Star Cloak.",
+        "why": "Auto mana potions plus a defensive star burst when you take a hit.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -562,7 +604,8 @@
         "why": "The tag explosion keeps this whip relevant well past the point where many earlier summon tools drop off.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "durendal",
@@ -573,7 +616,8 @@
         "why": "Its faster whip cadence makes it a reliable alternative if you prefer smoother direct control over bigger explosions.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -656,6 +700,16 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity and knockback protection reduce the number of runs that fall apart to messy Jungle attrition.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "star-veil",
+        "name": "Star Veil",
+        "slot": "accessory",
+        "icon": "accessories/star-veil.png",
+        "source": "Crafted from Cross Necklace and Star Cloak.",
+        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
         "tags": ["hardmode"],
         "topPick": false
       }

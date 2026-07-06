@@ -12,7 +12,8 @@
         "why": "This is the clear top pre-Moon Lord melee weapon because the wall-piercing range solves both pillars and the Moon Lord prep cleanly.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       },
       {
         "id": "daybreak",
@@ -23,7 +24,8 @@
         "why": "It is an excellent second Solar pickup, especially for focused single-target damage on large bosses.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "true-melee"
+        "subclass": "true-melee",
+        "modifier": "Legendary"
       },
       {
         "id": "influx-waver",
@@ -34,7 +36,8 @@
         "why": "It remains one of the best carry-over melee options if you want a familiar projectile sword route.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "projectile-sword"
+        "subclass": "projectile-sword",
+        "modifier": "Legendary"
       },
       {
         "id": "flairon",
@@ -45,7 +48,8 @@
         "why": "For players who enjoy its unusual projectile behavior, it still performs very well going into Moon Lord prep.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "flail"
+        "subclass": "flail",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -110,6 +114,26 @@
         "why": "The dodge and dash are still extremely valuable against pillar swarms and Moon Lord patterns.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "celestial-shell",
+        "name": "Celestial Shell",
+        "slot": "accessory",
+        "icon": "accessories/celestial-shell.png",
+        "source": "Crafted from Celestial Stone and Moon Charm.",
+        "why": "An all-stats boost that also shifts helpfully with day and night.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -168,7 +192,8 @@
         "why": "This is the top pre-Moon Lord ranger weapon because the fire-rate ramp gives absurd sustained damage.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "vortex-beater",
@@ -179,7 +204,8 @@
         "why": "Gun ranger gets a premium pillar-crafted option too, especially if you prefer bullets over bows.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       },
       {
         "id": "tsunami",
@@ -190,7 +216,8 @@
         "why": "It remains an elite carry-over bow if you want to stay outside fragment weapon crafting a bit longer.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "bow"
+        "subclass": "bow",
+        "modifier": "Unreal"
       },
       {
         "id": "xenopopper",
@@ -201,7 +228,8 @@
         "why": "With strong bullets it still performs well enough to matter as an event-farm carry-over.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "gun"
+        "subclass": "gun",
+        "modifier": "Unreal"
       }
     ],
     "armor": [
@@ -266,6 +294,26 @@
         "why": "The stat boost is still worth carrying once your core class accessory slots are already settled.",
         "tags": ["hardmode"],
         "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
+        "tags": ["hardmode"],
+        "topPick": false
       }
     ],
     "buffs": [
@@ -324,7 +372,8 @@
         "why": "This is the standout pre-Moon Lord mage spam weapon because the burst and tracking are both excellent.",
         "tags": ["hardmode"],
         "topPick": true,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "nebula-arcanum",
@@ -335,7 +384,8 @@
         "why": "It offers a powerful alternative Lunar pickup if you want more homing, orb-based pressure.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "wand"
+        "subclass": "wand",
+        "modifier": "Mythical"
       },
       {
         "id": "razorblade-typhoon",
@@ -346,7 +396,8 @@
         "why": "It remains one of the best carry-over mage weapons even after Nebula crafting is available.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       },
       {
         "id": "razorpine",
@@ -357,7 +408,8 @@
         "why": "Its rapid-fire pressure keeps it relevant as a strong event-farm carry-over spell.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "spell-tome"
+        "subclass": "spell-tome",
+        "modifier": "Mythical"
       }
     ],
     "armor": [
@@ -420,6 +472,26 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat lift is still worth a slot once the rest of your loadout is stable.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "charm-of-myths",
+        "name": "Charm of Myths",
+        "slot": "accessory",
+        "icon": "accessories/charm-of-myths.png",
+        "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
+        "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
         "tags": ["hardmode"],
         "topPick": false
       }
@@ -502,7 +574,8 @@
         "why": "If you can obtain it, this is the best whip in the game and a real pre-Moon Lord power spike.",
         "tags": ["hardmode"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       },
       {
         "id": "dark-harvest",
@@ -513,7 +586,8 @@
         "why": "It remains the most practical high-end whip for players who are not routing daytime Empress kills.",
         "tags": ["hardmode", "event"],
         "topPick": false,
-        "subclass": "whip"
+        "subclass": "whip",
+        "modifier": "Legendary"
       }
     ],
     "armor": [
@@ -576,6 +650,26 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat bonus supports both summon output and your own survivability during chaotic pillar fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
+        "slot": "accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "tags": ["hardmode"],
+        "topPick": false
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "why": "Dash, a dodge chance, and wall-climb in a single slot.",
         "tags": ["hardmode"],
         "topPick": false
       }
