@@ -10,25 +10,20 @@
   color: #fff;
   min-height: 460px;
   isolation: isolate;
-  --sky1: #a6d4f2;
-  --sky2: #3E9BE0;
-  --grass: #5BA130;
-  --grassHi: #7BC24A;
-}
-.hero[data-night='true'] {
-  --sky1: #0a1730;
-  --sky2: #16294f;
-  --grass: #0e2a16;
-  --grassHi: #184a2a;
 }
 
-.sky {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: linear-gradient(180deg, var(--sky1), var(--sky2));
-  transition: background .5s ease;
-}
+/* Day: cycling real-Terraria scenes (seamless horizontal wrap) */
+.dayScenes { position: absolute; inset: 0; z-index: 0; }
+.scene { position: absolute; inset: 0; opacity: 0; overflow: hidden; transition: opacity 1.6s ease; }
+.sceneOn { opacity: 1; }
+.skyGrad { background: linear-gradient(180deg, #5aa6e6 0%, #8ecdf2 55%, #c8e9f5 100%); }
+.strip { display: flex; position: absolute; left: 0; top: -9%; height: 118%; width: max-content; animation: heroPan 90s linear infinite; }
+.strip img { height: 100%; width: auto; }
+@keyframes heroPan { to { transform: translateX(-50%); } }
+
+/* Night: dark sky */
+.sky { position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, #0a1730, #16294f); }
+
 /* darken top strip so the header + title stay legible on the bright day sky */
 .topWash {
   position: absolute;
@@ -40,32 +35,26 @@
 }
 
 /* Celestials */
-.sun, .moon { position: absolute; top: 60px; right: 9%; width: 66px; height: 66px; border-radius: 50%; z-index: 1; }
+.sun, .moon { position: absolute; top: 46px; right: 8%; width: 76px; height: 76px; border-radius: 50%; z-index: 2; }
 .sun {
-  background: radial-gradient(circle at 42% 40%, #fff3c4, var(--warm));
-  box-shadow: 0 0 44px 8px color-mix(in oklab, var(--warm) 55%, transparent);
-  animation: sunPulse 5s ease-in-out infinite;
+  background: radial-gradient(circle at 45% 42%, #fff7d6 0%, #ffe487 45%, var(--warm) 100%);
+  box-shadow: 0 0 60px 14px rgba(245,194,62,.55), 0 0 0 6px rgba(255,240,180,.18);
+  animation: sunPulse 6s ease-in-out infinite;
 }
 .moon {
   background: radial-gradient(circle at 38% 38%, #fff, #EAF0FF);
   box-shadow: 0 0 26px 4px rgba(200,214,255,.5);
 }
-@keyframes sunPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes sunPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
 
-/* Clouds */
-.clouds { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
-.cloud { position: absolute; background: rgba(255,255,255,.92); border-radius: 100px; }
-.cloud::before, .cloud::after { content: ""; position: absolute; background: inherit; border-radius: 50%; }
-.c1 { width: 96px; height: 27px; top: 70px; left: -160px; animation: drift 30s linear infinite; }
-.c1::before { width: 46px; height: 46px; top: -21px; left: 14px; }
-.c1::after { width: 34px; height: 34px; top: -14px; left: 50px; }
-.c2 { width: 74px; height: 21px; top: 130px; left: -140px; opacity: .8; animation: drift 40s linear infinite; }
-.c2::before { width: 36px; height: 36px; top: -16px; left: 10px; }
-.c2::after { width: 26px; height: 26px; top: -10px; left: 40px; }
-.c3 { width: 120px; height: 32px; top: 40px; left: -190px; opacity: .7; animation: drift 52s linear infinite; }
-.c3::before { width: 56px; height: 56px; top: -26px; left: 20px; }
-.c3::after { width: 42px; height: 42px; top: -18px; left: 62px; }
-@keyframes drift { to { transform: translateX(120vw); } }
+/* Clouds (real Terraria sprites, drifting) */
+.clouds { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
+.cloud { position: absolute; width: auto; filter: drop-shadow(0 6px 10px rgba(30,60,90,.18)); }
+.cl1 { top: 12%; height: 120px; animation: cloudDrift 60s linear infinite; }
+.cl2 { top: 40%; height: 70px; opacity: .92; animation: cloudDrift 84s linear infinite; animation-delay: -30s; }
+.cl3 { top: 6%;  height: 52px; opacity: .85; animation: cloudDrift 104s linear infinite; animation-delay: -70s; }
+.cl4 { top: 52%; height: 90px; animation: cloudDrift 72s linear infinite; animation-delay: -45s; }
+@keyframes cloudDrift { from { transform: translateX(-40vw); } to { transform: translateX(110vw); } }
 
 /* Stars */
 .stars { position: absolute; inset: 0; z-index: 1; }
@@ -73,13 +62,13 @@
 .starBig { width: 3px; height: 3px; }
 @keyframes twinkle { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
 
-/* Grass */
-.grass { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; z-index: 1; background: var(--grass); transition: background .5s ease; }
+/* Grass (night only; day scenes carry their own ground) */
+.grass { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; z-index: 1; background: #0e2a16; }
 .grass::before {
   content: "";
   position: absolute;
   top: -6px; left: 0; right: 0; height: 8px;
-  background: var(--grassHi);
+  background: #184a2a;
   -webkit-mask: repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 12px);
   mask: repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 12px);
 }

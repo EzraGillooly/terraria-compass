@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -6,6 +7,10 @@ import styles from './Home.module.css';
 
 const BASE = import.meta.env.BASE_URL;
 const sprite = (path: string) => `${BASE}icons/${path}`;
+
+// Daytime scenes cycled in the hero (real Terraria backgrounds; last is sky-islands gradient)
+const SCENES = [`${BASE}hero/bg/forest-1.png`, `${BASE}hero/bg/ocean-1.png`, null];
+const CLOUD = (n: number) => `${BASE}hero/sky/cloud-${n}.png`;
 
 const EXPLORE_CARDS = [
   {
@@ -38,6 +43,14 @@ const STARS = Array.from({ length: 46 }, (_, i) => ({
 
 export function Home() {
   const { isDayMode } = useAppState();
+  const [scene, setScene] = useState(0);
+
+  // Cycle forest → beach → sky islands, only while in day mode
+  useEffect(() => {
+    if (!isDayMode) return;
+    const id = setInterval(() => setScene((s) => (s + 1) % SCENES.length), 7000);
+    return () => clearInterval(id);
+  }, [isDayMode]);
 
   return (
     <div className={styles.page}>
@@ -47,14 +60,31 @@ export function Home() {
         data-night={isDayMode ? 'false' : 'true'}
         aria-label="Homepage hero"
       >
-        <div className={styles.sky} aria-hidden="true" />
+        {/* Day: cycling real-Terraria backgrounds (seamless horizontal wrap) */}
+        <div className={`${styles.dayScenes} ${styles.dayOnly}`} aria-hidden="true">
+          {SCENES.map((src, i) => (
+            <div key={i} className={`${styles.scene} ${scene === i ? styles.sceneOn : ''} ${src ? '' : styles.skyGrad}`}>
+              {src && (
+                <div className={styles.strip}>
+                  <img src={src} alt="" className="pixel-img" />
+                  <img src={src} alt="" className="pixel-img" />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Night: dark sky */}
+        <div className={`${styles.sky} ${styles.nightOnly}`} aria-hidden="true" />
+
         <div className={styles.topWash} aria-hidden="true" />
 
-        {/* Day scene */}
+        {/* Day: drifting Terraria clouds + sun */}
         <div className={`${styles.clouds} ${styles.dayOnly}`} aria-hidden="true">
-          <span className={`${styles.cloud} ${styles.c1}`} />
-          <span className={`${styles.cloud} ${styles.c2}`} />
-          <span className={`${styles.cloud} ${styles.c3}`} />
+          <img className={`${styles.cloud} ${styles.cl1} pixel-img`} src={CLOUD(1)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl2} pixel-img`} src={CLOUD(3)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl3} pixel-img`} src={CLOUD(9)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl4} pixel-img`} src={CLOUD(5)} alt="" />
         </div>
         <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true" />
 
@@ -70,7 +100,7 @@ export function Home() {
         </div>
         <div className={`${styles.moon} ${styles.nightOnly}`} aria-hidden="true" />
 
-        <div className={styles.grass} aria-hidden="true" />
+        <div className={`${styles.grass} ${styles.nightOnly}`} aria-hidden="true" />
 
         <Header variant="photo" />
 
