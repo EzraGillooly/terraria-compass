@@ -273,6 +273,20 @@ export function Loadouts() {
                 ))}
               </div>
             )}
+
+            <div className={styles.reforge}>
+              <div className={styles.reforgeLabel}>Accessory reforges</div>
+              <p className={styles.reforgeIntro}>
+                Reforge accessories at the Goblin Tinkerer. There is no single best pick, so match it to how you play:
+              </p>
+              <ul className={styles.reforgeList}>
+                <li><b>Warding</b> <span>+4 defense</span> take fewer hits while you learn a fight</li>
+                <li><b>Menacing</b> <span>+4% damage</span> the standard max-DPS choice</li>
+                <li><b>Lucky</b> <span>+4% crit</span> pairs well with high base crit</li>
+                <li><b>Quick</b> <span>+4% move speed</span> good on wings and boots</li>
+              </ul>
+            </div>
+
             {safeLoadout.buffs.length > 0 && (
               <div className={styles.buffWrap}>
                 <div className={styles.buffLabel}>Buffs &amp; Consumables</div>

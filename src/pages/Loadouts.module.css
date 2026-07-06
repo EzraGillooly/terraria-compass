@@ -101,6 +101,15 @@ button.accSlot:hover { border-color: var(--accent); background: color-mix(in okl
 .accAlt { font-weight: 700; font-size: 12px; color: var(--ink-soft); background: var(--card-2); border: 1px solid var(--line); border-radius: var(--radius-pill); padding: 3px 11px; cursor: pointer; font-family: inherit; }
 .accAlt:hover { border-color: var(--accent); }
 
+/* ── Accessory reforge explainer ── */
+.reforge { margin-top: 14px; padding: 12px 14px; background: var(--card-2); border: 1px solid var(--line); border-radius: var(--radius-md); }
+.reforgeLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 10px; color: var(--ink-mute); margin-bottom: 6px; }
+.reforgeIntro { font-size: 12px; color: var(--ink-mute); line-height: 1.45; margin: 0 0 8px; }
+.reforgeList { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.reforgeList li { font-size: 12px; color: var(--ink-mute); line-height: 1.35; }
+.reforgeList b { color: var(--ink-soft); font-weight: 800; }
+.reforgeList span { display: inline-block; font-weight: 700; font-size: 10px; color: var(--accent); background: color-mix(in oklab, var(--accent) 12%, transparent); border-radius: var(--radius-pill); padding: 1px 8px; margin: 0 5px; }
+
 /* ── Buffs ── */
 .buffWrap { margin-top: 14px; border-top: 1px solid var(--hair); padding-top: 12px; }
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: var(--ink-mute); margin-bottom: 8px; }
