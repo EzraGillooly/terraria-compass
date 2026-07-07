@@ -5,6 +5,7 @@
   margin-top: var(--space-16);
   border-top: 3px solid var(--accent);
 }
+.flush { margin-top: 0; }
 
 .inner {
   max-width: 1240px;

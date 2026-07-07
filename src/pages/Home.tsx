@@ -6,32 +6,10 @@ import { useAppState } from '../lib/app-context';
 import styles from './Home.module.css';
 
 const BASE = import.meta.env.BASE_URL;
-const sprite = (path: string) => `${BASE}icons/${path}`;
 
 // Daytime scenes cycled in the hero (real Terraria backgrounds; last is sky-islands gradient)
 const SCENES = [`${BASE}hero/bg/forest-1.png`, `${BASE}hero/bg/ocean-1.png`, null];
 const CLOUD = (n: number) => `${BASE}hero/sky/cloud-${n}.png`;
-
-const EXPLORE_CARDS = [
-  {
-    title: 'Bosses',
-    blurb: 'Every boss in order, with summon methods, key drops, and what each fight unlocks.',
-    to: '/bosses',
-    icon: 'bosses/wall-of-flesh.png',
-  },
-  {
-    title: 'Biomes',
-    blurb: 'Every environment, its mobs, and the best loot to farm in each.',
-    to: '/biomes',
-    icon: 'bosses/plantera.png',
-  },
-  {
-    title: 'Loadouts',
-    blurb: 'Class-specific weapons, armor, and accessories for every progression stage.',
-    to: '/loadouts',
-    icon: 'items/blade-of-grass.png',
-  },
-];
 
 // Deterministic star field (stable across renders, no layout jitter)
 const STARS = Array.from({ length: 46 }, (_, i) => ({
@@ -121,38 +99,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* ── Explore section ── */}
-      <section className={styles.exploreSection} aria-labelledby="explore-heading">
-        <div className={styles.exploreInner}>
-          <div className={styles.sectionHead}>
-            <p className={styles.sectionKicker}>The Guide</p>
-            <h2 id="explore-heading">Where do you <em>want to start?</em></h2>
-            <p className={styles.sectionLede}>
-              Three chapters covering everything from your first night to the Moon Lord.
-            </p>
-          </div>
-          <div className={styles.exploreGrid}>
-            {EXPLORE_CARDS.map((card) => (
-              <Link key={card.to} to={card.to} className={styles.xcard}>
-                <img
-                  src={sprite(card.icon)}
-                  alt=""
-                  aria-hidden="true"
-                  className={`${styles.xcardIcon} pixel-img`}
-                  width="56"
-                  height="56"
-                  loading="lazy"
-                />
-                <h3 className={styles.xcardTitle}>{card.title}</h3>
-                <p className={styles.xcardBlurb}>{card.blurb}</p>
-                <span className={styles.xcardGo} aria-hidden="true">Open →</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+      <Footer flush />
     </div>
   );
 }

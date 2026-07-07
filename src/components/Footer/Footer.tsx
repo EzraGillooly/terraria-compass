@@ -1,8 +1,13 @@
 import styles from './Footer.module.css';
 
-export function Footer() {
+interface FooterProps {
+  /** Drop the top margin so the footer sits flush against full-bleed content (e.g. Home). */
+  flush?: boolean;
+}
+
+export function Footer({ flush = false }: FooterProps) {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} ${flush ? styles.flush : ''}`}>
       <div className={styles.inner}>
 
         {/* Left: brand */}
