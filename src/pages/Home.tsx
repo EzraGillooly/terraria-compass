@@ -32,6 +32,7 @@ export function Home() {
 
   return (
     <div className={styles.page}>
+      <main className={styles.main}>
       {/* ── Animated hero (follows the global day/night toggle) ── */}
       <section
         className={styles.hero}
@@ -98,6 +99,7 @@ export function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer flush />
     </div>

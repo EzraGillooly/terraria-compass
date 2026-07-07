@@ -30,7 +30,7 @@ test.describe('main screens', () => {
 
     await expect(page.getByText('Terraria Compass').first()).toBeVisible();
     await expect(
-      page.getByRole('group', { name: /world difficulty/i }),
+      page.getByRole('combobox', { name: /world difficulty/i }),
     ).toBeVisible();
   });
 

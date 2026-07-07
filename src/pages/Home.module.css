@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
 }
+/* main landmark: pass the flex fill through to the hero */
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
 /* ── Animated hero (grows to fill the viewport; footer sits below) ── */
 .hero {
@@ -148,7 +154,7 @@
   font-weight: 800;
   font-size: 15px;
   color: #fff;
-  background: var(--accent);
+  background: var(--deep);
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 13px 24px;
