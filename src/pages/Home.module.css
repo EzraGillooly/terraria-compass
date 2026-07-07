@@ -12,14 +12,15 @@
   isolation: isolate;
 }
 
-/* Day: cycling real-Terraria scenes (seamless horizontal wrap) */
+/* Day: cycling real-Terraria scenes (still; clouds carry the motion) */
 .dayScenes { position: absolute; inset: 0; z-index: 0; }
-.scene { position: absolute; inset: 0; opacity: 0; overflow: hidden; transition: opacity 1.6s ease; }
+.scene {
+  position: absolute; inset: 0; opacity: 0; transition: opacity 1.6s ease;
+  background-size: cover; background-position: center 32%;
+  image-rendering: pixelated;
+}
 .sceneOn { opacity: 1; }
 .skyGrad { background: linear-gradient(180deg, #5aa6e6 0%, #8ecdf2 55%, #c8e9f5 100%); }
-.strip { display: flex; position: absolute; left: 0; top: -9%; height: 118%; width: max-content; animation: heroPan 90s linear infinite; }
-.strip img { height: 100%; width: auto; }
-@keyframes heroPan { to { transform: translateX(-50%); } }
 
 /* Night: dark sky */
 .sky { position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, #0a1730, #16294f); }

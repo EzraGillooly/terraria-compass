@@ -60,17 +60,14 @@ export function Home() {
         data-night={isDayMode ? 'false' : 'true'}
         aria-label="Homepage hero"
       >
-        {/* Day: cycling real-Terraria backgrounds (seamless horizontal wrap) */}
+        {/* Day: cycling real-Terraria backgrounds (still; clouds carry the motion) */}
         <div className={`${styles.dayScenes} ${styles.dayOnly}`} aria-hidden="true">
           {SCENES.map((src, i) => (
-            <div key={i} className={`${styles.scene} ${scene === i ? styles.sceneOn : ''} ${src ? '' : styles.skyGrad}`}>
-              {src && (
-                <div className={styles.strip}>
-                  <img src={src} alt="" className="pixel-img" />
-                  <img src={src} alt="" className="pixel-img" />
-                </div>
-              )}
-            </div>
+            <div
+              key={i}
+              className={`${styles.scene} ${scene === i ? styles.sceneOn : ''} ${src ? '' : styles.skyGrad}`}
+              style={src ? { backgroundImage: `url(${src})` } : undefined}
+            />
           ))}
         </div>
 
