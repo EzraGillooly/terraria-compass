@@ -20,7 +20,7 @@ describe('App', () => {
 
     expect(screen.getAllByText('Terraria Compass').length).toBeGreaterThan(0);
     expect(
-      screen.getByRole('group', { name: /world difficulty/i }),
+      screen.getByRole('combobox', { name: /world difficulty/i }),
     ).toBeInTheDocument();
   });
 });
