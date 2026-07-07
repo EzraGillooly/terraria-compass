@@ -60,8 +60,8 @@ export function Home() {
         data-night={isDayMode ? 'false' : 'true'}
         aria-label="Homepage hero"
       >
-        {/* Day: cycling real-Terraria backgrounds (still; clouds carry the motion) */}
-        <div className={`${styles.dayScenes} ${styles.dayOnly}`} aria-hidden="true">
+        {/* Cycling real-Terraria backgrounds (shown day + night; still, clouds carry the motion) */}
+        <div className={styles.dayScenes} aria-hidden="true">
           {SCENES.map((src, i) => (
             <div
               key={i}
@@ -71,23 +71,8 @@ export function Home() {
           ))}
         </div>
 
-        {/* Night: dark sky */}
-        <div className={`${styles.sky} ${styles.nightOnly}`} aria-hidden="true" />
-
-        <div className={styles.topWash} aria-hidden="true" />
-
-        {/* Day: drifting Terraria clouds + sun */}
-        <div className={`${styles.clouds} ${styles.dayOnly}`} aria-hidden="true">
-          <img className={`${styles.cloud} ${styles.cl1} pixel-img`} src={CLOUD(1)} alt="" />
-          <img className={`${styles.cloud} ${styles.cl2} pixel-img`} src={CLOUD(3)} alt="" />
-          <img className={`${styles.cloud} ${styles.cl3} pixel-img`} src={CLOUD(9)} alt="" />
-          <img className={`${styles.cloud} ${styles.cl4} pixel-img`} src={CLOUD(5)} alt="" />
-        </div>
-        <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true">
-          <img className={`${styles.sunImg} pixel-img`} src={`${BASE}hero/sky/sun.png`} alt="" />
-        </div>
-
-        {/* Night scene */}
+        {/* Night: darken the scene to nighttime + stars */}
+        <div className={`${styles.nightWash} ${styles.nightOnly}`} aria-hidden="true" />
         <div className={`${styles.stars} ${styles.nightOnly}`} aria-hidden="true">
           {STARS.map((s, i) => (
             <span
@@ -97,9 +82,24 @@ export function Home() {
             />
           ))}
         </div>
-        <div className={`${styles.moon} ${styles.nightOnly}`} aria-hidden="true" />
 
-        <div className={`${styles.grass} ${styles.nightOnly}`} aria-hidden="true" />
+        <div className={styles.topWash} aria-hidden="true" />
+
+        {/* Drifting Terraria clouds (dimmed at night via CSS) */}
+        <div className={styles.clouds} aria-hidden="true">
+          <img className={`${styles.cloud} ${styles.cl1} pixel-img`} src={CLOUD(1)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl2} pixel-img`} src={CLOUD(3)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl3} pixel-img`} src={CLOUD(9)} alt="" />
+          <img className={`${styles.cloud} ${styles.cl4} pixel-img`} src={CLOUD(5)} alt="" />
+        </div>
+
+        {/* Celestial: sun by day, moon by night */}
+        <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true">
+          <img className={`${styles.sunImg} pixel-img`} src={`${BASE}hero/sky/sun.png`} alt="" />
+        </div>
+        <div className={`${styles.moon} ${styles.nightOnly}`} aria-hidden="true">
+          <img className={`${styles.moonImg} pixel-img`} src={`${BASE}hero/sky/moon.png`} alt="" />
+        </div>
 
         <Header variant="photo" />
 

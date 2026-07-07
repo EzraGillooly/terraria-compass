@@ -22,8 +22,8 @@
 .sceneOn { opacity: 1; }
 .skyGrad { background: linear-gradient(180deg, #5aa6e6 0%, #8ecdf2 55%, #c8e9f5 100%); }
 
-/* Night: dark sky */
-.sky { position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, #0a1730, #16294f); }
+/* Night wash: darkens the day scene to nighttime */
+.nightWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(8,14,38,.55) 0%, rgba(8,14,38,.72) 100%); }
 
 /* darken top strip so the header + title stay legible on the bright day sky */
 .topWash {
@@ -47,11 +47,16 @@
   animation: sunPulse 6s ease-in-out infinite;
 }
 .sunImg { position: relative; width: 100%; height: 100%; object-fit: contain; animation: sunBob 6s ease-in-out infinite; }
-.moon {
+.moon { display: grid; place-items: center; z-index: 3; }
+.moon::before {
+  content: "";
+  position: absolute;
+  inset: -28%;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 38%, #fff, #EAF0FF);
-  box-shadow: 0 0 26px 4px rgba(200,214,255,.5);
+  background: radial-gradient(circle, rgba(200,214,255,.5) 0%, rgba(175,195,255,.2) 45%, transparent 70%);
+  animation: sunPulse 7s ease-in-out infinite;
 }
+.moonImg { position: relative; width: 88%; height: 88%; object-fit: contain; }
 @keyframes sunPulse { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.12); opacity: 1; } }
 @keyframes sunBob { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
 
@@ -65,27 +70,18 @@
 @keyframes cloudDrift { from { transform: translateX(-40vw); } to { transform: translateX(110vw); } }
 
 /* Stars */
-.stars { position: absolute; inset: 0; z-index: 1; }
+.stars { position: absolute; inset: 0; z-index: 2; }
 .star { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff; animation: twinkle 3s ease-in-out infinite; }
 .starBig { width: 3px; height: 3px; }
 @keyframes twinkle { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
-
-/* Grass (night only; day scenes carry their own ground) */
-.grass { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; z-index: 1; background: #0e2a16; }
-.grass::before {
-  content: "";
-  position: absolute;
-  top: -6px; left: 0; right: 0; height: 8px;
-  background: #184a2a;
-  -webkit-mask: repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 12px);
-  mask: repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 12px);
-}
 
 /* Day / night visibility */
 .dayOnly { transition: opacity .4s ease; }
 .nightOnly { transition: opacity .4s ease; }
 .hero[data-night='true'] .dayOnly { opacity: 0; pointer-events: none; }
 .hero[data-night='false'] .nightOnly { opacity: 0; pointer-events: none; }
+/* dim the clouds at night */
+.hero[data-night='true'] .clouds { filter: brightness(.5) saturate(.75); }
 
 .heroBody {
   position: relative;
