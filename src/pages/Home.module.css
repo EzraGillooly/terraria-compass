@@ -99,13 +99,14 @@
   margin: 0 0 8px;
 }
 .heroTitle {
-  font-family: var(--display);
+  font-family: var(--game);
   font-weight: 700;
-  font-size: clamp(38px, 6vw, 66px);
-  line-height: 1.02;
-  margin: 0 0 14px;
-  max-width: 16ch;
-  text-shadow: 0 6px 40px rgba(0,0,0,.5);
+  font-size: clamp(40px, 6.4vw, 72px);
+  line-height: 1.08;
+  margin: 0 0 16px;
+  max-width: 15ch;
+  letter-spacing: .01em;
+  text-shadow: var(--tshadow);
   animation: heroUp .7s ease both;
 }
 .heroTitle em { font-style: normal; color: var(--warm); }
@@ -161,67 +162,73 @@
 }
 .btnSecondary:hover { background: rgba(255,255,255,.14); border-color: #fff; }
 
-/* ── Explore section ── */
+/* ── Explore section — dark "underground" band that flows out of the hero,
+   with beveled Terraria inventory-slot cards ── */
 .exploreSection {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 56px 32px 72px;
+  position: relative;
+  margin-top: 0;
+  background:
+    radial-gradient(120% 90% at 50% -10%, rgba(62,155,224,.18) 0%, transparent 60%),
+    linear-gradient(180deg, #0d1b30 0%, #0a1526 100%);
+  padding: 64px 32px 84px;
 }
-.sectionHead { text-align: center; max-width: 640px; margin: 0 auto 32px; }
+.exploreInner { max-width: 900px; margin: 0 auto; }
+.sectionHead { text-align: center; max-width: 640px; margin: 0 auto 36px; }
 .sectionKicker {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .16em;
   font-size: 12px;
-  color: var(--accent);
-  margin: 0 0 6px;
+  color: #8ff0cf;
+  margin: 0 0 8px;
 }
 .sectionHead h2 {
-  font-family: var(--display);
+  font-family: var(--game);
   font-weight: 700;
-  font-size: clamp(28px, 4vw, 42px);
-  line-height: 1.05;
-  margin: 0 0 8px;
-  color: var(--ink-soft);
+  font-size: clamp(30px, 4.4vw, 46px);
+  line-height: 1.06;
+  margin: 0 0 10px;
+  color: #fff;
+  text-shadow: var(--tshadow);
 }
-.sectionHead h2 em { font-style: normal; color: inherit; }
-.sectionLede { font-size: 15px; color: var(--ink-mute); margin: 0; }
+.sectionHead h2 em { font-style: normal; color: var(--warm); }
+.sectionLede { font-size: 15px; color: rgba(213,228,244,.82); margin: 0; }
 
 .exploreGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 16px;
 }
+/* Beveled inventory slot: dark blue-purple fill, lighter inset border */
 .xcard {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(70,84,150,.42) 0%, rgba(46,56,110,.42) 100%);
+  border: 2px solid rgba(150,164,224,.5);
   border-radius: 8px;
-  padding: 24px 18px;
+  box-shadow: inset 0 0 0 2px rgba(18,24,52,.55), 0 6px 18px rgba(0,0,0,.35);
+  padding: 26px 18px 20px;
   text-decoration: none;
-  box-shadow: var(--shadow-sm);
   transition: transform .16s, box-shadow .16s, border-color .16s;
 }
 .xcard:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: color-mix(in oklab, var(--accent) 45%, var(--line));
+  border-color: var(--warm);
+  box-shadow: inset 0 0 0 2px rgba(18,24,52,.55), 0 0 0 2px var(--warm), 0 10px 26px rgba(0,0,0,.45);
 }
-.xcardIcon { width: 48px; height: 48px; object-fit: contain; margin-bottom: 12px; }
+.xcardIcon { width: 56px; height: 56px; object-fit: contain; margin-bottom: 14px; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.5)); }
 .xcardTitle {
-  font-family: var(--display);
+  font-family: var(--game);
   font-weight: 700;
-  font-size: 22px;
-  color: var(--ink-soft);
-  margin: 0 0 6px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: var(--tshadow);
+  margin: 0 0 8px;
 }
-.xcardBlurb { font-size: 13px; color: var(--ink-mute); line-height: 1.45; margin: 0 0 14px; }
-.xcardGo { margin-top: auto; font-weight: 800; font-size: 13px; color: var(--accent); }
+.xcardBlurb { font-size: 13px; color: rgba(213,228,244,.78); line-height: 1.5; margin: 0 0 16px; }
+.xcardGo { margin-top: auto; font-weight: 800; font-size: 13px; color: var(--warm); }
 
 @keyframes heroUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 

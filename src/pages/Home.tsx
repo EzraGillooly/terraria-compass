@@ -123,30 +123,32 @@ export function Home() {
 
       {/* ── Explore section ── */}
       <section className={styles.exploreSection} aria-labelledby="explore-heading">
-        <div className={styles.sectionHead}>
-          <p className={styles.sectionKicker}>The Guide</p>
-          <h2 id="explore-heading">Where do you <em>want to start?</em></h2>
-          <p className={styles.sectionLede}>
-            Three chapters covering everything from your first night to the Moon Lord.
-          </p>
-        </div>
-        <div className={styles.exploreGrid}>
-          {EXPLORE_CARDS.map((card) => (
-            <Link key={card.to} to={card.to} className={styles.xcard}>
-              <img
-                src={sprite(card.icon)}
-                alt=""
-                aria-hidden="true"
-                className={`${styles.xcardIcon} pixel-img`}
-                width="48"
-                height="48"
-                loading="lazy"
-              />
-              <h3 className={styles.xcardTitle}>{card.title}</h3>
-              <p className={styles.xcardBlurb}>{card.blurb}</p>
-              <span className={styles.xcardGo} aria-hidden="true">Open →</span>
-            </Link>
-          ))}
+        <div className={styles.exploreInner}>
+          <div className={styles.sectionHead}>
+            <p className={styles.sectionKicker}>The Guide</p>
+            <h2 id="explore-heading">Where do you <em>want to start?</em></h2>
+            <p className={styles.sectionLede}>
+              Three chapters covering everything from your first night to the Moon Lord.
+            </p>
+          </div>
+          <div className={styles.exploreGrid}>
+            {EXPLORE_CARDS.map((card) => (
+              <Link key={card.to} to={card.to} className={styles.xcard}>
+                <img
+                  src={sprite(card.icon)}
+                  alt=""
+                  aria-hidden="true"
+                  className={`${styles.xcardIcon} pixel-img`}
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <h3 className={styles.xcardTitle}>{card.title}</h3>
+                <p className={styles.xcardBlurb}>{card.blurb}</p>
+                <span className={styles.xcardGo} aria-hidden="true">Open →</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
