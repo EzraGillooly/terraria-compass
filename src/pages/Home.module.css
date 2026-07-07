@@ -36,17 +36,24 @@
 }
 
 /* Celestials */
-.sun, .moon { position: absolute; top: 46px; right: 8%; width: 76px; height: 76px; border-radius: 50%; z-index: 2; }
-.sun {
-  background: radial-gradient(circle at 45% 42%, #fff7d6 0%, #ffe487 45%, var(--warm) 100%);
-  box-shadow: 0 0 60px 14px rgba(245,194,62,.55), 0 0 0 6px rgba(255,240,180,.18);
+.sun, .moon { position: absolute; top: 40px; right: 8%; width: 84px; height: 84px; z-index: 2; }
+.sun { display: grid; place-items: center; }
+.sun::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,226,120,.6) 0%, rgba(255,214,90,.28) 45%, transparent 70%);
   animation: sunPulse 6s ease-in-out infinite;
 }
+.sunImg { position: relative; width: 100%; height: 100%; object-fit: contain; animation: sunBob 6s ease-in-out infinite; }
 .moon {
+  border-radius: 50%;
   background: radial-gradient(circle at 38% 38%, #fff, #EAF0FF);
   box-shadow: 0 0 26px 4px rgba(200,214,255,.5);
 }
-@keyframes sunPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes sunPulse { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.12); opacity: 1; } }
+@keyframes sunBob { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
 
 /* Clouds (real Terraria sprites, drifting) */
 .clouds { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }

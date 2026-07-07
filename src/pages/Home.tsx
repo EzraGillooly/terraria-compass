@@ -83,7 +83,9 @@ export function Home() {
           <img className={`${styles.cloud} ${styles.cl3} pixel-img`} src={CLOUD(9)} alt="" />
           <img className={`${styles.cloud} ${styles.cl4} pixel-img`} src={CLOUD(5)} alt="" />
         </div>
-        <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true" />
+        <div className={`${styles.sun} ${styles.dayOnly}`} aria-hidden="true">
+          <img className={`${styles.sunImg} pixel-img`} src={`${BASE}hero/sky/sun.png`} alt="" />
+        </div>
 
         {/* Night scene */}
         <div className={`${styles.stars} ${styles.nightOnly}`} aria-hidden="true">
