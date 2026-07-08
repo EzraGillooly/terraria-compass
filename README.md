@@ -19,30 +19,6 @@ guidance in a quick, browseable format.
 - **Light and dark theme**, with OS preference support
 - No ads, no tracking, no external fonts
 
-## Development
-
-### Prerequisites
-
-- Node.js 20+
-- npm
-
-### Run locally
-
-```bash
-npm install
-npm run dev     # http://localhost:5173/terraria-compass/
-```
-
-### Available scripts
-
-```bash
-npm run build
-npm run lint
-npm run typecheck
-npm run test:ci
-npm run test:e2e
-```
-
 ## Tech stack
 
 Vite + React + TypeScript, CSS Modules, React Router v6 (HashRouter), Zod for
@@ -54,6 +30,6 @@ Deployments run through GitHub Actions and GitHub Pages.
 Item icons and gameplay content adapted from
 [terraria.wiki.gg](https://terraria.wiki.gg) under
 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
-See [`docs/ATTRIBUTIONS.md`](/Users/ezragillooly/Desktop/Personal/terraria-compass/docs/ATTRIBUTIONS.md) for project attribution notes.
+See [`docs/ATTRIBUTIONS.md`](docs/ATTRIBUTIONS.md) for project attribution notes.
 
 This is a fan project and is not affiliated with Re-Logic.
