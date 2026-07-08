@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -6,13 +6,45 @@ import { useAppState } from '../lib/app-context';
 import { classes, getLoadoutByPhaseAndClass, phases } from '../lib/data';
 import { isItemRelevantToDifficulty } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
-import { CLASS_COLORS } from '../lib/classColors';
 import type { ClassId, Item, PhaseId } from '../data/schema';
 import type { SyntheticEvent } from 'react';
 import styles from './Loadouts.module.css';
 
 const BASE = import.meta.env.BASE_URL;
 const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
+
+/* Class rail icons — a representative early-game weapon per class, pulled from the wiki.
+   (Terraria has no "bronze" sword; Copper Broadsword is the closest bronze-hued blade.) */
+const CLASS_ICON: Record<ClassId, string> = {
+  melee: 'Copper_Broadsword',
+  ranger: 'Wooden_Bow',
+  mage: 'Topaz_Staff',
+  summoner: 'Finch_Staff',
+};
+
+/* Phase → biome backdrop / representative boss (data has no bossIcon yet). */
+const PHASE_BIOME: Record<PhaseId, string> = {
+  'pre-bosses': 'forest',
+  'pre-skeletron': 'dungeon',
+  'pre-wof': 'underworld',
+  'pre-mech': 'snow',
+  'pre-plantera': 'jungle',
+  'pre-golem': 'jungle',
+  'pre-cultist': 'dungeon',
+  'pre-moonlord': 'hallow',
+  endgame: 'sky',
+};
+const PHASE_BOSS: Record<PhaseId, string> = {
+  'pre-bosses': 'eye-of-cthulhu',
+  'pre-skeletron': 'skeletron',
+  'pre-wof': 'wall-of-flesh',
+  'pre-mech': 'the-twins',
+  'pre-plantera': 'plantera',
+  'pre-golem': 'golem',
+  'pre-cultist': 'lunatic-cultist',
+  'pre-moonlord': 'moon-lord',
+  endgame: 'moon-lord',
+};
 
 function makeWikiName(stem: string): string {
   const overrides: Record<string, string> = {
@@ -40,7 +72,7 @@ function iconSrcs(icon: string) {
   return { local: `${BASE}icons/${icon}`, wiki: `${WIKI}/${makeWikiName(stem)}.png` };
 }
 
-/* ── Weapon tile ── */
+/* ── Weapon card ── */
 function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: string; onOpen: (i: Item) => void }) {
   const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
   const { local, wiki } = iconSrcs(item.icon);
@@ -57,7 +89,7 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
         <img
           src={local} alt="" aria-hidden="true"
           className={`${styles.wtileImg} pixel-img`}
-          width="34" height="34" loading="lazy"
+          width="40" height="40" loading="lazy"
           onError={makeErrorHandler(wiki, FALLBACK_ICON)}
         />
       </div>
@@ -68,12 +100,12 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
   );
 }
 
-/* ── Accessory slot ── */
+/* ── Accessory equip cell ── */
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
 ]);
 
-function AccSlot({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
+function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
   if (!item) {
     return (
       <div className={`${styles.accSlot} ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
@@ -87,7 +119,7 @@ function AccSlot({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.accSlotImg} pixel-img`}
-        width="30" height="30" loading="lazy"
+        width="28" height="28" loading="lazy"
         onError={makeErrorHandler(wiki, FALLBACK_ICON)}
       />
       <span className={styles.accSlotName}>{item.name}</span>
@@ -100,10 +132,13 @@ export function Loadouts() {
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
+  const backdropRef = useRef<HTMLDivElement>(null);
 
   const loadout = getLoadoutByPhaseAndClass(phaseId, classId);
   const classDef = classes.find((c) => c.id === classId)!;
-  const phaseName = phases.find((p) => p.id === phaseId)?.name ?? '';
+  const phaseDef = phases.find((p) => p.id === phaseId);
+  const phaseName = phaseDef?.name ?? '';
+  const activeOrder = phaseDef?.order ?? 0;
 
   const safeLoadout = loadout ?? { phase: phaseId, class: classId, weapons: [], armor: [], accessories: [], buffs: [] };
 
@@ -125,8 +160,33 @@ export function Loadouts() {
   const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
   const extraAccessories = safeLoadout.accessories.slice(slotCount);
 
+  // Parallax — biome backdrop drifts with the pointer (disabled for reduced motion).
+  useEffect(() => {
+    const el = backdropRef.current;
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const onMove = (e: MouseEvent) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
+      el.style.setProperty('--px', `${(-x * 16).toFixed(1)}px`);
+      el.style.setProperty('--py', `${(-y * 12).toFixed(1)}px`);
+    };
+    window.addEventListener('mousemove', onMove);
+    return () => window.removeEventListener('mousemove', onMove);
+  }, []);
+
+  const accLeft = accSlots.slice(4);
+  const accRight = accSlots.slice(0, 4);
+
   return (
     <div className={styles.page}>
+      <div
+        ref={backdropRef}
+        className={styles.backdrop}
+        style={{ backgroundImage: `url(${BASE}biomes/${PHASE_BIOME[phaseId]}.png)` }}
+        aria-hidden="true"
+      />
+      <div className={styles.backdropWash} aria-hidden="true" />
+
       <Header />
       <section className={styles.wrap}>
 
@@ -146,33 +206,70 @@ export function Loadouts() {
                 aria-pressed={cls.id === classId}
                 onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); }}
               >
-                <span className={styles.cdot} style={{ background: CLASS_COLORS[cls.id] ?? 'var(--accent)' }} />
+                <img
+                  src={`${WIKI}/${CLASS_ICON[cls.id as ClassId]}.png`}
+                  alt="" aria-hidden="true"
+                  className={`${styles.cdot} pixel-img`}
+                  width="28" height="28" loading="lazy"
+                  onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
+                />
                 {cls.name}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Phase stepper */}
-        <div className={styles.stepper} role="group" aria-label="Select phase">
-          {phases.map((p) => (
-            <button
-              key={p.id}
-              type="button"
-              className={`${styles.step} ${p.id === phaseId ? styles.on : ''}`}
-              aria-pressed={p.id === phaseId}
-              onClick={() => setPhaseId(p.id as PhaseId)}
-            >
-              {p.name}
-            </button>
-          ))}
+        {/* Boss progression map */}
+        <div className={styles.bossmap} role="group" aria-label="Select phase">
+          {phases.map((p, i) => {
+            const done = p.order < activeOrder;
+            const active = p.id === phaseId;
+            return (
+              <button
+                key={p.id}
+                type="button"
+                className={`${styles.waypoint} ${active ? styles.on : ''} ${done ? styles.done : ''}`}
+                aria-pressed={active}
+                aria-label={p.name}
+                onClick={() => setPhaseId(p.id as PhaseId)}
+              >
+                {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
+                <span className={styles.wpDisc}>
+                  <img
+                    src={`${BASE}icons/bosses/${PHASE_BOSS[p.id as PhaseId]}.png`}
+                    alt="" aria-hidden="true"
+                    className={`${styles.wpIcon} pixel-img`}
+                    width="30" height="30" loading="lazy"
+                    onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
+                  />
+                </span>
+                <span className={styles.wpName}>{p.name}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Boss banner (re-mounts per phase to replay the slide-in) */}
+        <div key={phaseId} className={styles.banner}>
+          <img
+            src={`${BASE}icons/bosses/${PHASE_BOSS[phaseId]}.png`}
+            alt="" aria-hidden="true"
+            className={`${styles.bannerIcon} pixel-img`}
+            width="44" height="44"
+            onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
+          />
+          <div>
+            <span className={styles.bannerName}>{phaseName}</span>
+            {phaseDef && <span className={styles.bannerHint}>{phaseDef.triggeredBy}</span>}
+          </div>
         </div>
 
         {/* Bento grid */}
         <div className={styles.bento}>
 
-          {/* Weapons (wide) */}
-          <div className={styles.tileWide + ' ' + styles.tile}>
+          {/* Left column: weapons + reforge (hugging) */}
+          <div className={styles.colLeft}>
+          <div className={`${styles.invPanel} ${styles.weaponsPanel}`}>
             <div className={styles.tlabel}><span>Weapons</span><span className={styles.em}>{classDef.name}</span></div>
 
             {classDef.subclasses.length > 0 && (
@@ -200,21 +297,21 @@ export function Loadouts() {
             )}
 
             {filteredBest.length > 0 && (
-              <div className={styles.weaponGroup}>
-                <div className={styles.weaponGroupLabel}>Best in Slot</div>
+              <>
+                <div className={styles.groupLabel}>Best in Slot</div>
                 <div className={styles.weaponRow}>
                   {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                 </div>
-              </div>
+              </>
             )}
 
             {filteredAlso.length > 0 && (
-              <div className={styles.weaponGroup}>
-                <div className={styles.weaponGroupLabel}>Also Great</div>
+              <>
+                <div className={styles.groupLabel}>Also Great</div>
                 <div className={styles.weaponRow}>
                   {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                 </div>
-              </div>
+              </>
             )}
 
             {filteredBest.length === 0 && filteredAlso.length === 0 && (
@@ -222,8 +319,32 @@ export function Loadouts() {
             )}
           </div>
 
-          {/* Armor */}
-          <div className={styles.tile}>
+          {/* Reforge — hugs the weapons panel */}
+          <div className={`${styles.invPanel} ${styles.reforgePanel}`}>
+            {extraAccessories.length > 0 && (
+              <div className={styles.accAlts}>
+                <span className={styles.accAltsLabel}>Also good:</span>
+                {extraAccessories.map((a) => (
+                  <button key={a.id} type="button" className={styles.accAlt} onClick={() => setModalItem(a)}>{a.name}</button>
+                ))}
+              </div>
+            )}
+            <div className={styles.reforgeLabel}>Accessory reforges</div>
+            <p className={styles.reforgeIntro}>
+              Reforge accessories at the Goblin Tinkerer. There is no single best pick, so match it to how you play:
+            </p>
+            <ul className={styles.reforgeList}>
+              <li><b>Warding</b> <span>+4 defense</span> take fewer hits while you learn a fight</li>
+              <li><b>Menacing</b> <span>+4% damage</span> the standard max-DPS choice</li>
+              <li><b>Lucky</b> <span>+4% crit</span> pairs well with high base crit</li>
+              <li><b>Quick</b> <span>+4% move speed</span> good on wings and boots</li>
+            </ul>
+          </div>
+          </div>
+
+          {/* Right column: armor + (buffs · accessories) */}
+          <div className={styles.colRight}>
+          <div className={styles.invPanel}>
             <div className={styles.tlabel}><span>Armor</span></div>
             {armorImg ? (
               <div className={styles.armor}>
@@ -252,51 +373,36 @@ export function Loadouts() {
             )}
           </div>
 
-          {/* Accessories + Buffs */}
-          <div className={styles.tile}>
-            <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
-            <div className={styles.accGrid}>
-              {accSlots.map((acc, i) => (
-                <AccSlot
-                  key={acc?.id ?? `empty-${i}`}
-                  item={acc}
-                  demonHeart={demonHeartUnlocked && i === 5}
-                  onOpen={setModalItem}
-                />
-              ))}
-            </div>
-            {extraAccessories.length > 0 && (
-              <div className={styles.accAlts}>
-                <span className={styles.accAltsLabel}>Also good:</span>
-                {extraAccessories.map((a) => (
-                  <button key={a.id} type="button" className={styles.accAlt} onClick={() => setModalItem(a)}>{a.name}</button>
-                ))}
-              </div>
-            )}
-
-            <div className={styles.reforge}>
-              <div className={styles.reforgeLabel}>Accessory reforges</div>
-              <p className={styles.reforgeIntro}>
-                Reforge accessories at the Goblin Tinkerer. There is no single best pick, so match it to how you play:
-              </p>
-              <ul className={styles.reforgeList}>
-                <li><b>Warding</b> <span>+4 defense</span> take fewer hits while you learn a fight</li>
-                <li><b>Menacing</b> <span>+4% damage</span> the standard max-DPS choice</li>
-                <li><b>Lucky</b> <span>+4% crit</span> pairs well with high base crit</li>
-                <li><b>Quick</b> <span>+4% move speed</span> good on wings and boots</li>
-              </ul>
-            </div>
-
-            {safeLoadout.buffs.length > 0 && (
-              <div className={styles.buffWrap}>
-                <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
+          {/* Buffs next to the compact accessory box */}
+          <div className={styles.accRow}>
+            <div className={`${styles.invPanel} ${styles.buffsPanel}`}>
+              <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
+              {safeLoadout.buffs.length > 0 ? (
                 <div className={styles.buffPills}>
                   {safeLoadout.buffs.map((b) => <span key={b.id} className={styles.buffPill}>{b.name}</span>)}
                 </div>
-              </div>
-            )}
-          </div>
+              ) : (
+                <p className={styles.empty}>No buff data for this phase yet.</p>
+              )}
+            </div>
 
+            <div className={`${styles.invPanel} ${styles.accBox}`}>
+              <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
+              <div className={styles.accSplit}>
+                <div className={styles.accCol}>
+                  {accLeft.map((acc, i) => (
+                    <AccCell key={acc?.id ?? `l-${i}`} item={acc} demonHeart={demonHeartUnlocked && i + 4 === 5} onOpen={setModalItem} />
+                  ))}
+                </div>
+                <div className={styles.accCol}>
+                  {accRight.map((acc, i) => (
+                    <AccCell key={acc?.id ?? `r-${i}`} item={acc} onOpen={setModalItem} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
 
