@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -132,7 +132,6 @@ export function Loadouts() {
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
-  const backdropRef = useRef<HTMLDivElement>(null);
 
   const loadout = getLoadoutByPhaseAndClass(phaseId, classId);
   const classDef = classes.find((c) => c.id === classId)!;
@@ -160,34 +159,19 @@ export function Loadouts() {
   const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
   const extraAccessories = safeLoadout.accessories.slice(slotCount);
 
-  // Parallax — biome backdrop drifts with the pointer (disabled for reduced motion).
-  useEffect(() => {
-    const el = backdropRef.current;
-    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const onMove = (e: MouseEvent) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 2;
-      const y = (e.clientY / window.innerHeight - 0.5) * 2;
-      el.style.setProperty('--px', `${(-x * 16).toFixed(1)}px`);
-      el.style.setProperty('--py', `${(-y * 12).toFixed(1)}px`);
-    };
-    window.addEventListener('mousemove', onMove);
-    return () => window.removeEventListener('mousemove', onMove);
-  }, []);
-
   const accLeft = accSlots.slice(4);
   const accRight = accSlots.slice(0, 4);
 
   return (
     <div className={styles.page}>
       <div
-        ref={backdropRef}
         className={styles.backdrop}
         style={{ backgroundImage: `url(${BASE}biomes/${PHASE_BIOME[phaseId]}.png)` }}
         aria-hidden="true"
       />
       <div className={styles.backdropWash} aria-hidden="true" />
 
-      <Header />
+      <Header variant="photo" />
       <section className={styles.wrap}>
 
         {/* Header row: title + class rail */}
@@ -408,7 +392,9 @@ export function Loadouts() {
 
       <ItemModal item={modalItem} onClose={() => setModalItem(null)} />
 
-      <Footer />
+      <div className={styles.footerLayer}>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
@@ -5,7 +6,6 @@ import styles from './Header.module.css';
 
 const NAV_LINKS = [
   { to: '/bosses',   label: 'Bosses'   },
-  { to: '/biomes',   label: 'Biomes'   },
   { to: '/loadouts', label: 'Loadouts' },
 ];
 
@@ -15,13 +15,68 @@ const DIFF_OPTIONS = [
   { value: 'master' as const, label: 'Master'  },
 ];
 
+/* Custom World difficulty dropdown — menu pops out below the control (a native
+   <select> can't control its popup placement). */
+function WorldSelect() {
+  const { difficulty, setDifficulty } = useAppState();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const current = DIFF_OPTIONS.find((o) => o.value === difficulty);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: PointerEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('pointerdown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  return (
+    <div className={styles.diffSelect} ref={ref}>
+      <button
+        type="button"
+        className={styles.diffTrigger}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label="World difficulty"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className={styles.diffCap}>World</span>
+        <span className={styles.diffValue}>{current?.label}</span>
+        <span className={`${styles.diffCaret} ${open ? styles.diffCaretOpen : ''}`} aria-hidden="true" />
+      </button>
+      {open && (
+        <ul className={styles.diffMenu} role="listbox" aria-label="World difficulty">
+          {DIFF_OPTIONS.map(({ value, label }) => (
+            <li key={value} role="option" aria-selected={value === difficulty}>
+              <button
+                type="button"
+                className={`${styles.diffItem} ${value === difficulty ? styles.diffItemOn : ''}`}
+                onClick={() => { setDifficulty(value as DifficultyFilter); setOpen(false); }}
+              >
+                {label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 interface HeaderProps {
   /** 'photo' = transparent overlay on hero; 'paper' = solid bar */
   variant?: 'photo' | 'paper';
 }
 
 export function Header({ variant = 'paper' }: HeaderProps) {
-  const { difficulty, setDifficulty, isDayMode, setIsDayMode } = useAppState();
+  const { isDayMode, setIsDayMode } = useAppState();
   const isPhoto = variant === 'photo';
 
   return (
@@ -57,21 +112,9 @@ export function Header({ variant = 'paper' }: HeaderProps) {
         {/* Controls */}
         <div className={styles.controls}>
           {/* World difficulty */}
-          <label className={styles.diffSelect}>
-            <span className={styles.diffCap}>World</span>
-            <select
-              className={styles.diffField}
-              value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value as DifficultyFilter)}
-              aria-label="World difficulty"
-            >
-              {DIFF_OPTIONS.map(({ value, label }) => (
-                <option key={value} value={value}>{label}</option>
-              ))}
-            </select>
-          </label>
+          <WorldSelect />
 
-          {/* Day / night */}
+          {/* Day / night — disabled for now */}
           <button
             type="button"
             className={styles.modeToggle}
@@ -79,6 +122,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
             aria-label={isDayMode ? 'Switch to night mode' : 'Switch to day mode'}
             title={isDayMode ? 'Night mode' : 'Day mode'}
             onClick={() => setIsDayMode(!isDayMode)}
+            hidden
           >
             {isDayMode ? <SunMark /> : <MoonMark />}
           </button>

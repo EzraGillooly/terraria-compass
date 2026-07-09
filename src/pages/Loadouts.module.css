@@ -2,11 +2,14 @@
    LOADOUTS — Terraria inventory over a phase biome backdrop
 ═══════════════════════════════════════════════════ */
 .page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); overflow: hidden; }
-.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 28px 24px 80px; }
+.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 92px 24px 80px; }
 
 /* ── Biome backdrop (parallax) ── */
-.backdrop { position: absolute; inset: -30px; z-index: 0; background-size: cover; background-position: center; image-rendering: pixelated; transform: translate(var(--px, 0), var(--py, 0)) scale(1.06); transition: background-image .4s ease; will-change: transform; }
+.backdrop { position: absolute; inset: -30px; z-index: 0; background-size: cover; background-position: center; image-rendering: pixelated; transform: scale(1.06); transition: background-image .4s ease; }
 .backdropWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(8,14,34,.82) 0%, rgba(8,14,34,.88) 100%); }
+
+/* Footer sits above the biome wash (which otherwise covers non-positioned content) */
+.footerLayer { position: relative; z-index: 2; }
 
 /* ── Header ── */
 .pageHead { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -17,10 +20,11 @@
 
 /* ── Class rail (weapon icons) ── */
 .classRail { display: flex; gap: 8px; flex-wrap: wrap; }
-.cbtn { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-pill); padding: 6px 15px 6px 8px; font-weight: 700; font-size: 13px; color: var(--ink-soft); cursor: pointer; box-shadow: var(--shadow-sm); transition: background .15s, border-color .15s; }
-.cbtn:hover { border-color: var(--accent); }
+/* Class pills — white when unselected, header-tab green when selected */
+.cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--card); border: 1px solid #000; border-radius: var(--radius-lg); box-shadow: 0 2px 6px rgba(8,14,34,.25); padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
+.cbtn:hover { background: color-mix(in oklab, var(--accent) 12%, var(--card)); }
 .cdot { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.cbtn.on { background: var(--accent); color: #fff; border-color: transparent; }
+.cbtn.on { background: var(--accent); color: #fff; -webkit-text-stroke: 2px #000; paint-order: stroke fill; }
 
 /* ── Boss progression map ── */
 .bossmap { display: flex; align-items: flex-start; gap: 0; margin-bottom: 16px; overflow-x: auto; padding: 6px 2px 10px; }
@@ -37,7 +41,7 @@
 .waypoint.on .wpName { color: #EAF0FF; }
 
 /* ── Boss banner ── */
-.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, rgba(16,26,54,.9)) 0%, rgba(16,26,54,.9) 100%); border: 1px solid rgba(150,180,230,.4); border-left: 4px solid var(--warm); border-radius: var(--radius-md); box-shadow: 0 14px 34px -18px rgba(0,0,0,.6); animation: bannerIn .4s cubic-bezier(.2,.8,.3,1); }
+.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, rgba(16,26,54,.9)) 0%, rgba(16,26,54,.9) 100%); border: 1px solid rgba(150,180,230,.4); border-radius: var(--radius-md); box-shadow: 0 14px 34px -18px rgba(0,0,0,.6); animation: bannerIn .4s cubic-bezier(.2,.8,.3,1); }
 @keyframes bannerIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .bannerIcon { width: 44px; height: 44px; object-fit: contain; flex: none; }
 .bannerName { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; color: #EAF0FF; line-height: 1.1; text-shadow: var(--tshadow); }

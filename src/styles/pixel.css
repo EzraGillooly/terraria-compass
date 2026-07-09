@@ -3,3 +3,33 @@
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
+
+/* ── Terraria pixel-rounded frame ──
+   Opt in by adding `pixel-frame` alongside a component's class, then set the fill
+   via `--px-fill` (and optionally `--px-border`, default black). The element must
+   not rely on its own background/border — those come from the two layers below.
+   Content stays above via the negative-z-index pseudos + isolation. */
+.pixel-frame {
+  --px-border: #000;
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.pixel-frame::before,
+.pixel-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.pixel-frame::before {            /* border (outer shape) */
+  z-index: -2;
+  background: var(--px-border);
+  clip-path: var(--px-outer);
+}
+.pixel-frame::after {             /* fill (inner shape) */
+  z-index: -1;
+  background: var(--px-fill, var(--card));
+  clip-path: var(--px-inner);
+}

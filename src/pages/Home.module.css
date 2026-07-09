@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-/* ── Animated hero (grows to fill the viewport; footer sits below) ── */
+/* ── Hero: crossfading Terraria backgrounds ── */
 .hero {
   position: relative;
   overflow: hidden;
@@ -26,76 +26,37 @@
   isolation: isolate;
 }
 
-/* Day: cycling real-Terraria scenes (still; clouds carry the motion) */
+/* Crossfading real-Terraria scenes */
 .dayScenes { position: absolute; inset: 0; z-index: 0; }
 .scene {
-  position: absolute; inset: 0; opacity: 0; transition: opacity 1.6s ease;
+  position: absolute; inset: 0; opacity: 0; transition: opacity 2.6s ease-in-out;
   background-size: cover; background-position: center 32%;
   image-rendering: pixelated;
 }
 .sceneOn { opacity: 1; }
-.skyGrad { background: linear-gradient(180deg, #5aa6e6 0%, #8ecdf2 55%, #c8e9f5 100%); }
 
-/* Night wash: darkens the day scene to nighttime */
-.nightWash { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(8,14,38,.55) 0%, rgba(8,14,38,.72) 100%); }
-
-/* darken top strip so the header + title stay legible on the bright day sky */
+/* darken top strip so the header + title stay legible */
 .topWash {
   position: absolute;
   inset: 0 0 auto 0;
   height: 220px;
-  z-index: 1;
+  z-index: 4;
   background: linear-gradient(180deg, rgba(8,18,36,.4) 0%, transparent 100%);
   pointer-events: none;
 }
 
-/* Celestials */
-.sun, .moon { position: absolute; top: 40px; right: 8%; width: 84px; height: 84px; z-index: 2; }
-.sun { display: grid; place-items: center; }
-.sun::before {
-  content: "";
-  position: absolute;
-  inset: -35%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,226,120,.6) 0%, rgba(255,214,90,.28) 45%, transparent 70%);
-  animation: sunPulse 6s ease-in-out infinite;
-}
-.sunImg { position: relative; width: 100%; height: 100%; object-fit: contain; animation: sunBob 6s ease-in-out infinite; }
-.moon { display: grid; place-items: center; z-index: 3; }
-.moon::before {
-  content: "";
-  position: absolute;
-  inset: -28%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,214,255,.5) 0%, rgba(175,195,255,.2) 45%, transparent 70%);
-  animation: sunPulse 7s ease-in-out infinite;
-}
-.moonImg { position: relative; width: 88%; height: 88%; object-fit: contain; }
-@keyframes sunPulse { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.12); opacity: 1; } }
-@keyframes sunBob { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
-
-/* Clouds (real Terraria sprites, drifting) */
-.clouds { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
-.cloud { position: absolute; width: auto; filter: drop-shadow(0 6px 10px rgba(30,60,90,.18)); }
-.cl1 { top: 12%; height: 120px; animation: cloudDrift 60s linear infinite; }
-.cl2 { top: 40%; height: 70px; opacity: .92; animation: cloudDrift 84s linear infinite; animation-delay: -30s; }
-.cl3 { top: 6%;  height: 52px; opacity: .85; animation: cloudDrift 104s linear infinite; animation-delay: -70s; }
-.cl4 { top: 52%; height: 90px; animation: cloudDrift 72s linear infinite; animation-delay: -45s; }
+/* Clouds (real Terraria sprites) — drift across the upper third, no drop-shadow */
+.clouds { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.cloud { position: absolute; width: auto; }
+.cl1 { top: 5%;  height: 120px; animation: cloudDrift 60s linear infinite; }
+.cl2 { top: 20%; height: 70px; opacity: .92; animation: cloudDrift 84s linear infinite; animation-delay: -30s; }
+.cl3 { top: 3%;  height: 52px; opacity: .85; animation: cloudDrift 104s linear infinite; animation-delay: -70s; }
+.cl4 { top: 14%; height: 90px; animation: cloudDrift 72s linear infinite; animation-delay: -45s; }
 @keyframes cloudDrift { from { transform: translateX(-40vw); } to { transform: translateX(110vw); } }
 
-/* Stars */
-.stars { position: absolute; inset: 0; z-index: 2; }
-.star { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff; animation: twinkle 3s ease-in-out infinite; }
-.starBig { width: 3px; height: 3px; }
-@keyframes twinkle { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
-
-/* Day / night visibility */
-.dayOnly { transition: opacity .4s ease; }
-.nightOnly { transition: opacity .4s ease; }
-.hero[data-night='true'] .dayOnly { opacity: 0; pointer-events: none; }
-.hero[data-night='false'] .nightOnly { opacity: 0; pointer-events: none; }
-/* dim the clouds at night */
-.hero[data-night='true'] .clouds { filter: brightness(.5) saturate(.75); }
+@media (prefers-reduced-motion: reduce) {
+  .cloud { animation: none; }
+}
 
 .heroBody {
   position: relative;
@@ -125,13 +86,13 @@
   margin: 0 0 16px;
   max-width: 15ch;
   letter-spacing: .01em;
-  text-shadow: var(--tshadow);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .55), 0 1px 3px rgba(0, 0, 0, .45);
   animation: heroUp .7s ease both;
 }
 .heroTitle em { font-style: normal; color: var(--warm); }
 .heroLede {
   max-width: 52ch;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.55;
   color: rgba(255,255,255,.94);
   text-shadow: 0 2px 12px rgba(0,0,0,.55);
@@ -146,39 +107,34 @@
   animation: heroUp .7s .2s ease both;
 }
 
-/* ── Buttons: A solid flat + D outline ── */
-.btnPrimary {
+/* ── Buttons: Terraria grass-green, pixel-frame corners + outlined text ──
+   Shape/border/fill come from the global `.pixel-frame` utility (see pixel.css);
+   here we set layout, type, the glyph outline, and the fill colour via --px-fill. */
+.btnPrimary,
+.btnSecondary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
-  background: var(--deep);
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 13px 24px;
+  padding: 14px 24px 12px;
   text-decoration: none;
-  transition: background .15s, transform .12s;
+  /* black outline around each glyph (stroke painted under the fill) */
+  -webkit-text-stroke: 2px #000;
+  paint-order: stroke fill;
+  transition: transform .12s;
 }
-.btnPrimary:hover { background: var(--deep); }
+
+.btnPrimary { --px-fill: var(--accent); }
+.btnPrimary:hover { --px-fill: color-mix(in oklab, var(--mid) 40%, var(--accent)); }
 .btnPrimary:active { transform: translateY(1px); }
 .btnPrimary .arrow { transition: transform .2s; }
 .btnPrimary:hover .arrow { transform: translateX(4px); }
 
-.btnSecondary {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 15px;
-  color: #fff;
-  background: transparent;
-  border: 1px solid rgba(255,255,255,.55);
-  border-radius: 5px;
-  padding: 13px 22px;
-  text-decoration: none;
-  transition: background .15s, border-color .15s;
-}
-.btnSecondary:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+/* Secondary: Terraria indigo-blue menu-slot fill (matches the nav tabs) */
+.btnSecondary { --px-fill: rgba(40, 54, 122, .82); }
+.btnSecondary:hover { --px-fill: rgba(52, 68, 146, .9); }
+.btnSecondary:active { transform: translateY(1px); }
 
 @keyframes heroUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }

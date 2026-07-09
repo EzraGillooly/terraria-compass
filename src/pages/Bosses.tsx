@@ -107,13 +107,16 @@ export function Bosses() {
 
   return (
     <div className={styles.page}>
+      {/* Full-page biome backdrop — underworld for pre-hardmode, hallow for hardmode */}
+      <div
+        className={styles.backdrop}
+        style={{ backgroundImage: `url(${BASE}biomes/${showHardmode ? 'hallow' : 'underworld'}.png)` }}
+        aria-hidden="true"
+      />
+      <div className={styles.backdropWash} aria-hidden="true" />
+
       {/* ── Hero ── */}
-      <section
-        className={styles.hero}
-        style={{ backgroundImage: `url(${BASE}hero/bosses.png)` }}
-        aria-label="Boss Progression"
-      >
-        <div className={styles.heroWash} aria-hidden="true" />
+      <section className={styles.hero} aria-label="Boss Progression">
         <Header variant="photo" />
         <div className={styles.heroBody}>
           <p className={styles.crumb}>
@@ -193,7 +196,9 @@ export function Bosses() {
         </div>
       </section>
 
-      <Footer flush />
+      <div className={styles.footerLayer}>
+        <Footer flush />
+      </div>
     </div>
   );
 }
