@@ -35,22 +35,15 @@ export function useSubclassFilters(classId: string) {
     [selectedSubclasses],
   );
 
+  // Exclusive select: choosing a subclass turns off every other one.
+  // Re-clicking the active subclass clears back to "All".
   function toggleSubclass(subclassId: string) {
     setSelectionsByClass((currentSelections) => {
       const current = currentSelections[classId] ?? selectedSubclasses;
-
-      if (current.length === 0) {
-        return { ...currentSelections, [classId]: [subclassId] };
-      }
-
-      if (current.includes(subclassId)) {
-        const next = current.filter((value) => value !== subclassId);
-        return { ...currentSelections, [classId]: next };
-      }
-
+      const isOnlyActive = current.length === 1 && current[0] === subclassId;
       return {
         ...currentSelections,
-        [classId]: [...current, subclassId],
+        [classId]: isOnlyActive ? [] : [subclassId],
       };
     });
   }

@@ -4,52 +4,238 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "terra-blade",
-        "name": "Terra Blade",
-        "slot": "weapon",
-        "icon": "items/terra-blade.png",
-        "source": "Crafted from True Excalibur and True Night's Edge",
-        "why": "This is the defining melee weapon of the phase because its ranged slashes stay powerful without forcing reckless positioning.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
-      },
-      {
         "id": "death-sickle",
         "name": "Death Sickle",
         "slot": "weapon",
         "icon": "items/death-sickle.png",
-        "source": "Dropped by Reapers during a Solar Eclipse",
-        "why": "The wall-piercing scythe projectiles make this one of the best event-farm melee payoffs before Plantera.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by Reapers (Solar Eclipse)",
+        "why": "Fires a wall-piercing spinning sickle projectile on each swing.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "projectile-sword",
+        "stats": "57 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Death_Sickle"
+      },
+      {
+        "id": "reds-throw",
+        "name": "Red's Throw",
+        "slot": "weapon",
+        "icon": "items/reds-throw.png",
+        "source": "Any Hardmode boss's Expert/Master Treasure Bag (except Queen Slime), as part of Red's set",
+        "why": "Expert-exclusive developer yoyo from Hardmode boss Treasure Bags.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Red%27s_Throw"
+      },
+      {
+        "id": "yelets",
+        "name": "Yelets",
+        "slot": "weapon",
+        "icon": "items/yelets.png",
+        "source": "1/200 drop from Hardmode Jungle enemies after any mechanical boss is defeated",
+        "why": "Hardmode Jungle drop available after a mechanical boss.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Yelets"
+      },
+      {
+        "id": "light-disc",
+        "name": "Light Disc",
+        "slot": "weapon",
+        "icon": "items/light-disc.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Hallowed Bars, Souls of Light, and Souls of Might",
+        "why": "Bouncing disc requiring Souls of Might from the Destroyer.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Disc"
+      },
+      {
+        "id": "chlorophyte-claymore",
+        "name": "Chlorophyte Claymore",
+        "slot": "weapon",
+        "icon": "items/chlorophyte-claymore.png",
+        "source": "Crafted (Chlorophyte Bars)",
+        "why": "Occasionally fires a piercing Chlorophyte Orb when swung.",
+        "tags": [],
         "topPick": false,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "95 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Claymore"
       },
       {
         "id": "chlorophyte-saber",
         "name": "Chlorophyte Saber",
         "slot": "weapon",
         "icon": "items/chlorophyte-saber.png",
-        "source": "Crafted from Chlorophyte Bars",
-        "why": "If you want a simpler ore-route upgrade, the leaf projectile gives this a strong all-purpose boss profile.",
-        "tags": ["hardmode"],
+        "source": "Crafted (Chlorophyte Bars)",
+        "why": "Occasionally fires a wall-piercing Spore Cloud when swung.",
+        "tags": [],
         "topPick": false,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "57 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Saber"
       },
       {
-        "id": "chik",
-        "name": "Chik",
+        "id": "adamantite-glaive",
+        "name": "Adamantite Glaive",
         "slot": "weapon",
-        "icon": "items/chik.png",
-        "source": "Crafted from late pre-mech yoyo upgrades",
-        "why": "Yoyo-focused melee players can keep that subclass online here instead of fully abandoning it for swords.",
-        "tags": ["hardmode"],
+        "icon": "items/adamantite-glaive.png",
+        "source": "Crafted from 12 Adamantite Bars at a Mythril/Orichalcum Anvil",
+        "why": "Adamantite-tier Hardmode spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Glaive"
+      },
+      {
+        "id": "adamantite-sword",
+        "name": "Adamantite Sword",
+        "slot": "weapon",
+        "icon": "items/adamantite-sword.png",
+        "source": "Crafted (Adamantite Bars)",
+        "why": "Third-tier Hardmode ore broadsword forged from Adamantite.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "61 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Sword"
+      },
+      {
+        "id": "brand-of-the-inferno",
+        "name": "Brand of the Inferno",
+        "slot": "weapon",
+        "icon": "items/brand-of-the-inferno.png",
+        "source": "Dropped by Ogres (Old One's Army)",
+        "why": "Dropped by Ogres; allows shield parrying and inflicts Hellfire.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "95 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Brand_of_the_Inferno"
+      },
+      {
+        "id": "chlorophyte-partisan",
+        "name": "Chlorophyte Partisan",
+        "slot": "weapon",
+        "icon": "items/chlorophyte-partisan.png",
+        "source": "Crafted from 12 Chlorophyte Bars at a Mythril/Orichalcum Anvil",
+        "why": "Chlorophyte spear that releases homing leaf crystals.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Partisan"
+      },
+      {
+        "id": "excalibur",
+        "name": "Excalibur",
+        "slot": "weapon",
+        "icon": "items/excalibur.png",
+        "source": "Crafted (Hallowed Bars)",
+        "why": "Crafted from Hallowed Bars after a mechanical boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "72 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Excalibur"
+      },
+      {
+        "id": "ghastly-glaive",
+        "name": "Ghastly Glaive",
+        "slot": "weapon",
+        "icon": "items/ghastly-glaive.png",
+        "source": "Dropped by the Ogre in the Old One's Army (Tier 2, post-mechanical boss)",
+        "why": "Ogre drop from the Old One's Army after a mechanical boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "45 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ghastly_Glaive"
+      },
+      {
+        "id": "gungnir",
+        "name": "Gungnir",
+        "slot": "weapon",
+        "icon": "items/gungnir.png",
+        "source": "Crafted from 12 Hallowed Bars at a Mythril/Orichalcum Anvil",
+        "why": "Hallowed Bar spear crafted after defeating a mechanical boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "61 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gungnir"
+      },
+      {
+        "id": "mushroom-spear",
+        "name": "Mushroom Spear",
+        "slot": "weapon",
+        "icon": "items/mushroom-spear.png",
+        "source": "Purchased from the Truffle after any mechanical boss is defeated",
+        "why": "Truffle-sold spear that emits mushroom projectiles, available post-mech boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Spear"
+      },
+      {
+        "id": "titanium-sword",
+        "name": "Titanium Sword",
+        "slot": "weapon",
+        "icon": "items/titanium-sword.png",
+        "source": "Crafted (Titanium Bars)",
+        "why": "Titanium-ore equivalent of the Adamantite Sword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "61 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Sword"
+      },
+      {
+        "id": "titanium-trident",
+        "name": "Titanium Trident",
+        "slot": "weapon",
+        "icon": "items/titanium-trident.png",
+        "source": "Crafted from 13 Titanium Bars at a Mythril/Orichalcum Anvil",
+        "why": "Titanium-tier spear crafted at the higher-tier anvil.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "48 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Trident"
+      },
+      {
+        "id": "code-2",
+        "name": "Code 2",
+        "slot": "weapon",
+        "icon": "items/code-2.png",
+        "source": "Bought from the Traveling Merchant after a mechanical boss is defeated",
+        "why": "Traveling Merchant yoyo unlocked after any mechanical boss.",
+        "tags": [],
         "topPick": false,
         "subclass": "yoyo",
-        "modifier": "Legendary"
+        "stats": "54 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Code_2"
+      },
+      {
+        "id": "valkyrie-yoyo",
+        "name": "Valkyrie Yoyo",
+        "slot": "weapon",
+        "icon": "items/valkyrie-yoyo.png",
+        "source": "Any Hardmode boss's Expert/Master Treasure Bag (except Queen Slime), as part of Lazure's set",
+        "why": "Expert-exclusive developer yoyo from Hardmode boss Treasure Bags.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Valkyrie_Yoyo"
       }
     ],
     "armor": [
@@ -60,7 +246,9 @@
         "icon": "armor/chlorophyte-armor.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "The leaf crystal bonus and strong baseline stats make this the most broadly useful pre-Plantera melee set.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +258,9 @@
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
         "why": "If you want the tankiest route into the Jungle, this is the defensive ceiling before Plantera.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -80,7 +270,9 @@
         "icon": "armor/hallowed-armor.png",
         "source": "Crafted from Hallowed Bars",
         "why": "The dodge proc still gives it real value if your Chlorophyte route is not ready yet.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -92,7 +284,9 @@
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This is the best melee accessory of the phase because it stacks several offensive bonuses into one clean slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -102,7 +296,9 @@
         "icon": "accessories/mechanical-glove.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is both a real accessory in its own right and the natural stepping stone toward Fire Gauntlet.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -112,7 +308,9 @@
         "icon": "accessories/avenger-emblem.png",
         "source": "Combined from a class emblem and mech-boss materials",
         "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -122,7 +320,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from established Hardmode wing routes",
         "why": "Flight is still mandatory because Jungle movement and Plantera prep punish grounded loadouts.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +332,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -142,7 +344,9 @@
         "icon": "accessories/star-veil.png",
         "source": "Crafted from Cross Necklace and Star Cloak.",
         "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -194,52 +398,121 @@
     "class": "ranger",
     "weapons": [
       {
-        "id": "megashark",
-        "name": "Megashark",
-        "slot": "weapon",
-        "icon": "items/megashark.png",
-        "source": "Crafted from the Minishark, Illegal Gun Parts, Souls of Might, and Shark Fins",
-        "why": "This is the workhorse ranger gun for the entire stretch because it gives reliable pressure in nearly every fight.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "gun",
-        "modifier": "Unreal"
-      },
-      {
         "id": "chlorophyte-shotbow",
         "name": "Chlorophyte Shotbow",
         "slot": "weapon",
         "icon": "items/chlorophyte-shotbow.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "Bow builds get a clean burst-fire upgrade here, especially when paired with strong arrow choices.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "why": "Can fire up to four arrows at once when held.",
+        "tags": [],
+        "topPick": true,
         "subclass": "bow",
-        "modifier": "Unreal"
+        "stats": "34 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Shotbow"
       },
       {
-        "id": "daedalus-stormbow",
-        "name": "Daedalus Stormbow",
+        "id": "pulse-bow",
+        "name": "Pulse Bow",
         "slot": "weapon",
-        "icon": "items/daedalus-stormbow.png",
-        "source": "Dropped by Hallowed Mimics",
-        "why": "Even after mech progression, the arrow-rain pattern still solves several large-target encounters elegantly.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "icon": "items/pulse-bow.png",
+        "source": "Purchased from the Traveling Merchant after defeating all three mechanical bosses",
+        "why": "Fires a piercing pulse arrow that bounces off blocks.",
+        "tags": [],
+        "topPick": true,
         "subclass": "bow",
-        "modifier": "Unreal"
+        "stats": "80 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pulse_Bow"
       },
       {
-        "id": "uzi",
-        "name": "Uzi",
+        "id": "tsunami",
+        "name": "Tsunami",
         "slot": "weapon",
-        "icon": "items/uzi.png",
-        "source": "Dropped by Angry Trappers in the Hardmode Jungle",
-        "why": "If you farm it, the fire rate gives gun ranger another elite option before Plantera.",
-        "tags": ["hardmode"],
+        "icon": "items/tsunami.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Fires five arrows in a spread from a single arrow.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "53 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tsunami"
+      },
+      {
+        "id": "megashark",
+        "name": "Megashark",
+        "slot": "weapon",
+        "icon": "items/megashark.png",
+        "source": "Crafted (Minishark + Illegal Gun Parts + 5 Shark Fin + 20 Souls of Might)",
+        "why": "Post-Destroyer upgrade to the Minishark requiring Souls of Might from a mechanical boss.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "25 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Megashark"
+      },
+      {
+        "id": "adamantite-repeater",
+        "name": "Adamantite Repeater",
+        "slot": "weapon",
+        "icon": "items/adamantite-repeater.png",
+        "source": "Crafted from Adamantite Bars",
+        "why": "Third-tier Hardmode repeater crafted at a Mythril/Orichalcum Anvil.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "42 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Repeater"
+      },
+      {
+        "id": "hallowed-repeater",
+        "name": "Hallowed Repeater",
+        "slot": "weapon",
+        "icon": "items/hallowed-repeater.png",
+        "source": "Crafted from Hallowed Bars (mechanical boss drops)",
+        "why": "Crafted from Hallowed Bars dropped by the mechanical bosses.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Repeater"
+      },
+      {
+        "id": "phantom-phoenix",
+        "name": "Phantom Phoenix",
+        "slot": "weapon",
+        "icon": "items/phantom-phoenix.png",
+        "source": "Dropped by the Ogre (Tier 2 Old One's Army)",
+        "why": "Periodically fires an extra spectral phoenix arrow.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "32 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Phantom_Phoenix"
+      },
+      {
+        "id": "titanium-repeater",
+        "name": "Titanium Repeater",
+        "slot": "weapon",
+        "icon": "items/titanium-repeater.png",
+        "source": "Crafted from Titanium Bars",
+        "why": "Titanium equivalent of the Adamantite Repeater.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "43 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Repeater"
+      },
+      {
+        "id": "coin-gun",
+        "name": "Coin Gun",
+        "slot": "weapon",
+        "icon": "items/coin-gun.png",
+        "source": "Dropped by pirates and the Flying Dutchman during a Pirate Invasion",
+        "why": "Fires coins as ammo for damage scaling with coin value, dropped during the Hardmode Pirate Invasion.",
+        "tags": [],
         "topPick": false,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "0 base (coin ammo) dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Coin_Gun"
       }
     ],
     "armor": [
@@ -250,7 +523,9 @@
         "icon": "armor/chlorophyte-armor.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "The armor stats and leaf crystal bonus make this the cleanest general pre-Plantera ranger set.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -260,7 +535,9 @@
         "icon": "armor/hallowed-armor.png",
         "source": "Crafted from Hallowed Bars",
         "why": "The dodge effect still earns this a place when survivability matters more than a pure offense step.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -270,7 +547,9 @@
         "icon": "armor/titanium-armor.png",
         "source": "Crafted from Titanium Bars",
         "why": "It remains a valid carry-over if you want to delay the Chlorophyte grind a little longer.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -282,7 +561,9 @@
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This is the premium ranger accessory here because it boosts ranged performance while also improving target control.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -292,7 +573,9 @@
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "A direct ranged-damage boost is still an easy slot-in when your weapon options are already strong.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -312,7 +595,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from established Hardmode wing routes",
         "why": "Ranger uptime depends on movement consistency, and this phase keeps punishing grounded play.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -322,7 +607,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is particularly welcome once Jungle enemies start layering crowd-control on top of boss pressure.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -332,7 +619,9 @@
         "icon": "accessories/star-veil.png",
         "source": "Crafted from Cross Necklace and Star Cloak.",
         "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -384,52 +673,69 @@
     "class": "mage",
     "weapons": [
       {
+        "id": "tome-of-infinite-wisdom",
+        "name": "Tome of Infinite Wisdom",
+        "slot": "weapon",
+        "icon": "items/tome-of-infinite-wisdom.png",
+        "source": "Dropped by Ogres during Tier 2 Old One's Army (requires one mechanical boss)",
+        "why": "Fires bursts of pages, or with right-click a large piercing tornado.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spell-tome",
+        "stats": "36 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom"
+      },
+      {
+        "id": "magical-harp",
+        "name": "Magical Harp",
+        "slot": "weapon",
+        "icon": "items/magical-harp.png",
+        "source": "Crafted (1 Harp + 20 Crystal Shards + 8 Souls of Night + 15 Souls of Sight @ Mythril/Orichalcum Anvil)",
+        "why": "Fires music-note projectiles whose damage scales with velocity.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "42 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magical_Harp"
+      },
+      {
         "id": "rainbow-rod",
         "name": "Rainbow Rod",
         "slot": "weapon",
         "icon": "items/rainbow-rod.png",
-        "source": "Found through Hallowed progression sources and Hardmode exploration",
-        "why": "Its controllable projectile path makes it one of the most dependable single-target mage tools before Plantera.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "wand",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "crystal-serpent",
-        "name": "Crystal Serpent",
-        "slot": "weapon",
-        "icon": "items/crystal-serpent.png",
-        "source": "Caught by fishing in the Hallow",
-        "why": "It remains an elite carry-over because the split projectile still scales well into this phase.",
-        "tags": ["hardmode"],
+        "source": "Crafted (10 Crystal Shards + 2 Unicorn Horns + 10 Pixie Dust + 8 Souls of Light + 15 Souls of Sight @ Mythril/Orichalcum Anvil)",
+        "why": "Fires a cursor-controlled rainbow projectile that pierces enemies.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "50 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Rod"
       },
       {
-        "id": "magnet-sphere",
-        "name": "Magnet Sphere",
+        "id": "toxic-flask",
+        "name": "Toxic Flask",
         "slot": "weapon",
-        "icon": "items/magnet-sphere.png",
-        "source": "Dropped in the Hardmode Dungeon",
-        "why": "The lingering sphere gives mage another way to keep damage flowing while repositioning aggressively.",
-        "tags": ["hardmode"],
+        "icon": "items/toxic-flask.png",
+        "source": "Dropped by Dr. Man Fly (Solar Eclipse, post-mechanical boss)",
+        "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "52 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask"
       },
       {
-        "id": "sky-fracture",
-        "name": "Sky Fracture",
+        "id": "venom-staff",
+        "name": "Venom Staff",
         "slot": "weapon",
-        "icon": "items/sky-fracture.png",
-        "source": "Crafted from Light Shards, Souls of Light, and the Magic Missile",
-        "why": "It is still a respectable burst option if you want a craftable spell that rewards good aim.",
-        "tags": ["hardmode"],
+        "icon": "items/venom-staff.png",
+        "source": "Crafted (Poison Staff + 14 Chlorophyte Bars @ Mythril/Orichalcum Anvil)",
+        "why": "Upgraded Poison Staff whose fang inflicts the stronger Venom debuff.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "44 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Staff"
       }
     ],
     "armor": [
@@ -440,7 +746,9 @@
         "icon": "armor/chlorophyte-armor.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "This is the most straightforward high-end magic armor step before Plantera because it is sturdy and broadly effective.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -450,7 +758,9 @@
         "icon": "armor/hallowed-armor.png",
         "source": "Crafted from Hallowed Bars",
         "why": "The dodge effect is still strong when you care more about safety than pushing fully into Chlorophyte.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -460,7 +770,9 @@
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
         "why": "The hybrid identity keeps it relevant if your build likes mixing in summon support or event mobility.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -472,7 +784,9 @@
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is the cleanest mage accessory upgrade here because it boosts damage while smoothing mana utility at the same time.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -502,7 +816,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from established Hardmode wing routes",
         "why": "Flight still buys mage the room it needs to cast safely through difficult Jungle and event movement.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -512,7 +828,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is a real quality-of-life and survivability gain once the Jungle starts stacking status effects.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -522,7 +840,9 @@
         "icon": "accessories/mana-cloak.png",
         "source": "Crafted from Mana Flower and Star Cloak.",
         "why": "Auto mana potions plus a defensive star burst when you take a hit.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -578,46 +898,91 @@
         "name": "Optic Staff",
         "slot": "weapon",
         "icon": "items/optic-staff.png",
-        "source": "Crafted from Black Lenses, Hallowed Bars, and Souls",
-        "why": "This is the premier summon of the phase because the twin minions stay aggressive and versatile across boss and Jungle encounters.",
-        "tags": ["hardmode"],
+        "source": "Crafted from Black Lens + 2 Lens + 12 Hallowed Bars + 20 Souls of Sight at a Mythril/Orichalcum Anvil",
+        "why": "Summons Twins (Retanimini and Spazmamini) as one minion; needs Souls of Sight from The Twins.",
+        "tags": [],
         "topPick": true,
-        "subclass": "minions"
+        "subclass": "minions",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Optic_Staff"
       },
       {
-        "id": "sanguine-staff",
-        "name": "Sanguine Staff",
+        "id": "ballista-cane",
+        "name": "Ballista Cane",
         "slot": "weapon",
-        "icon": "items/sanguine-staff.png",
-        "source": "Dropped by Dreadnautilus during Blood Moon fishing",
-        "why": "It remains a very strong carry-over if you already invested in the Blood Moon fishing route.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "minions"
-      },
-      {
-        "id": "firecracker",
-        "name": "Firecracker",
-        "slot": "weapon",
-        "icon": "items/firecracker.png",
-        "source": "Dropped by Hallowed Mimics",
-        "why": "The tag explosion keeps this whip relevant well past the point where many earlier summon tools drop off.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "whip",
-        "modifier": "Legendary"
+        "icon": "items/ballista-cane.png",
+        "source": "Bought from the Tavernkeep after defeating one mechanical boss (tier 2)",
+        "why": "Tier 2 Tavernkeep upgrade of the ballista bolt sentry.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "74 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Cane"
       },
       {
         "id": "durendal",
         "name": "Durendal",
         "slot": "weapon",
         "icon": "items/durendal.png",
-        "source": "Crafted from Hallowed Bars and Souls of Might",
-        "why": "Its faster whip cadence makes it a reliable alternative if you prefer smoother direct control over bigger explosions.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "source": "Crafted (12 Hallowed Bar at a Mythril/Orichalcum Anvil)",
+        "why": "Hallowed Bar whip with fast use time that boosts minion attack speed.",
+        "tags": [],
+        "topPick": true,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "55 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Durendal"
+      },
+      {
+        "id": "pirate-staff",
+        "name": "Pirate Staff",
+        "slot": "weapon",
+        "icon": "items/pirate-staff.png",
+        "source": "Dropped by Pirates and the Flying Dutchman during the Pirate Invasion",
+        "why": "Summons a Pirate minion; obtained from the Hardmode Pirate Invasion event.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "40 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pirate_Staff"
+      },
+      {
+        "id": "explosive-trap-cane",
+        "name": "Explosive Trap Cane",
+        "slot": "weapon",
+        "icon": "items/explosive-trap-cane.png",
+        "source": "Bought from the Tavernkeep after defeating one mechanical boss (tier 2)",
+        "why": "Tier 2 Tavernkeep upgrade of the explosive trap sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "59 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Cane"
+      },
+      {
+        "id": "flameburst-cane",
+        "name": "Flameburst Cane",
+        "slot": "weapon",
+        "icon": "items/flameburst-cane.png",
+        "source": "Bought from the Tavernkeep after defeating one mechanical boss (tier 2)",
+        "why": "Tier 2 Tavernkeep upgrade of the flameburst fireball sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "42 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flameburst_Cane"
+      },
+      {
+        "id": "lightning-aura-cane",
+        "name": "Lightning Aura Cane",
+        "slot": "weapon",
+        "icon": "items/lightning-aura-cane.png",
+        "source": "Bought from the Tavernkeep after defeating one mechanical boss (tier 2)",
+        "why": "Tier 2 Tavernkeep upgrade of the lightning aura sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "11 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Aura_Cane"
       }
     ],
     "armor": [
@@ -628,7 +993,9 @@
         "icon": "armor/spider-armor.png",
         "source": "Crafted from Spider Fangs",
         "why": "Until post-Plantera armor opens up, this is still the cleanest dedicated summoner set for raw minion throughput.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -638,7 +1005,9 @@
         "icon": "armor/hallowed-armor.png",
         "source": "Crafted from Hallowed Bars",
         "why": "The dodge bonus gives it a niche if you want more personal survivability while keeping summon support online.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -648,7 +1017,9 @@
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
         "why": "It stays a viable hybrid route if your build wants a little more flexibility than pure summoner gear provides.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -660,7 +1031,9 @@
         "icon": "accessories/summoner-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "This is still the easiest and most efficient direct summon-damage upgrade available in the phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -680,7 +1053,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from established Hardmode wing routes",
         "why": "You still win summon fights by staying alive long enough for minions and whips to do their work.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -700,7 +1075,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity and knockback protection reduce the number of runs that fall apart to messy Jungle attrition.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -710,7 +1087,9 @@
         "icon": "accessories/star-veil.png",
         "source": "Crafted from Cross Necklace and Star Cloak.",
         "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],

@@ -2,56 +2,7 @@
   {
     "phase": "pre-moonlord",
     "class": "melee",
-    "weapons": [
-      {
-        "id": "solar-eruption",
-        "name": "Solar Eruption",
-        "slot": "weapon",
-        "icon": "items/solar-eruption.png",
-        "source": "Crafted from Solar Fragments",
-        "why": "This is the clear top pre-Moon Lord melee weapon because the wall-piercing range solves both pillars and the Moon Lord prep cleanly.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
-      },
-      {
-        "id": "daybreak",
-        "name": "Daybreak",
-        "slot": "weapon",
-        "icon": "items/daybreak.png",
-        "source": "Crafted from Solar Fragments",
-        "why": "It is an excellent second Solar pickup, especially for focused single-target damage on large bosses.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
-      },
-      {
-        "id": "influx-waver",
-        "name": "Influx Waver",
-        "slot": "weapon",
-        "icon": "items/influx-waver.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "It remains one of the best carry-over melee options if you want a familiar projectile sword route.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
-      },
-      {
-        "id": "flairon",
-        "name": "Flairon",
-        "slot": "weapon",
-        "icon": "items/flairon.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "For players who enjoy its unusual projectile behavior, it still performs very well going into Moon Lord prep.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "flail",
-        "modifier": "Legendary"
-      }
-    ],
+    "weapons": [],
     "armor": [
       {
         "id": "solar-flare-armor",
@@ -60,7 +11,9 @@
         "icon": "armor/solar-flare-armor.png",
         "source": "Crafted from Solar Fragments",
         "why": "This is the best pre-Moon Lord melee armor because the survivability and shield charges are absurdly strong.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +23,9 @@
         "icon": "armor/beetle-armor.png",
         "source": "Crafted from Beetle Husks and Turtle Armor",
         "why": "If you cannot craft Solar immediately, Beetle remains a very respectable carry-over for the phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -82,7 +37,9 @@
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It remains the default best melee accessory even at this point because the package is still so efficient.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -92,7 +49,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The damage and crit boost continue to scale very well with Solar fragment weapons.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -102,7 +61,9 @@
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
         "why": "They are the standout mobility option before Moon Lord if you have access to them.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -112,7 +73,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The dodge and dash are still extremely valuable against pillar swarms and Moon Lord patterns.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -122,7 +85,9 @@
         "icon": "accessories/celestial-shell.png",
         "source": "Crafted from Celestial Stone and Moon Charm.",
         "why": "An all-stats boost that also shifts helpfully with day and night.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +97,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -188,48 +155,13 @@
         "name": "Phantasm",
         "slot": "weapon",
         "icon": "items/phantasm.png",
-        "source": "Crafted from Vortex Fragments",
-        "why": "This is the top pre-Moon Lord ranger weapon because the fire-rate ramp gives absurd sustained damage.",
-        "tags": ["hardmode"],
+        "source": "Crafted from Vortex Fragments (Vortex Pillar)",
+        "why": "Charges up to fire additional phantom arrows the longer it is held.",
+        "tags": [],
         "topPick": true,
         "subclass": "bow",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "vortex-beater",
-        "name": "Vortex Beater",
-        "slot": "weapon",
-        "icon": "items/vortex-beater.png",
-        "source": "Crafted from Vortex Fragments",
-        "why": "Gun ranger gets a premium pillar-crafted option too, especially if you prefer bullets over bows.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "tsunami",
-        "name": "Tsunami",
-        "slot": "weapon",
-        "icon": "items/tsunami.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "It remains an elite carry-over bow if you want to stay outside fragment weapon crafting a bit longer.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "bow",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "xenopopper",
-        "name": "Xenopopper",
-        "slot": "weapon",
-        "icon": "items/xenopopper.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "With strong bullets it still performs well enough to matter as an event-farm carry-over.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm"
       }
     ],
     "armor": [
@@ -240,7 +172,9 @@
         "icon": "armor/vortex-armor.png",
         "source": "Crafted from Vortex Fragments",
         "why": "This is the best pre-Moon Lord ranger armor because it finally upgrades Shroomite into true Lunar-tier offense.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -250,7 +184,9 @@
         "icon": "armor/shroomite-armor.png",
         "source": "Crafted from Shroomite Bars",
         "why": "It stays a credible fallback until Vortex crafting is online.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -262,7 +198,9 @@
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It remains the top ranger accessory because precision and crit both stay premium all the way to Moon Lord.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -272,7 +210,9 @@
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "A direct damage boost still fits naturally into the end of the progression curve.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -282,7 +222,9 @@
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
         "why": "They remain the premium mobility choice before Moon Lord if you have access to them.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -292,7 +234,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The stat boost is still worth carrying once your core class accessory slots are already settled.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -302,7 +246,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -312,7 +258,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -368,48 +316,26 @@
         "name": "Nebula Blaze",
         "slot": "weapon",
         "icon": "items/nebula-blaze.png",
-        "source": "Crafted from Nebula Fragments",
-        "why": "This is the standout pre-Moon Lord mage spam weapon because the burst and tracking are both excellent.",
-        "tags": ["hardmode"],
+        "source": "Crafted from 18 Nebula Fragments at an Ancient Manipulator (fragments drop from the Nebula Pillar)",
+        "why": "Fires homing star projectiles with a chance to fire a stronger high-damage shot.",
+        "tags": [],
         "topPick": true,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "55 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze"
       },
       {
         "id": "nebula-arcanum",
         "name": "Nebula Arcanum",
         "slot": "weapon",
         "icon": "items/nebula-arcanum.png",
-        "source": "Crafted from Nebula Fragments",
-        "why": "It offers a powerful alternative Lunar pickup if you want more homing, orb-based pressure.",
-        "tags": ["hardmode"],
+        "source": "Crafted (18 Nebula Fragments @ Ancient Manipulator)",
+        "why": "Fires slow homing orbs that spawn additional star projectiles.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "razorblade-typhoon",
-        "name": "Razorblade Typhoon",
-        "slot": "weapon",
-        "icon": "items/razorblade-typhoon.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "It remains one of the best carry-over mage weapons even after Nebula crafting is available.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "razorpine",
-        "name": "Razorpine",
-        "slot": "weapon",
-        "icon": "items/razorpine.png",
-        "source": "Dropped by Everscream during Frost Moon",
-        "why": "Its rapid-fire pressure keeps it relevant as a strong event-farm carry-over spell.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
       }
     ],
     "armor": [
@@ -420,7 +346,9 @@
         "icon": "armor/nebula-armor.png",
         "source": "Crafted from Nebula Fragments",
         "why": "This is the obvious pre-Moon Lord mage set because the Lunar-tier bonuses finally outclass Spectre.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -430,7 +358,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "Spectre remains a strong fallback if your Nebula fragment progression is not finished yet.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -442,7 +372,9 @@
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the default mage accessory because the damage and mana support remain universally useful.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -462,7 +394,9 @@
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
         "why": "Mage gets a lot out of the smoother aerial control these provide.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -472,7 +406,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat lift is still worth a slot once the rest of your loadout is stable.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -482,7 +418,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -492,7 +430,9 @@
         "icon": "accessories/charm-of-myths.png",
         "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
         "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -544,50 +484,43 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "stardust-dragon-staff",
-        "name": "Stardust Dragon Staff",
-        "slot": "weapon",
-        "icon": "items/stardust-dragon-staff.png",
-        "source": "Crafted from Stardust Fragments",
-        "why": "This is the top accessible pre-Moon Lord summoner weapon because the scaling dragon stays devastating in late fights.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "minions"
-      },
-      {
         "id": "stardust-cell-staff",
         "name": "Stardust Cell Staff",
         "slot": "weapon",
         "icon": "items/stardust-cell-staff.png",
-        "source": "Crafted from Stardust Fragments",
-        "why": "It gives summoner a real alternative if you prefer split pressure over a single scaling dragon.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "minions"
+        "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
+        "why": "Summons Stardust Cell minions that fire homing projectiles and apply a stacking debuff.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "60 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff"
       },
       {
-        "id": "kaleidoscope",
-        "name": "Kaleidoscope",
+        "id": "stardust-dragon-staff",
+        "name": "Stardust Dragon Staff",
         "slot": "weapon",
-        "icon": "items/kaleidoscope.png",
-        "source": "Dropped by the Empress of Light during the day",
-        "why": "If you can obtain it, this is the best whip in the game and a real pre-Moon Lord power spike.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "whip",
-        "modifier": "Legendary"
+        "icon": "items/stardust-dragon-staff.png",
+        "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
+        "why": "Summons a segmented Stardust Dragon that grows with each additional summon.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "40 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff"
       },
       {
-        "id": "dark-harvest",
-        "name": "Dark Harvest",
+        "id": "constellation",
+        "name": "Constellation",
         "slot": "weapon",
-        "icon": "items/dark-harvest.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "It remains the most practical high-end whip for players who are not routing daytime Empress kills.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/constellation.png",
+        "source": "Crafted (18 Stardust Fragment at an Ancient Manipulator)",
+        "why": "Crafted from Stardust Fragments and fires homing star projectiles on hit.",
+        "tags": [],
         "topPick": false,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "130 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Constellation"
       }
     ],
     "armor": [
@@ -598,7 +531,9 @@
         "icon": "armor/stardust-armor.png",
         "source": "Crafted from Stardust Fragments",
         "why": "This is the obvious best pre-Moon Lord summoner set because the Guardian and extra slot are both huge.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -608,7 +543,9 @@
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor",
         "why": "It remains a workable fallback until Stardust crafting is done.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -620,7 +557,9 @@
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is still the best summoner accessory because extra minion value and direct summon scaling are both premium.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -640,7 +579,9 @@
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
         "why": "The mobility keeps paying off because summoner still wins by surviving long enough for minions to work.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -650,7 +591,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat bonus supports both summon output and your own survivability during chaotic pillar fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -660,7 +603,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -670,7 +615,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],

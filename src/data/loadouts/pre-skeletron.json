@@ -4,52 +4,56 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "nights-edge",
-        "name": "Night's Edge",
-        "slot": "weapon",
-        "icon": "items/nights-edge.png",
-        "source": "Crafted from Blade of Grass, Muramasa, and your world-evil sword at a Demon or Crimson Altar",
-        "why": "This is the big melee goal for the phase because it outclasses other broadswords and stays relevant deep into pre-Hardmode.",
-        "tags": [],
-        "topPick": true,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
-      },
-      {
         "id": "bee-keeper",
         "name": "Bee Keeper",
         "slot": "weapon",
         "icon": "items/bee-keeper.png",
         "source": "Dropped by Queen Bee",
-        "why": "The released bees add burst and make this one of the strongest bossing swords before Hardmode.",
+        "why": "Dropped by Queen Bee; summons bees on hit and inflicts Confused.",
         "tags": [],
         "topPick": false,
         "subclass": "true-melee",
-        "modifier": "Legendary"
+        "stats": "30 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper"
       },
       {
-        "id": "flamarang",
-        "name": "Flamarang",
+        "id": "slime-spear",
+        "name": "Slime Spear",
         "slot": "weapon",
-        "icon": "items/flamarang.png",
-        "source": "Crafted from an Enchanted Boomerang and Hellstone Bars",
-        "why": "If you like the boomerang route, this is the best version available before Wall of Flesh prep takes over.",
+        "icon": "items/slime-spear.png",
+        "source": "Crafted from 50 Gel at a Solidifier (Solidifier dropped by King Slime)",
+        "why": "Crafted at a Solidifier, first obtainable via King Slime's drop.",
         "tags": [],
         "topPick": false,
-        "subclass": "boomerang",
-        "modifier": "Legendary"
+        "subclass": "true-melee",
+        "stats": "9 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Spear"
       },
       {
-        "id": "amazon",
-        "name": "Amazon",
+        "id": "code-1",
+        "name": "Code 1",
         "slot": "weapon",
-        "icon": "items/amazon.png",
-        "source": "Crafted from Rich Mahogany, Jungle Spores, Stingers, and a Vine",
-        "why": "It is the cleanest yoyo progression step if you want to stay on that subclass path.",
+        "icon": "items/code-1.png",
+        "source": "Bought from the Traveling Merchant after the Eye of Cthulhu is defeated",
+        "why": "Traveling Merchant yoyo unlocked once the Eye of Cthulhu is beaten.",
         "tags": [],
         "topPick": false,
         "subclass": "yoyo",
-        "modifier": "Legendary"
+        "stats": "21 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Code_1"
+      },
+      {
+        "id": "hive-five",
+        "name": "Hive-Five",
+        "slot": "weapon",
+        "icon": "items/hive-five.png",
+        "source": "Crafted (14 Bee Wax at an Iron/Lead Anvil); Bee Wax drops from Queen Bee",
+        "why": "Crafted from Queen Bee's Bee Wax and releases homing bee projectiles.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "24 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hive-Five"
       }
     ],
     "armor": [
@@ -60,7 +64,9 @@
         "icon": "armor/shadow-armor.png",
         "source": "Crafted from Demonite Bars and Shadow Scales",
         "why": "In Corruption worlds this is the signature melee set because the speed bonus makes early swords and yoyos feel much better.",
-        "tags": ["corruption-only"],
+        "tags": [
+          "corruption-only"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +76,9 @@
         "icon": "armor/crimson-armor.png",
         "source": "Crafted from Crimtane Bars and Tissue Samples",
         "why": "Crimson players get a tankier alternative with life-regen utility that is still excellent for melee.",
-        "tags": ["crimson-only"],
+        "tags": [
+          "crimson-only"
+        ],
         "topPick": false
       }
     ],
@@ -92,7 +100,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu treasure bag",
         "why": "The dash gives both offense and survivability, especially for melee builds that need to stay in range.",
-        "tags": ["expert-only"],
+        "tags": [
+          "expert-only"
+        ],
         "topPick": false
       },
       {
@@ -164,52 +174,56 @@
     "class": "ranger",
     "weapons": [
       {
-        "id": "molten-fury",
-        "name": "Molten Fury",
+        "id": "demon-bow",
+        "name": "Demon Bow",
         "slot": "weapon",
-        "icon": "items/molten-fury.png",
-        "source": "Crafted from Hellstone Bars",
-        "why": "This is the standout bow of the phase and stays excellent through Wall of Flesh prep.",
+        "icon": "items/demon-bow.png",
+        "source": "Crafted from Demonite Bars and Shadow Scales (Eater of Worlds)",
+        "why": "Corruption bow requiring Shadow Scales dropped by the Eater of Worlds.",
         "tags": [],
         "topPick": true,
         "subclass": "bow",
-        "modifier": "Unreal"
+        "stats": "14 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Bow"
       },
       {
-        "id": "phoenix-blaster",
-        "name": "Phoenix Blaster",
+        "id": "the-bees-knees",
+        "name": "The Bee's Knees",
         "slot": "weapon",
-        "icon": "items/phoenix-blaster.png",
-        "source": "Crafted from the Handgun and Hellstone Bars",
-        "why": "It is the cleanest gun upgrade once Dungeon access and Hellstone are both online.",
+        "icon": "items/the-bees-knees.png",
+        "source": "Dropped by Queen Bee",
+        "why": "Converts wooden arrows into homing bees.",
         "tags": [],
-        "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "23 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees"
       },
       {
-        "id": "beenades",
-        "name": "Beenades",
+        "id": "pew-matic-horn",
+        "name": "Pew-matic Horn",
         "slot": "weapon",
-        "icon": "items/beenades.png",
-        "source": "Crafted from Grenades and Bee Wax",
-        "why": "They define several pre-Hardmode boss kills because the damage output is absurd for the effort.",
+        "icon": "items/pew-matic-horn.png",
+        "source": "Dropped by Deerclops",
+        "why": "Gun that fires random-color projectiles, dropped by the Deerclops boss.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "20 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pew-matic_Horn"
+      },
+      {
+        "id": "beenade",
+        "name": "Beenade",
+        "slot": "weapon",
+        "icon": "items/beenade.png",
+        "source": "Dropped by Queen Bee; crafted with Bee Wax from Queen Bee",
+        "why": "A Queen Bee consumable that releases homing bees on detonation.",
         "tags": [],
         "topPick": false,
         "subclass": "throwing",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "boomstick",
-        "name": "Boomstick",
-        "slot": "weapon",
-        "icon": "items/boomstick.png",
-        "source": "Found in Jungle Shrine chests",
-        "why": "It still hits hard enough to remain worth using if your gun progression is not fully online yet.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade"
       }
     ],
     "armor": [
@@ -272,7 +286,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu treasure bag",
         "why": "The dash is still strong for quick spacing corrections and emergency saves.",
-        "tags": ["expert-only"],
+        "tags": [
+          "expert-only"
+        ],
         "topPick": false
       }
     ],
@@ -324,52 +340,30 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "space-gun",
-        "name": "Space Gun",
+        "id": "bee-gun",
+        "name": "Bee Gun",
         "slot": "weapon",
-        "icon": "items/space-gun.png",
-        "source": "Crafted from Meteorite Bars",
-        "why": "Meteor Armor turns this into a zero-mana workhorse, which is why the set-and-weapon combo defines the phase.",
+        "icon": "items/bee-gun.png",
+        "source": "Dropped by Queen Bee (1/3 chance)",
+        "why": "Fires several homing bee projectiles per shot.",
         "tags": [],
         "topPick": true,
         "subclass": "magic-gun",
-        "modifier": "Mythical"
+        "stats": "9 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Gun"
       },
       {
-        "id": "demon-scythe",
-        "name": "Demon Scythe",
+        "id": "weather-pain",
+        "name": "Weather Pain",
         "slot": "weapon",
-        "icon": "items/demon-scythe.png",
-        "source": "Dropped by Demons in the Underworld",
-        "why": "It pierces and deals huge damage when you can aim it well, making it a standout for serious boss prep.",
+        "icon": "items/weather-pain.png",
+        "source": "Dropped by Deerclops",
+        "why": "Fires a slow weather-front projectile that spawns damaging effects.",
         "tags": [],
         "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "water-bolt",
-        "name": "Water Bolt",
-        "slot": "weapon",
-        "icon": "items/water-bolt.png",
-        "source": "Found on Dungeon bookshelves",
-        "why": "Its bounce and piercing keep it extremely efficient in arenas and enclosed spaces.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "flower-of-fire",
-        "name": "Flower of Fire",
-        "slot": "weapon",
-        "icon": "items/flower-of-fire.png",
-        "source": "Dropped in the Underworld",
-        "why": "This gives you a flexible fireball option if you want a more direct casting rhythm than Water Bolt or Demon Scythe.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "magic-gun",
-        "modifier": "Mythical"
+        "subclass": "wand",
+        "stats": "13 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain"
       }
     ],
     "armor": [
@@ -484,49 +478,134 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "imp-staff",
-        "name": "Imp Staff",
-        "slot": "weapon",
-        "icon": "items/imp-staff.png",
-        "source": "Crafted from Hellstone Bars",
-        "why": "This is the defining summon of the phase because it stays powerful well beyond the moment you first craft it.",
-        "tags": [],
-        "topPick": true,
-        "subclass": "minions"
-      },
-      {
         "id": "hornet-staff",
         "name": "Hornet Staff",
         "slot": "weapon",
         "icon": "items/hornet-staff.png",
-        "source": "Dropped by Queen Bee",
-        "why": "It is a strong minion option if your route leans into Queen Bee before full Hellstone progression.",
+        "source": "Crafted from 14 Bee Wax at an Iron/Lead Anvil",
+        "why": "Summons a Hornet minion that inflicts Poisoned; Bee Wax drops from Queen Bee.",
         "tags": [],
-        "topPick": false,
-        "subclass": "minions"
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "12 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hornet_Staff"
       },
       {
-        "id": "snapthorn",
-        "name": "Snapthorn",
+        "id": "ballista-rod",
+        "name": "Ballista Rod",
         "slot": "weapon",
-        "icon": "items/snapthorn.png",
-        "source": "Crafted from Jungle materials",
-        "why": "The whip tag damage is still a huge multiplier, so this remains a core piece of the loadout.",
+        "icon": "items/ballista-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry that fires high-damage piercing bolts.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "30 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Rod"
+      },
+      {
+        "id": "houndius-shootius",
+        "name": "Houndius Shootius",
+        "slot": "weapon",
+        "icon": "items/houndius-shootius.png",
+        "source": "Dropped by Deerclops",
+        "why": "Pre-Hardmode sentry dropped by Deerclops that shoots piercing fireballs.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius"
+      },
+      {
+        "id": "mushroom-staff",
+        "name": "Mushroom Staff",
+        "slot": "weapon",
+        "icon": "items/mushroom-staff.png",
+        "source": "Crafted from 300 Glowing Mushrooms + 5 Mushroom Grass Seeds + 5 Shadow Scales/Tissue Samples at an Iron/Lead Anvil",
+        "why": "Summons a Mushroom Boi minion; requires an evil-boss drop (Shadow Scale or Tissue Sample) to craft.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "8 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff"
+      },
+      {
+        "id": "explosive-trap-rod",
+        "name": "Explosive Trap Rod",
+        "slot": "weapon",
+        "icon": "items/explosive-trap-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry that lays a trap detonating when enemies pass over it.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Rod"
+      },
+      {
+        "id": "flameburst-rod",
+        "name": "Flameburst Rod",
+        "slot": "weapon",
+        "icon": "items/flameburst-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry that fires explosive fireballs at ground enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flameburst_Rod"
+      },
+      {
+        "id": "lightning-aura-rod",
+        "name": "Lightning Aura Rod",
+        "slot": "weapon",
+        "icon": "items/lightning-aura-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry summoning a stationary lightning aura ring.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "4 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Aura_Rod"
+      },
+      {
+        "id": "slime-whip",
+        "name": "Slime Whip",
+        "slot": "weapon",
+        "icon": "items/slime-whip.png",
+        "source": "Crafted (50 Gel at a Solidifier, which is dropped by King Slime)",
+        "why": "Crafted at the King Slime-dropped Solidifier and inflicts a slowing debuff on hit.",
         "tags": [],
         "topPick": false,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "12 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Whip"
       },
       {
-        "id": "abigails-flower",
-        "name": "Abigail's Flower",
+        "id": "soulscourge",
+        "name": "Soulscourge",
         "slot": "weapon",
-        "icon": "items/abigails-flower.png",
-        "source": "Found growing on grass at night",
-        "why": "It is situational, but still worth knowing about because some fights and setups suit it surprisingly well.",
+        "icon": "items/soulscourge.png",
+        "source": "Crafted (12 Demonite Bar at an Anvil)",
+        "why": "Corruption whip crafted from Demonite Bars obtained via the Eater of Worlds.",
         "tags": [],
         "topPick": false,
-        "subclass": "minions"
+        "subclass": "whip",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge"
+      },
+      {
+        "id": "vasculash",
+        "name": "Vasculash",
+        "slot": "weapon",
+        "icon": "items/vasculash.png",
+        "source": "Crafted (12 Crimtane Bar at an Anvil)",
+        "why": "Crimson counterpart to the Soulscourge, crafted from Crimtane Bars.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "19 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash"
       }
     ],
     "armor": [
@@ -589,7 +668,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu treasure bag",
         "why": "The dash is especially helpful for a class that often wins by staying alive while summons do the work.",
-        "tags": ["expert-only"],
+        "tags": [
+          "expert-only"
+        ],
         "topPick": false
       }
     ],

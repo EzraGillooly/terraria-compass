@@ -4,28 +4,17 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "zenith",
-        "name": "Zenith",
-        "slot": "weapon",
-        "icon": "items/zenith.png",
-        "source": "Crafted from the full Zenith sword chain",
-        "why": "This is the unquestioned melee endgame centerpiece because nothing else matches its screen-wide damage and reach.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
-      },
-      {
         "id": "meowmere",
         "name": "Meowmere",
         "slot": "weapon",
         "icon": "items/meowmere.png",
         "source": "Dropped by Moon Lord",
-        "why": "Even before you finish Zenith, this is a top-tier Moon Lord drop and an important ingredient in the final craft.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "why": "Fires bouncing wall-piercing cat-head projectiles on swing.",
+        "tags": [],
+        "topPick": true,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "200 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere"
       },
       {
         "id": "star-wrath",
@@ -33,23 +22,38 @@
         "slot": "weapon",
         "icon": "items/star-wrath.png",
         "source": "Dropped by Moon Lord",
-        "why": "It remains a premier sword on its own and also matters as one of the last Zenith ingredients.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "why": "Calls down wall-piercing falling stars toward the cursor on swing.",
+        "tags": [],
+        "topPick": true,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "170 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+      },
+      {
+        "id": "zenith",
+        "name": "Zenith",
+        "slot": "weapon",
+        "icon": "items/zenith.png",
+        "source": "Crafted (Terra Blade, Meowmere, Star Wrath, Influx Waver + more)",
+        "why": "Rapidly fires homing sword-sprite projectiles on each swing; needs Moon Lord swords.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "projectile-sword",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Zenith"
       },
       {
         "id": "terrarian",
         "name": "Terrarian",
         "slot": "weapon",
         "icon": "items/terrarian.png",
-        "source": "Dropped by Moon Lord",
-        "why": "If you want the strongest yoyo route instead of the sword route, this is the one that defines it.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "source": "1/5 drop from the Moon Lord",
+        "why": "Moon Lord drop that emits homing projectiles; strongest yoyo.",
+        "tags": [],
+        "topPick": true,
         "subclass": "yoyo",
-        "modifier": "Legendary"
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terrarian"
       }
     ],
     "armor": [
@@ -60,7 +64,9 @@
         "icon": "armor/solar-flare-armor.png",
         "source": "Crafted from Solar Fragments and Luminite Bars",
         "why": "This remains the best melee armor in the game because its survivability and shield charges are still unmatched.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +76,9 @@
         "icon": "armor/beetle-armor.png",
         "source": "Crafted from Beetle Husks and Turtle Armor",
         "why": "It is outclassed now, but still worth listing as the immediate pre-Lunar carry-over many players will still recognize.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -82,7 +90,9 @@
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It remains the most obvious melee-specific accessory because the offensive package never really stops being efficient.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -92,7 +102,9 @@
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The huge all-around stat package makes it one of the best universal endgame accessories regardless of class.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -102,7 +114,9 @@
         "icon": "accessories/celestial-starboard.png",
         "source": "Dropped by Moon Lord",
         "why": "If you want the strongest wings in the game, this is the mobility end point for late builds.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -112,7 +126,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The dodge and dash are still excellent even in the very last content the game offers.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -122,7 +138,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Crafted from Avenger Emblem and Eye of the Golem.",
         "why": "+10% damage and +8% crit, stacking with your class emblem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +150,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -184,52 +204,43 @@
     "class": "ranger",
     "weapons": [
       {
-        "id": "sdmg",
+        "id": "s-d-m-g",
         "name": "S.D.M.G.",
         "slot": "weapon",
-        "icon": "items/sdmg.png",
-        "source": "Dropped by Moon Lord",
-        "why": "The research resolves the endgame ranger debate in favor of S.D.M.G. as the default top pick.",
-        "tags": ["hardmode"],
+        "icon": "items/s-d-m-g.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Space Dolphin Machine Gun dropped by the Moon Lord with a chance not to consume ammo.",
+        "tags": [],
         "topPick": true,
         "subclass": "gun",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "phantasm",
-        "name": "Phantasm",
-        "slot": "weapon",
-        "icon": "items/phantasm.png",
-        "source": "Crafted from Vortex Fragments and Luminite Bars",
-        "why": "It remains a co-best weapon in practice and still defines the endgame bow route.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "bow",
-        "modifier": "Unreal"
+        "stats": "85 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/S.D.M.G."
       },
       {
         "id": "vortex-beater",
         "name": "Vortex Beater",
         "slot": "weapon",
         "icon": "items/vortex-beater.png",
-        "source": "Crafted from Vortex Fragments and Luminite Bars",
-        "why": "This remains a premier gun option if you prefer its burst-fire pattern over the Moon Lord drop route.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "source": "Crafted (18 Luminite Bars + Vortex Fragments)",
+        "why": "Luminite-tier gun that fires bullets and homing rockets, crafted after Moon Lord.",
+        "tags": [],
+        "topPick": true,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Beater"
       },
       {
         "id": "celebration-mk2",
-        "name": "Celebration MK2",
+        "name": "Celebration Mk2",
         "slot": "weapon",
         "icon": "items/celebration-mk2.png",
-        "source": "Dropped by Moon Lord",
-        "why": "It is a spectacular late launcher pick and one of ranger's most fun optional endgame weapons.",
-        "tags": ["hardmode"],
+        "source": "Dropped by the Moon Lord",
+        "why": "Fires alternating firework rockets in a wide spread using rocket ammo.",
+        "tags": [],
         "topPick": false,
         "subclass": "launcher",
-        "modifier": "Unreal"
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celebration_Mk2"
       }
     ],
     "armor": [
@@ -240,7 +251,9 @@
         "icon": "armor/vortex-armor.png",
         "source": "Crafted from Vortex Fragments and Luminite Bars",
         "why": "This is the final ranger armor because the stealth and Lunar-tier stats outclass everything before it.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -250,7 +263,9 @@
         "icon": "armor/shroomite-armor.png",
         "source": "Crafted from Shroomite Bars",
         "why": "It is still worth showing as the direct carry-over point for players transitioning into Moon Lord gear.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -262,7 +277,9 @@
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It remains the obvious ranger-specific accessory because crit and precision still matter at the top end.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -272,7 +289,9 @@
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The universal stat package makes it one of the strongest non-class-specific endgame accessory slots.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -282,7 +301,9 @@
         "icon": "accessories/celestial-starboard.png",
         "source": "Dropped by Moon Lord",
         "why": "It is the final mobility goal if you want the best wing option available.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -292,7 +313,9 @@
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
         "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -302,7 +325,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Crafted from Avenger Emblem and Eye of the Golem.",
         "why": "+10% damage and +8% crit, stacking with your class emblem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -312,7 +337,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -368,48 +395,26 @@
         "name": "Last Prism",
         "slot": "weapon",
         "icon": "items/last-prism.png",
-        "source": "Dropped by Moon Lord",
-        "why": "This is the consensus top endgame mage weapon because its sustained beam damage still sits above everything else.",
-        "tags": ["hardmode"],
+        "source": "Dropped by Moon Lord (1/9 chance)",
+        "why": "Charges up to fire converging rainbow beams that deal rapid continuous damage.",
+        "tags": [],
         "topPick": true,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Last_Prism"
       },
       {
         "id": "lunar-flare",
         "name": "Lunar Flare",
         "slot": "weapon",
         "icon": "items/lunar-flare.png",
-        "source": "Dropped by Moon Lord",
-        "why": "It remains a powerful alternative when you want a more positional, targeted mage tool instead of a pure beam.",
-        "tags": ["hardmode"],
+        "source": "Dropped by the Moon Lord",
+        "why": "Summons lunar flares that rain down toward the cursor and explode on impact.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "nebula-blaze",
-        "name": "Nebula Blaze",
-        "slot": "weapon",
-        "icon": "items/nebula-blaze.png",
-        "source": "Crafted from Nebula Fragments and Luminite Bars",
-        "why": "It is still a great carry-over even after Moon Lord drops open the final tier.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "wand",
-        "modifier": "Mythical"
-      },
-      {
-        "id": "razorblade-typhoon",
-        "name": "Razorblade Typhoon",
-        "slot": "weapon",
-        "icon": "items/razorblade-typhoon.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Its homing pressure remains useful enough that it still deserves a place in the final pool.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lunar_Flare"
       }
     ],
     "armor": [
@@ -420,7 +425,9 @@
         "icon": "armor/nebula-armor.png",
         "source": "Crafted from Nebula Fragments and Luminite Bars",
         "why": "This is the final mage armor because the Nebula boosters make it the most complete endgame package.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -430,7 +437,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "It remains a recognizable carry-over for players who still swap sets situationally.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -442,7 +451,9 @@
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the best mage accessory because the damage and mana support still scale into the final tier.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -452,7 +463,9 @@
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The universal stat package is strong enough to remain relevant even for the most specialized mage builds.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -462,7 +475,9 @@
         "icon": "accessories/celestial-starboard.png",
         "source": "Dropped by Moon Lord",
         "why": "It is the final mobility prize if you want the best possible aerial control.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -482,7 +497,9 @@
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted from Magic Cuffs and Celestial Magnet.",
         "why": "Turns damage taken into mana and pulls in nearby mana stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -492,7 +509,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -544,50 +563,43 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "stardust-dragon-staff",
-        "name": "Stardust Dragon Staff",
+        "id": "lunar-portal-staff",
+        "name": "Lunar Portal Staff",
         "slot": "weapon",
-        "icon": "items/stardust-dragon-staff.png",
-        "source": "Crafted from Stardust Fragments and Luminite Bars",
-        "why": "The research still marks this as the best practical endgame summoner weapon because the scaling is absurd and the route is accessible.",
-        "tags": ["hardmode"],
+        "icon": "items/lunar-portal-staff.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Post-Moon Lord sentry summoning a floating portal that fires sweeping piercing beams.",
+        "tags": [],
         "topPick": true,
-        "subclass": "minions"
+        "subclass": "sentries",
+        "stats": "100 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lunar_Portal_Staff"
       },
       {
-        "id": "terraprisma",
-        "name": "Terraprisma",
+        "id": "rainbow-crystal-staff",
+        "name": "Rainbow Crystal Staff",
         "slot": "weapon",
-        "icon": "items/terraprisma.png",
-        "source": "Dropped by the Empress of Light during the day",
-        "why": "If you can earn it, it sits in the very top tier of summon damage and remains a true prestige pickup.",
-        "tags": ["hardmode"],
+        "icon": "items/rainbow-crystal-staff.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Post-Moon Lord sentry summoning a floating crystal that fires exploding light beams.",
+        "tags": [],
         "topPick": false,
-        "subclass": "minions"
+        "subclass": "sentries",
+        "stats": "130 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Crystal_Staff"
       },
       {
-        "id": "kaleidoscope",
-        "name": "Kaleidoscope",
+        "id": "possession",
+        "name": "Possession",
         "slot": "weapon",
-        "icon": "items/kaleidoscope.png",
-        "source": "Dropped by the Empress of Light during the day",
-        "why": "This is the best whip in the game and the natural pairing for a fully optimized endgame summoner.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "whip",
-        "modifier": "Legendary"
-      },
-      {
-        "id": "morning-star",
-        "name": "Morning Star",
-        "slot": "weapon",
-        "icon": "items/morning-star.png",
-        "source": "Earned from Old One's Army Tier 3 progression",
-        "why": "It remains a very strong carry-over whip if you are not routing the hardest optional Empress drops.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/possession.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Moon Lord drop with very fast use time and high summon tag damage.",
+        "tags": [],
         "topPick": false,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "110 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Possession"
       }
     ],
     "armor": [
@@ -598,7 +610,9 @@
         "icon": "armor/stardust-armor.png",
         "source": "Crafted from Stardust Fragments and Luminite Bars",
         "why": "This is the final summoner armor because the extra slot and Guardian utility keep it ahead of earlier sets.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -608,7 +622,9 @@
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor",
         "why": "It remains a recognizable carry-over option for players still finalizing their Stardust setup.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -620,7 +636,9 @@
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This remains the best summon-focused accessory because more minion value is still the best possible stat.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -630,7 +648,9 @@
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The universal stat package is strong enough to justify a slot even in a highly optimized summoner build.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -640,7 +660,9 @@
         "icon": "accessories/celestial-starboard.png",
         "source": "Dropped by Moon Lord",
         "why": "It is the final mobility capstone if you want the best endgame wings available.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -660,7 +682,9 @@
         "icon": "accessories/necromantic-scroll.png",
         "source": "Dropped by Mourning Wood during the Pumpkin Moon.",
         "why": "+1 minion and +10% minion damage, a core summoner slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -670,7 +694,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],

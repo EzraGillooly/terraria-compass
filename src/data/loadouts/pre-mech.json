@@ -4,52 +4,550 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "drippler-crippler",
+        "name": "Drippler Crippler",
+        "slot": "weapon",
+        "icon": "items/drippler-crippler.png",
+        "source": "Dropped by Blood Eels (Hardmode Blood Moon)",
+        "why": "Hardmode Blood Moon flail dropped by Blood Eels.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "flail",
+        "stats": "110 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Drippler_Crippler"
+      },
+      {
+        "id": "fetid-baghnakhs",
+        "name": "Fetid Baghnakhs",
+        "slot": "weapon",
+        "icon": "items/fetid-baghnakhs.png",
+        "source": "Dropped by Crimson Mimics",
+        "why": "Extremely fast, very short-range broadsword from Crimson Mimics.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "true-melee",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs"
+      },
+      {
         "id": "amarok",
         "name": "Amarok",
         "slot": "weapon",
         "icon": "items/amarok.png",
-        "source": "Dropped by Snow biome enemies in Hardmode",
-        "why": "This is the standout pre-mech yoyo because it keeps strong pressure on mobile bosses without forcing risky positioning.",
-        "tags": ["hardmode"],
+        "source": "1/300 drop from Snow biome enemies in Hardmode",
+        "why": "Hardmode Snow-biome drop with a high Frostburn chance.",
+        "tags": [],
         "topPick": true,
         "subclass": "yoyo",
-        "modifier": "Legendary"
+        "stats": "43 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Amarok"
       },
       {
-        "id": "ice-sickle",
-        "name": "Ice Sickle",
+        "id": "chik",
+        "name": "Chik",
         "slot": "weapon",
-        "icon": "items/ice-sickle.png",
-        "source": "Dropped by Ice Mimics",
-        "why": "Its ranged arc makes it one of the safest melee answers for worm segments and crowded Hardmode fights.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "icon": "items/chik.png",
+        "source": "Crafted (1 Wooden Yoyo + 15 Crystal Shard + 10 Soul of Light at a Mythril/Orichalcum Anvil)",
+        "why": "Only craftable One Drop yoyo, made from early-Hardmode materials.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "39 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chik"
       },
       {
-        "id": "bladetongue",
-        "name": "Bladetongue",
+        "id": "gradient",
+        "name": "Gradient",
         "slot": "weapon",
-        "icon": "items/bladetongue.png",
-        "source": "Dropped by Blood Zombies and Drippers during a Hardmode Blood Moon",
-        "why": "Applying Ichor is a huge damage multiplier for mech progression, so Crimson melee builds get real value from this.",
-        "tags": ["hardmode", "crimson-only"],
+        "icon": "items/gradient.png",
+        "source": "Bought from the Skeleton Merchant during moon phases 1-4 (Hardmode)",
+        "why": "Hardmode Skeleton Merchant yoyo sold on full-moon-side phases.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gradient"
+      },
+      {
+        "id": "hel-fire",
+        "name": "Hel-Fire",
+        "slot": "weapon",
+        "icon": "items/hel-fire.png",
+        "source": "1/400 drop from Underworld and lower-Cavern enemies in Hardmode",
+        "why": "Hardmode Underworld/Cavern drop that inflicts the Hellfire debuff.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "39 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hel-Fire"
+      },
+      {
+        "id": "bananarang",
+        "name": "Bananarang",
+        "slot": "weapon",
+        "icon": "items/bananarang.png",
+        "source": "Dropped by Clowns during a Hardmode Blood Moon",
+        "why": "Multiple can be thrown at once; dropped by Hardmode Clowns.",
+        "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
+        "subclass": "boomerang",
+        "stats": "45 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bananarang"
+      },
+      {
+        "id": "flying-knife",
+        "name": "Flying Knife",
+        "slot": "weapon",
+        "icon": "items/flying-knife.png",
+        "source": "Dropped by Hallowed Mimics in the Hardmode Hallow",
+        "why": "Player-controlled hovering knife dropped by Hallowed Mimics.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Knife"
+      },
+      {
+        "id": "sergeant-united-shield",
+        "name": "Sergeant United Shield",
+        "slot": "weapon",
+        "icon": "items/sergeant-united-shield.png",
+        "source": "Rarely sold by the Traveling Merchant for 35 gold (Hardmode only)",
+        "why": "Ricocheting shield rarely sold by the Traveling Merchant in Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sergeant_United_Shield"
+      },
+      {
+        "id": "anchor",
+        "name": "Anchor",
+        "slot": "weapon",
+        "icon": "items/anchor.png",
+        "source": "Found in Pearlwood Crates (fished in Hardmode)",
+        "why": "Launched flail found in Pearlwood Crates fished in Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Anchor"
+      },
+      {
+        "id": "chain-guillotines",
+        "name": "Chain Guillotines",
+        "slot": "weapon",
+        "icon": "items/chain-guillotines.png",
+        "source": "Dropped by Corrupt Mimics (Hardmode)",
+        "why": "Launched flail dropped by Corrupt Mimics in Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "59 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Guillotines"
       },
       {
         "id": "dao-of-pow",
         "name": "Dao of Pow",
         "slot": "weapon",
         "icon": "items/dao-of-pow.png",
-        "source": "Crafted from Souls of Light, Souls of Night, and a Dark Shard",
-        "why": "If you want a true flail route in early Hardmode, this is the cleanest dedicated option before the mechs fall.",
-        "tags": ["hardmode"],
+        "source": "Crafted (Dark Shard + Light Shard + 7 Soul of Night + 7 Soul of Light)",
+        "why": "Early Hardmode flail crafted from Souls of Night and Light.",
+        "tags": [],
         "topPick": false,
         "subclass": "flail",
-        "modifier": "Legendary"
+        "stats": "100 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Dao_of_Pow"
+      },
+      {
+        "id": "flairon",
+        "name": "Flairon",
+        "slot": "weapon",
+        "icon": "items/flairon.png",
+        "source": "Dropped by Duke Fishron (1/6)",
+        "why": "Hardmode flail from Duke Fishron, who requires no boss prerequisite to summon.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "132 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon"
+      },
+      {
+        "id": "ko-cannon",
+        "name": "KO Cannon",
+        "slot": "weapon",
+        "icon": "items/ko-cannon.png",
+        "source": "Dropped by Clowns (Hardmode Blood Moon)",
+        "why": "Launched flail dropped by Clowns during a Hardmode Blood Moon.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/KO_Cannon"
+      },
+      {
+        "id": "beam-sword",
+        "name": "Beam Sword",
+        "slot": "weapon",
+        "icon": "items/beam-sword.png",
+        "source": "Dropped by Armored Skeletons",
+        "why": "Fires a yellow Sword Beam projectile on each swing.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "52 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beam_Sword"
+      },
+      {
+        "id": "bladetongue",
+        "name": "Bladetongue",
+        "slot": "weapon",
+        "icon": "items/bladetongue.png",
+        "source": "Fished in the Crimson (Hardmode)",
+        "why": "Fires an ichor spray projectile on swing and inflicts Ichor.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "55 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bladetongue"
+      },
+      {
+        "id": "frostbrand",
+        "name": "Frostbrand",
+        "slot": "weapon",
+        "icon": "items/frostbrand.png",
+        "source": "Dropped by Ice Mimics",
+        "why": "Fires a Frost Bolt projectile on swing and inflicts Frostbite.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostbrand"
+      },
+      {
+        "id": "ice-sickle",
+        "name": "Ice Sickle",
+        "slot": "weapon",
+        "icon": "items/ice-sickle.png",
+        "source": "Dropped by Hardmode Snow enemies",
+        "why": "Fires a spinning blue sickle projectile that pierces.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Sickle"
+      },
+      {
+        "id": "blue-phasesaber",
+        "name": "Blue Phasesaber",
+        "slot": "weapon",
+        "icon": "items/blue-phasesaber.png",
+        "source": "Crafted (Blue Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Blue Phaseblade using Crystal Shards.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Phasesaber"
+      },
+      {
+        "id": "breaker-blade",
+        "name": "Breaker Blade",
+        "slot": "weapon",
+        "icon": "items/breaker-blade.png",
+        "source": "Dropped by Wall of Flesh",
+        "why": "High-damage broadsword dropped by the Wall of Flesh.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Breaker_Blade"
+      },
+      {
+        "id": "classy-cane",
+        "name": "Classy Cane",
+        "slot": "weapon",
+        "icon": "items/classy-cane.png",
+        "source": "Dropped by the Tax Collector",
+        "why": "Dropped by the Tax Collector; can damage town NPCs.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Classy_Cane"
+      },
+      {
+        "id": "cobalt-naginata",
+        "name": "Cobalt Naginata",
+        "slot": "weapon",
+        "icon": "items/cobalt-naginata.png",
+        "source": "Crafted from 10 Cobalt Bars at an Iron/Lead Anvil",
+        "why": "Early Hardmode Cobalt-tier spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "44 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Naginata"
+      },
+      {
+        "id": "cobalt-sword",
+        "name": "Cobalt Sword",
+        "slot": "weapon",
+        "icon": "items/cobalt-sword.png",
+        "source": "Crafted (Cobalt Bars)",
+        "why": "First-tier Hardmode ore broadsword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Sword"
+      },
+      {
+        "id": "cutlass",
+        "name": "Cutlass",
+        "slot": "weapon",
+        "icon": "items/cutlass.png",
+        "source": "Dropped by Pirate Invasion enemies",
+        "why": "Dropped during the Pirate Invasion, which can occur in early Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "53 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cutlass"
+      },
+      {
+        "id": "green-phasesaber",
+        "name": "Green Phasesaber",
+        "slot": "weapon",
+        "icon": "items/green-phasesaber.png",
+        "source": "Crafted (Green Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Green Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Green_Phasesaber"
+      },
+      {
+        "id": "ham-bat",
+        "name": "Ham Bat",
+        "slot": "weapon",
+        "icon": "items/ham-bat.png",
+        "source": "Dropped by Pigrons",
+        "why": "Dropped by Pigrons; grants a healing buff on hit.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "57 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ham_Bat"
+      },
+      {
+        "id": "mythril-halberd",
+        "name": "Mythril Halberd",
+        "slot": "weapon",
+        "icon": "items/mythril-halberd.png",
+        "source": "Crafted from 10 Mythril Bars at a Mythril/Orichalcum Anvil",
+        "why": "Mid-tier Hardmode Mythril spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "45 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Halberd"
+      },
+      {
+        "id": "mythril-sword",
+        "name": "Mythril Sword",
+        "slot": "weapon",
+        "icon": "items/mythril-sword.png",
+        "source": "Crafted (Mythril Bars)",
+        "why": "Second-tier Hardmode ore broadsword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Sword"
+      },
+      {
+        "id": "orange-phasesaber",
+        "name": "Orange Phasesaber",
+        "slot": "weapon",
+        "icon": "items/orange-phasesaber.png",
+        "source": "Crafted (Orange Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Orange Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Phasesaber"
+      },
+      {
+        "id": "orichalcum-halberd",
+        "name": "Orichalcum Halberd",
+        "slot": "weapon",
+        "icon": "items/orichalcum-halberd.png",
+        "source": "Crafted from 12 Orichalcum Bars at a Mythril/Orichalcum Anvil",
+        "why": "Mid-tier Hardmode Orichalcum spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "46 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Halberd"
+      },
+      {
+        "id": "orichalcum-sword",
+        "name": "Orichalcum Sword",
+        "slot": "weapon",
+        "icon": "items/orichalcum-sword.png",
+        "source": "Crafted (Orichalcum Bars)",
+        "why": "Orichalcum-ore equivalent of the Mythril Sword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "59 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Sword"
+      },
+      {
+        "id": "palladium-pike",
+        "name": "Palladium Pike",
+        "slot": "weapon",
+        "icon": "items/palladium-pike.png",
+        "source": "Crafted from 12 Palladium Bars at an Iron/Lead Anvil",
+        "why": "Early Hardmode Palladium-tier spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "44 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Pike"
+      },
+      {
+        "id": "palladium-sword",
+        "name": "Palladium Sword",
+        "slot": "weapon",
+        "icon": "items/palladium-sword.png",
+        "source": "Crafted (Palladium Bars)",
+        "why": "Palladium-ore equivalent of the Cobalt Sword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Sword"
+      },
+      {
+        "id": "pearlwood-sword",
+        "name": "Pearlwood Sword",
+        "slot": "weapon",
+        "icon": "items/pearlwood-sword.png",
+        "source": "Crafted (Pearlwood)",
+        "why": "Hallow wood variation of the Wooden Sword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "30 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pearlwood_Sword"
+      },
+      {
+        "id": "pink-phasesaber",
+        "name": "Pink Phasesaber",
+        "slot": "weapon",
+        "icon": "items/pink-phasesaber.png",
+        "source": "Crafted (Pink Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Pink Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Phasesaber"
+      },
+      {
+        "id": "purple-phasesaber",
+        "name": "Purple Phasesaber",
+        "slot": "weapon",
+        "icon": "items/purple-phasesaber.png",
+        "source": "Crafted (Purple Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Purple Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Purple_Phasesaber"
+      },
+      {
+        "id": "rainbow-phasesaber",
+        "name": "Rainbow Phasesaber",
+        "slot": "weapon",
+        "icon": "items/rainbow-phasesaber.png",
+        "source": "Crafted (Rainbow Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Rainbow Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Phasesaber"
+      },
+      {
+        "id": "red-phasesaber",
+        "name": "Red Phasesaber",
+        "slot": "weapon",
+        "icon": "items/red-phasesaber.png",
+        "source": "Crafted (Red Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Red Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Red_Phasesaber"
+      },
+      {
+        "id": "slap-hand",
+        "name": "Slap Hand",
+        "slot": "weapon",
+        "icon": "items/slap-hand.png",
+        "source": "Bought from Skeleton Merchant (Blood Moon)",
+        "why": "Purchased from the Skeleton Merchant during a Hardmode Blood Moon.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "55 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slap_Hand"
+      },
+      {
+        "id": "white-phasesaber",
+        "name": "White Phasesaber",
+        "slot": "weapon",
+        "icon": "items/white-phasesaber.png",
+        "source": "Crafted (White Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the White Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/White_Phasesaber"
+      },
+      {
+        "id": "yellow-phasesaber",
+        "name": "Yellow Phasesaber",
+        "slot": "weapon",
+        "icon": "items/yellow-phasesaber.png",
+        "source": "Crafted (Yellow Phaseblade + Crystal Shards)",
+        "why": "Hardmode upgrade of the Yellow Phaseblade.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Yellow_Phasesaber"
+      },
+      {
+        "id": "format-c",
+        "name": "Format:C",
+        "slot": "weapon",
+        "icon": "items/format-c.png",
+        "source": "Bought from the Skeleton Merchant during moon phases 5-8 (Hardmode)",
+        "why": "Hardmode Skeleton Merchant yoyo sold on new-moon-side phases.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "39 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Format:C"
       }
     ],
     "armor": [
@@ -60,7 +558,9 @@
         "icon": "armor/titanium-armor.png",
         "source": "Crafted from Titanium Bars",
         "why": "This is the premium ore armor for pre-mech melee because it brings strong defense and offensive scaling together.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +570,9 @@
         "icon": "armor/adamantite-armor.png",
         "source": "Crafted from Adamantite Bars",
         "why": "Adamantite is the world-variant fallback and still gives melee everything it needs to break into mech fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -80,7 +582,9 @@
         "icon": "armor/palladium-armor.png",
         "source": "Crafted from Palladium Bars",
         "why": "If your ore route is still mid-tier, the on-hit healing effect can smooth out early Hardmode mistakes.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -92,7 +596,9 @@
         "icon": "accessories/warrior-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "The raw melee damage bonus is immediate and efficient, which makes it the easiest offensive slot to justify in this phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -102,7 +608,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from early Hardmode wing routes",
         "why": "Flight stops feeling optional once mech arenas and Hardmode enemy pressure show up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +640,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu treasure bag",
         "why": "Expert players still get a lot out of the dash even after wings enter the build.",
-        "tags": ["expert-only"],
+        "tags": [
+          "expert-only"
+        ],
         "topPick": false
       },
       {
@@ -142,7 +652,9 @@
         "icon": "accessories/charm-of-myths.png",
         "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
         "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -199,47 +711,168 @@
         "slot": "weapon",
         "icon": "items/daedalus-stormbow.png",
         "source": "Dropped by Hallowed Mimics",
-        "why": "This is the phase-defining bow because the falling-arrow pattern melts The Destroyer and stays excellent elsewhere.",
-        "tags": ["hardmode"],
+        "why": "Fires arrows that rain down from the sky.",
+        "tags": [],
         "topPick": true,
         "subclass": "bow",
-        "modifier": "Unreal"
+        "stats": "38 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Daedalus_Stormbow"
       },
       {
         "id": "onyx-blaster",
         "name": "Onyx Blaster",
         "slot": "weapon",
         "icon": "items/onyx-blaster.png",
-        "source": "Crafted from the Shotgun, Souls of Night, and a Dark Shard",
-        "why": "Gun-focused ranger builds get a huge burst upgrade here, especially for close to mid-range mech damage windows.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "source": "Crafted (Shotgun + 2 Dark Shard + 10 Souls of Night) at a Mythril/Orichalcum Anvil",
+        "why": "Hardmode upgrade to the Shotgun crafted from shards and Souls of Night at a Hardmode anvil.",
+        "tags": [],
+        "topPick": true,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "24 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Onyx_Blaster"
       },
       {
-        "id": "dart-rifle",
-        "name": "Dart Rifle",
+        "id": "uzi",
+        "name": "Uzi",
         "slot": "weapon",
-        "icon": "items/dart-rifle.png",
-        "source": "Dropped by Crimson Mimics",
-        "why": "Crystal or ichor darts make this unusually strong for the phase, particularly against targets that reward piercing.",
-        "tags": ["hardmode", "crimson-only"],
-        "topPick": false,
+        "icon": "items/uzi.png",
+        "source": "Dropped by Angry Trappers in the Hardmode Underground Jungle",
+        "why": "Rapid-fire gun dropped by Angry Trappers, which spawn in the Hardmode Jungle.",
+        "tags": [],
+        "topPick": true,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "30 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Uzi"
+      },
+      {
+        "id": "cobalt-repeater",
+        "name": "Cobalt Repeater",
+        "slot": "weapon",
+        "icon": "items/cobalt-repeater.png",
+        "source": "Crafted from Cobalt Bars",
+        "why": "First-tier Hardmode repeater crafted from Cobalt Bars.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "35 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Repeater"
+      },
+      {
+        "id": "ice-bow",
+        "name": "Ice Bow",
+        "slot": "weapon",
+        "icon": "items/ice-bow.png",
+        "source": "Dropped by Ice Mimics",
+        "why": "Converts arrows into ice arrows that spawn falling icicles.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "39 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Bow"
+      },
+      {
+        "id": "marrow",
+        "name": "Marrow",
+        "slot": "weapon",
+        "icon": "items/marrow.png",
+        "source": "Dropped by Skeleton Archers in the Hardmode Dungeon",
+        "why": "Converts arrows into bone arrows and has high base crit.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "53 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Marrow"
+      },
+      {
+        "id": "mythril-repeater",
+        "name": "Mythril Repeater",
+        "slot": "weapon",
+        "icon": "items/mythril-repeater.png",
+        "source": "Crafted from Mythril Bars",
+        "why": "Second-tier Hardmode repeater crafted from Mythril Bars.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "39 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Repeater"
+      },
+      {
+        "id": "orichalcum-repeater",
+        "name": "Orichalcum Repeater",
+        "slot": "weapon",
+        "icon": "items/orichalcum-repeater.png",
+        "source": "Crafted from Orichalcum Bars",
+        "why": "Orichalcum equivalent of the Mythril Repeater.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "40 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Repeater"
+      },
+      {
+        "id": "palladium-repeater",
+        "name": "Palladium Repeater",
+        "slot": "weapon",
+        "icon": "items/palladium-repeater.png",
+        "source": "Crafted from Palladium Bars",
+        "why": "Palladium equivalent of the Cobalt Repeater.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "37 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Repeater"
+      },
+      {
+        "id": "pearlwood-bow",
+        "name": "Pearlwood Bow",
+        "slot": "weapon",
+        "icon": "items/pearlwood-bow.png",
+        "source": "Crafted from Pearlwood",
+        "why": "Crafted from Pearlwood, which only generates in the Hardmode Hallow.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pearlwood_Bow"
+      },
+      {
+        "id": "shadowflame-bow",
+        "name": "Shadowflame Bow",
+        "slot": "weapon",
+        "icon": "items/shadowflame-bow.png",
+        "source": "Dropped by Goblin Warlocks (Hardmode Goblin Army)",
+        "why": "Fires arrows that inflict the Shadowflame debuff.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "47 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Bow"
       },
       {
         "id": "clockwork-assault-rifle",
         "name": "Clockwork Assault Rifle",
         "slot": "weapon",
         "icon": "items/clockwork-assault-rifle.png",
-        "source": "Dropped by the Wall of Flesh",
-        "why": "It is a dependable carry-over weapon that stays relevant until your better Hardmode drops come online.",
-        "tags": ["hardmode"],
+        "source": "Dropped by Wall of Flesh",
+        "why": "Fires three-round bursts and drops from the Wall of Flesh at the start of Hardmode.",
+        "tags": [],
         "topPick": false,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "17 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Clockwork_Assault_Rifle"
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "slot": "weapon",
+        "icon": "items/shotgun.png",
+        "source": "Purchased from the Arms Dealer during Hardmode (25 GC)",
+        "why": "Fires a spread of bullets and is sold by the Arms Dealer only in Hardmode.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "24 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shotgun"
       }
     ],
     "armor": [
@@ -250,7 +883,9 @@
         "icon": "armor/adamantite-armor.png",
         "source": "Crafted from Adamantite Bars",
         "why": "The ranged helmet and solid defense make this the most broadly recommended pre-mech ranger set.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -260,7 +895,9 @@
         "icon": "armor/titanium-armor.png",
         "source": "Crafted from Titanium Bars",
         "why": "Titanium is still fully viable if that is your world ore route and you value the set bonus.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -270,7 +907,9 @@
         "icon": "armor/mythril-armor.png",
         "source": "Crafted from Mythril Bars",
         "why": "This is the midpoint option if you are not yet at top-tier Hardmode ore but need a real class set now.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -282,7 +921,9 @@
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "It is the cleanest direct damage increase available to ranger as soon as Hardmode begins.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -302,7 +943,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from early Hardmode wing routes",
         "why": "Flight is a practical requirement for staying safe while maintaining ranged uptime against the mechs.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -332,7 +975,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
         "why": "A dash to dodge attacks and reposition in a pinch.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -384,52 +1029,368 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "crystal-serpent",
-        "name": "Crystal Serpent",
+        "id": "bubble-gun",
+        "name": "Bubble Gun",
         "slot": "weapon",
-        "icon": "items/crystal-serpent.png",
-        "source": "Caught by fishing in the Hallow",
-        "why": "This is the mage standout for the phase because the splitting projectile gives excellent boss damage without awkward setup.",
-        "tags": ["hardmode"],
+        "icon": "items/bubble-gun.png",
+        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "why": "Rapidly fires a short-range spread of bubbles.",
+        "tags": [],
         "topPick": true,
-        "subclass": "wand",
-        "modifier": "Mythical"
+        "subclass": "magic-gun",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun"
       },
       {
-        "id": "meteor-staff",
-        "name": "Meteor Staff",
+        "id": "orange-zapinator",
+        "name": "Orange Zapinator",
         "slot": "weapon",
-        "icon": "items/meteor-staff.png",
-        "source": "Crafted from Meteorite Bars, Pixie Dust, and Souls of Light",
-        "why": "The falling projectile pattern is excellent when bosses hold still long enough for repeated hits.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "wand",
-        "modifier": "Mythical"
+        "icon": "items/orange-zapinator.png",
+        "source": "Purchased from the Traveling Merchant (Hardmode)",
+        "why": "Fires an erratic light beam with high random damage variance.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "magic-gun",
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Zapinator"
+      },
+      {
+        "id": "crystal-storm",
+        "name": "Crystal Storm",
+        "slot": "weapon",
+        "icon": "items/crystal-storm.png",
+        "source": "Crafted (Spell Tome + Crystal Shards) at a Bookcase",
+        "why": "Hallow counterpart that rapidly fires small bouncing crystal shards.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "spell-tome",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Storm"
       },
       {
         "id": "golden-shower",
         "name": "Golden Shower",
         "slot": "weapon",
         "icon": "items/golden-shower.png",
-        "source": "Crafted from Ichor, Souls of Night, and a Spell Tome at a Bookcase",
-        "why": "Even when it is not your main damage tool, the Ichor debuff is one of the strongest support effects mage can bring into this phase.",
-        "tags": ["hardmode", "crimson-only"],
+        "source": "Crafted (Spell Tome + Ichor) at a Bookcase",
+        "why": "Crimson counterpart firing ichor streams that inflict the armor-reducing Ichor debuff.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "spell-tome",
+        "stats": "30 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Golden_Shower"
+      },
+      {
+        "id": "crystal-serpent",
+        "name": "Crystal Serpent",
+        "slot": "weapon",
+        "icon": "items/crystal-serpent.png",
+        "source": "Fished in The Hallow (Hardmode)",
+        "why": "Fires a crystal bolt that bursts into shards on impact.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "40 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Serpent"
+      },
+      {
+        "id": "meteor-staff",
+        "name": "Meteor Staff",
+        "slot": "weapon",
+        "icon": "items/meteor-staff.png",
+        "source": "Crafted (20 Meteorite Bars + 10 Pixie Dust + 10 Souls of Light @ Mythril/Orichalcum Anvil)",
+        "why": "Calls a meteor down from the sky at the cursor for direct impact damage.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "50 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meteor_Staff"
+      },
+      {
+        "id": "sky-fracture",
+        "name": "Sky Fracture",
+        "slot": "weapon",
+        "icon": "items/sky-fracture.png",
+        "source": "Crafted (Magic Missile + 2 Light Shards + 16 Souls of Light @ Mythril/Orichalcum Anvil)",
+        "why": "Fires a fast energy blade with high velocity and no cursor control.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "38 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sky_Fracture"
+      },
+      {
+        "id": "spirit-flame",
+        "name": "Spirit Flame",
+        "slot": "weapon",
+        "icon": "items/spirit-flame.png",
+        "source": "Crafted (Desert Spirit Lamp + 2 Forbidden Fragment + 12 Soul of Night @ Mythril/Orichalcum Anvil)",
+        "why": "Summons homing spirit flames that circle before striking enemies.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "85 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spirit_Flame"
+      },
+      {
+        "id": "laser-rifle",
+        "name": "Laser Rifle",
+        "slot": "weapon",
+        "icon": "items/laser-rifle.png",
+        "source": "Dropped by Wall of Flesh",
+        "why": "Rapidly fires piercing lasers.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "29 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Laser_Rifle"
+      },
+      {
+        "id": "rainbow-gun",
+        "name": "Rainbow Gun",
+        "slot": "weapon",
+        "icon": "items/rainbow-gun.png",
+        "source": "Found in Hallowed Chest in the Dungeon (opened with a Hallowed Key)",
+        "why": "Launches a lasting rainbow that damages enemies along its arc.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "45 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun"
+      },
+      {
+        "id": "cursed-flames",
+        "name": "Cursed Flames",
+        "slot": "weapon",
+        "icon": "items/cursed-flames.png",
+        "source": "Crafted (Spell Tome + Cursed Flame) at a Bookcase",
+        "why": "Corruption counterpart firing bouncing fireballs that inflict Cursed Inferno.",
+        "tags": [],
         "topPick": false,
         "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "stats": "55 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flames"
+      },
+      {
+        "id": "clinger-staff",
+        "name": "Clinger Staff",
+        "slot": "weapon",
+        "icon": "items/clinger-staff.png",
+        "source": "Dropped by Corrupt Mimics (1/5) in the Hardmode Underground Corruption",
+        "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "summon-magic",
+        "stats": "43 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff"
       },
       {
         "id": "nimbus-rod",
         "name": "Nimbus Rod",
         "slot": "weapon",
         "icon": "items/nimbus-rod.png",
-        "source": "Dropped by Angry Nimbus during rain",
-        "why": "It gives you a persistent damage zone that can keep ticking while you focus on survival and mana management.",
-        "tags": ["hardmode"],
+        "source": "Dropped by Angry Nimbus (1/15) during rain in Hardmode",
+        "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
+        "tags": [],
         "topPick": false,
         "subclass": "summon-magic",
-        "modifier": "Mythical"
+        "stats": "30 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod"
+      },
+      {
+        "id": "blood-thorn",
+        "name": "Blood Thorn",
+        "slot": "weapon",
+        "icon": "items/blood-thorn.png",
+        "source": "Dropped by Hemogoblin Sharks (Blood Moon in Hardmode Crimson)",
+        "why": "Fires a thorny projectile that splits into homing spikes.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "34 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Thorn"
+      },
+      {
+        "id": "crystal-vile-shard",
+        "name": "Crystal Vile Shard",
+        "slot": "weapon",
+        "icon": "items/crystal-vile-shard.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "Summons a burst of crystal spikes from a surface toward the cursor.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "25 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Vile_Shard"
+      },
+      {
+        "id": "flower-of-frost",
+        "name": "Flower of Frost",
+        "slot": "weapon",
+        "icon": "items/flower-of-frost.png",
+        "source": "Dropped by Ice Mimics (Hardmode)",
+        "why": "Frozen counterpart of the Flower of Fire that throws a bouncing ice ball.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "60 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_of_Frost"
+      },
+      {
+        "id": "frost-staff",
+        "name": "Frost Staff",
+        "slot": "weapon",
+        "icon": "items/frost-staff.png",
+        "source": "Dropped by Icy Mermen and Ice Elementals (Hardmode Snow)",
+        "why": "Fires a short cone of frost that inflicts Frostburn.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "46 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Staff"
+      },
+      {
+        "id": "inferno-fork",
+        "name": "Inferno Fork",
+        "slot": "weapon",
+        "icon": "items/inferno-fork.png",
+        "source": "Dropped by Diabolists (Hardmode Dungeon)",
+        "why": "Fires a fireball that explodes into a lingering damaging blast.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork"
+      },
+      {
+        "id": "killing-deck",
+        "name": "Killing Deck",
+        "slot": "weapon",
+        "icon": "items/killing-deck.png",
+        "source": "Bought from the Wizard during a Blood Moon (Hardmode)",
+        "why": "Launches serpentine card projectiles that deal bonus damage when they return.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "22 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Killing_Deck"
+      },
+      {
+        "id": "life-drain",
+        "name": "Life Drain",
+        "slot": "weapon",
+        "icon": "items/life-drain.png",
+        "source": "Dropped by Crimson Mimics",
+        "why": "Channels a homing beam that heals the player as it damages enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Drain"
+      },
+      {
+        "id": "magic-dagger",
+        "name": "Magic Dagger",
+        "slot": "weapon",
+        "icon": "items/magic-dagger.png",
+        "source": "Dropped by Mimics (Hardmode)",
+        "why": "Throws a returning magic dagger toward the cursor.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "30 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Dagger"
+      },
+      {
+        "id": "medusa-head",
+        "name": "Medusa Head",
+        "slot": "weapon",
+        "icon": "items/medusa-head.png",
+        "source": "Dropped by Medusas (Marble Caves, Hardmode only)",
+        "why": "Fires a horizontal stone beam that petrifies enemies it hits.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "40 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Medusa_Head"
+      },
+      {
+        "id": "poison-staff",
+        "name": "Poison Staff",
+        "slot": "weapon",
+        "icon": "items/poison-staff.png",
+        "source": "Dropped by Black Recluses (Spider caves, Hardmode)",
+        "why": "Fires a poison fang projectile that pierces and inflicts Poisoned.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "43 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Poison_Staff"
+      },
+      {
+        "id": "razorblade-typhoon",
+        "name": "Razorblade Typhoon",
+        "slot": "weapon",
+        "icon": "items/razorblade-typhoon.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Fires high-velocity homing typhoons that pierce enemies and bounce off blocks.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "85 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon"
+      },
+      {
+        "id": "shadowbeam-staff",
+        "name": "Shadowbeam Staff",
+        "slot": "weapon",
+        "icon": "items/shadowbeam-staff.png",
+        "source": "Dropped by Necromancers (Hardmode Dungeon)",
+        "why": "Fires a fast beam that ricochets off walls and pierces enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "80 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff"
+      },
+      {
+        "id": "shadowflame-hex-doll",
+        "name": "Shadowflame Hex Doll",
+        "slot": "weapon",
+        "icon": "items/shadowflame-hex-doll.png",
+        "source": "Dropped by Goblin Warlocks (Hardmode Goblin Army)",
+        "why": "Fires homing shadowflame bolts that inflict the Shadowflame debuff.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "32 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll"
+      },
+      {
+        "id": "spectre-staff",
+        "name": "Spectre Staff",
+        "slot": "weapon",
+        "icon": "items/spectre-staff.png",
+        "source": "Dropped by Ragged Casters (Hardmode Dungeon)",
+        "why": "Fires a homing spectral bolt that seeks enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "65 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff"
+      },
+      {
+        "id": "unholy-trident",
+        "name": "Unholy Trident",
+        "slot": "weapon",
+        "icon": "items/unholy-trident.png",
+        "source": "Dropped by Red Devils (Underworld, Hardmode)",
+        "why": "Fires a spectral trident that passes through blocks.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "88 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Trident"
       }
     ],
     "armor": [
@@ -440,7 +1401,9 @@
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
         "why": "This hybrid set is widely loved in early Hardmode because it gives mage strong offense while leaving room for summon support.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -450,7 +1413,9 @@
         "icon": "armor/adamantite-armor.png",
         "source": "Crafted from Adamantite Bars",
         "why": "If you want a straightforward magic armor route, the Adamantite headgear is still a strong conventional choice.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -460,7 +1425,9 @@
         "icon": "armor/titanium-armor.png",
         "source": "Crafted from Titanium Bars",
         "why": "Titanium remains a valid defensive fallback when you need more survivability than a pure offense set gives.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -472,7 +1439,9 @@
         "icon": "accessories/sorcerer-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "The damage boost is immediate and efficient, which is exactly what mage wants from an early Hardmode accessory slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -502,7 +1471,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from early Hardmode wing routes",
         "why": "Mage especially benefits from cleaner flight paths because it buys room to cast while avoiding burst damage.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -522,7 +1493,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
         "why": "A dash to dodge attacks and reposition in a pinch.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -574,50 +1547,121 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "sanguine-staff",
-        "name": "Sanguine Staff",
-        "slot": "weapon",
-        "icon": "items/sanguine-staff.png",
-        "source": "Dropped by Dreadnautilus during Blood Moon fishing",
-        "why": "This is the consensus pre-mech minion because the bats stay aggressive and reliable through difficult boss movement.",
-        "tags": ["hardmode"],
-        "topPick": true,
-        "subclass": "minions"
-      },
-      {
         "id": "blade-staff",
         "name": "Blade Staff",
         "slot": "weapon",
         "icon": "items/blade-staff.png",
         "source": "Dropped by Queen Slime",
-        "why": "With defense reduction support, the fast-hit pattern can outperform bulkier summons on several bosses.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "minions"
+        "why": "Summons Enchanted Dagger minions with low base damage that ignore 25 defense, scaling on flat/tag bonuses.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "6 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff"
+      },
+      {
+        "id": "sanguine-staff",
+        "name": "Sanguine Staff",
+        "slot": "weapon",
+        "icon": "items/sanguine-staff.png",
+        "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
+        "why": "Summons fast Sanguine Bat minions; obtainable early Hardmode with no mechanical boss required.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "35 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff"
+      },
+      {
+        "id": "spider-staff",
+        "name": "Spider Staff",
+        "slot": "weapon",
+        "icon": "items/spider-staff.png",
+        "source": "Crafted from 16 Spider Fangs at a Mythril/Orichalcum Anvil",
+        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Staff"
+      },
+      {
+        "id": "queen-spider-staff",
+        "name": "Queen Spider Staff",
+        "slot": "weapon",
+        "icon": "items/queen-spider-staff.png",
+        "source": "Crafted from 24 Spider Fang at a Mythril/Orichalcum Anvil (Hardmode)",
+        "why": "Early Hardmode sentry summoning a Spider Turret that lobs bouncing egg projectiles.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff"
       },
       {
         "id": "firecracker",
         "name": "Firecracker",
         "slot": "weapon",
         "icon": "items/firecracker.png",
-        "source": "Dropped by Hallowed Mimics",
-        "why": "The tag explosion is build-defining in this phase and gives summon loadouts a real offensive identity.",
-        "tags": ["hardmode"],
-        "topPick": false,
+        "source": "Dropped by the Wall of Flesh",
+        "why": "Wall of Flesh drop whose tag detonates for a large burst of minion damage.",
+        "tags": [],
+        "topPick": true,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "37 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker"
+      },
+      {
+        "id": "tempest-staff",
+        "name": "Tempest Staff",
+        "slot": "weapon",
+        "icon": "items/tempest-staff.png",
+        "source": "Dropped by Duke Fishron (summonable any time in Hardmode)",
+        "why": "Summons Sharknado minions; Duke Fishron requires only Hardmode, no mechanical boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "50 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tempest_Staff"
+      },
+      {
+        "id": "barnacle-staff",
+        "name": "Barnacle Staff",
+        "slot": "weapon",
+        "icon": "items/barnacle-staff.png",
+        "source": "Rare catch when fishing in the Hardmode Jungle (any layer)",
+        "why": "Hardmode fished sentry summoning a hanging barnacle that poisons enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "33 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Barnacle_Staff"
       },
       {
         "id": "cool-whip",
         "name": "Cool Whip",
         "slot": "weapon",
         "icon": "items/cool-whip.png",
-        "source": "Crafted from Souls of Light, Souls of Night, and Frost Cores",
-        "why": "It is a strong alternative whip that adds extra pressure and fits naturally into early Hardmode summon routing.",
-        "tags": ["hardmode"],
+        "source": "Crafted (8 Soul of Light + 8 Soul of Night + 1 Frost Core at a Mythril/Orichalcum Anvil)",
+        "why": "Summons a Frost Wave and applies Frostburn to struck enemies.",
+        "tags": [],
         "topPick": false,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "45 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cool_Whip"
+      },
+      {
+        "id": "electric-eel",
+        "name": "Electric Eel",
+        "slot": "weapon",
+        "icon": "items/electric-eel.png",
+        "source": "Dropped by Duke Fishron (summonable in Hardmode, no boss prerequisite)",
+        "why": "Duke Fishron drop with long range that chains lightning between enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "150 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Electric_Eel"
       }
     ],
     "armor": [
@@ -628,7 +1672,9 @@
         "icon": "armor/spider-armor.png",
         "source": "Crafted from Spider Fangs",
         "why": "This is the straightforward pre-mech best-in-slot armor because the extra minions matter more than almost anything else.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -638,7 +1684,9 @@
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
         "why": "If you want a hybrid route, this is the reasonable alternative that still gives summoner useful stats.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -660,7 +1708,9 @@
         "icon": "accessories/summoner-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "Summoner gets a clean damage spike here, which is why this is the first offensive accessory you slot in.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -680,7 +1730,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Crafted or obtained from early Hardmode wing routes",
         "why": "You still need strong aerial control because summon builds win by staying alive while minions keep working.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -710,7 +1762,9 @@
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
         "why": "A dash to dodge attacks and reposition in a pinch.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],

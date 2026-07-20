@@ -8,24 +8,65 @@
         "name": "Terra Blade",
         "slot": "weapon",
         "icon": "items/terra-blade.png",
-        "source": "Crafted from True Excalibur and True Night's Edge",
-        "why": "It remains the best all-around projectile sword for the phase and still handles both Jungle Temple prep and general bossing cleanly.",
-        "tags": ["hardmode"],
+        "source": "Crafted (True Excalibur + True Night's Edge + Broken Hero Swords)",
+        "why": "Fires a fast green sword beam projectile on each swing.",
+        "tags": [],
         "topPick": true,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "85 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade"
       },
       {
-        "id": "vampire-knives",
-        "name": "Vampire Knives",
+        "id": "the-eye-of-cthulhu",
+        "name": "The Eye of Cthulhu",
         "slot": "weapon",
-        "icon": "items/vampire-knives.png",
-        "source": "Found in the Crimson biome chest of the Hardmode Dungeon",
-        "why": "The lifesteal keeps melee surprisingly stable in messy post-Plantera farming and event encounters.",
-        "tags": ["hardmode", "crimson-only"],
+        "icon": "items/the-eye-of-cthulhu.png",
+        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "115 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu"
+      },
+      {
+        "id": "paladins-hammer",
+        "name": "Paladin's Hammer",
+        "slot": "weapon",
+        "icon": "items/paladins-hammer.png",
+        "source": "Dropped by Paladins in the post-Plantera Dungeon",
+        "why": "High-damage throwing hammer dropped by post-Plantera Dungeon Paladins.",
+        "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
+        "subclass": "boomerang",
+        "stats": "100 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Hammer"
+      },
+      {
+        "id": "flower-pow",
+        "name": "Flower Pow",
+        "slot": "weapon",
+        "icon": "items/flower-pow.png",
+        "source": "Dropped by Plantera",
+        "why": "Post-Plantera flail dropped by Plantera that releases petals.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "130 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Pow"
+      },
+      {
+        "id": "christmas-tree-sword",
+        "name": "Christmas Tree Sword",
+        "slot": "weapon",
+        "icon": "items/christmas-tree-sword.png",
+        "source": "Dropped by Everscream (Frost Moon)",
+        "why": "Fires ornament projectiles when swung.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "86 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Christmas_Tree_Sword"
       },
       {
         "id": "seedler",
@@ -33,23 +74,103 @@
         "slot": "weapon",
         "icon": "items/seedler.png",
         "source": "Dropped by Plantera",
-        "why": "This is a strong immediate Plantera reward and another reliable projectile-heavy sword option for the phase.",
-        "tags": ["hardmode"],
+        "why": "Fires Seedler Nut projectiles that burst into thorn balls.",
+        "tags": [],
         "topPick": false,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "50 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
       },
       {
-        "id": "paladins-hammer",
-        "name": "Paladin's Hammer",
+        "id": "true-excalibur",
+        "name": "True Excalibur",
         "slot": "weapon",
-        "icon": "items/paladins-hammer.png",
-        "source": "Dropped by Paladins in the Hardmode Dungeon",
-        "why": "It gives melee a high-damage thrown option that fits well if you still like flail-like or returning weapon patterns.",
-        "tags": ["hardmode"],
+        "icon": "items/true-excalibur.png",
+        "source": "Crafted (Excalibur + Broken Hero Sword)",
+        "why": "Fires a projectile on swing; needs post-Plantera Broken Hero Sword.",
+        "tags": [],
         "topPick": false,
-        "subclass": "flail",
-        "modifier": "Legendary"
+        "subclass": "projectile-sword",
+        "stats": "72 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur"
+      },
+      {
+        "id": "true-night-s-edge",
+        "name": "True Night's Edge",
+        "slot": "weapon",
+        "icon": "items/true-night-s-edge.png",
+        "source": "Crafted (Night's Edge + Broken Hero Sword)",
+        "why": "Fires a spinning projectile on swing; needs Broken Hero Sword.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-sword",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge"
+      },
+      {
+        "id": "keybrand",
+        "name": "Keybrand",
+        "slot": "weapon",
+        "icon": "items/keybrand.png",
+        "source": "Dropped by Hardmode Dungeon armored bones",
+        "why": "Deals bonus damage to enemies below half health.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "105 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Keybrand"
+      },
+      {
+        "id": "north-pole",
+        "name": "North Pole",
+        "slot": "weapon",
+        "icon": "items/north-pole.png",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
+        "why": "Frost Moon spear that releases a homing snowflake and falling ice.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole"
+      },
+      {
+        "id": "psycho-knife",
+        "name": "Psycho Knife",
+        "slot": "weapon",
+        "icon": "items/psycho-knife.png",
+        "source": "Dropped by Psychos (Solar Eclipse)",
+        "why": "Grants stealth and increased damage while standing still.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "85 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Psycho_Knife"
+      },
+      {
+        "id": "the-horseman-s-blade",
+        "name": "The Horseman's Blade",
+        "slot": "weapon",
+        "icon": "items/the-horseman-s-blade.png",
+        "source": "Dropped by Pumpking (Pumpkin Moon)",
+        "why": "Summons homing pumpkin projectiles when hitting enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "150 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+      },
+      {
+        "id": "kraken",
+        "name": "Kraken",
+        "slot": "weapon",
+        "icon": "items/kraken.png",
+        "source": "1/400 drop from post-Plantera Hardmode Dungeon enemies",
+        "why": "Post-Plantera Dungeon drop and one of the strongest yoyos.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "95 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kraken"
       }
     ],
     "armor": [
@@ -60,7 +181,9 @@
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
         "why": "This is the safest conventional pre-Golem melee set because the research around Beetle timing is still a little contested.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +193,9 @@
         "icon": "armor/chlorophyte-armor.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "If you prefer a more generalist route, Chlorophyte still performs well through this entire phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -82,7 +207,9 @@
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is still the easiest best-in-slot melee accessory to justify because it rolls several offensive benefits into one slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -92,7 +219,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Post-Plantera enemies and events apply enough debuffs that this becomes even more comfortable than before.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -102,7 +231,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The broad stat bonus is valuable for any melee build that has already stabilized its core survival tools.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -112,7 +243,9 @@
         "icon": "accessories/any-wings.png",
         "source": "Obtained from strong post-Plantera mobility routes",
         "why": "Flight is still mandatory when your farming loop now includes the Hardmode Dungeon, events, and Temple approach.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -122,7 +255,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Crafted from Avenger Emblem and Eye of the Golem.",
         "why": "+10% damage and +8% crit, stacking with your class emblem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +267,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -184,52 +321,173 @@
     "class": "ranger",
     "weapons": [
       {
-        "id": "chain-gun",
-        "name": "Chain Gun",
+        "id": "eventide",
+        "name": "Eventide",
         "slot": "weapon",
-        "icon": "items/chain-gun.png",
-        "source": "Dropped by Santa-NK1 during Frost Moon",
-        "why": "The research repeatedly treats this as the top pre-Golem gun if you can clear the event for it.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/eventide.png",
+        "source": "Dropped by Empress of Light (post-Plantera)",
+        "why": "Fires homing star arrows, converting wooden arrows for free.",
+        "tags": [],
         "topPick": true,
-        "subclass": "gun",
-        "modifier": "Unreal"
-      },
-      {
-        "id": "megashark",
-        "name": "Megashark",
-        "slot": "weapon",
-        "icon": "items/megashark.png",
-        "source": "Crafted from the Minishark, Illegal Gun Parts, Souls of Might, and Shark Fins",
-        "why": "It stays relevant for players who have not gone deep on Frost Moon or event-specific farming yet.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
+        "subclass": "bow",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide"
       },
       {
         "id": "stake-launcher",
         "name": "Stake Launcher",
         "slot": "weapon",
         "icon": "items/stake-launcher.png",
-        "source": "Dropped by Vampires during Solar Eclipse",
-        "why": "Its high per-shot damage gives ranger another strong event-farm payoff before Golem.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by Mourning Wood (Pumpkin Moon)",
+        "why": "A repeater that fires high-damage Stakes as its ammunition.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "75 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher"
+      },
+      {
+        "id": "chain-gun",
+        "name": "Chain Gun",
+        "slot": "weapon",
+        "icon": "items/chain-gun.png",
+        "source": "Dropped by Santa-NK1 (Frost Moon)",
+        "why": "Rapid-fire gun dropped by Santa-NK1 during the post-Plantera Frost Moon.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "38 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun"
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "slot": "weapon",
+        "icon": "items/sniper-rifle.png",
+        "source": "Dropped by Skeleton Snipers in the post-Plantera Hardmode Dungeon",
+        "why": "High single-shot damage gun dropped by Skeleton Snipers after Plantera.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "200 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle"
+      },
+      {
+        "id": "venus-magnum",
+        "name": "Venus Magnum",
+        "slot": "weapon",
+        "icon": "items/venus-magnum.png",
+        "source": "Dropped by Plantera",
+        "why": "Fast-firing pistol dropped by Plantera.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venus_Magnum"
+      },
+      {
+        "id": "candy-corn-rifle",
+        "name": "Candy Corn Rifle",
+        "slot": "weapon",
+        "icon": "items/candy-corn-rifle.png",
+        "source": "Dropped by Pumpking (Pumpkin Moon)",
+        "why": "Fires candy corn projectiles and is dropped by Pumpking during the post-Plantera Pumpkin Moon.",
+        "tags": [],
         "topPick": false,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "60 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Candy_Corn_Rifle"
       },
       {
         "id": "tactical-shotgun",
         "name": "Tactical Shotgun",
         "slot": "weapon",
         "icon": "items/tactical-shotgun.png",
-        "source": "Dropped by Skeleton Commandos in the Hardmode Dungeon",
-        "why": "It is the best broadly available non-event shotgun and works nicely if you want a close-range ranger route.",
-        "tags": ["hardmode"],
+        "source": "Dropped by Tactical Skeletons in the post-Plantera Hardmode Dungeon",
+        "why": "Upgraded shotgun dropped by Tactical Skeletons after Plantera is defeated.",
+        "tags": [],
         "topPick": false,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "36 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun"
+      },
+      {
+        "id": "grenade-launcher",
+        "name": "Grenade Launcher",
+        "slot": "weapon",
+        "icon": "items/grenade-launcher.png",
+        "source": "Dropped by Plantera",
+        "why": "Lobs arcing grenades that use rocket ammo and explode on impact.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "60 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade_Launcher"
+      },
+      {
+        "id": "jack-o-lantern-launcher",
+        "name": "Jack 'O Lantern Launcher",
+        "slot": "weapon",
+        "icon": "items/jack-o-lantern-launcher.png",
+        "source": "Dropped by Pumpking during the Pumpkin Moon (post-Plantera)",
+        "why": "Fires jack-o'-lantern projectiles using rocket ammo.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "85 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jack_%27O_Lantern_Launcher"
+      },
+      {
+        "id": "nail-gun",
+        "name": "Nail Gun",
+        "slot": "weapon",
+        "icon": "items/nail-gun.png",
+        "source": "Dropped by Nailheads during a Solar Eclipse (post-Plantera)",
+        "why": "Fires Nails that stick into surfaces and enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "85 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nail_Gun"
+      },
+      {
+        "id": "proximity-mine-launcher",
+        "name": "Proximity Mine Launcher",
+        "slot": "weapon",
+        "icon": "items/proximity-mine-launcher.png",
+        "source": "Purchased from the Cyborg, who moves in after Plantera is defeated",
+        "why": "Fires mines that stick to surfaces and detonate when enemies come near.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "80 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Proximity_Mine_Launcher"
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "slot": "weapon",
+        "icon": "items/rocket-launcher.png",
+        "source": "Dropped by Skeleton Commandos in the Hardmode Dungeon (post-Plantera)",
+        "why": "Fires rockets whose loaded ammo type sets the projectile's damage and blast behavior.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "55 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Launcher"
+      },
+      {
+        "id": "snowman-cannon",
+        "name": "Snowman Cannon",
+        "slot": "weapon",
+        "icon": "items/snowman-cannon.png",
+        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "why": "Fires homing rockets that track the nearest enemy.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "launcher",
+        "stats": "67 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon"
       }
     ],
     "armor": [
@@ -240,7 +498,9 @@
         "icon": "armor/shroomite-armor.png",
         "source": "Crafted from Shroomite Bars",
         "why": "This is the consensus best ranger set in the phase because its helmet specialization and stealth utility are both real upgrades.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -250,7 +510,9 @@
         "icon": "armor/chlorophyte-armor.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "It remains a respectable fallback if your glowing mushroom setup or bar conversion route is not ready.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -262,7 +524,9 @@
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is still the cleanest premium ranger accessory because the crit and aim support both stay relevant.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -272,7 +536,9 @@
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "The direct damage bonus remains easy to slot into nearly every build in the phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -282,7 +548,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "A broad stat increase is especially nice once your weapon choices are already very strong.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -292,7 +560,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is valuable in the post-Plantera farming loop where random hits can stack ugly statuses fast.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -302,7 +572,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Crafted from Avenger Emblem and Eye of the Golem.",
         "why": "+10% damage and +8% crit, stacking with your class emblem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -312,7 +584,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -364,52 +638,134 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "razorblade-typhoon",
-        "name": "Razorblade Typhoon",
+        "id": "wasp-gun",
+        "name": "Wasp Gun",
         "slot": "weapon",
-        "icon": "items/razorblade-typhoon.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "This is the consensus top mage weapon of the phase because the homing blades stay oppressive in almost every encounter.",
-        "tags": ["hardmode"],
+        "icon": "items/wasp-gun.png",
+        "source": "Dropped by Plantera",
+        "why": "Fires several homing wasp projectiles per shot.",
+        "tags": [],
         "topPick": true,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "subclass": "magic-gun",
+        "stats": "31 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun"
       },
       {
-        "id": "shadowbeam-staff",
-        "name": "Shadowbeam Staff",
+        "id": "leaf-blower",
+        "name": "Leaf Blower",
         "slot": "weapon",
-        "icon": "items/shadowbeam-staff.png",
-        "source": "Dropped by Necromancers in the Hardmode Dungeon",
-        "why": "The bouncing beam pattern is excellent in tighter rooms and event funnels.",
-        "tags": ["hardmode"],
+        "icon": "items/leaf-blower.png",
+        "source": "Dropped by Plantera",
+        "why": "Rapidly fires small leaf projectiles.",
+        "tags": [],
         "topPick": false,
-        "subclass": "wand",
-        "modifier": "Mythical"
+        "subclass": "magic-gun",
+        "stats": "48 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Leaf_Blower"
       },
       {
-        "id": "inferno-fork",
-        "name": "Inferno Fork",
+        "id": "bat-scepter",
+        "name": "Bat Scepter",
         "slot": "weapon",
-        "icon": "items/inferno-fork.png",
-        "source": "Dropped by Diabolists in the Hardmode Dungeon",
-        "why": "It gives mage another high-impact projectile option with strong area denial for clustered targets.",
-        "tags": ["hardmode"],
+        "icon": "items/bat-scepter.png",
+        "source": "Dropped by Pumpking (Pumpkin Moon)",
+        "why": "Fires a spread of homing bats at nearby enemies.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "45 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bat_Scepter"
+      },
+      {
+        "id": "blizzard-staff",
+        "name": "Blizzard Staff",
+        "slot": "weapon",
+        "icon": "items/blizzard-staff.png",
+        "source": "Dropped by Ice Queen (Frost Moon)",
+        "why": "Calls down a barrage of ice shards from the sky over an area.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "58 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff"
       },
       {
         "id": "magnet-sphere",
         "name": "Magnet Sphere",
         "slot": "weapon",
         "icon": "items/magnet-sphere.png",
-        "source": "Dropped in the Hardmode Dungeon",
-        "why": "It remains a useful carry-over because it keeps dealing damage while you reposition.",
-        "tags": ["hardmode"],
+        "source": "Dropped by armored bones and Diabolists in the post-Plantera Dungeon",
+        "why": "Launches a slow sphere that fires lightning bolts at nearby enemies.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "48 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere"
+      },
+      {
+        "id": "nettle-burst",
+        "name": "Nettle Burst",
+        "slot": "weapon",
+        "icon": "items/nettle-burst.png",
+        "source": "Dropped by Plantera",
+        "why": "Projects an extending line of thorns that pierces through blocks.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst"
+      },
+      {
+        "id": "nightglow",
+        "name": "Nightglow",
+        "slot": "weapon",
+        "icon": "items/nightglow.png",
+        "source": "Dropped by Empress of Light (summoned post-Plantera)",
+        "why": "Fires a homing prismatic bolt that rains down piercing feathers.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "50 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow"
+      },
+      {
+        "id": "razorpine",
+        "name": "Razorpine",
+        "slot": "weapon",
+        "icon": "items/razorpine.png",
+        "source": "Dropped by Everscream (Frost Moon)",
+        "why": "Rapidly fires piercing pine-needle projectiles.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "48 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine"
+      },
+      {
+        "id": "resonance-scepter",
+        "name": "Resonance Scepter",
+        "slot": "weapon",
+        "icon": "items/resonance-scepter.png",
+        "source": "Dropped by the Princess town NPC when killed (Princess requires Plantera-gated Cyborg and all other NPCs)",
+        "why": "Fires a spread of rainbow music notes that pierce enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Resonance_Scepter"
+      },
+      {
+        "id": "stellar-tune",
+        "name": "Stellar Tune",
+        "slot": "weapon",
+        "icon": "items/stellar-tune.png",
+        "source": "Dropped by the Empress of Light (summoned post-Plantera)",
+        "why": "Fires homing star projectiles that pass through blocks and explode on impact.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "85 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune"
       }
     ],
     "armor": [
@@ -420,7 +776,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "The damage-focused Spectre route is the default bossing answer here and the strongest overall mage upgrade before Golem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -430,7 +788,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "Swapping to the hood is still worthwhile when you want the lifesteal safety valve for messy content.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -442,7 +802,9 @@
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It is still the cleanest premium mage accessory because it boosts damage while supporting mana flow.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -452,7 +814,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Mage appreciates the broad stat lift once the core mana accessories are already in place.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -472,7 +836,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity remains a big comfort upgrade when so much of the content now involves status-heavy enemies.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -482,7 +848,9 @@
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted from Magic Cuffs and Celestial Magnet.",
         "why": "Turns damage taken into mana and pulls in nearby mana stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -492,7 +860,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -544,50 +914,134 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "xeno-staff",
-        "name": "Xeno Staff",
+        "id": "deadly-sphere-staff",
+        "name": "Deadly Sphere Staff",
         "slot": "weapon",
-        "icon": "items/xeno-staff.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "This is the consensus best summoner minion for the phase because the UFOs stay accurate and aggressive.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/deadly-sphere-staff.png",
+        "source": "Dropped by Deadly Spheres during a post-Plantera Solar Eclipse",
+        "why": "Summons orbiting Deadly Sphere minions that dash at enemies.",
+        "tags": [],
         "topPick": true,
-        "subclass": "minions"
+        "subclass": "minions",
+        "stats": "55 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff"
       },
       {
-        "id": "tempest-staff",
-        "name": "Tempest Staff",
+        "id": "desert-tiger-staff",
+        "name": "Desert Tiger Staff",
         "slot": "weapon",
-        "icon": "items/tempest-staff.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "It offers another strong late-phase minion option if you have already gone through Fishron farming.",
-        "tags": ["hardmode"],
-        "topPick": false,
-        "subclass": "minions"
+        "icon": "items/desert-tiger-staff.png",
+        "source": "Found in the Dungeon's Desert Chest, unlocked with a Desert Key after Plantera",
+        "why": "Summons a single Desert Tiger minion that grows stronger with additional summons.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "41 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff"
       },
       {
-        "id": "dark-harvest",
-        "name": "Dark Harvest",
+        "id": "terraprisma",
+        "name": "Terraprisma",
         "slot": "weapon",
-        "icon": "items/dark-harvest.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "This is one of the best accessible late summoner whips and a major reason to farm Pumpkin Moon before Golem.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
+        "icon": "items/terraprisma.png",
+        "source": "Dropped by the Empress of Light if all damage is dealt during the day",
+        "why": "Summons homing sword minions; Empress is fought via a post-Plantera Prismatic Lacewing.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "90 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma"
+      },
+      {
+        "id": "kaleidoscope",
+        "name": "Kaleidoscope",
+        "slot": "weapon",
+        "icon": "items/kaleidoscope.png",
+        "source": "Dropped by the Empress of Light (summoned after Plantera)",
+        "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
+        "tags": [],
+        "topPick": true,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "170 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope"
       },
       {
         "id": "morning-star",
         "name": "Morning Star",
         "slot": "weapon",
         "icon": "items/morning-star.png",
-        "source": "Earned from Old One's Army Tier 2 or 3 progression",
-        "why": "If you invest in Old One's Army, this gives summoner another excellent whip route with strong direct control.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by Armored Bones enemies in the post-Plantera Hardmode Dungeon",
+        "why": "Dropped by Hardmode Dungeon Armored Bones and gains crit chance with combos.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "whip",
+        "stats": "160 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star"
+      },
+      {
+        "id": "pygmy-staff",
+        "name": "Pygmy Staff",
+        "slot": "weapon",
+        "icon": "items/pygmy-staff.png",
+        "source": "Dropped by Plantera",
+        "why": "Summons Pygmy minions that inflict Acid Venom.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "40 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff"
+      },
+      {
+        "id": "raven-staff",
+        "name": "Raven Staff",
+        "slot": "weapon",
+        "icon": "items/raven-staff.png",
+        "source": "Dropped by the Pumpking during the Pumpkin Moon",
+        "why": "Summons Raven minions; obtained from the post-Plantera Pumpkin Moon event.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "55 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff"
+      },
+      {
+        "id": "staff-of-the-frost-hydra",
+        "name": "Staff of the Frost Hydra",
+        "slot": "weapon",
+        "icon": "items/staff-of-the-frost-hydra.png",
+        "source": "Found in the Dungeon's Ice Chest, opened with a Frozen Key (post-Plantera)",
+        "why": "Post-Plantera sentry summoning a Frost Hydra that fires piercing frost blasts.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "100 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_the_Frost_Hydra"
+      },
+      {
+        "id": "dark-harvest",
+        "name": "Dark Harvest",
+        "slot": "weapon",
+        "icon": "items/dark-harvest.png",
+        "source": "Dropped by Pumpking during the Pumpkin Moon",
+        "why": "Pumpking drop whose swings can hit multiple times with a strong summon tag.",
+        "tags": [],
         "topPick": false,
         "subclass": "whip",
-        "modifier": "Legendary"
+        "stats": "110 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest"
+      },
+      {
+        "id": "vulgar-display-of-flower",
+        "name": "Vulgar Display of Flower",
+        "slot": "weapon",
+        "icon": "items/vulgar-display-of-flower.png",
+        "source": "Dropped by Plantera",
+        "why": "Plantera drop that briefly boosts minion and whip damage after striking.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "75 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower"
       }
     ],
     "armor": [
@@ -598,7 +1052,9 @@
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor after Plantera",
         "why": "This is the standard best pre-Golem summoner set because the extra minion capacity is too valuable to ignore.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -608,7 +1064,10 @@
         "icon": "armor/spooky-armor.png",
         "source": "Crafted from Spooky Wood from Pumpkin Moon",
         "why": "If you are farming the event anyway, this is a strong damage-focused alternative to Tiki.",
-        "tags": ["hardmode", "event"],
+        "tags": [
+          "hardmode",
+          "event"
+        ],
         "topPick": false
       },
       {
@@ -618,7 +1077,9 @@
         "icon": "armor/spider-armor.png",
         "source": "Crafted from Spider Fangs",
         "why": "It remains the reasonable fallback if your post-Plantera summon progression is still catching up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -630,7 +1091,9 @@
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This is the standout summoner accessory because it adds both slot value and direct minion scaling.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -650,7 +1113,10 @@
         "icon": "accessories/necromantic-scroll.png",
         "source": "Dropped by Mourning Wood during Pumpkin Moon",
         "why": "It is both a real summon upgrade and the natural step toward the Papyrus Scarab.",
-        "tags": ["hardmode", "event"],
+        "tags": [
+          "hardmode",
+          "event"
+        ],
         "topPick": false
       },
       {
@@ -660,7 +1126,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity gives summoner a lot of breathing room in the phase's messier event content.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -670,7 +1138,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Crafted from Sun Stone and Moon Stone.",
         "why": "A well-rounded boost to damage, crit, regen, and speed.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -680,7 +1150,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],

@@ -1,4 +1,10 @@
-import { getLoadoutByPhaseAndClass, getPhaseById } from './data';
+import { classes } from './data';
+import { getLoadoutByPhaseAndClass, getPhaseById, phases } from './data';
+import type { ClassId, PhaseId } from '../data/schema';
+
+const subclassIdsByClass = new Map<string, Set<string>>(
+  classes.map((c) => [c.id, new Set(c.subclasses.map((s) => s.id))]),
+);
 
 describe('data helpers', () => {
   it('returns the requested phase metadata', () => {
@@ -10,71 +16,32 @@ describe('data helpers', () => {
 
     expect(loadout?.phase).toBe('pre-bosses');
     expect(loadout?.class).toBe('melee');
-    expect(loadout?.weapons[0]?.name).toBe('Starfury');
+    expect(loadout?.weapons.length).toBeGreaterThan(0);
   });
 
-  it('returns authored data for the next progression phase too', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-skeletron', 'mage');
+  it('every phase/class loadout has valid, well-formed weapons', () => {
+    for (const phase of phases) {
+      for (const cls of classes) {
+        const loadout = getLoadoutByPhaseAndClass(
+          phase.id as PhaseId,
+          cls.id as ClassId,
+        );
+        expect(loadout).toBeDefined();
+        expect(loadout?.phase).toBe(phase.id);
+        expect(loadout?.class).toBe(cls.id);
 
-    expect(loadout?.phase).toBe('pre-skeletron');
-    expect(loadout?.class).toBe('mage');
-    expect(loadout?.weapons[0]?.name).toBe('Space Gun');
-  });
-
-  it('returns authored data for pre-wof loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-wof', 'ranger');
-
-    expect(loadout?.phase).toBe('pre-wof');
-    expect(loadout?.class).toBe('ranger');
-    expect(loadout?.weapons[0]?.name).toBe('Molten Fury');
-  });
-
-  it('returns authored data for pre-mech loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-mech', 'mage');
-
-    expect(loadout?.phase).toBe('pre-mech');
-    expect(loadout?.class).toBe('mage');
-    expect(loadout?.weapons[0]?.name).toBe('Crystal Serpent');
-  });
-
-  it('returns authored data for pre-plantera loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-plantera', 'ranger');
-
-    expect(loadout?.phase).toBe('pre-plantera');
-    expect(loadout?.class).toBe('ranger');
-    expect(loadout?.weapons[0]?.name).toBe('Megashark');
-  });
-
-  it('returns authored data for pre-golem loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-golem', 'mage');
-
-    expect(loadout?.phase).toBe('pre-golem');
-    expect(loadout?.class).toBe('mage');
-    expect(loadout?.weapons[0]?.name).toBe('Razorblade Typhoon');
-  });
-
-  it('returns authored data for pre-cultist loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-cultist', 'ranger');
-
-    expect(loadout?.phase).toBe('pre-cultist');
-    expect(loadout?.class).toBe('ranger');
-    expect(loadout?.weapons[0]?.name).toBe('Xenopopper');
-  });
-
-  it('returns authored data for pre-moonlord loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('pre-moonlord', 'mage');
-
-    expect(loadout?.phase).toBe('pre-moonlord');
-    expect(loadout?.class).toBe('mage');
-    expect(loadout?.weapons[0]?.name).toBe('Nebula Blaze');
-  });
-
-  it('returns authored data for endgame loadouts', () => {
-    const loadout = getLoadoutByPhaseAndClass('endgame', 'mage');
-
-    expect(loadout?.phase).toBe('endgame');
-    expect(loadout?.class).toBe('mage');
-    expect(loadout?.weapons[0]?.name).toBe('Last Prism');
+        const validSubclasses = subclassIdsByClass.get(cls.id)!;
+        for (const weapon of loadout!.weapons) {
+          expect(weapon.slot).toBe('weapon');
+          expect(weapon.id).toBeTruthy();
+          expect(weapon.name).toBeTruthy();
+          expect(weapon.source).toBeTruthy();
+          if (weapon.subclass) {
+            expect(validSubclasses.has(weapon.subclass)).toBe(true);
+          }
+        }
+      }
+    }
   });
 
   it('returns undefined for missing loadouts', () => {

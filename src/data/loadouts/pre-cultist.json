@@ -4,52 +4,56 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "flying-dragon",
+        "name": "Flying Dragon",
+        "slot": "weapon",
+        "icon": "items/flying-dragon.png",
+        "source": "Dropped by Betsy (Old One's Army Tier 3)",
+        "why": "Fires a red crescent-shaped projectile on each swing.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "projectile-sword",
+        "stats": "180 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Dragon"
+      },
+      {
         "id": "influx-waver",
         "name": "Influx Waver",
         "slot": "weapon",
         "icon": "items/influx-waver.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "The research is very consistent here: this is the strongest single-target melee sword before the Cultist fight.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by Martian Saucer (Martian Madness)",
+        "why": "Fires a teleporting blue sword projectile on each swing.",
+        "tags": [],
         "topPick": true,
         "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "stats": "100 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver"
       },
       {
-        "id": "terra-blade",
-        "name": "Terra Blade",
+        "id": "possessed-hatchet",
+        "name": "Possessed Hatchet",
         "slot": "weapon",
-        "icon": "items/terra-blade.png",
-        "source": "Crafted from True Excalibur and True Night's Edge",
-        "why": "It remains an excellent AoE and general-purpose melee answer even after stronger event weapons appear.",
-        "tags": ["hardmode"],
+        "icon": "items/possessed-hatchet.png",
+        "source": "Dropped by Golem",
+        "why": "Homing hatchet dropped by Golem.",
+        "tags": [],
         "topPick": false,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
+        "subclass": "boomerang",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Possessed_Hatchet"
       },
       {
-        "id": "horsemans-blade",
-        "name": "The Horseman's Blade",
+        "id": "golem-fist",
+        "name": "Golem Fist",
         "slot": "weapon",
-        "icon": "items/horsemans-blade.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "Its summoned pumpkins scale well in sustained fights and it also matters later as a Zenith ingredient.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/golem-fist.png",
+        "source": "Dropped by Golem (1/7)",
+        "why": "Launched flail dropped by Golem that fires a high-velocity fist.",
+        "tags": [],
         "topPick": false,
-        "subclass": "projectile-sword",
-        "modifier": "Legendary"
-      },
-      {
-        "id": "psycho-knife",
-        "name": "Psycho Knife",
-        "slot": "weapon",
-        "icon": "items/psycho-knife.png",
-        "source": "Dropped during Solar Eclipse",
-        "why": "If you like fast direct-contact melee, this gives a high-pressure option that still fits the phase well.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "true-melee",
-        "modifier": "Legendary"
+        "subclass": "flail",
+        "stats": "90 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Golem_Fist"
       }
     ],
     "armor": [
@@ -60,7 +64,9 @@
         "icon": "armor/beetle-armor.png",
         "source": "Crafted from Beetle Husks and Turtle Armor",
         "why": "This is the clear pre-Cultist melee set because it finally turns the Golem farm into your best class armor.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -70,7 +76,9 @@
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
         "why": "If Beetle crafting is still incomplete, Turtle remains the most reliable defensive fallback.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -82,7 +90,9 @@
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It continues to be the easiest best-in-slot melee accessory to justify all the way into the Lunar path.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -92,7 +102,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The damage and crit boost stacks perfectly with melee's now-mature weapon pool.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -102,7 +114,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The dodge and dash are both very relevant once event pressure and fast boss patterns dominate the phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -112,7 +126,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "A broad stat bump remains strong once your class-specific melee slots are already established.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -122,7 +138,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Crafted from Obsidian Shield and Ankh Charm.",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -132,7 +150,9 @@
         "icon": "accessories/charm-of-myths.png",
         "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
         "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -184,52 +204,69 @@
     "class": "ranger",
     "weapons": [
       {
+        "id": "aerial-bane",
+        "name": "Aerial Bane",
+        "slot": "weapon",
+        "icon": "items/aerial-bane.png",
+        "source": "Dropped by Betsy (Tier 3 Old One's Army, post-Golem)",
+        "why": "Fires arrows that split into extra arrows when aimed upward.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "38 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Aerial_Bane"
+      },
+      {
         "id": "xenopopper",
         "name": "Xenopopper",
         "slot": "weapon",
         "icon": "items/xenopopper.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "The consensus top gun here is Xenopopper because of how absurdly well it scales with strong bullet choices.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by the Martian Saucer (Martian Madness)",
+        "why": "Fires a spread of bullets and drops from the Martian Saucer during post-Golem Martian Madness.",
+        "tags": [],
         "topPick": true,
         "subclass": "gun",
-        "modifier": "Unreal"
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Xenopopper"
       },
       {
-        "id": "tsunami",
-        "name": "Tsunami",
+        "id": "celebration",
+        "name": "Celebration",
         "slot": "weapon",
-        "icon": "items/tsunami.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Bow players still have a premier route here, and Tsunami is the standout choice when paired with strong arrows.",
-        "tags": ["hardmode"],
+        "icon": "items/celebration.png",
+        "source": "Purchased from the Party Girl after Golem is defeated",
+        "why": "Fires a spread of firework rockets using rocket ammo.",
+        "tags": [],
         "topPick": false,
-        "subclass": "bow",
-        "modifier": "Unreal"
+        "subclass": "launcher",
+        "stats": "25 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celebration"
       },
       {
         "id": "electrosphere-launcher",
         "name": "Electrosphere Launcher",
         "slot": "weapon",
         "icon": "items/electrosphere-launcher.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "It gives ranger a real high-end launcher option for crowded waves and arena control.",
-        "tags": ["hardmode", "event"],
+        "source": "Dropped by the Martian Saucer during Martian Madness (post-Golem)",
+        "why": "Fires rockets that leave a lingering electrified damage field.",
+        "tags": [],
         "topPick": false,
         "subclass": "launcher",
-        "modifier": "Unreal"
+        "stats": "40 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Electrosphere_Launcher"
       },
       {
-        "id": "chain-gun",
-        "name": "Chain Gun",
+        "id": "stynger",
+        "name": "Stynger",
         "slot": "weapon",
-        "icon": "items/chain-gun.png",
-        "source": "Dropped by Santa-NK1 during Frost Moon",
-        "why": "It remains an excellent event-gated gun if you already did the Frost Moon grind earlier.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/stynger.png",
+        "source": "Dropped by Golem",
+        "why": "Fires Stynger Bolts that burst into shrapnel on impact.",
+        "tags": [],
         "topPick": false,
-        "subclass": "gun",
-        "modifier": "Unreal"
+        "subclass": "launcher",
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stynger"
       }
     ],
     "armor": [
@@ -240,7 +277,9 @@
         "icon": "armor/shroomite-armor.png",
         "source": "Crafted from Shroomite Bars",
         "why": "This is still the ranger armor to beat because nothing else in the phase offers a better full package.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       }
     ],
@@ -252,7 +291,9 @@
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the top ranger accessory thanks to its crit and aim support on already strong weapons.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -262,7 +303,9 @@
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
         "why": "A direct ranged-damage boost still fits cleanly into nearly every serious setup.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -272,7 +315,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The broad stat boost remains useful once your core ranger pieces are already locked in.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -282,7 +327,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity keeps its value in the event-heavy and Dungeon-adjacent parts of the phase.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -292,7 +339,9 @@
         "icon": "accessories/destroyer-emblem.png",
         "source": "Crafted from Avenger Emblem and Eye of the Golem.",
         "why": "+10% damage and +8% crit, stacking with your class emblem.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -302,7 +351,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -354,52 +405,69 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "razorblade-typhoon",
-        "name": "Razorblade Typhoon",
+        "id": "charged-blaster-cannon",
+        "name": "Charged Blaster Cannon",
         "slot": "weapon",
-        "icon": "items/razorblade-typhoon.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "It is still the elite mage carry here because the homing blades remain incredible on both bosses and events.",
-        "tags": ["hardmode"],
+        "icon": "items/charged-blaster-cannon.png",
+        "source": "Dropped by Martian Madness enemies (post-Golem)",
+        "why": "Charges up to fire a large piercing laser beam.",
+        "tags": [],
         "topPick": true,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "subclass": "magic-gun",
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Charged_Blaster_Cannon"
       },
       {
-        "id": "razorpine",
-        "name": "Razorpine",
+        "id": "laser-machinegun",
+        "name": "Laser Machinegun",
         "slot": "weapon",
-        "icon": "items/razorpine.png",
-        "source": "Dropped by Everscream during Frost Moon",
-        "why": "If you farm Frost Moon, this gives mage one of its highest-DPS rapid-fire spells before the Lunar tier.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/laser-machinegun.png",
+        "source": "Dropped by the Martian Saucer during Martian Madness (post-Golem)",
+        "why": "Rapidly fires lasers in a cone, increasing fire rate when used continuously.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "magic-gun",
+        "stats": "60 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Laser_Machinegun"
+      },
+      {
+        "id": "heat-ray",
+        "name": "Heat Ray",
+        "slot": "weapon",
+        "icon": "items/heat-ray.png",
+        "source": "Dropped by Golem",
+        "why": "Fires a beam that hits instantaneously.",
+        "tags": [],
         "topPick": false,
-        "subclass": "spell-tome",
-        "modifier": "Mythical"
+        "subclass": "magic-gun",
+        "stats": "90 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Heat_Ray"
       },
       {
-        "id": "blizzard-staff",
-        "name": "Blizzard Staff",
+        "id": "betsys-wrath",
+        "name": "Betsy's Wrath",
         "slot": "weapon",
-        "icon": "items/blizzard-staff.png",
-        "source": "Dropped by Ice Queen during Frost Moon",
-        "why": "The overhead barrage is useful both for events and for fights where you can keep the target inside the storm.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/betsys-wrath.png",
+        "source": "Dropped by Betsy (Old One's Army Tier 3, post-Golem)",
+        "why": "Fires a projectile that reduces enemy defense and creates homing shards.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Betsy%27s_Wrath"
       },
       {
-        "id": "bat-scepter",
-        "name": "Bat Scepter",
+        "id": "staff-of-earth",
+        "name": "Staff of Earth",
         "slot": "weapon",
-        "icon": "items/bat-scepter.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "This is another strong event reward if your mage route leans more on homing swarms than fixed beams.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/staff-of-earth.png",
+        "source": "Dropped by Golem",
+        "why": "Throws large bouncing boulders that explode on impact.",
+        "tags": [],
         "topPick": false,
         "subclass": "wand",
-        "modifier": "Mythical"
+        "stats": "125 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_Earth"
       }
     ],
     "armor": [
@@ -410,7 +478,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "The damage-focused Spectre setup stays the best default mage armor right up until Lunar gear exists.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -420,7 +490,9 @@
         "icon": "armor/spectre-armor.png",
         "source": "Crafted from Spectre Bars",
         "why": "You still want access to the lifesteal variant when survivability matters more than peak DPS.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -432,7 +504,9 @@
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "This remains the cleanest premium mage accessory because it combines damage and mana utility without any downside.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -442,7 +516,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The all-around stat lift is still useful once the core mage resource slots are already solved.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -462,7 +538,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is a meaningful comfort boost during the phase's event-heavy grind.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -472,7 +550,9 @@
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted from Magic Cuffs and Celestial Magnet.",
         "why": "Turns damage taken into mana and pulls in nearby mana stars.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -482,7 +562,9 @@
         "icon": "accessories/charm-of-myths.png",
         "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
         "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
@@ -539,45 +621,64 @@
         "slot": "weapon",
         "icon": "items/xeno-staff.png",
         "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "The research keeps Xeno Staff as the top accessible pre-Cultist summon because of its accuracy and consistency.",
-        "tags": ["hardmode", "event"],
+        "why": "Summons UFO minions with instantaneous non-missing attacks; event is post-Golem.",
+        "tags": [],
         "topPick": true,
-        "subclass": "minions"
+        "subclass": "minions",
+        "stats": "36 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Xeno_Staff"
       },
       {
-        "id": "raven-staff",
-        "name": "Raven Staff",
+        "id": "ballista-staff",
+        "name": "Ballista Staff",
         "slot": "weapon",
-        "icon": "items/raven-staff.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "It gives summoner another strong event-farm minion if you prefer a faster swarm feel over UFOs.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "minions"
+        "icon": "items/ballista-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the ballista bolt sentry.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "156 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Staff"
       },
       {
-        "id": "dark-harvest",
-        "name": "Dark Harvest",
+        "id": "explosive-trap-staff",
+        "name": "Explosive Trap Staff",
         "slot": "weapon",
-        "icon": "items/dark-harvest.png",
-        "source": "Dropped by Pumpking during Pumpkin Moon",
-        "why": "This remains one of the best realistic late whips and a major reason to clear Pumpkin Moon before Cultist.",
-        "tags": ["hardmode", "event"],
-        "topPick": false,
-        "subclass": "whip",
-        "modifier": "Legendary"
+        "icon": "items/explosive-trap-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the explosive trap sentry.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "126 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Staff"
       },
       {
-        "id": "morning-star",
-        "name": "Morning Star",
+        "id": "flameburst-staff",
+        "name": "Flameburst Staff",
         "slot": "weapon",
-        "icon": "items/morning-star.png",
-        "source": "Earned from Old One's Army Tier 3 progression",
-        "why": "If you invest in Old One's Army, this is another excellent whip that stays viable right up to Lunar progression.",
-        "tags": ["hardmode", "event"],
+        "icon": "items/flameburst-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the flameburst fireball sentry.",
+        "tags": [],
         "topPick": false,
-        "subclass": "whip",
-        "modifier": "Legendary"
+        "subclass": "sentries",
+        "stats": "88 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flameburst_Staff"
+      },
+      {
+        "id": "lightning-aura-staff",
+        "name": "Lightning Aura Staff",
+        "slot": "weapon",
+        "icon": "items/lightning-aura-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the lightning aura sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "34 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Aura_Staff"
       }
     ],
     "armor": [
@@ -588,7 +689,9 @@
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor",
         "why": "It remains the standard pre-Cultist summoner armor because the minion capacity is still the most practical upgrade.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -598,7 +701,10 @@
         "icon": "armor/spooky-armor.png",
         "source": "Crafted from Spooky Wood from Pumpkin Moon",
         "why": "If you already farmed the event, this gives a more damage-skewed alternative without abandoning the class entirely.",
-        "tags": ["hardmode", "event"],
+        "tags": [
+          "hardmode",
+          "event"
+        ],
         "topPick": false
       }
     ],
@@ -610,7 +716,9 @@
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "It stays the best summoner accessory because it improves both minion count and direct summon scaling.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": true
       },
       {
@@ -630,7 +738,9 @@
         "icon": "accessories/celestial-stone.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The broad stat bonus supports both your summon output and your ability to stay in control of the fight.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -640,7 +750,9 @@
         "icon": "accessories/ankh-shield.png",
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Debuff immunity is still a big quality-of-life and survivability gain for the class.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -650,7 +762,9 @@
         "icon": "accessories/necromantic-scroll.png",
         "source": "Dropped by Mourning Wood during the Pumpkin Moon.",
         "why": "+1 minion and +10% minion damage, a core summoner slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       },
       {
@@ -660,7 +774,9 @@
         "icon": "accessories/master-ninja-gear.png",
         "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
         "why": "Dash, a dodge chance, and wall-climb in a single slot.",
-        "tags": ["hardmode"],
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false
       }
     ],
