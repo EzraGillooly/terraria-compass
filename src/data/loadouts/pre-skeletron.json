@@ -230,7 +230,7 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
+        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
         "topPick": true
@@ -240,8 +240,8 @@
         "name": "Shield of Cthulhu",
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu treasure bag",
-        "why": "The dash gives both offense and survivability, especially for melee builds that need to stay in range.",
+        "source": "Dropped from the Eye of Cthulhu treasure bag",
+        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
         "tags": [
           "expert-only"
         ],
@@ -252,7 +252,7 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Combined from Hermes Boots and Rocket Boots",
+        "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
         "topPick": false
@@ -262,8 +262,18 @@
         "name": "Feral Claws",
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle chests",
-        "why": "The melee speed boost is still a big deal and carries naturally into later melee progression.",
+        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
+        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "band-of-regeneration",
+        "name": "Band of Regeneration",
+        "slot": "accessory",
+        "icon": "accessories/band-of-regeneration.png",
+        "source": "Found in Underground Chests",
+        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
         "topPick": false
       }
@@ -476,8 +486,8 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
-        "why": "It solves knockback and fire-block problems in one slot, which is huge for a ranged class setting up longer fights.",
+        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
         "topPick": true
       },
@@ -486,18 +496,8 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Combined from Hermes Boots and Rocket Boots",
-        "why": "Ranger feels dramatically better once horizontal and vertical repositioning both improve.",
-        "tags": [],
-        "topPick": false
-      },
-      {
-        "id": "magic-quiver",
-        "name": "Magic Quiver",
-        "slot": "accessory",
-        "icon": "accessories/magic-quiver.png",
-        "source": "Dropped by Skeleton Archers",
-        "why": "Bow builds spike hard with this because the arrow speed and damage bonuses are immediately noticeable.",
+        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
         "topPick": false
       },
@@ -506,11 +506,31 @@
         "name": "Shield of Cthulhu",
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu treasure bag",
-        "why": "The dash is still strong for quick spacing corrections and emergency saves.",
+        "source": "Dropped from the Eye of Cthulhu treasure bag",
+        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
         "tags": [
           "expert-only"
         ],
+        "topPick": false
+      },
+      {
+        "id": "lucky-horseshoe",
+        "name": "Lucky Horseshoe",
+        "slot": "accessory",
+        "icon": "accessories/lucky-horseshoe.png",
+        "source": "Found in Skyware Chests and Sky Crates",
+        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "band-of-regeneration",
+        "name": "Band of Regeneration",
+        "slot": "accessory",
+        "icon": "accessories/band-of-regeneration.png",
+        "source": "Found in Underground Chests",
+        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "tags": [],
         "topPick": false
       }
     ],
@@ -746,8 +766,8 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted from Nature's Gift and a Mana Regeneration Band",
-        "why": "Mage becomes much easier to pilot once potion use is automatic instead of one more thing to manage manually.",
+        "source": "Crafted (Nature’s Gift + Mana Regeneration Band)",
+        "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
         "topPick": true
       },
@@ -756,7 +776,7 @@
         "name": "Magic Cuffs",
         "slot": "accessory",
         "icon": "accessories/magic-cuffs.png",
-        "source": "Combined from a Mana Regeneration Band and Shackle",
+        "source": "Crafted (Mana Regeneration Band + Shackle)",
         "why": "The max mana and on-hit mana return are both excellent on longer fights.",
         "tags": [],
         "topPick": false
@@ -766,20 +786,31 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
-        "why": "It keeps you from getting bullied by knockback while exploring lava-heavy areas and setting up later fights.",
+        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": false
+        "topPick": true
       },
       {
         "id": "spectre-boots",
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Combined from Hermes Boots and Rocket Boots",
-        "why": "Mobility is still a major survivability multiplier for a fragile class.",
+        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "band-of-starpower",
+        "name": "Band of Starpower",
+        "slot": "accessory",
+        "icon": "accessories/band-of-starpower.png",
+        "source": "Found in Shadow Orbs / Crimson Hearts",
+        "why": "+20 max mana for early casters.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
       }
     ],
     "buffs": [
@@ -1048,8 +1079,8 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Combined from Obsidian Skull and Cobalt Shield at the Tinkerer's Workshop",
-        "why": "Summoner has less margin for getting bounced around, so knockback immunity matters a lot.",
+        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
         "topPick": true
       },
@@ -1058,7 +1089,7 @@
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor at night in the Jungle",
+        "source": "Purchased from the Witch Doctor",
         "why": "The extra minion slot is one of the highest-value accessories a summoner can equip.",
         "tags": [],
         "topPick": false
@@ -1068,8 +1099,8 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Combined from Hermes Boots and Rocket Boots",
-        "why": "Mobility continues to solve a lot of early summoner survivability problems.",
+        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
         "topPick": false
       },
@@ -1078,11 +1109,21 @@
         "name": "Shield of Cthulhu",
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu treasure bag",
-        "why": "The dash is especially helpful for a class that often wins by staying alive while summons do the work.",
+        "source": "Dropped from the Eye of Cthulhu treasure bag",
+        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
         "tags": [
           "expert-only"
         ],
+        "topPick": false
+      },
+      {
+        "id": "feral-claws",
+        "name": "Feral Claws",
+        "slot": "accessory",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
+        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
+        "tags": [],
         "topPick": false
       }
     ],

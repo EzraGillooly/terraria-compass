@@ -210,7 +210,7 @@ export function Loadouts() {
                   width="28" height="28" loading="lazy"
                   onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
                 />
-                {cls.name}
+                <span className={styles.cbtnLabel}>{cls.name}</span>
               </button>
             ))}
           </div>

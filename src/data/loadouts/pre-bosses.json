@@ -1148,23 +1148,11 @@
     ],
     "accessories": [
       {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
-        "tags": [
-          "expert-only"
-        ],
-        "topPick": false
-      },
-      {
         "id": "hermes-boots",
         "name": "Hermes Boots",
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
-        "source": "Found in surface chests",
+        "source": "Found in Underground and Cavern Chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
         "topPick": true
@@ -1174,7 +1162,7 @@
         "name": "Cloud in a Bottle",
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
-        "source": "Found in surface chests",
+        "source": "Found in Underground and Cavern Chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
         "topPick": false
@@ -1184,7 +1172,7 @@
         "name": "Feral Claws",
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
-        "source": "Found in Ivy Chests or Jungle Crates",
+        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
         "topPick": false
@@ -1194,8 +1182,18 @@
         "name": "Band of Regeneration",
         "slot": "accessory",
         "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in surface chests",
+        "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "lucky-horseshoe",
+        "name": "Lucky Horseshoe",
+        "slot": "accessory",
+        "icon": "accessories/lucky-horseshoe.png",
+        "source": "Found in Skyware Chests and Sky Crates",
+        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
         "topPick": false
       }
@@ -1920,8 +1918,8 @@
         "name": "Hermes Boots",
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
-        "source": "Found in surface chests",
-        "why": "Rangers live and die by spacing, so this is the first accessory you feel immediately.",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
         "topPick": true
       },
@@ -1930,8 +1928,8 @@
         "name": "Cloud in a Bottle",
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
-        "source": "Found in surface chests",
-        "why": "The vertical reset helps you reposition while continuing to fire.",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
         "topPick": false
       },
@@ -1940,10 +1938,31 @@
         "name": "Lucky Horseshoe",
         "slot": "accessory",
         "icon": "accessories/lucky-horseshoe.png",
-        "source": "Found in Sky Crates or Floating Island chests",
+        "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "band-of-regeneration",
+        "name": "Band of Regeneration",
+        "slot": "accessory",
+        "icon": "accessories/band-of-regeneration.png",
+        "source": "Found in Underground Chests",
+        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "shackle",
+        "name": "Shackle",
+        "slot": "accessory",
+        "icon": "accessories/shackle.png",
+        "source": "Dropped by Zombies",
+        "why": "+1 defense from a very common early drop.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
       }
     ],
     "buffs": [
@@ -2246,28 +2265,49 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted from Nature's Gift and a Mana Regeneration Band",
+        "source": "Crafted (Nature’s Gift + Mana Regeneration Band)",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
         "topPick": true
-      },
-      {
-        "id": "natures-gift",
-        "name": "Nature's Gift",
-        "slot": "accessory",
-        "icon": "accessories/natures-gift.png",
-        "source": "Found in the Jungle",
-        "why": "The mana-cost reduction helps even before you can turn it into Mana Flower.",
-        "tags": [],
-        "topPick": false
       },
       {
         "id": "hermes-boots",
         "name": "Hermes Boots",
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
-        "source": "Found in surface chests",
-        "why": "Mages are fragile, so dependable mobility is still one of your biggest upgrades.",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "cloud-in-a-bottle",
+        "name": "Cloud in a Bottle",
+        "slot": "accessory",
+        "icon": "accessories/cloud-in-a-bottle.png",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "band-of-starpower",
+        "name": "Band of Starpower",
+        "slot": "accessory",
+        "icon": "accessories/band-of-starpower.png",
+        "source": "Found in Shadow Orbs / Crimson Hearts",
+        "why": "+20 max mana for early casters.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+      },
+      {
+        "id": "lucky-horseshoe",
+        "name": "Lucky Horseshoe",
+        "slot": "accessory",
+        "icon": "accessories/lucky-horseshoe.png",
+        "source": "Found in Skyware Chests and Sky Crates",
+        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
         "topPick": false
       }
@@ -2530,8 +2570,8 @@
         "name": "Hermes Boots",
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
-        "source": "Found in surface chests",
-        "why": "Summoner is vulnerable early, so this is still the most practical first accessory slot.",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
         "topPick": true
       },
@@ -2540,8 +2580,8 @@
         "name": "Cloud in a Bottle",
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
-        "source": "Found in surface chests",
-        "why": "It gives you one more emergency reposition while your minions keep working.",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
         "topPick": false
       },
@@ -2550,8 +2590,28 @@
         "name": "Feral Claws",
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle chests",
-        "why": "Whip speed matters, so this is a strong pickup once you lean into the whip-minion combo.",
+        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
+        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "band-of-regeneration",
+        "name": "Band of Regeneration",
+        "slot": "accessory",
+        "icon": "accessories/band-of-regeneration.png",
+        "source": "Found in Underground Chests",
+        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "lucky-horseshoe",
+        "name": "Lucky Horseshoe",
+        "slot": "accessory",
+        "icon": "accessories/lucky-horseshoe.png",
+        "source": "Found in Skyware Chests and Sky Crates",
+        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
         "topPick": false
       }

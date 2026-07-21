@@ -26,6 +26,8 @@
 /* Class pills — white when unselected, header-tab green when selected */
 .cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--card); border: 1px solid #000; border-radius: var(--radius-lg); box-shadow: 0 2px 6px rgba(8,14,34,.25); padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
 .cbtn:hover { background: color-mix(in oklab, var(--accent) 12%, var(--card)); }
+/* nudge just the label — Andy Bold sits high, but the icon is already centred */
+.cbtnLabel { display: inline-block; line-height: 1; position: relative; top: 1px; }
 .cdot { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .cbtn.on { background: var(--accent); color: #fff; -webkit-text-stroke: 2px #000; paint-order: stroke fill; }
 
@@ -137,7 +139,7 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
 /* ── Buffs ── */
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 .buffPills { display: flex; flex-wrap: wrap; gap: 6px; }
-.buffPill { font-weight: 700; font-size: 11px; color: #12283B; background: color-mix(in oklab, var(--warm) 82%, #fff); border-radius: var(--radius-pill); padding: 5px 11px 3px; line-height: 1; }
+.buffPill { font-weight: 700; font-size: 11px; color: #12283B; background: color-mix(in oklab, var(--warm) 82%, #fff); border-radius: var(--radius-pill); padding: 6px 11px 4px; line-height: 1.2; text-align: center; }
 
 .empty { color: #A9BCE0; font-size: 13px; font-style: italic; margin: 0; padding: 8px 0; }
 
