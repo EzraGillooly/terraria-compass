@@ -13,14 +13,8 @@ import styles from './Loadouts.module.css';
 const BASE = import.meta.env.BASE_URL;
 const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
 
-/* Class rail icons — a representative early-game weapon per class, pulled from the wiki.
-   (Terraria has no "bronze" sword; Copper Broadsword is the closest bronze-hued blade.) */
-const CLASS_ICON: Record<ClassId, string> = {
-  melee: 'Copper_Broadsword',
-  ranger: 'Wooden_Bow',
-  mage: 'Topaz_Staff',
-  summoner: 'Finch_Staff',
-};
+/* Class rail icons — a representative early-game weapon per class, served locally
+   from public/icons/classes (Copper Broadsword, Wooden Bow, Topaz Staff, Finch Staff). */
 
 /* Phase → biome backdrop / representative boss (data has no bossIcon yet). */
 const PHASE_BIOME: Record<PhaseId, string> = {
@@ -67,15 +61,19 @@ function makeErrorHandler(wikiSrc: string, fallback: string) {
 
 const FALLBACK_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Crect width='36' height='36' fill='%23E6F2ED'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%234F6E60' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-function iconSrcs(icon: string) {
+/* Prefer the real wiki page name for the sprite fallback — kebab→TitleCase mangles
+   names with apostrophes ("Ball O' Hurt" → Ball_O_Hurt, which 404s). */
+function iconSrcs(icon: string, wikiUrl?: string) {
   const stem = icon.replace(/\.png$/i, '').split('/').pop() ?? '';
-  return { local: `${BASE}icons/${icon}`, wiki: `${WIKI}/${makeWikiName(stem)}.png` };
+  const fromWikiUrl = wikiUrl?.split('/wiki/')[1];
+  const wikiName = fromWikiUrl || makeWikiName(stem);
+  return { local: `${BASE}icons/${icon}`, wiki: `${WIKI}/${wikiName}.png` };
 }
 
 /* ── Weapon card ── */
 function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: string; onOpen: (i: Item) => void }) {
   const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
-  const { local, wiki } = iconSrcs(item.icon);
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
 
   return (
     <button
@@ -113,7 +111,7 @@ function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
       </div>
     );
   }
-  const { local, wiki } = iconSrcs(item.icon);
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   return (
     <button type="button" className={`${styles.accSlot} ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
       <img
@@ -132,6 +130,7 @@ export function Loadouts() {
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
+  const [showRest, setShowRest] = useState(false);
 
   const loadout = getLoadoutByPhaseAndClass(phaseId, classId);
   const classDef = classes.find((c) => c.id === classId)!;
@@ -141,14 +140,28 @@ export function Loadouts() {
 
   const safeLoadout = loadout ?? { phase: phaseId, class: classId, weapons: [], armor: [], accessories: [], buffs: [] };
 
-  const { clearSubclassFilters, isAllSelected, isSubclassEnabled, selectedSubclassSet, toggleSubclass } =
+  const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(classId);
 
-  const bestWeapons = safeLoadout.weapons.filter((w) => w.topPick);
-  const alsoWeapons = safeLoadout.weapons.filter((w) => !w.topPick);
-  const matchSub = (w: Item) => selectedSubclassSet.size === 0 || !w.subclass || selectedSubclassSet.has(w.subclass);
-  const filteredBest = bestWeapons.filter(matchSub);
-  const filteredAlso = alsoWeapons.filter(matchSub);
+  // Only offer subclasses that actually have a weapon this phase — e.g. there are
+  // no Launchers before Hardmode. A stored subclass that isn't available here (or
+  // no longer exists at all) falls back to "All" rather than showing an empty list.
+  const availableSubclasses = classDef.subclasses.filter((s) =>
+    safeLoadout.weapons.some((w) => w.subclass === s.id),
+  );
+  const validSubclasses = new Set(availableSubclasses.map((s) => s.id));
+  const activeSubclasses = new Set(
+    [...selectedSubclassSet].filter((s) => validSubclasses.has(s)),
+  );
+  const showingAll = activeSubclasses.size === 0;
+
+  const matchSub = (w: Item) => showingAll || !w.subclass || activeSubclasses.has(w.subclass);
+  const inScope = safeLoadout.weapons.filter(matchSub);
+  // "All" is an overview: just the best in slot from each subclass. Picking a
+  // subclass opens it up to the viable alternates, with the rest behind a toggle.
+  const filteredBest = inScope.filter((w) => w.tier === 'best');
+  const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
+  const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
 
   const armorSprite = safeLoadout.armor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
@@ -188,10 +201,10 @@ export function Loadouts() {
                 type="button"
                 className={`${styles.cbtn} ${cls.id === classId ? styles.on : ''}`}
                 aria-pressed={cls.id === classId}
-                onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); }}
+                onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); setShowRest(false); }}
               >
                 <img
-                  src={`${WIKI}/${CLASS_ICON[cls.id as ClassId]}.png`}
+                  src={`${BASE}icons/classes/${cls.id}.png`}
                   alt="" aria-hidden="true"
                   className={`${styles.cdot} pixel-img`}
                   width="28" height="28" loading="lazy"
@@ -215,7 +228,7 @@ export function Loadouts() {
                 className={`${styles.waypoint} ${active ? styles.on : ''} ${done ? styles.done : ''}`}
                 aria-pressed={active}
                 aria-label={p.name}
-                onClick={() => setPhaseId(p.id as PhaseId)}
+                onClick={() => { setPhaseId(p.id as PhaseId); setShowRest(false); }}
               >
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
                 <span className={styles.wpDisc}>
@@ -256,23 +269,23 @@ export function Loadouts() {
           <div className={`${styles.invPanel} ${styles.weaponsPanel}`}>
             <div className={styles.tlabel}><span>Weapons</span><span className={styles.em}>{classDef.name}</span></div>
 
-            {classDef.subclasses.length > 0 && (
+            {availableSubclasses.length > 0 && (
               <div className={styles.subclassRow}>
                 <button
                   type="button"
-                  className={`${styles.subclassChip} ${isAllSelected ? styles.on : ''}`}
-                  onClick={clearSubclassFilters}
-                  aria-pressed={isAllSelected}
+                  className={`${styles.subclassChip} ${showingAll ? styles.on : ''}`}
+                  onClick={() => { clearSubclassFilters(); setShowRest(false); }}
+                  aria-pressed={showingAll}
                 >
                   All
                 </button>
-                {classDef.subclasses.map((sc) => (
+                {availableSubclasses.map((sc) => (
                   <button
                     key={sc.id}
                     type="button"
-                    className={`${styles.subclassChip} ${!isAllSelected && isSubclassEnabled(sc.id) ? styles.on : ''}`}
-                    aria-pressed={!isAllSelected && isSubclassEnabled(sc.id)}
-                    onClick={() => toggleSubclass(sc.id)}
+                    className={`${styles.subclassChip} ${activeSubclasses.has(sc.id) ? styles.on : ''}`}
+                    aria-pressed={activeSubclasses.has(sc.id)}
+                    onClick={() => { toggleSubclass(sc.id); setShowRest(false); }}
                   >
                     {sc.name}
                   </button>
@@ -298,7 +311,25 @@ export function Loadouts() {
               </>
             )}
 
-            {filteredBest.length === 0 && filteredAlso.length === 0 && (
+            {filteredRest.length > 0 && (
+              <>
+                <button
+                  type="button"
+                  className={styles.showRest}
+                  aria-expanded={showRest}
+                  onClick={() => setShowRest((v) => !v)}
+                >
+                  {showRest ? 'Hide' : 'Show'} {filteredRest.length} other{filteredRest.length === 1 ? '' : 's'}
+                </button>
+                {showRest && (
+                  <div className={styles.weaponRow}>
+                    {filteredRest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                  </div>
+                )}
+              </>
+            )}
+
+            {filteredBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
           </div>

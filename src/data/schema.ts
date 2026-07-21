@@ -32,6 +32,13 @@ export const Item = z.object({
   stats: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
+  /**
+   * How strongly the item is recommended for its phase:
+   * 'best'  → best in slot for its subclass (shown in the "All" overview)
+   * 'good'  → a genuinely viable alternative ("Also Great")
+   * 'other' → kept for reference, hidden behind "show all"
+   */
+  tier: z.enum(['best', 'good', 'other']).default('good'),
   subclass: SubclassId.optional(),
   wikiUrl: z.string().url().optional(),
 });

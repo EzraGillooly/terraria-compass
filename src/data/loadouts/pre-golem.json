@@ -12,9 +12,10 @@
         "why": "Fires a fast green sword beam projectile on each swing.",
         "tags": [],
         "topPick": true,
-        "subclass": "projectile-sword",
+        "subclass": "projectile-melee",
         "stats": "85 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
+        "tier": "best"
       },
       {
         "id": "the-eye-of-cthulhu",
@@ -27,7 +28,8 @@
         "topPick": true,
         "subclass": "yoyo",
         "stats": "115 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
+        "tier": "best"
       },
       {
         "id": "paladins-hammer",
@@ -37,10 +39,11 @@
         "source": "Dropped by Paladins in the post-Plantera Dungeon",
         "why": "High-damage throwing hammer dropped by post-Plantera Dungeon Paladins.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "boomerang",
         "stats": "100 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Hammer"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Hammer",
+        "tier": "best"
       },
       {
         "id": "flower-pow",
@@ -50,10 +53,11 @@
         "source": "Dropped by Plantera",
         "why": "Post-Plantera flail dropped by Plantera that releases petals.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "flail",
         "stats": "130 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Pow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Pow",
+        "tier": "best"
       },
       {
         "id": "christmas-tree-sword",
@@ -64,9 +68,10 @@
         "why": "Fires ornament projectiles when swung.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-sword",
+        "subclass": "projectile-melee",
         "stats": "86 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Christmas_Tree_Sword"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Christmas_Tree_Sword",
+        "tier": "other"
       },
       {
         "id": "seedler",
@@ -77,35 +82,10 @@
         "why": "Fires Seedler Nut projectiles that burst into thorn balls.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-sword",
+        "subclass": "projectile-melee",
         "stats": "50 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
-      },
-      {
-        "id": "true-excalibur",
-        "name": "True Excalibur",
-        "slot": "weapon",
-        "icon": "items/true-excalibur.png",
-        "source": "Crafted (Excalibur + Broken Hero Sword)",
-        "why": "Fires a projectile on swing; needs post-Plantera Broken Hero Sword.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "projectile-sword",
-        "stats": "72 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur"
-      },
-      {
-        "id": "true-night-s-edge",
-        "name": "True Night's Edge",
-        "slot": "weapon",
-        "icon": "items/true-night-s-edge.png",
-        "source": "Crafted (Night's Edge + Broken Hero Sword)",
-        "why": "Fires a spinning projectile on swing; needs Broken Hero Sword.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "projectile-sword",
-        "stats": "70 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler",
+        "tier": "good"
       },
       {
         "id": "keybrand",
@@ -115,10 +95,11 @@
         "source": "Dropped by Hardmode Dungeon armored bones",
         "why": "Deals bonus damage to enemies below half health.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "true-melee",
         "stats": "105 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Keybrand"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Keybrand",
+        "tier": "best"
       },
       {
         "id": "north-pole",
@@ -131,7 +112,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "80 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole",
+        "tier": "other"
       },
       {
         "id": "psycho-knife",
@@ -144,7 +126,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "85 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Psycho_Knife"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Psycho_Knife",
+        "tier": "good"
       },
       {
         "id": "the-horseman-s-blade",
@@ -157,7 +140,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "150 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
+        "tier": "other"
       },
       {
         "id": "kraken",
@@ -170,7 +154,132 @@
         "topPick": false,
         "subclass": "yoyo",
         "stats": "95 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Kraken"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kraken",
+        "tier": "other"
+      },
+      {
+        "id": "vampire-knives",
+        "name": "Vampire Knives",
+        "slot": "weapon",
+        "icon": "items/vampire-knives.png",
+        "source": "Found in the Dungeon's Crimson Chest (post-Plantera)",
+        "why": "Fires a spread of knives that heal the player on hit.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "projectile-melee",
+        "stats": "29 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Knives"
+      },
+      {
+        "id": "scourge-of-the-corruptor",
+        "name": "Scourge of the Corruptor",
+        "slot": "weapon",
+        "icon": "items/scourge-of-the-corruptor.png",
+        "source": "Found in the Dungeon's Corruption Chest (post-Plantera)",
+        "why": "Fires an Eater's Bite projectile that splits into homing worms.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "projectile-melee",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Scourge_of_the_Corruptor"
+      },
+      {
+        "id": "fetid-baghnakhs",
+        "name": "Fetid Baghnakhs",
+        "slot": "weapon",
+        "icon": "items/fetid-baghnakhs.png",
+        "source": "Dropped by Crimson Mimics",
+        "why": "Extremely fast, very short-range broadsword from Crimson Mimics.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs",
+        "tier": "other"
+      },
+      {
+        "id": "reds-throw",
+        "name": "Red's Throw",
+        "slot": "weapon",
+        "icon": "items/reds-throw.png",
+        "source": "Any Hardmode boss's Expert/Master Treasure Bag (except Queen Slime), as part of Red's set",
+        "why": "Expert-exclusive developer yoyo from Hardmode boss Treasure Bags.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Red%27s_Throw",
+        "tier": "other"
+      },
+      {
+        "id": "light-disc",
+        "name": "Light Disc",
+        "slot": "weapon",
+        "icon": "items/light-disc.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Hallowed Bars, Souls of Light, and Souls of Might",
+        "why": "Bouncing disc requiring Souls of Might from the Destroyer.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "60 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Disc",
+        "tier": "other"
+      },
+      {
+        "id": "drippler-crippler",
+        "name": "Drippler Crippler",
+        "slot": "weapon",
+        "icon": "items/drippler-crippler.png",
+        "source": "Dropped by Blood Eels (Hardmode Blood Moon)",
+        "why": "Hardmode Blood Moon flail dropped by Blood Eels.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "110 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Drippler_Crippler",
+        "tier": "other"
+      },
+      {
+        "id": "true-excalibur",
+        "name": "True Excalibur",
+        "slot": "weapon",
+        "icon": "items/true-excalibur.png",
+        "source": "Crafted (Excalibur + Broken Hero Sword)",
+        "why": "Fires a projectile on swing; needs post-Plantera Broken Hero Sword.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "projectile-melee",
+        "stats": "72 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur",
+        "tier": "other"
+      },
+      {
+        "id": "shadowflame-knife",
+        "name": "Shadowflame Knife",
+        "slot": "weapon",
+        "icon": "items/shadowflame-knife.png",
+        "source": "Dropped by Goblin Warlocks during a Hardmode Goblin Army",
+        "why": "Throws ricocheting knives that inflict the Shadowflame debuff.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "other",
+        "subclass": "projectile-melee",
+        "stats": "43 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife"
       }
     ],
     "armor": [
@@ -328,10 +437,11 @@
         "source": "Dropped by Empress of Light (post-Plantera)",
         "why": "Fires homing star arrows, converting wooden arrows for free.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "bow",
         "stats": "50 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide",
+        "tier": "other"
       },
       {
         "id": "stake-launcher",
@@ -341,10 +451,11 @@
         "source": "Dropped by Mourning Wood (Pumpkin Moon)",
         "why": "A repeater that fires high-damage Stakes as its ammunition.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "bow",
         "stats": "75 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
+        "tier": "other"
       },
       {
         "id": "chain-gun",
@@ -354,10 +465,11 @@
         "source": "Dropped by Santa-NK1 (Frost Moon)",
         "why": "Rapid-fire gun dropped by Santa-NK1 during the post-Plantera Frost Moon.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "gun",
         "stats": "38 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
+        "tier": "other"
       },
       {
         "id": "sniper-rifle",
@@ -370,7 +482,8 @@
         "topPick": true,
         "subclass": "gun",
         "stats": "200 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle",
+        "tier": "best"
       },
       {
         "id": "venus-magnum",
@@ -380,10 +493,11 @@
         "source": "Dropped by Plantera",
         "why": "Fast-firing pistol dropped by Plantera.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "gun",
         "stats": "50 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Venus_Magnum"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venus_Magnum",
+        "tier": "good"
       },
       {
         "id": "candy-corn-rifle",
@@ -396,7 +510,8 @@
         "topPick": false,
         "subclass": "gun",
         "stats": "60 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Candy_Corn_Rifle"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Candy_Corn_Rifle",
+        "tier": "other"
       },
       {
         "id": "tactical-shotgun",
@@ -409,7 +524,8 @@
         "topPick": false,
         "subclass": "gun",
         "stats": "36 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun",
+        "tier": "other"
       },
       {
         "id": "grenade-launcher",
@@ -422,7 +538,8 @@
         "topPick": false,
         "subclass": "launcher",
         "stats": "60 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade_Launcher",
+        "tier": "other"
       },
       {
         "id": "jack-o-lantern-launcher",
@@ -435,7 +552,8 @@
         "topPick": false,
         "subclass": "launcher",
         "stats": "85 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Jack_%27O_Lantern_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jack_%27O_Lantern_Launcher",
+        "tier": "other"
       },
       {
         "id": "nail-gun",
@@ -445,10 +563,11 @@
         "source": "Dropped by Nailheads during a Solar Eclipse (post-Plantera)",
         "why": "Fires Nails that stick into surfaces and enemies.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "launcher",
         "stats": "85 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Nail_Gun"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nail_Gun",
+        "tier": "best"
       },
       {
         "id": "proximity-mine-launcher",
@@ -461,7 +580,8 @@
         "topPick": false,
         "subclass": "launcher",
         "stats": "80 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Proximity_Mine_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Proximity_Mine_Launcher",
+        "tier": "other"
       },
       {
         "id": "rocket-launcher",
@@ -474,7 +594,8 @@
         "topPick": false,
         "subclass": "launcher",
         "stats": "55 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Launcher",
+        "tier": "other"
       },
       {
         "id": "snowman-cannon",
@@ -487,7 +608,102 @@
         "topPick": false,
         "subclass": "launcher",
         "stats": "67 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
+        "tier": "other"
+      },
+      {
+        "id": "piranha-gun",
+        "name": "Piranha Gun",
+        "slot": "weapon",
+        "icon": "items/piranha-gun.png",
+        "source": "Found in the Dungeon's Jungle Chest (post-Plantera)",
+        "why": "Latches a piranha onto an enemy that chews continuously.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "gun",
+        "stats": "40 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Piranha_Gun"
+      },
+      {
+        "id": "chlorophyte-shotbow",
+        "name": "Chlorophyte Shotbow",
+        "slot": "weapon",
+        "icon": "items/chlorophyte-shotbow.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "Can fire up to four arrows at once when held.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "34 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Shotbow",
+        "tier": "good"
+      },
+      {
+        "id": "pulse-bow",
+        "name": "Pulse Bow",
+        "slot": "weapon",
+        "icon": "items/pulse-bow.png",
+        "source": "Purchased from the Traveling Merchant after defeating all three mechanical bosses",
+        "why": "Fires a piercing pulse arrow that bounces off blocks.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "80 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pulse_Bow",
+        "tier": "best"
+      },
+      {
+        "id": "beenade",
+        "name": "Beenade",
+        "slot": "weapon",
+        "icon": "items/beenade.png",
+        "source": "Dropped by Queen Bee; crafted with Bee Wax from Queen Bee",
+        "why": "A Queen Bee consumable that releases homing bees on detonation.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "throwing",
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade",
+        "tier": "best"
+      },
+      {
+        "id": "super-star-shooter",
+        "name": "Super Star Shooter",
+        "slot": "weapon",
+        "icon": "items/super-star-shooter.png",
+        "source": "Crafted (Star Cannon + 12 Hallowed Bars)",
+        "why": "Hallowed upgrade to the Star Cannon.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "other",
+        "subclass": "gun",
+        "stats": "60 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Star_Shooter"
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "slot": "weapon",
+        "icon": "items/flamethrower.png",
+        "source": "Crafted (20 Iron Bars + Illegal Gun Parts + 20 Souls of Fright)",
+        "why": "Sprays a continuous cone of fire fuelled by Gel.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "other",
+        "subclass": "launcher",
+        "stats": "35 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamethrower"
       }
     ],
     "armor": [
@@ -648,7 +864,8 @@
         "topPick": true,
         "subclass": "magic-gun",
         "stats": "31 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun",
+        "tier": "best"
       },
       {
         "id": "leaf-blower",
@@ -661,7 +878,8 @@
         "topPick": false,
         "subclass": "magic-gun",
         "stats": "48 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Leaf_Blower"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Leaf_Blower",
+        "tier": "other"
       },
       {
         "id": "bat-scepter",
@@ -674,7 +892,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "45 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bat_Scepter"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bat_Scepter",
+        "tier": "other"
       },
       {
         "id": "blizzard-staff",
@@ -687,7 +906,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "58 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
+        "tier": "other"
       },
       {
         "id": "magnet-sphere",
@@ -700,7 +920,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "48 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
+        "tier": "good"
       },
       {
         "id": "nettle-burst",
@@ -713,7 +934,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "35 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst",
+        "tier": "good"
       },
       {
         "id": "nightglow",
@@ -726,7 +948,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "50 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow",
+        "tier": "other"
       },
       {
         "id": "razorpine",
@@ -739,7 +962,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "48 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine",
+        "tier": "other"
       },
       {
         "id": "resonance-scepter",
@@ -752,7 +976,8 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "70 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Resonance_Scepter"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Resonance_Scepter",
+        "tier": "good"
       },
       {
         "id": "stellar-tune",
@@ -765,7 +990,168 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "85 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune",
+        "tier": "other"
+      },
+      {
+        "id": "inferno-fork",
+        "name": "Inferno Fork",
+        "slot": "weapon",
+        "icon": "items/inferno-fork.png",
+        "source": "Dropped by Diabolists (Hardmode Dungeon)",
+        "why": "Fires a fireball that explodes into a lingering damaging blast.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
+        "tier": "good"
+      },
+      {
+        "id": "rainbow-gun",
+        "name": "Rainbow Gun",
+        "slot": "weapon",
+        "icon": "items/rainbow-gun.png",
+        "source": "Found in Hallowed Chest in the Dungeon (opened with a Hallowed Key)",
+        "why": "Launches a lasting rainbow that damages enemies along its arc.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "45 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
+        "tier": "good"
+      },
+      {
+        "id": "toxic-flask",
+        "name": "Toxic Flask",
+        "slot": "weapon",
+        "icon": "items/toxic-flask.png",
+        "source": "Dropped by Dr. Man Fly (Solar Eclipse, post-mechanical boss)",
+        "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "52 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
+        "tier": "good"
+      },
+      {
+        "id": "clinger-staff",
+        "name": "Clinger Staff",
+        "slot": "weapon",
+        "icon": "items/clinger-staff.png",
+        "source": "Dropped by Corrupt Mimics (1/5) in the Hardmode Underground Corruption",
+        "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "summon-magic",
+        "stats": "43 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "nimbus-rod",
+        "name": "Nimbus Rod",
+        "slot": "weapon",
+        "icon": "items/nimbus-rod.png",
+        "source": "Dropped by Angry Nimbus (1/15) during rain in Hardmode",
+        "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "summon-magic",
+        "stats": "30 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
+        "tier": "good"
+      },
+      {
+        "id": "shadowbeam-staff",
+        "name": "Shadowbeam Staff",
+        "slot": "weapon",
+        "icon": "items/shadowbeam-staff.png",
+        "source": "Dropped by Necromancers (Hardmode Dungeon)",
+        "why": "Fires a fast beam that ricochets off walls and pierces enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "80 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "spectre-staff",
+        "name": "Spectre Staff",
+        "slot": "weapon",
+        "icon": "items/spectre-staff.png",
+        "source": "Dropped by Ragged Casters (Hardmode Dungeon)",
+        "why": "Fires a homing spectral bolt that seeks enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "65 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "tome-of-infinite-wisdom",
+        "name": "Tome of Infinite Wisdom",
+        "slot": "weapon",
+        "icon": "items/tome-of-infinite-wisdom.png",
+        "source": "Dropped by Ogres during Tier 2 Old One's Army (requires one mechanical boss)",
+        "why": "Fires bursts of pages, or with right-click a large piercing tornado.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "spell-tome",
+        "stats": "36 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
+        "tier": "best"
+      },
+      {
+        "id": "venom-staff",
+        "name": "Venom Staff",
+        "slot": "weapon",
+        "icon": "items/venom-staff.png",
+        "source": "Crafted (Poison Staff + 14 Chlorophyte Bars @ Mythril/Orichalcum Anvil)",
+        "why": "Upgraded Poison Staff whose fang inflicts the stronger Venom debuff.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "44 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Staff",
+        "tier": "other"
+      },
+      {
+        "id": "orange-zapinator",
+        "name": "Orange Zapinator",
+        "slot": "weapon",
+        "icon": "items/orange-zapinator.png",
+        "source": "Purchased from the Traveling Merchant (Hardmode)",
+        "why": "Fires an erratic light beam with high random damage variance.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Zapinator",
+        "tier": "other"
       }
     ],
     "armor": [
@@ -924,7 +1310,8 @@
         "topPick": true,
         "subclass": "minions",
         "stats": "55 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
+        "tier": "best"
       },
       {
         "id": "desert-tiger-staff",
@@ -934,10 +1321,11 @@
         "source": "Found in the Dungeon's Desert Chest, unlocked with a Desert Key after Plantera",
         "why": "Summons a single Desert Tiger minion that grows stronger with additional summons.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "minions",
         "stats": "41 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff",
+        "tier": "good"
       },
       {
         "id": "terraprisma",
@@ -947,10 +1335,11 @@
         "source": "Dropped by the Empress of Light if all damage is dealt during the day",
         "why": "Summons homing sword minions; Empress is fought via a post-Plantera Prismatic Lacewing.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "minions",
         "stats": "90 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma",
+        "tier": "other"
       },
       {
         "id": "kaleidoscope",
@@ -960,10 +1349,11 @@
         "source": "Dropped by the Empress of Light (summoned after Plantera)",
         "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "whip",
         "stats": "170 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope",
+        "tier": "other"
       },
       {
         "id": "morning-star",
@@ -976,7 +1366,8 @@
         "topPick": true,
         "subclass": "whip",
         "stats": "160 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star",
+        "tier": "best"
       },
       {
         "id": "pygmy-staff",
@@ -989,7 +1380,8 @@
         "topPick": false,
         "subclass": "minions",
         "stats": "40 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff",
+        "tier": "other"
       },
       {
         "id": "raven-staff",
@@ -1002,7 +1394,8 @@
         "topPick": false,
         "subclass": "minions",
         "stats": "55 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff",
+        "tier": "other"
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -1012,10 +1405,11 @@
         "source": "Found in the Dungeon's Ice Chest, opened with a Frozen Key (post-Plantera)",
         "why": "Post-Plantera sentry summoning a Frost Hydra that fires piercing frost blasts.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "sentries",
         "stats": "100 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_the_Frost_Hydra"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_the_Frost_Hydra",
+        "tier": "best"
       },
       {
         "id": "dark-harvest",
@@ -1028,7 +1422,8 @@
         "topPick": false,
         "subclass": "whip",
         "stats": "110 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest",
+        "tier": "other"
       },
       {
         "id": "vulgar-display-of-flower",
@@ -1041,7 +1436,120 @@
         "topPick": false,
         "subclass": "whip",
         "stats": "75 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower",
+        "tier": "good"
+      },
+      {
+        "id": "queen-spider-staff",
+        "name": "Queen Spider Staff",
+        "slot": "weapon",
+        "icon": "items/queen-spider-staff.png",
+        "source": "Crafted from 24 Spider Fang at a Mythril/Orichalcum Anvil (Hardmode)",
+        "why": "Early Hardmode sentry summoning a Spider Turret that lobs bouncing egg projectiles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "ballista-cane",
+        "name": "Ballista Cane",
+        "slot": "weapon",
+        "icon": "items/ballista-cane.png",
+        "source": "Bought from the Tavernkeep after defeating one mechanical boss (tier 2)",
+        "why": "Tier 2 Tavernkeep upgrade of the ballista bolt sentry.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "74 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Cane",
+        "tier": "good"
+      },
+      {
+        "id": "firecracker",
+        "name": "Firecracker",
+        "slot": "weapon",
+        "icon": "items/firecracker.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "Wall of Flesh drop whose tag detonates for a large burst of minion damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "37 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
+        "tier": "good"
+      },
+      {
+        "id": "optic-staff",
+        "name": "Optic Staff",
+        "slot": "weapon",
+        "icon": "items/optic-staff.png",
+        "source": "Crafted from Black Lens + 2 Lens + 12 Hallowed Bars + 20 Souls of Sight at a Mythril/Orichalcum Anvil",
+        "why": "Summons Twins (Retanimini and Spazmamini) as one minion; needs Souls of Sight from The Twins.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Optic_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "blade-staff",
+        "name": "Blade Staff",
+        "slot": "weapon",
+        "icon": "items/blade-staff.png",
+        "source": "Dropped by Queen Slime",
+        "why": "Summons Enchanted Dagger minions with low base damage that ignore 25 defense, scaling on flat/tag bonuses.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "6 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "spider-staff",
+        "name": "Spider Staff",
+        "slot": "weapon",
+        "icon": "items/spider-staff.png",
+        "source": "Crafted from 16 Spider Fangs at a Mythril/Orichalcum Anvil",
+        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Staff",
+        "tier": "other"
+      },
+      {
+        "id": "durendal",
+        "name": "Durendal",
+        "slot": "weapon",
+        "icon": "items/durendal.png",
+        "source": "Crafted (12 Hallowed Bar at a Mythril/Orichalcum Anvil)",
+        "why": "Hallowed Bar whip with fast use time that boosts minion attack speed.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "55 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Durendal",
+        "tier": "other"
       }
     ],
     "armor": [

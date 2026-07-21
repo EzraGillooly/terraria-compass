@@ -2,7 +2,148 @@
   {
     "phase": "pre-moonlord",
     "class": "melee",
-    "weapons": [],
+    "weapons": [
+      {
+        "id": "daybreak",
+        "name": "Daybreak",
+        "slot": "weapon",
+        "icon": "items/daybreak.png",
+        "source": "Crafted (18 Solar Fragments, at an Ancient Manipulator)",
+        "why": "Hurls sun spears that stick to enemies and inflict Daybroken.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "projectile-melee",
+        "stats": "150 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Daybreak"
+      },
+      {
+        "id": "solar-eruption",
+        "name": "Solar Eruption",
+        "slot": "weapon",
+        "icon": "items/solar-eruption.png",
+        "source": "Crafted (18 Solar Fragments, at an Ancient Manipulator)",
+        "why": "Swings a long whipsword that passes through blocks and pierces infinitely.",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "subclass": "flail",
+        "stats": "105 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption"
+      },
+      {
+        "id": "terra-blade",
+        "name": "Terra Blade",
+        "slot": "weapon",
+        "icon": "items/terra-blade.png",
+        "source": "Crafted (True Excalibur + True Night's Edge + Broken Hero Swords)",
+        "why": "Fires a fast green sword beam projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "projectile-melee",
+        "stats": "85 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
+        "tier": "good"
+      },
+      {
+        "id": "flying-dragon",
+        "name": "Flying Dragon",
+        "slot": "weapon",
+        "icon": "items/flying-dragon.png",
+        "source": "Dropped by Betsy (Old One's Army Tier 3)",
+        "why": "Fires a red crescent-shaped projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "180 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Dragon",
+        "tier": "best"
+      },
+      {
+        "id": "the-horseman-s-blade",
+        "name": "The Horseman's Blade",
+        "slot": "weapon",
+        "icon": "items/the-horseman-s-blade.png",
+        "source": "Dropped by Pumpking (Pumpkin Moon)",
+        "why": "Summons homing pumpkin projectiles when hitting enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "true-melee",
+        "stats": "150 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
+        "tier": "best"
+      },
+      {
+        "id": "the-eye-of-cthulhu",
+        "name": "The Eye of Cthulhu",
+        "slot": "weapon",
+        "icon": "items/the-eye-of-cthulhu.png",
+        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "115 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
+        "tier": "best"
+      },
+      {
+        "id": "possessed-hatchet",
+        "name": "Possessed Hatchet",
+        "slot": "weapon",
+        "icon": "items/possessed-hatchet.png",
+        "source": "Dropped by Golem",
+        "why": "Homing hatchet dropped by Golem.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "boomerang",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Possessed_Hatchet",
+        "tier": "best"
+      },
+      {
+        "id": "flairon",
+        "name": "Flairon",
+        "slot": "weapon",
+        "icon": "items/flairon.png",
+        "source": "Dropped by Duke Fishron (1/6)",
+        "why": "Hardmode flail from Duke Fishron, who requires no boss prerequisite to summon.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "flail",
+        "stats": "132 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon",
+        "tier": "best"
+      },
+      {
+        "id": "vampire-knives",
+        "name": "Vampire Knives",
+        "slot": "weapon",
+        "icon": "items/vampire-knives.png",
+        "source": "Found in the Dungeon's Crimson Chest (post-Plantera)",
+        "why": "Fires a spread of knives that heal the player on hit.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "other",
+        "subclass": "projectile-melee",
+        "stats": "29 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Knives"
+      }
+    ],
     "armor": [
       {
         "id": "solar-flare-armor",
@@ -161,7 +302,86 @@
         "topPick": true,
         "subclass": "bow",
         "stats": "50 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm",
+        "tier": "best"
+      },
+      {
+        "id": "vortex-beater",
+        "name": "Vortex Beater",
+        "slot": "weapon",
+        "icon": "items/vortex-beater.png",
+        "source": "Crafted (18 Luminite Bars + Vortex Fragments)",
+        "why": "Luminite-tier gun that fires bullets and homing rockets, crafted after Moon Lord.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "gun",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Beater",
+        "tier": "best"
+      },
+      {
+        "id": "beenade",
+        "name": "Beenade",
+        "slot": "weapon",
+        "icon": "items/beenade.png",
+        "source": "Dropped by Queen Bee; crafted with Bee Wax from Queen Bee",
+        "why": "A Queen Bee consumable that releases homing bees on detonation.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "throwing",
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade",
+        "tier": "best"
+      },
+      {
+        "id": "snowman-cannon",
+        "name": "Snowman Cannon",
+        "slot": "weapon",
+        "icon": "items/snowman-cannon.png",
+        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "why": "Fires homing rockets that track the nearest enemy.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "launcher",
+        "stats": "67 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
+        "tier": "best"
+      },
+      {
+        "id": "stake-launcher",
+        "name": "Stake Launcher",
+        "slot": "weapon",
+        "icon": "items/stake-launcher.png",
+        "source": "Dropped by Mourning Wood (Pumpkin Moon)",
+        "why": "A repeater that fires high-damage Stakes as its ammunition.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "75 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
+        "tier": "other"
+      },
+      {
+        "id": "xenopopper",
+        "name": "Xenopopper",
+        "slot": "weapon",
+        "icon": "items/xenopopper.png",
+        "source": "Dropped by the Martian Saucer (Martian Madness)",
+        "why": "Fires a spread of bullets and drops from the Martian Saucer during post-Golem Martian Madness.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Xenopopper",
+        "tier": "other"
       }
     ],
     "armor": [
@@ -319,10 +539,11 @@
         "source": "Crafted from 18 Nebula Fragments at an Ancient Manipulator (fragments drop from the Nebula Pillar)",
         "why": "Fires homing star projectiles with a chance to fire a stronger high-damage shot.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "wand",
         "stats": "55 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze",
+        "tier": "good"
       },
       {
         "id": "nebula-arcanum",
@@ -332,10 +553,91 @@
         "source": "Crafted (18 Nebula Fragments @ Ancient Manipulator)",
         "why": "Fires slow homing orbs that spawn additional star projectiles.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "wand",
         "stats": "70 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum",
+        "tier": "best"
+      },
+      {
+        "id": "charged-blaster-cannon",
+        "name": "Charged Blaster Cannon",
+        "slot": "weapon",
+        "icon": "items/charged-blaster-cannon.png",
+        "source": "Dropped by Martian Madness enemies (post-Golem)",
+        "why": "Charges up to fire a large piercing laser beam.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "magic-gun",
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Charged_Blaster_Cannon",
+        "tier": "best"
+      },
+      {
+        "id": "tome-of-infinite-wisdom",
+        "name": "Tome of Infinite Wisdom",
+        "slot": "weapon",
+        "icon": "items/tome-of-infinite-wisdom.png",
+        "source": "Dropped by Ogres during Tier 2 Old One's Army (requires one mechanical boss)",
+        "why": "Fires bursts of pages, or with right-click a large piercing tornado.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "spell-tome",
+        "stats": "36 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
+        "tier": "best"
+      },
+      {
+        "id": "clinger-staff",
+        "name": "Clinger Staff",
+        "slot": "weapon",
+        "icon": "items/clinger-staff.png",
+        "source": "Dropped by Corrupt Mimics (1/5) in the Hardmode Underground Corruption",
+        "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "summon-magic",
+        "stats": "43 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "razorblade-typhoon",
+        "name": "Razorblade Typhoon",
+        "slot": "weapon",
+        "icon": "items/razorblade-typhoon.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Fires high-velocity homing typhoons that pierce enemies and bounce off blocks.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "85 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon",
+        "tier": "other"
+      },
+      {
+        "id": "bubble-gun",
+        "name": "Bubble Gun",
+        "slot": "weapon",
+        "icon": "items/bubble-gun.png",
+        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "why": "Rapidly fires a short-range spread of bubbles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun",
+        "tier": "other"
       }
     ],
     "armor": [
@@ -491,10 +793,11 @@
         "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
         "why": "Summons Stardust Cell minions that fire homing projectiles and apply a stacking debuff.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "minions",
         "stats": "60 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff",
+        "tier": "good"
       },
       {
         "id": "stardust-dragon-staff",
@@ -504,10 +807,11 @@
         "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
         "why": "Summons a segmented Stardust Dragon that grows with each additional summon.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "minions",
         "stats": "40 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff",
+        "tier": "good"
       },
       {
         "id": "constellation",
@@ -517,10 +821,59 @@
         "source": "Crafted (18 Stardust Fragment at an Ancient Manipulator)",
         "why": "Crafted from Stardust Fragments and fires homing star projectiles on hit.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "whip",
         "stats": "130 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Constellation"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Constellation",
+        "tier": "best"
+      },
+      {
+        "id": "terraprisma",
+        "name": "Terraprisma",
+        "slot": "weapon",
+        "icon": "items/terraprisma.png",
+        "source": "Dropped by the Empress of Light if all damage is dealt during the day",
+        "why": "Summons homing sword minions; Empress is fought via a post-Plantera Prismatic Lacewing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "90 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma",
+        "tier": "best"
+      },
+      {
+        "id": "ballista-staff",
+        "name": "Ballista Staff",
+        "slot": "weapon",
+        "icon": "items/ballista-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the ballista bolt sentry.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "156 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "kaleidoscope",
+        "name": "Kaleidoscope",
+        "slot": "weapon",
+        "icon": "items/kaleidoscope.png",
+        "source": "Dropped by the Empress of Light (summoned after Plantera)",
+        "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "170 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope",
+        "tier": "other"
       }
     ],
     "armor": [

@@ -14,7 +14,8 @@
         "topPick": true,
         "subclass": "true-melee",
         "stats": "40 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Night%27s_Edge"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Night%27s_Edge",
+        "tier": "best"
       },
       {
         "id": "cascade",
@@ -27,7 +28,8 @@
         "topPick": true,
         "subclass": "yoyo",
         "stats": "27 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Cascade"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cascade",
+        "tier": "best"
       },
       {
         "id": "combat-wrench",
@@ -40,20 +42,8 @@
         "topPick": false,
         "subclass": "boomerang",
         "stats": "25 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Combat_Wrench"
-      },
-      {
-        "id": "flamarang",
-        "name": "Flamarang",
-        "slot": "weapon",
-        "icon": "items/flamarang.png",
-        "source": "Crafted at an Anvil from Enchanted Boomerang and 15 Hellstone Bars",
-        "why": "Hellstone-tier boomerang that inflicts On Fire.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "boomerang",
-        "stats": "49 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamarang"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Combat_Wrench",
+        "tier": "other"
       },
       {
         "id": "blue-moon",
@@ -66,7 +56,8 @@
         "topPick": false,
         "subclass": "flail",
         "stats": "54 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Moon"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Moon",
+        "tier": "other"
       },
       {
         "id": "sunfury",
@@ -76,10 +67,11 @@
         "source": "Found in Shadow Chests (Underworld) and Obsidian Lock Boxes",
         "why": "Underworld Shadow Chest flail from the Hellstone tier.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "flail",
         "stats": "64 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Sunfury"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sunfury",
+        "tier": "best"
       },
       {
         "id": "dark-lance",
@@ -92,7 +84,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "34 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Lance"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Lance",
+        "tier": "good"
       },
       {
         "id": "muramasa",
@@ -105,7 +98,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "24 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa",
+        "tier": "other"
       },
       {
         "id": "obsidian-swordfish",
@@ -118,20 +112,8 @@
         "topPick": false,
         "subclass": "true-melee",
         "stats": "70 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Swordfish"
-      },
-      {
-        "id": "volcano",
-        "name": "Volcano",
-        "slot": "weapon",
-        "icon": "items/volcano.png",
-        "source": "Crafted (Hellstone Bars)",
-        "why": "Crafted from Hellstone Bars; creates an explosion on hitting enemies.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "true-melee",
-        "stats": "40 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Swordfish",
+        "tier": "other"
       },
       {
         "id": "valor",
@@ -144,7 +126,104 @@
         "topPick": false,
         "subclass": "yoyo",
         "stats": "28 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Valor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Valor",
+        "tier": "other"
+      },
+      {
+        "id": "hive-five",
+        "name": "Hive-Five",
+        "slot": "weapon",
+        "icon": "items/hive-five.png",
+        "source": "Crafted (14 Bee Wax at an Iron/Lead Anvil); Bee Wax drops from Queen Bee",
+        "why": "Crafted from Queen Bee's Bee Wax and releases homing bee projectiles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "24 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hive-Five",
+        "tier": "good"
+      },
+      {
+        "id": "flamarang",
+        "name": "Flamarang",
+        "slot": "weapon",
+        "icon": "items/flamarang.png",
+        "source": "Crafted at an Anvil from Enchanted Boomerang and 15 Hellstone Bars",
+        "why": "Hellstone-tier boomerang that inflicts On Fire.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "boomerang",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamarang",
+        "tier": "best"
+      },
+      {
+        "id": "phaseblades",
+        "name": "Phaseblades",
+        "slot": "weapon",
+        "icon": "items/phaseblades.png",
+        "source": "Crafted (15 Meteorite Bars + 15 gems, at an Anvil)",
+        "why": "Group of nine identical broadswords; can be thrown while swinging.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "true-melee",
+        "stats": "26 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Phaseblades"
+      },
+      {
+        "id": "starfury",
+        "name": "Starfury",
+        "slot": "weapon",
+        "icon": "items/starfury.png",
+        "source": "Found in Skyware Chests (Floating Islands)",
+        "why": "Calls a falling star from the sky on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "25 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
+        "tier": "best"
+      },
+      {
+        "id": "volcano",
+        "name": "Volcano",
+        "slot": "weapon",
+        "icon": "items/volcano.png",
+        "source": "Crafted (Hellstone Bars)",
+        "why": "Crafted from Hellstone Bars; creates an explosion on hitting enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
+        "tier": "other"
+      },
+      {
+        "id": "ball-o-hurt",
+        "name": "Ball O' Hurt",
+        "slot": "weapon",
+        "icon": "items/ball-o-hurt.png",
+        "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt/Defiled Crates",
+        "why": "Corruption flail obtained by breaking Shadow Orbs, needs no boss.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "30 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ball_O%27_Hurt",
+        "tier": "other"
       }
     ],
     "armor": [
@@ -261,7 +340,8 @@
         "topPick": true,
         "subclass": "bow",
         "stats": "22 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Hellwing_Bow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hellwing_Bow",
+        "tier": "best"
       },
       {
         "id": "phoenix-blaster",
@@ -271,10 +351,11 @@
         "source": "Crafted (Handgun + 10 Hellstone Bars)",
         "why": "Upgrade to the Handgun crafted from Hellstone Bars in the Underworld.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "gun",
         "stats": "30 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster",
+        "tier": "good"
       },
       {
         "id": "quad-barrel-shotgun",
@@ -284,23 +365,11 @@
         "source": "Purchased from the Arms Dealer in a Graveyard after Skeletron is defeated (35 GC)",
         "why": "Sold by the Arms Dealer in a Graveyard only after Skeletron is defeated.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "gun",
         "stats": "14 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Quad-Barrel_Shotgun"
-      },
-      {
-        "id": "molten-fury",
-        "name": "Molten Fury",
-        "slot": "weapon",
-        "icon": "items/molten-fury.png",
-        "source": "Crafted from Hellstone Bars",
-        "why": "Hellstone-tier bow that ignites the arrows it fires.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "bow",
-        "stats": "31 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Fury"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Quad-Barrel_Shotgun",
+        "tier": "good"
       },
       {
         "id": "handgun",
@@ -313,7 +382,8 @@
         "topPick": false,
         "subclass": "gun",
         "stats": "26 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Handgun"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Handgun",
+        "tier": "other"
       },
       {
         "id": "bone",
@@ -326,7 +396,72 @@
         "topPick": false,
         "subclass": "throwing",
         "stats": "20 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bone",
+        "tier": "other"
+      },
+      {
+        "id": "molten-fury",
+        "name": "Molten Fury",
+        "slot": "weapon",
+        "icon": "items/molten-fury.png",
+        "source": "Crafted from Hellstone Bars",
+        "why": "Hellstone-tier bow that ignites the arrows it fires.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "31 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Fury",
+        "tier": "good"
+      },
+      {
+        "id": "beenade",
+        "name": "Beenade",
+        "slot": "weapon",
+        "icon": "items/beenade.png",
+        "source": "Dropped by Queen Bee; crafted with Bee Wax from Queen Bee",
+        "why": "A Queen Bee consumable that releases homing bees on detonation.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "throwing",
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade",
+        "tier": "best"
+      },
+      {
+        "id": "star-cannon",
+        "name": "Star Cannon",
+        "slot": "weapon",
+        "icon": "items/star-cannon.png",
+        "source": "Crafted (Minishark + 20 Meteorite Bars + 5 Fallen Stars)",
+        "why": "Fires Fallen Stars for exceptional pre-Hardmode damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "tier": "best",
+        "subclass": "gun",
+        "stats": "55 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon"
+      },
+      {
+        "id": "the-bees-knees",
+        "name": "The Bee's Knees",
+        "slot": "weapon",
+        "icon": "items/the-bees-knees.png",
+        "source": "Dropped by Queen Bee",
+        "why": "Converts wooden arrows into homing bees.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "bow",
+        "stats": "23 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees",
+        "tier": "good"
       }
     ],
     "armor": [
@@ -441,19 +576,6 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "demon-scythe",
-        "name": "Demon Scythe",
-        "slot": "weapon",
-        "icon": "items/demon-scythe.png",
-        "source": "Dropped by Demons and Voodoo Demons in the Underworld",
-        "why": "Fires accelerating sickle projectiles that pierce up to five enemies.",
-        "tags": [],
-        "topPick": true,
-        "subclass": "spell-tome",
-        "stats": "35 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Scythe"
-      },
-      {
         "id": "water-bolt",
         "name": "Water Bolt",
         "slot": "weapon",
@@ -461,10 +583,11 @@
         "source": "Found on Dungeon bookshelves (requires Skeletron for Dungeon access)",
         "why": "Fires a slow, piercing water ball that bounces off walls.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "spell-tome",
         "stats": "19 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Water_Bolt"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Water_Bolt",
+        "tier": "good"
       },
       {
         "id": "flamelash",
@@ -474,10 +597,11 @@
         "source": "Found in Shadow Chests / Obsidian Lock Boxes (Underworld)",
         "why": "Fires a cursor-controlled fireball found in Underworld Shadow Chests.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "wand",
         "stats": "32 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamelash"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamelash",
+        "tier": "good"
       },
       {
         "id": "flower-of-fire",
@@ -487,10 +611,11 @@
         "source": "Found in Shadow Chests / Obsidian Lock Boxes (Underworld)",
         "why": "Throws a bouncing fireball that explodes on contact.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "wand",
         "stats": "48 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_of_Fire"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_of_Fire",
+        "tier": "good"
       },
       {
         "id": "book-of-skulls",
@@ -503,7 +628,8 @@
         "topPick": false,
         "subclass": "spell-tome",
         "stats": "29 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Book_of_Skulls"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Book_of_Skulls",
+        "tier": "other"
       },
       {
         "id": "magic-missile",
@@ -516,7 +642,104 @@
         "topPick": false,
         "subclass": "wand",
         "stats": "35 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile",
+        "tier": "good"
+      },
+      {
+        "id": "gray-zapinator",
+        "name": "Gray Zapinator",
+        "slot": "weapon",
+        "icon": "items/gray-zapinator.png",
+        "source": "Purchased from the Traveling Merchant (pre-Hardmode)",
+        "why": "Fires an erratic light beam that ricochets and varies in size.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "magic-gun",
+        "stats": "42 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gray_Zapinator",
+        "tier": "best"
+      },
+      {
+        "id": "weather-pain",
+        "name": "Weather Pain",
+        "slot": "weapon",
+        "icon": "items/weather-pain.png",
+        "source": "Dropped by Deerclops",
+        "why": "Fires a slow weather-front projectile that spawns damaging effects.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "13 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain",
+        "tier": "good"
+      },
+      {
+        "id": "demon-scythe",
+        "name": "Demon Scythe",
+        "slot": "weapon",
+        "icon": "items/demon-scythe.png",
+        "source": "Dropped by Demons and Voodoo Demons in the Underworld",
+        "why": "Fires accelerating sickle projectiles that pierce up to five enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "spell-tome",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Scythe",
+        "tier": "best"
+      },
+      {
+        "id": "aqua-scepter",
+        "name": "Aqua Scepter",
+        "slot": "weapon",
+        "icon": "items/aqua-scepter.png",
+        "source": "Found in Gold Chests / Golden Lock Boxes",
+        "why": "Sprays a stream of water droplets that pierce enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "wand",
+        "stats": "27 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Aqua_Scepter",
+        "tier": "best"
+      },
+      {
+        "id": "crimson-rod",
+        "name": "Crimson Rod",
+        "slot": "weapon",
+        "icon": "items/crimson-rod.png",
+        "source": "Destroyed from Crimson Hearts (1/5), or fished in Crimson/Hematic Crates",
+        "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "summon-magic",
+        "stats": "12 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
+        "tier": "best"
+      },
+      {
+        "id": "thunder-zapper",
+        "name": "Thunder Zapper",
+        "slot": "weapon",
+        "icon": "items/thunder-zapper.png",
+        "source": "Found in Sandstone Chests and Oasis/Mirage Crates (Desert)",
+        "why": "Fires an electric bolt that pierces one enemy, found in the Desert.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "24 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Thunder_Zapper",
+        "tier": "other"
       }
     ],
     "armor": [
@@ -631,19 +854,6 @@
     "class": "summoner",
     "weapons": [
       {
-        "id": "imp-staff",
-        "name": "Imp Staff",
-        "slot": "weapon",
-        "icon": "items/imp-staff.png",
-        "source": "Crafted from 17 Hellstone Bars at an Iron/Lead Anvil",
-        "why": "Summons an Imp minion that fires On Fire! bolts; needs Underworld Hellstone.",
-        "tags": [],
-        "topPick": true,
-        "subclass": "minions",
-        "stats": "17 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff"
-      },
-      {
         "id": "spinal-tap",
         "name": "Spinal Tap",
         "slot": "weapon",
@@ -654,7 +864,152 @@
         "topPick": true,
         "subclass": "whip",
         "stats": "29 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spinal_Tap"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spinal_Tap",
+        "tier": "best"
+      },
+      {
+        "id": "snapthorn",
+        "name": "Snapthorn",
+        "slot": "weapon",
+        "icon": "items/snapthorn.png",
+        "source": "Crafted (15 Stinger + 3 Vine + 12 Jungle Spores at an Anvil)",
+        "why": "Jungle-material whip that inflicts Acid Venom and grants summon tag damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "18 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Snapthorn",
+        "tier": "good"
+      },
+      {
+        "id": "imp-staff",
+        "name": "Imp Staff",
+        "slot": "weapon",
+        "icon": "items/imp-staff.png",
+        "source": "Crafted from 17 Hellstone Bars at an Iron/Lead Anvil",
+        "why": "Summons an Imp minion that fires On Fire! bolts; needs Underworld Hellstone.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "minions",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "ballista-rod",
+        "name": "Ballista Rod",
+        "slot": "weapon",
+        "icon": "items/ballista-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry that fires high-damage piercing bolts.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "sentries",
+        "stats": "30 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Rod",
+        "tier": "best"
+      },
+      {
+        "id": "explosive-trap-rod",
+        "name": "Explosive Trap Rod",
+        "slot": "weapon",
+        "icon": "items/explosive-trap-rod.png",
+        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
+        "why": "Tier 1 Tavernkeep sentry that lays a trap detonating when enemies pass over it.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Rod",
+        "tier": "good"
+      },
+      {
+        "id": "mushroom-staff",
+        "name": "Mushroom Staff",
+        "slot": "weapon",
+        "icon": "items/mushroom-staff.png",
+        "source": "Crafted from 300 Glowing Mushrooms + 5 Mushroom Grass Seeds + 5 Shadow Scales/Tissue Samples at an Iron/Lead Anvil",
+        "why": "Summons a Mushroom Boi minion; requires an evil-boss drop (Shadow Scale or Tissue Sample) to craft.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "8 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "flinx-staff",
+        "name": "Flinx Staff",
+        "slot": "weapon",
+        "icon": "items/flinx-staff.png",
+        "source": "Crafted from 6 Flinx Fur + 10 Gold/Platinum Bars at a Work Bench",
+        "why": "Summons a Flinx minion; Flinx Fur drops from Snow Flinxes in the Snow biome.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "8 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "vampire-frog-staff",
+        "name": "Vampire Frog Staff",
+        "slot": "weapon",
+        "icon": "items/vampire-frog-staff.png",
+        "source": "Dropped by Zombie Merman and Wandering Eye Fish (Blood Moon)",
+        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon with no boss required.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "11 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "houndius-shootius",
+        "name": "Houndius Shootius",
+        "slot": "weapon",
+        "icon": "items/houndius-shootius.png",
+        "source": "Dropped by Deerclops",
+        "why": "Pre-Hardmode sentry dropped by Deerclops that shoots piercing fireballs.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "24 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius",
+        "tier": "good"
+      },
+      {
+        "id": "starcrash",
+        "name": "Starcrash",
+        "slot": "weapon",
+        "icon": "items/starcrash.png",
+        "source": "Crafted (20 Meteorite Bar + 10 Chain + 10 Fallen Star at an Anvil)",
+        "why": "Summons falling star projectiles on hit that deal extra damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "18 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Starcrash",
+        "tier": "good"
       }
     ],
     "armor": [

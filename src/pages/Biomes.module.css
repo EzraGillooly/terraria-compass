@@ -98,7 +98,8 @@
   color: #fff;
   background: var(--warm);
   border-radius: var(--radius-pill);
-  padding: 3px 10px;
+  padding: 5px 10px 3px;
+  line-height: 1;
 }
 .bandBlurb {
   font-size: 13px;
@@ -144,7 +145,7 @@
   border: 1px solid var(--line);
   background: var(--card);
   border-radius: var(--radius-pill);
-  padding: 4px 11px 4px 8px;
+  padding: 6px 11px 4px 8px;
 }
 .chipIcon { width: 20px; height: 20px; flex: none; object-fit: contain; }
 .chipDot { width: 7px; height: 7px; border-radius: 50%; flex: none; margin: 0 3px; }
