@@ -570,6 +570,36 @@
         "why": "The flat damage increase is still one of the cleanest late-game consumables to justify.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "swiftness-potion",
+        "name": "Swiftness Potion",
+        "slot": "buff",
+        "icon": "potions/swiftness-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Extra movement speed compounds with your mobility accessories and makes dodging much more forgiving.",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "archery-potion",
+        "name": "Archery Potion",
+        "slot": "buff",
+        "icon": "potions/archery-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "For bow setups this is the single most important early damage potion.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "ammo-reservation-potion",
+        "name": "Ammo Reservation Potion",
+        "slot": "buff",
+        "icon": "potions/ammo-reservation-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "Ammo consumption adds up quickly on the strongest guns, so this stretches your best supplies further.",
+        "tags": [],
+        "topPick": false
       }
     ]
   },
@@ -897,6 +927,26 @@
         "why": "A direct damage increase still translates well even at the very end of progression.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "mana-regeneration-potion",
+        "name": "Mana Regeneration Potion",
+        "slot": "buff",
+        "icon": "potions/mana-regeneration-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "This is the first buff that makes sustained casting feel comfortable instead of constantly interrupted.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The damage bonus is straightforward and strong, which makes it the first mage buff to value consistently.",
+        "tags": [],
+        "topPick": true
       }
     ]
   },
@@ -1174,6 +1224,48 @@
         "why": "The damage increase remains straightforward value even after full gear progression is complete.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "flask-of-ichor",
+        "name": "Flask of Ichor",
+        "slot": "buff",
+        "icon": "potions/flask-of-ichor.png",
+        "source": "Crafted at an Imbuing Station",
+        "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "flask-of-venom",
+        "name": "Flask of Venom",
+        "slot": "buff",
+        "icon": "potions/flask-of-venom.png",
+        "source": "Brewed at an Imbuing Station (post-Plantera)",
+        "why": "Coats melee hits with Acid Venom.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Venom"
+      },
+      {
+        "id": "summoning-potion",
+        "name": "Summoning Potion",
+        "slot": "buff",
+        "icon": "potions/summoning-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The extra minion slot is too valuable to skip, even in the earliest summoner boss prep.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "war-table",
+        "name": "War Table",
+        "slot": "buff",
+        "icon": "potions/war-table.png",
+        "source": "Dropped by the Dark Mage and Ogre during the Old One's Army",
+        "why": "Table buff that boosts minion damage.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
     ]
   }

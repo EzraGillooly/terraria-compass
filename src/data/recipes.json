@@ -1,0 +1,3651 @@
+{
+  "roots": [
+    "ankh-shield",
+    "cell-phone",
+    "shellphone",
+    "terraspark-boots",
+    "celestial-shell",
+    "master-ninja-gear",
+    "fire-gauntlet",
+    "mechanical-glove",
+    "berserkers-glove",
+    "destroyer-emblem",
+    "avenger-emblem",
+    "celestial-emblem",
+    "charm-of-myths",
+    "sniper-scope",
+    "papyrus-scarab",
+    "star-veil",
+    "bundle-of-balloons",
+    "mana-flower",
+    "frostspark-boots",
+    "obsidian-shield",
+    "lightning-boots",
+    "ankh-charm",
+    "zenith",
+    "terra-blade",
+    "nights-edge",
+    "excalibur",
+    "true-excalibur",
+    "true-nights-edge",
+    "megashark",
+    "phantasm",
+    "star-cannon",
+    "chlorophyte-shotbow",
+    "solar-flare-armor",
+    "vortex-armor",
+    "nebula-armor",
+    "stardust-armor",
+    "beetle-armor",
+    "chlorophyte-armor",
+    "turtle-armor",
+    "hallowed-armor",
+    "spectre-armor",
+    "molten-armor"
+  ],
+  "nodes": {
+    "ankh-shield": {
+      "id": "ankh-shield",
+      "name": "Ankh Shield",
+      "page": "Ankh Shield",
+      "icon": "materials/ankh-shield.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "obsidian-shield",
+              "qty": 1
+            },
+            {
+              "id": "ankh-charm",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "cell-phone": {
+      "id": "cell-phone",
+      "name": "Cell Phone",
+      "page": "Cell Phone",
+      "icon": "materials/cell-phone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Cell_Phone",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "pda",
+              "qty": 1
+            },
+            {
+              "id": "magic-mirror",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "pda",
+              "qty": 1
+            },
+            {
+              "id": "ice-mirror",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "shellphone": {
+      "id": "shellphone",
+      "name": "Shellphone",
+      "page": "Shellphone",
+      "icon": "materials/shellphone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Shellphone",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "cell-phone",
+              "qty": 1
+            },
+            {
+              "id": "magic-conch",
+              "qty": 1
+            },
+            {
+              "id": "demon-conch",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "terraspark-boots": {
+      "id": "terraspark-boots",
+      "name": "Terraspark Boots",
+      "page": "Terraspark Boots",
+      "icon": "materials/terraspark-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "frostspark-boots",
+              "qty": 1
+            },
+            {
+              "id": "lava-waders",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "celestial-shell": {
+      "id": "celestial-shell",
+      "name": "Celestial Shell",
+      "page": "Celestial Shell",
+      "icon": "materials/celestial-shell.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Shell",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "celestial-stone",
+              "qty": 1
+            },
+            {
+              "id": "moon-shell",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "master-ninja-gear": {
+      "id": "master-ninja-gear",
+      "name": "Master Ninja Gear",
+      "page": "Master Ninja Gear",
+      "icon": "materials/master-ninja-gear.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "tiger-climbing-gear",
+              "qty": 1
+            },
+            {
+              "id": "tabi",
+              "qty": 1
+            },
+            {
+              "id": "black-belt",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "fire-gauntlet": {
+      "id": "fire-gauntlet",
+      "name": "Fire Gauntlet",
+      "page": "Fire Gauntlet",
+      "icon": "materials/fire-gauntlet.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "magma-stone",
+              "qty": 1
+            },
+            {
+              "id": "mechanical-glove",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "mechanical-glove": {
+      "id": "mechanical-glove",
+      "name": "Mechanical Glove",
+      "page": "Mechanical Glove",
+      "icon": "materials/mechanical-glove.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "power-glove",
+              "qty": 1
+            },
+            {
+              "id": "avenger-emblem",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "berserkers-glove": {
+      "id": "berserkers-glove",
+      "name": "Berserker's Glove",
+      "page": "Berserker's Glove",
+      "icon": "materials/berserkers-glove.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "power-glove",
+              "qty": 1
+            },
+            {
+              "id": "flesh-knuckles",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "destroyer-emblem": {
+      "id": "destroyer-emblem",
+      "name": "Destroyer Emblem",
+      "page": "Destroyer Emblem",
+      "icon": "materials/destroyer-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "avenger-emblem",
+              "qty": 1
+            },
+            {
+              "id": "eye-of-the-golem",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "avenger-emblem": {
+      "id": "avenger-emblem",
+      "name": "Avenger Emblem",
+      "page": "Avenger Emblem",
+      "icon": "materials/avenger-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "summoner-emblem",
+              "qty": 1
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-sight",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-fright",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "sorcerer-emblem",
+              "qty": 1
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-sight",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-fright",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "ranger-emblem",
+              "qty": 1
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-sight",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-fright",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "warrior-emblem",
+              "qty": 1
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-sight",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-fright",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "warrior-emblem",
+              "qty": 1
+            },
+            {
+              "id": "ranger-emblem",
+              "qty": 1
+            },
+            {
+              "id": "sorcerer-emblem",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "celestial-emblem": {
+      "id": "celestial-emblem",
+      "name": "Celestial Emblem",
+      "page": "Celestial Emblem",
+      "icon": "materials/celestial-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "celestial-magnet",
+              "qty": 1
+            },
+            {
+              "id": "avenger-emblem",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "charm-of-myths": {
+      "id": "charm-of-myths",
+      "name": "Charm of Myths",
+      "page": "Charm of Myths",
+      "icon": "materials/charm-of-myths.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "band-of-regeneration",
+              "qty": 1
+            },
+            {
+              "id": "philosophers-stone",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "sniper-scope": {
+      "id": "sniper-scope",
+      "name": "Sniper Scope",
+      "page": "Sniper Scope",
+      "icon": "materials/sniper-scope.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "rifle-scope",
+              "qty": 1
+            },
+            {
+              "id": "destroyer-emblem",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "papyrus-scarab": {
+      "id": "papyrus-scarab",
+      "name": "Papyrus Scarab",
+      "page": "Papyrus Scarab",
+      "icon": "materials/papyrus-scarab.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "necromantic-scroll",
+              "qty": 1
+            },
+            {
+              "id": "hercules-beetle",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "star-veil": {
+      "id": "star-veil",
+      "name": "Star Veil",
+      "page": "Star Veil",
+      "icon": "materials/star-veil.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "star-cloak",
+              "qty": 1
+            },
+            {
+              "id": "cross-necklace",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "bundle-of-balloons": {
+      "id": "bundle-of-balloons",
+      "name": "Bundle of Balloons",
+      "page": "Bundle of Balloons",
+      "icon": "materials/bundle-of-balloons.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "cloud-in-a-balloon",
+              "qty": 1
+            },
+            {
+              "id": "blizzard-in-a-balloon",
+              "qty": 1
+            },
+            {
+              "id": "sandstorm-in-a-balloon",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "mana-flower": {
+      "id": "mana-flower",
+      "name": "Mana Flower",
+      "page": "Mana Flower",
+      "icon": "materials/mana-flower.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "natures-gift",
+              "qty": 1
+            },
+            {
+              "id": "mana-potion",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "frostspark-boots": {
+      "id": "frostspark-boots",
+      "name": "Frostspark Boots",
+      "page": "Frostspark Boots",
+      "icon": "materials/frostspark-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "lightning-boots",
+              "qty": 1
+            },
+            {
+              "id": "ice-skates",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "obsidian-shield": {
+      "id": "obsidian-shield",
+      "name": "Obsidian Shield",
+      "page": "Obsidian Shield",
+      "icon": "materials/obsidian-shield.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "cobalt-shield",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-skull",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "lightning-boots": {
+      "id": "lightning-boots",
+      "name": "Lightning Boots",
+      "page": "Lightning Boots",
+      "icon": "materials/lightning-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "spectre-boots",
+              "qty": 1
+            },
+            {
+              "id": "anklet-of-the-wind",
+              "qty": 1
+            },
+            {
+              "id": "aglet",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "ankh-charm": {
+      "id": "ankh-charm",
+      "name": "Ankh Charm",
+      "page": "Ankh Charm",
+      "icon": "materials/ankh-charm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "armor-bracing",
+              "qty": 1
+            },
+            {
+              "id": "medicated-bandage",
+              "qty": 1
+            },
+            {
+              "id": "the-plan",
+              "qty": 1
+            },
+            {
+              "id": "countercurse-mantra",
+              "qty": 1
+            },
+            {
+              "id": "reflective-shades",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "armor-bracing",
+              "qty": 1
+            },
+            {
+              "id": "medicated-bandage",
+              "qty": 1
+            },
+            {
+              "id": "the-plan",
+              "qty": 1
+            },
+            {
+              "id": "countercurse-mantra",
+              "qty": 1
+            },
+            {
+              "id": "blindfold",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "ranger-emblem": {
+      "id": "ranger-emblem",
+      "name": "Ranger Emblem",
+      "page": "Ranger Emblem",
+      "icon": "materials/ranger-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem",
+      "recipes": []
+    },
+    "sorcerer-emblem": {
+      "id": "sorcerer-emblem",
+      "name": "Sorcerer Emblem",
+      "page": "Sorcerer Emblem",
+      "icon": "materials/sorcerer-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+      "recipes": []
+    },
+    "summoner-emblem": {
+      "id": "summoner-emblem",
+      "name": "Summoner Emblem",
+      "page": "Summoner Emblem",
+      "icon": "materials/summoner-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem",
+      "recipes": []
+    },
+    "zenith": {
+      "id": "zenith",
+      "name": "Zenith",
+      "page": "Zenith",
+      "icon": "materials/zenith.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Zenith",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "terra-blade",
+              "qty": 1
+            },
+            {
+              "id": "meowmere",
+              "qty": 1
+            },
+            {
+              "id": "star-wrath",
+              "qty": 1
+            },
+            {
+              "id": "influx-waver",
+              "qty": 1
+            },
+            {
+              "id": "the-horsemans-blade",
+              "qty": 1
+            },
+            {
+              "id": "seedler",
+              "qty": 1
+            },
+            {
+              "id": "starfury",
+              "qty": 1
+            },
+            {
+              "id": "bee-keeper",
+              "qty": 1
+            },
+            {
+              "id": "enchanted-sword",
+              "qty": 1
+            },
+            {
+              "id": "copper-shortsword",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "terra-blade": {
+      "id": "terra-blade",
+      "name": "Terra Blade",
+      "page": "Terra Blade",
+      "icon": "materials/terra-blade.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "true-nights-edge",
+              "qty": 1
+            },
+            {
+              "id": "true-excalibur",
+              "qty": 1
+            },
+            {
+              "id": "broken-hero-sword",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "nights-edge": {
+      "id": "nights-edge",
+      "name": "Night's Edge",
+      "page": "Night's Edge",
+      "icon": "materials/nights-edge.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Night's_Edge",
+      "recipes": [
+        {
+          "station": "Demon Altar or Crimson Altar",
+          "ingredients": [
+            {
+              "id": "lights-bane",
+              "qty": 1
+            },
+            {
+              "id": "muramasa",
+              "qty": 1
+            },
+            {
+              "id": "blade-of-grass",
+              "qty": 1
+            },
+            {
+              "id": "fiery-greatsword",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "lights-bane",
+              "qty": 1
+            },
+            {
+              "id": "muramasa",
+              "qty": 1
+            },
+            {
+              "id": "blade-of-grass",
+              "qty": 1
+            },
+            {
+              "id": "volcano",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "blood-butcherer",
+              "qty": 1
+            },
+            {
+              "id": "muramasa",
+              "qty": 1
+            },
+            {
+              "id": "blade-of-grass",
+              "qty": 1
+            },
+            {
+              "id": "fiery-greatsword",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "blood-butcherer",
+              "qty": 1
+            },
+            {
+              "id": "muramasa",
+              "qty": 1
+            },
+            {
+              "id": "blade-of-grass",
+              "qty": 1
+            },
+            {
+              "id": "volcano",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "excalibur": {
+      "id": "excalibur",
+      "name": "Excalibur",
+      "page": "Excalibur",
+      "icon": "materials/excalibur.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Excalibur",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "true-excalibur": {
+      "id": "true-excalibur",
+      "name": "True Excalibur",
+      "page": "True Excalibur",
+      "icon": "materials/true-excalibur.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "excalibur",
+              "qty": 1
+            },
+            {
+              "id": "chlorophyte-bar",
+              "qty": 24
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "excalibur",
+              "qty": 1
+            },
+            {
+              "id": "broken-hero-sword",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "true-nights-edge": {
+      "id": "true-nights-edge",
+      "name": "True Night's Edge",
+      "page": "True Night's Edge",
+      "icon": "materials/true-nights-edge.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night's_Edge",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "nights-edge",
+              "qty": 1
+            },
+            {
+              "id": "soul-of-fright",
+              "qty": 20
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 20
+            },
+            {
+              "id": "soul-of-sight",
+              "qty": 20
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "nights-edge",
+              "qty": 1
+            },
+            {
+              "id": "broken-hero-sword",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "megashark": {
+      "id": "megashark",
+      "name": "Megashark",
+      "page": "Megashark",
+      "icon": "materials/megashark.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Megashark",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "minishark",
+              "qty": 1
+            },
+            {
+              "id": "illegal-gun-parts",
+              "qty": 1
+            },
+            {
+              "id": "shark-fin",
+              "qty": 5
+            },
+            {
+              "id": "soul-of-might",
+              "qty": 20
+            }
+          ]
+        }
+      ]
+    },
+    "phantasm": {
+      "id": "phantasm",
+      "name": "Phantasm",
+      "page": "Phantasm",
+      "icon": "materials/phantasm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "vortex-fragment",
+              "qty": 18
+            }
+          ]
+        }
+      ]
+    },
+    "star-cannon": {
+      "id": "star-cannon",
+      "name": "Star Cannon",
+      "page": "Star Cannon",
+      "icon": "materials/star-cannon.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "minishark",
+              "qty": 1
+            },
+            {
+              "id": "meteorite-bar",
+              "qty": 20
+            },
+            {
+              "id": "fallen-star",
+              "qty": 5
+            }
+          ]
+        }
+      ]
+    },
+    "chlorophyte-shotbow": {
+      "id": "chlorophyte-shotbow",
+      "name": "Chlorophyte Shotbow",
+      "page": "Chlorophyte Shotbow",
+      "icon": "materials/chlorophyte-shotbow.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Shotbow",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "solar-flare-armor": {
+      "id": "solar-flare-armor",
+      "name": "Solar Flare armor",
+      "page": "Solar Flare armor",
+      "icon": "materials/solar-flare-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Flare_armor",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "solar-fragment",
+              "qty": 20
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 16
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "solar-fragment",
+              "qty": 10
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 8
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "solar-fragment",
+              "qty": 15
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "vortex-armor": {
+      "id": "vortex-armor",
+      "name": "Vortex armor",
+      "page": "Vortex armor",
+      "icon": "materials/vortex-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_armor",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "vortex-fragment",
+              "qty": 20
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 16
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "vortex-fragment",
+              "qty": 10
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 8
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "vortex-fragment",
+              "qty": 15
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "nebula-armor": {
+      "id": "nebula-armor",
+      "name": "Nebula armor",
+      "page": "Nebula armor",
+      "icon": "materials/nebula-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_armor",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "nebula-fragment",
+              "qty": 20
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 16
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "nebula-fragment",
+              "qty": 10
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 8
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "nebula-fragment",
+              "qty": 15
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "stardust-armor": {
+      "id": "stardust-armor",
+      "name": "Stardust armor",
+      "page": "Stardust armor",
+      "icon": "materials/stardust-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_armor",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "stardust-fragment",
+              "qty": 10
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 8
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "stardust-fragment",
+              "qty": 15
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "stardust-fragment",
+              "qty": 20
+            },
+            {
+              "id": "luminite-bar",
+              "qty": 16
+            }
+          ]
+        }
+      ]
+    },
+    "beetle-armor": {
+      "id": "beetle-armor",
+      "name": "Beetle armor",
+      "page": "Beetle armor",
+      "icon": "materials/beetle-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_armor",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "beetle-husk",
+              "qty": 4
+            },
+            {
+              "id": "turtle-helmet",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "beetle-husk",
+              "qty": 6
+            },
+            {
+              "id": "turtle-leggings",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "beetle-husk",
+              "qty": 8
+            },
+            {
+              "id": "turtle-scale-mail",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "beetle-husk",
+              "qty": 8
+            },
+            {
+              "id": "turtle-scale-mail",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "chlorophyte-armor": {
+      "id": "chlorophyte-armor",
+      "name": "Chlorophyte armor",
+      "page": "Chlorophyte armor",
+      "icon": "materials/chlorophyte-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 18
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 24
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            }
+          ]
+        }
+      ]
+    },
+    "turtle-armor": {
+      "id": "turtle-armor",
+      "name": "Turtle armor",
+      "page": "Turtle armor",
+      "icon": "materials/turtle-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_armor",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            },
+            {
+              "id": "turtle-shell",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 18
+            },
+            {
+              "id": "turtle-shell",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 24
+            },
+            {
+              "id": "turtle-shell",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "hallowed-armor": {
+      "id": "hallowed-armor",
+      "name": "Hallowed armor",
+      "page": "Hallowed armor",
+      "icon": "materials/hallowed-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_armor",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 18
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hallowed-bar",
+              "qty": 24
+            }
+          ]
+        }
+      ]
+    },
+    "spectre-armor": {
+      "id": "spectre-armor",
+      "name": "Spectre armor",
+      "page": "Spectre armor",
+      "icon": "materials/spectre-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
+      "recipes": [
+        {
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "ingredients": [
+            {
+              "id": "spectre-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            },
+            {
+              "id": "ectoplasm",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 12
+            },
+            {
+              "id": "ectoplasm",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "spectre-bar",
+              "qty": 12
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 18
+            },
+            {
+              "id": "ectoplasm",
+              "qty": 18
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "spectre-bar",
+              "qty": 18
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "spectre-bar",
+              "qty": 24
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 24
+            },
+            {
+              "id": "ectoplasm",
+              "qty": 24
+            }
+          ]
+        }
+      ]
+    },
+    "molten-armor": {
+      "id": "molten-armor",
+      "name": "Molten armor",
+      "page": "Molten armor",
+      "icon": "materials/molten-armor.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_armor",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "hellstone-bar",
+              "qty": 20
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hellstone-bar",
+              "qty": 15
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "hellstone-bar",
+              "qty": 10
+            }
+          ]
+        }
+      ]
+    },
+    "pda": {
+      "id": "pda",
+      "name": "PDA",
+      "page": "PDA",
+      "icon": "materials/pda.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/PDA",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "gps",
+              "qty": 1
+            },
+            {
+              "id": "fish-finder",
+              "qty": 1
+            },
+            {
+              "id": "goblin-tech",
+              "qty": 1
+            },
+            {
+              "id": "rek-3000",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "magic-mirror": {
+      "id": "magic-mirror",
+      "name": "Magic Mirror",
+      "page": "Magic_Mirror",
+      "icon": "materials/magic-mirror.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Mirror",
+      "recipes": []
+    },
+    "ice-mirror": {
+      "id": "ice-mirror",
+      "name": "Ice Mirror",
+      "page": "Ice_Mirror",
+      "icon": "materials/ice-mirror.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Mirror",
+      "recipes": []
+    },
+    "magic-conch": {
+      "id": "magic-conch",
+      "name": "Magic Conch",
+      "page": "Magic_Conch",
+      "icon": "materials/magic-conch.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Conch",
+      "recipes": []
+    },
+    "demon-conch": {
+      "id": "demon-conch",
+      "name": "Demon Conch",
+      "page": "Demon_Conch",
+      "icon": "materials/demon-conch.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Conch",
+      "recipes": []
+    },
+    "lava-waders": {
+      "id": "lava-waders",
+      "name": "Lava Waders",
+      "page": "Lava_Waders",
+      "icon": "materials/lava-waders.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "obsidian-water-walking-boots",
+              "qty": 1
+            },
+            {
+              "id": "lava-charm",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-rose",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "molten-skull-rose",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-water-walking-boots",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "molten-skull-rose",
+              "qty": 1
+            },
+            {
+              "id": "water-walking-boots",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "molten-charm",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-water-walking-boots",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-rose",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "molten-charm",
+              "qty": 1
+            },
+            {
+              "id": "water-walking-boots",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-rose",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "obsidian-water-walking-boots",
+              "qty": 1
+            },
+            {
+              "id": "lava-charm",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "celestial-stone": {
+      "id": "celestial-stone",
+      "name": "Celestial Stone",
+      "page": "Celestial_Stone",
+      "icon": "materials/celestial-stone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "sun-stone",
+              "qty": 1
+            },
+            {
+              "id": "moon-stone",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "moon-shell": {
+      "id": "moon-shell",
+      "name": "Moon Shell",
+      "page": "Moon_Shell",
+      "icon": "materials/moon-shell.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "moon-charm",
+              "qty": 1
+            },
+            {
+              "id": "neptunes-shell",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "tiger-climbing-gear": {
+      "id": "tiger-climbing-gear",
+      "name": "Tiger Climbing Gear",
+      "page": "Tiger_Climbing_Gear",
+      "icon": "materials/tiger-climbing-gear.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "climbing-claws",
+              "qty": 1
+            },
+            {
+              "id": "shoe-spikes",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "tabi": {
+      "id": "tabi",
+      "name": "Tabi",
+      "page": "Tabi",
+      "icon": "materials/tabi.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi",
+      "recipes": []
+    },
+    "black-belt": {
+      "id": "black-belt",
+      "name": "Black Belt",
+      "page": "Black_Belt",
+      "icon": "materials/black-belt.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt",
+      "recipes": []
+    },
+    "magma-stone": {
+      "id": "magma-stone",
+      "name": "Magma Stone",
+      "page": "Magma_Stone",
+      "icon": "materials/magma-stone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+      "recipes": []
+    },
+    "power-glove": {
+      "id": "power-glove",
+      "name": "Power Glove",
+      "page": "Power_Glove",
+      "icon": "materials/power-glove.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "titan-glove",
+              "qty": 1
+            },
+            {
+              "id": "feral-claws",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "flesh-knuckles": {
+      "id": "flesh-knuckles",
+      "name": "Flesh Knuckles",
+      "page": "Flesh_Knuckles",
+      "icon": "materials/flesh-knuckles.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+      "recipes": []
+    },
+    "eye-of-the-golem": {
+      "id": "eye-of-the-golem",
+      "name": "Eye of the Golem",
+      "page": "Eye_of_the_Golem",
+      "icon": "materials/eye-of-the-golem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
+      "recipes": []
+    },
+    "soul-of-might": {
+      "id": "soul-of-might",
+      "name": "Soul of Might",
+      "page": "Soul_of_Might",
+      "icon": "materials/soul-of-might.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might",
+      "recipes": []
+    },
+    "soul-of-sight": {
+      "id": "soul-of-sight",
+      "name": "Soul of Sight",
+      "page": "Soul_of_Sight",
+      "icon": "materials/soul-of-sight.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight",
+      "recipes": []
+    },
+    "soul-of-fright": {
+      "id": "soul-of-fright",
+      "name": "Soul of Fright",
+      "page": "Soul_of_Fright",
+      "icon": "materials/soul-of-fright.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright",
+      "recipes": []
+    },
+    "warrior-emblem": {
+      "id": "warrior-emblem",
+      "name": "Warrior Emblem",
+      "page": "Warrior_Emblem",
+      "icon": "materials/warrior-emblem.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+      "recipes": []
+    },
+    "celestial-magnet": {
+      "id": "celestial-magnet",
+      "name": "Celestial Magnet",
+      "page": "Celestial_Magnet",
+      "icon": "materials/celestial-magnet.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet",
+      "recipes": []
+    },
+    "band-of-regeneration": {
+      "id": "band-of-regeneration",
+      "name": "Band of Regeneration",
+      "page": "Band_of_Regeneration",
+      "icon": "materials/band-of-regeneration.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+      "recipes": []
+    },
+    "philosophers-stone": {
+      "id": "philosophers-stone",
+      "name": "Philosopher's Stone",
+      "page": "Philosopher's_Stone",
+      "icon": "materials/philosophers-stone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher's_Stone",
+      "recipes": []
+    },
+    "rifle-scope": {
+      "id": "rifle-scope",
+      "name": "Rifle Scope",
+      "page": "Rifle_Scope",
+      "icon": "materials/rifle-scope.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
+      "recipes": []
+    },
+    "necromantic-scroll": {
+      "id": "necromantic-scroll",
+      "name": "Necromantic Scroll",
+      "page": "Necromantic_Scroll",
+      "icon": "materials/necromantic-scroll.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll",
+      "recipes": []
+    },
+    "hercules-beetle": {
+      "id": "hercules-beetle",
+      "name": "Hercules Beetle",
+      "page": "Hercules_Beetle",
+      "icon": "materials/hercules-beetle.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle",
+      "recipes": []
+    },
+    "star-cloak": {
+      "id": "star-cloak",
+      "name": "Star Cloak",
+      "page": "Star_Cloak",
+      "icon": "materials/star-cloak.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak",
+      "recipes": []
+    },
+    "cross-necklace": {
+      "id": "cross-necklace",
+      "name": "Cross Necklace",
+      "page": "Cross_Necklace",
+      "icon": "materials/cross-necklace.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace",
+      "recipes": []
+    },
+    "cloud-in-a-balloon": {
+      "id": "cloud-in-a-balloon",
+      "name": "Cloud in a Balloon",
+      "page": "Cloud_in_a_Balloon",
+      "icon": "materials/cloud-in-a-balloon.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "cloud-in-a-bottle",
+              "qty": 1
+            },
+            {
+              "id": "shiny-red-balloon",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "blizzard-in-a-balloon": {
+      "id": "blizzard-in-a-balloon",
+      "name": "Blizzard in a Balloon",
+      "page": "Blizzard_in_a_Balloon",
+      "icon": "materials/blizzard-in-a-balloon.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_in_a_Balloon",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "blizzard-in-a-bottle",
+              "qty": 1
+            },
+            {
+              "id": "shiny-red-balloon",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "sandstorm-in-a-balloon": {
+      "id": "sandstorm-in-a-balloon",
+      "name": "Sandstorm in a Balloon",
+      "page": "Sandstorm_in_a_Balloon",
+      "icon": "materials/sandstorm-in-a-balloon.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Balloon",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "sandstorm-in-a-bottle",
+              "qty": 1
+            },
+            {
+              "id": "shiny-red-balloon",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "natures-gift": {
+      "id": "natures-gift",
+      "name": "Nature's Gift",
+      "page": "Nature's_Gift",
+      "icon": "materials/natures-gift.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Nature's_Gift",
+      "recipes": []
+    },
+    "mana-potion": {
+      "id": "mana-potion",
+      "name": "Mana Potion",
+      "page": "Mana_Potion",
+      "icon": "materials/mana-potion.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion",
+      "recipes": [
+        {
+          "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+          "ingredients": [
+            {
+              "id": "lesser-mana-potion",
+              "qty": 2
+            },
+            {
+              "id": "glowing-mushroom",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "ice-skates": {
+      "id": "ice-skates",
+      "name": "Ice Skates",
+      "page": "Ice_Skates",
+      "icon": "materials/ice-skates.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates",
+      "recipes": []
+    },
+    "cobalt-shield": {
+      "id": "cobalt-shield",
+      "name": "Cobalt Shield",
+      "page": "Cobalt_Shield",
+      "icon": "materials/cobalt-shield.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield",
+      "recipes": []
+    },
+    "obsidian-skull": {
+      "id": "obsidian-skull",
+      "name": "Obsidian Skull",
+      "page": "Obsidian_Skull",
+      "icon": "materials/obsidian-skull.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+      "recipes": [
+        {
+          "station": "Furnace",
+          "ingredients": [
+            {
+              "id": "obsidian",
+              "qty": 20
+            }
+          ]
+        }
+      ]
+    },
+    "spectre-boots": {
+      "id": "spectre-boots",
+      "name": "Spectre Boots",
+      "page": "Spectre_Boots",
+      "icon": "materials/spectre-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "hermes-boots",
+              "qty": 1
+            },
+            {
+              "id": "rocket-boots",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "sailfish-boots",
+              "qty": 1
+            },
+            {
+              "id": "rocket-boots",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "flurry-boots",
+              "qty": 1
+            },
+            {
+              "id": "rocket-boots",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "dunerider-boots",
+              "qty": 1
+            },
+            {
+              "id": "rocket-boots",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "anklet-of-the-wind": {
+      "id": "anklet-of-the-wind",
+      "name": "Anklet of the Wind",
+      "page": "Anklet_of_the_Wind",
+      "icon": "materials/anklet-of-the-wind.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
+      "recipes": []
+    },
+    "aglet": {
+      "id": "aglet",
+      "name": "Aglet",
+      "page": "Aglet",
+      "icon": "materials/aglet.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet",
+      "recipes": []
+    },
+    "armor-bracing": {
+      "id": "armor-bracing",
+      "name": "Armor Bracing",
+      "page": "Armor_Bracing",
+      "icon": "materials/armor-bracing.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Armor_Bracing",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "armor-polish",
+              "qty": 1
+            },
+            {
+              "id": "vitamins",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "medicated-bandage": {
+      "id": "medicated-bandage",
+      "name": "Medicated Bandage",
+      "page": "Medicated_Bandage",
+      "icon": "materials/medicated-bandage.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Medicated_Bandage",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "bezoar",
+              "qty": 1
+            },
+            {
+              "id": "adhesive-bandage",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "the-plan": {
+      "id": "the-plan",
+      "name": "The Plan",
+      "page": "The_Plan",
+      "icon": "materials/the-plan.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/The_Plan",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "fast-clock",
+              "qty": 1
+            },
+            {
+              "id": "trifold-map",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "countercurse-mantra": {
+      "id": "countercurse-mantra",
+      "name": "Countercurse Mantra",
+      "page": "Countercurse_Mantra",
+      "icon": "materials/countercurse-mantra.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Countercurse_Mantra",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "megaphone",
+              "qty": 1
+            },
+            {
+              "id": "nazar",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "reflective-shades": {
+      "id": "reflective-shades",
+      "name": "Reflective Shades",
+      "page": "Reflective_Shades",
+      "icon": "materials/reflective-shades.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Reflective_Shades",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "blindfold",
+              "qty": 1
+            },
+            {
+              "id": "pocket-mirror",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "blindfold": {
+      "id": "blindfold",
+      "name": "Blindfold",
+      "page": "Blindfold",
+      "icon": "materials/blindfold.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Blindfold",
+      "recipes": []
+    },
+    "meowmere": {
+      "id": "meowmere",
+      "name": "Meowmere",
+      "page": "Meowmere",
+      "icon": "materials/meowmere.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere",
+      "recipes": []
+    },
+    "star-wrath": {
+      "id": "star-wrath",
+      "name": "Star Wrath",
+      "page": "Star_Wrath",
+      "icon": "materials/star-wrath.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath",
+      "recipes": []
+    },
+    "influx-waver": {
+      "id": "influx-waver",
+      "name": "Influx Waver",
+      "page": "Influx_Waver",
+      "icon": "materials/influx-waver.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver",
+      "recipes": []
+    },
+    "the-horsemans-blade": {
+      "id": "the-horsemans-blade",
+      "name": "The Horseman's Blade",
+      "page": "The_Horseman's_Blade",
+      "icon": "materials/the-horsemans-blade.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman's_Blade",
+      "recipes": []
+    },
+    "seedler": {
+      "id": "seedler",
+      "name": "Seedler",
+      "page": "Seedler",
+      "icon": "materials/seedler.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler",
+      "recipes": []
+    },
+    "starfury": {
+      "id": "starfury",
+      "name": "Starfury",
+      "page": "Starfury",
+      "icon": "materials/starfury.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
+      "recipes": []
+    },
+    "bee-keeper": {
+      "id": "bee-keeper",
+      "name": "Bee Keeper",
+      "page": "Bee_Keeper",
+      "icon": "materials/bee-keeper.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper",
+      "recipes": []
+    },
+    "enchanted-sword": {
+      "id": "enchanted-sword",
+      "name": "Enchanted Sword",
+      "page": "Enchanted_Sword",
+      "icon": "materials/enchanted-sword.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword",
+      "recipes": []
+    },
+    "copper-shortsword": {
+      "id": "copper-shortsword",
+      "name": "Copper Shortsword",
+      "page": "Copper_Shortsword",
+      "icon": "materials/copper-shortsword.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "copper-bar",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "copper-bar",
+              "qty": 7
+            }
+          ]
+        }
+      ]
+    },
+    "broken-hero-sword": {
+      "id": "broken-hero-sword",
+      "name": "Broken Hero Sword",
+      "page": "Broken_Hero_Sword",
+      "icon": "materials/broken-hero-sword.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Hero_Sword",
+      "recipes": []
+    },
+    "lights-bane": {
+      "id": "lights-bane",
+      "name": "Light's Bane",
+      "page": "Light's_Bane",
+      "icon": "materials/lights-bane.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Light's_Bane",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "demonite-bar",
+              "qty": 10
+            }
+          ]
+        }
+      ]
+    },
+    "muramasa": {
+      "id": "muramasa",
+      "name": "Muramasa",
+      "page": "Muramasa",
+      "icon": "materials/muramasa.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa",
+      "recipes": []
+    },
+    "blade-of-grass": {
+      "id": "blade-of-grass",
+      "name": "Blade of Grass",
+      "page": "Blade_of_Grass",
+      "icon": "materials/blade-of-grass.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "stinger",
+              "qty": 12
+            },
+            {
+              "id": "jungle-spores",
+              "qty": 15
+            },
+            {
+              "id": "vine",
+              "qty": 3
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "jungle-spores",
+              "qty": 12
+            },
+            {
+              "id": "stinger",
+              "qty": 15
+            }
+          ]
+        }
+      ]
+    },
+    "fiery-greatsword": {
+      "id": "fiery-greatsword",
+      "name": "Fiery Greatsword",
+      "page": "Fiery_Greatsword",
+      "icon": "materials/fiery-greatsword.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fiery_Greatsword",
+      "recipes": []
+    },
+    "volcano": {
+      "id": "volcano",
+      "name": "Volcano",
+      "page": "Volcano",
+      "icon": "materials/volcano.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "hellstone-bar",
+              "qty": 20
+            }
+          ]
+        }
+      ]
+    },
+    "blood-butcherer": {
+      "id": "blood-butcherer",
+      "name": "Blood Butcherer",
+      "page": "Blood_Butcherer",
+      "icon": "materials/blood-butcherer.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Butcherer",
+      "recipes": [
+        {
+          "station": "Iron Anvil or Lead Anvil",
+          "ingredients": [
+            {
+              "id": "crimtane-bar",
+              "qty": 10
+            }
+          ]
+        }
+      ]
+    },
+    "hallowed-bar": {
+      "id": "hallowed-bar",
+      "name": "Hallowed Bar",
+      "page": "Hallowed_Bar",
+      "icon": "materials/hallowed-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar",
+      "recipes": []
+    },
+    "chlorophyte-bar": {
+      "id": "chlorophyte-bar",
+      "name": "Chlorophyte Bar",
+      "page": "Chlorophyte_Bar",
+      "icon": "materials/chlorophyte-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar",
+      "recipes": [
+        {
+          "station": "Adamantite Forge or Titanium Forge",
+          "ingredients": [
+            {
+              "id": "chlorophyte-ore",
+              "qty": 5
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "chlorophyte-ore",
+              "qty": 6
+            }
+          ]
+        }
+      ]
+    },
+    "minishark": {
+      "id": "minishark",
+      "name": "Minishark",
+      "page": "Minishark",
+      "icon": "materials/minishark.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark",
+      "recipes": []
+    },
+    "illegal-gun-parts": {
+      "id": "illegal-gun-parts",
+      "name": "Illegal Gun Parts",
+      "page": "Illegal_Gun_Parts",
+      "icon": "materials/illegal-gun-parts.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts",
+      "recipes": []
+    },
+    "shark-fin": {
+      "id": "shark-fin",
+      "name": "Shark Fin",
+      "page": "Shark_Fin",
+      "icon": "materials/shark-fin.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Fin",
+      "recipes": []
+    },
+    "vortex-fragment": {
+      "id": "vortex-fragment",
+      "name": "Vortex Fragment",
+      "page": "Vortex_Fragment",
+      "icon": "materials/vortex-fragment.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment",
+      "recipes": []
+    },
+    "meteorite-bar": {
+      "id": "meteorite-bar",
+      "name": "Meteorite Bar",
+      "page": "Meteorite_Bar",
+      "icon": "materials/meteorite-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar",
+      "recipes": [
+        {
+          "station": "Furnace",
+          "ingredients": [
+            {
+              "id": "meteorite",
+              "qty": 3
+            }
+          ]
+        }
+      ]
+    },
+    "fallen-star": {
+      "id": "fallen-star",
+      "name": "Fallen Star",
+      "page": "Fallen_Star",
+      "icon": "materials/fallen-star.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
+      "recipes": []
+    },
+    "solar-fragment": {
+      "id": "solar-fragment",
+      "name": "Solar Fragment",
+      "page": "Solar_Fragment",
+      "icon": "materials/solar-fragment.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment",
+      "recipes": []
+    },
+    "luminite-bar": {
+      "id": "luminite-bar",
+      "name": "Luminite Bar",
+      "page": "Luminite_Bar",
+      "icon": "materials/luminite-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar",
+      "recipes": [
+        {
+          "station": "Ancient Manipulator",
+          "ingredients": [
+            {
+              "id": "luminite",
+              "qty": 4
+            }
+          ]
+        }
+      ]
+    },
+    "nebula-fragment": {
+      "id": "nebula-fragment",
+      "name": "Nebula Fragment",
+      "page": "Nebula_Fragment",
+      "icon": "materials/nebula-fragment.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment",
+      "recipes": []
+    },
+    "stardust-fragment": {
+      "id": "stardust-fragment",
+      "name": "Stardust Fragment",
+      "page": "Stardust_Fragment",
+      "icon": "materials/stardust-fragment.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment",
+      "recipes": []
+    },
+    "beetle-husk": {
+      "id": "beetle-husk",
+      "name": "Beetle Husk",
+      "page": "Beetle_Husk",
+      "icon": "materials/beetle-husk.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk",
+      "recipes": []
+    },
+    "turtle-helmet": {
+      "id": "turtle-helmet",
+      "name": "Turtle Helmet",
+      "page": "Turtle_Helmet",
+      "icon": "materials/turtle-helmet.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Helmet",
+      "recipes": []
+    },
+    "turtle-leggings": {
+      "id": "turtle-leggings",
+      "name": "Turtle Leggings",
+      "page": "Turtle_Leggings",
+      "icon": "materials/turtle-leggings.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Leggings",
+      "recipes": []
+    },
+    "turtle-scale-mail": {
+      "id": "turtle-scale-mail",
+      "name": "Turtle Scale Mail",
+      "page": "Turtle_Scale_Mail",
+      "icon": "materials/turtle-scale-mail.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Scale_Mail",
+      "recipes": []
+    },
+    "turtle-shell": {
+      "id": "turtle-shell",
+      "name": "Turtle Shell",
+      "page": "Turtle_Shell",
+      "icon": "materials/turtle-shell.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell",
+      "recipes": []
+    },
+    "spectre-bar": {
+      "id": "spectre-bar",
+      "name": "Spectre Bar",
+      "page": "Spectre_Bar",
+      "icon": "materials/spectre-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar",
+      "recipes": [
+        {
+          "station": "Adamantite Forge or Titanium Forge",
+          "ingredients": [
+            {
+              "id": "chlorophyte-bar",
+              "qty": 2
+            },
+            {
+              "id": "ectoplasm",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "ectoplasm": {
+      "id": "ectoplasm",
+      "name": "Ectoplasm",
+      "page": "Ectoplasm",
+      "icon": "materials/ectoplasm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm",
+      "recipes": []
+    },
+    "hellstone-bar": {
+      "id": "hellstone-bar",
+      "name": "Hellstone Bar",
+      "page": "Hellstone_Bar",
+      "icon": "materials/hellstone-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar",
+      "recipes": [
+        {
+          "station": "Hellforge",
+          "ingredients": [
+            {
+              "id": "hellstone",
+              "qty": 3
+            },
+            {
+              "id": "obsidian",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "gps": {
+      "id": "gps",
+      "name": "GPS",
+      "page": "GPS",
+      "icon": "materials/gps.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/GPS",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "gold-watch",
+              "qty": 1
+            },
+            {
+              "id": "depth-meter",
+              "qty": 1
+            },
+            {
+              "id": "compass",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "platinum-watch",
+              "qty": 1
+            },
+            {
+              "id": "depth-meter",
+              "qty": 1
+            },
+            {
+              "id": "compass",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "fish-finder": {
+      "id": "fish-finder",
+      "name": "Fish Finder",
+      "page": "Fish_Finder",
+      "icon": "materials/fish-finder.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fish_Finder",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "fishermans-pocket-guide",
+              "qty": 1
+            },
+            {
+              "id": "weather-radio",
+              "qty": 1
+            },
+            {
+              "id": "sextant",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "goblin-tech": {
+      "id": "goblin-tech",
+      "name": "Goblin Tech",
+      "page": "Goblin_Tech",
+      "icon": "materials/goblin-tech.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Goblin_Tech",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "metal-detector",
+              "qty": 1
+            },
+            {
+              "id": "stopwatch",
+              "qty": 1
+            },
+            {
+              "id": "dps-meter",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "rek-3000": {
+      "id": "rek-3000",
+      "name": "R.E.K. 3000",
+      "page": "R.E.K._3000",
+      "icon": "materials/rek-3000.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/R.E.K._3000",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "tally-counter",
+              "qty": 1
+            },
+            {
+              "id": "lifeform-analyzer",
+              "qty": 1
+            },
+            {
+              "id": "radar",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "obsidian-water-walking-boots": {
+      "id": "obsidian-water-walking-boots",
+      "name": "Obsidian Water Walking Boots",
+      "page": "Obsidian_Water_Walking_Boots",
+      "icon": "materials/obsidian-water-walking-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Water_Walking_Boots",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "water-walking-boots",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-skull",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "lava-charm": {
+      "id": "lava-charm",
+      "name": "Lava Charm",
+      "page": "Lava_Charm",
+      "icon": "materials/lava-charm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm",
+      "recipes": []
+    },
+    "obsidian-rose": {
+      "id": "obsidian-rose",
+      "name": "Obsidian Rose",
+      "page": "Obsidian_Rose",
+      "icon": "materials/obsidian-rose.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Rose",
+      "recipes": []
+    },
+    "molten-skull-rose": {
+      "id": "molten-skull-rose",
+      "name": "Molten Skull Rose",
+      "page": "Molten_Skull_Rose",
+      "icon": "materials/molten-skull-rose.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Skull_Rose",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "obsidian-skull-rose",
+              "qty": 1
+            },
+            {
+              "id": "lava-charm",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "magma-skull",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-rose",
+              "qty": 1
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "magma-skull",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-skull-rose",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "water-walking-boots": {
+      "id": "water-walking-boots",
+      "name": "Water Walking Boots",
+      "page": "Water_Walking_Boots",
+      "icon": "materials/water-walking-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Water_Walking_Boots",
+      "recipes": []
+    },
+    "molten-charm": {
+      "id": "molten-charm",
+      "name": "Molten Charm",
+      "page": "Molten_Charm",
+      "icon": "materials/molten-charm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Charm",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "lava-charm",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-skull",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "sun-stone": {
+      "id": "sun-stone",
+      "name": "Sun Stone",
+      "page": "Sun_Stone",
+      "icon": "materials/sun-stone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
+      "recipes": []
+    },
+    "moon-stone": {
+      "id": "moon-stone",
+      "name": "Moon Stone",
+      "page": "Moon_Stone",
+      "icon": "materials/moon-stone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+      "recipes": []
+    },
+    "moon-charm": {
+      "id": "moon-charm",
+      "name": "Moon Charm",
+      "page": "Moon_Charm",
+      "icon": "materials/moon-charm.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Charm",
+      "recipes": []
+    },
+    "neptunes-shell": {
+      "id": "neptunes-shell",
+      "name": "Neptune's Shell",
+      "page": "Neptune's_Shell",
+      "icon": "materials/neptunes-shell.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Neptune's_Shell",
+      "recipes": []
+    },
+    "climbing-claws": {
+      "id": "climbing-claws",
+      "name": "Climbing Claws",
+      "page": "Climbing_Claws",
+      "icon": "materials/climbing-claws.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
+      "recipes": []
+    },
+    "shoe-spikes": {
+      "id": "shoe-spikes",
+      "name": "Shoe Spikes",
+      "page": "Shoe_Spikes",
+      "icon": "materials/shoe-spikes.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes",
+      "recipes": []
+    },
+    "titan-glove": {
+      "id": "titan-glove",
+      "name": "Titan Glove",
+      "page": "Titan_Glove",
+      "icon": "materials/titan-glove.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Titan_Glove",
+      "recipes": []
+    },
+    "feral-claws": {
+      "id": "feral-claws",
+      "name": "Feral Claws",
+      "page": "Feral_Claws",
+      "icon": "materials/feral-claws.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws",
+      "recipes": []
+    },
+    "cloud-in-a-bottle": {
+      "id": "cloud-in-a-bottle",
+      "name": "Cloud in a Bottle",
+      "page": "Cloud_in_a_Bottle",
+      "icon": "materials/cloud-in-a-bottle.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Bottle",
+      "recipes": []
+    },
+    "shiny-red-balloon": {
+      "id": "shiny-red-balloon",
+      "name": "Shiny Red Balloon",
+      "page": "Shiny_Red_Balloon",
+      "icon": "materials/shiny-red-balloon.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
+      "recipes": []
+    },
+    "blizzard-in-a-bottle": {
+      "id": "blizzard-in-a-bottle",
+      "name": "Blizzard in a Bottle",
+      "page": "Blizzard_in_a_Bottle",
+      "icon": "materials/blizzard-in-a-bottle.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_in_a_Bottle",
+      "recipes": [
+        {
+          "station": "Crystal Ball",
+          "ingredients": [
+            {
+              "id": "cloud-in-a-bottle",
+              "qty": 1
+            },
+            {
+              "id": "frost-core",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "sandstorm-in-a-bottle": {
+      "id": "sandstorm-in-a-bottle",
+      "name": "Sandstorm in a Bottle",
+      "page": "Sandstorm_in_a_Bottle",
+      "icon": "materials/sandstorm-in-a-bottle.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Bottle",
+      "recipes": [
+        {
+          "station": "Crystal Ball",
+          "ingredients": [
+            {
+              "id": "cloud-in-a-bottle",
+              "qty": 1
+            },
+            {
+              "id": "forbidden-fragment",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "lesser-mana-potion": {
+      "id": "lesser-mana-potion",
+      "name": "Lesser Mana Potion",
+      "page": "Lesser_Mana_Potion",
+      "icon": "materials/lesser-mana-potion.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Mana_Potion",
+      "recipes": []
+    },
+    "glowing-mushroom": {
+      "id": "glowing-mushroom",
+      "name": "Glowing Mushroom",
+      "page": "Glowing_Mushroom",
+      "icon": "materials/glowing-mushroom.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom",
+      "recipes": [
+        {
+          "station": "By Hand",
+          "ingredients": [
+            {
+              "id": "mushroom-platform",
+              "qty": 2
+            }
+          ]
+        },
+        {
+          "station": "Work Bench",
+          "ingredients": [
+            {
+              "id": "mushroom-wall",
+              "qty": 4
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "mushroom-platform",
+              "qty": 2
+            }
+          ]
+        }
+      ]
+    },
+    "obsidian": {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "page": "Obsidian",
+      "icon": "materials/obsidian.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian",
+      "recipes": []
+    },
+    "hermes-boots": {
+      "id": "hermes-boots",
+      "name": "Hermes Boots",
+      "page": "Hermes_Boots",
+      "icon": "materials/hermes-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots",
+      "recipes": []
+    },
+    "rocket-boots": {
+      "id": "rocket-boots",
+      "name": "Rocket Boots",
+      "page": "Rocket_Boots",
+      "icon": "materials/rocket-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
+      "recipes": []
+    },
+    "sailfish-boots": {
+      "id": "sailfish-boots",
+      "name": "Sailfish Boots",
+      "page": "Sailfish_Boots",
+      "icon": "materials/sailfish-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sailfish_Boots",
+      "recipes": []
+    },
+    "flurry-boots": {
+      "id": "flurry-boots",
+      "name": "Flurry Boots",
+      "page": "Flurry_Boots",
+      "icon": "materials/flurry-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Flurry_Boots",
+      "recipes": []
+    },
+    "dunerider-boots": {
+      "id": "dunerider-boots",
+      "name": "Dunerider Boots",
+      "page": "Dunerider_Boots",
+      "icon": "materials/dunerider-boots.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Dunerider_Boots",
+      "recipes": []
+    },
+    "armor-polish": {
+      "id": "armor-polish",
+      "name": "Armor Polish",
+      "page": "Armor_Polish",
+      "icon": "materials/armor-polish.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Armor_Polish",
+      "recipes": []
+    },
+    "vitamins": {
+      "id": "vitamins",
+      "name": "Vitamins",
+      "page": "Vitamins",
+      "icon": "materials/vitamins.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Vitamins",
+      "recipes": []
+    },
+    "bezoar": {
+      "id": "bezoar",
+      "name": "Bezoar",
+      "page": "Bezoar",
+      "icon": "materials/bezoar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Bezoar",
+      "recipes": []
+    },
+    "adhesive-bandage": {
+      "id": "adhesive-bandage",
+      "name": "Adhesive Bandage",
+      "page": "Adhesive_Bandage",
+      "icon": "materials/adhesive-bandage.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Adhesive_Bandage",
+      "recipes": []
+    },
+    "fast-clock": {
+      "id": "fast-clock",
+      "name": "Fast Clock",
+      "page": "Fast_Clock",
+      "icon": "materials/fast-clock.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fast_Clock",
+      "recipes": []
+    },
+    "trifold-map": {
+      "id": "trifold-map",
+      "name": "Trifold Map",
+      "page": "Trifold_Map",
+      "icon": "materials/trifold-map.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Trifold_Map",
+      "recipes": []
+    },
+    "megaphone": {
+      "id": "megaphone",
+      "name": "Megaphone",
+      "page": "Megaphone",
+      "icon": "materials/megaphone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Megaphone",
+      "recipes": []
+    },
+    "nazar": {
+      "id": "nazar",
+      "name": "Nazar",
+      "page": "Nazar",
+      "icon": "materials/nazar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Nazar",
+      "recipes": []
+    },
+    "pocket-mirror": {
+      "id": "pocket-mirror",
+      "name": "Pocket Mirror",
+      "page": "Pocket_Mirror",
+      "icon": "materials/pocket-mirror.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Pocket_Mirror",
+      "recipes": []
+    },
+    "copper-bar": {
+      "id": "copper-bar",
+      "name": "Copper Bar",
+      "page": "Copper_Bar",
+      "icon": "materials/copper-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar",
+      "recipes": [
+        {
+          "station": "Furnace",
+          "ingredients": [
+            {
+              "id": "copper-ore",
+              "qty": 3
+            }
+          ]
+        }
+      ]
+    },
+    "demonite-bar": {
+      "id": "demonite-bar",
+      "name": "Demonite Bar",
+      "page": "Demonite_Bar",
+      "icon": "materials/demonite-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar",
+      "recipes": [
+        {
+          "station": "Furnace",
+          "ingredients": [
+            {
+              "id": "demonite-ore",
+              "qty": 3
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "demonite-ore",
+              "qty": 4
+            }
+          ]
+        }
+      ]
+    },
+    "stinger": {
+      "id": "stinger",
+      "name": "Stinger",
+      "page": "Stinger",
+      "icon": "materials/stinger.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger",
+      "recipes": []
+    },
+    "jungle-spores": {
+      "id": "jungle-spores",
+      "name": "Jungle Spores",
+      "page": "Jungle_Spores",
+      "icon": "materials/jungle-spores.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores",
+      "recipes": []
+    },
+    "vine": {
+      "id": "vine",
+      "name": "Vine",
+      "page": "Vine",
+      "icon": "materials/vine.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Vine",
+      "recipes": []
+    },
+    "crimtane-bar": {
+      "id": "crimtane-bar",
+      "name": "Crimtane Bar",
+      "page": "Crimtane_Bar",
+      "icon": "materials/crimtane-bar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar",
+      "recipes": [
+        {
+          "station": "Furnace",
+          "ingredients": [
+            {
+              "id": "crimtane-ore",
+              "qty": 3
+            }
+          ]
+        },
+        {
+          "station": "By hand",
+          "ingredients": [
+            {
+              "id": "crimtane-ore",
+              "qty": 4
+            }
+          ]
+        }
+      ]
+    },
+    "chlorophyte-ore": {
+      "id": "chlorophyte-ore",
+      "name": "Chlorophyte Ore",
+      "page": "Chlorophyte_Ore",
+      "icon": "materials/chlorophyte-ore.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Ore",
+      "recipes": []
+    },
+    "meteorite": {
+      "id": "meteorite",
+      "name": "Meteorite",
+      "page": "Meteorite",
+      "icon": "materials/meteorite.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite",
+      "recipes": []
+    },
+    "luminite": {
+      "id": "luminite",
+      "name": "Luminite",
+      "page": "Luminite",
+      "icon": "materials/luminite.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite",
+      "recipes": []
+    },
+    "hellstone": {
+      "id": "hellstone",
+      "name": "Hellstone",
+      "page": "Hellstone",
+      "icon": "materials/hellstone.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone",
+      "recipes": []
+    },
+    "gold-watch": {
+      "id": "gold-watch",
+      "name": "Gold Watch",
+      "page": "Gold_Watch",
+      "icon": "materials/gold-watch.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Watch",
+      "recipes": []
+    },
+    "depth-meter": {
+      "id": "depth-meter",
+      "name": "Depth Meter",
+      "page": "Depth_Meter",
+      "icon": "materials/depth-meter.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Depth_Meter",
+      "recipes": []
+    },
+    "compass": {
+      "id": "compass",
+      "name": "Compass",
+      "page": "Compass",
+      "icon": "materials/compass.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Compass",
+      "recipes": []
+    },
+    "platinum-watch": {
+      "id": "platinum-watch",
+      "name": "Platinum Watch",
+      "page": "Platinum_Watch",
+      "icon": "materials/platinum-watch.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Watch",
+      "recipes": []
+    },
+    "fishermans-pocket-guide": {
+      "id": "fishermans-pocket-guide",
+      "name": "Fisherman's Pocket Guide",
+      "page": "Fisherman's_Pocket_Guide",
+      "icon": "materials/fishermans-pocket-guide.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Fisherman's_Pocket_Guide",
+      "recipes": []
+    },
+    "weather-radio": {
+      "id": "weather-radio",
+      "name": "Weather Radio",
+      "page": "Weather_Radio",
+      "icon": "materials/weather-radio.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Radio",
+      "recipes": []
+    },
+    "sextant": {
+      "id": "sextant",
+      "name": "Sextant",
+      "page": "Sextant",
+      "icon": "materials/sextant.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Sextant",
+      "recipes": []
+    },
+    "metal-detector": {
+      "id": "metal-detector",
+      "name": "Metal Detector",
+      "page": "Metal_Detector",
+      "icon": "materials/metal-detector.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Metal_Detector",
+      "recipes": []
+    },
+    "stopwatch": {
+      "id": "stopwatch",
+      "name": "Stopwatch",
+      "page": "Stopwatch",
+      "icon": "materials/stopwatch.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Stopwatch",
+      "recipes": []
+    },
+    "dps-meter": {
+      "id": "dps-meter",
+      "name": "DPS Meter",
+      "page": "DPS_Meter",
+      "icon": "materials/dps-meter.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/DPS_Meter",
+      "recipes": []
+    },
+    "tally-counter": {
+      "id": "tally-counter",
+      "name": "Tally Counter",
+      "page": "Tally_Counter",
+      "icon": "materials/tally-counter.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Tally_Counter",
+      "recipes": []
+    },
+    "lifeform-analyzer": {
+      "id": "lifeform-analyzer",
+      "name": "Lifeform Analyzer",
+      "page": "Lifeform_Analyzer",
+      "icon": "materials/lifeform-analyzer.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lifeform_Analyzer",
+      "recipes": []
+    },
+    "radar": {
+      "id": "radar",
+      "name": "Radar",
+      "page": "Radar",
+      "icon": "materials/radar.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Radar",
+      "recipes": []
+    },
+    "obsidian-skull-rose": {
+      "id": "obsidian-skull-rose",
+      "name": "Obsidian Skull Rose",
+      "page": "Obsidian_Skull_Rose",
+      "icon": "materials/obsidian-skull-rose.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull_Rose",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "obsidian-skull",
+              "qty": 1
+            },
+            {
+              "id": "obsidian-rose",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "magma-skull": {
+      "id": "magma-skull",
+      "name": "Magma Skull",
+      "page": "Magma_Skull",
+      "icon": "materials/magma-skull.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Skull",
+      "recipes": [
+        {
+          "station": "Tinkerer's Workshop",
+          "ingredients": [
+            {
+              "id": "obsidian-skull",
+              "qty": 1
+            },
+            {
+              "id": "lava-charm",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "frost-core": {
+      "id": "frost-core",
+      "name": "Frost Core",
+      "page": "Frost_Core",
+      "icon": "materials/frost-core.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Core",
+      "recipes": []
+    },
+    "forbidden-fragment": {
+      "id": "forbidden-fragment",
+      "name": "Forbidden Fragment",
+      "page": "Forbidden_Fragment",
+      "icon": "materials/forbidden-fragment.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Forbidden_Fragment",
+      "recipes": []
+    },
+    "mushroom-platform": {
+      "id": "mushroom-platform",
+      "name": "Mushroom Platform",
+      "page": "Mushroom_Platform",
+      "icon": "materials/mushroom-platform.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Platform",
+      "recipes": []
+    },
+    "mushroom-wall": {
+      "id": "mushroom-wall",
+      "name": "Mushroom Wall",
+      "page": "Mushroom_Wall",
+      "icon": "materials/mushroom-wall.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Wall",
+      "recipes": [
+        {
+          "station": "Work Bench",
+          "ingredients": [
+            {
+              "id": "glowing-mushroom",
+              "qty": 1
+            }
+          ]
+        }
+      ]
+    },
+    "obsidian-wall": {
+      "id": "obsidian-wall",
+      "name": "Obsidian Wall",
+      "page": "Obsidian_Wall",
+      "icon": "materials/obsidian-wall.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Wall",
+      "recipes": []
+    },
+    "copper-ore": {
+      "id": "copper-ore",
+      "name": "Copper Ore",
+      "page": "Copper_Ore",
+      "icon": "materials/copper-ore.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Ore",
+      "recipes": []
+    },
+    "demonite-ore": {
+      "id": "demonite-ore",
+      "name": "Demonite Ore",
+      "page": "Demonite_Ore",
+      "icon": "materials/demonite-ore.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore",
+      "recipes": []
+    },
+    "crimtane-ore": {
+      "id": "crimtane-ore",
+      "name": "Crimtane Ore",
+      "page": "Crimtane_Ore",
+      "icon": "materials/crimtane-ore.png",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Ore",
+      "recipes": []
+    }
+  }
+}

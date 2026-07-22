@@ -104,3 +104,22 @@
 @media (prefers-reduced-motion: reduce) {
   .backdrop, .modal { animation: none; }
 }
+
+/* "View in crafting tree" CTA — shown on items that have a recipe */
+.craftLink {
+  display: block;
+  margin-top: 16px;
+  padding: 11px 14px 9px;
+  font-weight: 800;
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #0B1524;
+  background: var(--warm);
+  border: 2px solid #000;
+  border-radius: var(--radius-md);
+  transition: filter .15s;
+}
+.craftLink:hover { filter: brightness(1.08); }

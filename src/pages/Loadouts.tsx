@@ -125,6 +125,22 @@ function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
   );
 }
 
+/* ── Buff / consumable card (same shape as an accessory slot) ── */
+function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  return (
+    <button type="button" className={styles.buffCell} onClick={() => onOpen(item)}>
+      <img
+        src={local} alt="" aria-hidden="true"
+        className={`${styles.buffCellImg} pixel-img`}
+        width="28" height="28" loading="lazy"
+        onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+      />
+      <span className={styles.buffCellName}>{item.name}</span>
+    </button>
+  );
+}
+
 export function Loadouts() {
   const { difficulty } = useAppState();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
@@ -172,8 +188,6 @@ export function Loadouts() {
   const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
   const extraAccessories = safeLoadout.accessories.slice(slotCount);
 
-  const accLeft = accSlots.slice(4);
-  const accRight = accSlots.slice(0, 4);
 
   return (
     <div className={styles.page}>
@@ -405,8 +419,8 @@ export function Loadouts() {
             <div className={`${styles.invPanel} ${styles.buffsPanel}`}>
               <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
               {safeLoadout.buffs.length > 0 ? (
-                <div className={styles.buffPills}>
-                  {safeLoadout.buffs.map((b) => <span key={b.id} className={styles.buffPill}>{b.name}</span>)}
+                <div className={styles.buffGrid}>
+                  {safeLoadout.buffs.map((b) => <BuffCell key={b.id} item={b} onOpen={setModalItem} />)}
                 </div>
               ) : (
                 <p className={styles.empty}>No buff data for this phase yet.</p>
@@ -415,17 +429,16 @@ export function Loadouts() {
 
             <div className={`${styles.invPanel} ${styles.accBox}`}>
               <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
+              {/* one vertical strip of slots; the 6th is the Expert-only Demon Heart */}
               <div className={styles.accSplit}>
-                <div className={styles.accCol}>
-                  {accLeft.map((acc, i) => (
-                    <AccCell key={acc?.id ?? `l-${i}`} item={acc} demonHeart={demonHeartUnlocked && i + 4 === 5} onOpen={setModalItem} />
-                  ))}
-                </div>
-                <div className={styles.accCol}>
-                  {accRight.map((acc, i) => (
-                    <AccCell key={acc?.id ?? `r-${i}`} item={acc} onOpen={setModalItem} />
-                  ))}
-                </div>
+                {accSlots.map((acc, i) => (
+                  <AccCell
+                    key={acc?.id ?? `slot-${i}`}
+                    item={acc}
+                    demonHeart={demonHeartUnlocked && i === 5}
+                    onOpen={setModalItem}
+                  />
+                ))}
               </div>
             </div>
           </div>

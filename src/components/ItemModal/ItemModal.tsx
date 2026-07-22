@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import type { SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
+import { findCraftable } from '../../data/recipes';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -36,6 +38,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
 
   if (!item) return null;
 
+  const craftable = findCraftable(item.name);
   const stem = item.icon.replace(/\.png$/i, '').split('/').pop() ?? '';
   const local = `${BASE}icons/${item.icon}`;
   const wiki = `${WIKI}/${makeWikiName(stem)}.png`;
@@ -81,6 +84,16 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             <div className={styles.kvRow}><span className={styles.kvKey}>Notes</span><span>{item.notes}</span></div>
           )}
         </div>
+
+        {craftable && (
+          <Link
+            className={styles.craftLink}
+            to={`/crafting?item=${craftable.id}`}
+            onClick={onClose}
+          >
+            View in crafting tree
+          </Link>
+        )}
       </div>
     </div>
   );

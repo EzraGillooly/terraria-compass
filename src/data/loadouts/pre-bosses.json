@@ -2337,6 +2337,49 @@
         "why": "The global stat bump is easy to maintain and always worth it.",
         "tags": [],
         "topPick": false
+      },
+      {
+        "id": "mana-potion",
+        "name": "Mana Potion",
+        "slot": "buff",
+        "icon": "potions/mana-potion.png",
+        "source": "Crafted, or found in most Crates",
+        "why": "Restores 100 mana; causes Mana Sickness.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+      },
+      {
+        "id": "magic-power-potion",
+        "name": "Magic Power Potion",
+        "slot": "buff",
+        "icon": "potions/magic-power-potion.png",
+        "source": "Brewed at a placed bottle",
+        "why": "The damage bonus is straightforward and strong, which makes it the first mage buff to value consistently.",
+        "tags": [],
+        "topPick": true
+      },
+      {
+        "id": "mana-crystal",
+        "name": "Mana Crystal",
+        "slot": "buff",
+        "icon": "potions/mana-crystal.png",
+        "source": "Crafted by hand from 5 Fallen Stars",
+        "why": "Permanently raises maximum mana by 20.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal"
+      },
+      {
+        "id": "arcane-crystal",
+        "name": "Arcane Crystal",
+        "slot": "buff",
+        "icon": "potions/arcane-crystal.png",
+        "source": "Crafted at a placed bottle from a Mana Crystal",
+        "why": "Permanently improves mana regeneration.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal"
       }
     ]
   },
