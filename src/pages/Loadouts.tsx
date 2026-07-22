@@ -231,7 +231,12 @@ export function Loadouts() {
         </div>
 
         {/* Boss progression map */}
-        <div className={styles.bossmap} role="group" aria-label="Select phase">
+        <div
+          className={styles.bossmap}
+          style={{ '--wp-count': phases.length } as React.CSSProperties}
+          role="group"
+          aria-label="Select phase"
+        >
           {phases.map((p, i) => {
             const done = p.order < activeOrder;
             const active = p.id === phaseId;

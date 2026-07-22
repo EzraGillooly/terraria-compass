@@ -32,9 +32,26 @@
 .cbtn.on { --px-fill: var(--accent); color: #fff; -webkit-text-stroke: 2px #000; paint-order: stroke fill; }
 
 /* ── Boss progression map ── */
-.bossmap { display: flex; align-items: flex-start; gap: 0; margin-bottom: 16px; overflow-x: auto; padding: 6px 2px 10px; }
+/* Every disc is centred in an equal flex cell, so the end discs sat ~38px inside
+   the panels below. Rather than move them (which would make the first and last
+   gaps uneven), widen the whole row by exactly the dead space, so all cells stay
+   equal and the end discs land on the content edges.
+     pull = (W - count*size) / (2*(count-1)) + pad
+   --wp-count is set inline from the phase list. max(0px, …) keeps the row from
+   bleeding outwards on narrow screens, where it scrolls instead. */
+.bossmap {
+  --wp-size: 44px;
+  --wp-pad: 4px;              /* room for the active disc's scale(1.14) */
+  display: flex; align-items: flex-start; gap: 0;
+  margin-bottom: 16px;
+  margin-inline: calc(-1 * max(0px,
+    (100% - var(--wp-size) * var(--wp-count, 9)) / (2 * (var(--wp-count, 9) - 1)) + var(--wp-pad)));
+  overflow-x: auto;
+  padding: 6px var(--wp-pad) 10px;
+}
 .waypoint { position: relative; flex: 1 1 0; min-width: 62px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; color: #A9BCE0; padding: 0; }
 .vein { position: absolute; top: 21px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
+
 .veinFill { background: var(--warm); }
 .wpDisc { position: relative; z-index: 1; width: 44px; height: 44px; border-radius: 50%; background: var(--card); border: 2px solid var(--line); display: grid; place-items: center; box-shadow: var(--shadow-sm); transition: border-color .15s, transform .15s; }
 .wpIcon { width: 30px; height: 30px; object-fit: contain; filter: grayscale(.6) opacity(.55); }
