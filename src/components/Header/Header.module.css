@@ -99,8 +99,9 @@
   transition: opacity .15s, background .15s;
 }
 
-.navLink:hover,
-.navLink.active:hover {
+/* the active tab keeps its own colour on hover — it isn't a target.
+   :not(.active) states that outright rather than leaning on source order. */
+.navLink:not(.active):hover {
   opacity: 1;
   background: var(--warm);
 }
