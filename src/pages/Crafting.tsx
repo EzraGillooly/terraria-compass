@@ -76,8 +76,9 @@ function TreeNode({
             onClick={() => onToggle(key)}
             aria-expanded={isOpen}
             aria-label={`${isOpen ? 'Collapse' : 'Expand'} ${node.name} recipe`}
+            data-open={isOpen}
           >
-            <span className={styles.twistyGlyph} aria-hidden="true">{isOpen ? '−' : '+'}</span>
+            <span className={styles.twistyGlyph} aria-hidden="true" />
           </button>
         ) : (
           <span className={styles.twistySpacer} aria-hidden="true" />
