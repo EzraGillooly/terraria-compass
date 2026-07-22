@@ -269,25 +269,18 @@
         "id": "beetle-armor",
         "name": "Beetle Armor",
         "slot": "armor",
-        "icon": "armor/beetle-armor.png",
+        "icon": "armor/beetle-armor-melee.png",
         "source": "Crafted from Beetle Husks and Turtle Armor",
         "why": "This is the clear pre-Cultist melee set because it finally turns the Golem farm into your best class armor.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "turtle-armor",
-        "name": "Turtle Armor",
-        "slot": "armor",
-        "icon": "armor/turtle-armor.png",
-        "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "If Beetle crafting is still incomplete, Turtle remains the most reliable defensive fallback.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Beetle Helmet",
+          "Beetle Leggings",
+          "Beetle Scale Mail"
+        ]
       }
     ],
     "accessories": [
@@ -661,13 +654,18 @@
         "id": "shroomite-armor",
         "name": "Shroomite Armor",
         "slot": "armor",
-        "icon": "armor/shroomite-armor.png",
+        "icon": "armor/shroomite-armor-ranger.png",
         "source": "Crafted from Shroomite Bars",
         "why": "This is still the ranger armor to beat because nothing else in the phase offers a better full package.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "pieces": [
+          "Shroomite Headgear",
+          "Shroomite Breastplate",
+          "Shroomite Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -1075,25 +1073,35 @@
         "id": "spectre-armor-mask",
         "name": "Spectre Armor",
         "slot": "armor",
-        "icon": "armor/spectre-armor.png",
+        "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
         "why": "The damage-focused Spectre setup stays the best default mage armor right up until Lunar gear exists.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "pieces": [
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
+        ]
       },
       {
         "id": "spectre-armor-hood",
         "name": "Spectre Hood Loadout",
         "slot": "armor",
-        "icon": "armor/spectre-armor.png",
+        "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted from Spectre Bars",
         "why": "You still want access to the lifesteal variant when survivability matters more than peak DPS.",
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "pieces": [
+          "Spectre Hood",
+          "Spectre Robe",
+          "Spectre Pants"
+        ]
       }
     ],
     "accessories": [
@@ -1457,20 +1465,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "spooky-armor",
-        "name": "Spooky Armor",
-        "slot": "armor",
-        "icon": "armor/spooky-armor.png",
-        "source": "Crafted from Spooky Wood from Pumpkin Moon",
-        "why": "If you already farmed the event, this gives a more damage-skewed alternative without abandoning the class entirely.",
-        "tags": [
-          "hardmode",
-          "event"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Tiki Mask",
+          "Tiki Shirt",
+          "Tiki Pants"
+        ]
       }
     ],
     "accessories": [

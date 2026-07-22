@@ -719,37 +719,37 @@
         "id": "titanium-armor",
         "name": "Titanium Armor",
         "slot": "armor",
-        "icon": "armor/titanium-armor.png",
+        "icon": "armor/titanium-armor-melee.png",
         "source": "Crafted from Titanium Bars",
         "why": "This is the premium ore armor for pre-mech melee because it brings strong defense and offensive scaling together.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "headpiece": "Titanium Mask",
+        "pieces": [
+          "Titanium Mask",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ]
       },
       {
         "id": "adamantite-armor",
         "name": "Adamantite Armor",
         "slot": "armor",
-        "icon": "armor/adamantite-armor.png",
+        "icon": "armor/adamantite-armor-melee.png",
         "source": "Crafted from Adamantite Bars",
         "why": "Adamantite is the world-variant fallback and still gives melee everything it needs to break into mech fights.",
         "tags": [
           "hardmode"
         ],
-        "topPick": false
-      },
-      {
-        "id": "palladium-armor",
-        "name": "Palladium Armor",
-        "slot": "armor",
-        "icon": "armor/palladium-armor.png",
-        "source": "Crafted from Palladium Bars",
-        "why": "If your ore route is still mid-tier, the on-hit healing effect can smooth out early Hardmode mistakes.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": false,
+        "headpiece": "Adamantite Helmet",
+        "pieces": [
+          "Adamantite Helmet",
+          "Adamantite Breastplate",
+          "Adamantite Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -1176,37 +1176,37 @@
         "id": "adamantite-armor",
         "name": "Adamantite Armor",
         "slot": "armor",
-        "icon": "armor/adamantite-armor.png",
+        "icon": "armor/adamantite-armor-ranger.png",
         "source": "Crafted from Adamantite Bars",
         "why": "The ranged helmet and solid defense make this the most broadly recommended pre-mech ranger set.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "headpiece": "Adamantite Mask",
+        "pieces": [
+          "Adamantite Mask",
+          "Adamantite Breastplate",
+          "Adamantite Leggings"
+        ]
       },
       {
         "id": "titanium-armor",
         "name": "Titanium Armor",
         "slot": "armor",
-        "icon": "armor/titanium-armor.png",
+        "icon": "armor/titanium-armor-ranger.png",
         "source": "Crafted from Titanium Bars",
         "why": "Titanium is still fully viable if that is your world ore route and you value the set bonus.",
         "tags": [
           "hardmode"
         ],
-        "topPick": false
-      },
-      {
-        "id": "mythril-armor",
-        "name": "Mythril Armor",
-        "slot": "armor",
-        "icon": "armor/mythril-armor.png",
-        "source": "Crafted from Mythril Bars",
-        "why": "This is the midpoint option if you are not yet at top-tier Hardmode ore but need a real class set now.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": false,
+        "headpiece": "Titanium Helmet",
+        "pieces": [
+          "Titanium Helmet",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -1791,31 +1791,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "adamantite-armor",
-        "name": "Adamantite Armor",
-        "slot": "armor",
-        "icon": "armor/adamantite-armor.png",
-        "source": "Crafted from Adamantite Bars",
-        "why": "If you want a straightforward magic armor route, the Adamantite headgear is still a strong conventional choice.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "titanium-armor",
-        "name": "Titanium Armor",
-        "slot": "armor",
-        "icon": "armor/titanium-armor.png",
-        "source": "Crafted from Titanium Bars",
-        "why": "Titanium remains a valid defensive fallback when you need more survivability than a pure offense set gives.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Forbidden Mask",
+          "Forbidden Robes",
+          "Forbidden Treads"
+        ]
       }
     ],
     "accessories": [
@@ -2134,29 +2115,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "forbidden-armor",
-        "name": "Forbidden Armor",
-        "slot": "armor",
-        "icon": "armor/forbidden-armor.png",
-        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
-        "why": "If you want a hybrid route, this is the reasonable alternative that still gives summoner useful stats.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "obsidian-armor",
-        "name": "Obsidian Armor",
-        "slot": "armor",
-        "icon": "armor/obsidian-armor.png",
-        "source": "Crafted from Obsidian, Silk, and Shadow Scales or Tissue Samples",
-        "why": "It is weaker once Hardmode opens, but it remains a plausible carry-over if your spider route is not ready yet.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Spider Mask",
+          "Spider Breastplate",
+          "Spider Greaves"
+        ]
       }
     ],
     "accessories": [

@@ -209,7 +209,12 @@
         "tags": [
           "corruption-only"
         ],
-        "topPick": true
+        "topPick": true,
+        "pieces": [
+          "Shadow Helmet",
+          "Shadow Scalemail",
+          "Shadow Greaves"
+        ]
       },
       {
         "id": "crimson-armor",
@@ -221,7 +226,12 @@
         "tags": [
           "crimson-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "pieces": [
+          "Crimson Helmet",
+          "Crimson Scalemail",
+          "Crimson Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -467,17 +477,12 @@
         "source": "Crafted from Platinum Bars",
         "why": "Until later ranger-specific armor becomes realistic, high defense remains the safest answer.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "jungle-armor",
-        "name": "Jungle Armor",
-        "slot": "armor",
-        "icon": "armor/jungle-armor.png",
-        "source": "Crafted from Jungle Spores, Stingers, and Rich Mahogany",
-        "why": "It is a viable hybrid set if your run leans more into utility than pure ranged scaling.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Platinum Helmet",
+          "Platinum Chainmail",
+          "Platinum Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -747,17 +752,12 @@
         "source": "Crafted from Meteorite Bars",
         "why": "This is the defining mage armor here because the Space Gun set bonus completely changes your mana economy.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "jungle-armor",
-        "name": "Jungle Armor",
-        "slot": "armor",
-        "icon": "armor/jungle-armor.png",
-        "source": "Crafted from Jungle Spores, Stingers, and Rich Mahogany",
-        "why": "It remains a strong fallback if you have not committed to the Meteor route.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Meteor Helmet",
+          "Meteor Suit",
+          "Meteor Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -1060,17 +1060,12 @@
         "source": "Crafted from Obsidian, Shadow Scales or Tissue Samples, and Silk",
         "why": "It is the pre-Hardmode summoner benchmark because the minion and whip bonuses are both excellent.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "bee-armor",
-        "name": "Bee Armor",
-        "slot": "armor",
-        "icon": "armor/bee-armor.png",
-        "source": "Crafted from Bee Wax",
-        "why": "This is the natural alternative when your progression moves through Queen Bee first.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Obsidian Outlaw Hat",
+          "Obsidian Longcoat",
+          "Obsidian Pants"
+        ]
       }
     ],
     "accessories": [

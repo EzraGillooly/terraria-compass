@@ -385,37 +385,19 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor.png",
+        "icon": "armor/chlorophyte-armor-melee.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "The leaf crystal bonus and strong baseline stats make this the most broadly useful pre-Plantera melee set.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "turtle-armor",
-        "name": "Turtle Armor",
-        "slot": "armor",
-        "icon": "armor/turtle-armor.png",
-        "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "If you want the tankiest route into the Jungle, this is the defensive ceiling before Plantera.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed Armor",
-        "slot": "armor",
-        "icon": "armor/hallowed-armor.png",
-        "source": "Crafted from Hallowed Bars",
-        "why": "The dodge proc still gives it real value if your Chlorophyte route is not ready yet.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "headpiece": "Chlorophyte Mask",
+        "pieces": [
+          "Chlorophyte Mask",
+          "Chlorophyte Plate Mail",
+          "Chlorophyte Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -748,37 +730,19 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor.png",
+        "icon": "armor/chlorophyte-armor-ranger.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "The armor stats and leaf crystal bonus make this the cleanest general pre-Plantera ranger set.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed Armor",
-        "slot": "armor",
-        "icon": "armor/hallowed-armor.png",
-        "source": "Crafted from Hallowed Bars",
-        "why": "The dodge effect still earns this a place when survivability matters more than a pure offense step.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "titanium-armor",
-        "name": "Titanium Armor",
-        "slot": "armor",
-        "icon": "armor/titanium-armor.png",
-        "source": "Crafted from Titanium Bars",
-        "why": "It remains a valid carry-over if you want to delay the Chlorophyte grind a little longer.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "headpiece": "Chlorophyte Helmet",
+        "pieces": [
+          "Chlorophyte Helmet",
+          "Chlorophyte Plate Mail",
+          "Chlorophyte Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -1103,37 +1067,19 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor.png",
+        "icon": "armor/chlorophyte-armor-mage.png",
         "source": "Crafted from Chlorophyte Bars",
         "why": "This is the most straightforward high-end magic armor step before Plantera because it is sturdy and broadly effective.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed Armor",
-        "slot": "armor",
-        "icon": "armor/hallowed-armor.png",
-        "source": "Crafted from Hallowed Bars",
-        "why": "The dodge effect is still strong when you care more about safety than pushing fully into Chlorophyte.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "forbidden-armor",
-        "name": "Forbidden Armor",
-        "slot": "armor",
-        "icon": "armor/forbidden-armor.png",
-        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
-        "why": "The hybrid identity keeps it relevant if your build likes mixing in summon support or event mobility.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "headpiece": "Chlorophyte Headgear",
+        "pieces": [
+          "Chlorophyte Headgear",
+          "Chlorophyte Plate Mail",
+          "Chlorophyte Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -1490,31 +1436,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed Armor",
-        "slot": "armor",
-        "icon": "armor/hallowed-armor.png",
-        "source": "Crafted from Hallowed Bars",
-        "why": "The dodge bonus gives it a niche if you want more personal survivability while keeping summon support online.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "forbidden-armor",
-        "name": "Forbidden Armor",
-        "slot": "armor",
-        "icon": "armor/forbidden-armor.png",
-        "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
-        "why": "It stays a viable hybrid route if your build wants a little more flexibility than pure summoner gear provides.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Spider Mask",
+          "Spider Breastplate",
+          "Spider Greaves"
+        ]
       }
     ],
     "accessories": [

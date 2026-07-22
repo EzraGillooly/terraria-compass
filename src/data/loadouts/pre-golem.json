@@ -293,19 +293,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "chlorophyte-armor",
-        "name": "Chlorophyte Armor",
-        "slot": "armor",
-        "icon": "armor/chlorophyte-armor.png",
-        "source": "Crafted from Chlorophyte Bars",
-        "why": "If you prefer a more generalist route, Chlorophyte still performs well through this entire phase.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Turtle Helmet",
+          "Turtle Scale Mail",
+          "Turtle Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -710,25 +703,18 @@
         "id": "shroomite-armor",
         "name": "Shroomite Armor",
         "slot": "armor",
-        "icon": "armor/shroomite-armor.png",
+        "icon": "armor/shroomite-armor-ranger.png",
         "source": "Crafted from Shroomite Bars",
         "why": "This is the consensus best ranger set in the phase because its helmet specialization and stealth utility are both real upgrades.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "chlorophyte-armor",
-        "name": "Chlorophyte Armor",
-        "slot": "armor",
-        "icon": "armor/chlorophyte-armor.png",
-        "source": "Crafted from Chlorophyte Bars",
-        "why": "It remains a respectable fallback if your glowing mushroom setup or bar conversion route is not ready.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Shroomite Headgear",
+          "Shroomite Breastplate",
+          "Shroomite Leggings"
+        ]
       }
     ],
     "accessories": [
@@ -1158,25 +1144,35 @@
         "id": "spectre-armor-mask",
         "name": "Spectre Armor",
         "slot": "armor",
-        "icon": "armor/spectre-armor.png",
+        "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
         "why": "The damage-focused Spectre route is the default bossing answer here and the strongest overall mage upgrade before Golem.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "pieces": [
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
+        ]
       },
       {
         "id": "spectre-armor-hood",
         "name": "Spectre Hood Loadout",
         "slot": "armor",
-        "icon": "armor/spectre-armor.png",
+        "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted from Spectre Bars",
         "why": "Swapping to the hood is still worthwhile when you want the lifesteal safety valve for messy content.",
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "pieces": [
+          "Spectre Hood",
+          "Spectre Robe",
+          "Spectre Pants"
+        ]
       }
     ],
     "accessories": [
@@ -1562,32 +1558,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
-      },
-      {
-        "id": "spooky-armor",
-        "name": "Spooky Armor",
-        "slot": "armor",
-        "icon": "armor/spooky-armor.png",
-        "source": "Crafted from Spooky Wood from Pumpkin Moon",
-        "why": "If you are farming the event anyway, this is a strong damage-focused alternative to Tiki.",
-        "tags": [
-          "hardmode",
-          "event"
-        ],
-        "topPick": false
-      },
-      {
-        "id": "spider-armor",
-        "name": "Spider Armor",
-        "slot": "armor",
-        "icon": "armor/spider-armor.png",
-        "source": "Crafted from Spider Fangs",
-        "why": "It remains the reasonable fallback if your post-Plantera summon progression is still catching up.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Tiki Mask",
+          "Tiki Shirt",
+          "Tiki Pants"
+        ]
       }
     ],
     "accessories": [

@@ -28,6 +28,13 @@ export const Item = z.object({
   notes: z.string().optional(),
   /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
   modifier: z.string().optional(),
+  /**
+   * For armor sets with class-specific headpieces (Adamantite, Hallowed, …),
+   * the piece this class should craft — the rest of the set is shared.
+   */
+  headpiece: z.string().optional(),
+  /** the full set to craft: [headpiece, breastplate, leggings] */
+  pieces: z.array(z.string()).optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
   tags: z.array(z.string()).default([]),

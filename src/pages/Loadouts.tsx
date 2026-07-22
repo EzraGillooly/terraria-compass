@@ -372,15 +372,27 @@ export function Loadouts() {
                   />
                 </div>
                 <div className={styles.armorInfo}>
+                  {/* only the set for this class; a second entry means a world
+                      variant (Adamantite/Titanium) or the Spectre Hood choice */}
                   {safeLoadout.armor.map((a) => (
                     <button key={a.id} type="button" className={styles.armorEntry} onClick={() => setModalItem(a)}>
                       <div className={styles.armorName}>{a.name}</div>
+                      {a.pieces && a.pieces.length > 0 && (
+                        <div className={styles.armorPieces}>
+                          {a.headpiece && <span className={styles.armorHeadTag}>{classDef.name}</span>}
+                          {a.pieces.map((p) => (
+                            <span
+                              key={p}
+                              className={`${styles.armorPiece} ${p === a.headpiece ? styles.armorPieceHead : ''}`}
+                            >
+                              {p}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                       {a.why && <div className={styles.armorPerk}>{a.why}</div>}
                     </button>
                   ))}
-                  {safeLoadout.armor.length > 1 && (
-                    <span className={styles.setBadge}>{safeLoadout.armor.length} sets</span>
-                  )}
                 </div>
               </div>
             ) : (

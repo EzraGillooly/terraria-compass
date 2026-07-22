@@ -1133,17 +1133,12 @@
         "source": "Crafted from Platinum Bars",
         "why": "It gives the best general defense available from early ore, which makes it the safest all-around pre-bosses armor set.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold Armor",
-        "slot": "armor",
-        "icon": "armor/gold-armor.png",
-        "source": "Crafted from Gold Bars",
-        "why": "Use this when your world rolls Gold instead of Platinum; it is still a solid early defense set.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Platinum Helmet",
+          "Platinum Chainmail",
+          "Platinum Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -1899,17 +1894,12 @@
         "source": "Crafted from Platinum Bars",
         "why": "Ranger does not have a better true class set yet, so high defense is the best early answer.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold Armor",
-        "slot": "armor",
-        "icon": "armor/gold-armor.png",
-        "source": "Crafted from Gold Bars",
-        "why": "Gold is the fallback world variant when Platinum is unavailable.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Platinum Helmet",
+          "Platinum Chainmail",
+          "Platinum Greaves"
+        ]
       }
     ],
     "accessories": [
@@ -2246,17 +2236,12 @@
         "source": "Crafted from Jungle Spores, Stingers, and Rich Mahogany",
         "why": "This is the consensus pre-bosses mage set because it directly boosts mana and magic-critical performance.",
         "tags": [],
-        "topPick": true
-      },
-      {
-        "id": "ancient-cobalt-armor",
-        "name": "Ancient Cobalt Armor",
-        "slot": "armor",
-        "icon": "armor/ancient-cobalt-armor.png",
-        "source": "Dropped in the Jungle by Hornets and Man Eaters",
-        "why": "It is a respectable fallback when you have not fully crafted Jungle Armor yet.",
-        "tags": [],
-        "topPick": false
+        "topPick": true,
+        "pieces": [
+          "Jungle Hat",
+          "Jungle Shirt",
+          "Jungle Pants"
+        ]
       }
     ],
     "accessories": [
@@ -2552,16 +2537,6 @@
         "why": "The extra minion slot makes this the one truly defining pre-bosses summoner armor piece.",
         "tags": [],
         "topPick": true
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum Armor",
-        "slot": "armor",
-        "icon": "armor/platinum-armor.png",
-        "source": "Crafted from Platinum Bars",
-        "why": "Use extra defense around the coat or before you finish the summoner-specific piece.",
-        "tags": [],
-        "topPick": false
       }
     ],
     "accessories": [
