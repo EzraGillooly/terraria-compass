@@ -99,9 +99,10 @@
   transition: opacity .15s, background .15s;
 }
 
-.navLink:hover {
+.navLink:hover,
+.navLink.active:hover {
   opacity: 1;
-  background: color-mix(in oklab, var(--mid) 40%, var(--accent));
+  background: var(--warm);
 }
 
 .navLink.active {
