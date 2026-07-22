@@ -93,7 +93,7 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
       </div>
       <div className={styles.wName}>{item.name}</div>
       {item.source && <div className={styles.wSource}>{item.source}</div>}
-      {item.subclass && <span className={styles.wSub}>{item.subclass}</span>}
+      {item.subclass && <span className={`${styles.wSub} pixel-frame pixel-hollow`}>{item.subclass}</span>}
     </button>
   );
 }
@@ -292,7 +292,7 @@ export function Loadouts() {
               <div className={styles.subclassRow}>
                 <button
                   type="button"
-                  className={`${styles.subclassChip} ${showingAll ? styles.on : ''}`}
+                  className={`${styles.subclassChip} pixel-frame pixel-hollow ${showingAll ? styles.on : ''}`}
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
@@ -302,7 +302,7 @@ export function Loadouts() {
                   <button
                     key={sc.id}
                     type="button"
-                    className={`${styles.subclassChip} ${activeSubclasses.has(sc.id) ? styles.on : ''}`}
+                    className={`${styles.subclassChip} pixel-frame pixel-hollow ${activeSubclasses.has(sc.id) ? styles.on : ''}`}
                     aria-pressed={activeSubclasses.has(sc.id)}
                     onClick={() => { toggleSubclass(sc.id); setShowRest(false); }}
                   >
@@ -334,7 +334,7 @@ export function Loadouts() {
               <>
                 <button
                   type="button"
-                  className={styles.showRest}
+                  className={`${styles.showRest} pixel-frame pixel-hollow`}
                   aria-expanded={showRest}
                   onClick={() => setShowRest((v) => !v)}
                 >
@@ -359,7 +359,7 @@ export function Loadouts() {
               <div className={styles.accAlts}>
                 <span className={styles.accAltsLabel}>Also good:</span>
                 {extraAccessories.map((a) => (
-                  <button key={a.id} type="button" className={styles.accAlt} onClick={() => setModalItem(a)}>{a.name}</button>
+                  <button key={a.id} type="button" className={`${styles.accAlt} pixel-frame pixel-hollow`} onClick={() => setModalItem(a)}>{a.name}</button>
                 ))}
               </div>
             )}
@@ -398,11 +398,11 @@ export function Loadouts() {
                       <div className={styles.armorName}>{a.name}</div>
                       {a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
-                          {a.headpiece && <span className={styles.armorHeadTag}>{classDef.name}</span>}
+                          {a.headpiece && <span className={`${styles.armorHeadTag} pixel-frame`}>{classDef.name}</span>}
                           {a.pieces.map((p) => (
                             <span
                               key={p}
-                              className={`${styles.armorPiece} ${p === a.headpiece ? styles.armorPieceHead : ''}`}
+                              className={`${styles.armorPiece} pixel-frame pixel-hollow ${p === a.headpiece ? styles.armorPieceHead : ''}`}
                             >
                               {p}
                             </span>

@@ -38,7 +38,7 @@ function ChipIcon({ entry, kind }: { entry: BestiaryEntry; kind: 'enemy' | 'loot
 
 function Chip({ name, kind, onOpen }: { name: string; kind: 'enemy' | 'loot'; onOpen: (e: BestiaryEntry) => void }) {
   const entry = bestiary[name];
-  const cls = `${styles.chip} ${kind === 'enemy' ? styles.enemy : styles.loot}`;
+  const cls = `${styles.chip} pixel-frame pixel-hollow ${kind === 'enemy' ? styles.enemy : styles.loot}`;
 
   if (!entry) return <span className={cls}>{name}</span>;
   return (
@@ -71,7 +71,7 @@ function BiomeBand({ biome, onOpen }: { biome: BiomeDef; onOpen: (e: BestiaryEnt
         <div className={styles.artText}>
           <h2 className={styles.bandName}>
             {biome.name}
-            {biome.hardmodeOnly && <span className={styles.hmTag}>Hardmode</span>}
+            {biome.hardmodeOnly && <span className={`${styles.hmTag} pixel-frame`}>Hardmode</span>}
           </h2>
           <p className={styles.bandBlurb}>{biome.blurb}</p>
           <DangerMeter level={biome.danger} />

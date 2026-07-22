@@ -97,20 +97,22 @@
 
 /* "Show N more" reveal for reference-tier weapons */
 .showRest {
-  display: inline-block; margin: 18px 0; padding: 8px 14px 6px; line-height: 1;
-  font-family: inherit; font-weight: 700; font-size: 12px;
-  color: #A9BCE0; background: rgba(255,255,255,.06);
-  border: 1px solid rgba(150,180,230,.3); border-radius: var(--radius-pill);
-  cursor: pointer; transition: background .15s, color .15s, border-color .15s;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin: 18px 0; padding: 8px 14px 6px; line-height: 1;
+  font-family: inherit; font-weight: 700; font-size: 12px; color: #A9BCE0;
+  cursor: pointer;
+  --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.3); --px-u: 1px;
 }
-.showRest:hover { background: rgba(255,255,255,.12); color: #EAF0FF; border-color: var(--warm); }
+.showRest::before, .showRest::after { transition: background .15s; }
+.showRest:hover { color: #EAF0FF; --px-fill: rgba(255,255,255,.12); --px-border: var(--warm); }
 
 /* ── Subclass filter ── */
 .subclassRow { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
 /* extra top padding optically centres Andy Bold, which sits high in its line box */
-.subclassChip { font-weight: 700; font-size: 12px; line-height: 1; color: #A9BCE0; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.3); border-radius: var(--radius-pill); padding: 7px 12px 5px; text-align: center; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.subclassChip { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; line-height: 1; color: #A9BCE0; padding: 7px 12px 5px; cursor: pointer; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.3); --px-u: 1px; }
+.subclassChip::before, .subclassChip::after { transition: background .15s; }
 .subclassChip:hover { border-color: var(--warm); color: #EAF0FF; }
-.subclassChip.on { background: var(--warm); border-color: transparent; color: #12283B; }
+.subclassChip.on { --px-fill: var(--warm); --px-border: var(--warm); color: #12283B; }
 
 /* ── Weapon cards (boxless icon, title divider, hover) ── */
 .weaponRow { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
@@ -121,7 +123,7 @@
 .wName { position: relative; display: inline-block; max-width: 100%; margin: 0 auto; padding-top: 10px; font-weight: 700; font-size: 12px; line-height: 1.15; color: #EAF0FF; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .wName::before { content: ''; position: absolute; top: 0; left: -8px; width: calc(100% + 16px); height: 1px; background: rgba(150,180,230,.38); }
 .wSource { font-size: 10px; color: #A9BCE0; margin-top: 5px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.4em; }
-.wSub { display: inline-block; margin-top: 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #A9BCE0; background: rgba(255,255,255,.08); border-radius: var(--radius-pill); padding: 3px 8px 1px; line-height: 1; }
+.wSub { display: inline-flex; align-items: center; margin-top: 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #A9BCE0; padding: 3px 8px 1px; line-height: 1; --px-fill: rgba(255,255,255,.08); --px-border: rgba(255,255,255,.08); --px-u: 1px; }
 .wStar { position: absolute; top: 7px; right: 8px; font-size: 14px; color: var(--warm); z-index: 1; }
 .wtile:hover { transform: translateY(-3px); --px-border: var(--warm); }
 .wtile:hover .wtileImg { transform: scale(1.16) translateY(-2px); filter: drop-shadow(0 0 8px color-mix(in oklab, var(--warm) 60%, transparent)); }
@@ -136,12 +138,12 @@
 .armorEntry:hover .armorName { color: var(--warm); }
 .armorName { font-weight: 800; font-size: 14px; color: #EAF0FF; }
 /* class-specific headpiece for sets that have one per damage type */
-.armorHeadTag { font-weight: 800; font-size: 9px; text-transform: uppercase; letter-spacing: .06em; color: #12283B; background: #9FE0C0; border-radius: var(--radius-pill); padding: 4px 7px 2px; line-height: 1; }
+.armorHeadTag { display: inline-flex; align-items: center; font-weight: 800; font-size: 9px; text-transform: uppercase; letter-spacing: .06em; color: #12283B; padding: 4px 7px 2px; line-height: 1; --px-fill: #9FE0C0; --px-border: #9FE0C0; --px-u: 1px; }
 /* the three pieces that make up the set */
 .armorPieces { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 6px; }
-.armorPiece { font-weight: 700; font-size: 10px; color: #C6D3EC; background: rgba(255,255,255,.07); border: 1px solid rgba(150,180,230,.25); border-radius: var(--radius-pill); padding: 4px 8px 2px; line-height: 1; }
+.armorPiece { display: inline-flex; align-items: center; font-weight: 700; font-size: 10px; color: #C6D3EC; padding: 4px 8px 2px; line-height: 1; --px-fill: rgba(255,255,255,.07); --px-border: rgba(150,180,230,.25); --px-u: 1px; }
 /* the class-specific headpiece is highlighted within the set */
-.armorPieceHead { color: #12283B; background: #9FE0C0; border-color: transparent; }
+.armorPieceHead { color: #12283B; --px-fill: #9FE0C0; --px-border: #9FE0C0; }
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 .setBadge { display: inline-block; margin-top: 8px; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #9FE0C0; background: rgba(159,224,192,.14); border-radius: var(--radius-pill); padding: 4px 10px 2px; line-height: 1; }
 
@@ -162,14 +164,15 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
 /* ── Reforge + buffs content ── */
 .accAlts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 14px; }
 .accAltsLabel { font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: #A9BCE0; }
-.accAlt { font-weight: 700; font-size: 12px; color: #EAF0FF; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.28); border-radius: var(--radius-pill); padding: 5px 11px 3px; line-height: 1; cursor: pointer; font-family: inherit; }
-.accAlt:hover { border-color: var(--warm); }
+.accAlt { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; color: #EAF0FF; padding: 5px 11px 3px; line-height: 1; cursor: pointer; font-family: inherit; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); --px-u: 1px; }
+.accAlt::before, .accAlt::after { transition: background .15s; }
+.accAlt:hover { --px-border: var(--warm); }
 .reforgeLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 10px; color: #A9BCE0; margin-bottom: 6px; }
 .reforgeIntro { font-size: 12px; color: #C6D3EC; line-height: 1.45; margin: 0 0 8px; }
 .reforgeList { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
 .reforgeList li { font-size: 12px; color: #C6D3EC; line-height: 1.35; }
 .reforgeList b { color: #EAF0FF; font-weight: 800; }
-.reforgeList span { display: inline-block; font-weight: 700; font-size: 10px; color: #12283B; background: var(--warm); border-radius: var(--radius-pill); padding: 3px 8px 1px; line-height: 1; margin: 0 5px; }
+.reforgeList span { font-weight: 800; font-size: 11px; color: var(--warm); margin: 0 4px; }
 
 /* ── Buffs ── */
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }

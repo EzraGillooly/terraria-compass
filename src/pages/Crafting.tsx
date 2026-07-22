@@ -224,7 +224,7 @@ export function Crafting() {
             <div className={styles.treeHead}>
               <button
                 type="button"
-                className={styles.back}
+                className={`${styles.back} pixel-frame pixel-hollow`}
                 onClick={() => setParams({}, { replace: false })}
               >
                 ‹ All trees
