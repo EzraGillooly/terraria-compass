@@ -102,7 +102,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
               key={to}
               to={to}
               className={({ isActive }) =>
-                `${styles.navLink} ${isActive ? styles.active : ''}`
+                `${styles.navLink} pixel-frame ${isActive ? styles.active : ''}`
               }
             >
               {label}

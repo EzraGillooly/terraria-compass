@@ -213,7 +213,7 @@ export function Loadouts() {
               <button
                 key={cls.id}
                 type="button"
-                className={`${styles.cbtn} ${cls.id === classId ? styles.on : ''}`}
+                className={`${styles.cbtn} pixel-frame ${cls.id === classId ? styles.on : ''}`}
                 aria-pressed={cls.id === classId}
                 onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); setShowRest(false); }}
               >
@@ -261,7 +261,7 @@ export function Loadouts() {
         </div>
 
         {/* Boss banner (re-mounts per phase to replay the slide-in) */}
-        <div key={phaseId} className={styles.banner}>
+        <div key={phaseId} className={`${styles.banner} pixel-frame`}>
           <img
             src={`${BASE}icons/bosses/${PHASE_BOSS[phaseId]}.png`}
             alt="" aria-hidden="true"

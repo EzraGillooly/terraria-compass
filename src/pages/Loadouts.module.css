@@ -24,12 +24,12 @@
 /* ── Class rail (weapon icons) ── */
 .classRail { display: flex; gap: 8px; flex-wrap: wrap; }
 /* Class pills — white when unselected, header-tab green when selected */
-.cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--card); border: 1px solid #000; border-radius: var(--radius-lg); box-shadow: 0 2px 6px rgba(8,14,34,.25); padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
-.cbtn:hover { background: color-mix(in oklab, var(--accent) 12%, var(--card)); }
+.cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; --px-fill: var(--card); --px-border: #000; padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
+.cbtn:hover { --px-fill: color-mix(in oklab, var(--accent) 12%, var(--card)); }
 /* nudge just the label — Andy Bold sits high, but the icon is already centred */
 .cbtnLabel { display: inline-block; line-height: 1; position: relative; top: 1px; }
 .cdot { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.cbtn.on { background: var(--accent); color: #fff; -webkit-text-stroke: 2px #000; paint-order: stroke fill; }
+.cbtn.on { --px-fill: var(--accent); color: #fff; -webkit-text-stroke: 2px #000; paint-order: stroke fill; }
 
 /* ── Boss progression map ── */
 .bossmap { display: flex; align-items: flex-start; gap: 0; margin-bottom: 16px; overflow-x: auto; padding: 6px 2px 10px; }
@@ -46,7 +46,7 @@
 .waypoint.on .wpName { color: #EAF0FF; }
 
 /* ── Boss banner ── */
-.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, rgba(16,26,54,.9)) 0%, rgba(16,26,54,.9) 100%); border: 1px solid rgba(150,180,230,.4); border-radius: var(--radius-md); box-shadow: 0 14px 34px -18px rgba(0,0,0,.6); animation: bannerIn .4s cubic-bezier(.2,.8,.3,1); }
+.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; --px-fill: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, rgba(16,26,54,.9)) 0%, rgba(16,26,54,.9) 100%); --px-border: rgba(150,180,230,.4); animation: bannerIn .4s cubic-bezier(.2,.8,.3,1); }
 @keyframes bannerIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .bannerIcon { width: 44px; height: 44px; object-fit: contain; flex: none; }
 .bannerName { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; color: #EAF0FF; line-height: 1.1; text-shadow: var(--tshadow); }
@@ -54,7 +54,7 @@
 
 /* ── Dark inventory panels ── */
 .bento { display: grid; grid-template-columns: 2fr 1fr; gap: 14px; align-items: start; }
-.colLeft { display: flex; flex-direction: column; }
+.colLeft { display: flex; flex-direction: column; gap: 14px; }  /* match .colRight */
 .colRight { display: flex; flex-direction: column; gap: 14px; }
 /* Pixel-stepped corners via the global .pixel-frame utility (see pixel.css).
    It supplies the shape, fill and border, so this rule must not set its own
