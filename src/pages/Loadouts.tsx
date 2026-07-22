@@ -78,7 +78,7 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
   return (
     <button
       type="button"
-      className={`${styles.wtile} ${item.topPick ? styles.best : ''}`}
+      className={`${styles.wtile} pixel-frame pixel-hollow ${item.topPick ? styles.best : ''}`}
       style={{ opacity: relevant ? 1 : 0.45 }}
       onClick={() => onOpen(item)}
     >
@@ -106,14 +106,14 @@ const HARDMODE_PHASES = new Set<PhaseId>([
 function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
   if (!item) {
     return (
-      <div className={`${styles.accSlot} ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
+      <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
         <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
       </div>
     );
   }
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   return (
-    <button type="button" className={`${styles.accSlot} ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
+    <button type="button" className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.accSlotImg} pixel-img`}
@@ -129,7 +129,7 @@ function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
 function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   return (
-    <button type="button" className={styles.buffCell} onClick={() => onOpen(item)}>
+    <button type="button" className={`${styles.buffCell} pixel-frame pixel-hollow`} onClick={() => onOpen(item)}>
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.buffCellImg} pixel-img`}
@@ -382,7 +382,7 @@ export function Loadouts() {
             <div className={styles.tlabel}><span>Armor</span></div>
             {armorImg ? (
               <div className={styles.armor}>
-                <div className={styles.armorDoll}>
+                <div className={`${styles.armorDoll} pixel-frame`}>
                   <img
                     src={armorImg.local} alt={safeLoadout.armor[0]?.name ?? ''}
                     className={`${styles.armorSprite} pixel-img`}

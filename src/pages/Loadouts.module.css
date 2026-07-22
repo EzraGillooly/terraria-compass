@@ -113,8 +113,8 @@
 
 /* ── Weapon cards (boxless icon, title divider, hover) ── */
 .weaponRow { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
-.wtile { position: relative; display: flex; flex-direction: column; align-items: center; min-height: 158px; text-align: center; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.28); border-radius: var(--radius-md); padding: 12px 8px; font-family: inherit; color: inherit; width: 100%; cursor: pointer; transition: transform .12s, box-shadow .12s, border-color .12s; }
-.wtile.best { border-color: var(--warm); box-shadow: 0 0 0 1px var(--warm); }
+.wtile { position: relative; display: flex; flex-direction: column; align-items: center; min-height: 158px; text-align: center; padding: 12px 8px; font-family: inherit; color: inherit; width: 100%; cursor: pointer; transition: transform .12s; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.wtile.best { --px-border: var(--warm); }
 .wIcon { width: 46px; height: 46px; margin: 0 auto 10px; display: grid; place-items: center; }
 .wtileImg { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); transition: transform .15s ease, filter .15s ease; }
 .wName { position: relative; display: inline-block; max-width: 100%; margin: 0 auto; padding-top: 10px; font-weight: 700; font-size: 12px; line-height: 1.15; color: #EAF0FF; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -122,12 +122,12 @@
 .wSource { font-size: 10px; color: #A9BCE0; margin-top: 5px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.4em; }
 .wSub { display: inline-block; margin-top: 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #A9BCE0; background: rgba(255,255,255,.08); border-radius: var(--radius-pill); padding: 3px 8px 1px; line-height: 1; }
 .wStar { position: absolute; top: 7px; right: 8px; font-size: 14px; color: var(--warm); z-index: 1; }
-.wtile:hover { transform: translateY(-3px); border-color: var(--warm); box-shadow: inset 1px 1px 0 rgba(255,255,255,.18), 0 0 0 1px color-mix(in oklab, var(--warm) 45%, transparent), 0 14px 26px -14px rgba(0,0,0,.7); }
+.wtile:hover { transform: translateY(-3px); --px-border: var(--warm); }
 .wtile:hover .wtileImg { transform: scale(1.16) translateY(-2px); filter: drop-shadow(0 0 8px color-mix(in oklab, var(--warm) 60%, transparent)); }
 
 /* ── Armor ── */
 .armor { display: flex; gap: 14px; align-items: flex-start; }
-.armorDoll { width: 60px; height: 60px; flex: none; border-radius: 7px; background: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); display: grid; place-items: center; box-shadow: var(--shadow-sm); }
+.armorDoll { width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
 .armorSprite { width: 44px; height: 44px; object-fit: contain; }
 .armorInfo { flex: 1; min-width: 0; }
 .armorEntry { display: block; width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid rgba(150,180,230,.2); padding: 6px 0; cursor: pointer; font-family: inherit; color: inherit; }
@@ -148,14 +148,14 @@
 .accBox { width: max-content; min-width: 158px; flex: none; }
 .accSplit { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
-.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.28); border-radius: var(--radius-md); padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; }
+.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 button.accSlot { cursor: pointer; transition: border-color .15s, background .15s; }
 button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.1); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; }
-.accEmpty { border-style: dashed; }
+.accEmpty { --px-border: rgba(150,180,230,.14); }
 .accSlotHint { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .05em; color: #A9BCE0; }
-.accDemon { border-color: color-mix(in oklab, var(--color-danger) 60%, rgba(150,180,230,.28)); }
+.accDemon { --px-border: color-mix(in oklab, var(--color-danger) 60%, rgba(150,180,230,.28)); }
 .accDemon.accEmpty .accSlotHint { color: color-mix(in oklab, var(--color-danger) 70%, #fff); }
 
 /* ── Reforge + buffs content ── */
@@ -174,8 +174,11 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 /* buff/consumable cards mirror the accessory slots: icon with the name centred beneath */
 .buffGrid { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
-.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.28); border-radius: var(--radius-md); padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; cursor: pointer; transition: border-color .15s, background .15s; }
-.buffCell:hover { border-color: var(--warm); background: rgba(255,255,255,.1); }
+.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+/* .pixel-hollow is required: at 6% opacity the fill would otherwise show the
+   border colour through it and tint the card. */
+.buffCell::before, .buffCell::after { transition: background .15s; }
+.buffCell:hover { --px-border: var(--warm); --px-fill: rgba(255,255,255,.1); }
 .buffCellImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .buffCellName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; }
 .buffPills { display: flex; flex-wrap: wrap; gap: 6px; }
