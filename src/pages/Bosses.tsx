@@ -177,8 +177,8 @@ export function Bosses() {
           <div className={styles.detailBody}>
             <div className={styles.detailHead}>
               <h2 className={styles.detailName}>{selected.name}</h2>
-              {selected.side && <span className={styles.tagOpt}>Optional</span>}
-              {worldLabel(selected) && <span className={styles.tagWorld}>{worldLabel(selected)}</span>}
+              {selected.side && <span className={`${styles.tagOpt} pixel-frame`}>Optional</span>}
+              {worldLabel(selected) && <span className={`${styles.tagWorld} pixel-frame`}>{worldLabel(selected)}</span>}
               <span className={styles.detailStage}>{STAGE_LABELS[selected.stage]}</span>
             </div>
             <p className={styles.detailBlurb}>{selected.blurb}</p>
@@ -189,7 +189,7 @@ export function Bosses() {
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Key Drops</span>
               <span className={styles.drops}>
-                {selected.drops.map((d) => <span key={d} className={styles.dropPill}>{d}</span>)}
+                {selected.drops.map((d) => <span key={d} className={`${styles.dropPill} pixel-frame`}>{d}</span>)}
               </span>
             </div>
           </div>
