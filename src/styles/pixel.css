@@ -38,6 +38,25 @@
     calc(100% - var(--px-1)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-2)), calc(100% - var(--px-4)) calc(100% - var(--px-2)), calc(100% - var(--px-4)) calc(100% - var(--px-1)),
     var(--px-4) calc(100% - var(--px-1)), var(--px-4) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-4)), var(--px-1) calc(100% - var(--px-4))
   );
+  /* Ring form of the border: the outer outline followed by the inner one,
+     resolved with evenodd so the middle is a hole. Used by .pixel-hollow. */
+  /* Ring form of the border, used by .pixel-hollow: the outer outline, then the
+     inner one, resolved with evenodd so the middle is a hole.
+     The first point of each loop is repeated so the bridge between them is
+     traversed out and back along one zero-width segment. Without that, the path
+     runs a long diagonal from the outer loop's end to the inner loop's start,
+     which cuts a wedge through the border and makes the sides taper. */
+  --px-ring: polygon(evenodd,
+    0 var(--px-4), var(--px-1) var(--px-4), var(--px-1) var(--px-2), var(--px-2) var(--px-2), var(--px-2) var(--px-1), var(--px-4) var(--px-1),
+    var(--px-4) 0, calc(100% - var(--px-4)) 0, calc(100% - var(--px-4)) var(--px-1), calc(100% - var(--px-2)) var(--px-1), calc(100% - var(--px-2)) var(--px-2), calc(100% - var(--px-1)) var(--px-2),
+    calc(100% - var(--px-1)) var(--px-4), 100% var(--px-4), 100% calc(100% - var(--px-4)), calc(100% - var(--px-1)) calc(100% - var(--px-4)), calc(100% - var(--px-1)) calc(100% - var(--px-2)), calc(100% - var(--px-2)) calc(100% - var(--px-2)),
+    calc(100% - var(--px-2)) calc(100% - var(--px-1)), calc(100% - var(--px-4)) calc(100% - var(--px-1)), calc(100% - var(--px-4)) 100%, var(--px-4) 100%, var(--px-4) calc(100% - var(--px-1)), var(--px-2) calc(100% - var(--px-1)),
+    var(--px-2) calc(100% - var(--px-2)), var(--px-1) calc(100% - var(--px-2)), var(--px-1) calc(100% - var(--px-4)), 0 calc(100% - var(--px-4)), 0 var(--px-4), var(--px-1) var(--px-4),
+    var(--px-2) var(--px-4), var(--px-2) var(--px-2), var(--px-4) var(--px-2), var(--px-4) var(--px-1), calc(100% - var(--px-4)) var(--px-1), calc(100% - var(--px-4)) var(--px-2),
+    calc(100% - var(--px-2)) var(--px-2), calc(100% - var(--px-2)) var(--px-4), calc(100% - var(--px-1)) var(--px-4), calc(100% - var(--px-1)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-2)),
+    calc(100% - var(--px-4)) calc(100% - var(--px-2)), calc(100% - var(--px-4)) calc(100% - var(--px-1)), var(--px-4) calc(100% - var(--px-1)), var(--px-4) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-4)),
+    var(--px-1) calc(100% - var(--px-4)), var(--px-1) var(--px-4)
+  );
   position: relative;
   isolation: isolate;
   background: transparent;
@@ -63,3 +82,13 @@
   background: var(--px-fill, var(--card));
   clip-path: var(--px-inner);
 }
+
+/* ── Hollow variant ──
+   By default the border layer fills the whole outer shape, which is invisible
+   behind an opaque --px-fill but tints a translucent one with the border colour.
+   Panels that are meant to show the page through them (the Bosses cards, at
+   28-55% opacity) opt into a ring instead. Deliberately opt-in: the existing
+   adopters were tuned against the filled version and would shift if this
+   became the default. Compound selector so it beats the base rule on
+   specificity rather than source order. */
+.pixel-frame.pixel-hollow::before { clip-path: var(--px-ring); }

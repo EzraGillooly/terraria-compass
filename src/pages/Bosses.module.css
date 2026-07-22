@@ -83,9 +83,9 @@
   display: inline-flex;
   gap: 4px;
   padding: 4px;
-  background: rgba(10,16,32,.5);
-  border: 2px solid rgba(150,164,224,.3);
-  border-radius: 11px;
+  --px-fill: rgba(10,16,32,.5);
+  --px-border: rgba(150,164,224,.3);
+  --px-u: 1px;   /* half-scale step, as on the nav tabs and class selectors */
 }
 .phaseBtn {
   font-family: var(--game);
@@ -186,10 +186,12 @@
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
-  background: linear-gradient(180deg, rgba(70,84,150,.28) 0%, rgba(40,50,96,.28) 100%);
-  border: 2px solid color-mix(in oklab, var(--boss, #96a4e0) 45%, rgba(150,164,224,.4));
-  border-radius: 12px;
-  box-shadow: inset 0 0 0 2px rgba(10,16,32,.5), 0 10px 30px rgba(0,0,0,.4);
+  /* pixel corners via .pixel-frame + .pixel-hollow — same fill and per-boss
+     border colour as before, only the corner shape changes. The utility supplies
+     background/border, so they must not be set here, and a box-shadow would
+     render against the real rectangular box and cut square corners. */
+  --px-fill: linear-gradient(180deg, rgba(70,84,150,.28) 0%, rgba(40,50,96,.28) 100%);
+  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 45%, rgba(150,164,224,.4));
   padding: 20px 22px;
 }
 .detailIcon {

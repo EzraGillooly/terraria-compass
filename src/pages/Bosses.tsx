@@ -133,7 +133,7 @@ export function Bosses() {
       {/* ── Scroll rail ── */}
       <section className={styles.railSection} aria-label="Boss order timeline">
         <div className={styles.phaseBar}>
-          <div className={styles.phaseToggle} role="tablist" aria-label="Progression phase">
+          <div className={`${styles.phaseToggle} pixel-frame pixel-hollow`} role="tablist" aria-label="Progression phase">
             <button
               type="button"
               role="tab"
@@ -163,7 +163,7 @@ export function Bosses() {
         <p className={styles.scrollHint}>Tap a boss for its summon method and key drops</p>
 
         {/* ── Detail panel ── */}
-        <div className={styles.detail} style={{ ['--boss' as string]: selected.color }}>
+        <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
           <div className={styles.detailIcon}>
             <img
               src={`${BASE}icons/bosses/${selected.id}.png`}
