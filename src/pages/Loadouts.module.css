@@ -56,7 +56,17 @@
 .bento { display: grid; grid-template-columns: 2fr 1fr; gap: 14px; align-items: start; }
 .colLeft { display: flex; flex-direction: column; }
 .colRight { display: flex; flex-direction: column; gap: 14px; }
-.invPanel { background: rgba(16, 26, 54, .82); border: 2px solid rgba(150, 180, 230, .45); border-radius: var(--radius-lg); padding: 18px; box-shadow: inset 1px 1px 0 rgba(255,255,255,.18), 0 18px 50px -20px rgba(0,0,0,.7); color: #E9F0FF; }
+/* Pixel-stepped corners via the global .pixel-frame utility (see pixel.css).
+   It supplies the shape, fill and border, so this rule must not set its own
+   background/border/radius — and must not take a box-shadow, which would render
+   against the real rectangular box and cut square corners across the stepping.
+   --px-border keeps the original pale blue edge rather than defaulting to black. */
+.invPanel {
+  --px-fill: rgba(16, 26, 54, .82);
+  --px-border: rgba(150, 180, 230, .45);
+  padding: 18px;
+  color: #E9F0FF;
+}
 /* Weapons + reforge hug into one continuous container */
 .weaponsPanel { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: 0; }
 .reforgePanel { border-top-left-radius: 0; border-top-right-radius: 0; }

@@ -280,7 +280,7 @@ export function Loadouts() {
 
           {/* Left column: weapons + reforge (hugging) */}
           <div className={styles.colLeft}>
-          <div className={`${styles.invPanel} ${styles.weaponsPanel}`}>
+          <div className={`${styles.invPanel} ${styles.weaponsPanel} pixel-frame`}>
             <div className={styles.tlabel}><span>Weapons</span><span className={styles.em}>{classDef.name}</span></div>
 
             {availableSubclasses.length > 0 && (
@@ -349,7 +349,7 @@ export function Loadouts() {
           </div>
 
           {/* Reforge — hugs the weapons panel */}
-          <div className={`${styles.invPanel} ${styles.reforgePanel}`}>
+          <div className={`${styles.invPanel} ${styles.reforgePanel} pixel-frame`}>
             {extraAccessories.length > 0 && (
               <div className={styles.accAlts}>
                 <span className={styles.accAltsLabel}>Also good:</span>
@@ -373,7 +373,7 @@ export function Loadouts() {
 
           {/* Right column: armor + (buffs · accessories) */}
           <div className={styles.colRight}>
-          <div className={styles.invPanel}>
+          <div className={`${styles.invPanel} pixel-frame`}>
             <div className={styles.tlabel}><span>Armor</span></div>
             {armorImg ? (
               <div className={styles.armor}>
@@ -416,7 +416,7 @@ export function Loadouts() {
 
           {/* Buffs next to the compact accessory box */}
           <div className={styles.accRow}>
-            <div className={`${styles.invPanel} ${styles.buffsPanel}`}>
+            <div className={`${styles.invPanel} ${styles.buffsPanel} pixel-frame`}>
               <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
               {safeLoadout.buffs.length > 0 ? (
                 <div className={styles.buffGrid}>
@@ -427,7 +427,7 @@ export function Loadouts() {
               )}
             </div>
 
-            <div className={`${styles.invPanel} ${styles.accBox}`}>
+            <div className={`${styles.invPanel} ${styles.accBox} pixel-frame`}>
               <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
               {/* one vertical strip of slots; the 6th is the Expert-only Demon Heart */}
               <div className={styles.accSplit}>

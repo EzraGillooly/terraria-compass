@@ -10,7 +10,6 @@
    not rely on its own background/border — those come from the two layers below.
    Content stays above via the negative-z-index pseudos + isolation. */
 .pixel-frame {
-  --px-border: #000;
   position: relative;
   isolation: isolate;
   background: transparent;
@@ -25,7 +24,10 @@
 }
 .pixel-frame::before {            /* border (outer shape) */
   z-index: -2;
-  background: var(--px-border);
+  /* default via fallback, not a `--px-border: #000` declaration on .pixel-frame:
+     that would collide at equal specificity with a component's own override and
+     win or lose on stylesheet order. Matches how --px-fill already works. */
+  background: var(--px-border, #000);
   clip-path: var(--px-outer);
 }
 .pixel-frame::after {             /* fill (inner shape) */
