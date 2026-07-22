@@ -7,9 +7,37 @@
 /* ── Terraria pixel-rounded frame ──
    Opt in by adding `pixel-frame` alongside a component's class, then set the fill
    via `--px-fill` (and optionally `--px-border`, default black). The element must
-   not rely on its own background/border — those come from the two layers below.
-   Content stays above via the negative-z-index pseudos + isolation. */
+   not rely on its own background/border — those come from the two layers below,
+   and it must not take a box-shadow: a shadow renders against the real
+   rectangular box and would cut square corners across the pixel stepping.
+   Content stays above via the negative-z-index pseudos + isolation.
+
+   The corner is built from one unit, --px-u (default 2px). Override it per
+   component to scale the effect — small controls use 1px for a half-scale step.
+   Corner border cells over a 5x5 grid, each cell --px-u square:
+     row0 [] .  .  .  .    row1 .  [] [] .  .
+     row2 .  .  .  [] .    row3 .  .  .  [] .    row4 .  .  .  .  []
+
+   These polygons MUST be declared here, on the element that uses them, not on
+   :root. A custom property's var()s are substituted where it is *declared*, so
+   a :root definition would bake in root's --px-u and silently ignore any
+   component override. */
 .pixel-frame {
+  --px-1: var(--px-u, 2px);
+  --px-2: calc(var(--px-u, 2px) * 2);
+  --px-4: calc(var(--px-u, 2px) * 4);
+  --px-outer: polygon(
+    0 var(--px-4), var(--px-1) var(--px-4), var(--px-1) var(--px-2), var(--px-2) var(--px-2), var(--px-2) var(--px-1), var(--px-4) var(--px-1), var(--px-4) 0,
+    calc(100% - var(--px-4)) 0, calc(100% - var(--px-4)) var(--px-1), calc(100% - var(--px-2)) var(--px-1), calc(100% - var(--px-2)) var(--px-2), calc(100% - var(--px-1)) var(--px-2), calc(100% - var(--px-1)) var(--px-4), 100% var(--px-4),
+    100% calc(100% - var(--px-4)), calc(100% - var(--px-1)) calc(100% - var(--px-4)), calc(100% - var(--px-1)) calc(100% - var(--px-2)), calc(100% - var(--px-2)) calc(100% - var(--px-2)), calc(100% - var(--px-2)) calc(100% - var(--px-1)), calc(100% - var(--px-4)) calc(100% - var(--px-1)), calc(100% - var(--px-4)) 100%,
+    var(--px-4) 100%, var(--px-4) calc(100% - var(--px-1)), var(--px-2) calc(100% - var(--px-1)), var(--px-2) calc(100% - var(--px-2)), var(--px-1) calc(100% - var(--px-2)), var(--px-1) calc(100% - var(--px-4)), 0 calc(100% - var(--px-4))
+  );
+  --px-inner: polygon(
+    var(--px-1) var(--px-4), var(--px-2) var(--px-4), var(--px-2) var(--px-2), var(--px-4) var(--px-2), var(--px-4) var(--px-1),
+    calc(100% - var(--px-4)) var(--px-1), calc(100% - var(--px-4)) var(--px-2), calc(100% - var(--px-2)) var(--px-2), calc(100% - var(--px-2)) var(--px-4), calc(100% - var(--px-1)) var(--px-4),
+    calc(100% - var(--px-1)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-4)), calc(100% - var(--px-2)) calc(100% - var(--px-2)), calc(100% - var(--px-4)) calc(100% - var(--px-2)), calc(100% - var(--px-4)) calc(100% - var(--px-1)),
+    var(--px-4) calc(100% - var(--px-1)), var(--px-4) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-2)), var(--px-2) calc(100% - var(--px-4)), var(--px-1) calc(100% - var(--px-4))
+  );
   position: relative;
   isolation: isolate;
   background: transparent;

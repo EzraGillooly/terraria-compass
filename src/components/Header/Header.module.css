@@ -95,6 +95,7 @@
      drive --px-fill rather than `background`, which the utility zeroes out */
   --px-fill: var(--accent);
   --px-border: #000;
+  --px-u: 1px;   /* half-scale corner — the 8px step is too heavy on a 34px tab */
   transition: opacity .15s;
 }
 .navLink::after { transition: background .15s; }

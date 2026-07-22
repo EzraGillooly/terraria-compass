@@ -24,7 +24,7 @@
 /* ── Class rail (weapon icons) ── */
 .classRail { display: flex; gap: 8px; flex-wrap: wrap; }
 /* Class pills — white when unselected, header-tab green when selected */
-.cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; --px-fill: var(--card); --px-border: #000; padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
+.cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; --px-fill: var(--card); --px-border: #000; --px-u: 1px; padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
 .cbtn:hover { --px-fill: color-mix(in oklab, var(--accent) 12%, var(--card)); }
 /* nudge just the label — Andy Bold sits high, but the icon is already centred */
 .cbtnLabel { display: inline-block; line-height: 1; position: relative; top: 1px; }

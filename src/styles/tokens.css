@@ -91,23 +91,6 @@
   --radius-lg:   8px;
   --radius-pill: 999px;
 
-  /* ── Terraria pixel-rounded corner (each "space" = 2px) ──
-     Used by the .pixel-frame utility (see pixel.css). --px-outer is the black
-     border shape, --px-inner the fill shape; the 1px black ring between them is
-     the border. Top-right corner border cells over a 5×5 grid:
-       row0 □ · · · ·   row1 · □ □ · ·   row2 · · · □ ·   row3 · · · □ ·   row4 · · · · □ */
-  --px-outer: polygon(
-    0 8px, 2px 8px, 2px 4px, 4px 4px, 4px 2px, 8px 2px, 8px 0,
-    calc(100% - 8px) 0, calc(100% - 8px) 2px, calc(100% - 4px) 2px, calc(100% - 4px) 4px, calc(100% - 2px) 4px, calc(100% - 2px) 8px, 100% 8px,
-    100% calc(100% - 8px), calc(100% - 2px) calc(100% - 8px), calc(100% - 2px) calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) calc(100% - 2px), calc(100% - 8px) calc(100% - 2px), calc(100% - 8px) 100%,
-    8px 100%, 8px calc(100% - 2px), 4px calc(100% - 2px), 4px calc(100% - 4px), 2px calc(100% - 4px), 2px calc(100% - 8px), 0 calc(100% - 8px)
-  );
-  --px-inner: polygon(
-    2px 8px, 4px 8px, 4px 4px, 8px 4px, 8px 2px,
-    calc(100% - 8px) 2px, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, calc(100% - 2px) 8px,
-    calc(100% - 2px) calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) calc(100% - 2px),
-    8px calc(100% - 2px), 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 2px calc(100% - 8px)
-  );
 }
 
 /* ── Dark mode (Terraria night — dormant, for future full dark mode) ── */
