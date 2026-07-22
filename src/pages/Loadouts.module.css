@@ -40,7 +40,7 @@
    --wp-count is set inline from the phase list. max(0px, …) keeps the row from
    bleeding outwards on narrow screens, where it scrolls instead. */
 .bossmap {
-  --wp-size: 50px;   /* pixel-circle disc width */
+  --wp-size: 54px;   /* pixel-circle disc width */
   --wp-pad: 4px;              /* room for the active disc's scale(1.14) */
   display: flex; align-items: flex-start; gap: 0;
   margin-bottom: 16px;
@@ -50,10 +50,10 @@
   padding: 6px var(--wp-pad) 10px;
 }
 .waypoint { position: relative; flex: 1 1 0; min-width: 62px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; color: #A9BCE0; padding: 0; }
-.vein { position: absolute; top: 26px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
+.vein { position: absolute; top: 25px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
 
 .veinFill { background: var(--warm); }
-.wpDisc { position: relative; z-index: 1; width: 50px; height: 54px; display: grid; place-items: center; transition: transform .15s; --px-fill: var(--card); --px-border: var(--line); }
+.wpDisc { position: relative; z-index: 1; width: 54px; height: 54px; display: grid; place-items: center; transition: transform .15s; --px-fill: var(--card); --px-border: var(--line); }
 .wpDisc::before { transition: background .15s; }
 .wpIcon { width: 30px; height: 30px; object-fit: contain; filter: grayscale(.6) opacity(.55); }
 .waypoint.done .wpDisc { --px-border: var(--warm); }
