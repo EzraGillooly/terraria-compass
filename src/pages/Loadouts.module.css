@@ -40,7 +40,7 @@
    --wp-count is set inline from the phase list. max(0px, …) keeps the row from
    bleeding outwards on narrow screens, where it scrolls instead. */
 .bossmap {
-  --wp-size: 44px;
+  --wp-size: 50px;   /* pixel-circle disc width */
   --wp-pad: 4px;              /* room for the active disc's scale(1.14) */
   display: flex; align-items: flex-start; gap: 0;
   margin-bottom: 16px;
@@ -50,14 +50,15 @@
   padding: 6px var(--wp-pad) 10px;
 }
 .waypoint { position: relative; flex: 1 1 0; min-width: 62px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; color: #A9BCE0; padding: 0; }
-.vein { position: absolute; top: 21px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
+.vein { position: absolute; top: 26px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
 
 .veinFill { background: var(--warm); }
-.wpDisc { position: relative; z-index: 1; width: 44px; height: 44px; border-radius: 50%; background: var(--card); border: 2px solid var(--line); display: grid; place-items: center; box-shadow: var(--shadow-sm); transition: border-color .15s, transform .15s; }
+.wpDisc { position: relative; z-index: 1; width: 50px; height: 54px; display: grid; place-items: center; transition: transform .15s; --px-fill: var(--card); --px-border: var(--line); }
+.wpDisc::before { transition: background .15s; }
 .wpIcon { width: 30px; height: 30px; object-fit: contain; filter: grayscale(.6) opacity(.55); }
-.waypoint.done .wpDisc { border-color: var(--warm); }
+.waypoint.done .wpDisc { --px-border: var(--warm); }
 .waypoint.done .wpIcon { filter: none; }
-.waypoint.on .wpDisc { border-color: var(--warm); transform: scale(1.14); box-shadow: 0 0 0 3px color-mix(in oklab, var(--warm) 35%, transparent), var(--shadow-md); }
+.waypoint.on .wpDisc { --px-border: var(--warm); transform: scale(1.14); }
 .waypoint.on .wpIcon { filter: none; }
 .wpName { font-size: 10px; font-weight: 700; text-align: center; line-height: 1.1; max-width: 70px; }
 .waypoint.on .wpName { color: #EAF0FF; }
@@ -148,11 +149,11 @@
 .accBox { width: max-content; min-width: 158px; flex: none; }
 .accSplit { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
-.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 button.accSlot { cursor: pointer; transition: border-color .15s, background .15s; }
 button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.1); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; }
+.accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .accEmpty { --px-border: rgba(150,180,230,.14); }
 .accSlotHint { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .05em; color: #A9BCE0; }
 .accDemon { --px-border: color-mix(in oklab, var(--color-danger) 60%, rgba(150,180,230,.28)); }
@@ -173,14 +174,14 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
 /* ── Buffs ── */
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 /* buff/consumable cards mirror the accessory slots: icon with the name centred beneath */
-.buffGrid { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
-.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 6px; min-height: 72px; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.buffGrid { display: grid; grid-template-columns: repeat(2, 84px); gap: 8px; justify-content: center; }
+.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 /* .pixel-hollow is required: at 6% opacity the fill would otherwise show the
    border colour through it and tint the card. */
 .buffCell::before, .buffCell::after { transition: background .15s; }
 .buffCell:hover { --px-border: var(--warm); --px-fill: rgba(255,255,255,.1); }
 .buffCellImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.buffCellName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; }
+.buffCellName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .buffPills { display: flex; flex-wrap: wrap; gap: 6px; }
 .buffPill { font-weight: 700; font-size: 11px; color: #12283B; background: color-mix(in oklab, var(--warm) 82%, #fff); border-radius: var(--radius-pill); padding: 6px 11px 4px; line-height: 1.2; text-align: center; }
 

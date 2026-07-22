@@ -250,7 +250,7 @@ export function Loadouts() {
                 onClick={() => { setPhaseId(p.id as PhaseId); setShowRest(false); }}
               >
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
-                <span className={styles.wpDisc}>
+                <span className={`${styles.wpDisc} pixel-frame pixel-circle`}>
                   <img
                     src={`${BASE}icons/bosses/${PHASE_BOSS[p.id as PhaseId]}.png`}
                     alt="" aria-hidden="true"
