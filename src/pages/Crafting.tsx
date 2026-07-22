@@ -241,7 +241,7 @@ export function Crafting() {
             </div>
 
             <div className={styles.treeLayout}>
-              <div className={styles.treePanel}>
+              <div className={`${styles.treePanel} pixel-frame`}>
                 <h3 className={styles.panelCap}>Tree</h3>
                 <ul className={styles.tree}>
                   <TreeNode
@@ -255,7 +255,7 @@ export function Crafting() {
                 </ul>
               </div>
 
-              <aside className={styles.matPanel}>
+              <aside className={`${styles.matPanel} pixel-frame`}>
                 <h3 className={styles.panelCap}>What to farm</h3>
                 <ul className={styles.matList}>
                   {materials.map(({ node, qty }) => (

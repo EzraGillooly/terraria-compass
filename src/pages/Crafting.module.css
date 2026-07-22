@@ -77,10 +77,12 @@
 .treeLayout { display: flex; gap: 14px; align-items: flex-start; }
 .treePanel { flex: 1; min-width: 0; }
 .matPanel { flex: none; width: 240px; }
+/* Shape, fill and black border all come from the global .pixel-frame utility
+   (see pixel.css) — this element must not set its own background/border/radius,
+   and must not take a box-shadow: shadows render against the real rectangular
+   box and would cut square corners across the pixel stepping. */
 .treePanel, .matPanel {
-  background: rgba(8,13,30,.93);
-  border: 1px solid rgba(150,180,230,.24);
-  border-radius: var(--radius-lg);
+  --px-fill: rgba(8,13,30,.93);
   padding: 16px 18px 20px;
 }
 .panelCap {
