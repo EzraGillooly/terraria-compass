@@ -44,13 +44,25 @@
   --cu: 2px;                        /* pixel-circle unit (disc = 27 * --cu) */
   --wp-size: calc(27 * var(--cu));  /* disc width, for the centring math */
   --wp-pad: 4px;              /* room for the active disc's scale(1.14) */
+  /* The cell, not the disc, is what actually consumes the row: .waypoint is
+     flex 1 with min-width 62px, so a disc smaller than 62px still occupies 62px.
+     Measuring the pull off --wp-size overstated the free space and pulled the
+     row (and its scrollbar) outside the panels below whenever the row overflowed. */
+  --wp-cell: max(var(--wp-size), 62px);
   display: flex; align-items: flex-start; gap: 0;
   margin-bottom: 16px;
   margin-inline: calc(-1 * max(0px,
-    (100% - var(--wp-size) * var(--wp-count, 9)) / (2 * (var(--wp-count, 9) - 1)) + var(--wp-pad)));
+    (100% - var(--wp-cell) * var(--wp-count, 9)) / (2 * (var(--wp-count, 9) - 1)) + var(--wp-pad)));
   overflow-x: auto;
   padding: 6px var(--wp-pad) 10px;
+
+  /* same thin rail as the Bosses page timeline (.railScroll) */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(150,164,224,.4) transparent;
 }
+.bossmap::-webkit-scrollbar { height: 8px; }
+.bossmap::-webkit-scrollbar-track { background: transparent; }
+.bossmap::-webkit-scrollbar-thumb { background: rgba(150,164,224,.35); border-radius: 6px; }
 .waypoint { position: relative; flex: 1 1 0; min-width: 62px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; color: #A9BCE0; padding: 0; }
 .vein { position: absolute; top: calc(13.5 * var(--cu) - 1.5px); right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
 
