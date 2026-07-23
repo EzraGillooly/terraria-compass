@@ -123,11 +123,15 @@ function groupArmor(armor: Item[]): Item[] {
     const mat = armorMaterial(a.name);
     const pair = ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()));
     if (pair) {
-      const canonical = `${pair[0]} / ${pair[1]} armor`;
-      if (a.name.includes('/')) { used.add(a.id); out.push({ ...a, name: canonical }); continue; }
+      // ore/evil armor is one choice across two worlds — always show the pair name
+      // ("Adamantite armor" → "Adamantite / Titanium armor"), even if the data lists
+      // only one side. Dedupe the sibling if it's also present.
       const other = armor.find((x) => !used.has(x.id) && x.id !== a.id &&
         pair.some((v) => v.toLowerCase() === armorMaterial(x.name).toLowerCase()));
-      if (other) { used.add(a.id); used.add(other.id); out.push({ ...a, name: canonical }); continue; }
+      if (other) used.add(other.id);
+      used.add(a.id);
+      out.push({ ...a, name: `${pair[0]} / ${pair[1]} armor` });
+      continue;
     }
     used.add(a.id);
     out.push({ ...a, name: tidyArmorName(a.name) });
@@ -143,7 +147,7 @@ const CALAMITY_ARMOR = new Set([
   'snow ruffian', 'brimflame', 'daedalus', 'titan heart', 'hydrothermic', 'plague reaper',
   'reaver', 'umbraphile', 'astral', 'lunic corps', 'lunic eye', 'bloodflare', 'god slayer',
   'silva', 'auric tesla', 'auric', 'prismatic', 'tarragon', 'empyrean', 'demonshade',
-  'ataraxia', 'plaguebringer', 'fathom swarmer',
+  'ataraxia', 'plaguebringer', 'fathom swarmer', 'omega blue', 'gem-tech', 'gem tech',
 ]);
 
 const isCalamityArmor = (name: string) =>
@@ -152,11 +156,18 @@ const isCalamityArmor = (name: string) =>
 /* Show two armor options per stage: the best vanilla set and the best Calamity set
    (the list is already ordered best→good→other, so the first of each is the pick). */
 function curateArmor(grouped: Item[]): Item[] {
-  const vanilla = grouped.find((a) => !isCalamityArmor(a.name));
-  const modded = grouped.find((a) => isCalamityArmor(a.name));
-  return [vanilla, modded]
-    .filter((a): a is Item => Boolean(a))
-    .sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
+  const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
+  const modded = grouped.filter((a) => isCalamityArmor(a.name));
+  const picks: Item[] = [];
+  if (vanilla[0]) picks.push(vanilla[0]);
+  if (modded[0]) picks.push(modded[0]);
+  // endgame stages have no vanilla set (or vice versa) — fill to two from the
+  // pool that has options so the reader still sees an alternative
+  if (picks.length < 2) {
+    const pool = vanilla.length ? vanilla : modded;
+    if (pool[1]) picks.push(pool[1]);
+  }
+  return picks.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
 }
 
 function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {

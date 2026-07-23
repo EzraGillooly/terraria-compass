@@ -66,18 +66,6 @@
     ],
     "armor": [
       {
-        "id": "gi",
-        "name": "Gi",
-        "slot": "armor",
-        "icon": "calamity/gi.png",
-        "source": "",
-        "why": "all-class armor with useful bonuses",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
-      },
-      {
         "id": "gold-armor",
         "name": "Gold armor",
         "slot": "armor",
@@ -86,7 +74,7 @@
         "why": "solid early defense",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
       },
       {
@@ -527,7 +515,7 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -539,11 +527,23 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
+      },
+      {
+        "id": "silver-armor",
+        "name": "Silver armor",
+        "slot": "armor",
+        "icon": "calamity/silver-armor.png",
+        "source": "",
+        "why": "basic early defense",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silver_armor"
       }
     ],
     "accessories": [
@@ -983,51 +983,15 @@
     ],
     "armor": [
       {
-        "id": "diamond-robe",
-        "name": "Diamond Robe",
-        "slot": "armor",
-        "icon": "calamity/diamond-robe.png",
-        "source": "",
-        "why": "primary class-specific magic armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Diamond_Robe"
-      },
-      {
-        "id": "mystic-robe",
-        "name": "Mystic Robe",
-        "slot": "armor",
-        "icon": "calamity/mystic-robe.png",
-        "source": "",
-        "why": "secondary class-specific magic armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mystic_Robe"
-      },
-      {
-        "id": "gi",
-        "name": "Gi",
-        "slot": "armor",
-        "icon": "calamity/gi.png",
-        "source": "",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
-      },
-      {
         "id": "gold-armor",
         "name": "Gold armor",
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defensive armor",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
       },
       {
@@ -1036,10 +1000,10 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class defensive armor",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
       },
       {
@@ -1048,7 +1012,7 @@
         "slot": "armor",
         "icon": "calamity/silver-armor.png",
         "source": "",
-        "why": "all-class defensive armor",
+        "why": "basic early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -1409,18 +1373,6 @@
     ],
     "armor": [
       {
-        "id": "flinx-fur-coat",
-        "name": "Flinx Fur Coat",
-        "slot": "armor",
-        "icon": "calamity/flinx-fur-coat.png",
-        "source": "",
-        "why": "early summoner armor, +1 minion",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flinx_Fur_Coat"
-      },
-      {
         "id": "wulfrum-armor",
         "name": "Wulfrum armor",
         "slot": "armor",
@@ -1429,20 +1381,8 @@
         "why": "class-specific summoner set",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_armor"
-      },
-      {
-        "id": "gi",
-        "name": "Gi",
-        "slot": "armor",
-        "icon": "calamity/gi.png",
-        "source": "",
-        "why": "all-class option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
       },
       {
         "id": "gold-armor",
@@ -1450,10 +1390,10 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
       },
       {
@@ -1462,7 +1402,7 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -1474,7 +1414,7 @@
         "slot": "armor",
         "icon": "calamity/silver-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "basic early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -1911,28 +1851,28 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gladiator_armor"
       },
       {
-        "id": "gi",
-        "name": "Gi",
+        "id": "gold-armor",
+        "name": "Gold armor",
         "slot": "armor",
-        "icon": "calamity/gi.png",
+        "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class stealth-boosting option",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
       },
       {
-        "id": "gold-armor-platinum-armor",
-        "name": "Gold armor / Platinum armor",
+        "id": "platinum-armor",
+        "name": "Platinum armor",
         "slot": "armor",
-        "icon": "calamity/gold-armor-platinum-armor.png",
+        "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class generic defense",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor_%2F_Platinum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
       },
       {
         "id": "silver-armor",
@@ -1940,7 +1880,7 @@
         "slot": "armor",
         "icon": "calamity/silver-armor.png",
         "source": "",
-        "why": "all-class fallback defense",
+        "why": "basic early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -2319,16 +2259,28 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
       },
       {
-        "id": "gold-armor-platinum-armor",
-        "name": "Gold armor / Platinum armor",
+        "id": "gold-armor",
+        "name": "Gold armor",
         "slot": "armor",
-        "icon": "calamity/gold-armor-platinum-armor.png",
+        "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defense alternative",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor_%2F_Platinum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
+      },
+      {
+        "id": "platinum-armor",
+        "name": "Platinum armor",
+        "slot": "armor",
+        "icon": "calamity/platinum-armor.png",
+        "source": "",
+        "why": "higher early defense alternative",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
       }
     ],
     "accessories": [
@@ -2732,7 +2684,7 @@
         "slot": "armor",
         "icon": "calamity/fossil-armor.png",
         "source": "",
-        "why": "boosts thrown/ranged damage, best set here",
+        "why": "class ranged armor with ammo save",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -2744,7 +2696,7 @@
         "slot": "armor",
         "icon": "calamity/snow-ruffian-armor.png",
         "source": "",
-        "why": "rogue-friendly alternative set",
+        "why": "alternative class ranged armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -2756,10 +2708,10 @@
         "slot": "armor",
         "icon": "calamity/victide-armor.png",
         "source": "",
-        "why": "early ocean set with set bonus",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
       },
       {
@@ -2768,7 +2720,7 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "generic all-class defense",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -2780,7 +2732,7 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "generic all-class defense",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -3255,7 +3207,7 @@
         "slot": "armor",
         "icon": "calamity/victide-armor.png",
         "source": "",
-        "why": "class-specific alternative set",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -3267,7 +3219,7 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defense",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -3279,7 +3231,7 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class defense",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -3748,27 +3700,15 @@
     ],
     "armor": [
       {
-        "id": "flinx-fur-coat",
-        "name": "Flinx Fur Coat",
-        "slot": "armor",
-        "icon": "calamity/flinx-fur-coat.png",
-        "source": "",
-        "why": "early minion-boosting armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flinx_Fur_Coat"
-      },
-      {
         "id": "victide-armor",
         "name": "Victide armor",
         "slot": "armor",
         "icon": "calamity/victide-armor.png",
         "source": "",
-        "why": "solid class armor alternative",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
       },
       {
@@ -3777,7 +3717,7 @@
         "slot": "armor",
         "icon": "calamity/wulfrum-armor.png",
         "source": "",
-        "why": "solid class armor alternative",
+        "why": "class-specific summoner set",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -3789,7 +3729,7 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -3801,7 +3741,7 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class defense option",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -4241,7 +4181,7 @@
         "slot": "armor",
         "icon": "calamity/victide-armor.png",
         "source": "",
-        "why": "alternative rogue set bonus",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -4253,7 +4193,7 @@
         "slot": "armor",
         "icon": "calamity/gold-armor.png",
         "source": "",
-        "why": "all-class early defense",
+        "why": "solid early defense",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -4265,7 +4205,7 @@
         "slot": "armor",
         "icon": "calamity/platinum-armor.png",
         "source": "",
-        "why": "all-class early defense",
+        "why": "higher early defense alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -4736,7 +4676,7 @@
         "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
@@ -5124,39 +5064,15 @@
     ],
     "armor": [
       {
-        "id": "fossil-armor",
-        "name": "Fossil armor",
-        "slot": "armor",
-        "icon": "calamity/fossil-armor.png",
-        "source": "",
-        "why": "primary class-specific ranged armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fossil_armor"
-      },
-      {
-        "id": "snow-ruffian-armor",
-        "name": "Snow Ruffian armor",
-        "slot": "armor",
-        "icon": "calamity/snow-ruffian-armor.png",
-        "source": "",
-        "why": "alternative class-specific armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snow_Ruffian_armor"
-      },
-      {
         "id": "victide-armor",
         "name": "Victide armor",
         "slot": "armor",
         "icon": "calamity/victide-armor.png",
         "source": "",
-        "why": "alternative class-specific armor",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
       },
       {
@@ -5165,10 +5081,10 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class defensive armor",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
@@ -5177,7 +5093,7 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -5598,28 +5514,28 @@
     ],
     "armor": [
       {
+        "id": "meteor-armor",
+        "name": "Meteor armor",
+        "slot": "armor",
+        "icon": "calamity/meteor-armor.png",
+        "source": "",
+        "why": "free Space Gun mana cost, strong magic set",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_armor"
+      },
+      {
         "id": "jungle-armor",
         "name": "Jungle armor",
         "slot": "armor",
         "icon": "calamity/jungle-armor.png",
         "source": "",
-        "why": "class-specific magic armor with mana bonus",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jungle_armor"
-      },
-      {
-        "id": "victide-armor",
-        "name": "Victide armor",
-        "slot": "armor",
-        "icon": "calamity/victide-armor.png",
-        "source": "",
-        "why": "class-specific alternative armor",
+        "why": "magic-focused set bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jungle_armor"
       },
       {
         "id": "crimson-armor",
@@ -5627,10 +5543,10 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
@@ -5639,10 +5555,10 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
@@ -6097,40 +6013,16 @@
     ],
     "armor": [
       {
-        "id": "flinx-fur-coat",
-        "name": "Flinx Fur Coat",
+        "id": "obsidian-armor",
+        "name": "Obsidian armor",
         "slot": "armor",
-        "icon": "calamity/flinx-fur-coat.png",
+        "icon": "calamity/obsidian-armor.png",
         "source": "",
-        "why": "early minion boost armor",
+        "why": "whip-focused summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flinx_Fur_Coat"
-      },
-      {
-        "id": "victide-armor",
-        "name": "Victide armor",
-        "slot": "armor",
-        "icon": "calamity/victide-armor.png",
-        "source": "",
-        "why": "class-specific set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
-      },
-      {
-        "id": "wulfrum-armor",
-        "name": "Wulfrum armor",
-        "slot": "armor",
-        "icon": "calamity/wulfrum-armor.png",
-        "source": "",
-        "why": "class-specific set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Obsidian_armor"
       },
       {
         "id": "crimson-armor",
@@ -6138,10 +6030,10 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class defensive set",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
@@ -6150,7 +6042,7 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class set option",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -6565,35 +6457,35 @@
         "slot": "armor",
         "icon": "calamity/sulphurous-armor.png",
         "source": "",
-        "why": "primary class-specific rogue armor at this tier",
+        "why": "class-specific rogue armor set",
         "tags": [],
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sulphurous_armor"
       },
       {
-        "id": "victide-armor",
-        "name": "Victide armor",
+        "id": "crimson-armor",
+        "name": "Crimson armor",
         "slot": "armor",
-        "icon": "calamity/victide-armor.png",
+        "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "alternative class-specific armor",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
-        "id": "gold-armor-platinum-armor",
-        "name": "Gold armor / Platinum armor",
+        "id": "shadow-armor",
+        "name": "Shadow armor",
         "slot": "armor",
-        "icon": "calamity/gold-armor-platinum-armor.png",
+        "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "generic all-class fallback armor",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor_%2F_Platinum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
     "accessories": [
@@ -6980,15 +6872,27 @@
     ],
     "armor": [
       {
+        "id": "aerospec-armor",
+        "name": "Aerospec armor",
+        "slot": "armor",
+        "icon": "calamity/aerospec-armor-melee.png",
+        "source": "",
+        "why": "primary class-specific summoner armor",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerospec_armor"
+      },
+      {
         "id": "molten-armor",
         "name": "Molten armor",
         "slot": "armor",
         "icon": "calamity/molten-armor.png",
         "source": "",
-        "why": "best melee armor set at this tier",
+        "why": "class-specific melee armor with best defense",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_armor"
       },
       {
@@ -6997,10 +6901,10 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class set with strong regen",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
@@ -7009,10 +6913,10 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class set boosting movement and melee speed",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
@@ -7400,64 +7304,40 @@
     ],
     "armor": [
       {
-        "id": "fossil-armor",
-        "name": "Fossil armor",
+        "id": "aerospec-armor",
+        "name": "Aerospec armor",
         "slot": "armor",
-        "icon": "calamity/fossil-armor.png",
+        "icon": "calamity/aerospec-armor.png",
         "source": "",
-        "why": "class ranged armor boosting ranged damage",
+        "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fossil_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerospec_armor"
       },
       {
-        "id": "snow-ruffian-armor",
-        "name": "Snow Ruffian armor",
+        "id": "crimson-armor",
+        "name": "Crimson armor",
         "slot": "armor",
-        "icon": "calamity/snow-ruffian-armor.png",
+        "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "alternative ranged armor set",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snow_Ruffian_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
-        "id": "victide-armor",
-        "name": "Victide armor",
+        "id": "shadow-armor",
+        "name": "Shadow armor",
         "slot": "armor",
-        "icon": "calamity/victide-armor.png",
+        "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "early ranged-usable armor set",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor"
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "calamity/gold-armor.png",
-        "source": "",
-        "why": "all-class defensive fallback",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "calamity/platinum-armor.png",
-        "source": "",
-        "why": "all-class defensive fallback",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
     "accessories": [
@@ -7934,76 +7814,52 @@
     ],
     "armor": [
       {
-        "id": "diamond-robe",
-        "name": "Diamond Robe",
+        "id": "meteor-armor",
+        "name": "Meteor armor",
         "slot": "armor",
-        "icon": "calamity/diamond-robe.png",
+        "icon": "calamity/meteor-armor.png",
         "source": "",
-        "why": "best magic-specific robe here",
+        "why": "free Space Gun mana cost, strong magic set",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Diamond_Robe"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_armor"
       },
       {
-        "id": "mystic-robe",
-        "name": "Mystic Robe",
+        "id": "aerospec-armor",
+        "name": "Aerospec armor",
         "slot": "armor",
-        "icon": "calamity/mystic-robe.png",
+        "icon": "calamity/aerospec-armor.png",
         "source": "",
-        "why": "alternative magic robe",
+        "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mystic_Robe"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerospec_armor"
       },
       {
-        "id": "gi",
-        "name": "Gi",
+        "id": "crimson-armor",
+        "name": "Crimson armor",
         "slot": "armor",
-        "icon": "calamity/gi.png",
+        "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
       },
       {
-        "id": "gold-armor",
-        "name": "Gold armor",
+        "id": "shadow-armor",
+        "name": "Shadow armor",
         "slot": "armor",
-        "icon": "calamity/gold-armor.png",
+        "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class defense",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "calamity/platinum-armor.png",
-        "source": "",
-        "why": "all-class defense",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
-      },
-      {
-        "id": "silver-armor",
-        "name": "Silver armor",
-        "slot": "armor",
-        "icon": "calamity/silver-armor.png",
-        "source": "",
-        "why": "all-class defense",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silver_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
     "accessories": [
@@ -8453,7 +8309,7 @@
         "why": "whip-focused summoner armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Obsidian_armor"
       },
       {
@@ -8462,7 +8318,7 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class defensive armor",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -8474,7 +8330,7 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -8962,7 +8818,7 @@
         "slot": "armor",
         "icon": "calamity/aerospec-armor.png",
         "source": "",
-        "why": "class-specific rogue armor with mobility bonuses",
+        "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -8974,7 +8830,7 @@
         "slot": "armor",
         "icon": "calamity/crimson-armor.png",
         "source": "",
-        "why": "all-class regen armor alternative",
+        "why": "all-class armor with regen",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -8986,10 +8842,10 @@
         "slot": "armor",
         "icon": "calamity/shadow-armor.png",
         "source": "",
-        "why": "all-class speed armor alternative",
+        "why": "all-class armor with movement speed",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
       }
     ],
@@ -9342,39 +9198,27 @@
     "armor": [
       {
         "id": "molten-armor",
-        "name": "Molten Armor",
+        "name": "Molten armor",
         "slot": "armor",
         "icon": "calamity/molten-armor.png",
         "source": "",
-        "why": "top melee set boosting melee damage",
+        "why": "class-specific melee armor with best defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_armor"
       },
       {
-        "id": "crimson-armor",
-        "name": "Crimson Armor",
+        "id": "statigel-armor",
+        "name": "Statigel armor",
         "slot": "armor",
-        "icon": "calamity/crimson-armor.png",
+        "icon": "calamity/statigel-armor-melee.png",
         "source": "",
-        "why": "all-class set with regen",
+        "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Armor"
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow Armor",
-        "slot": "armor",
-        "icon": "calamity/shadow-armor.png",
-        "source": "",
-        "why": "all-class set with movement speed",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_Armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor"
       }
     ],
     "accessories": [
@@ -9701,40 +9545,28 @@
     ],
     "armor": [
       {
-        "id": "molten-armor",
-        "name": "Molten armor",
+        "id": "necro-armor",
+        "name": "Necro armor",
         "slot": "armor",
-        "icon": "calamity/molten-armor.png",
+        "icon": "calamity/necro-armor.png",
         "source": "",
-        "why": "best class armor defense at this tier",
+        "why": "",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Necro_armor"
       },
       {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
+        "id": "statigel-armor",
+        "name": "Statigel armor",
         "slot": "armor",
-        "icon": "calamity/crimson-armor.png",
+        "icon": "calamity/statigel-armor.png",
         "source": "",
-        "why": "all-class armor with regen",
+        "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_armor"
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "calamity/shadow-armor.png",
-        "source": "",
-        "why": "all-class armor with speed bonus",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadow_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor"
       }
     ],
     "accessories": [
@@ -10182,7 +10014,7 @@
         "slot": "armor",
         "icon": "calamity/aerospec-armor.png",
         "source": "",
-        "why": "first-listed magic armor set for this tier",
+        "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -10209,7 +10041,7 @@
         "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor"
       }
     ],
@@ -10675,76 +10507,40 @@
     ],
     "armor": [
       {
-        "id": "flinx-fur-coat",
-        "name": "Flinx Fur Coat",
+        "id": "bee-armor",
+        "name": "Bee armor",
         "slot": "armor",
-        "icon": "calamity/flinx-fur-coat.png",
+        "icon": "calamity/bee-armor.png",
         "source": "",
-        "why": "early summon-boosting armor",
+        "why": "extra minion slot alternative",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flinx_Fur_Coat"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bee_armor"
       },
       {
-        "id": "wulfrum-armor",
-        "name": "Wulfrum armor",
+        "id": "obsidian-armor",
+        "name": "Obsidian armor",
         "slot": "armor",
-        "icon": "calamity/wulfrum-armor.png",
+        "icon": "calamity/obsidian-armor.png",
         "source": "",
-        "why": "class-specific summoner set",
+        "why": "whip-focused summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Obsidian_armor"
       },
       {
-        "id": "gi",
-        "name": "Gi",
+        "id": "statigel-armor",
+        "name": "Statigel armor",
         "slot": "armor",
-        "icon": "calamity/gi.png",
+        "icon": "calamity/statigel-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gi"
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "calamity/gold-armor.png",
-        "source": "",
-        "why": "all-class defensive armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gold_armor"
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "calamity/platinum-armor.png",
-        "source": "",
-        "why": "all-class defensive armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Platinum_armor"
-      },
-      {
-        "id": "silver-armor",
-        "name": "Silver armor",
-        "slot": "armor",
-        "icon": "calamity/silver-armor.png",
-        "source": "",
-        "why": "all-class defensive armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silver_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor"
       }
     ],
     "accessories": [
@@ -11145,7 +10941,7 @@
         "slot": "armor",
         "icon": "calamity/statigel-armor.png",
         "source": "",
-        "why": "best rogue armor set at this tier",
+        "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -11364,7 +11160,7 @@
         "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
@@ -11889,7 +11685,7 @@
         "slot": "armor",
         "icon": "calamity/cobalt-armor.png",
         "source": "",
-        "why": "class-specific ranged armor set",
+        "why": "first class-specific armor option",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -11901,7 +11697,7 @@
         "slot": "armor",
         "icon": "calamity/palladium-armor.png",
         "source": "",
-        "why": "class-specific armor with regen",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -12519,7 +12315,7 @@
         "slot": "armor",
         "icon": "calamity/cobalt-armor.png",
         "source": "",
-        "why": "early hardmode magic set bonus",
+        "why": "first class-specific armor option",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -12531,7 +12327,7 @@
         "slot": "armor",
         "icon": "calamity/palladium-armor.png",
         "source": "",
-        "why": "alternate ore set with regen bonus",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -12543,7 +12339,7 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class option with dash",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -13009,30 +12805,6 @@
       }
     ],
     "armor": [
-      {
-        "id": "lunic-eye",
-        "name": "Lunic Eye",
-        "slot": "armor",
-        "icon": "calamity/lunic-eye.png",
-        "source": "",
-        "why": "primary support item",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
-      },
-      {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
-        "slot": "armor",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "",
-        "why": "alternate support/mobility item",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
-      },
       {
         "id": "spider-armor",
         "name": "Spider armor",
@@ -14609,7 +14381,7 @@
         "slot": "armor",
         "icon": "calamity/mythril-armor.png",
         "source": "",
-        "why": "first-listed baseline hardmode ranged armor",
+        "why": "class-specific melee armor at this tier",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -14621,7 +14393,7 @@
         "slot": "armor",
         "icon": "calamity/orichalcum-armor.png",
         "source": "",
-        "why": "alternate tier ore armor",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -14633,10 +14405,10 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "mobility-focused armor alternative",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
@@ -15143,7 +14915,7 @@
         "slot": "armor",
         "icon": "calamity/mythril-armor.png",
         "source": "",
-        "why": "class-specific magic set",
+        "why": "class-specific melee armor at this tier",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -15155,10 +14927,10 @@
         "slot": "armor",
         "icon": "calamity/orichalcum-armor.png",
         "source": "",
-        "why": "class-specific magic set",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orichalcum_armor"
       },
       {
@@ -15167,7 +14939,7 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class alternative",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -15629,7 +15401,7 @@
         "slot": "armor",
         "icon": "calamity/spider-armor.png",
         "source": "",
-        "why": "primary summoner set with minion capacity",
+        "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -15653,7 +15425,7 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class option with dash",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -16259,15 +16031,27 @@
     ],
     "armor": [
       {
+        "id": "monk-armor",
+        "name": "Monk armor",
+        "slot": "armor",
+        "icon": "calamity/monk-armor.png",
+        "source": "",
+        "why": "works as a rogue armor",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Monk_armor"
+      },
+      {
         "id": "titan-heart-armor",
         "name": "Titan Heart armor",
         "slot": "armor",
         "icon": "calamity/titan-heart-armor.png",
         "source": "",
-        "why": "class-specific rogue armor with stealth bonuses",
+        "why": "class-specific rogue armor set",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Titan_Heart_armor"
       },
       {
@@ -16276,10 +16060,10 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class alternative with stealth movement",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
@@ -16845,10 +16629,10 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
@@ -17296,16 +17080,16 @@
     ],
     "armor": [
       {
-        "id": "mythril-armor",
-        "name": "Mythril armor",
+        "id": "adamantite-armor",
+        "name": "Adamantite armor",
         "slot": "armor",
-        "icon": "calamity/mythril-armor.png",
+        "icon": "calamity/adamantite-armor.png",
         "source": "",
-        "why": "primary class armor at this tier",
+        "why": "class-specific armor with new set bonus",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mythril_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Adamantite_armor"
       },
       {
         "id": "orichalcum-armor",
@@ -17313,7 +17097,7 @@
         "slot": "armor",
         "icon": "calamity/orichalcum-armor.png",
         "source": "",
-        "why": "alternate class armor option",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -17818,28 +17602,40 @@
     ],
     "armor": [
       {
-        "id": "orichalcum-armor",
-        "name": "Orichalcum armor",
-        "slot": "armor",
-        "icon": "calamity/orichalcum-armor.png",
-        "source": "",
-        "why": "petal set bonus and magic bonuses",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orichalcum_armor"
-      },
-      {
         "id": "adamantite-armor",
         "name": "Adamantite armor",
         "slot": "armor",
         "icon": "calamity/adamantite-armor.png",
         "source": "",
-        "why": "solid alternative hardmode set",
+        "why": "class-specific armor with new set bonus",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Adamantite_armor"
+      },
+      {
+        "id": "orichalcum-armor",
+        "name": "Orichalcum armor",
+        "slot": "armor",
+        "icon": "calamity/orichalcum-armor.png",
+        "source": "",
+        "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Adamantite_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orichalcum_armor"
+      },
+      {
+        "id": "crystal-assassin-armor",
+        "name": "Crystal Assassin armor",
+        "slot": "armor",
+        "icon": "calamity/crystal-assassin-armor.png",
+        "source": "",
+        "why": "all-class armor alternative",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
     "accessories": [
@@ -18003,18 +17799,6 @@
     ],
     "armor": [
       {
-        "id": "squire-armor",
-        "name": "Squire armor",
-        "slot": "armor",
-        "icon": "calamity/squire-armor.png",
-        "source": "",
-        "why": "dedicated summoner set with strong minion bonuses",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squire_armor"
-      },
-      {
         "id": "daedalus-armor",
         "name": "Daedalus armor",
         "slot": "armor",
@@ -18023,8 +17807,20 @@
         "why": "hybrid set offering summon boost and defense",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_armor"
+      },
+      {
+        "id": "squire-armor",
+        "name": "Squire armor",
+        "slot": "armor",
+        "icon": "calamity/squire-armor.png",
+        "source": "",
+        "why": "defensive summoner set alternative",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squire_armor"
       },
       {
         "id": "crystal-assassin-armor",
@@ -18032,7 +17828,7 @@
         "slot": "armor",
         "icon": "calamity/crystal-assassin-armor.png",
         "source": "",
-        "why": "all-class stealth armor alternative",
+        "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -18559,16 +18355,28 @@
     ],
     "armor": [
       {
-        "id": "titan-heart-armor",
-        "name": "Titan Heart armor",
+        "id": "daedalus-armor",
+        "name": "Daedalus armor",
         "slot": "armor",
-        "icon": "calamity/titan-heart-armor.png",
+        "icon": "calamity/daedalus-armor.png",
         "source": "",
-        "why": "class-specific rogue armor at this tier",
+        "why": "hybrid set offering summon boost and defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Titan_Heart_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_armor"
+      },
+      {
+        "id": "monk-armor",
+        "name": "Monk armor",
+        "slot": "armor",
+        "icon": "calamity/monk-armor.png",
+        "source": "",
+        "why": "works as a rogue armor",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Monk_armor"
       },
       {
         "id": "crystal-assassin-armor",
@@ -18579,7 +18387,7 @@
         "why": "all-class armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
       }
     ],
@@ -19035,7 +18843,7 @@
         "why": "high defense with thorns reflection",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Turtle_armor"
       }
     ],
@@ -19428,7 +19236,7 @@
         "slot": "armor",
         "icon": "calamity/chlorophyte-armor.png",
         "source": "",
-        "why": "best ranged set here with ammo conservation bonus",
+        "why": "strong melee set bonus and defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -19440,7 +19248,7 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor.png",
         "source": "",
-        "why": "solid alternative with dodge set bonus",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -19636,7 +19444,7 @@
         "slot": "armor",
         "icon": "calamity/chlorophyte-armor.png",
         "source": "",
-        "why": "alternative armor set",
+        "why": "strong melee set bonus and defense",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -19648,10 +19456,10 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor.png",
         "source": "",
-        "why": "alternative armor set",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallowed_armor"
       }
     ],
@@ -19872,7 +19680,7 @@
         "slot": "armor",
         "icon": "calamity/daedalus-armor.png",
         "source": "",
-        "why": "class-specific summoner armor",
+        "why": "hybrid set offering summon boost and defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -19884,7 +19692,7 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor.png",
         "source": "",
-        "why": "alternative armor set",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -19896,10 +19704,10 @@
         "slot": "armor",
         "icon": "calamity/squire-armor.png",
         "source": "",
-        "why": "alternative armor set",
+        "why": "defensive summoner set alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squire_armor"
       }
     ],
@@ -20448,7 +20256,7 @@
         "slot": "armor",
         "icon": "calamity/daedalus-armor.png",
         "source": "",
-        "why": "first-listed class-specific armor at this tier",
+        "why": "hybrid set offering summon boost and defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -20475,7 +20283,7 @@
         "why": "strong but difficult to obtain",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Umbraphile_armor"
       }
     ],
@@ -20928,7 +20736,7 @@
         "slot": "armor",
         "icon": "calamity/chlorophyte-armor-melee.png",
         "source": "",
-        "why": "primary class-specific set",
+        "why": "strong melee set bonus and defense",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -20940,7 +20748,7 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor-melee.png",
         "source": "",
-        "why": "class-specific alternative",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -20955,7 +20763,7 @@
         "why": "all-class set option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
@@ -21420,47 +21228,35 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor.png",
         "source": "",
-        "why": "strong class-specific defense and bonuses",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallowed_armor"
       },
       {
-        "id": "mythril-armor",
-        "name": "Mythril armor",
+        "id": "shroomite-armor",
+        "name": "Shroomite armor",
         "slot": "armor",
-        "icon": "calamity/mythril-armor.png",
+        "icon": "calamity/shroomite-armor.png",
         "source": "",
-        "why": "solid mid-tier ranged armor",
+        "why": "vanilla ranged option with stealth bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mythril_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor"
       },
       {
-        "id": "orichalcum-armor",
-        "name": "Orichalcum armor",
+        "id": "reaver-armor",
+        "name": "Reaver armor",
         "slot": "armor",
-        "icon": "calamity/orichalcum-armor.png",
+        "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "alternative mid-tier armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orichalcum_armor"
-      },
-      {
-        "id": "crystal-assassin-armor",
-        "name": "Crystal Assassin armor",
-        "slot": "armor",
-        "icon": "calamity/crystal-assassin-armor.png",
-        "source": "",
-        "why": "all-class armor option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
     "accessories": [
@@ -21991,7 +21787,7 @@
         "slot": "armor",
         "icon": "calamity/brimflame-armor.png",
         "source": "",
-        "why": "first-listed armor set at this tier",
+        "why": "primary listed magic armor set",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -22003,7 +21799,7 @@
         "slot": "armor",
         "icon": "calamity/hallowed-armor.png",
         "source": "",
-        "why": "listed armor option",
+        "why": "dodge-granting set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -22018,7 +21814,7 @@
         "why": "listed armor option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spectre_armor"
       },
       {
@@ -22027,10 +21823,10 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "listed armor option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
@@ -22557,40 +22353,52 @@
     ],
     "armor": [
       {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
+        "id": "fathom-swarmer-armor",
+        "name": "Fathom Swarmer armor",
         "slot": "armor",
-        "icon": "calamity/hallowed-armor.png",
+        "icon": "calamity/fathom-swarmer-armor.png",
         "source": "",
-        "why": "primary class armor with dodge set bonus",
+        "why": "",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallowed_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fathom_Swarmer_armor"
       },
       {
-        "id": "jungle-armor",
-        "name": "Jungle armor",
+        "id": "squire-armor",
+        "name": "Squire armor",
         "slot": "armor",
-        "icon": "calamity/jungle-armor.png",
+        "icon": "calamity/squire-armor.png",
         "source": "",
-        "why": "alternative summoner-leaning armor",
+        "why": "defensive summoner set alternative",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jungle_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squire_armor"
       },
       {
-        "id": "crystal-assassin-armor",
-        "name": "Crystal Assassin armor",
+        "id": "tiki-armor",
+        "name": "Tiki armor",
         "slot": "armor",
-        "icon": "calamity/crystal-assassin-armor.png",
+        "icon": "calamity/tiki-armor.png",
         "source": "",
-        "why": "all-class armor with dash",
+        "why": "",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Assassin_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tiki_armor"
+      },
+      {
+        "id": "reaver-armor",
+        "name": "Reaver armor",
+        "slot": "armor",
+        "icon": "calamity/reaver-armor.png",
+        "source": "",
+        "why": "all-class set option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
     "accessories": [
@@ -23127,7 +22935,7 @@
         "slot": "armor",
         "icon": "calamity/umbraphile-armor.png",
         "source": "",
-        "why": "class-specific rogue armor",
+        "why": "strong but difficult to obtain",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -23139,7 +22947,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class armor alternative",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -23638,28 +23446,16 @@
     ],
     "armor": [
       {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
+        "id": "beetle-armor",
+        "name": "Beetle armor",
         "slot": "armor",
-        "icon": "calamity/reaver-armor-melee.png",
+        "icon": "calamity/beetle-armor.png",
         "source": "",
-        "why": "first-listed balanced defense/mobility set",
+        "why": "vanilla melee defense/offense set",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
-      },
-      {
-        "id": "valhalla-knight-armor",
-        "name": "Valhalla Knight armor",
-        "slot": "armor",
-        "icon": "calamity/valhalla-knight-armor.png",
-        "source": "",
-        "why": "high defense and life regeneration",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Beetle_armor"
       },
       {
         "id": "hydrothermic-armor",
@@ -23674,16 +23470,28 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
       },
       {
-        "id": "beetle-armor",
-        "name": "Beetle armor",
+        "id": "valhalla-knight-armor",
+        "name": "Valhalla Knight armor",
         "slot": "armor",
-        "icon": "calamity/beetle-armor.png",
+        "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "vanilla melee defense/offense set",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Beetle_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
+      },
+      {
+        "id": "reaver-armor",
+        "name": "Reaver armor",
+        "slot": "armor",
+        "icon": "calamity/reaver-armor-melee.png",
+        "source": "",
+        "why": "all-class set option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
     "accessories": [
@@ -24207,7 +24015,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "primary class-specific ranged armor at this tier",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -24234,7 +24042,7 @@
         "why": "vanilla ranged option with stealth bonuses",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor"
       },
       {
@@ -24243,7 +24051,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class alternative",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -24791,7 +24599,7 @@
         "slot": "armor",
         "icon": "calamity/brimflame-armor.png",
         "source": "",
-        "why": "class-specific magic armor, listed first",
+        "why": "primary listed magic armor set",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -24803,7 +24611,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "class-specific magic armor alternative",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -24815,10 +24623,10 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
@@ -25360,39 +25168,39 @@
     "armor": [
       {
         "id": "hydrothermic-armor",
-        "name": "Hydrothermic Armor",
+        "name": "Hydrothermic armor",
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "top summoner armor at this tier",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_Armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
       },
       {
         "id": "valhalla-knight-armor",
-        "name": "Valhalla Knight Armor",
+        "name": "Valhalla Knight armor",
         "slot": "armor",
         "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "defensive summoner alternative",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_Armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
       },
       {
         "id": "reaver-armor",
-        "name": "Reaver Armor",
+        "name": "Reaver armor",
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "general all-class fallback armor",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_Armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
     "accessories": [
@@ -25901,7 +25709,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "dedicated rogue set with strong offense",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -25925,7 +25733,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "generic all-class defensive option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -26501,7 +26309,7 @@
         "slot": "armor",
         "icon": "calamity/beetle-armor.png",
         "source": "",
-        "why": "top class-specific melee defense at this tier",
+        "why": "vanilla melee defense/offense set",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -26513,7 +26321,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor-melee.png",
         "source": "",
-        "why": "offensive melee armor alternative",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -26525,10 +26333,10 @@
         "slot": "armor",
         "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "high defense and regen alternative",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
       },
       {
@@ -26537,7 +26345,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor-melee.png",
         "source": "",
-        "why": "all-class armor fallback",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -27036,28 +26844,52 @@
     ],
     "armor": [
       {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
+        "id": "hydrothermic-armor",
+        "name": "Hydrothermic armor",
         "slot": "armor",
-        "icon": "calamity/hallowed-armor.png",
+        "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "balanced defense with dodge set bonus",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallowed_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
       },
       {
-        "id": "titanium-armor",
-        "name": "Titanium armor",
+        "id": "plague-reaper-armor",
+        "name": "Plague Reaper armor",
         "slot": "armor",
-        "icon": "calamity/titanium-armor.png",
+        "icon": "calamity/plague-reaper-armor.png",
         "source": "",
-        "why": "defensive shield alternative",
+        "why": "strong ranged set bonus alternative",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Titanium_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Reaper_armor"
+      },
+      {
+        "id": "shroomite-armor",
+        "name": "Shroomite armor",
+        "slot": "armor",
+        "icon": "calamity/shroomite-armor.png",
+        "source": "",
+        "why": "vanilla ranged option with stealth bonuses",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor"
+      },
+      {
+        "id": "reaver-armor",
+        "name": "Reaver armor",
+        "slot": "armor",
+        "icon": "calamity/reaver-armor.png",
+        "source": "",
+        "why": "all-class set option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
       }
     ],
     "accessories": [
@@ -27541,7 +27373,7 @@
         "slot": "armor",
         "icon": "calamity/brimflame-armor.png",
         "source": "",
-        "why": "magic set bonus and offense",
+        "why": "primary listed magic armor set",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -27553,7 +27385,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "mask offers solid magic stats",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -27565,7 +27397,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "generalist all-class option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -28213,35 +28045,35 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "top summoner armor with damage boosts",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
       },
       {
-        "id": "plague-reaper-armor",
-        "name": "Plague Reaper armor",
+        "id": "plaguebringer-armor",
+        "name": "Plaguebringer armor",
         "slot": "armor",
-        "icon": "calamity/plague-reaper-armor.png",
+        "icon": "calamity/plaguebringer-armor.png",
         "source": "",
-        "why": "summoner set with strong stats",
+        "why": "",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Reaper_armor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguebringer_armor"
       },
       {
-        "id": "shroomite-armor",
-        "name": "Shroomite armor",
+        "id": "valhalla-knight-armor",
+        "name": "Valhalla Knight armor",
         "slot": "armor",
-        "icon": "calamity/shroomite-armor.png",
+        "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "vanilla summoner-viable set",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor"
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
       },
       {
         "id": "reaver-armor",
@@ -28249,7 +28081,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class defensive option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -28910,7 +28742,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "primary class-specific rogue armor, listed first",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -28922,7 +28754,7 @@
         "slot": "armor",
         "icon": "calamity/shinobi-infiltrator-armor.png",
         "source": "",
-        "why": "alternate class-specific rogue armor",
+        "why": "functions as rogue armor with high mobility",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -28934,7 +28766,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class armor alternative",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -29474,7 +29306,7 @@
         "slot": "armor",
         "icon": "calamity/beetle-armor.png",
         "source": "",
-        "why": "first-listed melee armor at this tier",
+        "why": "vanilla melee defense/offense set",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -29486,7 +29318,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor-melee.png",
         "source": "",
-        "why": "alternative melee armor",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -29498,10 +29330,10 @@
         "slot": "armor",
         "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "alternative melee armor",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
       },
       {
@@ -29522,7 +29354,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor-melee.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -30014,7 +29846,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "first-listed class-specific ranged armor",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -30038,10 +29870,10 @@
         "slot": "armor",
         "icon": "calamity/plague-reaper-armor.png",
         "source": "",
-        "why": "class-specific armor alternative",
+        "why": "strong ranged set bonus alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Reaper_armor"
       },
       {
@@ -30062,7 +29894,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class armor option",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -30522,7 +30354,44 @@
     "phase": "cal-pre-ml",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "hydrothermic-armor",
+        "name": "Hydrothermic armor",
+        "slot": "armor",
+        "icon": "calamity/hydrothermic-armor.png",
+        "source": "",
+        "why": "melee set with brimstone offensive bonuses",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
+      },
+      {
+        "id": "astral-armor",
+        "name": "Astral armor",
+        "slot": "armor",
+        "icon": "calamity/astral-armor.png",
+        "source": "",
+        "why": "all-class armor option",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor"
+      },
+      {
+        "id": "reaver-armor",
+        "name": "Reaver armor",
+        "slot": "armor",
+        "icon": "calamity/reaver-armor.png",
+        "source": "",
+        "why": "all-class set option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -30530,7 +30399,68 @@
     "phase": "cal-pre-ml",
     "class": "summoner",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "hydrothermic-armor",
+        "name": "Hydrothermic armor",
+        "slot": "armor",
+        "icon": "calamity/hydrothermic-armor.png",
+        "source": "",
+        "why": "melee set with brimstone offensive bonuses",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor"
+      },
+      {
+        "id": "plaguebringer-armor",
+        "name": "Plaguebringer armor",
+        "slot": "armor",
+        "icon": "calamity/plaguebringer-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguebringer_armor"
+      },
+      {
+        "id": "valhalla-knight-armor",
+        "name": "Valhalla Knight armor",
+        "slot": "armor",
+        "icon": "calamity/valhalla-knight-armor.png",
+        "source": "",
+        "why": "high defense and life regeneration",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Valhalla_Knight_armor"
+      },
+      {
+        "id": "astral-armor",
+        "name": "Astral armor",
+        "slot": "armor",
+        "icon": "calamity/astral-armor.png",
+        "source": "",
+        "why": "all-class armor option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor"
+      },
+      {
+        "id": "reaver-armor",
+        "name": "Reaver armor",
+        "slot": "armor",
+        "icon": "calamity/reaver-armor.png",
+        "source": "",
+        "why": "all-class set option",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -30715,7 +30645,7 @@
         "slot": "armor",
         "icon": "calamity/hydrothermic-armor.png",
         "source": "",
-        "why": "class-specific rogue set with stealth bonuses",
+        "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -30727,7 +30657,7 @@
         "slot": "armor",
         "icon": "calamity/shinobi-infiltrator-armor.png",
         "source": "",
-        "why": "alternative rogue-focused set",
+        "why": "functions as rogue armor with high mobility",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -30739,10 +30669,10 @@
         "slot": "armor",
         "icon": "calamity/astral-armor.png",
         "source": "",
-        "why": "all-class set with balanced stats",
+        "why": "all-class armor option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor"
       },
       {
@@ -30751,7 +30681,7 @@
         "slot": "armor",
         "icon": "calamity/reaver-armor.png",
         "source": "",
-        "why": "all-class defensive alternative",
+        "why": "all-class set option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -31315,7 +31245,7 @@
         "slot": "armor",
         "icon": "calamity/astral-armor.png",
         "source": "",
-        "why": "all-class armor alternative",
+        "why": "all-class armor option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -31855,7 +31785,7 @@
         "slot": "armor",
         "icon": "calamity/lunic-corps-armor.png",
         "source": "",
-        "why": "top class-specific ranged armor",
+        "why": "class-specific armor alternative",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -31882,7 +31812,7 @@
         "why": "all-class armor option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor"
       }
     ],
@@ -32448,7 +32378,7 @@
         "slot": "armor",
         "icon": "calamity/astral-armor.png",
         "source": "",
-        "why": "all-class armor alternative",
+        "why": "all-class armor option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -33031,7 +32961,7 @@
         "slot": "armor",
         "icon": "calamity/valhalla-knight-armor.png",
         "source": "",
-        "why": "alternative class armor",
+        "why": "high defense and life regeneration",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -33443,7 +33373,32 @@
     "phase": "cal-pre-providence",
     "class": "rogue",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "empyrean-armor",
+        "name": "Empyrean armor",
+        "slot": "armor",
+        "icon": "calamity/empyrean-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Empyrean_armor"
+      },
+      {
+        "id": "astral-armor",
+        "name": "Astral armor",
+        "slot": "armor",
+        "icon": "calamity/astral-armor.png",
+        "source": "",
+        "why": "all-class armor option",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33451,7 +33406,20 @@
     "phase": "cal-pre-polterghast",
     "class": "melee",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "tarragon-armor",
+        "name": "Tarragon armor",
+        "slot": "armor",
+        "icon": "calamity/tarragon-armor-melee.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33459,7 +33427,20 @@
     "phase": "cal-pre-polterghast",
     "class": "ranger",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "tarragon-armor",
+        "name": "Tarragon armor",
+        "slot": "armor",
+        "icon": "calamity/tarragon-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33467,7 +33448,32 @@
     "phase": "cal-pre-polterghast",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "prismatic-armor",
+        "name": "Prismatic armor",
+        "slot": "armor",
+        "icon": "calamity/prismatic-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismatic_armor"
+      },
+      {
+        "id": "tarragon-armor",
+        "name": "Tarragon armor",
+        "slot": "armor",
+        "icon": "calamity/tarragon-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33483,7 +33489,32 @@
     "phase": "cal-pre-polterghast",
     "class": "rogue",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "empyrean-armor",
+        "name": "Empyrean armor",
+        "slot": "armor",
+        "icon": "calamity/empyrean-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Empyrean_armor"
+      },
+      {
+        "id": "tarragon-armor",
+        "name": "Tarragon armor",
+        "slot": "armor",
+        "icon": "calamity/tarragon-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33491,7 +33522,32 @@
     "phase": "cal-pre-dog",
     "class": "melee",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "bloodflare-armor",
+        "name": "Bloodflare armor",
+        "slot": "armor",
+        "icon": "calamity/bloodflare-armor-melee.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_armor"
+      },
+      {
+        "id": "omega-blue-armor",
+        "name": "Omega Blue armor",
+        "slot": "armor",
+        "icon": "calamity/omega-blue-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33499,7 +33555,32 @@
     "phase": "cal-pre-dog",
     "class": "ranger",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "bloodflare-armor",
+        "name": "Bloodflare armor",
+        "slot": "armor",
+        "icon": "calamity/bloodflare-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_armor"
+      },
+      {
+        "id": "omega-blue-armor",
+        "name": "Omega Blue armor",
+        "slot": "armor",
+        "icon": "calamity/omega-blue-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33507,7 +33588,44 @@
     "phase": "cal-pre-dog",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "bloodflare-armor",
+        "name": "Bloodflare armor",
+        "slot": "armor",
+        "icon": "calamity/bloodflare-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_armor"
+      },
+      {
+        "id": "prismatic-armor",
+        "name": "Prismatic armor",
+        "slot": "armor",
+        "icon": "calamity/prismatic-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismatic_armor"
+      },
+      {
+        "id": "omega-blue-armor",
+        "name": "Omega Blue armor",
+        "slot": "armor",
+        "icon": "calamity/omega-blue-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33531,7 +33649,32 @@
     "phase": "cal-pre-yharon",
     "class": "melee",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "god-slayer-armor",
+        "name": "God Slayer armor",
+        "slot": "armor",
+        "icon": "calamity/god-slayer-armor-melee.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_armor"
+      },
+      {
+        "id": "omega-blue-armor",
+        "name": "Omega Blue armor",
+        "slot": "armor",
+        "icon": "calamity/omega-blue-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33539,7 +33682,20 @@
     "phase": "cal-pre-yharon",
     "class": "ranger",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "god-slayer-armor",
+        "name": "God Slayer armor",
+        "slot": "armor",
+        "icon": "calamity/god-slayer-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33547,7 +33703,20 @@
     "phase": "cal-pre-yharon",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "silva-armor",
+        "name": "Silva armor",
+        "slot": "armor",
+        "icon": "calamity/silva-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33555,7 +33724,32 @@
     "phase": "cal-pre-yharon",
     "class": "summoner",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "fearmonger-armor",
+        "name": "Fearmonger armor",
+        "slot": "armor",
+        "icon": "calamity/fearmonger-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fearmonger_armor"
+      },
+      {
+        "id": "silva-armor",
+        "name": "Silva armor",
+        "slot": "armor",
+        "icon": "calamity/silva-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33563,7 +33757,20 @@
     "phase": "cal-pre-yharon",
     "class": "rogue",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "god-slayer-armor",
+        "name": "God Slayer armor",
+        "slot": "armor",
+        "icon": "calamity/god-slayer-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33571,7 +33778,20 @@
     "phase": "cal-pre-exo",
     "class": "melee",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor-melee.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33579,7 +33799,20 @@
     "phase": "cal-pre-exo",
     "class": "ranger",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33587,7 +33820,20 @@
     "phase": "cal-pre-exo",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33595,7 +33841,20 @@
     "phase": "cal-pre-exo",
     "class": "summoner",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33603,7 +33862,20 @@
     "phase": "cal-pre-exo",
     "class": "rogue",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33611,7 +33883,44 @@
     "phase": "cal-endgame",
     "class": "melee",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor-melee.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      },
+      {
+        "id": "demonshade-armor",
+        "name": "Demonshade armor",
+        "slot": "armor",
+        "icon": "calamity/demonshade-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor"
+      },
+      {
+        "id": "gem-tech-armor",
+        "name": "Gem Tech armor",
+        "slot": "armor",
+        "icon": "calamity/gem-tech-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33619,7 +33928,44 @@
     "phase": "cal-endgame",
     "class": "ranger",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      },
+      {
+        "id": "demonshade-armor",
+        "name": "Demonshade armor",
+        "slot": "armor",
+        "icon": "calamity/demonshade-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor"
+      },
+      {
+        "id": "gem-tech-armor",
+        "name": "Gem Tech armor",
+        "slot": "armor",
+        "icon": "calamity/gem-tech-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33627,7 +33973,44 @@
     "phase": "cal-endgame",
     "class": "mage",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      },
+      {
+        "id": "demonshade-armor",
+        "name": "Demonshade armor",
+        "slot": "armor",
+        "icon": "calamity/demonshade-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor"
+      },
+      {
+        "id": "gem-tech-armor",
+        "name": "Gem Tech armor",
+        "slot": "armor",
+        "icon": "calamity/gem-tech-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33635,7 +34018,44 @@
     "phase": "cal-endgame",
     "class": "summoner",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      },
+      {
+        "id": "demonshade-armor",
+        "name": "Demonshade armor",
+        "slot": "armor",
+        "icon": "calamity/demonshade-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor"
+      },
+      {
+        "id": "gem-tech-armor",
+        "name": "Gem Tech armor",
+        "slot": "armor",
+        "icon": "calamity/gem-tech-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   },
@@ -33643,7 +34063,44 @@
     "phase": "cal-endgame",
     "class": "rogue",
     "weapons": [],
-    "armor": [],
+    "armor": [
+      {
+        "id": "auric-tesla-armor",
+        "name": "Auric Tesla armor",
+        "slot": "armor",
+        "icon": "calamity/auric-tesla-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor"
+      },
+      {
+        "id": "demonshade-armor",
+        "name": "Demonshade armor",
+        "slot": "armor",
+        "icon": "calamity/demonshade-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor"
+      },
+      {
+        "id": "gem-tech-armor",
+        "name": "Gem Tech armor",
+        "slot": "armor",
+        "icon": "calamity/gem-tech-armor.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor"
+      }
+    ],
     "accessories": [],
     "buffs": []
   }
