@@ -102,6 +102,39 @@ const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
 ]);
 
+/* Ore/evil armor comes in world-locked pairs (Gold↔Platinum, Cobalt↔Palladium,
+   Shadow↔Crimson, …) that are the same choice in different worlds. Show a pair as
+   one entry ("Gold / Platinum armor") rather than two rows, and normalise stray
+   capitalisation ("Crimson Armor" → "Crimson armor"). */
+const ARMOR_VARIANTS: [string, string][] = [
+  ['Copper', 'Tin'], ['Iron', 'Lead'], ['Silver', 'Tungsten'], ['Gold', 'Platinum'],
+  ['Shadow', 'Crimson'], ['Cobalt', 'Palladium'], ['Mythril', 'Orichalcum'],
+  ['Adamantite', 'Titanium'],
+];
+
+const armorMaterial = (name: string) => name.replace(/\s*armor\b.*$/i, '').trim();
+const tidyArmorName = (name: string) => name.replace(/\bArmor\b/, 'armor');
+
+function groupArmor(armor: Item[]): Item[] {
+  const out: Item[] = [];
+  const used = new Set<string>();
+  for (const a of armor) {
+    if (used.has(a.id)) continue;
+    const mat = armorMaterial(a.name);
+    const pair = ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()));
+    if (pair) {
+      const canonical = `${pair[0]} / ${pair[1]} armor`;
+      if (a.name.includes('/')) { used.add(a.id); out.push({ ...a, name: canonical }); continue; }
+      const other = armor.find((x) => !used.has(x.id) && x.id !== a.id &&
+        pair.some((v) => v.toLowerCase() === armorMaterial(x.name).toLowerCase()));
+      if (other) { used.add(a.id); used.add(other.id); out.push({ ...a, name: canonical }); continue; }
+    }
+    used.add(a.id);
+    out.push({ ...a, name: tidyArmorName(a.name) });
+  }
+  return out;
+}
+
 function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
   if (!item) {
     return (
@@ -194,7 +227,8 @@ export function Loadouts() {
   const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
   const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
 
-  const armorSprite = safeLoadout.armor[0]?.icon;
+  const groupedArmor = groupArmor(safeLoadout.armor);
+  const armorSprite = groupedArmor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
   // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
@@ -399,7 +433,7 @@ export function Loadouts() {
               <div className={styles.armor}>
                 <div className={`${styles.armorDoll} pixel-frame`}>
                   <img
-                    src={armorImg.local} alt={safeLoadout.armor[0]?.name ?? ''}
+                    src={armorImg.local} alt={groupedArmor[0]?.name ?? ''}
                     className={`${styles.armorSprite} pixel-img`}
                     width="44" height="44" loading="lazy"
                     onError={makeErrorHandler(armorImg.wiki, FALLBACK_ICON)}
@@ -408,7 +442,7 @@ export function Loadouts() {
                 <div className={styles.armorInfo}>
                   {/* only the set for this class; a second entry means a world
                       variant (Adamantite/Titanium) or the Spectre Hood choice */}
-                  {safeLoadout.armor.map((a) => (
+                  {groupedArmor.map((a) => (
                     <button key={a.id} type="button" className={styles.armorEntry} onClick={() => setModalItem(a)}>
                       <div className={styles.armorName}>{a.name}</div>
                       {a.pieces && a.pieces.length > 0 && (
