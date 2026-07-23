@@ -466,20 +466,23 @@ export function Loadouts() {
             <div className={styles.tlabel}><span>Armor</span></div>
             {armorImg ? (
               <div className={styles.armor}>
-                <div className={`${styles.armorDoll} pixel-frame`}>
-                  <img
-                    src={armorImg.local} alt={groupedArmor[0]?.name ?? ''}
-                    className={`${styles.armorSprite} pixel-img`}
-                    width="44" height="44" loading="lazy"
-                    onError={makeErrorHandler(armorImg.wiki, FALLBACK_ICON)}
-                  />
-                </div>
                 <div className={styles.armorInfo}>
-                  {/* only the set for this class; a second entry means a world
-                      variant (Adamantite/Titanium) or the Spectre Hood choice */}
-                  {groupedArmor.map((a) => (
+                  {/* each listed set carries its own sprite, so a stage offering a
+                      vanilla and a modded set shows what both actually look like */}
+                  {groupedArmor.map((a) => {
+                    const img = iconSrcs(a.icon);
+                    return (
                     <button key={a.id} type="button" className={styles.armorEntry} onClick={() => setModalItem(a)}>
-                      <div className={styles.armorName}>{a.name}</div>
+                      <div className={`${styles.armorDoll} pixel-frame`}>
+                        <img
+                          src={img.local} alt=""
+                          className={`${styles.armorSprite} pixel-img`}
+                          width="44" height="44" loading="lazy"
+                          onError={makeErrorHandler(img.wiki, FALLBACK_ICON)}
+                        />
+                      </div>
+                      <div className={styles.armorEntryBody}>
+                        <div className={styles.armorName}>{a.name}</div>
                       {a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
                           {a.headpiece && <span className={`${styles.armorHeadTag} pixel-frame`}>{classDef.name}</span>}
@@ -494,8 +497,10 @@ export function Loadouts() {
                         </div>
                       )}
                       {a.why && <div className={styles.armorPerk}>{a.why}</div>}
+                      </div>
                     </button>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ) : (

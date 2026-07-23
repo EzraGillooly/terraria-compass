@@ -147,7 +147,9 @@
 .armorDoll { width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
 .armorSprite { width: 44px; height: 44px; object-fit: contain; }
 .armorInfo { flex: 1; min-width: 0; }
-.armorEntry { display: block; width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid rgba(150,180,230,.2); padding: 6px 0; cursor: pointer; font-family: inherit; color: inherit; }
+/* Each set carries its own doll, so the entry is a row: sprite + details. */
+.armorEntry { display: flex; gap: 12px; align-items: flex-start; width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid rgba(150,180,230,.2); padding: 8px 0; cursor: pointer; font-family: inherit; color: inherit; }
+.armorEntryBody { flex: 1; min-width: 0; }
 .armorEntry:last-child { border-bottom: 0; }
 .armorEntry:hover .armorName { color: var(--warm); }
 .armorName { font-weight: 800; font-size: 14px; color: #EAF0FF; }
