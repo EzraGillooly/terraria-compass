@@ -1,0 +1,230 @@
+[
+  {
+    "id": "cal-pre-boss",
+    "order": 0,
+    "name": "Pre-Boss",
+    "triggeredBy": "Starting a fresh world",
+    "description": "The very start of a fresh Calamity world, gathering basic ores and gearing up before the first boss.",
+    "cues": [
+      "Wooden/ore-tier gear and a fresh world",
+      "No boss has been defeated yet",
+      "Exploring surface and shallow caves for copper/tin through gold/platinum"
+    ]
+  },
+  {
+    "id": "cal-pre-evil",
+    "order": 1,
+    "name": "Pre-Evil Boss",
+    "triggeredBy": "Before Eater of Worlds / Brain of Cthulhu",
+    "description": "Preparing to fight the first Calamity boss, the Desert Scourge, and readying for the evil-biome bosses.",
+    "cues": [
+      "Desert Scourge available at the Ocean or Desert",
+      "Fishing up gear and building basic arenas",
+      "Early Calamity ores like Aerialite becoming accessible"
+    ]
+  },
+  {
+    "id": "cal-pre-hive-perf",
+    "order": 2,
+    "name": "Pre-Hive Mind / Perforators",
+    "triggeredBy": "Before The Hive Mind / The Perforators",
+    "description": "Heading into the Corruption or Crimson to take on the Hive Mind or Perforators before Skeletron.",
+    "cues": [
+      "Hive Mind (Corruption) or Perforators (Crimson) not yet beaten",
+      "Using post-Desert-Scourge gear (Victide, Aerialite)",
+      "Building an evil-biome arena"
+    ]
+  },
+  {
+    "id": "cal-pre-skeletron",
+    "order": 3,
+    "name": "Pre-Skeletron",
+    "triggeredBy": "Before Skeletron",
+    "description": "Post-evil-boss, working toward the Slime God and Skeletron to unlock the Dungeon.",
+    "cues": [
+      "Slime God fight now available",
+      "Aerospec/mollusk-tier armor equipped",
+      "Skeletron not yet defeated, Dungeon still guarded"
+    ]
+  },
+  {
+    "id": "cal-pre-wof",
+    "order": 4,
+    "name": "Pre-Wall of Flesh",
+    "triggeredBy": "Before the Wall of Flesh",
+    "description": "Late pre-Hardmode, clearing the Dungeon and prepping to kill the Wall of Flesh to enter Hardmode.",
+    "cues": [
+      "Dungeon accessible after Skeletron",
+      "Wall of Flesh not yet beaten",
+      "Farming for a Guide Voodoo Doll in the Underworld"
+    ]
+  },
+  {
+    "id": "cal-pre-mech",
+    "order": 5,
+    "name": "Pre-Mechanical Bosses",
+    "triggeredBy": "Entering Hardmode",
+    "description": "Early Hardmode, fighting the Cryogen and Aquatic Scourge while building toward the mechanical bosses.",
+    "cues": [
+      "Hardmode active, new ores (Cobalt/Palladium) spawned",
+      "Cryogen and Aquatic Scourge available",
+      "No mechanical boss defeated yet"
+    ]
+  },
+  {
+    "id": "cal-post-mech1",
+    "order": 6,
+    "name": "Post-Mechanical Boss 1",
+    "triggeredBy": "After the first mechanical boss",
+    "description": "One of the three mechanical bosses is down, opening up mid-Hardmode gear and the Brimstone Crag.",
+    "cues": [
+      "First mech boss (Destroyer/Twins/Skeletron Prime) defeated",
+      "Hallowed Bars now farmable",
+      "Brimstone Elemental accessible in the Brimstone Crag"
+    ]
+  },
+  {
+    "id": "cal-post-mech2",
+    "order": 7,
+    "name": "Post-Mechanical Boss 2",
+    "triggeredBy": "After the second mechanical boss",
+    "description": "Multiple mechanical bosses cleared, pushing toward Calamitas Clone and Plantera.",
+    "cues": [
+      "Two or more mech bosses beaten",
+      "Calamitas Clone fight available",
+      "Gathering mid-Hardmode Calamity materials"
+    ]
+  },
+  {
+    "id": "cal-pre-plantera",
+    "order": 8,
+    "name": "Pre-Plantera",
+    "triggeredBy": "Before Plantera",
+    "description": "All mechs defeated, taking on Plantera and Calamity's Great Sand Shark and Leviathan.",
+    "cues": [
+      "All three mechanical bosses down",
+      "Plantera bulbs spawning in the Underground Jungle",
+      "Leviathan and Anahita available at the Ocean"
+    ]
+  },
+  {
+    "id": "cal-pre-golem",
+    "order": 9,
+    "name": "Pre-Golem",
+    "triggeredBy": "Before Golem",
+    "description": "Post-Plantera, running the Temple and Jungle content and fighting Astrum Aureus toward Golem.",
+    "cues": [
+      "Jungle Temple unlocked after Plantera",
+      "Astrum Aureus available at night",
+      "Golem not yet summoned in the Temple"
+    ]
+  },
+  {
+    "id": "cal-post-golem",
+    "order": 10,
+    "name": "Post-Golem",
+    "triggeredBy": "After Golem",
+    "description": "Golem defeated, unlocking the Plaguebringer Goliath and the Astral biome push toward the Lunar Events.",
+    "cues": [
+      "Golem beaten, lihzahrd content cleared",
+      "Plaguebringer Goliath available",
+      "Preparing for the Lunatic Cultist"
+    ]
+  },
+  {
+    "id": "cal-pre-lunar",
+    "order": 11,
+    "name": "Pre-Lunar Events",
+    "triggeredBy": "Before the Lunar Events",
+    "description": "Approaching the Lunatic Cultist and the Lunar Events, fighting the Ravager and Astrum Deus.",
+    "cues": [
+      "Ravager and Astrum Deus available",
+      "Lunatic Cultist spawns at the Dungeon entrance",
+      "Lunar Pillars not yet cleared"
+    ]
+  },
+  {
+    "id": "cal-pre-ml",
+    "order": 12,
+    "name": "Pre-Moon Lord",
+    "triggeredBy": "Before the Moon Lord",
+    "description": "Lunar Pillars are being cleared to summon and defeat the Moon Lord, the last vanilla boss.",
+    "cues": [
+      "Four Lunar Pillars active from the Cultist",
+      "Luminite and fragment gear being crafted",
+      "Moon Lord not yet defeated"
+    ]
+  },
+  {
+    "id": "cal-pre-providence",
+    "order": 13,
+    "name": "Pre-Providence",
+    "triggeredBy": "After the Moon Lord, before Providence",
+    "description": "Post-Moon Lord, entering Calamity's true endgame and preparing for Providence in the Hallow or Underworld.",
+    "cues": [
+      "Moon Lord defeated, Auric/early post-ML gear",
+      "Profaned Guardians beaten to unlock Providence",
+      "Providence, the Profaned Goddess not yet killed"
+    ]
+  },
+  {
+    "id": "cal-pre-polterghast",
+    "order": 14,
+    "name": "Pre-Polterghast",
+    "triggeredBy": "Before Polterghast",
+    "description": "Providence is down, unlocking Post-Providence bosses like the Storm Weaver and Ceaseless Void before Polterghast.",
+    "cues": [
+      "Providence defeated",
+      "Storm Weaver and Ceaseless Void (Sentinels) available",
+      "Polterghast not yet summoned in the Dungeon"
+    ]
+  },
+  {
+    "id": "cal-pre-dog",
+    "order": 15,
+    "name": "Pre-Devourer of Gods",
+    "triggeredBy": "Before the Devourer of Gods",
+    "description": "Polterghast beaten, opening the Sunken Sea/Abyss content and the Old Duke, heading toward the Devourer of Gods.",
+    "cues": [
+      "Polterghast defeated",
+      "The Old Duke available via the Acid Rain event",
+      "Devourer of Gods not yet beaten"
+    ]
+  },
+  {
+    "id": "cal-pre-yharon",
+    "order": 16,
+    "name": "Pre-Yharon",
+    "triggeredBy": "Before Yharon, Dragon of Rebirth",
+    "description": "Post-Devourer of Gods, wielding cosmilite/endgame gear and preparing for Yharon, Dragon of Rebirth.",
+    "cues": [
+      "Devourer of Gods defeated, Cosmilite Bars farmable",
+      "Jungle Dragon Yharon summonable in the Jungle",
+      "Working toward Auric Tesla / god-tier gear"
+    ]
+  },
+  {
+    "id": "cal-pre-exo",
+    "order": 17,
+    "name": "Pre-Exo Mechs / Supreme Calamitas",
+    "triggeredBy": "Before the Exo Mechs / Supreme Calamitas",
+    "description": "Yharon is down, facing the final challenge bosses: the Exo Mechs and Supreme Calamitas.",
+    "cues": [
+      "Yharon defeated",
+      "Draedon's Exo Mechs available at the Codebreaker",
+      "Supreme Calamitas not yet beaten"
+    ]
+  },
+  {
+    "id": "cal-endgame",
+    "order": 18,
+    "name": "Endgame",
+    "triggeredBy": "After the final bosses",
+    "description": "All Calamity bosses including the Exo Mechs and Supreme Calamitas are defeated, with the strongest gear in the game.",
+    "cues": [
+      "Exo Mechs and Supreme Calamitas beaten",
+      "Wielding the best endgame weapons and armor",
+      "Only superbosses/optional challenges remain"
+    ]
+  }
+]

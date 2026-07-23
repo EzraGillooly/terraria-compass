@@ -1,8 +1,8 @@
 export interface BossDef {
   id: string;
   name: string;
-  /** phase gate this boss belongs to */
-  stage: 'pre-bosses' | 'pre-skeletron' | 'pre-wof' | 'pre-mech' | 'pre-plantera' | 'pre-golem' | 'pre-cultist' | 'pre-moonlord' | 'endgame';
+  /** phase gate this boss belongs to (a pack's phase id) */
+  stage: string;
   tier: number;
   /** optional side boss — not required for progression */
   side?: boolean;

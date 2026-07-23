@@ -1,0 +1,738 @@
+[
+  {
+    "id": "king-slime",
+    "name": "King Slime",
+    "stage": "cal-pre-boss",
+    "tier": 0,
+    "side": true,
+    "summon": "Use a Slime Crown, or spawns naturally during a Slime Rain.",
+    "drops": [
+      "Ninja Hood",
+      "Ninja Shirt",
+      "Ninja Pants",
+      "Slimy Saddle",
+      "Royal Gel"
+    ],
+    "blurb": "A giant blue slime king and an optional early warm-up before diving into Calamity's own bosses.",
+    "color": "#3fa8d6"
+  },
+  {
+    "id": "desert-scourge",
+    "name": "Desert Scourge",
+    "stage": "cal-pre-boss",
+    "tier": 1,
+    "side": false,
+    "summon": "Use the Desert Medallion in the Desert or Underground Desert.",
+    "drops": [
+      "Pearl Shard",
+      "Sahara Slicers",
+      "Barinade",
+      "Sandstream Scepter",
+      "Scourge of the Desert",
+      "Sand Cloak"
+    ],
+    "blurb": "A colossal sea serpent adapted to the sands, serving as Calamity's intended first boss.",
+    "color": "#d9b45b"
+  },
+  {
+    "id": "eye-of-cthulhu",
+    "name": "Eye of Cthulhu",
+    "stage": "cal-pre-evil",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Suspicious Looking Eye at night, or spawns naturally on eligible worlds.",
+    "drops": [
+      "Demonite Ore",
+      "Crimtane Ore",
+      "Unholy Arrow",
+      "Corrupt Seeds",
+      "Crimson Seeds"
+    ],
+    "blurb": "A giant floating eye that splits into servants of Cthulhu as it takes damage.",
+    "color": "#b13a3a"
+  },
+  {
+    "id": "crabulon",
+    "name": "Crabulon",
+    "stage": "cal-pre-evil",
+    "tier": 1,
+    "side": true,
+    "summon": "Use the Decapodita Sprout in the Glowing Mushroom biome.",
+    "drops": [
+      "Mycelial Claws",
+      "Fungicide",
+      "Hyphae Rod",
+      "Infested Clawmerang",
+      "Mycoroot",
+      "Puff Shroom"
+    ],
+    "blurb": "A towering fungal crab that showers the arena with spores and mushroom crabs.",
+    "color": "#6a5acd"
+  },
+  {
+    "id": "eater-of-worlds",
+    "name": "Eater of Worlds",
+    "stage": "cal-pre-hive-perf",
+    "tier": 0,
+    "side": false,
+    "summon": "Use Worm Food in the Corruption, or break three Shadow Orbs.",
+    "drops": [
+      "Demonite Ore",
+      "Shadow Scale",
+      "Eater's Bone"
+    ],
+    "blurb": "A massive segmented worm that burrows through the Corruption, splitting when struck.",
+    "color": "#6b4c9a"
+  },
+  {
+    "id": "brain-of-cthulhu",
+    "name": "Brain of Cthulhu",
+    "stage": "cal-pre-hive-perf",
+    "tier": 1,
+    "side": false,
+    "summon": "Use a Bloody Spine in the Crimson, or break three Crimson Hearts.",
+    "drops": [
+      "Crimtane Ore",
+      "Tissue Sample",
+      "Brain of Confusion"
+    ],
+    "blurb": "The Crimson's pulsing brain that teleports behind a swarm of Creepers.",
+    "color": "#c8506e"
+  },
+  {
+    "id": "the-hive-mind",
+    "name": "The Hive Mind",
+    "stage": "cal-pre-hive-perf",
+    "tier": 2,
+    "side": false,
+    "summon": "Kill a Hive Tumor in the Corruption, or craft and use a Teratoma.",
+    "drops": [
+      "Perfect Dark",
+      "Shadethrower",
+      "Shaderain Staff",
+      "Dank Staff",
+      "Rot Ball"
+    ],
+    "blurb": "Calamity's Corruption boss, a shade-slinging mass that shifts from stationary to a mobile second phase.",
+    "color": "#7a9a3a"
+  },
+  {
+    "id": "the-perforators",
+    "name": "The Perforators",
+    "stage": "cal-pre-hive-perf",
+    "tier": 3,
+    "side": false,
+    "summon": "Kill a Perforator Cyst in the Crimson, or craft and use Bloody Worm Food.",
+    "drops": [
+      "Bloodstained Glove",
+      "Aorta",
+      "Sausage Maker",
+      "Vein Burster",
+      "Eviscerator",
+      "Blood Bath"
+    ],
+    "blurb": "Calamity's Crimson boss: a hive that unleashes escalating blood-worms of gore.",
+    "color": "#a11f2e"
+  },
+  {
+    "id": "queen-bee",
+    "name": "Queen Bee",
+    "stage": "cal-pre-skeletron",
+    "tier": 0,
+    "side": true,
+    "summon": "Break a Larva in a Jungle Bee Hive or use Abeemination.",
+    "drops": [
+      "Bee Gun",
+      "Bee Keeper",
+      "Beenade",
+      "Honeycomb",
+      "Hive Wand"
+    ],
+    "blurb": "The Jungle's giant bee that dashes and rains stingers, dropping bee-themed gear.",
+    "color": "#e0a030"
+  },
+  {
+    "id": "skeletron",
+    "name": "Skeletron",
+    "stage": "cal-pre-skeletron",
+    "tier": 1,
+    "side": false,
+    "summon": "Speak to the Old Man at the Dungeon entrance at night.",
+    "drops": [
+      "Skeletron Hand",
+      "Book of Skulls",
+      "Bone Wand",
+      "Ancient Cloth"
+    ],
+    "blurb": "The Dungeon's cursed guardian whose spinning skull and hands must fall before dawn.",
+    "color": "#d8d0c0"
+  },
+  {
+    "id": "deerclops",
+    "name": "Deerclops",
+    "stage": "cal-pre-wof",
+    "tier": 0,
+    "side": true,
+    "summon": "Use a Deer Thing in a Snow biome at night, or spawns during a Blizzard.",
+    "drops": [
+      "Eye Bone",
+      "Weather Pain",
+      "Houndius Shootius",
+      "Pew-matic Horn",
+      "Lucy the Axe"
+    ],
+    "blurb": "A one-eyed frozen cyclops from Don't Starve that slams shadow hands across the snow.",
+    "color": "#6fa8c8"
+  },
+  {
+    "id": "the-slime-god",
+    "name": "The Slime God",
+    "stage": "cal-pre-wof",
+    "tier": 1,
+    "side": false,
+    "summon": "Use the Overloaded Sludge anywhere.",
+    "drops": [
+      "Overloaded Blaster",
+      "Abyssal Tome",
+      "Eldritch Tome",
+      "Corroslime Staff",
+      "Crimslime Staff",
+      "Mana Polarizer"
+    ],
+    "blurb": "A tri-part gelatinous god of two paladins and an invulnerable core, Calamity's final pre-hardmode gate.",
+    "color": "#8a3a5a"
+  },
+  {
+    "id": "wall-of-flesh",
+    "name": "Wall of Flesh",
+    "stage": "cal-pre-wof",
+    "tier": 2,
+    "side": false,
+    "summon": "Drop a Guide Voodoo Doll into lava in the Underworld.",
+    "drops": [
+      "Pwnhammer",
+      "Breaker Blade",
+      "Laser Rifle",
+      "Warrior Emblem",
+      "Demon Heart"
+    ],
+    "blurb": "The Underworld's fleshy wall whose defeat shatters the world into Hardmode.",
+    "color": "#8a2f24"
+  },
+  {
+    "id": "queen-slime",
+    "name": "Queen Slime",
+    "stage": "cal-pre-mech",
+    "tier": 0,
+    "side": true,
+    "summon": "Use a Gelatin Crystal in the Hallow.",
+    "drops": [
+      "Volatile Gelatin",
+      "Blade Staff",
+      "Crystal Assassin armor",
+      "Gelatin Crystal"
+    ],
+    "blurb": "An optional early-Hardmode Hallow boss that bounces and spawns crystal slimes, offering strong early minion and summoner gear.",
+    "color": "#E5559E"
+  },
+  {
+    "id": "cryogen",
+    "name": "Cryogen",
+    "stage": "cal-pre-mech",
+    "tier": 1,
+    "side": false,
+    "summon": "Use a Cryo Key in the Snow or Ice biome.",
+    "drops": [
+      "Essence of Eleum",
+      "Frost Flare",
+      "Avalanche",
+      "Hoarfrost Bow",
+      "Cryo Stone"
+    ],
+    "blurb": "A sealed magical guardian with an icy-blue aesthetic that cycles through multiphase projectile barrages, the intended first Calamity Hardmode boss.",
+    "color": "#5BC8E8"
+  },
+  {
+    "id": "the-twins",
+    "name": "The Twins",
+    "stage": "cal-pre-mech",
+    "tier": 2,
+    "side": false,
+    "summon": "Use a Mechanical Eye at night.",
+    "drops": [
+      "Soul of Sight",
+      "Hallowed Bar",
+      "Optic Staff",
+      "Mechanical Wagon Piece"
+    ],
+    "blurb": "A vanilla mechanical boss of twin mechanical eyes, one of the three mechs that must fall to advance progression.",
+    "color": "#C43F3F"
+  },
+  {
+    "id": "aquatic-scourge",
+    "name": "Aquatic Scourge",
+    "stage": "cal-post-mech1",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Seafood item at any time.",
+    "drops": [
+      "Scourge of the Seas",
+      "Submarine Shocker",
+      "Deepsea Staff",
+      "Corrosive Spine",
+      "Barinautical"
+    ],
+    "blurb": "A mutated sea serpent of the Sulphurous Sea with acidic toxin attacks and murky teal coloration.",
+    "color": "#2E8B8B"
+  },
+  {
+    "id": "the-destroyer",
+    "name": "The Destroyer",
+    "stage": "cal-post-mech1",
+    "tier": 1,
+    "side": false,
+    "summon": "Use a Mechanical Worm at night.",
+    "drops": [
+      "Soul of Might",
+      "Hallowed Bar",
+      "Megashark",
+      "Mechanical Wagon Piece"
+    ],
+    "blurb": "A vanilla mechanical worm bristling with lasers and probes, one of the required Hardmode mechs.",
+    "color": "#8A8FA0"
+  },
+  {
+    "id": "brimstone-elemental",
+    "name": "Brimstone Elemental",
+    "stage": "cal-post-mech2",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Charred Idol in the Brimstone Crag.",
+    "drops": [
+      "Essence of Havoc",
+      "Brimlance",
+      "Seething Discharge",
+      "Dormant Brimseeker",
+      "Flame-Licked Shell"
+    ],
+    "blurb": "A fiery red-and-orange elemental of the Brimstone Crag that escalates aggression across three attack phases.",
+    "color": "#C0392B"
+  },
+  {
+    "id": "skeletron-prime",
+    "name": "Skeletron Prime",
+    "stage": "cal-post-mech2",
+    "tier": 1,
+    "side": false,
+    "summon": "Use a Mechanical Skull at night.",
+    "drops": [
+      "Soul of Fright",
+      "Hallowed Bar",
+      "Mechanical Wagon Piece"
+    ],
+    "blurb": "A vanilla mechanical skull with spinning limbs, the last of the three mechs before Plantera opens up.",
+    "color": "#B8B29A"
+  },
+  {
+    "id": "calamitas-clone",
+    "name": "Calamitas Clone",
+    "stage": "cal-pre-plantera",
+    "tier": 0,
+    "side": false,
+    "summon": "Use an Eye of Desolation at night.",
+    "drops": [
+      "Ashes of Calamity",
+      "Oblivion",
+      "Animosity",
+      "Hood of Calamity",
+      "Void of Calamity"
+    ],
+    "blurb": "A brimstone-themed clone that chases the player while summoning minion constructs, gating post-mech Calamity gear.",
+    "color": "#A61C1C"
+  },
+  {
+    "id": "plantera",
+    "name": "Plantera",
+    "stage": "cal-pre-plantera",
+    "tier": 1,
+    "side": false,
+    "summon": "Break a Plantera's Bulb in the Underground Jungle.",
+    "drops": [
+      "Temple Key",
+      "Seedler",
+      "Venus Magnum",
+      "Nettle Burst",
+      "Pygmy Staff"
+    ],
+    "blurb": "The vanilla jungle boss whose defeat unlocks the Jungle Temple and much of the late Hardmode roadmap.",
+    "color": "#D14E8C"
+  },
+  {
+    "id": "leviathan-and-anahita",
+    "name": "Leviathan and Anahita",
+    "stage": "cal-pre-golem",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Naiad's Warhorn item in the Ocean biome.",
+    "drops": [
+      "Pearl of Enthrallment",
+      "Greentide",
+      "Leviatitan",
+      "Anahita's Arpeggio",
+      "Atlantis"
+    ],
+    "blurb": "An ocean-themed duo pairing a water elemental with a massive marine reptile that unleash ice and meteor attacks.",
+    "color": "#2A6FB0"
+  },
+  {
+    "id": "astrum-aureus",
+    "name": "Astrum Aureus",
+    "stage": "cal-pre-golem",
+    "tier": 1,
+    "side": false,
+    "summon": "Use an Astral Chunk in the Astral Infection biome.",
+    "drops": [
+      "Nebulash",
+      "Aurora Blazer",
+      "Alula Australis",
+      "Borealis Bomber",
+      "Interstellar Stompers"
+    ],
+    "blurb": "A mechanical construct corrupted by the Astral Infection, leaping and firing laser spreads with a golden cosmic sheen.",
+    "color": "#E0A030"
+  },
+  {
+    "id": "golem",
+    "name": "Golem",
+    "stage": "cal-pre-golem",
+    "tier": 2,
+    "side": false,
+    "summon": "Use a Lihzahrd Power Cell at the altar in the Jungle Temple.",
+    "drops": [
+      "Picksaw",
+      "Stynger",
+      "Possessed Hatchet",
+      "Sun Stone",
+      "Eye of the Golem"
+    ],
+    "blurb": "The vanilla Lihzahrd Temple guardian whose defeat opens post-Golem progression.",
+    "color": "#C77A3B"
+  },
+  {
+    "id": "duke-fishron",
+    "name": "Duke Fishron",
+    "stage": "cal-post-golem",
+    "tier": 0,
+    "side": true,
+    "summon": "Fish with Truffle Worm bait in the Ocean biome.",
+    "drops": [
+      "Flairon",
+      "Razorblade Typhoon",
+      "Tempest Staff",
+      "Bubble Gun",
+      "Fishron Wings"
+    ],
+    "blurb": "An optional vanilla pigron-dragon of the Ocean, dangerous but dropping some of the best endgame-adjacent weapons.",
+    "color": "#4FB0C6"
+  },
+  {
+    "id": "the-plaguebringer-goliath",
+    "name": "The Plaguebringer Goliath",
+    "stage": "cal-post-golem",
+    "tier": 1,
+    "side": false,
+    "summon": "Use an Abombination item in the Jungle or Underground Jungle.",
+    "drops": [
+      "Infected Armor Plating",
+      "Plague Cell Canister",
+      "Virulence",
+      "Malevolence",
+      "Plague Staff"
+    ],
+    "blurb": "A Draedon-built plague creature of biological control, sickly green and bristling with toxic missile and drone attacks.",
+    "color": "#7BA82F"
+  },
+  {
+    "id": "empress-of-light",
+    "name": "Empress of Light",
+    "stage": "cal-post-golem",
+    "tier": 2,
+    "side": true,
+    "summon": "Kill a Prismatic Lacewing at night in the Hallow.",
+    "drops": [
+      "Terraprisma",
+      "Starlight",
+      "Nightglow",
+      "Kaleidoscope",
+      "Empress Wings"
+    ],
+    "blurb": "An optional prismatic Hallow fairy whose dazzling rainbow attack patterns reward precise dodging with elite gear.",
+    "color": "#E86FC0"
+  },
+  {
+    "id": "ravager",
+    "name": "Ravager",
+    "stage": "cal-post-golem",
+    "tier": 3,
+    "side": false,
+    "summon": "Use a Death Whistle item.",
+    "drops": [
+      "Ultimus Cleaver",
+      "Realm Ravager",
+      "Hematemesis",
+      "Spikecrag Staff",
+      "Bloodflare Core",
+      "Necromantic Geode"
+    ],
+    "blurb": "A grotesque grounded flesh construct that hops and hurls its own dismembered limbs across the surface battlefield.",
+    "color": "#9E3B3B"
+  },
+  {
+    "id": "lunatic-cultist",
+    "name": "Lunatic Cultist",
+    "stage": "cal-pre-lunar",
+    "tier": 0,
+    "side": false,
+    "summon": "Kill the cultists at the Dungeon entrance after Golem.",
+    "drops": [
+      "Ancient Cultist Trophy",
+      "Lunatic Cultist Mask"
+    ],
+    "blurb": "The vanilla robed cultist whose defeat triggers the Lunar Events and the Celestial Pillars.",
+    "color": "#3FA8A0"
+  },
+  {
+    "id": "astrum-deus",
+    "name": "Astrum Deus",
+    "stage": "cal-pre-ml",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Titan Heart or Starcore at the Astral Beacon at night.",
+    "drops": [
+      "Solar Fragment",
+      "Meld Blob",
+      "Star Sputter",
+      "Starspawn Helix Staff",
+      "Hide of Astrum Deus"
+    ],
+    "blurb": "A celestial burrowing worm with shifting blue-and-orange astral phases, the intended final pre-Moon Lord Calamity boss.",
+    "color": "#3B6FD4"
+  },
+  {
+    "id": "moon-lord",
+    "name": "Moon Lord",
+    "stage": "cal-pre-ml",
+    "tier": 1,
+    "side": false,
+    "summon": "Defeat all four Celestial Pillars, or use a Celestial Sigil.",
+    "drops": [
+      "Luminite",
+      "Meowmere",
+      "Terrarian",
+      "Star Wrath",
+      "Last Prism"
+    ],
+    "blurb": "The vanilla final boss and the climax of Hardmode, whose defeat opens the door to Calamity's post-Moon Lord content.",
+    "color": "#6FBFB0"
+  },
+  {
+    "id": "profaned-guardians",
+    "name": "Profaned Guardians",
+    "stage": "cal-pre-providence",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Profaned Shard in the Underworld or the Hallow",
+    "drops": [
+      "Profaned Core",
+      "Unholy Essence",
+      "Relic of Deliverance",
+      "Profaned Guardian Mask"
+    ],
+    "blurb": "A trio of holy fire guardians that gatekeep Providence, dropping the Profaned Core needed to summon her.",
+    "color": "#E8A33D"
+  },
+  {
+    "id": "the-dragonfolly",
+    "name": "The Dragonfolly",
+    "stage": "cal-pre-providence",
+    "tier": 1,
+    "side": true,
+    "summon": "Use Exotic Pheromones in the Jungle",
+    "drops": [
+      "Gilded Proboscis",
+      "Golden Eagle",
+      "Rouge Slash",
+      "Effulgent Feather",
+      "Dynamo Stem Cells"
+    ],
+    "blurb": "An optional cybernetic bird-of-prey, a faster and deadlier echo of the Bumblebirds, dropping Effulgent Feathers for progression gear.",
+    "color": "#C4432E"
+  },
+  {
+    "id": "providence-the-profaned-goddess",
+    "name": "Providence, the Profaned Goddess",
+    "stage": "cal-pre-providence",
+    "tier": 2,
+    "side": false,
+    "summon": "Use a Profaned Core in the Hallow or the Underworld",
+    "drops": [
+      "Mark of Providence",
+      "Holy Collider",
+      "Telluric Glare",
+      "Purge Guzzler",
+      "Elysian Aegis",
+      "Divine Geode"
+    ],
+    "blurb": "The radiant goddess of the Profaned flame, the first major Post-Moon Lord wall and the source of the Mark that unlocks the Sentinels.",
+    "color": "#F5C542"
+  },
+  {
+    "id": "storm-weaver",
+    "name": "Storm Weaver",
+    "stage": "cal-pre-polterghast",
+    "tier": 0,
+    "side": false,
+    "summon": "Use the Mark of Providence while in the sky",
+    "drops": [
+      "Skytide Dragoon",
+      "The Storm",
+      "Volterion",
+      "Arc Flash Ring"
+    ],
+    "blurb": "A colossal electric serpent and one of the three Sentinels of the Devourer, fought high in the sky.",
+    "color": "#3FC7D4"
+  },
+  {
+    "id": "ceaseless-void",
+    "name": "Ceaseless Void",
+    "stage": "cal-pre-polterghast",
+    "tier": 1,
+    "side": false,
+    "summon": "Use the Mark of Providence while in the Dungeon",
+    "drops": [
+      "Mirror Blade",
+      "Void Concentration Staff",
+      "The Evolution"
+    ],
+    "blurb": "A tear in reality flanked by orbiting Dark Energies, a Sentinel of the Devourer fought within the Dungeon.",
+    "color": "#4B2E83"
+  },
+  {
+    "id": "signus-envoy-of-the-devourer",
+    "name": "Signus, Envoy of the Devourer",
+    "stage": "cal-pre-polterghast",
+    "tier": 2,
+    "side": false,
+    "summon": "Use the Mark of Providence while in the Underworld",
+    "drops": [
+      "Twisting Nether",
+      "Cosmilamp",
+      "Cosmic Kunai"
+    ],
+    "blurb": "A shadowy assassin Sentinel of the Devourer that drops Twisting Nether used to craft the Cosmic Worm.",
+    "color": "#6A3FA0"
+  },
+  {
+    "id": "polterghast",
+    "name": "Polterghast",
+    "stage": "cal-pre-polterghast",
+    "tier": 3,
+    "side": false,
+    "summon": "Kill 30 Phantom Spirits or use the Necroplasmic Beacon in the Dungeon",
+    "drops": [
+      "Terror Blade",
+      "Banshee Hook",
+      "Daemon's Flame",
+      "Fate's Reveal",
+      "Ghastly Visage"
+    ],
+    "blurb": "A tormented mass of Dungeon souls that awakened from the necromantic energy, gating access to the deeper abyss.",
+    "color": "#2FBFA0"
+  },
+  {
+    "id": "the-old-duke",
+    "name": "The Old Duke",
+    "stage": "cal-pre-dog",
+    "tier": 0,
+    "side": true,
+    "summon": "Complete the Acid Rain event or fish with a Bloodworm in the Sulphurous Sea",
+    "drops": [
+      "The Old Reaper",
+      "Mutated Truffle",
+      "Insidious Impaler",
+      "Fetid Emesis",
+      "Septic Skewer"
+    ],
+    "blurb": "An optional mutated Duke Fishron of the Sulphurous Sea, unleashed at the climax of the tier-3 Acid Rain event.",
+    "color": "#B7C43A"
+  },
+  {
+    "id": "the-devourer-of-gods",
+    "name": "The Devourer of Gods",
+    "stage": "cal-pre-dog",
+    "tier": 1,
+    "side": false,
+    "summon": "Use a Cosmic Worm anywhere at any time",
+    "drops": [
+      "Hyperdeath Rift Scepter",
+      "Void Eater Marionette",
+      "Dimension-Tearing Disk",
+      "Cosmilite Bar",
+      "Norfleet"
+    ],
+    "blurb": "The god-eating cosmic serpent and Calamity's signature superboss, a brutal endgame gate that tears through dimensions.",
+    "color": "#2E5BC4"
+  },
+  {
+    "id": "yharon-dragon-of-rebirth",
+    "name": "Yharon, Dragon of Rebirth",
+    "stage": "cal-pre-yharon",
+    "tier": 0,
+    "side": false,
+    "summon": "Use a Blessed Phoenix Egg anywhere at any time",
+    "drops": [
+      "Phoenix Flame Barrage",
+      "Yharon's Kindle Staff",
+      "The Final Dawn",
+      "Yharon Soul Fragment"
+    ],
+    "blurb": "The immortal jungle dragon and Yharim's loyal guardian, a fiery two-phase gauntlet before the final trials.",
+    "color": "#F07A1E"
+  },
+  {
+    "id": "exo-mechs",
+    "name": "Exo Mechs",
+    "stage": "cal-pre-exo",
+    "tier": 0,
+    "side": false,
+    "summon": "Press the Contact button on a fully completed Codebreaker",
+    "drops": [
+      "Exo Prism",
+      "Ares' Exoskeleton",
+      "Photon Ripper",
+      "Spine of Thanatos",
+      "Surge Driver",
+      "The Atom Splitter"
+    ],
+    "blurb": "Draedon's ultimate war machines - Ares, Thanatos, and Artemis & Apollo - fought together as one of the two final bosses.",
+    "color": "#2FD0C4"
+  },
+  {
+    "id": "supreme-witch-calamitas",
+    "name": "Supreme Witch, Calamitas",
+    "stage": "cal-pre-exo",
+    "tier": 1,
+    "side": false,
+    "summon": "Interact with an Altar of the Accursed using Ashes of Calamity or a Ceremonial Urn",
+    "drops": [
+      "Violence",
+      "Condemnation",
+      "Heresy",
+      "Vehemence",
+      "Ashes of Annihilation",
+      "Calamity"
+    ],
+    "blurb": "The brimstone witch and Calamity's true final boss, an unrelenting bullet-hell duel that caps the mod's progression.",
+    "color": "#B01E2E"
+  }
+]

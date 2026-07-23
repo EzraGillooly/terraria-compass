@@ -1,20 +1,26 @@
+import { ClassCollection, LoadoutCollection, PhaseCollection } from '../schema';
+import type { BossDef } from '../bosses';
 import { createRecipeApi } from '../recipes';
+import phasesJson from './calamity/phases.json';
+import classesJson from './calamity/classes.json';
+import bossesJson from './calamity/bosses.json';
+import loadoutsJson from './calamity/loadouts.json';
 import { type Pack } from './types';
 
 /**
- * Calamity — placeholder pack. Listed in the mod dropdown but not yet populated;
- * `available: false` keeps it from being selected into empty pages. The phases,
- * classes (incl. Rogue), loadouts, bosses and recipes are filled in by the data
- * research phase. Difficulties include Calamity's Revengeance and Death modes.
+ * Calamity — data scraped from the Calamity wiki class-setup guides + boss list.
+ * Loadouts cover Pre-Boss through the endgame; the deepest post-Moon-Lord
+ * loadouts are still being backfilled. Crafting recipes are a later pass, so the
+ * recipe graph is empty for now (the Crafting page degrades gracefully).
  */
 export const calamityPack: Pack = {
   id: 'calamity',
   name: 'Calamity',
-  available: false,
-  phases: [],
-  classes: [],
-  loadouts: [],
-  bosses: [],
+  available: true,
+  phases: PhaseCollection.parse(phasesJson),
+  classes: ClassCollection.parse(classesJson),
+  loadouts: LoadoutCollection.parse(loadoutsJson),
+  bosses: bossesJson as BossDef[],
   recipes: createRecipeApi({}, []),
   difficulties: [
     { value: 'normal', label: 'Classic' },

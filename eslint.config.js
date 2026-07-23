@@ -12,6 +12,8 @@ export default [
       'dist/**',
       'playwright-report/**',
       'test-results/**',
+      // runs in the Workflow runtime (top-level await/return), not standard JS
+      'scripts/calamity-workflow.mjs',
     ],
   },
   {

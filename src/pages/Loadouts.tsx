@@ -142,22 +142,34 @@ function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
 
 export function Loadouts() {
   const { difficulty } = useAppState();
-  const { classes, phases, loadouts } = usePack();
+  const { classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
 
-  const loadout = loadouts.find((l) => l.phase === phaseId && l.class === classId);
-  const classDef = classes.find((c) => c.id === classId)!;
-  const phaseDef = phases.find((p) => p.id === phaseId);
+  // Switching packs invalidates the stored ids — clamp them to the active pack.
+  const activePhaseId = phases.some((p) => p.id === phaseId) ? phaseId : (phases[0]?.id ?? phaseId);
+  const activeClassId = classes.some((c) => c.id === classId) ? classId : (classes[0]?.id ?? classId);
+
+  // Backdrop + phase-bar boss icon per phase. Vanilla uses fixed maps; other
+  // packs fall back to a generic backdrop and a representative boss from the data.
+  const phaseBiome = (pid: string) => (pid in PHASE_BIOME ? PHASE_BIOME[pid] : 'forest');
+  const phaseBossIcon = (pid: string) =>
+    pid in PHASE_BOSS
+      ? PHASE_BOSS[pid]
+      : (bosses.find((b) => b.stage === pid && !b.side)?.id ?? bosses.find((b) => b.stage === pid)?.id ?? '');
+
+  const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
+  const classDef = classes.find((c) => c.id === activeClassId)!;
+  const phaseDef = phases.find((p) => p.id === activePhaseId);
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: phaseId, class: classId, weapons: [], armor: [], accessories: [], buffs: [] };
+  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
-    useSubclassFilters(classId);
+    useSubclassFilters(activeClassId);
 
   // Only offer subclasses that actually have a weapon this phase — e.g. there are
   // no Launchers before Hardmode. A stored subclass that isn't available here (or
@@ -165,13 +177,16 @@ export function Loadouts() {
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
+  const hasSubclasses = availableSubclasses.length > 0;
   const validSubclasses = new Set(availableSubclasses.map((s) => s.id));
   const activeSubclasses = new Set(
     [...selectedSubclassSet].filter((s) => validSubclasses.has(s)),
   );
-  const showingAll = activeSubclasses.size === 0;
+  // With no subclasses (e.g. Calamity classes) there are no filter chips, so show
+  // the full best/good/other split rather than only best-in-slot.
+  const showingAll = hasSubclasses && activeSubclasses.size === 0;
 
-  const matchSub = (w: Item) => showingAll || !w.subclass || activeSubclasses.has(w.subclass);
+  const matchSub = (w: Item) => !hasSubclasses || showingAll || !w.subclass || activeSubclasses.has(w.subclass);
   const inScope = safeLoadout.weapons.filter(matchSub);
   // "All" is an overview: just the best in slot from each subclass. Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
@@ -183,7 +198,7 @@ export function Loadouts() {
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
   // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
-  const demonHeartUnlocked = HARDMODE_PHASES.has(phaseId) && (difficulty === 'expert' || difficulty === 'master');
+  const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && (difficulty === 'expert' || difficulty === 'master');
   const slotCount = demonHeartUnlocked ? 6 : 5;
   const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
   const extraAccessories = safeLoadout.accessories.slice(slotCount);
@@ -193,7 +208,7 @@ export function Loadouts() {
     <div className={styles.page}>
       <div
         className={styles.backdrop}
-        style={{ backgroundImage: `url(${BASE}biomes/${PHASE_BIOME[phaseId]}.png)` }}
+        style={{ backgroundImage: `url(${BASE}biomes/${phaseBiome(activePhaseId)}.png)` }}
         aria-hidden="true"
       />
       <div className={styles.backdropWash} aria-hidden="true" />
@@ -213,8 +228,8 @@ export function Loadouts() {
               <button
                 key={cls.id}
                 type="button"
-                className={`${styles.cbtn} pixel-frame ${cls.id === classId ? styles.on : ''}`}
-                aria-pressed={cls.id === classId}
+                className={`${styles.cbtn} pixel-frame ${cls.id === activeClassId ? styles.on : ''}`}
+                aria-pressed={cls.id === activeClassId}
                 onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); setShowRest(false); }}
               >
                 <img
@@ -239,7 +254,7 @@ export function Loadouts() {
         >
           {phases.map((p, i) => {
             const done = p.order < activeOrder;
-            const active = p.id === phaseId;
+            const active = p.id === activePhaseId;
             return (
               <button
                 key={p.id}
@@ -252,7 +267,7 @@ export function Loadouts() {
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
                 <span className={`${styles.wpDisc} pixel-frame pixel-circle`}>
                   <img
-                    src={`${BASE}icons/bosses/${PHASE_BOSS[p.id as PhaseId]}.png`}
+                    src={`${BASE}icons/bosses/${phaseBossIcon(p.id)}.png`}
                     alt="" aria-hidden="true"
                     className={`${styles.wpIcon} pixel-img`}
                     width="30" height="30" loading="lazy"
@@ -266,9 +281,9 @@ export function Loadouts() {
         </div>
 
         {/* Boss banner (re-mounts per phase to replay the slide-in) */}
-        <div key={phaseId} className={`${styles.banner} pixel-frame`}>
+        <div key={activePhaseId} className={`${styles.banner} pixel-frame`}>
           <img
-            src={`${BASE}icons/bosses/${PHASE_BOSS[phaseId]}.png`}
+            src={`${BASE}icons/bosses/${phaseBossIcon(activePhaseId)}.png`}
             alt="" aria-hidden="true"
             className={`${styles.bannerIcon} pixel-img`}
             width="44" height="44"

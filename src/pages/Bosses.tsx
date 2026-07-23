@@ -22,9 +22,6 @@ const STAGE_LABELS: Record<string, string> = {
   'endgame':       'Endgame',
 };
 
-// Everything from the mechanical bosses onward is hardmode (past the Wall of Flesh).
-const HARDMODE_STAGES = new Set(['pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame']);
-
 interface Stage {
   stage: string;
   hard: boolean;
@@ -69,17 +66,24 @@ export function Bosses() {
 
   // Bosses grouped by the active pack's phases, main bosses on the line first,
   // optional/side bosses after. Recomputed when the pack changes.
+  // Hardmode begins at the phase after "Pre-Wall of Flesh" (works for any pack).
+  const isHard = useMemo(() => {
+    const wofOrder = phases.find((p) => /wall of flesh/i.test(p.name))?.order ?? Infinity;
+    const orderOf = (id: string) => phases.find((p) => p.id === id)?.order ?? 0;
+    return (stageId: string) => orderOf(stageId) > wofOrder;
+  }, [phases]);
+
   const stages: Stage[] = useMemo(() => {
     const order = [...phases].sort((a, b) => a.order - b.order).map((p) => p.id);
     return order.map((stage) => {
       const inStage = bosses.filter((b) => b.stage === stage).sort((a, b) => a.tier - b.tier);
       return {
         stage,
-        hard: HARDMODE_STAGES.has(stage),
+        hard: isHard(stage),
         nodes: [...inStage.filter((b) => !b.side), ...inStage.filter((b) => b.side)],
       };
     });
-  }, [phases, bosses]);
+  }, [phases, bosses, isHard]);
 
   const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
   const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);
@@ -89,9 +93,9 @@ export function Bosses() {
   // Switch the whole rail between the pre-hardmode and hardmode sets.
   const setPhase = (hard: boolean) => {
     if (hard === showHardmode) return;
-    const selIsHard = HARDMODE_STAGES.has(selected.stage);
-    if (hard && !selIsHard) setSelectedId(hardStages[0]!.nodes[0]!.id);
-    if (!hard && selIsHard) setSelectedId('eye-of-cthulhu');
+    const selIsHard = isHard(selected.stage);
+    if (hard && !selIsHard) setSelectedId(hardStages[0]?.nodes[0]?.id ?? selectedId);
+    if (!hard && selIsHard) setSelectedId(preHard[0]?.nodes[0]?.id ?? selectedId);
     setShowHardmode(hard);
   };
 
