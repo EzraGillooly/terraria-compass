@@ -15,14 +15,15 @@
 .footerLayer { position: relative; z-index: 2; }
 
 /* ── Header ── */
-.pageHead { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-bottom: 18px; }
+.pageHead { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 18px; }
+.pageHead > div:first-child { flex: 1 1 0; min-width: 0; }   /* title wraps here, doesn't push the rail to a new line */
 .kick { font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: #9FE0C0; margin: 0; text-shadow: var(--tshadow); }
 .title { font-family: var(--display); font-weight: 700; font-size: clamp(28px,3.6vw,38px); line-height: 1.05; margin: 4px 0 6px; color: #EAF0FF; }
 .title em { font-style: normal; color: #A9BCE0; }
 .lede { font-size: 14px; color: #C6D3EC; margin: 0; max-width: 52ch; }
 
 /* ── Class rail (weapon icons) ── */
-.classRail { display: flex; gap: 8px; flex-wrap: wrap; }
+.classRail { display: flex; gap: 8px; flex-wrap: wrap; flex: none; }
 /* Class pills — white when unselected, header-tab green when selected */
 .cbtn { display: flex; align-items: center; justify-content: center; gap: 8px; --px-fill: var(--card); --px-border: #000; --px-u: 1px; padding: 6px 15px 6px 8px; font-weight: 700; font-size: 14px; text-align: center; color: var(--ink-soft); cursor: pointer; transition: background .15s, color .15s; }
 .cbtn:hover { --px-fill: color-mix(in oklab, var(--accent) 12%, var(--card)); }
@@ -40,7 +41,8 @@
    --wp-count is set inline from the phase list. max(0px, …) keeps the row from
    bleeding outwards on narrow screens, where it scrolls instead. */
 .bossmap {
-  --wp-size: 54px;   /* pixel-circle disc width */
+  --cu: 2px;                        /* pixel-circle unit (disc = 27 * --cu) */
+  --wp-size: calc(27 * var(--cu));  /* disc width, for the centring math */
   --wp-pad: 4px;              /* room for the active disc's scale(1.14) */
   display: flex; align-items: flex-start; gap: 0;
   margin-bottom: 16px;
@@ -50,12 +52,12 @@
   padding: 6px var(--wp-pad) 10px;
 }
 .waypoint { position: relative; flex: 1 1 0; min-width: 62px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; color: #A9BCE0; padding: 0; }
-.vein { position: absolute; top: 25px; right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
+.vein { position: absolute; top: calc(13.5 * var(--cu) - 1.5px); right: 50%; width: 100%; height: 3px; background: rgba(150,180,230,.3); z-index: 0; }
 
 .veinFill { background: var(--warm); }
-.wpDisc { position: relative; z-index: 1; width: 54px; height: 54px; display: grid; place-items: center; transition: transform .15s; --px-fill: var(--card); --px-border: var(--line); }
+.wpDisc { position: relative; z-index: 1; width: calc(27 * var(--cu)); height: calc(27 * var(--cu)); display: grid; place-items: center; transition: transform .15s; --px-fill: var(--card); --px-border: var(--line); }
 .wpDisc::before { transition: background .15s; }
-.wpIcon { width: 30px; height: 30px; object-fit: contain; filter: grayscale(.6) opacity(.55); }
+.wpIcon { width: calc(15 * var(--cu)); height: calc(15 * var(--cu)); object-fit: contain; filter: grayscale(.6) opacity(.55); }
 .waypoint.done .wpDisc { --px-border: var(--warm); }
 .waypoint.done .wpIcon { filter: none; }
 .waypoint.on .wpDisc { --px-border: var(--warm); transform: scale(1.14); }
@@ -195,3 +197,6 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
   .accRow { flex-direction: column; }
   .accBox { width: 100%; align-self: stretch; }
 }
+
+/* Many-phase packs (Calamity) use smaller phase discs so 19 fit comfortably. */
+:root[data-pack="calamity"] .bossmap { --cu: 1.4px; }
