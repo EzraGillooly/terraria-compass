@@ -29,6 +29,17 @@ export const Item = z.object({
   pieces: z.array(z.string()).optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
+  /** crafting station, e.g. "Mythril Anvil or Orichalcum Anvil" */
+  station: z.string().optional(),
+  /**
+   * What the item is crafted from. Kept structured rather than folded into
+   * `source` so each material can later link to where it's obtained.
+   */
+  materials: z.array(z.object({
+    name: z.string(),
+    qty: z.number().int().positive(),
+    wikiUrl: z.string().url().optional(),
+  })).optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
   /**

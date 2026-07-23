@@ -78,6 +78,21 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}
           <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
+          {item.materials && item.materials.length > 0 && (
+            <div className={styles.kvRow}>
+              <span className={styles.kvKey}>Materials</span>
+              <ul className={styles.materials}>
+                {item.materials.map((m) => (
+                  <li key={m.name}>
+                    <span className={styles.matQty}>{m.qty}</span>
+                    {m.wikiUrl
+                      ? <a href={m.wikiUrl} target="_blank" rel="noreferrer">{m.name}</a>
+                      : m.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {item.modifier && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Best reforge</span><span>{item.modifier}</span></div>
           )}
