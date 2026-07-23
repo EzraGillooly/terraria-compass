@@ -135,6 +135,30 @@ function groupArmor(armor: Item[]): Item[] {
   return out;
 }
 
+/* Calamity-added armor sets (everything else is treated as a vanilla set). Used to
+   show exactly two options per stage: the best vanilla set and the best Calamity
+   set. Extend as later-tier sets are added. */
+const CALAMITY_ARMOR = new Set([
+  'victide', 'aerospec', 'statigel', 'sulphurous', 'wulfrum', 'mollusk', 'desert prowler',
+  'snow ruffian', 'brimflame', 'daedalus', 'titan heart', 'hydrothermic', 'plague reaper',
+  'reaver', 'umbraphile', 'astral', 'lunic corps', 'lunic eye', 'bloodflare', 'god slayer',
+  'silva', 'auric tesla', 'auric', 'prismatic', 'tarragon', 'empyrean', 'demonshade',
+  'ataraxia', 'plaguebringer', 'fathom swarmer',
+]);
+
+const isCalamityArmor = (name: string) =>
+  name.toLowerCase().split('/').some((part) => CALAMITY_ARMOR.has(part.replace(/armor.*/, '').trim()));
+
+/* Show two armor options per stage: the best vanilla set and the best Calamity set
+   (the list is already ordered best→good→other, so the first of each is the pick). */
+function curateArmor(grouped: Item[]): Item[] {
+  const vanilla = grouped.find((a) => !isCalamityArmor(a.name));
+  const modded = grouped.find((a) => isCalamityArmor(a.name));
+  return [vanilla, modded]
+    .filter((a): a is Item => Boolean(a))
+    .sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
+}
+
 function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
   if (!item) {
     return (
@@ -227,7 +251,7 @@ export function Loadouts() {
   const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
   const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
 
-  const groupedArmor = groupArmor(safeLoadout.armor);
+  const groupedArmor = curateArmor(groupArmor(safeLoadout.armor));
   const armorSprite = groupedArmor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
