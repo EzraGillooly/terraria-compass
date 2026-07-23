@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
+import { PACKS } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -10,33 +11,30 @@ const NAV_LINKS = [
   { to: '/crafting', label: 'Crafting' },
 ];
 
-const DIFF_OPTIONS = [
-  { value: 'normal' as const, label: 'Classic' },
-  { value: 'expert' as const, label: 'Expert'  },
-  { value: 'master' as const, label: 'Master'  },
-];
-
-/* Custom World difficulty dropdown — menu pops out below the control (a native
-   <select> can't control its popup placement). */
-function WorldSelect() {
-  const { difficulty, setDifficulty } = useAppState();
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const current = DIFF_OPTIONS.find((o) => o.value === difficulty);
-
+/** Shared dismiss-on-outside-click / Escape behaviour for the pop-out selects. */
+function useDismiss(open: boolean, close: () => void, ref: React.RefObject<HTMLElement>) {
   useEffect(() => {
     if (!open) return;
     const onDown = (e: PointerEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+      if (ref.current && !ref.current.contains(e.target as Node)) close();
     };
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close(); };
     document.addEventListener('pointerdown', onDown);
     document.addEventListener('keydown', onKey);
     return () => {
       document.removeEventListener('pointerdown', onDown);
       document.removeEventListener('keydown', onKey);
     };
-  }, [open]);
+  }, [open, close, ref]);
+}
+
+/* World difficulty — options come from the active pack (Calamity adds Revengeance/Death). */
+function WorldSelect() {
+  const { difficulty, setDifficulty, pack } = useAppState();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useDismiss(open, () => setOpen(false), ref);
+  const current = pack.difficulties.find((o) => o.value === difficulty);
 
   return (
     <div className={styles.diffSelect} ref={ref}>
@@ -54,7 +52,7 @@ function WorldSelect() {
       </button>
       {open && (
         <ul className={styles.diffMenu} role="listbox" aria-label="World difficulty">
-          {DIFF_OPTIONS.map(({ value, label }) => (
+          {pack.difficulties.map(({ value, label }) => (
             <li key={value} role="option" aria-selected={value === difficulty}>
               <button
                 type="button"
@@ -62,6 +60,49 @@ function WorldSelect() {
                 onClick={() => { setDifficulty(value as DifficultyFilter); setOpen(false); }}
               >
                 {label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+/* Mod / content-pack selector — rewires every page's data. Packs that aren't
+   populated yet are listed but disabled. */
+function ModSelect() {
+  const { packId, setPackId, pack } = useAppState();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useDismiss(open, () => setOpen(false), ref);
+
+  return (
+    <div className={styles.diffSelect} ref={ref}>
+      <button
+        type="button"
+        className={styles.diffTrigger}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label="Mod"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className={styles.diffCap}>Mod</span>
+        <span className={styles.diffValue}>{pack.name}</span>
+        <span className={`${styles.diffCaret} ${open ? styles.diffCaretOpen : ''}`} aria-hidden="true" />
+      </button>
+      {open && (
+        <ul className={styles.diffMenu} role="listbox" aria-label="Mod">
+          {PACKS.map((p) => (
+            <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!p.available}>
+              <button
+                type="button"
+                className={`${styles.diffItem} ${p.id === packId ? styles.diffItemOn : ''}`}
+                disabled={!p.available}
+                onClick={() => { setPackId(p.id); setOpen(false); }}
+              >
+                {p.name}
+                {!p.available && <span className={styles.diffSoon}>Soon</span>}
               </button>
             </li>
           ))}
@@ -112,7 +153,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Controls */}
         <div className={styles.controls}>
-          {/* World difficulty */}
+          <ModSelect />
           <WorldSelect />
 
           {/* Day / night — disabled for now */}

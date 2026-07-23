@@ -231,3 +231,15 @@
   .inner { grid-template-columns: 1fr auto; row-gap: 10px; }
   .topnav { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
 }
+
+/* "Soon" badge on packs that aren't populated yet (mod dropdown) */
+.diffItem:disabled { opacity: .5; cursor: default; }
+.diffItem:disabled:hover { background: transparent; }
+.diffSoon {
+  margin-left: 8px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--warm);
+}

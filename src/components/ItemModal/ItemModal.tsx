@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import type { SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
-import { findCraftable } from '../../data/recipes';
+import { usePack } from '../../lib/app-context';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -27,6 +27,7 @@ const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' w
 
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
+  const { recipes } = usePack();
 
   useEffect(() => {
     if (!item) return;
@@ -38,7 +39,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
 
   if (!item) return null;
 
-  const craftable = findCraftable(item.name);
+  const craftable = recipes.findCraftable(item.name);
   const stem = item.icon.replace(/\.png$/i, '').split('/').pop() ?? '';
   const local = `${BASE}icons/${item.icon}`;
   const wiki = `${WIKI}/${makeWikiName(stem)}.png`;

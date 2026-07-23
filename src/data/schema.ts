@@ -1,18 +1,10 @@
 import { z } from 'zod';
 
-export const PhaseId = z.enum([
-  'pre-bosses',
-  'pre-skeletron',
-  'pre-wof',
-  'pre-mech',
-  'pre-plantera',
-  'pre-golem',
-  'pre-cultist',
-  'pre-moonlord',
-  'endgame',
-]);
-
-export const ClassId = z.enum(['melee', 'ranger', 'mage', 'summoner']);
+// Phase and class ids are strings, not fixed enums: each content pack (vanilla,
+// Calamity, …) defines its own progression phases and class roster. The vanilla
+// ids remain 'pre-bosses'…'endgame' and 'melee'|'ranger'|'mage'|'summoner'.
+export const PhaseId = z.string();
+export const ClassId = z.string();
 
 export const SubclassId = z.string();
 

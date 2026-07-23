@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
-import { useAppState } from '../lib/app-context';
-import { classes, getLoadoutByPhaseAndClass, phases } from '../lib/data';
+import { useAppState, usePack } from '../lib/app-context';
 import { isItemRelevantToDifficulty } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
 import type { ClassId, Item, PhaseId } from '../data/schema';
@@ -143,12 +142,13 @@ function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
 
 export function Loadouts() {
   const { difficulty } = useAppState();
+  const { classes, phases, loadouts } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
 
-  const loadout = getLoadoutByPhaseAndClass(phaseId, classId);
+  const loadout = loadouts.find((l) => l.phase === phaseId && l.class === classId);
   const classDef = classes.find((c) => c.id === classId)!;
   const phaseDef = phases.find((p) => p.id === phaseId);
   const phaseName = phaseDef?.name ?? '';

@@ -2,17 +2,14 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { bosses, type BossDef } from '../data/bosses';
+import { usePack } from '../lib/app-context';
+import type { BossDef } from '../data/bosses';
 import styles from './Bosses.module.css';
 
 const BASE = import.meta.env.BASE_URL;
 
-const STAGE_ORDER = [
-  'pre-bosses', 'pre-skeletron', 'pre-wof',
-  'pre-mech', 'pre-plantera', 'pre-golem',
-  'pre-cultist', 'pre-moonlord', 'endgame',
-] as const;
-
+// Display labels for the detail-panel stage tag. Falls back to the phase name for
+// stages not listed here (e.g. a mod's own stages).
 const STAGE_LABELS: Record<string, string> = {
   'pre-bosses':    'Pre-Bosses',
   'pre-skeletron': 'Pre-Skeletron',
@@ -28,20 +25,11 @@ const STAGE_LABELS: Record<string, string> = {
 // Everything from the mechanical bosses onward is hardmode (past the Wall of Flesh).
 const HARDMODE_STAGES = new Set(['pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame']);
 
-// Bosses grouped by stage, main bosses on the line first, optional/side bosses after.
-const STAGES = STAGE_ORDER.map((stage) => {
-  const inStage = bosses.filter((b) => b.stage === stage).sort((a, b) => a.tier - b.tier);
-  return {
-    stage,
-    hard: HARDMODE_STAGES.has(stage),
-    nodes: [...inStage.filter((b) => !b.side), ...inStage.filter((b) => b.side)],
-  };
-});
-type Stage = (typeof STAGES)[number];
-
-const PRE_HARD = STAGES.filter((s) => !s.hard);
-const HARD = STAGES.filter((s) => s.hard);
-const FLAT = STAGES.flatMap((s) => s.nodes);
+interface Stage {
+  stage: string;
+  hard: boolean;
+  nodes: BossDef[];
+}
 
 function worldLabel(boss: BossDef): string | null {
   if (!boss.world) return null;
@@ -75,15 +63,34 @@ function BossSlot({
 }
 
 export function Bosses() {
+  const { phases, bosses } = usePack();
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
-  const selected = useMemo(() => FLAT.find((b) => b.id === selectedId) ?? FLAT[0]!, [selectedId]);
+
+  // Bosses grouped by the active pack's phases, main bosses on the line first,
+  // optional/side bosses after. Recomputed when the pack changes.
+  const stages: Stage[] = useMemo(() => {
+    const order = [...phases].sort((a, b) => a.order - b.order).map((p) => p.id);
+    return order.map((stage) => {
+      const inStage = bosses.filter((b) => b.stage === stage).sort((a, b) => a.tier - b.tier);
+      return {
+        stage,
+        hard: HARDMODE_STAGES.has(stage),
+        nodes: [...inStage.filter((b) => !b.side), ...inStage.filter((b) => b.side)],
+      };
+    });
+  }, [phases, bosses]);
+
+  const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
+  const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);
+  const flat = useMemo(() => stages.flatMap((s) => s.nodes), [stages]);
+  const selected = useMemo(() => flat.find((b) => b.id === selectedId) ?? flat[0]!, [flat, selectedId]);
 
   // Switch the whole rail between the pre-hardmode and hardmode sets.
   const setPhase = (hard: boolean) => {
     if (hard === showHardmode) return;
     const selIsHard = HARDMODE_STAGES.has(selected.stage);
-    if (hard && !selIsHard) setSelectedId(HARD[0]!.nodes[0]!.id);
+    if (hard && !selIsHard) setSelectedId(hardStages[0]!.nodes[0]!.id);
     if (!hard && selIsHard) setSelectedId('eye-of-cthulhu');
     setShowHardmode(hard);
   };
@@ -157,7 +164,7 @@ export function Bosses() {
 
         <div className={styles.railScroll}>
           <div className={styles.rail}>
-            {(showHardmode ? HARD : PRE_HARD).map(renderStage)}
+            {(showHardmode ? hardStages : preHard).map(renderStage)}
           </div>
         </div>
         <p className={styles.scrollHint}>Tap a boss for its summon method and key drops</p>
@@ -179,7 +186,9 @@ export function Bosses() {
               <h2 className={styles.detailName}>{selected.name}</h2>
               {selected.side && <span className={`${styles.tagOpt} pixel-frame`}>Optional</span>}
               {worldLabel(selected) && <span className={`${styles.tagWorld} pixel-frame`}>{worldLabel(selected)}</span>}
-              <span className={styles.detailStage}>{STAGE_LABELS[selected.stage]}</span>
+              <span className={styles.detailStage}>
+                {STAGE_LABELS[selected.stage] ?? phases.find((p) => p.id === selected.stage)?.name ?? selected.stage}
+              </span>
             </div>
             <p className={styles.detailBlurb}>{selected.blurb}</p>
             <div className={styles.detailRow}>

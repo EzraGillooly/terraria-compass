@@ -32,14 +32,9 @@ export type Ingredient = z.infer<typeof Ingredient>;
 export type Recipe = z.infer<typeof Recipe>;
 export type RecipeNode = z.infer<typeof RecipeNode>;
 
-const book = RecipeBook.parse(raw);
-
-export const recipeNodes: Record<string, RecipeNode> = book.nodes;
-export const recipeRoots: string[] = book.roots;
-
 /**
  * Loadout items and recipe nodes are authored separately, so they're matched on a
- * slug of the display name ("Ankh Shield" → "ankh-shield").
+ * slug of the display name ("Ankh Shield" → "ankh-shield"). Pure — no graph state.
  */
 export function recipeId(name: string): string {
   return name
@@ -49,29 +44,57 @@ export function recipeId(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
-/** The node for a display name, but only when it's actually craftable. */
-export function findCraftable(name: string): RecipeNode | null {
-  const node = recipeNodes[recipeId(name)];
-  return node && node.recipes.length > 0 ? node : null;
+/** The recipe graph plus the queries over it, bound to one content pack's nodes. */
+export interface RecipeApi {
+  nodes: Record<string, RecipeNode>;
+  roots: string[];
+  findCraftable(name: string): RecipeNode | null;
+  pathToItem(rootId: string, targetId: string): string[] | null;
+  rootContaining(targetId: string): string | null;
 }
 
-/** Every id on the path from a root down to `target`, so the tree can auto-expand to it. */
-export function pathToItem(rootId: string, targetId: string): string[] | null {
-  const walk = (id: string, trail: string[]): string[] | null => {
-    if (trail.includes(id)) return null; // recipes can cycle (Shimmer transmutation)
-    const next = [...trail, id];
-    if (id === targetId) return next;
-    for (const ingredient of recipeNodes[id]?.recipes[0]?.ingredients ?? []) {
-      const hit = walk(ingredient.id, next);
-      if (hit) return hit;
-    }
-    return null;
+/**
+ * Build the recipe queries over a specific graph. Each content pack (vanilla,
+ * Calamity, …) has its own nodes, so the helpers close over the pack's graph
+ * rather than a single module-level one.
+ */
+export function createRecipeApi(
+  nodes: Record<string, RecipeNode>,
+  roots: string[],
+): RecipeApi {
+  const findCraftable = (name: string): RecipeNode | null => {
+    const node = nodes[recipeId(name)];
+    return node && node.recipes.length > 0 ? node : null;
   };
-  return walk(rootId, []);
+
+  const pathToItem = (rootId: string, targetId: string): string[] | null => {
+    const walk = (id: string, trail: string[]): string[] | null => {
+      if (trail.includes(id)) return null; // recipes can cycle (Shimmer transmutation)
+      const next = [...trail, id];
+      if (id === targetId) return next;
+      for (const ingredient of nodes[id]?.recipes[0]?.ingredients ?? []) {
+        const hit = walk(ingredient.id, next);
+        if (hit) return hit;
+      }
+      return null;
+    };
+    return walk(rootId, []);
+  };
+
+  const rootContaining = (targetId: string): string | null => {
+    if (roots.includes(targetId)) return targetId;
+    return roots.find((root) => pathToItem(root, targetId)) ?? null;
+  };
+
+  return { nodes, roots, findCraftable, pathToItem, rootContaining };
 }
 
-/** The root whose tree contains `targetId` — preferring the item itself when it is one. */
-export function rootContaining(targetId: string): string | null {
-  if (recipeRoots.includes(targetId)) return targetId;
-  return recipeRoots.find((root) => pathToItem(root, targetId)) ?? null;
-}
+const book = RecipeBook.parse(raw);
+
+/** The vanilla recipe graph. Kept as module exports for back-compat. */
+export const vanillaRecipeApi = createRecipeApi(book.nodes, book.roots);
+export const recipeNodes = vanillaRecipeApi.nodes;
+export const recipeRoots = vanillaRecipeApi.roots;
+export const findCraftable = vanillaRecipeApi.findCraftable;
+export const pathToItem = vanillaRecipeApi.pathToItem;
+export const rootContaining = vanillaRecipeApi.rootContaining;

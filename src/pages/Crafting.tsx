@@ -2,13 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import {
-  recipeNodes,
-  recipeRoots,
-  pathToItem,
-  rootContaining,
-  type RecipeNode,
-} from '../data/recipes';
+import { usePack } from '../lib/app-context';
+import type { RecipeNode } from '../data/recipes';
 import styles from './Crafting.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -36,16 +31,17 @@ function Sprite({ node, size }: { node: RecipeNode; size: number }) {
  * base materials (drops, ores, purchases) are the leaves.
  */
 function TreeNode({
-  id, qty, expanded, onToggle, highlightId, trail,
+  id, qty, nodes, expanded, onToggle, highlightId, trail,
 }: {
   id: string;
   qty: number;
+  nodes: Record<string, RecipeNode>;
   expanded: Set<string>;
   onToggle: (key: string) => void;
   highlightId: string | null;
   trail: string[];
 }) {
-  const node = recipeNodes[id];
+  const node = nodes[id];
   const highlightRef = useRef<HTMLDivElement>(null);
   const isHighlighted = id === highlightId;
 
@@ -105,6 +101,7 @@ function TreeNode({
               key={ingredient.id}
               id={ingredient.id}
               qty={ingredient.qty}
+              nodes={nodes}
               expanded={expanded}
               onToggle={onToggle}
               highlightId={highlightId}
@@ -118,11 +115,14 @@ function TreeNode({
 }
 
 /** Total count of each base material needed, flattened across the whole tree. */
-function shoppingList(rootId: string): { node: RecipeNode; qty: number }[] {
+function shoppingList(
+  rootId: string,
+  nodes: Record<string, RecipeNode>,
+): { node: RecipeNode; qty: number }[] {
   const totals = new Map<string, number>();
   const walk = (id: string, multiplier: number, trail: string[]) => {
     if (trail.includes(id)) return;
-    const node = recipeNodes[id];
+    const node = nodes[id];
     if (!node) return;
     const recipe = node.recipes[0];
     if (!recipe) {
@@ -136,20 +136,22 @@ function shoppingList(rootId: string): { node: RecipeNode; qty: number }[] {
   walk(rootId, 1, []);
   return [...totals.entries()]
     .flatMap(([id, qty]) => {
-      const node = recipeNodes[id];
+      const node = nodes[id];
       return node ? [{ node, qty }] : [];
     })
     .sort((a, b) => b.qty - a.qty || a.node.name.localeCompare(b.node.name));
 }
 
 export function Crafting() {
+  const { recipes } = usePack();
+  const { nodes, roots } = recipes;
   const [params, setParams] = useSearchParams();
   const requested = params.get('item');
 
   // an ?item= that isn't a root still opens the tree that contains it, highlighted
   const rootId = useMemo(
-    () => (requested ? rootContaining(requested) : null),
-    [requested],
+    () => (requested ? recipes.rootContaining(requested) : null),
+    [requested, recipes],
   );
   const highlightId = requested && requested !== rootId ? requested : null;
 
@@ -163,20 +165,20 @@ export function Crafting() {
     const keys = new Set<string>();
     if (!rootId) return keys;
     if (highlightId) {
-      const path = pathToItem(rootId, highlightId) ?? [rootId];
+      const path = recipes.pathToItem(rootId, highlightId) ?? [rootId];
       path.forEach((_, i) => keys.add(path.slice(0, i + 1).join('/')));
       return keys;
     }
     const openAll = (id: string, trail: string[]) => {
       if (trail.includes(id)) return;
-      const recipe = recipeNodes[id]?.recipes[0];
+      const recipe = nodes[id]?.recipes[0];
       if (!recipe) return;
       keys.add([...trail, id].join('/'));
       for (const ingredient of recipe.ingredients) openAll(ingredient.id, [...trail, id]);
     };
     openAll(rootId, []);
     return keys;
-  }, [rootId, highlightId]);
+  }, [rootId, highlightId, recipes, nodes]);
 
   const [override, setOverride] = useState<{ treeKey: string; keys: Set<string> } | null>(null);
   const expanded = override?.treeKey === treeKey ? override.keys : defaultExpanded;
@@ -187,8 +189,8 @@ export function Crafting() {
     setOverride({ treeKey, keys });
   };
 
-  const root = rootId ? recipeNodes[rootId] : null;
-  const materials = rootId ? shoppingList(rootId) : [];
+  const root = rootId ? nodes[rootId] : null;
+  const materials = rootId ? shoppingList(rootId, nodes) : [];
 
   return (
     <div className={styles.page}>
@@ -247,6 +249,7 @@ export function Crafting() {
                   <TreeNode
                     id={root.id}
                     qty={1}
+                    nodes={nodes}
                     expanded={expanded}
                     onToggle={toggle}
                     highlightId={highlightId}
@@ -279,8 +282,8 @@ export function Crafting() {
               </p>
             )}
             <div className={styles.grid}>
-              {recipeRoots.map((id) => {
-                const node = recipeNodes[id];
+              {roots.map((id) => {
+                const node = nodes[id];
                 if (!node) return null;
                 return (
                   <button
@@ -292,7 +295,7 @@ export function Crafting() {
                     <span className={styles.cardSlot}><Sprite node={node} size={40} /></span>
                     <span className={styles.cardName}>{node.name}</span>
                     <span className={styles.cardMeta}>
-                      {shoppingList(id).length} material{shoppingList(id).length === 1 ? '' : 's'}
+                      {shoppingList(id, nodes).length} material{shoppingList(id, nodes).length === 1 ? '' : 's'}
                     </span>
                   </button>
                 );
