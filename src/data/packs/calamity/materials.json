@@ -101,14 +101,7 @@
     "id": "acorn",
     "name": "Acorn",
     "source": "Purchased from Dryad for 10 CC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Acorn",
-    "materials": [
-      {
-        "id": "amber",
-        "name": "Amber",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Acorn"
   },
   {
     "id": "aerialite-bar",
@@ -142,25 +135,14 @@
     "id": "aglet",
     "name": "Aglet",
     "source": "Purchased from Skeleton Merchant for 2 GC 50 SC during a New Moon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet",
-    "materials": [
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "qty": 1
-      },
-      {
-        "id": "anklet-of-the-wind",
-        "name": "Anklet of the Wind",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
   },
   {
     "id": "ale",
     "name": "Ale",
-    "source": "Crafted",
+    "source": "Crafted at a Keg",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Ale",
+    "station": "Keg",
     "materials": [
       {
         "id": "mug",
@@ -197,20 +179,14 @@
     "id": "amber",
     "name": "Amber",
     "source": "Obtained from placing Silt",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Amber",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
   },
   {
     "id": "amber-staff",
     "name": "Amber Staff",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Amber_Staff",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "amber",
@@ -252,27 +228,13 @@
     "id": "amethyst",
     "name": "Amethyst",
     "source": "Found in bulk in its own Gemstone Cave mini biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst"
   },
   {
     "id": "ancient-cloth",
     "name": "Ancient Cloth",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ancient_Cloth",
-    "materials": [
-      {
-        "id": "silk",
-        "name": "Silk",
-        "qty": 15
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ancient_Cloth"
   },
   {
     "id": "angel-treads",
@@ -317,19 +279,7 @@
     "id": "anklet-of-the-wind",
     "name": "Anklet of the Wind",
     "source": "Found in Jungle and Bramble Crates with a 19% chance",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
-    "materials": [
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "qty": 1
-      },
-      {
-        "id": "aglet",
-        "name": "Aglet",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
   },
   {
     "id": "anti-materiel-rifle",
@@ -364,20 +314,44 @@
   {
     "id": "any-adamantite-bar",
     "name": "Any Adamantite Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Adamantite_Bar"
+    "source": "Crafted at an Adamantite Forge or Titanium Forge",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Adamantite_Bar",
+    "station": "Adamantite Forge or Titanium Forge",
+    "materials": [
+      {
+        "id": "adamantite-ore",
+        "name": "Adamantite Ore",
+        "qty": 4
+      }
+    ]
   },
   {
     "id": "any-cobalt-bar",
     "name": "Any Cobalt Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Cobalt_Bar"
+    "source": "Crafted at a Furnace",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Cobalt_Bar",
+    "station": "Furnace",
+    "materials": [
+      {
+        "id": "cobalt-ore",
+        "name": "Cobalt Ore",
+        "qty": 3
+      }
+    ]
   },
   {
     "id": "any-copper-bar",
     "name": "Any Copper Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Copper_Bar"
+    "source": "Crafted at a Furnace",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Copper_Bar",
+    "station": "Furnace",
+    "materials": [
+      {
+        "id": "copper-ore",
+        "name": "Copper Ore",
+        "qty": 3
+      }
+    ]
   },
   {
     "id": "any-evil-bar",
@@ -400,14 +374,30 @@
   {
     "id": "any-gold-bar",
     "name": "Any Gold Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Gold_Bar"
+    "source": "Crafted at a Furnace",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Gold_Bar",
+    "station": "Furnace",
+    "materials": [
+      {
+        "id": "gold-ore",
+        "name": "Gold Ore",
+        "qty": 4
+      }
+    ]
   },
   {
     "id": "any-hallowed-greaves",
     "name": "Any Hallowed Greaves",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Hallowed_Greaves"
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Hallowed_Greaves",
+    "station": "Mythril Anvil or Orichalcum Anvil",
+    "materials": [
+      {
+        "id": "hallowed-bar",
+        "name": "Hallowed Bar",
+        "qty": 18
+      }
+    ]
   },
   {
     "id": "any-hallowed-helmet",
@@ -430,33 +420,42 @@
   {
     "id": "any-ice-block",
     "name": "Any Ice Block",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Ice_Block"
-  },
-  {
-    "id": "any-iron-bar",
-    "name": "Any Iron Bar",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Iron_Bar",
-    "materials": [
-      {
-        "id": "any-wood",
-        "name": "Any Wood",
-        "qty": 10
-      }
-    ]
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Ice_Block",
+    "station": "By Hand"
   },
   {
     "id": "any-mana-flower",
     "name": "Any Mana Flower",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Mana_Flower"
+    "source": "Crafted at a Tinkerer's Workshop",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Mana_Flower",
+    "station": "Tinkerer's Workshop",
+    "materials": [
+      {
+        "id": "natures-gift",
+        "name": "Nature's Gift",
+        "qty": 1
+      },
+      {
+        "id": "mana-potion",
+        "name": "Mana Potion",
+        "qty": 1
+      }
+    ]
   },
   {
     "id": "any-mythril-bar",
     "name": "Any Mythril Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Mythril_Bar"
+    "source": "Crafted at a Furnace",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Mythril_Bar",
+    "station": "Furnace",
+    "materials": [
+      {
+        "id": "mythril-ore",
+        "name": "Mythril Ore",
+        "qty": 4
+      }
+    ]
   },
   {
     "id": "any-quiver",
@@ -465,47 +464,67 @@
     "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Quiver"
   },
   {
-    "id": "any-seashell-or-starfish",
-    "name": "Any Seashell or Starfish",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Seashell_or_Starfish",
+    "id": "any-silver-bar",
+    "name": "Any Silver Bar",
+    "source": "Crafted at a Furnace",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Silver_Bar",
+    "station": "Furnace",
     "materials": [
       {
-        "id": "any-wood",
-        "name": "Any Wood",
-        "qty": 10
+        "id": "silver-ore",
+        "name": "Silver Ore",
+        "qty": 4
       }
     ]
   },
   {
-    "id": "any-silver-bar",
-    "name": "Any Silver Bar",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Silver_Bar"
-  },
-  {
     "id": "any-snow-block",
     "name": "Any Snow Block",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Snow_Block"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Snow_Block",
+    "station": "By Hand"
   },
   {
     "id": "any-stone-block",
     "name": "Any Stone Block",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Stone_Block"
+    "source": "Crafted at a Work Bench",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Stone_Block",
+    "station": "Work Bench",
+    "materials": [
+      {
+        "id": "stone-wall",
+        "name": "Stone Wall",
+        "qty": 4
+      }
+    ]
   },
   {
     "id": "any-wood",
     "name": "Any Wood",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Wood"
+    "source": "Obtained from cutting down trees using an axe or a chainsaw",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Wood",
+    "station": "Bone Welder or Desktop, Console, Old-gen console and Mobile versions",
+    "materials": [
+      {
+        "id": "wood-shelf",
+        "name": "Wood Shelf",
+        "qty": 2
+      }
+    ]
   },
   {
     "id": "any-wooden-sword",
     "name": "Any Wooden Sword",
-    "source": "",
-    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Wooden_Sword"
+    "source": "Crafted at a Work Bench",
+    "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Wooden_Sword",
+    "station": "Work Bench",
+    "materials": [
+      {
+        "id": "wood",
+        "name": "Wood",
+        "qty": 7
+      }
+    ]
   },
   {
     "id": "arc-nova-diffuser",
@@ -612,20 +631,8 @@
   {
     "id": "armored-cavefish",
     "name": "Armored Cavefish",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Armored_Cavefish",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "blinkroot",
-        "name": "Blinkroot",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Armored_Cavefish"
   },
   {
     "id": "armored-shell",
@@ -689,8 +696,9 @@
   {
     "id": "ash-wood",
     "name": "Ash Wood",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood",
+    "station": "By Hand"
   },
   {
     "id": "ashes-of-annihilation",
@@ -771,8 +779,9 @@
   {
     "id": "avenger-emblem",
     "name": "Avenger Emblem",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "soul-of-might",
@@ -830,20 +839,14 @@
     "id": "band-of-regeneration",
     "name": "Band of Regeneration",
     "source": "Found in Gold Chests in the Underground and Cavern biomes and in Living Mahogany Trees in the Underground Jungle",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-    "materials": [
-      {
-        "id": "philosophers-stone",
-        "name": "Philosopher's Stone",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
   },
   {
     "id": "band-of-starpower",
     "name": "Band of Starpower",
     "source": "Fished in the Corruption",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+    "station": "Tinkerer's Workshop or Ecto Mist or Desktop, Console and Mobile versions",
     "materials": [
       {
         "id": "panic-necklace",
@@ -879,8 +882,9 @@
   {
     "id": "bee-cloak",
     "name": "Bee Cloak",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Cloak",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "honey-comb",
@@ -901,39 +905,6 @@
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Gun"
   },
   {
-    "id": "bee-keeper",
-    "name": "Bee Keeper",
-    "source": "Dropped by the Queen Bee",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper",
-    "materials": [
-      {
-        "id": "terra-blade",
-        "name": "Terra Blade",
-        "qty": 1
-      },
-      {
-        "id": "the-horsemans-blade",
-        "name": "The Horseman's Blade",
-        "qty": 1
-      },
-      {
-        "id": "starfury",
-        "name": "Starfury",
-        "qty": 1
-      },
-      {
-        "id": "enchanted-sword",
-        "name": "Enchanted Sword",
-        "qty": 1
-      },
-      {
-        "id": "copper-shortsword",
-        "name": "Copper Shortsword",
-        "qty": 1
-      }
-    ]
-  },
-  {
     "id": "bee-wax",
     "name": "Bee Wax",
     "source": "Dropped by the Queen Bee",
@@ -942,36 +913,14 @@
   {
     "id": "beenade",
     "name": "Beenade",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "grenade",
         "name": "Grenade",
         "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "bell",
-    "name": "Bell",
-    "source": "Purchased from Wizard for 1 GC",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Bell",
-    "materials": [
-      {
-        "id": "pixie-dust",
-        "name": "Pixie Dust",
-        "qty": 25
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 8
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 10
       }
     ]
   },
@@ -1047,19 +996,7 @@
     "id": "black-belt",
     "name": "Black Belt",
     "source": "Dropped by Bone Lees in the post-Plantera Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt",
-    "materials": [
-      {
-        "id": "tiger-climbing-gear",
-        "name": "Tiger Climbing Gear",
-        "qty": 1
-      },
-      {
-        "id": "tabi",
-        "name": "Tabi",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
   },
   {
     "id": "black-glass-band",
@@ -1095,37 +1032,7 @@
     "id": "black-lens",
     "name": "Black Lens",
     "source": "Dropped by Demon Eyes and Wandering Eyes at a 1/100",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Lens",
-    "materials": [
-      {
-        "id": "lens",
-        "name": "Lens",
-        "qty": 2
-      },
-      {
-        "id": "hallowed-bar",
-        "name": "Hallowed Bar",
-        "qty": 12
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 20
-      }
-    ]
-  },
-  {
-    "id": "black-thread",
-    "name": "Black Thread",
-    "source": "Purchased from Clothier",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Thread",
-    "materials": [
-      {
-        "id": "jungle-grass-seeds",
-        "name": "Jungle Grass Seeds",
-        "qty": 3
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Lens"
   },
   {
     "id": "blade-staff",
@@ -1136,8 +1043,9 @@
   {
     "id": "blade-of-grass",
     "name": "Blade of Grass",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "stinger",
@@ -1171,30 +1079,8 @@
   {
     "id": "blinkroot",
     "name": "Blinkroot",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "fireblossom",
-        "name": "Fireblossom",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      },
-      {
-        "id": "grass-seeds",
-        "name": "Grass Seeds",
-        "qty": 5
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
   },
   {
     "id": "blizzard-staff",
@@ -1205,8 +1091,9 @@
   {
     "id": "blizzard-in-a-balloon",
     "name": "Blizzard in a Balloon",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_in_a_Balloon",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "blizzard-in-a-bottle",
@@ -1223,8 +1110,16 @@
   {
     "id": "blizzard-in-a-bottle",
     "name": "Blizzard in a Bottle",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_in_a_Bottle"
+    "source": "Crafted at a Crystal Ball",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_in_a_Bottle",
+    "station": "Crystal Ball",
+    "materials": [
+      {
+        "id": "cloud-in-a-bottle",
+        "name": "Cloud in a Bottle",
+        "qty": 1
+      }
+    ]
   },
   {
     "id": "blood-orb",
@@ -1314,24 +1209,6 @@
     "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Moon"
   },
   {
-    "id": "blue-phaseblade",
-    "name": "Blue Phaseblade",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Phaseblade",
-    "materials": [
-      {
-        "id": "meteorite-bar",
-        "name": "Meteorite Bar",
-        "qty": 15
-      },
-      {
-        "id": "sapphire",
-        "name": "Sapphire",
-        "qty": 15
-      }
-    ]
-  },
-  {
     "id": "bomb",
     "name": "Bomb",
     "source": "",
@@ -1340,8 +1217,9 @@
   {
     "id": "bone",
     "name": "Bone",
-    "source": "Crafted",
+    "source": "Crafted at a Bone Welder or Desktop, Console, Old-gen console and Mobile versions",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bone",
+    "station": "Bone Welder or Desktop, Console, Old-gen console and Mobile versions",
     "materials": [
       {
         "id": "bone-block-wall",
@@ -1353,8 +1231,9 @@
   {
     "id": "bone-block-wall",
     "name": "Bone Block Wall",
-    "source": "Crafted",
+    "source": "Crafted at a Bone Welder or Desktop, Console, Old-gen console and Mobile versions",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Block_Wall",
+    "station": "Bone Welder or Desktop, Console, Old-gen console and Mobile versions",
     "materials": [
       {
         "id": "bone",
@@ -1366,14 +1245,16 @@
   {
     "id": "boreal-wood",
     "name": "Boreal Wood",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood",
+    "station": "By Hand"
   },
   {
     "id": "bottle",
     "name": "Bottle",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bottle",
+    "station": "Furnace",
     "materials": [
       {
         "id": "glass",
@@ -1387,6 +1268,7 @@
     "name": "Bottled Honey",
     "source": "Dropped by the Queen Bee",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Honey",
+    "station": "Honey",
     "materials": [
       {
         "id": "bottle",
@@ -1398,8 +1280,9 @@
   {
     "id": "bottled-water",
     "name": "Bottled Water",
-    "source": "Crafted",
+    "source": "Crafted at a Water or Sink or Desktop, Console and Mobile versions or Water fountain",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water",
+    "station": "Water or Sink or Desktop, Console and Mobile versions or Water fountain",
     "materials": [
       {
         "id": "bottle",
@@ -1411,8 +1294,9 @@
   {
     "id": "bouncy-grenade",
     "name": "Bouncy Grenade",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bouncy_Grenade",
+    "station": "By Hand",
     "materials": [
       {
         "id": "grenade",
@@ -1441,19 +1325,6 @@
     ]
   },
   {
-    "id": "bowl",
-    "name": "Bowl",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Bowl",
-    "materials": [
-      {
-        "id": "clay-block",
-        "name": "Clay Block",
-        "qty": 2
-      }
-    ]
-  },
-  {
     "id": "brain-of-confusion",
     "name": "Brain of Confusion",
     "source": "Dropped by the Brain of Cthulhu's Treasure Bag in Expert Mode",
@@ -1477,14 +1348,7 @@
     "id": "broken-bat-wing",
     "name": "Broken Bat Wing",
     "source": "Dropped by Vampires during a Solar Eclipse",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Bat_Wing",
-    "materials": [
-      {
-        "id": "soul-of-flight",
-        "name": "Soul of Flight",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Bat_Wing"
   },
   {
     "id": "broken-biome-blade",
@@ -1524,19 +1388,7 @@
     "id": "broken-hero-sword",
     "name": "Broken Hero Sword",
     "source": "Dropped by Mothrons",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Hero_Sword",
-    "materials": [
-      {
-        "id": "true-nights-edge",
-        "name": "True Night's Edge",
-        "qty": 1
-      },
-      {
-        "id": "true-excalibur",
-        "name": "True Excalibur",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Hero_Sword"
   },
   {
     "id": "bullet-filled-shotgun",
@@ -1565,8 +1417,9 @@
   {
     "id": "bundle-of-balloons",
     "name": "Bundle of Balloons",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "cloud-in-a-balloon",
@@ -1595,14 +1448,7 @@
     "id": "butterfly-dust",
     "name": "Butterfly Dust",
     "source": "Dropped by Moths in the Underground Jungle",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust",
-    "materials": [
-      {
-        "id": "soul-of-flight",
-        "name": "Soul of Flight",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
   },
   {
     "id": "buzzkill",
@@ -1633,6 +1479,7 @@
     "name": "Cactus",
     "source": "Obtained from harvesting Cactus plants",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus",
+    "station": "By Hand",
     "materials": [
       {
         "id": "cactus-platform",
@@ -1680,8 +1527,9 @@
   {
     "id": "celestial-emblem",
     "name": "Celestial Emblem",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "avenger-emblem",
@@ -1693,8 +1541,9 @@
   {
     "id": "celestial-stone",
     "name": "Celestial Stone",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "sun-stone",
@@ -1709,19 +1558,6 @@
     ]
   },
   {
-    "id": "chain",
-    "name": "Chain",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Chain",
-    "materials": [
-      {
-        "id": "any-iron-bar",
-        "name": "Any Iron Bar",
-        "qty": 1
-      }
-    ]
-  },
-  {
     "id": "chain-gun",
     "name": "Chain Gun",
     "source": "Dropped by Santa-NK1 during the Frost Moon event with a 6",
@@ -1730,8 +1566,9 @@
   {
     "id": "charm-of-myths",
     "name": "Charm of Myths",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "band-of-regeneration",
@@ -1748,8 +1585,9 @@
   {
     "id": "chlorophyte-bar",
     "name": "Chlorophyte Bar",
-    "source": "Crafted",
+    "source": "Crafted at an Adamantite Forge or Titanium Forge",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar",
+    "station": "Adamantite Forge or Titanium Forge",
     "materials": [
       {
         "id": "chlorophyte-ore",
@@ -1767,7 +1605,7 @@
   {
     "id": "chlorophyte-partisan",
     "name": "Chlorophyte Partisan",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Partisan",
     "materials": [
       {
@@ -1775,7 +1613,8 @@
         "name": "Chlorophyte Bar",
         "qty": 12
       }
-    ]
+    ],
+    "station": "Mythril Anvil or Orichalcum Anvil"
   },
   {
     "id": "cinder-blossom-staff",
@@ -1858,20 +1697,14 @@
     "id": "climbing-claws",
     "name": "Climbing Claws",
     "source": "Found in surface chests",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
-    "materials": [
-      {
-        "id": "shoe-spikes",
-        "name": "Shoe Spikes",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
   },
   {
     "id": "cloud",
     "name": "Cloud",
     "source": "Found in stacks in Skyware Chests",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud",
+    "station": "By Hand",
     "materials": [
       {
         "id": "cloud-platform",
@@ -1889,8 +1722,9 @@
   {
     "id": "cloud-in-a-balloon",
     "name": "Cloud in a Balloon",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "cloud-in-a-bottle",
@@ -1913,8 +1747,9 @@
   {
     "id": "cobalt-bar",
     "name": "Cobalt Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "cobalt-ore",
@@ -1926,40 +1761,28 @@
   {
     "id": "cobalt-ore",
     "name": "Cobalt Ore",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Ore",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 5
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Ore"
   },
   {
     "id": "cobalt-shield",
     "name": "Cobalt Shield",
     "source": "Found in the Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield",
-    "materials": [
-      {
-        "id": "obsidian-skull",
-        "name": "Obsidian Skull",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
   },
   {
     "id": "cobweb",
     "name": "Cobweb",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
+    "source": "Crafted at a Loom or Ecto Mist or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb",
+    "station": "Loom or Ecto Mist or Desktop, Console and Mobile versions"
   },
   {
     "id": "cog",
     "name": "Cog",
     "source": "Purchased from Steampunker for 7 SC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cog"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cog",
+    "station": "By Hand"
   },
   {
     "id": "coin-of-deceit",
@@ -2032,14 +1855,7 @@
     "id": "confetti",
     "name": "Confetti",
     "source": "Dropped by Confetti Slimes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Confetti",
-    "materials": [
-      {
-        "id": "glass",
-        "name": "Glass",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Confetti"
   },
   {
     "id": "confetti-cannon",
@@ -2054,49 +1870,10 @@
     "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
   },
   {
-    "id": "copper-bar",
-    "name": "Copper Bar",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar",
-    "materials": [
-      {
-        "id": "copper-ore",
-        "name": "Copper Ore",
-        "qty": 3
-      }
-    ]
-  },
-  {
-    "id": "copper-ore",
-    "name": "Copper Ore",
-    "source": "Dropped by slimes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Ore"
-  },
-  {
-    "id": "copper-shortsword",
-    "name": "Copper Shortsword",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword",
-    "materials": [
-      {
-        "id": "copper-bar",
-        "name": "Copper Bar",
-        "qty": 5
-      }
-    ]
-  },
-  {
     "id": "coral",
     "name": "Coral",
     "source": "Found in the Ocean biomes at the ends of the world",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Coral",
-    "materials": [
-      {
-        "id": "fallen-star",
-        "name": "Fallen Star",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Coral"
   },
   {
     "id": "core-of-calamity",
@@ -2219,46 +1996,17 @@
     ]
   },
   {
-    "id": "crimsand-block",
-    "name": "Crimsand Block",
-    "source": "Found in vast quantities in Desert biomes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Crimsand_Block",
-    "materials": [
-      {
-        "id": "sand-block",
-        "name": "Sand Block",
-        "qty": 1
-      },
-      {
-        "id": "dirt-block",
-        "name": "Dirt Block",
-        "qty": 1
-      }
-    ]
-  },
-  {
     "id": "crimson-tigerfish",
     "name": "Crimson Tigerfish",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Tigerfish",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "daybloom",
-        "name": "Daybloom",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Tigerfish"
   },
   {
     "id": "crimtane-bar",
     "name": "Crimtane Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "crimtane-ore",
@@ -2277,14 +2025,7 @@
     "id": "cross-necklace",
     "name": "Cross Necklace",
     "source": "Dropped by Mimics",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace",
-    "materials": [
-      {
-        "id": "star-cloak",
-        "name": "Star Cloak",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
   },
   {
     "id": "crown-jewel",
@@ -2322,20 +2063,14 @@
     "id": "crystal-shard",
     "name": "Crystal Shard",
     "source": "Found in the Underground Hallow",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard",
-    "materials": [
-      {
-        "id": "blue-phaseblade",
-        "name": "Blue Phaseblade",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
   },
   {
     "id": "crystal-storm",
     "name": "Crystal Storm",
-    "source": "Crafted",
+    "source": "Crafted at a Bookcase",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Storm",
+    "station": "Bookcase",
     "materials": [
       {
         "id": "spell-tome",
@@ -2388,14 +2123,7 @@
     "id": "cursed-flame",
     "name": "Cursed Flame",
     "source": "Dropped by World Feeders",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame",
-    "materials": [
-      {
-        "id": "wooden-arrow",
-        "name": "Wooden Arrow",
-        "qty": 150
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
   },
   {
     "id": "daedalus-stormbow",
@@ -2406,8 +2134,9 @@
   {
     "id": "dao-of-pow",
     "name": "Dao of Pow",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Dao_of_Pow",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "dark-shard",
@@ -2471,24 +2200,7 @@
     "id": "dark-shard",
     "name": "Dark Shard",
     "source": "Dropped by Dark Mummies and Shadow Mummies",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard",
-    "materials": [
-      {
-        "id": "light-shard",
-        "name": "Light Shard",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-night",
-        "name": "Soul of Night",
-        "qty": 7
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 7
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard"
   },
   {
     "id": "darksun-fragment",
@@ -2499,20 +2211,8 @@
   {
     "id": "daybloom",
     "name": "Daybloom",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "lens",
-        "name": "Lens",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
   },
   {
     "id": "deadshot-brooch",
@@ -2566,20 +2266,8 @@
   {
     "id": "deathweed",
     "name": "Deathweed",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "rotten-chunk",
-        "name": "Rotten Chunk",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
   },
   {
     "id": "deific-amulet",
@@ -2613,8 +2301,9 @@
   {
     "id": "demon-bow",
     "name": "Demon Bow",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Bow",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "demonite-bar",
@@ -2626,8 +2315,9 @@
   {
     "id": "demonite-bar",
     "name": "Demonite Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "demonite-ore",
@@ -2640,14 +2330,7 @@
     "id": "demonite-ore",
     "name": "Demonite Ore",
     "source": "Dropped by the Eater of Worlds",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore",
-    "materials": [
-      {
-        "id": "lens",
-        "name": "Lens",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore"
   },
   {
     "id": "depth-cells",
@@ -2664,8 +2347,9 @@
   {
     "id": "destroyer-emblem",
     "name": "Destroyer Emblem",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "avenger-emblem",
@@ -2683,14 +2367,7 @@
     "id": "diamond",
     "name": "Diamond",
     "source": "Found in its own Gemstone Cave mini biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
   },
   {
     "id": "dimension-tearing-disk",
@@ -2701,8 +2378,9 @@
   {
     "id": "dirt-block",
     "name": "Dirt Block",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Dirt_Block",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "dirt-wall",
@@ -2714,8 +2392,9 @@
   {
     "id": "dirt-wall",
     "name": "Dirt Wall",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Dirt_Wall",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "dirt-block",
@@ -2733,20 +2412,8 @@
   {
     "id": "double-cod",
     "name": "Double Cod",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Double_Cod",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Double_Cod"
   },
   {
     "id": "dragons-breath",
@@ -2794,19 +2461,7 @@
     "id": "ectoplasm",
     "name": "Ectoplasm",
     "source": "Dropped by Dungeon Spirits in the Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm",
-    "materials": [
-      {
-        "id": "silk",
-        "name": "Silk",
-        "qty": 20
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm"
   },
   {
     "id": "effulgent-feather",
@@ -2860,14 +2515,7 @@
     "id": "empty-bullet",
     "name": "Empty Bullet",
     "source": "Purchased from Arms Dealer for 5 CC",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Empty_Bullet",
-    "materials": [
-      {
-        "id": "explosive-powder",
-        "name": "Explosive Powder",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Empty_Bullet"
   },
   {
     "id": "empyrean-knives",
@@ -2925,8 +2573,9 @@
   {
     "id": "enchanted-boomerang",
     "name": "Enchanted Boomerang",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang",
+    "station": "By Hand",
     "materials": [
       {
         "id": "wooden-boomerang",
@@ -2943,35 +2592,8 @@
   {
     "id": "enchanted-sword",
     "name": "Enchanted Sword",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword",
-    "materials": [
-      {
-        "id": "terra-blade",
-        "name": "Terra Blade",
-        "qty": 1
-      },
-      {
-        "id": "the-horsemans-blade",
-        "name": "The Horseman's Blade",
-        "qty": 1
-      },
-      {
-        "id": "starfury",
-        "name": "Starfury",
-        "qty": 1
-      },
-      {
-        "id": "bee-keeper",
-        "name": "Bee Keeper",
-        "qty": 1
-      },
-      {
-        "id": "copper-shortsword",
-        "name": "Copper Shortsword",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword"
   },
   {
     "id": "endothermic-energy",
@@ -3063,8 +2685,9 @@
   {
     "id": "excalibur",
     "name": "Excalibur",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Excalibur",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "hallowed-bar",
@@ -3096,8 +2719,9 @@
   {
     "id": "exploding-bullet",
     "name": "Exploding Bullet",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "empty-bullet",
@@ -3115,14 +2739,7 @@
     "id": "explosive-powder",
     "name": "Explosive Powder",
     "source": "Purchased from Demolitionist for 12 SC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Powder",
-    "materials": [
-      {
-        "id": "empty-bullet",
-        "name": "Empty Bullet",
-        "qty": 50
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Powder"
   },
   {
     "id": "eye-of-night",
@@ -3162,14 +2779,7 @@
     "id": "eye-of-the-golem",
     "name": "Eye of the Golem",
     "source": "Dropped by Golem",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
-    "materials": [
-      {
-        "id": "avenger-emblem",
-        "name": "Avenger Emblem",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
   },
   {
     "id": "eye-of-the-storm",
@@ -3209,15 +2819,8 @@
   {
     "id": "fallen-star",
     "name": "Fallen Star",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
-    "materials": [
-      {
-        "id": "glass",
-        "name": "Glass",
-        "qty": 10
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
   },
   {
     "id": "fantasy-talisman",
@@ -3247,32 +2850,13 @@
     "id": "fast-clock",
     "name": "Fast Clock",
     "source": "Dropped by Pixies",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Fast_Clock",
-    "materials": [
-      {
-        "id": "trifold-map",
-        "name": "Trifold Map",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Fast_Clock"
   },
   {
     "id": "feather",
     "name": "Feather",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Feather",
-    "materials": [
-      {
-        "id": "soul-of-flight",
-        "name": "Soul of Flight",
-        "qty": 20
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 15
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
   },
   {
     "id": "feller-of-evergreens",
@@ -3297,20 +2881,14 @@
     "id": "feral-claws",
     "name": "Feral Claws",
     "source": "Found in Jungle Crates",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws",
-    "materials": [
-      {
-        "id": "titan-glove",
-        "name": "Titan Glove",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
   },
   {
     "id": "fire-gauntlet",
     "name": "Fire Gauntlet",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "magma-stone",
@@ -3327,30 +2905,8 @@
   {
     "id": "fireblossom",
     "name": "Fireblossom",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Fireblossom",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "blinkroot",
-        "name": "Blinkroot",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      },
-      {
-        "id": "grass-seeds",
-        "name": "Grass Seeds",
-        "qty": 5
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Fireblossom"
   },
   {
     "id": "fishbone-boomerang",
@@ -3399,25 +2955,8 @@
   {
     "id": "flarefin-koi",
     "name": "Flarefin Koi",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Flarefin_Koi",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "obsidifish",
-        "name": "Obsidifish",
-        "qty": 2
-      },
-      {
-        "id": "fireblossom",
-        "name": "Fireblossom",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Flarefin_Koi"
   },
   {
     "id": "flarewing-bow",
@@ -3470,15 +3009,8 @@
   {
     "id": "flower-boots",
     "name": "Flower Boots",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Boots",
-    "materials": [
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Boots"
   },
   {
     "id": "flower-pow",
@@ -3490,14 +3022,7 @@
     "id": "forbidden-fragment",
     "name": "Forbidden Fragment",
     "source": "Dropped by Sand Elementals",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Forbidden_Fragment",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 150
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Forbidden_Fragment"
   },
   {
     "id": "forbidden-oathblade",
@@ -3598,8 +3123,9 @@
   {
     "id": "frog-gear",
     "name": "Frog Gear",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Frog_Gear",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "tiger-climbing-gear",
@@ -3676,8 +3202,9 @@
   {
     "id": "frostspark-boots",
     "name": "Frostspark Boots",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "lightning-boots",
@@ -3694,8 +3221,9 @@
   {
     "id": "frozen-shield",
     "name": "Frozen Shield",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "paladins-shield",
@@ -3713,14 +3241,7 @@
     "id": "frozen-turtle-shell",
     "name": "Frozen Turtle Shell",
     "source": "Dropped by Ice Tortoises",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
-    "materials": [
-      {
-        "id": "paladins-shield",
-        "name": "Paladin's Shield",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell"
   },
   {
     "id": "fuel-cell-bundle",
@@ -3800,20 +3321,14 @@
     "id": "gel",
     "name": "Gel",
     "source": "Dropped by most slimes and Slimed Zombies",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 2
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Gel"
   },
   {
     "id": "gender-change-potion",
     "name": "Gender Change Potion",
-    "source": "Crafted",
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Gender_Change_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "bottled-water",
@@ -3930,8 +3445,9 @@
   {
     "id": "glass",
     "name": "Glass",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Glass",
+    "station": "By Hand",
     "materials": [
       {
         "id": "glass-platform",
@@ -3968,14 +3484,16 @@
   {
     "id": "glowing-mushroom",
     "name": "Glowing Mushroom",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom",
+    "station": "By Hand"
   },
   {
     "id": "gold-bar",
     "name": "Gold Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "gold-ore",
@@ -3987,8 +3505,9 @@
   {
     "id": "gold-broadsword",
     "name": "Gold Broadsword",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Broadsword",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "gold-bar",
@@ -4002,24 +3521,6 @@
     "name": "Gold Ore",
     "source": "Dropped by slimes",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Ore"
-  },
-  {
-    "id": "goldfish",
-    "name": "Goldfish",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Goldfish",
-    "materials": [
-      {
-        "id": "bowl",
-        "name": "Bowl",
-        "qty": 1
-      },
-      {
-        "id": "mushroom",
-        "name": "Mushroom",
-        "qty": 1
-      }
-    ]
   },
   {
     "id": "grand-gelatin",
@@ -4084,19 +3585,15 @@
     "id": "granite-block",
     "name": "Granite Block",
     "source": "Dropped by Granite Elementals and Granite Golems",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Granite_Block"
-  },
-  {
-    "id": "grass-seeds",
-    "name": "Grass Seeds",
-    "source": "Purchased from Dryad for 20 CC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Grass_Seeds"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Granite_Block",
+    "station": "Work Bench"
   },
   {
     "id": "greater-healing-potion",
     "name": "Greater Healing Potion",
-    "source": "Crafted",
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Greater_Healing_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "bottled-water",
@@ -4119,24 +3616,7 @@
     "id": "greater-mana-potion",
     "name": "Greater Mana Potion",
     "source": "Dropped by all Biome Mimics except the Jungle Mimic",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Greater_Mana_Potion",
-    "materials": [
-      {
-        "id": "fallen-star",
-        "name": "Fallen Star",
-        "qty": 1
-      },
-      {
-        "id": "crystal-shard",
-        "name": "Crystal Shard",
-        "qty": 3
-      },
-      {
-        "id": "unicorn-horn",
-        "name": "Unicorn Horn",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Greater_Mana_Potion"
   },
   {
     "id": "greatsword-of-judgement",
@@ -4171,8 +3651,9 @@
   {
     "id": "gungnir",
     "name": "Gungnir",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Gungnir",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "hallowed-bar",
@@ -4190,8 +3671,9 @@
   {
     "id": "hallowed-repeater",
     "name": "Hallowed Repeater",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Repeater",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "hallowed-bar",
@@ -4204,14 +3686,7 @@
     "id": "handgun",
     "name": "Handgun",
     "source": "Found in Dungeon Crates or Stockade Crates",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Handgun",
-    "materials": [
-      {
-        "id": "hellstone-bar",
-        "name": "Hellstone Bar",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Handgun"
   },
   {
     "id": "harpy-ring",
@@ -4260,8 +3735,9 @@
   {
     "id": "hellstone-bar",
     "name": "Hellstone Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Hellforge",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar",
+    "station": "Hellforge",
     "materials": [
       {
         "id": "hellstone",
@@ -4284,33 +3760,14 @@
   {
     "id": "hemopiranha",
     "name": "Hemopiranha",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Hemopiranha",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "deathweed",
-        "name": "Deathweed",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Hemopiranha"
   },
   {
     "id": "hercules-beetle",
     "name": "Hercules Beetle",
     "source": "Purchased from Witch Doctor for 40 GC if he is spoken to in the Jungle after Plantera has been defeated",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle",
-    "materials": [
-      {
-        "id": "necromantic-scroll",
-        "name": "Necromantic Scroll",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
   },
   {
     "id": "heresy",
@@ -4322,75 +3779,19 @@
     "id": "hermes-boots",
     "name": "Hermes Boots",
     "source": "Found in Chests in the Underground and Cavern layers",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots",
-    "materials": [
-      {
-        "id": "rocket-boots",
-        "name": "Rocket Boots",
-        "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "hive",
-    "name": "Hive",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Hive"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
   },
   {
     "id": "holy-water",
     "name": "Holy Water",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Water",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 10
-      },
-      {
-        "id": "crimsand-block",
-        "name": "Crimsand Block",
-        "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "honey-balloon",
-    "name": "Honey Balloon",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Balloon",
-    "materials": [
-      {
-        "id": "shiny-red-balloon",
-        "name": "Shiny Red Balloon",
-        "qty": 1
-      },
-      {
-        "id": "honey-comb",
-        "name": "Honey Comb",
-        "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "honey-block",
-    "name": "Honey Block",
     "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Block"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Water"
   },
   {
     "id": "honey-comb",
     "name": "Honey Comb",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
-    "materials": [
-      {
-        "id": "star-cloak",
-        "name": "Star Cloak",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
   },
   {
     "id": "honey-dew",
@@ -4426,14 +3827,7 @@
     "id": "ice-boomerang",
     "name": "Ice Boomerang",
     "source": "Obtained from Frozen and Boreal Crates",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Boomerang",
-    "materials": [
-      {
-        "id": "enchanted-boomerang",
-        "name": "Enchanted Boomerang",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Boomerang"
   },
   {
     "id": "ice-sickle",
@@ -4444,46 +3838,20 @@
   {
     "id": "ice-skates",
     "name": "Ice Skates",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates",
-    "materials": [
-      {
-        "id": "jellyfish-diving-gear",
-        "name": "Jellyfish Diving Gear",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
   },
   {
     "id": "ice-torch",
     "name": "Ice Torch",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Torch",
-    "materials": [
-      {
-        "id": "torch",
-        "name": "Torch",
-        "qty": 10
-      },
-      {
-        "id": "sapphire",
-        "name": "Sapphire",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Torch"
   },
   {
     "id": "ichor",
     "name": "Ichor",
     "source": "Dropped by Ichor Stickers in the Underground Crimson and the Tainted Ghoul in the Crimson Underground Desert",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
   },
   {
     "id": "igneous-exaltation",
@@ -4508,25 +3876,14 @@
     "id": "illegal-gun-parts",
     "name": "Illegal Gun Parts",
     "source": "Purchased from Arms Dealer for 20 GC at night",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts",
-    "materials": [
-      {
-        "id": "any-iron-bar",
-        "name": "Any Iron Bar",
-        "qty": 20
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
   },
   {
     "id": "imp-staff",
     "name": "Imp Staff",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "hellstone-bar",
@@ -4629,8 +3986,9 @@
   {
     "id": "iron-bar",
     "name": "Iron Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "iron-ore",
@@ -4689,51 +4047,10 @@
     ]
   },
   {
-    "id": "jellyfish-diving-gear",
-    "name": "Jellyfish Diving Gear",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Jellyfish_Diving_Gear",
-    "materials": [
-      {
-        "id": "diving-gear",
-        "name": "Diving Gear",
-        "qty": 1
-      },
-      {
-        "id": "jellyfish-necklace",
-        "name": "Jellyfish Necklace",
-        "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "jungle-grass-seeds",
-    "name": "Jungle Grass Seeds",
-    "source": "Obtained from using Poo on an Extractinator",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Grass_Seeds"
-  },
-  {
     "id": "jungle-spores",
     "name": "Jungle Spores",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores",
-    "materials": [
-      {
-        "id": "rich-mahogany",
-        "name": "Rich Mahogany",
-        "qty": 8
-      },
-      {
-        "id": "stinger",
-        "name": "Stinger",
-        "qty": 12
-      },
-      {
-        "id": "vine",
-        "name": "Vine",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
   },
   {
     "id": "katana",
@@ -4792,25 +4109,14 @@
     "id": "lava-charm",
     "name": "Lava Charm",
     "source": "Found in Chests located in the cavern layer as well as obtained from Hellstone Crates and Obsidian Crates with a 1/20",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm",
-    "materials": [
-      {
-        "id": "obsidian-water-walking-boots",
-        "name": "Obsidian Water Walking Boots",
-        "qty": 1
-      },
-      {
-        "id": "obsidian-rose",
-        "name": "Obsidian Rose",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm"
   },
   {
     "id": "lava-waders",
     "name": "Lava Waders",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "obsidian-water-walking-boots",
@@ -4832,8 +4138,9 @@
   {
     "id": "leather",
     "name": "Leather",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Leather",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "rotten-chunk",
@@ -4845,15 +4152,8 @@
   {
     "id": "lemon",
     "name": "Lemon",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Lemon",
-    "materials": [
-      {
-        "id": "bottle",
-        "name": "Bottle",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Lemon"
   },
   {
     "id": "lemon-nade",
@@ -4878,25 +4178,14 @@
     "id": "lens",
     "name": "Lens",
     "source": "Dropped by Demon Eyes and Wandering Eyes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Lens",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "daybloom",
-        "name": "Daybloom",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
   },
   {
     "id": "lesser-healing-potion",
     "name": "Lesser Healing Potion",
-    "source": "Crafted",
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Healing_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "mushroom",
@@ -4954,15 +4243,8 @@
   {
     "id": "life-crystal",
     "name": "Life Crystal",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal",
-    "materials": [
-      {
-        "id": "chain",
-        "name": "Chain",
-        "qty": 4
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
   },
   {
     "id": "life-jelly",
@@ -4982,30 +4264,14 @@
     "id": "light-shard",
     "name": "Light Shard",
     "source": "Dropped by Light Mummies and Spectral Mummies",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Shard",
-    "materials": [
-      {
-        "id": "dark-shard",
-        "name": "Dark Shard",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-night",
-        "name": "Soul of Night",
-        "qty": 7
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 7
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Shard"
   },
   {
     "id": "lights-bane",
     "name": "Light's Bane",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Light%27s_Bane",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "demonite-bar",
@@ -5017,8 +4283,9 @@
   {
     "id": "lightning-boots",
     "name": "Lightning Boots",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "spectre-boots",
@@ -5079,14 +4346,7 @@
     "id": "living-fire-block",
     "name": "Living Fire Block",
     "source": "Dropped by any enemy killed in the Underworld during Hardmode",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Living_Fire_Block",
-    "materials": [
-      {
-        "id": "cursed-flame",
-        "name": "Cursed Flame",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Living_Fire_Block"
   },
   {
     "id": "living-shard",
@@ -5098,14 +4358,7 @@
     "id": "lucky-horseshoe",
     "name": "Lucky Horseshoe",
     "source": "Obtained from Sky Crates and Azure Crates",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe",
-    "materials": [
-      {
-        "id": "honey-balloon",
-        "name": "Honey Balloon",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
   },
   {
     "id": "lucrecia",
@@ -5145,14 +4398,16 @@
   {
     "id": "luminite-bar",
     "name": "Luminite Bar",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "luminite-bullet",
     "name": "Luminite Bullet",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "lunar-flare",
@@ -5217,8 +4472,9 @@
   {
     "id": "magic-mirror",
     "name": "Magic Mirror",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Mirror",
+    "station": "Furnace",
     "materials": [
       {
         "id": "glass",
@@ -5240,33 +4496,14 @@
   {
     "id": "magic-missile",
     "name": "Magic Missile",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile",
-    "materials": [
-      {
-        "id": "light-shard",
-        "name": "Light Shard",
-        "qty": 2
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 16
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile"
   },
   {
     "id": "magma-stone",
     "name": "Magma Stone",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
-    "materials": [
-      {
-        "id": "mechanical-glove",
-        "name": "Mechanical Glove",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
   },
   {
     "id": "magna-cannon",
@@ -5359,8 +4596,9 @@
   {
     "id": "mana-crystal",
     "name": "Mana Crystal",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal",
+    "station": "By Hand",
     "materials": [
       {
         "id": "fallen-star",
@@ -5372,8 +4610,9 @@
   {
     "id": "mana-flower",
     "name": "Mana Flower",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "natures-gift",
@@ -5392,6 +4631,7 @@
     "name": "Mana Potion",
     "source": "Purchased from Merchant in Hardmode for 2 SC 50 CC",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "lesser-mana-potion",
@@ -5408,8 +4648,9 @@
   {
     "id": "mana-regeneration-band",
     "name": "Mana Regeneration Band",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "band-of-starpower",
@@ -5457,7 +4698,8 @@
     "id": "marble-block",
     "name": "Marble Block",
     "source": "Found in Marble Caves",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Marble_Block"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Marble_Block",
+    "station": "Work Bench"
   },
   {
     "id": "maw-of-infinity",
@@ -5468,8 +4710,9 @@
   {
     "id": "mechanical-glove",
     "name": "Mechanical Glove",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "power-glove",
@@ -5515,8 +4758,9 @@
   {
     "id": "megashark",
     "name": "Megashark",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Megashark",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "minishark",
@@ -5569,8 +4813,9 @@
   {
     "id": "meteorite-bar",
     "name": "Meteorite Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "meteorite",
@@ -5582,25 +4827,8 @@
   {
     "id": "minishark",
     "name": "Minishark",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark",
-    "materials": [
-      {
-        "id": "illegal-gun-parts",
-        "name": "Illegal Gun Parts",
-        "qty": 1
-      },
-      {
-        "id": "shark-fin",
-        "name": "Shark Fin",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 20
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark"
   },
   {
     "id": "miracle-matter",
@@ -5694,8 +4922,9 @@
   {
     "id": "molotov-cocktail",
     "name": "Molotov Cocktail",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Molotov_Cocktail",
+    "station": "By Hand",
     "materials": [
       {
         "id": "ale",
@@ -5728,8 +4957,9 @@
   {
     "id": "molten-fury",
     "name": "Molten Fury",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Fury",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "hellstone-bar",
@@ -5765,21 +4995,15 @@
   {
     "id": "moon-charm",
     "name": "Moon Charm",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Charm",
-    "materials": [
-      {
-        "id": "neptunes-shell",
-        "name": "Neptune's Shell",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Charm"
   },
   {
     "id": "moon-shell",
     "name": "Moon Shell",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "moon-charm",
@@ -5797,14 +5021,7 @@
     "id": "moon-stone",
     "name": "Moon Stone",
     "source": "Dropped by Vampires during the Solar Eclipse event",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-    "materials": [
-      {
-        "id": "sun-stone",
-        "name": "Sun Stone",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone"
   },
   {
     "id": "moon-walkers",
@@ -5833,20 +5050,8 @@
   {
     "id": "moonglow",
     "name": "Moonglow",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "double-cod",
-        "name": "Double Cod",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
   },
   {
     "id": "mossy-stone",
@@ -5894,8 +5099,9 @@
   {
     "id": "mug",
     "name": "Mug",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Mug",
+    "station": "Furnace",
     "materials": [
       {
         "id": "glass",
@@ -5908,37 +5114,13 @@
     "id": "muramasa",
     "name": "Muramasa",
     "source": "Found in the Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa",
-    "materials": [
-      {
-        "id": "lights-bane",
-        "name": "Light's Bane",
-        "qty": 1
-      },
-      {
-        "id": "blade-of-grass",
-        "name": "Blade of Grass",
-        "qty": 1
-      },
-      {
-        "id": "volcano",
-        "name": "Volcano",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa"
   },
   {
     "id": "mushroom",
     "name": "Mushroom",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom",
-    "materials": [
-      {
-        "id": "goldfish",
-        "name": "Goldfish",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom"
   },
   {
     "id": "musket",
@@ -5949,15 +5131,8 @@
   {
     "id": "musket-ball",
     "name": "Musket Ball",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball",
-    "materials": [
-      {
-        "id": "chlorophyte-bar",
-        "name": "Chlorophyte Bar",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
   },
   {
     "id": "mysterious-circuitry",
@@ -5969,14 +5144,7 @@
     "id": "nanites",
     "name": "Nanites",
     "source": "Purchased from Cyborg for 15 SC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Nanites",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Nanites"
   },
   {
     "id": "nano-purge",
@@ -6005,15 +5173,8 @@
   {
     "id": "natures-gift",
     "name": "Nature's Gift",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift",
-    "materials": [
-      {
-        "id": "mana-potion",
-        "name": "Mana Potion",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
   },
   {
     "id": "navystone",
@@ -6032,27 +5193,22 @@
   {
     "id": "nebula-arcanum",
     "name": "Nebula Arcanum",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "nebula-fragment",
     "name": "Nebula Fragment",
     "source": "Dropped by the Nebula Pillar during the Lunar Events in stacks of 12\u201360 / 24\u2013100",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "necromantic-scroll",
     "name": "Necromantic Scroll",
     "source": "Dropped by the Mourning Wood during the Pumpkin Moon event with a 2",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll",
-    "materials": [
-      {
-        "id": "hercules-beetle",
-        "name": "Hercules Beetle",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
   },
   {
     "id": "necroplasm",
@@ -6069,21 +5225,15 @@
   {
     "id": "neptunes-shell",
     "name": "Neptune's Shell",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Neptune%27s_Shell",
-    "materials": [
-      {
-        "id": "moon-charm",
-        "name": "Moon Charm",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Neptune%27s_Shell"
   },
   {
     "id": "nights-edge",
     "name": "Night's Edge",
-    "source": "Crafted",
+    "source": "Crafted at a Demon Altar or Crimson Altar",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Night%27s_Edge",
+    "station": "Demon Altar or Crimson Altar",
     "materials": [
       {
         "id": "lights-bane",
@@ -6197,27 +5347,22 @@
   {
     "id": "obsidian",
     "name": "Obsidian",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+    "source": "Crafted at a Work Bench",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian",
+    "station": "Work Bench"
   },
   {
     "id": "obsidian-rose",
     "name": "Obsidian Rose",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Rose",
-    "materials": [
-      {
-        "id": "obsidian-water-walking-boots",
-        "name": "Obsidian Water Walking Boots",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Rose"
   },
   {
     "id": "obsidian-skull",
     "name": "Obsidian Skull",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+    "station": "Furnace",
     "materials": [
       {
         "id": "obsidian",
@@ -6229,8 +5374,9 @@
   {
     "id": "obsidian-water-walking-boots",
     "name": "Obsidian Water Walking Boots",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Water_Walking_Boots",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "water-walking-boots",
@@ -6247,25 +5393,8 @@
   {
     "id": "obsidifish",
     "name": "Obsidifish",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidifish",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "flarefin-koi",
-        "name": "Flarefin Koi",
-        "qty": 1
-      },
-      {
-        "id": "fireblossom",
-        "name": "Fireblossom",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidifish"
   },
   {
     "id": "old-lord-claymore",
@@ -6276,8 +5405,9 @@
   {
     "id": "onyx-blaster",
     "name": "Onyx Blaster",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Onyx_Blaster",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "shotgun",
@@ -6419,20 +5549,14 @@
     "id": "paladins-shield",
     "name": "Paladin's Shield",
     "source": "Dropped by Paladins in the Hardmode Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Shield",
-    "materials": [
-      {
-        "id": "frozen-turtle-shell",
-        "name": "Frozen Turtle Shell",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Shield"
   },
   {
     "id": "palladium-bar",
     "name": "Palladium Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "palladium-ore",
@@ -6450,14 +5574,16 @@
   {
     "id": "palm-wood",
     "name": "Palm Wood",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood",
+    "station": "By Hand"
   },
   {
     "id": "panic-necklace",
     "name": "Panic Necklace",
     "source": "Fished in the Cri",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+    "station": "Tinkerer's Workshop or Ecto Mist or Desktop, Console and Mobile versions",
     "materials": [
       {
         "id": "band-of-starpower",
@@ -6474,8 +5600,9 @@
   {
     "id": "papyrus-scarab",
     "name": "Papyrus Scarab",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "necromantic-scroll",
@@ -6532,21 +5659,15 @@
   {
     "id": "phantasm",
     "name": "Phantasm",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "philosophers-stone",
     "name": "Philosopher's Stone",
     "source": "Dropped by Mimics",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone",
-    "materials": [
-      {
-        "id": "band-of-regeneration",
-        "name": "Band of Regeneration",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
   },
   {
     "id": "photosynthesis",
@@ -6600,14 +5721,7 @@
     "id": "pink-gel",
     "name": "Pink Gel",
     "source": "Dropped by Pinky in stacks of 25\u201350",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Gel",
-    "materials": [
-      {
-        "id": "bomb",
-        "name": "Bomb",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Gel"
   },
   {
     "id": "piranha-gun",
@@ -6619,24 +5733,7 @@
     "id": "pixie-dust",
     "name": "Pixie Dust",
     "source": "Dropped by Pixies",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust",
-    "materials": [
-      {
-        "id": "bell",
-        "name": "Bell",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 8
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
   },
   {
     "id": "plague-cell-canister",
@@ -6678,28 +5775,14 @@
   {
     "id": "plum",
     "name": "Plum",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Plum",
-    "materials": [
-      {
-        "id": "bottle",
-        "name": "Bottle",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Plum"
   },
   {
     "id": "poison-staff",
     "name": "Poison Staff",
     "source": "Dropped by Black Recluses",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Poison_Staff",
-    "materials": [
-      {
-        "id": "chlorophyte-bar",
-        "name": "Chlorophyte Bar",
-        "qty": 14
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Poison_Staff"
   },
   {
     "id": "polaris-parrotfish",
@@ -6724,8 +5807,9 @@
   {
     "id": "power-glove",
     "name": "Power Glove",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "titan-glove",
@@ -6796,25 +5880,8 @@
   {
     "id": "prismite",
     "name": "Prismite",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Prismite",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      },
-      {
-        "id": "waterleaf",
-        "name": "Waterleaf",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Prismite"
   },
   {
     "id": "profaned-partisan",
@@ -6870,6 +5937,7 @@
     "name": "Pumpkin",
     "source": "Obtained from harvesting Pumpkin plants using any weapon or tool",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Pumpkin",
+    "station": "By Hand",
     "materials": [
       {
         "id": "pumpkin-platform",
@@ -7024,8 +6092,9 @@
   {
     "id": "rainbow-rod",
     "name": "Rainbow Rod",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Rod",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "crystal-shard",
@@ -7058,24 +6127,7 @@
     "id": "ranger-emblem",
     "name": "Ranger Emblem",
     "source": "Dropped by the Wall of Flesh",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem",
-    "materials": [
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
   },
   {
     "id": "raven-staff",
@@ -7162,8 +6214,9 @@
   {
     "id": "rich-mahogany",
     "name": "Rich Mahogany",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany",
+    "station": "By Hand",
     "materials": [
       {
         "id": "rich-mahogany-platform",
@@ -7173,23 +6226,10 @@
     ]
   },
   {
-    "id": "rich-mahogany-platform",
-    "name": "Rich Mahogany Platform",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany_Platform"
-  },
-  {
     "id": "rifle-scope",
     "name": "Rifle Scope",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
-    "materials": [
-      {
-        "id": "destroyer-emblem",
-        "name": "Destroyer Emblem",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope"
   },
   {
     "id": "riftburst",
@@ -7224,14 +6264,7 @@
     "id": "rocket-boots",
     "name": "Rocket Boots",
     "source": "Purchased from Goblin Tinkerer for 5 GC",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
-    "materials": [
-      {
-        "id": "hermes-boots",
-        "name": "Hermes Boots",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
   },
   {
     "id": "rocket-iii",
@@ -7283,19 +6316,7 @@
     "id": "rotten-chunk",
     "name": "Rotten Chunk",
     "source": "Dropped by Eaters of Souls",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Rotten_Chunk",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "deathweed",
-        "name": "Deathweed",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Rotten_Chunk"
   },
   {
     "id": "rotten-dogtooth",
@@ -7337,14 +6358,7 @@
     "id": "ruby",
     "name": "Ruby",
     "source": "Found in bulk in its own Gemstone Cave mini biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby",
-    "materials": [
-      {
-        "id": "gold-bar",
-        "name": "Gold Bar",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby"
   },
   {
     "id": "ruin-medallion",
@@ -7427,8 +6441,9 @@
   {
     "id": "sandstorm-in-a-balloon",
     "name": "Sandstorm in a Balloon",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Balloon",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "sandstorm-in-a-bottle",
@@ -7445,27 +6460,29 @@
   {
     "id": "sandstorm-in-a-bottle",
     "name": "Sandstorm in a Bottle",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Bottle"
+    "source": "Obtained from throwing a Pharaoh's Mask into Shimmer",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Bottle",
+    "station": "Crystal Ball",
+    "materials": [
+      {
+        "id": "cloud-in-a-bottle",
+        "name": "Cloud in a Bottle",
+        "qty": 1
+      }
+    ]
   },
   {
     "id": "sapphire",
     "name": "Sapphire",
     "source": "Found in bulk in its own Gemstone Cave mini biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire",
-    "materials": [
-      {
-        "id": "meteorite-bar",
-        "name": "Meteorite Bar",
-        "qty": 15
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire"
   },
   {
     "id": "sapphire-staff",
     "name": "Sapphire Staff",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire_Staff",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "silver-bar",
@@ -7631,37 +6648,13 @@
     "id": "seashell",
     "name": "Seashell",
     "source": "Found in the Ocean biomes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Seashell",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 15
-      },
-      {
-        "id": "coral",
-        "name": "Coral",
-        "qty": 1
-      },
-      {
-        "id": "any-seashell-or-starfish",
-        "name": "Any Seashell or Starfish",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Seashell"
   },
   {
     "id": "shackle",
     "name": "Shackle",
     "source": "Dropped by most kinds of Zombies with a 1/50",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
-    "materials": [
-      {
-        "id": "mana-regeneration-band",
-        "name": "Mana Regeneration Band",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
   },
   {
     "id": "shadow-potion",
@@ -7727,37 +6720,13 @@
     "id": "shark-fin",
     "name": "Shark Fin",
     "source": "Dropped by Sharks and Orcas found in the Ocean biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Fin",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "daybloom",
-        "name": "Daybloom",
-        "qty": 1
-      },
-      {
-        "id": "blinkroot",
-        "name": "Blinkroot",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Fin"
   },
   {
     "id": "shark-tooth-necklace",
     "name": "Shark Tooth Necklace",
     "source": "Dropped by Blood Zombies and Dripplers found during a Blood Moon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-    "materials": [
-      {
-        "id": "honey-comb",
-        "name": "Honey Comb",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
   },
   {
     "id": "shattered-community",
@@ -7801,69 +6770,26 @@
   {
     "id": "shiny-red-balloon",
     "name": "Shiny Red Balloon",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-    "materials": [
-      {
-        "id": "blizzard-in-a-bottle",
-        "name": "Blizzard in a Bottle",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon"
   },
   {
     "id": "shiverthorn",
     "name": "Shiverthorn",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shiverthorn",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "blinkroot",
-        "name": "Blinkroot",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shiverthorn"
   },
   {
     "id": "shoe-spikes",
     "name": "Shoe Spikes",
     "source": "Found in Gold Chests undergroun",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes",
-    "materials": [
-      {
-        "id": "climbing-claws",
-        "name": "Climbing Claws",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
   },
   {
     "id": "shotgun",
     "name": "Shotgun",
     "source": "Purchased from Arms Dealer for 25 GC",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Shotgun",
-    "materials": [
-      {
-        "id": "dark-shard",
-        "name": "Dark Shard",
-        "qty": 2
-      },
-      {
-        "id": "soul-of-night",
-        "name": "Soul of Night",
-        "qty": 10
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Shotgun"
   },
   {
     "id": "shredder",
@@ -7916,8 +6842,9 @@
   {
     "id": "shroomite-bar",
     "name": "Shroomite Bar",
-    "source": "Crafted",
+    "source": "Crafted at an Autohammer",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar",
+    "station": "Autohammer",
     "materials": [
       {
         "id": "chlorophyte-bar",
@@ -7982,8 +6909,9 @@
   {
     "id": "silk",
     "name": "Silk",
-    "source": "Crafted",
+    "source": "Crafted at a Loom",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Silk",
+    "station": "Loom",
     "materials": [
       {
         "id": "cobweb",
@@ -7995,8 +6923,9 @@
   {
     "id": "silver-bar",
     "name": "Silver Bar",
-    "source": "Crafted",
+    "source": "Crafted at a Furnace",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar",
+    "station": "Furnace",
     "materials": [
       {
         "id": "silver-ore",
@@ -8043,8 +6972,9 @@
   {
     "id": "sky-fracture",
     "name": "Sky Fracture",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Sky_Fracture",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "magic-missile",
@@ -8072,8 +7002,9 @@
   {
     "id": "sniper-scope",
     "name": "Sniper Scope",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "rifle-scope",
@@ -8126,14 +7057,16 @@
   {
     "id": "solar-eruption",
     "name": "Solar Eruption",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "solar-fragment",
     "name": "Solar Fragment",
     "source": "Dropped by the Solar Pillar during the Lunar Events in stacks of 12\u201360 / 24\u2013100",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "solar-veil",
@@ -8142,145 +7075,40 @@
     "wikiUrl": "https://calamitymod.wiki.gg/wiki/Solar_Veil"
   },
   {
-    "id": "sorcerer-emblem",
-    "name": "Sorcerer Emblem",
-    "source": "Dropped by the Wall of Flesh",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
-    "materials": [
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
-  },
-  {
     "id": "soul-of-flight",
     "name": "Soul of Flight",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight",
-    "materials": [
-      {
-        "id": "feather",
-        "name": "Feather",
-        "qty": 10
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 15
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
   },
   {
     "id": "soul-of-fright",
     "name": "Soul of Fright",
     "source": "Dropped by Skeletron Prime",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright",
-    "materials": [
-      {
-        "id": "sorcerer-emblem",
-        "name": "Sorcerer Emblem",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
   },
   {
     "id": "soul-of-light",
     "name": "Soul of Light",
     "source": "Dropped by most enemies killed in the Underground Hallow",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light",
-    "materials": [
-      {
-        "id": "feather",
-        "name": "Feather",
-        "qty": 10
-      },
-      {
-        "id": "soul-of-flight",
-        "name": "Soul of Flight",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
   },
   {
     "id": "soul-of-might",
     "name": "Soul of Might",
     "source": "Dropped by The Destroyer",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might",
-    "materials": [
-      {
-        "id": "sorcerer-emblem",
-        "name": "Sorcerer Emblem",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
   },
   {
     "id": "soul-of-night",
     "name": "Soul of Night",
     "source": "Dropped by most enemies killed in the Underground Corruption or Underground Crimson",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night",
-    "materials": [
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 8
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
   },
   {
     "id": "soul-of-sight",
     "name": "Soul of Sight",
     "source": "Dropped by The Twins",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight",
-    "materials": [
-      {
-        "id": "sorcerer-emblem",
-        "name": "Sorcerer Emblem",
-        "qty": 1
-      },
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
   },
   {
     "id": "spear-of-destiny",
@@ -8338,8 +7166,9 @@
   {
     "id": "spectre-bar",
     "name": "Spectre Bar",
-    "source": "Crafted",
+    "source": "Crafted at an Adamantite Forge or Titanium Forge",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar",
+    "station": "Adamantite Forge or Titanium Forge",
     "materials": [
       {
         "id": "chlorophyte-bar",
@@ -8356,8 +7185,9 @@
   {
     "id": "spectre-boots",
     "name": "Spectre Boots",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "hermes-boots",
@@ -8400,19 +7230,7 @@
     "id": "spell-tome",
     "name": "Spell Tome",
     "source": "Purchased from Wizard for 5 GC",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Spell_Tome",
-    "materials": [
-      {
-        "id": "crystal-shard",
-        "name": "Crystal Shard",
-        "qty": 20
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 15
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Spell_Tome"
   },
   {
     "id": "spider-fang",
@@ -8448,8 +7266,9 @@
   {
     "id": "star-cannon",
     "name": "Star Cannon",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "minishark",
@@ -8471,15 +7290,8 @@
   {
     "id": "star-cloak",
     "name": "Star Cloak",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak",
-    "materials": [
-      {
-        "id": "honey-comb",
-        "name": "Honey Comb",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
   },
   {
     "id": "star-tainted-generator",
@@ -8525,37 +7337,22 @@
   {
     "id": "stardust-dragon-staff",
     "name": "Stardust Dragon Staff",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff"
+    "source": "Crafted at an Ancient Manipulator or Desktop, Console and Mobile versions",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "stardust-fragment",
     "name": "Stardust Fragment",
     "source": "Dropped by the Stardust Pillar during the Lunar Events in stacks of 12\u201360 / 24\u2013100",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "starfish",
     "name": "Starfish",
     "source": "Found in the Ocean biomes",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Starfish",
-    "materials": [
-      {
-        "id": "stone-block",
-        "name": "Stone Block",
-        "qty": 15
-      },
-      {
-        "id": "coral",
-        "name": "Coral",
-        "qty": 1
-      },
-      {
-        "id": "any-seashell-or-starfish",
-        "name": "Any Seashell or Starfish",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Starfish"
   },
   {
     "id": "starfleet",
@@ -8590,34 +7387,7 @@
     "id": "starfury",
     "name": "Starfury",
     "source": "Obtained from Sky Crates",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
-    "materials": [
-      {
-        "id": "terra-blade",
-        "name": "Terra Blade",
-        "qty": 1
-      },
-      {
-        "id": "the-horsemans-blade",
-        "name": "The Horseman's Blade",
-        "qty": 1
-      },
-      {
-        "id": "bee-keeper",
-        "name": "Bee Keeper",
-        "qty": 1
-      },
-      {
-        "id": "enchanted-sword",
-        "name": "Enchanted Sword",
-        "qty": 1
-      },
-      {
-        "id": "copper-shortsword",
-        "name": "Copper Shortsword",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury"
   },
   {
     "id": "starlight",
@@ -8769,30 +7539,14 @@
     "id": "stinger",
     "name": "Stinger",
     "source": "Found in the Underground Jungle biome",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger",
-    "materials": [
-      {
-        "id": "honey-block",
-        "name": "Honey Block",
-        "qty": 5
-      },
-      {
-        "id": "hive",
-        "name": "Hive",
-        "qty": 5
-      },
-      {
-        "id": "bottled-honey",
-        "name": "Bottled Honey",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
   },
   {
     "id": "stone-block",
     "name": "Stone Block",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Stone_Block",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "stone-wall",
@@ -8804,8 +7558,9 @@
   {
     "id": "stone-wall",
     "name": "Stone Wall",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Stone_Wall",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "stone-block",
@@ -8864,14 +7619,7 @@
     "id": "sturdy-fossil",
     "name": "Sturdy Fossil",
     "source": "Obtained from putting Desert Fossils in the Extractinator",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil",
-    "materials": [
-      {
-        "id": "amber",
-        "name": "Amber",
-        "qty": 8
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
   },
   {
     "id": "stynger",
@@ -8903,24 +7651,7 @@
     "id": "summoner-emblem",
     "name": "Summoner Emblem",
     "source": "Dropped by the Wall of Flesh",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem",
-    "materials": [
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
   },
   {
     "id": "sun-spirit-staff",
@@ -8950,14 +7681,7 @@
     "id": "sun-stone",
     "name": "Sun Stone",
     "source": "Dropped by Golem",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
-    "materials": [
-      {
-        "id": "moon-stone",
-        "name": "Moon Stone",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone"
   },
   {
     "id": "sunfury",
@@ -8968,14 +7692,16 @@
   {
     "id": "sunplate-block",
     "name": "Sunplate Block",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Sunplate_Block"
+    "source": "Crafted at a By Hand",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Sunplate_Block",
+    "station": "By Hand"
   },
   {
     "id": "super-healing-potion",
     "name": "Super Healing Potion",
-    "source": "Crafted",
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Healing_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "greater-healing-potion",
@@ -8987,8 +7713,9 @@
   {
     "id": "super-mana-potion",
     "name": "Super Mana Potion",
-    "source": "Crafted",
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Mana_Potion",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
     "materials": [
       {
         "id": "greater-mana-potion",
@@ -9015,8 +7742,9 @@
   {
     "id": "super-star-shooter",
     "name": "Super Star Shooter",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Star_Shooter",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "hallowed-bar",
@@ -9078,19 +7806,7 @@
     "id": "tabi",
     "name": "Tabi",
     "source": "Dropped by Bone Lees in the post-Plantera Dungeon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi",
-    "materials": [
-      {
-        "id": "tiger-climbing-gear",
-        "name": "Tiger Climbing Gear",
-        "qty": 1
-      },
-      {
-        "id": "black-belt",
-        "name": "Black Belt",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
   },
   {
     "id": "tactical-plague-engine",
@@ -9149,8 +7865,9 @@
   {
     "id": "terra-blade",
     "name": "Terra Blade",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "true-nights-edge",
@@ -9178,8 +7895,9 @@
   {
     "id": "terraspark-boots",
     "name": "Terraspark Boots",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "frostspark-boots",
@@ -9220,56 +7938,17 @@
     "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_First_Shadowflame"
   },
   {
-    "id": "the-horsemans-blade",
-    "name": "The Horseman's Blade",
-    "source": "Dropped by the Pumpking during the Pumpkin Moon event with a 2",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
-    "materials": [
-      {
-        "id": "terra-blade",
-        "name": "Terra Blade",
-        "qty": 1
-      },
-      {
-        "id": "starfury",
-        "name": "Starfury",
-        "qty": 1
-      },
-      {
-        "id": "bee-keeper",
-        "name": "Bee Keeper",
-        "qty": 1
-      },
-      {
-        "id": "enchanted-sword",
-        "name": "Enchanted Sword",
-        "qty": 1
-      },
-      {
-        "id": "copper-shortsword",
-        "name": "Copper Shortsword",
-        "qty": 1
-      }
-    ]
-  },
-  {
     "id": "throwing-knife",
     "name": "Throwing Knife",
     "source": "Purchased from Merchant during a Blood Moon for 50 CC each and may also be found in Chests",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Throwing_Knife",
-    "materials": [
-      {
-        "id": "vile-powder",
-        "name": "Vile Powder",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Throwing_Knife"
   },
   {
     "id": "tiger-climbing-gear",
     "name": "Tiger Climbing Gear",
-    "source": "Crafted",
+    "source": "Crafted at a Tinkerer's Workshop",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear",
+    "station": "Tinkerer's Workshop",
     "materials": [
       {
         "id": "climbing-claws",
@@ -9287,45 +7966,19 @@
     "id": "tissue-sample",
     "name": "Tissue Sample",
     "source": "Dropped by Creepers",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample",
-    "materials": [
-      {
-        "id": "crimtane-bar",
-        "name": "Crimtane Bar",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
   },
   {
     "id": "titan-glove",
     "name": "Titan Glove",
     "source": "Dropped by Mimics",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Titan_Glove",
-    "materials": [
-      {
-        "id": "feral-claws",
-        "name": "Feral Claws",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Titan_Glove"
   },
   {
     "id": "top-hat",
     "name": "Top Hat",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Top_Hat",
-    "materials": [
-      {
-        "id": "silk",
-        "name": "Silk",
-        "qty": 20
-      },
-      {
-        "id": "black-thread",
-        "name": "Black Thread",
-        "qty": 3
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Top_Hat"
   },
   {
     "id": "topaz",
@@ -9336,28 +7989,8 @@
   {
     "id": "torch",
     "name": "Torch",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Torch",
-    "materials": [
-      {
-        "id": "sapphire",
-        "name": "Sapphire",
-        "qty": 1
-      }
-    ]
-  },
-  {
-    "id": "trifold-map",
-    "name": "Trifold Map",
-    "source": "Dropped by Clowns",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Trifold_Map",
-    "materials": [
-      {
-        "id": "fast-clock",
-        "name": "Fast Clock",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
   },
   {
     "id": "true-biome-blade",
@@ -9391,8 +8024,9 @@
   {
     "id": "true-excalibur",
     "name": "True Excalibur",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "excalibur",
@@ -9409,8 +8043,9 @@
   {
     "id": "true-nights-edge",
     "name": "True Night's Edge",
-    "source": "Crafted",
+    "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge",
+    "station": "Mythril Anvil or Orichalcum Anvil",
     "materials": [
       {
         "id": "nights-edge",
@@ -9492,14 +8127,7 @@
     "id": "turtle-shell",
     "name": "Turtle Shell",
     "source": "Dropped by Giant Tortoises",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell",
-    "materials": [
-      {
-        "id": "chlorophyte-bar",
-        "name": "Chlorophyte Bar",
-        "qty": 12
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell"
   },
   {
     "id": "twisting-nether",
@@ -9570,19 +8198,7 @@
     "id": "unicorn-horn",
     "name": "Unicorn Horn",
     "source": "Dropped by Unicorns in The Hallow",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn",
-    "materials": [
-      {
-        "id": "wooden-arrow",
-        "name": "Wooden Arrow",
-        "qty": 200
-      },
-      {
-        "id": "pixie-dust",
-        "name": "Pixie Dust",
-        "qty": 3
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
   },
   {
     "id": "ursa-sergeant",
@@ -9752,38 +8368,20 @@
     "id": "vertebra",
     "name": "Vertebra",
     "source": "Dropped by Crimeras",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vertebra",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "deathweed",
-        "name": "Deathweed",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vertebra"
   },
   {
     "id": "vial-of-venom",
     "name": "Vial of Venom",
     "source": "Purchased from Witch Doctor for 15 SC each",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vial_of_Venom",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vial_of_Venom"
   },
   {
     "id": "vicious-powder",
     "name": "Vicious Powder",
-    "source": "",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vicious_Powder"
+    "source": "Crafted at a Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vicious_Powder",
+    "station": "Placed Bottle or Alchemy Table or Desktop, Console and Mobile versions or Alchemy Flask"
   },
   {
     "id": "vile-feeder",
@@ -9825,24 +8423,7 @@
     "id": "vine",
     "name": "Vine",
     "source": "Dropped by Man Eaters in the Underground Jungle biome with a 1/2",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vine",
-    "materials": [
-      {
-        "id": "rich-mahogany",
-        "name": "Rich Mahogany",
-        "qty": 8
-      },
-      {
-        "id": "stinger",
-        "name": "Stinger",
-        "qty": 12
-      },
-      {
-        "id": "jungle-spores",
-        "name": "Jungle Spores",
-        "qty": 9
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
   },
   {
     "id": "viral-sprout",
@@ -9970,8 +8551,9 @@
   {
     "id": "volcano",
     "name": "Volcano",
-    "source": "Crafted",
+    "source": "Crafted at an Iron Anvil or Lead Anvil",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
+    "station": "Iron Anvil or Lead Anvil",
     "materials": [
       {
         "id": "hellstone-bar",
@@ -10013,37 +8595,22 @@
   {
     "id": "vortex-booster",
     "name": "Vortex Booster",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Booster",
-    "materials": [
-      {
-        "id": "feather",
-        "name": "Feather",
-        "qty": 10
-      },
-      {
-        "id": "soul-of-flight",
-        "name": "Soul of Flight",
-        "qty": 20
-      },
-      {
-        "id": "soul-of-light",
-        "name": "Soul of Light",
-        "qty": 15
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Booster"
   },
   {
     "id": "vortex-fragment",
     "name": "Vortex Fragment",
     "source": "Dropped by the Vortex Pillar during the Lunar Events in stacks of 12\u201360 / 24\u2013100",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment",
+    "station": "Ancient Manipulator or Desktop, Console and Mobile versions"
   },
   {
     "id": "wand-of-frosting",
     "name": "Wand of Frosting",
-    "source": "Crafted",
+    "source": "Crafted at a By Hand",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Frosting",
+    "station": "By Hand",
     "materials": [
       {
         "id": "ice-torch",
@@ -10056,24 +8623,7 @@
     "id": "warrior-emblem",
     "name": "Warrior Emblem",
     "source": "Dropped by the Wall of Flesh",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-    "materials": [
-      {
-        "id": "soul-of-might",
-        "name": "Soul of Might",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-sight",
-        "name": "Soul of Sight",
-        "qty": 5
-      },
-      {
-        "id": "soul-of-fright",
-        "name": "Soul of Fright",
-        "qty": 5
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
   },
   {
     "id": "wasp-gun",
@@ -10090,25 +8640,8 @@
   {
     "id": "waterleaf",
     "name": "Waterleaf",
-    "source": "Crafted",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Waterleaf",
-    "materials": [
-      {
-        "id": "bottled-water",
-        "name": "Bottled Water",
-        "qty": 1
-      },
-      {
-        "id": "amber",
-        "name": "Amber",
-        "qty": 1
-      },
-      {
-        "id": "moonglow",
-        "name": "Moonglow",
-        "qty": 1
-      }
-    ]
+    "source": "",
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Waterleaf"
   },
   {
     "id": "wind-blade",
@@ -10158,8 +8691,9 @@
   {
     "id": "wooden-arrow",
     "name": "Wooden Arrow",
-    "source": "Crafted",
+    "source": "Crafted at a Work Bench",
     "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow",
+    "station": "Work Bench",
     "materials": [
       {
         "id": "any-wood",
@@ -10177,14 +8711,7 @@
     "id": "wooden-boomerang",
     "name": "Wooden Boomerang",
     "source": "Purchased from Skeleton Merchant for 1 GC during a full moon",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Boomerang",
-    "materials": [
-      {
-        "id": "fallen-star",
-        "name": "Fallen Star",
-        "qty": 1
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Boomerang"
   },
   {
     "id": "worm-scarf",
@@ -10196,14 +8723,7 @@
     "id": "worm-tooth",
     "name": "Worm Tooth",
     "source": "Dropped by Devourers in The Corruption",
-    "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Tooth",
-    "materials": [
-      {
-        "id": "wooden-arrow",
-        "name": "Wooden Arrow",
-        "qty": 20
-      }
-    ]
+    "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Tooth"
   },
   {
     "id": "wrathwing",

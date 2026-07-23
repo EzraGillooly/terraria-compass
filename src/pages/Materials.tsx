@@ -18,16 +18,22 @@ type Material = {
 const MATERIALS = materialsData as Material[];
 const byId = new Map(MATERIALS.map((m) => [m.id, m]));
 
+/* Recipes name world variants "Any Cobalt Bar", so a search for the plain item
+   should still find it — and vice versa. */
+const bare = (s: string) => s.toLowerCase().replace(/^any\s+/, '');
+
 /** Rank matches so an exact/prefix hit for the linked-in name lands first. */
 function search(query: string): Material[] {
   const q = query.trim().toLowerCase();
   if (!q) return MATERIALS;
+  const qb = bare(q);
   const scored: [number, Material][] = [];
   for (const m of MATERIALS) {
     const name = m.name.toLowerCase();
-    if (name === q) scored.push([0, m]);
-    else if (name.startsWith(q)) scored.push([1, m]);
-    else if (name.includes(q)) scored.push([2, m]);
+    const nb = bare(name);
+    if (name === q || nb === qb) scored.push([0, m]);
+    else if (name.startsWith(q) || nb.startsWith(qb)) scored.push([1, m]);
+    else if (name.includes(q) || nb.includes(qb)) scored.push([2, m]);
     else if (m.source.toLowerCase().includes(q)) scored.push([3, m]);
   }
   return scored.sort((a, b) => a[0] - b[0] || a[1].name.localeCompare(b[1].name))
@@ -44,7 +50,7 @@ export function Materials() {
   useEffect(() => { inputRef.current?.focus(); }, []);
 
   const results = useMemo(() => search(query), [query]);
-  const exact = results[0]?.name.toLowerCase() === query.trim().toLowerCase()
+  const exact = results[0] && bare(results[0].name) === bare(query.trim())
     ? results[0] : null;
 
   const setQuery = (q: string) => {
@@ -54,7 +60,13 @@ export function Materials() {
 
   return (
     <div className={styles.page}>
-      <Header />
+      <div
+        className={styles.backdrop}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}biomes/dungeon.png)` }}
+        aria-hidden="true"
+      />
+      <div className={styles.backdropWash} aria-hidden="true" />
+      <Header variant="photo" />
       <main className={styles.main}>
         <p className={styles.crumb}>
           <Link to="/loadouts">Loadouts</Link>

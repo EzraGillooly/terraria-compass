@@ -1,69 +1,81 @@
 /* ════════════════════════════════════════════════
    MATERIALS — searchable Calamity crafting index
 ═══════════════════════════════════════════════════ */
-.page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); }
+.page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); overflow: hidden; }
+
+/* Same dark photo treatment as Bosses / Crafting so the pages read as one site */
+.backdrop {
+  position: fixed; inset: -30px; z-index: 0;
+  background-size: cover; background-position: center 30%;
+  image-rendering: pixelated; transform: scale(1.06);
+}
+.backdropWash {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(8,14,34,.78) 0%, rgba(8,14,34,.88) 45%, rgba(8,14,34,.95) 100%);
+}
 .main { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; padding: 92px 32px 72px; }
 
-.crumb { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--ink-mute); margin: 0 0 10px; }
-.crumb a { color: var(--accent); text-decoration: none; }
+.crumb { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: rgba(255,255,255,.85); margin: 0 0 10px; }
+.crumb a { color: #8ff0cf; text-decoration: none; }
 .crumb a:hover { text-decoration: underline; }
 .crumbSep { opacity: .5; margin: 0 6px; }
 
 .title {
-  font-family: var(--display); font-weight: 700;
+  font-family: var(--display); font-weight: 700; color: #fff;
   font-size: clamp(32px, 5vw, 56px); line-height: 1.08; margin: 0 0 12px;
+  text-shadow: 0 2px 14px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.45);
 }
-.title em { font-style: normal; color: var(--accent); }
-.lede { max-width: 60ch; font-size: 16px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 20px; }
+.title em { font-style: normal; color: var(--warm); }
+.lede { max-width: 60ch; font-size: 16px; line-height: 1.55; color: rgba(255,255,255,.94); text-shadow: 0 2px 12px rgba(0,0,0,.55); margin: 0 0 20px; }
 
 .notice {
   margin: 0 0 18px; padding: 10px 14px; font-size: 13px; line-height: 1.5;
-  color: var(--ink-soft); background: color-mix(in oklab, var(--warm) 14%, transparent);
+  color: #EAF0FF; background: rgba(252,216,0,.14);
   border-left: 3px solid var(--warm);
 }
 
 /* ── Search ── */
-.searchWrap { --px-fill: var(--card); --px-border: var(--line); padding: 2px; margin-bottom: 12px; }
+.searchWrap { --px-fill: rgba(10,16,32,.88); --px-border: rgba(150,180,230,.3); padding: 2px; margin-bottom: 12px; }
 .search {
   width: 100%; box-sizing: border-box; border: 0; background: transparent;
-  font-family: inherit; font-size: 15px; color: var(--ink-soft);
+  font-family: inherit; font-size: 15px; color: #EAF0FF;
   padding: 12px 14px; outline: none;
 }
-.search::placeholder { color: var(--ink-mute); }
-.search:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.search::placeholder { color: #A9BFDA; }
+.search:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
 
-.count { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 16px; }
-.empty { font-size: 14px; color: var(--ink-soft); margin: 0 0 18px; }
-.empty a { color: var(--accent); }
+.count { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #A9BFDA; margin: 0 0 16px; }
+.empty { font-size: 14px; color: #EAF0FF; margin: 0 0 18px; }
+.empty a { color: var(--warm); }
 
 /* ── Results ── */
 .list {
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px;
 }
-.card { --px-fill: var(--card); --px-border: var(--line); padding: 14px 16px 16px; }
+.card { --px-fill: rgba(10,16,32,.88); --px-border: rgba(150,180,230,.28); padding: 14px 16px 16px; }
 /* the material the visitor arrived looking for */
 .cardHit { --px-border: var(--warm); }
 
 .cardHead { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
-.name { font-family: var(--display); font-size: 17px; font-weight: 700; margin: 0; color: var(--ink-soft); }
-.wiki { flex: none; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-mute); text-decoration: none; }
-.wiki:hover { color: var(--accent); text-decoration: underline; }
+.name { font-family: var(--display); font-size: 17px; font-weight: 700; margin: 0; color: #EAF0FF; }
+.wiki { flex: none; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #A9BFDA; text-decoration: none; }
+.wiki:hover { color: var(--warm); text-decoration: underline; }
 
-.source { font-size: 13px; line-height: 1.5; color: var(--ink-soft); margin: 6px 0 0; }
+.source { font-size: 13px; line-height: 1.5; color: #C2D2E8; margin: 6px 0 0; }
 
-.recipe { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
-.recipeCap { display: block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px; }
+.recipe { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(150,180,230,.25); }
+.recipeCap { display: block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #A9BFDA; margin-bottom: 6px; }
 .ing { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
-.ing li { display: flex; align-items: baseline; gap: 8px; font-size: 13px; }
+.ing li { display: flex; align-items: baseline; gap: 8px; font-size: 13px; color: #EAF0FF; }
 .qty {
   flex: none; min-width: 24px; text-align: right;
-  font-weight: 800; font-size: 12px; color: var(--ink-mute); font-variant-numeric: tabular-nums;
+  font-weight: 800; font-size: 12px; color: color-mix(in oklab, var(--warm) 82%, #fff); font-variant-numeric: tabular-nums;
 }
 .qty::after { content: '\00d7'; margin-left: 1px; opacity: .6; }
 .jump {
   padding: 0; border: 0; background: none; font-family: inherit; font-size: 13px;
-  color: var(--accent); cursor: pointer; text-align: left;
+  color: #8ff0cf; cursor: pointer; text-align: left;
 }
 .jump:hover { text-decoration: underline; }
 
