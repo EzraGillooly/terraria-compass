@@ -13,7 +13,6 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Weapons",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Burnt_Sienna"
       },
       {
@@ -26,7 +25,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Boomerang"
       },
       {
@@ -39,7 +37,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Monstrous_Knives"
       },
       {
@@ -52,7 +49,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starfury"
       },
       {
@@ -65,7 +61,6 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Weapons",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terragrim"
       }
     ],
@@ -930,7 +925,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber_Staff",
+        "subclass": "wands"
       },
       {
         "id": "crimson-rod",
@@ -942,7 +938,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod",
+        "subclass": "wands"
       },
       {
         "id": "thunder-zapper",
@@ -954,7 +951,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
+        "subclass": "wands"
       },
       {
         "id": "veering-wind",
@@ -966,7 +964,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Veering_Wind"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Veering_Wind",
+        "subclass": "spell-tomes"
       },
       {
         "id": "vilethorn",
@@ -978,7 +977,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vilethorn"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vilethorn",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -1338,7 +1338,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Knife_Staff"
       },
       {
@@ -1351,7 +1351,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stormjaw_Staff"
       },
       {
@@ -1364,7 +1364,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sun_Spirit_Staff"
       },
       {
@@ -1377,7 +1377,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype"
       },
       {
@@ -1390,7 +1390,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squirrel_Squire_Staff"
       },
       {
@@ -1403,7 +1403,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapons",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leather_Whip"
       }
     ],
@@ -1764,7 +1764,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Antlion_Skewer"
       },
       {
@@ -1777,7 +1777,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
       },
       {
@@ -1790,7 +1790,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Dagger_%2F_Gleaming_Dagger"
       },
       {
@@ -1803,7 +1803,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger"
       },
       {
@@ -1816,7 +1816,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Knife"
       },
       {
@@ -1829,7 +1829,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
       },
       {
@@ -1842,7 +1842,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Dagger_%2F_Gleaming_Dagger"
       },
       {
@@ -1855,7 +1855,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Iron_Francisca_%2F_Lead_Tomahawk"
       },
       {
@@ -1868,7 +1868,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Knife"
       },
       {
@@ -1881,7 +1881,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
       }
     ],
@@ -3154,7 +3154,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Weapons",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod"
       },
       {
@@ -3167,7 +3167,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
+        "subclass": "magic-guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Acid_Gun"
       },
       {
@@ -3180,7 +3180,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gray_Zapinator"
       },
       {
@@ -3193,7 +3193,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Weapons",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sparkling_Empress"
       },
       {
@@ -3206,7 +3206,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Weapons",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper"
       },
       {
@@ -3219,7 +3219,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support Items",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -3232,7 +3232,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support Items",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
       }
     ],
@@ -3677,7 +3677,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Held",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn"
       },
       {
@@ -3690,7 +3690,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -3703,7 +3703,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deathstare_Rod"
       },
       {
@@ -3716,7 +3716,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Conch"
       },
       {
@@ -3729,7 +3729,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher"
       },
       {
@@ -3742,7 +3742,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype"
       }
     ],
@@ -4127,7 +4127,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pumpkaboom"
       },
       {
@@ -4140,7 +4140,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Dollar"
       },
       {
@@ -4153,7 +4153,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafoam_Bomb"
       },
       {
@@ -4166,7 +4166,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spore_Knife"
       },
       {
@@ -4179,7 +4179,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
       },
       {
@@ -4192,7 +4192,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert"
       },
       {
@@ -4205,7 +4205,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -4218,7 +4218,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
       }
     ],
@@ -5527,7 +5527,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Acid_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Acid_Gun",
+        "subclass": "magic-guns"
       },
       {
         "id": "crimson-rod",
@@ -5539,7 +5540,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod",
+        "subclass": "wands"
       },
       {
         "id": "gray-zapinator",
@@ -5551,7 +5553,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gray_Zapinator"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gray_Zapinator",
+        "subclass": "wands"
       },
       {
         "id": "sparkling-empress",
@@ -5563,7 +5566,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sparkling_Empress"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sparkling_Empress",
+        "subclass": "wands"
       },
       {
         "id": "thunder-zapper",
@@ -5575,7 +5579,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
+        "subclass": "wands"
       },
       {
         "id": "brittle-star-staff-wulfrum-controller",
@@ -5587,7 +5592,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff_%2F_Wulfrum_Controller"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff_%2F_Wulfrum_Controller",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -6007,7 +6013,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -6020,7 +6026,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deathstare_Rod"
       },
       {
@@ -6033,7 +6039,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Conch"
       },
       {
@@ -6046,7 +6052,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stormjaw_Staff"
       },
       {
@@ -6059,7 +6065,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher"
       },
       {
@@ -6072,7 +6078,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype"
       },
       {
@@ -6085,7 +6091,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapons",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn"
       }
     ],
@@ -6470,7 +6476,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pumpkaboom"
       },
       {
@@ -6483,7 +6489,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Dollar"
       },
       {
@@ -6496,7 +6502,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafoam_Bomb"
       },
       {
@@ -6509,7 +6515,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spore_Knife"
       },
       {
@@ -6522,7 +6528,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
       },
       {
@@ -6535,7 +6541,7 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert"
       },
       {
@@ -6548,7 +6554,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff_%2F_Wulfrum_Controller"
       }
     ],
@@ -7341,7 +7347,6 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Bow",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Rain_Bow"
       },
       {
@@ -7354,7 +7359,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Gun",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick"
       },
       {
@@ -7367,7 +7371,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Gun",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide"
       },
       {
@@ -7380,7 +7383,6 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Gun",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spark_Spreader"
       },
       {
@@ -7393,7 +7395,6 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spiky_Balls"
       }
     ],
@@ -7862,7 +7863,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber_Staff",
+        "subclass": "wands"
       },
       {
         "id": "crimson-rod",
@@ -7874,7 +7876,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod",
+        "subclass": "wands"
       },
       {
         "id": "thunder-zapper",
@@ -7886,7 +7889,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
+        "subclass": "wands"
       },
       {
         "id": "veering-wind",
@@ -7898,7 +7902,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Veering_Wind"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Veering_Wind",
+        "subclass": "spell-tomes"
       },
       {
         "id": "vilethorn",
@@ -7910,7 +7915,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vilethorn"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vilethorn",
+        "subclass": "wands"
       },
       {
         "id": "wulfrum-controller",
@@ -7922,7 +7928,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -8330,7 +8337,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dank_Staff"
       },
       {
@@ -8343,7 +8350,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hornet_Staff"
       },
       {
@@ -8356,7 +8363,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Imp_Staff"
       },
       {
@@ -8369,7 +8376,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/P-PMA%3A_Aqueous_Hunter_Drone"
       },
       {
@@ -8382,7 +8389,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Houndius_Shootius"
       },
       {
@@ -8395,7 +8402,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher"
       },
       {
@@ -8408,7 +8415,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapon",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn"
       }
     ],
@@ -8853,7 +8860,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Feather_Knife"
       },
       {
@@ -8866,7 +8873,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hardened_Honeycomb"
       },
       {
@@ -8879,7 +8886,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Fist"
       },
       {
@@ -8892,7 +8899,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Power",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystalline_Kunai"
       },
       {
@@ -8905,7 +8912,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Power",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Sun"
       },
       {
@@ -8918,7 +8925,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Power",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tumbleweed"
       },
       {
@@ -8931,7 +8938,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -8944,7 +8951,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
       }
     ],
@@ -10073,7 +10080,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome",
+        "subclass": "spell-tomes"
       },
       {
         "id": "aqua-scepter",
@@ -10085,7 +10093,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aqua_Scepter"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aqua_Scepter",
+        "subclass": "wands"
       },
       {
         "id": "blood-bath",
@@ -10097,7 +10106,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath",
+        "subclass": "wands"
       },
       {
         "id": "demon-scythe",
@@ -10109,7 +10119,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe",
+        "subclass": "wands"
       },
       {
         "id": "eldritch-tome",
@@ -10121,7 +10132,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eldritch_Tome"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eldritch_Tome",
+        "subclass": "spell-tomes"
       },
       {
         "id": "nights-ray",
@@ -10133,7 +10145,8 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Night's_Ray"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Night's_Ray",
+        "subclass": "wands"
       },
       {
         "id": "brittle-star-staff",
@@ -10145,7 +10158,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "support",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
       },
       {
@@ -10158,7 +10171,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "support",
+        "subclass": "wands",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller"
       }
     ],
@@ -10591,7 +10604,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Knife_Staff"
       },
       {
@@ -10604,7 +10617,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stormjaw_Staff"
       },
       {
@@ -10617,7 +10630,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sun_Spirit_Staff"
       },
       {
@@ -10630,7 +10643,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype"
       },
       {
@@ -10643,7 +10656,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Squirrel_Squire_Staff"
       },
       {
@@ -10656,7 +10669,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapons",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leather_Whip"
       }
     ],
@@ -11017,7 +11030,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Feather_Knife"
       },
       {
@@ -11030,7 +11043,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gel_Dart"
       },
       {
@@ -11043,7 +11056,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive"
       },
       {
@@ -11056,7 +11069,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lionfish"
       },
       {
@@ -11069,7 +11082,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slick_Cane"
       },
       {
@@ -11082,7 +11095,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gel_Dart"
       },
       {
@@ -11095,7 +11108,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive"
       },
       {
@@ -11108,7 +11121,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lionfish"
       },
       {
@@ -11121,7 +11134,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shinobi_Blade"
       }
     ],
@@ -12430,7 +12443,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn",
+        "subclass": "wands"
       },
       {
         "id": "death-valley-duster",
@@ -12442,7 +12456,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Valley_Duster"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Valley_Duster",
+        "subclass": "spell-tomes"
       },
       {
         "id": "meteor-staff",
@@ -12454,7 +12469,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Staff",
+        "subclass": "wands"
       },
       {
         "id": "nimbus-rod",
@@ -12466,7 +12482,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
+        "subclass": "wands"
       },
       {
         "id": "poseidon",
@@ -12478,7 +12495,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Poseidon"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Poseidon",
+        "subclass": "spell-tomes"
       },
       {
         "id": "shadowflame-hex-doll",
@@ -12490,7 +12508,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowflame_Hex_Doll"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowflame_Hex_Doll",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -12946,7 +12965,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ancient_Ice_Chunk"
       },
       {
@@ -12959,7 +12978,7 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spider_Staff"
       },
       {
@@ -12972,7 +12991,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Queen_Spider_Staff"
       },
       {
@@ -12985,7 +13004,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapon",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip_%2F_Firecracker"
       }
     ],
@@ -13442,7 +13461,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cobalt_Kunai"
       },
       {
@@ -13455,7 +13474,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear"
       },
       {
@@ -13468,7 +13487,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
       },
       {
@@ -13481,7 +13500,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin"
       },
       {
@@ -13494,7 +13513,7 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline"
       },
       {
@@ -13507,7 +13526,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger"
       },
       {
@@ -13520,7 +13539,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Equanimity"
       },
       {
@@ -13533,7 +13552,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
       },
       {
@@ -13546,7 +13565,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin"
       },
       {
@@ -13559,7 +13578,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline"
       }
     ],
@@ -15036,7 +15055,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn",
+        "subclass": "wands"
       },
       {
         "id": "brimrose-staff",
@@ -15048,7 +15068,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff",
+        "subclass": "wands"
       },
       {
         "id": "nimbus-rod",
@@ -15060,7 +15081,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
+        "subclass": "wands"
       },
       {
         "id": "r-gss-vulcan",
@@ -15072,7 +15094,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan",
+        "subclass": "magic-guns"
       },
       {
         "id": "snowstorm-staff",
@@ -15084,7 +15107,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowstorm_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowstorm_Staff",
+        "subclass": "wands"
       },
       {
         "id": "unholy-trident",
@@ -15096,7 +15120,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -15528,7 +15553,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deepsea_Staff"
       },
       {
@@ -15541,7 +15566,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Igneous_Exaltation"
       },
       {
@@ -15554,7 +15579,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spider_Staff"
       },
       {
@@ -15567,7 +15592,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orthocera_Shell"
       },
       {
@@ -15580,7 +15605,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapon",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip"
       },
       {
@@ -15593,7 +15618,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Held weapon",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firecracker"
       }
     ],
@@ -16098,7 +16123,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cobalt_Kunai"
       },
       {
@@ -16111,7 +16136,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear"
       },
       {
@@ -16124,7 +16149,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
       },
       {
@@ -16137,7 +16162,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin"
       },
       {
@@ -16150,7 +16175,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline"
       },
       {
@@ -16163,7 +16188,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger"
       },
       {
@@ -16176,7 +16201,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Equanimity"
       },
       {
@@ -16189,7 +16214,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
       },
       {
@@ -16202,7 +16227,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin"
       },
       {
@@ -16215,7 +16240,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline"
       },
       {
@@ -16228,7 +16253,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
+        "subclass": "spam"
       }
     ],
     "armor": [
@@ -17721,7 +17747,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan",
+        "subclass": "magic-guns"
       },
       {
         "id": "ion-blaster",
@@ -17733,7 +17760,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ion_Blaster"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ion_Blaster",
+        "subclass": "magic-guns"
       },
       {
         "id": "brimrose-staff",
@@ -17745,7 +17773,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff",
+        "subclass": "wands"
       },
       {
         "id": "unholy-trident",
@@ -17757,7 +17786,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident",
+        "subclass": "wands"
       },
       {
         "id": "frigidflash-bolt",
@@ -17769,7 +17799,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frigidflash_Bolt"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frigidflash_Bolt",
+        "subclass": "spell-tomes"
       },
       {
         "id": "nimbus-rod",
@@ -17781,7 +17812,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -17913,7 +17945,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dormant_Brimseeker"
       },
       {
@@ -17926,7 +17958,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Golem_Staff"
       },
       {
@@ -17939,7 +17971,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deepsea_Staff"
       },
       {
@@ -17952,7 +17984,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Whip",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip"
       },
       {
@@ -17965,7 +17997,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Whip",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firecracker"
       }
     ],
@@ -18482,7 +18514,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Codebreaker"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Codebreaker",
+        "subclass": "spam"
       },
       {
         "id": "corpus-avertor",
@@ -18494,7 +18527,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor",
+        "subclass": "spam"
       },
       {
         "id": "mycosynth-claws",
@@ -18506,7 +18540,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mycosynth_Claws"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mycosynth_Claws",
+        "subclass": "spam"
       },
       {
         "id": "rotting-ghoul",
@@ -18518,7 +18553,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotting_Ghoul"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotting_Ghoul",
+        "subclass": "spam"
       }
     ],
     "armor": [
@@ -19538,7 +19574,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gleaming_Magnolia"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gleaming_Magnolia",
+        "subclass": "wands"
       },
       {
         "id": "shadecrystal-barrage",
@@ -19550,7 +19587,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadecrystal_Barrage"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadecrystal_Barrage",
+        "subclass": "spell-tomes"
       },
       {
         "id": "shpc",
@@ -19562,7 +19600,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC",
+        "subclass": "magic-guns"
       },
       {
         "id": "venom-staff",
@@ -19574,7 +19613,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Staff",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -19730,7 +19770,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Golem_Staff"
       },
       {
@@ -19743,7 +19783,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dormant_Brimseeker"
       },
       {
@@ -19756,7 +19796,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vengeful_Sun_Staff"
       },
       {
@@ -19769,7 +19809,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryogenic_Staff"
       },
       {
@@ -19782,7 +19822,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orthocera_Shell"
       },
       {
@@ -19795,7 +19835,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapons",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Durendal"
       },
       {
@@ -19808,7 +19848,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Support items",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
       },
       {
@@ -19821,7 +19861,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support items",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -20254,7 +20294,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blazing_Star"
       },
       {
@@ -20267,7 +20307,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Desecrated_Water"
       },
       {
@@ -20280,7 +20320,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
       },
       {
@@ -20293,7 +20333,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Skyfin_Bombers"
       },
       {
@@ -20306,7 +20346,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Totality_Breakers"
       },
       {
@@ -20319,7 +20359,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crushsaw_Crasher"
       },
       {
@@ -20332,7 +20372,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Wounder"
       },
       {
@@ -20345,7 +20385,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Desecrated_Water"
       },
       {
@@ -20358,7 +20398,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin"
       },
       {
@@ -20371,7 +20411,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Totality_Breakers"
       },
       {
@@ -20384,7 +20424,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
       },
       {
@@ -20397,7 +20437,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -21310,7 +21350,6 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Bows",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow"
       },
       {
@@ -21323,7 +21362,6 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megashark"
       },
       {
@@ -21336,7 +21374,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Onyx_Blaster"
       },
       {
@@ -21349,7 +21386,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismatic_Bolt"
       },
       {
@@ -21362,7 +21398,6 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shotgun"
       },
       {
@@ -21375,7 +21410,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Guns",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tactical_Shotgun"
       }
     ],
@@ -21868,7 +21902,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
+        "subclass": "wands"
       },
       {
         "id": "primordial-earth",
@@ -21880,7 +21915,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Earth"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Earth",
+        "subclass": "spell-tomes"
       },
       {
         "id": "rainbow-gun",
@@ -21892,7 +21928,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
+        "subclass": "wands"
       },
       {
         "id": "shpc",
@@ -21904,7 +21941,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC",
+        "subclass": "magic-guns"
       },
       {
         "id": "undines-retribution",
@@ -21916,7 +21954,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Undine's_Retribution"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Undine's_Retribution",
+        "subclass": "wands"
       },
       {
         "id": "wasp-gun",
@@ -21928,7 +21967,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wasp_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wasp_Gun",
+        "subclass": "wands"
       },
       {
         "id": "lunic-eye",
@@ -21940,7 +21980,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -22432,7 +22473,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deadly_Sphere_Staff"
       },
       {
@@ -22445,7 +22486,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Optic_Staff"
       },
       {
@@ -22458,7 +22499,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spazmamini_Staff"
       },
       {
@@ -22471,7 +22512,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Temporal_Umbrella"
       },
       {
@@ -22484,7 +22525,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Explosive_Traps"
       },
       {
@@ -22497,7 +22538,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stinger_Staff"
       },
       {
@@ -22510,7 +22551,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Held weapon",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip_%2F_Firecracker"
       }
     ],
@@ -22919,7 +22960,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Defective_Sphere"
       },
       {
@@ -22932,7 +22973,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fantasy_Talisman"
       },
       {
@@ -22945,7 +22986,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
       },
       {
@@ -22958,7 +22999,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantasmal_Ruin"
       },
       {
@@ -22971,7 +23012,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Samsara_Slicer"
       },
       {
@@ -22984,7 +23025,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
       },
       {
@@ -22997,7 +23038,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duststorm_in_a_Bottle"
       },
       {
@@ -23010,7 +23051,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
       },
       {
@@ -23023,7 +23064,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantasmal_Ruin"
       },
       {
@@ -23036,7 +23077,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Samsara_Slicer"
       },
       {
@@ -23049,7 +23090,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
       },
       {
@@ -23062,7 +23103,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
       },
       {
@@ -23075,7 +23116,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -24648,7 +24689,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
+        "subclass": "wands"
       },
       {
         "id": "bat-scepter",
@@ -24660,7 +24702,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bat_Scepter"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bat_Scepter",
+        "subclass": "wands"
       },
       {
         "id": "charged-blaster-cannon",
@@ -24672,7 +24715,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Charged_Blaster_Cannon"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Charged_Blaster_Cannon",
+        "subclass": "wands"
       },
       {
         "id": "rainbow-gun",
@@ -24684,7 +24728,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
+        "subclass": "wands"
       },
       {
         "id": "razorpine",
@@ -24696,7 +24741,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Razorpine"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Razorpine",
+        "subclass": "wands"
       },
       {
         "id": "wingman",
@@ -24708,7 +24754,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
+        "subclass": "magic-guns"
       },
       {
         "id": "lunic-eye",
@@ -24720,7 +24767,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
+        "subclass": "wands"
       },
       {
         "id": "rod-of-discord",
@@ -24732,7 +24780,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -25200,7 +25249,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Xeno_Staff"
       },
       {
@@ -25213,7 +25262,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wither_Blossoms_Staff"
       },
       {
@@ -25226,7 +25275,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Sharknado_Staff"
       },
       {
@@ -25239,7 +25288,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Resurrection_Butterfly"
       },
       {
@@ -25252,7 +25301,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Minions",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Raven_Staff"
       },
       {
@@ -25265,7 +25314,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Staff_of_the_Frost_Hydra"
       },
       {
@@ -25278,7 +25327,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hive_Pod"
       },
       {
@@ -25291,7 +25340,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Sentries",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dreadmine_Staff"
       },
       {
@@ -25304,7 +25353,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Whips",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Harvest_%2F_Morning_Star"
       }
     ],
@@ -25737,7 +25786,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
       },
       {
@@ -25750,7 +25799,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device"
       },
       {
@@ -25763,7 +25812,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Epidemic_Shredder"
       },
       {
@@ -25776,7 +25825,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade"
       },
       {
@@ -25789,7 +25838,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Samsara_Slicer"
       },
       {
@@ -25802,7 +25851,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
       },
       {
@@ -25815,7 +25864,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device"
       },
       {
@@ -25828,7 +25877,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade"
       },
       {
@@ -25841,7 +25890,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
       }
     ],
@@ -27390,7 +27439,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubble_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubble_Gun",
+        "subclass": "wands"
       },
       {
         "id": "hematemesis",
@@ -27402,7 +27452,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hematemesis"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hematemesis",
+        "subclass": "wands"
       },
       {
         "id": "plague-staff",
@@ -27414,7 +27465,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Staff",
+        "subclass": "wands"
       },
       {
         "id": "stellar-tune",
@@ -27426,7 +27478,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Tune"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Tune",
+        "subclass": "wands"
       },
       {
         "id": "rainbow-gun",
@@ -27438,7 +27491,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
+        "subclass": "wands"
       },
       {
         "id": "wingman",
@@ -27450,7 +27504,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
+        "subclass": "magic-guns"
       },
       {
         "id": "betsys-wrath",
@@ -27462,7 +27517,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy's_Wrath"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy's_Wrath",
+        "subclass": "wands"
       },
       {
         "id": "lunic-eye",
@@ -27474,7 +27530,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
+        "subclass": "wands"
       }
     ],
     "armor": [
@@ -28002,7 +28059,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fuel_Cell_Bundle"
       },
       {
@@ -28015,7 +28072,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Remote"
       },
       {
@@ -28028,7 +28085,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Resurrection_Butterfly"
       },
       {
@@ -28041,7 +28098,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wither_Blossoms_Staff"
       },
       {
@@ -28054,7 +28111,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Xeno_Staff"
       },
       {
@@ -28067,7 +28124,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dreadmine_Staff"
       },
       {
@@ -28080,7 +28137,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spikecrag_Staff"
       },
       {
@@ -28093,7 +28150,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Whip",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Harvest"
       },
       {
@@ -28106,7 +28163,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Whip",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope"
       },
       {
@@ -28119,7 +28176,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy's_Wrath"
       },
       {
@@ -28132,7 +28189,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
       },
       {
@@ -28145,7 +28202,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -28686,7 +28743,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor"
       },
       {
@@ -28699,7 +28756,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cranium_Smasher"
       },
       {
@@ -28712,7 +28769,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade"
       },
       {
@@ -28725,7 +28782,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
       },
       {
@@ -28738,7 +28795,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe"
       },
       {
@@ -28751,7 +28808,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor"
       },
       {
@@ -28764,7 +28821,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator"
       },
       {
@@ -28777,7 +28834,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
       },
       {
@@ -28790,7 +28847,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade"
       },
       {
@@ -28803,7 +28860,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/System_Bane"
       },
       {
@@ -28816,7 +28873,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy's_Wrath"
       },
       {
@@ -28829,7 +28886,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
       },
       {
@@ -28842,7 +28899,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Support",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -30491,7 +30548,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade"
       },
       {
@@ -30504,7 +30561,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Star"
       },
       {
@@ -30517,7 +30574,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regulus_Riot"
       },
       {
@@ -30530,7 +30587,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shard_of_Antumbra"
       },
       {
@@ -30543,7 +30600,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Spam",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_of_Destruction"
       },
       {
@@ -30556,7 +30613,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator"
       },
       {
@@ -30569,7 +30626,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
       },
       {
@@ -30582,7 +30639,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regulus_Riot"
       },
       {
@@ -30595,7 +30652,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shard_of_Antumbra"
       },
       {
@@ -30608,7 +30665,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Stealth",
+        "subclass": "stealth",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_of_Destruction"
       },
       {
@@ -30621,7 +30678,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy's_Wrath"
       },
       {
@@ -30634,7 +30691,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Magnus"
       },
       {
@@ -30647,7 +30704,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Support items",
+        "subclass": "spam",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord"
       }
     ],
@@ -31764,7 +31821,6 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Ammo",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch"
       },
       {
@@ -31777,7 +31833,6 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Ammo",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Arrows"
       },
       {
@@ -31790,7 +31845,6 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "Ammo",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wooden_Arrows"
       }
     ],
@@ -32319,7 +32373,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chronomancer's_Scythe"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chronomancer's_Scythe",
+        "subclass": "wands"
       },
       {
         "id": "genesis",
@@ -32331,7 +32386,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Genesis"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Genesis",
+        "subclass": "magic-guns"
       },
       {
         "id": "nuclear-fury",
@@ -32343,7 +32399,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nuclear_Fury"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nuclear_Fury",
+        "subclass": "spell-tomes"
       },
       {
         "id": "nucleosynthesis",
@@ -32355,7 +32412,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nucleosynthesis"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nucleosynthesis",
+        "subclass": "wands"
       },
       {
         "id": "rouge-slash",
@@ -32367,7 +32425,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rouge_Slash"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rouge_Slash",
+        "subclass": "spell-tomes"
       }
     ],
     "armor": [
@@ -32871,7 +32930,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Legion_of_Celestia"
       },
       {
@@ -32884,7 +32943,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flowers_of_Mortality"
       },
       {
@@ -32897,7 +32956,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Minion",
+        "subclass": "minions",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tactical_Plague_Engine"
       },
       {
@@ -32910,7 +32969,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunar_Portal_Staff"
       },
       {
@@ -32923,7 +32982,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Crystal_Staff"
       },
       {
@@ -32936,7 +32995,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "Sentry",
+        "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark"
       },
       {
@@ -32949,7 +33008,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "Whip",
+        "subclass": "whips",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope"
       }
     ],
