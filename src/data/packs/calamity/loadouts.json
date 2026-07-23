@@ -17709,12 +17709,20 @@
         "name": "Seafood Dinner (Plenty Satisfied)",
         "slot": "buff",
         "icon": "calamity/seafood-dinner-plenty-satisfied.png",
-        "source": "",
+        "source": "Crafted at a Cooking Pot or Cauldron",
         "why": "well-fed stat boost",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafood_Dinner_(Plenty_Satisfied)"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafood_Dinner_(Plenty_Satisfied)",
+        "station": "Cooking Pot or Cauldron",
+        "materials": [
+          {
+            "name": "Hemopiranha",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hemopiranha"
+          }
+        ]
       },
       {
         "id": "endurance-potions",
@@ -45389,15 +45397,43 @@
       },
       {
         "id": "statis-blessing",
-        "name": "Statis Blessing",
+        "name": "Statis' Blessing",
         "slot": "accessory",
         "icon": "calamity/statis-blessing.png",
-        "source": "",
         "why": "offensive utility accessory",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statis_Blessing"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statis'_Blessing",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Papyrus Scarab",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab"
+          },
+          {
+            "name": "Pygmy Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
+          },
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          },
+          {
+            "name": "Holy Water",
+            "qty": 30,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Water"
+          },
+          {
+            "name": "Essence of Sunlight",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+          }
+        ]
       },
       {
         "id": "the-first-shadowflame",
@@ -45672,7 +45708,7 @@
         "name": "Bewitching Table (Bewitched)",
         "slot": "buff",
         "icon": "calamity/bewitching-table-bewitched.png",
-        "source": "",
+        "source": "Purchased from Witch Doctor for 10 GC if the Wizard is present",
         "why": "grants extra minion slot",
         "tags": [],
         "topPick": false,
@@ -45738,7 +45774,7 @@
         "name": "War Table (Strategist)",
         "slot": "buff",
         "icon": "calamity/war-table-strategist.png",
-        "source": "",
+        "source": "Dropped by the Dark Mage and the Ogre during the Old One's Army event",
         "why": "offensive minion/sentry buff",
         "tags": [],
         "topPick": false,
@@ -51331,12 +51367,40 @@
         "name": "Statis' Blessing",
         "slot": "accessory",
         "icon": "calamity/statis-blessing.png",
-        "source": "",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "summon offense accessory",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statis'_Blessing"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statis'_Blessing",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Papyrus Scarab",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab"
+          },
+          {
+            "name": "Pygmy Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
+          },
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          },
+          {
+            "name": "Holy Water",
+            "qty": 30,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Water"
+          },
+          {
+            "name": "Essence of Sunlight",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+          }
+        ]
       },
       {
         "id": "hallowed-rune",
@@ -61116,16 +61180,39 @@
         ]
       },
       {
-        "id": "plague-tainted-smg-2",
-        "name": "Plague Tainted SMG \u03a92",
+        "id": "plague-tainted-smg",
+        "name": "Plague Tainted SMG",
         "slot": "weapon",
         "icon": "calamity/plague-tainted-smg-2.png",
-        "source": "",
         "why": "solid sustained-DPS gun option",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Tainted_SMG_%CE%A92"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Tainted_SMG",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Black Hawk Remote",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Black_Hawk_Remote"
+          },
+          {
+            "name": "Uzi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Uzi"
+          },
+          {
+            "name": "Helstorm",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Helstorm"
+          },
+          {
+            "name": "Infected Armor Plating",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
+          }
+        ]
       },
       {
         "id": "vortexpopper",
@@ -61937,28 +62024,28 @@
         ]
       },
       {
-        "id": "blood-pact-1",
-        "name": "Blood Pact \u03a91",
+        "id": "blood-pact",
+        "name": "Blood Pact",
         "slot": "accessory",
         "icon": "calamity/blood-pact-1.png",
-        "source": "",
         "why": "defensive accessory",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact_%CE%A91"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
+        "source": "Dropped by the Ravager"
       },
       {
-        "id": "bloom-stone-1",
-        "name": "Bloom Stone \u03a91",
+        "id": "bloom-stone",
+        "name": "Bloom Stone",
         "slot": "accessory",
         "icon": "calamity/bloom-stone-1.png",
-        "source": "",
         "why": "defensive accessory",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloom_Stone_%CE%A91"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloom_Stone",
+        "source": "Dropped by Plantera"
       },
       {
         "id": "deific-amulet",
@@ -62409,16 +62496,34 @@
         ]
       },
       {
-        "id": "bubonic-rounds-2",
-        "name": "Bubonic Rounds \u03a92",
+        "id": "bubonic-rounds",
+        "name": "Bubonic Rounds",
         "slot": "buff",
         "icon": "calamity/bubonic-rounds-2.png",
-        "source": "",
         "why": "high-damage ammo option",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Rounds_%CE%A92"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Rounds",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 150,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Plague Cell Canister",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
+          },
+          {
+            "name": "Bubonic Round",
+            "qty": 150,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Round"
+          }
+        ]
       },
       {
         "id": "chlorophyte-bullets",
@@ -62635,19 +62740,6 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "subclass": "wands"
-      },
-      {
-        "id": "expert-mode",
-        "name": "Expert Mode",
-        "slot": "weapon",
-        "icon": "calamity/expert-mode.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Expert_Mode",
         "subclass": "wands"
       }
     ],
@@ -64048,19 +64140,6 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "subclass": "minions"
-      },
-      {
-        "id": "expert-mode",
-        "name": "Expert Mode",
-        "slot": "weapon",
-        "icon": "calamity/expert-mode.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Expert_Mode",
         "subclass": "minions"
       }
     ],
