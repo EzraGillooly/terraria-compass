@@ -40,6 +40,20 @@ export const Item = z.object({
     qty: z.number().int().positive(),
     wikiUrl: z.string().url().optional(),
   })).optional(),
+  /**
+   * Armor is crafted a piece at a time, so it carries one recipe per piece
+   * rather than a single `materials` list — summing them would quote a total
+   * no player pays, since a set lists every class helmet.
+   */
+  pieceRecipes: z.array(z.object({
+    piece: z.string(),
+    station: z.string().optional(),
+    materials: z.array(z.object({
+      name: z.string(),
+      qty: z.number().int().positive(),
+      wikiUrl: z.string().url().optional(),
+    })),
+  })).optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
   /**

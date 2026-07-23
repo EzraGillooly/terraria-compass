@@ -3,10 +3,20 @@ import { Link } from 'react-router-dom';
 import type { SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
 import { usePack } from '../../lib/app-context';
+import materialsData from '../../data/packs/calamity/materials.json';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
 const BASE = import.meta.env.BASE_URL;
 const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
+
+/* One-line "how you get it" for a material, so the reader does not have to leave
+   the modal for the common case. The full chain lives on the materials page. */
+const MATERIAL_SOURCE = new Map(
+  (materialsData as { name: string; source: string }[])
+    .filter((m) => m.source)
+    .map((m) => [m.name, m.source]),
+);
+const materialSource = (name: string) => MATERIAL_SOURCE.get(name) ?? '';
 
 const SLOT_LABEL: Record<string, string> = {
   weapon: 'Weapon', armor: 'Armor', accessory: 'Accessory', buff: 'Buff',
@@ -78,18 +88,56 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}
           <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
+          {item.pieceRecipes && item.pieceRecipes.length > 0 && (
+            <div className={styles.kvRow}>
+              <span className={styles.kvKey}>Craft</span>
+              <div className={styles.pieces}>
+                {item.pieceRecipes.map((p) => (
+                  <div key={p.piece} className={styles.piece}>
+                    <div className={styles.pieceName}>
+                      {p.piece}
+                      {p.station && <span className={styles.pieceAt}>at {p.station}</span>}
+                    </div>
+                    <ul className={styles.materials}>
+                      {p.materials.map((m) => (
+                        <li key={m.name}>
+                          <span className={styles.matQty}>{m.qty}</span>
+                          <Link
+                            to={`/materials?q=${encodeURIComponent(m.name)}`}
+                            onClick={onClose}
+                          >
+                            {m.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           {item.materials && item.materials.length > 0 && (
             <div className={styles.kvRow}>
               <span className={styles.kvKey}>Materials</span>
               <ul className={styles.materials}>
-                {item.materials.map((m) => (
-                  <li key={m.name}>
-                    <span className={styles.matQty}>{m.qty}</span>
-                    {m.wikiUrl
-                      ? <a href={m.wikiUrl} target="_blank" rel="noreferrer">{m.name}</a>
-                      : m.name}
-                  </li>
-                ))}
+                {item.materials.map((m) => {
+                  const how = materialSource(m.name);
+                  return (
+                    <li key={m.name}>
+                      <span className={styles.matQty}>{m.qty}</span>
+                      <span className={styles.matBody}>
+                        {/* deep-links to the materials index with the search prefilled */}
+                        <Link
+                          to={`/materials?q=${encodeURIComponent(m.name)}`}
+                          onClick={onClose}
+                        >
+                          {m.name}
+                        </Link>
+                        {how && <span className={styles.matHow}>{how}</span>}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           )}

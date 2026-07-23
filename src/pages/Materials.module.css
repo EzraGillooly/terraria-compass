@@ -1,0 +1,73 @@
+/* ════════════════════════════════════════════════
+   MATERIALS — searchable Calamity crafting index
+═══════════════════════════════════════════════════ */
+.page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); }
+.main { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; padding: 92px 32px 72px; }
+
+.crumb { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--ink-mute); margin: 0 0 10px; }
+.crumb a { color: var(--accent); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+.crumbSep { opacity: .5; margin: 0 6px; }
+
+.title {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(32px, 5vw, 56px); line-height: 1.08; margin: 0 0 12px;
+}
+.title em { font-style: normal; color: var(--accent); }
+.lede { max-width: 60ch; font-size: 16px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 20px; }
+
+.notice {
+  margin: 0 0 18px; padding: 10px 14px; font-size: 13px; line-height: 1.5;
+  color: var(--ink-soft); background: color-mix(in oklab, var(--warm) 14%, transparent);
+  border-left: 3px solid var(--warm);
+}
+
+/* ── Search ── */
+.searchWrap { --px-fill: var(--card); --px-border: var(--line); padding: 2px; margin-bottom: 12px; }
+.search {
+  width: 100%; box-sizing: border-box; border: 0; background: transparent;
+  font-family: inherit; font-size: 15px; color: var(--ink-soft);
+  padding: 12px 14px; outline: none;
+}
+.search::placeholder { color: var(--ink-mute); }
+.search:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.count { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 16px; }
+.empty { font-size: 14px; color: var(--ink-soft); margin: 0 0 18px; }
+.empty a { color: var(--accent); }
+
+/* ── Results ── */
+.list {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px;
+}
+.card { --px-fill: var(--card); --px-border: var(--line); padding: 14px 16px 16px; }
+/* the material the visitor arrived looking for */
+.cardHit { --px-border: var(--warm); }
+
+.cardHead { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.name { font-family: var(--display); font-size: 17px; font-weight: 700; margin: 0; color: var(--ink-soft); }
+.wiki { flex: none; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-mute); text-decoration: none; }
+.wiki:hover { color: var(--accent); text-decoration: underline; }
+
+.source { font-size: 13px; line-height: 1.5; color: var(--ink-soft); margin: 6px 0 0; }
+
+.recipe { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
+.recipeCap { display: block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px; }
+.ing { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.ing li { display: flex; align-items: baseline; gap: 8px; font-size: 13px; }
+.qty {
+  flex: none; min-width: 24px; text-align: right;
+  font-weight: 800; font-size: 12px; color: var(--ink-mute); font-variant-numeric: tabular-nums;
+}
+.qty::after { content: '\00d7'; margin-left: 1px; opacity: .6; }
+.jump {
+  padding: 0; border: 0; background: none; font-family: inherit; font-size: 13px;
+  color: var(--accent); cursor: pointer; text-align: left;
+}
+.jump:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .main { padding: 80px 18px 56px; }
+  .list { grid-template-columns: 1fr; }
+}

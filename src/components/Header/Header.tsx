@@ -9,6 +9,8 @@ const NAV_LINKS = [
   { to: '/bosses',   label: 'Bosses'   },
   { to: '/loadouts', label: 'Loadouts' },
   { to: '/crafting', label: 'Crafting' },
+  /** the materials index is scraped from the Calamity wiki, so it is pack-gated */
+  { to: '/materials', label: 'Materials', packs: ['calamity'] },
 ];
 
 /** Shared dismiss-on-outside-click / Escape behaviour for the pop-out selects. */
@@ -118,7 +120,7 @@ interface HeaderProps {
 }
 
 export function Header({ variant = 'paper' }: HeaderProps) {
-  const { isDayMode, setIsDayMode } = useAppState();
+  const { isDayMode, setIsDayMode, packId } = useAppState();
   const isPhoto = variant === 'photo';
 
   return (
@@ -138,7 +140,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Nav */}
         <nav className={styles.topnav} aria-label="Site navigation">
-          {NAV_LINKS.map(({ to, label }) => (
+          {NAV_LINKS.filter((l) => !l.packs || l.packs.includes(packId)).map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
