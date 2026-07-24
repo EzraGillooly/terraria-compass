@@ -42,7 +42,11 @@
   padding: 12px 14px; outline: none;
 }
 .search::placeholder { color: #A9BFDA; }
-.search:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
+/* An outline would draw a square ring over the frame's stepped corners. Light up
+   the pixel-frame's own border instead, so focus follows the corner shape. */
+.searchWrap:focus-within { --px-border: var(--warm); }
+.searchWrap::before { transition: background .15s; }
+.search:focus-visible { outline: none; }
 
 .count { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #A9BFDA; margin: 0 0 16px; }
 .empty { font-size: 14px; color: #EAF0FF; margin: 0 0 18px; }
