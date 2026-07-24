@@ -96,7 +96,9 @@
 .buffsPanel { flex: 1; min-width: 0; }
 .tlabel { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin-bottom: 14px; }
 .tlabel .em { color: var(--warm); }
-.groupLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin: 18px 0 12px; }
+.groupLabel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin: 18px 0 12px; }
+/* Says why an unranked list has no "best" pick, without shouting it. */
+.groupNote { font-weight: 600; text-transform: none; letter-spacing: 0; font-size: 11px; color: #7F93B8; }
 
 /* "Show N more" reveal for reference-tier weapons */
 .showRest {

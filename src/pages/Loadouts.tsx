@@ -258,11 +258,25 @@ export function Loadouts() {
 
   const matchSub = (w: Item) => !hasSubclasses || showingAll || !w.subclass || activeSubclasses.has(w.subclass);
   const inScope = safeLoadout.weapons.filter(matchSub);
+
+  /*
+   * Whether this loadout was actually ranked. Curated entries carry a `why`
+   * explaining the pick; the endgame Calamity loadouts were scraped from the
+   * wiki's class-setup tables, where `tier` only records the row's position in
+   * that table. Calling the first row "Best in Slot" would assert a judgement
+   * nothing made, so those are presented as an unranked list instead.
+   */
+  const ranked = safeLoadout.weapons.some((w) => w.why);
+
   // "All" is an overview: just the best in slot from each subclass. Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
   const filteredBest = inScope.filter((w) => w.tier === 'best');
   const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
   const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
+
+  // Unranked: one flat list, so no tier reads as a recommendation.
+  const unrankedShown = showingAll ? filteredBest : [...filteredBest, ...filteredAlso];
+  const unrankedRest = filteredRest;
 
   const groupedArmor = curateArmor(groupArmor(safeLoadout.armor));
   const armorSprite = groupedArmor[0]?.icon;
@@ -386,25 +400,43 @@ export function Loadouts() {
               </div>
             )}
 
-            {filteredBest.length > 0 && (
+            {ranked ? (
               <>
-                <div className={styles.groupLabel}>Best in Slot</div>
-                <div className={styles.weaponRow}>
-                  {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
-                </div>
+                {filteredBest.length > 0 && (
+                  <>
+                    <div className={styles.groupLabel}>Best in Slot</div>
+                    <div className={styles.weaponRow}>
+                      {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                    </div>
+                  </>
+                )}
+
+                {filteredAlso.length > 0 && (
+                  <>
+                    <div className={styles.groupLabel}>Also Great</div>
+                    <div className={styles.weaponRow}>
+                      {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                    </div>
+                  </>
+                )}
               </>
+            ) : (
+              unrankedShown.length > 0 && (
+                <>
+                  <div className={styles.groupLabel}>
+                    Options
+                    <span className={styles.groupNote}>
+                      viable here, in no particular order
+                    </span>
+                  </div>
+                  <div className={styles.weaponRow}>
+                    {unrankedShown.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                  </div>
+                </>
+              )
             )}
 
-            {filteredAlso.length > 0 && (
-              <>
-                <div className={styles.groupLabel}>Also Great</div>
-                <div className={styles.weaponRow}>
-                  {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
-                </div>
-              </>
-            )}
-
-            {filteredRest.length > 0 && (
+            {(ranked ? filteredRest : unrankedRest).length > 0 && (
               <>
                 <button
                   type="button"
@@ -412,11 +444,12 @@ export function Loadouts() {
                   aria-expanded={showRest}
                   onClick={() => setShowRest((v) => !v)}
                 >
-                  {showRest ? 'Hide' : 'Show'} {filteredRest.length} other{filteredRest.length === 1 ? '' : 's'}
+                  {showRest ? 'Hide' : 'Show'} {(ranked ? filteredRest : unrankedRest).length} other
+                  {(ranked ? filteredRest : unrankedRest).length === 1 ? '' : 's'}
                 </button>
                 {showRest && (
                   <div className={styles.weaponRow}>
-                    {filteredRest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                    {(ranked ? filteredRest : unrankedRest).map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                   </div>
                 )}
               </>
