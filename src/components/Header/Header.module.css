@@ -178,9 +178,13 @@
   right: 0;
   min-width: 100%;
   margin: 0;
-  padding: 4px;
+  padding: 5px;
   list-style: none;
   z-index: 30;
+  /* gap so a hovered item's background never abuts the selected item's */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   background: rgba(28, 40, 96, .96);
   border: 1px solid #000;
   border-radius: var(--radius-md);
@@ -190,11 +194,13 @@
 .diffItem {
   display: block;
   width: 100%;
-  text-align: left;
+  text-align: center;
   background: transparent;
   border: 0;
   border-radius: var(--radius-sm);
-  padding: 7px 12px;
+  /* extra top padding: Andy Bold sits high in its box, so symmetric padding
+     reads as bottom-heavy */
+  padding: 8px 12px 6px;
   font-family: var(--body);
   font-weight: 700;
   font-size: 13px;
@@ -202,7 +208,9 @@
   cursor: pointer;
   transition: background .12s;
 }
-.diffItem:hover { background: rgba(91, 161, 48, .35); }
+/* hover uses the menu-gold at low opacity (matching the nav hover); the selected
+   item keeps the solid green fill */
+.diffItem:hover { background: color-mix(in oklab, var(--warm) 30%, transparent); }
 .diffItem:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
 .diffItemOn { background: var(--accent); }
 .diffItemOn:hover { background: var(--accent); }
@@ -245,5 +253,5 @@
 }
 
 /* Class dropdown items carry the class weapon sprite alongside the label. */
-.classItem { display: flex; align-items: center; gap: 9px; }
+.classItem { display: flex; align-items: center; justify-content: center; gap: 9px; }
 .classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }
