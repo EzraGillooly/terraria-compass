@@ -144,7 +144,7 @@
 
 /* ── Armor ── */
 .armor { display: flex; gap: 14px; align-items: flex-start; }
-.armorDoll { width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
+.armorDoll { width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-u: 1.5px; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
 .armorSprite { width: 44px; height: 44px; object-fit: contain; }
 .armorInfo { flex: 1; min-width: 0; }
 /* Each set carries its own doll, so the entry is a row: sprite + details. */
@@ -167,7 +167,7 @@
 .accBox { width: max-content; min-width: 158px; flex: none; }
 .accSplit { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
-.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 button.accSlot { cursor: pointer; transition: border-color .15s, background .15s; }
 button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.1); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
@@ -194,7 +194,7 @@ button.accSlot:hover { border-color: var(--warm); background: rgba(255,255,255,.
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 /* buff/consumable cards mirror the accessory slots: icon with the name centred beneath */
 .buffGrid { display: grid; grid-template-columns: repeat(2, 84px); gap: 8px; justify-content: center; }
-.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 /* .pixel-hollow is required: at 6% opacity the fill would otherwise show the
    border colour through it and tint the card. */
 .buffCell::before, .buffCell::after { transition: background .15s; }
