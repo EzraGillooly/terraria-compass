@@ -37,9 +37,12 @@
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
 
-/* Small control: half-scale pixel step (--px-u: 1px), shape/fill/border from the
-   global .pixel-frame utility rather than its own background/border/radius. */
-.close {
+/* Small control: reduced pixel step (--px-u: 1.5px, between the 2px default and a
+   1px half-scale), shape/fill/border from the global .pixel-frame utility rather
+   than its own background/border/radius. The `.modal` prefix raises specificity so
+   position:absolute wins over .pixel-frame's position:relative — without it the
+   button collapses into normal flow and lands over the sprite tile. */
+.modal .close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -47,15 +50,15 @@
   height: 30px;
   display: grid;
   place-items: center;
-  --px-u: 1px;
+  --px-u: 1.5px;
   --px-fill: var(--card-2);
   --px-border: var(--line);
   color: var(--ink-mute);
   cursor: pointer;
   transition: color .15s;
 }
-.close::before { transition: background .15s; }
-.close:hover { color: var(--ink-soft); --px-border: var(--accent); }
+.modal .close::before { transition: background .15s; }
+.modal .close:hover { color: var(--ink-soft); --px-border: var(--accent); }
 
 .head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; padding-right: 32px; }
 /* Shape/fill/border come from the global .pixel-frame utility — no own
@@ -67,9 +70,9 @@
   flex: none;
   display: grid;
   place-items: center;
-  /* half-scale step (1px, not the default 2px): a 60px tile at full scale reads
-     as too coarse next to the modal's copy */
-  --px-u: 1px;
+  /* reduced step (1.5px, between the 2px default and a 1px half-scale): full
+     scale read as too coarse on a 60px tile, 1px too faint */
+  --px-u: 1.5px;
   --px-fill: var(--card-2);
   --px-border: var(--line);
 }
