@@ -20,6 +20,13 @@ export const RecipeNode = z.object({
   wikiUrl: z.string().url(),
   /** empty for base materials (drops, ores, purchases) — these are the tree's leaves */
   recipes: z.array(Recipe),
+  /**
+   * Surfaced on the crafting landing by default. Calamity's graph is generated
+   * rather than curated, so it has hundreds of roots — every armor piece and
+   * potion included. Marking the notable ones keeps the landing readable while
+   * the rest stay in `roots`, so deep links into them still resolve.
+   */
+  featured: z.boolean().optional(),
 });
 
 export const RecipeBook = z.object({

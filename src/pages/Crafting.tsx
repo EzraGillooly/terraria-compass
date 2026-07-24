@@ -149,11 +149,23 @@ export function Crafting() {
   const requested = params.get('item');
   const [filter, setFilter] = useState('');
 
+  const [showAll, setShowAll] = useState(false);
+
+  /* Calamity's graph is generated, so `roots` holds every craftable end product —
+     armor pieces and healing potions included. Show the notable ones by default
+     and keep the rest a toggle (or a search) away. Vanilla marks nothing, so its
+     curated list shows in full. */
+  const featured = useMemo(
+    () => roots.filter((id) => nodes[id]?.featured),
+    [roots, nodes],
+  );
+  const hasFeatured = featured.length > 0;
+
   const visibleRoots = useMemo(() => {
     const q = filter.trim().toLowerCase();
-    if (!q) return roots;
-    return roots.filter((id) => nodes[id]?.name.toLowerCase().includes(q));
-  }, [filter, roots, nodes]);
+    if (q) return roots.filter((id) => nodes[id]?.name.toLowerCase().includes(q));
+    return hasFeatured && !showAll ? featured : roots;
+  }, [filter, roots, nodes, featured, hasFeatured, showAll]);
 
   // an ?item= that isn't a root still opens the tree that contains it, highlighted
   const rootId = useMemo(
@@ -302,7 +314,18 @@ export function Crafting() {
               />
             </div>
             <p className={styles.filterCount}>
-              {visibleRoots.length} of {roots.length} trees
+              {filter.trim()
+                ? `${visibleRoots.length} of ${roots.length} trees`
+                : `${visibleRoots.length}${hasFeatured && !showAll ? ' notable' : ''} trees`}
+              {hasFeatured && !filter.trim() && (
+                <button
+                  type="button"
+                  className={styles.showAll}
+                  onClick={() => setShowAll((v) => !v)}
+                >
+                  {showAll ? 'show notable only' : `show all ${roots.length}`}
+                </button>
+              )}
             </p>
             <div className={styles.grid}>
               {visibleRoots.map((id) => {

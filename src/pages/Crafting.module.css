@@ -171,3 +171,9 @@
 }
 .filter::placeholder { color: #A9BFDA; }
 .filterCount { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #A9BFDA; margin: 0 0 14px; }
+.showAll {
+  margin-left: 10px; padding: 0; border: 0; background: none;
+  font-family: inherit; font-size: 11px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--warm); cursor: pointer;
+}
+.showAll:hover { text-decoration: underline; }
