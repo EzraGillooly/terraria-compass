@@ -124,15 +124,17 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                   const how = materialSource(m.name);
                   return (
                     <li key={m.name}>
-                      <span className={styles.matQty}>{m.qty}</span>
                       <span className={styles.matBody}>
-                        {/* deep-links to the materials index with the search prefilled */}
-                        <Link
-                          to={`/materials?q=${encodeURIComponent(m.name)}`}
-                          onClick={onClose}
-                        >
-                          {m.name}
-                        </Link>
+                        <span className={styles.matNameRow}>
+                          {/* deep-links to the materials index with the search prefilled */}
+                          <Link
+                            to={`/materials?q=${encodeURIComponent(m.name)}`}
+                            onClick={onClose}
+                          >
+                            {m.name}
+                          </Link>
+                          <span className={styles.matQty}>{m.qty}</span>
+                        </span>
                         {how && <span className={styles.matHow}>{how}</span>}
                       </span>
                     </li>
