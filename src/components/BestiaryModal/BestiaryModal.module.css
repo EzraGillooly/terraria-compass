@@ -149,3 +149,13 @@
 .pieceName { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; font-weight: 800; font-size: 12.5px; color: var(--ink-soft); }
 .pieceAt { font-weight: 600; font-size: 10.5px; color: var(--ink-mute); }
 .pieces .materials { margin-top: 3px; }
+
+/* A top-level Materials list leads with the quantity, which pushed its names
+   ~34px right of every other value in the block ("Crafted" above it). Put the
+   name first so it starts at the value column like the Craft rows do, with the
+   quantity trailing right — the same shape as the crafting page's shopping list.
+   Nested lists under a piece keep quantity-first: they are already indented one
+   level, so they are not competing for that column. */
+.materialsFlat li { justify-content: space-between; gap: 12px; }
+.materialsFlat .matQty { order: 2; min-width: 0; }
+.materialsFlat .matBody { flex: 1; }

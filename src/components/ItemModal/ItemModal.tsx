@@ -119,7 +119,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           {item.materials && item.materials.length > 0 && (
             <div className={styles.kvRow}>
               <span className={styles.kvKey}>Materials</span>
-              <ul className={styles.materials}>
+              <ul className={`${styles.materials} ${styles.materialsFlat}`}>
                 {item.materials.map((m) => {
                   const how = materialSource(m.name);
                   return (
