@@ -13,8 +13,9 @@ test('reduced-motion: transitions are zeroed when prefers-reduced-motion is redu
   await page.goto('/#/loadouts');
   await page.waitForLoadState('networkidle');
 
-  // A class tab has a transition under normal motion; it must be zeroed here.
-  const tab = page.getByRole('button', { name: /^Melee/ });
+  // A nav tab has a transition under normal motion; it must be zeroed here.
+  // (Class selection lives in a header dropdown, so there is no class tab to probe.)
+  const tab = page.getByRole('link', { name: /^Bosses/ });
   await expect(tab).toBeVisible();
 
   const duration = await tab.evaluate((el) => getComputedStyle(el).transitionDuration);
