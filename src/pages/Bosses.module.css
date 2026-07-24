@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   BOSSES — Vertical roadmap (Guide Green)
+   BOSSES - Vertical roadmap (Guide Green)
 ═══════════════════════════════════════════════════ */
 .page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
 
@@ -19,7 +19,7 @@
 /* Footer sits above the backdrop wash (which otherwise covers non-positioned content) */
 .footerLayer { position: relative; z-index: 2; }
 
-/* ── Hero (transparent — the backdrop shows through) ── */
+/* ── Hero (transparent - the backdrop shows through) ── */
 .hero {
   position: relative;
   z-index: 2;
@@ -57,7 +57,7 @@
 }
 
 /* ════════════════════════════════════════════════
-   SCROLL RAIL — horizontal boss timeline (dark band)
+   SCROLL RAIL - horizontal boss timeline (dark band)
 ═══════════════════════════════════════════════════ */
 .railSection {
   position: relative;
@@ -186,7 +186,7 @@
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
-  /* pixel corners via .pixel-frame + .pixel-hollow — same fill and per-boss
+  /* pixel corners via .pixel-frame + .pixel-hollow - same fill and per-boss
      border colour as before, only the corner shape changes. The utility supplies
      background/border, so they must not be set here, and a box-shadow would
      render against the real rectangular box and cut square corners. */
@@ -215,7 +215,7 @@
   color: #fff;
   text-shadow: var(--tshadow);
 }
-/* Terraria has no rounded pills — tags are solid boxes with the app's stepped
+/* Terraria has no rounded pills - tags are solid boxes with the app's stepped
    corner. --px-border matches --px-fill so the filled tag shows no ring. */
 .tagOpt, .tagWorld {
   display: inline-flex; align-items: center; justify-content: center;

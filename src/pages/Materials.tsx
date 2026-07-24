@@ -19,7 +19,7 @@ const MATERIALS = materialsData as Material[];
 const byId = new Map(MATERIALS.map((m) => [m.id, m]));
 
 /* Recipes name world variants "Any Cobalt Bar", so a search for the plain item
-   should still find it — and vice versa. */
+   should still find it - and vice versa. */
 const bare = (s: string) => s.toLowerCase().replace(/^any\s+/, '');
 
 /** Rank matches so an exact/prefix hit for the linked-in name lands first. */

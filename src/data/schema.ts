@@ -22,7 +22,7 @@ export const Item = z.object({
   modifier: z.string().optional(),
   /**
    * For armor sets with class-specific headpieces (Adamantite, Hallowed, …),
-   * the piece this class should craft — the rest of the set is shared.
+   * the piece this class should craft - the rest of the set is shared.
    */
   headpiece: z.string().optional(),
   /** the full set to craft: [headpiece, breastplate, leggings] */
@@ -42,7 +42,7 @@ export const Item = z.object({
   })).optional(),
   /**
    * Armor is crafted a piece at a time, so it carries one recipe per piece
-   * rather than a single `materials` list — summing them would quote a total
+   * rather than a single `materials` list - summing them would quote a total
    * no player pays, since a set lists every class helmet.
    */
   pieceRecipes: z.array(z.object({

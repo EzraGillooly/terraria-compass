@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   LOADOUTS — Terraria inventory over a phase biome backdrop
+   LOADOUTS - Terraria inventory over a phase biome backdrop
 ═══════════════════════════════════════════════════ */
 .page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); overflow: hidden; }
 .wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 92px 24px 80px; }
@@ -79,7 +79,7 @@
 .colRight { display: flex; flex-direction: column; gap: 14px; }
 /* Pixel-stepped corners via the global .pixel-frame utility (see pixel.css).
    It supplies the shape, fill and border, so this rule must not set its own
-   background/border/radius — and must not take a box-shadow, which would render
+   background/border/radius - and must not take a box-shadow, which would render
    against the real rectangular box and cut square corners across the stepping.
    --px-border keeps the original pale blue edge rather than defaulting to black. */
 .invPanel {
@@ -152,7 +152,7 @@
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 .setBadge { display: inline-block; margin-top: 8px; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #9FE0C0; background: rgba(159,224,192,.14); border-radius: var(--radius-pill); padding: 4px 10px 2px; line-height: 1; }
 
-/* ── Accessory box — two compact columns, right-anchored ── */
+/* ── Accessory box - two compact columns, right-anchored ── */
 .accBox { width: max-content; min-width: 158px; flex: none; }
 .accSplit { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
@@ -160,7 +160,7 @@
 button.accSlot { cursor: pointer; }
 /* .accSlot is a pixel-frame: light its stepped border on hover (via --px-border,
    which drives the ::before layer) rather than the real box border, and drop the
-   background — a real background paints a square that ignores the pixel corners. */
+   background - a real background paints a square that ignores the pixel corners. */
 button.accSlot::before { transition: background .15s; }
 button.accSlot:hover { --px-border: var(--warm); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }

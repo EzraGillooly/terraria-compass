@@ -18,10 +18,32 @@ export function Footer({ flush = false }: FooterProps) {
           <p className={styles.tagline}>Your compass through Terraria.</p>
         </div>
 
-        {/* Middle: reserved for something fun */}
-        <div className={styles.mid} aria-hidden="true" />
+        {/* Middle: builder shoutout. Every backdrop on the site is someone's
+            build, so they get top billing rather than a footnote. */}
+        <div className={styles.mid}>
+          <p className={styles.shoutout}>
+            Shoutout to these absolute goats for building these sick backdrops
+          </p>
+          <p className={styles.shoutoutNames}>
+            <a
+              href="https://forums.terraria.org/index.php?threads/flor3nce2456s-builds-collection.3055/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              flor3nce2456
+            </a>
+            <span className={styles.shoutoutSep}>·</span>
+            <a
+              href="https://forums.terraria.org/index.php?threads/ballin-houses-by-eiv.1222/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Eiv
+            </a>
+          </p>
+        </div>
 
-        {/* Right: attribution — CC BY-NC-SA requires crediting both wikis, and
+        {/* Right: attribution - CC BY-NC-SA requires crediting both wikis, and
             Terraria/Calamity trademarks belong to their respective owners. */}
         <div className={styles.right}>
           <p className={styles.note}>
@@ -40,15 +62,10 @@ export function Footer({ flush = false }: FooterProps) {
             {' '}under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="noopener noreferrer" target="_blank">CC BY-NC-SA 3.0</a>.
           </p>
           <p className={styles.note}>
-            Backdrops are community screenshots and belong to their builders —{' '}
-            <a
-              href="https://github.com/EzraGillooly/terraria-compass/blob/main/docs/ATTRIBUTIONS.md"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              credits
-            </a>. If one is yours and you&rsquo;d like it credited differently or
-            removed, get in touch and it will be actioned.
+            Backdrops are community builds and belong to their builders. If one is
+            yours and you&rsquo;d like it credited differently or removed, email{' '}
+            <a href="mailto:ezragillooly@gmail.com">ezragillooly@gmail.com</a>
+            {' '}and it will be actioned.
           </p>
         </div>
 

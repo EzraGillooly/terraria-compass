@@ -12,7 +12,7 @@ import styles from './Loadouts.module.css';
 const BASE = import.meta.env.BASE_URL;
 const WIKI = 'https://terraria.wiki.gg/wiki/Special:FilePath';
 
-/* Class rail icons — a representative early-game weapon per class, served locally
+/* Class rail icons - a representative early-game weapon per class, served locally
    from public/icons/classes (Copper Broadsword, Wooden Bow, Topaz Staff, Finch Staff). */
 
 /* Phase → biome backdrop / representative boss (data has no bossIcon yet). */
@@ -60,7 +60,7 @@ function makeErrorHandler(wikiSrc: string, fallback: string) {
 
 const FALLBACK_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Crect width='36' height='36' fill='%23E6F2ED'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-size='18' fill='%234F6E60' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-/* Prefer the real wiki page name for the sprite fallback — kebab→TitleCase mangles
+/* Prefer the real wiki page name for the sprite fallback - kebab→TitleCase mangles
    names with apostrophes ("Ball O' Hurt" → Ball_O_Hurt, which 404s). */
 function iconSrcs(icon: string, wikiUrl?: string) {
   const stem = icon.replace(/\.png$/i, '').split('/').pop() ?? '';
@@ -125,7 +125,7 @@ function groupArmor(armor: Item[]): Item[] {
     const mat = armorMaterial(a.name);
     const pair = ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()));
     if (pair) {
-      // ore/evil armor is one choice across two worlds — always show the pair name
+      // ore/evil armor is one choice across two worlds - always show the pair name
       // ("Adamantite armor" → "Adamantite / Titanium armor"), even if the data lists
       // only one side. Dedupe the sibling if it's also present.
       const other = armor.find((x) => !used.has(x.id) && x.id !== a.id &&
@@ -163,7 +163,7 @@ function curateArmor(grouped: Item[]): Item[] {
   const picks: Item[] = [];
   if (vanilla[0]) picks.push(vanilla[0]);
   if (modded[0]) picks.push(modded[0]);
-  // endgame stages have no vanilla set (or vice versa) — fill to two from the
+  // endgame stages have no vanilla set (or vice versa) - fill to two from the
   // pool that has options so the reader still sees an alternative
   if (picks.length < 2) {
     const pool = vanilla.length ? vanilla : modded;
@@ -241,7 +241,7 @@ export function Loadouts() {
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
 
-  // Only offer subclasses that actually have a weapon this phase — e.g. there are
+  // Only offer subclasses that actually have a weapon this phase - e.g. there are
   // no Launchers before Hardmode. A stored subclass that isn't available here (or
   // no longer exists at all) falls back to "All" rather than showing an empty list.
   const availableSubclasses = classDef.subclasses.filter((s) =>
@@ -345,7 +345,7 @@ export function Loadouts() {
             {/* The first cue, not `triggeredBy`: that field just restates the
                 title ("Pre-Skeletron" → "Before Skeletron"), and the two packs
                 disagree on whether it names the phase's start or its end. A cue
-                answers the question the banner should — am I in this phase? */}
+                answers the question the banner should - am I in this phase? */}
             {phaseDef && (
               <span className={styles.bannerHint}>
                 {phaseDef.cues[0] ?? phaseDef.triggeredBy}
@@ -427,7 +427,7 @@ export function Loadouts() {
             )}
           </div>
 
-          {/* Reforge — hugs the weapons panel */}
+          {/* Reforge - hugs the weapons panel */}
           <div className={`${styles.invPanel} ${styles.reforgePanel} pixel-frame`}>
             {extraAccessories.length > 0 && (
               <div className={styles.accAlts}>

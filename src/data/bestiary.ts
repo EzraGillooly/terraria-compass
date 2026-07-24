@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   BESTIARY — enemy + loot detail, keyed by display name.
+   BESTIARY - enemy + loot detail, keyed by display name.
    Referenced by biome `mobs` / `items` name strings.
    Stats are Classic (Normal) mode, sourced from
    terraria.wiki.gg. Authored biome-by-biome.
@@ -64,7 +64,7 @@ const FOREST: BestiaryEntry[] = [
     hp: 14, damage: 6, defense: 0,
     description: 'The most common early enemy. Harmless in the open, but dangerous when they pile up or drop on you from above.',
     drops: [
-      { name: 'Gel', rate: '1–2, 100%' },
+      { name: 'Gel', rate: '1-2, 100%' },
       { name: 'Slime Staff', rate: '0.01% (very rare)' },
     ],
   },
@@ -94,7 +94,7 @@ const FOREST: BestiaryEntry[] = [
     hp: 100, damage: 20, defense: 0,
     description: 'A rare, fast pink slime. Tanky for its size, but it drops Pink Gel and a big pile of coins.',
     drops: [
-      { name: 'Pink Gel', rate: '7–17, 100%' },
+      { name: 'Pink Gel', rate: '7-17, 100%' },
     ],
   },
   {
@@ -184,7 +184,7 @@ const JUNGLE: BestiaryEntry[] = [
     hp: 60, damage: 18, defense: 6,
     description: 'A tougher green slime tinted for the jungle. Behaves like any slime, just with more health.',
     drops: [
-      { name: 'Gel', rate: '1–2, 100%' },
+      { name: 'Gel', rate: '1-2, 100%' },
       { name: 'Slime Staff', rate: '0.01% (very rare)' },
     ],
   },
@@ -329,7 +329,7 @@ const DESERT: BestiaryEntry[] = [
     drops: [] },
   { kind: 'enemy', name: 'Tomb Crawler', hp: 60, damage: 18, defense: 12,
     description: 'A burrowing worm of the Underground Desert. Only the head deals heavy damage.',
-    drops: [{ name: 'Sturdy Fossil', rate: '1–2, 50%' }] },
+    drops: [{ name: 'Sturdy Fossil', rate: '1-2, 50%' }] },
   { kind: 'enemy', name: 'Desert Djinn', wiki: 'Desert_Spirit', hp: 220, damage: 40, defense: 20, hardmode: true,
     description: 'A Hardmode caster of the corrupted Underground Desert that fires homing, exploding curses.',
     drops: [{ name: 'Desert Spirit Lamp', rate: '2.5%' }, { name: "Djinn's Curse", rate: '3.25%' }] },
@@ -347,7 +347,7 @@ const DESERT: BestiaryEntry[] = [
 const SNOW: BestiaryEntry[] = [
   { kind: 'enemy', name: 'Ice Slime', hp: 30, damage: 8, defense: 4,
     description: 'A frosty slime that inflicts Chilled, slowing you down. Otherwise a normal slime.',
-    drops: [{ name: 'Gel', rate: '1–2, 100%' }, { name: 'Ice Cream', rate: '0.67%' }] },
+    drops: [{ name: 'Gel', rate: '1-2, 100%' }, { name: 'Ice Cream', rate: '0.67%' }] },
   { kind: 'enemy', name: 'Zombie Eskimo', wiki: 'Zombie_Eskimo', hp: 45, damage: 14, defense: 6,
     description: 'The Snow biome zombie, bundled up against the cold. Same threat as a normal Zombie.',
     drops: [{ name: 'Shackle', rate: '2%' }] },
@@ -359,7 +359,7 @@ const SNOW: BestiaryEntry[] = [
     drops: [{ name: 'Depth Meter', rate: '0.5%' }, { name: 'Bat Bat', rate: '0.33%' }] },
   { kind: 'enemy', name: 'Spiked Ice Slime', hp: 60, damage: 12, defense: 8,
     description: 'An ice slime that fires ice spikes and always chills you on contact.',
-    drops: [{ name: 'Gel', rate: '1–2, 100%' }] },
+    drops: [{ name: 'Gel', rate: '1-2, 100%' }] },
   { kind: 'loot', name: 'Ice Block', type: 'Material (Block)',
     description: 'Frozen water block. Slippery to walk across.', source: 'Mine ice in the Snow biome.', usedFor: 'Ice furniture and frozen builds.' },
   { kind: 'loot', name: 'Frost Core', type: 'Material',
@@ -436,17 +436,17 @@ const CORRUPTION: BestiaryEntry[] = [
     description: 'A flying maw that swarms in the Corruption. High defense and knockback resistance make packs dangerous early.',
     drops: [{ name: 'Rotten Chunk', rate: '33.3%' }, { name: 'Ancient Shadow Armor', rate: '0.19% each piece' }] },
   { kind: 'enemy', name: 'Devourer', hp: 100, damage: 31, defense: 6,
-    description: 'A pre-Hardmode Corruption worm of 10–14 segments that burrows through blocks.',
-    drops: [{ name: 'Worm Tooth', rate: '3–8, 100%' }, { name: 'Rotten Chunk', rate: '33.3%' }] },
+    description: 'A pre-Hardmode Corruption worm of 10-14 segments that burrows through blocks.',
+    drops: [{ name: 'Worm Tooth', rate: '3-8, 100%' }, { name: 'Rotten Chunk', rate: '33.3%' }] },
   { kind: 'enemy', name: 'Corruptor', hp: 230, damage: 60, defense: 32, hardmode: true,
     description: 'A giant Hardmode Eater of Souls that spits Vile projectiles inflicting Weak.',
     drops: [{ name: 'Rotten Chunk', rate: '33.3%' }, { name: 'Vitamins', rate: '1%' }] },
   { kind: 'enemy', name: 'World Feeder', hp: 500, damage: 70, defense: 36, hardmode: true,
     description: 'A large Hardmode Corruption worm. Loot drops from the head, so kill it head-first.',
-    drops: [{ name: 'Cursed Flame', rate: '2–5, 100%' }] },
+    drops: [{ name: 'Cursed Flame', rate: '2-5, 100%' }] },
   { kind: 'enemy', name: 'Slimeling', hp: 90, damage: 45, defense: 10, hardmode: true,
     description: 'Small slimes that split off from a defeated Corrupt Slime. Can inflict Darkness.',
-    drops: [{ name: 'Gel', rate: '2–4, 100%' }, { name: 'Blindfold', rate: '1%' }] },
+    drops: [{ name: 'Gel', rate: '2-4, 100%' }, { name: 'Blindfold', rate: '1%' }] },
   { kind: 'loot', name: 'Shadow Orb', type: 'Trigger / Reward',
     description: 'A glowing orb hidden in Corruption chasms.', source: 'Smash with a hammer or explosives.', usedFor: 'Gives a random reward; every third orb summons the Eater of Worlds.' },
   { kind: 'loot', name: 'Demonite Ore', type: 'Material (Ore)',
@@ -470,7 +470,7 @@ const CRIMSON: BestiaryEntry[] = [
     drops: [{ name: 'Vertebra', rate: '33.3%' }, { name: 'Vitamins', rate: '1%' }] },
   { kind: 'enemy', name: 'Crimslime', hp: 200, damage: 60, defense: 26, hardmode: true,
     description: 'A Hardmode Crimson slime of congealed flesh. Can inflict Darkness on contact.',
-    drops: [{ name: 'Gel', rate: '2–4, 100%' }, { name: 'Blindfold', rate: '1%' }] },
+    drops: [{ name: 'Gel', rate: '2-4, 100%' }, { name: 'Blindfold', rate: '1%' }] },
   { kind: 'loot', name: 'Crimtane Ore', type: 'Material (Ore)',
     description: 'The Crimson’s signature red ore.', source: 'Dropped by the Brain of Cthulhu; also mined underground in Crimson.', usedFor: 'Crimtane Bars for the Crimson weapon and armor tier.' },
   { kind: 'loot', name: 'Vertebra', type: 'Material',
@@ -485,13 +485,13 @@ const CRIMSON: BestiaryEntry[] = [
 const HALLOW: BestiaryEntry[] = [
   { kind: 'enemy', name: 'Pixie', hp: 150, damage: 55, defense: 20, hardmode: true,
     description: 'A glowing fairy that bounces toward you. Common and a reliable Pixie Dust source.',
-    drops: [{ name: 'Pixie Dust', rate: '1–3, 100%' }] },
+    drops: [{ name: 'Pixie Dust', rate: '1-3, 100%' }] },
   { kind: 'enemy', name: 'Unicorn', hp: 400, damage: 65, defense: 30, hardmode: true,
     description: 'A very fast charging enemy of the Hallow. Tanky, but always drops a Unicorn Horn.',
     drops: [{ name: 'Unicorn Horn', rate: '100%' }, { name: 'Blessed Apple', rate: '2.5%' }] },
   { kind: 'enemy', name: 'Gastropod', hp: 220, damage: 60, defense: 22, hardmode: true,
     description: 'A floating Hallow snail that fires pink lasers. Drops a lot of Gel.',
-    drops: [{ name: 'Gel', rate: '5–10, 100%' }] },
+    drops: [{ name: 'Gel', rate: '5-10, 100%' }] },
   { kind: 'enemy', name: 'Chaos Elemental', hp: 370, damage: 40, defense: 30, hardmode: true,
     description: 'A teleporting Underground Hallow enemy. Its ultra-rare drop is the coveted Rod of Discord.',
     drops: [{ name: 'Rod of Discord', rate: '0.2%' }] },

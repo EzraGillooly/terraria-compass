@@ -17,7 +17,7 @@ interface AppState {
       Calamity adds Rogue, so this is clamped when the pack changes */
   classId: string;
   setClassId: (id: string) => void;
-  /** the resolved active pack — every page reads its data from here */
+  /** the resolved active pack - every page reads its data from here */
   pack: Pack;
 }
 

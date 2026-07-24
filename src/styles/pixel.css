@@ -1,4 +1,4 @@
-/* Pixel-rendered game sprites — always crisp */
+/* Pixel-rendered game sprites - always crisp */
 .pixel-img {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
@@ -7,13 +7,13 @@
 /* ── Terraria pixel-rounded frame ──
    Opt in by adding `pixel-frame` alongside a component's class, then set the fill
    via `--px-fill` (and optionally `--px-border`, default black). The element must
-   not rely on its own background/border — those come from the two layers below,
+   not rely on its own background/border - those come from the two layers below,
    and it must not take a box-shadow: a shadow renders against the real
    rectangular box and would cut square corners across the pixel stepping.
    Content stays above via the negative-z-index pseudos + isolation.
 
    The corner is built from one unit, --px-u (default 2px). Override it per
-   component to scale the effect — small controls use 1px for a half-scale step.
+   component to scale the effect - small controls use 1px for a half-scale step.
    Corner border cells over a 5x5 grid, each cell --px-u square:
      row0 [] .  .  .  .    row1 .  [] [] .  .
      row2 .  .  .  [] .    row3 .  .  .  [] .    row4 .  .  .  .  []
@@ -96,7 +96,7 @@
 /* ── Circle variant ── */
 .pixel-frame.pixel-circle {
   /* stepped circle sized by --cu (px per unit, default 2 → 54px). Set --cu on an
-     ANCESTOR (not here) to shrink it — a declaration here would block inheritance.
+     ANCESTOR (not here) to shrink it - a declaration here would block inheritance.
      Uses a fallback so a standalone circle still defaults to 54px. */
   --px-outer: polygon(
     calc(var(--cu, 2px) * 18) 0,

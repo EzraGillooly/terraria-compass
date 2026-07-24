@@ -65,7 +65,7 @@ export const biomes: BiomeDef[] = [
   {
     id: 'dungeon',
     name: 'Dungeon',
-    blurb: 'Unlocked after Skeletron. Dangerous enemies guard powerful chests — Water Bolt, Handgun, and more.',
+    blurb: 'Unlocked after Skeletron. Dangerous enemies guard powerful chests - Water Bolt, Handgun, and more.',
     palette: { sky: '#1A1F4A', mid: '#2D3672', deep: '#0F1331', accent: '#C9D3FF' },
     mobs: ['Skeleton', 'Cursed Skull', 'Dark Caster', 'Spike Ball', 'Dungeon Slime'],
     items: ['Water Bolt', 'Handgun', 'Muramasa', 'Shadow Key', 'Cobalt Shield'],
@@ -83,7 +83,7 @@ export const biomes: BiomeDef[] = [
   {
     id: 'corruption',
     name: 'Corruption',
-    blurb: 'Purple wastes pocked with chasms. Break Shadow Orbs to progress — but at a cost.',
+    blurb: 'Purple wastes pocked with chasms. Break Shadow Orbs to progress - but at a cost.',
     palette: { sky: '#6B3D8C', mid: '#3F1F5C', deep: '#1C0A2E', accent: '#C49EF0' },
     mobs: ['Eater of Souls', 'Devourer', 'Corruptor', 'World Feeder', 'Slimeling'],
     items: ['Shadow Orb', 'Demonite Ore', 'Rotten Chunk', 'Vile Mushroom'],

@@ -46,7 +46,27 @@
 }
 
 /* ── Middle: reserved ── */
-.mid { justify-self: center; }
+/* ── Middle: builder shoutout ── */
+.mid { justify-self: center; text-align: center; max-width: 26ch; }
+.shoutout {
+  font-family: var(--display);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+.shoutoutNames {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+.shoutoutNames a { color: var(--warm); text-decoration: none; }
+.shoutoutNames a:hover { text-decoration: underline; }
+.shoutoutSep { color: var(--ink-mute); opacity: .6; }
 
 /* ── Right: attribution ── */
 .right { justify-self: end; text-align: right; }

@@ -118,7 +118,7 @@ export function Bosses() {
 
   return (
     <div className={styles.page}>
-      {/* Full-page biome backdrop — underworld for pre-hardmode, hallow for hardmode */}
+      {/* Full-page biome backdrop - underworld for pre-hardmode, hallow for hardmode */}
       <div
         className={styles.backdrop}
         style={{ backgroundImage: `url(${BASE}biomes/${showHardmode ? 'hallow' : 'underworld'}.png)` }}

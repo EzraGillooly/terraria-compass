@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════
-   TERRARIA COMPASS — "Terraria" design system
+   TERRARIA COMPASS - "Terraria" design system
    Derived from the game's title art: sky blue, grass green,
    sun gold, earthy surfaces. Light default + dark mode.
 ════════════════════════════════════════════════════════════ */
@@ -8,7 +8,7 @@
   --sky:    #3E9BE0;                 /* Terraria sky blue (hero / scene) */
   --mid:    #5BA130;                 /* grass green */
   --deep:   #204C15;                 /* darkest grass: white-text buttons / active / positive */
-  --accent: #327026;                 /* grass green primary — darkened to clear WCAG AA green-on-light text */
+  --accent: #327026;                 /* grass green primary - darkened to clear WCAG AA green-on-light text */
   --warm:   #FCD800;                 /* Terraria menu hover yellow: top-pick / highlight */
   --ink:    #12283B;
 
@@ -28,7 +28,7 @@
   --body:    'Andy Bold', 'Baloo 2', ui-sans-serif, sans-serif;
   --pixel:   'Andy Bold', 'Baloo 2', ui-sans-serif, sans-serif;
   --game:    'Andy Bold', 'Baloo 2', Georgia, serif;
-  /* Terraria's signature hard black drop-shadow — use ONLY on light text over dark
+  /* Terraria's signature hard black drop-shadow - use ONLY on light text over dark
      surfaces (hero, banners, dark mode). Muddy on dark ink over light paper. */
   --tshadow: 1.5px 1.5px 0 #000, 3px 3px 0 rgba(0,0,0,.35);
 
@@ -85,7 +85,7 @@
   --space-12: 48px;
   --space-16: 64px;
 
-  /* ── Border radius (soft, modern — halved for a tighter look) ── */
+  /* ── Border radius (soft, modern - halved for a tighter look) ── */
   --radius-sm:   3px;
   --radius-md:   5px;
   --radius-lg:   8px;
@@ -93,7 +93,7 @@
 
 }
 
-/* ── Dark mode (Terraria night — dormant, for future full dark mode) ── */
+/* ── Dark mode (Terraria night - dormant, for future full dark mode) ── */
 [data-mode="dark"] {
   --deep:     #4E9E3E;
   --accent:   #5BB04A;

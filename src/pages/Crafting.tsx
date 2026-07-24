@@ -53,7 +53,7 @@ function TreeNode({
 
   if (!node) return null;
 
-  // recipes can cycle (Shimmer transmutes items into each other) — stop if we loop
+  // recipes can cycle (Shimmer transmutes items into each other) - stop if we loop
   const cyclic = trail.includes(id);
   const recipe = cyclic ? undefined : node.recipes[0];
   const key = [...trail, id].join('/');
@@ -151,7 +151,7 @@ export function Crafting() {
 
   const [showAll, setShowAll] = useState(false);
 
-  /* Calamity's graph is generated, so `roots` holds every craftable end product —
+  /* Calamity's graph is generated, so `roots` holds every craftable end product -
      armor pieces and healing potions included. Show the notable ones by default
      and keep the rest a toggle (or a search) away. Vanilla marks nothing, so its
      curated list shows in full. */

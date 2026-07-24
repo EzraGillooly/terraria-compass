@@ -71,7 +71,7 @@
   filter: drop-shadow(1px 2px 2px rgba(0,0,0,.45));
 }
 
-/* ── Top nav (centered) — each link in its own Terraria menu slot ── */
+/* ── Top nav (centered) - each link in its own Terraria menu slot ── */
 .topnav {
   justify-self: center;
   display: flex;
@@ -92,16 +92,16 @@
   /* black outline around each glyph (stroke painted under the fill) */
   -webkit-text-stroke: clamp(1.2px, 0.18vw, 2px) #000;
   paint-order: stroke fill;
-  /* shape/fill/border come from the global .pixel-frame utility — state changes
+  /* shape/fill/border come from the global .pixel-frame utility - state changes
      drive --px-fill rather than `background`, which the utility zeroes out */
   --px-fill: var(--accent);
   --px-border: #000;
-  --px-u: 1px;   /* half-scale corner — the 8px step is too heavy on a 34px tab */
+  --px-u: 1px;   /* half-scale corner - the 8px step is too heavy on a 34px tab */
   transition: opacity .15s;
 }
 .navLink::after { transition: background .15s; }
 
-/* the active tab keeps its own colour on hover — it isn't a target.
+/* the active tab keeps its own colour on hover - it isn't a target.
    :not(.active) states that outright rather than leaning on source order. */
 .navLink:not(.active):hover {
   opacity: 1;
@@ -121,7 +121,7 @@
   gap: clamp(6px, 1vw, 10px);
 }
 
-/* ── World difficulty dropdown — custom control, menu pops out below ── */
+/* ── World difficulty dropdown - custom control, menu pops out below ── */
 .diffSelect { position: relative; }
 
 .diffTrigger {
@@ -215,7 +215,7 @@
 .diffItemOn { background: var(--accent); }
 .diffItemOn:hover { background: var(--accent); }
 
-/* ── Day / night toggle — Terraria blue menu slot ── */
+/* ── Day / night toggle - Terraria blue menu slot ── */
 .modeToggle {
   display: grid;
   place-items: center;

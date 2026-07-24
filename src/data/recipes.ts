@@ -18,11 +18,11 @@ export const RecipeNode = z.object({
   page: z.string(),
   icon: z.string().nullable(),
   wikiUrl: z.string().url(),
-  /** empty for base materials (drops, ores, purchases) — these are the tree's leaves */
+  /** empty for base materials (drops, ores, purchases) - these are the tree's leaves */
   recipes: z.array(Recipe),
   /**
    * Surfaced on the crafting landing by default. Calamity's graph is generated
-   * rather than curated, so it has hundreds of roots — every armor piece and
+   * rather than curated, so it has hundreds of roots - every armor piece and
    * potion included. Marking the notable ones keeps the landing readable while
    * the rest stay in `roots`, so deep links into them still resolve.
    */
@@ -41,7 +41,7 @@ export type RecipeNode = z.infer<typeof RecipeNode>;
 
 /**
  * Loadout items and recipe nodes are authored separately, so they're matched on a
- * slug of the display name ("Ankh Shield" → "ankh-shield"). Pure — no graph state.
+ * slug of the display name ("Ankh Shield" → "ankh-shield"). Pure - no graph state.
  */
 export function recipeId(name: string): string {
   return name

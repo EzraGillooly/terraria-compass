@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   CRAFTING — recursive recipe trees
+   CRAFTING - recursive recipe trees
 ═══════════════════════════════════════════════════ */
 .page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
 
@@ -37,7 +37,7 @@
 .main { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: 8px 32px 72px; }
 
 /* ════════════════════════════════════════════════
-   LANDING — the marquee chains
+   LANDING - the marquee chains
 ═══════════════════════════════════════════════════ */
 .grid {
   display: grid;
@@ -79,7 +79,7 @@
 .treePanel { flex: 1; min-width: 0; }
 .matPanel { flex: none; width: 240px; }
 /* Shape, fill and black border all come from the global .pixel-frame utility
-   (see pixel.css) — this element must not set its own background/border/radius,
+   (see pixel.css) - this element must not set its own background/border/radius,
    and must not take a box-shadow: shadows render against the real rectangular
    box and would cut square corners across the pixel stepping. */
 .treePanel, .matPanel {
@@ -108,7 +108,7 @@
 }
 
 .twisty {
-  /* padding: 0 — the UA button padding (1px 6px) squeezes the grid track narrower
+  /* padding: 0 - the UA button padding (1px 6px) squeezes the grid track narrower
      than the glyph, which makes grid fall back to start alignment and shifts it 2px */
   flex: none; width: 18px; height: 18px; padding: 0; display: grid; place-items: center;
   background: rgba(255,255,255,.08); border: 1px solid rgba(150,180,230,.3);
@@ -162,7 +162,7 @@
   .heroBody, .main { padding-inline: 16px; }
 }
 
-/* Landing filter — the Calamity graph has hundreds of trees, not vanilla's ~40 */
+/* Landing filter - the Calamity graph has hundreds of trees, not vanilla's ~40 */
 .filterWrap { --px-fill: rgba(10,16,32,.88); --px-border: rgba(150,180,230,.3); padding: 2px; margin-bottom: 10px; }
 .filterWrap:focus-within { --px-border: var(--warm); }
 .filter {

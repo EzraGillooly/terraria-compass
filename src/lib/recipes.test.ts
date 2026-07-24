@@ -34,7 +34,7 @@ describe('recipe graph', () => {
 
   /**
    * Conversion recipes (Celestial Fragments transmuting into each other, Obsidian
-   * "crafted" from Obsidian Wall) are pruned at build time — without that, walking
+   * "crafted" from Obsidian Wall) are pruned at build time - without that, walking
    * the tree never bottoms out.
    */
   it('bottoms out at base materials, with no conversion cycles left', () => {
@@ -69,7 +69,7 @@ describe('recipe graph', () => {
     expect(recipeId("True Night's Edge")).toBe('true-nights-edge');
     expect(findCraftable('Terra Blade')).not.toBeNull();
     expect(findCraftable('Not A Real Item')).toBeNull();
-    // dropped, never crafted — must not offer a crafting-tree link
+    // dropped, never crafted - must not offer a crafting-tree link
     expect(findCraftable('Muramasa')).toBeNull();
   });
 });

@@ -30,7 +30,7 @@ function useDismiss(open: boolean, close: () => void, ref: React.RefObject<HTMLE
   }, [open, close, ref]);
 }
 
-/* World difficulty — options come from the active pack (Calamity adds Revengeance/Death). */
+/* World difficulty - options come from the active pack (Calamity adds Revengeance/Death). */
 function WorldSelect() {
   const { difficulty, setDifficulty, pack } = useAppState();
   const [open, setOpen] = useState(false);
@@ -71,7 +71,7 @@ function WorldSelect() {
   );
 }
 
-/* Class selector — the loadout class moved here from the page so it stops reading
+/* Class selector - the loadout class moved here from the page so it stops reading
    as a second nav bar. Only meaningful on the Loadouts page, so the header shows
    it there alone (see Header). Subclass toggles stay on the page. */
 function ClassSelect() {
@@ -120,7 +120,7 @@ function ClassSelect() {
   );
 }
 
-/* Mod / content-pack selector — rewires every page's data. Packs that aren't
+/* Mod / content-pack selector - rewires every page's data. Packs that aren't
    populated yet are listed but disabled. */
 function ModSelect() {
   const { packId, setPackId, pack } = useAppState();
@@ -210,7 +210,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
           <ModSelect />
           <WorldSelect />
 
-          {/* Day / night — disabled for now */}
+          {/* Day / night - disabled for now */}
           <button
             type="button"
             className={styles.modeToggle}

@@ -12,10 +12,10 @@ Pick a progression phase and class to see recommended loadouts and progression
 guidance in a quick, browseable format.
 
 - **9 phases** from Pre-Bosses through Endgame
-- **4 classes** — Melee, Ranger, Mage, Summoner — each with subclass toggles
+- **4 classes** - Melee, Ranger, Mage, Summoner - each with subclass toggles
 - **Recommended loadouts** for weapons, armor, accessories, and buffs
 - **Boss roadmap** for quick navigation
-- **Difficulty filter** — Normal / Expert / Master
+- **Difficulty filter** - Normal / Expert / Master
 - **Light and dark theme**, with OS preference support
 - No ads, no tracking, no external fonts
 

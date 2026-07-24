@@ -2,7 +2,7 @@ import type { PhaseDef, ClassDef, Loadout } from '../schema';
 import type { BossDef } from '../bosses';
 import type { RecipeApi } from '../recipes';
 
-/** One selectable difficulty for the World dropdown (packs vary — Calamity adds Revengeance/Death). */
+/** One selectable difficulty for the World dropdown (packs vary - Calamity adds Revengeance/Death). */
 export interface DifficultyDef {
   value: string;
   label: string;

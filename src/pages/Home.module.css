@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   HOME — Hero spotlight + path cards (Guide Green)
+   HOME - Hero spotlight + path cards (Guide Green)
 ═══════════════════════════════════════════════════ */
 .page {
   background: var(--paper);
@@ -45,7 +45,7 @@
   pointer-events: none;
 }
 
-/* Clouds (real Terraria sprites) — drift across the upper third, no drop-shadow */
+/* Clouds (real Terraria sprites) - drift across the upper third, no drop-shadow */
 .clouds { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
 .cloud { position: absolute; width: auto; }
 .cl1 { top: 5%;  height: 120px; animation: cloudDrift 60s linear infinite; }
