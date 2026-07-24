@@ -21,6 +21,8 @@ Biome backdrops are screenshots from the Terraria community.
 Several show player-built structures, which are the creative work of the builder
 rather than plain in-game terrain, so each is credited to its author below.
 
+> **Shoutout to these absolute goats for building these sick backdrops.**
+
 All current backdrops come from two build collections on the Terraria Forums:
 
 - **flor3nce2456** - [Builds Collection](https://forums.terraria.org/index.php?threads/flor3nce2456s-builds-collection.3055/)

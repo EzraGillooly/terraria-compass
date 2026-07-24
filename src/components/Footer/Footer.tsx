@@ -18,54 +18,30 @@ export function Footer({ flush = false }: FooterProps) {
           <p className={styles.tagline}>Your compass through Terraria.</p>
         </div>
 
-        {/* Middle: builder shoutout. Every backdrop on the site is someone's
-            build, so they get top billing rather than a footnote. */}
-        <div className={styles.mid}>
-          <p className={styles.shoutout}>
-            Shoutout to these absolute goats for building these sick backdrops
-          </p>
-          <p className={styles.shoutoutNames}>
-            <a
-              href="https://forums.terraria.org/index.php?threads/flor3nce2456s-builds-collection.3055/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              flor3nce2456
-            </a>
-            <span className={styles.shoutoutSep}>·</span>
-            <a
-              href="https://forums.terraria.org/index.php?threads/ballin-houses-by-eiv.1222/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Eiv
-            </a>
-          </p>
-        </div>
+        <div className={styles.mid} aria-hidden="true" />
 
-        {/* Right: attribution - CC BY-NC-SA requires crediting both wikis, and
-            Terraria/Calamity trademarks belong to their respective owners. */}
+        {/* Right: attribution. CC BY-NC-SA is satisfied by naming both wikis and
+            the license here; the per-image builder credits, the shoutout and the
+            takedown contact live in ATTRIBUTIONS rather than bloating the footer. */}
         <div className={styles.right}>
           <p className={styles.note}>
-            Unofficial fan project · not affiliated with or endorsed by Re-Logic
-            or the Calamity Mod team.
+            Unofficial fan project, not affiliated with or endorsed by Re-Logic.
+            Terraria is a trademark of Re-Logic.
           </p>
           <p className={styles.note}>
-            Terraria is a trademark of Re-Logic. Game sprites and content remain
-            the property of their respective owners.
-          </p>
-          <p className={styles.note}>
-            Item data and sprites adapted from{' '}
+            Data and sprites from{' '}
             <a href="https://terraria.wiki.gg" rel="noopener noreferrer" target="_blank">terraria.wiki.gg</a>
             {' '}and{' '}
             <a href="https://calamitymod.wiki.gg" rel="noopener noreferrer" target="_blank">calamitymod.wiki.gg</a>
             {' '}under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="noopener noreferrer" target="_blank">CC BY-NC-SA 3.0</a>.
-          </p>
-          <p className={styles.note}>
-            Backdrops are community builds and belong to their builders. If one is
-            yours and you&rsquo;d like it credited differently or removed, email{' '}
-            <a href="mailto:ezragillooly@gmail.com">ezragillooly@gmail.com</a>
-            {' '}and it will be actioned.
+            {' '}Backdrops by flor3nce2456 and Eiv &middot;{' '}
+            <a
+              href="https://github.com/EzraGillooly/terraria-compass/blob/main/docs/ATTRIBUTIONS.md"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              credits &amp; contact
+            </a>
           </p>
         </div>
 
