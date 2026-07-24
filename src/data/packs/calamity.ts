@@ -5,13 +5,15 @@ import phasesJson from './calamity/phases.json';
 import classesJson from './calamity/classes.json';
 import bossesJson from './calamity/bosses.json';
 import loadoutsJson from './calamity/loadouts.json';
+import recipesJson from './calamity/recipes.json';
 import { type Pack } from './types';
 
 /**
- * Calamity — data scraped from the Calamity wiki class-setup guides + boss list.
- * Loadouts cover Pre-Boss through the endgame; the deepest post-Moon-Lord
- * loadouts are still being backfilled. Crafting recipes are a later pass, so the
- * recipe graph is empty for now (the Crafting page degrades gracefully).
+ * Calamity - data scraped from the Calamity wiki class-setup guides + boss list.
+ * Loadouts cover Pre-Boss through the endgame. The recipe graph is built from the
+ * same scrape (scripts/build-calamity-recipes.py): recommended gear plus the
+ * ingredient chain beneath it, so "view in crafting tree" resolves for Calamity
+ * items the same way it does for vanilla.
  */
 export const calamityPack: Pack = {
   id: 'calamity',
@@ -21,7 +23,7 @@ export const calamityPack: Pack = {
   classes: ClassCollection.parse(classesJson),
   loadouts: LoadoutCollection.parse(loadoutsJson),
   bosses: bossesJson as BossDef[],
-  recipes: createRecipeApi({}, []),
+  recipes: createRecipeApi(recipesJson.nodes, recipesJson.roots),
   difficulties: [
     { value: 'normal', label: 'Classic' },
     { value: 'expert', label: 'Expert' },

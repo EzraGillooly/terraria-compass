@@ -161,3 +161,13 @@
 @media (max-width: 620px) {
   .heroBody, .main { padding-inline: 16px; }
 }
+
+/* Landing filter — the Calamity graph has hundreds of trees, not vanilla's ~40 */
+.filterWrap { --px-fill: rgba(10,16,32,.88); --px-border: rgba(150,180,230,.3); padding: 2px; margin-bottom: 10px; }
+.filterWrap:focus-within { --px-border: var(--warm); }
+.filter {
+  width: 100%; box-sizing: border-box; border: 0; background: transparent;
+  font-family: inherit; font-size: 14px; color: #EAF0FF; padding: 10px 12px; outline: none;
+}
+.filter::placeholder { color: #A9BFDA; }
+.filterCount { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #A9BFDA; margin: 0 0 14px; }

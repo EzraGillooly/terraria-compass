@@ -91,7 +91,7 @@ export function Materials() {
             ref={inputRef}
             type="search"
             className={styles.search}
-            placeholder="Search materials — Rocket Boots, Auric Bar, Soul of Light…"
+            placeholder="Search materials - Rocket Boots, Auric Bar, Soul of Light..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             aria-label="Search materials"
@@ -106,7 +106,7 @@ export function Materials() {
 
         {results.length === 0 && (
           <p className={styles.empty}>
-            No material called “{query}”. It may be an item rather than a material —
+            No material called “{query}”. It may be an item rather than a material -
             try the <Link to="/loadouts">Loadouts</Link> page.
           </p>
         )}

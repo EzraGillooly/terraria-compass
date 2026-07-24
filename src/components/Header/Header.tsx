@@ -128,7 +128,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
       <div className={styles.inner}>
 
         {/* Brand */}
-        <NavLink to="/" className={styles.brand} aria-label="Terraria Compass — home">
+        <NavLink to="/" className={styles.brand} aria-label="Terraria Compass - home">
           <img
             className={`${styles.brandLogo} pixel-img`}
             src={`${import.meta.env.BASE_URL}brand/logo.png`}

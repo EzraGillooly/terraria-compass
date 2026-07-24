@@ -147,6 +147,13 @@ export function Crafting() {
   const { nodes, roots } = recipes;
   const [params, setParams] = useSearchParams();
   const requested = params.get('item');
+  const [filter, setFilter] = useState('');
+
+  const visibleRoots = useMemo(() => {
+    const q = filter.trim().toLowerCase();
+    if (!q) return roots;
+    return roots.filter((id) => nodes[id]?.name.toLowerCase().includes(q));
+  }, [filter, roots, nodes]);
 
   // an ?item= that isn't a root still opens the tree that contains it, highlighted
   const rootId = useMemo(
@@ -278,11 +285,27 @@ export function Crafting() {
           <>
             {requested && (
               <p className={styles.notFound}>
-                No crafting tree for that item yet — here&apos;s everything we do have.
+                No crafting tree for that item yet - here&apos;s everything we do have.
               </p>
             )}
+            {/* Vanilla ships ~40 curated chains, but the Calamity graph is built
+                from the whole scrape and has hundreds, so the list needs a filter
+                to stay usable. */}
+            <div className={`${styles.filterWrap} pixel-frame`}>
+              <input
+                type="search"
+                className={styles.filter}
+                placeholder="Filter trees by name..."
+                value={filter}
+                onChange={(e) => setFilter(e.target.value)}
+                aria-label="Filter crafting trees by name"
+              />
+            </div>
+            <p className={styles.filterCount}>
+              {visibleRoots.length} of {roots.length} trees
+            </p>
             <div className={styles.grid}>
-              {roots.map((id) => {
+              {visibleRoots.map((id) => {
                 const node = nodes[id];
                 if (!node) return null;
                 return (
