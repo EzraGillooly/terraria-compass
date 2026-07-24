@@ -39,6 +39,17 @@ export function Footer({ flush = false }: FooterProps) {
             <a href="https://calamitymod.wiki.gg" rel="noopener noreferrer" target="_blank">calamitymod.wiki.gg</a>
             {' '}under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="noopener noreferrer" target="_blank">CC BY-NC-SA 3.0</a>.
           </p>
+          <p className={styles.note}>
+            Backdrops are community screenshots and belong to their builders —{' '}
+            <a
+              href="https://github.com/EzraGillooly/terraria-compass/blob/main/docs/ATTRIBUTIONS.md"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              credits
+            </a>. If one is yours and you&rsquo;d like it credited differently or
+            removed, get in touch and it will be actioned.
+          </p>
         </div>
 
       </div>
