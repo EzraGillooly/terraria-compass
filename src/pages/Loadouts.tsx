@@ -362,7 +362,15 @@ export function Loadouts() {
           />
           <div>
             <span className={styles.bannerName}>{phaseName}</span>
-            {phaseDef && <span className={styles.bannerHint}>{phaseDef.triggeredBy}</span>}
+            {/* The first cue, not `triggeredBy`: that field just restates the
+                title ("Pre-Skeletron" → "Before Skeletron"), and the two packs
+                disagree on whether it names the phase's start or its end. A cue
+                answers the question the banner should — am I in this phase? */}
+            {phaseDef && (
+              <span className={styles.bannerHint}>
+                {phaseDef.cues[0] ?? phaseDef.triggeredBy}
+              </span>
+            )}
           </div>
         </div>
 
