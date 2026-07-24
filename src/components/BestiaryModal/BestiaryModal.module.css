@@ -37,6 +37,8 @@
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
 
+/* Small control: half-scale pixel step (--px-u: 1px), shape/fill/border from the
+   global .pixel-frame utility rather than its own background/border/radius. */
 .close {
   position: absolute;
   top: 12px;
@@ -45,27 +47,34 @@
   height: 30px;
   display: grid;
   place-items: center;
-  background: var(--card-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
+  --px-u: 1px;
+  --px-fill: var(--card-2);
+  --px-border: var(--line);
   color: var(--ink-mute);
   cursor: pointer;
-  transition: color .15s, border-color .15s;
+  transition: color .15s;
 }
-.close:hover { color: var(--ink-soft); border-color: var(--accent); }
+.close::before { transition: background .15s; }
+.close:hover { color: var(--ink-soft); --px-border: var(--accent); }
 
 .head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; padding-right: 32px; }
+/* Shape/fill/border come from the global .pixel-frame utility — no own
+   background/border/radius, and no box-shadow (it renders against the real
+   rectangular box and would cut square corners across the stepping). */
 .sprite {
   width: 60px;
   height: 60px;
   flex: none;
   display: grid;
   place-items: center;
-  background: var(--card-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
+  /* half-scale step (1px, not the default 2px): a 60px tile at full scale reads
+     as too coarse next to the modal's copy */
+  --px-u: 1px;
+  --px-fill: var(--card-2);
+  --px-border: var(--line);
 }
-.sprite img { width: 44px; height: 44px; object-fit: contain; }
+/* smaller than the tile so tall sprites (swords) don't touch the stepped edge */
+.sprite img { width: 38px; height: 38px; object-fit: contain; }
 .name { font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.1; color: var(--ink-soft); }
 .kind {
   font-weight: 800;
@@ -120,12 +129,13 @@
   text-align: center;
   text-decoration: none;
   color: #0B1524;
-  background: var(--warm);
-  border: 2px solid #000;
-  border-radius: var(--radius-md);
+  /* gold fill on a black pixel border, matching the app's other stepped frames */
+  --px-fill: var(--warm);
+  --px-border: #000;
   transition: filter .15s;
 }
 .craftLink:hover { filter: brightness(1.08); }
+.craftLink::before { transition: background .15s; }
 
 /* Crafting materials list inside the item modal's key/value block. */
 .materials { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
