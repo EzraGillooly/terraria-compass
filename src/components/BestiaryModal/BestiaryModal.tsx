@@ -34,7 +34,7 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
     <div className={styles.backdrop}>
       <button type="button" className={styles.backdropBtn} aria-label="Close" tabIndex={-1} onClick={onClose} />
       <div
-        className={styles.modal}
+        className={`${styles.modal} pixel-frame`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="bestiary-title"

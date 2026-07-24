@@ -62,7 +62,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   return (
     <div className={styles.backdrop}>
       <button type="button" className={styles.backdropBtn} aria-label="Close" tabIndex={-1} onClick={onClose} />
-      <div className={styles.modal} role="dialog" aria-modal="true" aria-labelledby="item-title">
+      <div className={`${styles.modal} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
         <button ref={closeRef} type="button" className={styles.close} aria-label="Close" onClick={onClose}>
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
             <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />

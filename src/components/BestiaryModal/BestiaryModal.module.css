@@ -23,11 +23,14 @@
   width: 100%;
   max-width: 420px;
   max-height: 90vh;
+  /* Shape, fill and border come from the global .pixel-frame utility, so this
+     element must not set its own background/border/radius — and must not take a
+     box-shadow, which renders against the real rectangular box and would cut
+     square corners across the pixel stepping. */
+  --px-fill: var(--card);
+  --px-border: var(--line);
+  --px-u: 3px;
   overflow-y: auto;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
   padding: 22px;
   animation: pop .18s ease;
 }

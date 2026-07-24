@@ -74,14 +74,16 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
   const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
 
+  // No top-pick star: `topPick` only ever meant "listed first in the wiki's
+  // class-setup table", which is layout order rather than a ranking, so the
+  // highlight asserted a best-in-slot the data never established.
   return (
     <button
       type="button"
-      className={`${styles.wtile} pixel-frame pixel-hollow ${item.topPick ? styles.best : ''}`}
+      className={`${styles.wtile} pixel-frame pixel-hollow`}
       style={{ opacity: relevant ? 1 : 0.45 }}
       onClick={() => onOpen(item)}
     >
-      {item.topPick && <span className={styles.wStar} aria-label="Top pick">★</span>}
       <div className={styles.wIcon}>
         <img
           src={local} alt="" aria-hidden="true"
