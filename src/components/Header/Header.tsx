@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
 import { PACKS } from '../../data/packs';
@@ -71,6 +71,55 @@ function WorldSelect() {
   );
 }
 
+/* Class selector — the loadout class moved here from the page so it stops reading
+   as a second nav bar. Only meaningful on the Loadouts page, so the header shows
+   it there alone (see Header). Subclass toggles stay on the page. */
+function ClassSelect() {
+  const { classId, setClassId, pack } = useAppState();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useDismiss(open, () => setOpen(false), ref);
+  const current = pack.classes.find((c) => c.id === classId);
+  const BASE = import.meta.env.BASE_URL;
+
+  return (
+    <div className={styles.diffSelect} ref={ref}>
+      <button
+        type="button"
+        className={styles.diffTrigger}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label="Class"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className={styles.diffCap}>Class</span>
+        <span className={styles.diffValue}>{current?.name}</span>
+        <span className={`${styles.diffCaret} ${open ? styles.diffCaretOpen : ''}`} aria-hidden="true" />
+      </button>
+      {open && (
+        <ul className={styles.diffMenu} role="listbox" aria-label="Class">
+          {pack.classes.map((c) => (
+            <li key={c.id} role="option" aria-selected={c.id === classId}>
+              <button
+                type="button"
+                className={`${styles.diffItem} ${styles.classItem} ${c.id === classId ? styles.diffItemOn : ''}`}
+                onClick={() => { setClassId(c.id); setOpen(false); }}
+              >
+                <img
+                  src={`${BASE}icons/classes/${c.id}.png`}
+                  alt="" aria-hidden="true" width="18" height="18"
+                  className={`${styles.classItemIcon} pixel-img`}
+                />
+                {c.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 /* Mod / content-pack selector — rewires every page's data. Packs that aren't
    populated yet are listed but disabled. */
 function ModSelect() {
@@ -122,6 +171,8 @@ interface HeaderProps {
 export function Header({ variant = 'paper' }: HeaderProps) {
   const { isDayMode, setIsDayMode, packId } = useAppState();
   const isPhoto = variant === 'photo';
+  // class only matters on the loadouts page, so its selector rides the header there
+  const onLoadouts = useLocation().pathname === '/loadouts';
 
   return (
     <header className={`${styles.header} ${isPhoto ? styles.onPhoto : styles.onPaper}`}>
@@ -155,6 +206,7 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Controls */}
         <div className={styles.controls}>
+          {onLoadouts && <ClassSelect />}
           <ModSelect />
           <WorldSelect />
 

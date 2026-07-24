@@ -243,3 +243,7 @@
   text-transform: uppercase;
   color: var(--warm);
 }
+
+/* Class dropdown items carry the class weapon sprite alongside the label. */
+.classItem { display: flex; align-items: center; gap: 9px; }
+.classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }

@@ -5,7 +5,7 @@ import { ItemModal } from '../components/ItemModal/ItemModal';
 import { useAppState, usePack } from '../lib/app-context';
 import { isItemRelevantToDifficulty } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
-import type { ClassId, Item, PhaseId } from '../data/schema';
+import type { Item, PhaseId } from '../data/schema';
 import type { SyntheticEvent } from 'react';
 import styles from './Loadouts.module.css';
 
@@ -211,16 +211,16 @@ function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
 }
 
 export function Loadouts() {
-  const { difficulty } = useAppState();
+  const { difficulty, classId } = useAppState();
   const { classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
-  const [classId, setClassId] = useState<ClassId>('melee');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
 
-  // Switching packs invalidates the stored ids — clamp them to the active pack.
+  // classId lives in app-context (header selector); it is already clamped to the
+  // active pack there, so no local clamp is needed.
   const activePhaseId = phases.some((p) => p.id === phaseId) ? phaseId : (phases[0]?.id ?? phaseId);
-  const activeClassId = classes.some((c) => c.id === classId) ? classId : (classes[0]?.id ?? classId);
+  const activeClassId = classId;
 
   // Backdrop + phase-bar boss icon per phase. Vanilla uses fixed maps; other
   // packs fall back to a generic backdrop and a representative boss from the data.
@@ -287,32 +287,12 @@ export function Loadouts() {
       <Header variant="photo" />
       <section className={styles.wrap}>
 
-        {/* Header row: title + class rail */}
+        {/* Class now lives in the header selector; the title reflects the choice. */}
         <div className={styles.pageHead}>
           <div>
             <p className={styles.kick}>Class Loadouts</p>
             <h1 className={styles.title}>{classDef.name} <em>· {phaseName}</em></h1>
-            <p className={styles.lede}>Pick your class and stage. Armor and accessory picks update with every choice.</p>
-          </div>
-          <div className={styles.classRail} role="group" aria-label="Select class">
-            {classes.map((cls) => (
-              <button
-                key={cls.id}
-                type="button"
-                className={`${styles.cbtn} pixel-frame ${cls.id === activeClassId ? styles.on : ''}`}
-                aria-pressed={cls.id === activeClassId}
-                onClick={() => { setClassId(cls.id as ClassId); clearSubclassFilters(); setShowRest(false); }}
-              >
-                <img
-                  src={`${BASE}icons/classes/${cls.id}.png`}
-                  alt="" aria-hidden="true"
-                  className={`${styles.cdot} pixel-img`}
-                  width="28" height="28" loading="lazy"
-                  onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
-                />
-                <span className={styles.cbtnLabel}>{cls.name}</span>
-              </button>
-            ))}
+            <p className={styles.lede}>Pick your stage below and your class from the header. Armor and accessory picks update with every choice.</p>
           </div>
         </div>
 
