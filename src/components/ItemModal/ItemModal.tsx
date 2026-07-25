@@ -87,7 +87,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           {item.stats && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}
-          <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
+          {/* A few entries are category guidance ("Any Double Jump") or buff
+              states rather than single items, so they have no acquisition line.
+              Omit the row instead of printing an empty one. */}
+          {item.source && (
+            <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
+          )}
           {item.pieceRecipes && item.pieceRecipes.length > 0 && (
             <div className={styles.kvRow}>
               <span className={styles.kvKey}>Craft</span>
