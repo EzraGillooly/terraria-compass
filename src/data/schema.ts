@@ -64,6 +64,14 @@ export const Item = z.object({
    */
   tier: z.enum(['best', 'good', 'other']).default('good'),
   subclass: SubclassId.optional(),
+  /**
+   * What an accessory is actually for. Some genuinely serve two roles (Feral
+   * Claws is melee and summon; Moon Stone is offense and survivability), so this
+   * is a list rather than one value.
+   */
+  categories: z.array(z.enum([
+    'mobility', 'offense', 'survivability', 'melee', 'ranged', 'magic', 'summon',
+  ])).optional(),
   wikiUrl: z.string().url().optional(),
 });
 
