@@ -71,10 +71,6 @@ export function Home() {
           <div className={styles.ctaRow}>
             <Link to="/bosses" className={`${styles.btnPrimary} pixel-frame`}>
               Start with the bosses
-              <svg className={styles.arrow} viewBox="0 0 18 18" width="18" height="18" aria-hidden="true">
-                <path d="M6 3 L12 9 L6 15" fill="none" stroke="#000" strokeWidth="6" strokeLinecap="square" strokeLinejoin="miter" />
-                <path d="M6 3 L12 9 L6 15" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter" />
-              </svg>
             </Link>
             <Link to="/loadouts" className={`${styles.btnSecondary} pixel-frame`}>Browse loadouts</Link>
           </div>

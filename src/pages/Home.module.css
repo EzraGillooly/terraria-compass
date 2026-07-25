@@ -127,10 +127,11 @@
 }
 
 .btnPrimary { --px-fill: var(--accent); }
-.btnPrimary:hover { --px-fill: color-mix(in oklab, var(--mid) 40%, var(--accent)); }
+/* menu-hover gold, matching the nav tabs. The fill lives on the pixel-frame's
+   ::after layer, so that is what transitions rather than `background`. */
+.btnPrimary::after { transition: background .15s; }
+.btnPrimary:hover { --px-fill: var(--warm); }
 .btnPrimary:active { transform: translateY(1px); }
-.btnPrimary .arrow { transition: transform .2s; }
-.btnPrimary:hover .arrow { transform: translateX(4px); }
 
 /* Secondary: Terraria indigo-blue menu-slot fill (matches the nav tabs) */
 .btnSecondary { --px-fill: rgba(40, 54, 122, .82); }
