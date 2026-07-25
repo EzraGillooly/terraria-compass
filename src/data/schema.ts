@@ -72,6 +72,15 @@ export const Item = z.object({
   categories: z.array(z.enum([
     'mobility', 'offense', 'survivability', 'melee', 'ranged', 'magic', 'summon',
   ])).optional(),
+  /** how strong the pick is at this stage, per the accessory guide */
+  quality: z.enum(['great', 'good', 'fine']).optional(),
+  /**
+   * Caveats worth showing next to an accessory: Expert-only, better in tank
+   * builds, locked to one world evil, or only useful with whips or yoyos.
+   */
+  markers: z.array(z.enum([
+    'expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos',
+  ])).optional(),
   wikiUrl: z.string().url().optional(),
 });
 

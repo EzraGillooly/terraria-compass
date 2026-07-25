@@ -312,7 +312,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "melee"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -324,7 +327,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "moon-stone",
@@ -337,7 +343,12 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+        "categories": [
+          "survivability",
+          "offense"
+        ],
+        "quality": "good"
       },
       {
         "id": "hoverboard",
@@ -348,7 +359,10 @@
         "why": "Long flight with a hover mode for stable ranged fights.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Hoverboard"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hoverboard",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "destroyer-emblem",
@@ -360,7 +374,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense"
+        ]
       },
       {
         "id": "master-ninja-gear",
@@ -372,7 +389,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -713,7 +735,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "ranger-emblem",
@@ -725,7 +750,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "moon-stone",
@@ -738,7 +766,12 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+        "categories": [
+          "survivability",
+          "offense"
+        ],
+        "quality": "good"
       },
       {
         "id": "ankh-shield",
@@ -750,7 +783,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "destroyer-emblem",
@@ -762,7 +798,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense"
+        ]
       },
       {
         "id": "master-ninja-gear",
@@ -774,7 +813,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -1156,7 +1200,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "moon-stone",
@@ -1169,7 +1216,12 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+        "categories": [
+          "survivability",
+          "offense"
+        ],
+        "quality": "good"
       },
       {
         "id": "mana-flower",
@@ -1179,7 +1231,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Auto-potions continue to remove a lot of execution friction during the phase's longer fights.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -1191,7 +1246,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "celestial-cuffs",
@@ -1203,7 +1261,13 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ]
       },
       {
         "id": "master-ninja-gear",
@@ -1215,7 +1279,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -1548,7 +1617,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "offense",
+          "summon"
+        ],
+        "quality": "good"
       },
       {
         "id": "pygmy-necklace",
@@ -1558,7 +1632,11 @@
         "source": "Bought from the Witch Doctor",
         "why": "An extra minion remains one of the cleanest pure-value upgrades available to summoner.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense",
+          "summon"
+        ]
       },
       {
         "id": "necromantic-scroll",
@@ -1571,7 +1649,10 @@
           "hardmode",
           "event"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "summon"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -1583,7 +1664,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "moon-stone",
@@ -1596,7 +1680,12 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+        "categories": [
+          "survivability",
+          "offense"
+        ],
+        "quality": "good"
       },
       {
         "id": "master-ninja-gear",
@@ -1608,7 +1697,12 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [

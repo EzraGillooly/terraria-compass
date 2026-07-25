@@ -1150,7 +1150,11 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "great"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -1160,7 +1164,10 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "feral-claws",
@@ -1170,7 +1177,14 @@
         "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "band-of-regeneration",
@@ -1180,7 +1194,10 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "lucky-horseshoe",
@@ -1190,7 +1207,11 @@
         "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -1911,7 +1932,11 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "great"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -1921,7 +1946,10 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "lucky-horseshoe",
@@ -1931,7 +1959,11 @@
         "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "band-of-regeneration",
@@ -1941,7 +1973,10 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shackle",
@@ -1952,7 +1987,10 @@
         "why": "+1 defense from a very common early drop.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
+        "categories": [
+          "survivability"
+        ]
       }
     ],
     "buffs": [
@@ -2250,10 +2288,13 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted (Nature’s Gift + Mana Regeneration Band)",
+        "source": "Crafted (Nature\u2019s Gift + Mana Regeneration Band)",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "hermes-boots",
@@ -2263,7 +2304,11 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "great"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -2273,7 +2318,10 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "band-of-starpower",
@@ -2284,7 +2332,13 @@
         "why": "+20 max mana for early casters.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "corruption"
+        ]
       },
       {
         "id": "lucky-horseshoe",
@@ -2294,7 +2348,11 @@
         "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -2591,7 +2649,11 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "great"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -2601,7 +2663,10 @@
         "source": "Found in Underground and Cavern Chests",
         "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "feral-claws",
@@ -2611,7 +2676,14 @@
         "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "band-of-regeneration",
@@ -2621,7 +2693,10 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "lucky-horseshoe",
@@ -2631,7 +2706,11 @@
         "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [

@@ -243,7 +243,10 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -255,7 +258,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "great"
       },
       {
         "id": "spectre-boots",
@@ -265,7 +275,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "feral-claws",
@@ -275,7 +289,14 @@
         "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "band-of-regeneration",
@@ -285,7 +306,11 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -527,7 +552,10 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "spectre-boots",
@@ -537,7 +565,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "shield-of-cthulhu",
@@ -549,7 +581,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "great"
       },
       {
         "id": "lucky-horseshoe",
@@ -559,7 +598,10 @@
         "source": "Found in Skyware Chests and Sky Crates",
         "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "band-of-regeneration",
@@ -569,7 +611,11 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -799,10 +845,13 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted (Nature’s Gift + Mana Regeneration Band)",
+        "source": "Crafted (Nature\u2019s Gift + Mana Regeneration Band)",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "magic-cuffs",
@@ -812,7 +861,10 @@
         "source": "Crafted (Mana Regeneration Band + Shackle)",
         "why": "The max mana and on-hit mana return are both excellent on longer fights.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "obsidian-shield",
@@ -822,7 +874,10 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "spectre-boots",
@@ -832,7 +887,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "band-of-starpower",
@@ -843,7 +902,13 @@
         "why": "+20 max mana for early casters.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "corruption"
+        ]
       }
     ],
     "buffs": [
@@ -1121,7 +1186,10 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "pygmy-necklace",
@@ -1131,7 +1199,12 @@
         "source": "Purchased from the Witch Doctor",
         "why": "The extra minion slot is one of the highest-value accessories a summoner can equip.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense",
+          "summon"
+        ],
+        "quality": "great"
       },
       {
         "id": "spectre-boots",
@@ -1141,7 +1214,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "shield-of-cthulhu",
@@ -1153,7 +1230,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "great"
       },
       {
         "id": "feral-claws",
@@ -1163,7 +1247,14 @@
         "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       }
     ],
     "buffs": [

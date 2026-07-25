@@ -252,7 +252,11 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       },
       {
         "id": "lava-waders",
@@ -262,7 +266,10 @@
         "source": "Crafted (Obsidian Water Walking Boots + Lava Charm)",
         "why": "If you can assemble them, they make Wall of Flesh arena setup and Hellstone cleanup dramatically safer.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "spectre-boots",
@@ -272,7 +279,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "shield-of-cthulhu",
@@ -284,7 +295,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "great"
       },
       {
         "id": "magma-stone",
@@ -295,7 +313,10 @@
         "why": "Adds fire damage to melee strikes.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+        "categories": [
+          "melee"
+        ]
       }
     ],
     "buffs": [
@@ -549,7 +570,11 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       },
       {
         "id": "spectre-boots",
@@ -559,7 +584,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "lava-waders",
@@ -569,7 +598,10 @@
         "source": "Crafted (Obsidian Water Walking Boots + Lava Charm)",
         "why": "If you can assemble them, they make Wall of Flesh arena setup and Hellstone cleanup dramatically safer.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -581,7 +613,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "great"
       },
       {
         "id": "band-of-regeneration",
@@ -591,7 +630,11 @@
         "source": "Found in Underground Chests",
         "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -831,30 +874,30 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted (Nature’s Gift + Mana Regeneration Band)",
+        "source": "Crafted (Nature\u2019s Gift + Mana Regeneration Band)",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
-        "id": "celestial-magnet",
-        "name": "Celestial Magnet",
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
         "slot": "accessory",
-        "icon": "accessories/celestial-magnet.png",
-        "source": "Found in Skyware Chests",
-        "why": "The bigger star pickup radius helps smooth out mana sustain during hectic movement.",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Combines Celestial Magnet and Magic Cuffs, so one slot covers both star pickup range and mana on hit.",
         "tags": [],
-        "topPick": false
-      },
-      {
-        "id": "magic-cuffs",
-        "name": "Magic Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/magic-cuffs.png",
-        "source": "Crafted (Mana Regeneration Band + Shackle)",
-        "why": "The max mana and on-hit mana return are both excellent on longer fights.",
-        "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "obsidian-shield",
@@ -864,7 +907,11 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       },
       {
         "id": "lava-waders",
@@ -874,7 +921,10 @@
         "source": "Crafted (Obsidian Water Walking Boots + Lava Charm)",
         "why": "If you can assemble them, they make Wall of Flesh arena setup and Hellstone cleanup dramatically safer.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       }
     ],
     "buffs": [
@@ -1109,7 +1159,12 @@
         "source": "Purchased from the Witch Doctor",
         "why": "The extra minion slot is one of the highest-value accessories a summoner can equip.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense",
+          "summon"
+        ],
+        "quality": "great"
       },
       {
         "id": "obsidian-shield",
@@ -1119,7 +1174,11 @@
         "source": "Crafted (Cobalt Shield + Obsidian Skull)",
         "why": "Knockback immunity plus fire-block protection makes this one of the most valuable pre-Hardmode accessories overall.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       },
       {
         "id": "spectre-boots",
@@ -1129,7 +1188,11 @@
         "source": "Crafted (Hermes Boots + Rocket Boots)",
         "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "good"
       },
       {
         "id": "feral-claws",
@@ -1139,7 +1202,14 @@
         "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
         "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "lava-waders",
@@ -1149,7 +1219,10 @@
         "source": "Crafted (Obsidian Water Walking Boots + Lava Charm)",
         "why": "If you can assemble them, they make Wall of Flesh arena setup and Hellstone cleanup dramatically safer.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       }
     ],
     "buffs": [

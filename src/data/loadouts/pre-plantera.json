@@ -411,7 +411,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "melee"
+        ]
       },
       {
         "id": "mechanical-glove",
@@ -423,7 +426,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee"
+        ]
       },
       {
         "id": "avenger-emblem",
@@ -435,7 +441,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense"
+        ],
+        "quality": "great"
       },
       {
         "id": "frozen-wings",
@@ -446,7 +456,10 @@
         "why": "Longer flight time for the mid-Hardmode stretch.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -458,7 +471,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       },
       {
         "id": "star-veil",
@@ -470,7 +487,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -740,7 +761,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "ranger-emblem",
@@ -752,7 +776,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "magic-quiver",
@@ -762,7 +789,10 @@
         "source": "Dropped by Skeleton Archers",
         "why": "Bow-focused ranger builds still feel the damage and arrow-speed bump immediately.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "frozen-wings",
@@ -773,7 +803,10 @@
         "why": "Longer flight time for the mid-Hardmode stretch.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -785,7 +818,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       },
       {
         "id": "star-veil",
@@ -797,7 +834,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -1077,7 +1118,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "celestial-cuffs",
@@ -1087,7 +1131,13 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ]
       },
       {
         "id": "mana-flower",
@@ -1097,7 +1147,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "frozen-wings",
@@ -1108,7 +1161,10 @@
         "why": "Longer flight time for the mid-Hardmode stretch.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -1120,7 +1176,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       },
       {
         "id": "mana-cloak",
@@ -1132,7 +1192,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ]
       }
     ],
     "buffs": [
@@ -1439,7 +1502,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "summon"
+        ]
       },
       {
         "id": "pygmy-necklace",
@@ -1449,7 +1515,12 @@
         "source": "Bought from the Witch Doctor",
         "why": "An extra minion slot remains one of the highest-value single accessory effects a summoner can get.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense",
+          "summon"
+        ],
+        "quality": "good"
       },
       {
         "id": "frozen-wings",
@@ -1460,7 +1531,10 @@
         "why": "Longer flight time for the mid-Hardmode stretch.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Frozen_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "feral-claws",
@@ -1470,7 +1544,14 @@
         "source": "Found in Jungle chests or Jungle Crates",
         "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "ankh-shield",
@@ -1482,7 +1563,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       },
       {
         "id": "star-veil",
@@ -1494,7 +1579,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great"
       }
     ],
     "buffs": [

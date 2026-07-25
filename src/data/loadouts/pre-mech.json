@@ -763,7 +763,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "melee"
+        ]
       },
       {
         "id": "angel-wings",
@@ -774,7 +777,10 @@
         "why": "First flight - the biggest early-Hardmode mobility jump.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "lightning-boots",
@@ -784,7 +790,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "You still need top-tier horizontal movement because every mech fight punishes sloppy spacing.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "obsidian-shield",
@@ -794,7 +803,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Knockback immunity remains one of the most reliable survival upgrades you can carry into Hardmode.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -806,7 +818,14 @@
         "tags": [
           "expert-only"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "good"
       },
       {
         "id": "charm-of-myths",
@@ -818,7 +837,11 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -1204,7 +1227,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "magic-quiver",
@@ -1214,7 +1240,10 @@
         "source": "Dropped by Skeleton Archers",
         "why": "Bow players feel the arrow speed and damage boost immediately, especially with Daedalus online.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ]
       },
       {
         "id": "angel-wings",
@@ -1225,7 +1254,10 @@
         "why": "First flight - the biggest early-Hardmode mobility jump.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "lightning-boots",
@@ -1235,7 +1267,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "You still need strong horizontal movement to keep distance and reposition between volley windows.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "obsidian-shield",
@@ -1245,7 +1280,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Knockback immunity still saves runs, especially in tighter arenas or while learning the bosses.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -1257,7 +1295,14 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -1794,7 +1839,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "celestial-cuffs",
@@ -1804,7 +1852,13 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Mana on hit plus better star pickup smooths out one of mage's biggest pain points during long boss attempts.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ]
       },
       {
         "id": "mana-flower",
@@ -1814,7 +1868,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Auto-potion support keeps your spell uptime higher and reduces how often you get punished while juggling resources.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "magic"
+        ]
       },
       {
         "id": "angel-wings",
@@ -1825,7 +1882,10 @@
         "why": "First flight - the biggest early-Hardmode mobility jump.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "obsidian-shield",
@@ -1835,7 +1895,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Knockback immunity is still extremely useful when a fragile class gets clipped during a dangerous pattern.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -1847,7 +1910,14 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -2118,7 +2188,10 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true
+        "topPick": true,
+        "categories": [
+          "summon"
+        ]
       },
       {
         "id": "pygmy-necklace",
@@ -2128,7 +2201,12 @@
         "source": "Bought from the Witch Doctor at night",
         "why": "An extra minion slot is one of the most efficient upgrades any summoner can buy in this phase.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "offense",
+          "summon"
+        ],
+        "quality": "good"
       },
       {
         "id": "angel-wings",
@@ -2139,7 +2217,10 @@
         "why": "First flight - the biggest early-Hardmode mobility jump.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
+        "categories": [
+          "mobility"
+        ]
       },
       {
         "id": "feral-claws",
@@ -2149,7 +2230,14 @@
         "source": "Found in Jungle chests or Jungle Crates",
         "why": "Whip speed is a simple but meaningful quality-of-life increase for the parts of summoner gameplay you control directly.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "melee",
+          "summon"
+        ],
+        "markers": [
+          "whips"
+        ]
       },
       {
         "id": "obsidian-shield",
@@ -2159,7 +2247,10 @@
         "source": "Combined at the Tinkerer's Workshop",
         "why": "Knockback immunity keeps your whip windows and recovery movement from getting interrupted at the worst time.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ]
       },
       {
         "id": "shield-of-cthulhu",
@@ -2171,7 +2262,14 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": false
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "markers": [
+          "expert"
+        ],
+        "quality": "good"
       }
     ],
     "buffs": [
