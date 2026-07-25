@@ -472,14 +472,24 @@ export function Loadouts() {
             )}
             <div className={styles.reforgeLabel}>Accessory reforges</div>
             <p className={styles.reforgeIntro}>
-              Reforge accessories at the Goblin Tinkerer. There is no single best pick, so match it to how you play:
+              Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
+              to Menacing or Lucky once you can dodge reliably.
             </p>
             <ul className={styles.reforgeList}>
-              <li><b>Warding</b> <span>+4 defense</span> take fewer hits while you learn a fight</li>
-              <li><b>Menacing</b> <span>+4% damage</span> the standard max-DPS choice</li>
-              <li><b>Lucky</b> <span>+4% crit</span> pairs well with high base crit</li>
-              <li><b>Quick</b> <span>+4% move speed</span> good on wings and boots</li>
+              <li><b>Warding</b> <span>+4 defense</span> survive more hits. Best on most builds</li>
+              <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
+              <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
+              <li><b>Quick</b> <span>+4% move speed</span> player movement only, not wings or boots. Avoid</li>
             </ul>
+            <p className={styles.reforgeMore}>
+              <a
+                href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Menacing vs Lucky vs Warding on the wiki
+              </a>
+            </p>
           </div>
           </div>
 
