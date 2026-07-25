@@ -263,7 +263,7 @@ export function Loadouts() {
    * Whether this loadout was actually ranked. Curated entries carry a `why`
    * explaining the pick; the endgame Calamity loadouts were scraped from the
    * wiki's class-setup tables, where `tier` only records the row's position in
-   * that table. Calling the first row "Best in Slot" would assert a judgement
+   * that table. Calling the first row "Recommended" would assert a judgement
    * nothing made, so those are presented as an unranked list instead.
    */
   const ranked = safeLoadout.weapons.some((w) => w.why);
@@ -404,7 +404,7 @@ export function Loadouts() {
               <>
                 {filteredBest.length > 0 && (
                   <>
-                    <div className={styles.groupLabel}>Best in Slot</div>
+                    <div className={styles.groupLabel}>Recommended</div>
                     <div className={styles.weaponRow}>
                       {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>

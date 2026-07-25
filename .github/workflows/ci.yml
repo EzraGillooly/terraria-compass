@@ -2,7 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    # dev is included so work in progress is tested before it reaches main.
+    # Deploy stays main-only, so pushing here never touches the live site.
+    branches: [main, dev]
   pull_request:
     branches: [main]
 

@@ -146,20 +146,20 @@
     ],
     "armor": [
       {
-        "id": "solar-flare-armor",
-        "name": "Solar Flare Armor",
+        "id": "beetle-armor",
+        "name": "Beetle Armor",
         "slot": "armor",
-        "icon": "armor/solar-flare-armor.png",
-        "source": "Crafted from Solar Fragments",
-        "why": "This is the best pre-Moon Lord melee armor because the survivability and shield charges are absurdly strong.",
+        "icon": "armor/beetle-armor-melee.png",
+        "source": "Crafted from Beetle Husks and Turtle Armor",
+        "why": "Still the best melee set for the pillars: Lunar armor needs Luminite, which only drops from the Moon Lord.",
         "tags": [
           "hardmode"
         ],
         "topPick": true,
         "pieces": [
-          "Solar Flare Helmet",
-          "Solar Flare Breastplate",
-          "Solar Flare Leggings"
+          "Beetle Helmet",
+          "Beetle Leggings",
+          "Beetle Scale Mail"
         ]
       }
     ],
@@ -379,20 +379,20 @@
     ],
     "armor": [
       {
-        "id": "vortex-armor",
-        "name": "Vortex Armor",
+        "id": "shroomite-armor",
+        "name": "Shroomite Armor",
         "slot": "armor",
-        "icon": "armor/vortex-armor.png",
-        "source": "Crafted from Vortex Fragments",
-        "why": "This is the best pre-Moon Lord ranger armor because it finally upgrades Shroomite into true Lunar-tier offense.",
+        "icon": "armor/shroomite-armor-ranger.png",
+        "source": "Crafted from Shroomite Bars",
+        "why": "Still the ranger set for the pillars: Vortex armor needs Luminite, which only drops from the Moon Lord.",
         "tags": [
           "hardmode"
         ],
         "topPick": true,
         "pieces": [
-          "Vortex Helmet",
-          "Vortex Breastplate",
-          "Vortex Leggings"
+          "Shroomite Headgear",
+          "Shroomite Breastplate",
+          "Shroomite Leggings"
         ]
       }
     ],
@@ -628,20 +628,37 @@
     ],
     "armor": [
       {
-        "id": "nebula-armor",
-        "name": "Nebula Armor",
+        "id": "spectre-armor-mask",
+        "name": "Spectre Armor",
         "slot": "armor",
-        "icon": "armor/nebula-armor.png",
-        "source": "Crafted from Nebula Fragments",
-        "why": "This is the obvious pre-Moon Lord mage set because the Lunar-tier bonuses finally outclass Spectre.",
+        "icon": "armor/spectre-armor-mage.png",
+        "source": "Crafted from Spectre Bars",
+        "why": "Still the mage set for the pillars: Nebula armor needs Luminite, which only drops from the Moon Lord.",
         "tags": [
           "hardmode"
         ],
         "topPick": true,
         "pieces": [
-          "Nebula Helmet",
-          "Nebula Breastplate",
-          "Nebula Leggings"
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
+        ]
+      },
+      {
+        "id": "spectre-armor-hood",
+        "name": "Spectre Hood Loadout",
+        "slot": "armor",
+        "icon": "armor/spectre-armor-hood.png",
+        "source": "Crafted from Spectre Bars",
+        "why": "You still want access to the lifesteal variant when survivability matters more than peak DPS.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "pieces": [
+          "Spectre Hood",
+          "Spectre Robe",
+          "Spectre Pants"
         ]
       }
     ],
@@ -857,20 +874,20 @@
     ],
     "armor": [
       {
-        "id": "stardust-armor",
-        "name": "Stardust Armor",
+        "id": "tiki-armor",
+        "name": "Tiki Armor",
         "slot": "armor",
-        "icon": "armor/stardust-armor.png",
-        "source": "Crafted from Stardust Fragments",
-        "why": "This is the obvious best pre-Moon Lord summoner set because the Guardian and extra slot are both huge.",
+        "icon": "armor/tiki-armor.png",
+        "source": "Bought from the Witch Doctor",
+        "why": "Still the summoner set for the pillars: Stardust armor needs Luminite, which only drops from the Moon Lord.",
         "tags": [
           "hardmode"
         ],
         "topPick": true,
         "pieces": [
-          "Stardust Helmet",
-          "Stardust Plate",
-          "Stardust Leggings"
+          "Tiki Mask",
+          "Tiki Shirt",
+          "Tiki Pants"
         ]
       }
     ],
