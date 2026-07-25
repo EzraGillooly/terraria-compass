@@ -476,10 +476,10 @@ export function Loadouts() {
               to Menacing or Lucky once you can dodge reliably.
             </p>
             <ul className={styles.reforgeList}>
-              <li><b>Warding</b> <span>+4 defense</span> survive more hits. Best on most builds</li>
+              <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
               <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
               <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
-              <li><b>Quick</b> <span>+4% move speed</span> player movement only, not wings or boots. Avoid</li>
+              <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
             </ul>
             <p className={styles.reforgeMore}>
               <a
