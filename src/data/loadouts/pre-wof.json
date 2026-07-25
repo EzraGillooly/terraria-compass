@@ -667,16 +667,6 @@
         "why": "Defense remains useful because even ranged mistakes get punished hard in the Underworld.",
         "tags": [],
         "topPick": false
-      },
-      {
-        "id": "ammo-box",
-        "name": "Ammo Box",
-        "slot": "buff",
-        "icon": "potions/ammo-box.png",
-        "source": "Placed station buff",
-        "why": "This stacks nicely with ammo-saving potions and stretches expensive ammunition significantly further.",
-        "tags": [],
-        "topPick": false
       }
     ]
   },
@@ -897,7 +887,8 @@
         "markers": [
           "tank"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "quality": "great"
       },
       {
         "id": "obsidian-shield",
@@ -1148,6 +1139,17 @@
           "Obsidian Longcoat",
           "Obsidian Pants"
         ]
+      },
+      {
+        "id": "bee-armor",
+        "name": "Bee Armor",
+        "slot": "armor",
+        "icon": "armor/bee-armor.png",
+        "source": "Crafted from Bee Wax",
+        "why": "Trades Obsidian armor defense for a stronger minion bonus.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor"
       }
     ],
     "accessories": [

@@ -398,6 +398,19 @@
           "Chlorophyte Plate Mail",
           "Chlorophyte Greaves"
         ]
+      },
+      {
+        "id": "turtle-armor",
+        "name": "Turtle Armor",
+        "slot": "armor",
+        "icon": "armor/turtle-armor.png",
+        "source": "Crafted from Turtle Shells and Chlorophyte Bars",
+        "why": "The tankier alternative to Chlorophyte, with thorns and much higher defense.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Armor"
       }
     ],
     "accessories": [
@@ -748,23 +761,37 @@
           "Chlorophyte Plate Mail",
           "Chlorophyte Greaves"
         ]
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor-ranger.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The mech-boss set: less damage than Chlorophyte but a dodge on its set bonus.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor"
       }
     ],
     "accessories": [
       {
-        "id": "sniper-scope",
-        "name": "Sniper Scope",
+        "id": "rifle-scope",
+        "name": "Rifle Scope",
         "slot": "accessory",
-        "icon": "accessories/sniper-scope.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "This is the premium ranger accessory here because it boosts ranged performance while also improving target control.",
+        "icon": "accessories/rifle-scope.png",
+        "source": "Purchased from the Arms Dealer in Hardmode",
+        "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true,
+        "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope"
       },
       {
         "id": "ranger-emblem",
@@ -1105,6 +1132,19 @@
           "Chlorophyte Plate Mail",
           "Chlorophyte Greaves"
         ]
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor-mage.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "The mech-boss set, worth it for the dodge if Chlorophyte is still out of reach.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor"
       }
     ],
     "accessories": [
@@ -1489,6 +1529,19 @@
           "Spider Breastplate",
           "Spider Greaves"
         ]
+      },
+      {
+        "id": "hallowed-armor",
+        "name": "Hallowed Armor",
+        "slot": "armor",
+        "icon": "armor/hallowed-armor-summoner.png",
+        "source": "Crafted from Hallowed Bars",
+        "why": "More defense than Spider armor, at the cost of minion damage.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor"
       }
     ],
     "accessories": [

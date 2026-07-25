@@ -299,6 +299,19 @@
           "Turtle Scale Mail",
           "Turtle Leggings"
         ]
+      },
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor/chlorophyte-armor-melee.png",
+        "source": "Crafted from Chlorophyte Bars",
+        "why": "The damage-first alternative to Turtle armor, with a leaf crystal that attacks for you.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Armor"
       }
     ],
     "accessories": [
@@ -365,19 +378,21 @@
         ]
       },
       {
-        "id": "destroyer-emblem",
-        "name": "Destroyer Emblem",
+        "id": "avenger-emblem",
+        "name": "Avenger Emblem",
         "slot": "accessory",
-        "icon": "accessories/destroyer-emblem.png",
-        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
-        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "icon": "accessories/avenger-emblem.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "The mech-boss emblem, and the step before Destroyer Emblem needs a Golem drop.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+        "quality": "great"
       },
       {
         "id": "master-ninja-gear",
@@ -726,19 +741,20 @@
     ],
     "accessories": [
       {
-        "id": "sniper-scope",
-        "name": "Sniper Scope",
+        "id": "rifle-scope",
+        "name": "Rifle Scope",
         "slot": "accessory",
-        "icon": "accessories/sniper-scope.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is still the cleanest premium ranger accessory because the crit and aim support both stay relevant.",
+        "icon": "accessories/rifle-scope.png",
+        "source": "Purchased from the Arms Dealer in Hardmode",
+        "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
         "tags": [
           "hardmode"
         ],
-        "topPick": true,
+        "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope"
       },
       {
         "id": "ranger-emblem",
@@ -789,19 +805,21 @@
         ]
       },
       {
-        "id": "destroyer-emblem",
-        "name": "Destroyer Emblem",
+        "id": "avenger-emblem",
+        "name": "Avenger Emblem",
         "slot": "accessory",
-        "icon": "accessories/destroyer-emblem.png",
-        "source": "Crafted from Avenger Emblem and Eye of the Golem.",
-        "why": "+10% damage and +8% crit, stacking with your class emblem.",
+        "icon": "accessories/avenger-emblem.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "The mech-boss emblem, and the step before Destroyer Emblem needs a Golem drop.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+        "quality": "great"
       },
       {
         "id": "master-ninja-gear",
@@ -1604,6 +1622,19 @@
           "Tiki Shirt",
           "Tiki Pants"
         ]
+      },
+      {
+        "id": "spooky-armor",
+        "name": "Spooky Armor",
+        "slot": "armor",
+        "icon": "armor/spooky-armor.png",
+        "source": "Crafted from Spooky Wood",
+        "why": "The Pumpkin Moon set: the biggest minion damage bonus before Lunar gear.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor"
       }
     ],
     "accessories": [

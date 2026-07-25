@@ -160,6 +160,13 @@ const isCalamityArmor = (name: string) =>
 function curateArmor(grouped: Item[]): Item[] {
   const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
   const modded = grouped.filter((a) => isCalamityArmor(a.name));
+
+  // Playing a mod, the useful comparison is "best vanilla set vs best modded
+  // set", so it stays at one of each. Without a mod there is nothing to compare
+  // against, and several stages have two or three genuinely on-tier sets
+  // (Bee vs Obsidian, Chlorophyte vs Turtle, Spooky vs Tiki), so show them all.
+  if (!modded.length) return vanilla;
+
   const picks: Item[] = [];
   if (vanilla[0]) picks.push(vanilla[0]);
   if (modded[0]) picks.push(modded[0]);
