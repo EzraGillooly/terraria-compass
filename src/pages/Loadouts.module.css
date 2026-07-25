@@ -92,8 +92,7 @@
 .weaponsPanel { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: 0; }
 .reforgePanel { border-top-left-radius: 0; border-top-right-radius: 0; }
 /* Buffs sit next to the compact accessory box */
-.accRow { display: flex; gap: 14px; align-items: start; }
-.buffsPanel { flex: 1; min-width: 0; }
+.buffsPanel { min-width: 0; }
 .tlabel { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin-bottom: 14px; }
 .tlabel .em { color: var(--warm); }
 .groupLabel { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin: 18px 0 12px; }
@@ -155,10 +154,13 @@
 .setBadge { display: inline-block; margin-top: 8px; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #9FE0C0; background: rgba(159,224,192,.14); border-radius: var(--radius-pill); padding: 4px 10px 2px; line-height: 1; }
 
 /* ── Accessory box - two compact columns, right-anchored ── */
-.accBox { width: max-content; min-width: 158px; flex: none; }
-.accSplit { display: flex; flex-direction: column; gap: 8px; width: 84px; margin: 0 auto; }
+/* Accessories span the whole content width; the slots carry tags now. */
+.accPanel { margin-top: 14px; }
+.accGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 10px; }
+.accMoreRow { margin-top: 16px; }
+.accMoreLabel { display: block; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-bottom: 8px; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
-.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.accSlot { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 6px; padding: 10px 7px; min-height: 132px; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 button.accSlot { cursor: pointer; }
 /* .accSlot is a pixel-frame: light its stepped border on hover (via --px-border,
    which drives the ::before layer) rather than the real box border, and drop the
@@ -214,3 +216,41 @@ button.accSlot:hover { --px-border: var(--warm); }
 
 /* Many-phase packs (Calamity) use smaller phase discs so 19 fit comfortably. */
 :root[data-pack="calamity"] .bossmap { --cu: 1.4px; }
+
+
+/* ── Accessory tags ──
+   Colours follow the community accessory guide so they read the same way. */
+.accTags { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 2px; }
+.accCat, .accQuality, .accMarker {
+  display: inline-block; padding: 2px 5px 1px; line-height: 1.1;
+  font-weight: 800; font-size: 9px; letter-spacing: .03em; border-radius: 2px;
+  color: #10182c; white-space: nowrap;
+}
+.c_mobility      { background: #97f779; }
+.c_offense       { background: #eb345e; color: #fff; }
+.c_survivability { background: #f79f79; }
+.c_melee         { background: #fab664; }
+.c_ranged        { background: #8cfabd; }
+.c_magic         { background: #ffabdd; }
+.c_summon        { background: #abdfff; }
+
+.accQuality { text-transform: uppercase; }
+.q_great { background: #2bbcd6; }
+.q_good  { background: #59bd5c; }
+.q_fine  { background: #e3eb0e; }
+
+/* Caveats are outlined rather than filled, so they never compete with the
+   category colour for attention. */
+.accMarker {
+  background: transparent; color: #C6D3EC;
+  box-shadow: inset 0 0 0 1px rgba(150,180,230,.45);
+  cursor: help;
+}
+
+.accLegend {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-top: 16px; padding-top: 12px; border-top: 1px dashed rgba(150,180,230,.25);
+}
+.accLegendLabel { font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-right: 2px; }
+.accLegendSep { width: 1px; height: 12px; background: rgba(150,180,230,.35); margin: 0 4px; }
+.accLegendNote { font-size: 10.5px; color: #7F93B8; margin-left: 2px; }

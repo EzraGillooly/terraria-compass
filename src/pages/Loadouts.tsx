@@ -179,7 +179,43 @@ function curateArmor(grouped: Item[]): Item[] {
   return picks.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
 }
 
-function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?: boolean; onOpen: (i: Item) => void }) {
+/* ── Accessory taxonomy ──
+   Categories, quality tiers and markers follow the community accessory guide, so
+   the labels and colours match what a reader will have seen there. */
+const CATEGORY_LABEL: Record<string, string> = {
+  mobility: 'Mobility', offense: 'Offense', survivability: 'Survivability',
+  melee: 'Melee', ranged: 'Ranged', magic: 'Magic', summon: 'Summon',
+};
+/** taxonomy damage-type -> our class id, so a class badge only shows on its own page */
+const CATEGORY_CLASS: Record<string, string> = {
+  melee: 'melee', ranged: 'ranger', magic: 'mage', summon: 'summoner',
+};
+const MARKER_LABEL: Record<string, string> = {
+  expert: 'Expert', tank: 'Tank', corruption: 'Corruption', crimson: 'Crimson',
+  whips: 'Whips', yoyos: 'Yoyos',
+};
+const MARKER_TITLE: Record<string, string> = {
+  expert: 'Expert Mode and above only',
+  tank: 'More effective in a tank build',
+  corruption: 'Corruption worlds only',
+  crimson: 'Crimson worlds only',
+  whips: 'Only worth it if you use whips',
+  yoyos: 'Only worth it if you use yoyos',
+};
+
+/** Class-specific categories are noise on the other three classes' pages. */
+function visibleCategories(item: Item, activeClass: string): string[] {
+  return (item.categories ?? []).filter((c) => {
+    const owner = CATEGORY_CLASS[c];
+    return !owner || owner === activeClass;
+  });
+}
+
+function AccCell({
+  item, demonHeart, activeClass, onOpen,
+}: {
+  item: Item | null; demonHeart?: boolean; activeClass: string; onOpen: (i: Item) => void;
+}) {
   if (!item) {
     return (
       <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
@@ -188,6 +224,8 @@ function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
     );
   }
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  const cats = visibleCategories(item, activeClass);
+  const markers = item.markers ?? [];
   return (
     <button type="button" className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
       <img
@@ -197,7 +235,48 @@ function AccCell({ item, demonHeart, onOpen }: { item: Item | null; demonHeart?:
         onError={makeErrorHandler(wiki, FALLBACK_ICON)}
       />
       <span className={styles.accSlotName}>{item.name}</span>
+
+      {(cats.length > 0 || item.quality || markers.length > 0) && (
+        <span className={styles.accTags}>
+          {item.quality && (
+            <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>
+              {item.quality}
+            </span>
+          )}
+          {cats.map((c) => (
+            <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
+              {CATEGORY_LABEL[c]}
+            </span>
+          ))}
+          {markers.map((m) => (
+            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+              {MARKER_LABEL[m]}
+            </span>
+          ))}
+        </span>
+      )}
     </button>
+  );
+}
+
+/** Key to the accessory tags, so the colours mean something on first read. */
+function AccLegend() {
+  return (
+    <div className={styles.accLegend}>
+      <span className={styles.accLegendLabel}>Tags</span>
+      {(['mobility', 'offense', 'survivability'] as const).map((c) => (
+        <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
+          {CATEGORY_LABEL[c]}
+        </span>
+      ))}
+      <span className={styles.accLegendSep} aria-hidden="true" />
+      {(['great', 'good', 'fine'] as const).map((q) => (
+        <span key={q} className={`${styles.accQuality} ${styles[`q_${q}`]}`}>{q}</span>
+      ))}
+      <span className={styles.accLegendNote}>
+        class tags show on that class only
+      </span>
+    </div>
   );
 }
 
@@ -469,14 +548,6 @@ export function Loadouts() {
 
           {/* Reforge - hugs the weapons panel */}
           <div className={`${styles.invPanel} ${styles.reforgePanel} pixel-frame`}>
-            {extraAccessories.length > 0 && (
-              <div className={styles.accAlts}>
-                <span className={styles.accAltsLabel}>Also good:</span>
-                {extraAccessories.map((a) => (
-                  <button key={a.id} type="button" className={`${styles.accAlt} pixel-frame pixel-hollow`} onClick={() => setModalItem(a)}>{a.name}</button>
-                ))}
-              </div>
-            )}
             <div className={styles.reforgeLabel}>Accessory reforges</div>
             <p className={styles.reforgeIntro}>
               Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
@@ -548,35 +619,49 @@ export function Loadouts() {
             )}
           </div>
 
-          {/* Buffs next to the compact accessory box */}
-          <div className={styles.accRow}>
-            <div className={`${styles.invPanel} ${styles.buffsPanel} pixel-frame`}>
-              <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
-              {safeLoadout.buffs.length > 0 ? (
-                <div className={styles.buffGrid}>
-                  {safeLoadout.buffs.map((b) => <BuffCell key={b.id} item={b} onOpen={setModalItem} />)}
-                </div>
-              ) : (
-                <p className={styles.empty}>No buff data for this phase yet.</p>
-              )}
-            </div>
+          {/* Buffs take the full column now that accessories have their own row */}
+          <div className={`${styles.invPanel} ${styles.buffsPanel} pixel-frame`}>
+            <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
+            {safeLoadout.buffs.length > 0 ? (
+              <div className={styles.buffGrid}>
+                {safeLoadout.buffs.map((b) => <BuffCell key={b.id} item={b} onOpen={setModalItem} />)}
+              </div>
+            ) : (
+              <p className={styles.empty}>No buff data for this phase yet.</p>
+            )}
+          </div>
+          </div>
+        </div>
 
-            <div className={`${styles.invPanel} ${styles.accBox} pixel-frame`}>
-              <div className={styles.tlabel}><span>Accessories</span><span className={styles.em}>{slotCount} slots</span></div>
-              {/* one vertical strip of slots; the 6th is the Expert-only Demon Heart */}
-              <div className={styles.accSplit}>
-                {accSlots.map((acc, i) => (
-                  <AccCell
-                    key={acc?.id ?? `slot-${i}`}
-                    item={acc}
-                    demonHeart={demonHeartUnlocked && i === 5}
-                    onOpen={setModalItem}
-                  />
+        {/* Accessories span the full content width: the slots carry category,
+            quality and caveat tags now, which need the room. */}
+        <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>
+          <div className={styles.tlabel}>
+            <span>Accessories</span>
+            <span className={styles.em}>{slotCount} slots</span>
+          </div>
+          <div className={styles.accGrid}>
+            {accSlots.map((acc, i) => (
+              <AccCell
+                key={acc?.id ?? `slot-${i}`}
+                item={acc}
+                demonHeart={demonHeartUnlocked && i === 5}
+                activeClass={activeClassId}
+                onOpen={setModalItem}
+              />
+            ))}
+          </div>
+          {extraAccessories.length > 0 && (
+            <div className={styles.accMoreRow}>
+              <span className={styles.accMoreLabel}>Also worth a slot</span>
+              <div className={styles.accGrid}>
+                {extraAccessories.map((a) => (
+                  <AccCell key={a.id} item={a} activeClass={activeClassId} onOpen={setModalItem} />
                 ))}
               </div>
             </div>
-          </div>
-          </div>
+          )}
+          <AccLegend />
         </div>
       </section>
 
