@@ -59,6 +59,32 @@
     "id": "rogue",
     "name": "Rogue",
     "blurb": "Calamity's signature stealth-based throwing class that builds stealth while still to unleash powerful empowered strikes from thrown weapons.",
-    "subclasses": []
+    "subclasses": [
+      {
+        "id": "daggers",
+        "name": "Daggers",
+        "description": "Rogue daggers - thrown weapons that share a handling style."
+      },
+      {
+        "id": "javelins",
+        "name": "Javelins",
+        "description": "Rogue javelins - thrown weapons that share a handling style."
+      },
+      {
+        "id": "boomerangs",
+        "name": "Boomerangs",
+        "description": "Rogue boomerangs - thrown weapons that share a handling style."
+      },
+      {
+        "id": "spiky-balls",
+        "name": "Spiky Balls",
+        "description": "Rogue spiky balls - thrown weapons that share a handling style."
+      },
+      {
+        "id": "bombs",
+        "name": "Bombs",
+        "description": "Rogue bombs - thrown weapons that share a handling style."
+      }
+    ]
   }
 ]

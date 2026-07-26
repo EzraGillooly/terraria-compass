@@ -1809,11 +1809,13 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flash_Round"
           }
         ]
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "frostburn-arrows",
         "name": "Frostburn Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/frostburn-arrows.png",
         "source": "Crafted",
         "why": "ammunition",
@@ -1837,7 +1839,7 @@
       {
         "id": "jesters-arrows",
         "name": "Jester's Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/jesters-arrows.png",
         "source": "Crafted",
         "why": "ammunition",
@@ -1861,7 +1863,7 @@
       {
         "id": "silver-bullets",
         "name": "Silver Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/silver-bullets.png",
         "source": "Crafted",
         "why": "ammunition",
@@ -1885,7 +1887,7 @@
       {
         "id": "tungsten-bullets",
         "name": "Tungsten Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/tungsten-bullets.png",
         "source": "",
         "why": "ammunition",
@@ -1897,7 +1899,7 @@
       {
         "id": "unholy-arrows",
         "name": "Unholy Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/unholy-arrows.png",
         "source": "Crafted",
         "why": "ammunition",
@@ -3534,7 +3536,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Antlion_Skewer"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Antlion_Skewer",
+        "subclass": "daggers"
       },
       {
         "id": "contaminated-bile",
@@ -3566,7 +3569,8 @@
             "qty": 12,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "urchin-stinger",
@@ -3578,7 +3582,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger",
+        "subclass": "daggers"
       },
       {
         "id": "wulfrum-knife",
@@ -3598,7 +3603,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "contaminated-bile",
@@ -3630,7 +3636,8 @@
             "qty": 12,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "iron-francisca-lead-tomahawk",
@@ -3670,7 +3677,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "wulfrum-controller",
@@ -8581,7 +8589,8 @@
             "qty": 1,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "spore-knife",
@@ -8606,7 +8615,8 @@
             "qty": 8,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "contaminated-bile",
@@ -8630,7 +8640,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert",
+        "subclass": "javelins"
       },
       {
         "id": "brittle-star-staff",
@@ -8642,7 +8653,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff",
+        "subclass": "spiky-balls"
       },
       {
         "id": "wulfrum-controller",
@@ -13385,7 +13397,8 @@
             "qty": 1,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "spore-knife",
@@ -13410,7 +13423,8 @@
             "qty": 8,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "contaminated-bile",
@@ -13434,7 +13448,8 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert",
+        "subclass": "javelins"
       },
       {
         "id": "brittle-star-staff-wulfrum-controller",
@@ -13446,7 +13461,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff_%2F_Wulfrum_Controller"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff_%2F_Wulfrum_Controller",
+        "subclass": "spiky-balls"
       }
     ],
     "armor": [
@@ -16235,11 +16251,13 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flash_Round"
           }
         ]
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "musket-ball-tungsten-bullet",
         "name": "Musket Ball / Tungsten Bullet",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/musket-ball-tungsten-bullet.png",
         "source": "Crafted",
         "why": "baseline bullet ammo",
@@ -16258,7 +16276,7 @@
       {
         "id": "shimmer-arrows",
         "name": "Shimmer Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/shimmer-arrows.png",
         "source": "Obtained from throwing a Wooden or Hellfire Arrow into Shimmer",
         "why": "recommended arrow ammo",
@@ -18596,7 +18614,8 @@
             "qty": 7,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "hardened-honeycomb",
@@ -18608,7 +18627,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hardened_Honeycomb"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hardened_Honeycomb",
+        "subclass": "spiky-balls"
       },
       {
         "id": "meteor-fist",
@@ -18658,7 +18678,8 @@
             "qty": 3,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "shattered-sun",
@@ -18700,7 +18721,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff",
+        "subclass": "spiky-balls"
       },
       {
         "id": "wulfrum-controller",
@@ -23215,7 +23237,8 @@
             "qty": 7,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "gel-dart",
@@ -23252,7 +23275,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive",
+        "subclass": "javelins"
       },
       {
         "id": "lionfish",
@@ -23313,7 +23337,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive",
+        "subclass": "javelins"
       },
       {
         "id": "lionfish",
@@ -25936,9 +25961,31 @@
         ]
       },
       {
+        "id": "endless-musket-pouch",
+        "name": "Endless Musket Pouch",
+        "slot": "buff",
+        "icon": "calamity/endless-musket-pouch.png",
+        "source": "Crafted at Crystal Ball",
+        "why": "An infinite stack of Musket Balls, so you stop crafting ammo mid-fight.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 9999,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          }
+        ],
+        "station": "Crystal Ball"
+      }
+    ],
+    "ammo": [
+      {
         "id": "cursed-arrows-ichor-arrows",
         "name": "Cursed Arrows / Ichor Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/wooden-arrow.png",
         "source": "Crafted",
         "why": "ammo with debuff on hit",
@@ -25962,7 +26009,7 @@
       {
         "id": "cursed-darts-ichor-darts",
         "name": "Cursed Darts / Ichor Darts",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/cursed-darts-ichor-darts.png",
         "source": "Crafted",
         "why": "dart ammo with debuff",
@@ -25981,7 +26028,7 @@
       {
         "id": "cursed-bullets-ichor-bullets",
         "name": "Cursed Bullets / Ichor Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/cursed-bullets-ichor-bullets.png",
         "source": "Crafted",
         "why": "bullet ammo with debuff",
@@ -26003,29 +26050,9 @@
         ]
       },
       {
-        "id": "endless-musket-pouch",
-        "name": "Endless Musket Pouch",
-        "slot": "buff",
-        "icon": "calamity/endless-musket-pouch.png",
-        "source": "Crafted at Crystal Ball",
-        "why": "An infinite stack of Musket Balls, so you stop crafting ammo mid-fight.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 9999,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          }
-        ],
-        "station": "Crystal Ball"
-      },
-      {
         "id": "exploding-bullets",
         "name": "Exploding Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/exploding-bullets.png",
         "source": "Crafted",
         "why": "area-of-effect bullet ammo",
@@ -26049,7 +26076,7 @@
       {
         "id": "unholy-arrows",
         "name": "Unholy Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/unholy-arrows.png",
         "source": "Crafted",
         "why": "piercing arrow ammo",
@@ -28210,7 +28237,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "cursed-dagger-ichor-spear",
@@ -28222,7 +28250,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear",
+        "subclass": "daggers"
       },
       {
         "id": "ice-star",
@@ -28234,7 +28263,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
+        "subclass": "spiky-balls"
       },
       {
         "id": "palladium-javelin",
@@ -28254,7 +28284,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "prismalline",
@@ -28296,7 +28327,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger",
+        "subclass": "daggers"
       },
       {
         "id": "equanimity",
@@ -28336,7 +28368,8 @@
             "qty": 7,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "ice-star",
@@ -28348,7 +28381,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
+        "subclass": "spiky-balls"
       },
       {
         "id": "palladium-javelin",
@@ -28368,7 +28402,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "prismalline",
@@ -33804,7 +33839,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "cursed-dagger-ichor-spear",
@@ -33816,7 +33852,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger_%2F_Ichor_Spear",
+        "subclass": "daggers"
       },
       {
         "id": "ice-star",
@@ -33828,7 +33865,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
+        "subclass": "spiky-balls"
       },
       {
         "id": "palladium-javelin",
@@ -33848,7 +33886,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "prismalline",
@@ -33890,7 +33929,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger",
+        "subclass": "daggers"
       },
       {
         "id": "equanimity",
@@ -33930,7 +33970,8 @@
             "qty": 7,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "ice-star",
@@ -33942,7 +33983,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
+        "subclass": "spiky-balls"
       },
       {
         "id": "palladium-javelin",
@@ -33962,7 +34004,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "prismalline",
@@ -37089,11 +37132,13 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
           }
         ]
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "cursed-arrows-ichor-arrows",
         "name": "Cursed Arrows / Ichor Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/wooden-arrow.png",
         "source": "Crafted",
         "why": "primary arrow ammo",
@@ -37117,7 +37162,7 @@
       {
         "id": "cursed-darts-ichor-darts",
         "name": "Cursed Darts / Ichor Darts",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/cursed-darts-ichor-darts.png",
         "source": "Crafted",
         "why": "dart weapon ammo",
@@ -37136,7 +37181,7 @@
       {
         "id": "ichor-bullets-cursed-bullets",
         "name": "Ichor Bullets / Cursed Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/ichor-bullets-cursed-bullets.png",
         "source": "Crafted",
         "why": "gun ammo",
@@ -37160,7 +37205,7 @@
       {
         "id": "unholy-arrows",
         "name": "Unholy Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/unholy-arrows.png",
         "source": "Crafted",
         "why": "budget arrow ammo",
@@ -41056,56 +41101,6 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ammo_Box"
       },
       {
-        "id": "holy-arrow",
-        "name": "Holy Arrow",
-        "slot": "buff",
-        "icon": "calamity/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "chlorophyte-arrow",
-        "name": "Chlorophyte Arrow",
-        "slot": "buff",
-        "icon": "calamity/chlorophyte-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "homing arrow ammo",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_Arrow",
-        "materials": [
-          {
-            "name": "Chlorophyte Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
         "id": "verium-bolt",
         "name": "Verium Bolt",
         "slot": "buff",
@@ -41154,6 +41149,58 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
           }
         ]
+      }
+    ],
+    "ammo": [
+      {
+        "id": "holy-arrow",
+        "name": "Holy Arrow",
+        "slot": "ammo",
+        "icon": "calamity/holy-arrow.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Calls down falling stars on impact.",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 200,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Pixie Dust",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
+          },
+          {
+            "name": "Unicorn Horn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "chlorophyte-arrow",
+        "name": "Chlorophyte Arrow",
+        "slot": "ammo",
+        "icon": "calamity/chlorophyte-arrow.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "homing arrow ammo",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_Arrow",
+        "materials": [
+          {
+            "name": "Chlorophyte Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ]
   },
@@ -42890,7 +42937,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       },
       {
         "id": "desecrated-water",
@@ -42937,7 +42985,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
+        "subclass": "spiky-balls"
       },
       {
         "id": "skyfin-bombers",
@@ -42962,7 +43011,8 @@
             "qty": 15,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corroded_Fossil"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "totality-breakers",
@@ -43066,7 +43116,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "totality-breakers",
@@ -46416,11 +46467,13 @@
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
         "dropRate": "0.18%"
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "cursed-arrows-ichor-arrows",
         "name": "Cursed Arrows / Ichor Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/wooden-arrow.png",
         "source": "Crafted",
         "why": "strong arrow ammo",
@@ -46444,7 +46497,7 @@
       {
         "id": "exploding-bullets",
         "name": "Exploding Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/exploding-bullets.png",
         "source": "Crafted",
         "why": "high-damage explosive ammo",
@@ -46468,7 +46521,7 @@
       {
         "id": "ichor-bullets-cursed-bullets",
         "name": "Ichor Bullets / Cursed Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/ichor-bullets-cursed-bullets.png",
         "source": "Crafted",
         "why": "debuffing bullet ammo",
@@ -46492,7 +46545,7 @@
       {
         "id": "unholy-arrows",
         "name": "Unholy Arrows",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/unholy-arrows.png",
         "source": "Crafted",
         "why": "piercing arrow ammo",
@@ -48967,7 +49020,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Defective_Sphere"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Defective_Sphere",
+        "subclass": "spiky-balls"
       },
       {
         "id": "fantasy-talisman",
@@ -49076,7 +49130,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
+        "subclass": "daggers"
       },
       {
         "id": "duststorm-in-a-bottle",
@@ -49185,7 +49240,8 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
+        "subclass": "daggers"
       },
       {
         "id": "lunic-eye",
@@ -55544,7 +55600,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
+        "subclass": "daggers"
       },
       {
         "id": "doomsday-device",
@@ -55556,7 +55613,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device",
+        "subclass": "bombs"
       },
       {
         "id": "epidemic-shredder",
@@ -55665,7 +55723,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device",
+        "subclass": "bombs"
       },
       {
         "id": "plaguenade",
@@ -55702,7 +55761,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
+        "subclass": "daggers"
       }
     ],
     "armor": [
@@ -62418,7 +62478,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
+        "subclass": "daggers"
       },
       {
         "id": "the-syringe",
@@ -62430,7 +62491,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe",
+        "subclass": "daggers"
       },
       {
         "id": "corpus-avertor",
@@ -66500,11 +66562,13 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Round"
           }
         ]
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "chlorophyte-bullets",
         "name": "Chlorophyte Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/chlorophyte-bullets.png",
         "source": "Crafted",
         "why": "homing ammo option",
@@ -66528,7 +66592,7 @@
       {
         "id": "exploding-bullets",
         "name": "Exploding Bullets",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/exploding-bullets.png",
         "source": "Crafted",
         "why": "AoE ammo option",
@@ -69821,7 +69885,8 @@
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       },
       {
         "id": "regulus-riot",
@@ -69873,7 +69938,8 @@
             "qty": 18,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       },
       {
         "id": "dukes-decapitator",
@@ -69949,7 +70015,8 @@
             "qty": 18,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       },
       {
         "id": "betsys-wrath",
@@ -76479,7 +76546,8 @@
             "qty": 5,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
           }
-        ]
+        ],
+        "subclass": "daggers"
       },
       {
         "id": "profaned-partisan",
@@ -76504,7 +76572,8 @@
             "qty": 25,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "rebounding-rainbow",
@@ -76539,7 +76608,8 @@
             "qty": 5,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "utensil-poker",
@@ -76551,7 +76621,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Utensil_Poker"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Utensil_Poker",
+        "subclass": "javelins"
       },
       {
         "id": "eye-of-magnus",
@@ -76635,7 +76706,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       }
     ],
     "armor": [
@@ -80065,26 +80137,6 @@
         "dropRate": "0.18%"
       },
       {
-        "id": "bloodfire-arrow",
-        "name": "Bloodfire Arrow",
-        "slot": "buff",
-        "icon": "calamity/bloodfire-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Arrow",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ]
-      },
-      {
         "id": "endless-musket-pouch",
         "name": "Endless Musket Pouch",
         "slot": "buff",
@@ -80103,11 +80155,33 @@
           }
         ],
         "station": "Crystal Ball"
+      }
+    ],
+    "ammo": [
+      {
+        "id": "bloodfire-arrow",
+        "name": "Bloodfire Arrow",
+        "slot": "ammo",
+        "icon": "calamity/bloodfire-arrow.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Arrow",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Bloodstone Core",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
+          }
+        ]
       },
       {
         "id": "luminite-arrow",
         "name": "Luminite Arrow",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/luminite-arrow.png",
         "source": "Crafted at an Ancient Manipulator",
         "why": "",
@@ -82689,7 +82763,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Kunai"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Kunai",
+        "subclass": "daggers"
       },
       {
         "id": "molten-amputator",
@@ -82811,7 +82886,8 @@
             "qty": 25,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
-        ]
+        ],
+        "subclass": "javelins"
       },
       {
         "id": "reality-rupture",
@@ -82866,7 +82942,8 @@
             "qty": 4,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "eye-of-magnus",
@@ -82950,7 +83027,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       }
     ],
     "armor": [
@@ -86829,9 +86907,36 @@
         "dropRate": "0.18%"
       },
       {
+        "id": "mini-nuke-i",
+        "name": "Mini Nuke I",
+        "slot": "buff",
+        "icon": "calamity/mini-nuke-i.png",
+        "source": "Crafted at an Autohammer",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mini_Nuke_I",
+        "materials": [
+          {
+            "name": "Rocket III",
+            "qty": 100,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_III"
+          },
+          {
+            "name": "Shroomite Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+          }
+        ],
+        "station": "Autohammer"
+      }
+    ],
+    "ammo": [
+      {
         "id": "bloodfire-bullet",
         "name": "Bloodfire Bullet",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/bloodfire-bullet.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
@@ -86851,7 +86956,7 @@
       {
         "id": "holy-fire-bullet",
         "name": "Holy Fire Bullet",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/holy-fire-bullet.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
@@ -86876,7 +86981,7 @@
       {
         "id": "luminite-bullet",
         "name": "Luminite Bullet",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/luminite-bullet.png",
         "source": "Crafted at Ancient Manipulator",
         "why": "The highest base damage of any bullet.",
@@ -86894,34 +86999,9 @@
         ]
       },
       {
-        "id": "mini-nuke-i",
-        "name": "Mini Nuke I",
-        "slot": "buff",
-        "icon": "calamity/mini-nuke-i.png",
-        "source": "Crafted at an Autohammer",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mini_Nuke_I",
-        "materials": [
-          {
-            "name": "Rocket III",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_III"
-          },
-          {
-            "name": "Shroomite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-          }
-        ],
-        "station": "Autohammer"
-      },
-      {
         "id": "wooden-arrow",
         "name": "Wooden Arrow",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/wooden-arrow.png",
         "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
         "why": "The default arrow.",
@@ -89986,7 +90066,8 @@
             "qty": 3,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "the-old-reaper",
@@ -90010,7 +90091,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister",
+        "subclass": "boomerangs"
       },
       {
         "id": "vega",
@@ -90107,7 +90189,8 @@
             "qty": 4,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "eye-of-magnus",
@@ -90179,7 +90262,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "stratus-sphere",
@@ -90214,7 +90298,8 @@
             "qty": 12,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       }
     ],
     "armor": [
@@ -94300,26 +94385,6 @@
         "dropRate": "0.18%"
       },
       {
-        "id": "bloodfire-bullet",
-        "name": "Bloodfire Bullet",
-        "slot": "buff",
-        "icon": "calamity/bloodfire-bullet.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Bullet",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ]
-      },
-      {
         "id": "endless-musket-pouch",
         "name": "Endless Musket Pouch",
         "slot": "buff",
@@ -94375,31 +94440,6 @@
         ]
       },
       {
-        "id": "holy-fire-bullet",
-        "name": "Holy Fire Bullet",
-        "slot": "buff",
-        "icon": "calamity/holy-fire-bullet.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Exploding Bullet",
-            "qty": 333,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet"
-          },
-          {
-            "name": "Unholy Essence",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
-          }
-        ]
-      },
-      {
         "id": "mini-nuke-i",
         "name": "Mini Nuke I",
         "slot": "buff",
@@ -94423,11 +94463,58 @@
           }
         ],
         "station": "Autohammer"
+      }
+    ],
+    "ammo": [
+      {
+        "id": "bloodfire-bullet",
+        "name": "Bloodfire Bullet",
+        "slot": "ammo",
+        "icon": "calamity/bloodfire-bullet.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Bullet",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Bloodstone Core",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
+          }
+        ]
+      },
+      {
+        "id": "holy-fire-bullet",
+        "name": "Holy Fire Bullet",
+        "slot": "ammo",
+        "icon": "calamity/holy-fire-bullet.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Exploding Bullet",
+            "qty": 333,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet"
+          },
+          {
+            "name": "Unholy Essence",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
+          }
+        ]
       },
       {
         "id": "venom-arrow",
         "name": "Venom Arrow",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/venom-arrow.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
@@ -97281,7 +97368,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
+        "subclass": "boomerangs"
       },
       {
         "id": "executioners-blade",
@@ -97336,7 +97424,8 @@
             "qty": 2,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "the-old-reaper",
@@ -97360,7 +97449,8 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister",
+        "subclass": "boomerangs"
       },
       {
         "id": "claret-cannon",
@@ -97380,7 +97470,8 @@
             "qty": 4,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
-        ]
+        ],
+        "subclass": "bombs"
       },
       {
         "id": "eye-of-magnus",
@@ -97452,7 +97543,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       },
       {
         "id": "stratus-sphere",
@@ -97487,7 +97579,8 @@
             "qty": 12,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "spiky-balls"
       }
     ],
     "armor": [
@@ -101380,31 +101473,6 @@
         ]
       },
       {
-        "id": "holy-fire-bullet",
-        "name": "Holy Fire Bullet",
-        "slot": "buff",
-        "icon": "calamity/holy-fire-bullet.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Exploding Bullet",
-            "qty": 333,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet"
-          },
-          {
-            "name": "Unholy Essence",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
-          }
-        ]
-      },
-      {
         "id": "mini-nuke-i",
         "name": "Mini Nuke I",
         "slot": "buff",
@@ -101428,6 +101496,33 @@
           }
         ],
         "station": "Autohammer"
+      }
+    ],
+    "ammo": [
+      {
+        "id": "holy-fire-bullet",
+        "name": "Holy Fire Bullet",
+        "slot": "ammo",
+        "icon": "calamity/holy-fire-bullet.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Exploding Bullet",
+            "qty": 333,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet"
+          },
+          {
+            "name": "Unholy Essence",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
+          }
+        ]
       }
     ]
   },
@@ -104202,7 +104297,8 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
+        "subclass": "boomerangs"
       },
       {
         "id": "dynamic-pursuer",
@@ -104353,7 +104449,8 @@
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
-        ]
+        ],
+        "subclass": "boomerangs"
       }
     ],
     "armor": [
@@ -108531,11 +108628,13 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
           }
         ]
-      },
+      }
+    ],
+    "ammo": [
       {
         "id": "vanquisher-arrow",
         "name": "Vanquisher Arrow",
-        "slot": "buff",
+        "slot": "ammo",
         "icon": "calamity/vanquisher-arrow.png",
         "source": "Crafted at a Cosmic Anvil",
         "why": "",
