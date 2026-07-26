@@ -27,6 +27,12 @@ export const Item = z.object({
   headpiece: z.string().optional(),
   /** the full set to craft: [headpiece, breastplate, leggings] */
   pieces: z.array(z.string()).optional(),
+  /**
+   * A single armour piece rather than a set, worn by mixing it into one.
+   * Flagged rather than said in prose so the UI can mark it and explain the
+   * trade once, instead of every entry opening with the same disclaimer.
+   */
+  singlePiece: z.boolean().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
   /** crafting station, e.g. "Mythril Anvil or Orichalcum Anvil" */
@@ -112,6 +118,13 @@ export const Loadout = z.object({
    * pool they were picked from, so a player can swap by category instead of
    * being handed a single answer. Sourced from the SilverIsGold sandbox.
    */
+  /**
+   * Why mixing armour pieces is worth considering at this phase, shown once
+   * above the armour list when it offers any single piece. The trade is always
+   * the same - you give up the set bonus - so what changes by phase is whether
+   * the piece you gain is worth more than the bonus you lose.
+   */
+  mixNote: z.string().optional(),
   accessoryPool: z.array(z.object({
     category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged', 'magic', 'summon']),
     items: z.array(Item),

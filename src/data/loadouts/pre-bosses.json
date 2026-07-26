@@ -4228,7 +4228,7 @@
         "slot": "armor",
         "icon": "armor/flinx-fur-coat.png",
         "source": "Crafted from Flinx Fur, Silk, and Wood",
-        "why": "One piece, not a set: +5% minion damage and +1 minion slot.",
+        "why": "+5% minion damage and +1 minion slot.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -4248,7 +4248,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
           }
         ],
-        "station": "Loom"
+        "station": "Loom",
+        "singlePiece": true
       }
     ],
     "accessories": [
@@ -4560,6 +4561,7 @@
           }
         ]
       }
-    ]
+    ],
+    "mixNote": "Mixing costs nothing yet: the ore sets have no set bonus, only defense. The Flinx Fur Coat is the only minion damage available at this point, so it goes on over whatever chest and leg pieces you already have."
   }
 ]

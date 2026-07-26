@@ -707,7 +707,12 @@ export function Loadouts() {
                         />
                       </div>
                       <div className={styles.armorEntryBody}>
-                        <div className={styles.armorName}>{a.name}</div>
+                        <div className={styles.armorName}>
+                          {a.name}
+                          {a.singlePiece && (
+                            <span className={`${styles.mixTag} pixel-frame`}>Mix</span>
+                          )}
+                        </div>
                       {a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
                           {a.headpiece && <span className={`${styles.armorHeadTag} pixel-frame`}>{classDef.name}</span>}
@@ -726,6 +731,12 @@ export function Loadouts() {
                     </button>
                     );
                   })}
+                  {safeLoadout.mixNote && (
+                    <p className={styles.mixNote}>
+                      <span className={styles.mixNoteHead}>Mixing pieces</span>
+                      {safeLoadout.mixNote}
+                    </p>
+                  )}
                 </div>
               </div>
             ) : (

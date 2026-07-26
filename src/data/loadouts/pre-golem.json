@@ -2350,7 +2350,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-visor.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "One piece, not a set: 33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
+        "why": "33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
         "tags": [
           "hardmode"
         ],
@@ -2363,7 +2363,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "singlePiece": true
       }
     ],
     "accessories": [
@@ -2843,7 +2844,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mixNote": "The Chlorophyte Visor's three minion slots add damage to any build, not just a summoner's. Wearing it means giving up the Spectre set bonus, which is the strongest part of that set, so it is a real trade rather than a free upgrade."
   },
   {
     "phase": "pre-golem",

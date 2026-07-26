@@ -153,6 +153,24 @@
 /* the class-specific headpiece is highlighted within the set */
 .armorPieceHead { color: #12283B; --px-fill: #9FE0C0; --px-border: #9FE0C0; }
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
+/* Marks an armour row that is a single piece rather than a set. The trade it
+   implies is explained once below the list, not on every row. */
+.mixTag {
+  display: inline-block; margin-left: 8px; padding: 3px 6px 2px;
+  font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em;
+  line-height: 1; vertical-align: middle; color: #0b1524;
+  --px-u: 1px; --px-fill: var(--warm); --px-border: var(--warm);
+}
+.mixNote {
+  margin: 14px 0 0; padding-top: 12px;
+  border-top: 1px dashed rgba(255,255,255,.14);
+  font-size: 12px; line-height: 1.5; color: #A9BCE0;
+}
+.mixNoteHead {
+  display: block; font-weight: 800; font-size: 10px; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--warm); margin-bottom: 4px;
+}
+
 .setBadge { display: inline-block; margin-top: 8px; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #9FE0C0; background: rgba(159,224,192,.14); border-radius: var(--radius-pill); padding: 4px 10px 2px; line-height: 1; }
 
 /* Items a Classic world cannot obtain. Treasure Bag drops only exist in Expert

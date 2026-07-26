@@ -2559,7 +2559,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-visor.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "One piece, not a set: 33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
+        "why": "33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
         "tags": [
           "hardmode"
         ],
@@ -2572,7 +2572,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "singlePiece": true
       },
       {
         "id": "apprentices-trousers",
@@ -2580,12 +2581,13 @@
         "slot": "armor",
         "icon": "armor/apprentices-trousers.png",
         "source": "Dropped by the Old One's Army, tier 2",
-        "why": "One piece, not a set: 10 defense, 10% summon damage, and 20% magic critical strike chance and movement speed.",
+        "why": "10 defense, 10% summon damage, and 20% magic critical strike chance and movement speed.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice_armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice_armor",
+        "singlePiece": true
       }
     ],
     "accessories": [
@@ -3033,7 +3035,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mixNote": "Old One's Army pieces carry unusually large stats for one slot, so a mixed set can beat a full one on raw numbers. What you give up is the set bonus, so it is a straight comparison between the two."
   },
   {
     "phase": "pre-plantera",
@@ -3475,12 +3478,13 @@
         "slot": "armor",
         "icon": "armor/monks-bald-cap.png",
         "source": "Dropped by the Old One's Army, tier 2",
-        "why": "One piece, not a set: 8 defense, 1 sentry slot and 20% melee speed, which also speeds up whips.",
+        "why": "8 defense, 1 sentry slot and 20% melee speed, which also speeds up whips.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Monk_armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Monk_armor",
+        "singlePiece": true
       }
     ],
     "accessories": [
@@ -3953,6 +3957,7 @@
           }
         ]
       }
-    ]
+    ],
+    "mixNote": "Melee speed raises whip speed, which is why Monk's Bushy Brow Bald Cap is a summoner piece despite the name. Wearing it means giving up the Spider or Hallowed set bonus."
   }
 ]
