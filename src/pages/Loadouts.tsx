@@ -799,9 +799,10 @@ export function Loadouts() {
                           ))}
                         </div>
                       )}
-                      {a.why && <div className={styles.armorPerk}>{a.why}</div>}
-                      {a.headpieceBonus && (
-                        <div className={styles.armorHeadBonus}>{a.headpieceBonus}</div>
+                      {(a.why || a.headpieceBonus) && (
+                        <div className={styles.armorPerk}>
+                          {[a.why, a.headpieceBonus].filter(Boolean).join(' ')}
+                        </div>
                       )}
                       </div>
                     </button>
