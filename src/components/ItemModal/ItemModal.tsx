@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import type { SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
-import { usePack } from '../../lib/app-context';
+import { usePack, useAppState } from '../../lib/app-context';
 import materialsData from '../../data/packs/calamity/materials.json';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
@@ -17,6 +17,20 @@ const MATERIAL_SOURCE = new Map(
     .map((m) => [m.name, m.source]),
 );
 const materialSource = (name: string) => MATERIAL_SOURCE.get(name) ?? '';
+
+/* The materials index only covers Calamity, so a vanilla material must not link
+   into it - the page would just tell the reader to switch packs. Vanilla links
+   go to the wiki instead, which is where that material is actually documented. */
+function MaterialLink(
+  { name, wikiUrl, internal, onClose }:
+  { name: string; wikiUrl?: string; internal: boolean; onClose: () => void },
+) {
+  if (internal) {
+    return <Link to={`/materials?q=${encodeURIComponent(name)}`} onClick={onClose}>{name}</Link>;
+  }
+  if (!wikiUrl) return <span>{name}</span>;
+  return <a href={wikiUrl} target="_blank" rel="noreferrer noopener">{name}</a>;
+}
 
 const SLOT_LABEL: Record<string, string> = {
   weapon: 'Weapon', armor: 'Armor', accessory: 'Accessory', buff: 'Buff',
@@ -38,6 +52,7 @@ const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' w
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const { recipes } = usePack();
+  const { packId } = useAppState();
 
   useEffect(() => {
     if (!item) return;
@@ -107,12 +122,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                       {p.materials.map((m) => (
                         <li key={m.name}>
                           <span className={styles.matQty}>{m.qty}</span>
-                          <Link
-                            to={`/materials?q=${encodeURIComponent(m.name)}`}
-                            onClick={onClose}
-                          >
-                            {m.name}
-                          </Link>
+                          <MaterialLink
+                            name={m.name}
+                            wikiUrl={m.wikiUrl}
+                            internal={packId === 'calamity'}
+                            onClose={onClose}
+                          />
                         </li>
                       ))}
                     </ul>
@@ -131,13 +146,14 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                     <li key={m.name}>
                       <span className={styles.matBody}>
                         <span className={styles.matNameRow}>
-                          {/* deep-links to the materials index with the search prefilled */}
-                          <Link
-                            to={`/materials?q=${encodeURIComponent(m.name)}`}
-                            onClick={onClose}
-                          >
-                            {m.name}
-                          </Link>
+                          {/* Calamity deep-links into the materials index with the
+                              search prefilled; vanilla goes out to the wiki */}
+                          <MaterialLink
+                            name={m.name}
+                            wikiUrl={m.wikiUrl}
+                            internal={packId === 'calamity'}
+                            onClose={onClose}
+                          />
                           <span className={styles.matQty}>{m.qty}</span>
                         </span>
                         {how && <span className={styles.matHow}>{how}</span>}

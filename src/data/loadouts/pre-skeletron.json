@@ -29,7 +29,15 @@
         "subclass": "true-melee",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Spear",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Gel",
+            "qty": 50,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gel"
+          }
+        ],
+        "station": "Solidifier"
       },
       {
         "id": "code-1",
@@ -57,7 +65,15 @@
         "subclass": "yoyo",
         "stats": "24 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hive-Five",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Bee Wax",
+            "qty": 14,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "flamarang",
@@ -71,7 +87,20 @@
         "subclass": "boomerang",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flamarang",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          },
+          {
+            "name": "Enchanted Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "volcano",
@@ -85,7 +114,15 @@
         "subclass": "true-melee",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "phaseblades",
@@ -131,7 +168,25 @@
         "subclass": "projectile-melee",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "amazon",
@@ -147,7 +202,30 @@
         "subclass": "yoyo",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amazon",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Rich Mahogany",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany"
+          },
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Vine",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "starfury",
@@ -195,7 +273,20 @@
         "subclass": "boomerang",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thorn_Chakram",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Jungle Spores",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Stinger",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -214,6 +305,56 @@
           "Shadow Helmet",
           "Shadow Scalemail",
           "Shadow Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Shadow Helmet",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Shadow Scalemail",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Shadow Greaves",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       },
       {
@@ -231,6 +372,56 @@
           "Crimson Helmet",
           "Crimson Scalemail",
           "Crimson Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Crimson Helmet",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Crimson Scalemail",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Crimson Greaves",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       }
     ],
@@ -247,7 +438,15 @@
         "categories": [
           "survivability"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+        "materials": [
+          {
+            "name": "Obsidian",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+          }
+        ],
+        "station": "Furnace"
       },
       {
         "id": "shield-of-cthulhu",
@@ -280,7 +479,20 @@
         "categories": [
           "mobility"
         ],
-        "quality": "good"
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Hermes Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
+          },
+          {
+            "name": "Rocket Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "feral-claws",
@@ -407,7 +619,15 @@
         "subclass": "bow",
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "the-bees-knees",
@@ -449,7 +669,15 @@
         "subclass": "bow",
         "stats": "31 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Fury",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "star-cannon",
@@ -463,7 +691,25 @@
         "tier": "best",
         "subclass": "gun",
         "stats": "55 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
+        "materials": [
+          {
+            "name": "Minishark",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark"
+          },
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "boomstick",
@@ -495,7 +741,15 @@
         "subclass": "bow",
         "stats": "19 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tendon_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -514,6 +768,56 @@
           "Shadow Helmet",
           "Shadow Scalemail",
           "Shadow Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Shadow Helmet",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Shadow Scalemail",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Shadow Greaves",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       },
       {
@@ -531,6 +835,56 @@
           "Crimson Helmet",
           "Crimson Scalemail",
           "Crimson Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Crimson Helmet",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Crimson Scalemail",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Crimson Greaves",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       }
     ],
@@ -547,7 +901,15 @@
         "categories": [
           "survivability"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+        "materials": [
+          {
+            "name": "Obsidian",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+          }
+        ],
+        "station": "Furnace"
       },
       {
         "id": "spectre-boots",
@@ -561,7 +923,20 @@
         "categories": [
           "mobility"
         ],
-        "quality": "good"
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Hermes Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
+          },
+          {
+            "name": "Rocket Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "shield-of-cthulhu",
@@ -663,7 +1038,20 @@
         "tags": [],
         "topPick": false,
         "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostburn_Arrow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostburn_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Ice Torch",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Torch"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "ammo-jesters-arrow",
@@ -675,7 +1063,20 @@
         "tags": [],
         "topPick": false,
         "stats": "10 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "ammo-silver-bullet",
@@ -687,7 +1088,20 @@
         "tags": [],
         "topPick": false,
         "stats": "9 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bullet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bullet",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 70,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Silver Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ]
   },
@@ -753,7 +1167,20 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Gold Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          },
+          {
+            "name": "Ruby",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "diamond-staff",
@@ -769,7 +1196,20 @@
         "subclass": "wand",
         "stats": "23 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Platinum Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+          },
+          {
+            "name": "Diamond",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "thunder-zapper",
@@ -833,7 +1273,20 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amber_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Sturdy Fossil",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+          },
+          {
+            "name": "Amber",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "space-gun",
@@ -849,7 +1302,15 @@
         "subclass": "magic-gun",
         "stats": "20 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Space_Gun",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -866,6 +1327,41 @@
           "Meteor Helmet",
           "Meteor Suit",
           "Meteor Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Meteor Helmet",
+            "materials": [
+              {
+                "name": "Meteorite Bar",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Meteor Suit",
+            "materials": [
+              {
+                "name": "Meteorite Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Meteor Leggings",
+            "materials": [
+              {
+                "name": "Meteorite Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       },
       {
@@ -877,7 +1373,52 @@
         "why": "16% reduced mana costs. Not tied to one weapon the way Meteor armor is.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Armor",
+        "pieceRecipes": [
+          {
+            "piece": "Jungle Hat",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Jungle Shirt",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              },
+              {
+                "name": "Stinger",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Jungle Pants",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              },
+              {
+                "name": "Vine",
+                "qty": 2,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
+        ]
       },
       {
         "id": "wizard-set",
@@ -903,7 +1444,20 @@
         "topPick": true,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Nature's Gift",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+          },
+          {
+            "name": "Mana Potion",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "magic-cuffs",
@@ -916,7 +1470,20 @@
         "topPick": false,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Mana Regeneration Band",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band"
+          },
+          {
+            "name": "Shackle",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "obsidian-skull",
@@ -930,7 +1497,15 @@
         "categories": [
           "survivability"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+        "materials": [
+          {
+            "name": "Obsidian",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+          }
+        ],
+        "station": "Furnace"
       },
       {
         "id": "spectre-boots",
@@ -944,7 +1519,20 @@
         "categories": [
           "mobility"
         ],
-        "quality": "good"
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Hermes Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
+          },
+          {
+            "name": "Rocket Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "band-of-starpower",
@@ -1000,7 +1588,7 @@
         "name": "Lesser Mana Potion",
         "slot": "buff",
         "icon": "potions/lesser-mana-potion.png",
-        "source": "Crafted from Fallen Stars and Bottled Water",
+        "source": "Purchased from the Merchant, or found in Wooden and Pearlwood Crates from fishing",
         "why": "You still want a large stack ready for sustained arena or underworld attempts.",
         "tags": [],
         "topPick": false
@@ -1014,7 +1602,20 @@
         "why": "Restores 100 mana; causes Mana Sickness.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion",
+        "materials": [
+          {
+            "name": "Lesser Mana Potion",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Mana_Potion"
+          },
+          {
+            "name": "Glowing Mushroom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": []
@@ -1035,7 +1636,15 @@
         "subclass": "minions",
         "stats": "12 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hornet_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Bee Wax",
+            "qty": 14,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "ballista-rod",
@@ -1077,7 +1686,25 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Glowing Mushroom",
+            "qty": 300,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+          },
+          {
+            "name": "Mushroom Grass Seeds",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Grass_Seeds"
+          },
+          {
+            "name": "Shadow Scale",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "explosive-trap-rod",
@@ -1133,7 +1760,15 @@
         "subclass": "whip",
         "stats": "12 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Whip",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Gel",
+            "qty": 50,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gel"
+          }
+        ],
+        "station": "Solidifier"
       },
       {
         "id": "imp-staff",
@@ -1147,7 +1782,15 @@
         "subclass": "minions",
         "stats": "17 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 17,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "snapthorn",
@@ -1163,7 +1806,25 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snapthorn",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "flinx-staff",
@@ -1179,7 +1840,20 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Flinx Fur",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Fur"
+          },
+          {
+            "name": "Gold Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "vampire-frog-staff",
@@ -1211,7 +1885,25 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starcrash",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Chain",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chain"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -1228,6 +1920,71 @@
           "Obsidian Outlaw Hat",
           "Obsidian Longcoat",
           "Obsidian Pants"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Obsidian Outlaw Hat",
+            "materials": [
+              {
+                "name": "Silk",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
+              },
+              {
+                "name": "Obsidian",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ],
+            "station": "Hellforge"
+          },
+          {
+            "piece": "Obsidian Longcoat",
+            "materials": [
+              {
+                "name": "Silk",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
+              },
+              {
+                "name": "Obsidian",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Hellforge"
+          },
+          {
+            "piece": "Obsidian Pants",
+            "materials": [
+              {
+                "name": "Silk",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
+              },
+              {
+                "name": "Obsidian",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ],
+            "station": "Hellforge"
+          }
         ]
       },
       {
@@ -1239,7 +1996,42 @@
         "why": "Summon damage +10%. Less defense than Obsidian, and no whip bonus.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor",
+        "pieceRecipes": [
+          {
+            "piece": "Bee Breastplate",
+            "materials": [
+              {
+                "name": "Bee Wax",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Bee Greaves",
+            "materials": [
+              {
+                "name": "Bee Wax",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Bee Headgear",
+            "materials": [
+              {
+                "name": "Bee Wax",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
+        ]
       }
     ],
     "accessories": [
@@ -1255,7 +2047,15 @@
         "categories": [
           "survivability"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull",
+        "materials": [
+          {
+            "name": "Obsidian",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+          }
+        ],
+        "station": "Furnace"
       },
       {
         "id": "pygmy-necklace",
@@ -1284,7 +2084,20 @@
         "categories": [
           "mobility"
         ],
-        "quality": "good"
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Hermes Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
+          },
+          {
+            "name": "Rocket Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "shield-of-cthulhu",

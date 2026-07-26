@@ -15,7 +15,25 @@
         "subclass": "projectile-melee",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "starfury",
@@ -43,7 +61,30 @@
         "subclass": "yoyo",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amazon",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Rich Mahogany",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany"
+          },
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Vine",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "axearang",
@@ -85,7 +126,20 @@
         "subclass": "boomerang",
         "stats": "17 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Wooden Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Boomerang"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "fruitcake-chakram",
@@ -141,7 +195,20 @@
         "subclass": "boomerang",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thorn_Chakram",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Jungle Spores",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Stinger",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "trimarang",
@@ -155,7 +222,25 @@
         "subclass": "boomerang",
         "stats": "21 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Trimarang",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Enchanted Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang"
+          },
+          {
+            "name": "Shroomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomerang"
+          },
+          {
+            "name": "Ice Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Boomerang"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "wooden-boomerang",
@@ -211,7 +296,20 @@
         "subclass": "flail",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Mace",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Mace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mace"
+          },
+          {
+            "name": "Torch",
+            "qty": 99,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "mace",
@@ -239,7 +337,20 @@
         "subclass": "flail",
         "stats": "34 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Meatball",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          },
+          {
+            "name": "Tissue Sample",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "enchanted-sword",
@@ -295,7 +406,15 @@
         "subclass": "true-melee",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Ash Wood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "bat-bat",
@@ -337,7 +456,15 @@
         "subclass": "true-melee",
         "stats": "22 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Butcherer",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "blue-phaseblade",
@@ -351,7 +478,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Sapphire",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "bone-sword",
@@ -379,7 +519,15 @@
         "subclass": "true-melee",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Boreal Wood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "breathing-reed",
@@ -407,7 +555,15 @@
         "subclass": "true-melee",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Cactus",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "candy-cane-sword",
@@ -435,7 +591,15 @@
         "subclass": "true-melee",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Copper Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "copper-shortsword",
@@ -449,7 +613,15 @@
         "subclass": "true-melee",
         "stats": "5 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Copper Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "ebonwood-sword",
@@ -463,7 +635,15 @@
         "subclass": "true-melee",
         "stats": "11 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonwood_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Ebonwood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonwood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "exotic-scimitar",
@@ -505,7 +685,20 @@
         "subclass": "true-melee",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flymeal",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Platinum Broadsword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Broadsword"
+          },
+          {
+            "name": "Stinkbug",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinkbug"
+          }
+        ],
+        "station": "Honey"
       },
       {
         "id": "gladius",
@@ -533,7 +726,15 @@
         "subclass": "true-melee",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Gold Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "gold-shortsword",
@@ -547,7 +748,15 @@
         "subclass": "true-melee",
         "stats": "12 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Gold Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "green-phaseblade",
@@ -561,7 +770,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Green_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Emerald",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Emerald"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "iron-broadsword",
@@ -575,7 +797,15 @@
         "subclass": "true-melee",
         "stats": "12 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Iron Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "iron-shortsword",
@@ -589,7 +819,15 @@
         "subclass": "true-melee",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Iron Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "katana",
@@ -617,7 +855,15 @@
         "subclass": "true-melee",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Lead Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "lead-shortsword",
@@ -631,7 +877,15 @@
         "subclass": "true-melee",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Lead Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "light-s-bane",
@@ -645,7 +899,15 @@
         "subclass": "true-melee",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Light%27s_Bane",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "mandible-blade",
@@ -673,7 +935,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Amber",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "palm-wood-sword",
@@ -687,7 +962,15 @@
         "subclass": "true-melee",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Palm Wood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "pink-phaseblade",
@@ -701,7 +984,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Pink Pearl",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Pearl"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "platinum-broadsword",
@@ -715,7 +1011,15 @@
         "subclass": "true-melee",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Platinum Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "platinum-shortsword",
@@ -729,7 +1033,15 @@
         "subclass": "true-melee",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Platinum Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "purple-clubberfish",
@@ -757,7 +1069,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Purple_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Amethyst",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "rainbow-phaseblade",
@@ -771,7 +1096,50 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Amethyst",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst"
+          },
+          {
+            "name": "Topaz",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          },
+          {
+            "name": "Sapphire",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire"
+          },
+          {
+            "name": "Emerald",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Emerald"
+          },
+          {
+            "name": "Ruby",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby"
+          },
+          {
+            "name": "Diamond",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
+          },
+          {
+            "name": "Amber",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "red-phaseblade",
@@ -785,7 +1153,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Red_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Ruby",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "rich-mahogany-sword",
@@ -799,7 +1180,15 @@
         "subclass": "true-melee",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Rich Mahogany",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "ruler",
@@ -827,7 +1216,15 @@
         "subclass": "true-melee",
         "stats": "11 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadewood_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Shadewood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shadewood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "silver-broadsword",
@@ -841,7 +1238,15 @@
         "subclass": "true-melee",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Silver Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "silver-shortsword",
@@ -855,7 +1260,15 @@
         "subclass": "true-melee",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Silver Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "spear",
@@ -953,7 +1366,15 @@
         "subclass": "true-melee",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tin Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "tin-shortsword",
@@ -967,7 +1388,15 @@
         "subclass": "true-melee",
         "stats": "7 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tin Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "trident",
@@ -995,7 +1424,15 @@
         "subclass": "true-melee",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Broadsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tungsten Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "tungsten-shortsword",
@@ -1009,7 +1446,15 @@
         "subclass": "true-melee",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Shortsword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tungsten Bar",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "white-phaseblade",
@@ -1023,7 +1468,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/White_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Diamond",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "wooden-sword",
@@ -1037,7 +1495,15 @@
         "subclass": "true-melee",
         "stats": "7 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Sword",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Wood",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "yellow-phaseblade",
@@ -1051,7 +1517,20 @@
         "subclass": "true-melee",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Yellow_Phaseblade",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "zombie-arm",
@@ -1079,7 +1558,15 @@
         "subclass": "yoyo",
         "stats": "17 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Artery",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "malaise",
@@ -1093,7 +1580,15 @@
         "subclass": "yoyo",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Malaise",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "rally",
@@ -1121,7 +1616,20 @@
         "subclass": "yoyo",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Yoyo",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Any Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Wood"
+          },
+          {
+            "name": "Cobweb",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
+          }
+        ],
+        "station": "Work Bench"
       }
     ],
     "armor": [
@@ -1138,6 +1646,41 @@
           "Platinum Helmet",
           "Platinum Chainmail",
           "Platinum Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Platinum Helmet",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Platinum Chainmail",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 30,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Platinum Greaves",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       }
     ],
@@ -1344,7 +1887,15 @@
         "subclass": "bow",
         "stats": "10 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Ash Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "boreal-wood-bow",
@@ -1358,7 +1909,15 @@
         "subclass": "bow",
         "stats": "6 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Boreal Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "copper-bow",
@@ -1372,7 +1931,15 @@
         "subclass": "bow",
         "stats": "6 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Copper Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "ebonwood-bow",
@@ -1386,7 +1953,15 @@
         "subclass": "bow",
         "stats": "8 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonwood_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Ebonwood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonwood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "gold-bow",
@@ -1400,7 +1975,15 @@
         "subclass": "bow",
         "stats": "11 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Gold Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "iron-bow",
@@ -1414,7 +1997,15 @@
         "subclass": "bow",
         "stats": "8 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Iron Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "lead-bow",
@@ -1428,7 +2019,15 @@
         "subclass": "bow",
         "stats": "9 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Lead Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "palm-wood-bow",
@@ -1442,7 +2041,15 @@
         "subclass": "bow",
         "stats": "6 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Palm Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "platinum-bow",
@@ -1456,7 +2063,15 @@
         "subclass": "bow",
         "stats": "13 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Platinum Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "rich-mahogany-bow",
@@ -1470,7 +2085,15 @@
         "subclass": "bow",
         "stats": "6 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Rich Mahogany",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "shadewood-bow",
@@ -1484,7 +2107,15 @@
         "subclass": "bow",
         "stats": "8 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadewood_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Shadewood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shadewood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "silver-bow",
@@ -1498,7 +2129,15 @@
         "subclass": "bow",
         "stats": "9 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Silver Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "tendon-bow",
@@ -1512,7 +2151,15 @@
         "subclass": "bow",
         "stats": "19 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tendon_Bow",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "tin-bow",
@@ -1526,7 +2173,15 @@
         "subclass": "bow",
         "stats": "7 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tin Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "tungsten-bow",
@@ -1540,7 +2195,15 @@
         "subclass": "bow",
         "stats": "10 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tungsten Bar",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "wooden-bow",
@@ -1554,7 +2217,15 @@
         "subclass": "bow",
         "stats": "4 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Bow",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wood"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "flintlock-pistol",
@@ -1624,7 +2295,25 @@
         "subclass": "gun",
         "stats": "30 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sandgun",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Illegal Gun Parts",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
+          },
+          {
+            "name": "Antlion Mandible",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Antlion_Mandible"
+          },
+          {
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Furnace"
       },
       {
         "id": "paintball-gun",
@@ -1669,6 +2358,41 @@
           "Platinum Helmet",
           "Platinum Chainmail",
           "Platinum Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Platinum Helmet",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Platinum Chainmail",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 30,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Platinum Greaves",
+            "materials": [
+              {
+                "name": "Platinum Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       },
       {
@@ -1680,7 +2404,42 @@
         "why": "20% chance to save ammo. Less defense than ore armor of the same tier.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_Armor",
+        "pieceRecipes": [
+          {
+            "piece": "Fossil Greaves",
+            "materials": [
+              {
+                "name": "Sturdy Fossil",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Fossil Helmet",
+            "materials": [
+              {
+                "name": "Sturdy Fossil",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Fossil Plate",
+            "materials": [
+              {
+                "name": "Sturdy Fossil",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
+        ]
       }
     ],
     "accessories": [
@@ -1818,7 +2577,20 @@
         "tags": [],
         "topPick": false,
         "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Arrow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Torch",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "ammo-musket-ball",
@@ -1850,7 +2622,20 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amber_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Sturdy Fossil",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+          },
+          {
+            "name": "Amber",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "aqua-scepter",
@@ -1878,7 +2663,20 @@
         "subclass": "wand",
         "stats": "23 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Platinum Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
+          },
+          {
+            "name": "Diamond",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "ruby-staff",
@@ -1892,7 +2690,20 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Gold Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          },
+          {
+            "name": "Ruby",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "thunder-zapper",
@@ -1920,7 +2731,20 @@
         "subclass": "wand",
         "stats": "15 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Frosting",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Wand of Sparking",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Sparking"
+          },
+          {
+            "name": "Ice Torch",
+            "qty": 99,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Torch"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "wand-of-sparking",
@@ -1962,7 +2786,15 @@
         "subclass": "magic-gun",
         "stats": "20 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Space_Gun",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "crimson-rod",
@@ -1990,7 +2822,20 @@
         "subclass": "wand",
         "stats": "15 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst_Staff",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Copper Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Bar"
+          },
+          {
+            "name": "Amethyst",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amethyst"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "emerald-staff",
@@ -2004,7 +2849,20 @@
         "subclass": "wand",
         "stats": "19 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Emerald_Staff",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tungsten Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
+          },
+          {
+            "name": "Emerald",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Emerald"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "sapphire-staff",
@@ -2018,7 +2876,20 @@
         "subclass": "wand",
         "stats": "18 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire_Staff",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Silver Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
+          },
+          {
+            "name": "Sapphire",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "topaz-staff",
@@ -2032,7 +2903,20 @@
         "subclass": "wand",
         "stats": "16 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz_Staff",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Tin Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "vilethorn",
@@ -2077,6 +2961,51 @@
           "Jungle Hat",
           "Jungle Shirt",
           "Jungle Pants"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Jungle Hat",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Jungle Shirt",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              },
+              {
+                "name": "Stinger",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Jungle Pants",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              },
+              {
+                "name": "Vine",
+                "qty": 2,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
         ]
       }
     ],
@@ -2092,7 +3021,20 @@
         "topPick": true,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Nature's Gift",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+          },
+          {
+            "name": "Mana Potion",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "hermes-boots",
@@ -2169,7 +3111,7 @@
         "name": "Lesser Mana Potion",
         "slot": "buff",
         "icon": "potions/lesser-mana-potion.png",
-        "source": "Crafted from Fallen Stars and Bottled Water",
+        "source": "Purchased from the Merchant, or found in Wooden and Pearlwood Crates from fishing",
         "why": "A healthy stack keeps your early magic weapons usable during longer fights.",
         "tags": [],
         "topPick": false
@@ -2203,7 +3145,20 @@
         "why": "Restores 100 mana; causes Mana Sickness.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion",
+        "materials": [
+          {
+            "name": "Lesser Mana Potion",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Mana_Potion"
+          },
+          {
+            "name": "Glowing Mushroom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "magic-power-potion",
@@ -2224,7 +3179,15 @@
         "why": "Permanently raises maximum mana by 20.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal",
+        "materials": [
+          {
+            "name": "Fallen Star",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "By Hand"
       },
       {
         "id": "arcane-crystal",
@@ -2235,7 +3198,14 @@
         "why": "Permanently improves mana regeneration.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal",
+        "materials": [
+          {
+            "name": "Mana Crystal",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal"
+          }
+        ]
       }
     ],
     "ammo": []
@@ -2284,7 +3254,20 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Flinx Fur",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Fur"
+          },
+          {
+            "name": "Gold Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Work Bench"
       },
       {
         "id": "vampire-frog-staff",
@@ -2312,7 +3295,20 @@
         "subclass": "whip",
         "stats": "9 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cobwhip",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Cobweb",
+            "qty": 30,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
+          },
+          {
+            "name": "Any Wood",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Wood"
+          }
+        ],
+        "station": "Loom"
       },
       {
         "id": "leather-whip",
@@ -2340,7 +3336,25 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snapthorn",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "starcrash",
@@ -2354,7 +3368,25 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starcrash",
-        "tier": "other"
+        "tier": "other",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Chain",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chain"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "cattiva",
@@ -2410,7 +3442,15 @@
         "subclass": "whip",
         "stats": "17 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "vasculash",
@@ -2424,7 +3464,15 @@
         "subclass": "whip",
         "stats": "19 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -2436,7 +3484,25 @@
         "source": "Crafted from Flinx Fur, Silk, and Wood",
         "why": "One piece, not a set: +5% minion damage and +1 minion slot.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Silk",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
+          },
+          {
+            "name": "Flinx Fur",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Fur"
+          },
+          {
+            "name": "Gold Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+          }
+        ],
+        "station": "Loom"
       }
     ],
     "accessories": [

@@ -123,7 +123,9 @@
 .wtile { position: relative; display: flex; flex-direction: column; align-items: center; min-height: 158px; text-align: center; padding: 12px 8px; font-family: inherit; color: inherit; width: 100%; cursor: pointer; transition: transform .12s; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 .wtile.best { --px-border: var(--warm); }
 .wIcon { width: 46px; height: 46px; margin: 0 auto 10px; display: grid; place-items: center; }
-.wtileImg { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); transition: transform .15s ease, filter .15s ease; }
+/* The yellow glow is a drop-shadow, so animating `filter` made the highlight
+   fade in behind the cursor. Only the scale eases now; the glow is instant. */
+.wtileImg { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); transition: transform .15s ease; }
 .wName { position: relative; display: inline-block; max-width: 100%; margin: 0 auto; padding-top: 10px; font-weight: 700; font-size: 12px; line-height: 1.15; color: #EAF0FF; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .wName::before { content: ''; position: absolute; top: 0; left: -8px; width: calc(100% + 16px); height: 1px; background: rgba(150,180,230,.38); }
 .wSource { font-size: 10px; color: #A9BCE0; margin-top: 5px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.4em; }

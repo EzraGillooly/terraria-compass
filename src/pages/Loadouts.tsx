@@ -471,7 +471,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  Overview
+                  Top Picks
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button

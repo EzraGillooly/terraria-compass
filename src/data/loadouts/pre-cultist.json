@@ -101,7 +101,25 @@
         "subclass": "projectile-melee",
         "stats": "85 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "True Night's Edge",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge"
+          },
+          {
+            "name": "True Excalibur",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur"
+          },
+          {
+            "name": "Broken Hero Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Hero_Sword"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "seedler",
@@ -280,6 +298,56 @@
           "Beetle Helmet",
           "Beetle Leggings",
           "Beetle Scale Mail"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Beetle Helmet",
+            "materials": [
+              {
+                "name": "Beetle Husk",
+                "qty": 4,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk"
+              },
+              {
+                "name": "Turtle Helmet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Helmet"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Beetle Leggings",
+            "materials": [
+              {
+                "name": "Beetle Husk",
+                "qty": 6,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk"
+              },
+              {
+                "name": "Turtle Leggings",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Leggings"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Beetle Scale Mail",
+            "materials": [
+              {
+                "name": "Beetle Husk",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk"
+              },
+              {
+                "name": "Turtle Scale Mail",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Scale_Mail"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
         ]
       }
     ],
@@ -312,7 +380,20 @@
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          },
+          {
+            "name": "Eye of the Golem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "master-ninja-gear",
@@ -328,7 +409,25 @@
         "categories": [
           "mobility",
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-shell",
@@ -359,7 +458,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "charm-of-myths",
@@ -374,7 +486,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Band of Regeneration",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          },
+          {
+            "name": "Philosopher's Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -386,7 +511,20 @@
         "source": "Crafted at an Imbuing Station",
         "why": "The defense reduction remains the strongest and most practical melee imbue in this phase.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Ichor",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          }
+        ],
+        "station": "Imbuing Station"
       },
       {
         "id": "ironskin-potion",
@@ -670,6 +808,41 @@
           "Shroomite Headgear",
           "Shroomite Breastplate",
           "Shroomite Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Shroomite Headgear",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Breastplate",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Leggings",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
         ]
       },
       {
@@ -746,7 +919,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "destroyer-emblem",
@@ -761,7 +947,20 @@
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          },
+          {
+            "name": "Eye of the Golem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "master-ninja-gear",
@@ -777,7 +976,25 @@
         "categories": [
           "mobility",
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -843,7 +1060,20 @@
         "tags": [],
         "topPick": false,
         "stats": "9 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 60,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Chlorophyte Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ammo-ichor-bullet",
@@ -855,7 +1085,20 @@
         "tags": [],
         "topPick": false,
         "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 150,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Ichor",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ammo-holy-arrow",
@@ -867,7 +1110,25 @@
         "tags": [],
         "topPick": false,
         "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 200,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Pixie Dust",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
+          },
+          {
+            "name": "Unicorn Horn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ammo-endless-musket-pouch",
@@ -879,7 +1140,15 @@
         "tags": [],
         "topPick": false,
         "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Endless_Musket_Pouch"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endless_Musket_Pouch",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 9999,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          }
+        ],
+        "station": "Crystal Ball"
       }
     ]
   },
@@ -1134,6 +1403,52 @@
           "Spectre Mask",
           "Spectre Robe",
           "Spectre Pants"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Spectre Hood",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Mask",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Pants",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Robe",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
         ]
       },
       {
@@ -1151,6 +1466,41 @@
           "Spectre Hood",
           "Spectre Robe",
           "Spectre Pants"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Spectre Hood",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Robe",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Pants",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
         ]
       }
     ],
@@ -1197,7 +1547,20 @@
         "topPick": false,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Nature's Gift",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+          },
+          {
+            "name": "Mana Potion",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "ankh-shield",
@@ -1212,7 +1575,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-cuffs",
@@ -1230,7 +1606,20 @@
         ],
         "markers": [
           "tank"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "charm-of-myths",
@@ -1245,7 +1634,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Band of Regeneration",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          },
+          {
+            "name": "Philosopher's Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1556,7 +1958,42 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
+        "pieceRecipes": [
+          {
+            "piece": "Spooky Breastplate",
+            "materials": [
+              {
+                "name": "Spooky Wood",
+                "qty": 300,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Wood"
+              }
+            ],
+            "station": "Work Bench"
+          },
+          {
+            "piece": "Spooky Helmet",
+            "materials": [
+              {
+                "name": "Spooky Wood",
+                "qty": 200,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Wood"
+              }
+            ],
+            "station": "Work Bench"
+          },
+          {
+            "piece": "Spooky Leggings",
+            "materials": [
+              {
+                "name": "Spooky Wood",
+                "qty": 250,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Wood"
+              }
+            ],
+            "station": "Work Bench"
+          }
+        ]
       },
       {
         "id": "valhalla-knights-breastplate",
@@ -1632,7 +2069,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "necromantic-scroll",
@@ -1663,7 +2113,25 @@
         "categories": [
           "mobility",
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1715,7 +2183,20 @@
         "source": "Crafted at an Imbuing Station",
         "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Ichor",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          }
+        ],
+        "station": "Imbuing Station"
       },
       {
         "id": "flask-of-venom",

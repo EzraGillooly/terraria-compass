@@ -43,7 +43,60 @@
         "subclass": "projectile-melee",
         "stats": "190 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Zenith",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Terra Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade"
+          },
+          {
+            "name": "Meowmere",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere"
+          },
+          {
+            "name": "Star Wrath",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+          },
+          {
+            "name": "Influx Waver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver"
+          },
+          {
+            "name": "The Horseman's Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+          },
+          {
+            "name": "Seedler",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
+          },
+          {
+            "name": "Starfury",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury"
+          },
+          {
+            "name": "Bee Keeper",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper"
+          },
+          {
+            "name": "Enchanted Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword"
+          },
+          {
+            "name": "Copper Shortsword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "terrarian",
@@ -89,7 +142,15 @@
         "tier": "best",
         "subclass": "flail",
         "stats": "105 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption",
+        "materials": [
+          {
+            "name": "Solar Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "the-horseman-s-blade",
@@ -185,7 +246,15 @@
         "tier": "other",
         "subclass": "projectile-melee",
         "stats": "150 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Daybreak"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Daybreak",
+        "materials": [
+          {
+            "name": "Solar Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       }
     ],
     "armor": [
@@ -204,6 +273,56 @@
           "Solar Flare Helmet",
           "Solar Flare Breastplate",
           "Solar Flare Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Solar Flare Helmet",
+            "materials": [
+              {
+                "name": "Solar Fragment",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Solar Flare Breastplate",
+            "materials": [
+              {
+                "name": "Solar Fragment",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Solar Flare Leggings",
+            "materials": [
+              {
+                "name": "Solar Fragment",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          }
         ]
       }
     ],
@@ -268,7 +387,25 @@
         "categories": [
           "mobility",
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "destroyer-emblem",
@@ -283,7 +420,20 @@
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          },
+          {
+            "name": "Eye of the Golem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "ankh-shield",
@@ -298,7 +448,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -310,7 +473,15 @@
         "source": "Crafted from premium ingredients",
         "why": "The strongest food buff: Exquisitely Stuffed, for the largest all-round stat bonus.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Gold Bird",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bird"
+          }
+        ],
+        "station": "Cooking Pot or Cauldron"
       },
       {
         "id": "flask-of-ichor",
@@ -320,7 +491,20 @@
         "source": "Crafted at an Imbuing Station",
         "why": "The defense reduction still adds meaningful value even when your raw damage is already enormous.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Ichor",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          }
+        ],
+        "station": "Imbuing Station"
       },
       {
         "id": "lifeforce-potion",
@@ -423,7 +607,15 @@
         "subclass": "bow",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phantasm",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Vortex Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "vortex-beater",
@@ -439,7 +631,15 @@
         "subclass": "gun",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Beater",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Vortex Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       }
     ],
     "armor": [
@@ -458,6 +658,56 @@
           "Vortex Helmet",
           "Vortex Breastplate",
           "Vortex Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Vortex Helmet",
+            "materials": [
+              {
+                "name": "Vortex Fragment",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Vortex Breastplate",
+            "materials": [
+              {
+                "name": "Vortex Fragment",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Vortex Leggings",
+            "materials": [
+              {
+                "name": "Vortex Fragment",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          }
         ]
       }
     ],
@@ -521,7 +771,20 @@
         "topPick": false,
         "categories": [
           "mobility"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "destroyer-emblem",
@@ -536,7 +799,20 @@
         "topPick": false,
         "categories": [
           "offense"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          },
+          {
+            "name": "Eye of the Golem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "ankh-shield",
@@ -551,7 +827,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -563,7 +852,15 @@
         "source": "Crafted from premium ingredients",
         "why": "The strongest food buff: Exquisitely Stuffed, for the largest all-round stat bonus.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Gold Bird",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bird"
+          }
+        ],
+        "station": "Cooking Pot or Cauldron"
       },
       {
         "id": "ammo-box",
@@ -637,7 +934,15 @@
         "tags": [],
         "topPick": false,
         "stats": "20 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet",
+        "materials": [
+          {
+            "name": "Luminite Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "ammo-chlorophyte-bullet",
@@ -649,7 +954,20 @@
         "tags": [],
         "topPick": false,
         "stats": "9 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 60,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Chlorophyte Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ammo-holy-arrow",
@@ -661,7 +979,25 @@
         "tags": [],
         "topPick": false,
         "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 200,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Pixie Dust",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
+          },
+          {
+            "name": "Unicorn Horn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ]
   },
@@ -711,7 +1047,15 @@
         "subclass": "wand",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Nebula Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "rainbow-gun",
@@ -791,7 +1135,15 @@
         "subclass": "wand",
         "stats": "55 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Nebula Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "charged-blaster-cannon",
@@ -826,6 +1178,56 @@
           "Nebula Helmet",
           "Nebula Breastplate",
           "Nebula Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Nebula Helmet",
+            "materials": [
+              {
+                "name": "Nebula Fragment",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Nebula Breastplate",
+            "materials": [
+              {
+                "name": "Nebula Fragment",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Nebula Leggings",
+            "materials": [
+              {
+                "name": "Nebula Fragment",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          }
         ]
       },
       {
@@ -839,7 +1241,53 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Armor",
+        "pieceRecipes": [
+          {
+            "piece": "Spectre Hood",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Mask",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Pants",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Robe",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ]
       }
     ],
     "accessories": [
@@ -900,7 +1348,20 @@
         "topPick": false,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Nature's Gift",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+          },
+          {
+            "name": "Mana Potion",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-cuffs",
@@ -918,7 +1379,20 @@
         ],
         "markers": [
           "tank"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "ankh-shield",
@@ -933,7 +1407,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -945,7 +1432,15 @@
         "source": "Crafted from premium ingredients",
         "why": "The strongest food buff: Exquisitely Stuffed, for the largest all-round stat bonus.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Gold Bird",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bird"
+          }
+        ],
+        "station": "Cooking Pot or Cauldron"
       },
       {
         "id": "crystal-ball",
@@ -1076,7 +1571,15 @@
         "subclass": "minions",
         "stats": "60 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stardust Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "stardust-dragon-staff",
@@ -1092,7 +1595,15 @@
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff",
-        "tier": "good"
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stardust Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "constellation",
@@ -1108,7 +1619,15 @@
         "subclass": "whip",
         "stats": "130 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Constellation",
-        "tier": "best"
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Stardust Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       },
       {
         "id": "terraprisma",
@@ -1159,6 +1678,56 @@
           "Stardust Helmet",
           "Stardust Plate",
           "Stardust Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Stardust Helmet",
+            "materials": [
+              {
+                "name": "Stardust Fragment",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Stardust Plate",
+            "materials": [
+              {
+                "name": "Stardust Fragment",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          },
+          {
+            "piece": "Stardust Leggings",
+            "materials": [
+              {
+                "name": "Stardust Fragment",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+              },
+              {
+                "name": "Luminite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+              }
+            ],
+            "station": "Ancient Manipulator"
+          }
         ]
       },
       {
@@ -1265,7 +1834,20 @@
         "topPick": false,
         "categories": [
           "survivability"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1277,7 +1859,15 @@
         "source": "Crafted from premium ingredients",
         "why": "The strongest food buff: Exquisitely Stuffed, for the largest all-round stat bonus.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Gold Bird",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bird"
+          }
+        ],
+        "station": "Cooking Pot or Cauldron"
       },
       {
         "id": "bewitching-table",
@@ -1317,7 +1907,20 @@
         "source": "Crafted at an Imbuing Station",
         "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Ichor",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          }
+        ],
+        "station": "Imbuing Station"
       },
       {
         "id": "flask-of-venom",
