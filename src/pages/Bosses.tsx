@@ -72,8 +72,9 @@ export function Bosses() {
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
 
-  // Bosses grouped by the active pack's phases, main bosses on the line first,
-  // optional/side bosses after. Recomputed when the pack changes.
+  // Bosses grouped by the active pack's phases, optional ones first within each
+  // stage so they read before the boss that gates progress. Recomputed when the
+  // pack changes.
   // Hardmode begins at the phase after "Pre-Wall of Flesh" (works for any pack).
   const isHard = useMemo(() => {
     const wofOrder = phases.find((p) => /wall of flesh/i.test(p.name))?.order ?? Infinity;
@@ -88,7 +89,7 @@ export function Bosses() {
       return {
         stage,
         hard: isHard(stage),
-        nodes: [...inStage.filter((b) => !b.side), ...inStage.filter((b) => b.side)],
+        nodes: [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
       };
     });
   }, [phases, bosses, isHard]);

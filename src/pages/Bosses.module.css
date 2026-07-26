@@ -184,7 +184,9 @@
 /* ── Detail panel ── */
 .detail {
   max-width: 760px;
-  min-height: 248px;      /* holds ~2 sentences + 2 rows of drops so switching bosses doesn't reflow */
+  /* Height is held steady by the reserved regions below, not by a number
+     here: a fixed height clips on narrow screens, where the same content
+     wraps to nearly twice the height. */
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
@@ -211,7 +213,9 @@
 .detailIcon img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.55)); }
 
 .detailBody { flex: 1; min-width: 0; }
-.detailHead { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+/* Reserved like the regions below it: the name plus its tags wraps to a
+   second line for some bosses and not others. */
+.detailHead { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; min-height: 31px; }
 .detailName {
   font-family: var(--game);
   font-size: 24px;
@@ -244,7 +248,8 @@
   color: #8ecbf0;
   white-space: nowrap;
 }
-.detailBlurb { font-size: 14px; line-height: 1.5; color: rgba(234,244,251,.9); margin: 0 0 14px; }
+/* two lines reserved: blurbs run one or two, and the card must not resize */
+.detailBlurb { font-size: 14px; line-height: 1.5; min-height: 3em; color: rgba(234,244,251,.9); margin: 0 0 14px; }
 
 .detailRow { display: flex; gap: 14px; padding: 10px 0; align-items: baseline; }
 .detailRow + .detailRow { border-top: 1px dashed rgba(255,255,255,.12); }
@@ -258,8 +263,22 @@
   color: #8ea6c2;
   padding-top: 2px;
 }
-.detailVal { font-size: 14px; color: #eaf4fb; line-height: 1.5; }
-.drops { display: flex; flex-wrap: wrap; gap: 7px; }
+/* same reservation for the Summon and Unlocks values */
+.detailVal { font-size: 14px; color: #eaf4fb; line-height: 1.5; min-height: 3em; }
+/* two rows of pills reserved; a boss with more scrolls rather than
+   stretching the card */
+.drops { display: flex; flex-wrap: wrap; gap: 7px; min-height: 50px; max-height: 50px; overflow-y: auto; }
+
+/* Narrow screens wrap the same text about twice as far, so the reservations
+   grow with them - measured worst case at 375px is four lines of prose and
+   three rows of drop pills. Without this the card still jumped by ~70px when
+   switching bosses on a phone. */
+@media (max-width: 720px) {
+  .detailHead { min-height: 56px; }
+  .detailBlurb { min-height: 6em; }
+  .detailVal { min-height: 6em; }
+  .drops { min-height: 87px; max-height: 87px; }
+}
 .dropPill {
   font-weight: 700;
   font-size: 11.5px;
