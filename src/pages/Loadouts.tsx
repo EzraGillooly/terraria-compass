@@ -322,7 +322,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [] };
+  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [], ammo: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
@@ -618,6 +618,43 @@ export function Loadouts() {
               <p className={styles.empty}>No armor data for this phase yet.</p>
             )}
           </div>
+
+          {/* Ranged classes only: the panel is skipped entirely when a class
+              carries no ammo, so melee/mage/summoner are unchanged. */}
+          {safeLoadout.ammo.length > 0 && (
+            <div className={`${styles.invPanel} pixel-frame`}>
+              <div className={styles.tlabel}><span>Ammo</span></div>
+              <div className={styles.ammoList}>
+                {safeLoadout.ammo.map((m) => {
+                  const img = iconSrcs(m.icon);
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      className={styles.ammoEntry}
+                      onClick={() => setModalItem(m)}
+                    >
+                      <div className={`${styles.ammoSlot} pixel-frame`}>
+                        <img
+                          src={img.local} alt=""
+                          className={`${styles.ammoImg} pixel-img`}
+                          width="26" height="26" loading="lazy"
+                          onError={makeErrorHandler(img.wiki, FALLBACK_ICON)}
+                        />
+                      </div>
+                      <div className={styles.ammoBody}>
+                        <div className={styles.ammoHead}>
+                          <span className={styles.ammoName}>{m.name}</span>
+                          {m.stats && <span className={styles.ammoStat}>{m.stats}</span>}
+                        </div>
+                        <div className={styles.ammoWhy}>{m.why}</div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Buffs take the full column now that accessories have their own row */}
           <div className={`${styles.invPanel} ${styles.buffsPanel} pixel-frame`}>

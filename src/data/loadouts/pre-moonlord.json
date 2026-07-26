@@ -298,7 +298,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-moonlord",
@@ -519,16 +520,6 @@
         "topPick": true
       },
       {
-        "id": "crystal-bullets",
-        "name": "Crystal Bullets",
-        "slot": "buff",
-        "icon": "potions/crystal-bullets.png",
-        "source": "Crafted ammunition",
-        "why": "Shatter into crystal shards on hit, adding damage against large or grouped enemies.",
-        "tags": [],
-        "topPick": false
-      },
-      {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
@@ -547,6 +538,44 @@
         "why": "It is still easy free value before every important fight.",
         "tags": [],
         "topPick": false
+      }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-chlorophyte-bullet",
+        "name": "Chlorophyte Bullet",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Chlorophyte Bar",
+        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+      },
+      {
+        "id": "ammo-ichor-bullet",
+        "name": "Ichor Bullet",
+        "slot": "ammo",
+        "icon": "ammo/ichor-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and Ichor",
+        "why": "Lowers enemy defense. Crimson worlds only.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet"
+      },
+      {
+        "id": "ammo-holy-arrow",
+        "name": "Holy Arrow",
+        "slot": "ammo",
+        "icon": "ammo/holy-arrow.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Wooden Arrows, Pixie Dust and a Unicorn Horn",
+        "why": "Calls down falling stars on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
       }
     ]
   },
@@ -799,7 +828,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-moonlord",
@@ -1076,6 +1106,7 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

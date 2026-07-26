@@ -1255,7 +1255,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-bosses",
@@ -2045,6 +2046,44 @@
         "tags": [],
         "topPick": false
       }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-wooden-arrow",
+        "name": "Wooden Arrow",
+        "slot": "ammo",
+        "icon": "ammo/wooden-arrow.png",
+        "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
+        "why": "The default arrow.",
+        "tags": [],
+        "topPick": false,
+        "stats": "5 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+      },
+      {
+        "id": "ammo-flaming-arrow",
+        "name": "Flaming Arrow",
+        "slot": "ammo",
+        "icon": "ammo/flaming-arrow.png",
+        "source": "Crafted by hand from Wooden Arrows and Torches",
+        "why": "Sets enemies on fire.",
+        "tags": [],
+        "topPick": false,
+        "stats": "7 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Arrow"
+      },
+      {
+        "id": "ammo-musket-ball",
+        "name": "Musket Ball",
+        "slot": "ammo",
+        "icon": "ammo/musket-ball.png",
+        "source": "Sold by the Arms Dealer",
+        "why": "The default bullet.",
+        "tags": [],
+        "topPick": false,
+        "stats": "7 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+      }
     ]
   },
   {
@@ -2450,7 +2489,8 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal"
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-bosses",
@@ -2755,6 +2795,7 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

@@ -534,7 +534,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-plantera",
@@ -894,6 +895,56 @@
         "why": "Even ranged builds benefit a lot from damage reduction once the Jungle starts punishing mistakes harder.",
         "tags": [],
         "topPick": false
+      }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-crystal-bullet",
+        "name": "Crystal Bullet",
+        "slot": "ammo",
+        "icon": "ammo/crystal-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Crystal Shard",
+        "why": "Splits into crystal shards on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet"
+      },
+      {
+        "id": "ammo-chlorophyte-bullet",
+        "name": "Chlorophyte Bullet",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Chlorophyte Bar",
+        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+      },
+      {
+        "id": "ammo-ichor-bullet",
+        "name": "Ichor Bullet",
+        "slot": "ammo",
+        "icon": "ammo/ichor-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and Ichor",
+        "why": "Lowers enemy defense. Crimson worlds only.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet"
+      },
+      {
+        "id": "ammo-holy-arrow",
+        "name": "Holy Arrow",
+        "slot": "ammo",
+        "icon": "ammo/holy-arrow.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Wooden Arrows, Pixie Dust and a Unicorn Horn",
+        "why": "Calls down falling stars on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
       }
     ]
   },
@@ -1291,7 +1342,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-plantera",
@@ -1737,6 +1789,7 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

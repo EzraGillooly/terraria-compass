@@ -388,7 +388,8 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Poison"
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-skeletron",
@@ -679,6 +680,44 @@
         "why": "Ammo consumption adds up quickly on the strongest guns, so this stretches your best supplies further.",
         "tags": [],
         "topPick": false
+      }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-frostburn-arrow",
+        "name": "Frostburn Arrow",
+        "slot": "ammo",
+        "icon": "ammo/frostburn-arrow.png",
+        "source": "Crafted by hand from Wooden Arrows and Ice Torches",
+        "why": "Inflicts Frostburn, which deals damage over time.",
+        "tags": [],
+        "topPick": false,
+        "stats": "7 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostburn_Arrow"
+      },
+      {
+        "id": "ammo-jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "ammo/jesters-arrow.png",
+        "source": "Crafted by hand from Wooden Arrows and Fallen Stars",
+        "why": "Passes through blocks and enemies, hitting everything in a line. Useful against the Eater of Worlds and the Wall of Flesh.",
+        "tags": [],
+        "topPick": false,
+        "stats": "10 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow"
+      },
+      {
+        "id": "ammo-silver-bullet",
+        "name": "Silver Bullet",
+        "slot": "ammo",
+        "icon": "ammo/silver-bullet.png",
+        "source": "Crafted at an Anvil from Musket Balls and a Silver Bar",
+        "why": "Two more damage than a Musket Ball.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bullet"
       }
     ]
   },
@@ -1007,7 +1046,8 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-skeletron",
@@ -1365,6 +1405,7 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

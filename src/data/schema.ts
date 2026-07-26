@@ -8,7 +8,7 @@ export const ClassId = z.string();
 
 export const SubclassId = z.string();
 
-export const ItemSlot = z.enum(['weapon', 'armor', 'accessory', 'buff']);
+export const ItemSlot = z.enum(['weapon', 'armor', 'accessory', 'buff', 'ammo']);
 
 export const Item = z.object({
   id: z.string(),
@@ -91,6 +91,12 @@ export const Loadout = z.object({
   armor: z.array(Item),
   accessories: z.array(Item),
   buffs: z.array(Item),
+  /**
+   * Ranged classes only. Ammo changes what a gun or bow actually does, so
+   * it is picked per phase rather than left to the player to guess.
+   * Defaults to empty so every other class validates unchanged.
+   */
+  ammo: z.array(Item).default([]),
 });
 
 export const PhaseDef = z.object({

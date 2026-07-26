@@ -418,7 +418,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-cultist",
@@ -830,6 +831,56 @@
         "tags": [],
         "topPick": false
       }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-chlorophyte-bullet",
+        "name": "Chlorophyte Bullet",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Chlorophyte Bar",
+        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+      },
+      {
+        "id": "ammo-ichor-bullet",
+        "name": "Ichor Bullet",
+        "slot": "ammo",
+        "icon": "ammo/ichor-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and Ichor",
+        "why": "Lowers enemy defense. Crimson worlds only.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet"
+      },
+      {
+        "id": "ammo-holy-arrow",
+        "name": "Holy Arrow",
+        "slot": "ammo",
+        "icon": "ammo/holy-arrow.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Wooden Arrows, Pixie Dust and a Unicorn Horn",
+        "why": "Calls down falling stars on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
+      },
+      {
+        "id": "ammo-endless-musket-pouch",
+        "name": "Endless Musket Pouch",
+        "slot": "ammo",
+        "icon": "ammo/endless-musket-pouch.png",
+        "source": "Crafted at a Crystal Ball from 9999 Musket Balls",
+        "why": "An infinite stack of Musket Balls, so you stop crafting ammo mid-fight.",
+        "tags": [],
+        "topPick": false,
+        "stats": "7 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endless_Musket_Pouch"
+      }
     ]
   },
   {
@@ -1238,7 +1289,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-cultist",
@@ -1687,6 +1739,7 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

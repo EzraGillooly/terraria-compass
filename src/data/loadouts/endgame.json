@@ -342,7 +342,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "endgame",
@@ -623,6 +624,44 @@
         "why": "Ammo consumption adds up quickly on the strongest guns, so this stretches your best supplies further.",
         "tags": [],
         "topPick": false
+      }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-luminite-bullet",
+        "name": "Luminite Bullet",
+        "slot": "ammo",
+        "icon": "ammo/luminite-bullet.png",
+        "source": "Crafted at an Ancient Manipulator from a Luminite Bar",
+        "why": "The highest base damage of any bullet.",
+        "tags": [],
+        "topPick": false,
+        "stats": "20 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet"
+      },
+      {
+        "id": "ammo-chlorophyte-bullet",
+        "name": "Chlorophyte Bullet",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-bullet.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Chlorophyte Bar",
+        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet"
+      },
+      {
+        "id": "ammo-holy-arrow",
+        "name": "Holy Arrow",
+        "slot": "ammo",
+        "icon": "ammo/holy-arrow.png",
+        "source": "Crafted at a Mythril/Orichalcum Anvil from Wooden Arrows, Pixie Dust and a Unicorn Horn",
+        "why": "Calls down falling stars on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "13 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow"
       }
     ]
   },
@@ -958,7 +997,8 @@
         "tags": [],
         "topPick": true
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "endgame",
@@ -1311,6 +1351,7 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
-    ]
+    ],
+    "ammo": []
   }
 ]

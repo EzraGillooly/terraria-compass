@@ -403,7 +403,8 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Poison"
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-wof",
@@ -667,6 +668,44 @@
         "why": "Defense remains useful because even ranged mistakes get punished hard in the Underworld.",
         "tags": [],
         "topPick": false
+      }
+    ],
+    "ammo": [
+      {
+        "id": "ammo-jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "ammo/jesters-arrow.png",
+        "source": "Crafted by hand from Wooden Arrows and Fallen Stars",
+        "why": "Passes through blocks and enemies, hitting everything in a line. Useful against the Eater of Worlds and the Wall of Flesh.",
+        "tags": [],
+        "topPick": false,
+        "stats": "10 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow"
+      },
+      {
+        "id": "ammo-unholy-arrow",
+        "name": "Unholy Arrow",
+        "slot": "ammo",
+        "icon": "ammo/unholy-arrow.png",
+        "source": "Crafted at an Anvil from Wooden Arrows and Worm Teeth",
+        "why": "Pierces several enemies. Worm Teeth come from the Eater of Worlds.",
+        "tags": [],
+        "topPick": false,
+        "stats": "12 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Arrow"
+      },
+      {
+        "id": "ammo-meteor-shot",
+        "name": "Meteor Shot",
+        "slot": "ammo",
+        "icon": "ammo/meteor-shot.png",
+        "source": "Crafted at an Anvil from Musket Balls and Meteorite Bars",
+        "why": "Ricochets off blocks.",
+        "tags": [],
+        "topPick": false,
+        "stats": "8 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meteor_Shot"
       }
     ]
   },
@@ -981,7 +1020,8 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   },
   {
     "phase": "pre-wof",
@@ -1290,6 +1330,7 @@
         "tags": [],
         "topPick": false
       }
-    ]
+    ],
+    "ammo": []
   }
 ]
