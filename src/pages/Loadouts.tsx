@@ -768,7 +768,7 @@ export function Loadouts() {
                             <span className={`${styles.mixTag} pixel-frame`}>Mix</span>
                           )}
                         </div>
-                      {a.pieces && a.pieces.length > 0 && (
+                      {a.headpiece && a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
                           {a.headpiece && <span className={`${styles.armorHeadTag} pixel-frame`}>{classDef.name}</span>}
                           {a.pieces.map((p) => (
