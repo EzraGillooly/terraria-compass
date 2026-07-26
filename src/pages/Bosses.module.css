@@ -157,9 +157,26 @@
   transition: transform .15s;
 }
 .slot img { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.5)); }
-/* optional bosses: same box, paler edge - a dashed border is not available
-   once the edge is a clip-path rather than a real border */
+/* Optional bosses: paler edge, plus a marker in the slot's top-right corner.
+   Colour alone was too quiet, and desaturating them would read as "disabled" -
+   wrong for Empress of Light and Duke Fishron, which are among the hardest
+   fights in the game. The marker says optional without implying lesser. */
 .node.side .slot { --px-border: rgba(255,255,255,.4); }
+.node.side::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  /* node is 76px wide, slot 54px, so the slot's right edge sits 11px in */
+  right: 9px;
+  width: 8px;
+  height: 8px;
+  background: var(--sky);
+  box-shadow: 0 0 0 2px #0b1524;
+  clip-path: polygon(2px 0, 6px 0, 6px 2px, 8px 2px, 8px 6px, 6px 6px, 6px 8px, 2px 8px, 2px 6px, 0 6px, 0 2px, 2px 2px);
+  pointer-events: none;
+}
+.node.side:hover::after,
+.node.side.selected::after { background: var(--warm); }
 .node:hover .slot { transform: translateY(-3px); --px-border: var(--warm); }
 .node.selected .slot { --px-border: var(--warm); transform: translateY(-2px); }
 

@@ -50,6 +50,7 @@ function BossSlot({
       className={`${styles.node} ${boss.side ? styles.side : ''} ${selected ? styles.selected : ''}`}
       onClick={onSelect}
       aria-pressed={selected}
+      title={boss.side ? `${boss.name} - optional` : boss.name}
     >
       <span className={`${styles.slot} pixel-frame`} style={{ ['--boss' as string]: boss.color }}>
         <img
@@ -62,7 +63,10 @@ function BossSlot({
           onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
         />
       </span>
-      <span className={styles.nodeName}>{boss.name}</span>
+      <span className={styles.nodeName}>
+        {boss.name}
+        {boss.side && <span className="sr-only"> (optional)</span>}
+      </span>
     </button>
   );
 }
