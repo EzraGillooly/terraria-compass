@@ -217,7 +217,7 @@
 }
 /* Terraria has no rounded pills - tags are solid boxes with the app's stepped
    corner. --px-border matches --px-fill so the filled tag shows no ring. */
-.tagOpt, .tagWorld {
+.tagOpt, .tagWorld, .tagReq, .tagRec {
   display: inline-flex; align-items: center; justify-content: center;
   font-weight: 800;
   font-size: 9px;
@@ -228,6 +228,8 @@
   --px-u: 1px;
 }
 .tagOpt { color: #0b1524; --px-fill: var(--warm); --px-border: var(--warm); }
+.tagReq { color: #eaf6ff; --px-fill: var(--deep); --px-border: var(--deep); }
+.tagRec { color: #0b1524; --px-fill: var(--mid); --px-border: var(--mid); }
 .tagWorld { color: #0b1524; --px-fill: var(--sky); --px-border: var(--sky); }
 .detailStage {
   margin-left: auto;

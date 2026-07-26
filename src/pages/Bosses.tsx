@@ -10,6 +10,14 @@ const BASE = import.meta.env.BASE_URL;
 
 // Display labels for the detail-panel stage tag. Falls back to the phase name for
 // stages not listed here (e.g. a mod's own stages).
+// Required reads as a hard gate, so it takes the plain accent; recommended and
+// optional are the ones a player can act on, so they keep the warm/sky tags.
+const ROLE_TAG: Record<NonNullable<BossDef['role']>, string> = {
+  required: 'tagReq',
+  recommended: 'tagRec',
+  optional: 'tagOpt',
+};
+
 const STAGE_LABELS: Record<string, string> = {
   'pre-bosses':    'Pre-Bosses',
   'pre-skeletron': 'Pre-Skeletron',
@@ -188,7 +196,11 @@ export function Bosses() {
           <div className={styles.detailBody}>
             <div className={styles.detailHead}>
               <h2 className={styles.detailName}>{selected.name}</h2>
-              {selected.side && <span className={`${styles.tagOpt} pixel-frame`}>Optional</span>}
+              {selected.role && (
+                <span className={`${styles[ROLE_TAG[selected.role]]} pixel-frame`}>
+                  {selected.role}
+                </span>
+              )}
               {worldLabel(selected) && <span className={`${styles.tagWorld} pixel-frame`}>{worldLabel(selected)}</span>}
               <span className={styles.detailStage}>
                 {STAGE_LABELS[selected.stage] ?? phases.find((p) => p.id === selected.stage)?.name ?? selected.stage}
@@ -198,6 +210,12 @@ export function Bosses() {
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Summon</span>
               <span className={styles.detailVal}>{selected.summon}</span>
+            </div>
+            <div className={styles.detailRow}>
+              <span className={styles.detailKey}>Unlocks</span>
+              <span className={styles.detailVal}>
+                {selected.unlocks ?? 'No world progression. Fight it for the drops, or skip it.'}
+              </span>
             </div>
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Key Drops</span>
