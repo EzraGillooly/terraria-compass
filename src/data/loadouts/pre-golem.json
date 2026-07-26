@@ -474,7 +474,7 @@
         "name": "Fire Gauntlet",
         "slot": "accessory",
         "icon": "accessories/fire-gauntlet.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [
           "hardmode"
@@ -482,7 +482,20 @@
         "topPick": true,
         "categories": [
           "melee"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Magma Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+          },
+          {
+            "name": "Mechanical Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "ankh-shield",
@@ -957,7 +970,7 @@
             "name": "Papyrus Scarab",
             "slot": "accessory",
             "icon": "accessories/papyrus-scarab.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
             "tags": [],
             "topPick": false,
@@ -965,7 +978,20 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Necromantic Scroll",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+              },
+              {
+                "name": "Hercules Beetle",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-spore-sac",
@@ -1042,14 +1068,27 @@
             "name": "Mechanical Glove",
             "slot": "accessory",
             "icon": "accessories/mechanical-glove.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Effectively combines the effects of an Avenger Emblem with a Power Glove by providing a +12% damage buff, but only to melee weapons (instead of universally, as the Avenger Emblem does).",
             "tags": [],
             "topPick": false,
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove",
+            "materials": [
+              {
+                "name": "Power Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+              },
+              {
+                "name": "Avenger Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-berserkers-glove",
@@ -1116,7 +1155,7 @@
         "subclass": "gun",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "6.25\u201316.67% 12.5\u201350%"
       },
       {
@@ -1131,7 +1170,7 @@
         "subclass": "gun",
         "stats": "200 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "8.33% 15.97%"
       },
       {
@@ -1176,7 +1215,7 @@
         "subclass": "gun",
         "stats": "36 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "8.33% 15.97%"
       },
       {
@@ -2004,7 +2043,7 @@
             "name": "Papyrus Scarab",
             "slot": "accessory",
             "icon": "accessories/papyrus-scarab.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
             "tags": [],
             "topPick": false,
@@ -2012,7 +2051,20 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Necromantic Scroll",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+              },
+              {
+                "name": "Hercules Beetle",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-spore-sac",
@@ -2525,7 +2577,7 @@
         "name": "Celestial Emblem",
         "slot": "accessory",
         "icon": "accessories/celestial-emblem.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "15% magic damage and a larger mana star pickup range.",
         "tags": [
           "hardmode"
@@ -2533,7 +2585,20 @@
         "topPick": true,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "moon-stone",
@@ -3026,7 +3091,7 @@
             "name": "Papyrus Scarab",
             "slot": "accessory",
             "icon": "accessories/papyrus-scarab.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
             "tags": [],
             "topPick": false,
@@ -3034,7 +3099,20 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Necromantic Scroll",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+              },
+              {
+                "name": "Hercules Beetle",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-spore-sac",
@@ -3502,7 +3580,7 @@
         "name": "Papyrus Scarab",
         "slot": "accessory",
         "icon": "accessories/papyrus-scarab.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "+1 minion slot and 15% minion damage. Combines Necromantic Scroll and Hercules Beetle.",
         "tags": [
           "hardmode"
@@ -3512,7 +3590,20 @@
           "offense",
           "summon"
         ],
-        "quality": "good"
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Necromantic Scroll",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+          },
+          {
+            "name": "Hercules Beetle",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "pygmy-necklace",

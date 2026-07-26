@@ -632,7 +632,7 @@
         "name": "Fire Gauntlet",
         "slot": "accessory",
         "icon": "accessories/fire-gauntlet.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [
           "hardmode"
@@ -640,14 +640,27 @@
         "topPick": true,
         "categories": [
           "melee"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Magma Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+          },
+          {
+            "name": "Mechanical Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "mechanical-glove",
         "name": "Mechanical Glove",
         "slot": "accessory",
         "icon": "accessories/mechanical-glove.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "12% melee damage and speed, and knockback. Combines into Fire Gauntlet later.",
         "tags": [
           "hardmode"
@@ -655,7 +668,20 @@
         "topPick": false,
         "categories": [
           "melee"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "avenger-emblem",
@@ -709,7 +735,20 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great"
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Tattered Bee Wing",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ankh-shield",
@@ -1678,7 +1717,20 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great"
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Tattered Bee Wing",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ankh-shield",
@@ -2694,7 +2746,7 @@
         "name": "Celestial Emblem",
         "slot": "accessory",
         "icon": "accessories/celestial-emblem.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "15% magic damage and a larger mana star pickup range.",
         "tags": [
           "hardmode"
@@ -2702,14 +2754,27 @@
         "topPick": true,
         "categories": [
           "magic"
-        ]
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Avenger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-cuffs",
         "name": "Celestial Cuffs",
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
-        "source": "Combined at the Tinkerer's Workshop",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
         "topPick": false,
@@ -2772,7 +2837,20 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great"
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Tattered Bee Wing",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "ankh-shield",
@@ -3732,7 +3810,20 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great"
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Tattered Bee Wing",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
         "id": "feral-claws",
