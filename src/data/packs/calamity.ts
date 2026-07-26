@@ -30,7 +30,6 @@ export const calamityPack: Pack = {
   difficulties: [
     { value: 'normal', label: 'Classic' },
     { value: 'expert', label: 'Expert' },
-    { value: 'master', label: 'Master' },
     { value: 'revengeance', label: 'Revengeance' },
     { value: 'death', label: 'Death' },
   ],

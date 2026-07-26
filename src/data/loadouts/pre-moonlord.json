@@ -95,7 +95,8 @@
         "subclass": "projectile-melee",
         "stats": "180 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Dragon",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "25%"
       },
       {
         "id": "the-horseman-s-blade",
@@ -111,7 +112,8 @@
         "subclass": "true-melee",
         "stats": "150 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "the-eye-of-cthulhu",
@@ -127,7 +129,8 @@
         "subclass": "yoyo",
         "stats": "115 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "33.33% 55.56%"
       },
       {
         "id": "possessed-hatchet",
@@ -143,7 +146,8 @@
         "subclass": "boomerang",
         "stats": "80 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Possessed_Hatchet",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "14.29%"
       },
       {
         "id": "flairon",
@@ -159,7 +163,8 @@
         "subclass": "flail",
         "stats": "132 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "16.67%"
       },
       {
         "id": "vampire-knives",
@@ -417,7 +422,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises maximum health by 20%.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "1/12 (8.33%)"
       },
       {
         "id": "wrath-potion",
@@ -476,7 +482,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -515,7 +523,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -534,7 +544,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -594,7 +606,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-hero-shield",
@@ -626,7 +639,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -646,7 +660,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-eye-of-the-golem",
@@ -661,7 +676,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-moon-stone",
@@ -676,7 +692,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -724,7 +741,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -740,7 +759,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -759,7 +779,8 @@
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-magic-yoyo-bag",
@@ -873,7 +894,8 @@
         "subclass": "launcher",
         "stats": "67 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
       },
       {
         "id": "stake-launcher",
@@ -889,7 +911,8 @@
         "subclass": "bow",
         "stats": "75 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.86\u201320% 5\u201320%"
       },
       {
         "id": "xenopopper",
@@ -905,7 +928,8 @@
         "subclass": "gun",
         "stats": "45 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Xenopopper",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "16.66%"
       }
     ],
     "armor": [
@@ -1004,7 +1028,8 @@
         "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "dropRate": "25%"
       },
       {
         "id": "fishron-wings",
@@ -1109,7 +1134,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
       },
       {
         "id": "ammo-reservation-potion",
@@ -1249,7 +1275,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -1288,7 +1316,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -1307,7 +1337,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -1367,7 +1399,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-hero-shield",
@@ -1399,7 +1432,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -1434,7 +1468,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-eye-of-the-golem",
@@ -1449,7 +1484,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-moon-stone",
@@ -1464,7 +1500,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -1512,7 +1549,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -1528,7 +1567,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -1562,7 +1602,8 @@
             "categories": [
               "ranged"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver",
+            "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
           }
         ]
       }
@@ -1630,7 +1671,8 @@
         "subclass": "magic-gun",
         "stats": "100 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Charged_Blaster_Cannon",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "0.13%"
       },
       {
         "id": "razorblade-typhoon",
@@ -1646,7 +1688,8 @@
         "subclass": "wand",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "16.67%"
       },
       {
         "id": "bubble-gun",
@@ -1662,7 +1705,8 @@
         "subclass": "magic-gun",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "16.67%"
       }
     ],
     "armor": [
@@ -1921,7 +1965,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises magic damage by 20%.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "mana-regeneration-potion",
@@ -1931,7 +1976,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "crystal-ball",
@@ -2005,7 +2051,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -2044,7 +2092,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2063,7 +2113,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -2108,7 +2160,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-hero-shield",
@@ -2140,7 +2193,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           },
           {
             "id": "pool-master-ninja-gear",
@@ -2190,7 +2244,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-eye-of-the-golem",
@@ -2205,7 +2260,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-moon-stone",
@@ -2220,7 +2276,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -2268,7 +2325,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -2284,7 +2343,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2303,7 +2363,8 @@
             "categories": [
               "magic"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-celestial-cuffs",
@@ -2424,7 +2485,8 @@
         "subclass": "minions",
         "stats": "90 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "100%"
       },
       {
         "id": "ballista-staff",
@@ -2456,7 +2518,8 @@
         "subclass": "whip",
         "stats": "170 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       }
     ],
     "armor": [
@@ -2693,7 +2756,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Summoner still wants as much survivability padding as it can get during the Moon Lord lead-up.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -2742,7 +2806,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -2781,7 +2847,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2800,7 +2868,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -2860,7 +2930,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-hero-shield",
@@ -2892,7 +2963,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2927,7 +2999,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-eye-of-the-golem",
@@ -2942,7 +3015,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "14.29%"
           },
           {
             "id": "pool-moon-stone",
@@ -2957,7 +3031,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -2990,7 +3065,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -3006,7 +3083,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -3025,7 +3103,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll",
+            "dropRate": "2.86\u201320% 5\u201320%"
           },
           {
             "id": "pool-hercules-beetle",
@@ -3053,7 +3132,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-berserkers-glove",
@@ -3085,7 +3165,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "dropRate": "25% 50%"
           }
         ]
       }

@@ -66,7 +66,8 @@
         "subclass": "boomerang",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Combat_Wrench",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "12.5%"
       },
       {
         "id": "blue-moon",
@@ -80,7 +81,8 @@
         "subclass": "flail",
         "stats": "54 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Moon",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "sunfury",
@@ -94,7 +96,8 @@
         "subclass": "flail",
         "stats": "64 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sunfury",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "dark-lance",
@@ -108,7 +111,8 @@
         "subclass": "true-melee",
         "stats": "34 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Lance",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "muramasa",
@@ -122,7 +126,8 @@
         "subclass": "true-melee",
         "stats": "24 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "obsidian-swordfish",
@@ -150,7 +155,8 @@
         "subclass": "yoyo",
         "stats": "28 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Valor",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "hive-five",
@@ -235,7 +241,8 @@
         "subclass": "projectile-melee",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "1/4 (25%)"
       },
       {
         "id": "volcano",
@@ -275,7 +282,8 @@
         "subclass": "flail",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ball_O%27_Hurt",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "20%"
       }
     ],
     "armor": [
@@ -433,7 +441,9 @@
         "markers": [
           "expert"
         ],
-        "quality": "great"
+        "quality": "great",
+        "expertOnly": true,
+        "dropRate": "100%"
       },
       {
         "id": "magma-stone",
@@ -447,7 +457,8 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
         "categories": [
           "melee"
-        ]
+        ],
+        "dropRate": "0.67%"
       }
     ],
     "buffs": [
@@ -459,7 +470,8 @@
         "source": "Brewed at a placed bottle",
         "why": "This remains the safest default combat potion for late pre-Hardmode melee.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "0.18%"
       },
       {
         "id": "regeneration-potion",
@@ -469,7 +481,8 @@
         "source": "Brewed at a placed bottle",
         "why": "It makes long boss bridges and Underworld fights more forgiving.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "2/21 (9.52%) (Underground)"
       },
       {
         "id": "swiftness-potion",
@@ -479,7 +492,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Extra movement speed is still one of the best ways to improve real fight consistency.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -583,7 +597,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -614,7 +629,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards.",
+            "dropRate": "1/8 (12.5%)"
           },
           {
             "id": "pool-balloons",
@@ -662,7 +678,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -686,7 +703,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -705,7 +724,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-band-of-regeneration",
@@ -720,7 +741,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
           },
           {
             "id": "pool-honey-comb",
@@ -735,7 +757,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "33%"
           }
         ]
       },
@@ -771,7 +794,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -789,7 +813,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-helm",
@@ -807,7 +833,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-glove",
@@ -825,7 +853,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -861,7 +891,8 @@
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws",
+            "dropRate": "19/100 (19%)"
           }
         ]
       }
@@ -883,7 +914,8 @@
         "subclass": "bow",
         "stats": "22 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hellwing_Bow",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "phoenix-blaster",
@@ -938,7 +970,8 @@
         "subclass": "gun",
         "stats": "26 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Handgun",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "molten-fury",
@@ -1012,7 +1045,8 @@
         "subclass": "bow",
         "stats": "23 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "33%"
       }
     ],
     "armor": [
@@ -1185,7 +1219,9 @@
         "markers": [
           "expert"
         ],
-        "quality": "great"
+        "quality": "great",
+        "expertOnly": true,
+        "dropRate": "100%"
       },
       {
         "id": "band-of-regeneration",
@@ -1199,7 +1235,8 @@
         "categories": [
           "survivability"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       }
     ],
     "buffs": [
@@ -1211,7 +1248,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
       },
       {
         "id": "ammo-reservation-potion",
@@ -1231,7 +1269,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Defense remains useful because even ranged mistakes get punished hard in the Underworld.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       }
     ],
     "ammo": [
@@ -1283,7 +1322,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Tooth"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "dropRate": "100%"
       },
       {
         "id": "ammo-meteor-shot",
@@ -1358,7 +1398,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -1389,7 +1430,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards.",
+            "dropRate": "1/8 (12.5%)"
           },
           {
             "id": "pool-balloons",
@@ -1437,7 +1479,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -1461,7 +1504,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -1480,7 +1525,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-honey-comb",
@@ -1495,7 +1542,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "33%"
           }
         ]
       },
@@ -1531,7 +1579,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -1549,7 +1598,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-helm",
@@ -1567,7 +1618,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-glove",
@@ -1585,7 +1638,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       }
@@ -1607,7 +1662,8 @@
         "subclass": "spell-tome",
         "stats": "19 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Water_Bolt",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "2.5%"
       },
       {
         "id": "flamelash",
@@ -1621,7 +1677,8 @@
         "subclass": "wand",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flamelash",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "flower-of-fire",
@@ -1635,7 +1692,8 @@
         "subclass": "wand",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_of_Fire",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "book-of-skulls",
@@ -1649,7 +1707,8 @@
         "subclass": "spell-tome",
         "stats": "29 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Book_of_Skulls",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "10.5%"
       },
       {
         "id": "magic-missile",
@@ -1663,7 +1722,8 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "gray-zapinator",
@@ -1695,7 +1755,8 @@
         "subclass": "wand",
         "stats": "13 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "demon-scythe",
@@ -1711,7 +1772,8 @@
         "subclass": "spell-tome",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Scythe",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "2.86%"
       },
       {
         "id": "aqua-scepter",
@@ -1727,7 +1789,8 @@
         "subclass": "wand",
         "stats": "27 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Aqua_Scepter",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "1/7 (14.29%)"
       },
       {
         "id": "crimson-rod",
@@ -1743,7 +1806,8 @@
         "subclass": "summon-magic",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "thunder-zapper",
@@ -1759,7 +1823,8 @@
         "subclass": "wand",
         "stats": "24 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thunder_Zapper",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "12.5%"
       }
     ],
     "armor": [
@@ -2007,7 +2072,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises magic damage by 20%.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "mana-regeneration-potion",
@@ -2017,7 +2083,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "ironskin-potion",
@@ -2027,7 +2094,8 @@
         "source": "Brewed at a placed bottle",
         "why": "The defense boost still buys much-needed breathing room for a fragile class.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "crystal-ball",
@@ -2091,7 +2159,9 @@
             "quality": "great",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-fledgling-wings",
@@ -2106,7 +2176,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2137,7 +2208,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards.",
+            "dropRate": "1/8 (12.5%)"
           },
           {
             "id": "pool-balloons",
@@ -2200,7 +2272,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -2224,7 +2297,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2243,7 +2318,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-band-of-regeneration",
@@ -2258,7 +2335,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
           },
           {
             "id": "pool-honey-comb",
@@ -2273,7 +2351,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "33%"
           }
         ]
       },
@@ -2309,7 +2388,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -2327,7 +2407,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-helm",
@@ -2345,7 +2427,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-glove",
@@ -2363,7 +2447,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -2602,7 +2688,8 @@
         "subclass": "minions",
         "stats": "11 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "houndius-shootius",
@@ -2618,7 +2705,8 @@
         "subclass": "sentries",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "starcrash",
@@ -2868,7 +2956,8 @@
         ],
         "markers": [
           "whips"
-        ]
+        ],
+        "dropRate": "19/100 (19%)"
       },
       {
         "id": "lava-waders",
@@ -2941,7 +3030,8 @@
         "source": "Brewed at a placed bottle",
         "why": "The defense gain helps offset the class's usual fragility during longer boss attempts.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       }
     ],
     "ammo": [],
@@ -2995,7 +3085,9 @@
             "quality": "great",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-fledgling-wings",
@@ -3010,7 +3102,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3041,7 +3134,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards.",
+            "dropRate": "1/8 (12.5%)"
           },
           {
             "id": "pool-balloons",
@@ -3089,7 +3183,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -3113,7 +3208,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -3132,7 +3229,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-band-of-regeneration",
@@ -3147,7 +3246,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
           },
           {
             "id": "pool-honey-comb",
@@ -3162,7 +3262,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "33%"
           }
         ]
       },
@@ -3183,7 +3284,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -3201,7 +3303,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-helm",
@@ -3219,7 +3323,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-bone-glove",
@@ -3237,7 +3343,9 @@
             "quality": "fine",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -3257,7 +3365,8 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
-            "notes": "Players seeking to repeatedly do Old One's Army events, in order to stock up on Defender Medals for future Tier 2 equipment, can find benefit from the Apprentice's Scarf or Squire's Shield, which provide noticeable buffs to sentries."
+            "notes": "Players seeking to repeatedly do Old One's Army events, in order to stock up on Defender Medals for future Tier 2 equipment, can find benefit from the Apprentice's Scarf or Squire's Shield, which provide noticeable buffs to sentries.",
+            "dropRate": "25% 50%"
           }
         ]
       }

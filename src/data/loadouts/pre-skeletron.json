@@ -15,7 +15,8 @@
         "subclass": "true-melee",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "33%"
       },
       {
         "id": "slime-spear",
@@ -152,7 +153,8 @@
         "subclass": "true-melee",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stylish_Scissors",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "blade-of-grass",
@@ -241,7 +243,8 @@
         "subclass": "projectile-melee",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "1/4 (25%)"
       },
       {
         "id": "ball-o-hurt",
@@ -257,7 +260,8 @@
         "subclass": "flail",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ball_O%27_Hurt",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "thorn-chakram",
@@ -465,7 +469,9 @@
         "markers": [
           "expert"
         ],
-        "quality": "great"
+        "quality": "great",
+        "expertOnly": true,
+        "dropRate": "100%"
       },
       {
         "id": "spectre-boots",
@@ -509,7 +515,8 @@
         ],
         "markers": [
           "whips"
-        ]
+        ],
+        "dropRate": "19/100 (19%)"
       },
       {
         "id": "band-of-regeneration",
@@ -523,7 +530,8 @@
         "categories": [
           "survivability"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       }
     ],
     "buffs": [
@@ -535,7 +543,8 @@
         "source": "Brewed at a placed bottle",
         "why": "It stays the most universal and reliable early combat buff for melee.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "0.18%"
       },
       {
         "id": "swiftness-potion",
@@ -545,7 +554,8 @@
         "source": "Brewed at a placed bottle",
         "why": "More movement speed means more uptime and fewer mistakes during boss fights.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "regeneration-potion",
@@ -555,7 +565,8 @@
         "source": "Brewed at a placed bottle",
         "why": "It smooths out incoming damage during long arena fights and exploration loops.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "2/21 (9.52%) (Underground)"
       },
       {
         "id": "sharpening-station",
@@ -694,7 +705,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -742,7 +754,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -766,7 +779,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -785,7 +800,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-honey-comb",
@@ -801,7 +818,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
-            "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+            "notes": "The Honey Comb's effect does not stack with any of its upgrades.",
+            "dropRate": "33%"
           }
         ]
       },
@@ -836,7 +854,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -855,7 +874,9 @@
             "markers": [
               "expert"
             ],
-            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory."
+            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory.",
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-royal-gel",
@@ -870,7 +891,9 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
-            "quality": "fine"
+            "quality": "fine",
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -906,7 +929,8 @@
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+            "dropRate": "0.67%"
           }
         ]
       }
@@ -950,7 +974,8 @@
         "subclass": "bow",
         "stats": "23 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "33%"
       },
       {
         "id": "pew-matic-horn",
@@ -964,7 +989,8 @@
         "subclass": "gun",
         "stats": "20 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pew-matic_Horn",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "molten-fury",
@@ -1034,7 +1060,8 @@
         "subclass": "gun",
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boomstick",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "19/100 (19%)"
       },
       {
         "id": "tendon-bow",
@@ -1264,7 +1291,9 @@
         "markers": [
           "expert"
         ],
-        "quality": "great"
+        "quality": "great",
+        "expertOnly": true,
+        "dropRate": "100%"
       },
       {
         "id": "lucky-horseshoe",
@@ -1277,7 +1306,8 @@
         "topPick": false,
         "categories": [
           "mobility"
-        ]
+        ],
+        "dropRate": "1/4 (25%)"
       },
       {
         "id": "band-of-regeneration",
@@ -1291,7 +1321,8 @@
         "categories": [
           "survivability"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       }
     ],
     "buffs": [
@@ -1303,7 +1334,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
       },
       {
         "id": "ironskin-potion",
@@ -1313,7 +1345,8 @@
         "source": "Brewed at a placed bottle",
         "why": "More defense gives you room to play imperfectly while still keeping ranged uptime.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "swiftness-potion",
@@ -1323,7 +1356,8 @@
         "source": "Brewed at a placed bottle",
         "why": "It helps kiting, arena recovery, and general boss consistency.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "ammo-reservation-potion",
@@ -1505,7 +1539,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -1553,7 +1588,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -1577,7 +1613,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -1596,7 +1634,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-honey-comb",
@@ -1612,7 +1652,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
-            "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+            "notes": "The Honey Comb's effect does not stack with any of its upgrades.",
+            "dropRate": "33%"
           }
         ]
       },
@@ -1647,7 +1688,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -1666,7 +1708,9 @@
             "markers": [
               "expert"
             ],
-            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory."
+            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory.",
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-royal-gel",
@@ -1681,7 +1725,9 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
-            "quality": "fine"
+            "quality": "fine",
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       }
@@ -1703,7 +1749,8 @@
         "subclass": "magic-gun",
         "stats": "9 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Gun",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "33%"
       },
       {
         "id": "weather-pain",
@@ -1717,7 +1764,8 @@
         "subclass": "wand",
         "stats": "13 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "gray-zapinator",
@@ -1807,7 +1855,8 @@
         "subclass": "wand",
         "stats": "24 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thunder_Zapper",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "12.5%"
       },
       {
         "id": "demon-scythe",
@@ -1823,7 +1872,8 @@
         "subclass": "spell-tome",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Scythe",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "2.86%"
       },
       {
         "id": "crimson-rod",
@@ -1839,7 +1889,8 @@
         "subclass": "summon-magic",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "amber-staff",
@@ -2131,7 +2182,8 @@
         ],
         "markers": [
           "corruption"
-        ]
+        ],
+        "dropRate": "20%"
       }
     ],
     "buffs": [
@@ -2143,7 +2195,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises magic damage by 20%.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "mana-regeneration-potion",
@@ -2153,7 +2206,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "ironskin-potion",
@@ -2163,7 +2217,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Even mages need some room for mistakes, and defense is the easiest way to buy it.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "lesser-mana-potion",
@@ -2173,7 +2228,8 @@
         "source": "Purchased from the Merchant, or found in Wooden and Pearlwood Crates from fishing",
         "why": "You still want a large stack ready for sustained arena or underworld attempts.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "1/6 (16.67%)"
       },
       {
         "id": "mana-potion",
@@ -2197,7 +2253,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "dropRate": "1/4 (25%)"
       }
     ],
     "ammo": [],
@@ -2296,7 +2353,9 @@
             "quality": "great",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-fledgling-wings",
@@ -2311,7 +2370,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2359,7 +2419,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -2383,7 +2444,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2402,7 +2465,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-band-of-regeneration",
@@ -2417,7 +2482,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
           },
           {
             "id": "pool-honey-comb",
@@ -2433,7 +2499,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
-            "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+            "notes": "The Honey Comb's effect does not stack with any of its upgrades.",
+            "dropRate": "33%"
           }
         ]
       },
@@ -2468,7 +2535,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -2487,7 +2555,9 @@
             "markers": [
               "expert"
             ],
-            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory."
+            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory.",
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-royal-gel",
@@ -2502,7 +2572,9 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
-            "quality": "fine"
+            "quality": "fine",
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -2614,7 +2686,8 @@
         "subclass": "sentries",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "mushroom-staff",
@@ -2811,7 +2884,8 @@
         "subclass": "minions",
         "stats": "11 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "starcrash",
@@ -3058,7 +3132,9 @@
         "markers": [
           "expert"
         ],
-        "quality": "great"
+        "quality": "great",
+        "expertOnly": true,
+        "dropRate": "100%"
       },
       {
         "id": "feral-claws",
@@ -3075,7 +3151,8 @@
         ],
         "markers": [
           "whips"
-        ]
+        ],
+        "dropRate": "19/100 (19%)"
       }
     ],
     "buffs": [
@@ -3107,7 +3184,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Defense still matters because summoner is often punished hardest for every positioning mistake.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "well-fed",
@@ -3128,7 +3206,8 @@
         "why": "Table buff that boosts minion damage.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table",
+        "dropRate": "50% 100%"
       }
     ],
     "ammo": [],
@@ -3224,7 +3303,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "1/40 (2.5%)"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3272,7 +3352,8 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "dropRate": "20%"
           }
         ]
       },
@@ -3296,7 +3377,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -3315,7 +3398,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-band-of-regeneration",
@@ -3330,7 +3415,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
           },
           {
             "id": "pool-honey-comb",
@@ -3346,7 +3432,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
-            "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+            "notes": "The Honey Comb's effect does not stack with any of its upgrades.",
+            "dropRate": "33%"
           }
         ]
       },
@@ -3366,7 +3453,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -3385,7 +3473,9 @@
             "markers": [
               "expert"
             ],
-            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory."
+            "notes": "The Hive Pack can actually reduce the DPS of the Beekeeper and Hive-Five because they do not rely on bees as their primary source of damage, so it is not recommended to be used by melee damage users. In comparison, ranged weapons like Beenades or The Bee's Knees use bees as their primary source of damage, as does the magic weapon Bee Gun, so their DPS may see noticeable increase with the application of this accessory.",
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-royal-gel",
@@ -3400,7 +3490,9 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
-            "quality": "fine"
+            "quality": "fine",
+            "expertOnly": true,
+            "dropRate": "100%"
           }
         ]
       },
@@ -3420,7 +3512,8 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
-            "notes": "The Apprentice's Scarf and Squire's Shield can even be useful for non-summoners if the player finds themselves repeatedly doing things that require a significant amount of enemies to be killed, such as doing the Old One's Army event."
+            "notes": "The Apprentice's Scarf and Squire's Shield can even be useful for non-summoners if the player finds themselves repeatedly doing things that require a significant amount of enemies to be killed, such as doing the Old One's Army event.",
+            "dropRate": "25% 50%"
           }
         ]
       }

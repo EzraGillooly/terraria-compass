@@ -155,6 +155,13 @@
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 .setBadge { display: inline-block; margin-top: 8px; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: #9FE0C0; background: rgba(159,224,192,.14); border-radius: var(--radius-pill); padding: 4px 10px 2px; line-height: 1; }
 
+/* Items a Classic world cannot obtain. Treasure Bag drops only exist in Expert
+   and above, so in Classic they are shown greyed and softened rather than
+   hidden - the reader still sees what the phase offers, and why it is out of
+   reach, instead of a list that silently changes length with the toggle. */
+.locked { opacity: .38; filter: grayscale(.85); }
+.locked:hover { opacity: .6; filter: grayscale(.5); }
+
 /* ── Accessory pool - "other options", grouped by category ──
    Columns rather than a grid of slots: this is a list to scan by category, so
    the eye should run down one category at a time instead of across a wall. */
@@ -216,8 +223,6 @@
 /* Accessories span the whole content width; the slots carry tags now. */
 .accPanel { margin-top: 14px; }
 .accGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 10px; }
-.accMoreRow { margin-top: 16px; }
-.accMoreLabel { display: block; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-bottom: 8px; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
 /* Every slot is one height, sized to the busiest an accessory can get, with the
    contents centred inside it. The worst case in the data is a 2-line name plus

@@ -31,5 +31,4 @@ export interface Pack {
 export const VANILLA_DIFFICULTIES: DifficultyDef[] = [
   { value: 'normal', label: 'Classic' },
   { value: 'expert', label: 'Expert' },
-  { value: 'master', label: 'Master' },
 ];

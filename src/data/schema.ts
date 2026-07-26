@@ -54,6 +54,15 @@ export const Item = z.object({
       wikiUrl: z.string().url().optional(),
     })),
   })).optional(),
+  /**
+   * Set when every entity in the item's drop table is a Treasure Bag: bags
+   * exist only in Expert and above, so a Classic world cannot obtain it.
+   * Drop rates themselves do not vary by difficulty, so there is no
+   * per-difficulty rate to store.
+   */
+  expertOnly: z.boolean().optional(),
+  /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
+  dropRate: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
   /**

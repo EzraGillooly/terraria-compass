@@ -47,7 +47,8 @@
         "subclass": "yoyo",
         "stats": "115 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "33.33% 55.56%"
       },
       {
         "id": "paladins-hammer",
@@ -61,7 +62,8 @@
         "subclass": "boomerang",
         "stats": "100 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Paladin%27s_Hammer",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "6.67% 12.89%"
       },
       {
         "id": "flower-pow",
@@ -75,7 +77,8 @@
         "subclass": "flail",
         "stats": "130 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Pow",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "12.5%"
       },
       {
         "id": "christmas-tree-sword",
@@ -89,7 +92,8 @@
         "subclass": "projectile-melee",
         "stats": "86 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Christmas_Tree_Sword",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "3.46\u201310.37% 6.22\u201331.11%"
       },
       {
         "id": "seedler",
@@ -103,7 +107,8 @@
         "subclass": "projectile-melee",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "keybrand",
@@ -117,7 +122,8 @@
         "subclass": "true-melee",
         "stats": "105 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Keybrand",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "0.5% 1%"
       },
       {
         "id": "north-pole",
@@ -131,7 +137,8 @@
         "subclass": "true-melee",
         "stats": "80 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
       },
       {
         "id": "psycho-knife",
@@ -145,7 +152,8 @@
         "subclass": "true-melee",
         "stats": "85 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Psycho_Knife",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "2.5% 4.94%"
       },
       {
         "id": "the-horseman-s-blade",
@@ -159,7 +167,8 @@
         "subclass": "true-melee",
         "stats": "150 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "kraken",
@@ -217,7 +226,8 @@
         "subclass": "true-melee",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "20%"
       },
       {
         "id": "developer-yoyo",
@@ -281,7 +291,8 @@
         "subclass": "flail",
         "stats": "110 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Drippler_Crippler",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "12.5%"
       },
       {
         "id": "true-excalibur",
@@ -326,7 +337,8 @@
         "tier": "other",
         "subclass": "projectile-melee",
         "stats": "43 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife",
+        "dropRate": "16.7% 33.3%"
       }
     ],
     "armor": [
@@ -539,7 +551,8 @@
           "survivability",
           "offense"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "2.86% 5.63%"
       },
       {
         "id": "hoverboard",
@@ -676,7 +689,8 @@
         "source": "Brewed at a placed bottle",
         "why": "It remains the universal baseline buff because every new event or Temple pull can hit hard.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -735,7 +749,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -774,7 +790,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -793,7 +811,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -870,7 +890,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -908,7 +929,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -924,7 +947,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -943,7 +967,8 @@
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-magic-yoyo-bag",
@@ -1011,7 +1036,8 @@
         "subclass": "bow",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       },
       {
         "id": "stake-launcher",
@@ -1025,7 +1051,8 @@
         "subclass": "bow",
         "stats": "75 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.86\u201320% 5\u201320%"
       },
       {
         "id": "chain-gun",
@@ -1039,7 +1066,8 @@
         "subclass": "gun",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "6.25\u201316.67% 12.5\u201350%"
       },
       {
         "id": "sniper-rifle",
@@ -1053,7 +1081,8 @@
         "subclass": "gun",
         "stats": "200 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "8.33% 15.97%"
       },
       {
         "id": "venus-magnum",
@@ -1067,7 +1096,8 @@
         "subclass": "gun",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Venus_Magnum",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "candy-corn-rifle",
@@ -1081,7 +1111,8 @@
         "subclass": "gun",
         "stats": "60 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Candy_Corn_Rifle",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "tactical-shotgun",
@@ -1095,7 +1126,8 @@
         "subclass": "gun",
         "stats": "36 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "8.33% 15.97%"
       },
       {
         "id": "grenade-launcher",
@@ -1109,7 +1141,8 @@
         "subclass": "launcher",
         "stats": "60 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade_Launcher",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "12.5%"
       },
       {
         "id": "jack-o-lantern-launcher",
@@ -1123,7 +1156,8 @@
         "subclass": "launcher",
         "stats": "85 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Jack_%27O_Lantern_Launcher",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "nail-gun",
@@ -1137,7 +1171,8 @@
         "subclass": "launcher",
         "stats": "85 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nail_Gun",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "4% 7.84%"
       },
       {
         "id": "proximity-mine-launcher",
@@ -1165,7 +1200,8 @@
         "subclass": "launcher",
         "stats": "55 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Launcher",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "5.56% 10.8%"
       },
       {
         "id": "snowman-cannon",
@@ -1179,7 +1215,8 @@
         "subclass": "launcher",
         "stats": "67 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
       },
       {
         "id": "piranha-gun",
@@ -1368,7 +1405,8 @@
         "categories": [
           "ranged"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
+        "dropRate": "8.33% 15.97%"
       },
       {
         "id": "ranger-emblem",
@@ -1383,7 +1421,8 @@
         "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "dropRate": "25%"
       },
       {
         "id": "moon-stone",
@@ -1401,7 +1440,8 @@
           "survivability",
           "offense"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "2.86% 5.63%"
       },
       {
         "id": "ankh-shield",
@@ -1516,7 +1556,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
       },
       {
         "id": "ammo-reservation-potion",
@@ -1666,7 +1707,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -1705,7 +1748,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -1724,7 +1769,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -1801,7 +1848,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -1839,7 +1887,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -1855,7 +1905,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -1874,7 +1925,8 @@
             "categories": [
               "ranged"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver",
+            "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
           }
         ]
       }
@@ -1896,7 +1948,8 @@
         "subclass": "magic-gun",
         "stats": "31 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "12.5%"
       },
       {
         "id": "leaf-blower",
@@ -1910,7 +1963,8 @@
         "subclass": "magic-gun",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Leaf_Blower",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "12.5%"
       },
       {
         "id": "bat-scepter",
@@ -1924,7 +1978,8 @@
         "subclass": "wand",
         "stats": "45 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bat_Scepter",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "blizzard-staff",
@@ -1938,7 +1993,8 @@
         "subclass": "wand",
         "stats": "58 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
       },
       {
         "id": "magnet-sphere",
@@ -1952,7 +2008,8 @@
         "subclass": "wand",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "0.33% 0.67%"
       },
       {
         "id": "nettle-burst",
@@ -1966,7 +2023,8 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "nightglow",
@@ -1980,7 +2038,8 @@
         "subclass": "wand",
         "stats": "50 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       },
       {
         "id": "razorpine",
@@ -1994,7 +2053,8 @@
         "subclass": "wand",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "3.46\u201310.37% 6.22\u201331.11%"
       },
       {
         "id": "resonance-scepter",
@@ -2008,7 +2068,8 @@
         "subclass": "wand",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Resonance_Scepter",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "stellar-tune",
@@ -2022,7 +2083,8 @@
         "subclass": "wand",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2%"
       },
       {
         "id": "inferno-fork",
@@ -2038,7 +2100,8 @@
         "subclass": "wand",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions) 9.75%"
       },
       {
         "id": "rainbow-gun",
@@ -2070,7 +2133,8 @@
         "subclass": "wand",
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "2.5% 4.94%"
       },
       {
         "id": "nimbus-rod",
@@ -2086,7 +2150,8 @@
         "subclass": "summon-magic",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "6.67%"
       },
       {
         "id": "shadowbeam-staff",
@@ -2102,7 +2167,8 @@
         "subclass": "wand",
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "5% 2.5% (Old-gen console and 3DS versions) 9.75%"
       },
       {
         "id": "spectre-staff",
@@ -2118,7 +2184,8 @@
         "subclass": "wand",
         "stats": "65 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "5% 2.5% (Old-gen console and 3DS versions) 9.75%"
       },
       {
         "id": "tome-of-infinite-wisdom",
@@ -2134,7 +2201,8 @@
         "subclass": "spell-tome",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "10% 20%"
       },
       {
         "id": "venom-staff",
@@ -2352,7 +2420,8 @@
           "survivability",
           "offense"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "2.86% 5.63%"
       },
       {
         "id": "mana-flower",
@@ -2484,7 +2553,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises magic damage by 20%.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "mana-regeneration-potion",
@@ -2494,7 +2564,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "crystal-ball",
@@ -2553,7 +2624,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -2592,7 +2665,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2611,7 +2686,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -2688,7 +2765,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2741,7 +2819,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -2757,7 +2837,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2776,7 +2857,8 @@
             "categories": [
               "magic"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-mana-cloak",
@@ -2812,7 +2894,8 @@
         "subclass": "minions",
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "3.33% 6.56%"
       },
       {
         "id": "desert-tiger-staff",
@@ -2840,7 +2923,8 @@
         "subclass": "minions",
         "stats": "90 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "100%"
       },
       {
         "id": "kaleidoscope",
@@ -2854,7 +2938,8 @@
         "subclass": "whip",
         "stats": "170 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       },
       {
         "id": "morning-star",
@@ -2868,7 +2953,8 @@
         "subclass": "whip",
         "stats": "160 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "0.5% 1%"
       },
       {
         "id": "pygmy-staff",
@@ -2882,7 +2968,8 @@
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       },
       {
         "id": "raven-staff",
@@ -2896,7 +2983,8 @@
         "subclass": "minions",
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -2924,7 +3012,8 @@
         "subclass": "whip",
         "stats": "110 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
         "id": "vulgar-display-of-flower",
@@ -2938,7 +3027,8 @@
         "subclass": "whip",
         "stats": "75 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "12.5%"
       },
       {
         "id": "queen-spider-staff",
@@ -2994,7 +3084,8 @@
         "subclass": "whip",
         "stats": "37 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "optic-staff",
@@ -3049,7 +3140,8 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "spider-staff",
@@ -3213,7 +3305,8 @@
         "topPick": false,
         "categories": [
           "summon"
-        ]
+        ],
+        "dropRate": "2.86\u201320% 5\u201320%"
       },
       {
         "id": "ankh-shield",
@@ -3259,7 +3352,8 @@
           "survivability",
           "offense"
         ],
-        "quality": "good"
+        "quality": "good",
+        "dropRate": "2.86% 5.63%"
       },
       {
         "id": "master-ninja-gear",
@@ -3326,7 +3420,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Summoner still needs all the baseline survivability help it can get.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -3381,7 +3476,8 @@
         "why": "Table buff that boosts minion damage.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table",
+        "dropRate": "50% 100%"
       }
     ],
     "ammo": [],
@@ -3420,7 +3516,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -3459,7 +3557,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -3478,7 +3578,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -3555,7 +3657,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -3593,7 +3696,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-putrid-scent",
@@ -3609,7 +3714,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
+            "dropRate": "20%"
           }
         ]
       },
@@ -3642,7 +3748,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem",
+            "dropRate": "25%"
           },
           {
             "id": "pool-berserkers-glove",
@@ -3674,7 +3781,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "dropRate": "25% 50%"
           }
         ]
       }

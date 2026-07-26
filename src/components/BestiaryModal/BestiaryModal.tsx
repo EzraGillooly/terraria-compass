@@ -4,8 +4,8 @@ import { localSprite, wikiSprite, type BestiaryEntry } from '../../data/bestiary
 import { useAppState } from '../../lib/app-context';
 import styles from './BestiaryModal.module.css';
 
-const SCALE = { normal: 1, expert: 2, master: 3 } as const;
-const MODE_LABEL = { normal: 'Classic', expert: 'Expert', master: 'Master' } as const;
+const SCALE = { normal: 1, expert: 2 } as const;
+const MODE_LABEL = { normal: 'Classic', expert: 'Expert' } as const;
 
 const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='48' height='48' fill='%23EAF4FB'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24' fill='%234A6373' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 

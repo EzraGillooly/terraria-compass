@@ -3,7 +3,8 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
 import { useAppState, usePack } from '../lib/app-context';
-import { isItemRelevantToDifficulty } from '../lib/difficulty';
+import { isObtainable } from '../lib/difficulty';
+import type { DifficultyFilter } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
 import type { Item, PhaseId } from '../data/schema';
 import type { SyntheticEvent } from 'react';
@@ -70,8 +71,8 @@ function iconSrcs(icon: string, wikiUrl?: string) {
 }
 
 /* ── Weapon card ── */
-function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: string; onOpen: (i: Item) => void }) {
-  const relevant = isItemRelevantToDifficulty(item.tags, difficulty as 'normal' | 'expert' | 'master');
+function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: DifficultyFilter; onOpen: (i: Item) => void }) {
+  const locked = !isObtainable(item, difficulty);
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
 
   // No top-pick star: `topPick` only ever meant "listed first in the wiki's
@@ -80,8 +81,8 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: stri
   return (
     <button
       type="button"
-      className={`${styles.wtile} pixel-frame pixel-hollow`}
-      style={{ opacity: relevant ? 1 : 0.45 }}
+      className={`${styles.wtile} pixel-frame pixel-hollow ${locked ? styles.locked : ''}`}
+      title={locked ? 'Not obtainable in a Classic world' : undefined}
       onClick={() => onOpen(item)}
     >
       <div className={styles.wIcon}>
@@ -212,9 +213,10 @@ function visibleCategories(item: Item, activeClass: string): string[] {
 }
 
 function AccCell({
-  item, demonHeart, activeClass, onOpen,
+  item, demonHeart, activeClass, difficulty, onOpen,
 }: {
-  item: Item | null; demonHeart?: boolean; activeClass: string; onOpen: (i: Item) => void;
+  item: Item | null; demonHeart?: boolean; activeClass: string;
+  difficulty: DifficultyFilter; onOpen: (i: Item) => void;
 }) {
   if (!item) {
     return (
@@ -226,8 +228,14 @@ function AccCell({
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   const cats = visibleCategories(item, activeClass);
   const markers = item.markers ?? [];
+  const locked = !isObtainable(item, difficulty);
   return (
-    <button type="button" className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''}`} onClick={() => onOpen(item)}>
+    <button
+      type="button"
+      className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''} ${locked ? styles.locked : ''}`}
+      title={locked ? 'Not obtainable in a Classic world' : undefined}
+      onClick={() => onOpen(item)}
+    >
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.accSlotImg} pixel-img`}
@@ -263,11 +271,20 @@ function AccCell({
    Denser than a slot: the pool is a list to scan, not a build to read. Class
    categories carry no grade on the source page, so the badge is simply absent
    rather than defaulted to something the page never said. */
-function PoolRow({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
+function PoolRow(
+  { item, difficulty, onOpen }:
+  { item: Item; difficulty: DifficultyFilter; onOpen: (i: Item) => void },
+) {
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   const markers = item.markers ?? [];
+  const locked = !isObtainable(item, difficulty);
   return (
-    <button type="button" className={styles.poolRow} onClick={() => onOpen(item)}>
+    <button
+      type="button"
+      className={`${styles.poolRow} ${locked ? styles.locked : ''}`}
+      title={locked ? 'Not obtainable in a Classic world' : undefined}
+      onClick={() => onOpen(item)}
+    >
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.poolImg} pixel-img`}
@@ -316,10 +333,19 @@ function AccLegend() {
 }
 
 /* ── Buff / consumable card (same shape as an accessory slot) ── */
-function BuffCell({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
+function BuffCell(
+  { item, difficulty, onOpen }:
+  { item: Item; difficulty: DifficultyFilter; onOpen: (i: Item) => void },
+) {
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  const locked = !isObtainable(item, difficulty);
   return (
-    <button type="button" className={`${styles.buffCell} pixel-frame pixel-hollow`} onClick={() => onOpen(item)}>
+    <button
+      type="button"
+      className={`${styles.buffCell} pixel-frame pixel-hollow ${locked ? styles.locked : ''}`}
+      title={locked ? 'Not obtainable in a Classic world' : undefined}
+      onClick={() => onOpen(item)}
+    >
       <img
         src={local} alt="" aria-hidden="true"
         className={`${styles.buffCellImg} pixel-img`}
@@ -406,10 +432,55 @@ export function Loadouts() {
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
   // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
-  const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && (difficulty === 'expert' || difficulty === 'master');
+  const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
   const slotCount = demonHeartUnlocked ? 6 : 5;
-  const accSlots = Array.from({ length: slotCount }, (_, i) => safeLoadout.accessories[i] ?? null);
-  const extraAccessories = safeLoadout.accessories.slice(slotCount);
+
+  /*
+   * In Classic, an Expert-only pick is not a recommendation - it is a slot the
+   * player cannot fill. Rather than show it greyed, drop it and promote the
+   * next best option from the same category in the pool, falling back to any
+   * category once that runs out. Ranked great -> good -> fine, which is the
+   * sandbox's own grading, so the replacement is the next best thing and not
+   * merely the next thing.
+   */
+  const accessories = ((): Item[] => {
+    const usable = safeLoadout.accessories.filter((a) => isObtainable(a, difficulty));
+    if (usable.length === safeLoadout.accessories.length) return safeLoadout.accessories;
+
+    const dropped = safeLoadout.accessories.filter((a) => !isObtainable(a, difficulty));
+    const taken = new Set(usable.map((a) => a.name));
+    const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
+
+    const out = [...usable];
+    for (let i = 0; i < dropped.length; i += 1) {
+      // A category the build already covers is a poor swap: replacing the
+      // Shield of Cthulhu with Lightning Boots next to equipped Spectre Boots
+      // spends a slot on the same upgrade line. Uncovered categories rank
+      // first, then the sandbox's own grade.
+      const covered = new Set(out.flatMap((a) => a.categories ?? []));
+      const pick = safeLoadout.accessoryPool
+        .flatMap((g) => g.items)
+        .filter((it) => !taken.has(it.name) && isObtainable(it, difficulty))
+        .sort((a, b) => {
+          const ac = (a.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
+          const bc = (b.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
+          return ac - bc || rank(a.quality) - rank(b.quality);
+        })[0];
+      if (!pick) break;
+      taken.add(pick.name);
+      out.push(pick);
+    }
+    return out;
+  })();
+
+  const accSlots = Array.from({ length: slotCount }, (_, i) => accessories[i] ?? null);
+
+  /* The pool was filtered against the equipped list when the data was built, so
+     anything promoted into a slot just now would otherwise appear twice. */
+  const equippedNames = new Set(accessories.map((a) => a.name));
+  const accessoryPool = safeLoadout.accessoryPool
+    .map((g) => ({ ...g, items: g.items.filter((it) => !equippedNames.has(it.name)) }))
+    .filter((g) => g.items.length > 0);
 
 
   return (
@@ -527,7 +598,7 @@ export function Loadouts() {
               <>
                 {filteredBest.length > 0 && (
                   <>
-                    <div className={styles.groupLabel}>Recommended</div>
+                    {!showingAll && <div className={styles.groupLabel}>Recommended</div>}
                     <div className={styles.weaponRow}>
                       {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>
@@ -620,7 +691,13 @@ export function Loadouts() {
                   {groupedArmor.map((a) => {
                     const img = iconSrcs(a.icon);
                     return (
-                    <button key={a.id} type="button" className={styles.armorEntry} onClick={() => setModalItem(a)}>
+                    <button
+                      key={a.id}
+                      type="button"
+                      className={`${styles.armorEntry} ${isObtainable(a, difficulty) ? '' : styles.locked}`}
+                      title={isObtainable(a, difficulty) ? undefined : 'Not obtainable in a Classic world'}
+                      onClick={() => setModalItem(a)}
+                    >
                       <div className={`${styles.armorDoll} pixel-frame`}>
                         <img
                           src={img.local} alt=""
@@ -668,7 +745,8 @@ export function Loadouts() {
                     <button
                       key={m.id}
                       type="button"
-                      className={styles.ammoEntry}
+                      className={`${styles.ammoEntry} ${isObtainable(m, difficulty) ? '' : styles.locked}`}
+                      title={isObtainable(m, difficulty) ? undefined : 'Not obtainable in a Classic world'}
                       onClick={() => setModalItem(m)}
                     >
                       <div className={`${styles.ammoSlot} pixel-frame`}>
@@ -698,7 +776,7 @@ export function Loadouts() {
             <div className={styles.buffLabel}>Buffs &amp; Consumables</div>
             {safeLoadout.buffs.length > 0 ? (
               <div className={styles.buffGrid}>
-                {safeLoadout.buffs.map((b) => <BuffCell key={b.id} item={b} onOpen={setModalItem} />)}
+                {safeLoadout.buffs.map((b) => <BuffCell key={b.id} item={b} difficulty={difficulty} onOpen={setModalItem} />)}
               </div>
             ) : (
               <p className={styles.empty}>No buff data for this phase yet.</p>
@@ -721,21 +799,12 @@ export function Loadouts() {
                 item={acc}
                 demonHeart={demonHeartUnlocked && i === 5}
                 activeClass={activeClassId}
+                difficulty={difficulty}
                 onOpen={setModalItem}
               />
             ))}
           </div>
-          {extraAccessories.length > 0 && (
-            <div className={styles.accMoreRow}>
-              <span className={styles.accMoreLabel}>Also worth a slot</span>
-              <div className={styles.accGrid}>
-                {extraAccessories.map((a) => (
-                  <AccCell key={a.id} item={a} activeClass={activeClassId} onOpen={setModalItem} />
-                ))}
-              </div>
-            </div>
-          )}
-          {safeLoadout.accessoryPool.length > 0 && (
+          {accessoryPool.length > 0 && (
             <div className={styles.poolWrap}>
               <button
                 type="button"
@@ -744,11 +813,11 @@ export function Loadouts() {
                 onClick={() => setShowPool((v) => !v)}
               >
                 {showPool ? 'Hide' : 'Show'} other options (
-                {safeLoadout.accessoryPool.reduce((n, g) => n + g.items.length, 0)})
+                {accessoryPool.reduce((n, g) => n + g.items.length, 0)})
               </button>
               {showPool && (
                 <div className={styles.poolGroups}>
-                  {safeLoadout.accessoryPool.map((g) => (
+                  {accessoryPool.map((g) => (
                     <div key={g.category} className={styles.poolGroup}>
                       <div className={styles.poolHead}>
                         <span className={`${styles.accCat} ${styles[`c_${g.category}`]}`}>
@@ -758,7 +827,7 @@ export function Loadouts() {
                       </div>
                       <div className={styles.poolList}>
                         {g.items.map((it) => (
-                          <PoolRow key={it.id} item={it} onOpen={setModalItem} />
+                          <PoolRow key={it.id} item={it} difficulty={difficulty} onOpen={setModalItem} />
                         ))}
                       </div>
                     </div>

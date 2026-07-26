@@ -15,7 +15,8 @@
         "subclass": "projectile-melee",
         "stats": "57 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Death_Sickle",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "2.5% 0.4% (Old-gen console and 3DS versions) 4.94%"
       },
       {
         "id": "developer-yoyo",
@@ -177,7 +178,8 @@
         "subclass": "true-melee",
         "stats": "95 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Brand_of_the_Inferno",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "10% 20%"
       },
       {
         "id": "chlorophyte-partisan",
@@ -235,7 +237,8 @@
         "subclass": "true-melee",
         "stats": "45 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ghastly_Glaive",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "10% 20%"
       },
       {
         "id": "gungnir",
@@ -409,7 +412,8 @@
         "subclass": "flail",
         "stats": "110 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Drippler_Crippler",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "12.5%"
       },
       {
         "id": "fetid-baghnakhs",
@@ -425,7 +429,8 @@
         "subclass": "true-melee",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "shadowflame-knife",
@@ -441,7 +446,8 @@
         "tier": "other",
         "subclass": "projectile-melee",
         "stats": "43 melee dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife",
+        "dropRate": "16.7% 33.3%"
       },
       {
         "id": "gradient",
@@ -473,7 +479,8 @@
         "subclass": "boomerang",
         "stats": "45 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bananarang",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "10%"
       },
       {
         "id": "bladetongue",
@@ -831,7 +838,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Even with stronger armor, the baseline defense boost is still valuable in every meaningful fight.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -905,7 +913,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -944,7 +954,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -963,7 +975,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-charm-of-myths",
@@ -994,7 +1008,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "good",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-flesh-knuckles",
@@ -1009,7 +1024,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           }
         ]
       },
@@ -1030,7 +1046,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "great",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-putrid-scent",
@@ -1045,7 +1062,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           },
           {
             "id": "pool-pygmy-necklace",
@@ -1080,7 +1098,8 @@
               "melee"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-            "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts."
+            "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+            "dropRate": "25%"
           },
           {
             "id": "pool-magic-yoyo-bag",
@@ -1169,7 +1188,8 @@
         "subclass": "bow",
         "stats": "53 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tsunami",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "16.67%"
       },
       {
         "id": "megashark",
@@ -1264,7 +1284,8 @@
         "subclass": "bow",
         "stats": "32 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phantom_Phoenix",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "10% 20%"
       },
       {
         "id": "titanium-repeater",
@@ -1361,7 +1382,8 @@
         "subclass": "bow",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Daedalus_Stormbow",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "25%"
       },
       {
         "id": "star-cannon",
@@ -1411,7 +1433,8 @@
         "tier": "other",
         "subclass": "launcher",
         "stats": "100 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Barrel_Launcher"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Barrel_Launcher",
+        "dropRate": "10%"
       }
     ],
     "armor": [
@@ -1598,7 +1621,8 @@
         "categories": [
           "ranged"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
+        "dropRate": "8.33% 15.97%"
       },
       {
         "id": "ranger-emblem",
@@ -1613,7 +1637,8 @@
         "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "dropRate": "25%"
       },
       {
         "id": "magic-quiver",
@@ -1626,7 +1651,8 @@
         "topPick": false,
         "categories": [
           "ranged"
-        ]
+        ],
+        "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
       },
       {
         "id": "frozen-wings",
@@ -1723,7 +1749,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
       },
       {
         "id": "ammo-reservation-potion",
@@ -1913,7 +1940,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -1952,7 +1981,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -1971,7 +2002,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-charm-of-myths",
@@ -2002,7 +2035,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "good",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-flesh-knuckles",
@@ -2017,7 +2051,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2038,7 +2073,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "great",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -2068,7 +2104,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           },
           {
             "id": "pool-pygmy-necklace",
@@ -2105,7 +2142,8 @@
         "subclass": "spell-tome",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "10% 20%"
       },
       {
         "id": "magical-harp",
@@ -2198,7 +2236,8 @@
         "subclass": "wand",
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "2.5% 4.94%"
       },
       {
         "id": "venom-staff",
@@ -2241,7 +2280,8 @@
         "subclass": "wand",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "16.7% 33.3%"
       },
       {
         "id": "orange-zapinator",
@@ -2273,7 +2313,8 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Drain",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "20%"
       },
       {
         "id": "spirit-flame",
@@ -2323,7 +2364,8 @@
         "subclass": "wand",
         "stats": "88 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Trident",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "3.33%"
       },
       {
         "id": "clinger-staff",
@@ -2339,7 +2381,8 @@
         "subclass": "summon-magic",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
-        "tier": "best"
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "nimbus-rod",
@@ -2355,7 +2398,8 @@
         "subclass": "summon-magic",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "6.67%"
       },
       {
         "id": "crystal-storm",
@@ -2760,7 +2804,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Raises magic damage by 20%.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "mana-regeneration-potion",
@@ -2770,7 +2815,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "3/32 (9.38%)"
       },
       {
         "id": "crystal-ball",
@@ -2790,7 +2836,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Mage still benefits from a simple defensive floor because burst damage remains a constant threat.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       }
     ],
     "ammo": [],
@@ -2844,7 +2891,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -2883,7 +2932,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -2902,7 +2953,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-star-veil",
@@ -2948,7 +3001,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "good",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-flesh-knuckles",
@@ -2963,7 +3017,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           }
         ]
       },
@@ -2984,7 +3039,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "great",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -3014,7 +3070,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           },
           {
             "id": "pool-pygmy-necklace",
@@ -3048,7 +3105,8 @@
             "categories": [
               "magic"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+            "dropRate": "25%"
           }
         ]
       }
@@ -3143,7 +3201,8 @@
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pirate_Staff",
-        "tier": "other"
+        "tier": "other",
+        "dropRate": "6.67%"
       },
       {
         "id": "explosive-trap-cane",
@@ -3225,7 +3284,8 @@
         "subclass": "minions",
         "stats": "35 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "50% 100%"
       },
       {
         "id": "spider-staff",
@@ -3281,7 +3341,8 @@
         "subclass": "whip",
         "stats": "37 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "blade-staff",
@@ -3297,7 +3358,8 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "cool-whip",
@@ -3512,7 +3574,8 @@
         "topPick": true,
         "categories": [
           "summon"
-        ]
+        ],
+        "dropRate": "25%"
       },
       {
         "id": "pygmy-necklace",
@@ -3571,7 +3634,8 @@
         ],
         "markers": [
           "whips"
-        ]
+        ],
+        "dropRate": "19/100 (19%)"
       },
       {
         "id": "ankh-shield",
@@ -3661,7 +3725,8 @@
         "source": "Brewed at a placed bottle",
         "why": "Summoner is still fragile enough that the universal defense potion remains mandatory in practice.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "dropRate": "0.18%"
       },
       {
         "id": "endurance-potion",
@@ -3716,7 +3781,8 @@
         "why": "Table buff that boosts minion damage.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table",
+        "dropRate": "50% 100%"
       }
     ],
     "ammo": [],
@@ -3770,7 +3836,9 @@
             "quality": "good",
             "markers": [
               "expert"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-amphibian-boots",
@@ -3809,7 +3877,9 @@
             "markers": [
               "expert",
               "corruption"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-brain-of-confusion",
@@ -3828,7 +3898,9 @@
             "markers": [
               "expert",
               "crimson"
-            ]
+            ],
+            "expertOnly": true,
+            "dropRate": "100%"
           },
           {
             "id": "pool-charm-of-myths",
@@ -3859,7 +3931,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "good",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-flesh-knuckles",
@@ -3874,7 +3947,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           }
         ]
       },
@@ -3895,7 +3969,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
             "quality": "great",
-            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost.",
+            "dropRate": "2.86% 5.63%"
           },
           {
             "id": "pool-avenger-emblem",
@@ -3925,7 +4000,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "20%"
           }
         ]
       },
@@ -3961,7 +4037,8 @@
             "categories": [
               "summon"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "dropRate": "25% 50%"
           }
         ]
       }
