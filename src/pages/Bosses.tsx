@@ -51,7 +51,7 @@ function BossSlot({
       onClick={onSelect}
       aria-pressed={selected}
     >
-      <span className={styles.slot} style={{ ['--boss' as string]: boss.color }}>
+      <span className={`${styles.slot} pixel-frame`} style={{ ['--boss' as string]: boss.color }}>
         <img
           src={`${BASE}icons/bosses/${boss.id}.png`}
           alt=""
@@ -157,7 +157,7 @@ export function Bosses() {
               type="button"
               role="tab"
               aria-selected={!showHardmode}
-              className={`${styles.phaseBtn} ${!showHardmode ? styles.phasePre : ''}`}
+              className={`${styles.phaseBtn} ${!showHardmode ? `${styles.phasePre} pixel-frame` : ''}`}
               onClick={() => setPhase(false)}
             >
               Pre-Hardmode
@@ -166,7 +166,7 @@ export function Bosses() {
               type="button"
               role="tab"
               aria-selected={showHardmode}
-              className={`${styles.phaseBtn} ${showHardmode ? styles.phaseHard : ''}`}
+              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
               onClick={() => setPhase(true)}
             >
               Hardmode
@@ -183,7 +183,7 @@ export function Bosses() {
 
         {/* ── Detail panel ── */}
         <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
-          <div className={styles.detailIcon}>
+          <div className={`${styles.detailIcon} pixel-frame`}>
             <img
               src={`${BASE}icons/bosses/${selected.id}.png`}
               alt={selected.name}

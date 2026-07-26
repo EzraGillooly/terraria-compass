@@ -34,7 +34,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Craft a Slime Crown at a Demon Altar, or wait for a rare natural spawn.',
     drops: ['Slimy Saddle', 'Royal Gel', 'Ninja Hood / Shirt / Pants', 'Slime Hook'],
-    blurb: 'A giant blue slime with a ninja trapped inside. A friendly first scrap - nothing to fear.',
+    blurb: 'A giant slime with a ninja trapped inside. It teleports, spawns smaller slimes, and shrinks as it loses health.',
     color: '#5BB3FF',
   },
   {
@@ -46,7 +46,7 @@ export const bosses: BossDef[] = [
     tier: 1,
     summon: 'Craft a Suspicious Looking Eye at a Demon Altar, or wait for a natural spawn once you have 200 HP and 3 Demonite Ore.',
     drops: ['Demonite Ore', 'Corrupt Seeds', 'Binoculars', 'Eye of Cthulhu Mask', 'Shield of Cthulhu (Expert)'],
-    blurb: 'The classic first boss. Fast in its second phase, but predictable. Expect the Suspicious Looking Eye challenge early.',
+    blurb: 'Summoned at night with a Suspicious Looking Eye. It circles and spawns Servants until half health, then stops summoning and charges instead.',
     color: '#E84A4A',
   },
   {
@@ -59,7 +59,7 @@ export const bosses: BossDef[] = [
     world: 'corruption',
     summon: 'Craft Worm Food at a Demon Altar, or smash 3 Shadow Orbs in the Corruption.',
     drops: ['Demonite Ore', 'Shadow Scale', 'Eater of Worlds Mask'],
-    blurb: 'A colossal segmented worm. Corruption worlds only - bring piercing weapons and attack each segment.',
+    blurb: 'A segmented worm, Corruption worlds only. Destroying a middle segment splits it into two shorter worms, so piercing weapons hit many segments at once.',
     color: '#8B5BC9',
   },
   {
@@ -72,7 +72,7 @@ export const bosses: BossDef[] = [
     world: 'crimson',
     summon: 'Craft a Bloody Spine at a Demon Altar, or smash 3 Crimson Hearts in the Crimson.',
     drops: ['Crimtane Ore', 'Tissue Sample', 'Brain of Cthulhu Mask', 'Brain of Confusion (Expert)'],
-    blurb: 'A floating brain surrounded by Creepers. Crimson worlds only - kill the Creepers first to expose the brain.',
+    blurb: 'Crimson worlds only. It is invulnerable until its ring of Creepers is killed, then teleports and spawns illusions of itself.',
     color: '#D24A6A',
   },
 
@@ -87,7 +87,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Craft an Abeemination in the Jungle, or break a Larva inside a Bee Hive.',
     drops: ['Bee Gun', 'Bee Keeper', 'Honeyed Goggles', 'Bee Wax', 'Honey Comb (Expert)'],
-    blurb: 'The hive boss. Fast, stingy, and worth every drop. Build a long arena in the Jungle - she charges hard.',
+    blurb: 'Fought in the Jungle. She alternates between charging horizontally, firing stingers, and spawning bees, so a long flat arena suits her.',
     color: '#F2C24A',
   },
   {
@@ -99,7 +99,7 @@ export const bosses: BossDef[] = [
     tier: 4,
     summon: 'Speak to the Old Man at the Dungeon entrance at night. Kill both hands before the head.',
     drops: ['Skeletron Hand', 'Book of Skulls', 'Bone Glove', 'Skeletron Mask'],
-    blurb: 'Guardian of the Dungeon. Kill him before sunrise or his spinning head deals instant death.',
+    blurb: 'Guards the Dungeon entrance and is summoned by speaking to the Old Man at night. The head is invulnerable until both hands are destroyed, and he kills instantly at dawn.',
     color: '#D8D2BD',
   },
   {
@@ -111,7 +111,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Use a Deer Thing in a Snow biome at midnight, or wait for a natural spawn during a Blizzard.',
     drops: ['Eye Bone', 'Lucy the Axe', 'Houndius Shootius', 'Deerclops Mask'],
-    blurb: 'A Don\'t Starve crossover. Hulking, vertical, punishing. The Snow biome is your arena.',
+    blurb: 'A Don\'t Starve crossover fought in the Snow biome. Ground-based, with a shadow attack that reaches through blocks.',
     color: '#A8C8E0',
   },
 
@@ -125,7 +125,7 @@ export const bosses: BossDef[] = [
     tier: 5,
     summon: 'Throw a Guide Voodoo Doll into lava in the Underworld.',
     drops: ['Pwnhammer', 'Emblem (class-specific)', 'Breaker Blade', 'Clockwork Assault Rifle', 'Demon Heart (Expert)'],
-    blurb: 'The wall ends Pre-Hardmode. Defeat it to unlock Hardmode. Build a long bridge - survival is everything.',
+    blurb: 'Summoned by throwing a Guide Voodoo Doll into Underworld lava. It moves across the world at a steady speed, so the fight happens on a long bridge, and it speeds up as it loses health.',
     color: '#E07A4A',
   },
 
@@ -139,7 +139,7 @@ export const bosses: BossDef[] = [
     tier: 6,
     summon: 'Craft a Mechanical Eye at a Mythril/Orichalcum Anvil, or wait for a nighttime natural spawn.',
     drops: ['Hallowed Bars', 'Soul of Sight', 'Twins Mask', 'Spaz\'s Eye (Expert)'],
-    blurb: 'Two mechanical eyes - Spazmatism spews fire, Retinazer fires lasers. Kill one completely before the other enrages.',
+    blurb: 'Two mechanical eyes. Spazmatism deals contact damage and cursed flames, Retinazer fires lasers, and each changes form below half health.',
     color: '#E84A4A',
   },
   {
@@ -151,7 +151,7 @@ export const bosses: BossDef[] = [
     tier: 6,
     summon: 'Craft a Mechanical Worm at a Mythril/Orichalcum Anvil, or wait for a nighttime natural spawn.',
     drops: ['Hallowed Bars', 'Soul of Might', 'Destroyer Mask', 'Greater Healing Potions'],
-    blurb: 'The mechanical Eater of Worlds. Probe waves are the real threat - pierce weapons shred it.',
+    blurb: 'A mechanical worm that releases Probes as it takes damage. Its segments overlap, so piercing weapons hit several at once.',
     color: '#5BB3FF',
   },
   {
@@ -163,7 +163,7 @@ export const bosses: BossDef[] = [
     tier: 6,
     summon: 'Craft a Mechanical Skull at a Mythril/Orichalcum Anvil, or wait for a nighttime natural spawn.',
     drops: ['Hallowed Bars', 'Soul of Fright', 'Skeletron Prime Mask'],
-    blurb: 'Four limbs - Vice, Saw, Cannon, Laser - each with their own attack pattern. Destroy the arms first.',
+    blurb: 'Four arms - Vice, Saw, Cannon and Laser - each with its own attack. Like Skeletron, it kills instantly at dawn.',
     color: '#D8D2BD',
   },
 
@@ -177,7 +177,7 @@ export const bosses: BossDef[] = [
     tier: 7,
     summon: 'Break a Plantera\'s Bulb that spawns in the Underground Jungle after all three Mechanical Bosses are defeated.',
     drops: ['Temple Key', 'Grenade Launcher', 'Venus Magnum', 'Flower Pow', 'Pygmy Staff', 'Plantera Mask'],
-    blurb: 'The Jungle\'s gatekeeper. Stage two Plantera is fast and chases relentlessly - you want a huge circular arena.',
+    blurb: 'Summoned by breaking a Plantera\'s Bulb in the Underground Jungle. It is tethered to hooks in the first phase, then breaks free and pursues directly below half health.',
     color: '#6EC96E',
   },
   {
@@ -189,7 +189,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Use a Gelatin Crystal found in the Hallow.',
     drops: ['Crystal Assassin set', 'Volatile Gelatin', 'Blade Staff', 'Hook of Dissonance', 'Queen Slime Mask'],
-    blurb: 'Hardmode counterpart to King Slime. Aerial phase two makes her trickier. Worth the Blade Staff alone.',
+    blurb: 'Summoned in the Hallow with a Gelatin Crystal. She gains flight in her later phases and spawns crystal slimes throughout.',
     color: '#FF98DF',
   },
 
@@ -203,7 +203,7 @@ export const bosses: BossDef[] = [
     tier: 8,
     summon: 'Use a Lihzahrd Power Cell on the Lihzahrd Altar inside the Jungle Temple.',
     drops: ['Golem Fist', 'Possessed Hatchet', 'Sun Stone', 'Eye of the Golem', 'Golem Mask'],
-    blurb: 'Temple boss. Dense, methodical, and an easier fight than Plantera - just don\'t fall below the fist range.',
+    blurb: 'Fought in the Jungle Temple using a Lihzahrd Power Cell. Its fists and head detach, and the head keeps fighting after the body falls.',
     color: '#B87A3A',
   },
   {
@@ -215,7 +215,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Fish in the Ocean with a Truffle Worm as bait.',
     drops: ['Tsunami', 'Razorblade Typhoon', 'Fishron Wings', 'Bubble Gun', 'Duke Fishron Mask'],
-    blurb: 'Optional but brutally rewarding. Three phases of increasing speed. Great wings are the payoff.',
+    blurb: 'Summoned by fishing in the Ocean with a Truffle Worm. Three phases, each faster than the last, with charges that cross the arena.',
     color: '#4A8FD2',
   },
   {
@@ -227,7 +227,7 @@ export const bosses: BossDef[] = [
     side: true,
     summon: 'Kill a Prismatic Lacewing in the Hallow at night.',
     drops: ['Terraprisma (daytime kill)', 'Kaleidoscope', 'Empress Wings', 'Stellar Tune', 'Empress of Light Mask'],
-    blurb: 'One of the hardest optional bosses. Daytime kill rewards the Terraprisma - a summoner\'s best weapon.',
+    blurb: 'Summoned by killing a Prismatic Lacewing in the Hallow at night. Killing her in daylight makes every one of her attacks an instant kill, which is the only way she drops the Terraprisma.',
     color: '#FFB7E2',
   },
 
@@ -241,7 +241,7 @@ export const bosses: BossDef[] = [
     tier: 9,
     summon: 'Kill all four Cultists outside the Dungeon after Golem is dead.',
     drops: ['Lunatic Cultist Mask', 'Ancient Manipulator'],
-    blurb: 'Triggers the Lunar Events. Clones, ancient doom projectiles, and a strict interrupt cycle define this fight.',
+    blurb: 'Appears at the Dungeon once Golem is defeated. It creates clones that must be ignored, and killing it starts the Lunar Events.',
     color: '#9F7AE0',
   },
 
@@ -255,7 +255,7 @@ export const bosses: BossDef[] = [
     tier: 10,
     summon: 'Defeat all four Celestial Pillars, or use a Celestial Sigil.',
     drops: ['Meowmere', 'Star Wrath', 'Terrarian', 'S.D.M.G.', 'Last Prism', 'Rainbow Crystal Staff', 'Lunar Portal Staff', 'Moon Lord Mask'],
-    blurb: 'The final boss. Three eye targets, then the core. One of the most punishing DPS checks in the game.',
+    blurb: 'Summoned once all four Celestial Pillars fall, or with a Celestial Sigil. Two eyes and a forehead eye open in turn, and the core is only exposed once all three are destroyed.',
     color: '#6B8FFF',
   },
 ];
