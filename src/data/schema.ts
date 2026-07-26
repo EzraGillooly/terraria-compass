@@ -33,6 +33,8 @@ export const Item = z.object({
    * trade once, instead of every entry opening with the same disclaimer.
    */
   singlePiece: z.boolean().optional(),
+  /** total defense for this class's configuration of the set */
+  defense: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
   /** crafting station, e.g. "Mythril Anvil or Orichalcum Anvil" */

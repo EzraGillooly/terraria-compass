@@ -1018,7 +1018,7 @@
         "slot": "armor",
         "icon": "armor/titanium-armor-melee.png",
         "source": "Crafted from Titanium Bars",
-        "why": "Attacking raises a barrier of titanium shards that absorbs damage. More defensive than Adamantite, which boosts offense instead.",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
         "tags": [
           "hardmode"
         ],
@@ -1063,7 +1063,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 49
       },
       {
         "id": "adamantite-armor",
@@ -1116,7 +1117,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 50
       }
     ],
     "accessories": [
@@ -1977,7 +1979,7 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Adamantite Helmet",
+            "piece": "Adamantite Mask",
             "materials": [
               {
                 "name": "Adamantite Bar",
@@ -2009,7 +2011,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 36
       },
       {
         "id": "titanium-armor",
@@ -2017,7 +2020,7 @@
         "slot": "armor",
         "icon": "armor/titanium-armor-ranger.png",
         "source": "Crafted from Titanium Bars",
-        "why": "Attacking raises a barrier of titanium shards that absorbs damage. More defensive than Adamantite, which boosts offense instead.",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
         "tags": [
           "hardmode"
         ],
@@ -2030,7 +2033,7 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Titanium Mask",
+            "piece": "Titanium Helmet",
             "materials": [
               {
                 "name": "Titanium Bar",
@@ -2062,7 +2065,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 34
       }
     ],
     "accessories": [
@@ -3237,7 +3241,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 26
       }
     ],
     "accessories": [
@@ -4003,7 +4008,8 @@
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "defense": 20
       },
       {
         "id": "titanium-mask",
@@ -4011,7 +4017,7 @@
         "slot": "armor",
         "icon": "armor/titanium-mask.png",
         "source": "Crafted from Titanium Bars",
-        "why": "23 defense and 9% melee speed, which also speeds up whips. Worth borrowing when a summoner set leaves you too fragile.",
+        "why": "One piece, not a set: 23 defense and 9% melee speed, which also speeds up whips. Worth borrowing when a summoner set leaves you too fragile.",
         "tags": [
           "hardmode"
         ],

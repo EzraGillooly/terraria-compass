@@ -519,39 +519,6 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Chlorophyte Greaves",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Headgear",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Helmet",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Chlorophyte Mask",
             "materials": [
               {
@@ -574,17 +541,18 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Chlorophyte Visor",
+            "piece": "Chlorophyte Greaves",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
-                "qty": 12,
+                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 51
       },
       {
         "id": "turtle-armor",
@@ -592,7 +560,7 @@
         "slot": "armor",
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "Attackers take double damage and you take 15% less. Higher defense than Chlorophyte, lower damage.",
+        "why": "Attackers take double damage and you take 15% less damage.",
         "tags": [
           "hardmode"
         ],
@@ -647,7 +615,14 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Turtle Helmet",
+          "Turtle Scale Mail",
+          "Turtle Leggings"
+        ],
+        "defense": 65,
+        "headpiece": "Turtle Helmet"
       }
     ],
     "accessories": [
@@ -1431,40 +1406,7 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Chlorophyte Greaves",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Headgear",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Chlorophyte Helmet",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Mask",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
@@ -1486,17 +1428,18 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Chlorophyte Visor",
+            "piece": "Chlorophyte Greaves",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
-                "qty": 12,
+                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 44
       },
       {
         "id": "hallowed-armor",
@@ -1512,51 +1455,7 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor",
         "pieceRecipes": [
           {
-            "piece": "Hallowed Greaves",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Headgear",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Hallowed Helmet",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Hood",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Mask",
             "materials": [
               {
                 "name": "Hallowed Bar",
@@ -1576,8 +1475,26 @@
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Hallowed Greaves",
+            "materials": [
+              {
+                "name": "Hallowed Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Hallowed Helmet",
+          "Hallowed Plate Mail",
+          "Hallowed Greaves"
+        ],
+        "headpiece": "Hallowed Helmet",
+        "defense": 35
       }
     ],
     "accessories": [
@@ -2405,40 +2322,7 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Chlorophyte Greaves",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Chlorophyte Headgear",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Helmet",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Mask",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
@@ -2460,17 +2344,18 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Chlorophyte Visor",
+            "piece": "Chlorophyte Greaves",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
-                "qty": 12,
+                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 38
       },
       {
         "id": "hallowed-armor",
@@ -2486,51 +2371,7 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor",
         "pieceRecipes": [
           {
-            "piece": "Hallowed Greaves",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Hallowed Headgear",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Helmet",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Hood",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Mask",
             "materials": [
               {
                 "name": "Hallowed Bar",
@@ -2550,8 +2391,26 @@
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Hallowed Greaves",
+            "materials": [
+              {
+                "name": "Hallowed Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Hallowed Headgear",
+          "Hallowed Plate Mail",
+          "Hallowed Greaves"
+        ],
+        "headpiece": "Hallowed Headgear",
+        "defense": 31
       },
       {
         "id": "chlorophyte-visor",
@@ -2559,7 +2418,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-visor.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
+        "why": "One piece, not a set: 33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
         "tags": [
           "hardmode"
         ],
@@ -2581,7 +2440,7 @@
         "slot": "armor",
         "icon": "armor/apprentices-trousers.png",
         "source": "Dropped by the Old One's Army, tier 2",
-        "why": "10 defense, 10% summon damage, and 20% magic critical strike chance and movement speed.",
+        "why": "One piece, not a set: 10 defense, 10% summon damage, and 20% magic critical strike chance and movement speed.",
         "tags": [
           "hardmode"
         ],
@@ -3389,7 +3248,8 @@
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "defense": 20
       },
       {
         "id": "hallowed-armor",
@@ -3405,51 +3265,7 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Armor",
         "pieceRecipes": [
           {
-            "piece": "Hallowed Greaves",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Headgear",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Helmet",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Hallowed Hood",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Mask",
             "materials": [
               {
                 "name": "Hallowed Bar",
@@ -3469,8 +3285,26 @@
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Hallowed Greaves",
+            "materials": [
+              {
+                "name": "Hallowed Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Hallowed Hood",
+          "Hallowed Plate Mail",
+          "Hallowed Greaves"
+        ],
+        "headpiece": "Hallowed Hood",
+        "defense": 27
       },
       {
         "id": "monks-bushy-brow-bald-cap",
@@ -3478,7 +3312,7 @@
         "slot": "armor",
         "icon": "armor/monks-bald-cap.png",
         "source": "Dropped by the Old One's Army, tier 2",
-        "why": "8 defense, 1 sentry slot and 20% melee speed, which also speeds up whips.",
+        "why": "One piece, not a set: 8 defense, 1 sentry slot and 20% melee speed, which also speeds up whips.",
         "tags": [
           "hardmode"
         ],

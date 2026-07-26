@@ -335,7 +335,8 @@
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "defense": 25
       }
     ],
     "accessories": [
@@ -1050,7 +1051,9 @@
             ],
             "station": "Work Bench"
           }
-        ]
+        ],
+        "defense": 19,
+        "headpiece": "Necro Helmet"
       }
     ],
     "accessories": [
@@ -1752,7 +1755,8 @@
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "defense": 16
       },
       {
         "id": "jungle-armor",
@@ -1777,7 +1781,7 @@
             "station": "Iron Anvil or Lead Anvil"
           },
           {
-            "piece": "Jungle Shirt",
+            "piece": "Desktop version",
             "materials": [
               {
                 "name": "Jungle Spores",
@@ -1808,7 +1812,14 @@
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Jungle Hat",
+          "Desktop version",
+          "Jungle Pants"
+        ],
+        "defense": 17,
+        "headpiece": "Jungle Hat"
       },
       {
         "id": "wizard-set",
@@ -1819,7 +1830,11 @@
         "why": "60 extra maximum mana and 10% magic critical strike chance. Any leg armor keeps the bonus, so it stacks with Jungle or Meteor leggings.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wizard_set"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wizard_set",
+        "pieces": [
+          "Wizard Hat or Magic Hat",
+          "Any gem robe or Mystic Robe"
+        ]
       }
     ],
     "accessories": [
@@ -2634,7 +2649,8 @@
             ],
             "station": "Hellforge"
           }
-        ]
+        ],
+        "defense": 15
       },
       {
         "id": "bee-armor",
@@ -2642,11 +2658,22 @@
         "slot": "armor",
         "icon": "armor/bee-armor.png",
         "source": "Crafted from Bee Wax",
-        "why": "Summon damage +10%. Less defense than Obsidian, and no whip bonus.",
+        "why": "Summon damage +10%. No whip bonus, so it suits minion-led builds.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor",
         "pieceRecipes": [
+          {
+            "piece": "Bee Headgear",
+            "materials": [
+              {
+                "name": "Bee Wax",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
           {
             "piece": "Bee Breastplate",
             "materials": [
@@ -2668,19 +2695,14 @@
               }
             ],
             "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Bee Headgear",
-            "materials": [
-              {
-                "name": "Bee Wax",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Bee Headgear",
+          "Bee Breastplate",
+          "Bee Greaves"
+        ],
+        "defense": 13
       }
     ],
     "accessories": [

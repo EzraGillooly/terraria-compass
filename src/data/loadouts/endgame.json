@@ -331,7 +331,8 @@
             ],
             "station": "Ancient Manipulator"
           }
-        ]
+        ],
+        "defense": 78
       }
     ],
     "accessories": [
@@ -1092,7 +1093,8 @@
             ],
             "station": "Ancient Manipulator"
           }
-        ]
+        ],
+        "defense": 62
       }
     ],
     "accessories": [
@@ -2005,7 +2007,8 @@
             ],
             "station": "Ancient Manipulator"
           }
-        ]
+        ],
+        "defense": 46
       },
       {
         "id": "spectre-armor",
@@ -2013,7 +2016,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
-        "why": "Still on-tier with Nebula. The Mask raises damage, and the Hood converts 40% of magic damage into healing, which Nebula has no answer to.",
+        "why": "Still on-tier at this point. The Mask raises damage, and the Hood variant converts magic damage into healing instead.",
         "tags": [
           "hardmode"
         ],
@@ -2021,33 +2024,11 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Armor",
         "pieceRecipes": [
           {
-            "piece": "Spectre Hood",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Spectre Mask",
             "materials": [
               {
                 "name": "Spectre Bar",
                 "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
             ],
@@ -2063,8 +2044,26 @@
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Pants",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
+        ],
+        "headpiece": "Spectre Mask",
+        "defense": 42
       }
     ],
     "accessories": [
@@ -2838,7 +2837,7 @@
         "slot": "armor",
         "icon": "armor/stardust-armor.png",
         "source": "Crafted from Stardust Fragments and Luminite Bars",
-        "why": "A stardust guardian follows you and attacks nearby enemies. The lowest defense of the Lunar sets.",
+        "why": "A stardust guardian follows you and attacks nearby enemies.",
         "tags": [
           "hardmode"
         ],
@@ -2897,7 +2896,8 @@
             ],
             "station": "Ancient Manipulator"
           }
-        ]
+        ],
+        "defense": 38
       },
       {
         "id": "valhalla-knight-armor",
@@ -2905,12 +2905,18 @@
         "slot": "armor",
         "icon": "armor/valhalla-knight-armor.png",
         "source": "Dropped by the Old One's Army, tier 3",
-        "why": "Much higher defense than Stardust armor plus heavy life regeneration, in exchange for the Stardust Guardian and minion slots.",
+        "why": "Heavy life regeneration and sentry slots. Trades the Stardust Guardian and minion slots for staying power.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Valhalla_Knight_Armor"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Valhalla_Knight_Armor",
+        "pieces": [
+          "Valhalla Knight's Helm",
+          "Valhalla Knight's Breastplate",
+          "Valhalla Knight's Greaves"
+        ],
+        "defense": 68
       }
     ],
     "accessories": [

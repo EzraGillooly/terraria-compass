@@ -348,7 +348,7 @@
         "slot": "armor",
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "Attackers take double damage and you take 15% less. Higher defense than Chlorophyte, lower damage.",
+        "why": "Attackers take double damage and you take 15% less damage.",
         "tags": [
           "hardmode"
         ],
@@ -407,7 +407,9 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 65,
+        "headpiece": "Turtle Helmet"
       },
       {
         "id": "chlorophyte-armor",
@@ -422,39 +424,6 @@
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Armor",
         "pieceRecipes": [
-          {
-            "piece": "Chlorophyte Greaves",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Headgear",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Chlorophyte Helmet",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
           {
             "piece": "Chlorophyte Mask",
             "materials": [
@@ -478,17 +447,24 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Chlorophyte Visor",
+            "piece": "Chlorophyte Greaves",
             "materials": [
               {
                 "name": "Chlorophyte Bar",
-                "qty": 12,
+                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "pieces": [
+          "Chlorophyte Mask",
+          "Chlorophyte Plate Mail",
+          "Chlorophyte Greaves"
+        ],
+        "headpiece": "Chlorophyte Mask",
+        "defense": 51
       }
     ],
     "accessories": [
@@ -1376,7 +1352,9 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 51,
+        "headpiece": "Shroomite Headgear"
       }
     ],
     "accessories": [
@@ -2235,7 +2213,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
-        "why": "The Mask converts magic damage into damage; the Hood converts 40% of it into healing.",
+        "why": "The Mask converts a share of magic damage into extra damage.",
         "tags": [
           "hardmode"
         ],
@@ -2247,33 +2225,11 @@
         ],
         "pieceRecipes": [
           {
-            "piece": "Spectre Hood",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
             "piece": "Spectre Mask",
             "materials": [
               {
                 "name": "Spectre Bar",
                 "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
             ],
@@ -2289,8 +2245,21 @@
               }
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Spectre Pants",
+            "materials": [
+              {
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "headpiece": "Spectre Mask",
+        "defense": 42
       },
       {
         "id": "spectre-armor-hood",
@@ -2298,7 +2267,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted from Spectre Bars",
-        "why": "The Hood variant: magic damage heals you instead of hitting harder. For staying alive, not for DPS.",
+        "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
         "tags": [
           "hardmode"
         ],
@@ -2342,7 +2311,8 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
-        ]
+        ],
+        "defense": 30
       },
       {
         "id": "chlorophyte-visor",
@@ -2350,7 +2320,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-visor.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
+        "why": "One piece, not a set: 33 defense, 16% summon damage, 3 minion slots and 5% damage of every type. The minion slots add damage to any build, not just summoners.",
         "tags": [
           "hardmode"
         ],
@@ -3177,7 +3147,8 @@
           "Tiki Mask",
           "Tiki Shirt",
           "Tiki Pants"
-        ]
+        ],
+        "defense": 35
       },
       {
         "id": "spooky-armor",
@@ -3185,7 +3156,7 @@
         "slot": "armor",
         "icon": "armor/spooky-armor.png",
         "source": "Crafted from Spooky Wood",
-        "why": "Summon damage +25%, the highest before Lunar gear. Lower defense than Tiki.",
+        "why": "Summon damage +25%, the highest before Lunar gear.",
         "tags": [
           "hardmode"
         ],
@@ -3193,22 +3164,22 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
         "pieceRecipes": [
           {
-            "piece": "Spooky Breastplate",
+            "piece": "Spooky Helmet",
             "materials": [
               {
                 "name": "Spooky Wood",
-                "qty": 300,
+                "qty": 200,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Wood"
               }
             ],
             "station": "Work Bench"
           },
           {
-            "piece": "Spooky Helmet",
+            "piece": "Spooky Breastplate",
             "materials": [
               {
                 "name": "Spooky Wood",
-                "qty": 200,
+                "qty": 300,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Wood"
               }
             ],
@@ -3225,7 +3196,13 @@
             ],
             "station": "Work Bench"
           }
-        ]
+        ],
+        "pieces": [
+          "Spooky Helmet",
+          "Spooky Breastplate",
+          "Spooky Leggings"
+        ],
+        "defense": 30
       }
     ],
     "accessories": [
