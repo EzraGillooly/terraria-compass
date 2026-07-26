@@ -654,29 +654,6 @@ export function Loadouts() {
             )}
           </div>
 
-          {/* Reforge - hugs the weapons panel */}
-          <div className={`${styles.invPanel} ${styles.reforgePanel} pixel-frame`}>
-            <div className={styles.reforgeLabel}>Accessory reforges</div>
-            <p className={styles.reforgeIntro}>
-              Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
-              to Menacing or Lucky once you can dodge reliably.
-            </p>
-            <ul className={styles.reforgeList}>
-              <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
-              <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
-              <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
-              <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
-            </ul>
-            <p className={styles.reforgeMore}>
-              <a
-                href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Menacing vs Lucky vs Warding on the wiki
-              </a>
-            </p>
-          </div>
           </div>
 
           {/* Right column: armor + (buffs · accessories) */}
@@ -847,6 +824,28 @@ export function Loadouts() {
               )}
             </div>
           )}
+          <div className={styles.reforgeBlock}>
+          <div className={styles.reforgeLabel}>Accessory reforges</div>
+          <p className={styles.reforgeIntro}>
+            Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
+            to Menacing or Lucky once you can dodge reliably.
+          </p>
+          <ul className={styles.reforgeList}>
+            <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
+            <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
+            <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
+            <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
+          </ul>
+          <p className={styles.reforgeMore}>
+            <a
+              href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Menacing vs Lucky vs Warding on the wiki
+            </a>
+          </p>
+          </div>
           <AccLegend />
         </div>
       </section>

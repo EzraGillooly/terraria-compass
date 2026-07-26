@@ -88,9 +88,9 @@
   padding: 18px;
   color: #E9F0FF;
 }
-/* Weapons + reforge hug into one continuous container */
-.weaponsPanel { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: 0; }
-.reforgePanel { border-top-left-radius: 0; border-top-right-radius: 0; }
+/* Reforging moved into the accessory card, so the weapons panel is a complete
+   panel again rather than the top half of a hugged pair. */
+.reforgeBlock { margin-top: 16px; padding-top: 14px; border-top: 1px dashed rgba(255,255,255,.14); }
 /* Buffs sit next to the compact accessory box */
 .buffsPanel { min-width: 0; }
 .tlabel { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin-bottom: 14px; }
