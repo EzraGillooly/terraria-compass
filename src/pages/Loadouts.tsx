@@ -329,7 +329,7 @@ export function Loadouts() {
 
   // Only offer subclasses that actually have a weapon this phase - e.g. there are
   // no Launchers before Hardmode. A stored subclass that isn't available here (or
-  // no longer exists at all) falls back to "All" rather than showing an empty list.
+  // no longer exists at all) falls back to "Overview" rather than showing an empty list.
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
@@ -354,7 +354,8 @@ export function Loadouts() {
    */
   const ranked = safeLoadout.weapons.some((w) => w.why);
 
-  // "All" is an overview: just the best in slot from each subclass. Picking a
+  // "Overview" shows one pick per subclass rather than every weapon, which is
+  // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
   const filteredBest = inScope.filter((w) => w.tier === 'best');
   const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
@@ -470,7 +471,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  All
+                  Overview
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button
@@ -638,7 +639,7 @@ export function Loadouts() {
                         <img
                           src={img.local} alt=""
                           className={`${styles.ammoImg} pixel-img`}
-                          width="26" height="26" loading="lazy"
+                          loading="lazy"
                           onError={makeErrorHandler(img.wiki, FALLBACK_ICON)}
                         />
                       </div>
