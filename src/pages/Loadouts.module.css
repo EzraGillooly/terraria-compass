@@ -146,12 +146,13 @@
 .armorEntry:hover .armorName { color: var(--warm); }
 .armorName { font-weight: 800; font-size: 14px; color: #EAF0FF; }
 /* class-specific headpiece for sets that have one per damage type */
-.armorHeadTag { display: inline-flex; align-items: center; font-weight: 800; font-size: 9px; text-transform: uppercase; letter-spacing: .06em; color: #12283B; padding: 4px 7px 2px; line-height: 1; --px-fill: #9FE0C0; --px-border: #9FE0C0; --px-u: 1px; }
 /* the three pieces that make up the set */
 .armorPieces { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 6px; }
 .armorPiece { display: inline-flex; align-items: center; font-weight: 700; font-size: 10px; color: #C6D3EC; padding: 4px 8px 2px; line-height: 1; --px-fill: rgba(255,255,255,.07); --px-border: rgba(150,180,230,.25); --px-u: 1px; }
 /* the class-specific headpiece is highlighted within the set */
 .armorPieceHead { color: #12283B; --px-fill: #9FE0C0; --px-border: #9FE0C0; }
+/* What the class's own headpiece gives, for sets whose bonus depends on it. */
+.armorHeadBonus { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 5px; }
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 /* Marks an armour row that is a single piece rather than a set. The trade it
    implies is explained once below the list, not on every row. */

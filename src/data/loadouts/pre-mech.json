@@ -38,7 +38,7 @@
         "name": "Amarok",
         "slot": "weapon",
         "icon": "items/amarok.png",
-        "source": "1/300 drop from Snow biome enemies in Hardmode",
+        "source": "Dropped by Snow biome enemies in Hardmode",
         "why": "Hardmode Snow-biome drop with a high Frostburn chance.",
         "tags": [],
         "topPick": false,
@@ -98,7 +98,7 @@
         "name": "Hel-Fire",
         "slot": "weapon",
         "icon": "items/hel-fire.png",
-        "source": "1/400 drop from Underworld and lower-Cavern enemies in Hardmode",
+        "source": "Dropped by Underworld and lower-Cavern enemies in Hardmode",
         "why": "Hardmode Underworld/Cavern drop that inflicts the Hellfire debuff.",
         "tags": [],
         "topPick": false,
@@ -223,7 +223,7 @@
         "name": "Flairon",
         "slot": "weapon",
         "icon": "items/flairon.png",
-        "source": "Dropped by Duke Fishron (1/6)",
+        "source": "Dropped by Duke Fishron",
         "why": "Hardmode flail from Duke Fishron, who requires no boss prerequisite to summon.",
         "tags": [],
         "topPick": false,
@@ -936,7 +936,7 @@
         "name": "Cascade",
         "slot": "weapon",
         "icon": "items/cascade.png",
-        "source": "1/400 drop from Underworld enemies after Skeletron is defeated (pre-Hardmode only)",
+        "source": "Dropped by Underworld enemies after Skeletron is defeated (pre-Hardmode only)",
         "why": "Post-Skeletron Underworld drop that can inflict On Fire!.",
         "tags": [
           "carry-over"
@@ -1064,7 +1064,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 49
+        "defense": 49,
+        "headpieceBonus": "+16% melee damage, +15% melee critical strike chance and +9% melee speed."
       },
       {
         "id": "adamantite-armor",
@@ -1072,7 +1073,7 @@
         "slot": "armor",
         "icon": "armor/adamantite-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Set bonus depends on the headpiece: 20% melee and movement speed, 25% chance to save ammo, or 19% reduced mana cost.",
+        "why": "20% increased melee and movement speed.",
         "tags": [
           "hardmode"
         ],
@@ -1118,7 +1119,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 50
+        "defense": 50,
+        "headpieceBonus": "+22% melee damage, +14% melee critical strike chance, +20% melee speed and +25% movement speed."
       }
     ],
     "accessories": [
@@ -1143,7 +1145,7 @@
         "name": "Fairy Wings",
         "slot": "accessory",
         "icon": "accessories/fairy-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -1463,21 +1465,6 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "good"
           }
         ]
       },
@@ -1535,7 +1522,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-star-veil",
@@ -2091,7 +2079,7 @@
         "slot": "armor",
         "icon": "armor/adamantite-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Set bonus depends on the headpiece: 20% melee and movement speed, 25% chance to save ammo, or 19% reduced mana cost.",
+        "why": "25% chance to save ammo.",
         "tags": [
           "hardmode"
         ],
@@ -2137,7 +2125,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 36
+        "defense": 36,
+        "headpieceBonus": "+22% ranged damage, +17% ranged critical strike chance, +25% ammo conservation and +5% movement speed."
       },
       {
         "id": "titanium-armor",
@@ -2191,7 +2180,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 34
+        "defense": 34,
+        "headpieceBonus": "+23% ranged damage and +13% ranged critical strike chance."
       }
     ],
     "accessories": [
@@ -2230,7 +2220,7 @@
         "name": "Fairy Wings",
         "slot": "accessory",
         "icon": "accessories/fairy-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -2599,21 +2589,6 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "good"
           }
         ]
       },
@@ -2671,7 +2646,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-star-veil",
@@ -3080,7 +3056,7 @@
         "name": "Clinger Staff",
         "slot": "weapon",
         "icon": "items/clinger-staff.png",
-        "source": "Dropped by Corrupt Mimics (1/5) in the Hardmode Underground Corruption",
+        "source": "Dropped by Corrupt Mimics in the Hardmode Underground Corruption",
         "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
         "tags": [],
         "topPick": true,
@@ -3095,7 +3071,7 @@
         "name": "Nimbus Rod",
         "slot": "weapon",
         "icon": "items/nimbus-rod.png",
-        "source": "Dropped by Angry Nimbus (1/15) during rain in Hardmode",
+        "source": "Dropped by Angry Nimbus during rain in Hardmode",
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [],
         "topPick": false,
@@ -3384,7 +3360,7 @@
         "name": "Crimson Rod",
         "slot": "weapon",
         "icon": "items/crimson-rod.png",
-        "source": "Destroyed from Crimson Hearts (1/5), or fished in Crimson/Hematic Crates",
+        "source": "Destroyed from Crimson Hearts, or fished in Crimson/Hematic Crates",
         "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
         "tags": [
           "carry-over"
@@ -3544,7 +3520,7 @@
         "name": "Fairy Wings",
         "slot": "accessory",
         "icon": "accessories/fairy-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -3805,21 +3781,6 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "good"
           }
         ]
       },
@@ -3877,7 +3838,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-star-veil",
@@ -4399,7 +4361,7 @@
         "name": "Fairy Wings",
         "slot": "accessory",
         "icon": "accessories/fairy-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -4725,21 +4687,6 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "good"
           }
         ]
       },
@@ -4797,7 +4744,8 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-star-veil",

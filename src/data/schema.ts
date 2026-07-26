@@ -33,6 +33,12 @@ export const Item = z.object({
    * trade once, instead of every entry opening with the same disclaimer.
    */
   singlePiece: z.boolean().optional(),
+  /**
+   * What this class's headpiece actually gives, for sets whose bonus changes
+   * with the headpiece. Reciting all three at once told the reader about two
+   * classes they are not playing.
+   */
+  headpieceBonus: z.string().optional(),
   /** total defense for this class's configuration of the set */
   defense: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
@@ -75,6 +81,12 @@ export const Item = z.object({
    * "Wings" - so substitution has to skip it.
    */
   isGroup: z.boolean().optional(),
+  /**
+   * The source page footnotes this as "excessively tedious to obtain". Worth
+   * listing as an option, but it should never be auto-equipped over something
+   * a player can realistically get.
+   */
+  tedious: z.boolean().optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
   tags: z.array(z.string()).default([]),

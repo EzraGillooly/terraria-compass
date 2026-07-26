@@ -30,14 +30,15 @@
         "subclass": "yoyo",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Developer_items",
-        "tier": "best"
+        "tier": "best",
+        "expertOnly": true
       },
       {
         "id": "yelets",
         "name": "Yelets",
         "slot": "weapon",
         "icon": "items/yelets.png",
-        "source": "1/200 drop from Hardmode Jungle enemies after any mechanical boss is defeated",
+        "source": "Dropped by Hardmode Jungle enemies after any mechanical boss is defeated",
         "why": "Hardmode Jungle drop available after a mechanical boss.",
         "tags": [],
         "topPick": false,
@@ -552,7 +553,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 51
+        "defense": 51,
+        "headpieceBonus": "+21% melee damage, +21% melee critical strike chance and +5% damage reduction."
       },
       {
         "id": "turtle-armor",
@@ -699,7 +701,7 @@
         "name": "Bee Wings",
         "slot": "accessory",
         "icon": "accessories/bee-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -1555,7 +1557,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 44
+        "defense": 44,
+        "headpieceBonus": "+21% ranged damage, +15% critical strike chance and +20% ammo conservation."
       },
       {
         "id": "hallowed-armor",
@@ -1610,7 +1613,8 @@
           "Hallowed Greaves"
         ],
         "headpiece": "Hallowed Helmet",
-        "defense": 35
+        "defense": 35,
+        "headpieceBonus": "+22% ranged damage and +15% ranged critical strike chance."
       }
     ],
     "accessories": [
@@ -1666,7 +1670,7 @@
         "name": "Bee Wings",
         "slot": "accessory",
         "icon": "accessories/bee-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -2471,7 +2475,7 @@
         "name": "Clinger Staff",
         "slot": "weapon",
         "icon": "items/clinger-staff.png",
-        "source": "Dropped by Corrupt Mimics (1/5) in the Hardmode Underground Corruption",
+        "source": "Dropped by Corrupt Mimics in the Hardmode Underground Corruption",
         "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
         "tags": [
           "carry-over"
@@ -2488,7 +2492,7 @@
         "name": "Nimbus Rod",
         "slot": "weapon",
         "icon": "items/nimbus-rod.png",
-        "source": "Dropped by Angry Nimbus (1/15) during rain in Hardmode",
+        "source": "Dropped by Angry Nimbus during rain in Hardmode",
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [
           "carry-over"
@@ -2588,7 +2592,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 38
+        "defense": 38,
+        "headpieceBonus": "+21% magic damage, +15% critical strike chance, +80 maximum mana and +17% reduced mana cost."
       },
       {
         "id": "hallowed-armor",
@@ -2643,7 +2648,8 @@
           "Hallowed Greaves"
         ],
         "headpiece": "Hallowed Headgear",
-        "defense": 31
+        "defense": 31,
+        "headpieceBonus": "+19% magic damage, +19% magic critical strike chance and +100 maximum mana."
       },
       {
         "id": "chlorophyte-visor",
@@ -2758,7 +2764,7 @@
         "name": "Bee Wings",
         "slot": "accessory",
         "icon": "accessories/bee-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -3664,7 +3670,8 @@
           "Hallowed Greaves"
         ],
         "headpiece": "Hallowed Hood",
-        "defense": 27
+        "defense": 27,
+        "headpieceBonus": "+17% summon damage, +7% critical strike chance and +3 minion slots."
       },
       {
         "id": "monks-bushy-brow-bald-cap",
@@ -3717,7 +3724,7 @@
         "name": "Bee Wings",
         "slot": "accessory",
         "icon": "accessories/bee-wings.png",
-        "source": "",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,

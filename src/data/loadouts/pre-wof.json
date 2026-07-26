@@ -45,7 +45,7 @@
         "name": "Cascade",
         "slot": "weapon",
         "icon": "items/cascade.png",
-        "source": "1/400 drop from Underworld enemies after Skeletron is defeated (pre-Hardmode only)",
+        "source": "Dropped by Underworld enemies after Skeletron is defeated (pre-Hardmode only)",
         "why": "Post-Skeletron Underworld drop that can inflict On Fire!.",
         "tags": [],
         "topPick": true,
@@ -59,7 +59,7 @@
         "name": "Combat Wrench",
         "slot": "weapon",
         "icon": "items/combat-wrench.png",
-        "source": "Dropped by the Mechanic NPC (1/8), obtainable after Skeletron",
+        "source": "Dropped by the Mechanic NPC, obtainable after Skeletron",
         "why": "Piercing boomerang dropped by the Mechanic, available after Skeletron.",
         "tags": [],
         "topPick": false,
@@ -368,33 +368,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
         "id": "shield-of-cthulhu",
         "name": "Shield of Cthulhu",
         "slot": "accessory",
@@ -435,7 +408,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -445,6 +418,36 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -568,7 +571,7 @@
         "name": "Sharpening Station",
         "slot": "buff",
         "icon": "potions/sharpening-station.png",
-        "source": "Placed station buff",
+        "source": "Found in Underground Cabins in the Underground Jungle",
         "why": "The armor penetration bonus is one of the best class-specific pre-Hardmode melee boosts.",
         "tags": [],
         "topPick": false
@@ -634,36 +637,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
@@ -676,7 +649,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -691,7 +665,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-ram-rune",
@@ -724,21 +699,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
             "quality": "good",
             "isGroup": true
-          },
-          {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
-            "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
           },
           {
             "id": "pool-panic-necklace",
@@ -1178,33 +1138,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
         "id": "shield-of-cthulhu",
         "name": "Shield of Cthulhu",
         "slot": "accessory",
@@ -1245,7 +1178,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -1255,6 +1188,36 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -1428,36 +1391,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
@@ -1470,7 +1403,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -1485,7 +1419,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-ram-rune",
@@ -1518,21 +1453,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
             "quality": "good",
             "isGroup": true
-          },
-          {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
-            "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
           },
           {
             "id": "pool-panic-necklace",
@@ -1824,7 +1744,7 @@
         "name": "Crimson Rod",
         "slot": "weapon",
         "icon": "items/crimson-rod.png",
-        "source": "Destroyed from Crimson Hearts (1/5), or fished in Crimson/Hematic Crates",
+        "source": "Destroyed from Crimson Hearts, or fished in Crimson/Hematic Crates",
         "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
         "tags": [
           "carry-over"
@@ -2070,26 +1990,11 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-amphibian-boots",
-        "name": "Amphibian Boots",
-        "slot": "accessory",
-        "icon": "accessories/amphibian-boots.png",
-        "source": "",
-        "why": "Combines the effects of sprinting boots with the Frog Leg.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-        "quality": "great"
-      },
-      {
         "id": "pool-shark-tooth-necklace",
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -2099,6 +2004,36 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -2216,21 +2151,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-shield-of-cthulhu",
             "name": "Shield of Cthulhu",
             "slot": "accessory",
@@ -2261,7 +2181,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2276,7 +2197,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-ram-rune",
@@ -2309,36 +2231,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
             "quality": "good",
             "isGroup": true
-          },
-          {
-            "id": "pool-spectre-boots",
-            "name": "Spectre Boots",
-            "slot": "accessory",
-            "icon": "accessories/spectre-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots",
-            "quality": "good"
-          },
-          {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
-            "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
           },
           {
             "id": "pool-panic-necklace",
@@ -2960,33 +2852,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
         "id": "feral-claws",
         "name": "Feral Claws",
         "slot": "accessory",
@@ -3009,7 +2874,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -3019,6 +2884,36 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good"
       }
     ],
     "buffs": [
@@ -3106,36 +3001,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-shield-of-cthulhu",
             "name": "Shield of Cthulhu",
             "slot": "accessory",
@@ -3166,7 +3031,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3181,7 +3047,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-ram-rune",
@@ -3214,21 +3081,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
             "quality": "good",
             "isGroup": true
-          },
-          {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
-            "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
           },
           {
             "id": "pool-panic-necklace",

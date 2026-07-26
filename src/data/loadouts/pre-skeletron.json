@@ -437,7 +437,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -467,33 +467,6 @@
         "quality": "great",
         "expertOnly": true,
         "dropRate": "100%"
-      },
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       },
       {
         "id": "feral-claws",
@@ -527,6 +500,21 @@
         ],
         "quality": "good",
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -622,7 +610,7 @@
         "name": "Sharpening Station",
         "slot": "buff",
         "icon": "potions/sharpening-station.png",
-        "source": "Placed station buff",
+        "source": "Found in Underground Cabins in the Underground Jungle",
         "why": "The armor penetration bonus is one of the best class-specific pre-Hardmode melee boosts.",
         "tags": [],
         "topPick": false
@@ -688,36 +676,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-extra-jump",
             "name": "Extra jump",
             "slot": "accessory",
@@ -732,21 +690,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
             "quality": "great",
             "isGroup": true
-          },
-          {
-            "id": "pool-rocket-boots",
-            "name": "Rocket Boots",
-            "slot": "accessory",
-            "icon": "accessories/rocket-boots.png",
-            "source": "",
-            "why": "Allows the player to quickly vertically ascend.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
-            "quality": "good"
           },
           {
             "id": "pool-balloons",
@@ -777,7 +720,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -792,7 +736,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-magiluminescence",
@@ -1261,7 +1206,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -1270,33 +1215,6 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great"
-      },
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       },
       {
         "id": "shield-of-cthulhu",
@@ -1347,6 +1265,21 @@
         ],
         "quality": "good",
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -1548,36 +1481,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-extra-jump",
             "name": "Extra jump",
             "slot": "accessory",
@@ -1592,21 +1495,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
             "quality": "great",
             "isGroup": true
-          },
-          {
-            "id": "pool-rocket-boots",
-            "name": "Rocket Boots",
-            "slot": "accessory",
-            "icon": "accessories/rocket-boots.png",
-            "source": "",
-            "why": "Allows the player to quickly vertically ascend.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
-            "quality": "good"
           },
           {
             "id": "pool-balloons",
@@ -1637,7 +1525,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -1652,7 +1541,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-magiluminescence",
@@ -1798,7 +1688,7 @@
         "name": "Bee Gun",
         "slot": "weapon",
         "icon": "items/bee-gun.png",
-        "source": "Dropped by Queen Bee (1/3 chance)",
+        "source": "Dropped by Queen Beechance)",
         "why": "Fires several homing bee projectiles per shot.",
         "tags": [],
         "topPick": false,
@@ -1936,7 +1826,7 @@
         "name": "Crimson Rod",
         "slot": "weapon",
         "icon": "items/crimson-rod.png",
-        "source": "Destroyed from Crimson Hearts (1/5), or fished in Crimson/Hematic Crates",
+        "source": "Destroyed from Crimson Hearts, or fished in Crimson/Hematic Crates",
         "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
         "tags": [
           "carry-over"
@@ -2164,7 +2054,7 @@
         "name": "Celestial Cuffs",
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
-        "source": "",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily.",
         "tags": [],
         "topPick": false,
@@ -2183,7 +2073,7 @@
         "name": "Band of Regeneration",
         "slot": "accessory",
         "icon": "accessories/band-of-regeneration.png",
-        "source": "",
+        "source": "Found in Gold Chests underground, or in Living Mahogany Trees",
         "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
         "tags": [],
         "topPick": false,
@@ -2192,33 +2082,6 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
         "quality": "good"
-      },
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       },
       {
         "id": "band-of-starpower",
@@ -2237,6 +2100,21 @@
           "corruption"
         ],
         "dropRate": "20%"
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -2380,36 +2258,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-extra-jump",
             "name": "Extra jump",
             "slot": "accessory",
@@ -2424,21 +2272,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
             "quality": "great",
             "isGroup": true
-          },
-          {
-            "id": "pool-rocket-boots",
-            "name": "Rocket Boots",
-            "slot": "accessory",
-            "icon": "accessories/rocket-boots.png",
-            "source": "",
-            "why": "Allows the player to quickly vertically ascend.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
-            "quality": "good"
           },
           {
             "id": "pool-balloons",
@@ -2487,7 +2320,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2502,7 +2336,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-magiluminescence",
@@ -3162,7 +2997,7 @@
         "name": "Band of Regeneration",
         "slot": "accessory",
         "icon": "accessories/band-of-regeneration.png",
-        "source": "",
+        "source": "Found in Gold Chests underground, or in Living Mahogany Trees",
         "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
         "tags": [],
         "topPick": false,
@@ -3185,33 +3020,6 @@
           "summon"
         ],
         "quality": "great"
-      },
-      {
-        "id": "spectre-boots",
-        "name": "Spectre Boots",
-        "slot": "accessory",
-        "icon": "accessories/spectre-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       },
       {
         "id": "shield-of-cthulhu",
@@ -3251,6 +3059,21 @@
           "whips"
         ],
         "dropRate": "19/100 (19%)"
+      },
+      {
+        "id": "pool-lightning-boots",
+        "name": "Lightning Boots",
+        "slot": "accessory",
+        "icon": "accessories/lightning-boots.png",
+        "source": "",
+        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "quality": "great"
       }
     ],
     "buffs": [
@@ -3340,36 +3163,6 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-lightning-boots",
-            "name": "Lightning Boots",
-            "slot": "accessory",
-            "icon": "accessories/lightning-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-            "quality": "great"
-          },
-          {
-            "id": "pool-amphibian-boots",
-            "name": "Amphibian Boots",
-            "slot": "accessory",
-            "icon": "accessories/amphibian-boots.png",
-            "source": "",
-            "why": "Combines the effects of sprinting boots with the Frog Leg.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
-            "quality": "great"
-          },
-          {
             "id": "pool-extra-jump",
             "name": "Extra jump",
             "slot": "accessory",
@@ -3384,21 +3177,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
             "quality": "great",
             "isGroup": true
-          },
-          {
-            "id": "pool-rocket-boots",
-            "name": "Rocket Boots",
-            "slot": "accessory",
-            "icon": "accessories/rocket-boots.png",
-            "source": "",
-            "why": "Allows the player to quickly vertically ascend.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_Boots",
-            "quality": "good"
           },
           {
             "id": "pool-balloons",
@@ -3429,7 +3207,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3444,7 +3223,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "tedious": true
           },
           {
             "id": "pool-magiluminescence",

@@ -459,7 +459,7 @@ export function Loadouts() {
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
 
     const out = [...usable];
-    for (let i = 0; i < dropped.length; i += 1) {
+    for (let i = 0; i < dropped.length && out.length < slotCount; i += 1) {
       // A category the build already covers is a poor swap: replacing the
       // Shield of Cthulhu with Lightning Boots next to equipped Spectre Boots
       // spends a slot on the same upgrade line. Uncovered categories rank
@@ -467,7 +467,8 @@ export function Loadouts() {
       const covered = new Set(out.flatMap((a) => a.categories ?? []));
       const pick = safeLoadout.accessoryPool
         .flatMap((g) => g.items)
-        .filter((it) => !taken.has(it.name) && !it.isGroup && isObtainable(it, difficulty))
+        .filter((it) => !taken.has(it.name) && !it.isGroup && !it.tedious
+          && isObtainable(it, difficulty))
         .sort((a, b) => {
           const ac = (a.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
           const bc = (b.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
@@ -788,7 +789,6 @@ export function Loadouts() {
                         </div>
                       {a.headpiece && a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
-                          {a.headpiece && <span className={`${styles.armorHeadTag} pixel-frame`}>{classDef.name}</span>}
                           {a.pieces.map((p) => (
                             <span
                               key={p}
@@ -800,6 +800,9 @@ export function Loadouts() {
                         </div>
                       )}
                       {a.why && <div className={styles.armorPerk}>{a.why}</div>}
+                      {a.headpieceBonus && (
+                        <div className={styles.armorHeadBonus}>{a.headpieceBonus}</div>
+                      )}
                       </div>
                     </button>
                     );

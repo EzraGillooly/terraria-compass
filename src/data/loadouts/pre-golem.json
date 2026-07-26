@@ -175,7 +175,7 @@
         "name": "Kraken",
         "slot": "weapon",
         "icon": "items/kraken.png",
-        "source": "1/400 drop from post-Plantera Hardmode Dungeon enemies",
+        "source": "Dropped by post-Plantera Hardmode Dungeon enemies",
         "why": "Post-Plantera Dungeon drop and one of the strongest yoyos.",
         "tags": [],
         "topPick": false,
@@ -241,7 +241,8 @@
         "subclass": "yoyo",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Developer_items",
-        "tier": "other"
+        "tier": "other",
+        "expertOnly": true
       },
       {
         "id": "light-disc",
@@ -463,7 +464,8 @@
           "Chlorophyte Greaves"
         ],
         "headpiece": "Chlorophyte Mask",
-        "defense": 51
+        "defense": 51,
+        "headpieceBonus": "+21% melee damage, +21% melee critical strike chance and +5% damage reduction."
       }
     ],
     "accessories": [
@@ -2278,7 +2280,7 @@
         "name": "Nimbus Rod",
         "slot": "weapon",
         "icon": "items/nimbus-rod.png",
-        "source": "Dropped by Angry Nimbus (1/15) during rain in Hardmode",
+        "source": "Dropped by Angry Nimbus during rain in Hardmode",
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [
           "carry-over"
