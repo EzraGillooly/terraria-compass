@@ -2024,30 +2024,23 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "magic-cuffs",
-        "name": "Magic Cuffs",
+        "id": "pool-celestial-cuffs",
+        "name": "Celestial Cuffs",
         "slot": "accessory",
-        "icon": "accessories/magic-cuffs.png",
-        "source": "Crafted (Mana Regeneration Band + Shackle)",
-        "why": "The max mana and on-hit mana return are both excellent on longer fights.",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "",
+        "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily.",
         "tags": [],
         "topPick": false,
         "categories": [
           "magic"
         ],
-        "materials": [
-          {
-            "name": "Mana Regeneration Band",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band"
-          },
-          {
-            "name": "Shackle",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
-          }
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "quality": "great",
+        "markers": [
+          "tank"
         ],
-        "station": "Tinkerer's Workshop"
+        "notes": "Celestial Cuffs are useful as mages in pre-Hardmode suffer much more from Mana Sickness. Using a Slime Statue or Spikes (with high enough defense) with this accessory can be viable, even into Hardmode under the right circumstances."
       },
       {
         "id": "pool-band-of-regeneration",
@@ -2475,25 +2468,6 @@
       {
         "category": "magic",
         "items": [
-          {
-            "id": "pool-celestial-cuffs",
-            "name": "Celestial Cuffs",
-            "slot": "accessory",
-            "icon": "accessories/celestial-cuffs.png",
-            "source": "",
-            "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "magic"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
-            "quality": "great",
-            "markers": [
-              "tank"
-            ],
-            "notes": "Celestial Cuffs are useful as mages in pre-Hardmode suffer much more from Mana Sickness. Using a Slime Statue or Spikes (with high enough defense) with this accessory can be viable, even into Hardmode under the right circumstances."
-          },
           {
             "id": "pool-magnet-flower",
             "name": "Magnet Flower",
