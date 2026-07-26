@@ -387,7 +387,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-armor-melee.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "The leaf crystal bonus and strong baseline stats make this the most broadly useful pre-Plantera melee set.",
+        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
           "hardmode"
         ],
@@ -405,7 +405,7 @@
         "slot": "armor",
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "The tankier alternative to Chlorophyte, with thorns and much higher defense.",
+        "why": "Attackers take double damage and you take 15% less. Higher defense than Chlorophyte, lower damage.",
         "tags": [
           "hardmode"
         ],
@@ -420,7 +420,7 @@
         "slot": "accessory",
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "This is the best melee accessory of the phase because it stacks several offensive bonuses into one clean slot.",
+        "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [
           "hardmode"
         ],
@@ -435,7 +435,7 @@
         "slot": "accessory",
         "icon": "accessories/mechanical-glove.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is both a real accessory in its own right and the natural stepping stone toward Fire Gauntlet.",
+        "why": "12% melee damage and speed, and knockback. Combines into Fire Gauntlet later.",
         "tags": [
           "hardmode"
         ],
@@ -544,7 +544,7 @@
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "A direct damage increase helps shorten fights where melee still has to spend time in danger.",
+        "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false
       }
@@ -716,7 +716,7 @@
         "slot": "weapon",
         "icon": "items/star-cannon.png",
         "source": "Crafted (Minishark + 20 Meteorite Bars + 5 Fallen Stars)",
-        "why": "Fires Fallen Stars for exceptional pre-Hardmode damage.",
+        "why": "Fires Fallen Stars for high damage, limited by how many stars you have collected.",
         "tags": [
           "carry-over"
         ],
@@ -750,7 +750,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-armor-ranger.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "The armor stats and leaf crystal bonus make this the cleanest general pre-Plantera ranger set.",
+        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
           "hardmode"
         ],
@@ -768,7 +768,7 @@
         "slot": "armor",
         "icon": "armor/hallowed-armor-ranger.png",
         "source": "Crafted from Hallowed Bars",
-        "why": "The mech-boss set: less damage than Chlorophyte but a dodge on its set bonus.",
+        "why": "Brief immunity after striking an enemy. The summoner headpiece also adds a minion slot.",
         "tags": [
           "hardmode"
         ],
@@ -799,7 +799,7 @@
         "slot": "accessory",
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "A direct ranged-damage boost is still an easy slot-in when your weapon options are already strong.",
+        "why": "15% ranged damage.",
         "tags": [
           "hardmode"
         ],
@@ -875,7 +875,7 @@
         "slot": "buff",
         "icon": "potions/archery-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "The research consistently calls this out as the best dedicated ranger buff in the phase.",
+        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true
       },
@@ -1121,7 +1121,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-armor-mage.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "This is the most straightforward high-end magic armor step before Plantera because it is sturdy and broadly effective.",
+        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
           "hardmode"
         ],
@@ -1139,7 +1139,7 @@
         "slot": "armor",
         "icon": "armor/hallowed-armor-mage.png",
         "source": "Crafted from Hallowed Bars",
-        "why": "The mech-boss set, worth it for the dodge if Chlorophyte is still out of reach.",
+        "why": "Brief immunity after striking an enemy. The summoner headpiece also adds a minion slot.",
         "tags": [
           "hardmode"
         ],
@@ -1154,7 +1154,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is the cleanest mage accessory upgrade here because it boosts damage while smoothing mana utility at the same time.",
+        "why": "15% magic damage and a larger mana star pickup range.",
         "tags": [
           "hardmode"
         ],
@@ -1245,7 +1245,7 @@
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It remains the most direct and valuable magic buff you can bring into this phase.",
+        "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true
       },
@@ -1255,7 +1255,7 @@
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Longer fights and higher-tier spells both make mana sustain more important than it was before.",
+        "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false
       },
@@ -1519,7 +1519,7 @@
         "slot": "armor",
         "icon": "armor/spider-armor.png",
         "source": "Crafted from Spider Fangs",
-        "why": "Until post-Plantera armor opens up, this is still the cleanest dedicated summoner set for raw minion throughput.",
+        "why": "Summon damage +12%.",
         "tags": [
           "hardmode"
         ],
@@ -1536,7 +1536,7 @@
         "slot": "armor",
         "icon": "armor/hallowed-armor-summoner.png",
         "source": "Crafted from Hallowed Bars",
-        "why": "More defense than Spider armor, at the cost of minion damage.",
+        "why": "Brief immunity after striking an enemy. The summoner headpiece also adds a minion slot.",
         "tags": [
           "hardmode"
         ],
@@ -1551,7 +1551,7 @@
         "slot": "accessory",
         "icon": "accessories/summoner-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "This is still the easiest and most efficient direct summon-damage upgrade available in the phase.",
+        "why": "15% summon damage.",
         "tags": [
           "hardmode"
         ],
@@ -1566,7 +1566,7 @@
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
         "source": "Bought from the Witch Doctor",
-        "why": "An extra minion slot remains one of the highest-value single accessory effects a summoner can get.",
+        "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [

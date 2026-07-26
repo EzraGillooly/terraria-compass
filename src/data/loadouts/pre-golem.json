@@ -289,7 +289,7 @@
         "slot": "armor",
         "icon": "armor/turtle-armor.png",
         "source": "Crafted from Turtle Shells and Chlorophyte Bars",
-        "why": "This is the safest conventional pre-Golem melee set because the research around Beetle timing is still a little contested.",
+        "why": "Attackers take double damage and you take 15% less. Higher defense than Chlorophyte, lower damage.",
         "tags": [
           "hardmode"
         ],
@@ -306,7 +306,7 @@
         "slot": "armor",
         "icon": "armor/chlorophyte-armor-melee.png",
         "source": "Crafted from Chlorophyte Bars",
-        "why": "The damage-first alternative to Turtle armor, with a leaf crystal that attacks for you.",
+        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
           "hardmode"
         ],
@@ -321,7 +321,7 @@
         "slot": "accessory",
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is still the easiest best-in-slot melee accessory to justify because it rolls several offensive benefits into one slot.",
+        "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [
           "hardmode"
         ],
@@ -449,7 +449,7 @@
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "A direct damage increase helps speed up event waves and cut down awkward boss phases.",
+        "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false
       }
@@ -727,7 +727,7 @@
         "slot": "armor",
         "icon": "armor/shroomite-armor-ranger.png",
         "source": "Crafted from Shroomite Bars",
-        "why": "This is the consensus best ranger set in the phase because its helmet specialization and stealth utility are both real upgrades.",
+        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [
           "hardmode"
         ],
@@ -762,7 +762,7 @@
         "slot": "accessory",
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "The direct damage bonus remains easy to slot into nearly every build in the phase.",
+        "why": "15% ranged damage.",
         "tags": [
           "hardmode"
         ],
@@ -846,7 +846,7 @@
         "slot": "buff",
         "icon": "potions/archery-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It stays the best simple class buff for ranger, especially if your setup still leans on bows anywhere in the phase.",
+        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true
       },
@@ -1178,7 +1178,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
-        "why": "The damage-focused Spectre route is the default bossing answer here and the strongest overall mage upgrade before Golem.",
+        "why": "The Mask converts magic damage into damage; the Hood converts 40% of it into healing.",
         "tags": [
           "hardmode"
         ],
@@ -1195,7 +1195,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted from Spectre Bars",
-        "why": "Swapping to the hood is still worthwhile when you want the lifesteal safety valve for messy content.",
+        "why": "The Hood variant: magic damage heals you instead of hitting harder. For staying alive, not for DPS.",
         "tags": [
           "hardmode"
         ],
@@ -1214,7 +1214,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is still the cleanest premium mage accessory because it boosts damage while supporting mana flow.",
+        "why": "15% magic damage and a larger mana star pickup range.",
         "tags": [
           "hardmode"
         ],
@@ -1312,7 +1312,7 @@
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It stays the best direct mage buff because the phase rewards squeezing extra value out of already-strong weapons.",
+        "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true
       },
@@ -1322,7 +1322,7 @@
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Sustain matters more than ever once the premium mage tools start draining mana aggressively.",
+        "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false
       },
@@ -1612,7 +1612,7 @@
         "slot": "armor",
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor after Plantera",
-        "why": "This is the standard best pre-Golem summoner set because the extra minion capacity is too valuable to ignore.",
+        "why": "+1 minion slot and 20% whip range.",
         "tags": [
           "hardmode"
         ],
@@ -1629,7 +1629,7 @@
         "slot": "armor",
         "icon": "armor/spooky-armor.png",
         "source": "Crafted from Spooky Wood",
-        "why": "The Pumpkin Moon set: the biggest minion damage bonus before Lunar gear.",
+        "why": "Summon damage +25%, the highest before Lunar gear. Lower defense than Tiki.",
         "tags": [
           "hardmode"
         ],
@@ -1644,7 +1644,7 @@
         "slot": "accessory",
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "This is the standout summoner accessory because it adds both slot value and direct minion scaling.",
+        "why": "+1 minion slot and 15% minion damage. Combines Necromantic Scroll and Hercules Beetle.",
         "tags": [
           "hardmode"
         ],
@@ -1661,7 +1661,7 @@
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
         "source": "Bought from the Witch Doctor",
-        "why": "An extra minion remains one of the cleanest pure-value upgrades available to summoner.",
+        "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1675,7 +1675,7 @@
         "slot": "accessory",
         "icon": "accessories/necromantic-scroll.png",
         "source": "Dropped by Mourning Wood during Pumpkin Moon",
-        "why": "It is both a real summon upgrade and the natural step toward the Papyrus Scarab.",
+        "why": "+1 minion slot and 10% minion damage. Combines into Papyrus Scarab later.",
         "tags": [
           "hardmode",
           "event"

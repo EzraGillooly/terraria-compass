@@ -151,7 +151,7 @@
         "slot": "armor",
         "icon": "armor/beetle-armor-melee.png",
         "source": "Crafted from Beetle Husks and Turtle Armor",
-        "why": "Still the best melee set for the pillars: Lunar armor needs Luminite, which only drops from the Moon Lord.",
+        "why": "Beetles either raise melee damage and speed or absorb damage, depending on the chestplate you wear.",
         "tags": [
           "hardmode"
         ],
@@ -170,7 +170,7 @@
         "slot": "accessory",
         "icon": "accessories/fire-gauntlet.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It remains the default best melee accessory even at this point because the package is still so efficient.",
+        "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [
           "hardmode"
         ],
@@ -200,7 +200,7 @@
         "slot": "accessory",
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
-        "why": "They are the standout mobility option before Moon Lord if you have access to them.",
+        "why": "Flight, and faster movement in rain and water.",
         "tags": [
           "hardmode"
         ],
@@ -231,7 +231,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "An all-stats boost that also shifts helpfully with day and night.",
+        "why": "Combines Celestial Stone and Moon Shell: all-round stats, plus werewolf at night and merfolk in water.",
         "tags": [
           "hardmode"
         ],
@@ -274,7 +274,7 @@
         "slot": "buff",
         "icon": "potions/lifeforce-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Extra health is hugely valuable as the fights become longer and less forgiving.",
+        "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false
       },
@@ -284,7 +284,7 @@
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "A direct damage increase helps shorten both pillar clears and the Moon Lord attempt itself.",
+        "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false
       },
@@ -294,7 +294,7 @@
         "slot": "buff",
         "icon": "potions/rage-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "The crit boost is another high-value late-game damage lever once your base weapon power is already huge.",
+        "why": "Raises critical strike chance by 10%.",
         "tags": [],
         "topPick": false
       }
@@ -388,7 +388,7 @@
         "slot": "armor",
         "icon": "armor/shroomite-armor-ranger.png",
         "source": "Crafted from Shroomite Bars",
-        "why": "Still the ranger set for the pillars: Vortex armor needs Luminite, which only drops from the Moon Lord.",
+        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [
           "hardmode"
         ],
@@ -407,7 +407,7 @@
         "slot": "accessory",
         "icon": "accessories/sniper-scope.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It remains the top ranger accessory because precision and crit both stay premium all the way to Moon Lord.",
+        "why": "10% ranged damage and crit, and zooms out when you right-click with a gun.",
         "tags": [
           "hardmode"
         ],
@@ -422,7 +422,7 @@
         "slot": "accessory",
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "A direct damage boost still fits naturally into the end of the progression curve.",
+        "why": "15% ranged damage.",
         "tags": [
           "hardmode"
         ],
@@ -437,7 +437,7 @@
         "slot": "accessory",
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
-        "why": "They remain the premium mobility choice before Moon Lord if you have access to them.",
+        "why": "Flight, and faster movement in rain and water.",
         "tags": [
           "hardmode"
         ],
@@ -452,7 +452,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "Upgrades Celestial Stone: the same broad stat boost plus the werewolf and merfolk bonuses.",
+        "why": "Combines Celestial Stone and Moon Shell: all-round stats, plus werewolf at night and merfolk in water.",
         "tags": [
           "hardmode"
         ],
@@ -501,7 +501,7 @@
         "slot": "buff",
         "icon": "potions/archery-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It is still the highest-value simple ranger buff because Phantasm and Tsunami both make great use of it.",
+        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true
       },
@@ -511,7 +511,7 @@
         "slot": "buff",
         "icon": "potions/crystal-bullets.png",
         "source": "Crafted ammunition",
-        "why": "The research explicitly calls out premium ammo at this stage, and Crystal Bullets remain a great default choice.",
+        "why": "Shatter into crystal shards on hit, adding damage against large or grouped enemies.",
         "tags": [],
         "topPick": false
       },
@@ -625,7 +625,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted from Spectre Bars",
-        "why": "Still the mage set for the pillars: Nebula armor needs Luminite, which only drops from the Moon Lord.",
+        "why": "The Mask converts magic damage into damage; the Hood converts 40% of it into healing.",
         "tags": [
           "hardmode"
         ],
@@ -642,7 +642,7 @@
         "slot": "armor",
         "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted from Spectre Bars",
-        "why": "You still want access to the lifesteal variant when survivability matters more than peak DPS.",
+        "why": "The Hood variant: magic damage heals you instead of hitting harder. For staying alive, not for DPS.",
         "tags": [
           "hardmode"
         ],
@@ -661,7 +661,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-emblem.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It stays the default mage accessory because the damage and mana support remain universally useful.",
+        "why": "15% magic damage and a larger mana star pickup range.",
         "tags": [
           "hardmode"
         ],
@@ -689,7 +689,7 @@
         "slot": "accessory",
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
-        "why": "Mage gets a lot out of the smoother aerial control these provide.",
+        "why": "Flight, and faster movement in rain and water.",
         "tags": [
           "hardmode"
         ],
@@ -704,7 +704,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "Upgrades Celestial Stone, so the all-round stat lift now carries the werewolf and merfolk bonuses too.",
+        "why": "Combines Celestial Stone and Moon Shell: all-round stats, plus werewolf at night and merfolk in water.",
         "tags": [
           "hardmode"
         ],
@@ -752,7 +752,7 @@
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It remains the best simple mage damage buff and belongs in every serious late-game attempt.",
+        "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true
       },
@@ -762,7 +762,7 @@
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Mana sustain is still crucial because the best Lunar mage tools can drain resources very quickly.",
+        "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false
       },
@@ -890,7 +890,7 @@
         "slot": "armor",
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor",
-        "why": "Still the summoner set for the pillars: Stardust armor needs Luminite, which only drops from the Moon Lord.",
+        "why": "+1 minion slot and 20% whip range.",
         "tags": [
           "hardmode"
         ],
@@ -907,7 +907,7 @@
         "slot": "armor",
         "icon": "armor/spooky-armor.png",
         "source": "Crafted from Spooky Wood",
-        "why": "Highest minion damage available for the pillars.",
+        "why": "Summon damage +25%, the highest before Lunar gear. Lower defense than Tiki.",
         "tags": [
           "hardmode"
         ],
@@ -922,7 +922,7 @@
         "slot": "accessory",
         "icon": "accessories/papyrus-scarab.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "It is still the best summoner accessory because extra minion value and direct summon scaling are both premium.",
+        "why": "+1 minion slot and 15% minion damage. Combines Necromantic Scroll and Hercules Beetle.",
         "tags": [
           "hardmode"
         ],
@@ -938,7 +938,7 @@
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
         "source": "Bought from the Witch Doctor",
-        "why": "An extra minion slot remains simple, high-impact value right through the Lunar stretch.",
+        "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -952,7 +952,7 @@
         "slot": "accessory",
         "icon": "accessories/fishron-wings.png",
         "source": "Dropped by Duke Fishron",
-        "why": "The mobility keeps paying off because summoner still wins by surviving long enough for minions to work.",
+        "why": "Flight, and faster movement in rain and water.",
         "tags": [
           "hardmode"
         ],
@@ -967,7 +967,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-shell.png",
         "source": "Combined at the Tinkerer's Workshop",
-        "why": "Upgrades Celestial Stone, keeping the broad stat support and adding the werewolf and merfolk bonuses.",
+        "why": "Combines Celestial Stone and Moon Shell: all-round stats, plus werewolf at night and merfolk in water.",
         "tags": [
           "hardmode"
         ],

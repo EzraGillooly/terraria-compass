@@ -721,7 +721,7 @@
         "slot": "armor",
         "icon": "armor/titanium-armor-melee.png",
         "source": "Crafted from Titanium Bars",
-        "why": "This is the premium ore armor for pre-mech melee because it brings strong defense and offensive scaling together.",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage. More defensive than Adamantite, which boosts offense instead.",
         "tags": [
           "hardmode"
         ],
@@ -739,7 +739,7 @@
         "slot": "armor",
         "icon": "armor/adamantite-armor-melee.png",
         "source": "Crafted from Adamantite Bars",
-        "why": "Adamantite is the world-variant fallback and still gives melee everything it needs to break into mech fights.",
+        "why": "Set bonus depends on the headpiece: 20% melee and movement speed, 25% chance to save ammo, or 19% reduced mana cost.",
         "tags": [
           "hardmode"
         ],
@@ -814,7 +814,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu treasure bag",
-        "why": "Expert players still get a lot out of the dash even after wings enter the build.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "expert-only"
         ],
@@ -871,7 +871,7 @@
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "A flat damage increase is especially valuable when you are trying to shorten difficult mech attempts.",
+        "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false
       },
@@ -881,7 +881,7 @@
         "slot": "buff",
         "icon": "potions/lifeforce-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Extra max life gives you more room to survive burst damage while learning early Hardmode fights.",
+        "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false
       }
@@ -1151,7 +1151,7 @@
         "slot": "weapon",
         "icon": "items/star-cannon.png",
         "source": "Crafted (Minishark + 20 Meteorite Bars + 5 Fallen Stars)",
-        "why": "Fires Fallen Stars for exceptional pre-Hardmode damage.",
+        "why": "Fires Fallen Stars for high damage, limited by how many stars you have collected.",
         "tags": [
           "carry-over"
         ],
@@ -1185,7 +1185,7 @@
         "slot": "armor",
         "icon": "armor/adamantite-armor-ranger.png",
         "source": "Crafted from Adamantite Bars",
-        "why": "The ranged helmet and solid defense make this the most broadly recommended pre-mech ranger set.",
+        "why": "Set bonus depends on the headpiece: 20% melee and movement speed, 25% chance to save ammo, or 19% reduced mana cost.",
         "tags": [
           "hardmode"
         ],
@@ -1203,7 +1203,7 @@
         "slot": "armor",
         "icon": "armor/titanium-armor-ranger.png",
         "source": "Crafted from Titanium Bars",
-        "why": "Titanium is still fully viable if that is your world ore route and you value the set bonus.",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage. More defensive than Adamantite, which boosts offense instead.",
         "tags": [
           "hardmode"
         ],
@@ -1223,7 +1223,7 @@
         "slot": "accessory",
         "icon": "accessories/ranger-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "It is the cleanest direct damage increase available to ranger as soon as Hardmode begins.",
+        "why": "15% ranged damage.",
         "tags": [
           "hardmode"
         ],
@@ -1291,7 +1291,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "A dash to dodge attacks and reposition in a pinch.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "hardmode"
         ],
@@ -1312,7 +1312,7 @@
         "slot": "buff",
         "icon": "potions/archery-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "If you are using bows, this is the most efficient class-specific buff you can bring into mech fights.",
+        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true
       },
@@ -1816,7 +1816,7 @@
         "slot": "armor",
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted from Forbidden Fragments and Adamantite or Titanium Bars",
-        "why": "This hybrid set is widely loved in early Hardmode because it gives mage strong offense while leaving room for summon support.",
+        "why": "Double-tap the set bonus key to call a storm at the cursor. Boosts both magic and summon damage.",
         "tags": [
           "hardmode"
         ],
@@ -1906,7 +1906,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "A dash to dodge attacks and reposition in a pinch.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "hardmode"
         ],
@@ -1927,7 +1927,7 @@
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "This is the cleanest direct magic damage buff and the easiest class-specific consumable to justify.",
+        "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true
       },
@@ -1937,7 +1937,7 @@
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Sustain matters a lot once your stronger Hardmode spells begin chewing through mana pools.",
+        "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false
       },
@@ -2165,7 +2165,7 @@
         "slot": "armor",
         "icon": "armor/spider-armor.png",
         "source": "Crafted from Spider Fangs",
-        "why": "This is the straightforward pre-mech best-in-slot armor because the extra minions matter more than almost anything else.",
+        "why": "Summon damage +12%.",
         "tags": [
           "hardmode"
         ],
@@ -2184,7 +2184,7 @@
         "slot": "accessory",
         "icon": "accessories/summoner-emblem.png",
         "source": "Dropped by the Wall of Flesh",
-        "why": "Summoner gets a clean damage spike here, which is why this is the first offensive accessory you slot in.",
+        "why": "15% summon damage.",
         "tags": [
           "hardmode"
         ],
@@ -2199,7 +2199,7 @@
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
         "source": "Bought from the Witch Doctor at night",
-        "why": "An extra minion slot is one of the most efficient upgrades any summoner can buy in this phase.",
+        "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2258,7 +2258,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "A dash to dodge attacks and reposition in a pinch.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "hardmode"
         ],

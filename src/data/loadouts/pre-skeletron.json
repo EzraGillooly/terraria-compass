@@ -205,7 +205,7 @@
         "slot": "armor",
         "icon": "armor/shadow-armor.png",
         "source": "Crafted from Demonite Bars and Shadow Scales",
-        "why": "In Corruption worlds this is the signature melee set because the speed bonus makes early swords and yoyos feel much better.",
+        "why": "Corruption worlds only. Increased movement speed and acceleration.",
         "tags": [
           "corruption-only"
         ],
@@ -222,7 +222,7 @@
         "slot": "armor",
         "icon": "armor/crimson-armor.png",
         "source": "Crafted from Crimtane Bars and Tissue Samples",
-        "why": "Crimson players get a tankier alternative with life-regen utility that is still excellent for melee.",
+        "why": "Crimson worlds only. Greatly increased life regeneration, so it is the tankier of the two.",
         "tags": [
           "crimson-only"
         ],
@@ -255,7 +255,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "expert-only"
         ],
@@ -274,7 +274,7 @@
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
         "source": "Crafted (Hermes Boots + Rocket Boots)",
-        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
+        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -470,7 +470,7 @@
         "slot": "weapon",
         "icon": "items/star-cannon.png",
         "source": "Crafted (Minishark + 20 Meteorite Bars + 5 Fallen Stars)",
-        "why": "Fires Fallen Stars for exceptional pre-Hardmode damage.",
+        "why": "Fires Fallen Stars for high damage, limited by how many stars you have collected.",
         "tags": [],
         "topPick": true,
         "tier": "best",
@@ -534,7 +534,7 @@
         "slot": "armor",
         "icon": "armor/platinum-armor.png",
         "source": "Crafted from Platinum Bars",
-        "why": "Until later ranger-specific armor becomes realistic, high defense remains the safest answer.",
+        "why": "No set bonus, just 4 defense. Ore armor to hold you over until a class set.",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -549,7 +549,7 @@
         "slot": "armor",
         "icon": "armor/fossil-armor.png",
         "source": "Crafted from Sturdy Fossils",
-        "why": "Still competitive here if you would rather have ranged crit than raw defense.",
+        "why": "20% chance to save ammo. Less defense than ore armor of the same tier.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_Armor"
@@ -576,7 +576,7 @@
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
         "source": "Crafted (Hermes Boots + Rocket Boots)",
-        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
+        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -590,7 +590,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "expert-only"
         ],
@@ -638,7 +638,7 @@
         "slot": "buff",
         "icon": "potions/archery-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "Bow-focused ranger setups should almost always have this running.",
+        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true
       },
@@ -842,7 +842,7 @@
         "slot": "armor",
         "icon": "armor/meteor-armor.png",
         "source": "Crafted from Meteorite Bars",
-        "why": "This is the defining mage armor here because the Space Gun set bonus completely changes your mana economy.",
+        "why": "Space Gun costs 0 mana, so it pairs with that weapon specifically.",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -899,7 +899,7 @@
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
         "source": "Crafted (Hermes Boots + Rocket Boots)",
-        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
+        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -932,7 +932,7 @@
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "The damage bonus is straightforward and strong, which makes it the first mage buff to value consistently.",
+        "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true
       },
@@ -942,7 +942,7 @@
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
         "source": "Brewed at a placed bottle",
-        "why": "It reduces downtime and makes spell chains much easier to sustain.",
+        "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false
       },
@@ -1181,7 +1181,7 @@
         "slot": "armor",
         "icon": "armor/obsidian-armor.png",
         "source": "Crafted from Obsidian, Shadow Scales or Tissue Samples, and Silk",
-        "why": "It is the pre-Hardmode summoner benchmark because the minion and whip bonuses are both excellent.",
+        "why": "Whip range +30%, whip speed +15%, summon damage +15%.",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -1196,7 +1196,7 @@
         "slot": "armor",
         "icon": "armor/bee-armor.png",
         "source": "Crafted from Bee Wax",
-        "why": "The Queen Bee alternative to Obsidian: more minion damage, less defense.",
+        "why": "Summon damage +10%. Less defense than Obsidian, and no whip bonus.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor"
@@ -1223,7 +1223,7 @@
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
         "source": "Purchased from the Witch Doctor",
-        "why": "The extra minion slot is one of the highest-value accessories a summoner can equip.",
+        "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1238,7 +1238,7 @@
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
         "source": "Crafted (Hermes Boots + Rocket Boots)",
-        "why": "This is the mobility breakpoint where platforming and boss movement start feeling much more under control.",
+        "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1252,7 +1252,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "The dash and invulnerability frames are incredible once you have it, even though it only appears in Expert and above.",
+        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
         "tags": [
           "expert-only"
         ],

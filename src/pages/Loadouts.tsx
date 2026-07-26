@@ -104,14 +104,14 @@ const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
 ]);
 
-/* Ore/evil armor comes in world-locked pairs (Gold↔Platinum, Cobalt↔Palladium,
-   Shadow↔Crimson, …) that are the same choice in different worlds. Show a pair as
-   one entry ("Gold / Platinum armor") rather than two rows, and normalise stray
-   capitalisation ("Crimson Armor" → "Crimson armor"). */
+/* Only the basic pre-Hardmode ores are true world variants: the pairs below
+   differ in defense alone and carry no set bonus, so one row covers both.
+   The Hardmode ores and the evil pairs are NOT interchangeable - Adamantite
+   boosts damage and speed where Titanium raises a defensive shard barrier, and
+   Shadow gives movement speed where Crimson gives life regen - so those stay as
+   separate entries with their own explanations. */
 const ARMOR_VARIANTS: [string, string][] = [
   ['Copper', 'Tin'], ['Iron', 'Lead'], ['Silver', 'Tungsten'], ['Gold', 'Platinum'],
-  ['Shadow', 'Crimson'], ['Cobalt', 'Palladium'], ['Mythril', 'Orichalcum'],
-  ['Adamantite', 'Titanium'],
 ];
 
 const armorMaterial = (name: string) => name.replace(/\s*armor\b.*$/i, '').trim();

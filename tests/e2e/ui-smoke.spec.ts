@@ -42,7 +42,8 @@ test.describe('main screens', () => {
 
     // Switch class + phase and confirm icons still resolve. Class lives in a
     // header dropdown, so it has to be opened before the option is clickable.
-    await page.getByRole('button', { name: 'Class' }).click();
+    // exact: name matching is substring-based, and armor blurbs mention "class"
+    await page.getByRole('button', { name: 'Class', exact: true }).click();
     await page.getByRole('listbox', { name: 'Class' }).getByRole('button', { name: 'Mage' }).click();
     await page.getByRole('button', { name: /Endgame/ }).click();
     await expectVisibleIconsToResolve(page);
