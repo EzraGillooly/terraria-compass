@@ -18,7 +18,10 @@ import { type Pack } from './types';
 export const calamityPack: Pack = {
   id: 'calamity',
   name: 'Calamity',
-  available: true,
+  // Held back while the endgame data is finished: several stages are still
+  // wiki-scraped rather than curated. Flipping this back re-enables the
+  // selector, no other change needed.
+  available: false,
   phases: PhaseCollection.parse(phasesJson),
   classes: ClassCollection.parse(classesJson),
   loadouts: LoadoutCollection.parse(loadoutsJson),
