@@ -1139,36 +1139,19 @@
         "dropRate": "25%"
       },
       {
-        "id": "angel-wings",
-        "name": "Angel Wings",
+        "id": "pool-fairy-wings",
+        "name": "Fairy Wings",
         "slot": "accessory",
-        "icon": "accessories/angel-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "First flight - the biggest early-Hardmode mobility jump.",
+        "icon": "accessories/fairy-wings.png",
+        "source": "",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
         "categories": [
           "mobility"
         ],
-        "materials": [
-          {
-            "name": "Feather",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-          },
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fairy_Wings",
+        "quality": "great"
       },
       {
         "id": "lightning-boots",
@@ -1392,10 +1375,10 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-wings",
-            "name": "Wings",
+            "id": "pool-harpy-wings",
+            "name": "Harpy Wings",
             "slot": "accessory",
-            "icon": "accessories/wings.png",
+            "icon": "accessories/harpy-wings.png",
             "source": "",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
@@ -1403,9 +1386,68 @@
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great",
-            "isGroup": true
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fin-wings",
+            "name": "Fin Wings",
+            "slot": "accessory",
+            "icon": "accessories/fin-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fin_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-frozen-wings",
+            "name": "Frozen Wings",
+            "slot": "accessory",
+            "icon": "accessories/frozen-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-angel-wings",
+            "name": "Angel Wings",
+            "slot": "accessory",
+            "icon": "accessories/angel-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
+            "quality": "fine"
+          },
+          {
+            "id": "pool-demon-wings",
+            "name": "Demon Wings",
+            "slot": "accessory",
+            "icon": "accessories/demon-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
+            "quality": "fine"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2184,36 +2226,19 @@
         "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
       },
       {
-        "id": "angel-wings",
-        "name": "Angel Wings",
+        "id": "pool-fairy-wings",
+        "name": "Fairy Wings",
         "slot": "accessory",
-        "icon": "accessories/angel-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "First flight - the biggest early-Hardmode mobility jump.",
+        "icon": "accessories/fairy-wings.png",
+        "source": "",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
         "categories": [
           "mobility"
         ],
-        "materials": [
-          {
-            "name": "Feather",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-          },
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fairy_Wings",
+        "quality": "great"
       },
       {
         "id": "lightning-boots",
@@ -2486,10 +2511,10 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-wings",
-            "name": "Wings",
+            "id": "pool-harpy-wings",
+            "name": "Harpy Wings",
             "slot": "accessory",
-            "icon": "accessories/wings.png",
+            "icon": "accessories/harpy-wings.png",
             "source": "",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
@@ -2497,9 +2522,68 @@
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great",
-            "isGroup": true
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fin-wings",
+            "name": "Fin Wings",
+            "slot": "accessory",
+            "icon": "accessories/fin-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fin_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-frozen-wings",
+            "name": "Frozen Wings",
+            "slot": "accessory",
+            "icon": "accessories/frozen-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-angel-wings",
+            "name": "Angel Wings",
+            "slot": "accessory",
+            "icon": "accessories/angel-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
+            "quality": "fine"
+          },
+          {
+            "id": "pool-demon-wings",
+            "name": "Demon Wings",
+            "slot": "accessory",
+            "icon": "accessories/demon-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
+            "quality": "fine"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3456,36 +3540,19 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "angel-wings",
-        "name": "Angel Wings",
+        "id": "pool-fairy-wings",
+        "name": "Fairy Wings",
         "slot": "accessory",
-        "icon": "accessories/angel-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "First flight - the biggest early-Hardmode mobility jump.",
+        "icon": "accessories/fairy-wings.png",
+        "source": "",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
         "categories": [
           "mobility"
         ],
-        "materials": [
-          {
-            "name": "Feather",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-          },
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fairy_Wings",
+        "quality": "great"
       },
       {
         "id": "obsidian-shield",
@@ -3650,10 +3717,10 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-wings",
-            "name": "Wings",
+            "id": "pool-harpy-wings",
+            "name": "Harpy Wings",
             "slot": "accessory",
-            "icon": "accessories/wings.png",
+            "icon": "accessories/harpy-wings.png",
             "source": "",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
@@ -3661,9 +3728,68 @@
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great",
-            "isGroup": true
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fin-wings",
+            "name": "Fin Wings",
+            "slot": "accessory",
+            "icon": "accessories/fin-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fin_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-frozen-wings",
+            "name": "Frozen Wings",
+            "slot": "accessory",
+            "icon": "accessories/frozen-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-angel-wings",
+            "name": "Angel Wings",
+            "slot": "accessory",
+            "icon": "accessories/angel-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
+            "quality": "fine"
+          },
+          {
+            "id": "pool-demon-wings",
+            "name": "Demon Wings",
+            "slot": "accessory",
+            "icon": "accessories/demon-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
+            "quality": "fine"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -4269,36 +4395,19 @@
         "quality": "good"
       },
       {
-        "id": "angel-wings",
-        "name": "Angel Wings",
+        "id": "pool-fairy-wings",
+        "name": "Fairy Wings",
         "slot": "accessory",
-        "icon": "accessories/angel-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "First flight - the biggest early-Hardmode mobility jump.",
+        "icon": "accessories/fairy-wings.png",
+        "source": "",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wings#Angel_Wings",
         "categories": [
           "mobility"
         ],
-        "materials": [
-          {
-            "name": "Feather",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-          },
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fairy_Wings",
+        "quality": "great"
       },
       {
         "id": "feral-claws",
@@ -4528,10 +4637,10 @@
         "category": "mobility",
         "items": [
           {
-            "id": "pool-wings",
-            "name": "Wings",
+            "id": "pool-harpy-wings",
+            "name": "Harpy Wings",
             "slot": "accessory",
-            "icon": "accessories/wings.png",
+            "icon": "accessories/harpy-wings.png",
             "source": "",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
@@ -4539,9 +4648,68 @@
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great",
-            "isGroup": true
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fin-wings",
+            "name": "Fin Wings",
+            "slot": "accessory",
+            "icon": "accessories/fin-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fin_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-frozen-wings",
+            "name": "Frozen Wings",
+            "slot": "accessory",
+            "icon": "accessories/frozen-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
+            "quality": "good"
+          },
+          {
+            "id": "pool-angel-wings",
+            "name": "Angel Wings",
+            "slot": "accessory",
+            "icon": "accessories/angel-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
+            "quality": "fine"
+          },
+          {
+            "id": "pool-demon-wings",
+            "name": "Demon Wings",
+            "slot": "accessory",
+            "icon": "accessories/demon-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
+            "quality": "fine"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
