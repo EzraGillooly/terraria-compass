@@ -1,7 +1,7 @@
-/* Fonts loaded via <link> in index.html: Cormorant Garamond, Mulish */
-
-/* Andy Bold - Terraria's in-game typeface, used only for game-diegetic accents
-   (hero title, boss banners). The hard black drop-shadow is the signature. */
+/* Andy Bold - Terraria's in-game typeface and the site's only loaded face.
+   Self-hosted, so the site makes no third-party font requests. Baloo 2 is
+   named after it in the stacks purely as an opportunistic fallback: it is not
+   loaded, so it only applies if the reader happens to have it installed. */
 @font-face {
   font-family: 'Andy Bold';
   src: url('/terraria-compass/fonts/andy-bold.ttf') format('truetype');
