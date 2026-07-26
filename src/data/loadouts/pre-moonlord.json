@@ -8,7 +8,7 @@
         "name": "Daybreak",
         "slot": "weapon",
         "icon": "items/daybreak.png",
-        "source": "Crafted (18 Solar Fragments, at an Ancient Manipulator)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Hurls sun spears that stick to enemies and inflict Daybroken.",
         "tags": [],
         "topPick": false,
@@ -30,7 +30,7 @@
         "name": "Solar Eruption",
         "slot": "weapon",
         "icon": "items/solar-eruption.png",
-        "source": "Crafted (18 Solar Fragments, at an Ancient Manipulator)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Swings a long whipsword that passes through blocks and pierces infinitely.",
         "tags": [],
         "topPick": false,
@@ -52,7 +52,7 @@
         "name": "Terra Blade",
         "slot": "weapon",
         "icon": "items/terra-blade.png",
-        "source": "Crafted (True Excalibur + True Night's Edge + Broken Hero Swords)",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Fires a fast green sword beam projectile on each swing.",
         "tags": [
           "carry-over"
@@ -189,7 +189,7 @@
         "name": "Beetle Armor",
         "slot": "armor",
         "icon": "armor/beetle-armor-melee.png",
-        "source": "Crafted from Beetle Husks and Turtle Armor",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Beetles either raise melee damage and speed or absorb damage, depending on the chestplate you wear.",
         "tags": [
           "hardmode"
@@ -367,7 +367,7 @@
         "name": "Ankh Shield",
         "slot": "accessory",
         "icon": "accessories/ankh-shield.png",
-        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
         "tags": [
           "hardmode"
@@ -397,7 +397,7 @@
         "name": "Flask of Ichor",
         "slot": "buff",
         "icon": "potions/flask-of-ichor.png",
-        "source": "Crafted at an Imbuing Station",
+        "source": "Crafted at Imbuing Station",
         "why": "The defense shred still gives melee the best practical damage boost per buff slot.",
         "tags": [],
         "topPick": true,
@@ -420,31 +420,95 @@
         "name": "Lifeforce Potion",
         "slot": "buff",
         "icon": "potions/lifeforce-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false,
-        "dropRate": "1/12 (8.33%)"
+        "dropRate": "1/12 (8.33%)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Prismite",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Prismite"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          },
+          {
+            "name": "Shiverthorn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiverthorn"
+          },
+          {
+            "name": "Waterleaf",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Waterleaf"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "wrath-potion",
         "name": "Wrath Potion",
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises damage by 10%.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Ebonkoi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonkoi"
+          },
+          {
+            "name": "Deathweed",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "rage-potion",
         "name": "Rage Potion",
         "slot": "buff",
         "icon": "potions/rage-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises critical strike chance by 10%.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Hemopiranha",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hemopiranha"
+          },
+          {
+            "name": "Deathweed",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": [],
@@ -465,7 +529,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great"
+            "quality": "great",
+            "isGroup": true
           },
           {
             "id": "pool-shield-of-cthulhu",
@@ -827,7 +892,7 @@
         "name": "Phantasm",
         "slot": "weapon",
         "icon": "items/phantasm.png",
-        "source": "Crafted from Vortex Fragments (Vortex Pillar)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Charges up to fire additional phantom arrows the longer it is held.",
         "tags": [],
         "topPick": true,
@@ -849,7 +914,7 @@
         "name": "Vortex Beater",
         "slot": "weapon",
         "icon": "items/vortex-beater.png",
-        "source": "Crafted (18 Luminite Bars + Vortex Fragments)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Luminite-tier gun that fires bullets and homing rockets, crafted after Moon Lord.",
         "tags": [],
         "topPick": true,
@@ -924,7 +989,7 @@
         "name": "Shroomite Armor",
         "slot": "armor",
         "icon": "armor/shroomite-armor-ranger.png",
-        "source": "Crafted from Shroomite Bars",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [
           "hardmode"
@@ -1060,7 +1125,7 @@
         "name": "Ankh Shield",
         "slot": "accessory",
         "icon": "accessories/ankh-shield.png",
-        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
         "tags": [
           "hardmode"
@@ -1088,7 +1153,7 @@
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -1124,21 +1189,57 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Lens",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
         "icon": "potions/ammo-reservation-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Ammo savings matter once your best weapons are firing constantly through pillar clears and Moon Lord attempts.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Double Cod",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Double_Cod"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "ammo-box",
@@ -1157,7 +1258,7 @@
         "name": "Chlorophyte Bullet",
         "slot": "ammo",
         "icon": "ammo/chlorophyte-bullet.png",
-        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and a Chlorophyte Bar",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
         "tags": [],
         "topPick": false,
@@ -1182,7 +1283,7 @@
         "name": "Ichor Bullet",
         "slot": "ammo",
         "icon": "ammo/ichor-bullet.png",
-        "source": "Crafted at a Mythril/Orichalcum Anvil from Musket Balls and Ichor",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Lowers enemy defense. Crimson worlds only.",
         "tags": [],
         "topPick": false,
@@ -1207,7 +1308,7 @@
         "name": "Holy Arrow",
         "slot": "ammo",
         "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at a Mythril/Orichalcum Anvil from Wooden Arrows, Pixie Dust and a Unicorn Horn",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Calls down falling stars on impact.",
         "tags": [],
         "topPick": false,
@@ -1250,7 +1351,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great"
+            "quality": "great",
+            "isGroup": true
           },
           {
             "id": "pool-shield-of-cthulhu",
@@ -1596,7 +1698,7 @@
         "name": "Nebula Blaze",
         "slot": "weapon",
         "icon": "items/nebula-blaze.png",
-        "source": "Crafted from 18 Nebula Fragments at an Ancient Manipulator (fragments drop from the Nebula Pillar)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Fires homing star projectiles with a chance to fire a stronger high-damage shot.",
         "tags": [],
         "topPick": false,
@@ -1618,7 +1720,7 @@
         "name": "Nebula Arcanum",
         "slot": "weapon",
         "icon": "items/nebula-arcanum.png",
-        "source": "Crafted (18 Nebula Fragments @ Ancient Manipulator)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Fires slow homing orbs that spawn additional star projectiles.",
         "tags": [],
         "topPick": true,
@@ -1693,7 +1795,7 @@
         "name": "Spectre Armor",
         "slot": "armor",
         "icon": "armor/spectre-armor-mage.png",
-        "source": "Crafted from Spectre Bars",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "The Mask converts a share of magic damage into extra damage.",
         "tags": [
           "hardmode"
@@ -1746,7 +1848,7 @@
         "name": "Spectre Hood Loadout",
         "slot": "armor",
         "icon": "armor/spectre-armor-hood.png",
-        "source": "Crafted from Spectre Bars",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
         "tags": [
           "hardmode"
@@ -1873,7 +1975,7 @@
         "name": "Ankh Shield",
         "slot": "accessory",
         "icon": "accessories/ankh-shield.png",
-        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
         "tags": [
           "hardmode"
@@ -1901,7 +2003,7 @@
         "name": "Charm of Myths",
         "slot": "accessory",
         "icon": "accessories/charm-of-myths.png",
-        "source": "Crafted from Band of Regeneration and Philosopher's Stone.",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
         "tags": [
           "hardmode"
@@ -1931,22 +2033,68 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)"
+        "dropRate": "3/32 (9.38%)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          },
+          {
+            "name": "Deathweed",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "mana-regeneration-potion",
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)"
+        "dropRate": "3/32 (9.38%)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "crystal-ball",
@@ -1963,10 +2111,28 @@
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Extra survivability is still worth taking because the phase can punish fragile builds instantly.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Armored Cavefish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Armored_Cavefish"
+          },
+          {
+            "name": "Blinkroot",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": [],
@@ -1987,7 +2153,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great"
+            "quality": "great",
+            "isGroup": true
           },
           {
             "id": "pool-master-ninja-gear",
@@ -2364,7 +2531,7 @@
         "name": "Stardust Cell Staff",
         "slot": "weapon",
         "icon": "items/stardust-cell-staff.png",
-        "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Summons Stardust Cell minions that fire homing projectiles and apply a stacking debuff.",
         "tags": [],
         "topPick": false,
@@ -2386,14 +2553,14 @@
         "name": "Stardust Dragon Staff",
         "slot": "weapon",
         "icon": "items/stardust-dragon-staff.png",
-        "source": "Crafted from 18 Stardust Fragments at an Ancient Manipulator",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Summons a segmented Stardust Dragon that grows with each additional summon.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Dragon_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Stardust Fragment",
@@ -2408,7 +2575,7 @@
         "name": "Constellation",
         "slot": "weapon",
         "icon": "items/constellation.png",
-        "source": "Crafted (18 Stardust Fragment at an Ancient Manipulator)",
+        "source": "Crafted at Ancient Manipulator",
         "why": "Crafted from Stardust Fragments and fires homing star projectiles on hit.",
         "tags": [],
         "topPick": true,
@@ -2431,7 +2598,7 @@
         "slot": "weapon",
         "icon": "items/terraprisma.png",
         "source": "Dropped by the Empress of Light if all damage is dealt during the day",
-        "why": "Summons homing sword minions; Empress is fought via a post-Plantera Prismatic Lacewing.",
+        "why": "Summons homing sword minions; Empress is fought via a post-Plantera Prismatic Lacewing. Only drops if the Empress of Light is killed in daylight, where every one of her attacks is an instant kill.",
         "tags": [
           "carry-over"
         ],
@@ -2500,7 +2667,7 @@
         "name": "Spooky Armor",
         "slot": "armor",
         "icon": "armor/spooky-armor.png",
-        "source": "Crafted from Spooky Wood",
+        "source": "Crafted at Work Bench",
         "why": "Summon damage +25%, the highest before Lunar gear.",
         "tags": [
           "hardmode"
@@ -2630,7 +2797,7 @@
         "name": "Ankh Shield",
         "slot": "accessory",
         "icon": "accessories/ankh-shield.png",
-        "source": "Crafted from Obsidian Shield and Ankh Charm.",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
         "tags": [
           "hardmode"
@@ -2658,7 +2825,7 @@
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted from Tabi, Black Belt, and Climbing Claws (Tinkerer).",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -2694,10 +2861,28 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "An extra minion is still the best buff you can possibly bring to a summoner setup.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Variegated Lardfish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Variegated_Lardfish"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "bewitching-table",
@@ -2714,21 +2899,57 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Summoner still wants as much survivability padding as it can get during the Moon Lord lead-up.",
         "tags": [],
         "topPick": false,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Iron Ore",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "The damage reduction is very welcome when pillar mobs and Moon Lord patterns start overlapping badly.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Armored Cavefish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Armored_Cavefish"
+          },
+          {
+            "name": "Blinkroot",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": [],
@@ -2749,7 +2970,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
-            "quality": "great"
+            "quality": "great",
+            "isGroup": true
           },
           {
             "id": "pool-shield-of-cthulhu",

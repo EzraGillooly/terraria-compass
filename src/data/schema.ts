@@ -69,6 +69,12 @@ export const Item = z.object({
    * per-difficulty rate to store.
    */
   expertOnly: z.boolean().optional(),
+  /**
+   * Names a family rather than a single item ("Wings", "Extra jump"). Worth
+   * listing as an option, but it can never fill a slot - you cannot equip
+   * "Wings" - so substitution has to skip it.
+   */
+  isGroup: z.boolean().optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
   tags: z.array(z.string()).default([]),

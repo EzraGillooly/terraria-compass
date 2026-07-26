@@ -405,7 +405,14 @@ export function Loadouts() {
   const showingAll = hasSubclasses && activeSubclasses.size === 0;
 
   const matchSub = (w: Item) => !hasSubclasses || showingAll || !w.subclass || activeSubclasses.has(w.subclass);
-  const inScope = safeLoadout.weapons.filter(matchSub);
+
+  /* Read in the same order as the toggles above: a summoner's toggles run
+     Minions, Whips, Sentries, so its picks should too. Anything without a
+     subclass sorts last rather than interleaving. */
+  const subOrder = new Map(classDef.subclasses.map((sc, i) => [sc.id, i]));
+  const bySubclass = (a: Item, b: Item) =>
+    (subOrder.get(a.subclass ?? '') ?? Infinity) - (subOrder.get(b.subclass ?? '') ?? Infinity);
+  const inScope = safeLoadout.weapons.filter(matchSub).sort(bySubclass);
 
   /*
    * Whether this loadout was actually ranked. Curated entries carry a `why`
@@ -460,7 +467,7 @@ export function Loadouts() {
       const covered = new Set(out.flatMap((a) => a.categories ?? []));
       const pick = safeLoadout.accessoryPool
         .flatMap((g) => g.items)
-        .filter((it) => !taken.has(it.name) && isObtainable(it, difficulty))
+        .filter((it) => !taken.has(it.name) && !it.isGroup && isObtainable(it, difficulty))
         .sort((a, b) => {
           const ac = (a.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
           const bc = (b.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
@@ -473,7 +480,18 @@ export function Loadouts() {
     return out;
   })();
 
-  const accSlots = Array.from({ length: slotCount }, (_, i) => accessories[i] ?? null);
+  /* Fixed reading order for the slots: mobility, survivability, offense, then
+     the class's own. An accessory in two categories takes the earliest one, so
+     the Celestial Shell (offense + survivability) sits with survivability. */
+  const CAT_ORDER = ['mobility', 'survivability', 'offense'] as const;
+  const catRank = (it: Item) => {
+    const cats = it.categories ?? [];
+    const generic = CAT_ORDER.findIndex((c) => (cats as readonly string[]).includes(c));
+    if (generic >= 0) return generic;
+    return cats.length > 0 ? CAT_ORDER.length : CAT_ORDER.length + 1;
+  };
+  const ordered = [...accessories].sort((a, b) => catRank(a) - catRank(b));
+  const accSlots = Array.from({ length: slotCount }, (_, i) => ordered[i] ?? null);
 
   /* The pool was filtered against the equipped list when the data was built, so
      anything promoted into a slot just now would otherwise appear twice. */

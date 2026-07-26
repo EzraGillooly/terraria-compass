@@ -8,7 +8,7 @@
         "name": "Night's Edge",
         "slot": "weapon",
         "icon": "items/night-s-edge.png",
-        "source": "Crafted (Blade of Grass, Muramasa, Volcano, Light's Bane/Blood Butcherer)",
+        "source": "Crafted at Demon Altar or Crimson Altar",
         "why": "Combines the best pre-Hardmode swords into a wide-arc broadsword.",
         "tags": [],
         "topPick": true,
@@ -163,7 +163,7 @@
         "name": "Hive-Five",
         "slot": "weapon",
         "icon": "items/hive-five.png",
-        "source": "Crafted (14 Bee Wax at an Iron/Lead Anvil); Bee Wax drops from Queen Bee",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Crafted from Queen Bee's Bee Wax and releases homing bee projectiles.",
         "tags": [
           "carry-over"
@@ -187,7 +187,7 @@
         "name": "Flamarang",
         "slot": "weapon",
         "icon": "items/flamarang.png",
-        "source": "Crafted at an Anvil from Enchanted Boomerang and 15 Hellstone Bars",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Hellstone-tier boomerang that inflicts On Fire.",
         "tags": [
           "carry-over"
@@ -249,7 +249,7 @@
         "name": "Volcano",
         "slot": "weapon",
         "icon": "items/volcano.png",
-        "source": "Crafted (Hellstone Bars)",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Crafted from Hellstone Bars; creates an explosion on hitting enemies.",
         "tags": [
           "carry-over"
@@ -292,7 +292,7 @@
         "name": "Molten Armor",
         "slot": "armor",
         "icon": "armor/molten-armor.png",
-        "source": "Crafted from Hellstone Bars",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "10% extra melee damage, immunity to fire blocks, and you cannot be set on fire.",
         "tags": [],
         "topPick": true,
@@ -345,7 +345,7 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
         "tags": [],
         "topPick": true,
@@ -372,7 +372,7 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
@@ -453,43 +453,115 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "This remains the safest default combat potion for late pre-Hardmode melee.",
         "tags": [],
         "topPick": true,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Iron Ore",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "regeneration-potion",
         "name": "Regeneration Potion",
         "slot": "buff",
         "icon": "potions/regeneration-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "It makes long boss bridges and Underworld fights more forgiving.",
         "tags": [],
         "topPick": false,
-        "dropRate": "2/21 (9.52%) (Underground)"
+        "dropRate": "2/21 (9.52%) (Underground)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Mushroom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "swiftness-potion",
         "name": "Swiftness Potion",
         "slot": "buff",
         "icon": "potions/swiftness-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Extra movement speed is still one of the best ways to improve real fight consistency.",
         "tags": [],
         "topPick": false,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Blinkroot",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
+          },
+          {
+            "name": "Cactus",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Damage reduction gets better the scarier the fight becomes, and this phase has the scariest pre-Hardmode one.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Armored Cavefish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Armored_Cavefish"
+          },
+          {
+            "name": "Blinkroot",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "sharpening-station",
@@ -510,7 +582,15 @@
         "why": "Tipsy: more melee damage and crit for less defense.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ale"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ale",
+        "materials": [
+          {
+            "name": "Mug",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mug"
+          }
+        ],
+        "station": "Keg"
       },
       {
         "id": "sake",
@@ -528,11 +608,24 @@
         "name": "Flask of Poison",
         "slot": "buff",
         "icon": "potions/flask-of-poison.png",
-        "source": "Brewed at an Imbuing Station (Bottled Water + Stinger)",
+        "source": "Brewed at Imbuing Station",
         "why": "Coats melee hits with the Poisoned debuff.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Poison"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Poison",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Stinger",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          }
+        ],
+        "station": "Imbuing Station"
       }
     ],
     "ammo": [],
@@ -629,7 +722,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
-            "quality": "good"
+            "quality": "good",
+            "isGroup": true
           },
           {
             "id": "pool-magiluminescence",
@@ -860,7 +954,7 @@
         "name": "Phoenix Blaster",
         "slot": "weapon",
         "icon": "items/phoenix-blaster.png",
-        "source": "Crafted (Handgun + 10 Hellstone Bars)",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Upgrade to the Handgun crafted from Hellstone Bars in the Underworld.",
         "tags": [],
         "topPick": false,
@@ -916,7 +1010,7 @@
         "name": "Molten Fury",
         "slot": "weapon",
         "icon": "items/molten-fury.png",
-        "source": "Crafted from Hellstone Bars",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Hellstone-tier bow that ignites the arrows it fires.",
         "tags": [
           "carry-over"
@@ -940,7 +1034,7 @@
         "name": "Star Cannon",
         "slot": "weapon",
         "icon": "items/star-cannon.png",
-        "source": "Crafted (Minishark + 20 Meteorite Bars + 5 Fallen Stars)",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Fires Fallen Stars for high damage, limited by how many stars you have collected.",
         "tags": [
           "carry-over"
@@ -993,7 +1087,7 @@
         "name": "Necro Armor",
         "slot": "armor",
         "icon": "armor/necro-armor.png",
-        "source": "Crafted from Bones and Cobwebs",
+        "source": "Crafted at Work Bench",
         "why": "10% increased ranged critical strike chance.",
         "tags": [],
         "topPick": true,
@@ -1061,7 +1155,7 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
         "tags": [],
         "topPick": true,
@@ -1088,7 +1182,7 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
@@ -1169,32 +1263,86 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)"
+        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Lens",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
         "icon": "potions/ammo-reservation-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "This keeps your best arrows and bullets alive longer in a phase where boss attempts can chew through supplies.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Double Cod",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Double_Cod"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Defense remains useful because even ranged mistakes get punished hard in the Underworld.",
         "tags": [],
         "topPick": false,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Iron Ore",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": [
@@ -1203,7 +1351,7 @@
         "name": "Jester's Arrow",
         "slot": "ammo",
         "icon": "ammo/jesters-arrow.png",
-        "source": "Crafted by hand from Wooden Arrows and Fallen Stars",
+        "source": "Crafted at By Hand",
         "why": "Passes through blocks and enemies, hitting everything in a line. Useful against the Eater of Worlds and the Wall of Flesh.",
         "tags": [],
         "topPick": false,
@@ -1228,7 +1376,7 @@
         "name": "Unholy Arrow",
         "slot": "ammo",
         "icon": "ammo/unholy-arrow.png",
-        "source": "Crafted at an Anvil from Wooden Arrows and Worm Teeth",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Pierces several enemies. Worm Teeth come from the Eater of Worlds.",
         "tags": [],
         "topPick": false,
@@ -1254,7 +1402,7 @@
         "name": "Meteor Shot",
         "slot": "ammo",
         "icon": "ammo/meteor-shot.png",
-        "source": "Crafted at an Anvil from Musket Balls and Meteorite Bars",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Ricochets off blocks.",
         "tags": [],
         "topPick": false,
@@ -1368,7 +1516,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
-            "quality": "good"
+            "quality": "good",
+            "isGroup": true
           },
           {
             "id": "pool-magiluminescence",
@@ -1711,7 +1860,7 @@
         "name": "Meteor Armor",
         "slot": "armor",
         "icon": "armor/meteor-armor.png",
-        "source": "Crafted from Meteorite Bars",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Space Gun costs 0 mana, so it pairs with that weapon specifically.",
         "tags": [],
         "topPick": true,
@@ -1762,7 +1911,7 @@
         "name": "Jungle Armor",
         "slot": "armor",
         "icon": "armor/jungle-armor.png",
-        "source": "Crafted from Jungle Spores, Stingers and Vines",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "16% reduced mana costs. Not tied to one weapon the way Meteor armor is.",
         "tags": [],
         "topPick": false,
@@ -1841,7 +1990,7 @@
         "name": "Mana Flower",
         "slot": "accessory",
         "icon": "accessories/mana-flower.png",
-        "source": "Crafted (Nature\u2019s Gift + Mana Regeneration Band)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
         "tags": [],
         "topPick": true,
@@ -1898,7 +2047,7 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
         "tags": [],
         "topPick": true,
@@ -1958,33 +2107,97 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)"
+        "dropRate": "3/32 (9.38%)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          },
+          {
+            "name": "Deathweed",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "mana-regeneration-potion",
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)"
+        "dropRate": "3/32 (9.38%)",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "The defense boost still buys much-needed breathing room for a fragile class.",
         "tags": [],
         "topPick": false,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Iron Ore",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "crystal-ball",
@@ -2094,7 +2307,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
-            "quality": "good"
+            "quality": "good",
+            "isGroup": true
           },
           {
             "id": "pool-spectre-boots",
@@ -2324,7 +2538,7 @@
         "name": "Spinal Tap",
         "slot": "weapon",
         "icon": "items/spinal-tap.png",
-        "source": "Crafted (90 Bone + 55 Cobweb at a Work Bench)",
+        "source": "Crafted at Work Bench",
         "why": "Crafted from Bones and offers long range with piercing.",
         "tags": [],
         "topPick": true,
@@ -2351,7 +2565,7 @@
         "name": "Snapthorn",
         "slot": "weapon",
         "icon": "items/snapthorn.png",
-        "source": "Crafted (15 Stinger + 3 Vine + 12 Jungle Spores at an Anvil)",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Jungle-material whip that inflicts Acid Venom and grants summon tag damage.",
         "tags": [
           "carry-over"
@@ -2385,7 +2599,7 @@
         "name": "Imp Staff",
         "slot": "weapon",
         "icon": "items/imp-staff.png",
-        "source": "Crafted from 17 Hellstone Bars at an Iron/Lead Anvil",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summons an Imp minion that fires On Fire! bolts; needs Underworld Hellstone.",
         "tags": [
           "carry-over"
@@ -2441,7 +2655,7 @@
         "name": "Mushroom Staff",
         "slot": "weapon",
         "icon": "items/mushroom-staff.png",
-        "source": "Crafted from 300 Glowing Mushrooms + 5 Mushroom Grass Seeds + 5 Shadow Scales/Tissue Samples at an Iron/Lead Anvil",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summons a Mushroom Boi minion; requires an evil-boss drop (Shadow Scale or Tissue Sample) to craft.",
         "tags": [
           "carry-over"
@@ -2475,7 +2689,7 @@
         "name": "Flinx Staff",
         "slot": "weapon",
         "icon": "items/flinx-staff.png",
-        "source": "Crafted from 6 Flinx Fur + 10 Gold/Platinum Bars at a Work Bench",
+        "source": "Crafted at Work Bench",
         "why": "Summons a Flinx minion; Flinx Fur drops from Snow Flinxes in the Snow biome.",
         "tags": [
           "carry-over"
@@ -2538,7 +2752,7 @@
         "name": "Starcrash",
         "slot": "weapon",
         "icon": "items/starcrash.png",
-        "source": "Crafted (20 Meteorite Bar + 10 Chain + 10 Fallen Star at an Anvil)",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summons falling star projectiles on hit that deal extra damage.",
         "tags": [
           "carry-over"
@@ -2574,7 +2788,7 @@
         "name": "Obsidian Armor",
         "slot": "armor",
         "icon": "armor/obsidian-armor.png",
-        "source": "Crafted from Obsidian, evil-biome materials, and Silk",
+        "source": "Crafted at Hellforge",
         "why": "Whip range +30%, whip speed +15%, summon damage +15%.",
         "tags": [],
         "topPick": true,
@@ -2655,7 +2869,7 @@
         "name": "Bee Armor",
         "slot": "armor",
         "icon": "armor/bee-armor.png",
-        "source": "Crafted from Bee Wax",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summon damage +10%. No whip bonus, so it suits minion-led builds.",
         "tags": [],
         "topPick": false,
@@ -2723,7 +2937,7 @@
         "name": "Obsidian Shield",
         "slot": "accessory",
         "icon": "accessories/obsidian-shield.png",
-        "source": "Crafted (Cobalt Shield + Obsidian Skull)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
         "tags": [],
         "topPick": true,
@@ -2750,7 +2964,7 @@
         "name": "Spectre Boots",
         "slot": "accessory",
         "icon": "accessories/spectre-boots.png",
-        "source": "Crafted (Hermes Boots + Rocket Boots)",
+        "source": "Crafted at Tinkerer's Workshop",
         "why": "Combines sprinting boots with Rocket Boots, so you can run fast and fly briefly.",
         "tags": [],
         "topPick": false,
@@ -2813,10 +3027,28 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "This remains the most important summon-specific buff because the extra minion slot is such a large power increase.",
         "tags": [],
-        "topPick": true
+        "topPick": true,
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Variegated Lardfish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Variegated_Lardfish"
+          },
+          {
+            "name": "Moonglow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
         "id": "bewitching-table",
@@ -2843,11 +3075,29 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at a placed bottle",
+        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
         "why": "The defense gain helps offset the class's usual fragility during longer boss attempts.",
         "tags": [],
         "topPick": false,
-        "dropRate": "0.18%"
+        "dropRate": "0.18%",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Daybloom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Daybloom"
+          },
+          {
+            "name": "Iron Ore",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       }
     ],
     "ammo": [],
@@ -2962,7 +3212,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
-            "quality": "good"
+            "quality": "good",
+            "isGroup": true
           },
           {
             "id": "pool-magiluminescence",
