@@ -166,7 +166,7 @@
    up - without it, clicking an optional boss would give no feedback at all. */
 .node.side .slot {
   --px-border: rgba(255,255,255,.22);
-  filter: saturate(.35) brightness(.72);
+  filter: saturate(.72) brightness(.88);
 }
 .node.side:hover .slot { transform: none; --px-border: rgba(255,255,255,.22); }
 .node.side.selected .slot { filter: none; --px-border: var(--warm); transform: translateY(-2px); }
