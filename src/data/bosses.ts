@@ -214,8 +214,8 @@ export const bosses: BossDef[] = [
     stage: 'pre-moonlord',
     tier: 10,
     summon: 'Defeat all four Celestial Pillars, or use a Celestial Sigil.',
-    drops: ['Meowmere', 'Star Wrath', 'Terrarian', 'S.D.M.G.', 'Last Prism', 'Stardust Dragon Staff', 'Lunar Portal Staff', 'Moon Lord Mask'],
-    blurb: 'The final boss of vanilla Terraria. Three eye targets, then the core. One of the most punishing DPS checks in the game.',
+    drops: ['Meowmere', 'Star Wrath', 'Terrarian', 'S.D.M.G.', 'Last Prism', 'Rainbow Crystal Staff', 'Lunar Portal Staff', 'Moon Lord Mask'],
+    blurb: 'The final boss. Three eye targets, then the core. One of the most punishing DPS checks in the game.',
     color: '#6B8FFF',
   },
 ];
