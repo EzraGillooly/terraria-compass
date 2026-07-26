@@ -730,7 +730,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -746,7 +746,7 @@
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
@@ -755,14 +755,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
@@ -770,14 +783,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-panic-necklace",
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -788,7 +814,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -800,7 +839,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -819,7 +858,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -838,7 +877,7 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "",
+            "source": "Dropped by Queen Bee and 1 other source",
             "why": "When the player is hit:",
             "tags": [],
             "topPick": false,
@@ -859,7 +898,7 @@
             "name": "Hive Pack",
             "slot": "accessory",
             "icon": "accessories/hive-pack.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Bee)",
             "why": "Increases the damage of friendly bees.",
             "tags": [],
             "topPick": false,
@@ -878,7 +917,7 @@
             "name": "Royal Gel",
             "slot": "accessory",
             "icon": "accessories/royal-gel.png",
-            "source": "",
+            "source": "Found in Treasure Bag (King Slime)",
             "why": "Pacifies most slimes.",
             "tags": [],
             "topPick": false,
@@ -898,7 +937,7 @@
             "name": "Strung Counterweight",
             "slot": "accessory",
             "icon": "accessories/strung-counterweight.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of Yoyo Strings and Counterweights.",
             "tags": [],
             "topPick": false,
@@ -908,21 +947,42 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight",
             "markers": [
               "yoyos"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "White String",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/White_String"
+              },
+              {
+                "name": "Black Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Counterweight"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magma-stone",
             "name": "Magma Stone",
             "slot": "accessory",
             "icon": "accessories/magma-stone.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Causes melee attacks to inflict Hellfire.",
             "tags": [],
             "topPick": false,
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+            "materials": [
+              {
+                "name": "Lava Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -1553,7 +1613,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1569,7 +1629,7 @@
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
@@ -1578,14 +1638,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
@@ -1593,14 +1666,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-panic-necklace",
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -1611,7 +1697,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -1623,7 +1722,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -1642,7 +1741,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -1661,7 +1760,7 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "",
+            "source": "Dropped by Queen Bee and 1 other source",
             "why": "When the player is hit:",
             "tags": [],
             "topPick": false,
@@ -1682,7 +1781,7 @@
             "name": "Hive Pack",
             "slot": "accessory",
             "icon": "accessories/hive-pack.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Bee)",
             "why": "Increases the damage of friendly bees.",
             "tags": [],
             "topPick": false,
@@ -1701,7 +1800,7 @@
             "name": "Royal Gel",
             "slot": "accessory",
             "icon": "accessories/royal-gel.png",
-            "source": "",
+            "source": "Found in Treasure Bag (King Slime)",
             "why": "Pacifies most slimes.",
             "tags": [],
             "topPick": false,
@@ -1986,7 +2085,7 @@
         "slot": "armor",
         "icon": "armor/jungle-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "16% reduced mana costs. Not tied to one weapon the way Meteor armor is.",
+        "why": "16% reduced mana costs.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Armor",
@@ -2361,7 +2460,7 @@
             "name": "Shield of Cthulhu",
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eye of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -2379,7 +2478,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2395,7 +2494,7 @@
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
@@ -2404,14 +2503,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
@@ -2419,14 +2531,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-panic-necklace",
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -2437,7 +2562,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -2449,7 +2587,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -2468,7 +2606,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -2487,7 +2625,7 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "",
+            "source": "Dropped by Queen Bee and 1 other source",
             "why": "When the player is hit:",
             "tags": [],
             "topPick": false,
@@ -2508,7 +2646,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -2523,7 +2661,7 @@
             "name": "Hive Pack",
             "slot": "accessory",
             "icon": "accessories/hive-pack.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Bee)",
             "why": "Increases the damage of friendly bees.",
             "tags": [],
             "topPick": false,
@@ -2542,7 +2680,7 @@
             "name": "Royal Gel",
             "slot": "accessory",
             "icon": "accessories/royal-gel.png",
-            "source": "",
+            "source": "Found in Treasure Bag (King Slime)",
             "why": "Pacifies most slimes.",
             "tags": [],
             "topPick": false,
@@ -2562,7 +2700,7 @@
             "name": "Magnet Flower",
             "slot": "accessory",
             "icon": "accessories/magnet-flower.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
             "tags": [],
             "topPick": false,
@@ -2570,14 +2708,27 @@
               "magic"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Celestial Magnet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-mana-regeneration-band",
             "name": "Mana Regeneration Band",
             "slot": "accessory",
             "icon": "accessories/mana-regeneration-band.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases the player's max mana by 20 and the player's passive mana regeneration by 1 MP/s.",
             "tags": [],
             "topPick": false,
@@ -2585,7 +2736,20 @@
               "magic"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -3284,7 +3448,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3300,7 +3464,7 @@
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
@@ -3309,14 +3473,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
@@ -3324,14 +3501,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-panic-necklace",
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -3342,7 +3532,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -3354,7 +3557,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -3373,7 +3576,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -3392,7 +3595,7 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "",
+            "source": "Dropped by Queen Bee and 1 other source",
             "why": "When the player is hit:",
             "tags": [],
             "topPick": false,
@@ -3413,7 +3616,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -3428,7 +3631,7 @@
             "name": "Hive Pack",
             "slot": "accessory",
             "icon": "accessories/hive-pack.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Bee)",
             "why": "Increases the damage of friendly bees.",
             "tags": [],
             "topPick": false,
@@ -3447,7 +3650,7 @@
             "name": "Royal Gel",
             "slot": "accessory",
             "icon": "accessories/royal-gel.png",
-            "source": "",
+            "source": "Found in Treasure Bag (King Slime)",
             "why": "Pacifies most slimes.",
             "tags": [],
             "topPick": false,
@@ -3467,7 +3670,7 @@
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
             "tags": [],
             "topPick": false,

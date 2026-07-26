@@ -1898,7 +1898,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "",
+            "source": "Found in Chest and 2 other sources",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -1912,21 +1912,29 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Allows the player to slide down walls.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
+            "materials": [
+              {
+                "name": "Shoe Spikes",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -1934,14 +1942,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-frog-leg",
             "name": "Frog Leg",
             "slot": "accessory",
             "icon": "accessories/frog-leg.png",
-            "source": "",
+            "source": "Fished up in any body of water",
             "why": "Increases the player's jump speed and fall resistance.",
             "tags": [],
             "topPick": false,
@@ -1973,7 +1994,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "",
+            "source": "Crafted",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -1981,14 +2002,21 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Pharaoh's Robe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
+              }
+            ]
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2005,7 +2033,7 @@
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -2013,14 +2041,22 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Balloon Pufferfish",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "",
+            "source": "Found in Bramble Crate and 2 other sources",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -2035,7 +2071,7 @@
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage.",
             "tags": [],
             "topPick": false,
@@ -2046,7 +2082,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -2058,7 +2107,7 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "",
+            "source": "Dropped by Frozen Zombie and 2 other sources",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
@@ -2077,7 +2126,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
@@ -2096,7 +2145,7 @@
             "name": "White String",
             "slot": "accessory",
             "icon": "accessories/white-string.png",
-            "source": "",
+            "source": "Crafted at Loom",
             "why": "Increases the range of yoyos, and allows them to spin for longer.",
             "tags": [],
             "topPick": false,
@@ -2107,7 +2156,15 @@
             "markers": [
               "yoyos"
             ],
-            "notes": "Multiple White Strings can be crafted and used by all classes for specific modifiers due to their cheap crafting cost:"
+            "notes": "Multiple White Strings can be crafted and used by all classes for specific modifiers due to their cheap crafting cost:",
+            "materials": [
+              {
+                "name": "Cobweb",
+                "qty": 30,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
+              }
+            ],
+            "station": "Loom"
           },
           {
             "id": "pool-counterweights",
@@ -2132,7 +2189,7 @@
             "name": "Magma Stone",
             "slot": "accessory",
             "icon": "accessories/magma-stone.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Causes melee attacks to inflict Hellfire.",
             "tags": [],
             "topPick": false,
@@ -2140,7 +2197,15 @@
               "melee"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
-            "notes": "Yoyos tend to benefit the most out of any melee weapon from the Magma Stone, especially when paired with a Counterweight. The Blade of Grass also strongly benefits from the Magma Stone."
+            "notes": "Yoyos tend to benefit the most out of any melee weapon from the Magma Stone, especially when paired with a Counterweight. The Blade of Grass also strongly benefits from the Magma Stone.",
+            "materials": [
+              {
+                "name": "Lava Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -3015,7 +3080,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "",
+            "source": "Found in Chest and 2 other sources",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -3029,21 +3094,29 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Allows the player to slide down walls.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
+            "materials": [
+              {
+                "name": "Shoe Spikes",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -3051,14 +3124,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-frog-leg",
             "name": "Frog Leg",
             "slot": "accessory",
             "icon": "accessories/frog-leg.png",
-            "source": "",
+            "source": "Fished up in any body of water",
             "why": "Increases the player's jump speed and fall resistance.",
             "tags": [],
             "topPick": false,
@@ -3090,7 +3176,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "",
+            "source": "Crafted",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -3098,14 +3184,21 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Pharaoh's Robe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
+              }
+            ]
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3122,7 +3215,7 @@
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -3130,14 +3223,22 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Balloon Pufferfish",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "",
+            "source": "Found in Bramble Crate and 2 other sources",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -3152,7 +3253,7 @@
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage.",
             "tags": [],
             "topPick": false,
@@ -3163,7 +3264,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -3175,7 +3289,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
@@ -3880,7 +3994,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "",
+            "source": "Found in Chest and 2 other sources",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -3894,21 +4008,29 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Allows the player to slide down walls.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
+            "materials": [
+              {
+                "name": "Shoe Spikes",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -3916,14 +4038,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-frog-leg",
             "name": "Frog Leg",
             "slot": "accessory",
             "icon": "accessories/frog-leg.png",
-            "source": "",
+            "source": "Fished up in any body of water",
             "why": "Increases the player's jump speed and fall resistance.",
             "tags": [],
             "topPick": false,
@@ -3955,7 +4090,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "",
+            "source": "Crafted",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -3963,14 +4098,21 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Pharaoh's Robe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
+              }
+            ]
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3987,7 +4129,7 @@
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -3995,14 +4137,22 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Balloon Pufferfish",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "",
+            "source": "Found in Bramble Crate and 2 other sources",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -4017,7 +4167,7 @@
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage.",
             "tags": [],
             "topPick": false,
@@ -4028,7 +4178,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -4040,7 +4203,7 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "",
+            "source": "Dropped by Frozen Zombie and 2 other sources",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
@@ -4054,7 +4217,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "",
+            "source": "Found in Gold Chest and 1 other source",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -4073,7 +4236,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
@@ -4092,7 +4255,7 @@
             "name": "Celestial Magnet",
             "slot": "accessory",
             "icon": "accessories/celestial-magnet.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Greatly increases the pickup range of mana stars.",
             "tags": [],
             "topPick": false,
@@ -4106,7 +4269,7 @@
             "name": "Nature's Gift",
             "slot": "accessory",
             "icon": "accessories/natures-gift.png",
-            "source": "",
+            "source": "Found growing on Jungle grass in the Underground Jungle",
             "why": "Reduces mana cost by 6%.",
             "tags": [],
             "topPick": false,
@@ -4499,7 +4662,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "",
+            "source": "Found in Chest and 2 other sources",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -4513,21 +4676,29 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Allows the player to slide down walls.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
+            "materials": [
+              {
+                "name": "Shoe Spikes",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-magiluminescence",
             "name": "Magiluminescence",
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
-            "source": "",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -4535,14 +4706,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           },
           {
             "id": "pool-frog-leg",
             "name": "Frog Leg",
             "slot": "accessory",
             "icon": "accessories/frog-leg.png",
-            "source": "",
+            "source": "Fished up in any body of water",
             "why": "Increases the player's jump speed and fall resistance.",
             "tags": [],
             "topPick": false,
@@ -4574,7 +4758,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "",
+            "source": "Crafted",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -4582,14 +4766,21 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Pharaoh's Robe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
+              }
+            ]
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "",
+            "source": "Found in Azure Crate and 2 other sources",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4606,7 +4797,7 @@
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -4614,14 +4805,22 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Balloon Pufferfish",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "",
+            "source": "Found in Bramble Crate and 2 other sources",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -4636,7 +4835,7 @@
             "name": "Panic Necklace",
             "slot": "accessory",
             "icon": "accessories/panic-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
             "why": "Briefly increases the player's movement speed after they take damage.",
             "tags": [],
             "topPick": false,
@@ -4647,7 +4846,20 @@
             "quality": "good",
             "markers": [
               "crimson"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Band of Starpower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+              },
+              {
+                "name": "Life Crystal",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+              }
+            ],
+            "station": "Tinkerer's Workshop and Ecto Mist"
           }
         ]
       },
@@ -4659,7 +4871,7 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "",
+            "source": "Dropped by Frozen Zombie and 2 other sources",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
@@ -4678,7 +4890,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "",
+            "source": "Dropped by Blood Zombie and 1 other source",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,

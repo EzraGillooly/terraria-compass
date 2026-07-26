@@ -1412,7 +1412,7 @@
             "name": "Harpy Wings",
             "slot": "accessory",
             "icon": "accessories/harpy-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1420,14 +1420,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Giant Harpy Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Giant_Harpy_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-fin-wings",
             "name": "Fin Wings",
             "slot": "accessory",
             "icon": "accessories/fin-wings.png",
-            "source": "",
+            "source": "Quest reward from the Angler in Hardmode",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1442,7 +1455,7 @@
             "name": "Frozen Wings",
             "slot": "accessory",
             "icon": "accessories/frozen-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1450,14 +1463,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Ice Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-angel-wings",
             "name": "Angel Wings",
             "slot": "accessory",
             "icon": "accessories/angel-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1465,14 +1491,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Light",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-demon-wings",
             "name": "Demon Wings",
             "slot": "accessory",
             "icon": "accessories/demon-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1480,14 +1524,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Night",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
             "tags": [],
             "topPick": false,
@@ -1495,7 +1557,20 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1507,7 +1582,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -1526,7 +1601,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -1545,7 +1620,7 @@
             "name": "Ankh Shield",
             "slot": "accessory",
             "icon": "accessories/ankh-shield.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
             "tags": [],
             "topPick": false,
@@ -1554,14 +1629,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-star-veil",
             "name": "Star Veil",
             "slot": "accessory",
             "icon": "accessories/star-veil.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
             "tags": [],
             "topPick": false,
@@ -1569,14 +1657,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-flesh-knuckles",
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1585,14 +1686,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-frozen-turtle-shell",
             "name": "Frozen Turtle Shell",
             "slot": "accessory",
             "icon": "accessories/frozen-turtle-shell.png",
-            "source": "",
+            "source": "Dropped by Ice Tortoise",
             "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
             "tags": [],
             "topPick": false,
@@ -1612,7 +1721,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1620,14 +1729,22 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-apprentices-scarf",
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
             "tags": [],
             "topPick": false,
@@ -1642,7 +1759,7 @@
             "name": "Stinger Necklace",
             "slot": "accessory",
             "icon": "accessories/stinger-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
             "tags": [],
             "topPick": false,
@@ -1650,14 +1767,27 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Shark Tooth Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+              },
+              {
+                "name": "Honey Comb",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-volatile-gelatin",
             "name": "Volatile Gelatin",
             "slot": "accessory",
             "icon": "accessories/volatile-gelatin.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Slime)",
             "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
             "tags": [],
             "topPick": false,
@@ -1680,7 +1810,7 @@
             "name": "Yoyo Bag",
             "slot": "accessory",
             "icon": "accessories/yoyo-bag.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Grants the following effects:",
             "tags": [],
             "topPick": false,
@@ -1690,14 +1820,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
             "markers": [
               "yoyos"
-            ]
+            ],
+            "materials": [
+              {
+                "name": "Yoyo Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Glove"
+              },
+              {
+                "name": "Strung Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-moon-charm",
             "name": "Moon Charm",
             "slot": "accessory",
             "icon": "accessories/moon-charm.png",
-            "source": "",
+            "source": "Dropped by Werewolf",
             "why": "Turns the player into a Werewolf at night. This provides an assortment of benefits, such as increased melee damage, melee speed, and melee critical strike chance.",
             "tags": [],
             "topPick": false,
@@ -1711,7 +1854,7 @@
             "name": "Berserker's Glove",
             "slot": "accessory",
             "icon": "accessories/berserkers-glove.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -1719,7 +1862,20 @@
               "melee"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Power Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+              },
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -2567,7 +2723,7 @@
             "name": "Harpy Wings",
             "slot": "accessory",
             "icon": "accessories/harpy-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2575,14 +2731,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Giant Harpy Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Giant_Harpy_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-fin-wings",
             "name": "Fin Wings",
             "slot": "accessory",
             "icon": "accessories/fin-wings.png",
-            "source": "",
+            "source": "Quest reward from the Angler in Hardmode",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2597,7 +2766,7 @@
             "name": "Frozen Wings",
             "slot": "accessory",
             "icon": "accessories/frozen-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2605,14 +2774,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Ice Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-angel-wings",
             "name": "Angel Wings",
             "slot": "accessory",
             "icon": "accessories/angel-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2620,14 +2802,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Light",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-demon-wings",
             "name": "Demon Wings",
             "slot": "accessory",
             "icon": "accessories/demon-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2635,14 +2835,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Night",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
             "tags": [],
             "topPick": false,
@@ -2650,7 +2868,20 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2662,7 +2893,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -2681,7 +2912,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -2700,7 +2931,7 @@
             "name": "Ankh Shield",
             "slot": "accessory",
             "icon": "accessories/ankh-shield.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
             "tags": [],
             "topPick": false,
@@ -2709,14 +2940,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-star-veil",
             "name": "Star Veil",
             "slot": "accessory",
             "icon": "accessories/star-veil.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
             "tags": [],
             "topPick": false,
@@ -2724,14 +2968,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-charm-of-myths",
             "name": "Charm of Myths",
             "slot": "accessory",
             "icon": "accessories/charm-of-myths.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
             "tags": [],
             "topPick": false,
@@ -2739,14 +2996,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              },
+              {
+                "name": "Philosopher's Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-flesh-knuckles",
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2755,14 +3025,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-frozen-turtle-shell",
             "name": "Frozen Turtle Shell",
             "slot": "accessory",
             "icon": "accessories/frozen-turtle-shell.png",
-            "source": "",
+            "source": "Dropped by Ice Tortoise",
             "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
             "tags": [],
             "topPick": false,
@@ -2782,7 +3060,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2790,14 +3068,22 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-apprentices-scarf",
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
             "tags": [],
             "topPick": false,
@@ -2812,7 +3098,7 @@
             "name": "Stinger Necklace",
             "slot": "accessory",
             "icon": "accessories/stinger-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
             "tags": [],
             "topPick": false,
@@ -2820,14 +3106,27 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Shark Tooth Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+              },
+              {
+                "name": "Honey Comb",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-volatile-gelatin",
             "name": "Volatile Gelatin",
             "slot": "accessory",
             "icon": "accessories/volatile-gelatin.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Slime)",
             "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
             "tags": [],
             "topPick": false,
@@ -3772,7 +4071,7 @@
             "name": "Harpy Wings",
             "slot": "accessory",
             "icon": "accessories/harpy-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3780,14 +4079,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Giant Harpy Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Giant_Harpy_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-fin-wings",
             "name": "Fin Wings",
             "slot": "accessory",
             "icon": "accessories/fin-wings.png",
-            "source": "",
+            "source": "Quest reward from the Angler in Hardmode",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3802,7 +4114,7 @@
             "name": "Frozen Wings",
             "slot": "accessory",
             "icon": "accessories/frozen-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3810,14 +4122,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Ice Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-angel-wings",
             "name": "Angel Wings",
             "slot": "accessory",
             "icon": "accessories/angel-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3825,14 +4150,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Light",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-demon-wings",
             "name": "Demon Wings",
             "slot": "accessory",
             "icon": "accessories/demon-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3840,14 +4183,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Night",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
             "tags": [],
             "topPick": false,
@@ -3855,7 +4216,20 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3867,7 +4241,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -3886,7 +4260,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -3905,7 +4279,7 @@
             "name": "Ankh Shield",
             "slot": "accessory",
             "icon": "accessories/ankh-shield.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
             "tags": [],
             "topPick": false,
@@ -3914,14 +4288,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-star-veil",
             "name": "Star Veil",
             "slot": "accessory",
             "icon": "accessories/star-veil.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
             "tags": [],
             "topPick": false,
@@ -3929,14 +4316,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-charm-of-myths",
             "name": "Charm of Myths",
             "slot": "accessory",
             "icon": "accessories/charm-of-myths.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
             "tags": [],
             "topPick": false,
@@ -3944,14 +4344,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              },
+              {
+                "name": "Philosopher's Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-flesh-knuckles",
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3960,14 +4373,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-frozen-turtle-shell",
             "name": "Frozen Turtle Shell",
             "slot": "accessory",
             "icon": "accessories/frozen-turtle-shell.png",
-            "source": "",
+            "source": "Dropped by Ice Tortoise",
             "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
             "tags": [],
             "topPick": false,
@@ -3987,7 +4408,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3995,14 +4416,22 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-apprentices-scarf",
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
             "tags": [],
             "topPick": false,
@@ -4017,7 +4446,7 @@
             "name": "Stinger Necklace",
             "slot": "accessory",
             "icon": "accessories/stinger-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
             "tags": [],
             "topPick": false,
@@ -4025,14 +4454,27 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Shark Tooth Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+              },
+              {
+                "name": "Honey Comb",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-volatile-gelatin",
             "name": "Volatile Gelatin",
             "slot": "accessory",
             "icon": "accessories/volatile-gelatin.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Slime)",
             "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
             "tags": [],
             "topPick": false,
@@ -4055,14 +4497,27 @@
             "name": "Mana Cloak",
             "slot": "accessory",
             "icon": "accessories/mana-cloak.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of the Mana Flower and Star Cloak. Additionally, the stars produced by the Star Cloak will transform into special mana stars, which restore 50 mana to the player.",
             "tags": [],
             "topPick": false,
             "categories": [
               "magic"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Cloak"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Cloak",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -4691,7 +5146,7 @@
             "name": "Harpy Wings",
             "slot": "accessory",
             "icon": "accessories/harpy-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4699,14 +5154,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Harpy_Wings",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Giant Harpy Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Giant_Harpy_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-fin-wings",
             "name": "Fin Wings",
             "slot": "accessory",
             "icon": "accessories/fin-wings.png",
-            "source": "",
+            "source": "Quest reward from the Angler in Hardmode",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4721,7 +5189,7 @@
             "name": "Frozen Wings",
             "slot": "accessory",
             "icon": "accessories/frozen-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4729,14 +5197,27 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Wings",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Ice Feather",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Feather"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-angel-wings",
             "name": "Angel Wings",
             "slot": "accessory",
             "icon": "accessories/angel-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4744,14 +5225,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Angel_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Light",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-demon-wings",
             "name": "Demon Wings",
             "slot": "accessory",
             "icon": "accessories/demon-wings.png",
-            "source": "",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4759,14 +5258,32 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Wings",
-            "quality": "fine"
+            "quality": "fine",
+            "materials": [
+              {
+                "name": "Feather",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+              },
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Soul of Night",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
             "name": "Bundle of Horseshoe Balloons",
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
             "tags": [],
             "topPick": false,
@@ -4774,7 +5291,20 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Bundle of Balloons",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+              },
+              {
+                "name": "Lucky Horseshoe",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -4786,7 +5316,7 @@
             "name": "Worm Scarf",
             "slot": "accessory",
             "icon": "accessories/worm-scarf.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Eater of Worlds)",
             "why": "Reduces all damage taken by 17%.",
             "tags": [],
             "topPick": false,
@@ -4805,7 +5335,7 @@
             "name": "Brain of Confusion",
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Brain of Cthulhu)",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -4824,7 +5354,7 @@
             "name": "Ankh Shield",
             "slot": "accessory",
             "icon": "accessories/ankh-shield.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
             "tags": [],
             "topPick": false,
@@ -4833,14 +5363,27 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-star-veil",
             "name": "Star Veil",
             "slot": "accessory",
             "icon": "accessories/star-veil.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
             "tags": [],
             "topPick": false,
@@ -4848,14 +5391,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-charm-of-myths",
             "name": "Charm of Myths",
             "slot": "accessory",
             "icon": "accessories/charm-of-myths.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
             "tags": [],
             "topPick": false,
@@ -4863,14 +5419,27 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              },
+              {
+                "name": "Philosopher's Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-flesh-knuckles",
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4879,14 +5448,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-frozen-turtle-shell",
             "name": "Frozen Turtle Shell",
             "slot": "accessory",
             "icon": "accessories/frozen-turtle-shell.png",
-            "source": "",
+            "source": "Dropped by Ice Tortoise",
             "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
             "tags": [],
             "topPick": false,
@@ -4906,7 +5483,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4914,14 +5491,22 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great"
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-apprentices-scarf",
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
             "tags": [],
             "topPick": false,
@@ -4936,7 +5521,7 @@
             "name": "Stinger Necklace",
             "slot": "accessory",
             "icon": "accessories/stinger-necklace.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
             "tags": [],
             "topPick": false,
@@ -4944,14 +5529,27 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
-            "quality": "good"
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Shark Tooth Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+              },
+              {
+                "name": "Honey Comb",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-volatile-gelatin",
             "name": "Volatile Gelatin",
             "slot": "accessory",
             "icon": "accessories/volatile-gelatin.png",
-            "source": "",
+            "source": "Found in Treasure Bag (Queen Slime)",
             "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
             "tags": [],
             "topPick": false,
@@ -4974,7 +5572,7 @@
             "name": "Berserker's Glove",
             "slot": "accessory",
             "icon": "accessories/berserkers-glove.png",
-            "source": "",
+            "source": "Crafted at Tinkerer's Workshop",
             "why": "Effectively combines the effects of the Flesh Knuckles with Feral Claws, both increasing the player's defense (and aggro) and whip speed.",
             "tags": [],
             "topPick": false,
@@ -4985,14 +5583,27 @@
             "markers": [
               "whips"
             ],
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
+            "materials": [
+              {
+                "name": "Power Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+              },
+              {
+                "name": "Flesh Knuckles",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           },
           {
             "id": "pool-apprentices-scarf",
             "name": "Apprentice's Scarf",
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
-            "source": "",
+            "source": "Dropped by Dark Mage (T1) and 1 other source",
             "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
             "tags": [],
             "topPick": false,
