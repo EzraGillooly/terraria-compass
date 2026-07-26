@@ -778,7 +778,7 @@
         "slot": "armor",
         "icon": "armor/nebula-armor.png",
         "source": "Crafted from Nebula Fragments and Luminite Bars",
-        "why": "Magic damage can drop boosters that stack damage, life and mana buffs when picked up.",
+        "why": "Magic damage can drop boosters that stack damage, life and mana buffs when picked up. The buffs fall off if you cannot collect them.",
         "tags": [
           "hardmode"
         ],
@@ -788,6 +788,19 @@
           "Nebula Breastplate",
           "Nebula Leggings"
         ]
+      },
+      {
+        "id": "spectre-armor",
+        "name": "Spectre Armor",
+        "slot": "armor",
+        "icon": "armor/spectre-armor-mage.png",
+        "source": "Crafted from Spectre Bars",
+        "why": "Still on-tier with Nebula. The Mask raises damage, and the Hood converts 40% of magic damage into healing, which Nebula has no answer to.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Armor"
       }
     ],
     "accessories": [
@@ -1097,7 +1110,7 @@
         "slot": "armor",
         "icon": "armor/stardust-armor.png",
         "source": "Crafted from Stardust Fragments and Luminite Bars",
-        "why": "A stardust guardian follows you and attacks nearby enemies.",
+        "why": "A stardust guardian follows you and attacks nearby enemies. The lowest defense of the Lunar sets.",
         "tags": [
           "hardmode"
         ],
@@ -1107,6 +1120,19 @@
           "Stardust Plate",
           "Stardust Leggings"
         ]
+      },
+      {
+        "id": "valhalla-knight-armor",
+        "name": "Valhalla Knight Armor",
+        "slot": "armor",
+        "icon": "armor/valhalla-knight-armor.png",
+        "source": "Dropped by the Old One's Army, tier 3",
+        "why": "Much higher defense than Stardust armor plus heavy life regeneration, in exchange for the Stardust Guardian and minion slots.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Valhalla_Knight_Armor"
       }
     ],
     "accessories": [
