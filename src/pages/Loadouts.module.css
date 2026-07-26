@@ -142,7 +142,7 @@
 /* Each set carries its own doll, so the entry is a row: sprite + details. */
 .armorEntry { display: flex; gap: 12px; align-items: flex-start; width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid rgba(150,180,230,.2); padding: 8px 0; cursor: pointer; font-family: inherit; color: inherit; }
 .armorEntryBody { flex: 1; min-width: 0; }
-.armorEntry:last-child { border-bottom: 0; }
+.armorEntry:last-of-type { border-bottom: 0; }
 .armorEntry:hover .armorName { color: var(--warm); }
 .armorName { font-weight: 800; font-size: 14px; color: #EAF0FF; }
 /* class-specific headpiece for sets that have one per damage type */
@@ -239,8 +239,9 @@
 
 /* ── Accessory box - two compact columns, right-anchored ── */
 /* Accessories span the whole content width; the slots carry tags now. */
-.accPanel { margin-top: 14px; }
-.accGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 10px; }
+/* Sits in the left column under the weapons panel, which supplies the gap. */
+.accPanel { min-width: 0; }
+.accGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 10px; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
 /* Every slot is one height, sized to the busiest an accessory can get, with the
    contents centred inside it. The worst case in the data is a 2-line name plus

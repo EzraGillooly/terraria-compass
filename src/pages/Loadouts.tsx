@@ -567,7 +567,7 @@ export function Loadouts() {
 
           {/* Left column: weapons + reforge (hugging) */}
           <div className={styles.colLeft}>
-          <div className={`${styles.invPanel} ${styles.weaponsPanel} pixel-frame`}>
+          <div className={`${styles.invPanel} pixel-frame`}>
             <div className={styles.tlabel}><span>Weapons</span><span className={styles.em}>{classDef.name}</span></div>
 
             {availableSubclasses.length > 0 && (
@@ -652,6 +652,81 @@ export function Loadouts() {
             {filteredBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
+          </div>
+            {/* Accessories sit under the weapons panel in the left column, so the
+                card runs tall rather than spanning the full width. */}
+          <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>
+            <div className={styles.tlabel}>
+              <span>Accessories</span>
+              <span className={styles.em}>{slotCount} slots</span>
+            </div>
+            <div className={styles.accGrid}>
+              {accSlots.map((acc, i) => (
+                <AccCell
+                  key={acc?.id ?? `slot-${i}`}
+                  item={acc}
+                  demonHeart={demonHeartUnlocked && i === 5}
+                  activeClass={activeClassId}
+                  difficulty={difficulty}
+                  onOpen={setModalItem}
+                />
+              ))}
+            </div>
+            {accessoryPool.length > 0 && (
+              <div className={styles.poolWrap}>
+                <button
+                  type="button"
+                  className={`${styles.showRest} pixel-frame pixel-hollow`}
+                  aria-expanded={showPool}
+                  onClick={() => setShowPool((v) => !v)}
+                >
+                  {showPool ? 'Hide' : 'Show'} other options (
+                  {accessoryPool.reduce((n, g) => n + g.items.length, 0)})
+                </button>
+                {showPool && (
+                  <div className={styles.poolGroups}>
+                    {accessoryPool.map((g) => (
+                      <div key={g.category} className={styles.poolGroup}>
+                        <div className={styles.poolHead}>
+                          <span className={`${styles.accCat} ${styles[`c_${g.category}`]}`}>
+                            {CATEGORY_LABEL[g.category]}
+                          </span>
+                          <span className={styles.poolCount}>{g.items.length}</span>
+                        </div>
+                        <div className={styles.poolList}>
+                          {g.items.map((it) => (
+                            <PoolRow key={it.id} item={it} difficulty={difficulty} onOpen={setModalItem} />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            <div className={styles.reforgeBlock}>
+            <div className={styles.reforgeLabel}>Accessory reforges</div>
+            <p className={styles.reforgeIntro}>
+              Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
+              to Menacing or Lucky once you can dodge reliably.
+            </p>
+            <ul className={styles.reforgeList}>
+              <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
+              <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
+              <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
+              <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
+            </ul>
+            <p className={styles.reforgeMore}>
+              <a
+                href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Menacing vs Lucky vs Warding on the wiki
+              </a>
+            </p>
+            </div>
+            <AccLegend />
           </div>
 
           </div>
@@ -773,81 +848,6 @@ export function Loadouts() {
           </div>
         </div>
 
-        {/* Accessories span the full content width: the slots carry category,
-            quality and caveat tags now, which need the room. */}
-        <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>
-          <div className={styles.tlabel}>
-            <span>Accessories</span>
-            <span className={styles.em}>{slotCount} slots</span>
-          </div>
-          <div className={styles.accGrid}>
-            {accSlots.map((acc, i) => (
-              <AccCell
-                key={acc?.id ?? `slot-${i}`}
-                item={acc}
-                demonHeart={demonHeartUnlocked && i === 5}
-                activeClass={activeClassId}
-                difficulty={difficulty}
-                onOpen={setModalItem}
-              />
-            ))}
-          </div>
-          {accessoryPool.length > 0 && (
-            <div className={styles.poolWrap}>
-              <button
-                type="button"
-                className={`${styles.showRest} pixel-frame pixel-hollow`}
-                aria-expanded={showPool}
-                onClick={() => setShowPool((v) => !v)}
-              >
-                {showPool ? 'Hide' : 'Show'} other options (
-                {accessoryPool.reduce((n, g) => n + g.items.length, 0)})
-              </button>
-              {showPool && (
-                <div className={styles.poolGroups}>
-                  {accessoryPool.map((g) => (
-                    <div key={g.category} className={styles.poolGroup}>
-                      <div className={styles.poolHead}>
-                        <span className={`${styles.accCat} ${styles[`c_${g.category}`]}`}>
-                          {CATEGORY_LABEL[g.category]}
-                        </span>
-                        <span className={styles.poolCount}>{g.items.length}</span>
-                      </div>
-                      <div className={styles.poolList}>
-                        {g.items.map((it) => (
-                          <PoolRow key={it.id} item={it} difficulty={difficulty} onOpen={setModalItem} />
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
-          <div className={styles.reforgeBlock}>
-          <div className={styles.reforgeLabel}>Accessory reforges</div>
-          <p className={styles.reforgeIntro}>
-            Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
-            to Menacing or Lucky once you can dodge reliably.
-          </p>
-          <ul className={styles.reforgeList}>
-            <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
-            <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
-            <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
-            <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
-          </ul>
-          <p className={styles.reforgeMore}>
-            <a
-              href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Menacing vs Lucky vs Warding on the wiki
-            </a>
-          </p>
-          </div>
-          <AccLegend />
-        </div>
       </section>
 
       <ItemModal item={modalItem} onClose={() => setModalItem(null)} />
