@@ -440,7 +440,376 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frozen-shield",
+            "name": "Frozen Shield",
+            "slot": "accessory",
+            "icon": "accessories/frozen-shield.png",
+            "source": "",
+            "why": "Essentially an upgraded version of the Frozen Turtle Shell which provides 6 defense, reduces all damage taken by the player by 25% if the player is below 50% max HP, and grants immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good"
+          },
+          {
+            "id": "pool-hero-shield",
+            "name": "Hero Shield",
+            "slot": "accessory",
+            "icon": "accessories/hero-shield.png",
+            "source": "",
+            "why": "Provides 10 defense, increases the player's aggro by 400, and provides immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hero_Shield",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-sun-stone",
+            "name": "Sun Stone",
+            "slot": "accessory",
+            "icon": "accessories/sun-stone.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-eye-of-the-golem",
+            "name": "Eye of the Golem",
+            "slot": "accessory",
+            "icon": "accessories/eye-of-the-golem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "",
+            "why": "Increases the player's damage by 12%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-papyrus-scarab",
+            "name": "Papyrus Scarab",
+            "slot": "accessory",
+            "icon": "accessories/papyrus-scarab.png",
+            "source": "",
+            "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+            "quality": "good"
+          },
+          {
+            "id": "pool-spore-sac",
+            "name": "Spore Sac",
+            "slot": "accessory",
+            "icon": "accessories/spore-sac.png",
+            "source": "",
+            "why": "Creates poisonous spores around the player which damage enemies over time.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spore_Sac",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "pool-warrior-emblem",
+            "name": "Warrior Emblem",
+            "slot": "accessory",
+            "icon": "accessories/warrior-emblem.png",
+            "source": "",
+            "why": "Increases melee damage by 15%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+          },
+          {
+            "id": "pool-magic-yoyo-bag",
+            "name": "Magic Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/magic-yoyo-bag.png",
+            "source": "",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ]
+          },
+          {
+            "id": "pool-mechanical-glove",
+            "name": "Mechanical Glove",
+            "slot": "accessory",
+            "icon": "accessories/mechanical-glove.png",
+            "source": "",
+            "why": "Effectively combines the effects of an Avenger Emblem with a Power Glove by providing a +12% damage buff, but only to melee weapons (instead of universally, as the Avenger Emblem does).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
+          },
+          {
+            "id": "pool-berserkers-glove",
+            "name": "Berserker's Glove",
+            "slot": "accessory",
+            "icon": "accessories/berserkers-glove.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-moonlord",
@@ -844,6 +1213,359 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
       }
+    ],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frozen-shield",
+            "name": "Frozen Shield",
+            "slot": "accessory",
+            "icon": "accessories/frozen-shield.png",
+            "source": "",
+            "why": "Essentially an upgraded version of the Frozen Turtle Shell which provides 6 defense, reduces all damage taken by the player by 25% if the player is below 50% max HP, and grants immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good"
+          },
+          {
+            "id": "pool-hero-shield",
+            "name": "Hero Shield",
+            "slot": "accessory",
+            "icon": "accessories/hero-shield.png",
+            "source": "",
+            "why": "Provides 10 defense, increases the player's aggro by 400, and provides immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hero_Shield",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-destroyer-emblem",
+            "name": "Destroyer Emblem",
+            "slot": "accessory",
+            "icon": "accessories/destroyer-emblem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-sun-stone",
+            "name": "Sun Stone",
+            "slot": "accessory",
+            "icon": "accessories/sun-stone.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-eye-of-the-golem",
+            "name": "Eye of the Golem",
+            "slot": "accessory",
+            "icon": "accessories/eye-of-the-golem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "",
+            "why": "Increases the player's damage by 12%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-papyrus-scarab",
+            "name": "Papyrus Scarab",
+            "slot": "accessory",
+            "icon": "accessories/papyrus-scarab.png",
+            "source": "",
+            "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+            "quality": "good"
+          },
+          {
+            "id": "pool-spore-sac",
+            "name": "Spore Sac",
+            "slot": "accessory",
+            "icon": "accessories/spore-sac.png",
+            "source": "",
+            "why": "Creates poisonous spores around the player which damage enemies over time.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spore_Sac",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "ranged",
+        "items": [
+          {
+            "id": "pool-recon-scope",
+            "name": "Recon Scope",
+            "slot": "accessory",
+            "icon": "accessories/recon-scope.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Recon_Scope",
+            "quality": "great"
+          },
+          {
+            "id": "pool-magic-quiver",
+            "name": "Magic Quiver",
+            "slot": "accessory",
+            "icon": "accessories/magic-quiver.png",
+            "source": "",
+            "why": "Grants the following boosts to weapons that fire arrows (or Stakes):",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          }
+        ]
+      }
     ]
   },
   {
@@ -1232,7 +1954,391 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-master-ninja-gear",
+            "name": "Master Ninja Gear",
+            "slot": "accessory",
+            "icon": "accessories/master-ninja-gear.png",
+            "source": "",
+            "why": "In respect to mobility, the Master Ninja Gear enables the player to dash. Compared to the Shield of Cthulhu, the Master Ninja Gear's dash is twice as long and does not have any effect if the player collides with an enemy.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frozen-shield",
+            "name": "Frozen Shield",
+            "slot": "accessory",
+            "icon": "accessories/frozen-shield.png",
+            "source": "",
+            "why": "Essentially an upgraded version of the Frozen Turtle Shell which provides 6 defense, reduces all damage taken by the player by 25% if the player is below 50% max HP, and grants immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good"
+          },
+          {
+            "id": "pool-hero-shield",
+            "name": "Hero Shield",
+            "slot": "accessory",
+            "icon": "accessories/hero-shield.png",
+            "source": "",
+            "why": "Provides 10 defense, increases the player's aggro by 400, and provides immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hero_Shield",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-master-ninja-gear",
+            "name": "Master Ninja Gear",
+            "slot": "accessory",
+            "icon": "accessories/master-ninja-gear.png",
+            "source": "",
+            "why": "In respect to survivability, the Master Ninja Gear gives the player a 10% chance to automatically dodge all incoming attacks.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-destroyer-emblem",
+            "name": "Destroyer Emblem",
+            "slot": "accessory",
+            "icon": "accessories/destroyer-emblem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-sun-stone",
+            "name": "Sun Stone",
+            "slot": "accessory",
+            "icon": "accessories/sun-stone.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-eye-of-the-golem",
+            "name": "Eye of the Golem",
+            "slot": "accessory",
+            "icon": "accessories/eye-of-the-golem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "",
+            "why": "Increases the player's damage by 12%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-papyrus-scarab",
+            "name": "Papyrus Scarab",
+            "slot": "accessory",
+            "icon": "accessories/papyrus-scarab.png",
+            "source": "",
+            "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+            "quality": "good"
+          },
+          {
+            "id": "pool-spore-sac",
+            "name": "Spore Sac",
+            "slot": "accessory",
+            "icon": "accessories/spore-sac.png",
+            "source": "",
+            "why": "Creates poisonous spores around the player which damage enemies over time.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spore_Sac",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "magic",
+        "items": [
+          {
+            "id": "pool-sorcerer-emblem",
+            "name": "Sorcerer Emblem",
+            "slot": "accessory",
+            "icon": "accessories/sorcerer-emblem.png",
+            "source": "",
+            "why": "Increases magic damage by 15%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+          },
+          {
+            "id": "pool-celestial-cuffs",
+            "name": "Celestial Cuffs",
+            "slot": "accessory",
+            "icon": "accessories/celestial-cuffs.png",
+            "source": "",
+            "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily. Note that the star pickup range buff does not stack with other accessories that use the Celestial Magnet in its recipe, such as the Celestial Emblem.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+            "markers": [
+              "tank"
+            ]
+          },
+          {
+            "id": "pool-mana-cloak",
+            "name": "Mana Cloak",
+            "slot": "accessory",
+            "icon": "accessories/mana-cloak.png",
+            "source": "",
+            "why": "Combines the effects of the Mana Flower and Star Cloak. Additionally, the stars produced by the Star Cloak will transform into special mana stars, which restore 50 mana to the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Cloak"
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-moonlord",
@@ -1600,6 +2706,389 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frozen-shield",
+            "name": "Frozen Shield",
+            "slot": "accessory",
+            "icon": "accessories/frozen-shield.png",
+            "source": "",
+            "why": "Essentially an upgraded version of the Frozen Turtle Shell which provides 6 defense, reduces all damage taken by the player by 25% if the player is below 50% max HP, and grants immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good"
+          },
+          {
+            "id": "pool-hero-shield",
+            "name": "Hero Shield",
+            "slot": "accessory",
+            "icon": "accessories/hero-shield.png",
+            "source": "",
+            "why": "Provides 10 defense, increases the player's aggro by 400, and provides immunity to knockback.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hero_Shield",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-destroyer-emblem",
+            "name": "Destroyer Emblem",
+            "slot": "accessory",
+            "icon": "accessories/destroyer-emblem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-sun-stone",
+            "name": "Sun Stone",
+            "slot": "accessory",
+            "icon": "accessories/sun-stone.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-eye-of-the-golem",
+            "name": "Eye of the Golem",
+            "slot": "accessory",
+            "icon": "accessories/eye-of-the-golem.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "",
+            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "great"
+          },
+          {
+            "id": "pool-avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "",
+            "why": "Increases the player's damage by 12%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
+            "quality": "great"
+          },
+          {
+            "id": "pool-spore-sac",
+            "name": "Spore Sac",
+            "slot": "accessory",
+            "icon": "accessories/spore-sac.png",
+            "source": "",
+            "why": "Creates poisonous spores around the player which damage enemies over time.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spore_Sac",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "good",
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          }
+        ]
+      },
+      {
+        "category": "summon",
+        "items": [
+          {
+            "id": "pool-necromantic-scroll",
+            "name": "Necromantic Scroll",
+            "slot": "accessory",
+            "icon": "accessories/necromantic-scroll.png",
+            "source": "",
+            "why": "Increases summon damage by 10% and the player's minion slots by one.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+          },
+          {
+            "id": "pool-hercules-beetle",
+            "name": "Hercules Beetle",
+            "slot": "accessory",
+            "icon": "accessories/hercules-beetle.png",
+            "source": "",
+            "why": "Increases knockback of the player's summons as well as their damage by 15%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+          },
+          {
+            "id": "pool-summoner-emblem",
+            "name": "Summoner Emblem",
+            "slot": "accessory",
+            "icon": "accessories/summoner-emblem.png",
+            "source": "",
+            "why": "Increases summon damage by 15%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          },
+          {
+            "id": "pool-berserkers-glove",
+            "name": "Berserker's Glove",
+            "slot": "accessory",
+            "icon": "accessories/berserkers-glove.png",
+            "source": "",
+            "why": "Effectively combines the effects of the Flesh Knuckles with Feral Claws, both increasing the player's defense (and aggro) and whip speed.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+            "markers": [
+              "whips"
+            ],
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+          }
+        ]
+      }
+    ]
   }
 ]

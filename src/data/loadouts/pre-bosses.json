@@ -1799,7 +1799,260 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-aglet",
+            "name": "Aglet",
+            "slot": "accessory",
+            "icon": "accessories/aglet.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 5%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+          },
+          {
+            "id": "pool-climbing-claws",
+            "name": "Climbing Claws",
+            "slot": "accessory",
+            "icon": "accessories/climbing-claws.png",
+            "source": "",
+            "why": "Allows the player to slide down walls.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "accessories/frog-leg.png",
+            "source": "",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frog_Leg",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "accessories/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
+            "quality": "great"
+          },
+          {
+            "id": "pool-flying-carpet",
+            "name": "Flying Carpet",
+            "slot": "accessory",
+            "icon": "accessories/flying-carpet.png",
+            "source": "",
+            "why": "Enables the player to briefly hover.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-shiny-red-balloon",
+            "name": "Shiny Red Balloon",
+            "slot": "accessory",
+            "icon": "accessories/shiny-red-balloon.png",
+            "source": "",
+            "why": "Increases jump height of the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
+            "quality": "good"
+          },
+          {
+            "id": "pool-anklet-of-the-wind",
+            "name": "Anklet of the Wind",
+            "slot": "accessory",
+            "icon": "accessories/anklet-of-the-wind.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-shackle",
+            "name": "Shackle",
+            "slot": "accessory",
+            "icon": "accessories/shackle.png",
+            "source": "",
+            "why": "Increases the player's defense by 1.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "pool-white-string",
+            "name": "White String",
+            "slot": "accessory",
+            "icon": "accessories/white-string.png",
+            "source": "",
+            "why": "Increases the range of yoyos, and allows them to spin for longer.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/White_String",
+            "markers": [
+              "yoyos"
+            ],
+            "notes": "Multiple White Strings can be crafted and used by all classes for specific modifiers due to their cheap crafting cost:"
+          },
+          {
+            "id": "pool-counterweights",
+            "name": "Counterweights",
+            "slot": "accessory",
+            "icon": "accessories/counterweights.png",
+            "source": "",
+            "why": "Causes yoyos after landing a hit on enemies to produce a \"counterweight\" projectile, which travels towards the enemy before arcing over the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweights",
+            "markers": [
+              "yoyos"
+            ]
+          },
+          {
+            "id": "pool-magma-stone",
+            "name": "Magma Stone",
+            "slot": "accessory",
+            "icon": "accessories/magma-stone.png",
+            "source": "",
+            "why": "Causes melee attacks to inflict Hellfire.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+            "notes": "Yoyos tend to benefit the most out of any melee weapon from the Magma Stone, especially when paired with a Counterweight. The Blade of Grass also strongly benefits from the Magma Stone."
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-bosses",
@@ -2604,6 +2857,185 @@
         "stats": "7 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
       }
+    ],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-aglet",
+            "name": "Aglet",
+            "slot": "accessory",
+            "icon": "accessories/aglet.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 5%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+          },
+          {
+            "id": "pool-climbing-claws",
+            "name": "Climbing Claws",
+            "slot": "accessory",
+            "icon": "accessories/climbing-claws.png",
+            "source": "",
+            "why": "Allows the player to slide down walls.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "accessories/frog-leg.png",
+            "source": "",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frog_Leg",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "accessories/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
+            "quality": "great"
+          },
+          {
+            "id": "pool-flying-carpet",
+            "name": "Flying Carpet",
+            "slot": "accessory",
+            "icon": "accessories/flying-carpet.png",
+            "source": "",
+            "why": "Enables the player to briefly hover.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-shiny-red-balloon",
+            "name": "Shiny Red Balloon",
+            "slot": "accessory",
+            "icon": "accessories/shiny-red-balloon.png",
+            "source": "",
+            "why": "Increases jump height of the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
+            "quality": "good"
+          },
+          {
+            "id": "pool-anklet-of-the-wind",
+            "name": "Anklet of the Wind",
+            "slot": "accessory",
+            "icon": "accessories/anklet-of-the-wind.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          }
+        ]
+      }
     ]
   },
   {
@@ -3208,7 +3640,252 @@
         ]
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-aglet",
+            "name": "Aglet",
+            "slot": "accessory",
+            "icon": "accessories/aglet.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 5%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+          },
+          {
+            "id": "pool-climbing-claws",
+            "name": "Climbing Claws",
+            "slot": "accessory",
+            "icon": "accessories/climbing-claws.png",
+            "source": "",
+            "why": "Allows the player to slide down walls.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "accessories/frog-leg.png",
+            "source": "",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frog_Leg",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "accessories/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
+            "quality": "great"
+          },
+          {
+            "id": "pool-flying-carpet",
+            "name": "Flying Carpet",
+            "slot": "accessory",
+            "icon": "accessories/flying-carpet.png",
+            "source": "",
+            "why": "Enables the player to briefly hover.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-shiny-red-balloon",
+            "name": "Shiny Red Balloon",
+            "slot": "accessory",
+            "icon": "accessories/shiny-red-balloon.png",
+            "source": "",
+            "why": "Increases jump height of the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
+            "quality": "good"
+          },
+          {
+            "id": "pool-anklet-of-the-wind",
+            "name": "Anklet of the Wind",
+            "slot": "accessory",
+            "icon": "accessories/anklet-of-the-wind.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-shackle",
+            "name": "Shackle",
+            "slot": "accessory",
+            "icon": "accessories/shackle.png",
+            "source": "",
+            "why": "Increases the player's defense by 1.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          }
+        ]
+      },
+      {
+        "category": "magic",
+        "items": [
+          {
+            "id": "pool-celestial-magnet",
+            "name": "Celestial Magnet",
+            "slot": "accessory",
+            "icon": "accessories/celestial-magnet.png",
+            "source": "",
+            "why": "Greatly increases the pickup range of mana stars.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "id": "pool-natures-gift",
+            "name": "Nature's Gift",
+            "slot": "accessory",
+            "icon": "accessories/natures-gift.png",
+            "source": "",
+            "why": "Reduces mana cost by 6%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature's_Gift"
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-bosses",
@@ -3610,6 +4287,204 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-aglet",
+            "name": "Aglet",
+            "slot": "accessory",
+            "icon": "accessories/aglet.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 5%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+          },
+          {
+            "id": "pool-climbing-claws",
+            "name": "Climbing Claws",
+            "slot": "accessory",
+            "icon": "accessories/climbing-claws.png",
+            "source": "",
+            "why": "Allows the player to slide down walls.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "great"
+          },
+          {
+            "id": "pool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "accessories/frog-leg.png",
+            "source": "",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frog_Leg",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "accessories/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Extra_jump",
+            "quality": "great"
+          },
+          {
+            "id": "pool-flying-carpet",
+            "name": "Flying Carpet",
+            "slot": "accessory",
+            "icon": "accessories/flying-carpet.png",
+            "source": "",
+            "why": "Enables the player to briefly hover.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great",
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+          },
+          {
+            "id": "pool-shiny-red-balloon",
+            "name": "Shiny Red Balloon",
+            "slot": "accessory",
+            "icon": "accessories/shiny-red-balloon.png",
+            "source": "",
+            "why": "Increases jump height of the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
+            "quality": "good"
+          },
+          {
+            "id": "pool-anklet-of-the-wind",
+            "name": "Anklet of the Wind",
+            "slot": "accessory",
+            "icon": "accessories/anklet-of-the-wind.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-shackle",
+            "name": "Shackle",
+            "slot": "accessory",
+            "icon": "accessories/shackle.png",
+            "source": "",
+            "why": "Increases the player's defense by 1.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          }
+        ]
+      }
+    ]
   }
 ]

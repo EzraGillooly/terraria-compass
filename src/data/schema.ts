@@ -97,6 +97,16 @@ export const Loadout = z.object({
    * Defaults to empty so every other class validates unchanged.
    */
   ammo: z.array(Item).default([]),
+  /**
+   * Every other accessory worth considering at this phase, grouped by the
+   * category it belongs to. The five equipped slots are one build; this is the
+   * pool they were picked from, so a player can swap by category instead of
+   * being handed a single answer. Sourced from the SilverIsGold sandbox.
+   */
+  accessoryPool: z.array(z.object({
+    category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged', 'magic', 'summon']),
+    items: z.array(Item),
+  })).default([]),
 });
 
 export const PhaseDef = z.object({

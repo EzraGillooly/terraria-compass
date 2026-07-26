@@ -259,6 +259,41 @@ function AccCell({
   );
 }
 
+/* ── One row in the "other options" pool ──
+   Denser than a slot: the pool is a list to scan, not a build to read. Class
+   categories carry no grade on the source page, so the badge is simply absent
+   rather than defaulted to something the page never said. */
+function PoolRow({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  const markers = item.markers ?? [];
+  return (
+    <button type="button" className={styles.poolRow} onClick={() => onOpen(item)}>
+      <img
+        src={local} alt="" aria-hidden="true"
+        className={`${styles.poolImg} pixel-img`}
+        width="24" height="24" loading="lazy"
+        onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+      />
+      {/* name and badges stack: an item with a grade and two world markers
+          (Brain of Confusion is Expert + Crimson) has no room on one line and
+          the name is what the reader is scanning for */}
+      <span className={styles.poolBody}>
+        <span className={styles.poolName}>{item.name}</span>
+        {(item.quality || markers.length > 0) && (
+          <span className={styles.poolTags}>
+            {item.quality && (
+              <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>{item.quality}</span>
+            )}
+            {markers.map((m) => (
+              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>{MARKER_LABEL[m]}</span>
+            ))}
+          </span>
+        )}
+      </span>
+    </button>
+  );
+}
+
 /** Key to the accessory tags, so the colours mean something on first read. */
 function AccLegend() {
   return (
@@ -302,6 +337,7 @@ export function Loadouts() {
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
+  const [showPool, setShowPool] = useState(false);
 
   // classId lives in app-context (header selector); it is already clamped to the
   // active pack there, so no local clamp is needed.
@@ -322,7 +358,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [], ammo: [] };
+  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
@@ -697,6 +733,38 @@ export function Loadouts() {
                   <AccCell key={a.id} item={a} activeClass={activeClassId} onOpen={setModalItem} />
                 ))}
               </div>
+            </div>
+          )}
+          {safeLoadout.accessoryPool.length > 0 && (
+            <div className={styles.poolWrap}>
+              <button
+                type="button"
+                className={`${styles.showRest} pixel-frame pixel-hollow`}
+                aria-expanded={showPool}
+                onClick={() => setShowPool((v) => !v)}
+              >
+                {showPool ? 'Hide' : 'Show'} other options (
+                {safeLoadout.accessoryPool.reduce((n, g) => n + g.items.length, 0)})
+              </button>
+              {showPool && (
+                <div className={styles.poolGroups}>
+                  {safeLoadout.accessoryPool.map((g) => (
+                    <div key={g.category} className={styles.poolGroup}>
+                      <div className={styles.poolHead}>
+                        <span className={`${styles.accCat} ${styles[`c_${g.category}`]}`}>
+                          {CATEGORY_LABEL[g.category]}
+                        </span>
+                        <span className={styles.poolCount}>{g.items.length}</span>
+                      </div>
+                      <div className={styles.poolList}>
+                        {g.items.map((it) => (
+                          <PoolRow key={it.id} item={it} onOpen={setModalItem} />
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
           <AccLegend />

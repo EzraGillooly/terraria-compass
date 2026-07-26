@@ -1279,7 +1279,297 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "",
+            "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          },
+          {
+            "id": "pool-frozen-turtle-shell",
+            "name": "Frozen Turtle Shell",
+            "slot": "accessory",
+            "icon": "accessories/frozen-turtle-shell.png",
+            "source": "",
+            "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "great"
+          },
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "quality": "good"
+          },
+          {
+            "id": "pool-stinger-necklace",
+            "name": "Stinger Necklace",
+            "slot": "accessory",
+            "icon": "accessories/stinger-necklace.png",
+            "source": "",
+            "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-volatile-gelatin",
+            "name": "Volatile Gelatin",
+            "slot": "accessory",
+            "icon": "accessories/volatile-gelatin.png",
+            "source": "",
+            "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Volatile_Gelatin",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "pool-yoyo-bag",
+            "name": "Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/yoyo-bag.png",
+            "source": "",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ]
+          },
+          {
+            "id": "pool-moon-charm",
+            "name": "Moon Charm",
+            "slot": "accessory",
+            "icon": "accessories/moon-charm.png",
+            "source": "",
+            "why": "Turns the player into a Werewolf at night. This provides an assortment of benefits, such as increased melee damage, melee speed, and melee critical strike chance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Charm"
+          },
+          {
+            "id": "pool-berserkers-glove",
+            "name": "Berserker's Glove",
+            "slot": "accessory",
+            "icon": "accessories/berserkers-glove.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-mech",
@@ -2023,6 +2313,260 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
+      }
+    ],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "",
+            "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          },
+          {
+            "id": "pool-frozen-turtle-shell",
+            "name": "Frozen Turtle Shell",
+            "slot": "accessory",
+            "icon": "accessories/frozen-turtle-shell.png",
+            "source": "",
+            "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "great"
+          },
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "quality": "good"
+          },
+          {
+            "id": "pool-stinger-necklace",
+            "name": "Stinger Necklace",
+            "slot": "accessory",
+            "icon": "accessories/stinger-necklace.png",
+            "source": "",
+            "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-volatile-gelatin",
+            "name": "Volatile Gelatin",
+            "slot": "accessory",
+            "icon": "accessories/volatile-gelatin.png",
+            "source": "",
+            "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Volatile_Gelatin",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -2855,7 +3399,280 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "",
+            "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          },
+          {
+            "id": "pool-frozen-turtle-shell",
+            "name": "Frozen Turtle Shell",
+            "slot": "accessory",
+            "icon": "accessories/frozen-turtle-shell.png",
+            "source": "",
+            "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "great"
+          },
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "quality": "good"
+          },
+          {
+            "id": "pool-stinger-necklace",
+            "name": "Stinger Necklace",
+            "slot": "accessory",
+            "icon": "accessories/stinger-necklace.png",
+            "source": "",
+            "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-volatile-gelatin",
+            "name": "Volatile Gelatin",
+            "slot": "accessory",
+            "icon": "accessories/volatile-gelatin.png",
+            "source": "",
+            "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Volatile_Gelatin",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "magic",
+        "items": [
+          {
+            "id": "pool-mana-cloak",
+            "name": "Mana Cloak",
+            "slot": "accessory",
+            "icon": "accessories/mana-cloak.png",
+            "source": "",
+            "why": "Combines the effects of the Mana Flower and Star Cloak. Additionally, the stars produced by the Star Cloak will transform into special mana stars, which restore 50 mana to the player.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Cloak"
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-mech",
@@ -3395,6 +4212,282 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table"
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-wings",
+            "name": "Wings",
+            "slot": "accessory",
+            "icon": "accessories/wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "",
+            "why": "Provides 4 defense, and offers immunity to a wide assortment of debuffs.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield",
+            "quality": "great"
+          },
+          {
+            "id": "pool-star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "",
+            "why": "Doubles the length of the player's immunity frames (to 4/3 of a second), and summons falling stars when the player is hit.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil",
+            "quality": "great"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good"
+          },
+          {
+            "id": "pool-flesh-knuckles",
+            "name": "Flesh Knuckles",
+            "slot": "accessory",
+            "icon": "accessories/flesh-knuckles.png",
+            "source": "",
+            "why": "Provides 8 defense, and increases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
+            "quality": "good",
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          },
+          {
+            "id": "pool-frozen-turtle-shell",
+            "name": "Frozen Turtle Shell",
+            "slot": "accessory",
+            "icon": "accessories/frozen-turtle-shell.png",
+            "source": "",
+            "why": "When the player is below 50% max HP, this accessory reduces all damage taken by 25%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-putrid-scent",
+            "name": "Putrid Scent",
+            "slot": "accessory",
+            "icon": "accessories/putrid-scent.png",
+            "source": "",
+            "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
+            "quality": "great"
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "quality": "good"
+          },
+          {
+            "id": "pool-stinger-necklace",
+            "name": "Stinger Necklace",
+            "slot": "accessory",
+            "icon": "accessories/stinger-necklace.png",
+            "source": "",
+            "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
+            "quality": "good"
+          },
+          {
+            "id": "pool-volatile-gelatin",
+            "name": "Volatile Gelatin",
+            "slot": "accessory",
+            "icon": "accessories/volatile-gelatin.png",
+            "source": "",
+            "why": "Periodically fires small gelatin projectiles. Primarily useful when the player is doing idle activites such as fishing, but can also help if the player finds themselves getting overwhelmed in fights.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Volatile_Gelatin",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "summon",
+        "items": [
+          {
+            "id": "pool-berserkers-glove",
+            "name": "Berserker's Glove",
+            "slot": "accessory",
+            "icon": "accessories/berserkers-glove.png",
+            "source": "",
+            "why": "Effectively combines the effects of the Flesh Knuckles with Feral Claws, both increasing the player's defense (and aggro) and whip speed.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+            "markers": [
+              "whips"
+            ],
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
+          },
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+          }
+        ]
+      }
+    ]
   }
 ]

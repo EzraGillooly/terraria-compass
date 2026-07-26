@@ -535,7 +535,337 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Poison"
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
+            "slot": "accessory",
+            "icon": "accessories/ram-rune.png",
+            "source": "",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
+            "quality": "good",
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+          },
+          {
+            "id": "pool-balloons",
+            "name": "Balloons",
+            "slot": "accessory",
+            "icon": "accessories/balloons.png",
+            "source": "",
+            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
+            "quality": "good"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
+          },
+          {
+            "id": "pool-honey-comb",
+            "name": "Honey Comb",
+            "slot": "accessory",
+            "icon": "accessories/honey-comb.png",
+            "source": "",
+            "why": "When the player is hit:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+          },
+          {
+            "id": "pool-hive-pack",
+            "name": "Hive Pack",
+            "slot": "accessory",
+            "icon": "accessories/hive-pack.png",
+            "source": "",
+            "why": "Increases the damage of friendly bees.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hive_Pack",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-helm",
+            "name": "Bone Helm",
+            "slot": "accessory",
+            "icon": "accessories/bone-helm.png",
+            "source": "",
+            "why": "Summons Shadow Hand projectiles to damage enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Helm",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-glove",
+            "name": "Bone Glove",
+            "slot": "accessory",
+            "icon": "accessories/bone-glove.png",
+            "source": "",
+            "why": "Causes crossbone projectiles to be thrown from the player's weapon at a maximum of once every second.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Glove",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "pool-strung-counterweight",
+            "name": "Strung Counterweight",
+            "slot": "accessory",
+            "icon": "accessories/strung-counterweight.png",
+            "source": "",
+            "why": "Combines the effects of Yoyo Strings and Counterweights.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight",
+            "markers": [
+              "yoyos"
+            ]
+          },
+          {
+            "id": "pool-feral-claws",
+            "name": "Feral Claws",
+            "slot": "accessory",
+            "icon": "accessories/feral-claws.png",
+            "source": "",
+            "why": "Increases melee speed by 12%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-wof",
@@ -979,6 +1309,285 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil"
+      }
+    ],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
+            "slot": "accessory",
+            "icon": "accessories/ram-rune.png",
+            "source": "",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
+            "quality": "good",
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+          },
+          {
+            "id": "pool-balloons",
+            "name": "Balloons",
+            "slot": "accessory",
+            "icon": "accessories/balloons.png",
+            "source": "",
+            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
+            "quality": "good"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-honey-comb",
+            "name": "Honey Comb",
+            "slot": "accessory",
+            "icon": "accessories/honey-comb.png",
+            "source": "",
+            "why": "When the player is hit:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+          },
+          {
+            "id": "pool-hive-pack",
+            "name": "Hive Pack",
+            "slot": "accessory",
+            "icon": "accessories/hive-pack.png",
+            "source": "",
+            "why": "Increases the damage of friendly bees.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hive_Pack",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-helm",
+            "name": "Bone Helm",
+            "slot": "accessory",
+            "icon": "accessories/bone-helm.png",
+            "source": "",
+            "why": "Summons Shadow Hand projectiles to damage enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Helm",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-glove",
+            "name": "Bone Glove",
+            "slot": "accessory",
+            "icon": "accessories/bone-glove.png",
+            "source": "",
+            "why": "Causes crossbone projectiles to be thrown from the player's weapon at a maximum of once every second.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Glove",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1431,7 +2040,369 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "great",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
+            "slot": "accessory",
+            "icon": "accessories/ram-rune.png",
+            "source": "",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
+            "quality": "good",
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+          },
+          {
+            "id": "pool-balloons",
+            "name": "Balloons",
+            "slot": "accessory",
+            "icon": "accessories/balloons.png",
+            "source": "",
+            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
+            "quality": "good"
+          },
+          {
+            "id": "pool-spectre-boots",
+            "name": "Spectre Boots",
+            "slot": "accessory",
+            "icon": "accessories/spectre-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with Rocket Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots",
+            "quality": "good"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
+          },
+          {
+            "id": "pool-honey-comb",
+            "name": "Honey Comb",
+            "slot": "accessory",
+            "icon": "accessories/honey-comb.png",
+            "source": "",
+            "why": "When the player is hit:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-pygmy-necklace",
+            "name": "Pygmy Necklace",
+            "slot": "accessory",
+            "icon": "accessories/pygmy-necklace.png",
+            "source": "",
+            "why": "Gives the player an additional minion slot. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+          },
+          {
+            "id": "pool-hive-pack",
+            "name": "Hive Pack",
+            "slot": "accessory",
+            "icon": "accessories/hive-pack.png",
+            "source": "",
+            "why": "Increases the damage of friendly bees.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hive_Pack",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-helm",
+            "name": "Bone Helm",
+            "slot": "accessory",
+            "icon": "accessories/bone-helm.png",
+            "source": "",
+            "why": "Summons Shadow Hand projectiles to damage enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Helm",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-glove",
+            "name": "Bone Glove",
+            "slot": "accessory",
+            "icon": "accessories/bone-glove.png",
+            "source": "",
+            "why": "Causes crossbone projectiles to be thrown from the player's weapon at a maximum of once every second.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Glove",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "magic",
+        "items": [
+          {
+            "id": "pool-magnet-flower",
+            "name": "Magnet Flower",
+            "slot": "accessory",
+            "icon": "accessories/magnet-flower.png",
+            "source": "",
+            "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+            "quality": "good"
+          },
+          {
+            "id": "pool-mana-regeneration-band",
+            "name": "Mana Regeneration Band",
+            "slot": "accessory",
+            "icon": "accessories/mana-regeneration-band.png",
+            "source": "",
+            "why": "Increases the player's max mana by 20 and the player's passive mana regeneration by 1 MP/s.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
+            "quality": "fine"
+          }
+        ]
+      }
+    ]
   },
   {
     "phase": "pre-wof",
@@ -1973,6 +2944,323 @@
         "topPick": false
       }
     ],
-    "ammo": []
+    "ammo": [],
+    "accessoryPool": [
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "pool-amphibian-boots",
+            "name": "Amphibian Boots",
+            "slot": "accessory",
+            "icon": "accessories/amphibian-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with the Frog Leg.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amphibian_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "",
+            "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great"
+          },
+          {
+            "id": "pool-shield-of-cthulhu",
+            "name": "Shield of Cthulhu",
+            "slot": "accessory",
+            "icon": "accessories/shield-of-cthulhu.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+            "quality": "great",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-fledgling-wings",
+            "name": "Fledgling Wings",
+            "slot": "accessory",
+            "icon": "accessories/fledgling-wings.png",
+            "source": "",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+            "quality": "great"
+          },
+          {
+            "id": "pool-bundle-of-horseshoe-balloons",
+            "name": "Bundle of Horseshoe Balloons",
+            "slot": "accessory",
+            "icon": "accessories/bundle-of-horseshoe-balloons.png",
+            "source": "",
+            "why": "Provides substantial vertical mobility and acceleration.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+            "quality": "great"
+          },
+          {
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
+            "slot": "accessory",
+            "icon": "accessories/ram-rune.png",
+            "source": "",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
+            "quality": "good",
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
+          },
+          {
+            "id": "pool-balloons",
+            "name": "Balloons",
+            "slot": "accessory",
+            "icon": "accessories/balloons.png",
+            "source": "",
+            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
+            "quality": "good"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "good"
+          },
+          {
+            "id": "pool-panic-necklace",
+            "name": "Panic Necklace",
+            "slot": "accessory",
+            "icon": "accessories/panic-necklace.png",
+            "source": "",
+            "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+            "quality": "good",
+            "markers": [
+              "crimson"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-worm-scarf",
+            "name": "Worm Scarf",
+            "slot": "accessory",
+            "icon": "accessories/worm-scarf.png",
+            "source": "",
+            "why": "Reduces all damage taken by 17%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "corruption"
+            ]
+          },
+          {
+            "id": "pool-brain-of-confusion",
+            "name": "Brain of Confusion",
+            "slot": "accessory",
+            "icon": "accessories/brain-of-confusion.png",
+            "source": "",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+            "quality": "great",
+            "markers": [
+              "expert",
+              "crimson"
+            ]
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
+          },
+          {
+            "id": "pool-honey-comb",
+            "name": "Honey Comb",
+            "slot": "accessory",
+            "icon": "accessories/honey-comb.png",
+            "source": "",
+            "why": "When the player is hit:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
+            "quality": "good"
+          }
+        ]
+      },
+      {
+        "category": "offense",
+        "items": [
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+          },
+          {
+            "id": "pool-hive-pack",
+            "name": "Hive Pack",
+            "slot": "accessory",
+            "icon": "accessories/hive-pack.png",
+            "source": "",
+            "why": "Increases the damage of friendly bees.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hive_Pack",
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-helm",
+            "name": "Bone Helm",
+            "slot": "accessory",
+            "icon": "accessories/bone-helm.png",
+            "source": "",
+            "why": "Summons Shadow Hand projectiles to damage enemies.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Helm",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          },
+          {
+            "id": "pool-bone-glove",
+            "name": "Bone Glove",
+            "slot": "accessory",
+            "icon": "accessories/bone-glove.png",
+            "source": "",
+            "why": "Causes crossbone projectiles to be thrown from the player's weapon at a maximum of once every second.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Glove",
+            "quality": "fine",
+            "markers": [
+              "expert"
+            ]
+          }
+        ]
+      },
+      {
+        "category": "summon",
+        "items": [
+          {
+            "id": "pool-apprentices-scarf",
+            "name": "Apprentice's Scarf",
+            "slot": "accessory",
+            "icon": "accessories/apprentices-scarf.png",
+            "source": "",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
+            "notes": "Players seeking to repeatedly do Old One's Army events, in order to stock up on Defender Medals for future Tier 2 equipment, can find benefit from the Apprentice's Scarf or Squire's Shield, which provide noticeable buffs to sentries."
+          }
+        ]
+      }
+    ]
   }
 ]
