@@ -219,7 +219,14 @@
 .accMoreRow { margin-top: 16px; }
 .accMoreLabel { display: block; font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-bottom: 8px; }
 .accCol { display: flex; flex-direction: column; gap: 8px; }
-.accSlot { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 6px; padding: 10px 7px; min-height: 132px; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+/* Every slot is one height, sized to the busiest an accessory can get, with the
+   contents centred inside it. The worst case in the data is a 2-line name plus
+   three badges (Moon Stone: a grade and two categories), which wraps to two
+   badge rows at this width:
+     10 pad + 28 icon + 6 + 25 name(2 lines) + 6 + 30 badges(2 rows) + 10 pad
+   Sizing to that and centring means a one-badge item sits balanced rather than
+   pinned to the top of a taller box. */
+.accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 7px; min-height: 116px; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 button.accSlot { cursor: pointer; }
 /* .accSlot is a pixel-frame: light its stepped border on hover (via --px-border,
    which drives the ::before layer) rather than the real box border, and drop the
