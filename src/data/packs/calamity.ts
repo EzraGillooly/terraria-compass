@@ -18,10 +18,11 @@ import { type Pack } from './types';
 export const calamityPack: Pack = {
   id: 'calamity',
   name: 'Calamity',
-  // Held back while the endgame data is finished: several stages are still
-  // wiki-scraped rather than curated. Flipping this back re-enables the
-  // selector, no other change needed.
-  available: false,
+  // Unlocked so the data pass can be reviewed in the app. The data is still
+  // mid-pass - 28 of 95 loadouts have unranked weapons, rogue has no weapon
+  // subclasses, and there is no accessory pool, since the Calamity wiki has no
+  // graded accessory guide to build one from.
+  available: true,
   phases: PhaseCollection.parse(phasesJson),
   classes: ClassCollection.parse(classesJson),
   loadouts: LoadoutCollection.parse(loadoutsJson),
