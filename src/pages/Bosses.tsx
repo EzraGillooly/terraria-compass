@@ -107,8 +107,12 @@ export function Bosses() {
   const setPhase = (hard: boolean) => {
     if (hard === showHardmode) return;
     const selIsHard = isHard(selected.stage);
-    if (hard && !selIsHard) setSelectedId(hardStages[0]?.nodes[0]?.id ?? selectedId);
-    if (!hard && selIsHard) setSelectedId(preHard[0]?.nodes[0]?.id ?? selectedId);
+    const firstMain = (list: Stage[]) => {
+      const nodes = list[0]?.nodes ?? [];
+      return (nodes.find((b) => !b.side) ?? nodes[0])?.id;
+    };
+    if (hard && !selIsHard) setSelectedId(firstMain(hardStages) ?? selectedId);
+    if (!hard && selIsHard) setSelectedId(firstMain(preHard) ?? selectedId);
     setShowHardmode(hard);
   };
 
