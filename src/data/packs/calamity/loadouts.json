@@ -4301,7 +4301,7 @@
         "slot": "weapon",
         "icon": "calamity/contaminated-bile.png",
         "source": "Dropped by Gnashers",
-        "why": "solid area-denial spam option",
+        "why": "solid area-denial spam option; first-listed stealth strike option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -4313,7 +4313,7 @@
         "slot": "weapon",
         "icon": "calamity/gilded-dagger-gleaming-dagger.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "reliable rapid-throw dagger",
+        "why": "reliable rapid-throw dagger; strong stealth-strike dagger",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -4347,7 +4347,7 @@
         "slot": "weapon",
         "icon": "calamity/wulfrum-knife.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "early craftable spam knife",
+        "why": "early craftable spam knife; craftable stealth knife",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -4358,39 +4358,6 @@
             "name": "Wulfrum Metal Scrap",
             "qty": 10,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
-          }
-        ],
-        "subclass": "daggers"
-      },
-      {
-        "id": "contaminated-bile",
-        "name": "Contaminated Bile",
-        "slot": "weapon",
-        "icon": "calamity/contaminated-bile.png",
-        "source": "Dropped by Gnashers",
-        "why": "first-listed stealth strike option",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile"
-      },
-      {
-        "id": "gilded-dagger-gleaming-dagger",
-        "name": "Gilded Dagger / Gleaming Dagger",
-        "slot": "weapon",
-        "icon": "calamity/gilded-dagger-gleaming-dagger.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "strong stealth-strike dagger",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Dagger_%2F_Gleaming_Dagger",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Gold Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
           }
         ],
         "subclass": "daggers"
@@ -4414,27 +4381,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
           }
         ]
-      },
-      {
-        "id": "wulfrum-knife",
-        "name": "Wulfrum Knife",
-        "slot": "weapon",
-        "icon": "calamity/wulfrum-knife.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "craftable stealth knife",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Knife",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Wulfrum Metal Scrap",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
-          }
-        ],
-        "subclass": "daggers"
       },
       {
         "id": "wulfrum-controller",
@@ -29003,7 +28949,7 @@
         "slot": "weapon",
         "icon": "calamity/gel-dart.png",
         "source": "Crafted at a Solidifier",
-        "why": "rapid piercing thrown darts",
+        "why": "rapid piercing thrown darts; strong stealth-strike burst",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -29028,7 +28974,7 @@
         "slot": "weapon",
         "icon": "calamity/glaive.png",
         "source": "Purchased from Bandit for 10",
-        "why": "returning thrown polearm",
+        "why": "returning thrown polearm; stealth strike splits into projectiles",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -29041,7 +28987,7 @@
         "slot": "weapon",
         "icon": "calamity/lionfish.png",
         "source": "Obtained from Ancient Treasure Chests in the Abyss",
-        "why": "inflicts venom on hit",
+        "why": "inflicts venom on hit; venom-inflicting stealth strike",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -29058,56 +29004,6 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slick_Cane"
-      },
-      {
-        "id": "gel-dart",
-        "name": "Gel Dart",
-        "slot": "weapon",
-        "icon": "calamity/gel-dart.png",
-        "source": "Crafted at a Solidifier",
-        "why": "strong stealth-strike burst",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gel_Dart",
-        "station": "Solidifier",
-        "materials": [
-          {
-            "name": "Purified Gel",
-            "qty": 18,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purified_Gel"
-          },
-          {
-            "name": "Blighted Gel",
-            "qty": 18,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blighted_Gel"
-          }
-        ]
-      },
-      {
-        "id": "glaive",
-        "name": "Glaive",
-        "slot": "weapon",
-        "icon": "calamity/glaive.png",
-        "source": "Purchased from Bandit for 10",
-        "why": "stealth strike splits into projectiles",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive",
-        "subclass": "javelins"
-      },
-      {
-        "id": "lionfish",
-        "name": "Lionfish",
-        "slot": "weapon",
-        "icon": "calamity/lionfish.png",
-        "source": "Obtained from Ancient Treasure Chests in the Abyss",
-        "why": "venom-inflicting stealth strike",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lionfish"
       },
       {
         "id": "shinobi-blade",
@@ -35615,7 +35511,7 @@
         "slot": "weapon",
         "icon": "calamity/ice-star.png",
         "source": "Purchased from Archmage NPC for 20",
-        "why": "spam option",
+        "why": "spam option; stealth option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -35628,7 +35524,7 @@
         "slot": "weapon",
         "icon": "calamity/palladium-javelin.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "spam option",
+        "why": "spam option; stealth option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -35649,7 +35545,7 @@
         "slot": "weapon",
         "icon": "calamity/prismalline.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "high-damage rogue weapon this tier",
+        "why": "high-damage rogue weapon this tier; strong stealth-strike weapon",
         "tags": [],
         "topPick": true,
         "tier": "good",
@@ -35726,70 +35622,6 @@
           }
         ],
         "subclass": "boomerangs"
-      },
-      {
-        "id": "ice-star",
-        "name": "Ice Star",
-        "slot": "weapon",
-        "icon": "calamity/ice-star.png",
-        "source": "Purchased from Archmage NPC for 20",
-        "why": "stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls"
-      },
-      {
-        "id": "palladium-javelin",
-        "name": "Palladium Javelin",
-        "slot": "weapon",
-        "icon": "calamity/palladium-javelin.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Palladium Bar",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
-          }
-        ],
-        "subclass": "javelins"
-      },
-      {
-        "id": "prismalline",
-        "name": "Prismalline",
-        "slot": "weapon",
-        "icon": "calamity/prismalline.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "strong stealth-strike weapon",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Crystalline",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystalline"
-          },
-          {
-            "name": "Mollusk Husk",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
-          },
-          {
-            "name": "Sea Prism",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
-          }
-        ]
       }
     ],
     "armor": [
@@ -42714,7 +42546,7 @@
         "slot": "weapon",
         "icon": "calamity/ice-star.png",
         "source": "Purchased from Archmage NPC for 20",
-        "why": "ranged spam option",
+        "why": "ranged spam option; stealth ranged option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -42727,7 +42559,7 @@
         "slot": "weapon",
         "icon": "calamity/palladium-javelin.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "piercing spam thrown weapon",
+        "why": "piercing spam thrown weapon; stealth strike piercing",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -42748,7 +42580,7 @@
         "slot": "weapon",
         "icon": "calamity/prismalline.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "spam option",
+        "why": "spam option; stealth option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -42825,70 +42657,6 @@
           }
         ],
         "subclass": "boomerangs"
-      },
-      {
-        "id": "ice-star",
-        "name": "Ice Star",
-        "slot": "weapon",
-        "icon": "calamity/ice-star.png",
-        "source": "Purchased from Archmage NPC for 20",
-        "why": "stealth ranged option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls"
-      },
-      {
-        "id": "palladium-javelin",
-        "name": "Palladium Javelin",
-        "slot": "weapon",
-        "icon": "calamity/palladium-javelin.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "stealth strike piercing",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Palladium_Javelin",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Palladium Bar",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
-          }
-        ],
-        "subclass": "javelins"
-      },
-      {
-        "id": "prismalline",
-        "name": "Prismalline",
-        "slot": "weapon",
-        "icon": "calamity/prismalline.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prismalline",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Crystalline",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystalline"
-          },
-          {
-            "name": "Mollusk Husk",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
-          },
-          {
-            "name": "Sea Prism",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
-          }
-        ]
       },
       {
         "id": "lunic-eye",
@@ -48157,7 +47925,7 @@
         "slot": "accessory",
         "icon": "calamity/frog-leg.png",
         "source": "Fished in any viable body of water",
-        "why": "jump speed and mobility",
+        "why": "jump speed and mobility; mobility jump accessory",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -48280,18 +48048,6 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
           }
         ]
-      },
-      {
-        "id": "frog-leg",
-        "name": "Frog Leg",
-        "slot": "accessory",
-        "icon": "calamity/frog-leg.png",
-        "source": "Fished in any viable body of water",
-        "why": "mobility jump accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg"
       },
       {
         "id": "honey-dew",
@@ -54523,7 +54279,7 @@
         "slot": "weapon",
         "icon": "calamity/desecrated-water.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "strong spam-oriented rogue option",
+        "why": "strong spam-oriented rogue option; viable stealth option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -54597,7 +54353,7 @@
         "slot": "weapon",
         "icon": "calamity/totality-breakers.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "solid spam alternative",
+        "why": "solid spam alternative; viable stealth option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -54641,41 +54397,6 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Wounder"
       },
       {
-        "id": "desecrated-water",
-        "name": "Desecrated Water",
-        "slot": "weapon",
-        "icon": "calamity/desecrated-water.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "viable stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Desecrated_Water",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Any Evil Water",
-            "qty": 100,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Evil_Water"
-          },
-          {
-            "name": "Any Adamantite Bar",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Adamantite_Bar"
-          },
-          {
-            "name": "Any Hardmode Evil Component",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Hardmode_Evil_Component"
-          },
-          {
-            "name": "Soul of Night",
-            "qty": 7,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
-          }
-        ]
-      },
-      {
         "id": "palladium-javelin",
         "name": "Palladium Javelin",
         "slot": "weapon",
@@ -54695,31 +54416,6 @@
           }
         ],
         "subclass": "javelins"
-      },
-      {
-        "id": "totality-breakers",
-        "name": "Totality Breakers",
-        "slot": "weapon",
-        "icon": "calamity/totality-breakers.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "viable stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Totality_Breakers",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Molotov Cocktail",
-            "qty": 50,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Molotov_Cocktail"
-          },
-          {
-            "name": "Solar Veil",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Solar_Veil"
-          }
-        ]
       },
       {
         "id": "lunic-eye",
@@ -60611,42 +60307,6 @@
         "station": "Mythril Anvil or Orichalcum Anvil"
       },
       {
-        "id": "optic-staff",
-        "name": "Optic Staff",
-        "slot": "weapon",
-        "icon": "calamity/optic-staff.png",
-        "why": "Summons Twins (Retanimini and Spazmamini) as one minion; needs Souls of Sight from The Twins.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "subclass": "minions",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Optic_Staff",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Black Lens",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Lens"
-          },
-          {
-            "name": "Lens",
-            "qty": 2,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
-          },
-          {
-            "name": "Hallowed Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          }
-        ]
-      },
-      {
         "id": "temporal-umbrella",
         "name": "Temporal Umbrella",
         "slot": "weapon",
@@ -61933,7 +61593,7 @@
         "slot": "weapon",
         "icon": "calamity/leviathan-teeth.png",
         "source": "Dropped by Leviathan and Anahita",
-        "why": "additional spam option",
+        "why": "additional spam option; solid stealth alternative",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -61945,7 +61605,7 @@
         "slot": "weapon",
         "icon": "calamity/phantasmal-ruin.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "additional spam option",
+        "why": "additional spam option; additional stealth option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -61970,7 +61630,7 @@
         "slot": "weapon",
         "icon": "calamity/samsara-slicer.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "additional spam option",
+        "why": "additional spam option; additional stealth option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -62000,7 +61660,7 @@
         "slot": "weapon",
         "icon": "calamity/stellar-knife.png",
         "source": "Dropped by Aries after Astrum Aureus is defeated",
-        "why": "additional spam option",
+        "why": "additional spam option; additional stealth option",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -62036,86 +61696,6 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Scale"
           }
         ]
-      },
-      {
-        "id": "leviathan-teeth",
-        "name": "Leviathan Teeth",
-        "slot": "weapon",
-        "icon": "calamity/leviathan-teeth.png",
-        "source": "Dropped by Leviathan and Anahita",
-        "why": "solid stealth alternative",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
-      },
-      {
-        "id": "phantasmal-ruin",
-        "name": "Phantasmal Ruin",
-        "slot": "weapon",
-        "icon": "calamity/phantasmal-ruin.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "additional stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantasmal_Ruin",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Spectre Bar",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-          },
-          {
-            "name": "Bone",
-            "qty": 35,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
-          }
-        ]
-      },
-      {
-        "id": "samsara-slicer",
-        "name": "Samsara Slicer",
-        "slot": "weapon",
-        "icon": "calamity/samsara-slicer.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "additional stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Samsara_Slicer",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Equanimity",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Equanimity"
-          },
-          {
-            "name": "Brimblade",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimblade"
-          },
-          {
-            "name": "Living Shard",
-            "qty": 12,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Shard"
-          }
-        ]
-      },
-      {
-        "id": "stellar-knife",
-        "name": "Stellar Knife",
-        "slot": "weapon",
-        "icon": "calamity/stellar-knife.png",
-        "source": "Dropped by Aries after Astrum Aureus is defeated",
-        "why": "additional stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
-        "subclass": "daggers"
       },
       {
         "id": "lunic-eye",
@@ -62644,7 +62224,7 @@
         "slot": "accessory",
         "icon": "calamity/ruin-medallion.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "top spam accessory",
+        "why": "top spam accessory; additional stealth option",
         "tags": [],
         "topPick": false,
         "tier": "best",
@@ -62774,36 +62354,6 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glove_of_Precision"
-      },
-      {
-        "id": "ruin-medallion",
-        "name": "Ruin Medallion",
-        "slot": "accessory",
-        "icon": "calamity/ruin-medallion.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "additional stealth option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruin_Medallion",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Coin of Deceit",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Coin_of_Deceit"
-          },
-          {
-            "name": "Unholy Core",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-          },
-          {
-            "name": "Essence of Havoc",
-            "qty": 2,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
-          }
-        ]
       },
       {
         "id": "vampiric-talisman",
@@ -69981,7 +69531,7 @@
         "slot": "weapon",
         "icon": "calamity/stellar-knife.png",
         "source": "Dropped by Aries after Astrum Aureus is defeated",
-        "why": "homing knives with high sustained single-target DPS",
+        "why": "homing knives with high sustained single-target DPS; boosted stealth-strike knives",
         "tags": [],
         "topPick": true,
         "tier": "best",
@@ -69994,7 +69544,7 @@
         "slot": "weapon",
         "icon": "calamity/doomsday-device.png",
         "source": "Dropped by the majority of enemies that spawn during the Martian Madness event",
-        "why": "strong area explosive damage",
+        "why": "strong area explosive damage; large stealth-strike explosion",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -70037,7 +69587,7 @@
         "slot": "weapon",
         "icon": "calamity/plaguenade.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "plague grenade with good crowd damage",
+        "why": "plague grenade with good crowd damage; plague stealth-strike area damage",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -70097,57 +69647,6 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
-      },
-      {
-        "id": "doomsday-device",
-        "name": "Doomsday Device",
-        "slot": "weapon",
-        "icon": "calamity/doomsday-device.png",
-        "source": "Dropped by the majority of enemies that spawn during the Martian Madness event",
-        "why": "large stealth-strike explosion",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device",
-        "subclass": "bombs"
-      },
-      {
-        "id": "plaguenade",
-        "name": "Plaguenade",
-        "slot": "weapon",
-        "icon": "calamity/plaguenade.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "plague stealth-strike area damage",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Beenade",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade"
-          },
-          {
-            "name": "Plague Cell Canister",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
-          }
-        ]
-      },
-      {
-        "id": "stellar-knife",
-        "name": "Stellar Knife",
-        "slot": "weapon",
-        "icon": "calamity/stellar-knife.png",
-        "source": "Dropped by Aries after Astrum Aureus is defeated",
-        "why": "boosted stealth-strike knives",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
-        "subclass": "daggers"
       }
     ],
     "armor": [
@@ -78521,7 +78020,7 @@
         "slot": "weapon",
         "icon": "calamity/corpus-avertor.png",
         "source": "Dropped by the Ravager",
-        "why": "top spam-type rogue weapon, listed first with lifesteal",
+        "why": "top spam-type rogue weapon, listed first with lifesteal; primary stealth-strike option, listed first",
         "tags": [],
         "topPick": true,
         "tier": "best",
@@ -78545,7 +78044,7 @@
         "slot": "weapon",
         "icon": "calamity/plaguenade.png",
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "AoE plague spam option",
+        "why": "AoE plague spam option; stealth AoE option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -78591,18 +78090,6 @@
         "subclass": "daggers"
       },
       {
-        "id": "corpus-avertor",
-        "name": "Corpus Avertor",
-        "slot": "weapon",
-        "icon": "calamity/corpus-avertor.png",
-        "source": "Dropped by the Ravager",
-        "why": "primary stealth-strike option, listed first",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor"
-      },
-      {
         "id": "dukes-decapitator",
         "name": "Duke's Decapitator",
         "slot": "weapon",
@@ -78625,31 +78112,6 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
-      },
-      {
-        "id": "plaguenade",
-        "name": "Plaguenade",
-        "slot": "weapon",
-        "icon": "calamity/plaguenade.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "stealth AoE option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguenade",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Beenade",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade"
-          },
-          {
-            "name": "Plague Cell Canister",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
-          }
-        ]
       },
       {
         "id": "system-bane",
@@ -84415,51 +83877,6 @@
         ]
       },
       {
-        "id": "angel-treads",
-        "name": "Angel Treads",
-        "slot": "accessory",
-        "icon": "calamity/angel-treads.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Angel_Treads",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Terraspark Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
-          },
-          {
-            "name": "Harpy Ring",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Harpy_Ring"
-          },
-          {
-            "name": "Essence of Sunlight",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
-          },
-          {
-            "name": "Soul of Fright",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          }
-        ]
-      },
-      {
         "id": "asgards-valor",
         "name": "Asgard's Valor",
         "slot": "accessory",
@@ -86499,51 +85916,6 @@
         ]
       },
       {
-        "id": "angel-treads",
-        "name": "Angel Treads",
-        "slot": "accessory",
-        "icon": "calamity/angel-treads.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Angel_Treads",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Terraspark Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
-          },
-          {
-            "name": "Harpy Ring",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Harpy_Ring"
-          },
-          {
-            "name": "Essence of Sunlight",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
-          },
-          {
-            "name": "Soul of Fright",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          }
-        ]
-      },
-      {
         "id": "asgards-valor",
         "name": "Asgard's Valor",
         "slot": "accessory",
@@ -87836,7 +87208,7 @@
         "slot": "weapon",
         "icon": "calamity/regulus-riot.png",
         "source": "Dropped by Astrum Deus",
-        "why": "high sustained thrown DPS",
+        "why": "high sustained thrown DPS; powerful stealth-strike option",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -87848,7 +87220,7 @@
         "slot": "weapon",
         "icon": "calamity/shard-of-antumbra.png",
         "source": "Crafted at an Ancient Manipulator",
-        "why": "homing shadow shards, strong single-target",
+        "why": "homing shadow shards, strong single-target; homing shards on stealth strike",
         "tags": [],
         "topPick": false,
         "tier": "good",
@@ -87868,7 +87240,7 @@
         "slot": "weapon",
         "icon": "calamity/star-of-destruction.png",
         "source": "Crafted at an Ancient Manipulator",
-        "why": "massive explosive burst damage",
+        "why": "massive explosive burst damage; heavy stealth-strike burst",
         "tags": [],
         "topPick": true,
         "tier": "best",
@@ -87906,59 +87278,6 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
-      },
-      {
-        "id": "regulus-riot",
-        "name": "Regulus Riot",
-        "slot": "weapon",
-        "icon": "calamity/regulus-riot.png",
-        "source": "Dropped by Astrum Deus",
-        "why": "powerful stealth-strike option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regulus_Riot"
-      },
-      {
-        "id": "shard-of-antumbra",
-        "name": "Shard of Antumbra",
-        "slot": "weapon",
-        "icon": "calamity/shard-of-antumbra.png",
-        "source": "Crafted at an Ancient Manipulator",
-        "why": "homing shards on stealth strike",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shard_of_Antumbra",
-        "station": "Ancient Manipulator",
-        "materials": [
-          {
-            "name": "Meld Blob",
-            "qty": 18,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
-          }
-        ]
-      },
-      {
-        "id": "star-of-destruction",
-        "name": "Star of Destruction",
-        "slot": "weapon",
-        "icon": "calamity/star-of-destruction.png",
-        "source": "Crafted at an Ancient Manipulator",
-        "why": "heavy stealth-strike burst",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_of_Destruction",
-        "station": "Ancient Manipulator",
-        "materials": [
-          {
-            "name": "Meld Blob",
-            "qty": 18,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
-          }
-        ],
-        "subclass": "spiky-balls"
       },
       {
         "id": "betsys-wrath",
