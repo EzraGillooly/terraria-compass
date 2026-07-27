@@ -367,6 +367,61 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
   );
 }
 
+/* ── Accessory reforges ──
+   Calamity is not vanilla here: it adds four modifiers of its own and retunes
+   several existing ones, so showing vanilla's four on a Calamity loadout would
+   be wrong rather than merely incomplete. Two of the new ones belong to a
+   single class and are gated the same way the class tags are. */
+interface Reforge { name: string; stat: string; note: string; onlyClass?: string }
+
+const REFORGES: Record<string, { intro: string; list: Reforge[]; href: string; label: string }> = {
+  vanilla: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is the default. Swap to Menacing or Lucky once you can dodge reliably.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+    ],
+    href: 'https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding',
+    label: 'Menacing vs Lucky vs Warding on the wiki',
+  },
+  calamity: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds four modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit, +0.05 luck', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+      { name: 'Silent', stat: '+8% stealth regen', note: 'Calamity only, and only useful to rogue', onlyClass: 'rogue' },
+      { name: 'Friendly', stat: '+1 minion', note: 'Calamity only, and only useful to summoner', onlyClass: 'summoner' },
+      { name: 'Dauntless', stat: '+20 max life', note: 'Calamity only' },
+      { name: 'Invigorating', stat: '+0.25 HP/s regen', note: 'Calamity only' },
+    ],
+    href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
+    label: 'Calamity modifier table on the wiki',
+  },
+};
+
+function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: string }) {
+  const pack = REFORGES[packId] ?? REFORGES.vanilla;
+  const list = pack.list.filter((r) => !r.onlyClass || r.onlyClass === activeClass);
+  return (
+    <div className={styles.reforgeBlock}>
+      <div className={styles.reforgeLabel}>Accessory reforges</div>
+      <p className={styles.reforgeIntro}>{pack.intro}</p>
+      <ul className={styles.reforgeList}>
+        {list.map((r) => (
+          <li key={r.name}><b>{r.name}</b> <span>{r.stat}</span> {r.note}</li>
+        ))}
+      </ul>
+      <p className={styles.reforgeMore}>
+        <a href={pack.href} rel="noopener noreferrer" target="_blank">{pack.label}</a>
+      </p>
+    </div>
+  );
+}
+
 /* ── Buff / consumable card (same shape as an accessory slot) ── */
 function BuffCell(
   { item, difficulty, onOpen }:
@@ -439,7 +494,11 @@ export function Loadouts() {
   // the full best/good/other split rather than only best-in-slot.
   const showingAll = hasSubclasses && activeSubclasses.size === 0;
 
-  const matchSub = (w: Item) => !hasSubclasses || showingAll || !w.subclass || activeSubclasses.has(w.subclass);
+  /* An uncategorised weapon belongs to no chip, so it appears only when no chip
+     is active. It used to pass every filter, which put items like the Rod of
+     Discord under Daggers, Bombs and Javelins at once. */
+  const matchSub = (w: Item) =>
+    !hasSubclasses || showingAll || (!!w.subclass && activeSubclasses.has(w.subclass));
 
   /* Read in the same order as the toggles above: a summoner's toggles run
      Minions, Whips, Sentries, so its picks should too. Anything without a
@@ -770,28 +829,7 @@ export function Loadouts() {
                 )}
               </div>
             )}
-            <div className={styles.reforgeBlock}>
-            <div className={styles.reforgeLabel}>Accessory reforges</div>
-            <p className={styles.reforgeIntro}>
-              Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
-              to Menacing or Lucky once you can dodge reliably.
-            </p>
-            <ul className={styles.reforgeList}>
-              <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
-              <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
-              <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
-              <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
-            </ul>
-            <p className={styles.reforgeMore}>
-              <a
-                href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Menacing vs Lucky vs Warding on the wiki
-              </a>
-            </p>
-            </div>
+            <ReforgeBlock packId={packId} activeClass={activeClassId} />
             <AccLegend packId={packId} hasQuality={poolHasQuality} />
           </div>
 

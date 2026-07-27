@@ -182,3 +182,12 @@
    they are already indented one level, so they are not competing for that column. */
 .matNameRow { display: flex; align-items: baseline; gap: 7px; min-width: 0; }
 .materialsFlat .matQty { min-width: 0; text-align: left; }
+
+/* Item effect lines (the in-game tooltip). One line per effect - a tooltip's
+   lines are separate effects and reading them as one sentence loses that. */
+.effects { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.effects li { position: relative; padding-left: 11px; line-height: 1.4; }
+.effects li::before {
+  content: ''; position: absolute; left: 0; top: .55em;
+  width: 4px; height: 4px; background: var(--accent); opacity: .55;
+}

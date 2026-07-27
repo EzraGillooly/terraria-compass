@@ -17,6 +17,14 @@ export const Item = z.object({
   icon: z.string(),
   source: z.string(),
   why: z.string(),
+  /**
+   * What the item actually does, taken verbatim from its in-game tooltip.
+   * Deliberately separate from `why`, which is why this guide picks it at this
+   * stage - an accessory whose only text was "defensive accessory option" told
+   * a reader nothing about what equipping it would change. Effects are joined
+   * with " · " where the tooltip has several lines.
+   */
+  effect: z.string().optional(),
   notes: z.string().optional(),
   /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
   modifier: z.string().optional(),

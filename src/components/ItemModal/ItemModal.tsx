@@ -99,6 +99,18 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
         <p className={styles.desc}>{item.why}</p>
 
         <div className={styles.kv}>
+          {/* What the item does, from its in-game tooltip - listed line by line
+              because a tooltip's lines are separate effects, and run together
+              they read as one long sentence. Kept above Source: what it does
+              matters before where to get it. */}
+          {item.effect && (
+            <div className={styles.kvRow}>
+              <span className={styles.kvKey}>Effect</span>
+              <ul className={styles.effects}>
+                {item.effect.split(' · ').map((line) => <li key={line}>{line}</li>)}
+              </ul>
+            </div>
+          )}
           {item.stats && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}
