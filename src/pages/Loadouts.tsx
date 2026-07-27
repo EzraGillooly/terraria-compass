@@ -194,6 +194,9 @@ const CATEGORY_CLASS: Record<string, string> = {
 const MARKER_LABEL: Record<string, string> = {
   expert: 'Expert', tank: 'Tank', corruption: 'Corruption', crimson: 'Crimson',
   whips: 'Whips', yoyos: 'Yoyos',
+  tedious: 'Tedious', risky: 'Risky', 'crowd-control': 'Crowd control',
+  support: 'Support', upgradeable: 'Upgradeable',
+  'calamity-changed': 'Changed', pairs: 'Pair',
 };
 const MARKER_TITLE: Record<string, string> = {
   expert: 'Expert Mode and above only',
@@ -202,6 +205,21 @@ const MARKER_TITLE: Record<string, string> = {
   crimson: 'Crimson worlds only',
   whips: 'Only worth it if you use whips',
   yoyos: 'Only worth it if you use yoyos',
+  tedious: 'Difficult or tedious to get at this stage',
+  risky: 'Difficult or risky to use, and needs boss preparation',
+  'crowd-control': 'Best for crowd control, such as events or worm bosses',
+  support: 'Debuffs enemies or benefits the player, rather than dealing the damage itself',
+  upgradeable: 'Variants and upgrades of this are also viable',
+  'calamity-changed': 'Calamity changes how this works',
+  pairs: 'Meant to be used together with another item',
+};
+/* The two packs tag accessories from different sources and the sets do not
+   overlap, so each shows only its own key - a Calamity reader has no use for
+   "Crimson worlds only" and a vanilla reader has none for "Changed". */
+const PACK_MARKERS: Record<string, readonly string[]> = {
+  vanilla: ['expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos'],
+  calamity: ['tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
+    'calamity-changed', 'pairs'],
 };
 
 /** Class-specific categories are noise on the other three classes' pages. */
@@ -312,7 +330,8 @@ function PoolRow(
 }
 
 /** Key to the accessory tags, so the colours mean something on first read. */
-function AccLegend() {
+function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
+  const markers = PACK_MARKERS[packId] ?? [];
   return (
     <div className={styles.accLegend}>
       <span className={styles.accLegendLabel}>Tags</span>
@@ -321,10 +340,26 @@ function AccLegend() {
           {CATEGORY_LABEL[c]}
         </span>
       ))}
-      <span className={styles.accLegendSep} aria-hidden="true" />
-      {(['great', 'good', 'fine'] as const).map((q) => (
-        <span key={q} className={`${styles.accQuality} ${styles[`q_${q}`]}`}>{q}</span>
-      ))}
+      {/* Calamity's guide grades nothing, so the grade key would be three
+          swatches a Calamity reader never sees on an item. */}
+      {hasQuality && (
+        <>
+          <span className={styles.accLegendSep} aria-hidden="true" />
+          {(['great', 'good', 'fine'] as const).map((q) => (
+            <span key={q} className={`${styles.accQuality} ${styles[`q_${q}`]}`}>{q}</span>
+          ))}
+        </>
+      )}
+      {markers.length > 0 && (
+        <>
+          <span className={styles.accLegendSep} aria-hidden="true" />
+          {markers.map((m) => (
+            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+              {MARKER_LABEL[m]}
+            </span>
+          ))}
+        </>
+      )}
       <span className={styles.accLegendNote}>
         class tags show on that class only
       </span>
@@ -359,7 +394,7 @@ function BuffCell(
 
 export function Loadouts() {
   const { difficulty, classId } = useAppState();
-  const { classes, phases, loadouts, bosses } = usePack();
+  const { id: packId, classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
@@ -494,12 +529,24 @@ export function Loadouts() {
   const ordered = [...accessories].sort((a, b) => catRank(a) - catRank(b));
   const accSlots = Array.from({ length: slotCount }, (_, i) => ordered[i] ?? null);
 
-  /* The pool was filtered against the equipped list when the data was built, so
-     anything promoted into a slot just now would otherwise appear twice. */
-  const equippedNames = new Set(accessories.map((a) => a.name));
+  /* This is the only place that knows the final equipped list - it includes
+     whatever the Classic substitution promoted into a slot a moment ago - so
+     the pool is de-duplicated here rather than in the data. Calamity's pool is
+     written unfiltered for exactly that reason.
+
+     Deliberately keyed on the slots rather than on `accessories`: a loadout can
+     list more accessories than there are slots (Calamity's Pre-Boss rogue lists
+     twelve), and those past the last slot are not rendered. Excluding the whole
+     list dropped them from "other options" as well, so they appeared nowhere at
+     all - which is why the button read "(1)" on a phase the guide gives a dozen
+     picks for. */
+  const equippedNames = new Set(accSlots.filter(Boolean).map((a) => a!.name));
   const accessoryPool = safeLoadout.accessoryPool
     .map((g) => ({ ...g, items: g.items.filter((it) => !equippedNames.has(it.name)) }))
     .filter((g) => g.items.length > 0);
+  const poolHasQuality = safeLoadout.accessoryPool
+    .some((g) => g.items.some((it) => it.quality))
+    || accessories.some((a) => a.quality);
 
 
   return (
@@ -745,7 +792,7 @@ export function Loadouts() {
               </a>
             </p>
             </div>
-            <AccLegend />
+            <AccLegend packId={packId} hasQuality={poolHasQuality} />
           </div>
 
           </div>

@@ -110,11 +110,21 @@ export const Item = z.object({
   /** how strong the pick is at this stage, per the accessory guide */
   quality: z.enum(['great', 'good', 'fine']).optional(),
   /**
-   * Caveats worth showing next to an accessory: Expert-only, better in tank
-   * builds, locked to one world evil, or only useful with whips or yoyos.
+   * Caveats worth showing next to an accessory.
+   *
+   * The two packs draw theirs from different sources and the sets do not
+   * overlap, so the legend is rendered per pack rather than as one list:
+   *
+   *  - vanilla, from the community accessory guide: Expert-only, better in a
+   *    tank build, locked to one world evil, or only useful with whips or yoyos
+   *  - calamity, from the symbols Guide:Class setups defines for itself:
+   *    * tedious, † risky, C crowd-control, + support, ≤ upgradeable,
+   *    Δ changed by Calamity, Ω used as a pair
    */
   markers: z.array(z.enum([
     'expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos',
+    'tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
+    'calamity-changed', 'pairs',
   ])).optional(),
   wikiUrl: z.string().url().optional(),
 });
