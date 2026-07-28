@@ -118,6 +118,12 @@ const ARMOR_EFFECT_LINES = 3;
 
 /* ── Accessory equip cell ── */
 
+/* Post-Moon Lord in Calamity, where the Celestial Onion becomes available. */
+const CALAMITY_POST_ML = new Set<string>([
+  'cal-pre-providence', 'cal-pre-polterghast', 'cal-pre-dog',
+  'cal-pre-yharon', 'cal-pre-exo', 'cal-endgame',
+]);
+
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
 ]);
@@ -530,9 +536,22 @@ export function Loadouts() {
   // Only offer subclasses that actually have a weapon this phase - e.g. there are
   // no Launchers before Hardmode. A stored subclass that isn't available here (or
   // no longer exists at all) falls back to "Overview" rather than showing an empty list.
+  /* The wiki types most weapons but not all - it calls a dozen Calamity items
+     simply "a rogue weapon" with no family. Those match no chip, so without
+     this they appear in no filtered view at all and look missing. An "Other"
+     chip is added when the phase has any, which is honest about the wiki
+     having no category rather than inventing one for them. */
+  const OTHER_SUB = 'other';
+  const hasUntyped = safeLoadout.weapons.some((w) => !w.subclass);
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
+  if (hasUntyped && availableSubclasses.length > 0) {
+    availableSubclasses.push({
+      id: OTHER_SUB, name: 'Other',
+      description: 'Weapons the wiki does not place in a family.',
+    });
+  }
   const hasSubclasses = availableSubclasses.length > 0;
   const validSubclasses = new Set(availableSubclasses.map((s) => s.id));
   const activeSubclasses = new Set(
@@ -546,7 +565,8 @@ export function Loadouts() {
      is active. It used to pass every filter, which put items like the Rod of
      Discord under Daggers, Bombs and Javelins at once. */
   const matchSub = (w: Item) =>
-    !hasSubclasses || showingAll || (!!w.subclass && activeSubclasses.has(w.subclass));
+    !hasSubclasses || showingAll
+    || (w.subclass ? activeSubclasses.has(w.subclass) : activeSubclasses.has(OTHER_SUB));
 
   /* Read in the same order as the toggles above: a summoner's toggles run
      Minions, Whips, Sentries, so its picks should too. Anything without a
@@ -563,7 +583,13 @@ export function Loadouts() {
    * that table. Calling the first row "Recommended" would assert a judgement
    * nothing made, so those are presented as an unranked list instead.
    */
-  const ranked = safeLoadout.weapons.some((w) => w.why);
+  /* Vanilla's loadouts are hand-curated, so "Recommended" and "Also Great"
+     mean something there. Calamity's come from the guide's class-setup
+     columns, where order is layout, not judgement - and `why` survives on
+     some entries and not others, so this flipped between phases: Pre-Skeletron
+     read "Options" and Pre-Mech "Recommended" for no reason a reader could
+     see. One unranked list across every Calamity phase instead. */
+  const ranked = packId !== 'calamity' && safeLoadout.weapons.some((w) => w.why);
 
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
@@ -600,7 +626,12 @@ export function Loadouts() {
 
   // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
   const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
-  const slotCount = demonHeartUnlocked ? 6 : 5;
+  /* Calamity adds a seventh slot that vanilla has no equivalent for: the
+     Celestial Onion, a post-Moon Lord consumable. Like the Demon Heart it is
+     Expert-and-above only, so Classic stays at five throughout. */
+  const onionUnlocked = packId === 'calamity' && difficulty === 'expert'
+    && CALAMITY_POST_ML.has(activePhaseId);
+  const slotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
 
   /*
    * In Classic, an Expert-only pick is not a recommendation - it is a slot the
@@ -652,7 +683,20 @@ export function Loadouts() {
     return cats.length > 0 ? CAT_ORDER.length : CAT_ORDER.length + 1;
   };
   const ordered = [...accessories].sort((a, b) => catRank(a) - catRank(b));
-  const accSlots = Array.from({ length: slotCount }, (_, i) => ordered[i] ?? null);
+  /* Guarantee a mobility pick in the slots. Sorting by category puts mobility
+     first, but a loadout listing more accessories than it has slots can still
+     push it past the last one - and a build with no movement accessory reads
+     as advice, not an oversight. If none made the cut, pull the best mobility
+     option from the pool into the final slot. */
+  const shown = ordered.slice(0, slotCount);
+  if (!shown.some((a) => (a.categories ?? []).includes('mobility'))) {
+    const names = new Set(shown.map((a) => a.name));
+    const mob = [...accessories, ...safeLoadout.accessoryPool.flatMap((g) => g.items)]
+      .find((it) => (it.categories ?? []).includes('mobility')
+        && !names.has(it.name) && !it.isGroup && isObtainable(it, difficulty));
+    if (mob) shown.splice(Math.max(0, slotCount - 1), 1, mob);
+  }
+  const accSlots = Array.from({ length: slotCount }, (_, i) => shown[i] ?? null);
 
   /* This is the only place that knows the final equipped list - it includes
      whatever the Classic substitution promoted into a slot a moment ago - so
