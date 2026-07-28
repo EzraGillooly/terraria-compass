@@ -118,6 +118,10 @@ export const Item = z.object({
    */
   categories: z.array(z.enum([
     'mobility', 'offense', 'survivability', 'melee', 'ranged', 'magic', 'summon',
+    // Calamity's guide separates these, and the distinction is the point:
+    // primary mobility is the one movement item a build is built around,
+    // extra mobility is what it stacks on top. 'mobility' stays for vanilla.
+    'primary-mobility', 'extra-mobility', 'all-around',
   ])).optional(),
   /** how strong the pick is at this stage, per the accessory guide */
   quality: z.enum(['great', 'good', 'fine']).optional(),
@@ -177,7 +181,11 @@ export const Loadout = z.object({
    */
   mixNote: z.string().optional(),
   accessoryPool: z.array(z.object({
-    category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged', 'magic', 'summon']),
+    // Must track Item.categories - these are the same vocabulary, and only
+    // updating one of them is what broke the schema when Calamity's
+    // mobility buckets were split.
+    category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged',
+      'magic', 'summon', 'primary-mobility', 'extra-mobility', 'all-around']),
     items: z.array(Item),
   })).default([]),
 });

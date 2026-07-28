@@ -201,9 +201,11 @@ function curateArmor(grouped: Item[]): Item[] {
   // (Bee vs Obsidian, Chlorophyte vs Turtle, Spooky vs Tiki), so show them all.
   if (!modded.length) return vanilla;
 
+  /* Calamity's set leads. Playing the mod, its own gear is the point and the
+     vanilla set is the fallback, so listing vanilla first buried it. */
   const picks: Item[] = [];
-  if (vanilla[0]) picks.push(vanilla[0]);
   if (modded[0]) picks.push(modded[0]);
+  if (vanilla[0]) picks.push(vanilla[0]);
   // endgame stages have no vanilla set (or vice versa) - fill to two from the
   // pool that has options so the reader still sees an alternative
   if (picks.length < 2) {
@@ -226,14 +228,21 @@ function curateArmor(grouped: Item[]): Item[] {
       }
     }
   }
-  return withSiblings.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
+  /* Sorted by pack, not by the grouped order - that order is the loadout's own
+     and would put the vanilla set back on top. Calamity first, then each
+     group keeps its relative order. */
+  const rank = (i: Item) => (isCalamityArmor(i.name) ? 0 : 1);
+  return withSiblings.sort((a, b) =>
+    rank(a) - rank(b) || grouped.indexOf(a) - grouped.indexOf(b));
 }
 
 /* ── Accessory taxonomy ──
    Categories, quality tiers and markers follow the community accessory guide, so
    the labels and colours match what a reader will have seen there. */
 const CATEGORY_LABEL: Record<string, string> = {
-  mobility: 'Mobility', offense: 'Offense', survivability: 'Survivability',
+  mobility: 'Mobility', offense: 'Offensive', survivability: 'Defensive',
+  'primary-mobility': 'Primary Mobility', 'extra-mobility': 'Extra Mobility',
+  'all-around': 'All-Around',
   melee: 'Melee', ranged: 'Ranged', magic: 'Magic', summon: 'Summon',
 };
 /** taxonomy damage-type -> our class id, so a class badge only shows on its own page */
@@ -384,7 +393,8 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
   return (
     <div className={styles.accLegend}>
       <span className={styles.accLegendLabel}>Tags</span>
-      {(['mobility', 'offense', 'survivability'] as const).map((c) => (
+      {(['primary-mobility', 'extra-mobility', 'all-around',
+        'offense', 'survivability'] as const).map((c) => (
         <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
           {CATEGORY_LABEL[c]}
         </span>
@@ -675,7 +685,8 @@ export function Loadouts() {
   /* Fixed reading order for the slots: mobility, survivability, offense, then
      the class's own. An accessory in two categories takes the earliest one, so
      the Celestial Shell (offense + survivability) sits with survivability. */
-  const CAT_ORDER = ['mobility', 'survivability', 'offense'] as const;
+  const CAT_ORDER = ['primary-mobility', 'mobility', 'extra-mobility',
+    'all-around', 'survivability', 'offense'] as const;
   const catRank = (it: Item) => {
     const cats = it.categories ?? [];
     const generic = CAT_ORDER.findIndex((c) => (cats as readonly string[]).includes(c));

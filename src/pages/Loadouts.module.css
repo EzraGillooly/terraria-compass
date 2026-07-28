@@ -380,3 +380,10 @@ button.accSlot:hover { --px-border: var(--warm); }
   margin-top: 3px;
   padding-left: 10px;
 }
+
+/* Calamity's guide splits mobility in two and adds an all-around bucket. The
+   two mobility tags share the green family so they read as one kind at a
+   glance, with primary the stronger of the pair. */
+.c_primary-mobility { background: #97f779; }
+.c_extra-mobility   { background: #c8f7b0; }
+.c_all-around       { background: #8fd3f4; }
