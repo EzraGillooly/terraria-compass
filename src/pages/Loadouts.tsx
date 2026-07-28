@@ -100,11 +100,16 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
   );
 }
 
-/* ── Accessory equip cell ── */
+/* Fewest weapons Top Picks tries to show. Below this the shortlist reads as
+   "your only option" rather than a choice. */
+const MIN_TOP_PICKS = 3;
+
 /* Set-bonus lines shown on an armour card before it defers to the modal. Three
    lines wrap to about six on a narrow card, which is as much as the card can
    carry without the armour list dominating the page. */
 const ARMOR_EFFECT_LINES = 3;
+
+/* ── Accessory equip cell ── */
 
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
@@ -551,12 +556,22 @@ export function Loadouts() {
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
-  const filteredBest = inScope.filter((w) => w.tier === 'best');
+  const bestTier = inScope.filter((w) => w.tier === 'best');
+  /* Top Picks aims for at least three weapons. One pick per subclass leaves
+     phases where a class has only one or two on-tier families showing a single
+     card, which reads as "this is your only option" rather than a shortlist.
+     The top-up keeps the list's own order, so the added cards are the next
+     best rather than an arbitrary pick. */
+  const filteredBest = showingAll && bestTier.length < MIN_TOP_PICKS
+    ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
+      .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
+    : bestTier;
   const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
-  const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
+  const filteredRest = showingAll
+    ? [] : inScope.filter((w) => w.tier === 'other');
 
   // Unranked: one flat list, so no tier reads as a recommendation.
-  const unrankedShown = showingAll ? filteredBest : [...filteredBest, ...filteredAlso];
+  const unrankedShown = showingAll ? filteredBest : [...bestTier, ...filteredAlso];
   const unrankedRest = filteredRest;
 
   const groupedArmor = curateArmor(groupArmor(safeLoadout.armor, packId === 'vanilla'));
