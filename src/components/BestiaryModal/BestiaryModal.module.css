@@ -185,33 +185,13 @@
 
 /* Item effect lines (the in-game tooltip). One line per effect - a tooltip's
    lines are separate effects and reading them as one sentence loses that. */
-.effects { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.effects { list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-direction: column; gap: 3px; }
 .effects li { position: relative; padding-left: 11px; line-height: 1.4; }
 .effects li::before {
   content: ''; position: absolute; left: 0; top: .55em;
   width: 4px; height: 4px; background: var(--accent); opacity: .55;
 }
 
-/* The guide's reason for the pick, under the wiki description. Set apart with
-   a small label so the two are not read as one paragraph - they are different
-   claims: what the item is, and why it is recommended here. */
-.whyLine {
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--ink-mute);
-  margin: -6px 0 16px;
-  padding-left: 10px;
-  border-left: 2px solid color-mix(in oklab, var(--accent) 40%, transparent);
-}
-.whyLabel {
-  display: block;
-  font-weight: 800;
-  font-size: 9.5px;
-  text-transform: uppercase;
-  letter-spacing: .07em;
-  color: var(--accent);
-  margin-bottom: 2px;
-}
 
 /* Tall item modal: header pinned, body scrolls.
    The card used to scroll as a whole, so on a long item the title and close

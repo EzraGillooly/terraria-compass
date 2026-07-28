@@ -102,31 +102,24 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
         </div>
 
         <div className={styles.modalBody}>
-        {/* The wiki's description leads: it says what the item is and does.
-            `why` is the guide's reason for picking it at this stage, which is
-            a different claim, so it sits below in its own labelled line rather
-            than being run together with the description. */}
-        {item.desc && <p className={styles.desc}>{item.desc}</p>}
-        {item.why && (
-          <p className={item.desc ? styles.whyLine : styles.desc}>
-            {item.desc && <span className={styles.whyLabel}>Why here</span>}
-            {item.why}
-          </p>
+        {/* One subtext, then the key/value rows - the same shape vanilla has
+            always had. It briefly carried three competing blocks (a full wiki
+            description, an Effect row and a "Why here" line), which is a lot of
+            reading for a card whose job is to say what the item does.
+
+            The subtext is the effect: for armour that is the set bonus, so it
+            can run to several lines and stays a list; anything else is prose. */}
+        {item.effect && (
+          item.effect.includes(' · ')
+            ? (
+              <ul className={`${styles.desc} ${styles.effects}`}>
+                {item.effect.split(' · ').map((line) => <li key={line}>{line}</li>)}
+              </ul>
+            )
+            : <p className={styles.desc}>{item.effect}</p>
         )}
 
         <div className={styles.kv}>
-          {/* What the item does, from its in-game tooltip - listed line by line
-              because a tooltip's lines are separate effects, and run together
-              they read as one long sentence. Kept above Source: what it does
-              matters before where to get it. */}
-          {item.effect && (
-            <div className={styles.kvRow}>
-              <span className={styles.kvKey}>Effect</span>
-              <ul className={styles.effects}>
-                {item.effect.split(' · ').map((line) => <li key={line}>{line}</li>)}
-              </ul>
-            </div>
-          )}
           {item.stats && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}

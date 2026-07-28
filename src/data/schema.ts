@@ -18,21 +18,17 @@ export const Item = z.object({
   source: z.string(),
   why: z.string(),
   /**
-   * What the item actually does, taken verbatim from its in-game tooltip.
-   * Deliberately separate from `why`, which is why this guide picks it at this
-   * stage - an accessory whose only text was "defensive accessory option" told
-   * a reader nothing about what equipping it would change. Effects are joined
-   * with " · " where the tooltip has several lines.
+   * What the item does - the modal's subtext, and the only prose it shows.
+   * Sourced from the in-game tooltip, the behaviour sentences of the wiki's
+   * description, or (for armour) the set bonus, whichever says most. Several
+   * effects are joined with " · " and render as a list; a single one renders
+   * as a paragraph.
+   *
+   * `why` is still carried for ordering and for the accessory pool, but is no
+   * longer shown in the modal: three blocks of text competing for the same
+   * card is more reading than the card is for.
    */
   effect: z.string().optional(),
-  /**
-   * The wiki's own opening description - what the item is and what it does,
-   * in prose. `why` is one line of guide reasoning and `effect` is the
-   * in-game tooltip, which plenty of weapons simply do not have, so a basic
-   * sword had almost nothing to show. Recipes are stripped: Source and
-   * Materials carry those.
-   */
-  desc: z.string().optional(),
   notes: z.string().optional(),
   /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
   modifier: z.string().optional(),
