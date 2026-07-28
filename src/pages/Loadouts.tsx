@@ -531,6 +531,15 @@ export function Loadouts() {
     pid in PHASE_BOSS
       ? PHASE_BOSS[pid]
       : (bosses.find((b) => b.stage === pid && !b.side)?.id ?? bosses.find((b) => b.stage === pid)?.id ?? '');
+  /* A pack can ship its own phase art. Calamity's comes from the icons its
+     guide puts beside each phase heading, so the timeline shows Cryogen and
+     the Devourer of Gods rather than borrowing vanilla's boss sprites. */
+  const phaseIconSrc = (pid: string) => {
+    const def = phases.find((p) => p.id === pid);
+    return def?.bossIcon
+      ? `${BASE}icons/phases/${def.bossIcon}.png`
+      : `${BASE}icons/bosses/${phaseBossIcon(pid)}.png`;
+  };
 
   const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
   const classDef = classes.find((c) => c.id === activeClassId)!;
@@ -699,11 +708,26 @@ export function Loadouts() {
      push it past the last one - and a build with no movement accessory reads
      as advice, not an oversight. If none made the cut, pull the best mobility
      option from the pool into the final slot. */
-  const shown = ordered.slice(0, slotCount);
-  if (!shown.some((a) => (a.categories ?? []).includes('mobility'))) {
+  /* At most one primary-mobility item. The guide lists every primary-mobility
+     option together - Betsy's Wings, Empress Wings and Fishron Wings are three
+     ways to fill one slot, not three slots - so taking them in order equipped
+     three pairs of wings at Pre-Moon Lord and four movement items at
+     Pre-Polterghast. Everything else is left in order. */
+  const PRIMARY = 'primary-mobility';
+  const shown: Item[] = [];
+  let primaryUsed = false;
+  for (const a of ordered) {
+    if (shown.length >= slotCount) break;
+    const isPrimary = (a.categories ?? []).includes(PRIMARY);
+    if (isPrimary && primaryUsed) continue;
+    if (isPrimary) primaryUsed = true;
+    shown.push(a);
+  }
+  const MOVEMENT = ['mobility', PRIMARY, 'extra-mobility'];
+  if (!shown.some((a) => (a.categories ?? []).some((c) => MOVEMENT.includes(c)))) {
     const names = new Set(shown.map((a) => a.name));
     const mob = [...accessories, ...safeLoadout.accessoryPool.flatMap((g) => g.items)]
-      .find((it) => (it.categories ?? []).includes('mobility')
+      .find((it) => (it.categories ?? []).some((c) => MOVEMENT.includes(c))
         && !names.has(it.name) && !it.isGroup && isObtainable(it, difficulty));
     if (mob) shown.splice(Math.max(0, slotCount - 1), 1, mob);
   }
@@ -772,7 +796,7 @@ export function Loadouts() {
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
                 <span className={`${styles.wpDisc} pixel-frame pixel-circle`}>
                   <img
-                    src={`${BASE}icons/bosses/${phaseBossIcon(p.id)}.png`}
+                    src={phaseIconSrc(p.id)}
                     alt="" aria-hidden="true"
                     className={`${styles.wpIcon} pixel-img`}
                     width="30" height="30" loading="lazy"
@@ -788,7 +812,7 @@ export function Loadouts() {
         {/* Boss banner (re-mounts per phase to replay the slide-in) */}
         <div key={activePhaseId} className={`${styles.banner} pixel-frame`}>
           <img
-            src={`${BASE}icons/bosses/${phaseBossIcon(activePhaseId)}.png`}
+            src={phaseIconSrc(activePhaseId)}
             alt="" aria-hidden="true"
             className={`${styles.bannerIcon} pixel-img`}
             width="44" height="44"

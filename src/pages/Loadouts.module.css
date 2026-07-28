@@ -310,14 +310,22 @@ button.accSlot:hover { --px-border: var(--warm); }
 /* ── Buffs ── */
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 /* buff/consumable cards mirror the accessory slots: icon with the name centred beneath */
-.buffGrid { display: grid; grid-template-columns: repeat(2, 84px); gap: 8px; justify-content: center; }
-.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+/* Fills the panel rather than sitting as a fixed 2-wide column: two 84px
+   cells left a wide gutter on either side and pushed a long buff list far
+   down the page. auto-fill packs as many as the width allows and the cells
+   shrink to suit, so the list runs wider and shorter. */
+.buffGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(66px, 1fr));
+  gap: 6px;
+}
+.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; padding: 7px 4px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 /* .pixel-hollow is required: at 6% opacity the fill would otherwise show the
    border colour through it and tint the card. */
 .buffCell::before, .buffCell::after { transition: none; }
 .buffCell:hover { --px-border: var(--warm); --px-fill: rgba(255,255,255,.1); }
-.buffCellImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.buffCellName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.buffCellImg { width: 24px; height: 24px; flex: none; object-fit: contain; }
+.buffCellName { font-weight: 700; font-size: 10px; line-height: 1.12; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .buffPills { display: flex; flex-wrap: wrap; gap: 6px; }
 .buffPill { font-weight: 700; font-size: 11px; color: #12283B; background: color-mix(in oklab, var(--warm) 82%, #fff); border-radius: var(--radius-pill); padding: 6px 11px 4px; line-height: 1.2; text-align: center; }
 
