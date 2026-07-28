@@ -65,6 +65,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   if (!item) return null;
 
   const craftable = recipes.findCraftable(item.name);
+  /* A set page lists a recipe for every class's helmet - Aerospec has five -
+     but `pieces` already names the three this class actually wears. Showing
+     all of them told a melee reader how to craft the summoner hood. */
+  const pieceRecipes = item.pieces?.length
+    ? (item.pieceRecipes ?? []).filter((p) => item.pieces?.includes(p.piece))
+    : item.pieceRecipes ?? [];
   const stem = item.icon.replace(/\.png$/i, '').split('/').pop() ?? '';
   const local = `${BASE}icons/${item.icon}`;
   const wiki = `${WIKI}/${makeWikiName(stem)}.png`;
@@ -109,15 +115,21 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
 
             The subtext is the effect: for armour that is the set bonus, so it
             can run to several lines and stays a list; anything else is prose. */}
-        {item.effect && (
-          item.effect.includes(' · ')
+        {(() => {
+          /* Armour keeps its helmet bonus in a separate field, because only
+             this class's helmet should show - the shared set bonus and the
+             one helmet's bonus are both part of what wearing it does, so
+             they read as one list here. */
+          const parts = [item.effect, item.headpieceBonus].filter(Boolean).join(' · ');
+          if (!parts) return null;
+          return parts.includes(' · ')
             ? (
               <ul className={`${styles.desc} ${styles.effects}`}>
-                {item.effect.split(' · ').map((line) => <li key={line}>{line}</li>)}
+                {parts.split(' · ').map((line) => <li key={line}>{line}</li>)}
               </ul>
             )
-            : <p className={styles.desc}>{item.effect}</p>
-        )}
+            : <p className={styles.desc}>{parts}</p>;
+        })()}
 
         <div className={styles.kv}>
           {item.stats && (
@@ -129,11 +141,11 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           {item.source && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
           )}
-          {item.pieceRecipes && item.pieceRecipes.length > 0 && (
+          {pieceRecipes.length > 0 && (
             <div className={styles.kvRow}>
               <span className={styles.kvKey}>Craft</span>
               <div className={styles.pieces}>
-                {item.pieceRecipes.map((p) => (
+                {pieceRecipes.map((p) => (
                   <div key={p.piece} className={styles.piece}>
                     <div className={styles.pieceName}>
                       {p.piece}

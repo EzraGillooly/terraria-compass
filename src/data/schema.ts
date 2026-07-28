@@ -145,6 +145,15 @@ export const Loadout = z.object({
   phase: PhaseId,
   class: ClassId,
   weapons: z.array(Item),
+  /**
+   * Utility items the guide lists beside the weapons but which are not that
+   * class's weapons: true tools (Rod of Discord), classless weapons that scale
+   * with nothing (Lunic Eye, Eye of Magnus), and support summons carried by a
+   * non-summoner (Wulfrum Controller). They have no subclass and never will,
+   * so leaving them in `weapons` meant a card with no type pill sitting among
+   * the class's actual picks.
+   */
+  tools: z.array(Item).default([]),
   armor: z.array(Item),
   accessories: z.array(Item),
   buffs: z.array(Item),

@@ -522,7 +522,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
+  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
@@ -844,6 +844,25 @@ export function Loadouts() {
 
             {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
+            )}
+
+            {/* Tools sit under the weapons, not among them: they belong to no
+                subclass, so they have no type pill and no filter chip, and
+                mixed into the list they read as picks the class had simply
+                failed to categorise. Shown whatever chip is active, since a
+                tool is useful to every build. */}
+            {safeLoadout.tools.length > 0 && (
+              <>
+                <div className={styles.groupLabel}>
+                  Tools &amp; utility
+                  <span className={styles.groupNote}>useful to any build, not class weapons</span>
+                </div>
+                <div className={styles.weaponRow}>
+                  {safeLoadout.tools.map((w) => (
+                    <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
+                  ))}
+                </div>
+              </>
             )}
           </div>
             {/* Accessories sit under the weapons panel in the left column, so the
