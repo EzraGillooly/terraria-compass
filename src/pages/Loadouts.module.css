@@ -71,7 +71,14 @@
 @keyframes bannerIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .bannerIcon { width: 44px; height: 44px; object-fit: contain; flex: none; }
 .bannerName { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; color: #EAF0FF; line-height: 1.1; text-shadow: var(--tshadow); }
-.bannerHint { display: block; font-size: 12px; color: #C6D3EC; margin-top: 2px; }
+/* Holds a sentence or two from the mod's guide now, not a four-word cue, so it
+   wraps rather than sitting on one line. No measure of its own: the text runs
+   the full width of the banner and stops at the same 18px the icon is inset
+   by on the left, which .banner's padding already provides. */
+.bannerHint { display: block; font-size: 12px; line-height: 1.45; color: #C6D3EC; margin-top: 3px; }
+/* The text column has to be allowed to grow into the space the icon leaves,
+   and min-width:0 lets it wrap instead of forcing the flex row wider. */
+.bannerBody { flex: 1; min-width: 0; }
 
 /* ── Dark inventory panels ── */
 .bento { display: grid; grid-template-columns: 2fr 1fr; gap: 14px; align-items: start; }

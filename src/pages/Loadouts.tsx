@@ -67,7 +67,14 @@ function iconSrcs(icon: string, wikiUrl?: string) {
   const stem = icon.replace(/\.png$/i, '').split('/').pop() ?? '';
   const fromWikiUrl = wikiUrl?.split('/wiki/')[1];
   const wikiName = fromWikiUrl || makeWikiName(stem);
-  return { local: `${BASE}icons/${icon}`, wiki: `${WIKI}/${wikiName}.png` };
+  /* Ask the wiki the item actually lives on. This was hardcoded to the
+     Terraria wiki, so a Calamity item with no local sprite fell through to a
+     404 there and then to the "?" placeholder, when the mod wiki has the
+     sprite. The item's own wikiUrl names the right host. */
+  const host = wikiUrl?.startsWith('https://calamitymod.wiki.gg')
+    ? 'https://calamitymod.wiki.gg/wiki/Special:FilePath'
+    : WIKI;
+  return { local: `${BASE}icons/${icon}`, wiki: `${host}/${wikiName}.png` };
 }
 
 /* ── Weapon card ── */
@@ -409,8 +416,13 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
    be wrong rather than merely incomplete. Two of the new ones belong to a
    single class and are gated the same way the class tags are. */
 interface Reforge { name: string; stat: string; note: string; onlyClass?: string }
+interface ReforgeSet { intro: string; list: Reforge[]; href: string; label: string }
 
-const REFORGES: Record<string, { intro: string; list: Reforge[]; href: string; label: string }> = {
+/* Keyed by pack id. Typed with an explicit `vanilla` key rather than a bare
+   Record, so the fallback below is a value the compiler knows exists:
+   noUncheckedIndexedAccess makes every Record lookup possibly-undefined, which
+   `?? REFORGES.vanilla` does not resolve when that is also an index lookup. */
+const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
   vanilla: {
     intro: 'Reforge at the Goblin Tinkerer. Warding is the default. Swap to Menacing or Lucky once you can dodge reliably.',
     list: [
@@ -566,12 +578,20 @@ export function Loadouts() {
     ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
       .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
     : bestTier;
-  const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
-  const filteredRest = showingAll
-    ? [] : inScope.filter((w) => w.tier === 'other');
+  /* Inside a subclass the tiers are re-derived from position in that subclass,
+     not carried over from the whole class. `tier` only ever recorded a row's
+     place in the guide's column, so filtering to one family could leave every
+     weapon in it below "best": Pre-Mech projectile melee showed no
+     Recommended, no Also great, and "Show 2 others", and any subclass holding
+     a single weapon filed it under "Also great". Re-ranking in scope means the
+     first weapon of a family is its recommendation, and a family of one shows
+     exactly one card. */
+  const scopedBest = showingAll ? filteredBest : inScope.slice(0, 1);
+  const filteredAlso = showingAll ? [] : inScope.slice(1, 3);
+  const filteredRest = showingAll ? [] : inScope.slice(3);
 
   // Unranked: one flat list, so no tier reads as a recommendation.
-  const unrankedShown = showingAll ? filteredBest : [...bestTier, ...filteredAlso];
+  const unrankedShown = showingAll ? filteredBest : inScope.slice(0, 3);
   const unrankedRest = filteredRest;
 
   const groupedArmor = curateArmor(groupArmor(safeLoadout.armor, packId === 'vanilla'));
@@ -719,15 +739,17 @@ export function Loadouts() {
             width="44" height="44"
             onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
           />
-          <div>
+          <div className={styles.bannerBody}>
             <span className={styles.bannerName}>{phaseName}</span>
-            {/* The first cue, not `triggeredBy`: that field just restates the
-                title ("Pre-Skeletron" → "Before Skeletron"), and the two packs
-                disagree on whether it names the phase's start or its end. A cue
-                answers the question the banner should - am I in this phase? */}
+            {/* The mod guide's own section intro where there is one - it says
+                what the phase opens up and what to do in it, which is what a
+                reader arriving at a phase wants. Falls back to a cue, then to
+                `triggeredBy`; the latter only restates the title
+                ("Pre-Skeletron" → "Before Skeletron"), so it is the last
+                resort rather than the first. */}
             {phaseDef && (
               <span className={styles.bannerHint}>
-                {phaseDef.cues[0] ?? phaseDef.triggeredBy}
+                {phaseDef.guideNote ?? phaseDef.cues[0] ?? phaseDef.triggeredBy}
               </span>
             )}
           </div>
@@ -767,11 +789,11 @@ export function Loadouts() {
 
             {ranked ? (
               <>
-                {filteredBest.length > 0 && (
+                {scopedBest.length > 0 && (
                   <>
                     {!showingAll && <div className={styles.groupLabel}>Recommended</div>}
                     <div className={styles.weaponRow}>
-                      {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                      {scopedBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>
                   </>
                 )}
@@ -820,7 +842,7 @@ export function Loadouts() {
               </>
             )}
 
-            {filteredBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
+            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
           </div>
@@ -956,10 +978,16 @@ export function Loadouts() {
                           </>
                         );
                       })()}
-                      {(a.why || a.headpieceBonus) && (
-                        <div className={styles.armorPerk}>
-                          {[a.why, a.headpieceBonus].filter(Boolean).join(' ')}
-                        </div>
+                      {/* `why` is gone from here for the same reason it left the
+                          modal: with the real set bonus above it, it was either
+                          repeating it (Molten's "10% extra melee damage,
+                          immunity to fire blocks...") or contradicting it
+                          (Aerospec on melee read "primary class-specific
+                          summoner armor"). headpieceBonus stays - it names the
+                          bonus a specific helmet carries, which the set bonus
+                          does not. */}
+                      {a.headpieceBonus && (
+                        <div className={styles.armorPerk}>{a.headpieceBonus}</div>
                       )}
                       </div>
                     </button>

@@ -181,6 +181,14 @@ export const PhaseDef = z.object({
   bossIcon: z.string().optional(),
   cues: z.array(z.string()),
   description: z.string(),
+  /**
+   * The section intro from the mod's own progression guide - what this phase
+   * opens up and what to do in it. Preferred over `cues` in the banner: a cue
+   * is a checklist item written for this site ("Slime God fight now
+   * available"), where this says what the phase is for. Calamity only; vanilla
+   * has no equivalent guide page, so its banner still falls back to a cue.
+   */
+  guideNote: z.string().optional(),
 });
 
 export const ClassDef = z.object({
