@@ -101,6 +101,11 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
 }
 
 /* ── Accessory equip cell ── */
+/* Set-bonus lines shown on an armour card before it defers to the modal. Three
+   lines wrap to about six on a narrow card, which is as much as the card can
+   carry without the armour list dominating the page. */
+const ARMOR_EFFECT_LINES = 3;
+
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
 ]);
@@ -118,13 +123,23 @@ const ARMOR_VARIANTS: [string, string][] = [
 const armorMaterial = (name: string) => name.replace(/\s*armor\b.*$/i, '').trim();
 const tidyArmorName = (name: string) => name.replace(/\bArmor\b/, 'armor');
 
-function groupArmor(armor: Item[]): Item[] {
+/**
+ * @param mergeVariants pair the basic ores into one row. True for vanilla,
+ *   where world generation gives you one ore of each pair and the two differ in
+ *   defense alone. False for Calamity: every ore is obtainable there, and each
+ *   set carries its own bonus - Gold grants coin drops and crit scaling where
+ *   Platinum grants 10% damage reduction - so a shared row could only ever show
+ *   one set's bonus while hiding the other's.
+ */
+function groupArmor(armor: Item[], mergeVariants: boolean): Item[] {
   const out: Item[] = [];
   const used = new Set<string>();
   for (const a of armor) {
     if (used.has(a.id)) continue;
     const mat = armorMaterial(a.name);
-    const pair = ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()));
+    const pair = mergeVariants
+      ? ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()))
+      : undefined;
     if (pair) {
       // ore/evil armor is one choice across two worlds - always show the pair name
       // ("Adamantite armor" → "Adamantite / Titanium armor"), even if the data lists
@@ -177,7 +192,23 @@ function curateArmor(grouped: Item[]): Item[] {
     const pool = vanilla.length ? vanilla : modded;
     if (pool[1]) picks.push(pool[1]);
   }
-  return picks.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
+  /* Ore siblings travel together. Where the pairs are not merged into one row
+     (Calamity, which gives Gold and Platinum different set bonuses), keeping
+     only the first pick would show Gold and silently drop Platinum - they are
+     one choice at one tier, so the reader needs both or neither. */
+  const withSiblings = [...picks];
+  for (const p of picks) {
+    const pair = ARMOR_VARIANTS.find((v) =>
+      v.some((m) => m.toLowerCase() === armorMaterial(p.name).toLowerCase()));
+    if (!pair) continue;
+    for (const g of grouped) {
+      if (withSiblings.includes(g)) continue;
+      if (pair.some((m) => m.toLowerCase() === armorMaterial(g.name).toLowerCase())) {
+        withSiblings.push(g);
+      }
+    }
+  }
+  return withSiblings.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
 }
 
 /* ── Accessory taxonomy ──
@@ -528,7 +559,7 @@ export function Loadouts() {
   const unrankedShown = showingAll ? filteredBest : [...filteredBest, ...filteredAlso];
   const unrankedRest = filteredRest;
 
-  const groupedArmor = curateArmor(groupArmor(safeLoadout.armor));
+  const groupedArmor = curateArmor(groupArmor(safeLoadout.armor, packId === 'vanilla'));
   const armorSprite = groupedArmor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
@@ -884,6 +915,32 @@ export function Loadouts() {
                           ))}
                         </div>
                       )}
+                      {/* The set bonus leads, because it is what wearing the set
+                          actually does - "solid early defense" told a reader
+                          nothing, and for Calamity's retuned vanilla sets the
+                          inherited "No set bonus" was wrong outright. `why` is
+                          kept underneath as the guide's reason for picking it. */}
+                      {a.effect && (() => {
+                        /* Capped at three lines. Victide lists eleven - one per
+                           headpiece - which buried the rest of the card. The
+                           full list is in the modal, so say so rather than
+                           truncating silently. */
+                        const all = a.effect.split(' · ');
+                        const shown = all.slice(0, ARMOR_EFFECT_LINES);
+                        const rest = all.length - shown.length;
+                        return (
+                          <>
+                            <ul className={styles.armorEffects}>
+                              {shown.map((line) => <li key={line}>{line}</li>)}
+                            </ul>
+                            {rest > 0 && (
+                              <div className={styles.armorMore}>
+                                +{rest} more - click to see the full set bonus
+                              </div>
+                            )}
+                          </>
+                        );
+                      })()}
                       {(a.why || a.headpieceBonus) && (
                         <div className={styles.armorPerk}>
                           {[a.why, a.headpieceBonus].filter(Boolean).join(' ')}

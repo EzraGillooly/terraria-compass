@@ -151,6 +151,19 @@
 .armorPiece { display: inline-flex; align-items: center; font-weight: 700; font-size: 10px; color: #C6D3EC; padding: 4px 8px 2px; line-height: 1; --px-fill: rgba(255,255,255,.07); --px-border: rgba(150,180,230,.25); --px-u: 1px; }
 /* the class-specific headpiece is highlighted within the set */
 .armorPieceHead { color: #12283B; --px-fill: #9FE0C0; --px-border: #9FE0C0; }
+/* Set bonus: what the set does, so it reads brighter than the guide's reason
+   for picking it, which now sits underneath in .armorPerk. One line per
+   effect - a set bonus with three clauses run together is a wall. */
+.armorEffects {
+  list-style: none; margin: 5px 0 0; padding: 0;
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: 12px; line-height: 1.4; color: #D6E4F7;
+}
+.armorEffects li { position: relative; padding-left: 10px; }
+.armorEffects li::before {
+  content: ''; position: absolute; left: 0; top: .5em;
+  width: 3px; height: 3px; background: var(--warm); opacity: .7;
+}
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 /* Marks an armour row that is a single piece rather than a set. The trade it
    implies is explained once below the list, not on every row. */
@@ -349,3 +362,14 @@ button.accSlot:hover { --px-border: var(--warm); }
 .accLegendLabel { font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-right: 2px; }
 .accLegendSep { width: 1px; height: 12px; background: rgba(150,180,230,.35); margin: 0 4px; }
 .accLegendNote { font-size: 10.5px; color: #7F93B8; margin-left: 2px; }
+
+/* "+N more" hint under a truncated set-bonus list. Muted: it is an
+   instruction, not part of the bonus itself. */
+.armorMore {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--warm);
+  opacity: .85;
+  margin-top: 3px;
+  padding-left: 10px;
+}

@@ -25,6 +25,14 @@ export const Item = z.object({
    * with " · " where the tooltip has several lines.
    */
   effect: z.string().optional(),
+  /**
+   * The wiki's own opening description - what the item is and what it does,
+   * in prose. `why` is one line of guide reasoning and `effect` is the
+   * in-game tooltip, which plenty of weapons simply do not have, so a basic
+   * sword had almost nothing to show. Recipes are stripped: Source and
+   * Materials carry those.
+   */
+  desc: z.string().optional(),
   notes: z.string().optional(),
   /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
   modifier: z.string().optional(),

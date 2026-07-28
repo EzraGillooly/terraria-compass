@@ -191,3 +191,61 @@
   content: ''; position: absolute; left: 0; top: .55em;
   width: 4px; height: 4px; background: var(--accent); opacity: .55;
 }
+
+/* The guide's reason for the pick, under the wiki description. Set apart with
+   a small label so the two are not read as one paragraph - they are different
+   claims: what the item is, and why it is recommended here. */
+.whyLine {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-mute);
+  margin: -6px 0 16px;
+  padding-left: 10px;
+  border-left: 2px solid color-mix(in oklab, var(--accent) 40%, transparent);
+}
+.whyLabel {
+  display: block;
+  font-weight: 800;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+/* Tall item modal: header pinned, body scrolls.
+   The card used to scroll as a whole, so on a long item the title and close
+   button scrolled away and the content ran into a hard clipped edge with no
+   sign there was more below. Capping at 85vh (not 90) also leaves the stepped
+   frame clear of the viewport edge on short windows. */
+.modalTall {
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modalTall .head { flex: none; }
+.modalBody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  /* room for the fade below, so the last line is never half-hidden by it */
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--accent) 45%, transparent) transparent;
+}
+.modalBody::-webkit-scrollbar { width: 7px; }
+.modalBody::-webkit-scrollbar-track { background: transparent; }
+.modalBody::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--accent) 40%, transparent);
+}
+/* A soft edge so "there is more below" is visible before you scroll. This is a
+   real element, not a ::after - .pixel-frame already uses both pseudo-elements
+   as its border and fill layers, so taking one would erase the frame. */
+.scrollFade {
+  position: absolute;
+  left: 3px; right: 3px; bottom: 3px;
+  height: 26px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--card));
+}

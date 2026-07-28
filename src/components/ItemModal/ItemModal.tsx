@@ -77,7 +77,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   return (
     <div className={styles.backdrop}>
       <button type="button" className={styles.backdropBtn} aria-label="Close" tabIndex={-1} onClick={onClose} />
-      <div className={`${styles.modal} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
+      {/* .modalTall pins the header and scrolls only the body. A long item -
+          Victide armor lists eleven set-bonus lines and five piece recipes -
+          used to scroll the whole card, taking the title and close button with
+          it and running to a hard clipped edge with nothing to say there was
+          more below. */}
+      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
         <button ref={closeRef} type="button" className={`${styles.close} pixel-frame`} aria-label="Close" onClick={onClose}>
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
             <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -96,7 +101,18 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           </div>
         </div>
 
-        <p className={styles.desc}>{item.why}</p>
+        <div className={styles.modalBody}>
+        {/* The wiki's description leads: it says what the item is and does.
+            `why` is the guide's reason for picking it at this stage, which is
+            a different claim, so it sits below in its own labelled line rather
+            than being run together with the description. */}
+        {item.desc && <p className={styles.desc}>{item.desc}</p>}
+        {item.why && (
+          <p className={item.desc ? styles.whyLine : styles.desc}>
+            {item.desc && <span className={styles.whyLabel}>Why here</span>}
+            {item.why}
+          </p>
+        )}
 
         <div className={styles.kv}>
           {/* What the item does, from its in-game tooltip - listed line by line
@@ -193,6 +209,8 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             View in crafting tree
           </Link>
         )}
+        </div>
+        <span className={styles.scrollFade} aria-hidden="true" />
       </div>
     </div>
   );
