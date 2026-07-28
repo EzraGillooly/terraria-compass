@@ -810,12 +810,11 @@ export function Loadouts() {
             ) : (
               unrankedShown.length > 0 && (
                 <>
-                  <div className={styles.groupLabel}>
-                    Options
-                    <span className={styles.groupNote}>
-                      viable here, in no particular order
-                    </span>
-                  </div>
+                  {/* Top Picks is already a shortlist and says so, so a
+                      heading over the only group on screen is noise. Inside a
+                      subclass the heading separates it from the Tools list
+                      below, so it stays - without the note. */}
+                  {!showingAll && <div className={styles.groupLabel}>Options</div>}
                   <div className={styles.weaponRow}>
                     {unrankedShown.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                   </div>
@@ -853,10 +852,7 @@ export function Loadouts() {
                 tool is useful to every build. */}
             {safeLoadout.tools.length > 0 && (
               <>
-                <div className={styles.groupLabel}>
-                  Tools &amp; utility
-                  <span className={styles.groupNote}>useful to any build, not class weapons</span>
-                </div>
+                <div className={styles.groupLabel}>Support Items</div>
                 <div className={styles.weaponRow}>
                   {safeLoadout.tools.map((w) => (
                     <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
