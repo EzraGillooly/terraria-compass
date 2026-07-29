@@ -77864,10 +77864,10 @@
         "headpieceBonus": "+22% ranged damage and +15% ranged critical strike chance."
       },
       {
-        "id": "shroomite-armor-headgear",
-        "name": "Shroomite armor (Headgear)",
+        "id": "shroomite-armor",
+        "name": "Shroomite armor",
         "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-headgear.png",
+        "icon": "armor-sets/shroomite-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [],
@@ -77917,122 +77917,7 @@
         ],
         "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
         "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases bow damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Headgear"
-      },
-      {
-        "id": "shroomite-armor-mask",
-        "name": "Shroomite armor (Mask)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-mask.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Mask",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases gun damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Mask"
-      },
-      {
-        "id": "shroomite-armor-helmet",
-        "name": "Shroomite armor (Helmet)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-helmet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Helmet",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Helmet"
+        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance \u00b7 Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance \u00b7 Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
       },
       {
         "id": "reaver-armor",
@@ -87915,10 +87800,10 @@
         "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura."
       },
       {
-        "id": "shroomite-armor-headgear",
-        "name": "Shroomite armor (Headgear)",
+        "id": "shroomite-armor",
+        "name": "Shroomite armor",
         "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-headgear.png",
+        "icon": "armor-sets/shroomite-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [],
@@ -87968,122 +87853,7 @@
         ],
         "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
         "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases bow damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Headgear"
-      },
-      {
-        "id": "shroomite-armor-mask",
-        "name": "Shroomite armor (Mask)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-mask.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Mask",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases gun damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Mask"
-      },
-      {
-        "id": "shroomite-armor-helmet",
-        "name": "Shroomite armor (Helmet)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-helmet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Helmet",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Helmet"
+        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance \u00b7 Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance \u00b7 Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
       },
       {
         "id": "reaver-armor",
@@ -98795,10 +98565,10 @@
         "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura."
       },
       {
-        "id": "shroomite-armor-headgear",
-        "name": "Shroomite armor (Headgear)",
+        "id": "shroomite-armor",
+        "name": "Shroomite armor",
         "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-headgear.png",
+        "icon": "armor-sets/shroomite-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [],
@@ -98848,122 +98618,7 @@
         ],
         "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
         "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases bow damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Headgear"
-      },
-      {
-        "id": "shroomite-armor-mask",
-        "name": "Shroomite armor (Mask)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-mask.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Mask",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases gun damage by 12%; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Mask"
-      },
-      {
-        "id": "shroomite-armor-helmet",
-        "name": "Shroomite armor (Helmet)",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor-helmet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomite_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Helmet",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "effect": "Not moving puts you in stealth, \u00b7 increasing ranged ability and reducing chance for enemies to target you",
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance",
-        "headpiece": "Shroomite Helmet"
+        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance \u00b7 Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance \u00b7 Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
       },
       {
         "id": "reaver-armor",
