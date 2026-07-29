@@ -3,6 +3,15 @@
   padding: clamp(10px, 1.5vw, 14px) clamp(12px, 3vw, 32px);
   position: relative;
   z-index: 20;
+  /* One height for every control in the bar, nav tabs included. The selectors
+     were on their own clamp() and came out taller than the tabs beside them, so
+     the row had two baselines. Derived from the nav link's own type and padding,
+     so the tabs keep the size they had and the selectors match them. */
+  --control-h: calc(
+    clamp(11px, 1.35vw, 15px) * 1.35
+    + clamp(4px, 0.6vw, 7px) + clamp(2px, 0.35vw, 4px)
+    + 2px
+  );
 }
 
 /* ── On-photo variant: transparent, white text, floats over hero ── */
@@ -121,6 +130,8 @@
   gap: clamp(6px, 1vw, 10px);
 }
 
+.navLink { min-height: var(--control-h); }
+
 /* ── World difficulty dropdown - custom control, menu pops out below ── */
 .diffSelect { position: relative; }
 
@@ -128,7 +139,7 @@
   display: inline-flex;
   align-items: center;
   gap: clamp(5px, 0.8vw, 8px);
-  height: clamp(30px, 4vw, 38px);
+  height: var(--control-h);
   padding: 0 clamp(8px, 1.2vw, 12px);
   cursor: pointer;
   background: rgba(40, 54, 122, .18);
@@ -219,8 +230,8 @@
 .modeToggle {
   display: grid;
   place-items: center;
-  width: clamp(30px, 4vw, 38px);
-  height: clamp(30px, 4vw, 38px);
+  width: var(--control-h);
+  height: var(--control-h);
   color: var(--warm);
   cursor: pointer;
   background: rgba(40, 54, 122, .18);
@@ -263,7 +274,7 @@
    it still reads as that control rather than as a new one. */
 .classStack {
   position: relative;
-  height: clamp(30px, 4vw, 38px);
+  height: var(--control-h);
   width: clamp(104px, 11vw, 128px);
 }
 .classStackList {

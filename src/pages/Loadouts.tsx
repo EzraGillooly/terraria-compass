@@ -3,7 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
 import { useAppState, usePack } from '../lib/app-context';
-import { isObtainable } from '../lib/difficulty';
+import { isExpertOrAbove, isObtainable } from '../lib/difficulty';
 import type { DifficultyFilter } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
 import type { Item, PhaseId } from '../data/schema';
@@ -740,7 +740,7 @@ export function Loadouts() {
    * So Expert runs 5 -> 6 at hardmode -> 7 post-Moon Lord, which is what the
    * class guides equip, and Classic runs 5 -> 6 post-Moon Lord.
    */
-  const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
+  const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && isExpertOrAbove(difficulty);
   const onionUnlocked = packId === 'calamity' && CALAMITY_POST_ML.has(activePhaseId);
   const slotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
 
