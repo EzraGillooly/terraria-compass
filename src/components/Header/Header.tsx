@@ -71,6 +71,46 @@ function WorldSelect() {
   );
 }
 
+/* Calamity's own difficulty, which is not a world type: it is toggled on top of
+   an existing world through the Difficulty Indicator, and Revengeance "can only
+   be activated from Expert Mode" with Death reached from Revengeance. So it sits
+   under the World selector as its own axis rather than as two more entries
+   inside it, and it is inert until the world is Expert. */
+const CAL_MODES = [
+  { id: 'off', label: 'Off' },
+  { id: 'revengeance', label: 'Rev' },
+  { id: 'death', label: 'Death' },
+] as const;
+
+function CalamityModeToggle() {
+  const { calamityMode, setCalamityMode, difficulty } = useAppState();
+  const needsExpert = difficulty !== 'expert';
+
+  return (
+    <div
+      className={styles.calModeRow}
+      title={needsExpert ? 'Revengeance can only be activated in an Expert world' : undefined}
+    >
+      <span className={styles.calModeCap}>Calamity</span>
+      <div className={styles.calModeOpts} role="radiogroup" aria-label="Calamity difficulty">
+        {CAL_MODES.map((m) => (
+          <button
+            key={m.id}
+            type="button"
+            role="radio"
+            aria-checked={calamityMode === m.id}
+            disabled={needsExpert && m.id !== 'off'}
+            className={`${styles.calModeItem} ${calamityMode === m.id ? styles.calModeItemOn : ''}`}
+            onClick={() => setCalamityMode(m.id)}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* Class selector - the loadout class moved here from the page so it stops reading
    as a second nav bar. Only meaningful on the Loadouts page, so the header shows
    it there alone (see Header). Subclass toggles stay on the page. */
@@ -196,7 +236,13 @@ export function Header({ variant = 'paper' }: HeaderProps) {
         <div className={styles.controls}>
           {onLoadouts && <ClassSelect />}
           <ModSelect />
-          <WorldSelect />
+          {/* The Calamity mode rides under World rather than beside it - it is a
+              layer on the world, not a peer of it. Out of flow, so it cannot
+              stretch the header. */}
+          <div className={styles.worldColumn}>
+            <WorldSelect />
+            {packId === 'calamity' && <CalamityModeToggle />}
+          </div>
 
           {/* Day / night - disabled for now */}
           <button

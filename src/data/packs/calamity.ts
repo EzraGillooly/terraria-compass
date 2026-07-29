@@ -28,10 +28,12 @@ export const calamityPack: Pack = {
   loadouts: LoadoutCollection.parse(loadoutsJson),
   bosses: bossesJson as BossDef[],
   recipes: createRecipeApi(recipesJson.nodes, recipesJson.roots),
+  /* Classic and Expert only, same as vanilla. Revengeance and Death are not
+     world types - they are toggled on top of an Expert world through the
+     Difficulty Indicator, so they live on their own axis (see calamityMode in
+     app-context) rather than as two more entries here. */
   difficulties: [
     { value: 'normal', label: 'Classic' },
     { value: 'expert', label: 'Expert' },
-    { value: 'revengeance', label: 'Revengeance' },
-    { value: 'death', label: 'Death' },
   ],
 };

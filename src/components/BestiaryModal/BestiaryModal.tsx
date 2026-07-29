@@ -4,15 +4,8 @@ import { localSprite, wikiSprite, type BestiaryEntry } from '../../data/bestiary
 import { useAppState } from '../../lib/app-context';
 import styles from './BestiaryModal.module.css';
 
-/* Revengeance and Death sit above Expert and scale enemies further, but this
-   bestiary carries vanilla's figures only - so they take Expert's multiplier and
-   the note below says which baseline the numbers are, rather than presenting
-   Expert values under a Calamity label. */
-const SCALE = { normal: 1, expert: 2, revengeance: 2, death: 2 } as const;
-const MODE_LABEL = {
-  normal: 'Classic', expert: 'Expert', revengeance: 'Revengeance', death: 'Death',
-} as const;
-const ABOVE_EXPERT = new Set(['revengeance', 'death']);
+const SCALE = { normal: 1, expert: 2 } as const;
+const MODE_LABEL = { normal: 'Classic', expert: 'Expert' } as const;
 
 const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='48' height='48' fill='%23EAF4FB'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24' fill='%234A6373' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
@@ -89,9 +82,7 @@ export function BestiaryModal({ entry, onClose }: { entry: BestiaryEntry | null;
               )}
             </div>
             <p className={styles.note}>
-              HP &amp; damage shown for {ABOVE_EXPERT.has(difficulty) ? 'Expert' : MODE_LABEL[difficulty]} mode
-              {ABOVE_EXPERT.has(difficulty)
-                && `, the baseline ${MODE_LABEL[difficulty]} builds on`}. Change it with the World selector.
+              HP &amp; damage shown for {MODE_LABEL[difficulty]} mode. Change it with the World selector.
             </p>
           </>
         ) : (
