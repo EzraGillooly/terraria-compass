@@ -1155,11 +1155,11 @@ export function Loadouts() {
           {safeLoadout.ammo.length > 0 && (
             <div className={`${styles.invPanel} pixel-frame`}>
               <div className={styles.tlabel}><span>Ammo</span></div>
-              {groupAmmo(safeLoadout.ammo).map((group) => (
-              <div key={group.label || 'all'}>
-              {group.label && <div className={styles.ammoGroup}>{group.label}</div>}
+              {/* Ammo is ordered by family - arrows, then bullets, then the
+                  rest - so like ammo sits together, but the family labels
+                  themselves are not shown: the grouping is enough. */}
               <div className={styles.ammoList}>
-                {group.items.map((m) => {
+                {groupAmmo(safeLoadout.ammo).flatMap((group) => group.items).map((m) => {
                   const img = iconSrcs(m.icon);
                   return (
                     <button
@@ -1187,8 +1187,6 @@ export function Loadouts() {
                   );
                 })}
               </div>
-              </div>
-              ))}
             </div>
           )}
 
