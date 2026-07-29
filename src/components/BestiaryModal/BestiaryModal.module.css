@@ -222,10 +222,16 @@
 /* A soft edge so "there is more below" is visible before you scroll. This is a
    real element, not a ::after - .pixel-frame already uses both pseudo-elements
    as its border and fill layers, so taking one would erase the frame. */
+/* Sticky inside the scrolling body, not absolute against the modal. Pinned to
+   the modal's own bottom edge it was a plain rectangle painted over the
+   stepped corners, squaring them off. Inside the body it sits within the
+   card's padding and never reaches the frame. It also only appears when there
+   is something to scroll, since a non-overflowing body has no space for it. */
 .scrollFade {
-  position: absolute;
-  left: 3px; right: 3px; bottom: 3px;
+  position: sticky;
+  bottom: 0;
   height: 26px;
+  margin-top: -26px;
   pointer-events: none;
   background: linear-gradient(to bottom, transparent, var(--card));
 }

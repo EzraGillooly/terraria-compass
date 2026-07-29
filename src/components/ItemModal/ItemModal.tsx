@@ -71,7 +71,9 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   const pieceRecipes = item.pieces?.length
     ? (item.pieceRecipes ?? []).filter((p) => item.pieces?.includes(p.piece))
     : item.pieceRecipes ?? [];
-  const stem = item.icon.replace(/\.png$/i, '').split('/').pop() ?? '';
+  // any image extension, not only .png - Any Balloon's icon is a gif, and
+  // leaving the extension on produced "Any-balloon.gif.png" as the fallback
+  const stem = item.icon.replace(/\.(png|gif|jpe?g|webp)$/i, '').split('/').pop() ?? '';
   const local = `${BASE}icons/${item.icon}`;
   const wiki = `${WIKI}/${makeWikiName(stem)}.png`;
   const onImgError = (e: SyntheticEvent<HTMLImageElement>) => {
@@ -214,8 +216,8 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             View in crafting tree
           </Link>
         )}
-        </div>
         <span className={styles.scrollFade} aria-hidden="true" />
+        </div>
       </div>
     </div>
   );
