@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -330,8 +330,10 @@ function AccCell({
 }) {
   if (!item) {
     return (
-      <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
-        <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
+      <div className={styles.accCell}>
+        <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
+          <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
+        </div>
       </div>
     );
   }
@@ -339,11 +341,15 @@ function AccCell({
   const cats = visibleCategories(item, activeClass);
   const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty);
-  /* The slot is a div rather than a button now that an alternative is itself
-     clickable: a button inside a button is invalid, and the alternative has to
-     open its own modal. The primary keeps the whole upper area as its hit
-     target, so the slot still reads as one control. */
+  /* The cell is the primary card plus, when the guide offers a swap, an "or" and
+     a smaller card beneath it - both outside the primary's frame, so the pick
+     itself stays one clean card.
+
+     The card is a div rather than a button because the alternative is its own
+     control and a button cannot contain one. The primary fills the card, so it
+     still reads as a single hit target. */
   return (
+    <div className={styles.accCell}>
     <div
       className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''} ${locked ? styles.locked : ''}`}
       title={locked ? 'Not obtainable in a Classic world' : undefined}
@@ -378,18 +384,21 @@ function AccCell({
         </span>
       )}
 
-      {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
-          two interchangeable picks, so the alternative hangs off its primary
-          rather than spending a slot of its own. It is a miniature of the card
-          above it - icon and name only, on one line - so the slot still reads
-          as a single pick with a swap offered under it. */}
-      {alts.map((alt) => {
-        const altImg = iconSrcs(alt.icon, alt.wikiUrl);
-        return (
+    </div>
+
+    {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
+        two interchangeable picks, so the alternative hangs off its primary
+        rather than spending a slot of its own. It sits outside the primary's
+        frame as a miniature of it - icon and name on one line - with "or"
+        between, so the two read as the choice the guide is offering. */}
+    {alts.map((alt) => {
+      const altImg = iconSrcs(alt.icon, alt.wikiUrl);
+      return (
+        <Fragment key={alt.id}>
+          <span className={styles.accOr}>or</span>
           <button
-            key={alt.id}
             type="button"
-            className={styles.accAlt}
+            className={`${styles.accAlt} pixel-frame pixel-hollow`}
             title={alt.name}
             onClick={() => onOpen(alt)}
           >
@@ -401,8 +410,9 @@ function AccCell({
             />
             <span className={styles.accAltName}>{alt.name}</span>
           </button>
-        );
-      })}
+        </Fragment>
+      );
+    })}
     </div>
   );
 }
