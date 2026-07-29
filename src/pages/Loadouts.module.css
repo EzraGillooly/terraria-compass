@@ -463,7 +463,10 @@
   margin: 0;
   font-size: 11px;
   line-height: 1.45;
-  color: var(--ink-soft);
+  /* The panel is dark, so --ink-soft (tuned for light surfaces) read as grey.
+     No drop shadow: at 11px the hard black offset thickens the text rather than
+     lifting it off the tinted strip. */
+  color: #fff;
 }
 .classicNoteBtn {
   flex: none;
