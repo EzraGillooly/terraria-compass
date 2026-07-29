@@ -278,86 +278,70 @@
     ],
     "accessories": [
       {
-        "id": "calpool-extra-jump",
-        "name": "Extra jump",
+        "id": "dunerider-boots",
+        "name": "Dunerider Boots",
         "slot": "accessory",
-        "icon": "calamity/extra-jump.png",
-        "source": "",
-        "why": "Allows the player to perform a double-jump.",
+        "icon": "calamity/dunerider-boots.png",
+        "source": "Dropped by Desert enemies, or found in Sandstone Chests in the Underground Desert",
+        "why": "",
+        "effect": "The wearer can run super fast, and even faster on sand",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "extra-mobility"
+        ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dunerider_Boots",
+        "quality": "great"
+      },
+      {
+        "id": "sandstorm-in-a-bottle",
+        "name": "Sandstorm in a Bottle",
+        "slot": "accessory",
+        "icon": "calamity/sandstorm-in-a-bottle.png",
+        "source": "Found in Pyramids in the Desert",
+        "why": "",
+        "effect": "Allows the holder to do an improved double jump",
         "tags": [],
         "topPick": false,
         "categories": [
           "primary-mobility"
         ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
-        "isGroup": true,
-        "quality": "great",
-        "effect": "Extra jumps allow the player to perform one or more extra mid-air jumps and are granted by five different accessories and four different mounts."
-      },
-      {
-        "id": "frog-leg",
-        "name": "Frog Leg",
-        "slot": "accessory",
-        "icon": "calamity/frog-leg.png",
-        "source": "Fished up in any body of water",
-        "why": "Increases the player's jump speed and fall resistance.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg",
-        "effect": "Increases jump speed and allows auto-jump \u00b7 Increases fall resistance",
-        "categories": [
-          "extra-mobility"
-        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Bottle",
         "quality": "great"
       },
       {
-        "id": "hermes-boots",
-        "name": "Hermes Boots",
+        "id": "fledgling-wings",
+        "name": "Fledgling Wings",
         "slot": "accessory",
-        "icon": "calamity/hermes-boots.png",
-        "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "icon": "calamity/fledgling-wings.png",
+        "source": "Found in Azure Crate and 2 other sources",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hermes_Boots",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fledgling_Wings",
+        "effect": "The Fledgling Wings are the only pre-Hardmode wings. Like all wings, they grant the player the ability to fly and glide when equipped, as well as not take fall damage. At top speed, they allow traveling at 15 mph horizontally and 22 mph vertically.",
         "categories": [
-          "extra-mobility"
+          "primary-mobility"
         ],
-        "quality": "great",
-        "effect": "While equipped, they grant the ability to sprint, allowing the player to reach maximum running speed faster, and they increase the player's maximum movement speed to 31 mph (22.73 tiles/second)."
+        "altOf": "Sandstorm in a Bottle"
       },
       {
-        "id": "magiluminescence",
-        "name": "Magiluminescence",
+        "id": "shark-tooth-necklace",
+        "name": "Shark Tooth Necklace",
         "slot": "accessory",
-        "icon": "calamity/magiluminescence.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "icon": "calamity/shark-tooth-necklace.png",
+        "source": "Dropped by Blood Zombie and 1 other source",
+        "why": "Provides all weapons with 5 unconditional armor penetration.",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
-        "materials": [
-          {
-            "name": "Demonite Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-          },
-          {
-            "name": "Topaz",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shark_Tooth_Necklace",
         "categories": [
-          "extra-mobility"
+          "offense"
         ],
         "quality": "great",
-        "effect": "This increase stacks with the bonus of the Hermes Boots and their variants. [ 1 ] It also creates an aura of light around the player, which can be useful when exploring underground. The Magiluminescence's movement speed buffs are disabled when the player is not grounded. [ 2 ]"
+        "effect": "It increases the player's armor penetration by 5 when equipped."
       },
       {
         "id": "black-glass-band",
@@ -391,31 +375,8 @@
         "effect": "While equipped, it releases an obsidian strike upon enemy hits that deals 20 typeless damage and always critically strikes, with a 5 second cooldown that is halved if the enemy is killed with the strike. The strike's damage value scales with the player's highest class' damage.",
         "categories": [
           "offense"
-        ]
-      },
-      {
-        "id": "craw-carapace",
-        "name": "Craw Carapace",
-        "slot": "accessory",
-        "icon": "calamity/craw-carapace.png",
-        "source": "Dropped by Crawdads and sold by the Skeleton Merchant during a waning crescent or waxing crescent for 12 gold",
-        "why": "offensive and defensive stats",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Craw_Carapace",
-        "station": "Shimmer Transmutation",
-        "materials": [
-          {
-            "name": "Giant Shell",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Shell"
-          }
         ],
-        "effect": "While equipped, it increases damage by 7%. Enemies that deal contact damage to the player take 20 / 40 / 60 damage, inflicting them with the Crumbling debuff.",
-        "categories": [
-          "offense"
-        ]
+        "altOf": "Shark Tooth Necklace"
       },
       {
         "id": "feral-claws",
@@ -430,61 +391,14 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Feral_Claws",
         "dropRate": "19/100 (19%)",
         "categories": [
-          "offense"
+          "offense",
+          "melee"
         ],
         "markers": [
           "whips"
         ],
-        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons"
-      },
-      {
-        "id": "shark-tooth-necklace",
-        "name": "Shark Tooth Necklace",
-        "slot": "accessory",
-        "icon": "calamity/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Zombie and 1 other source",
-        "why": "Provides all weapons with 5 unconditional armor penetration.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shark_Tooth_Necklace",
-        "categories": [
-          "offense"
-        ],
-        "quality": "great",
-        "effect": "It increases the player's armor penetration by 5 when equipped."
-      },
-      {
-        "id": "gladiators-locket",
-        "name": "Gladiator's Locket",
-        "slot": "accessory",
-        "icon": "calamity/gladiators-locket.png",
-        "source": "Purchased from Shady Salesman for 25 during a Full Moon after the item has been found",
-        "why": "defensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gladiator's_Locket",
-        "effect": "When equipped, it makes enemies drop healing orbs upon death which are affected by gravity. The healing orbs restore 10 health when touched and disappear after 20 seconds.",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "ilmeris-spark",
-        "name": "Ilmeris' Spark",
-        "slot": "accessory",
-        "icon": "calamity/ilmeris-spark.png",
-        "source": "Dropped by Cnidrions",
-        "why": "defensive utility accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ilmeris'_Spark",
-        "effect": "When equipped, it causes the player to release 8 gravity-affected sparks around them when harmed by any source of damage. These sparks linger for 2 seconds, partially ignore immunity frames, and deal 6 base damage, which is boosted by the player's highest class' damage.",
-        "categories": [
-          "survivability"
-        ]
+        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons",
+        "quality": "great"
       },
       {
         "id": "rover-drive",
@@ -500,7 +414,24 @@
         "effect": "When equipped for 10 seconds without taking damage, a protective matrix covers its user, which grants 20 matrix durability. If the player gets hit, durability is lost instead of health by the amount of damage taken.",
         "categories": [
           "survivability"
-        ]
+        ],
+        "quality": "great"
+      },
+      {
+        "id": "luxors-gift",
+        "name": "Luxor's Gift",
+        "slot": "accessory",
+        "icon": "calamity/luxors-gift.png",
+        "source": "Dropped by the Desert Scourge",
+        "why": "",
+        "effect": "Summons a scarab launcher that follows you closely \u00b7 The scarab launcher fires different projectiles at enemies depending on your held weapon type",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "offense"
+        ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Luxor%27s_Gift",
+        "altOf": "Rover Drive"
       }
     ],
     "buffs": [

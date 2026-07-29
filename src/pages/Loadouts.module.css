@@ -275,12 +275,26 @@
    Sizing to that and centring means a one-badge item sits balanced rather than
    pinned to the top of a taller box. */
 .accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 7px; min-height: 116px; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
-button.accSlot { cursor: pointer; }
 /* .accSlot is a pixel-frame: light its stepped border on hover (via --px-border,
    which drives the ::before layer) rather than the real box border, and drop the
-   background - a real background paints a square that ignores the pixel corners. */
-button.accSlot::before { transition: none; }
-button.accSlot:hover { --px-border: var(--warm); }
+   background - a real background paints a square that ignores the pixel corners.
+   The slot is a div wrapping its own buttons, so the hover keys off :has() -
+   the frame lights whichever of them the pointer is over. */
+.accSlot::before { transition: none; }
+.accSlot:has(.accMain:hover, .accAlt:hover) { --px-border: var(--warm); }
+/* The primary fills the slot so the whole upper area stays one hit target. */
+.accMain {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: none; border: 0; padding: 0; width: 100%;
+  font-family: inherit; color: inherit; cursor: pointer;
+}
+/* An interchangeable pick: quieter than the primary, still clearly its own link. */
+.accAlt {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-family: inherit; font-weight: 700; font-size: 10px; line-height: 1.2;
+  color: #A9BCE0; text-align: center;
+}
+.accAlt:hover { color: var(--warm); text-decoration: underline; }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .accEmpty { --px-border: rgba(150,180,230,.14); }

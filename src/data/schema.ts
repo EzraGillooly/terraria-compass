@@ -132,6 +132,16 @@ export const Item = z.object({
   /** how strong the pick is at this stage, per the accessory guide */
   quality: z.enum(['great', 'good', 'fine']).optional(),
   /**
+   * Names the accessory this one is an alternative to, for the guide's
+   * "Sandstorm in a Bottle / Fledgling Wings" notation: one slot, either pick.
+   *
+   * Held as a back-reference rather than nesting the alternative inside its
+   * primary, so both stay ordinary items with their own source, effect and
+   * modal - and the schema stays flat instead of recursive. The slot renders
+   * the primary and lists the alternatives under it.
+   */
+  altOf: z.string().optional(),
+  /**
    * Caveats worth showing next to an accessory.
    *
    * The two packs draw theirs from different sources and the sets do not

@@ -323,9 +323,9 @@ function visibleCategories(item: Item, activeClass: string): string[] {
 }
 
 function AccCell({
-  item, demonHeart, activeClass, difficulty, onOpen,
+  item, alts = [], demonHeart, activeClass, difficulty, onOpen,
 }: {
-  item: Item | null; demonHeart?: boolean; activeClass: string;
+  item: Item | null; alts?: Item[]; demonHeart?: boolean; activeClass: string;
   difficulty: DifficultyFilter; onOpen: (i: Item) => void;
 }) {
   if (!item) {
@@ -339,20 +339,38 @@ function AccCell({
   const cats = visibleCategories(item, activeClass);
   const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty);
+  /* The slot is a div rather than a button now that an alternative is itself
+     clickable: a button inside a button is invalid, and the alternative has to
+     open its own modal. The primary keeps the whole upper area as its hit
+     target, so the slot still reads as one control. */
   return (
-    <button
-      type="button"
+    <div
       className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''} ${locked ? styles.locked : ''}`}
       title={locked ? 'Not obtainable in a Classic world' : undefined}
-      onClick={() => onOpen(item)}
     >
-      <img
-        src={local} alt="" aria-hidden="true"
-        className={`${styles.accSlotImg} pixel-img`}
-        width="28" height="28" loading="lazy"
-        onError={makeErrorHandler(wiki, FALLBACK_ICON)}
-      />
-      <span className={styles.accSlotName}>{item.name}</span>
+      <button type="button" className={styles.accMain} onClick={() => onOpen(item)}>
+        <img
+          src={local} alt="" aria-hidden="true"
+          className={`${styles.accSlotImg} pixel-img`}
+          width="28" height="28" loading="lazy"
+          onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+        />
+        <span className={styles.accSlotName}>{item.name}</span>
+      </button>
+
+      {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
+          two interchangeable picks, so the alternative hangs off its primary
+          rather than spending a slot of its own. */}
+      {alts.map((alt) => (
+        <button
+          key={alt.id}
+          type="button"
+          className={styles.accAlt}
+          onClick={() => onOpen(alt)}
+        >
+          or {alt.name}
+        </button>
+      ))}
 
       {(cats.length > 0 || item.quality || markers.length > 0) && (
         <span className={styles.accTags}>
@@ -373,7 +391,7 @@ function AccCell({
           ))}
         </span>
       )}
-    </button>
+    </div>
   );
 }
 
@@ -694,11 +712,21 @@ export function Loadouts() {
    * sandbox's own grading, so the replacement is the next best thing and not
    * merely the next thing.
    */
-  const accessories = ((): Item[] => {
-    const usable = safeLoadout.accessories.filter((a) => isObtainable(a, difficulty));
-    if (usable.length === safeLoadout.accessories.length) return safeLoadout.accessories;
+  /* An alternative never competes for a slot - it belongs to the pick it is an
+     alternative to, and is rendered under it. Held out here so every downstream
+     step (substitution, ordering, the slot cap) sees only real slot holders. */
+  const altsBy = new Map<string, Item[]>();
+  for (const a of safeLoadout.accessories) {
+    if (!a.altOf) continue;
+    altsBy.set(a.altOf, [...(altsBy.get(a.altOf) ?? []), a]);
+  }
+  const slotHolders = safeLoadout.accessories.filter((a) => !a.altOf);
 
-    const dropped = safeLoadout.accessories.filter((a) => !isObtainable(a, difficulty));
+  const accessories = ((): Item[] => {
+    const usable = slotHolders.filter((a) => isObtainable(a, difficulty));
+    if (usable.length === slotHolders.length) return slotHolders;
+
+    const dropped = slotHolders.filter((a) => !isObtainable(a, difficulty));
     const taken = new Set(usable.map((a) => a.name));
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
 
@@ -778,7 +806,12 @@ export function Loadouts() {
      list dropped them from "other options" as well, so they appeared nowhere at
      all - which is why the button read "(1)" on a phase the guide gives a dozen
      picks for. */
-  const equippedNames = new Set(accSlots.filter(Boolean).map((a) => a!.name));
+  /* An alternative shown under its slot counts as equipped for this purpose -
+     it is already on screen, so repeating it under "other options" would list
+     the same pick twice. */
+  const equippedNames = new Set(accSlots.filter(Boolean).flatMap(
+    (a) => [a!.name, ...(altsBy.get(a!.name) ?? []).map((x) => x.name)],
+  ));
   const accessoryPool = safeLoadout.accessoryPool
     .map((g) => ({ ...g, items: g.items.filter((it) => !equippedNames.has(it.name)) }))
     .filter((g) => g.items.length > 0);
@@ -986,6 +1019,7 @@ export function Loadouts() {
                 <AccCell
                   key={acc?.id ?? `slot-${i}`}
                   item={acc}
+                  alts={acc ? altsBy.get(acc.name) : undefined}
                   demonHeart={demonHeartUnlocked && i === 5}
                   activeClass={activeClassId}
                   difficulty={difficulty}
