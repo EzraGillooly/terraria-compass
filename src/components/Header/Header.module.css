@@ -255,3 +255,57 @@
 /* Class dropdown items carry the class weapon sprite alongside the label. */
 .classItem { display: flex; align-items: center; justify-content: center; gap: 9px; }
 .classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }
+
+/* ── Class stack - the class menu, permanently open ──
+   The wrapper claims only a trigger's worth of space and the list is taken out
+   of flow inside it, so a five-class stack hangs over the hero instead of
+   stretching the header. Same fill, border and radius as the pop-out menu, so
+   it still reads as that control rather than as a new one. */
+.classStack {
+  position: relative;
+  height: clamp(30px, 4vw, 38px);
+  width: clamp(104px, 11vw, 128px);
+}
+.classStackList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px;
+  background: rgba(28, 40, 96, .96);
+  border: 1px solid #000;
+  border-radius: var(--radius-md);
+  box-shadow: 0 6px 18px rgba(8, 14, 34, .45);
+}
+.classStackItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px 3px;   /* Andy Bold sits high in its box */
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .72);
+  cursor: pointer;
+  text-align: left;
+  transition: background .12s, color .12s;
+}
+.classStackItem:hover {
+  background: color-mix(in oklab, var(--warm) 30%, transparent);
+  color: #fff;
+}
+.classStackItem:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
+.classStackItemOn,
+.classStackItemOn:hover { background: var(--accent); color: #fff; }
+/* Unpicked sprites recede so the active class reads first. */
+.classStackItem .classItemIcon { opacity: .55; transition: opacity .12s; }
+.classStackItem:hover .classItemIcon,
+.classStackItemOn .classItemIcon { opacity: 1; }
+.classStackName { white-space: nowrap; }

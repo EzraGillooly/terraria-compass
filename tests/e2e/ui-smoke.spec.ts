@@ -40,11 +40,10 @@ test.describe('main screens', () => {
 
     await expectVisibleIconsToResolve(page);
 
-    // Switch class + phase and confirm icons still resolve. Class lives in a
-    // header dropdown, so it has to be opened before the option is clickable.
-    // exact: name matching is substring-based, and armor blurbs mention "class"
-    await page.getByRole('button', { name: 'Class', exact: true }).click();
-    await page.getByRole('listbox', { name: 'Class' }).getByRole('button', { name: 'Mage' }).click();
+    // Switch class + phase and confirm icons still resolve. The class stack is
+    // always open, so its options are clickable without opening anything first.
+    await page.getByRole('radiogroup', { name: 'Class' })
+      .getByRole('radio', { name: 'Mage' }).click();
     await page.getByRole('button', { name: /Endgame/ }).click();
     await expectVisibleIconsToResolve(page);
   });

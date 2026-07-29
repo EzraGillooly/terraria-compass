@@ -76,46 +76,34 @@ function WorldSelect() {
    it there alone (see Header). Subclass toggles stay on the page. */
 function ClassSelect() {
   const { classId, setClassId, pack } = useAppState();
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  useDismiss(open, () => setOpen(false), ref);
-  const current = pack.classes.find((c) => c.id === classId);
   const BASE = import.meta.env.BASE_URL;
 
+  /* Always open rather than behind a trigger: the class is the axis the whole
+     page is read through, so needing a click to see which one you were on was a
+     click too many. The stack keeps the menu's own vertical shape and sits where
+     the trigger did - out of flow, so hanging past the header cannot grow it.
+     Radios, not a listbox: with every option on screen it is a radiogroup. */
   return (
-    <div className={styles.diffSelect} ref={ref}>
-      <button
-        type="button"
-        className={styles.diffTrigger}
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-label="Class"
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span className={styles.diffCap}>Class</span>
-        <span className={styles.diffValue}>{current?.name}</span>
-        <span className={`${styles.diffCaret} ${open ? styles.diffCaretOpen : ''}`} aria-hidden="true" />
-      </button>
-      {open && (
-        <ul className={styles.diffMenu} role="listbox" aria-label="Class">
-          {pack.classes.map((c) => (
-            <li key={c.id} role="option" aria-selected={c.id === classId}>
-              <button
-                type="button"
-                className={`${styles.diffItem} ${styles.classItem} ${c.id === classId ? styles.diffItemOn : ''}`}
-                onClick={() => { setClassId(c.id); setOpen(false); }}
-              >
-                <img
-                  src={`${BASE}icons/classes/${c.id}.png`}
-                  alt="" aria-hidden="true" width="18" height="18"
-                  className={`${styles.classItemIcon} pixel-img`}
-                />
-                {c.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className={styles.classStack}>
+      <div className={styles.classStackList} role="radiogroup" aria-label="Class">
+        {pack.classes.map((c) => (
+          <button
+            key={c.id}
+            type="button"
+            role="radio"
+            aria-checked={c.id === classId}
+            className={`${styles.classStackItem} ${c.id === classId ? styles.classStackItemOn : ''}`}
+            onClick={() => setClassId(c.id)}
+          >
+            <img
+              src={`${BASE}icons/classes/${c.id}.png`}
+              alt="" aria-hidden="true" width="18" height="18"
+              className={`${styles.classItemIcon} pixel-img`}
+            />
+            <span className={styles.classStackName}>{c.name}</span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
