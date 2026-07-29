@@ -2116,7 +2116,7 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "effect": "Flash Rounds are Pre-Hardmode bullets. They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
+        "effect": "They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
       },
       {
         "id": "frostburn-arrow",
@@ -3692,7 +3692,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype",
-        "effect": "The Rusty Beacon Prototype is a Pre-Hardmode sentry that can be found in Rusty Chests. When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
+        "effect": "When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
       },
       {
         "id": "squirrel-squire-staff",
@@ -3719,7 +3719,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Acorn"
           }
         ],
-        "effect": "The Squirrel Squire Staff is a Pre-Hardmode sentry that is also obtained from the Starter Bag. When used, it summons a stationary squirrel sentry at the nearest block to the player's location. If there are no blocks directly underneath it, it will start falling."
+        "effect": "Is also obtained from the Starter Bag. When used, it summons a stationary squirrel sentry at the nearest block to the player's location. If there are no blocks directly underneath it, it will start falling."
       },
       {
         "id": "leather-whip",
@@ -4882,7 +4882,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger",
         "subclass": "daggers",
-        "effect": "Urchin Stingers are Pre-Hardmode rogue weapons dropped by Aquatic Urchins. When used, they fire an urchin stinger that travels a short distance before being affected by gravity. The urchin stinger pierces once and inflicts the Poisoned debuff on hit."
+        "effect": "When used, they fire an urchin stinger that travels a short distance before being affected by gravity. The urchin stinger pierces once and inflicts the Poisoned debuff on hit."
       },
       {
         "id": "wulfrum-knife",
@@ -5678,7 +5678,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Plum"
           }
         ],
-        "effect": "Purple Haze is a Pre-Hardmode alcohol. Upon consumption, it inflicts the Purple Haze debuff which, for 5 seconds after performing a stealth strike, increases non- stealth strike rogue damage by 25% but reduces stealth strike damage by 25%."
+        "effect": "Upon consumption, it inflicts the Purple Haze debuff which, for 5 seconds after performing a stealth strike, increases non- stealth strike rogue damage by 25% but reduces stealth strike damage by 25%."
       },
       {
         "id": "rage-potion",
@@ -9225,7 +9225,7 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "effect": "Flash Rounds are Pre-Hardmode bullets. They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
+        "effect": "They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
       },
       {
         "id": "musket-ball",
@@ -10995,7 +10995,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher",
-        "effect": "Polyp Launcher is a Pre-Hardmode sentry that is sold by the Sea King for 2. When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
+        "effect": "When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
       },
       {
         "id": "rusty-beacon-prototype",
@@ -11009,7 +11009,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype",
-        "effect": "The Rusty Beacon Prototype is a Pre-Hardmode sentry that can be found in Rusty Chests. When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
+        "effect": "When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
       },
       {
         "id": "snapthorn",
@@ -14403,73 +14403,6 @@
     ],
     "accessories": [
       {
-        "id": "calpool-extra-jump",
-        "name": "Extra jump",
-        "slot": "accessory",
-        "icon": "calamity/extra-jump.png",
-        "source": "",
-        "why": "Allows the player to perform a double-jump.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "primary-mobility"
-        ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
-        "isGroup": true,
-        "quality": "great",
-        "effect": "Extra jumps allow the player to perform one or more extra mid-air jumps and are granted by five different accessories and four different mounts."
-      },
-      {
-        "id": "fledgling-wings",
-        "name": "Fledgling Wings",
-        "slot": "accessory",
-        "icon": "calamity/fledgling-wings.png",
-        "source": "Found in Azure Crate and 2 other sources",
-        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fledgling_Wings",
-        "effect": "Grants flight and gliding, and negates fall damage \u00b7 At top speed, travels 15 mph horizontally and 22 mph vertically",
-        "categories": [
-          "primary-mobility"
-        ],
-        "quality": "great"
-      },
-      {
-        "id": "fungal-clump",
-        "name": "Fungal Clump",
-        "slot": "accessory",
-        "icon": "calamity/fungal-clump.png",
-        "source": "Dropped by Crabulon",
-        "why": "all-around accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
-        "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-        "categories": [
-          "all-around"
-        ]
-      },
-      {
-        "id": "frog-leg",
-        "name": "Frog Leg",
-        "slot": "accessory",
-        "icon": "calamity/frog-leg.png",
-        "source": "Fished up in any body of water",
-        "why": "Increases the player's jump speed and fall resistance.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg",
-        "effect": "Increases jump speed and allows auto-jump \u00b7 Increases fall resistance",
-        "categories": [
-          "extra-mobility"
-        ],
-        "quality": "great"
-      },
-      {
         "id": "lightning-boots",
         "name": "Lightning Boots",
         "slot": "accessory",
@@ -14504,34 +14437,49 @@
         "effect": "Allows flight, super fast running \u00b7 8% increased movement speed"
       },
       {
-        "id": "magiluminescence",
-        "name": "Magiluminescence",
+        "id": "yellow-horseshoe-balloon",
+        "name": "Yellow Horseshoe Balloon",
         "slot": "accessory",
-        "icon": "calamity/magiluminescence.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "icon": "accessories/yellow-horseshoe-balloon.png",
+        "source": "Crafted at a Tinkerer's Workshop",
         "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+        "effect": "Grants an improved double jump \u00b7 Increases jump height by 75% and negates fall damage",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Demonite Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+            "name": "Sandstorm in a Balloon",
+            "qty": 1
           },
           {
-            "name": "Topaz",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+            "name": "Lucky Horseshoe",
+            "qty": 1
           }
         ],
-        "station": "Iron Anvil or Lead Anvil",
         "categories": [
-          "extra-mobility"
+          "primary-mobility"
         ],
         "quality": "great",
-        "effect": "This increase stacks with the bonus of the Hermes Boots and their variants. [ 1 ] It also creates an aura of light around the player, which can be useful when exploring underground. The Magiluminescence's movement speed buffs are disabled when the player is not grounded. [ 2 ]"
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Yellow_Horseshoe_Balloon"
+      },
+      {
+        "id": "fledgling-wings",
+        "name": "Fledgling Wings",
+        "slot": "accessory",
+        "icon": "calamity/fledgling-wings.png",
+        "source": "Found in Azure Crate and 2 other sources",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fledgling_Wings",
+        "effect": "Grants flight and gliding, and negates fall damage \u00b7 At top speed, travels 15 mph horizontally and 22 mph vertically",
+        "categories": [
+          "primary-mobility"
+        ],
+        "altOf": "Yellow Horseshoe Balloon"
       },
       {
         "id": "shield-of-cthulhu",
@@ -14556,48 +14504,6 @@
         "effect": "While equipped, it grants 2 defense and allows the player to perform a dash attack by double-tapping either the \u25c0 Left or \u25b6 Right button, or the Dash button once. Dashing into an enemy deals damage to it, causes the player to bounce backward, and grants 0.07 seconds of invincibility frames and 0.17 seconds of immunity to contact damage from the hit enemy. [ 1 ] The cooldown between dashes is 0.5 seconds. [ 2 ]"
       },
       {
-        "id": "calpool-counterweights",
-        "name": "Counterweights",
-        "slot": "accessory",
-        "icon": "calamity/counterweights.png",
-        "source": "Purchased from the Traveling Merchant and the Skeleton Merchant",
-        "why": "Causes yoyos after landing a hit on enemies to produce a \"counterweight\" projectile, which travels towards the enemy before arcing over the player.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counterweights",
-        "markers": [
-          "yoyos"
-        ],
-        "effect": "Counterweights are accessories sold by the Traveling Merchant and the Skeleton Merchant. They fire a second yoyo-type projectile after hitting an enemy with a yoyo, which travels towards it, then orbits around the player. Counterweights deal the yoyo's full damage and stay active until the yoyo is retracted towards the player."
-      },
-      {
-        "id": "craw-carapace",
-        "name": "Craw Carapace",
-        "slot": "accessory",
-        "icon": "calamity/craw-carapace.png",
-        "source": "Dropped by Crawdads and sold by the Skeleton Merchant during a waning crescent or waxing crescent for 12 gold",
-        "why": "offensive and defensive stats",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Craw_Carapace",
-        "station": "Shimmer Transmutation",
-        "materials": [
-          {
-            "name": "Giant Shell",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Shell"
-          }
-        ],
-        "effect": "While equipped, it increases damage by 7%. Enemies that deal contact damage to the player take 20 / 40 / 60 damage, inflicting them with the Crumbling debuff.",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
         "id": "feral-claws",
         "name": "Feral Claws",
         "slot": "accessory",
@@ -14610,37 +14516,14 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Feral_Claws",
         "dropRate": "19/100 (19%)",
         "categories": [
-          "offense"
+          "offense",
+          "melee"
         ],
         "markers": [
           "whips"
         ],
-        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons"
-      },
-      {
-        "id": "magma-stone",
-        "name": "Magma Stone",
-        "slot": "accessory",
-        "icon": "calamity/magma-stone.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Causes melee attacks to inflict Hellfire.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magma_Stone",
-        "dropRate": "0.67%",
-        "categories": [
-          "offense"
-        ],
-        "effect": "It has a 1/50 (2%) chance to be dropped by Lava Bats and a 1/150 (0.67%) chance to be dropped by Hellbats in The Underworld.",
-        "materials": [
-          {
-            "name": "Lava Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons",
+        "quality": "great"
       },
       {
         "id": "brain-of-confusion",
@@ -14664,96 +14547,6 @@
         ]
       },
       {
-        "id": "crown-jewel",
-        "name": "Crown Jewel",
-        "slot": "accessory",
-        "icon": "calamity/crown-jewel.png",
-        "source": "Dropped by King Slime",
-        "why": "defensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel",
-        "effect": "+0.5 HP/s life regen \u00b7 Reduces damage over time taken by 2 HP/s",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "gladiators-locket",
-        "name": "Gladiator's Locket",
-        "slot": "accessory",
-        "icon": "calamity/gladiators-locket.png",
-        "source": "Purchased from Shady Salesman for 25 during a Full Moon after the item has been found",
-        "why": "defensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gladiator's_Locket",
-        "effect": "When equipped, it makes enemies drop healing orbs upon death which are affected by gravity. The healing orbs restore 10 health when touched and disappear after 20 seconds.",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "unholy-tonic",
-        "name": "Unholy Tonic",
-        "slot": "accessory",
-        "icon": "calamity/unholy-tonic.png",
-        "source": "Crafted",
-        "why": "defensive tonic accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Tonic",
-        "effect": "When equipped, it grants +3 defense while in The Corruption. It also grants immunity to the Brain Rot debuff.",
-        "materials": [
-          {
-            "name": "Vile Powder",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vile_Powder"
-          },
-          {
-            "name": "Rotten Chunk",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotten_Chunk"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "vicious-tonic",
-        "name": "Vicious Tonic",
-        "slot": "accessory",
-        "icon": "calamity/vicious-tonic.png",
-        "source": "Crafted",
-        "why": "defensive tonic accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Tonic",
-        "effect": "When equipped, it grants +3 defense while in The Crimson. It also grants immunity to the Burning Blood debuff.",
-        "materials": [
-          {
-            "name": "Vicious Powder",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Powder"
-          },
-          {
-            "name": "Vertebra",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vertebra"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
         "id": "worm-scarf",
         "name": "Worm Scarf",
         "slot": "accessory",
@@ -14772,7 +14565,8 @@
         "markers": [
           "expert",
           "corruption"
-        ]
+        ],
+        "altOf": "Brain of Confusion"
       }
     ],
     "buffs": [
@@ -15517,6 +15311,76 @@
             "dropRate": "0.67%",
             "station": "Tinkerer's Workshop",
             "effect": "It has a 1/50 (2%) chance to be dropped by Lava Bats and a 1/150 (0.67%) chance to be dropped by Hellbats in The Underworld."
+          }
+        ]
+      },
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "calpool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "calamity/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
+            "isGroup": true,
+            "quality": "great",
+            "effect": "Extra jumps allow the player to perform one or more extra mid-air jumps and are granted by five different accessories and four different mounts."
+          },
+          {
+            "id": "calpool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "calamity/frog-leg.png",
+            "source": "Fished up in any body of water",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg",
+            "markers": [
+              "upgradeable"
+            ],
+            "quality": "great",
+            "effect": "Increases jump speed and allows auto-jump \u00b7 Increases fall resistance"
+          },
+          {
+            "id": "calpool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "calamity/magiluminescence.png",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil",
+            "quality": "great",
+            "effect": "This increase stacks with the bonus of the Hermes Boots and their variants. [ 1 ] It also creates an aura of light around the player, which can be useful when exploring underground. The Magiluminescence's movement speed buffs are disabled when the player is not grounded. [ 2 ]"
           }
         ]
       }
@@ -17213,7 +17077,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe",
         "subclass": "wands",
         "dropRate": "2.86%",
-        "effect": "The Demon Scythe is a pre-Hardmode spell book that has a 1/35 (2.86%) chance of being dropped by Demons and Voodoo Demons. When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
+        "effect": "When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
       },
       {
         "id": "flare-bolt",
@@ -19010,7 +18874,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher",
-        "effect": "Polyp Launcher is a Pre-Hardmode sentry that is sold by the Sea King for 2. When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
+        "effect": "When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
       },
       {
         "id": "rusty-beacon-prototype",
@@ -19024,7 +18888,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rusty_Beacon_Prototype",
-        "effect": "The Rusty Beacon Prototype is a Pre-Hardmode sentry that can be found in Rusty Chests. When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
+        "effect": "When used, it summons a stationary Rusty drone that bobs up and down. Every 2 seconds, starting 1 second after it is summoned, it fires a toxic wave pulse that inflicts the Irradiated debuff."
       },
       {
         "id": "snapthorn",
@@ -22971,7 +22835,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -22997,7 +22861,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -23640,7 +23504,7 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
-        "effect": "The Shadethrower is a Pre-Hardmode flamethrower that is dropped by The Hive Mind. It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
+        "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
         "subclass": "guns"
       }
     ],
@@ -26836,7 +26700,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher",
-        "effect": "Polyp Launcher is a Pre-Hardmode sentry that is sold by the Sea King for 2. When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
+        "effect": "When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
       },
       {
         "id": "snapthorn",
@@ -27885,7 +27749,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -27911,7 +27775,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -29451,7 +29315,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -29477,7 +29341,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -31017,7 +30881,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -31043,7 +30907,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -31763,7 +31627,7 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
-        "effect": "The Shadethrower is a Pre-Hardmode flamethrower that is dropped by The Hive Mind. It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
+        "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
         "subclass": "guns"
       }
     ],
@@ -33362,7 +33226,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe",
         "subclass": "wands",
         "dropRate": "2.86%",
-        "effect": "The Demon Scythe is a pre-Hardmode spell book that has a 1/35 (2.86%) chance of being dropped by Demons and Voodoo Demons. When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
+        "effect": "When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
       },
       {
         "id": "eldritch-tome",
@@ -35238,7 +35102,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polyp_Launcher",
-        "effect": "Polyp Launcher is a Pre-Hardmode sentry that is sold by the Sea King for 2. When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
+        "effect": "When used, it summons a grounded polyp sentry which inaccurately fires gravity-affected balls of coral at nearby enemies. On hit, the coral chunk bursts into 1-4 fragments which deals half as much damage and knockback."
       },
       {
         "id": "spinal-tap",
@@ -36199,7 +36063,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -36225,7 +36089,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -37699,7 +37563,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Fire is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the On Fire! debuff for 3\u20136 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "flask-of-poison",
@@ -37725,7 +37589,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Poison is a flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Poisoned debuff for 5\u20139 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -39324,7 +39188,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -39588,7 +39452,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -39614,7 +39478,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -41292,7 +41156,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -43493,7 +43357,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -45420,7 +45284,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -45697,7 +45561,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -45723,7 +45587,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -47426,7 +47290,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -47690,7 +47554,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -47716,7 +47580,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -48621,7 +48485,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "effect": "The Inferna Cutter is a Hardmode axe that is the direct upgrade to the Axe of Purity. When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
+        "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
         "subclass": "true-melee"
       },
       {
@@ -49404,7 +49268,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -49637,7 +49501,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -49663,7 +49527,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -51195,7 +51059,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -53143,7 +53007,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -54213,7 +54077,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orthocera_Shell",
-        "effect": "The Orthocera Shell is a Hardmode sentry that is dropped by Orthoceras. It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
+        "effect": "It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
       },
       {
         "id": "cool-whip",
@@ -54884,7 +54748,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -55130,7 +54994,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -55156,7 +55020,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -56725,7 +56589,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -56958,7 +56822,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -56984,7 +56848,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -57857,7 +57721,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "effect": "The Inferna Cutter is a Hardmode axe that is the direct upgrade to the Axe of Purity. When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
+        "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
         "subclass": "true-melee"
       },
       {
@@ -58577,7 +58441,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -58810,7 +58674,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -58836,7 +58700,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -60282,7 +60146,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -60730,7 +60594,7 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Cinder Arrows are Hardmode arrows. They create a small explosion on hit, dealing 40% damage to all nearby enemies. They also additionally burst into three gravity-affected flaming pieces of shrapnel which do not pierce, deal 6% damage, and inflict Brimstone Flames."
+        "effect": "They create a small explosion on hit, dealing 40% damage to all nearby enemies. They also additionally burst into three gravity-affected flaming pieces of shrapnel which do not pierce, deal 6% damage, and inflict Brimstone Flames."
       },
       {
         "id": "holy-arrow",
@@ -62217,7 +62081,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -63269,7 +63133,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orthocera_Shell",
-        "effect": "The Orthocera Shell is a Hardmode sentry that is dropped by Orthoceras. It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
+        "effect": "It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
       },
       {
         "id": "cool-whip",
@@ -63980,7 +63844,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -64226,7 +64090,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -64252,7 +64116,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -65849,7 +65713,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -66082,7 +65946,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Cursed_Flames",
-        "effect": "The Flask of Cursed Flames is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Cursed Inferno debuff on hit for 3\u20136 seconds, which deals 24 damage per second and increases knockback on targets. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -66108,7 +65972,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -67763,7 +67627,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -67947,7 +67811,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-ichor",
@@ -67960,7 +67824,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -69316,7 +69180,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -69724,7 +69588,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
           }
         ],
-        "effect": "Hallow-Point Rounds are Hardmode bullets. They sparkle on enemy hits, which deal 6 extra flat damage as long as they have not been converted into other bullets."
+        "effect": "They sparkle on enemy hits, which deal 6 extra flat damage as long as they have not been converted into other bullets."
       },
       {
         "id": "holy-arrow",
@@ -69781,7 +69645,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
           }
         ],
-        "effect": "Verium Bolts are Hardmode arrows. When hitting enemies, it marks them, causing the enemy to emit star particles for 1.5 seconds before exploding, dealing additional flat damage. The explosion damage can be increased if additional Verium Bolts hit the target within the 1.5 second window."
+        "effect": "When hitting enemies, it marks them, causing the enemy to emit star particles for 1.5 seconds before exploding, dealing additional flat damage. The explosion damage can be increased if additional Verium Bolts hit the target within the 1.5 second window."
       }
     ],
     "accessoryPool": [
@@ -71170,7 +71034,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -72193,7 +72057,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryogenic_Staff",
-        "effect": "The Cryogenic Staff is a Hardmode sentry that is sold by the Archmage for 35 after defeating all the Mechanical Bosses. When summoned, the ice sentry fires an ice ball that inflicts the Frostbite debuff, as well as their rate increasing the longer an enemy is targeted. After targeting an enemy for three seconds, the sentry goes into a frenzied state, spinning around rapidly and firing ice balls with significantly increased fire rate as well as icicles in all directions."
+        "effect": "When summoned, the ice sentry fires an ice ball that inflicts the Frostbite debuff, as well as their rate increasing the longer an enemy is targeted. After targeting an enemy for three seconds, the sentry goes into a frenzied state, spinning around rapidly and firing ice balls with significantly increased fire rate as well as icicles in all directions."
       },
       {
         "id": "orthocera-shell",
@@ -72207,7 +72071,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Orthocera_Shell",
-        "effect": "The Orthocera Shell is a Hardmode sentry that is dropped by Orthoceras. It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
+        "effect": "It summons a stationary flying Orthocera sentry that shoots streams of acid at nearby enemies. The acid streams pierce up to two enemies along with inflicting the Acid Venom and Irradiated debuffs."
       },
       {
         "id": "durendal",
@@ -72953,7 +72817,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -73150,7 +73014,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-ichor",
@@ -73163,7 +73027,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -74858,7 +74722,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -75042,7 +74906,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-ichor",
@@ -75055,7 +74919,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -76717,7 +76581,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -76963,7 +76827,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -76989,7 +76853,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -77788,7 +77652,7 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wildfire_Bloom",
         "tier": "other",
-        "effect": "The Wildfire Bloom is a Hardmode flamethrower. It uses Gel for ammunition, with a 50% chance to not consume ammo. When used, it fires a long burst of green flames at a moderate range.",
+        "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used, it fires a long burst of green flames at a moderate range.",
         "subclass": "guns",
         "materials": [
           {
@@ -78508,7 +78372,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -80479,7 +80343,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -81601,7 +81465,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
           }
         ],
-        "effect": "The Dreadmine Staff is a Hardmode sentry. It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
+        "effect": "It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
       },
       {
         "id": "hive-pod",
@@ -81615,7 +81479,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hive_Pod",
-        "effect": "The Hive Pod is a Hardmode sentry that is dropped by Astraglomerates after Astrum Aureus has been defeated. The Astral Hive will spawn Hivelings if there are any enemies nearby, which will home onto the closest enemy to them, even through walls."
+        "effect": "The Astral Hive will spawn Hivelings if there are any enemies nearby, which will home onto the closest enemy to them, even through walls."
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -82431,7 +82295,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -82694,7 +82558,7 @@
           }
         ],
         "station": "Keg",
-        "effect": "Evergreen Gin is a Hardmode alcohol. Upon consumption, it inflicts the Evergreen Gin debuff, which increases the damage per second of player-inflicted sickness and water-related debuffs by 50% but decreases the damage per second of player-inflicted electric and heat-related debuffs by 50%."
+        "effect": "Upon consumption, it inflicts the Evergreen Gin debuff, which increases the damage per second of player-inflicted sickness and water-related debuffs by 50% but decreases the damage per second of player-inflicted electric and heat-related debuffs by 50%."
       },
       {
         "id": "flask-of-brimstone",
@@ -82720,7 +82584,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -82746,7 +82610,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -84411,7 +84275,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -84657,7 +84521,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -84683,7 +84547,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -86500,7 +86364,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -86746,7 +86610,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -86772,7 +86636,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -88561,7 +88425,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -89650,7 +89514,7 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Bubonic Rounds are Hardmode bullets. They burst into a virulent plague upon contact which inflicts the Plague debuff and they ignore 10% of the enemy's defense."
+        "effect": "They burst into a virulent plague upon contact which inflicts the Plague debuff and they ignore 10% of the enemy's defense."
       },
       {
         "id": "chlorophyte-bullet",
@@ -89704,7 +89568,7 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Hailstorm Bullets are Hardmode bullets. The bullets pierce once and drastically slow down when fired, quickly becoming stationary before vanishing. On hit, the bullets inflict the Frostbite debuff, while critical hits additionally inflict the Frozen debuff on non-boss enemies and cause a flash freeze that deals 50% of the bullet's damage."
+        "effect": "The bullets pierce once and drastically slow down when fired, quickly becoming stationary before vanishing. On hit, the bullets inflict the Frostbite debuff, while critical hits additionally inflict the Frozen debuff on non-boss enemies and cause a flash freeze that deals 50% of the bullet's damage."
       },
       {
         "id": "rocket-iii",
@@ -90735,7 +90599,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -91987,7 +91851,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
           }
         ],
-        "effect": "The Dreadmine Staff is a Hardmode sentry. It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
+        "effect": "It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
       },
       {
         "id": "hive-pod",
@@ -92001,7 +91865,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hive_Pod",
-        "effect": "The Hive Pod is a Hardmode sentry that is dropped by Astraglomerates after Astrum Aureus has been defeated. The Astral Hive will spawn Hivelings if there are any enemies nearby, which will home onto the closest enemy to them, even through walls."
+        "effect": "The Astral Hive will spawn Hivelings if there are any enemies nearby, which will home onto the closest enemy to them, even through walls."
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -92880,7 +92744,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -93139,7 +93003,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -93165,7 +93029,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -94999,7 +94863,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -95245,7 +95109,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -95271,7 +95135,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -97218,7 +97082,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -97464,7 +97328,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -97490,7 +97354,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -99416,7 +99280,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -101635,7 +101499,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -102890,7 +102754,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
           }
         ],
-        "effect": "The Dreadmine Staff is a Hardmode sentry. It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
+        "effect": "It summons a stationary mine base that summons mines on nearby tiles which home in on enemies. When an enemy comes in contact with a mine, it will blow up."
       },
       {
         "id": "spikecrag-staff",
@@ -102904,7 +102768,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spikecrag_Staff",
-        "effect": "The Spikecrag Staff is a Hardmode sentry that is dropped by the Ravager. When used, it summons a Spikecrag sentry that attacks enemies by firing an intense upward spray of gravity-affected spikes; a total of 1 to 2 spikes are fired every 1/6th of a second."
+        "effect": "When used, it summons a Spikecrag sentry that attacks enemies by firing an intense upward spray of gravity-affected spikes; a total of 1 to 2 spikes are fired every 1/6th of a second."
       },
       {
         "id": "dark-harvest",
@@ -103903,7 +103767,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -104162,7 +104026,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -104188,7 +104052,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -105175,7 +105039,7 @@
           }
         ],
         "subclass": "spiky-balls",
-        "effect": "The System Bane is a Hardmode spiky ball. When used, the player throws a gravity-affected electric machine that continuously deals damage to targets that come into contact with it. Occasionally if there's a target nearby, the device releases lightning to triple-strike it."
+        "effect": "When used, the player throws a gravity-affected electric machine that continuously deals damage to targets that come into contact with it. Occasionally if there's a target nearby, the device releases lightning to triple-strike it."
       }
     ],
     "armor": [
@@ -106098,7 +105962,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -106344,7 +106208,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -106370,7 +106234,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -108438,7 +108302,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -108622,7 +108486,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -108648,7 +108512,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -110751,7 +110615,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -111137,7 +111001,7 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Bubonic Rounds are Hardmode bullets. They burst into a virulent plague upon contact which inflicts the Plague debuff and they ignore 10% of the enemy's defense."
+        "effect": "They burst into a virulent plague upon contact which inflicts the Plague debuff and they ignore 10% of the enemy's defense."
       },
       {
         "id": "chlorophyte-bullet",
@@ -113052,7 +112916,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -114258,7 +114122,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spikecrag_Staff",
         "subclass": "sentries",
-        "effect": "The Spikecrag Staff is a Hardmode sentry that is dropped by the Ravager. When used, it summons a Spikecrag sentry that attacks enemies by firing an intense upward spray of gravity-affected spikes; a total of 1 to 2 spikes are fired every 1/6th of a second."
+        "effect": "When used, it summons a Spikecrag sentry that attacks enemies by firing an intense upward spray of gravity-affected spikes; a total of 1 to 2 spikes are fired every 1/6th of a second."
       },
       {
         "id": "kaleidoscope",
@@ -115376,7 +115240,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -115604,7 +115468,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -115630,7 +115494,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "summoning-potion",
@@ -117730,7 +117594,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -117914,7 +117778,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
           }
         ],
-        "effect": "The Flask of Brimstone is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Brimstone buff, which causes melee, whip, and rogue weapons to inflict the Brimstone Flames debuff."
       },
       {
         "id": "flask-of-venom",
@@ -117940,7 +117804,7 @@
           }
         ],
         "station": "Imbuing Station",
-        "effect": "The Flask of Venom is a Hardmode, post- Plantera flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Acid Venom debuff on hit for 5\u20139 seconds, which deals 30 damage per second to enemies and prevents health regeneration. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles."
       },
       {
         "id": "rage-potion",
@@ -119776,7 +119640,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -120022,7 +119886,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -121784,7 +121648,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -123855,7 +123719,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -125061,7 +124925,7 @@
         "tier": "other",
         "subclass": "sentries",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -125830,7 +125694,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -126089,7 +125953,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -126874,7 +126738,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "luminite-bullet",
@@ -127857,7 +127721,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -128103,7 +127967,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -129763,7 +129627,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -129934,7 +129798,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -130660,7 +130524,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
         ],
-        "effect": "The Blood Boiler is a post- Moon Lord flamethrower. It uses health for ammunition, with a 20% chance to not consume ammo. When used, it fires two long and continuous streams of bloodfire.",
+        "effect": "It uses health for ammunition, with a 20% chance to not consume ammo. When used, it fires two long and continuous streams of bloodfire.",
         "subclass": "guns"
       },
       {
@@ -131407,7 +131271,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -131789,7 +131653,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
         ],
-        "effect": "Bloodfire Arrows are post- Moon Lord arrows. They drain 1 HP from the player when fired, travel at a noticeably higher speed than most arrows, and are not affected by gravity. When hitting an enemy, they deal 1.3x damage and will increase the player's health regeneration and heal the player for 1-4 HP depending on their missing health."
+        "effect": "They drain 1 HP from the player when fired, travel at a noticeably higher speed than most arrows, and are not affected by gravity. When hitting an enemy, they deal 1.3x damage and will increase the player's health regeneration and heal the player for 1-4 HP depending on their missing health."
       },
       {
         "id": "endless-musket-pouch",
@@ -133293,7 +133157,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -134372,7 +134236,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -135106,7 +134970,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -135290,7 +135154,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -136968,7 +136832,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -137139,7 +137003,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -138795,7 +138659,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -139041,7 +138905,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -139842,7 +139706,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
         ],
-        "effect": "Halley's Inferno is a post- Moon Lord flamethrower. It uses Gel for ammunition, with a 50% chance to not consume ammo. When used with its primary fire (\u2692 Use / Attack), it fires a rapid burst of five blue comets that pierce four times.",
+        "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used with its primary fire (\u2692 Use / Attack), it fires a rapid burst of five blue comets that pierce four times.",
         "subclass": "guns"
       },
       {
@@ -140683,7 +140547,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -141127,7 +140991,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
         ],
-        "effect": "Bloodfire Bullets are post- Moon Lord bullets. They can pass through tiles and accelerate the player's natural life regeneration rate by 3 on enemy hits. Additionally, their damage is increased by the player's current life regeneration, which calculates when the enemy gets hit up to a maximum of 1.1x increased flat damage."
+        "effect": "They can pass through tiles and accelerate the player's natural life regeneration rate by 3 on enemy hits. Additionally, their damage is increased by the player's current life regeneration, which calculates when the enemy gets hit up to a maximum of 1.1x increased flat damage."
       },
       {
         "id": "holy-fire-bullet",
@@ -141153,7 +141017,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "luminite-bullet",
@@ -142852,7 +142716,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -144017,7 +143881,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "lunar-portal-staff",
@@ -144046,7 +143910,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -144841,7 +144705,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -145100,7 +144964,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -146980,7 +146844,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -147226,7 +147090,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -149132,7 +148996,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -149303,7 +149167,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -151272,7 +151136,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -151654,7 +151518,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
           }
         ],
-        "effect": "Bloodfire Bullets are post- Moon Lord bullets. They can pass through tiles and accelerate the player's natural life regeneration rate by 3 on enemy hits. Additionally, their damage is increased by the player's current life regeneration, which calculates when the enemy gets hit up to a maximum of 1.1x increased flat damage."
+        "effect": "They can pass through tiles and accelerate the player's natural life regeneration rate by 3 on enemy hits. Additionally, their damage is increased by the player's current life regeneration, which calculates when the enemy gets hit up to a maximum of 1.1x increased flat damage."
       },
       {
         "id": "endless-musket-pouch",
@@ -151701,7 +151565,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "mini-nuke-i",
@@ -153574,7 +153438,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -154876,7 +154740,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "sanctified-spark",
@@ -154890,7 +154754,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -155786,7 +155650,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -155970,7 +155834,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -157822,7 +157686,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -157993,7 +157857,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flask_of_Ichor",
-        "effect": "The Flask of Ichor is a Hardmode flask that causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
+        "effect": "Causes melee weapons and whips (Desktop, Console and Mobile versions) to inflict the Ichor debuff for 10\u201319 seconds on enemies hit. Melee weapons that fire projectiles will also inflict the debuff on enemies hit by the projectiles.",
         "materials": [
           {
             "name": "Bottled Water",
@@ -160058,7 +159922,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -160242,7 +160106,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -161111,7 +160975,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
-        "effect": "The Dragon's Breath is a post- Moon Lord flamethrower that is dropped by Yharon, Dragon of Rebirth. It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
+        "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
         "subclass": "guns"
       },
       {
@@ -162100,7 +161964,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -162508,7 +162372,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "mini-nuke-i",
@@ -164282,7 +164146,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -165461,7 +165325,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "sanctified-spark",
@@ -165475,7 +165339,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -166330,7 +166194,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -166527,7 +166391,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -168326,7 +168190,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -168510,7 +168374,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -170641,7 +170505,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -170825,7 +170689,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -172901,7 +172765,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -173288,7 +173152,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
           }
         ],
-        "effect": "God Slayer Slugs are post- Moon Lord bullets. They initially behave similarly to Luminite Bullets, piercing infinitely and moving at a high velocity. Upon contact with an enemy, their lifespan will be limited and they will gain the ability to warp after despawning."
+        "effect": "They initially behave similarly to Luminite Bullets, piercing infinitely and moving at a high velocity. Upon contact with an enemy, their lifespan will be limited and they will gain the ability to warp after despawning."
       },
       {
         "id": "vanquisher-arrow",
@@ -173309,7 +173173,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
           }
         ],
-        "effect": "Vanquisher Arrows are post- Moon Lord arrows. They appear as pink or magenta colors, can pass through tiles and aggressively seek the closest target within 4 tiles of range, inflicting the God Slayer Inferno debuff. They can pierce once, dealing 40% on the initial hit and full damage on the second hit."
+        "effect": "They appear as pink or magenta colors, can pass through tiles and aggressively seek the closest target within 4 tiles of range, inflicting the God Slayer Inferno debuff. They can pierce once, dealing 40% on the initial hit and full damage on the second hit."
       }
     ],
     "accessoryPool": [
@@ -175390,7 +175254,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -176617,7 +176481,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "perdition",
@@ -177877,7 +177741,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -178074,7 +177938,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -180217,7 +180081,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -180401,7 +180265,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -182438,7 +182302,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -182622,7 +182486,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -183491,7 +183355,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
-        "effect": "The Dragon's Breath is a post- Moon Lord flamethrower that is dropped by Yharon, Dragon of Rebirth. It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
+        "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
         "subclass": "guns"
       },
       {
@@ -184520,7 +184384,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -184928,7 +184792,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "mini-nuke-i",
@@ -186754,7 +186618,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -188000,7 +187864,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "sanctified-spark",
@@ -188014,7 +187878,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -188909,7 +188773,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -189106,7 +188970,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -190959,7 +190823,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -191143,7 +191007,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -193305,7 +193169,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -193489,7 +193353,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
@@ -194405,7 +194269,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
-        "effect": "The Dragon's Breath is a post- Moon Lord flamethrower that is dropped by Yharon, Dragon of Rebirth. It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
+        "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
         "subclass": "guns"
       },
       {
@@ -195556,7 +195420,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -195964,7 +195828,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "effect": "Holy Fire Bullets are post- Moon Lord bullets. They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
       },
       {
         "id": "mini-nuke-i",
@@ -197900,7 +197764,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -199131,7 +198995,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion",
         "subclass": "sentries",
-        "effect": "The Cadaverous Carrion is a post- Moon Lord sentry that is dropped by The Old Duke. When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
+        "effect": "When used, it summons a grounded Old Duke head sentry that rapidly fires homing sulphurous sharks at nearby enemies which inflicts the Sulphuric Poisoning debuff."
       },
       {
         "id": "sanctified-spark",
@@ -199145,7 +199009,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sanctified_Spark",
         "subclass": "sentries",
-        "effect": "The Sanctified Spark is a post- Moon Lord sentry that is dropped by Impious Immolators. When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
+        "effect": "When used, it summons an Impious Immolator sentry that slowly follows the player and rapidly fires flame bursts at the nearest enemy which inflicts the Holy Flames debuff. It will briefly pause between attacks, during which it will fire one healing orb that heals 5 health each for every 4 minion slots the player has."
       },
       {
         "id": "kaleidoscope",
@@ -200162,7 +200026,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -200359,7 +200223,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "summoning-potion",
@@ -202414,7 +202278,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Candles",
-        "effect": "Candles are furniture items that emit light. The Calamity Mod currently adds twenty-five types of candles to the game, with nineteen corresponding to specific sets of furniture, two acting as upgrades to the Water Candle and Peace Candle, and the remaining four being purchasable from the Wizard."
+        "effect": "Emit light."
       },
       {
         "id": "seafood-dinner",
@@ -202598,7 +202462,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
           }
         ],
-        "effect": "The Flask of Crumbling is a Hardmode flask. Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
+        "effect": "Upon consumption, it grants the Weapon Imbue: Crumbling buff, which causes all melee, whip, and rogue attacks to inflict the Crumbling debuff."
       },
       {
         "id": "rage-potion",
