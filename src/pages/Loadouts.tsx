@@ -161,8 +161,17 @@ const CALAMITY_POST_ML = new Set<string>([
   'cal-pre-yharon', 'cal-pre-exo', 'cal-post-calamitas', 'cal-post-exo', 'cal-endgame',
 ]);
 
+/* Hardmode, where the Wall of Flesh has dropped its bag and the Demon Heart is
+   available. Calamity's own hardmode phases were missing, so the sixth slot
+   never opened on that pack: the guide equips six from Pre-Mech Bosses and
+   seven from Pre-Providence, and the site was stuck at five and then six. The
+   post-Moon Lord phases are hardmode too, so they are folded in rather than
+   listed twice. */
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
+  'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
+  'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  ...CALAMITY_POST_ML,
 ]);
 
 /* Only the basic pre-Hardmode ores are true world variants: the pairs below
@@ -717,13 +726,22 @@ export function Loadouts() {
   const armorSprite = groupedArmor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
-  // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
+  /* Five slots, plus the two the game hands out.
+   *
+   * Demon Heart: Wall of Flesh treasure bag, so hardmode onward - and bags are
+   * Expert-and-above, in Calamity too. Its own Treasure Bag page is headed
+   * "Expert Mode-Only Content", and no config option changes that.
+   *
+   * Celestial Onion: Calamity's, dropped by the Moon Lord. Not Expert-gated the
+   * way the Demon Heart is - in Classic, where the Demon Heart cannot be had,
+   * the Onion grants the sixth slot instead of the seventh. It does nothing in
+   * Master, which this filter does not model.
+   *
+   * So Expert runs 5 -> 6 at hardmode -> 7 post-Moon Lord, which is what the
+   * class guides equip, and Classic runs 5 -> 6 post-Moon Lord.
+   */
   const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
-  /* Calamity adds a seventh slot that vanilla has no equivalent for: the
-     Celestial Onion, a post-Moon Lord consumable. Like the Demon Heart it is
-     Expert-and-above only, so Classic stays at five throughout. */
-  const onionUnlocked = packId === 'calamity' && difficulty === 'expert'
-    && CALAMITY_POST_ML.has(activePhaseId);
+  const onionUnlocked = packId === 'calamity' && CALAMITY_POST_ML.has(activePhaseId);
   const slotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
 
   /*
