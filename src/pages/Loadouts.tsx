@@ -158,7 +158,7 @@ const ARMOR_EFFECT_LINES = 3;
 /* Post-Moon Lord in Calamity, where the Celestial Onion becomes available. */
 const CALAMITY_POST_ML = new Set<string>([
   'cal-pre-providence', 'cal-pre-polterghast', 'cal-pre-dog',
-  'cal-pre-yharon', 'cal-pre-exo', 'cal-endgame',
+  'cal-pre-yharon', 'cal-pre-exo', 'cal-post-calamitas', 'cal-post-exo', 'cal-endgame',
 ]);
 
 const HARDMODE_PHASES = new Set<PhaseId>([

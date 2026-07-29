@@ -252,8 +252,36 @@
     "bossIcon": "cal-pre-exo"
   },
   {
-    "id": "cal-endgame",
+    "id": "cal-post-calamitas",
     "order": 18,
+    "name": "Post-Supreme Calamitas",
+    "triggeredBy": "After Supreme Calamitas, before the Exo Mechs",
+    "description": "Supreme Witch Calamitas is down and the Exo Mechs still stand, leaving Ashes of Calamity gear and the Shattered Community on the way to the last fight.",
+    "cues": [
+      "Supreme Calamitas defeated",
+      "Exo Mechs not yet beaten",
+      "Ashes of Calamity weapons craftable"
+    ],
+    "guideNote": "Defeating Supreme Witch, Calamitas grants Ashes of Calamity, used to craft the Shattered Community and a set of powerful weapons for the run at the Exo Mechs.",
+    "bossIcon": "cal-post-calamitas"
+  },
+  {
+    "id": "cal-post-exo",
+    "order": 19,
+    "name": "Post-Exo Mechs",
+    "triggeredBy": "After the Exo Mechs, before Supreme Calamitas",
+    "description": "Draedon's Exo Mechs are beaten and Supreme Calamitas remains, opening Exo weapons, Gem Tech armor and Draedon's Heart for the final duel.",
+    "cues": [
+      "Exo Mechs defeated",
+      "Supreme Calamitas not yet beaten",
+      "Exo Prisms and Gem Tech armor available"
+    ],
+    "guideNote": "Defeating the Exo Mechs grants Exo Prisms, used to craft Gem Tech armor, Draedon's Heart and the Exo weapons for the fight against Supreme Calamitas.",
+    "bossIcon": "cal-post-exo"
+  },
+  {
+    "id": "cal-endgame",
+    "order": 20,
     "name": "Endgame",
     "triggeredBy": "After the final bosses",
     "description": "All Calamity bosses including the Exo Mechs and Supreme Calamitas are defeated, with the strongest gear in the game.",
