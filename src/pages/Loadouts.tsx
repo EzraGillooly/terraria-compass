@@ -804,7 +804,13 @@ export function Loadouts() {
     if (generic >= 0) return generic;
     return cats.length > 0 ? CAT_ORDER.length : CAT_ORDER.length + 1;
   };
-  const ordered = [...accessories].sort((a, b) => catRank(a) - catRank(b));
+  /* Calamity's loadouts are transcribed from the class guides, which order the
+     five deliberately - boots, then the flight slot, then offence, then defence -
+     so re-sorting them by category threw that away and put wings above boots.
+     Vanilla's are not ordered that way, so they keep the category sort. */
+  const ordered = packId === 'calamity'
+    ? accessories
+    : [...accessories].sort((a, b) => catRank(a) - catRank(b));
   /* Guarantee a mobility pick in the slots. Sorting by category puts mobility
      first, but a loadout listing more accessories than it has slots can still
      push it past the last one - and a build with no movement accessory reads
