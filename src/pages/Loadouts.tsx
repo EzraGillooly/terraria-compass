@@ -595,7 +595,7 @@ function BuffCell(
 }
 
 export function Loadouts() {
-  const { difficulty, classId } = useAppState();
+  const { difficulty, setDifficulty, classId } = useAppState();
   const { id: packId, classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [modalItem, setModalItem] = useState<Item | null>(null);
@@ -762,32 +762,47 @@ export function Loadouts() {
   }
   const slotHolders = safeLoadout.accessories.filter((a) => !a.altOf);
 
+  /* An unobtainable pick is not a recommendation - it is a slot the world cannot
+     fill - so it is replaced rather than shown greyed. Two things this gets
+     right that appending replacements did not:
+       - the slot keeps its position, so the guide's order survives a swap
+       - the guide's own alternative for that slot is tried first, which is a far
+         better answer than the next pool entry: the pair is there precisely
+         because either fills the slot
+     Only then does it fall back to the pool, preferring the same category so a
+     defensive slot is replaced by something defensive. */
+  const substitutions: { original: Item; replacement: Item }[] = [];
   const accessories = ((): Item[] => {
-    const usable = slotHolders.filter((a) => isObtainable(a, difficulty));
-    if (usable.length === slotHolders.length) return slotHolders;
-
-    const dropped = slotHolders.filter((a) => !isObtainable(a, difficulty));
-    const taken = new Set(usable.map((a) => a.name));
+    if (slotHolders.every((a) => isObtainable(a, difficulty))) return slotHolders;
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
+    /* Seeded with the alternatives too, not just the holders: an alternative is
+       already on screen under its pick, so promoting it into another slot showed
+       the same accessory twice - Fledgling Wings sat under the balloon and again
+       where the Shield of Cthulhu had been. */
+    const taken = new Set([
+      ...slotHolders.filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
+      ...[...altsBy.values()].flat()
+        .filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
+    ]);
+    const out: Item[] = [];
+    for (const holder of slotHolders) {
+      if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
 
-    const out = [...usable];
-    for (let i = 0; i < dropped.length && out.length < slotCount; i += 1) {
-      // A category the build already covers is a poor swap: replacing the
-      // Shield of Cthulhu with Lightning Boots next to equipped Spectre Boots
-      // spends a slot on the same upgrade line. Uncovered categories rank
-      // first, then the sandbox's own grade.
-      const covered = new Set(out.flatMap((a) => a.categories ?? []));
-      const pick = safeLoadout.accessoryPool
+      const ownAlt = (altsBy.get(holder.name) ?? [])
+        .find((a) => isObtainable(a, difficulty) && !taken.has(a.name));
+      const wanted = new Set(holder.categories ?? []);
+      const pick = ownAlt ?? safeLoadout.accessoryPool
         .flatMap((g) => g.items)
         .filter((it) => !taken.has(it.name) && !it.isGroup && !it.tedious
           && isObtainable(it, difficulty))
         .sort((a, b) => {
-          const ac = (a.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
-          const bc = (b.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
-          return ac - bc || rank(a.quality) - rank(b.quality);
+          const am = (a.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
+          const bm = (b.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
+          return am - bm || rank(a.quality) - rank(b.quality);
         })[0];
-      if (!pick) break;
+      if (!pick) continue;
       taken.add(pick.name);
+      substitutions.push({ original: holder, replacement: pick });
       out.push(pick);
     }
     return out;
@@ -1060,12 +1075,37 @@ export function Loadouts() {
               <span>Accessories</span>
               <span className={styles.em}>{slotCount} slots</span>
             </div>
+            {substitutions.length > 0 && (
+              /* Calamity's guides are written for Expert and above, so in Classic
+                 several picks are simply unobtainable. Rather than leave the
+                 reader wondering why their loadout differs from every guide, say
+                 what was swapped and offer the switch. */
+              <div className={styles.classicNote}>
+                <p className={styles.classicNoteText}>
+                  <strong>Classic world:</strong> {substitutions.length}
+                  {substitutions.length === 1 ? ' pick is' : ' picks are'} Expert-only here, so
+                  {substitutions.length === 1 ? ' it has been' : ' they have been'} swapped for
+                  {substitutions.length === 1 ? ' something' : ' things'} a Classic world can get
+                  {' '}({substitutions.map((s2) => `${s2.original.name} → ${s2.replacement.name}`).join(', ')}).
+                  Calamity is balanced for Expert or above.
+                </p>
+                <button
+                  type="button"
+                  className={`${styles.classicNoteBtn} pixel-frame`}
+                  onClick={() => setDifficulty('expert')}
+                >
+                  Switch to Expert
+                </button>
+              </div>
+            )}
             <div className={styles.accGrid}>
               {accSlots.map((acc, i) => (
                 <AccCell
                   key={acc?.id ?? `slot-${i}`}
                   item={acc}
-                  alts={acc ? altsBy.get(acc.name) : undefined}
+                  alts={acc
+                    ? (altsBy.get(acc.name) ?? []).filter((a) => isObtainable(a, difficulty))
+                    : undefined}
                   demonHeart={demonHeartUnlocked && i === 5}
                   activeClass={activeClassId}
                   difficulty={difficulty}

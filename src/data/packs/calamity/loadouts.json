@@ -6482,21 +6482,60 @@
     ],
     "accessories": [
       {
-        "id": "calpool-extra-jump",
-        "name": "Extra jump",
+        "name": "Spectre Boots",
         "slot": "accessory",
-        "icon": "calamity/extra-jump.png",
-        "source": "",
-        "why": "Allows the player to perform a double-jump.",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "",
+        "station": "Tinkerer's Workshop",
         "tags": [],
         "topPick": false,
+        "tier": "good",
+        "id": "spectre-boots",
+        "icon": "accessories/spectre-boots.png",
+        "effect": "Grants flight \u00b7 The wearer can run super fast",
+        "materials": [
+          {
+            "name": "Hermes Boots",
+            "qty": 1
+          },
+          {
+            "name": "Rocket Boots",
+            "qty": 1
+          }
+        ],
+        "categories": [
+          "extra-mobility"
+        ],
+        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+      },
+      {
+        "name": "Sandstorm in a Balloon",
+        "slot": "accessory",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "",
+        "station": "Tinkerer's Workshop",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "id": "sandstorm-in-a-balloon",
+        "icon": "accessories/sandstorm-in-a-balloon.png",
+        "effect": "Grants an improved double jump \u00b7 Increases jump height",
+        "materials": [
+          {
+            "name": "Sandstorm in a Bottle",
+            "qty": 1
+          },
+          {
+            "name": "Shiny Red Balloon",
+            "qty": 1
+          }
+        ],
         "categories": [
           "primary-mobility"
         ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
-        "isGroup": true,
         "quality": "great",
-        "effect": "Extra jumps allow the player to perform one or more extra mid-air jumps and are granted by five different accessories and four different mounts."
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sandstorm_in_a_Balloon"
       },
       {
         "id": "fledgling-wings",
@@ -6513,142 +6552,24 @@
         "categories": [
           "primary-mobility"
         ],
-        "quality": "great"
+        "altOf": "Sandstorm in a Balloon"
       },
       {
-        "id": "fungal-clump",
-        "name": "Fungal Clump",
+        "id": "shark-tooth-necklace",
+        "name": "Shark Tooth Necklace",
         "slot": "accessory",
-        "icon": "calamity/fungal-clump.png",
-        "source": "Dropped by Crabulon",
-        "why": "all-around accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
-        "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-        "categories": [
-          "all-around"
-        ]
-      },
-      {
-        "id": "frog-leg",
-        "name": "Frog Leg",
-        "slot": "accessory",
-        "icon": "calamity/frog-leg.png",
-        "source": "Fished up in any body of water",
-        "why": "Increases the player's jump speed and fall resistance.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg",
-        "effect": "Increases jump speed and allows auto-jump \u00b7 Increases fall resistance",
-        "categories": [
-          "extra-mobility"
-        ],
-        "quality": "great"
-      },
-      {
-        "id": "lightning-boots",
-        "name": "Lightning Boots",
-        "slot": "accessory",
-        "icon": "calamity/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "You still need top-tier horizontal movement because every mech fight punishes sloppy spacing.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lightning_Boots",
-        "materials": [
-          {
-            "name": "Spectre Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
-          },
-          {
-            "name": "Anklet of the Wind",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "categories": [
-          "extra-mobility"
-        ],
-        "effect": "Allows flight, super fast running \u00b7 8% increased movement speed"
-      },
-      {
-        "id": "magiluminescence",
-        "name": "Magiluminescence",
-        "slot": "accessory",
-        "icon": "calamity/magiluminescence.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "icon": "calamity/shark-tooth-necklace.png",
+        "source": "Dropped by Blood Zombie and 1 other source",
+        "why": "Provides all weapons with 5 unconditional armor penetration.",
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
-        "materials": [
-          {
-            "name": "Demonite Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-          },
-          {
-            "name": "Topaz",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
-        "categories": [
-          "extra-mobility"
-        ],
-        "quality": "great",
-        "effect": "This increase stacks with the bonus of the Hermes Boots and their variants. [ 1 ] It also creates an aura of light around the player, which can be useful when exploring underground. The Magiluminescence's movement speed buffs are disabled when the player is not grounded. [ 2 ]"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "calamity/shield-of-cthulhu.png",
-        "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shield_of_Cthulhu",
-        "dropRate": "100%",
-        "expertOnly": true,
-        "categories": [
-          "extra-mobility"
-        ],
-        "quality": "good",
-        "markers": [
-          "expert"
-        ],
-        "effect": "While equipped, it grants 2 defense and allows the player to perform a dash attack by double-tapping either the \u25c0 Left or \u25b6 Right button, or the Dash button once. Dashing into an enemy deals damage to it, causes the player to bounce backward, and grants 0.07 seconds of invincibility frames and 0.17 seconds of immunity to contact damage from the hit enemy. [ 1 ] The cooldown between dashes is 0.5 seconds. [ 2 ]"
-      },
-      {
-        "id": "amidias-pendant",
-        "name": "Amidias' Pendant",
-        "slot": "accessory",
-        "icon": "calamity/amidias-pendant.png",
-        "source": "Dropped by the Giant Clam",
-        "why": "offensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amidias'_Pendant",
-        "effect": "While equipped, it causes 3 homing prism shards to fall from the sky every 2 seconds. Each shard deals 30 base damage.",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shark_Tooth_Necklace",
         "categories": [
           "offense"
-        ]
+        ],
+        "quality": "great",
+        "effect": "It increases the player's armor penetration by 5 when equipped."
       },
       {
         "id": "black-glass-band",
@@ -6682,31 +6603,8 @@
         "effect": "While equipped, it releases an obsidian strike upon enemy hits that deals 20 typeless damage and always critically strikes, with a 5 second cooldown that is halved if the enemy is killed with the strike. The strike's damage value scales with the player's highest class' damage.",
         "categories": [
           "offense"
-        ]
-      },
-      {
-        "id": "craw-carapace",
-        "name": "Craw Carapace",
-        "slot": "accessory",
-        "icon": "calamity/craw-carapace.png",
-        "source": "Dropped by Crawdads and sold by the Skeleton Merchant during a waning crescent or waxing crescent for 12 gold",
-        "why": "offensive and defensive stats",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Craw_Carapace",
-        "station": "Shimmer Transmutation",
-        "materials": [
-          {
-            "name": "Giant Shell",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Shell"
-          }
         ],
-        "effect": "While equipped, it increases damage by 7%. Enemies that deal contact damage to the player take 20 / 40 / 60 damage, inflicting them with the Crumbling debuff.",
-        "categories": [
-          "offense"
-        ]
+        "altOf": "Shark Tooth Necklace"
       },
       {
         "id": "feral-claws",
@@ -6721,44 +6619,14 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Feral_Claws",
         "dropRate": "19/100 (19%)",
         "categories": [
-          "offense"
+          "offense",
+          "melee"
         ],
         "markers": [
           "whips"
         ],
-        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons"
-      },
-      {
-        "id": "crown-jewel",
-        "name": "Crown Jewel",
-        "slot": "accessory",
-        "icon": "calamity/crown-jewel.png",
-        "source": "Dropped by King Slime",
-        "why": "defensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel",
-        "effect": "+0.5 HP/s life regen \u00b7 Reduces damage over time taken by 2 HP/s",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "gladiators-locket",
-        "name": "Gladiator's Locket",
-        "slot": "accessory",
-        "icon": "calamity/gladiators-locket.png",
-        "source": "Purchased from Shady Salesman for 25 during a Full Moon after the item has been found",
-        "why": "defensive accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gladiator's_Locket",
-        "effect": "When equipped, it makes enemies drop healing orbs upon death which are affected by gravity. The healing orbs restore 10 health when touched and disappear after 20 seconds.",
-        "categories": [
-          "survivability"
-        ]
+        "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons",
+        "quality": "great"
       },
       {
         "id": "rover-drive",
@@ -6774,65 +6642,25 @@
         "effect": "When equipped for 10 seconds without taking damage, a protective matrix covers its user, which grants 20 matrix durability. If the player gets hit, durability is lost instead of health by the amount of damage taken.",
         "categories": [
           "survivability"
-        ]
+        ],
+        "quality": "great"
       },
       {
-        "id": "unholy-tonic",
-        "name": "Unholy Tonic",
+        "id": "crown-jewel",
+        "name": "Crown Jewel",
         "slot": "accessory",
-        "icon": "calamity/unholy-tonic.png",
-        "source": "Crafted",
-        "why": "defensive tonic accessory",
+        "icon": "calamity/crown-jewel.png",
+        "source": "Dropped by King Slime",
+        "why": "defensive accessory",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Tonic",
-        "effect": "When equipped, it grants +3 defense while in The Corruption. It also grants immunity to the Brain Rot debuff.",
-        "materials": [
-          {
-            "name": "Vile Powder",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vile_Powder"
-          },
-          {
-            "name": "Rotten Chunk",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotten_Chunk"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel",
+        "effect": "+0.5 HP/s life regen \u00b7 Reduces damage over time taken by 2 HP/s",
         "categories": [
           "survivability"
-        ]
-      },
-      {
-        "id": "vicious-tonic",
-        "name": "Vicious Tonic",
-        "slot": "accessory",
-        "icon": "calamity/vicious-tonic.png",
-        "source": "Crafted",
-        "why": "defensive tonic accessory",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Tonic",
-        "effect": "When equipped, it grants +3 defense while in The Crimson. It also grants immunity to the Burning Blood debuff.",
-        "materials": [
-          {
-            "name": "Vicious Powder",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Powder"
-          },
-          {
-            "name": "Vertebra",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vertebra"
-          }
         ],
-        "station": "Iron Anvil or Lead Anvil",
-        "categories": [
-          "survivability"
-        ]
+        "altOf": "Rover Drive"
       }
     ],
     "buffs": [
@@ -7561,6 +7389,76 @@
               "whips"
             ],
             "effect": "12% increased melee speed \u00b7 Enables auto swing for melee weapons"
+          }
+        ]
+      },
+      {
+        "category": "mobility",
+        "items": [
+          {
+            "id": "calpool-extra-jump",
+            "name": "Extra jump",
+            "slot": "accessory",
+            "icon": "calamity/extra-jump.png",
+            "source": "",
+            "why": "Allows the player to perform a double-jump.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
+            "isGroup": true,
+            "quality": "great",
+            "effect": "Extra jumps allow the player to perform one or more extra mid-air jumps and are granted by five different accessories and four different mounts."
+          },
+          {
+            "id": "calpool-frog-leg",
+            "name": "Frog Leg",
+            "slot": "accessory",
+            "icon": "calamity/frog-leg.png",
+            "source": "Fished up in any body of water",
+            "why": "Increases the player's jump speed and fall resistance.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frog_Leg",
+            "markers": [
+              "upgradeable"
+            ],
+            "quality": "great",
+            "effect": "Increases jump speed and allows auto-jump \u00b7 Increases fall resistance"
+          },
+          {
+            "id": "calpool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "calamity/magiluminescence.png",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
+            "why": "",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil",
+            "quality": "great",
+            "effect": "This increase stacks with the bonus of the Hermes Boots and their variants. [ 1 ] It also creates an aura of light around the player, which can be useful when exploring underground. The Magiluminescence's movement speed buffs are disabled when the player is not grounded. [ 2 ]"
           }
         ]
       }
