@@ -64,7 +64,10 @@ const FALLBACK_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Prefer the real wiki page name for the sprite fallback - kebab→TitleCase mangles
    names with apostrophes ("Ball O' Hurt" → Ball_O_Hurt, which 404s). */
 function iconSrcs(icon: string, wikiUrl?: string) {
-  const stem = icon.replace(/\.png$/i, '').split('/').pop() ?? '';
+  // any image extension, not just .png - an animated entry is a .gif, and
+  // leaving the extension on the stem produced "Any-balloon.gif.png" as the
+  // wiki fallback name
+  const stem = icon.replace(/\.(png|gif|jpe?g|webp)$/i, '').split('/').pop() ?? '';
   const fromWikiUrl = wikiUrl?.split('/wiki/')[1];
   const wikiName = fromWikiUrl || makeWikiName(stem);
   /* Ask the wiki the item actually lives on. This was hardcoded to the
