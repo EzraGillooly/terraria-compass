@@ -288,13 +288,24 @@
   background: none; border: 0; padding: 0; width: 100%;
   font-family: inherit; color: inherit; cursor: pointer;
 }
-/* An interchangeable pick: quieter than the primary, still clearly its own link. */
+/* An interchangeable pick, as a miniature of the card above it: icon and name
+   on one line, the name clipped rather than wrapped so every slot in the row
+   keeps the same height however long the alternative is called. */
 .accAlt {
-  background: none; border: 0; padding: 0; cursor: pointer;
-  font-family: inherit; font-weight: 700; font-size: 10px; line-height: 1.2;
-  color: #A9BCE0; text-align: center;
+  display: flex; align-items: center; gap: 5px;
+  width: 100%; min-width: 0; padding: 4px 6px;
+  border: 1px solid rgba(150,180,230,.2); border-radius: var(--radius-sm);
+  background: rgba(255,255,255,.05);
+  font-family: inherit; cursor: pointer; text-align: left;
 }
-.accAlt:hover { color: var(--warm); text-decoration: underline; }
+.accAltImg { width: 16px; height: 16px; flex: none; object-fit: contain; }
+.accAltName {
+  min-width: 0; flex: 1;
+  font-weight: 700; font-size: 10px; line-height: 1.2; color: #A9BCE0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.accAlt:hover { border-color: var(--warm); background: rgba(255,255,255,.09); }
+.accAlt:hover .accAltName { color: var(--warm); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .accEmpty { --px-border: rgba(150,180,230,.14); }

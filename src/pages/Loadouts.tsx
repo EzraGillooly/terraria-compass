@@ -358,20 +358,6 @@ function AccCell({
         <span className={styles.accSlotName}>{item.name}</span>
       </button>
 
-      {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
-          two interchangeable picks, so the alternative hangs off its primary
-          rather than spending a slot of its own. */}
-      {alts.map((alt) => (
-        <button
-          key={alt.id}
-          type="button"
-          className={styles.accAlt}
-          onClick={() => onOpen(alt)}
-        >
-          or {alt.name}
-        </button>
-      ))}
-
       {(cats.length > 0 || item.quality || markers.length > 0) && (
         <span className={styles.accTags}>
           {item.quality && (
@@ -391,6 +377,32 @@ function AccCell({
           ))}
         </span>
       )}
+
+      {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
+          two interchangeable picks, so the alternative hangs off its primary
+          rather than spending a slot of its own. It is a miniature of the card
+          above it - icon and name only, on one line - so the slot still reads
+          as a single pick with a swap offered under it. */}
+      {alts.map((alt) => {
+        const altImg = iconSrcs(alt.icon, alt.wikiUrl);
+        return (
+          <button
+            key={alt.id}
+            type="button"
+            className={styles.accAlt}
+            title={alt.name}
+            onClick={() => onOpen(alt)}
+          >
+            <img
+              src={altImg.local} alt="" aria-hidden="true"
+              className={`${styles.accAltImg} pixel-img`}
+              width="16" height="16" loading="lazy"
+              onError={makeErrorHandler(altImg.wiki, FALLBACK_ICON)}
+            />
+            <span className={styles.accAltName}>{alt.name}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }
