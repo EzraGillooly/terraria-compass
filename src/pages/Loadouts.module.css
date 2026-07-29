@@ -396,3 +396,15 @@ button.accSlot:hover { --px-border: var(--warm); }
 .c_extra-mobility   { background: #c8f7b0; }
 .c_all-around       { background: #8fd3f4; }
 
+
+/* Ammo family heading - arrows, bullets, rockets. Quieter than a panel label:
+   it separates runs within one list rather than starting a new section. */
+.ammoGroup {
+  font-weight: 800;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #8FA6C8;
+  margin: 12px 0 6px;
+}
+.ammoGroup:first-child { margin-top: 0; }

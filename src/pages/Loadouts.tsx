@@ -110,6 +110,40 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
   );
 }
 
+/* Ammo reads better grouped by what fires it: every arrow together, then
+   bullets, then rockets. The guide lists them in one run, so a bow user had to
+   pick their arrows out from among bullets and darts. Anything that matches no
+   family keeps its order at the end under "Other". */
+const AMMO_FAMILIES: [string, RegExp][] = [
+  // matched anywhere in the name, not just at the end: Calamity numbers its
+  // rockets ("Cluster Rocket I", "Rocket III"), so an end-anchored pattern
+  // filed every rocket under Other
+  ['Arrows', /\barrows?\b/i],
+  ['Bullets', /\bbullets?\b|\bmusket ball\b|\brounds?\b/i],
+  ['Rockets', /\brockets?\b|\bmissiles?\b|\bgrenades?\b/i],
+  ['Darts', /\bdarts?\b/i],
+  ['Bolts', /\bbolts?\b/i],
+  ['Solutions', /\bsolutions?\b/i],
+];
+
+function groupAmmo(ammo: Item[]): { label: string; items: Item[] }[] {
+  const rest = [...ammo];
+  const out: { label: string; items: Item[] }[] = [];
+  for (const [label, pattern] of AMMO_FAMILIES) {
+    const hit = rest.filter((a) => pattern.test(a.name));
+    if (!hit.length) continue;
+    hit.forEach((a) => rest.splice(rest.indexOf(a), 1));
+    out.push({ label, items: hit });
+  }
+  if (rest.length) out.push({ label: out.length ? 'Other' : '', items: rest });
+  return out;
+}
+
+/* Most armour sets a phase shows. The guide names two or three class-specific
+   sets plus an all-class one; past three the column reads as a list rather
+   than a recommendation. */
+const MAX_ARMOR_SHOWN = 3;
+
 /* Fewest weapons Top Picks tries to show. Below this the shortlist reads as
    "your only option" rather than a choice. */
 const MIN_TOP_PICKS = 3;
@@ -195,48 +229,24 @@ const isCalamityArmor = (name: string) =>
 /* Show two armor options per stage: the best vanilla set and the best Calamity set
    (the list is already ordered best→good→other, so the first of each is the pick). */
 function curateArmor(grouped: Item[]): Item[] {
-  const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
+  /* Everything the guide lists for this phase and class.
+   *
+   * This used to trim to one Calamity set plus one vanilla set, which hid sets
+   * the guide explicitly recommends: Pre-Golem ranger lost Shroomite, and
+   * Post-Golem lost Plague Reaper. The armour column is already a curated
+   * shortlist - Calamity names two or three class-specific sets and one
+   * all-class set - so trimming it again was second-guessing the source.
+   *
+   * Calamity's own sets lead, since playing the mod they are the point and the
+   * vanilla set is the fallback.
+   */
   const modded = grouped.filter((a) => isCalamityArmor(a.name));
-
-  // Playing a mod, the useful comparison is "best vanilla set vs best modded
-  // set", so it stays at one of each. Without a mod there is nothing to compare
-  // against, and several stages have two or three genuinely on-tier sets
-  // (Bee vs Obsidian, Chlorophyte vs Turtle, Spooky vs Tiki), so show them all.
-  if (!modded.length) return vanilla;
-
-  /* Calamity's set leads. Playing the mod, its own gear is the point and the
-     vanilla set is the fallback, so listing vanilla first buried it. */
-  const picks: Item[] = [];
-  if (modded[0]) picks.push(modded[0]);
-  if (vanilla[0]) picks.push(vanilla[0]);
-  // endgame stages have no vanilla set (or vice versa) - fill to two from the
-  // pool that has options so the reader still sees an alternative
-  if (picks.length < 2) {
-    const pool = vanilla.length ? vanilla : modded;
-    if (pool[1]) picks.push(pool[1]);
-  }
-  /* Ore siblings travel together. Where the pairs are not merged into one row
-     (Calamity, which gives Gold and Platinum different set bonuses), keeping
-     only the first pick would show Gold and silently drop Platinum - they are
-     one choice at one tier, so the reader needs both or neither. */
-  const withSiblings = [...picks];
-  for (const p of picks) {
-    const pair = ARMOR_VARIANTS.find((v) =>
-      v.some((m) => m.toLowerCase() === armorMaterial(p.name).toLowerCase()));
-    if (!pair) continue;
-    for (const g of grouped) {
-      if (withSiblings.includes(g)) continue;
-      if (pair.some((m) => m.toLowerCase() === armorMaterial(g.name).toLowerCase())) {
-        withSiblings.push(g);
-      }
-    }
-  }
-  /* Sorted by pack, not by the grouped order - that order is the loadout's own
-     and would put the vanilla set back on top. Calamity first, then each
-     group keeps its relative order. */
-  const rank = (i: Item) => (isCalamityArmor(i.name) ? 0 : 1);
-  return withSiblings.sort((a, b) =>
-    rank(a) - rank(b) || grouped.indexOf(a) - grouped.indexOf(b));
+  const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
+  /* Capped at three. Trimming to one-of-each hid sets the guide names, but
+     dropping the cap entirely swung too far - Post-Golem ranger listed five.
+     Three keeps the guide's class-specific picks and its all-class set without
+     the column becoming a catalogue. */
+  return [...modded, ...vanilla].slice(0, MAX_ARMOR_SHOWN);
 }
 
 /* ── Accessory taxonomy ──
@@ -1116,8 +1126,11 @@ export function Loadouts() {
           {safeLoadout.ammo.length > 0 && (
             <div className={`${styles.invPanel} pixel-frame`}>
               <div className={styles.tlabel}><span>Ammo</span></div>
+              {groupAmmo(safeLoadout.ammo).map((group) => (
+              <div key={group.label || 'all'}>
+              {group.label && <div className={styles.ammoGroup}>{group.label}</div>}
               <div className={styles.ammoList}>
-                {safeLoadout.ammo.map((m) => {
+                {group.items.map((m) => {
                   const img = iconSrcs(m.icon);
                   return (
                     <button
@@ -1146,6 +1159,8 @@ export function Loadouts() {
                   );
                 })}
               </div>
+              </div>
+              ))}
             </div>
           )}
 
