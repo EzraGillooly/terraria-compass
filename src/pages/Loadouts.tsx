@@ -1182,7 +1182,6 @@ export function Loadouts() {
                           <span className={styles.ammoName}>{m.name}</span>
                           {m.stats && <span className={styles.ammoStat}>{m.stats}</span>}
                         </div>
-                        <div className={styles.ammoWhy}>{m.why}</div>
                       </div>
                     </button>
                   );
