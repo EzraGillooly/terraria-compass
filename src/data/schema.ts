@@ -51,6 +51,12 @@ export const Item = z.object({
    * classes they are not playing.
    */
   headpieceBonus: z.string().optional(),
+  /**
+   * The guide lists this under "All-class armor" rather than
+   * "Class-specific armor". It is always listed last, so without the flag it
+   * fell off whenever the column was capped.
+   */
+  allClass: z.boolean().optional(),
   /** total defense for this class's configuration of the set */
   defense: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */

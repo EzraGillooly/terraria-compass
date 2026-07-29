@@ -1502,10 +1502,10 @@
     ],
     "armor": [
       {
-        "id": "shroomite-armor",
-        "name": "Shroomite Armor",
+        "id": "shroomite-armor-headgear",
+        "name": "Shroomite Armor (Headgear)",
         "slot": "armor",
-        "icon": "armor/shroomite-armor-ranger.png",
+        "icon": "armor-sets/shroomite-armor-headgear.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [
@@ -1553,7 +1553,118 @@
           }
         ],
         "defense": 51,
-        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance \u00b7 Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance \u00b7 Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
+        "headpieceBonus": "Increases bow damage by 12%; 5% increased ranged critical strike chance",
+        "headpiece": "Shroomite Headgear"
+      },
+      {
+        "id": "shroomite-armor-mask",
+        "name": "Shroomite Armor (Mask)",
+        "slot": "armor",
+        "icon": "armor-sets/shroomite-armor-mask.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": true,
+        "pieces": [
+          "Shroomite Mask",
+          "Shroomite Breastplate",
+          "Shroomite Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Shroomite Headgear",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Breastplate",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Leggings",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 51,
+        "headpieceBonus": "Increases gun damage by 12%; 5% increased ranged critical strike chance",
+        "headpiece": "Shroomite Mask"
+      },
+      {
+        "id": "shroomite-armor-helmet",
+        "name": "Shroomite Armor (Helmet)",
+        "slot": "armor",
+        "icon": "armor-sets/shroomite-armor-helmet.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": true,
+        "pieces": [
+          "Shroomite Helmet",
+          "Shroomite Breastplate",
+          "Shroomite Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Shroomite Headgear",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Breastplate",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Shroomite Leggings",
+            "materials": [
+              {
+                "name": "Shroomite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 51,
+        "headpieceBonus": "Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance",
+        "headpiece": "Shroomite Helmet"
       },
       {
         "id": "red-riding-armor",

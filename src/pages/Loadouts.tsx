@@ -240,13 +240,34 @@ function curateArmor(grouped: Item[]): Item[] {
    * Calamity's own sets lead, since playing the mod they are the point and the
    * vanilla set is the fallback.
    */
-  const modded = grouped.filter((a) => isCalamityArmor(a.name));
-  const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
-  /* Capped at three. Trimming to one-of-each hid sets the guide names, but
-     dropping the cap entirely swung too far - Post-Golem ranger listed five.
-     Three keeps the guide's class-specific picks and its all-class set without
-     the column becoming a catalogue. */
-  return [...modded, ...vanilla].slice(0, MAX_ARMOR_SHOWN);
+  /* Two class-specific sets and the all-class one.
+   *
+   * The guide splits its armour column under "Class-specific armor" and
+   * "All-class armor", and that split is what the three slots should reflect.
+   * Taking the first three in list order dropped the all-class set every time,
+   * since it is always listed last - so the third class-specific set gives way
+   * to it instead. */
+  const ordered = [...grouped.filter((a) => isCalamityArmor(a.name)),
+    ...grouped.filter((a) => !isCalamityArmor(a.name))];
+  /* Counted by set, not by card. Shroomite is listed once per helmet -
+     Headgear, Mask, Helmet - because choosing between them is the decision it
+     asks for, but the three are one set and should cost one slot, not three. */
+  const setOf = (a: Item) => a.name.replace(/\s*\([^)]*\)\s*$/, '');
+  const pick = (list: Item[], limit: number) => {
+    const keep: string[] = [];
+    for (const a of list) {
+      const key = setOf(a);
+      if (!keep.includes(key)) {
+        if (keep.length >= limit) continue;
+        keep.push(key);
+      }
+    }
+    return list.filter((a) => keep.includes(setOf(a)));
+  };
+  const specific = ordered.filter((a) => !a.allClass);
+  const allClass = ordered.filter((a) => a.allClass);
+  if (!allClass.length) return pick(specific, MAX_ARMOR_SHOWN);
+  return [...pick(specific, MAX_ARMOR_SHOWN - 1), ...pick(allClass, 1)];
 }
 
 /* ── Accessory taxonomy ──
@@ -1101,8 +1122,16 @@ export function Loadouts() {
                           summoner armor"). headpieceBonus stays - it names the
                           bonus a specific helmet carries, which the set bonus
                           does not. */}
+                      {/* Helmet differences read as bullets alongside the set
+                          bonus, not as a run of muted subtext - on an all-class
+                          set that is three helmets' worth of text and it came
+                          out as one grey blob. */}
                       {a.headpieceBonus && (
-                        <div className={styles.armorPerk}>{a.headpieceBonus}</div>
+                        <ul className={styles.armorEffects}>
+                          {a.headpieceBonus.split(' · ').map((line) => (
+                            <li key={line}>{line}</li>
+                          ))}
+                        </ul>
                       )}
                       </div>
                     </button>
