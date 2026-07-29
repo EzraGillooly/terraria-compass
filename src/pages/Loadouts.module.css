@@ -294,23 +294,27 @@
 .accCell { display: flex; flex-direction: column; align-items: stretch; gap: 4px; }
 .accCell > .accSlot { flex: none; }
 .accOr {
+  display: flex; align-items: center; justify-content: center;
   font-weight: 800; font-size: 9px; line-height: 1;
-  text-transform: uppercase; letter-spacing: .08em;
-  color: #8FA6C8; text-align: center;
+  text-transform: uppercase; letter-spacing: .08em; text-indent: .08em;
+  color: #8FA6C8;
 }
 /* A miniature of the card above it: icon and name on one line, the name clipped
    rather than wrapped so a long alternative cannot stretch the column. */
 .accAlt {
-  display: flex; align-items: center; gap: 5px;
+  display: flex; align-items: center; justify-content: center; gap: 5px;
   width: 100%; min-width: 0; padding: 5px 7px;
-  font-family: inherit; cursor: pointer; text-align: left;
+  font-family: inherit; cursor: pointer; text-align: center;
   --px-u: 1.5px; --px-fill: rgba(255,255,255,.05); --px-border: rgba(150,180,230,.2);
 }
 .accAlt::before { transition: none; }
 .accAlt:hover { --px-border: var(--warm); }
 .accAltImg { width: 16px; height: 16px; flex: none; object-fit: contain; }
+/* Shrink-to-fit rather than flex:1 - filling the row would pin the icon to the
+   left edge and defeat the centring, while shrinking still lets a long name
+   clip with an ellipsis. */
 .accAltName {
-  min-width: 0; flex: 1;
+  min-width: 0; flex: 0 1 auto;
   font-weight: 700; font-size: 10px; line-height: 1.2; color: #A9BCE0;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
