@@ -122,7 +122,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              this class's helmet should show - the shared set bonus and the
              one helmet's bonus are both part of what wearing it does, so
              they read as one list here. */
-          const parts = [item.effect, item.headpieceBonus].filter(Boolean).join(' · ');
+          /* Falls back to `why`. Only Calamity items carry `effect`, so
+             dropping `why` from the modal blanked every vanilla card -
+             65 of vanilla's 67 armour entries describe themselves there
+             and have no effect text at all. */
+          const parts = [item.effect || item.why, item.headpieceBonus]
+            .filter(Boolean).join(' · ');
           if (!parts) return null;
           return parts.includes(' · ')
             ? (

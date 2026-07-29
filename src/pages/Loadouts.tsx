@@ -1019,6 +1019,11 @@ export function Loadouts() {
                       title={isObtainable(a, difficulty) ? undefined : 'Not obtainable in a Classic world'}
                       onClick={() => setModalItem(a)}
                     >
+                      {/* One sprite per class, wearing that class's own helmet.
+                          The wiki's set image is a composite of every variant,
+                          sliced on the transparent gaps and mapped by the set's
+                          documented helmet order - the same method vanilla uses,
+                          which is why vanilla was right and this was not. */}
                       <div className={`${styles.armorDoll} pixel-frame`}>
                         <img
                           src={img.local} alt=""
@@ -1054,12 +1059,15 @@ export function Loadouts() {
                           nothing, and for Calamity's retuned vanilla sets the
                           inherited "No set bonus" was wrong outright. `why` is
                           kept underneath as the guide's reason for picking it. */}
-                      {a.effect && (() => {
+                      {(a.effect || a.why) && (() => {
                         /* Capped at three lines. Victide lists eleven - one per
                            headpiece - which buried the rest of the card. The
                            full list is in the modal, so say so rather than
                            truncating silently. */
-                        const all = a.effect.split(' · ');
+                        /* `why` when there is no effect: vanilla armour has
+                           no effect text, so keying on effect alone left every
+                           vanilla set with a blank card. */
+                        const all = (a.effect || a.why || '').split(' · ');
                         const shown = all.slice(0, ARMOR_EFFECT_LINES);
                         const rest = all.length - shown.length;
                         return (
