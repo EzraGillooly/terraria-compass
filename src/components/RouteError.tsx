@@ -5,11 +5,24 @@ import { Component, type ReactNode } from 'react';
  * stale chunk, so this only shows if something still fails after that - and even
  * then the reader gets a button, never a blank white screen.
  */
-export class RouteError extends Component<{ children: ReactNode }, { failed: boolean }> {
-  override state = { failed: false };
+export class RouteError extends Component<
+  { children: ReactNode; resetKey: string },
+  { failed: boolean; key: string }
+> {
+  override state = { failed: false, key: this.props.resetKey };
 
   static getDerivedStateFromError() {
     return { failed: true };
+  }
+
+  // Navigating to a different route clears a caught error, so one bad render can
+  // never leave every subsequent page showing the fallback until a full reload.
+  static getDerivedStateFromProps(
+    props: { resetKey: string },
+    state: { key: string },
+  ) {
+    if (props.resetKey !== state.key) return { failed: false, key: props.resetKey };
+    return null;
   }
 
   override render() {
