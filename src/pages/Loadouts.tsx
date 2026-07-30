@@ -775,6 +775,24 @@ export function Loadouts() {
   const accessories = ((): Item[] => {
     if (slotHolders.every((a) => isObtainable(a, difficulty))) return slotHolders;
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
+    /* Boots, wings and balloons do not stack - a build wants one of each at
+       most - so a substitute must not double up a family already equipped.
+       Replacing an Expert-only Shield of Cthulhu next to Terraspark Boots and
+       Fairy Wings should reach for a Panic Necklace or Magiluminescence, not a
+       second pair of wings. Anything outside these families (emblems, bands,
+       necklaces) returns null and is never treated as a duplicate. */
+    const family = (name: string): string | null => {
+      if (/\bboots\b|\btreads\b/i.test(name)) return 'boots';
+      // flight is not always spelled "Wings": Jetpack, Hoverboard and the
+      // Celestial Starboard are wing substitutes and stack with none of them.
+      if (/\bwings\b|starboard|jetpack|hoverboard/i.test(name)) return 'flight';
+      // Bottles (extra jump) and balloons (jump height) are separate families -
+      // Cloud in a Bottle and a Shiny Red Balloon stack, and the guide equips
+      // both, so only balloon-vs-balloon or bottle-vs-bottle is a true duplicate.
+      if (/balloon/i.test(name)) return 'balloon';
+      if (/\bbottle\b/i.test(name)) return 'bottle';
+      return null;
+    };
     /* Seeded with the alternatives too, not just the holders: an alternative is
        already on screen under its pick, so promoting it into another slot showed
        the same accessory twice - Fledgling Wings sat under the balloon and again
@@ -784,6 +802,13 @@ export function Loadouts() {
       ...[...altsBy.values()].flat()
         .filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
     ]);
+    /* Families already covered, seeded from every obtainable holder up front -
+       not just the ones processed so far - so a wing substituted for slot 3 still
+       sees the wings the guide equips in slot 6. */
+    const covered = new Set(
+      slotHolders.filter((a) => isObtainable(a, difficulty))
+        .map((a) => family(a.name)).filter(Boolean) as string[],
+    );
     const out: Item[] = [];
     for (const holder of slotHolders) {
       if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
@@ -796,12 +821,26 @@ export function Loadouts() {
         .filter((it) => !taken.has(it.name) && !it.isGroup && !it.tedious
           && isObtainable(it, difficulty))
         .sort((a, b) => {
+          /* Movement families are the wrong answer when the build already has
+             its boots, wings and jump: the reader wanted their Expert pick, not
+             a third movement item. So a utility or survivability accessory (a
+             Panic Necklace, Band of Regeneration, Magiluminescence) always beats
+             a spare movement item, and a movement item that *duplicates* a family
+             already worn is worse still. Non-movement items score 0, a fresh
+             movement family 1, a duplicate one 2. */
+          const cost = (name: string) => {
+            const f = family(name);
+            if (!f) return 0;
+            return covered.has(f) ? 2 : 1;
+          };
           const am = (a.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
           const bm = (b.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
-          return am - bm || rank(a.quality) - rank(b.quality);
+          return cost(a.name) - cost(b.name) || am - bm || rank(a.quality) - rank(b.quality);
         })[0];
       if (!pick) continue;
       taken.add(pick.name);
+      const pf = family(pick.name);
+      if (pf) covered.add(pf);
       substitutions.push({ original: holder, replacement: pick });
       out.push(pick);
     }
