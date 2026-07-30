@@ -1,5 +1,6 @@
 import type { Pack } from './types';
 import { getPackMeta } from './meta';
+import { retryChunk } from '../../lib/lazy-retry';
 
 export type { Pack, DifficultyDef } from './types';
 export { PACK_META, DEFAULT_PACK_ID, getPackMeta, type PackMeta } from './meta';
@@ -17,9 +18,11 @@ export async function loadPack(id: string): Promise<Pack> {
   const cached = cache.get(key);
   if (cached) return cached;
 
+  // retryChunk so a stale data chunk after a deploy reloads rather than leaving
+  // the app stuck on the loading splash.
   const pack = key === 'calamity'
-    ? (await import('./calamity')).calamityPack
-    : (await import('./vanilla')).vanillaPack;
+    ? (await retryChunk(() => import('./calamity'))).calamityPack
+    : (await retryChunk(() => import('./vanilla'))).vanillaPack;
   cache.set(key, pack);
   return pack;
 }
