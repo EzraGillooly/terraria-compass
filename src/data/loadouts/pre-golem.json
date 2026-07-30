@@ -4285,31 +4285,42 @@
     ],
     "accessories": [
       {
-        "id": "papyrus-scarab",
-        "name": "Papyrus Scarab",
+        "id": "pool-hercules-beetle",
+        "name": "Hercules Beetle",
         "slot": "accessory",
-        "icon": "accessories/papyrus-scarab.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "+1 minion slot and 15% minion damage.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": true,
+        "icon": "accessories/hercules-beetle.png",
+        "source": "Purchased from the Witch Doctor",
+        "why": "Increases knockback of the player's summons as well as their damage by 15%.",
+        "tags": [],
+        "topPick": false,
         "categories": [
-          "offense",
           "summon"
         ],
-        "quality": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
         "materials": [
           {
-            "name": "Necromantic Scroll",
+            "name": "Power Glove",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
           },
           {
-            "name": "Hercules Beetle",
+            "name": "Flesh Knuckles",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -4325,78 +4336,15 @@
         "topPick": false,
         "categories": [
           "summon"
-        ]
-      },
-      {
-        "id": "necromantic-scroll",
-        "name": "Necromantic Scroll",
-        "slot": "accessory",
-        "icon": "accessories/necromantic-scroll.png",
-        "source": "Dropped by Mourning Wood during Pumpkin Moon",
-        "why": "+1 minion slot and 10% minion damage.",
-        "tags": [
-          "hardmode",
-          "event"
         ],
-        "topPick": false,
-        "categories": [
-          "summon"
-        ],
-        "dropRate": "2.86\u201320% 5\u201320%"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity gives summoner a lot of breathing room in the phase's messier event content.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "moon-stone",
-        "name": "Moon Stone",
-        "slot": "accessory",
-        "icon": "accessories/moon-stone.png",
-        "source": "Dropped by Vampires during a Solar Eclipse",
-        "why": "Half of the eventual Celestial Stone, and the part you can actually have here: a night-time boost to damage, crit, regen and speed.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-        "categories": [
-          "survivability",
-          "offense"
-        ],
-        "quality": "good",
-        "dropRate": "2.86% 5.63%"
+        "quality": "good"
       },
       {
         "id": "master-ninja-gear",
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Combined at the Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -4406,7 +4354,6 @@
           "mobility",
           "survivability"
         ],
-        "quality": "great",
         "materials": [
           {
             "name": "Tiger Climbing Gear",
@@ -4425,6 +4372,49 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-mothron-wings",
+        "name": "Mothron Wings",
+        "slot": "accessory",
+        "icon": "accessories/mothron-wings.png",
+        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
+        "quality": "fine"
       }
     ],
     "buffs": [
@@ -4912,6 +4902,51 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "Dropped by Vampire and 1 other source",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good",
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
           }
         ]
       },
@@ -4994,6 +5029,34 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-papyrus-scarab",
+            "name": "Papyrus Scarab",
+            "slot": "accessory",
+            "icon": "accessories/papyrus-scarab.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Increases summon damage by 15%, the player's minion slots by one, and the knockback of the player's summons. Note that all classes can easily benefit from extra minion damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Papyrus_Scarab",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Necromantic Scroll",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
+              },
+              {
+                "name": "Hercules Beetle",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hercules_Beetle"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -5083,6 +5146,22 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+          },
+          {
+            "id": "necromantic-scroll",
+            "name": "Necromantic Scroll",
+            "slot": "accessory",
+            "icon": "accessories/necromantic-scroll.png",
+            "source": "Dropped by Mourning Wood during the Pumpkin Moon.",
+            "why": "+1 minion slot and 10% minion damage.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "dropRate": "2.86\u201320% 5\u201320%"
           }
         ]
       }
