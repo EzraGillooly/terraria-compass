@@ -1,4 +1,5 @@
 import { ClassCollection, LoadoutCollection, PhaseCollection } from '../schema';
+import { devParse } from '../parse';
 import type { BossDef } from '../bosses';
 import { createRecipeApi } from '../recipes';
 import phasesJson from './calamity/phases.json';
@@ -23,9 +24,9 @@ export const calamityPack: Pack = {
   // subclasses, and there is no accessory pool, since the Calamity wiki has no
   // graded accessory guide to build one from.
   available: true,
-  phases: PhaseCollection.parse(phasesJson),
-  classes: ClassCollection.parse(classesJson),
-  loadouts: LoadoutCollection.parse(loadoutsJson),
+  phases: devParse(PhaseCollection, phasesJson),
+  classes: devParse(ClassCollection, classesJson),
+  loadouts: devParse(LoadoutCollection, loadoutsJson),
   bosses: bossesJson as BossDef[],
   recipes: createRecipeApi(recipesJson.nodes, recipesJson.roots),
   /* Classic and Expert only, same as vanilla. Revengeance and Death are not

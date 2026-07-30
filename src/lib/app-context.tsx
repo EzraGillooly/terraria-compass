@@ -1,6 +1,7 @@
 import { createContext, type ReactNode, useContext, useEffect, useState } from 'react';
 import type { DifficultyFilter } from './difficulty';
-import { DEFAULT_PACK_ID, getPack, type Pack } from '../data/packs';
+import { DEFAULT_PACK_ID, getPackMeta, loadPack, type Pack, type PackMeta } from '../data/packs';
+import { Loading } from '../components/Loading';
 
 const PACK_STORAGE_KEY = 'tc.pack';
 const CLASS_STORAGE_KEY = 'tc.class';
@@ -29,7 +30,9 @@ interface AppState {
       than being a world type of its own. Always 'off' outside Calamity. */
   calamityMode: CalamityMode;
   setCalamityMode: (m: CalamityMode) => void;
-  /** the resolved active pack - every page reads its data from here */
+  /** the resolved active pack - every page reads its data from here. Never null
+      to a consumer: the provider withholds children until the active pack has
+      loaded, so this is always the data for the current packId. */
   pack: Pack;
 }
 
@@ -37,7 +40,7 @@ const AppContext = createContext<AppState | null>(null);
 
 function readStoredPack(): string {
   const stored = window.localStorage.getItem(PACK_STORAGE_KEY);
-  return stored && getPack(stored).available ? stored : DEFAULT_PACK_ID;
+  return stored && getPackMeta(stored).available ? stored : DEFAULT_PACK_ID;
 }
 
 function readStoredCalamityMode(): CalamityMode {
@@ -45,21 +48,29 @@ function readStoredCalamityMode(): CalamityMode {
   return stored === 'revengeance' || stored === 'death' ? stored : 'off';
 }
 
-function readStoredClass(pack: Pack): string {
+function readStoredClass(meta: PackMeta): string {
   const stored = window.localStorage.getItem(CLASS_STORAGE_KEY);
-  return stored && pack.classes.some((c) => c.id === stored)
+  return stored && meta.classIds.includes(stored)
     ? stored
-    : pack.classes[0]?.id ?? 'melee';
+    : meta.classIds[0] ?? 'melee';
 }
 
 export function AppProvider({ children }: { children: ReactNode }) {
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('normal');
   const [isDayMode, setIsDayMode] = useState(true);
   const [packId, setPackIdState] = useState<string>(() => readStoredPack());
-  const [classId, setClassId] = useState<string>(() => readStoredClass(getPack(readStoredPack())));
+  const [classId, setClassId] = useState<string>(() => readStoredClass(getPackMeta(readStoredPack())));
   const [calamityChoice, setCalamityMode] = useState<CalamityMode>(() => readStoredCalamityMode());
 
-  const pack = getPack(packId);
+  /* The active pack's data, loaded lazily. Held in state and swapped only once
+     the dynamic import resolves, so `pack` always matches `packId` by the time a
+     page reads it - see the gate below. */
+  const [pack, setPack] = useState<Pack | null>(null);
+  useEffect(() => {
+    let stale = false;
+    loadPack(packId).then((p) => { if (!stale) setPack(p); });
+    return () => { stale = true; };
+  }, [packId]);
 
   /* Revengeance requires an Expert world. Rather than clearing the reader's
      choice when they drop to Classic, it simply does not apply - so switching
@@ -67,15 +78,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const calamityMode: CalamityMode = difficulty === 'expert' ? calamityChoice : 'off';
 
   // Switching packs: clamp a now-invalid difficulty (e.g. Calamity's Revengeance
-  // → vanilla) or class (Rogue → vanilla) here rather than in an effect.
+  // → vanilla) or class (Rogue → vanilla) here rather than in an effect. Uses
+  // pack metadata, which is loaded synchronously, so the clamp does not wait on
+  // the pack's data.
   const setPackId = (id: string) => {
     setPackIdState(id);
-    const next = getPack(id);
+    const next = getPackMeta(id);
     setDifficulty((cur) =>
       next.difficulties.some((d) => d.value === cur) ? cur : 'normal',
     );
     setClassId((cur) =>
-      next.classes.some((c) => c.id === cur) ? cur : next.classes[0]?.id ?? cur,
+      next.classIds.includes(cur) ? cur : next.classIds[0] ?? cur,
     );
     // Revengeance is Calamity's, so leaving the pack turns it off
     if (id !== 'calamity') setCalamityMode('off');
@@ -107,6 +120,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
     document.documentElement.dataset.calamityMode =
       calamityMode === 'off' ? '' : calamityMode;
   }, [calamityMode]);
+
+  /* Withhold children until the active pack's data is in hand, so every consumer
+     of `pack` sees a non-null value that matches the current packId - no page
+     needs to guard against a half-loaded pack or one from the pack it just left.
+     The splash shows only the first time each pack is opened; loadPack caches,
+     so later switches resolve on the next tick. */
+  if (!pack || pack.id !== packId) {
+    return <Loading label="Loading data…" />;
+  }
 
   return (
     <AppContext.Provider

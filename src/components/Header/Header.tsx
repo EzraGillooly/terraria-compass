@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
-import { PACKS } from '../../data/packs';
+import { PACK_META } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -172,7 +172,7 @@ function ModSelect() {
       </button>
       {open && (
         <ul className={styles.diffMenu} role="listbox" aria-label="Mod">
-          {PACKS.map((p) => (
+          {PACK_META.map((p) => (
             <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!p.available}>
               <button
                 type="button"
