@@ -1,6 +1,6 @@
 # Terraria Compass
 
-Terraria Compass is a fan-made companion site for Terraria progression. Pick your
+Terraria Compass is my own companion site for Terraria progression. Pick your
 stage and class to see the gear worth using at that point: weapons, armor,
 accessories and buffs, plus what each item is made from and where its materials
 come from.
@@ -23,29 +23,7 @@ come from.
 - **Difficulty filter** - Classic / Expert / Master, plus Revengeance and Death
   under Calamity
 - No ads, no tracking, no external fonts
-
-## Tech stack
-
-Vite + React + TypeScript, CSS Modules, React Router v6 (HashRouter), Zod for
-data validation. Content is static JSON under `src/data/`, with each content pack
-in `src/data/packs/`. Deployments run through GitHub Actions and GitHub Pages.
-
-The pixel-stepped corners used throughout the UI are a CSS utility
-(`src/styles/pixel.css`) built from `clip-path` polygons, so no images or SVGs are
-needed for the frames.
-
-## Development
-
-```bash
-npm run dev         # http://localhost:3003/terraria-compass/
-npm run build       # tsc -b && vite build
-npm run typecheck
-npm run lint        # eslint, --max-warnings 0
-npm test            # vitest
-npm run test:e2e    # playwright, includes axe accessibility checks
-npm run data:validate
-```
-
+- 
 ## Licensing and attribution
 
 The source code is **all rights reserved** - see [`LICENSE`](LICENSE) for what is
