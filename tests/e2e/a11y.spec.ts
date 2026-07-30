@@ -16,6 +16,12 @@ for (const { name, path } of pages) {
   test(`${name} page - zero axe-core violations`, async ({ page }) => {
     await page.goto(path);
     await page.waitForLoadState('networkidle');
+    // Pages are code-split and their data is loaded lazily, so both the route
+    // chunk and the active pack resolve behind a <Loading> splash that carries
+    // no <main> or <h1>. networkidle can land on that splash, so axe must wait
+    // for the real page to mount - otherwise it flags the loading state's
+    // missing landmarks intermittently (only on the slower CI browsers).
+    await page.locator('main').first().waitFor({ state: 'visible' });
 
     // The active nav pill (black on dark green, 2.1:1) is known header debt that
     // only shows on interior pages - excluded so it doesn't mask new regressions.
