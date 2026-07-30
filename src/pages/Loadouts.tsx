@@ -1246,13 +1246,27 @@ export function Loadouts() {
                           bonus, not as a run of muted subtext - on an all-class
                           set that is three helmets' worth of text and it came
                           out as one grey blob. */}
-                      {a.headpieceBonus && (
-                        <ul className={styles.armorEffects}>
-                          {a.headpieceBonus.split(' · ').map((line) => (
-                            <li key={line}>{line}</li>
-                          ))}
-                        </ul>
-                      )}
+                      {a.headpieceBonus && (() => {
+                        /* Capped like the set bonus above it. Auric Tesla
+                           inherits four armours' bonuses and listed eleven
+                           lines here, which ran off the card - the full set is
+                           in the modal, so cap and say so rather than flood. */
+                        const all = a.headpieceBonus.split(' · ');
+                        const shown = all.slice(0, ARMOR_EFFECT_LINES);
+                        const rest = all.length - shown.length;
+                        return (
+                          <>
+                            <ul className={styles.armorEffects}>
+                              {shown.map((line) => <li key={line}>{line}</li>)}
+                            </ul>
+                            {rest > 0 && (
+                              <div className={styles.armorMore}>
+                                +{rest} more - click to see the full set bonus
+                              </div>
+                            )}
+                          </>
+                        );
+                      })()}
                       </div>
                     </button>
                     );
