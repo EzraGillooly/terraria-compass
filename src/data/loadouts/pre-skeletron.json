@@ -109,7 +109,7 @@
         "slot": "weapon",
         "icon": "items/volcano.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crafted from Hellstone Bars; creates an explosion on hitting enemies.",
+        "why": "Creates an explosion on hitting enemies.",
         "tags": [],
         "topPick": true,
         "subclass": "true-melee",
@@ -196,7 +196,7 @@
         "slot": "weapon",
         "icon": "items/amazon.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Strongest yoyo craftable before any boss, from Jungle materials.",
+        "why": "Strongest yoyo available before any boss.",
         "tags": [
           "carry-over"
         ],
@@ -269,7 +269,7 @@
         "slot": "weapon",
         "icon": "items/thorn-chakram.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Bouncing Jungle-crafted chakram that inflicts Poisoned.",
+        "why": "Bouncing chakram that inflicts Poisoned.",
         "tags": [
           "carry-over"
         ],
@@ -433,48 +433,12 @@
     ],
     "accessories": [
       {
-        "id": "pool-shark-tooth-necklace",
-        "name": "Shark Tooth Necklace",
-        "slot": "accessory",
-        "icon": "accessories/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
-        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-        "quality": "great"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "expert-only"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "great",
-        "expertOnly": true,
-        "dropRate": "100%"
-      },
-      {
         "id": "feral-claws",
         "name": "Feral Claws",
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
-        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -487,52 +451,93 @@
         "dropRate": "19/100 (19%)"
       },
       {
-        "id": "band-of-regeneration",
-        "name": "Band of Regeneration",
+        "id": "magma-stone",
+        "name": "Magma Stone",
         "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Underground Chests",
-        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "icon": "accessories/magma-stone.png",
+        "source": "Dropped by Hellbats and Lava Bats",
+        "why": "Adds fire damage to melee strikes.",
         "tags": [],
         "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
         "categories": [
-          "survivability"
+          "melee"
         ],
-        "quality": "good",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "0.67%"
       },
       {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "blue-horseshoe-balloon",
+        "name": "Blue Horseshoe Balloon",
+        "slot": "accessory",
+        "icon": "accessories/blue-horseshoe-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Double jump, increased jump height, and negates fall damage.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Cloud in a Balloon",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
+        ]
+      },
+      {
+        "id": "frostspark-boots",
+        "name": "Frostspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/frostspark-boots.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Flight, super-fast running, and mobility on ice.",
+        "tags": [
+          "hardmode"
         ],
-        "station": "Tinkerer's Workshop"
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Lightning Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots"
+          },
+          {
+            "name": "Ice Skates",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
+          }
+        ]
       }
     ],
     "buffs": [
@@ -828,6 +833,39 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -887,6 +925,21 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
             "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -926,6 +979,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
             "quality": "fine"
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
           }
         ]
       },
@@ -983,6 +1052,20 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "counterweight",
+            "name": "Counterweight",
+            "slot": "accessory",
+            "icon": "accessories/counterweight.png",
+            "source": "Sold by the Traveling Merchant or Skeleton Merchant",
+            "why": "Throws a counterweight along your yoyo string after hitting an enemy.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweight"
           }
         ]
       }
@@ -1121,7 +1204,7 @@
         "slot": "weapon",
         "icon": "items/tendon-bow.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crimson counterpart to the Demon Bow, crafted from Crimtane Bars.",
+        "why": "Crimson counterpart to the Demon Bow.",
         "tags": [
           "carry-over"
         ],
@@ -1280,102 +1363,125 @@
     ],
     "accessories": [
       {
-        "id": "pool-shark-tooth-necklace",
-        "name": "Shark Tooth Necklace",
+        "id": "pool-stinger-necklace",
+        "name": "Stinger Necklace",
         "slot": "accessory",
-        "icon": "accessories/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
-        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+        "icon": "accessories/stinger-necklace.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Combines the effects of the Shark Tooth Necklace with the Honey Comb.",
         "tags": [],
         "topPick": false,
         "categories": [
           "offense"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-        "quality": "great"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger_Necklace",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Shark Tooth Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          },
+          {
+            "name": "Honey Comb",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
+        "id": "pool-brain-of-confusion",
+        "name": "Brain of Confusion",
         "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "expert-only"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "great",
-        "expertOnly": true,
-        "dropRate": "100%"
-      },
-      {
-        "id": "lucky-horseshoe",
-        "name": "Lucky Horseshoe",
-        "slot": "accessory",
-        "icon": "accessories/lucky-horseshoe.png",
-        "source": "Found in Skyware Chests and Sky Crates",
-        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "dropRate": "1/4 (25%)"
-      },
-      {
-        "id": "band-of-regeneration",
-        "name": "Band of Regeneration",
-        "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Underground Chests",
-        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "icon": "accessories/brain-of-confusion.png",
+        "source": "Found in Treasure Bag (Brain of Cthulhu)",
+        "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "survivability"
         ],
-        "quality": "good",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion",
+        "quality": "great",
+        "markers": [
+          "expert",
+          "crimson"
+        ]
       },
       {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "blue-horseshoe-balloon",
+        "name": "Blue Horseshoe Balloon",
+        "slot": "accessory",
+        "icon": "accessories/blue-horseshoe-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Double jump, increased jump height, and negates fall damage.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Cloud in a Balloon",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
+        ]
+      },
+      {
+        "id": "frostspark-boots",
+        "name": "Frostspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/frostspark-boots.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Flight, super-fast running, and mobility on ice.",
+        "tags": [
+          "hardmode"
         ],
-        "station": "Tinkerer's Workshop"
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Lightning Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots"
+          },
+          {
+            "name": "Ice Skates",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
+          }
+        ]
       }
     ],
     "buffs": [
@@ -1711,6 +1817,53 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "lucky-horseshoe",
+            "name": "Lucky Horseshoe",
+            "slot": "accessory",
+            "icon": "accessories/lucky-horseshoe.png",
+            "source": "Found in Skyware Chests and Sky Crates",
+            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "dropRate": "1/4 (25%)"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1770,6 +1923,21 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
             "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -1809,6 +1977,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel",
             "quality": "fine"
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
           }
         ]
       }
@@ -1979,7 +2163,7 @@
         "slot": "weapon",
         "icon": "items/amber-staff.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Fossil-crafted gem staff whose amber bolt travels faster than other gem staves.",
+        "why": "Gem staff whose amber bolt travels faster than other gem staves.",
         "tags": [
           "carry-over"
         ],
@@ -2159,49 +2343,20 @@
     ],
     "accessories": [
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
-        "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
-        "tags": [],
-        "topPick": true,
-        "categories": [
-          "magic"
-        ],
-        "materials": [
-          {
-            "name": "Nature's Gift",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
-          },
-          {
-            "name": "Mana Potion",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-celestial-cuffs",
+        "id": "celestial-cuffs",
         "name": "Celestial Cuffs",
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily.",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
         "topPick": false,
         "categories": [
           "magic"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
-        "quality": "great",
         "markers": [
           "tank"
         ],
-        "notes": "Celestial Cuffs are useful as mages in pre-Hardmode suffer much more from Mana Sickness. Using a Slime Statue or Spikes (with high enough defense) with this accessory can be viable, even into Hardmode under the right circumstances.",
         "materials": [
           {
             "name": "Celestial Magnet",
@@ -2217,70 +2372,116 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-band-of-regeneration",
-        "name": "Band of Regeneration",
+        "id": "pool-magnet-flower",
+        "name": "Magnet Flower",
         "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Gold Chests underground, or in Living Mahogany Trees",
-        "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+        "icon": "accessories/magnet-flower.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
         "tags": [],
         "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-        "quality": "good"
-      },
-      {
-        "id": "band-of-starpower",
-        "name": "Band of Starpower",
-        "slot": "accessory",
-        "icon": "accessories/band-of-starpower.png",
-        "source": "Found in Shadow Orbs / Crimson Hearts",
-        "why": "+20 max mana for early casters.",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
         "categories": [
           "magic"
         ],
-        "markers": [
-          "corruption"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Mana Flower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+          },
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          }
         ],
-        "dropRate": "20%"
+        "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
+        "id": "pool-mana-regeneration-band",
+        "name": "Mana Regeneration Band",
         "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
+        "icon": "accessories/mana-regeneration-band.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "why": "Increases the player's max mana by 20 and the player's passive mana regeneration by 1 MP/s.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
+        "quality": "fine",
+        "materials": [
+          {
+            "name": "Band of Starpower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+          },
+          {
+            "name": "Band of Regeneration",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "blue-horseshoe-balloon",
+        "name": "Blue Horseshoe Balloon",
+        "slot": "accessory",
+        "icon": "accessories/blue-horseshoe-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Double jump, increased jump height, and negates fall damage.",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Cloud in a Balloon",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
+        ]
+      },
+      {
+        "id": "frostspark-boots",
+        "name": "Frostspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/frostspark-boots.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Flight, super-fast running, and mobility on ice.",
+        "tags": [
+          "hardmode"
         ],
-        "station": "Tinkerer's Workshop"
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Lightning Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots"
+          },
+          {
+            "name": "Ice Skates",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
+          }
+        ]
       }
     ],
     "buffs": [
@@ -2576,6 +2777,39 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2635,6 +2869,21 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
             "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -2750,6 +2999,50 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "band-of-starpower",
+            "name": "Band of Starpower",
+            "slot": "accessory",
+            "icon": "accessories/band-of-starpower.png",
+            "source": "Found in Shadow Orbs / Crimson Hearts",
+            "why": "+20 max mana for early casters.",
+            "tags": [],
+            "topPick": false,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+            "categories": [
+              "magic"
+            ],
+            "markers": [
+              "corruption"
+            ],
+            "dropRate": "20%"
           }
         ]
       }
@@ -2816,7 +3109,7 @@
         "slot": "weapon",
         "icon": "items/mushroom-staff.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Summons a Mushroom Boi minion; requires an evil-boss drop (Shadow Scale or Tissue Sample) to craft.",
+        "why": "Summons a Mushroom Boi minion.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
@@ -3048,7 +3341,7 @@
         "slot": "weapon",
         "icon": "items/soulscourge.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Corruption whip crafted from Demonite Bars obtained via the Eater of Worlds.",
+        "why": "Corruption whip.",
         "tags": [],
         "topPick": false,
         "subclass": "whip",
@@ -3070,7 +3363,7 @@
         "slot": "weapon",
         "icon": "items/vasculash.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crimson counterpart to the Soulscourge, crafted from Crimtane Bars.",
+        "why": "Crimson counterpart to the Soulscourge.",
         "tags": [],
         "topPick": false,
         "subclass": "whip",
@@ -3224,62 +3517,12 @@
     ],
     "accessories": [
       {
-        "id": "pool-band-of-regeneration",
-        "name": "Band of Regeneration",
-        "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Gold Chests underground, or in Living Mahogany Trees",
-        "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-        "quality": "good"
-      },
-      {
-        "id": "pygmy-necklace",
-        "name": "Pygmy Necklace",
-        "slot": "accessory",
-        "icon": "accessories/pygmy-necklace.png",
-        "source": "Purchased from the Witch Doctor",
-        "why": "+1 minion slot.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "summon"
-        ],
-        "quality": "great"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "expert-only"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "great",
-        "expertOnly": true,
-        "dropRate": "100%"
-      },
-      {
         "id": "feral-claws",
         "name": "Feral Claws",
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
-        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3292,37 +3535,92 @@
         "dropRate": "19/100 (19%)"
       },
       {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
+        "id": "pygmy-necklace",
+        "name": "Pygmy Necklace",
         "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Combines the effects of sprinting boots with Rocket Boots, but allows the player to accelerate faster and reach a higher max speed than Spectre Boots.",
+        "icon": "accessories/pygmy-necklace.png",
+        "source": "Bought from the Witch Doctor",
+        "why": "+1 minion slot.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "summon"
+        ],
+        "quality": "good"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "blue-horseshoe-balloon",
+        "name": "Blue Horseshoe Balloon",
+        "slot": "accessory",
+        "icon": "accessories/blue-horseshoe-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Double jump, increased jump height, and negates fall damage.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Cloud in a Balloon",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
+        ]
+      },
+      {
+        "id": "frostspark-boots",
+        "name": "Frostspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/frostspark-boots.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Flight, super-fast running, and mobility on ice.",
+        "tags": [
+          "hardmode"
         ],
-        "station": "Tinkerer's Workshop"
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Lightning Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots"
+          },
+          {
+            "name": "Ice Skates",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
+          }
+        ]
       }
     ],
     "buffs": [
@@ -3546,6 +3844,39 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3605,6 +3936,21 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
             "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -3679,6 +4025,22 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf",
             "notes": "The Apprentice's Scarf and Squire's Shield can even be useful for non-summoners if the player finds themselves repeatedly doing things that require a significant amount of enemies to be killed, such as doing the Old One's Army event."
+          },
+          {
+            "id": "squires-shield",
+            "name": "Squire's Shield",
+            "slot": "accessory",
+            "icon": "accessories/squires-shield.png",
+            "source": "Dropped by the Old One\u2019s Army (Eternia Crystal event)",
+            "why": "+1 sentry slot and 10% increased summon damage.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
           }
         ]
       }

@@ -1,4 +1,5 @@
 import { ClassCollection, LoadoutCollection, PhaseCollection } from '../schema';
+import { devParse } from '../parse';
 import type { BossDef } from '../bosses';
 import { createRecipeApi } from '../recipes';
 import phasesJson from './calamity/phases.json';
@@ -18,19 +19,22 @@ import { type Pack } from './types';
 export const calamityPack: Pack = {
   id: 'calamity',
   name: 'Calamity',
-  // Held back while the endgame data is finished: several stages are still
-  // wiki-scraped rather than curated. Flipping this back re-enables the
-  // selector, no other change needed.
-  available: false,
-  phases: PhaseCollection.parse(phasesJson),
-  classes: ClassCollection.parse(classesJson),
-  loadouts: LoadoutCollection.parse(loadoutsJson),
+  // Unlocked so the data pass can be reviewed in the app. The data is still
+  // mid-pass - 28 of 95 loadouts have unranked weapons, rogue has no weapon
+  // subclasses, and there is no accessory pool, since the Calamity wiki has no
+  // graded accessory guide to build one from.
+  available: true,
+  phases: devParse(PhaseCollection, phasesJson),
+  classes: devParse(ClassCollection, classesJson),
+  loadouts: devParse(LoadoutCollection, loadoutsJson),
   bosses: bossesJson as BossDef[],
   recipes: createRecipeApi(recipesJson.nodes, recipesJson.roots),
+  /* Classic and Expert only, same as vanilla. Revengeance and Death are not
+     world types - they are toggled on top of an Expert world through the
+     Difficulty Indicator, so they live on their own axis (see calamityMode in
+     app-context) rather than as two more entries here. */
   difficulties: [
     { value: 'normal', label: 'Classic' },
     { value: 'expert', label: 'Expert' },
-    { value: 'revengeance', label: 'Revengeance' },
-    { value: 'death', label: 'Death' },
   ],
 };

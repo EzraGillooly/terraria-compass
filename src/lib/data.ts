@@ -16,10 +16,11 @@ import {
   type PhaseId,
   PhaseCollection,
 } from '../data/schema';
+import { devParse } from '../data/parse';
 
-export const phases = PhaseCollection.parse(phasesJson);
-export const classes = ClassCollection.parse(classesJson);
-export const loadouts = LoadoutCollection.parse([
+export const phases = devParse(PhaseCollection, phasesJson);
+export const classes = devParse(ClassCollection, classesJson);
+export const loadouts = devParse(LoadoutCollection, [
   ...preBossesLoadoutsJson,
   ...preCultistLoadoutsJson,
   ...endgameLoadoutsJson,

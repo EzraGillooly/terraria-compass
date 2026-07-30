@@ -247,7 +247,7 @@
         "slot": "weapon",
         "icon": "items/gungnir.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Hallowed Bar spear crafted after defeating a mechanical boss.",
+        "why": "Hallowed Bar spear.",
         "tags": [],
         "topPick": false,
         "subclass": "true-melee",
@@ -305,7 +305,7 @@
         "slot": "weapon",
         "icon": "items/titanium-trident.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Titanium-tier spear crafted at the higher-tier anvil.",
+        "why": "Titanium-tier spear.",
         "tags": [],
         "topPick": false,
         "subclass": "true-melee",
@@ -505,7 +505,7 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor-melee.png",
+        "icon": "armor-sets/chlorophyte-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
@@ -628,6 +628,56 @@
     ],
     "accessories": [
       {
+        "id": "pool-warrior-emblem",
+        "name": "Warrior Emblem",
+        "slot": "accessory",
+        "icon": "accessories/warrior-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases melee damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "fire-gauntlet",
         "name": "Fire Gauntlet",
         "slot": "accessory",
@@ -656,77 +706,56 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "mechanical-glove",
-        "name": "Mechanical Glove",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/mechanical-glove.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "12% melee damage and speed, and knockback. Combines into Fire Gauntlet later.",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "melee"
+          "mobility"
         ],
         "materials": [
           {
-            "name": "Power Glove",
+            "name": "Frostspark Boots",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
           },
           {
-            "name": "Avenger Emblem",
+            "name": "Lava Waders",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "avenger-emblem",
-        "name": "Avenger Emblem",
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
         "slot": "accessory",
-        "icon": "accessories/avenger-emblem.png",
-        "source": "Combined from a class emblem and mech-boss materials",
-        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          },
-          {
-            "name": "Soul of Fright",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
-        "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
+        "icon": "accessories/butterfly-wings.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
@@ -734,7 +763,7 @@
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
         "quality": "great",
         "materials": [
           {
@@ -743,70 +772,12 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
           },
           {
-            "name": "Tattered Bee Wing",
+            "name": "Butterfly Dust",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "star-veil",
-        "name": "Star Veil",
-        "slot": "accessory",
-        "icon": "accessories/star-veil.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Star Cloak",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
-          },
-          {
-            "name": "Cross Necklace",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1126,6 +1097,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -1236,6 +1235,64 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1277,6 +1334,45 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "Combined from a class emblem and mech-boss materials",
+            "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Summoner Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+              },
+              {
+                "name": "Soul of Might",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+              },
+              {
+                "name": "Soul of Sight",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
+              },
+              {
+                "name": "Soul of Fright",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -1362,6 +1458,64 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-yoyo-bag",
+            "name": "Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/yoyo-bag.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ],
+            "materials": [
+              {
+                "name": "Yoyo Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Glove"
+              },
+              {
+                "name": "Strung Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mechanical-glove",
+            "name": "Mechanical Glove",
+            "slot": "accessory",
+            "icon": "accessories/mechanical-glove.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "12% melee damage and speed, and knockback.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "materials": [
+              {
+                "name": "Power Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+              },
+              {
+                "name": "Avenger Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -1468,7 +1622,7 @@
         "slot": "weapon",
         "icon": "items/adamantite-repeater.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Third-tier Hardmode repeater crafted at a Mythril/Orichalcum Anvil.",
+        "why": "Third-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
         "subclass": "bow",
@@ -1676,7 +1830,7 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor-ranger.png",
+        "icon": "armor-sets/chlorophyte-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
@@ -1731,7 +1885,7 @@
         "id": "hallowed-armor",
         "name": "Hallowed Armor",
         "slot": "armor",
-        "icon": "armor/hallowed-armor-ranger.png",
+        "icon": "armor-sets/hallowed-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Brief immunity after striking an enemy.",
         "tags": [
@@ -1786,23 +1940,6 @@
     ],
     "accessories": [
       {
-        "id": "rifle-scope",
-        "name": "Rifle Scope",
-        "slot": "accessory",
-        "icon": "accessories/rifle-scope.png",
-        "source": "Purchased from the Arms Dealer in Hardmode",
-        "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "ranged"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
-        "dropRate": "8.33% 15.97%"
-      },
-      {
         "id": "ranger-emblem",
         "name": "Ranger Emblem",
         "slot": "accessory",
@@ -1819,24 +1956,124 @@
         "dropRate": "25%"
       },
       {
-        "id": "magic-quiver",
-        "name": "Magic Quiver",
+        "id": "stalkers-quiver",
+        "name": "Stalker's Quiver",
         "slot": "accessory",
-        "icon": "accessories/magic-quiver.png",
-        "source": "Dropped by Skeleton Archers",
-        "why": "Bow-focused ranger builds still feel the damage and arrow-speed bump immediately.",
-        "tags": [],
+        "icon": "accessories/stalkers-quiver.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases arrow damage by 10% and arrow speed, 20% chance not to consume arrows, and reduces aggro.",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
         "categories": [
           "ranged"
         ],
-        "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stalker%27s_Quiver",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Magic Quiver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          },
+          {
+            "name": "Putrid Scent",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+          }
+        ]
       },
       {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
+        "id": "avenger-emblem",
+        "name": "Avenger Emblem",
         "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
+        "icon": "accessories/avenger-emblem.png",
+        "source": "Combined from a class emblem and mech-boss materials",
+        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "offense"
+        ],
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          },
+          {
+            "name": "Soul of Might",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+          },
+          {
+            "name": "Soul of Sight",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
+          },
+          {
+            "name": "Soul of Fright",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
+        "slot": "accessory",
+        "icon": "accessories/butterfly-wings.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
@@ -1844,7 +2081,7 @@
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
         "quality": "great",
         "materials": [
           {
@@ -1853,70 +2090,12 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
           },
           {
-            "name": "Tattered Bee Wing",
+            "name": "Butterfly Dust",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity is particularly welcome once Jungle enemies start layering crowd-control on top of boss pressure.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "star-veil",
-        "name": "Star Veil",
-        "slot": "accessory",
-        "icon": "accessories/star-veil.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Star Cloak",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
-          },
-          {
-            "name": "Cross Necklace",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -2329,6 +2508,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -2439,6 +2646,64 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2521,6 +2786,71 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          }
+        ]
+      },
+      {
+        "category": "ranged",
+        "items": [
+          {
+            "id": "molten-quiver",
+            "name": "Molten Quiver",
+            "slot": "accessory",
+            "icon": "accessories/molten-quiver.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Increases arrow damage by 10% and arrow speed, and turns Wooden Arrows into Flaming Arrows.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Quiver",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Magic Quiver",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+              },
+              {
+                "name": "Magma Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+              }
+            ]
+          },
+          {
+            "id": "magic-quiver",
+            "name": "Magic Quiver",
+            "slot": "accessory",
+            "icon": "accessories/magic-quiver.png",
+            "source": "Dropped by Skeleton Archers",
+            "why": "Bow-focused ranger builds still feel the damage and arrow-speed bump immediately.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
+          },
+          {
+            "id": "rifle-scope",
+            "name": "Rifle Scope",
+            "slot": "accessory",
+            "icon": "accessories/rifle-scope.png",
+            "source": "Purchased from the Arms Dealer in Hardmode",
+            "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
+            "dropRate": "8.33% 15.97%"
           }
         ]
       }
@@ -2841,7 +3171,7 @@
         "id": "chlorophyte-armor",
         "name": "Chlorophyte Armor",
         "slot": "armor",
-        "icon": "armor/chlorophyte-armor-mage.png",
+        "icon": "armor-sets/chlorophyte-armor-mage.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
         "tags": [
@@ -2896,7 +3226,7 @@
         "id": "hallowed-armor",
         "name": "Hallowed Armor",
         "slot": "armor",
-        "icon": "armor/hallowed-armor-mage.png",
+        "icon": "armor-sets/hallowed-armor-mage.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Brief immunity after striking an enemy.",
         "tags": [
@@ -2993,6 +3323,28 @@
         "station": "Tinkerer's Workshop"
       },
       {
+        "id": "pool-sorcerer-emblem",
+        "name": "Sorcerer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/sorcerer-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases magic damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+        "materials": [
+          {
+            "name": "Ranger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "celestial-cuffs",
         "name": "Celestial Cuffs",
         "slot": "accessory",
@@ -3017,89 +3369,6 @@
             "name": "Magic Cuffs",
             "qty": 1,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "mana-flower",
-        "name": "Mana Flower",
-        "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "materials": [
-          {
-            "name": "Nature's Gift",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
-          },
-          {
-            "name": "Mana Potion",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
-        "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Tattered Bee Wing",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity is a real quality-of-life and survivability gain once the Jungle starts stacking status effects.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -3131,6 +3400,62 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
+        "slot": "accessory",
+        "icon": "accessories/butterfly-wings.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Butterfly Dust",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ],
     "buffs": [
@@ -3449,6 +3774,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -3587,6 +3940,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3693,6 +4075,60 @@
                 "name": "Ranger Emblem",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-magnet-flower",
+            "name": "Magnet Flower",
+            "slot": "accessory",
+            "icon": "accessories/magnet-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Celestial Magnet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -4060,7 +4496,7 @@
         "id": "hallowed-armor",
         "name": "Hallowed Armor",
         "slot": "armor",
-        "icon": "armor/hallowed-armor-summoner.png",
+        "icon": "armor-sets/hallowed-armor-summoner.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Brief immunity after striking an enemy. This headpiece also adds a minion slot.",
         "tags": [
@@ -4145,6 +4581,33 @@
         "dropRate": "25%"
       },
       {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "pygmy-necklace",
         "name": "Pygmy Necklace",
         "slot": "accessory",
@@ -4159,10 +4622,56 @@
         "quality": "good"
       },
       {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
+        "slot": "accessory",
+        "icon": "accessories/butterfly-wings.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
@@ -4170,7 +4679,7 @@
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
         "quality": "great",
         "materials": [
           {
@@ -4179,88 +4688,12 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
           },
           {
-            "name": "Tattered Bee Wing",
+            "name": "Butterfly Dust",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "feral-claws",
-        "name": "Feral Claws",
-        "slot": "accessory",
-        "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle chests or Jungle Crates",
-        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "melee",
-          "summon"
-        ],
-        "markers": [
-          "whips"
-        ],
-        "dropRate": "19/100 (19%)"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity and knockback protection reduce the number of runs that fall apart to messy Jungle attrition.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "star-veil",
-        "name": "Star Veil",
-        "slot": "accessory",
-        "icon": "accessories/star-veil.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Star Cloak",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
-          },
-          {
-            "name": "Cross Necklace",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -4626,6 +5059,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -4733,6 +5194,64 @@
                 "name": "Putrid Scent",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -4867,6 +5386,45 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+          },
+          {
+            "id": "squires-shield",
+            "name": "Squire's Shield",
+            "slot": "accessory",
+            "icon": "accessories/squires-shield.png",
+            "source": "Dropped by the Old One\u2019s Army (Eternia Crystal event)",
+            "why": "+1 sentry slot and 10% increased summon damage.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "feral-claws",
+            "name": "Feral Claws",
+            "slot": "accessory",
+            "icon": "accessories/feral-claws.png",
+            "source": "Found in Jungle chests or Jungle Crates",
+            "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee",
+              "summon"
+            ],
+            "markers": [
+              "whips"
+            ],
+            "dropRate": "19/100 (19%)"
           }
         ]
       }

@@ -97,12 +97,16 @@
   border: 0;
   cursor: pointer;
   padding: 8px 20px;
-  border-radius: 7px;
-  transition: background .15s, color .15s;
+  transition: color .15s;
 }
 .phaseBtn:hover { color: #fff; }
-.phasePre { background: var(--sky); color: #04263f; }
-.phaseHard { background: #e0552e; color: #0b1524; }
+/* The selected half is a filled pixel-frame rather than a rounded fill, so it
+   matches the switch it sits inside. --px-u stays at 1px: the container uses
+   the half-scale step and a 2px step here would read as a bigger, mismatched
+   corner on a nested box. */
+.phasePre, .phaseHard { --px-u: 1px; }
+.phasePre { color: #04263f; --px-fill: var(--sky); --px-border: var(--sky); }
+.phaseHard { color: #0b1524; --px-fill: #e0552e; --px-border: #e0552e; }
 
 .rail {
   display: flex;
@@ -138,28 +142,34 @@
   cursor: pointer;
   font-family: var(--game);
 }
+/* The slot is a pixel-frame, so its shape, fill and border come from the
+   utility: no border, radius or box-shadow of its own - a real box-shadow
+   renders against the rectangular box and cuts square corners across the
+   stepping. Hover and selection recolour --px-border instead. */
 .slot {
   width: 54px;
   height: 54px;
   display: grid;
   place-items: center;
-  border-radius: 8px;
-  background: linear-gradient(180deg, rgba(70,84,150,.55) 0%, rgba(40,50,96,.55) 100%);
-  border: 2px solid rgba(150,164,224,.55);
-  box-shadow: inset 0 0 0 2px rgba(10,16,32,.6), 0 0 0 4px #0b1524, 0 4px 12px rgba(0,0,0,.5);
-  transition: transform .15s, box-shadow .15s, border-color .15s;
+  --px-u: 2px;
+  --px-fill: linear-gradient(180deg, rgba(70,84,150,.55) 0%, rgba(40,50,96,.55) 100%);
+  --px-border: rgba(150,164,224,.55);
+  transition: transform .15s;
 }
 .slot img { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.5)); }
-/* optional bosses: same box, dashed border to mark them */
+.node:hover .slot { transform: translateY(-3px); --px-border: var(--warm); }
+.node.selected .slot { --px-border: var(--warm); transform: translateY(-2px); }
+
+/* Optional bosses read as dulled rather than marked: desaturated and dimmed,
+   with no hover lift. These follow the two rules above so the override is
+   readable in source order, not only by specificity. Selection still lights
+   up - without it, clicking an optional boss would give no feedback at all. */
 .node.side .slot {
-  border-style: dashed;
-  border-color: rgba(255,255,255,.45);
+  --px-border: rgba(255,255,255,.22);
+  filter: saturate(.72) brightness(.88);
 }
-.node:hover .slot { transform: translateY(-3px); border-color: var(--warm); box-shadow: inset 0 0 0 2px rgba(10,16,32,.6), 0 0 0 4px #0b1524, 0 0 16px var(--warm); }
-.node.selected .slot {
-  border-color: var(--warm);
-  box-shadow: inset 0 0 0 2px rgba(10,16,32,.6), 0 0 0 4px #0b1524, 0 0 0 6px var(--warm), 0 0 18px var(--warm);
-}
+.node.side:hover .slot { transform: none; --px-border: rgba(255,255,255,.22); }
+.node.side.selected .slot { filter: none; --px-border: var(--warm); transform: translateY(-2px); }
 
 .nodeName {
   font-size: 12.5px;
@@ -182,7 +192,9 @@
 /* ── Detail panel ── */
 .detail {
   max-width: 760px;
-  min-height: 248px;      /* holds ~2 sentences + 2 rows of drops so switching bosses doesn't reflow */
+  /* Height is held steady by the reserved regions below, not by a number
+     here: a fixed height clips on narrow screens, where the same content
+     wraps to nearly twice the height. */
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
@@ -194,20 +206,24 @@
   --px-border: color-mix(in oklab, var(--boss, #96a4e0) 45%, rgba(150,164,224,.4));
   padding: 20px 22px;
 }
+/* Same treatment as the rail slots: the icon container is a pixel-frame, so
+   the fill and per-boss edge come from the utility. */
 .detailIcon {
   flex: none;
   width: 84px;
   height: 84px;
   display: grid;
   place-items: center;
-  border-radius: 10px;
-  background: rgba(10,16,32,.45);
-  border: 2px solid color-mix(in oklab, var(--boss, #96a4e0) 55%, transparent);
+  --px-u: 2px;
+  --px-fill: rgba(10,16,32,.45);
+  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 55%, rgba(150,164,224,.35));
 }
 .detailIcon img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.55)); }
 
 .detailBody { flex: 1; min-width: 0; }
-.detailHead { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+/* Reserved like the regions below it: the name plus its tags wraps to a
+   second line for some bosses and not others. */
+.detailHead { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; min-height: 31px; }
 .detailName {
   font-family: var(--game);
   font-size: 24px;
@@ -240,7 +256,8 @@
   color: #8ecbf0;
   white-space: nowrap;
 }
-.detailBlurb { font-size: 14px; line-height: 1.5; color: rgba(234,244,251,.9); margin: 0 0 14px; }
+/* two lines reserved: blurbs run one or two, and the card must not resize */
+.detailBlurb { font-size: 14px; line-height: 1.5; min-height: 3em; color: rgba(234,244,251,.9); margin: 0 0 14px; }
 
 .detailRow { display: flex; gap: 14px; padding: 10px 0; align-items: baseline; }
 .detailRow + .detailRow { border-top: 1px dashed rgba(255,255,255,.12); }
@@ -254,8 +271,22 @@
   color: #8ea6c2;
   padding-top: 2px;
 }
-.detailVal { font-size: 14px; color: #eaf4fb; line-height: 1.5; }
-.drops { display: flex; flex-wrap: wrap; gap: 7px; }
+/* same reservation for the Summon and Unlocks values */
+.detailVal { font-size: 14px; color: #eaf4fb; line-height: 1.5; min-height: 3em; }
+/* two rows of pills reserved; a boss with more scrolls rather than
+   stretching the card */
+.drops { display: flex; flex-wrap: wrap; gap: 7px; min-height: 50px; max-height: 50px; overflow-y: auto; }
+
+/* Narrow screens wrap the same text about twice as far, so the reservations
+   grow with them - measured worst case at 375px is four lines of prose and
+   three rows of drop pills. Without this the card still jumped by ~70px when
+   switching bosses on a phone. */
+@media (max-width: 720px) {
+  .detailHead { min-height: 56px; }
+  .detailBlurb { min-height: 6em; }
+  .detailVal { min-height: 6em; }
+  .drops { min-height: 87px; max-height: 87px; }
+}
 .dropPill {
   font-weight: 700;
   font-size: 11.5px;

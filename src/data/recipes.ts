@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import raw from './recipes.json';
+import { devParse } from './parse';
 
 export const Ingredient = z.object({
   id: z.string(),
@@ -96,7 +97,7 @@ export function createRecipeApi(
   return { nodes, roots, findCraftable, pathToItem, rootContaining };
 }
 
-const book = RecipeBook.parse(raw);
+const book = devParse(RecipeBook, raw);
 
 /** The vanilla recipe graph. Kept as module exports for back-compat. */
 export const vanillaRecipeApi = createRecipeApi(book.nodes, book.roots);

@@ -53,7 +53,7 @@
         "slot": "weapon",
         "icon": "items/chik.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Only craftable One Drop yoyo, made from early-Hardmode materials.",
+        "why": "Only One Drop yoyo, made from early-Hardmode materials.",
         "tags": [],
         "topPick": false,
         "subclass": "yoyo",
@@ -187,7 +187,7 @@
         "slot": "weapon",
         "icon": "items/dao-of-pow.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Early Hardmode flail crafted from Souls of Night and Light.",
+        "why": "Early Hardmode flail.",
         "tags": [],
         "topPick": false,
         "subclass": "flail",
@@ -898,7 +898,7 @@
         "slot": "weapon",
         "icon": "items/night-s-edge.png",
         "source": "Crafted at Demon Altar or Crimson Altar",
-        "why": "Combines the best pre-Hardmode swords into a wide-arc broadsword.",
+        "why": "Wide-arc broadsword with the highest pre-Hardmode melee damage.",
         "tags": [
           "carry-over"
         ],
@@ -1016,7 +1016,7 @@
         "id": "titanium-armor",
         "name": "Titanium Armor",
         "slot": "armor",
-        "icon": "armor/titanium-armor-melee.png",
+        "icon": "armor-sets/titanium-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
         "tags": [
@@ -1071,7 +1071,7 @@
         "id": "adamantite-armor",
         "name": "Adamantite Armor",
         "slot": "armor",
-        "icon": "armor/adamantite-armor-melee.png",
+        "icon": "armor-sets/adamantite-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "",
         "tags": [
@@ -1125,20 +1125,114 @@
     ],
     "accessories": [
       {
-        "id": "warrior-emblem",
+        "id": "pool-warrior-emblem",
         "name": "Warrior Emblem",
         "slot": "accessory",
         "icon": "accessories/warrior-emblem.png",
-        "source": "Dropped by the Wall of Flesh",
-        "why": "The raw melee damage bonus is immediate and efficient, which makes it the easiest offensive slot to justify in this phase.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": true,
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases melee damage by 15%.",
+        "tags": [],
+        "topPick": false,
         "categories": [
           "melee"
         ],
-        "dropRate": "25%"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-moon-charm",
+        "name": "Moon Charm",
+        "slot": "accessory",
+        "icon": "accessories/moon-charm.png",
+        "source": "Dropped by Werewolf",
+        "why": "Turns the player into a Werewolf at night. This provides an assortment of benefits, such as increased melee damage, melee speed, and melee critical strike chance.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Charm"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "pool-fairy-wings",
@@ -1167,113 +1261,6 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "lightning-boots",
-        "name": "Lightning Boots",
-        "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "You still need top-tier horizontal movement because every mech fight punishes sloppy spacing.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "materials": [
-          {
-            "name": "Spectre Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
-          },
-          {
-            "name": "Anklet of the Wind",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
-        "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu treasure bag",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "expert-only"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "good",
-        "expertOnly": true,
-        "dropRate": "100%"
-      },
-      {
-        "id": "charm-of-myths",
-        "name": "Charm of Myths",
-        "slot": "accessory",
-        "icon": "accessories/charm-of-myths.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Band of Regeneration",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
-          },
-          {
-            "name": "Philosopher's Stone",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1571,6 +1558,39 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1710,6 +1730,61 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              },
+              {
+                "name": "Philosopher's Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1876,6 +1951,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "power-glove",
+            "name": "Power Glove",
+            "slot": "accessory",
+            "icon": "accessories/power-glove.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Autoswing and larger melee weapons, +12% melee speed and increased knockback.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Titan Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titan_Glove"
+              },
+              {
+                "name": "Feral Claws",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
+              }
+            ]
           }
         ]
       }
@@ -1906,7 +2010,7 @@
         "slot": "weapon",
         "icon": "items/onyx-blaster.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Hardmode upgrade to the Shotgun crafted from shards and Souls of Night at a Hardmode anvil.",
+        "why": "Hardmode upgrade to the Shotgun, firing a wider spread.",
         "tags": [],
         "topPick": false,
         "subclass": "gun",
@@ -1953,7 +2057,7 @@
         "slot": "weapon",
         "icon": "items/cobalt-repeater.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "First-tier Hardmode repeater crafted from Cobalt Bars.",
+        "why": "First-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
         "subclass": "bow",
@@ -2005,7 +2109,7 @@
         "slot": "weapon",
         "icon": "items/mythril-repeater.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Second-tier Hardmode repeater crafted from Mythril Bars.",
+        "why": "Second-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
         "subclass": "bow",
@@ -2264,7 +2368,7 @@
         "id": "adamantite-armor",
         "name": "Adamantite Armor",
         "slot": "armor",
-        "icon": "armor/adamantite-armor-ranger.png",
+        "icon": "armor-sets/adamantite-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "",
         "tags": [
@@ -2319,7 +2423,7 @@
         "id": "titanium-armor",
         "name": "Titanium Armor",
         "slot": "armor",
-        "icon": "armor/titanium-armor-ranger.png",
+        "icon": "armor-sets/titanium-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
         "tags": [
@@ -2369,6 +2473,74 @@
         ],
         "defense": 34,
         "headpieceBonus": "+23% ranged damage and +13% ranged critical strike chance."
+      },
+      {
+        "id": "frost-armor",
+        "name": "Frost armor",
+        "slot": "armor",
+        "icon": "armor-sets/frost-armor.png",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "why": "",
+        "effect": "Melee and ranged attacks inflict Frostburn \u00b7 10% increased melee and ranged damage",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "defense": 43,
+        "headpiece": "Frost Helmet",
+        "pieces": [
+          "Frost Helmet",
+          "Frost Breastplate",
+          "Frost Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Frost Helmet",
+            "station": "Mythril Anvil or Orichalcum Anvil",
+            "materials": [
+              {
+                "name": "Frost Core",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Core"
+              },
+              {
+                "name": "Adamantite or Titanium Bar",
+                "qty": 12
+              }
+            ]
+          },
+          {
+            "piece": "Frost Breastplate",
+            "station": "Mythril Anvil or Orichalcum Anvil",
+            "materials": [
+              {
+                "name": "Frost Core",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Core"
+              },
+              {
+                "name": "Adamantite or Titanium Bar",
+                "qty": 20
+              }
+            ]
+          },
+          {
+            "piece": "Frost Leggings",
+            "station": "Mythril Anvil or Orichalcum Anvil",
+            "materials": [
+              {
+                "name": "Frost Core",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Core"
+              },
+              {
+                "name": "Adamantite or Titanium Bar",
+                "qty": 15
+              }
+            ]
+          }
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_armor"
       }
     ],
     "accessories": [
@@ -2382,25 +2554,115 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true,
+        "topPick": false,
         "categories": [
           "ranged"
         ],
         "dropRate": "25%"
       },
       {
-        "id": "magic-quiver",
-        "name": "Magic Quiver",
+        "id": "stalkers-quiver",
+        "name": "Stalker's Quiver",
         "slot": "accessory",
-        "icon": "accessories/magic-quiver.png",
-        "source": "Dropped by Skeleton Archers",
-        "why": "Bow players feel the arrow speed and damage boost immediately, especially with Daedalus online.",
-        "tags": [],
+        "icon": "accessories/stalkers-quiver.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases arrow damage by 10% and arrow speed, 20% chance not to consume arrows, and reduces aggro.",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
         "categories": [
           "ranged"
         ],
-        "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stalker%27s_Quiver",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Magic Quiver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          },
+          {
+            "name": "Putrid Scent",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+          }
+        ]
+      },
+      {
+        "id": "star-veil",
+        "name": "Star Veil",
+        "slot": "accessory",
+        "icon": "accessories/star-veil.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "survivability"
+        ],
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Star Cloak",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+          },
+          {
+            "name": "Cross Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "pool-fairy-wings",
@@ -2429,84 +2691,6 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "lightning-boots",
-        "name": "Lightning Boots",
-        "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "You still need strong horizontal movement to keep distance and reposition between volley windows.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "materials": [
-          {
-            "name": "Spectre Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
-          },
-          {
-            "name": "Anklet of the Wind",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
-        "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "good",
-        "expertOnly": true,
-        "dropRate": "100%"
       }
     ],
     "buffs": [
@@ -2882,6 +3066,39 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3049,6 +3266,33 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3138,6 +3382,54 @@
             "markers": [
               "expert"
             ]
+          }
+        ]
+      },
+      {
+        "category": "ranged",
+        "items": [
+          {
+            "id": "molten-quiver",
+            "name": "Molten Quiver",
+            "slot": "accessory",
+            "icon": "accessories/molten-quiver.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Increases arrow damage by 10% and arrow speed, and turns Wooden Arrows into Flaming Arrows.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Quiver",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Magic Quiver",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+              },
+              {
+                "name": "Magma Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+              }
+            ]
+          },
+          {
+            "id": "magic-quiver",
+            "name": "Magic Quiver",
+            "slot": "accessory",
+            "icon": "accessories/magic-quiver.png",
+            "source": "Dropped by Skeleton Archers",
+            "why": "Bow-focused ranger builds still feel the damage and arrow-speed bump immediately.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
           }
         ]
       }
@@ -3806,20 +4098,26 @@
     ],
     "accessories": [
       {
-        "id": "sorcerer-emblem",
+        "id": "pool-sorcerer-emblem",
         "name": "Sorcerer Emblem",
         "slot": "accessory",
         "icon": "accessories/sorcerer-emblem.png",
-        "source": "Dropped by the Wall of Flesh",
-        "why": "The damage boost is immediate and efficient, which is exactly what mage wants from an early Hardmode accessory slot.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": true,
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases magic damage by 15%.",
+        "tags": [],
+        "topPick": false,
         "categories": [
           "magic"
         ],
-        "dropRate": "25%"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+        "materials": [
+          {
+            "name": "Ranger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-cuffs",
@@ -3827,7 +4125,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Mana on hit plus better star pickup smooths out one of mage's biggest pain points during long boss attempts.",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3851,27 +4149,75 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
+        "id": "mana-cloak",
+        "name": "Mana Cloak",
         "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Auto-potion support keeps your spell uptime higher and reduces how often you get punished while juggling resources.",
-        "tags": [],
+        "icon": "accessories/mana-cloak.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Auto mana potions plus a defensive star burst when you take a hit.",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
         "categories": [
           "magic"
         ],
         "materials": [
           {
-            "name": "Nature's Gift",
+            "name": "Mana Flower",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           },
           {
-            "name": "Mana Potion",
+            "name": "Star Cloak",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -3903,53 +4249,6 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
-        "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "good",
-        "expertOnly": true,
-        "dropRate": "100%"
       }
     ],
     "buffs": [
@@ -4397,6 +4696,33 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -4515,6 +4841,89 @@
                 "name": "Star Cloak",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-magnet-flower",
+            "name": "Magnet Flower",
+            "slot": "accessory",
+            "icon": "accessories/magnet-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Celestial Magnet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "arcane-flower",
+            "name": "Arcane Flower",
+            "slot": "accessory",
+            "icon": "accessories/arcane-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "8% reduced mana cost, auto mana potions, and enemies are less likely to target you.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Flower",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ]
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -4873,11 +5282,38 @@
         "dropRate": "25%"
       },
       {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "pygmy-necklace",
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor at night",
+        "source": "Bought from the Witch Doctor",
         "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
@@ -4885,6 +5321,52 @@
           "summon"
         ],
         "quality": "good"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "pool-fairy-wings",
@@ -4913,71 +5395,6 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "feral-claws",
-        "name": "Feral Claws",
-        "slot": "accessory",
-        "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle chests or Jungle Crates",
-        "why": "Whip speed is a simple but meaningful quality-of-life increase for the parts of summoner gameplay you control directly.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "melee",
-          "summon"
-        ],
-        "markers": [
-          "whips"
-        ],
-        "dropRate": "19/100 (19%)"
-      },
-      {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
-        "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense. Combines Cobalt Shield and Obsidian Skull.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "good",
-        "expertOnly": true,
-        "dropRate": "100%"
       }
     ],
     "buffs": [
@@ -5472,6 +5889,33 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -5611,6 +6055,45 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
+          },
+          {
+            "id": "squires-shield",
+            "name": "Squire's Shield",
+            "slot": "accessory",
+            "icon": "accessories/squires-shield.png",
+            "source": "Dropped by the Old One\u2019s Army (Eternia Crystal event)",
+            "why": "+1 sentry slot and 10% increased summon damage.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "summon"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
+          }
+        ]
+      },
+      {
+        "category": "melee",
+        "items": [
+          {
+            "id": "feral-claws",
+            "name": "Feral Claws",
+            "slot": "accessory",
+            "icon": "accessories/feral-claws.png",
+            "source": "Found in Jungle chests or Jungle Crates",
+            "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee",
+              "summon"
+            ],
+            "markers": [
+              "whips"
+            ],
+            "dropRate": "19/100 (19%)"
           }
         ]
       }

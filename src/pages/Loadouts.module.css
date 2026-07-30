@@ -71,7 +71,14 @@
 @keyframes bannerIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .bannerIcon { width: 44px; height: 44px; object-fit: contain; flex: none; }
 .bannerName { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; color: #EAF0FF; line-height: 1.1; text-shadow: var(--tshadow); }
-.bannerHint { display: block; font-size: 12px; color: #C6D3EC; margin-top: 2px; }
+/* Holds a sentence or two from the mod's guide now, not a four-word cue, so it
+   wraps rather than sitting on one line. No measure of its own: the text runs
+   the full width of the banner and stops at the same 18px the icon is inset
+   by on the left, which .banner's padding already provides. */
+.bannerHint { display: block; font-size: 12px; line-height: 1.45; color: #C6D3EC; margin-top: 3px; }
+/* The text column has to be allowed to grow into the space the icon leaves,
+   and min-width:0 lets it wrap instead of forcing the flex row wider. */
+.bannerBody { flex: 1; min-width: 0; }
 
 /* ── Dark inventory panels ── */
 .bento { display: grid; grid-template-columns: 2fr 1fr; gap: 14px; align-items: start; }
@@ -136,7 +143,7 @@
 
 /* ── Armor ── */
 .armor { display: flex; gap: 14px; align-items: flex-start; }
-.armorDoll { width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-u: 1.5px; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
+.armorDoll { position: relative; width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-u: 1.5px; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
 .armorSprite { width: 44px; height: 44px; object-fit: contain; }
 .armorInfo { flex: 1; min-width: 0; }
 /* Each set carries its own doll, so the entry is a row: sprite + details. */
@@ -151,6 +158,19 @@
 .armorPiece { display: inline-flex; align-items: center; font-weight: 700; font-size: 10px; color: #C6D3EC; padding: 4px 8px 2px; line-height: 1; --px-fill: rgba(255,255,255,.07); --px-border: rgba(150,180,230,.25); --px-u: 1px; }
 /* the class-specific headpiece is highlighted within the set */
 .armorPieceHead { color: #12283B; --px-fill: #9FE0C0; --px-border: #9FE0C0; }
+/* Set bonus: what the set does, so it reads brighter than the guide's reason
+   for picking it, which now sits underneath in .armorPerk. One line per
+   effect - a set bonus with three clauses run together is a wall. */
+.armorEffects {
+  list-style: none; margin: 5px 0 0; padding: 0;
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: 12px; line-height: 1.4; color: #D6E4F7;
+}
+.armorEffects li { position: relative; padding-left: 10px; }
+.armorEffects li::before {
+  content: ''; position: absolute; left: 0; top: .5em;
+  width: 3px; height: 3px; background: var(--warm); opacity: .7;
+}
 .armorPerk { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 4px; }
 /* Marks an armour row that is a single piece rather than a set. The trade it
    implies is explained once below the list, not on every row. */
@@ -240,7 +260,6 @@
   font-size: 10px; font-weight: 800; letter-spacing: .04em;
   text-transform: uppercase; color: var(--ink-mute);
 }
-.ammoWhy { font-size: 12px; color: #A9BCE0; line-height: 1.4; margin-top: 2px; }
 
 /* ── Accessory box - two compact columns, right-anchored ── */
 /* Accessories span the whole content width; the slots carry tags now. */
@@ -256,12 +275,50 @@
    Sizing to that and centring means a one-badge item sits balanced rather than
    pinned to the top of a taller box. */
 .accSlot { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 10px 7px; min-height: 116px; overflow: hidden; text-align: center; font-family: inherit; color: inherit; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
-button.accSlot { cursor: pointer; }
 /* .accSlot is a pixel-frame: light its stepped border on hover (via --px-border,
    which drives the ::before layer) rather than the real box border, and drop the
-   background - a real background paints a square that ignores the pixel corners. */
-button.accSlot::before { transition: none; }
-button.accSlot:hover { --px-border: var(--warm); }
+   background - a real background paints a square that ignores the pixel corners.
+   The slot is a div wrapping its own buttons, so the hover keys off :has() -
+   the frame lights whichever of them the pointer is over. */
+.accSlot::before { transition: none; }
+.accSlot:has(.accMain:hover, .accAlt:hover) { --px-border: var(--warm); }
+/* The primary fills the slot so the whole upper area stays one hit target. */
+.accMain {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: none; border: 0; padding: 0; width: 100%;
+  font-family: inherit; color: inherit; cursor: pointer;
+}
+/* A slot is its own column: the pick's card, then - when the guide offers a
+   swap - "or" and a smaller card, both outside the pick's frame. The card keeps
+   its natural height so every pick in the row still lines up at the top. */
+.accCell { display: flex; flex-direction: column; align-items: stretch; gap: 4px; }
+.accCell > .accSlot { flex: none; }
+.accOr {
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 9px; line-height: 1;
+  text-transform: uppercase; letter-spacing: .08em; text-indent: .08em;
+  color: #8FA6C8;
+}
+/* A miniature of the card above it: icon and name on one line, the name clipped
+   rather than wrapped so a long alternative cannot stretch the column. */
+.accAlt {
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+  width: 100%; min-width: 0; padding: 5px 7px;
+  font-family: inherit; cursor: pointer; text-align: center;
+  --px-u: 1.5px; --px-fill: rgba(255,255,255,.05); --px-border: rgba(150,180,230,.2);
+}
+.accAlt::before { transition: none; }
+.accAlt:hover { --px-border: var(--warm); }
+.accAltImg { width: 16px; height: 16px; flex: none; object-fit: contain; }
+/* Shrink-to-fit rather than flex:1 - filling the row would pin the icon to the
+   left edge and defeat the centring, while shrinking still lets a long name
+   clip with an ellipsis. */
+.accAltName {
+  min-width: 0; flex: 0 1 auto;
+  font-weight: 700; font-size: 10px; line-height: 1.2; color: #A9BCE0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.accAlt:hover .accAltName { color: var(--warm); }
 .accSlotImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
 .accSlotName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .accEmpty { --px-border: rgba(150,180,230,.14); }
@@ -290,14 +347,22 @@ button.accSlot:hover { --px-border: var(--warm); }
 /* ── Buffs ── */
 .buffLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #A9BCE0; margin-bottom: 8px; }
 /* buff/consumable cards mirror the accessory slots: icon with the name centred beneath */
-.buffGrid { display: grid; grid-template-columns: repeat(2, 84px); gap: 8px; justify-content: center; }
-.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; padding: 8px 5px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+/* Fills the panel rather than sitting as a fixed 2-wide column: two 84px
+   cells left a wide gutter on either side and pushed a long buff list far
+   down the page. auto-fill packs as many as the width allows and the cells
+   shrink to suit, so the list runs wider and shorter. */
+.buffGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(66px, 1fr));
+  gap: 6px;
+}
+.buffCell { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; padding: 7px 4px; aspect-ratio: 1; overflow: hidden; text-align: center; font-family: inherit; color: inherit; cursor: pointer; --px-u: 1.5px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 /* .pixel-hollow is required: at 6% opacity the fill would otherwise show the
    border colour through it and tint the card. */
 .buffCell::before, .buffCell::after { transition: none; }
 .buffCell:hover { --px-border: var(--warm); --px-fill: rgba(255,255,255,.1); }
-.buffCellImg { width: 28px; height: 28px; flex: none; object-fit: contain; }
-.buffCellName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.buffCellImg { width: 24px; height: 24px; flex: none; object-fit: contain; }
+.buffCellName { font-weight: 700; font-size: 10px; line-height: 1.12; color: #EAF0FF; text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .buffPills { display: flex; flex-wrap: wrap; gap: 6px; }
 .buffPill { font-weight: 700; font-size: 11px; color: #12283B; background: color-mix(in oklab, var(--warm) 82%, #fff); border-radius: var(--radius-pill); padding: 6px 11px 4px; line-height: 1.2; text-align: center; }
 
@@ -316,10 +381,16 @@ button.accSlot:hover { --px-border: var(--warm); }
 /* ── Accessory tags ──
    Colours follow the community accessory guide so they read the same way. */
 .accTags { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 2px; }
+/* Centred by layout rather than by hand-tuned padding: the old
+   "2px 5px 1px" left the label a pixel off centre vertically, and the trailing
+   letter-space pushed it off centre horizontally. inline-flex with a symmetric
+   pad and line-height 1 centres the label in the pill on both axes, and
+   text-indent gives back the trailing space letter-spacing adds. */
 .accCat, .accQuality, .accMarker {
-  display: inline-block; padding: 2px 5px 1px; line-height: 1.1;
-  font-weight: 800; font-size: 9px; letter-spacing: .03em; border-radius: 2px;
-  color: #10182c; white-space: nowrap;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 14px; padding: 1px 5px; line-height: 1;
+  font-weight: 800; font-size: 9px; letter-spacing: .03em; text-indent: .03em;
+  border-radius: 2px; color: #10182c; white-space: nowrap;
 }
 .c_mobility      { background: #97f779; }
 .c_offense       { background: #eb345e; color: #fff; }
@@ -349,3 +420,64 @@ button.accSlot:hover { --px-border: var(--warm); }
 .accLegendLabel { font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-right: 2px; }
 .accLegendSep { width: 1px; height: 12px; background: rgba(150,180,230,.35); margin: 0 4px; }
 .accLegendNote { font-size: 10.5px; color: #7F93B8; margin-left: 2px; }
+
+/* "+N more" hint under a truncated set-bonus list. Muted: it is an
+   instruction, not part of the bonus itself. */
+.armorMore {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--warm);
+  opacity: .85;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+/* Calamity's guide splits mobility in two and adds an all-around bucket. The
+   two mobility tags share the green family so they read as one kind at a
+   glance, with primary the stronger of the pair. */
+.c_primary-mobility { background: #97f779; }
+.c_extra-mobility   { background: #c8f7b0; }
+.c_all-around       { background: #8fd3f4; }
+
+
+/* Ammo family heading - arrows, bullets, rockets. Quieter than a panel label:
+   it separates runs within one list rather than starting a new section. */
+
+/* ── Classic-world notice ──
+   Calamity's class guides assume Expert or above, so in Classic some picks are
+   unobtainable and get swapped. Saying which, and offering the switch, beats
+   leaving the reader to wonder why their loadout does not match any guide. */
+.classicNote {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklab, var(--warm) 14%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--warm) 45%, transparent);
+}
+.classicNoteText {
+  flex: 1 1 220px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.45;
+  /* The panel is dark, so --ink-soft (tuned for light surfaces) read as grey.
+     No drop shadow: at 11px the hard black offset thickens the text rather than
+     lifting it off the tinted strip. */
+  color: #fff;
+}
+.classicNoteBtn {
+  flex: none;
+  padding: 5px 10px 3px;
+  font-family: var(--body);
+  font-weight: 800;
+  font-size: 11px;
+  color: #fff;
+  cursor: pointer;
+  --px-fill: var(--accent);
+  --px-border: #000;
+  --px-u: 1px;
+}
+.classicNoteBtn:hover { --px-fill: var(--warm); }

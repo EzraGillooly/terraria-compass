@@ -17,6 +17,18 @@ export const Item = z.object({
   icon: z.string(),
   source: z.string(),
   why: z.string(),
+  /**
+   * What the item does - the modal's subtext, and the only prose it shows.
+   * Sourced from the in-game tooltip, the behaviour sentences of the wiki's
+   * description, or (for armour) the set bonus, whichever says most. Several
+   * effects are joined with " · " and render as a list; a single one renders
+   * as a paragraph.
+   *
+   * `why` is still carried for ordering and for the accessory pool, but is no
+   * longer shown in the modal: three blocks of text competing for the same
+   * card is more reading than the card is for.
+   */
+  effect: z.string().optional(),
   notes: z.string().optional(),
   /** best reforge modifier, e.g. "Warding", "Menacing", "Legendary" */
   modifier: z.string().optional(),
@@ -39,6 +51,12 @@ export const Item = z.object({
    * classes they are not playing.
    */
   headpieceBonus: z.string().optional(),
+  /**
+   * The guide lists this under "All-class armor" rather than
+   * "Class-specific armor". It is always listed last, so without the flag it
+   * fell off whenever the column was capped.
+   */
+  allClass: z.boolean().optional(),
   /** total defense for this class's configuration of the set */
   defense: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
@@ -106,23 +124,71 @@ export const Item = z.object({
    */
   categories: z.array(z.enum([
     'mobility', 'offense', 'survivability', 'melee', 'ranged', 'magic', 'summon',
+    // Calamity's guide separates these, and the distinction is the point:
+    // primary mobility is the one movement item a build is built around,
+    // extra mobility is what it stacks on top. 'mobility' stays for vanilla.
+    'primary-mobility', 'extra-mobility', 'all-around',
   ])).optional(),
   /** how strong the pick is at this stage, per the accessory guide */
   quality: z.enum(['great', 'good', 'fine']).optional(),
   /**
-   * Caveats worth showing next to an accessory: Expert-only, better in tank
-   * builds, locked to one world evil, or only useful with whips or yoyos.
+   * Names the accessory this one is an alternative to, for the guide's
+   * "Sandstorm in a Bottle / Fledgling Wings" notation: one slot, either pick.
+   *
+   * Held as a back-reference rather than nesting the alternative inside its
+   * primary, so both stay ordinary items with their own source, effect and
+   * modal - and the schema stays flat instead of recursive. The slot renders
+   * the primary and lists the alternatives under it.
+   */
+  altOf: z.string().optional(),
+  /**
+   * Caveats worth showing next to an accessory.
+   *
+   * The two packs draw theirs from different sources and the sets do not
+   * overlap, so the legend is rendered per pack rather than as one list:
+   *
+   *  - vanilla, from the community accessory guide: Expert-only, better in a
+   *    tank build, locked to one world evil, or only useful with whips or yoyos
+   *  - calamity, from the symbols Guide:Class setups defines for itself:
+   *    * tedious, † risky, C crowd-control, + support, ≤ upgradeable,
+   *    Δ changed by Calamity, Ω used as a pair
    */
   markers: z.array(z.enum([
     'expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos',
+    'tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
+    'calamity-changed', 'pairs',
   ])).optional(),
   wikiUrl: z.string().url().optional(),
+  /**
+   * Sub-items collapsed into one entry. Some picks are really a family the
+   * player chooses within - the Calamity guide lists "Candles" once, but that
+   * is six placeable candles with different buffs (Resilient, Spiteful, …), and
+   * a reader wants to know which does what. Each variant carries its own icon
+   * and effect so the modal can list them; `group` lets the modal separate,
+   * say, mutually-exclusive combat candles from spawn-rate ones.
+   */
+  variants: z.array(z.object({
+    name: z.string(),
+    icon: z.string(),
+    effect: z.string(),
+    group: z.string().optional(),
+    wikiUrl: z.string().url().optional(),
+  })).optional(),
 });
 
 export const Loadout = z.object({
   phase: PhaseId,
   class: ClassId,
   weapons: z.array(Item),
+  /**
+   * Utility items the guide lists beside the weapons but which are not that
+   * class's weapons: true tools (Rod of Discord), classless weapons that scale
+   * with nothing (Lunic Eye, Eye of Magnus), and support summons carried by a
+   * non-summoner (Wulfrum Controller). They have no subclass and never will,
+   * so leaving them in `weapons` meant a card with no type pill sitting among
+   * the class's actual picks.
+   */
+  tools: z.array(Item).default([]),
   armor: z.array(Item),
   accessories: z.array(Item),
   buffs: z.array(Item),
@@ -146,7 +212,11 @@ export const Loadout = z.object({
    */
   mixNote: z.string().optional(),
   accessoryPool: z.array(z.object({
-    category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged', 'magic', 'summon']),
+    // Must track Item.categories - these are the same vocabulary, and only
+    // updating one of them is what broke the schema when Calamity's
+    // mobility buckets were split.
+    category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged',
+      'magic', 'summon', 'primary-mobility', 'extra-mobility', 'all-around']),
     items: z.array(Item),
   })).default([]),
 });
@@ -159,6 +229,14 @@ export const PhaseDef = z.object({
   bossIcon: z.string().optional(),
   cues: z.array(z.string()),
   description: z.string(),
+  /**
+   * The section intro from the mod's own progression guide - what this phase
+   * opens up and what to do in it. Preferred over `cues` in the banner: a cue
+   * is a checklist item written for this site ("Slime God fight now
+   * available"), where this says what the phase is for. Calamity only; vanilla
+   * has no equivalent guide page, so its banner still falls back to a cue.
+   */
+  guideNote: z.string().optional(),
 });
 
 export const ClassDef = z.object({

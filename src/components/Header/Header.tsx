@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
-import { PACKS } from '../../data/packs';
+import { PACK_META } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -71,51 +71,79 @@ function WorldSelect() {
   );
 }
 
+/* Calamity's own difficulty, which is not a world type: it is toggled on top of
+   an existing world through the Difficulty Indicator, and Revengeance "can only
+   be activated from Expert Mode" with Death reached from Revengeance. So it sits
+   under the World selector as its own axis rather than as two more entries
+   inside it, and it is inert until the world is Expert. */
+const CAL_MODES = [
+  { id: 'off', label: 'Off' },
+  { id: 'revengeance', label: 'Rev' },
+  { id: 'death', label: 'Death' },
+] as const;
+
+function CalamityModeToggle() {
+  const { calamityMode, setCalamityMode, difficulty } = useAppState();
+  const needsExpert = difficulty !== 'expert';
+
+  return (
+    <div
+      className={styles.calModeRow}
+      title={needsExpert ? 'Revengeance can only be activated in an Expert world' : undefined}
+    >
+      <span className={styles.calModeCap}>Calamity</span>
+      <div className={styles.calModeOpts} role="radiogroup" aria-label="Calamity difficulty">
+        {CAL_MODES.map((m) => (
+          <button
+            key={m.id}
+            type="button"
+            role="radio"
+            aria-checked={calamityMode === m.id}
+            disabled={needsExpert && m.id !== 'off'}
+            className={`${styles.calModeItem} ${calamityMode === m.id ? styles.calModeItemOn : ''}`}
+            onClick={() => setCalamityMode(m.id)}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* Class selector - the loadout class moved here from the page so it stops reading
    as a second nav bar. Only meaningful on the Loadouts page, so the header shows
    it there alone (see Header). Subclass toggles stay on the page. */
 function ClassSelect() {
   const { classId, setClassId, pack } = useAppState();
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  useDismiss(open, () => setOpen(false), ref);
-  const current = pack.classes.find((c) => c.id === classId);
   const BASE = import.meta.env.BASE_URL;
 
+  /* Always open rather than behind a trigger: the class is the axis the whole
+     page is read through, so needing a click to see which one you were on was a
+     click too many. The stack keeps the menu's own vertical shape and sits where
+     the trigger did - out of flow, so hanging past the header cannot grow it.
+     Radios, not a listbox: with every option on screen it is a radiogroup. */
   return (
-    <div className={styles.diffSelect} ref={ref}>
-      <button
-        type="button"
-        className={styles.diffTrigger}
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-label="Class"
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span className={styles.diffCap}>Class</span>
-        <span className={styles.diffValue}>{current?.name}</span>
-        <span className={`${styles.diffCaret} ${open ? styles.diffCaretOpen : ''}`} aria-hidden="true" />
-      </button>
-      {open && (
-        <ul className={styles.diffMenu} role="listbox" aria-label="Class">
-          {pack.classes.map((c) => (
-            <li key={c.id} role="option" aria-selected={c.id === classId}>
-              <button
-                type="button"
-                className={`${styles.diffItem} ${styles.classItem} ${c.id === classId ? styles.diffItemOn : ''}`}
-                onClick={() => { setClassId(c.id); setOpen(false); }}
-              >
-                <img
-                  src={`${BASE}icons/classes/${c.id}.png`}
-                  alt="" aria-hidden="true" width="18" height="18"
-                  className={`${styles.classItemIcon} pixel-img`}
-                />
-                {c.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className={styles.classStack}>
+      <div className={styles.classStackList} role="radiogroup" aria-label="Class">
+        {pack.classes.map((c) => (
+          <button
+            key={c.id}
+            type="button"
+            role="radio"
+            aria-checked={c.id === classId}
+            className={`${styles.classStackItem} ${c.id === classId ? styles.classStackItemOn : ''}`}
+            onClick={() => setClassId(c.id)}
+          >
+            <img
+              src={`${BASE}icons/classes/${c.id}.png`}
+              alt="" aria-hidden="true" width="18" height="18"
+              className={`${styles.classItemIcon} pixel-img`}
+            />
+            <span className={styles.classStackName}>{c.name}</span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
@@ -144,7 +172,7 @@ function ModSelect() {
       </button>
       {open && (
         <ul className={styles.diffMenu} role="listbox" aria-label="Mod">
-          {PACKS.map((p) => (
+          {PACK_META.map((p) => (
             <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!p.available}>
               <button
                 type="button"
@@ -208,7 +236,13 @@ export function Header({ variant = 'paper' }: HeaderProps) {
         <div className={styles.controls}>
           {onLoadouts && <ClassSelect />}
           <ModSelect />
-          <WorldSelect />
+          {/* The Calamity mode rides under World rather than beside it - it is a
+              layer on the world, not a peer of it. Out of flow, so it cannot
+              stretch the header. */}
+          <div className={styles.worldColumn}>
+            <WorldSelect />
+            {packId === 'calamity' && <CalamityModeToggle />}
+          </div>
 
           {/* Day / night - disabled for now */}
           <button

@@ -3,13 +3,55 @@
     "id": "melee",
     "name": "Melee",
     "blurb": "High-defense close-range fighter using swords, spears, and true-melee weapons, backed by Calamity's rage and adrenaline durability.",
-    "subclasses": []
+    "subclasses": [
+      {
+        "id": "true-melee",
+        "name": "True Melee",
+        "description": "Short-range swords, spears, and contact-focused melee weapons."
+      },
+      {
+        "id": "yoyos",
+        "name": "Yoyos",
+        "description": "Cursor-controlled yoyos that trade reach and safety for sustained control."
+      },
+      {
+        "id": "boomerangs",
+        "name": "Boomerangs",
+        "description": "Thrown melee weapons that arc out and return."
+      },
+      {
+        "id": "flails",
+        "name": "Flails",
+        "description": "Chain-based melee options with awkward but powerful area control."
+      },
+      {
+        "id": "projectile-melee",
+        "name": "Projectile Melee",
+        "description": "Melee weapons that fire or hurl a projectile - swords with beams and the like."
+      }
+    ]
   },
   {
     "id": "ranger",
     "name": "Ranger",
     "blurb": "Ammo-based damage dealer relying on guns, bows, and launchers for strong sustained ranged DPS at the cost of managing ammunition.",
-    "subclasses": []
+    "subclasses": [
+      {
+        "id": "bows",
+        "name": "Bows",
+        "description": "Arrow-based ranged setups that scale especially well with ammo effects."
+      },
+      {
+        "id": "guns",
+        "name": "Guns",
+        "description": "Bullet-firing ranged builds built around sustained pressure."
+      },
+      {
+        "id": "launchers",
+        "name": "Launchers",
+        "description": "Rocket-heavy ranged weapons with explosive crowd control."
+      }
+    ]
   },
   {
     "id": "mage",
@@ -59,6 +101,32 @@
     "id": "rogue",
     "name": "Rogue",
     "blurb": "Calamity's signature stealth-based throwing class that builds stealth while still to unleash powerful empowered strikes from thrown weapons.",
-    "subclasses": []
+    "subclasses": [
+      {
+        "id": "daggers",
+        "name": "Daggers",
+        "description": "Rogue daggers - thrown weapons that share a handling style."
+      },
+      {
+        "id": "javelins",
+        "name": "Javelins",
+        "description": "Rogue javelins - thrown weapons that share a handling style."
+      },
+      {
+        "id": "boomerangs",
+        "name": "Boomerangs",
+        "description": "Rogue boomerangs - thrown weapons that share a handling style."
+      },
+      {
+        "id": "spiky-balls",
+        "name": "Spiky Balls",
+        "description": "Rogue spiky balls - thrown weapons that share a handling style."
+      },
+      {
+        "id": "bombs",
+        "name": "Bombs",
+        "description": "Rogue bombs - thrown weapons that share a handling style."
+      }
+    ]
   }
 ]

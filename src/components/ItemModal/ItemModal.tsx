@@ -65,7 +65,15 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   if (!item) return null;
 
   const craftable = recipes.findCraftable(item.name);
-  const stem = item.icon.replace(/\.png$/i, '').split('/').pop() ?? '';
+  /* A set page lists a recipe for every class's helmet - Aerospec has five -
+     but `pieces` already names the three this class actually wears. Showing
+     all of them told a melee reader how to craft the summoner hood. */
+  const pieceRecipes = item.pieces?.length
+    ? (item.pieceRecipes ?? []).filter((p) => item.pieces?.includes(p.piece))
+    : item.pieceRecipes ?? [];
+  // any image extension, not only .png - Any Balloon's icon is a gif, and
+  // leaving the extension on produced "Any-balloon.gif.png" as the fallback
+  const stem = item.icon.replace(/\.(png|gif|jpe?g|webp)$/i, '').split('/').pop() ?? '';
   const local = `${BASE}icons/${item.icon}`;
   const wiki = `${WIKI}/${makeWikiName(stem)}.png`;
   const onImgError = (e: SyntheticEvent<HTMLImageElement>) => {
@@ -77,7 +85,12 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   return (
     <div className={styles.backdrop}>
       <button type="button" className={styles.backdropBtn} aria-label="Close" tabIndex={-1} onClick={onClose} />
-      <div className={`${styles.modal} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
+      {/* .modalTall pins the header and scrolls only the body. A long item -
+          Victide armor lists eleven set-bonus lines and five piece recipes -
+          used to scroll the whole card, taking the title and close button with
+          it and running to a hard clipped edge with nothing to say there was
+          more below. */}
+      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
         <button ref={closeRef} type="button" className={`${styles.close} pixel-frame`} aria-label="Close" onClick={onClose}>
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
             <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -96,7 +109,76 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           </div>
         </div>
 
-        <p className={styles.desc}>{item.why}</p>
+        <div className={styles.modalBody}>
+        {/* One subtext, then the key/value rows - the same shape vanilla has
+            always had. It briefly carried three competing blocks (a full wiki
+            description, an Effect row and a "Why here" line), which is a lot of
+            reading for a card whose job is to say what the item does.
+
+            The subtext is the effect: for armour that is the set bonus, so it
+            can run to several lines and stays a list; anything else is prose. */}
+        {(() => {
+          /* Armour keeps its helmet bonus in a separate field, because only
+             this class's helmet should show - the shared set bonus and the
+             one helmet's bonus are both part of what wearing it does, so
+             they read as one list here. */
+          /* Falls back to `why`. Only Calamity items carry `effect`, so
+             dropping `why` from the modal blanked every vanilla card -
+             65 of vanilla's 67 armour entries describe themselves there
+             and have no effect text at all. */
+          const parts = [item.effect || item.why, item.headpieceBonus]
+            .filter(Boolean).join(' · ');
+          if (!parts) return null;
+          return parts.includes(' · ')
+            ? (
+              <ul className={`${styles.desc} ${styles.effects}`}>
+                {parts.split(' · ').map((line) => <li key={line}>{line}</li>)}
+              </ul>
+            )
+            : <p className={styles.desc}>{parts}</p>;
+        })()}
+
+        {/* An item that stands for a family (Candles) lists its members here,
+            each with its own sprite and effect. Grouped when the variants carry
+            a `group`, so mutually-exclusive combat candles read apart from the
+            spawn-rate ones - and the group is labelled so "pick one" is clear. */}
+        {item.variants && item.variants.length > 0 && (() => {
+          const GROUPS: { key: string; label: string }[] = [
+            { key: 'combat', label: 'Combat - place one, they do not stack' },
+            { key: 'spawn', label: 'Spawn control' },
+          ];
+          const grouped = item.variants!.some((v) => v.group);
+          const buckets = grouped
+            ? GROUPS
+              .map((g) => ({ ...g, items: item.variants!.filter((v) => v.group === g.key) }))
+              .filter((g) => g.items.length > 0)
+            : [{ key: 'all', label: '', items: item.variants! }];
+          return (
+            <div className={styles.variants}>
+              {buckets.map((b) => (
+                <div key={b.key} className={styles.variantGroup}>
+                  {b.label && <div className={styles.variantCap}>{b.label}</div>}
+                  <ul className={styles.variantList}>
+                    {b.items.map((v) => (
+                      <li key={v.name} className={styles.variant}>
+                        <span className={`${styles.variantSlot} pixel-frame`}>
+                          <img
+                            src={`${BASE}icons/${v.icon}`} alt="" aria-hidden="true"
+                            width="24" height="24" className="pixel-img" loading="lazy"
+                          />
+                        </span>
+                        <span className={styles.variantText}>
+                          <span className={styles.variantName}>{v.name}</span>
+                          <span className={styles.variantEffect}>{v.effect}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          );
+        })()}
 
         <div className={styles.kv}>
           {item.stats && (
@@ -108,11 +190,11 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           {item.source && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
           )}
-          {item.pieceRecipes && item.pieceRecipes.length > 0 && (
+          {pieceRecipes.length > 0 && (
             <div className={styles.kvRow}>
               <span className={styles.kvKey}>Craft</span>
               <div className={styles.pieces}>
-                {item.pieceRecipes.map((p) => (
+                {pieceRecipes.map((p) => (
                   <div key={p.piece} className={styles.piece}>
                     <div className={styles.pieceName}>
                       {p.piece}
@@ -181,6 +263,8 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             View in crafting tree
           </Link>
         )}
+        <span className={styles.scrollFade} aria-hidden="true" />
+        </div>
       </div>
     </div>
   );

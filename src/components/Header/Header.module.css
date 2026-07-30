@@ -3,6 +3,15 @@
   padding: clamp(10px, 1.5vw, 14px) clamp(12px, 3vw, 32px);
   position: relative;
   z-index: 20;
+  /* One height for every control in the bar, nav tabs included. The selectors
+     were on their own clamp() and came out taller than the tabs beside them, so
+     the row had two baselines. Derived from the nav link's own type and padding,
+     so the tabs keep the size they had and the selectors match them. */
+  --control-h: calc(
+    clamp(11px, 1.35vw, 15px) * 1.35
+    + clamp(4px, 0.6vw, 7px) + clamp(2px, 0.35vw, 4px)
+    + 2px
+  );
 }
 
 /* ── On-photo variant: transparent, white text, floats over hero ── */
@@ -121,6 +130,64 @@
   gap: clamp(6px, 1vw, 10px);
 }
 
+.navLink { min-height: var(--control-h); }
+
+/* ── World + Calamity mode ──
+   The mode toggle hangs under the World trigger. The column claims only the
+   trigger's height so the strip below it overlays the hero instead of making the
+   header taller, the same trick the class stack uses. */
+.worldColumn {
+  position: relative;
+  height: var(--control-h);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.calModeRow {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 5px;
+  background: rgba(28, 40, 96, .92);
+  border: 1px solid #000;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+}
+.calModeCap {
+  font-weight: 800;
+  font-size: 8px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .6);
+}
+.calModeOpts { display: inline-flex; gap: 2px; }
+.calModeItem {
+  padding: 3px 6px 2px;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 10px;
+  color: rgba(255, 255, 255, .7);
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.calModeItem:hover:not(:disabled) {
+  background: color-mix(in oklab, var(--warm) 30%, transparent);
+  color: #fff;
+}
+.calModeItem:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
+.calModeItemOn,
+.calModeItemOn:hover { background: var(--accent); color: #fff; }
+/* Classic worlds cannot host Revengeance, so those two read as unavailable
+   rather than silently doing nothing. */
+.calModeItem:disabled { opacity: .38; cursor: default; }
+
 /* ── World difficulty dropdown - custom control, menu pops out below ── */
 .diffSelect { position: relative; }
 
@@ -128,7 +195,7 @@
   display: inline-flex;
   align-items: center;
   gap: clamp(5px, 0.8vw, 8px);
-  height: clamp(30px, 4vw, 38px);
+  height: var(--control-h);
   padding: 0 clamp(8px, 1.2vw, 12px);
   cursor: pointer;
   background: rgba(40, 54, 122, .18);
@@ -219,8 +286,8 @@
 .modeToggle {
   display: grid;
   place-items: center;
-  width: clamp(30px, 4vw, 38px);
-  height: clamp(30px, 4vw, 38px);
+  width: var(--control-h);
+  height: var(--control-h);
   color: var(--warm);
   cursor: pointer;
   background: rgba(40, 54, 122, .18);
@@ -255,3 +322,57 @@
 /* Class dropdown items carry the class weapon sprite alongside the label. */
 .classItem { display: flex; align-items: center; justify-content: center; gap: 9px; }
 .classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }
+
+/* ── Class stack - the class menu, permanently open ──
+   The wrapper claims only a trigger's worth of space and the list is taken out
+   of flow inside it, so a five-class stack hangs over the hero instead of
+   stretching the header. Same fill, border and radius as the pop-out menu, so
+   it still reads as that control rather than as a new one. */
+.classStack {
+  position: relative;
+  height: var(--control-h);
+  width: clamp(104px, 11vw, 128px);
+}
+.classStackList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px;
+  background: rgba(28, 40, 96, .96);
+  border: 1px solid #000;
+  border-radius: var(--radius-md);
+  box-shadow: 0 6px 18px rgba(8, 14, 34, .45);
+}
+.classStackItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px 3px;   /* Andy Bold sits high in its box */
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .72);
+  cursor: pointer;
+  text-align: left;
+  transition: background .12s, color .12s;
+}
+.classStackItem:hover {
+  background: color-mix(in oklab, var(--warm) 30%, transparent);
+  color: #fff;
+}
+.classStackItem:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
+.classStackItemOn,
+.classStackItemOn:hover { background: var(--accent); color: #fff; }
+/* Unpicked sprites recede so the active class reads first. */
+.classStackItem .classItemIcon { opacity: .55; transition: opacity .12s; }
+.classStackItem:hover .classItemIcon,
+.classStackItemOn .classItemIcon { opacity: 1; }
+.classStackName { white-space: nowrap; }

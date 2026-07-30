@@ -143,8 +143,20 @@
 /* Crafting materials list inside the item modal's key/value block. */
 .materials { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
 .materials li { display: flex; align-items: baseline; gap: 8px; }
-.materials a { color: inherit; text-decoration: none; }
-.materials a:hover { color: var(--accent); text-decoration: underline; }
+/* Materials read as links without needing to be hovered first. They took the
+   surrounding text's colour with no underline, so nothing in the armour craft
+   list suggested a material was clickable until the pointer was already on it. */
+.materials a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in oklab, var(--accent) 45%, transparent);
+}
+.materials a:hover {
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
+}
 .matQty {
   flex: none; min-width: 26px; text-align: right;
   font-weight: 800; font-size: 12px; color: var(--ink-mute);
@@ -152,8 +164,7 @@
 }
 .matQty::after { content: '\00d7'; margin-left: 1px; opacity: .6; }
 .matBody { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
-.matBody a { color: var(--accent); text-decoration: none; }
-.matBody a:hover { text-decoration: underline; }
+/* same treatment for the flat Materials list; .materials above covers both */
 .matHow { font-size: 11px; line-height: 1.35; color: var(--ink-mute); }
 
 /* Armor: one recipe per piece (a set lists every class helmet). */
@@ -171,3 +182,75 @@
    they are already indented one level, so they are not competing for that column. */
 .matNameRow { display: flex; align-items: baseline; gap: 7px; min-width: 0; }
 .materialsFlat .matQty { min-width: 0; text-align: left; }
+
+/* Item effect lines (the in-game tooltip). One line per effect - a tooltip's
+   lines are separate effects and reading them as one sentence loses that. */
+.effects { list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.effects li { position: relative; padding-left: 11px; line-height: 1.4; }
+.effects li::before {
+  content: ''; position: absolute; left: 0; top: .55em;
+  width: 4px; height: 4px; background: var(--accent); opacity: .55;
+}
+
+
+/* Tall item modal: header pinned, body scrolls.
+   The card used to scroll as a whole, so on a long item the title and close
+   button scrolled away and the content ran into a hard clipped edge with no
+   sign there was more below. Capping at 85vh (not 90) also leaves the stepped
+   frame clear of the viewport edge on short windows. */
+.modalTall {
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modalTall .head { flex: none; }
+.modalBody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  /* room for the fade below, so the last line is never half-hidden by it */
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--accent) 45%, transparent) transparent;
+}
+.modalBody::-webkit-scrollbar { width: 7px; }
+.modalBody::-webkit-scrollbar-track { background: transparent; }
+.modalBody::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--accent) 40%, transparent);
+}
+/* A soft edge so "there is more below" is visible before you scroll. This is a
+   real element, not a ::after - .pixel-frame already uses both pseudo-elements
+   as its border and fill layers, so taking one would erase the frame. */
+/* Sticky inside the scrolling body, not absolute against the modal. Pinned to
+   the modal's own bottom edge it was a plain rectangle painted over the
+   stepped corners, squaring them off. Inside the body it sits within the
+   card's padding and never reaches the frame. It also only appears when there
+   is something to scroll, since a non-overflowing body has no space for it. */
+.scrollFade {
+  position: sticky;
+  bottom: 0;
+  height: 26px;
+  margin-top: -26px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--card));
+}
+
+/* ── Variant family list (Candles) ──
+   One entry that stands for several sub-items, listed with their own sprite and
+   effect. Groups are separated with a labelled cap so mutually-exclusive picks
+   read apart. Sits between the subtext and the key/value rows. */
+.variants { display: flex; flex-direction: column; gap: 14px; margin-bottom: 16px; }
+.variantCap {
+  font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--ink-mute); margin-bottom: 8px;
+}
+.variantList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.variant { display: flex; align-items: center; gap: 10px; }
+.variantSlot {
+  flex: none; width: 34px; height: 34px; display: grid; place-items: center;
+  --px-u: 1px; --px-fill: var(--card-2); --px-border: var(--hair);
+}
+.variantText { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.variantName { font-weight: 700; font-size: 13px; color: var(--ink-soft); line-height: 1.2; }
+.variantEffect { font-size: 12px; color: var(--ink-mute); line-height: 1.35; }

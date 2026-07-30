@@ -44,17 +44,31 @@
   grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
   gap: 12px;
 }
+/* Shape, fill and border come from the global .pixel-frame utility, the same
+   way the Materials cards get theirs - so this must not set its own
+   background/border/radius, which the utility zeroes out. State changes drive
+   --px-fill and --px-border instead. */
 .card {
   display: flex; flex-direction: column; align-items: center; gap: 8px;
   padding: 16px 10px 13px;
-  background: rgba(10,16,32,.88);
-  border: 1px solid rgba(150,180,230,.28);
-  border-radius: var(--radius-md);
   font-family: inherit; color: inherit; cursor: pointer;
-  transition: border-color .15s, background .15s, transform .15s;
+  --px-fill: rgba(10,16,32,.88);
+  --px-border: rgba(150,180,230,.28);
+  transition: transform .15s;
 }
-.card:hover { background: rgba(22,32,58,.94); border-color: var(--warm); transform: translateY(-2px); }
+.card::before, .card::after { transition: background .15s; }
+.card:hover { transform: translateY(-2px); --px-fill: rgba(22,32,58,.94); --px-border: var(--warm); }
 .cardSlot, .treeSlot, .slot, .matSlot { display: grid; place-items: center; flex: none; }
+/* The landing-card and tree-header sprite wells, boxed like the row wells so
+   every sprite on the page sits in the same kind of container. */
+.cardSlot {
+  width: 52px; height: 52px;
+  --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
+.treeSlot {
+  width: 52px; height: 52px;
+  --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
 .cardName { font-weight: 700; font-size: 13px; line-height: 1.2; color: #EAF0FF; text-align: center; }
 .cardMeta { font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; color: #A9BFDA; line-height: 1; }
 .notFound { color: #EAF0FF; font-size: 14px; margin: 0 0 18px; }
@@ -129,7 +143,12 @@
 .twisty[data-open='true'] .twistyGlyph::after { display: none; }          /* minus when open */
 .twistySpacer { flex: none; width: 18px; }
 
-.slot { width: 34px; height: 34px; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.22); border-radius: var(--radius-sm); }
+/* The sprite wells in the tree rows and the shopping list. Half-scale corner
+   (--px-u: 1px) - the full 2px step is too heavy on a 30px well. */
+.slot {
+  width: 34px; height: 34px;
+  --px-u: 1px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
 .sprite { object-fit: contain; max-width: 100%; max-height: 100%; }
 
 .label { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
@@ -149,7 +168,10 @@
 .matList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .matRow { display: flex; align-items: center; gap: 9px; padding: 4px 6px; border-radius: var(--radius-sm); }
 .matRow:hover { background: rgba(255,255,255,.05); }
-.matSlot { width: 30px; height: 30px; background: rgba(255,255,255,.06); border: 1px solid rgba(150,180,230,.22); border-radius: var(--radius-sm); }
+.matSlot {
+  width: 30px; height: 30px;
+  --px-u: 1px; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
 .matName { flex: 1; min-width: 0; font-weight: 700; font-size: 12px; color: #EAF0FF; text-decoration: none; line-height: 1.2; }
 .matName:hover { color: var(--warm); text-decoration: underline; }
 .matQty { flex: none; font-weight: 800; font-size: 11px; color: #A9BFDA; line-height: 1; }

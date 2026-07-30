@@ -50,8 +50,9 @@ function BossSlot({
       className={`${styles.node} ${boss.side ? styles.side : ''} ${selected ? styles.selected : ''}`}
       onClick={onSelect}
       aria-pressed={selected}
+      title={boss.side ? `${boss.name} - optional` : boss.name}
     >
-      <span className={styles.slot} style={{ ['--boss' as string]: boss.color }}>
+      <span className={`${styles.slot} pixel-frame`} style={{ ['--boss' as string]: boss.color }}>
         <img
           src={`${BASE}icons/bosses/${boss.id}.png`}
           alt=""
@@ -62,7 +63,10 @@ function BossSlot({
           onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
         />
       </span>
-      <span className={styles.nodeName}>{boss.name}</span>
+      <span className={styles.nodeName}>
+        {boss.name}
+        {boss.side && <span className="sr-only"> (optional)</span>}
+      </span>
     </button>
   );
 }
@@ -72,8 +76,9 @@ export function Bosses() {
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
 
-  // Bosses grouped by the active pack's phases, main bosses on the line first,
-  // optional/side bosses after. Recomputed when the pack changes.
+  // Bosses grouped by the active pack's phases, optional ones first within each
+  // stage so they read before the boss that gates progress. Recomputed when the
+  // pack changes.
   // Hardmode begins at the phase after "Pre-Wall of Flesh" (works for any pack).
   const isHard = useMemo(() => {
     const wofOrder = phases.find((p) => /wall of flesh/i.test(p.name))?.order ?? Infinity;
@@ -88,7 +93,7 @@ export function Bosses() {
       return {
         stage,
         hard: isHard(stage),
-        nodes: [...inStage.filter((b) => !b.side), ...inStage.filter((b) => b.side)],
+        nodes: [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
       };
     });
   }, [phases, bosses, isHard]);
@@ -102,8 +107,12 @@ export function Bosses() {
   const setPhase = (hard: boolean) => {
     if (hard === showHardmode) return;
     const selIsHard = isHard(selected.stage);
-    if (hard && !selIsHard) setSelectedId(hardStages[0]?.nodes[0]?.id ?? selectedId);
-    if (!hard && selIsHard) setSelectedId(preHard[0]?.nodes[0]?.id ?? selectedId);
+    const firstMain = (list: Stage[]) => {
+      const nodes = list[0]?.nodes ?? [];
+      return (nodes.find((b) => !b.side) ?? nodes[0])?.id;
+    };
+    if (hard && !selIsHard) setSelectedId(firstMain(hardStages) ?? selectedId);
+    if (!hard && selIsHard) setSelectedId(firstMain(preHard) ?? selectedId);
     setShowHardmode(hard);
   };
 
@@ -157,7 +166,7 @@ export function Bosses() {
               type="button"
               role="tab"
               aria-selected={!showHardmode}
-              className={`${styles.phaseBtn} ${!showHardmode ? styles.phasePre : ''}`}
+              className={`${styles.phaseBtn} ${!showHardmode ? `${styles.phasePre} pixel-frame` : ''}`}
               onClick={() => setPhase(false)}
             >
               Pre-Hardmode
@@ -166,7 +175,7 @@ export function Bosses() {
               type="button"
               role="tab"
               aria-selected={showHardmode}
-              className={`${styles.phaseBtn} ${showHardmode ? styles.phaseHard : ''}`}
+              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
               onClick={() => setPhase(true)}
             >
               Hardmode
@@ -183,7 +192,7 @@ export function Bosses() {
 
         {/* ── Detail panel ── */}
         <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
-          <div className={styles.detailIcon}>
+          <div className={`${styles.detailIcon} pixel-frame`}>
             <img
               src={`${BASE}icons/bosses/${selected.id}.png`}
               alt={selected.name}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -64,10 +64,20 @@ const FALLBACK_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Prefer the real wiki page name for the sprite fallback - kebab→TitleCase mangles
    names with apostrophes ("Ball O' Hurt" → Ball_O_Hurt, which 404s). */
 function iconSrcs(icon: string, wikiUrl?: string) {
-  const stem = icon.replace(/\.png$/i, '').split('/').pop() ?? '';
+  // any image extension, not just .png - an animated entry is a .gif, and
+  // leaving the extension on the stem produced "Any-balloon.gif.png" as the
+  // wiki fallback name
+  const stem = icon.replace(/\.(png|gif|jpe?g|webp)$/i, '').split('/').pop() ?? '';
   const fromWikiUrl = wikiUrl?.split('/wiki/')[1];
   const wikiName = fromWikiUrl || makeWikiName(stem);
-  return { local: `${BASE}icons/${icon}`, wiki: `${WIKI}/${wikiName}.png` };
+  /* Ask the wiki the item actually lives on. This was hardcoded to the
+     Terraria wiki, so a Calamity item with no local sprite fell through to a
+     404 there and then to the "?" placeholder, when the mod wiki has the
+     sprite. The item's own wikiUrl names the right host. */
+  const host = wikiUrl?.startsWith('https://calamitymod.wiki.gg')
+    ? 'https://calamitymod.wiki.gg/wiki/Special:FilePath'
+    : WIKI;
+  return { local: `${BASE}icons/${icon}`, wiki: `${host}/${wikiName}.png` };
 }
 
 /* ── Weapon card ── */
@@ -100,9 +110,68 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
   );
 }
 
+/* Ammo reads better grouped by what fires it: every arrow together, then
+   bullets, then rockets. The guide lists them in one run, so a bow user had to
+   pick their arrows out from among bullets and darts. Anything that matches no
+   family keeps its order at the end under "Other". */
+const AMMO_FAMILIES: [string, RegExp][] = [
+  // matched anywhere in the name, not just at the end: Calamity numbers its
+  // rockets ("Cluster Rocket I", "Rocket III"), so an end-anchored pattern
+  // filed every rocket under Other
+  ['Arrows', /\barrows?\b/i],
+  ['Bullets', /\bbullets?\b|\bmusket ball\b|\brounds?\b/i],
+  ['Rockets', /\brockets?\b|\bmissiles?\b|\bgrenades?\b/i],
+  ['Darts', /\bdarts?\b/i],
+  ['Bolts', /\bbolts?\b/i],
+  ['Solutions', /\bsolutions?\b/i],
+];
+
+function groupAmmo(ammo: Item[]): { label: string; items: Item[] }[] {
+  const rest = [...ammo];
+  const out: { label: string; items: Item[] }[] = [];
+  for (const [label, pattern] of AMMO_FAMILIES) {
+    const hit = rest.filter((a) => pattern.test(a.name));
+    if (!hit.length) continue;
+    hit.forEach((a) => rest.splice(rest.indexOf(a), 1));
+    out.push({ label, items: hit });
+  }
+  if (rest.length) out.push({ label: out.length ? 'Other' : '', items: rest });
+  return out;
+}
+
+/* Most armour sets a phase shows. The guide names two or three class-specific
+   sets plus an all-class one; past three the column reads as a list rather
+   than a recommendation. */
+const MAX_ARMOR_SHOWN = 3;
+
+/* Fewest weapons Top Picks tries to show. Below this the shortlist reads as
+   "your only option" rather than a choice. */
+const MIN_TOP_PICKS = 3;
+
+/* Set-bonus lines shown on an armour card before it defers to the modal. Three
+   lines wrap to about six on a narrow card, which is as much as the card can
+   carry without the armour list dominating the page. */
+const ARMOR_EFFECT_LINES = 3;
+
 /* ── Accessory equip cell ── */
+
+/* Post-Moon Lord in Calamity, where the Celestial Onion becomes available. */
+const CALAMITY_POST_ML = new Set<string>([
+  'cal-pre-providence', 'cal-pre-polterghast', 'cal-pre-dog',
+  'cal-pre-yharon', 'cal-pre-exo', 'cal-post-calamitas', 'cal-post-exo', 'cal-endgame',
+]);
+
+/* Hardmode, where the Wall of Flesh has dropped its bag and the Demon Heart is
+   available. Calamity's own hardmode phases were missing, so the sixth slot
+   never opened on that pack: the guide equips six from Pre-Mech Bosses and
+   seven from Pre-Providence, and the site was stuck at five and then six. The
+   post-Moon Lord phases are hardmode too, so they are folded in rather than
+   listed twice. */
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
+  'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
+  'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  ...CALAMITY_POST_ML,
 ]);
 
 /* Only the basic pre-Hardmode ores are true world variants: the pairs below
@@ -118,13 +187,23 @@ const ARMOR_VARIANTS: [string, string][] = [
 const armorMaterial = (name: string) => name.replace(/\s*armor\b.*$/i, '').trim();
 const tidyArmorName = (name: string) => name.replace(/\bArmor\b/, 'armor');
 
-function groupArmor(armor: Item[]): Item[] {
+/**
+ * @param mergeVariants pair the basic ores into one row. True for vanilla,
+ *   where world generation gives you one ore of each pair and the two differ in
+ *   defense alone. False for Calamity: every ore is obtainable there, and each
+ *   set carries its own bonus - Gold grants coin drops and crit scaling where
+ *   Platinum grants 10% damage reduction - so a shared row could only ever show
+ *   one set's bonus while hiding the other's.
+ */
+function groupArmor(armor: Item[], mergeVariants: boolean): Item[] {
   const out: Item[] = [];
   const used = new Set<string>();
   for (const a of armor) {
     if (used.has(a.id)) continue;
     const mat = armorMaterial(a.name);
-    const pair = ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()));
+    const pair = mergeVariants
+      ? ARMOR_VARIANTS.find((p) => p.some((v) => v.toLowerCase() === mat.toLowerCase()))
+      : undefined;
     if (pair) {
       // ore/evil armor is one choice across two worlds - always show the pair name
       // ("Adamantite armor" → "Adamantite / Titanium armor"), even if the data lists
@@ -159,32 +238,54 @@ const isCalamityArmor = (name: string) =>
 /* Show two armor options per stage: the best vanilla set and the best Calamity set
    (the list is already ordered best→good→other, so the first of each is the pick). */
 function curateArmor(grouped: Item[]): Item[] {
-  const vanilla = grouped.filter((a) => !isCalamityArmor(a.name));
-  const modded = grouped.filter((a) => isCalamityArmor(a.name));
-
-  // Playing a mod, the useful comparison is "best vanilla set vs best modded
-  // set", so it stays at one of each. Without a mod there is nothing to compare
-  // against, and several stages have two or three genuinely on-tier sets
-  // (Bee vs Obsidian, Chlorophyte vs Turtle, Spooky vs Tiki), so show them all.
-  if (!modded.length) return vanilla;
-
-  const picks: Item[] = [];
-  if (vanilla[0]) picks.push(vanilla[0]);
-  if (modded[0]) picks.push(modded[0]);
-  // endgame stages have no vanilla set (or vice versa) - fill to two from the
-  // pool that has options so the reader still sees an alternative
-  if (picks.length < 2) {
-    const pool = vanilla.length ? vanilla : modded;
-    if (pool[1]) picks.push(pool[1]);
-  }
-  return picks.sort((a, b) => grouped.indexOf(a) - grouped.indexOf(b));
+  /* Everything the guide lists for this phase and class.
+   *
+   * This used to trim to one Calamity set plus one vanilla set, which hid sets
+   * the guide explicitly recommends: Pre-Golem ranger lost Shroomite, and
+   * Post-Golem lost Plague Reaper. The armour column is already a curated
+   * shortlist - Calamity names two or three class-specific sets and one
+   * all-class set - so trimming it again was second-guessing the source.
+   *
+   * Calamity's own sets lead, since playing the mod they are the point and the
+   * vanilla set is the fallback.
+   */
+  /* Two class-specific sets and the all-class one.
+   *
+   * The guide splits its armour column under "Class-specific armor" and
+   * "All-class armor", and that split is what the three slots should reflect.
+   * Taking the first three in list order dropped the all-class set every time,
+   * since it is always listed last - so the third class-specific set gives way
+   * to it instead. */
+  const ordered = [...grouped.filter((a) => isCalamityArmor(a.name)),
+    ...grouped.filter((a) => !isCalamityArmor(a.name))];
+  /* Counted by set, not by card. Shroomite is listed once per helmet -
+     Headgear, Mask, Helmet - because choosing between them is the decision it
+     asks for, but the three are one set and should cost one slot, not three. */
+  const setOf = (a: Item) => a.name.replace(/\s*\([^)]*\)\s*$/, '');
+  const pick = (list: Item[], limit: number) => {
+    const keep: string[] = [];
+    for (const a of list) {
+      const key = setOf(a);
+      if (!keep.includes(key)) {
+        if (keep.length >= limit) continue;
+        keep.push(key);
+      }
+    }
+    return list.filter((a) => keep.includes(setOf(a)));
+  };
+  const specific = ordered.filter((a) => !a.allClass);
+  const allClass = ordered.filter((a) => a.allClass);
+  if (!allClass.length) return pick(specific, MAX_ARMOR_SHOWN);
+  return [...pick(specific, MAX_ARMOR_SHOWN - 1), ...pick(allClass, 1)];
 }
 
 /* ── Accessory taxonomy ──
    Categories, quality tiers and markers follow the community accessory guide, so
    the labels and colours match what a reader will have seen there. */
 const CATEGORY_LABEL: Record<string, string> = {
-  mobility: 'Mobility', offense: 'Offense', survivability: 'Survivability',
+  mobility: 'Mobility', offense: 'Offensive', survivability: 'Defensive',
+  'primary-mobility': 'Primary Mobility', 'extra-mobility': 'Extra Mobility',
+  'all-around': 'All-Around',
   melee: 'Melee', ranged: 'Ranged', magic: 'Magic', summon: 'Summon',
 };
 /** taxonomy damage-type -> our class id, so a class badge only shows on its own page */
@@ -194,6 +295,9 @@ const CATEGORY_CLASS: Record<string, string> = {
 const MARKER_LABEL: Record<string, string> = {
   expert: 'Expert', tank: 'Tank', corruption: 'Corruption', crimson: 'Crimson',
   whips: 'Whips', yoyos: 'Yoyos',
+  tedious: 'Tedious', risky: 'Risky', 'crowd-control': 'Crowd control',
+  support: 'Support', upgradeable: 'Upgradeable',
+  'calamity-changed': 'Changed', pairs: 'Pair',
 };
 const MARKER_TITLE: Record<string, string> = {
   expert: 'Expert Mode and above only',
@@ -202,6 +306,21 @@ const MARKER_TITLE: Record<string, string> = {
   crimson: 'Crimson worlds only',
   whips: 'Only worth it if you use whips',
   yoyos: 'Only worth it if you use yoyos',
+  tedious: 'Difficult or tedious to get at this stage',
+  risky: 'Difficult or risky to use, and needs boss preparation',
+  'crowd-control': 'Best for crowd control, such as events or worm bosses',
+  support: 'Debuffs enemies or benefits the player, rather than dealing the damage itself',
+  upgradeable: 'Variants and upgrades of this are also viable',
+  'calamity-changed': 'Calamity changes how this works',
+  pairs: 'Meant to be used together with another item',
+};
+/* The two packs tag accessories from different sources and the sets do not
+   overlap, so each shows only its own key - a Calamity reader has no use for
+   "Crimson worlds only" and a vanilla reader has none for "Changed". */
+const PACK_MARKERS: Record<string, readonly string[]> = {
+  vanilla: ['expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos'],
+  calamity: ['tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
+    'calamity-changed', 'pairs'],
 };
 
 /** Class-specific categories are noise on the other three classes' pages. */
@@ -213,15 +332,17 @@ function visibleCategories(item: Item, activeClass: string): string[] {
 }
 
 function AccCell({
-  item, demonHeart, activeClass, difficulty, onOpen,
+  item, alts = [], demonHeart, activeClass, difficulty, onOpen,
 }: {
-  item: Item | null; demonHeart?: boolean; activeClass: string;
+  item: Item | null; alts?: Item[]; demonHeart?: boolean; activeClass: string;
   difficulty: DifficultyFilter; onOpen: (i: Item) => void;
 }) {
   if (!item) {
     return (
-      <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
-        <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
+      <div className={styles.accCell}>
+        <div className={`${styles.accSlot} pixel-frame pixel-hollow ${styles.accEmpty} ${demonHeart ? styles.accDemon : ''}`}>
+          <span className={styles.accSlotHint}>{demonHeart ? 'Demon Heart' : 'Open'}</span>
+        </div>
       </div>
     );
   }
@@ -229,20 +350,28 @@ function AccCell({
   const cats = visibleCategories(item, activeClass);
   const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty);
+  /* The cell is the primary card plus, when the guide offers a swap, an "or" and
+     a smaller card beneath it - both outside the primary's frame, so the pick
+     itself stays one clean card.
+
+     The card is a div rather than a button because the alternative is its own
+     control and a button cannot contain one. The primary fills the card, so it
+     still reads as a single hit target. */
   return (
-    <button
-      type="button"
+    <div className={styles.accCell}>
+    <div
       className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''} ${locked ? styles.locked : ''}`}
       title={locked ? 'Not obtainable in a Classic world' : undefined}
-      onClick={() => onOpen(item)}
     >
-      <img
-        src={local} alt="" aria-hidden="true"
-        className={`${styles.accSlotImg} pixel-img`}
-        width="28" height="28" loading="lazy"
-        onError={makeErrorHandler(wiki, FALLBACK_ICON)}
-      />
-      <span className={styles.accSlotName}>{item.name}</span>
+      <button type="button" className={styles.accMain} onClick={() => onOpen(item)}>
+        <img
+          src={local} alt="" aria-hidden="true"
+          className={`${styles.accSlotImg} pixel-img`}
+          width="28" height="28" loading="lazy"
+          onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+        />
+        <span className={styles.accSlotName}>{item.name}</span>
+      </button>
 
       {(cats.length > 0 || item.quality || markers.length > 0) && (
         <span className={styles.accTags}>
@@ -263,7 +392,37 @@ function AccCell({
           ))}
         </span>
       )}
-    </button>
+
+    </div>
+
+    {/* "Sandstorm in a Bottle / Fledgling Wings" in the guide is one slot with
+        two interchangeable picks, so the alternative hangs off its primary
+        rather than spending a slot of its own. It sits outside the primary's
+        frame as a miniature of it - icon and name on one line - with "or"
+        between, so the two read as the choice the guide is offering. */}
+    {alts.map((alt) => {
+      const altImg = iconSrcs(alt.icon, alt.wikiUrl);
+      return (
+        <Fragment key={alt.id}>
+          <span className={styles.accOr}>or</span>
+          <button
+            type="button"
+            className={`${styles.accAlt} pixel-frame pixel-hollow`}
+            title={alt.name}
+            onClick={() => onOpen(alt)}
+          >
+            <img
+              src={altImg.local} alt="" aria-hidden="true"
+              className={`${styles.accAltImg} pixel-img`}
+              width="16" height="16" loading="lazy"
+              onError={makeErrorHandler(altImg.wiki, FALLBACK_ICON)}
+            />
+            <span className={styles.accAltName}>{alt.name}</span>
+          </button>
+        </Fragment>
+      );
+    })}
+    </div>
   );
 }
 
@@ -312,22 +471,100 @@ function PoolRow(
 }
 
 /** Key to the accessory tags, so the colours mean something on first read. */
-function AccLegend() {
+function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
+  const markers = PACK_MARKERS[packId] ?? [];
   return (
     <div className={styles.accLegend}>
       <span className={styles.accLegendLabel}>Tags</span>
-      {(['mobility', 'offense', 'survivability'] as const).map((c) => (
+      {(['primary-mobility', 'extra-mobility', 'all-around',
+        'offense', 'survivability'] as const).map((c) => (
         <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
           {CATEGORY_LABEL[c]}
         </span>
       ))}
-      <span className={styles.accLegendSep} aria-hidden="true" />
-      {(['great', 'good', 'fine'] as const).map((q) => (
-        <span key={q} className={`${styles.accQuality} ${styles[`q_${q}`]}`}>{q}</span>
-      ))}
+      {/* Calamity's guide grades nothing, so the grade key would be three
+          swatches a Calamity reader never sees on an item. */}
+      {hasQuality && (
+        <>
+          <span className={styles.accLegendSep} aria-hidden="true" />
+          {(['great', 'good', 'fine'] as const).map((q) => (
+            <span key={q} className={`${styles.accQuality} ${styles[`q_${q}`]}`}>{q}</span>
+          ))}
+        </>
+      )}
+      {markers.length > 0 && (
+        <>
+          <span className={styles.accLegendSep} aria-hidden="true" />
+          {markers.map((m) => (
+            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+              {MARKER_LABEL[m]}
+            </span>
+          ))}
+        </>
+      )}
       <span className={styles.accLegendNote}>
         class tags show on that class only
       </span>
+    </div>
+  );
+}
+
+/* ── Accessory reforges ──
+   Calamity is not vanilla here: it adds four modifiers of its own and retunes
+   several existing ones, so showing vanilla's four on a Calamity loadout would
+   be wrong rather than merely incomplete. Two of the new ones belong to a
+   single class and are gated the same way the class tags are. */
+interface Reforge { name: string; stat: string; note: string; onlyClass?: string }
+interface ReforgeSet { intro: string; list: Reforge[]; href: string; label: string }
+
+/* Keyed by pack id. Typed with an explicit `vanilla` key rather than a bare
+   Record, so the fallback below is a value the compiler knows exists:
+   noUncheckedIndexedAccess makes every Record lookup possibly-undefined, which
+   `?? REFORGES.vanilla` does not resolve when that is also an index lookup. */
+const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
+  vanilla: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is the default. Swap to Menacing or Lucky once you can dodge reliably.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+    ],
+    href: 'https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding',
+    label: 'Menacing vs Lucky vs Warding on the wiki',
+  },
+  calamity: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds four modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit, +0.05 luck', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+      { name: 'Silent', stat: '+8% stealth regen', note: 'Calamity only, and only useful to rogue', onlyClass: 'rogue' },
+      { name: 'Friendly', stat: '+1 minion', note: 'Calamity only, and only useful to summoner', onlyClass: 'summoner' },
+      { name: 'Dauntless', stat: '+20 max life', note: 'Calamity only' },
+      { name: 'Invigorating', stat: '+0.25 HP/s regen', note: 'Calamity only' },
+    ],
+    href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
+    label: 'Calamity modifier table on the wiki',
+  },
+};
+
+function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: string }) {
+  const pack = REFORGES[packId] ?? REFORGES.vanilla;
+  const list = pack.list.filter((r) => !r.onlyClass || r.onlyClass === activeClass);
+  return (
+    <div className={styles.reforgeBlock}>
+      <div className={styles.reforgeLabel}>Accessory reforges</div>
+      <p className={styles.reforgeIntro}>{pack.intro}</p>
+      <ul className={styles.reforgeList}>
+        {list.map((r) => (
+          <li key={r.name}><b>{r.name}</b> <span>{r.stat}</span> {r.note}</li>
+        ))}
+      </ul>
+      <p className={styles.reforgeMore}>
+        <a href={pack.href} rel="noopener noreferrer" target="_blank">{pack.label}</a>
+      </p>
     </div>
   );
 }
@@ -358,8 +595,8 @@ function BuffCell(
 }
 
 export function Loadouts() {
-  const { difficulty, classId } = useAppState();
-  const { classes, phases, loadouts, bosses } = usePack();
+  const { difficulty, setDifficulty, classId } = useAppState();
+  const { id: packId, classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
@@ -377,6 +614,15 @@ export function Loadouts() {
     pid in PHASE_BOSS
       ? PHASE_BOSS[pid]
       : (bosses.find((b) => b.stage === pid && !b.side)?.id ?? bosses.find((b) => b.stage === pid)?.id ?? '');
+  /* A pack can ship its own phase art. Calamity's comes from the icons its
+     guide puts beside each phase heading, so the timeline shows Cryogen and
+     the Devourer of Gods rather than borrowing vanilla's boss sprites. */
+  const phaseIconSrc = (pid: string) => {
+    const def = phases.find((p) => p.id === pid);
+    return def?.bossIcon
+      ? `${BASE}icons/phases/${def.bossIcon}.png`
+      : `${BASE}icons/bosses/${phaseBossIcon(pid)}.png`;
+  };
 
   const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
   const classDef = classes.find((c) => c.id === activeClassId)!;
@@ -384,7 +630,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
+  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
@@ -392,9 +638,22 @@ export function Loadouts() {
   // Only offer subclasses that actually have a weapon this phase - e.g. there are
   // no Launchers before Hardmode. A stored subclass that isn't available here (or
   // no longer exists at all) falls back to "Overview" rather than showing an empty list.
+  /* The wiki types most weapons but not all - it calls a dozen Calamity items
+     simply "a rogue weapon" with no family. Those match no chip, so without
+     this they appear in no filtered view at all and look missing. An "Other"
+     chip is added when the phase has any, which is honest about the wiki
+     having no category rather than inventing one for them. */
+  const OTHER_SUB = 'other';
+  const hasUntyped = safeLoadout.weapons.some((w) => !w.subclass);
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
+  if (hasUntyped && availableSubclasses.length > 0) {
+    availableSubclasses.push({
+      id: OTHER_SUB, name: 'Other',
+      description: 'Weapons the wiki does not place in a family.',
+    });
+  }
   const hasSubclasses = availableSubclasses.length > 0;
   const validSubclasses = new Set(availableSubclasses.map((s) => s.id));
   const activeSubclasses = new Set(
@@ -404,7 +663,12 @@ export function Loadouts() {
   // the full best/good/other split rather than only best-in-slot.
   const showingAll = hasSubclasses && activeSubclasses.size === 0;
 
-  const matchSub = (w: Item) => !hasSubclasses || showingAll || !w.subclass || activeSubclasses.has(w.subclass);
+  /* An uncategorised weapon belongs to no chip, so it appears only when no chip
+     is active. It used to pass every filter, which put items like the Rod of
+     Discord under Daggers, Bombs and Javelins at once. */
+  const matchSub = (w: Item) =>
+    !hasSubclasses || showingAll
+    || (w.subclass ? activeSubclasses.has(w.subclass) : activeSubclasses.has(OTHER_SUB));
 
   /* Read in the same order as the toggles above: a summoner's toggles run
      Minions, Whips, Sentries, so its picks should too. Anything without a
@@ -421,26 +685,64 @@ export function Loadouts() {
    * that table. Calling the first row "Recommended" would assert a judgement
    * nothing made, so those are presented as an unranked list instead.
    */
-  const ranked = safeLoadout.weapons.some((w) => w.why);
+  /* Vanilla's loadouts are hand-curated, so "Recommended" and "Also Great"
+     mean something there. Calamity's come from the guide's class-setup
+     columns, where order is layout, not judgement - and `why` survives on
+     some entries and not others, so this flipped between phases: Pre-Skeletron
+     read "Options" and Pre-Mech "Recommended" for no reason a reader could
+     see. One unranked list across every Calamity phase instead. */
+  const ranked = packId !== 'calamity' && safeLoadout.weapons.some((w) => w.why);
 
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
-  const filteredBest = inScope.filter((w) => w.tier === 'best');
-  const filteredAlso = showingAll ? [] : inScope.filter((w) => w.tier === 'good');
-  const filteredRest = showingAll ? [] : inScope.filter((w) => w.tier === 'other');
+  const bestTier = inScope.filter((w) => w.tier === 'best');
+  /* Top Picks aims for at least three weapons. One pick per subclass leaves
+     phases where a class has only one or two on-tier families showing a single
+     card, which reads as "this is your only option" rather than a shortlist.
+     The top-up keeps the list's own order, so the added cards are the next
+     best rather than an arbitrary pick. */
+  const filteredBest = showingAll && bestTier.length < MIN_TOP_PICKS
+    ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
+      .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
+    : bestTier;
+  /* Inside a subclass the tiers are re-derived from position in that subclass,
+     not carried over from the whole class. `tier` only ever recorded a row's
+     place in the guide's column, so filtering to one family could leave every
+     weapon in it below "best": Pre-Mech projectile melee showed no
+     Recommended, no Also great, and "Show 2 others", and any subclass holding
+     a single weapon filed it under "Also great". Re-ranking in scope means the
+     first weapon of a family is its recommendation, and a family of one shows
+     exactly one card. */
+  const scopedBest = showingAll ? filteredBest : inScope.slice(0, 1);
+  const filteredAlso = showingAll ? [] : inScope.slice(1, 3);
+  const filteredRest = showingAll ? [] : inScope.slice(3);
 
   // Unranked: one flat list, so no tier reads as a recommendation.
-  const unrankedShown = showingAll ? filteredBest : [...filteredBest, ...filteredAlso];
+  const unrankedShown = showingAll ? filteredBest : inScope.slice(0, 3);
   const unrankedRest = filteredRest;
 
-  const groupedArmor = curateArmor(groupArmor(safeLoadout.armor));
+  const groupedArmor = curateArmor(groupArmor(safeLoadout.armor, packId === 'vanilla'));
   const armorSprite = groupedArmor[0]?.icon;
   const armorImg = armorSprite ? iconSrcs(armorSprite) : null;
 
-  // Accessory slots: always 5, plus a 6th "Demon Heart" slot in Expert/Master hardmode.
+  /* Five slots, plus the two the game hands out.
+   *
+   * Demon Heart: Wall of Flesh treasure bag, so hardmode onward - and bags are
+   * Expert-and-above, in Calamity too. Its own Treasure Bag page is headed
+   * "Expert Mode-Only Content", and no config option changes that.
+   *
+   * Celestial Onion: Calamity's, dropped by the Moon Lord. Not Expert-gated the
+   * way the Demon Heart is - in Classic, where the Demon Heart cannot be had,
+   * the Onion grants the sixth slot instead of the seventh. It does nothing in
+   * Master, which this filter does not model.
+   *
+   * So Expert runs 5 -> 6 at hardmode -> 7 post-Moon Lord, which is what the
+   * class guides equip, and Classic runs 5 -> 6 post-Moon Lord.
+   */
   const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
-  const slotCount = demonHeartUnlocked ? 6 : 5;
+  const onionUnlocked = packId === 'calamity' && CALAMITY_POST_ML.has(activePhaseId);
+  const slotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
 
   /*
    * In Classic, an Expert-only pick is not a recommendation - it is a slot the
@@ -450,32 +752,96 @@ export function Loadouts() {
    * sandbox's own grading, so the replacement is the next best thing and not
    * merely the next thing.
    */
+  /* An alternative never competes for a slot - it belongs to the pick it is an
+     alternative to, and is rendered under it. Held out here so every downstream
+     step (substitution, ordering, the slot cap) sees only real slot holders. */
+  const altsBy = new Map<string, Item[]>();
+  for (const a of safeLoadout.accessories) {
+    if (!a.altOf) continue;
+    altsBy.set(a.altOf, [...(altsBy.get(a.altOf) ?? []), a]);
+  }
+  const slotHolders = safeLoadout.accessories.filter((a) => !a.altOf);
+
+  /* An unobtainable pick is not a recommendation - it is a slot the world cannot
+     fill - so it is replaced rather than shown greyed. Two things this gets
+     right that appending replacements did not:
+       - the slot keeps its position, so the guide's order survives a swap
+       - the guide's own alternative for that slot is tried first, which is a far
+         better answer than the next pool entry: the pair is there precisely
+         because either fills the slot
+     Only then does it fall back to the pool, preferring the same category so a
+     defensive slot is replaced by something defensive. */
+  const substitutions: { original: Item; replacement: Item }[] = [];
   const accessories = ((): Item[] => {
-    const usable = safeLoadout.accessories.filter((a) => isObtainable(a, difficulty));
-    if (usable.length === safeLoadout.accessories.length) return safeLoadout.accessories;
-
-    const dropped = safeLoadout.accessories.filter((a) => !isObtainable(a, difficulty));
-    const taken = new Set(usable.map((a) => a.name));
+    if (slotHolders.every((a) => isObtainable(a, difficulty))) return slotHolders;
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
+    /* Boots, wings and balloons do not stack - a build wants one of each at
+       most - so a substitute must not double up a family already equipped.
+       Replacing an Expert-only Shield of Cthulhu next to Terraspark Boots and
+       Fairy Wings should reach for a Panic Necklace or Magiluminescence, not a
+       second pair of wings. Anything outside these families (emblems, bands,
+       necklaces) returns null and is never treated as a duplicate. */
+    const family = (name: string): string | null => {
+      if (/\bboots\b|\btreads\b/i.test(name)) return 'boots';
+      // flight is not always spelled "Wings": Jetpack, Hoverboard and the
+      // Celestial Starboard are wing substitutes and stack with none of them.
+      if (/\bwings\b|starboard|jetpack|hoverboard/i.test(name)) return 'flight';
+      // Bottles (extra jump) and balloons (jump height) are separate families -
+      // Cloud in a Bottle and a Shiny Red Balloon stack, and the guide equips
+      // both, so only balloon-vs-balloon or bottle-vs-bottle is a true duplicate.
+      if (/balloon/i.test(name)) return 'balloon';
+      if (/\bbottle\b/i.test(name)) return 'bottle';
+      return null;
+    };
+    /* Seeded with the alternatives too, not just the holders: an alternative is
+       already on screen under its pick, so promoting it into another slot showed
+       the same accessory twice - Fledgling Wings sat under the balloon and again
+       where the Shield of Cthulhu had been. */
+    const taken = new Set([
+      ...slotHolders.filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
+      ...[...altsBy.values()].flat()
+        .filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
+    ]);
+    /* Families already covered, seeded from every obtainable holder up front -
+       not just the ones processed so far - so a wing substituted for slot 3 still
+       sees the wings the guide equips in slot 6. */
+    const covered = new Set(
+      slotHolders.filter((a) => isObtainable(a, difficulty))
+        .map((a) => family(a.name)).filter(Boolean) as string[],
+    );
+    const out: Item[] = [];
+    for (const holder of slotHolders) {
+      if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
 
-    const out = [...usable];
-    for (let i = 0; i < dropped.length && out.length < slotCount; i += 1) {
-      // A category the build already covers is a poor swap: replacing the
-      // Shield of Cthulhu with Lightning Boots next to equipped Spectre Boots
-      // spends a slot on the same upgrade line. Uncovered categories rank
-      // first, then the sandbox's own grade.
-      const covered = new Set(out.flatMap((a) => a.categories ?? []));
-      const pick = safeLoadout.accessoryPool
+      const ownAlt = (altsBy.get(holder.name) ?? [])
+        .find((a) => isObtainable(a, difficulty) && !taken.has(a.name));
+      const wanted = new Set(holder.categories ?? []);
+      const pick = ownAlt ?? safeLoadout.accessoryPool
         .flatMap((g) => g.items)
         .filter((it) => !taken.has(it.name) && !it.isGroup && !it.tedious
           && isObtainable(it, difficulty))
         .sort((a, b) => {
-          const ac = (a.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
-          const bc = (b.categories ?? []).some((c) => covered.has(c)) ? 1 : 0;
-          return ac - bc || rank(a.quality) - rank(b.quality);
+          /* Movement families are the wrong answer when the build already has
+             its boots, wings and jump: the reader wanted their Expert pick, not
+             a third movement item. So a utility or survivability accessory (a
+             Panic Necklace, Band of Regeneration, Magiluminescence) always beats
+             a spare movement item, and a movement item that *duplicates* a family
+             already worn is worse still. Non-movement items score 0, a fresh
+             movement family 1, a duplicate one 2. */
+          const cost = (name: string) => {
+            const f = family(name);
+            if (!f) return 0;
+            return covered.has(f) ? 2 : 1;
+          };
+          const am = (a.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
+          const bm = (b.categories ?? []).some((c) => wanted.has(c)) ? 0 : 1;
+          return cost(a.name) - cost(b.name) || am - bm || rank(a.quality) - rank(b.quality);
         })[0];
-      if (!pick) break;
+      if (!pick) continue;
       taken.add(pick.name);
+      const pf = family(pick.name);
+      if (pf) covered.add(pf);
+      substitutions.push({ original: holder, replacement: pick });
       out.push(pick);
     }
     return out;
@@ -484,22 +850,74 @@ export function Loadouts() {
   /* Fixed reading order for the slots: mobility, survivability, offense, then
      the class's own. An accessory in two categories takes the earliest one, so
      the Celestial Shell (offense + survivability) sits with survivability. */
-  const CAT_ORDER = ['mobility', 'survivability', 'offense'] as const;
+  const CAT_ORDER = ['primary-mobility', 'mobility', 'extra-mobility',
+    'all-around', 'survivability', 'offense'] as const;
   const catRank = (it: Item) => {
     const cats = it.categories ?? [];
     const generic = CAT_ORDER.findIndex((c) => (cats as readonly string[]).includes(c));
     if (generic >= 0) return generic;
     return cats.length > 0 ? CAT_ORDER.length : CAT_ORDER.length + 1;
   };
-  const ordered = [...accessories].sort((a, b) => catRank(a) - catRank(b));
-  const accSlots = Array.from({ length: slotCount }, (_, i) => ordered[i] ?? null);
+  /* Calamity's loadouts are transcribed from the class guides, which order the
+     five deliberately - boots, then the flight slot, then offence, then defence -
+     so re-sorting them by category threw that away and put wings above boots.
+     Vanilla's are not ordered that way, so they keep the category sort. */
+  const ordered = packId === 'calamity'
+    ? accessories
+    : [...accessories].sort((a, b) => catRank(a) - catRank(b));
+  /* Guarantee a mobility pick in the slots. Sorting by category puts mobility
+     first, but a loadout listing more accessories than it has slots can still
+     push it past the last one - and a build with no movement accessory reads
+     as advice, not an oversight. If none made the cut, pull the best mobility
+     option from the pool into the final slot. */
+  /* At most one primary-mobility item. The guide lists every primary-mobility
+     option together - Betsy's Wings, Empress Wings and Fishron Wings are three
+     ways to fill one slot, not three slots - so taking them in order equipped
+     three pairs of wings at Pre-Moon Lord and four movement items at
+     Pre-Polterghast. Everything else is left in order. */
+  const PRIMARY = 'primary-mobility';
+  const shown: Item[] = [];
+  let primaryUsed = false;
+  for (const a of ordered) {
+    if (shown.length >= slotCount) break;
+    const isPrimary = (a.categories ?? []).includes(PRIMARY);
+    if (isPrimary && primaryUsed) continue;
+    if (isPrimary) primaryUsed = true;
+    shown.push(a);
+  }
+  const MOVEMENT = ['mobility', PRIMARY, 'extra-mobility'];
+  if (!shown.some((a) => (a.categories ?? []).some((c) => MOVEMENT.includes(c)))) {
+    const names = new Set(shown.map((a) => a.name));
+    const mob = [...accessories, ...safeLoadout.accessoryPool.flatMap((g) => g.items)]
+      .find((it) => (it.categories ?? []).some((c) => MOVEMENT.includes(c))
+        && !names.has(it.name) && !it.isGroup && isObtainable(it, difficulty));
+    if (mob) shown.splice(Math.max(0, slotCount - 1), 1, mob);
+  }
+  const accSlots = Array.from({ length: slotCount }, (_, i) => shown[i] ?? null);
 
-  /* The pool was filtered against the equipped list when the data was built, so
-     anything promoted into a slot just now would otherwise appear twice. */
-  const equippedNames = new Set(accessories.map((a) => a.name));
+  /* This is the only place that knows the final equipped list - it includes
+     whatever the Classic substitution promoted into a slot a moment ago - so
+     the pool is de-duplicated here rather than in the data. Calamity's pool is
+     written unfiltered for exactly that reason.
+
+     Deliberately keyed on the slots rather than on `accessories`: a loadout can
+     list more accessories than there are slots (Calamity's Pre-Boss rogue lists
+     twelve), and those past the last slot are not rendered. Excluding the whole
+     list dropped them from "other options" as well, so they appeared nowhere at
+     all - which is why the button read "(1)" on a phase the guide gives a dozen
+     picks for. */
+  /* An alternative shown under its slot counts as equipped for this purpose -
+     it is already on screen, so repeating it under "other options" would list
+     the same pick twice. */
+  const equippedNames = new Set(accSlots.filter(Boolean).flatMap(
+    (a) => [a!.name, ...(altsBy.get(a!.name) ?? []).map((x) => x.name)],
+  ));
   const accessoryPool = safeLoadout.accessoryPool
     .map((g) => ({ ...g, items: g.items.filter((it) => !equippedNames.has(it.name)) }))
     .filter((g) => g.items.length > 0);
+  const poolHasQuality = safeLoadout.accessoryPool
+    .some((g) => g.items.some((it) => it.quality))
+    || accessories.some((a) => a.quality);
 
 
   return (
@@ -545,7 +963,7 @@ export function Loadouts() {
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
                 <span className={`${styles.wpDisc} pixel-frame pixel-circle`}>
                   <img
-                    src={`${BASE}icons/bosses/${phaseBossIcon(p.id)}.png`}
+                    src={phaseIconSrc(p.id)}
                     alt="" aria-hidden="true"
                     className={`${styles.wpIcon} pixel-img`}
                     width="30" height="30" loading="lazy"
@@ -561,21 +979,23 @@ export function Loadouts() {
         {/* Boss banner (re-mounts per phase to replay the slide-in) */}
         <div key={activePhaseId} className={`${styles.banner} pixel-frame`}>
           <img
-            src={`${BASE}icons/bosses/${phaseBossIcon(activePhaseId)}.png`}
+            src={phaseIconSrc(activePhaseId)}
             alt="" aria-hidden="true"
             className={`${styles.bannerIcon} pixel-img`}
             width="44" height="44"
             onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
           />
-          <div>
+          <div className={styles.bannerBody}>
             <span className={styles.bannerName}>{phaseName}</span>
-            {/* The first cue, not `triggeredBy`: that field just restates the
-                title ("Pre-Skeletron" → "Before Skeletron"), and the two packs
-                disagree on whether it names the phase's start or its end. A cue
-                answers the question the banner should - am I in this phase? */}
+            {/* The mod guide's own section intro where there is one - it says
+                what the phase opens up and what to do in it, which is what a
+                reader arriving at a phase wants. Falls back to a cue, then to
+                `triggeredBy`; the latter only restates the title
+                ("Pre-Skeletron" → "Before Skeletron"), so it is the last
+                resort rather than the first. */}
             {phaseDef && (
               <span className={styles.bannerHint}>
-                {phaseDef.cues[0] ?? phaseDef.triggeredBy}
+                {phaseDef.guideNote ?? phaseDef.cues[0] ?? phaseDef.triggeredBy}
               </span>
             )}
           </div>
@@ -615,11 +1035,11 @@ export function Loadouts() {
 
             {ranked ? (
               <>
-                {filteredBest.length > 0 && (
+                {scopedBest.length > 0 && (
                   <>
                     {!showingAll && <div className={styles.groupLabel}>Recommended</div>}
                     <div className={styles.weaponRow}>
-                      {filteredBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
+                      {scopedBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>
                   </>
                 )}
@@ -636,12 +1056,11 @@ export function Loadouts() {
             ) : (
               unrankedShown.length > 0 && (
                 <>
-                  <div className={styles.groupLabel}>
-                    Options
-                    <span className={styles.groupNote}>
-                      viable here, in no particular order
-                    </span>
-                  </div>
+                  {/* Top Picks is already a shortlist and says so, so a
+                      heading over the only group on screen is noise. Inside a
+                      subclass the heading separates it from the Tools list
+                      below, so it stays - without the note. */}
+                  {!showingAll && <div className={styles.groupLabel}>Options</div>}
                   <div className={styles.weaponRow}>
                     {unrankedShown.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                   </div>
@@ -668,8 +1087,24 @@ export function Loadouts() {
               </>
             )}
 
-            {filteredBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
+            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
+            )}
+
+            {/* Tools sit under the weapons, not among them: they belong to no
+                subclass, so they have no type pill and no filter chip, and
+                mixed into the list they read as picks the class had simply
+                failed to categorise. Shown whatever chip is active, since a
+                tool is useful to every build. */}
+            {safeLoadout.tools.length > 0 && (
+              <>
+                <div className={styles.groupLabel}>Support Items</div>
+                <div className={styles.weaponRow}>
+                  {safeLoadout.tools.map((w) => (
+                    <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
+                  ))}
+                </div>
+              </>
             )}
           </div>
             {/* Accessories sit under the weapons panel in the left column, so the
@@ -679,11 +1114,41 @@ export function Loadouts() {
               <span>Accessories</span>
               <span className={styles.em}>{slotCount} slots</span>
             </div>
+            {substitutions.length > 0 && (
+              /* The class guides recommend Expert-only picks (treasure-bag
+                 drops), so in a Classic world several are simply unobtainable.
+                 Rather than leave the reader wondering why their loadout differs
+                 from the guide, say what was swapped and offer the switch. The
+                 closing line is pack-aware: Calamity is explicitly balanced for
+                 Expert, where vanilla just notes what Expert unlocks. */
+              <div className={styles.classicNote}>
+                <p className={styles.classicNoteText}>
+                  <strong>Classic world:</strong> {substitutions.length}
+                  {substitutions.length === 1 ? ' pick is' : ' picks are'} Expert-only here, so
+                  {substitutions.length === 1 ? ' it has been' : ' they have been'} swapped for
+                  {substitutions.length === 1 ? ' something' : ' things'} a Classic world can get
+                  {' '}({substitutions.map((s2) => `${s2.original.name} → ${s2.replacement.name}`).join(', ')}).
+                  {packId === 'calamity'
+                    ? ' Calamity is balanced for Expert or above.'
+                    : ' Play in an Expert world to use the full guide.'}
+                </p>
+                <button
+                  type="button"
+                  className={`${styles.classicNoteBtn} pixel-frame`}
+                  onClick={() => setDifficulty('expert')}
+                >
+                  Switch to Expert
+                </button>
+              </div>
+            )}
             <div className={styles.accGrid}>
               {accSlots.map((acc, i) => (
                 <AccCell
                   key={acc?.id ?? `slot-${i}`}
                   item={acc}
+                  alts={acc
+                    ? (altsBy.get(acc.name) ?? []).filter((a) => isObtainable(a, difficulty))
+                    : undefined}
                   demonHeart={demonHeartUnlocked && i === 5}
                   activeClass={activeClassId}
                   difficulty={difficulty}
@@ -723,29 +1188,8 @@ export function Loadouts() {
                 )}
               </div>
             )}
-            <div className={styles.reforgeBlock}>
-            <div className={styles.reforgeLabel}>Accessory reforges</div>
-            <p className={styles.reforgeIntro}>
-              Reforge at the Goblin Tinkerer. <b>Warding</b> is the default. Swap
-              to Menacing or Lucky once you can dodge reliably.
-            </p>
-            <ul className={styles.reforgeList}>
-              <li><b>Warding</b> <span>+4 defense</span> survive more hits, best on most builds</li>
-              <li><b>Menacing</b> <span>+4% damage</span> most damage</li>
-              <li><b>Lucky</b> <span>+4% crit</span> better the higher your base damage</li>
-              <li><b>Quick</b> <span>+4% move speed</span> player movement only, try to avoid using</li>
-            </ul>
-            <p className={styles.reforgeMore}>
-              <a
-                href="https://terraria.wiki.gg/wiki/Modifiers#Menacing,_Lucky,_and_Warding"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Menacing vs Lucky vs Warding on the wiki
-              </a>
-            </p>
-            </div>
-            <AccLegend />
+            <ReforgeBlock packId={packId} activeClass={activeClassId} />
+            <AccLegend packId={packId} hasQuality={poolHasQuality} />
           </div>
 
           </div>
@@ -769,6 +1213,11 @@ export function Loadouts() {
                       title={isObtainable(a, difficulty) ? undefined : 'Not obtainable in a Classic world'}
                       onClick={() => setModalItem(a)}
                     >
+                      {/* One sprite per class, wearing that class's own helmet.
+                          The wiki's set image is a composite of every variant,
+                          sliced on the transparent gaps and mapped by the set's
+                          documented helmet order - the same method vanilla uses,
+                          which is why vanilla was right and this was not. */}
                       <div className={`${styles.armorDoll} pixel-frame`}>
                         <img
                           src={img.local} alt=""
@@ -799,11 +1248,64 @@ export function Loadouts() {
                           ))}
                         </div>
                       )}
-                      {(a.why || a.headpieceBonus) && (
-                        <div className={styles.armorPerk}>
-                          {[a.why, a.headpieceBonus].filter(Boolean).join(' ')}
-                        </div>
-                      )}
+                      {/* The set bonus leads, because it is what wearing the set
+                          actually does - "solid early defense" told a reader
+                          nothing, and for Calamity's retuned vanilla sets the
+                          inherited "No set bonus" was wrong outright. `why` is
+                          kept underneath as the guide's reason for picking it. */}
+                      {/* The set bonus leads: it is what wearing the set does.
+                          `why` stands in when there is no effect, so vanilla
+                          armour (no effect text) is not left with a blank card. */}
+                      {(() => {
+                        const effectBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
+                        const hpBullets = (a.headpieceBonus || '').split(' · ').filter(Boolean);
+                        if (!effectBullets.length && !hpBullets.length) return null;
+
+                        /* One capped list: the first three bullets, then a note
+                           that the rest is in the modal rather than truncating
+                           silently or running the card off the page. */
+                        const capped = (bullets: string[]) => {
+                          const shown = bullets.slice(0, ARMOR_EFFECT_LINES);
+                          const rest = bullets.length - shown.length;
+                          return (
+                            <>
+                              <ul className={styles.armorEffects}>
+                                {shown.map((line) => <li key={line}>{line}</li>)}
+                              </ul>
+                              {rest > 0 && (
+                                <div className={styles.armorMore}>
+                                  +{rest} more - click to see the full set bonus
+                                </div>
+                              )}
+                            </>
+                          );
+                        };
+
+                        /* A helmet-differentiating set (Reaver, Shroomite,
+                           Spectre) names no single headpiece - the reader picks
+                           between the helmet variations, so those bullets are the
+                           card's whole point and show in full under the shared
+                           set bonus. A set that does name this class's headpiece
+                           (Victide, Hallowed) is one set bonus for that class:
+                           the headpiece bonus leads, then the shared bonus,
+                           capped together at three with the rest in the modal -
+                           otherwise two lists of three showed six lines and never
+                           offered the "+N more" the modal is there for. */
+                        const differentiating = !a.headpiece && hpBullets.length > 0;
+                        if (differentiating) {
+                          return (
+                            <>
+                              {effectBullets.length > 0 && capped(effectBullets)}
+                              {hpBullets.length > 0 && (
+                                <ul className={styles.armorEffects}>
+                                  {hpBullets.map((line) => <li key={line}>{line}</li>)}
+                                </ul>
+                              )}
+                            </>
+                          );
+                        }
+                        return capped([...hpBullets, ...effectBullets]);
+                      })()}
                       </div>
                     </button>
                     );
@@ -826,8 +1328,11 @@ export function Loadouts() {
           {safeLoadout.ammo.length > 0 && (
             <div className={`${styles.invPanel} pixel-frame`}>
               <div className={styles.tlabel}><span>Ammo</span></div>
+              {/* Ammo is ordered by family - arrows, then bullets, then the
+                  rest - so like ammo sits together, but the family labels
+                  themselves are not shown: the grouping is enough. */}
               <div className={styles.ammoList}>
-                {safeLoadout.ammo.map((m) => {
+                {groupAmmo(safeLoadout.ammo).flatMap((group) => group.items).map((m) => {
                   const img = iconSrcs(m.icon);
                   return (
                     <button
@@ -850,7 +1355,6 @@ export function Loadouts() {
                           <span className={styles.ammoName}>{m.name}</span>
                           {m.stats && <span className={styles.ammoStat}>{m.stats}</span>}
                         </div>
-                        <div className={styles.ammoWhy}>{m.why}</div>
                       </div>
                     </button>
                   );
