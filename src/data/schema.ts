@@ -159,6 +159,21 @@ export const Item = z.object({
     'calamity-changed', 'pairs',
   ])).optional(),
   wikiUrl: z.string().url().optional(),
+  /**
+   * Sub-items collapsed into one entry. Some picks are really a family the
+   * player chooses within - the Calamity guide lists "Candles" once, but that
+   * is six placeable candles with different buffs (Resilient, Spiteful, …), and
+   * a reader wants to know which does what. Each variant carries its own icon
+   * and effect so the modal can list them; `group` lets the modal separate,
+   * say, mutually-exclusive combat candles from spawn-rate ones.
+   */
+  variants: z.array(z.object({
+    name: z.string(),
+    icon: z.string(),
+    effect: z.string(),
+    group: z.string().optional(),
+    wikiUrl: z.string().url().optional(),
+  })).optional(),
 });
 
 export const Loadout = z.object({

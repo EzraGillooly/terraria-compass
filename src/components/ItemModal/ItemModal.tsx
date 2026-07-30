@@ -138,6 +138,48 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             : <p className={styles.desc}>{parts}</p>;
         })()}
 
+        {/* An item that stands for a family (Candles) lists its members here,
+            each with its own sprite and effect. Grouped when the variants carry
+            a `group`, so mutually-exclusive combat candles read apart from the
+            spawn-rate ones - and the group is labelled so "pick one" is clear. */}
+        {item.variants && item.variants.length > 0 && (() => {
+          const GROUPS: { key: string; label: string }[] = [
+            { key: 'combat', label: 'Combat - place one, they do not stack' },
+            { key: 'spawn', label: 'Spawn control' },
+          ];
+          const grouped = item.variants!.some((v) => v.group);
+          const buckets = grouped
+            ? GROUPS
+              .map((g) => ({ ...g, items: item.variants!.filter((v) => v.group === g.key) }))
+              .filter((g) => g.items.length > 0)
+            : [{ key: 'all', label: '', items: item.variants! }];
+          return (
+            <div className={styles.variants}>
+              {buckets.map((b) => (
+                <div key={b.key} className={styles.variantGroup}>
+                  {b.label && <div className={styles.variantCap}>{b.label}</div>}
+                  <ul className={styles.variantList}>
+                    {b.items.map((v) => (
+                      <li key={v.name} className={styles.variant}>
+                        <span className={`${styles.variantSlot} pixel-frame`}>
+                          <img
+                            src={`${BASE}icons/${v.icon}`} alt="" aria-hidden="true"
+                            width="24" height="24" className="pixel-img" loading="lazy"
+                          />
+                        </span>
+                        <span className={styles.variantText}>
+                          <span className={styles.variantName}>{v.name}</span>
+                          <span className={styles.variantEffect}>{v.effect}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          );
+        })()}
+
         <div className={styles.kv}>
           {item.stats && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
