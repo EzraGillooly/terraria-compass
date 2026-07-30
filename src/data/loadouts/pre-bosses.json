@@ -3714,45 +3714,89 @@
     ],
     "accessories": [
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
         "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
+        "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "categories": [
           "magic"
         ],
+        "markers": [
+          "tank"
+        ],
         "materials": [
           {
-            "name": "Nature's Gift",
+            "name": "Celestial Magnet",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
           },
           {
-            "name": "Mana Potion",
+            "name": "Magic Cuffs",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "hermes-boots",
-        "name": "Hermes Boots",
+        "id": "pool-magnet-flower",
+        "name": "Magnet Flower",
         "slot": "accessory",
-        "icon": "accessories/hermes-boots.png",
-        "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "icon": "accessories/magnet-flower.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "categories": [
-          "mobility"
+          "magic"
         ],
-        "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Mana Flower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+          },
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-mana-regeneration-band",
+        "name": "Mana Regeneration Band",
+        "slot": "accessory",
+        "icon": "accessories/mana-regeneration-band.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases the player's max mana by 20 and the player's passive mana regeneration by 1 MP/s.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
+        "quality": "fine",
+        "materials": [
+          {
+            "name": "Band of Starpower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+          },
+          {
+            "name": "Band of Regeneration",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -3769,37 +3813,19 @@
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       },
       {
-        "id": "band-of-starpower",
-        "name": "Band of Starpower",
+        "id": "hermes-boots",
+        "name": "Hermes Boots",
         "slot": "accessory",
-        "icon": "accessories/band-of-starpower.png",
-        "source": "Found in Shadow Orbs / Crimson Hearts",
-        "why": "+20 max mana for early casters.",
+        "icon": "accessories/hermes-boots.png",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "corruption"
-        ],
-        "dropRate": "20%"
-      },
-      {
-        "id": "lucky-horseshoe",
-        "name": "Lucky Horseshoe",
-        "slot": "accessory",
-        "icon": "accessories/lucky-horseshoe.png",
-        "source": "Found in Skyware Chests and Sky Crates",
-        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
-        "tags": [],
-        "topPick": false,
+        "topPick": true,
         "categories": [
           "mobility"
         ],
-        "quality": "good",
-        "dropRate": "1/4 (25%)"
+        "quality": "great",
+        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       }
     ],
     "buffs": [
@@ -4192,6 +4218,20 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "lucky-horseshoe",
+            "name": "Lucky Horseshoe",
+            "slot": "accessory",
+            "icon": "accessories/lucky-horseshoe.png",
+            "source": "Found in Skyware Chests and Sky Crates",
+            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "dropRate": "1/4 (25%)"
           }
         ]
       },
@@ -4277,6 +4317,50 @@
               "magic"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nature's_Gift"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "band-of-starpower",
+            "name": "Band of Starpower",
+            "slot": "accessory",
+            "icon": "accessories/band-of-starpower.png",
+            "source": "Found in Shadow Orbs / Crimson Hearts",
+            "why": "+20 max mana for early casters.",
+            "tags": [],
+            "topPick": false,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+            "categories": [
+              "magic"
+            ],
+            "markers": [
+              "corruption"
+            ],
+            "dropRate": "20%"
           }
         ]
       }

@@ -3806,20 +3806,26 @@
     ],
     "accessories": [
       {
-        "id": "sorcerer-emblem",
+        "id": "pool-sorcerer-emblem",
         "name": "Sorcerer Emblem",
         "slot": "accessory",
         "icon": "accessories/sorcerer-emblem.png",
-        "source": "Dropped by the Wall of Flesh",
-        "why": "The damage boost is immediate and efficient, which is exactly what mage wants from an early Hardmode accessory slot.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": true,
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases magic damage by 15%.",
+        "tags": [],
+        "topPick": false,
         "categories": [
           "magic"
         ],
-        "dropRate": "25%"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+        "materials": [
+          {
+            "name": "Ranger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
         "id": "celestial-cuffs",
@@ -3827,7 +3833,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Mana on hit plus better star pickup smooths out one of mage's biggest pain points during long boss attempts.",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3851,27 +3857,75 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
+        "id": "mana-cloak",
+        "name": "Mana Cloak",
         "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Auto-potion support keeps your spell uptime higher and reduces how often you get punished while juggling resources.",
-        "tags": [],
+        "icon": "accessories/mana-cloak.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Auto mana potions plus a defensive star burst when you take a hit.",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
         "categories": [
           "magic"
         ],
         "materials": [
           {
-            "name": "Nature's Gift",
+            "name": "Mana Flower",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           },
           {
-            "name": "Mana Potion",
+            "name": "Star Cloak",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -3903,53 +3957,6 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
-        "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped by the Eye of Cthulhu in Expert worlds.",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "markers": [
-          "expert"
-        ],
-        "quality": "good",
-        "expertOnly": true,
-        "dropRate": "100%"
       }
     ],
     "buffs": [
@@ -4397,6 +4404,33 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Turtle_Shell",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -4515,6 +4549,89 @@
                 "name": "Star Cloak",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-magnet-flower",
+            "name": "Magnet Flower",
+            "slot": "accessory",
+            "icon": "accessories/magnet-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Celestial Magnet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "arcane-flower",
+            "name": "Arcane Flower",
+            "slot": "accessory",
+            "icon": "accessories/arcane-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "8% reduced mana cost, auto mana potions, and enemies are less likely to target you.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Flower",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ]
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
             "station": "Tinkerer's Workshop"

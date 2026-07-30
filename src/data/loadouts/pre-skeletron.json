@@ -2159,49 +2159,20 @@
     ],
     "accessories": [
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
-        "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Auto-using mana potions makes mage much easier to pilot and keeps your attention on dodging.",
-        "tags": [],
-        "topPick": true,
-        "categories": [
-          "magic"
-        ],
-        "materials": [
-          {
-            "name": "Nature's Gift",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
-          },
-          {
-            "name": "Mana Potion",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-celestial-cuffs",
+        "id": "celestial-cuffs",
         "name": "Celestial Cuffs",
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Allows for the manual recovery of mana by taking damage, and also helps the player collect mana stars more easily.",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
         "tags": [],
         "topPick": false,
         "categories": [
           "magic"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
-        "quality": "great",
         "markers": [
           "tank"
         ],
-        "notes": "Celestial Cuffs are useful as mages in pre-Hardmode suffer much more from Mana Sickness. Using a Slime Statue or Spikes (with high enough defense) with this accessory can be viable, even into Hardmode under the right circumstances.",
         "materials": [
           {
             "name": "Celestial Magnet",
@@ -2217,70 +2188,116 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-band-of-regeneration",
-        "name": "Band of Regeneration",
+        "id": "pool-magnet-flower",
+        "name": "Magnet Flower",
         "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Gold Chests underground, or in Living Mahogany Trees",
-        "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+        "icon": "accessories/magnet-flower.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
         "tags": [],
         "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
-        "quality": "good"
-      },
-      {
-        "id": "band-of-starpower",
-        "name": "Band of Starpower",
-        "slot": "accessory",
-        "icon": "accessories/band-of-starpower.png",
-        "source": "Found in Shadow Orbs / Crimson Hearts",
-        "why": "+20 max mana for early casters.",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
         "categories": [
           "magic"
         ],
-        "markers": [
-          "corruption"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Mana Flower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+          },
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          }
         ],
-        "dropRate": "20%"
+        "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
+        "id": "pool-mana-regeneration-band",
+        "name": "Mana Regeneration Band",
         "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
+        "icon": "accessories/mana-regeneration-band.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+        "why": "Increases the player's max mana by 20 and the player's passive mana regeneration by 1 MP/s.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Band",
+        "quality": "fine",
+        "materials": [
+          {
+            "name": "Band of Starpower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+          },
+          {
+            "name": "Band of Regeneration",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "blue-horseshoe-balloon",
+        "name": "Blue Horseshoe Balloon",
+        "slot": "accessory",
+        "icon": "accessories/blue-horseshoe-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Double jump, increased jump height, and negates fall damage.",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
-        "quality": "great",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Cloud in a Balloon",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
+        ]
+      },
+      {
+        "id": "frostspark-boots",
+        "name": "Frostspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/frostspark-boots.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Flight, super-fast running, and mobility on ice.",
+        "tags": [
+          "hardmode"
         ],
-        "station": "Tinkerer's Workshop"
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Lightning Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots"
+          },
+          {
+            "name": "Ice Skates",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
+          }
+        ]
       }
     ],
     "buffs": [
@@ -2576,6 +2593,39 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2635,6 +2685,21 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good",
             "notes": "The Honey Comb's effect does not stack with any of its upgrades."
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -2750,6 +2815,50 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "band-of-starpower",
+            "name": "Band of Starpower",
+            "slot": "accessory",
+            "icon": "accessories/band-of-starpower.png",
+            "source": "Found in Shadow Orbs / Crimson Hearts",
+            "why": "+20 max mana for early casters.",
+            "tags": [],
+            "topPick": false,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
+            "categories": [
+              "magic"
+            ],
+            "markers": [
+              "corruption"
+            ],
+            "dropRate": "20%"
           }
         ]
       }

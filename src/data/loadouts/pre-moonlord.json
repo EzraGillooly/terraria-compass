@@ -2454,130 +2454,133 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "mana-flower",
-        "name": "Mana Flower",
+        "id": "pool-sorcerer-emblem",
+        "name": "Sorcerer Emblem",
         "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Auto-potions are still a major execution aid during the longest fights in the run.",
+        "icon": "accessories/sorcerer-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases magic damage by 15%.",
         "tags": [],
         "topPick": false,
         "categories": [
           "magic"
         ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
         "materials": [
           {
-            "name": "Nature's Gift",
+            "name": "Ranger Emblem",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
-          },
-          {
-            "name": "Mana Potion",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "fishron-wings",
-        "name": "Fishron Wings",
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
         "slot": "accessory",
-        "icon": "accessories/fishron-wings.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Flight, and faster movement in rain and water.",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
           "mobility"
-        ]
-      },
-      {
-        "id": "celestial-shell",
-        "name": "Celestial Shell",
-        "slot": "accessory",
-        "icon": "accessories/celestial-shell.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "All-round stats, plus werewolf at night and merfolk in water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense",
-          "survivability"
         ],
         "materials": [
           {
-            "name": "Celestial Stone",
+            "name": "Frostspark Boots",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
           },
           {
-            "name": "Moon Shell",
+            "name": "Lava Waders",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
+        "id": "empress-wings",
+        "name": "Empress Wings",
         "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "icon": "accessories/empress-wings.png",
+        "source": "Dropped by the Empress of Light",
+        "why": "Flight and slow fall, with an upward boost.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "survivability"
+          "mobility"
         ],
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "charm-of-myths",
-        "name": "Charm of Myths",
-        "slot": "accessory",
-        "icon": "accessories/charm-of-myths.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Steady life regen and a shorter healing-potion cooldown keep you topped up.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Band of Regeneration",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
-          },
-          {
-            "name": "Philosopher's Stone",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_Wings"
       }
     ],
     "buffs": [
@@ -2870,6 +2873,39 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "soaring-insignia",
+            "name": "Soaring Insignia",
+            "slot": "accessory",
+            "icon": "accessories/soaring-insignia.png",
+            "source": "Empress of Light Treasure Bag (Expert)",
+            "why": "Infinite flight, plus increased flight and jump mobility.",
+            "tags": [
+              "hardmode",
+              "expert-only"
+            ],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia",
+            "expertOnly": true
+          },
+          {
+            "id": "fishron-wings",
+            "name": "Fishron Wings",
+            "slot": "accessory",
+            "icon": "accessories/fishron-wings.png",
+            "source": "Dropped by Duke Fishron",
+            "why": "Flight, and faster movement in rain and water.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ]
           }
         ]
       },
@@ -3070,6 +3106,63 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-charm-of-myths",
+            "name": "Charm of Myths",
+            "slot": "accessory",
+            "icon": "accessories/charm-of-myths.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Combines the effects of a Philosopher's Stone with a Band of Regeneration:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Band of Regeneration",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration"
+              },
+              {
+                "name": "Philosopher's Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Philosopher%27s_Stone"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3256,6 +3349,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "celestial-shell",
+            "name": "Celestial Shell",
+            "slot": "accessory",
+            "icon": "accessories/celestial-shell.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "All-round stats, plus werewolf at night and merfolk in water.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense",
+              "survivability"
+            ],
+            "materials": [
+              {
+                "name": "Celestial Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+              },
+              {
+                "name": "Moon Shell",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3337,6 +3459,32 @@
                 "name": "Star Cloak",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
             "station": "Tinkerer's Workshop"

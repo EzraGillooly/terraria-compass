@@ -2993,6 +2993,28 @@
         "station": "Tinkerer's Workshop"
       },
       {
+        "id": "pool-sorcerer-emblem",
+        "name": "Sorcerer Emblem",
+        "slot": "accessory",
+        "icon": "accessories/sorcerer-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases magic damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem",
+        "materials": [
+          {
+            "name": "Ranger Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "celestial-cuffs",
         "name": "Celestial Cuffs",
         "slot": "accessory",
@@ -3017,89 +3039,6 @@
             "name": "Magic Cuffs",
             "qty": 1,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "mana-flower",
-        "name": "Mana Flower",
-        "slot": "accessory",
-        "icon": "accessories/mana-flower.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "materials": [
-          {
-            "name": "Nature's Gift",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
-          },
-          {
-            "name": "Mana Potion",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
-        "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Tattered Bee Wing",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity is a real quality-of-life and survivability gain once the Jungle starts stacking status effects.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -3131,6 +3070,62 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
+        "slot": "accessory",
+        "icon": "accessories/butterfly-wings.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Butterfly Dust",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ],
     "buffs": [
@@ -3449,6 +3444,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -3587,6 +3610,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -3693,6 +3745,60 @@
                 "name": "Ranger Emblem",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-magnet-flower",
+            "name": "Magnet Flower",
+            "slot": "accessory",
+            "icon": "accessories/magnet-flower.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Flower",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Mana Flower",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
+              },
+              {
+                "name": "Celestial Magnet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mana-flower",
+            "name": "Mana Flower",
+            "slot": "accessory",
+            "icon": "accessories/mana-flower.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "magic"
+            ],
+            "materials": [
+              {
+                "name": "Nature's Gift",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Nature%27s_Gift"
+              },
+              {
+                "name": "Mana Potion",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
             "station": "Tinkerer's Workshop"
