@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Loading } from './components/Loading';
 import { RouteError } from './components/RouteError';
@@ -19,8 +19,9 @@ const Crafting = lazyRoute(() => import('./pages/Crafting').then((m) => ({ defau
 const Materials = lazyRoute(() => import('./pages/Materials').then((m) => ({ default: m.Materials })));
 
 export default function App() {
+  const { pathname } = useLocation();
   return (
-    <RouteError>
+    <RouteError resetKey={pathname}>
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/"          element={<Home />} />
