@@ -251,7 +251,7 @@ export function Crafting() {
                 ‹ All trees
               </button>
               <div className={styles.treeTitle}>
-                <span className={styles.treeSlot}><Sprite node={root} size={40} /></span>
+                <span className={`${styles.treeSlot} pixel-frame`}><Sprite node={root} size={40} /></span>
                 <span>
                   <h2 className={styles.treeName}>{root.name}</h2>
                   <span className={styles.treeMeta}>
@@ -338,7 +338,7 @@ export function Crafting() {
                     className={`${styles.card} pixel-frame`}
                     onClick={() => setParams({ item: id })}
                   >
-                    <span className={styles.cardSlot}><Sprite node={node} size={40} /></span>
+                    <span className={`${styles.cardSlot} pixel-frame`}><Sprite node={node} size={40} /></span>
                     <span className={styles.cardName}>{node.name}</span>
                     <span className={styles.cardMeta}>
                       {shoppingList(id, nodes).length} material{shoppingList(id, nodes).length === 1 ? '' : 's'}

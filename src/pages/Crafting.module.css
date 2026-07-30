@@ -59,6 +59,16 @@
 .card::before, .card::after { transition: background .15s; }
 .card:hover { transform: translateY(-2px); --px-fill: rgba(22,32,58,.94); --px-border: var(--warm); }
 .cardSlot, .treeSlot, .slot, .matSlot { display: grid; place-items: center; flex: none; }
+/* The landing-card and tree-header sprite wells, boxed like the row wells so
+   every sprite on the page sits in the same kind of container. */
+.cardSlot {
+  width: 52px; height: 52px;
+  --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
+.treeSlot {
+  width: 52px; height: 52px;
+  --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.22);
+}
 .cardName { font-weight: 700; font-size: 13px; line-height: 1.2; color: #EAF0FF; text-align: center; }
 .cardMeta { font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; color: #A9BFDA; line-height: 1; }
 .notFound { color: #EAF0FF; font-size: 14px; margin: 0 0 18px; }
