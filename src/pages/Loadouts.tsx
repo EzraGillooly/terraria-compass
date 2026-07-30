@@ -1210,62 +1210,58 @@ export function Loadouts() {
                           nothing, and for Calamity's retuned vanilla sets the
                           inherited "No set bonus" was wrong outright. `why` is
                           kept underneath as the guide's reason for picking it. */}
-                      {(a.effect || a.why) && (() => {
-                        /* Capped at three lines. Victide lists eleven - one per
-                           headpiece - which buried the rest of the card. The
-                           full list is in the modal, so say so rather than
-                           truncating silently. */
-                        /* `why` when there is no effect: vanilla armour has
-                           no effect text, so keying on effect alone left every
-                           vanilla set with a blank card. */
-                        const all = (a.effect || a.why || '').split(' · ');
-                        const shown = all.slice(0, ARMOR_EFFECT_LINES);
-                        const rest = all.length - shown.length;
-                        return (
-                          <>
-                            <ul className={styles.armorEffects}>
-                              {shown.map((line) => <li key={line}>{line}</li>)}
-                            </ul>
-                            {rest > 0 && (
-                              <div className={styles.armorMore}>
-                                +{rest} more - click to see the full set bonus
-                              </div>
-                            )}
-                          </>
-                        );
-                      })()}
-                      {/* `why` is gone from here for the same reason it left the
-                          modal: with the real set bonus above it, it was either
-                          repeating it (Molten's "10% extra melee damage,
-                          immunity to fire blocks...") or contradicting it
-                          (Aerospec on melee read "primary class-specific
-                          summoner armor"). headpieceBonus stays - it names the
-                          bonus a specific helmet carries, which the set bonus
-                          does not. */}
-                      {/* Helmet differences read as bullets alongside the set
-                          bonus, not as a run of muted subtext - on an all-class
-                          set that is three helmets' worth of text and it came
-                          out as one grey blob. */}
-                      {a.headpieceBonus && (() => {
-                        /* Capped like the set bonus above it. Auric Tesla
-                           inherits four armours' bonuses and listed eleven
-                           lines here, which ran off the card - the full set is
-                           in the modal, so cap and say so rather than flood. */
-                        const all = a.headpieceBonus.split(' · ');
-                        const shown = all.slice(0, ARMOR_EFFECT_LINES);
-                        const rest = all.length - shown.length;
-                        return (
-                          <>
-                            <ul className={styles.armorEffects}>
-                              {shown.map((line) => <li key={line}>{line}</li>)}
-                            </ul>
-                            {rest > 0 && (
-                              <div className={styles.armorMore}>
-                                +{rest} more - click to see the full set bonus
-                              </div>
-                            )}
-                          </>
-                        );
+                      {/* The set bonus leads: it is what wearing the set does.
+                          `why` stands in when there is no effect, so vanilla
+                          armour (no effect text) is not left with a blank card. */}
+                      {(() => {
+                        const effectBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
+                        const hpBullets = (a.headpieceBonus || '').split(' · ').filter(Boolean);
+                        if (!effectBullets.length && !hpBullets.length) return null;
+
+                        /* One capped list: the first three bullets, then a note
+                           that the rest is in the modal rather than truncating
+                           silently or running the card off the page. */
+                        const capped = (bullets: string[]) => {
+                          const shown = bullets.slice(0, ARMOR_EFFECT_LINES);
+                          const rest = bullets.length - shown.length;
+                          return (
+                            <>
+                              <ul className={styles.armorEffects}>
+                                {shown.map((line) => <li key={line}>{line}</li>)}
+                              </ul>
+                              {rest > 0 && (
+                                <div className={styles.armorMore}>
+                                  +{rest} more - click to see the full set bonus
+                                </div>
+                              )}
+                            </>
+                          );
+                        };
+
+                        /* A helmet-differentiating set (Reaver, Shroomite,
+                           Spectre) names no single headpiece - the reader picks
+                           between the helmet variations, so those bullets are the
+                           card's whole point and show in full under the shared
+                           set bonus. A set that does name this class's headpiece
+                           (Victide, Hallowed) is one set bonus for that class:
+                           the headpiece bonus leads, then the shared bonus,
+                           capped together at three with the rest in the modal -
+                           otherwise two lists of three showed six lines and never
+                           offered the "+N more" the modal is there for. */
+                        const differentiating = !a.headpiece && hpBullets.length > 0;
+                        if (differentiating) {
+                          return (
+                            <>
+                              {effectBullets.length > 0 && capped(effectBullets)}
+                              {hpBullets.length > 0 && (
+                                <ul className={styles.armorEffects}>
+                                  {hpBullets.map((line) => <li key={line}>{line}</li>)}
+                                </ul>
+                              )}
+                            </>
+                          );
+                        }
+                        return capped([...hpBullets, ...effectBullets]);
                       })()}
                       </div>
                     </button>
