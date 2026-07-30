@@ -341,52 +341,22 @@
     ],
     "accessories": [
       {
-        "id": "obsidian-shield",
-        "name": "Obsidian Shield",
+        "id": "feral-claws",
+        "name": "Feral Claws",
         "slot": "accessory",
-        "icon": "accessories/obsidian-shield.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Knockback immunity, fire block immunity and 2 defense.",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
         "tags": [],
-        "topPick": true,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Cobalt Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
-          },
-          {
-            "name": "Obsidian Skull",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Dropped from the Eye of Cthulhu treasure bag",
-        "why": "Expert Mode only. Gives a dash that also damages enemies and grants brief invulnerability.",
-        "tags": [
-          "expert-only"
-        ],
         "topPick": false,
         "categories": [
-          "mobility"
+          "melee",
+          "summon"
         ],
         "markers": [
-          "expert"
+          "whips"
         ],
-        "quality": "great",
-        "expertOnly": true,
-        "dropRate": "100%"
+        "dropRate": "19/100 (19%)"
       },
       {
         "id": "magma-stone",
@@ -404,81 +374,78 @@
         "dropRate": "0.67%"
       },
       {
-        "id": "pool-shark-tooth-necklace",
-        "name": "Shark Tooth Necklace",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
-        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-        "quality": "great",
-        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
-      },
-      {
-        "id": "pool-lightning-boots",
-        "name": "Lightning Boots",
-        "slot": "accessory",
-        "icon": "accessories/lightning-boots.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "pool-bundle-of-horseshoe-balloons",
+        "name": "Bundle of Horseshoe Balloons",
+        "slot": "accessory",
+        "icon": "accessories/bundle-of-horseshoe-balloons.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
         "quality": "great",
         "materials": [
           {
-            "name": "Spectre Boots",
+            "name": "Bundle of Balloons",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
           },
           {
-            "name": "Anklet of the Wind",
+            "name": "Lucky Horseshoe",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-          },
-          {
-            "name": "Aglet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "pool-magiluminescence",
-        "name": "Magiluminescence",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "accessories/magiluminescence.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
-        "tags": [],
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
-        "quality": "good",
         "materials": [
           {
-            "name": "Demonite Bar",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
           },
           {
-            "name": "Topaz",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -774,6 +741,67 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "pool-lightning-boots",
+            "name": "Lightning Boots",
+            "slot": "accessory",
+            "icon": "accessories/lightning-boots.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Boots",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Spectre Boots",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+              },
+              {
+                "name": "Anklet of the Wind",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
+              },
+              {
+                "name": "Aglet",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-magiluminescence",
+            "name": "Magiluminescence",
+            "slot": "accessory",
+            "icon": "accessories/magiluminescence.png",
+            "source": "Crafted at Iron Anvil or Lead Anvil",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Topaz",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
           }
         ]
       },
@@ -847,6 +875,33 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Honey_Comb",
             "quality": "good"
+          },
+          {
+            "id": "obsidian-shield",
+            "name": "Obsidian Shield",
+            "slot": "accessory",
+            "icon": "accessories/obsidian-shield.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Knockback immunity, fire block immunity and 2 defense.",
+            "tags": [],
+            "topPick": true,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Cobalt Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Shield"
+              },
+              {
+                "name": "Obsidian Skull",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -906,6 +961,22 @@
             "markers": [
               "expert"
             ]
+          },
+          {
+            "id": "pool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "accessories/shark-tooth-necklace.png",
+            "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
           }
         ]
       },
@@ -955,6 +1026,20 @@
               "melee"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
+          },
+          {
+            "id": "counterweight",
+            "name": "Counterweight",
+            "slot": "accessory",
+            "icon": "accessories/counterweight.png",
+            "source": "Sold by the Traveling Merchant or Skeleton Merchant",
+            "why": "Throws a counterweight along your yoyo string after hitting an enemy.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweight"
           }
         ]
       }

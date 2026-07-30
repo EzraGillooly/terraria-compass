@@ -470,6 +470,56 @@
     ],
     "accessories": [
       {
+        "id": "pool-warrior-emblem",
+        "name": "Warrior Emblem",
+        "slot": "accessory",
+        "icon": "accessories/warrior-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases melee damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "fire-gauntlet",
         "name": "Fire Gauntlet",
         "slot": "accessory",
@@ -498,125 +548,11 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Post-Plantera enemies and events apply enough debuffs that this becomes even more comfortable than before.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "moon-stone",
-        "name": "Moon Stone",
-        "slot": "accessory",
-        "icon": "accessories/moon-stone.png",
-        "source": "Dropped by Vampires during a Solar Eclipse",
-        "why": "Half of the eventual Celestial Stone, and the part you can actually have here: a night-time boost to damage, crit, regen and speed.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-        "categories": [
-          "survivability",
-          "offense"
-        ],
-        "quality": "good",
-        "dropRate": "2.86% 5.63%"
-      },
-      {
-        "id": "hoverboard",
-        "name": "Hoverboard",
-        "slot": "accessory",
-        "icon": "accessories/hoverboard.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Long flight with a hover mode for stable ranged fights.",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Hoverboard",
-        "categories": [
-          "mobility"
-        ],
-        "materials": [
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Shroomite Bar",
-            "qty": 18,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "avenger-emblem",
-        "name": "Avenger Emblem",
-        "slot": "accessory",
-        "icon": "accessories/avenger-emblem.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mech-boss emblem, and the step before Destroyer Emblem needs a Golem drop.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          },
-          {
-            "name": "Soul of Fright",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
         "id": "master-ninja-gear",
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Combined at the Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -626,7 +562,6 @@
           "mobility",
           "survivability"
         ],
-        "quality": "great",
         "materials": [
           {
             "name": "Tiger Climbing Gear",
@@ -645,6 +580,49 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-mothron-wings",
+        "name": "Mothron Wings",
+        "slot": "accessory",
+        "icon": "accessories/mothron-wings.png",
+        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
+        "quality": "fine"
       }
     ],
     "buffs": [
@@ -878,6 +856,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-hoverboard",
+            "name": "Hoverboard",
+            "slot": "accessory",
+            "icon": "accessories/hoverboard.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hoverboard",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Shroomite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -1058,6 +1064,51 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "Dropped by Vampire and 1 other source",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good",
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
           }
         ]
       },
@@ -1130,6 +1181,45 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "Combined from a class emblem and mech-boss materials",
+            "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Summoner Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+              },
+              {
+                "name": "Soul of Might",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+              },
+              {
+                "name": "Soul of Sight",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
+              },
+              {
+                "name": "Soul of Fright",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -1242,6 +1332,36 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-yoyo-bag",
+            "name": "Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/yoyo-bag.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ],
+            "materials": [
+              {
+                "name": "Yoyo Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Glove"
+              },
+              {
+                "name": "Strung Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight"
               }
             ],
             "station": "Tinkerer's Workshop"

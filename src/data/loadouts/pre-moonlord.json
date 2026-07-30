@@ -255,6 +255,56 @@
     ],
     "accessories": [
       {
+        "id": "pool-warrior-emblem",
+        "name": "Warrior Emblem",
+        "slot": "accessory",
+        "icon": "accessories/warrior-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases melee damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "fire-gauntlet",
         "name": "Fire Gauntlet",
         "slot": "accessory",
@@ -281,49 +331,6 @@
           }
         ],
         "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "destroyer-emblem",
-        "name": "Destroyer Emblem",
-        "slot": "accessory",
-        "icon": "accessories/destroyer-emblem.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "The damage and crit boost continue to scale very well with Solar fragment weapons.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "materials": [
-          {
-            "name": "Avenger Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
-          },
-          {
-            "name": "Eye of the Golem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "fishron-wings",
-        "name": "Fishron Wings",
-        "slot": "accessory",
-        "icon": "accessories/fishron-wings.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Flight, and faster movement in rain and water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ]
       },
       {
         "id": "master-ninja-gear",
@@ -360,61 +367,47 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "celestial-shell",
-        "name": "Celestial Shell",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "accessories/celestial-shell.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "All-round stats, plus werewolf at night and merfolk in water.",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "offense",
-          "survivability"
+          "mobility"
         ],
         "materials": [
           {
-            "name": "Celestial Stone",
+            "name": "Frostspark Boots",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
           },
           {
-            "name": "Moon Shell",
+            "name": "Lava Waders",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
+        "id": "fishron-wings",
+        "name": "Fishron Wings",
         "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
+        "icon": "accessories/fishron-wings.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Flight, and faster movement in rain and water.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+          "mobility"
+        ]
       }
     ],
     "buffs": [
@@ -881,6 +874,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1039,6 +1061,63 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "destroyer-emblem",
+            "name": "Destroyer Emblem",
+            "slot": "accessory",
+            "icon": "accessories/destroyer-emblem.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "+10% damage and +8% crit, stacking with your class emblem.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "materials": [
+              {
+                "name": "Avenger Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+              },
+              {
+                "name": "Eye of the Golem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "celestial-shell",
+            "name": "Celestial Shell",
+            "slot": "accessory",
+            "icon": "accessories/celestial-shell.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "All-round stats, plus werewolf at night and merfolk in water.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense",
+              "survivability"
+            ],
+            "materials": [
+              {
+                "name": "Celestial Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+              },
+              {
+                "name": "Moon Shell",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1148,6 +1227,36 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-yoyo-bag",
+            "name": "Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/yoyo-bag.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ],
+            "materials": [
+              {
+                "name": "Yoyo Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Glove"
+              },
+              {
+                "name": "Strung Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight"
               }
             ],
             "station": "Tinkerer's Workshop"

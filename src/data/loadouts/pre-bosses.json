@@ -1713,19 +1713,37 @@
     ],
     "accessories": [
       {
-        "id": "hermes-boots",
-        "name": "Hermes Boots",
+        "id": "feral-claws",
+        "name": "Feral Claws",
         "slot": "accessory",
-        "icon": "accessories/hermes-boots.png",
-        "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "icon": "accessories/feral-claws.png",
+        "source": "Found in Jungle chests or Jungle Crates",
+        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "categories": [
-          "mobility"
+          "melee",
+          "summon"
         ],
-        "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "markers": [
+          "whips"
+        ],
+        "dropRate": "19/100 (19%)"
+      },
+      {
+        "id": "magma-stone",
+        "name": "Magma Stone",
+        "slot": "accessory",
+        "icon": "accessories/magma-stone.png",
+        "source": "Dropped by Hellbats and Lava Bats",
+        "why": "Adds fire damage to melee strikes.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+        "categories": [
+          "melee"
+        ],
+        "dropRate": "0.67%"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -1742,51 +1760,42 @@
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       },
       {
-        "id": "feral-claws",
-        "name": "Feral Claws",
+        "id": "pool-shiny-red-balloon",
+        "name": "Shiny Red Balloon",
         "slot": "accessory",
-        "icon": "accessories/feral-claws.png",
-        "source": "Found in Jungle Chests, Ivy Chests and Jungle Crates",
-        "why": "The melee speed and autoswing boost noticeably improves several early melee weapons.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "melee",
-          "summon"
-        ],
-        "markers": [
-          "whips"
-        ],
-        "dropRate": "19/100 (19%)"
-      },
-      {
-        "id": "band-of-regeneration",
-        "name": "Band of Regeneration",
-        "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Underground Chests",
-        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
-      },
-      {
-        "id": "lucky-horseshoe",
-        "name": "Lucky Horseshoe",
-        "slot": "accessory",
-        "icon": "accessories/lucky-horseshoe.png",
-        "source": "Found in Skyware Chests and Sky Crates",
-        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+        "icon": "accessories/shiny-red-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases jump height of the player.",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
         "quality": "good",
-        "dropRate": "1/4 (25%)"
+        "materials": [
+          {
+            "name": "Balloon Pufferfish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "hermes-boots",
+        "name": "Hermes Boots",
+        "slot": "accessory",
+        "icon": "accessories/hermes-boots.png",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "tags": [],
+        "topPick": true,
+        "categories": [
+          "mobility"
+        ],
+        "quality": "great",
+        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       }
     ],
     "buffs": [
@@ -2096,6 +2105,20 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "lucky-horseshoe",
+            "name": "Lucky Horseshoe",
+            "slot": "accessory",
+            "icon": "accessories/lucky-horseshoe.png",
+            "source": "Found in Skyware Chests and Sky Crates",
+            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "dropRate": "1/4 (25%)"
           }
         ]
       },
@@ -2115,6 +2138,21 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+          },
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
           }
         ]
       },
@@ -2206,6 +2244,20 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "counterweight",
+            "name": "Counterweight",
+            "slot": "accessory",
+            "icon": "accessories/counterweight.png",
+            "source": "Sold by the Traveling Merchant or Skeleton Merchant",
+            "why": "Throws a counterweight along your yoyo string after hitting an enemy.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweight"
           }
         ]
       }

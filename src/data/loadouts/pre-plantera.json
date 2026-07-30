@@ -628,6 +628,56 @@
     ],
     "accessories": [
       {
+        "id": "pool-warrior-emblem",
+        "name": "Warrior Emblem",
+        "slot": "accessory",
+        "icon": "accessories/warrior-emblem.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases melee damage by 15%.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
+        "materials": [
+          {
+            "name": "Summoner Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-berserkers-glove",
+        "name": "Berserker's Glove",
+        "slot": "accessory",
+        "icon": "accessories/berserkers-glove.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "melee"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
+        "materials": [
+          {
+            "name": "Power Glove",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+          },
+          {
+            "name": "Flesh Knuckles",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "fire-gauntlet",
         "name": "Fire Gauntlet",
         "slot": "accessory",
@@ -656,77 +706,56 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "mechanical-glove",
-        "name": "Mechanical Glove",
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
         "slot": "accessory",
-        "icon": "accessories/mechanical-glove.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "12% melee damage and speed, and knockback.",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "melee"
+          "mobility"
         ],
         "materials": [
           {
-            "name": "Power Glove",
+            "name": "Frostspark Boots",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
           },
           {
-            "name": "Avenger Emblem",
+            "name": "Lava Waders",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "avenger-emblem",
-        "name": "Avenger Emblem",
+        "id": "pool-butterfly-wings",
+        "name": "Butterfly Wings",
         "slot": "accessory",
-        "icon": "accessories/avenger-emblem.png",
-        "source": "Combined from a class emblem and mech-boss materials",
-        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
-          },
-          {
-            "name": "Soul of Fright",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-bee-wings",
-        "name": "Bee Wings",
-        "slot": "accessory",
-        "icon": "accessories/bee-wings.png",
+        "icon": "accessories/butterfly-wings.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
@@ -734,7 +763,7 @@
         "categories": [
           "mobility"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Wings",
         "quality": "great",
         "materials": [
           {
@@ -743,70 +772,12 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
           },
           {
-            "name": "Tattered Bee Wing",
+            "name": "Butterfly Dust",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Butterfly_Dust"
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "star-veil",
-        "name": "Star Veil",
-        "slot": "accessory",
-        "icon": "accessories/star-veil.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Longer invincibility after a hit, plus retaliating falling stars.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "quality": "great",
-        "materials": [
-          {
-            "name": "Star Cloak",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
-          },
-          {
-            "name": "Cross Necklace",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -1126,6 +1097,34 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -1236,6 +1235,64 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "star-veil",
+            "name": "Star Veil",
+            "slot": "accessory",
+            "icon": "accessories/star-veil.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Longer invincibility after a hit, plus retaliating falling stars.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Star Cloak",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cloak"
+              },
+              {
+                "name": "Cross Necklace",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -1277,6 +1334,45 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "avenger-emblem",
+            "name": "Avenger Emblem",
+            "slot": "accessory",
+            "icon": "accessories/avenger-emblem.png",
+            "source": "Combined from a class emblem and mech-boss materials",
+            "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Summoner Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+              },
+              {
+                "name": "Soul of Might",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+              },
+              {
+                "name": "Soul of Sight",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
+              },
+              {
+                "name": "Soul of Fright",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -1362,6 +1458,64 @@
                 "name": "Flesh Knuckles",
                 "qty": 1,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-yoyo-bag",
+            "name": "Yoyo Bag",
+            "slot": "accessory",
+            "icon": "accessories/yoyo-bag.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Grants the following effects:",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Bag",
+            "markers": [
+              "yoyos"
+            ],
+            "materials": [
+              {
+                "name": "Yoyo Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Yoyo_Glove"
+              },
+              {
+                "name": "Strung Counterweight",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Strung_Counterweight"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "mechanical-glove",
+            "name": "Mechanical Glove",
+            "slot": "accessory",
+            "icon": "accessories/mechanical-glove.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "12% melee damage and speed, and knockback.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "melee"
+            ],
+            "materials": [
+              {
+                "name": "Power Glove",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
+              },
+              {
+                "name": "Avenger Emblem",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
               }
             ],
             "station": "Tinkerer's Workshop"
