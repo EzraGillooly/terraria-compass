@@ -80,7 +80,7 @@ function TreeNode({
           <span className={styles.twistySpacer} aria-hidden="true" />
         )}
 
-        <span className={styles.slot}><Sprite node={node} size={32} /></span>
+        <span className={`${styles.slot} pixel-frame`}><Sprite node={node} size={32} /></span>
 
         <span className={styles.label}>
           <span className={styles.nameRow}>
@@ -282,7 +282,7 @@ export function Crafting() {
                 <ul className={styles.matList}>
                   {materials.map(({ node, qty }) => (
                     <li key={node.id} className={styles.matRow}>
-                      <span className={styles.matSlot}><Sprite node={node} size={28} /></span>
+                      <span className={`${styles.matSlot} pixel-frame`}><Sprite node={node} size={28} /></span>
                       <a className={styles.matName} href={node.wikiUrl} target="_blank" rel="noreferrer">
                         {node.name}
                       </a>
@@ -335,7 +335,7 @@ export function Crafting() {
                   <button
                     key={id}
                     type="button"
-                    className={styles.card}
+                    className={`${styles.card} pixel-frame`}
                     onClick={() => setParams({ item: id })}
                   >
                     <span className={styles.cardSlot}><Sprite node={node} size={40} /></span>
