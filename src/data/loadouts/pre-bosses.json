@@ -2846,19 +2846,51 @@
     ],
     "accessories": [
       {
-        "id": "hermes-boots",
-        "name": "Hermes Boots",
+        "id": "pool-shark-tooth-necklace",
+        "name": "Shark Tooth Necklace",
         "slot": "accessory",
-        "icon": "accessories/hermes-boots.png",
-        "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "icon": "accessories/shark-tooth-necklace.png",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
+        "categories": [
+          "offense"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+        "quality": "great",
+        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
+        "id": "pool-panic-necklace",
+        "name": "Panic Necklace",
+        "slot": "accessory",
+        "icon": "accessories/panic-necklace.png",
+        "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
+        "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+        "tags": [],
+        "topPick": false,
         "categories": [
           "mobility"
         ],
-        "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace",
+        "quality": "good",
+        "markers": [
+          "crimson"
+        ],
+        "materials": [
+          {
+            "name": "Band of Starpower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower"
+          },
+          {
+            "name": "Life Crystal",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+          }
+        ],
+        "station": "Tinkerer's Workshop and Ecto Mist"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -2875,48 +2907,42 @@
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
       },
       {
-        "id": "lucky-horseshoe",
-        "name": "Lucky Horseshoe",
+        "id": "pool-shiny-red-balloon",
+        "name": "Shiny Red Balloon",
         "slot": "accessory",
-        "icon": "accessories/lucky-horseshoe.png",
-        "source": "Found in Skyware Chests and Sky Crates",
-        "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+        "icon": "accessories/shiny-red-balloon.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases jump height of the player.",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
         "quality": "good",
-        "dropRate": "1/4 (25%)"
+        "materials": [
+          {
+            "name": "Balloon Pufferfish",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
-        "id": "band-of-regeneration",
-        "name": "Band of Regeneration",
+        "id": "hermes-boots",
+        "name": "Hermes Boots",
         "slot": "accessory",
-        "icon": "accessories/band-of-regeneration.png",
-        "source": "Found in Underground Chests",
-        "why": "The passive healing is small on paper but adds up fast when paired with campfires and heart lanterns.",
+        "icon": "accessories/hermes-boots.png",
+        "source": "Found in Underground and Cavern Chests",
+        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "categories": [
-          "survivability"
+          "mobility"
         ],
+        "quality": "great",
         "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
-      },
-      {
-        "id": "shackle",
-        "name": "Shackle",
-        "slot": "accessory",
-        "icon": "accessories/shackle.png",
-        "source": "Dropped by Zombies",
-        "why": "+1 defense from a very common early drop.",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
-        "categories": [
-          "survivability"
-        ],
-        "dropRate": "2%"
       }
     ],
     "buffs": [
@@ -3278,6 +3304,20 @@
               }
             ],
             "station": "Tinkerer's Workshop and Ecto Mist"
+          },
+          {
+            "id": "lucky-horseshoe",
+            "name": "Lucky Horseshoe",
+            "slot": "accessory",
+            "icon": "accessories/lucky-horseshoe.png",
+            "source": "Found in Skyware Chests and Sky Crates",
+            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "dropRate": "1/4 (25%)"
           }
         ]
       },
@@ -3297,6 +3337,40 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+          }
+        ]
+      },
+      {
+        "category": "survivability",
+        "items": [
+          {
+            "id": "pool-band-of-regeneration",
+            "name": "Band of Regeneration",
+            "slot": "accessory",
+            "icon": "accessories/band-of-regeneration.png",
+            "source": "Found in Gold Chest and 1 other source",
+            "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Regeneration",
+            "quality": "good"
+          },
+          {
+            "id": "pool-shackle",
+            "name": "Shackle",
+            "slot": "accessory",
+            "icon": "accessories/shackle.png",
+            "source": "Dropped by Frozen Zombie and 2 other sources",
+            "why": "Increases the player's defense by 1.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
           }
         ]
       }

@@ -1076,10 +1076,12 @@ export function Loadouts() {
               <span className={styles.em}>{slotCount} slots</span>
             </div>
             {substitutions.length > 0 && (
-              /* Calamity's guides are written for Expert and above, so in Classic
-                 several picks are simply unobtainable. Rather than leave the
-                 reader wondering why their loadout differs from every guide, say
-                 what was swapped and offer the switch. */
+              /* The class guides recommend Expert-only picks (treasure-bag
+                 drops), so in a Classic world several are simply unobtainable.
+                 Rather than leave the reader wondering why their loadout differs
+                 from the guide, say what was swapped and offer the switch. The
+                 closing line is pack-aware: Calamity is explicitly balanced for
+                 Expert, where vanilla just notes what Expert unlocks. */
               <div className={styles.classicNote}>
                 <p className={styles.classicNoteText}>
                   <strong>Classic world:</strong> {substitutions.length}
@@ -1087,7 +1089,9 @@ export function Loadouts() {
                   {substitutions.length === 1 ? ' it has been' : ' they have been'} swapped for
                   {substitutions.length === 1 ? ' something' : ' things'} a Classic world can get
                   {' '}({substitutions.map((s2) => `${s2.original.name} → ${s2.replacement.name}`).join(', ')}).
-                  Calamity is balanced for Expert or above.
+                  {packId === 'calamity'
+                    ? ' Calamity is balanced for Expert or above.'
+                    : ' Play in an Expert world to use the full guide.'}
                 </p>
                 <button
                   type="button"

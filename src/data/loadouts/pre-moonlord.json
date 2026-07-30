@@ -1333,6 +1333,50 @@
     ],
     "accessories": [
       {
+        "id": "ranger-emblem",
+        "name": "Ranger Emblem",
+        "slot": "accessory",
+        "icon": "accessories/ranger-emblem.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "15% ranged damage.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ],
+        "dropRate": "25%"
+      },
+      {
+        "id": "pool-recon-scope",
+        "name": "Recon Scope",
+        "slot": "accessory",
+        "icon": "accessories/recon-scope.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "ranged"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Recon_Scope",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Sniper Scope",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope"
+          },
+          {
+            "name": "Putrid Scent",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "sniper-scope",
         "name": "Sniper Scope",
         "slot": "accessory",
@@ -1361,99 +1405,11 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "ranger-emblem",
-        "name": "Ranger Emblem",
-        "slot": "accessory",
-        "icon": "accessories/ranger-emblem.png",
-        "source": "Dropped by the Wall of Flesh",
-        "why": "15% ranged damage.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "ranged"
-        ],
-        "dropRate": "25%"
-      },
-      {
-        "id": "fishron-wings",
-        "name": "Fishron Wings",
-        "slot": "accessory",
-        "icon": "accessories/fishron-wings.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Flight, and faster movement in rain and water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ]
-      },
-      {
-        "id": "celestial-shell",
-        "name": "Celestial Shell",
-        "slot": "accessory",
-        "icon": "accessories/celestial-shell.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "All-round stats, plus werewolf at night and merfolk in water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "offense",
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Stone",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
-          },
-          {
-            "name": "Moon Shell",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Knockback immunity and immunity to most debuffs for the hardest fights.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Obsidian Shield",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
-          },
-          {
-            "name": "Ankh Charm",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
         "id": "master-ninja-gear",
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Combined at the Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -1481,6 +1437,50 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "empress-wings",
+        "name": "Empress Wings",
+        "slot": "accessory",
+        "icon": "accessories/empress-wings.png",
+        "source": "Dropped by the Empress of Light",
+        "why": "Flight and slow fall, with an upward boost.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_Wings"
       }
     ],
     "buffs": [
@@ -1782,6 +1782,39 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "soaring-insignia",
+            "name": "Soaring Insignia",
+            "slot": "accessory",
+            "icon": "accessories/soaring-insignia.png",
+            "source": "Empress of Light Treasure Bag (Expert)",
+            "why": "Infinite flight, plus increased flight and jump mobility.",
+            "tags": [
+              "hardmode",
+              "expert-only"
+            ],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia",
+            "expertOnly": true
+          },
+          {
+            "id": "fishron-wings",
+            "name": "Fishron Wings",
+            "slot": "accessory",
+            "icon": "accessories/fishron-wings.png",
+            "source": "Dropped by Duke Fishron",
+            "why": "Flight, and faster movement in rain and water.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ]
           }
         ]
       },
@@ -1977,6 +2010,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2163,6 +2225,35 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "celestial-shell",
+            "name": "Celestial Shell",
+            "slot": "accessory",
+            "icon": "accessories/celestial-shell.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "All-round stats, plus werewolf at night and merfolk in water.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "offense",
+              "survivability"
+            ],
+            "materials": [
+              {
+                "name": "Celestial Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+              },
+              {
+                "name": "Moon Shell",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2210,6 +2301,35 @@
               "ranged"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          },
+          {
+            "id": "stalkers-quiver",
+            "name": "Stalker's Quiver",
+            "slot": "accessory",
+            "icon": "accessories/stalkers-quiver.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Increases arrow damage by 10% and arrow speed, 20% chance not to consume arrows, and reduces aggro.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stalker%27s_Quiver",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Magic Quiver",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+              },
+              {
+                "name": "Putrid Scent",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+              }
+            ]
           }
         ]
       }

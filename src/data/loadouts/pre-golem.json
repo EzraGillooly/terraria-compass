@@ -1624,23 +1624,6 @@
     ],
     "accessories": [
       {
-        "id": "rifle-scope",
-        "name": "Rifle Scope",
-        "slot": "accessory",
-        "icon": "accessories/rifle-scope.png",
-        "source": "Purchased from the Arms Dealer in Hardmode",
-        "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "ranged"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
-        "dropRate": "8.33% 15.97%"
-      },
-      {
         "id": "ranger-emblem",
         "name": "Ranger Emblem",
         "slot": "accessory",
@@ -1657,59 +1640,41 @@
         "dropRate": "25%"
       },
       {
-        "id": "moon-stone",
-        "name": "Moon Stone",
+        "id": "stalkers-quiver",
+        "name": "Stalker's Quiver",
         "slot": "accessory",
-        "icon": "accessories/moon-stone.png",
-        "source": "Dropped by Vampires during a Solar Eclipse",
-        "why": "Half of the eventual Celestial Stone, and the part you can actually have here: a night-time boost to damage, crit, regen and speed.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
-        "categories": [
-          "survivability",
-          "offense"
-        ],
-        "quality": "good",
-        "dropRate": "2.86% 5.63%"
-      },
-      {
-        "id": "ankh-shield",
-        "name": "Ankh Shield",
-        "slot": "accessory",
-        "icon": "accessories/ankh-shield.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Debuff immunity is valuable in the post-Plantera farming loop where random hits can stack ugly statuses fast.",
+        "icon": "accessories/stalkers-quiver.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases arrow damage by 10% and arrow speed, 20% chance not to consume arrows, and reduces aggro.",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
         "categories": [
-          "survivability"
+          "ranged"
         ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stalker%27s_Quiver",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Obsidian Shield",
+            "name": "Magic Quiver",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
           },
           {
-            "name": "Ankh Charm",
+            "name": "Putrid Scent",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
           }
-        ],
-        "station": "Tinkerer's Workshop"
+        ]
       },
       {
         "id": "avenger-emblem",
         "name": "Avenger Emblem",
         "slot": "accessory",
         "icon": "accessories/avenger-emblem.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mech-boss emblem, and the step before Destroyer Emblem needs a Golem drop.",
+        "source": "Combined from a class emblem and mech-boss materials",
+        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
         "tags": [
           "hardmode"
         ],
@@ -1717,7 +1682,6 @@
         "categories": [
           "offense"
         ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem",
         "quality": "great",
         "materials": [
           {
@@ -1748,7 +1712,7 @@
         "name": "Master Ninja Gear",
         "slot": "accessory",
         "icon": "accessories/master-ninja-gear.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Combined at the Tinkerer's Workshop",
         "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
         "tags": [
           "hardmode"
@@ -1758,7 +1722,6 @@
           "mobility",
           "survivability"
         ],
-        "quality": "great",
         "materials": [
           {
             "name": "Tiger Climbing Gear",
@@ -1777,6 +1740,49 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-mothron-wings",
+        "name": "Mothron Wings",
+        "slot": "accessory",
+        "icon": "accessories/mothron-wings.png",
+        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
+        "quality": "fine"
       }
     ],
     "buffs": [
@@ -2286,6 +2292,51 @@
               }
             ],
             "station": "Tinkerer's Workshop"
+          },
+          {
+            "id": "pool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "accessories/moon-stone.png",
+            "source": "Dropped by Vampire and 1 other source",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Stone",
+            "quality": "good",
+            "notes": "For its varied bonuses, the Moon Stone can be useful for mixed-class users, as it carries significant but broad offensive stats in just one accessory slot. Additionally, players running a defensive loadout that can only use offensive accessories sparingly should prioritize the Moon Stone first and foremost."
+          },
+          {
+            "id": "ankh-shield",
+            "name": "Ankh Shield",
+            "slot": "accessory",
+            "icon": "accessories/ankh-shield.png",
+            "source": "Combined at the Tinkerer's Workshop",
+            "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "quality": "good",
+            "materials": [
+              {
+                "name": "Obsidian Shield",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+              },
+              {
+                "name": "Ankh Charm",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+              }
+            ],
+            "station": "Tinkerer's Workshop"
           }
         ]
       },
@@ -2380,6 +2431,52 @@
               "ranged"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          },
+          {
+            "id": "molten-quiver",
+            "name": "Molten Quiver",
+            "slot": "accessory",
+            "icon": "accessories/molten-quiver.png",
+            "source": "Crafted at Tinkerer's Workshop",
+            "why": "Increases arrow damage by 10% and arrow speed, and turns Wooden Arrows into Flaming Arrows.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Quiver",
+            "station": "Tinkerer's Workshop",
+            "materials": [
+              {
+                "name": "Magic Quiver",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+              },
+              {
+                "name": "Magma Stone",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+              }
+            ]
+          },
+          {
+            "id": "rifle-scope",
+            "name": "Rifle Scope",
+            "slot": "accessory",
+            "icon": "accessories/rifle-scope.png",
+            "source": "Purchased from the Arms Dealer in Hardmode",
+            "why": "The pre-Golem half of Sniper Scope: extra ranged damage and a zoomed view for guns.",
+            "tags": [
+              "hardmode"
+            ],
+            "topPick": false,
+            "categories": [
+              "ranged"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
+            "dropRate": "8.33% 15.97%"
           }
         ]
       }
