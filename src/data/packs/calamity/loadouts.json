@@ -4770,7 +4770,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Antlion_Skewer",
-        "subclass": "dagger",
+        "subclass": "javelin",
         "effect": "When used, it throws a skewered Antlion javelin that is unaffected by gravity. After 0.25 seconds, the Antlion spits a sand ball in its direction which deals 50% damage, then accelerates for the next 0.5 seconds."
       },
       {
@@ -4842,7 +4842,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger",
-        "subclass": "dagger",
+        "subclass": "other",
         "effect": "When used, they fire an urchin stinger that travels a short distance before being affected by gravity. The urchin stinger pierces once and inflicts the Poisoned debuff on hit."
       },
       {
@@ -4879,7 +4879,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Iron_Francisca",
         "tier": "other",
         "effect": "It throws a gravity affected axe that travels a short distance before falling to the ground. Each axe's damage has a 2x damage increase for the first 0.25 seconds after being thrown.",
-        "subclass": "dagger",
+        "subclass": "other",
         "materials": [
           {
             "name": "Iron Bar",
@@ -4901,7 +4901,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lead_Tomahawk",
         "tier": "other",
         "effect": "It throws a gravity affected axe that travels a short distance before falling to the ground. Each axe's damage has a 2x damage increase for the first 0.25 seconds after being thrown.",
-        "subclass": "dagger",
+        "subclass": "other",
         "materials": [
           {
             "name": "Lead Bar",
@@ -19464,7 +19464,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Evil_Flesh"
           }
         ],
-        "station": "By Hand"
+        "station": "By Hand",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -26990,7 +26991,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hardened_Honeycomb",
-        "subclass": "spiky-ball",
+        "subclass": "other",
         "effect": "When used, it throws honeycomb projectiles that are slightly affected by gravity and shatter into 2 fragments upon collision with an enemy or tile. The honeycomb fragments fly in random directions and deal 100% of the weapon's base damage."
       },
       {
@@ -27063,7 +27064,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rot_Ball",
         "tier": "other",
-        "effect": "When used, it throws a rot ball that travels a moderate distance before being affected by gravity and pierces twice."
+        "effect": "When used, it throws a rot ball that travels a moderate distance before being affected by gravity and pierces twice.",
+        "subclass": "other"
       },
       {
         "id": "tooth-ball",
@@ -27076,7 +27078,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tooth_Ball",
         "tier": "other",
-        "effect": "When used, it throws a tooth ball that travels a moderate distance before being affected by gravity and pierces twice."
+        "effect": "When used, it throws a tooth ball that travels a moderate distance before being affected by gravity and pierces twice.",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -34662,7 +34665,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive",
-        "subclass": "javelin",
+        "subclass": "boomerang",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces three times. Each struck enemy will reduce the damage of the glaive by 10%."
       },
       {
@@ -34676,7 +34679,8 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lionfish",
-        "effect": "When used, it hurls a Lionfish which travels in a straight line for a long distance before being affected by gravity. Lionfish projectiles will explode upon hitting a tile or after being stuck to an enemy for several seconds."
+        "effect": "When used, it hurls a Lionfish which travels in a straight line for a long distance before being affected by gravity. Lionfish projectiles will explode upon hitting a tile or after being stuck to an enemy for several seconds.",
+        "subclass": "other"
       },
       {
         "id": "slick-cane",
@@ -34689,7 +34693,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slick_Cane",
-        "effect": "When used, it thrusts out a short-ranged cane in front of the player which ignores enemy immunity frames. Each time it hits an enemy while being swung, that enemy will drop a small amount of coins proportional to the amount the enemy drops upon death."
+        "effect": "When used, it thrusts out a short-ranged cane in front of the player which ignores enemy immunity frames. Each time it hits an enemy while being swung, that enemy will drop a small amount of coins proportional to the amount the enemy drops upon death.",
+        "subclass": "other"
       },
       {
         "id": "shinobi-blade",
@@ -43669,7 +43674,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-ball",
+        "subclass": "other",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -52683,7 +52688,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-ball",
+        "subclass": "boomerang",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -52719,7 +52724,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-ball",
+        "subclass": "other",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -61525,7 +61530,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Adamantite_Throwing_Axe",
         "tier": "best",
         "effect": "When used, it throws an adamantite axe that pierces twice and travels a short distance before being affected by gravity and losing 25% of the weapon's damage per hit.",
-        "subclass": "dagger",
+        "subclass": "other",
         "materials": [
           {
             "name": "Adamantite Bar",
@@ -61564,7 +61569,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-ball",
+        "subclass": "boomerang",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -61637,7 +61642,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-ball",
+        "subclass": "other",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -70207,7 +70212,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-ball",
+        "subclass": "boomerang",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -70258,7 +70263,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-ball",
+        "subclass": "other",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -70326,7 +70331,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crushsaw_Crasher",
-        "subclass": "dagger",
+        "subclass": "other",
         "effect": "When used, the player swings a claw and throws a homing, spinning axe that can pierce one enemy or bounce once before disappearing on its next impact. The axe inflicts Heavy Bleeding upon any enemy it hits."
       },
       {
@@ -70340,7 +70345,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Wounder",
-        "effect": "When used, it throws a fast-spinning hatchet that pierces twice and inflicts the Crush Depth and Heavy Bleeding debuffs."
+        "effect": "When used, it throws a fast-spinning hatchet that pierces twice and inflicts the Crush Depth and Heavy Bleeding debuffs.",
+        "subclass": "other"
       },
       {
         "id": "palladium-javelin",
@@ -79281,7 +79287,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Defective_Sphere",
-        "subclass": "spiky-ball",
+        "subclass": "boomerang",
         "effect": "They can be thrown up to five times. Spheres thrown can become one of four variants, listed below."
       },
       {
@@ -79313,7 +79319,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm"
           }
         ],
-        "effect": "When used, it throws a talisman card that sticks onto enemies, periodically releasing homing souls that deal 50% of the weapon's base damage. Up to 3 talismans can stick to an enemy at a time."
+        "effect": "When used, it throws a talisman card that sticks onto enemies, periodically releasing homing souls that deal 50% of the weapon's base damage. Up to 3 talismans can stick to an enemy at a time.",
+        "subclass": "other"
       },
       {
         "id": "leviathan-teeth",
@@ -98521,7 +98528,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe",
-        "subclass": "dagger",
+        "subclass": "other",
         "effect": "It auto-fires a high velocity syringe that increases damage as it travels and inflicts the Plague debuff. On contact with an enemy or block, it will shatter into glass and plague cinders."
       },
       {
@@ -98535,7 +98542,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator",
-        "subclass": "dagger",
+        "subclass": "other",
         "effect": "When used, it throws a fast-spinning axe that slowly decelerates to a stop and breaks shortly after. It will stick onto an enemy upon contact, dealing damage."
       },
       {
@@ -108497,7 +108504,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "subclass": "spiky-ball",
+        "subclass": "dagger",
         "effect": "When used, it throws an astral dagger that is not affected by gravity and pierces 3 times. Shortly after it is thrown, it causes a lingering explosion and splits into 3 copies of itself that home in on the closest enemy and deal half of the weapon's damage."
       },
       {
@@ -108511,7 +108518,8 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regulus_Riot",
-        "effect": "When used, it fires a spinning disk towards the cursor's position, traveling a moderate distance before dissipating. If there are enemies nearby, the disk will charge towards the nearest enemy and hit up to 3 times."
+        "effect": "When used, it fires a spinning disk towards the cursor's position, traveling a moderate distance before dissipating. If there are enemies nearby, the disk will charge towards the nearest enemy and hit up to 3 times.",
+        "subclass": "other"
       },
       {
         "id": "shard-of-antumbra",
@@ -108554,7 +108562,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
         ],
-        "subclass": "spiky-ball",
+        "subclass": "bomb",
         "effect": "On use, it throws a large spread of cosmic bolts which converge into a bomb. The bomb weakly follows the cursor, exploding when it hits an enemy or after 5 seconds."
       },
       {
@@ -108568,7 +108576,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator",
-        "subclass": "dagger",
+        "subclass": "other",
         "effect": "When used, it throws a fast-spinning axe that slowly decelerates to a stop and breaks shortly after. It will stick onto an enemy upon contact, dealing damage."
       },
       {
@@ -118012,7 +118020,8 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Celestial_Reaper",
-        "effect": "When thrown, it will home in on an enemy and will bounce back from the enemy when it hits, allowing it to redirect itself to hit and bounce off of a different enemy, or simply turn around and hit the same enemy again. It will do this up to six times or 10 seconds, slowing down after each hit."
+        "effect": "When thrown, it will home in on an enemy and will bounce back from the enemy when it hits, allowing it to redirect itself to hit and bounce off of a different enemy, or simply turn around and hit the same enemy again. It will do this up to six times or 10 seconds, slowing down after each hit.",
+        "subclass": "other"
       },
       {
         "id": "lunar-kunai",
@@ -118111,7 +118120,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Utensil_Poker",
-        "subclass": "javelin",
+        "subclass": "dagger",
         "effect": "When used, it fires a set of three random utensils."
       }
     ],
@@ -135285,7 +135294,8 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Sea_Dumbbell",
-        "effect": "When used, it throws a dark blue dumbbell that is not affected by gravity and bounces twice off of tiles or enemies, breaking on the third impact. Every time it bounces, it releases 2 smaller gravity-affected blue weights which fly out in random directions and velocities."
+        "effect": "When used, it throws a dark blue dumbbell that is not affected by gravity and bounces twice off of tiles or enemies, breaking on the third impact. Every time it bounces, it releases 2 smaller gravity-affected blue weights which fly out in random directions and velocities.",
+        "subclass": "other"
       },
       {
         "id": "jaws-of-oblivion",
@@ -135362,7 +135372,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper",
-        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay."
+        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay.",
+        "subclass": "other"
       },
       {
         "id": "toxicant-twister",
@@ -145053,7 +145064,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
           }
         ],
-        "effect": "When used, it rapidly auto-fires a continuous stream of purple blades that home on nearby enemies and explode on impact. The blades pass through tiles and travel for a moderate distance before being affected by gravity."
+        "effect": "When used, it rapidly auto-fires a continuous stream of purple blades that home on nearby enemies and explode on impact. The blades pass through tiles and travel for a moderate distance before being affected by gravity.",
+        "subclass": "other"
       },
       {
         "id": "plasma-grenade",
@@ -145103,7 +145115,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper",
-        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay."
+        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay.",
+        "subclass": "other"
       },
       {
         "id": "toxicant-twister",
@@ -154536,7 +154549,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper",
-        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay."
+        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay.",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -174249,7 +174263,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper",
-        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay."
+        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay.",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -184138,7 +184153,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Refraction_Rotor",
-        "effect": "When used, it throws a gravity-defying disk that passes through tiles and pierces nine times. The disk sticks to enemies and continuously damages them before exploding into several homing blades in a flower pattern."
+        "effect": "When used, it throws a gravity-defying disk that passes through tiles and pierces nine times. The disk sticks to enemies and continuously damages them before exploding into several homing blades in a flower pattern.",
+        "subclass": "other"
       },
       {
         "id": "supernova",
@@ -184178,7 +184194,8 @@
           }
         ],
         "station": "Draedon's Forge",
-        "effect": "Disables normal stealth generation \u00b7 Hold \u2692 Use / Attack to generate stealth, or hold \u26b7 Open / Activate to toss the bomb without generating stealth \u00b7 Tosses a smart bomb that locks onto and tracks targets \u00b7 If no target is found it will return to you \u00b7 Each bomb creates a miniature Miracle Blight supernova that drags in weak enemies and chases strong enemies \u00b7 Stealth strikes create a blast that shakes the foundations of reality itself"
+        "effect": "Disables normal stealth generation \u00b7 Hold \u2692 Use / Attack to generate stealth, or hold \u26b7 Open / Activate to toss the bomb without generating stealth \u00b7 Tosses a smart bomb that locks onto and tracks targets \u00b7 If no target is found it will return to you \u00b7 Each bomb creates a miniature Miracle Blight supernova that drags in weak enemies and chases strong enemies \u00b7 Stealth strikes create a blast that shakes the foundations of reality itself",
+        "subclass": "bomb"
       },
       {
         "id": "celestus",
@@ -184320,7 +184337,8 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper",
-        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay."
+        "effect": "When fired, it throws a scythe which spawns unstable isotope projectiles on enemy hits that explode after a brief delay.",
+        "subclass": "other"
       }
     ],
     "armor": [
