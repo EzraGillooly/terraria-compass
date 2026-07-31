@@ -55,11 +55,12 @@ test.describe('main screens', () => {
     await expectVisibleIconsToResolve(page);
 
     // Switch class + phase and confirm icons still resolve. The class control is
-    // in the header menu, which is a hamburger panel on mobile - open it, pick
-    // the class, close it, then click the phase in the page body.
+    // a dropdown in the header menu, which is a hamburger panel on mobile - open
+    // it, open the Class dropdown, pick the class, close the menu, then click the
+    // phase in the page body.
     await toggleMenuIfMobile(page);
-    await page.getByRole('radiogroup', { name: 'Class' })
-      .getByRole('radio', { name: 'Mage' }).click();
+    await page.getByRole('button', { name: 'Class' }).click();
+    await page.getByRole('option', { name: 'Mage' }).click();
     await toggleMenuIfMobile(page);
     await page.getByRole('button', { name: /Endgame/ }).click();
     await expectVisibleIconsToResolve(page);

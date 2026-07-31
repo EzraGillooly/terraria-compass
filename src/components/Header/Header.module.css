@@ -173,7 +173,9 @@
 }
 .calModeRow {
   position: absolute;
-  top: calc(100% + 4px);
+  /* match the gap the pop-out menus open with (.diffSelect .diffMenu) so the
+     strip sits the same distance below the bar as every dropdown */
+  top: calc(100% + 10px);
   right: 0;
   z-index: 25;
   display: inline-flex;
@@ -359,15 +361,11 @@
 
   /* Controls stack full-width, each selector spanning the row. */
   .controls { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
-  .diffSelect, .worldColumn, .classStack { width: 100%; height: auto; }
+  .diffSelect, .worldColumn { width: 100%; height: auto; }
   .diffTrigger { width: 100%; justify-content: space-between; }
   .diffValue { margin-left: auto; }
   /* Pop-outs open in flow here (not absolutely, which would escape the panel). */
   .diffSelect .diffMenu { position: static; margin-top: 6px; }
-
-  /* The class stack is always-open; in the panel it sits in flow, full width. */
-  .classStackList { position: static; }
-  .classStackItem { width: 100%; }
 
   /* Calamity mode sits in flow under World rather than overlaid. */
   .worldColumn { display: flex; flex-direction: column; gap: 8px; }
@@ -386,71 +384,16 @@
   color: var(--warm);
 }
 
-/* Class dropdown items carry the class weapon sprite alongside the label. */
-.classItem { display: flex; align-items: center; justify-content: center; gap: 9px; }
+/* Class dropdown items carry the class weapon sprite alongside the label - the
+   only .diffItem variant with an icon, so it centres icon + label as a row. */
 .classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }
-
-/* ── Class stack - the class menu, permanently open ──
-   The wrapper claims only a trigger's worth of space and the list is taken out
-   of flow inside it, so a five-class stack hangs over the hero instead of
-   stretching the header. Same fill, border and radius as the pop-out menu, so
-   it still reads as that control rather than as a new one. */
-.classStack {
-  position: relative;
-  height: var(--control-h);
-  width: clamp(104px, 11vw, 128px);
-}
-.classStackList {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 30;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 4px;
-  background: rgba(28, 40, 96, .96);
-  border: 1px solid #000;
-  border-radius: var(--radius-md);
-  box-shadow: 0 6px 18px rgba(8, 14, 34, .45);
-}
-.classStackItem {
+.classPick {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 5px 8px 3px;   /* Andy Bold sits high in its box */
-  background: transparent;
-  border: 0;
-  border-radius: var(--radius-sm);
-  font-family: var(--body);
-  font-weight: 700;
-  font-size: 13px;
-  color: rgba(255, 255, 255, .72);
-  cursor: pointer;
-  text-align: left;
-  transition: background .12s, color .12s;
 }
-.classStackItem:hover {
-  background: color-mix(in oklab, var(--warm) 30%, transparent);
-  color: #fff;
-}
-.classStackItem:focus-visible { outline: 2px solid var(--warm); outline-offset: -2px; }
-.classStackItemOn,
-.classStackItemOn:hover { background: var(--accent); color: #fff; }
 /* Unpicked sprites recede so the active class reads first. */
-.classStackItem .classItemIcon { opacity: .55; transition: opacity .12s; }
-.classStackItem:hover .classItemIcon,
-.classStackItemOn .classItemIcon { opacity: 1; }
-.classStackName { white-space: nowrap; }
-
-/* Class-stack mobile overrides live at the end of the file on purpose: the base
-   .classStack rules above are defined after the main @media block, so putting
-   these here is what lets them win (media queries add no specificity). In the
-   mobile panel the always-open stack sits in flow, full width, taking real
-   height instead of overlaying the selectors below it. */
-@media (max-width: 700px) {
-  .classStack { width: 100%; height: auto; }
-  .classStackList { position: static; }
-  .classStackItem { width: 100%; }
-}
+.classPick .classItemIcon { opacity: .6; transition: opacity .12s; }
+.classPick:hover .classItemIcon,
+.diffItemOn.classPick .classItemIcon { opacity: 1; }
