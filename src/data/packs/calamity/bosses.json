@@ -4370,15 +4370,169 @@
     "stage": "cal-pre-yharon",
     "tier": 0,
     "side": false,
-    "summon": "Use a Blessed Phoenix Egg anywhere at any time",
+    "summon": "Use a Blessed Phoenix Egg in the Jungle. It requires the Devourer of Gods to be defeated first, and is one of the hardest fights so far.",
     "drops": [
-      "Phoenix Flame Barrage",
-      "Yharon's Kindle Staff",
-      "The Final Dawn",
-      "Yharon Soul Fragment"
+      {
+        "name": "Dragon Rage",
+        "icon": "calamity/dragon-rage.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A blade that unleashes waves of dragonfire in a combo.",
+        "stats": "888 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon_Rage"
+      },
+      {
+        "name": "The Burning Sky",
+        "icon": "calamity/the-burning-sky.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A broadsword that fires blazing solar slashes.",
+        "stats": "147 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Burning_Sky"
+      },
+      {
+        "name": "Chicken Cannon",
+        "icon": "calamity/chicken-cannon.png",
+        "slot": "weapon",
+        "subclass": "launcher",
+        "effect": "Fires explosive chicken rockets that deal heavy area damage.",
+        "stats": "277 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chicken_Cannon"
+      },
+      {
+        "name": "Dragon's Breath",
+        "icon": "calamity/dragons-breath.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Breathes a torrent of dragonfire that pierces enemies.",
+        "stats": "328 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon%27s_Breath"
+      },
+      {
+        "name": "Phoenix Flame Barrage",
+        "icon": "calamity/phoenix-flame-barrage.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a barrage of homing phoenix flames.",
+        "stats": "140 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phoenix_Flame_Barrage"
+      },
+      {
+        "name": "Yharim\u2019s Crystal",
+        "icon": "calamity/yharims-crystal.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a hovering crystal that rains down bolts on enemies.",
+        "stats": "65 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim%27s_Crystal"
+      },
+      {
+        "name": "Yharon's Kindle Staff",
+        "icon": "calamity/yharons-kindle-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a baby Yharon minion that breathes fire at enemies.",
+        "stats": "300 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon%27s_Kindle_Staff"
+      },
+      {
+        "name": "The Final Dawn",
+        "icon": "calamity/the-final-dawn.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a spread of flares that home and explode into solar fire.",
+        "stats": "2500 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Final_Dawn"
+      },
+      {
+        "name": "Wrathwing",
+        "icon": "calamity/wrathwing.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws feather blades that ignite enemies.",
+        "stats": "592 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wrathwing"
+      },
+      {
+        "name": "Wings of Rebirth",
+        "icon": "calamity/wings-of-rebirth.png",
+        "slot": "accessory",
+        "effect": "High-tier wings with excellent flight and a fiery trail.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wings_of_Rebirth"
+      },
+      {
+        "name": "Forgotten Dragon Egg",
+        "icon": "calamity/forgotten-dragon-egg.png",
+        "slot": "pet",
+        "effect": "Summons a baby Yharon pet to follow you.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Forgotten_Dragon_Egg"
+      },
+      {
+        "name": "McNuggets",
+        "icon": "calamity/mcnuggets.png",
+        "slot": "pet",
+        "effect": "Summons a chicken pet to follow you.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/McNuggets"
+      },
+      {
+        "name": "Yharon Soul Fragment",
+        "icon": "calamity/yharon-soul-fragment.png",
+        "slot": "material",
+        "effect": "Top-tier crafting material used for endgame gear before the Exo Mechs and Supreme Calamitas.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon_Soul_Fragment"
+      },
+      {
+        "name": "Fox Drive",
+        "icon": "calamity/fox-drive.png",
+        "slot": "buff",
+        "mode": "revengeance",
+        "effect": "Permanent power-up. Increases the duration of Rage Mode by 1 second when consumed.",
+        "dropRate": "100% (Revengeance bag)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fox_Drive"
+      },
+      {
+        "name": "Yharon Mask",
+        "icon": "calamity/yharon-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Yharon.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon_Mask"
+      }
     ],
-    "blurb": "The immortal jungle dragon and Yharim's loyal guardian, a fiery two-phase gauntlet before the final trials.",
-    "color": "#F07A1E"
+    "blurb": "A phoenix dragon fought in the Jungle. It flies in fast charges and fills the arena with rings of flare dust, escalating hard in its second phase.",
+    "color": "#F07A1E",
+    "unlocks": "Opens the final tier of Calamity - the Exo Mechs and Supreme Calamitas can now be challenged. Yharon Soul Fragments craft the top-tier gear used to prepare for them.",
+    "summonItem": {
+      "name": "Blessed Phoenix Egg",
+      "icon": "calamity/blessed-phoenix-egg.png",
+      "slot": "summon",
+      "effect": "Summons Yharon, Dragon of Rebirth, in the Jungle.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blessed_Phoenix_Egg",
+      "materials": [
+        {
+          "name": "Life Alloy",
+          "qty": 10
+        },
+        {
+          "name": "Effulgent Feather",
+          "qty": 15
+        }
+      ]
+    }
   },
   {
     "id": "exo-mechs",
