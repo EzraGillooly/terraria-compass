@@ -432,14 +432,74 @@
     "stage": "cal-pre-hive-perf",
     "tier": 0,
     "side": false,
-    "summon": "Use Worm Food in the Corruption, or break three Shadow Orbs.",
+    "summon": "Use it in the Corruption or Underground Corruption. It is also summoned by smashing three Shadow Orbs.",
     "drops": [
-      "Demonite Ore",
-      "Shadow Scale",
-      "Eater's Bone"
+      {
+        "name": "Shadow Scale",
+        "icon": "items/shadow-scale.png",
+        "slot": "material",
+        "effect": "Corruption crafting material for Shadow armor and demonite tools.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+      },
+      {
+        "name": "Demonite Ore",
+        "icon": "materials/demonite-ore.png",
+        "slot": "material",
+        "effect": "Smelt it into Demonite Bars - the Eater drops it in bulk.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore"
+      },
+      {
+        "name": "Eater's Bone",
+        "icon": "items/eaters-bone.png",
+        "slot": "pet",
+        "effect": "Summons a miniature Eater of Worlds to follow you.",
+        "dropRate": "5%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eater%27s_Bone"
+      },
+      {
+        "name": "Eater of Worlds Mask",
+        "icon": "items/eater-of-worlds-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Eater of Worlds' head.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eater_of_Worlds_Mask"
+      },
+      {
+        "name": "Worm Scarf",
+        "icon": "accessories/worm-scarf.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Reduces all damage taken by 17%.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf"
+      }
     ],
     "blurb": "A massive segmented worm that burrows through the Corruption, splitting when struck.",
-    "color": "#6b4c9a"
+    "color": "#6b4c9a",
+    "world": "corruption",
+    "unlocks": "Can now craft Shadow armor and the Nightmare Pickaxe.",
+    "summonItem": {
+      "name": "Worm Food",
+      "icon": "items/worm-food.png",
+      "slot": "summon",
+      "effect": "Summons the Eater of Worlds when used in the Corruption.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Food",
+      "materials": [
+        {
+          "name": "Vile Powder",
+          "qty": 30,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Vile_Powder"
+        },
+        {
+          "name": "Rotten Chunk",
+          "qty": 15,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Rotten_Chunk"
+        }
+      ]
+    }
   },
   {
     "id": "brain-of-cthulhu",
@@ -447,14 +507,67 @@
     "stage": "cal-pre-hive-perf",
     "tier": 1,
     "side": false,
-    "summon": "Use a Bloody Spine in the Crimson, or break three Crimson Hearts.",
+    "summon": "Use it in the Crimson. It is also summoned by smashing three Crimson Hearts.",
     "drops": [
-      "Crimtane Ore",
-      "Tissue Sample",
-      "Brain of Confusion"
+      {
+        "name": "Tissue Sample",
+        "icon": "items/tissue-sample.png",
+        "slot": "material",
+        "effect": "Crimson crafting material for Crimson armor and crimtane tools - dropped by the Creepers that swarm the Brain.",
+        "dropRate": "From the Creepers",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+      },
+      {
+        "name": "Crimtane Ore",
+        "icon": "materials/crimtane-ore.png",
+        "slot": "material",
+        "effect": "Smelt it into Crimtane Bars - the Brain drops it in bulk.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Ore"
+      },
+      {
+        "name": "Brain of Cthulhu Mask",
+        "icon": "items/brain-of-cthulhu-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Brain of Cthulhu.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Cthulhu_Mask"
+      },
+      {
+        "name": "Brain of Confusion",
+        "icon": "accessories/brain-of-confusion.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "A chance to dodge attacks, and confuses nearby enemies when you are hit.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Brain_of_Confusion"
+      }
     ],
     "blurb": "The Crimson's pulsing brain that teleports behind a swarm of Creepers.",
-    "color": "#c8506e"
+    "color": "#c8506e",
+    "world": "crimson",
+    "unlocks": "Can now craft Crimson armor and the Deathbringer Pickaxe.",
+    "summonItem": {
+      "name": "Bloody Spine",
+      "icon": "items/bloody-spine.png",
+      "slot": "summon",
+      "effect": "Summons the Brain of Cthulhu when used in the Crimson.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Bloody_Spine",
+      "materials": [
+        {
+          "name": "Vicious Powder",
+          "qty": 30,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Vicious_Powder"
+        },
+        {
+          "name": "Vertebra",
+          "qty": 15,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Vertebra"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "the-hive-mind",
