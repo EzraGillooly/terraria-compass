@@ -41,7 +41,7 @@
           }
         ],
         "station": "By Hand",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "It is a direct upgrade to the Wooden Boomerang."
       },
       {
@@ -103,7 +103,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terragrim",
         "effect": "When used, it rapidly releases slashes aimed towards the cursor. Anything within this area takes constant damage at a rate exceeding the weapon's stated use time.",
-        "subclass": "true-melee"
+        "subclass": "projectile-melee"
       }
     ],
     "armor": [
@@ -1060,7 +1060,7 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "tendon-bow",
@@ -1081,7 +1081,7 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "flintlock-pistol",
@@ -1094,7 +1094,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flintlock_Pistol",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "molotov-cocktail",
@@ -1144,7 +1144,8 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Paintball_Gun",
         "dropRate": "10%",
-        "effect": "The Paintball Gun has a 11% critical strike chance, as opposed to the usual 4%. It has a 1/10 (10%) chance of being dropped by the Painter."
+        "effect": "The Paintball Gun has a 11% critical strike chance, as opposed to the usual 4%. It has a 1/10 (10%) chance of being dropped by the Painter.",
+        "subclass": "gun"
       },
       {
         "id": "spark-spreader",
@@ -1176,7 +1177,7 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -2463,7 +2464,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "materials": [
           {
             "name": "Sturdy Fossil",
@@ -2490,7 +2491,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod",
-        "subclass": "wands",
+        "subclass": "summon-magic",
         "dropRate": "20%",
         "effect": "One cloud projectile can be placed at a time and it does not pass through terrain, instead stopping if it hits a surface before it reaches its target location. Once placed, the cloud will remain for five minutes, similarly to the Nimbus Rod 's cloud."
       },
@@ -2505,7 +2506,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "12.5%",
         "effect": "When used, it fires a lightning bolt that travels in a zigzag pattern horizontally (but traveling straight when shooting directly up or down)."
       },
@@ -2520,7 +2521,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Veering_Wind",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -2557,7 +2558,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vilethorn",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "20%",
         "effect": "It has a 1/5 (20%) chance of being obtained from destroying Shadow Orbs found in the Corruption or a 1/5 (20%) chance from Corrupt Crates (Desktop, Console and Mobile versions) and Defiled Crates (Desktop, Console and Mobile versions), which are fished in the Corruption. When used, it extends a 15-tile-long thorn from the player's position, which passes through blocks, pierces infinite enemies, and hits rapidly for up to six times per enemy."
       }
@@ -3718,7 +3719,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leather_Whip",
         "effect": "4 summon tag damage \u00b7 Your summons will focus struck enemies \u00b7 'Die monster!'"
       }
@@ -4805,7 +4806,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Antlion_Skewer",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a skewered Antlion javelin that is unaffected by gravity. After 0.25 seconds, the Antlion spits a sand ball in its direction which deals 50% damage, then accelerates for the next 0.5 seconds."
       },
       {
@@ -4819,7 +4820,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile",
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "It throws a bile flask that shatters into a lingering irradiated cloud on hit."
       },
       {
@@ -4834,7 +4835,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Dagger",
         "tier": "good",
         "effect": "When used, it throws a fast-moving golden dagger that ricochets towards the nearest enemy after hitting the first enemy. The dagger pierces once and breaks on tile contact.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Gold Bar",
@@ -4856,7 +4857,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gleaming_Dagger",
         "tier": "other",
         "effect": "When used, it throws a fast-moving platinum dagger that ricochets towards the nearest enemy after hitting the first enemy. The dagger pierces once and breaks on tile contact.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Platinum Bar",
@@ -4877,7 +4878,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Stinger",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, they fire an urchin stinger that travels a short distance before being affected by gravity. The urchin stinger pierces once and inflicts the Poisoned debuff on hit."
       },
       {
@@ -4899,7 +4900,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used with its primary fire (\u2692 Use / Attack), it throws a set of three knives in quick succession. The knives are affected by gravity and do not pierce."
       },
       {
@@ -4914,7 +4915,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Iron_Francisca",
         "tier": "other",
         "effect": "It throws a gravity affected axe that travels a short distance before falling to the ground. Each axe's damage has a 2x damage increase for the first 0.25 seconds after being thrown.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Iron Bar",
@@ -4936,7 +4937,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lead_Tomahawk",
         "tier": "other",
         "effect": "It throws a gravity affected axe that travels a short distance before falling to the ground. Each axe's damage has a 2x damage increase for the first 0.25 seconds after being thrown.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Lead Bar",
@@ -6238,7 +6239,7 @@
         ],
         "station": "Work Bench",
         "effect": "Unlike most boomerangs, it does not have to return to the player before being fired, with a maximum of three Trimarangs that can be thrown out at one time.",
-        "subclass": "boomerangs"
+        "subclass": "boomerang"
       },
       {
         "id": "urchin-mace",
@@ -6260,7 +6261,7 @@
           }
         ],
         "effect": "When used, the player starts spinning the mace around, creating a whirlpool around themselves. If the player stops using the weapon after 1.83 or more seconds of spinning, they launch the whirlpool towards their mouse cursor, which pierces infinitely, deals double damage, and travels a short distance before popping, emitting glowing water dust in a large radius.",
-        "subclass": "flails"
+        "subclass": "flail"
       }
     ],
     "armor": [
@@ -7506,7 +7507,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Rain_Bow",
         "dropRate": "12.5%",
         "effect": "When used, it converts any type of arrow into a spread of 1\u20133 streams of blood (average of 1.83 streams) [ 1 ] to rain from the sky, directed towards the cursor. Each use only consumes one arrow.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "boomstick",
@@ -7521,7 +7522,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
         "dropRate": "19/100 (19%)",
         "effect": "It can be found in Ivy Chests (21.72% chance) in the Underground Jungle, and also in Jungle Crates (19/100 (19%) chance). When used, it fires a spread of 3\u20134 bullets, consuming one piece of ammunition.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "fungicide",
@@ -7535,7 +7536,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide",
         "effect": "When Musket Balls are used as ammo, it fires a fungus bullet that, upon impact with an enemy or tile, splits into smaller spores which are affected by gravity. These spores quickly home in on nearby enemies and are not affected by gravity while doing so.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "spark-spreader",
@@ -7567,7 +7568,7 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "spiky-ball",
@@ -9116,7 +9117,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Acid_Gun",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -9143,7 +9144,7 @@
         "tags": [],
         "topPick": true,
         "tier": "good",
-        "subclass": "wands",
+        "subclass": "summon-magic",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimson_Rod",
         "dropRate": "20%",
         "effect": "One cloud projectile can be placed at a time and it does not pass through terrain, instead stopping if it hits a surface before it reaches its target location. Once placed, the cloud will remain for five minutes, similarly to the Nimbus Rod 's cloud."
@@ -9158,7 +9159,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gray_Zapinator",
         "effect": "It is only available once King Slime, the Eye of Cthulhu, Eater of Worlds, Brain of Cthulhu, Queen Bee, Deerclops, or Skeletron has been defeated. Its Hardmode counterpart is the Orange Zapinator."
       },
@@ -9172,7 +9173,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "wands",
+        "subclass": "wand",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sparkling_Empress",
         "effect": "When used, it briefly charges, then releases a concentrated light-blue laser that pierces infinitely. Upon killing an enemy, they explode into two to three prism shards that shoot out in random directions, dealing 20% of the weapon's base damage."
       },
@@ -9186,7 +9187,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "wands",
+        "subclass": "wand",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
         "dropRate": "12.5%",
         "effect": "When used, it fires a lightning bolt that travels in a zigzag pattern horizontally (but traveling straight when shooting directly up or down)."
@@ -10738,7 +10739,7 @@
         "tags": [],
         "topPick": true,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn",
         "materials": [
           {
@@ -12145,7 +12146,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Pumpkin_Seed"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it throws a pumpkin bomb that sticks to enemies on hit. Upon sticking to enemies for 1.83 seconds, it explodes in a 10.625 tile radius for 200% damage."
       },
       {
@@ -12159,7 +12160,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Dollar",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws up to 2 sand dollars that return to the player after traveling a moderate distance or hitting an enemy."
       },
       {
@@ -12191,7 +12192,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it throws a small bomb that travels a short distance before being affected by gravity. Upon collision with a tile or enemy, the bomb explodes into a bubble that ignores enemy immunity frames."
       },
       {
@@ -12218,7 +12219,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "It releases damaging spore clouds upon contact with a surface or enemy."
       },
       {
@@ -12232,7 +12233,7 @@
         "topPick": true,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Contaminated_Bile",
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "It throws a bile flask that shatters into a lingering irradiated cloud on hit."
       },
       {
@@ -12246,7 +12247,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a javelin that burrows into tiles and launches itself towards the closest enemy when burrowing through tiles. Thrown javelins are slightly affected by gravity and pierce twice."
       }
     ],
@@ -13748,7 +13749,7 @@
           }
         ],
         "effect": "While deployed, it causes stars to rain from the sky, which pierce twice and can pass through tiles. The Smoking Comet's hitbox is also much larger than other yoyos.",
-        "subclass": "yoyos"
+        "subclass": "yoyo"
       },
       {
         "id": "the-meatball",
@@ -13774,7 +13775,7 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "subclass": "flails",
+        "subclass": "flail",
         "effect": "Its Corruption counterpart is the Ball O' Hurt."
       },
       {
@@ -13797,7 +13798,7 @@
           }
         ],
         "effect": "When used, the player starts spinning the mace around, creating a whirlpool around themselves. If the player stops using the weapon after 1.83 or more seconds of spinning, they launch the whirlpool towards their mouse cursor, which pierces infinitely, deals double damage, and travels a short distance before popping, emitting glowing water dust in a large radius.",
-        "subclass": "flails"
+        "subclass": "flail"
       }
     ],
     "armor": [
@@ -15036,7 +15037,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
         "dropRate": "19/100 (19%)",
         "effect": "It can be found in Ivy Chests (21.72% chance) in the Underground Jungle, and also in Jungle Crates (19/100 (19%) chance). When used, it fires a spread of 3\u20134 bullets, consuming one piece of ammunition.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "firestorm-cannon",
@@ -15050,7 +15051,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
         "tier": "good",
         "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Flare Gun",
@@ -15082,7 +15083,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magna_Cannon",
         "tier": "good",
         "effect": "While holding, the player channels a glowing blue orb at the tip of the gun and loads one crystal bolt every 0.15 seconds. After channeling for 2.3 seconds, the orb reaches maximum power, increasing the amount of loaded bolts to 20.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Granite Block",
@@ -15119,7 +15120,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Opal_Striker",
         "tier": "other",
         "effect": "While holding, the player channels a glowing orange orb at the tip of the gun which reaches its maximum power after 1.47 seconds. Releasing while fully charged discharges a charged bolt which deals 500% damage and 300% knockback, inflicts the Hellfire debuff, and pierces twice.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Marble Block",
@@ -15164,7 +15165,7 @@
         ],
         "station": "Iron Anvil or Lead Anvil",
         "effect": "When used, it converts Wooden Arrows into Flaming Arrows, causing them to inflict the On Fire! debuff on hit.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "spiky-ball",
@@ -16538,7 +16539,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe",
-        "subclass": "wands",
+        "subclass": "spell-tome",
         "dropRate": "2.86%",
         "effect": "When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
       },
@@ -16554,7 +16555,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flare_Bolt",
         "tier": "good",
         "effect": "When used, it fires a slow-moving ball of fire that travels in a straight line, is unaffected by gravity, inflicts the On Fire! debuff on hit, and can pierce or bounce off blocks three times before dissipating.",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -16586,7 +16587,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellwing_Staff",
         "tier": "good",
         "effect": "When used, it spawns 4 non-piercing flaming bats that go through tiles and quickly dissipate after spawning. The way the bats spawn depends on where the cursor spawns them.",
-        "subclass": "wands",
+        "subclass": "wand",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -16613,7 +16614,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Space_Gun",
         "tier": "other",
         "effect": "When used, it fires fast green lasers that can hit up to three enemies. The lasers will increase in damage, pierce, knockback and size (only visually) as they travel.",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "materials": [
           {
             "name": "Meteorite Bar",
@@ -16635,7 +16636,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Cauldron",
         "tier": "other",
         "effect": "When used, the player holds the cauldron overhead which lobs gravity-affected lava bombs towards the cursor. Upon impact with a tile or enemy, the lava bombs cause a small explosion that deals 66% of the weapon's damage as well as erupting into 3 smaller bombs.",
-        "subclass": "wands",
+        "subclass": "wand",
         "materials": [
           {
             "name": "Lava Bucket",
@@ -18196,7 +18197,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn",
         "materials": [
           {
@@ -19450,7 +19451,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashen_Stalactite",
         "tier": "best",
         "effect": "It automatically throws a gravity-affected stalactite that does not pierce and breaks into cosmetic dust shortly after.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       },
       {
         "id": "infernal-kris",
@@ -19464,7 +19465,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infernal_Kris",
         "tier": "good",
         "effect": "When used, it throws a fire dagger that starts to spin after traveling a moderate distance. The daggers are not affected by gravity, pierce once and inflict the On Fire! debuff.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -19498,7 +19499,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it releases a rocket fist which connects to the player via a wire. After 1 second, the fist begins to accelerate and home towards the cursor's position, leaving a fiery trail behind it."
       },
       {
@@ -20870,7 +20871,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aorta",
         "tier": "best",
         "effect": "While deployed, it fires blood clots to enemies within 16 tiles, which first travel a short distance in that direction before homing in on the target; only then can they deal damage. The blood clots do not pierce or pass through tiles, and they deal 25% of the weapon's damage.",
-        "subclass": "yoyos"
+        "subclass": "yoyo"
       },
       {
         "id": "bladecrest-oathsword",
@@ -22329,7 +22330,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aquashard_Shotgun",
         "tier": "best",
         "effect": "When used, it shoots a spread of 2 bullets. If Musket Balls are used as ammo, the bullets are replaced with aquamarine shards that split into 1-2 smaller weakly homing shards upon contact with an enemy, which deal 50% of the weapon's damage each.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Boomstick",
@@ -22361,7 +22362,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
         "tier": "good",
         "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Flare Gun",
@@ -22393,7 +22394,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Galeforce",
         "tier": "good",
         "effect": "When used, it shoots arrows along with volleys of three non-piercing feathers, both at a high velocity.",
-        "subclass": "bows",
+        "subclass": "bow",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -22451,7 +22452,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -23873,7 +23874,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it spawns 2-3 blood raindrops from the sky that pierce once but cannot pass through tiles. The raindrops inflict the Burning Blood debuff."
       },
       {
@@ -23888,7 +23889,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shaderain_Staff",
         "tier": "good",
         "effect": "When used, it fires a spread of 2 gravity-affected raindrops along with a decelerating cloud ball. Both the cloud balls and raindrops inflict the Brain Rot debuff and do not pierce.",
-        "subclass": "wands"
+        "subclass": "wand"
       },
       {
         "id": "space-gun",
@@ -23902,7 +23903,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Space_Gun",
         "tier": "good",
         "effect": "When used, it fires fast green lasers that can hit up to three enemies. The lasers will increase in damage, pierce, knockback and size (only visually) as they travel.",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "materials": [
           {
             "name": "Meteorite Bar",
@@ -23924,7 +23925,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tradewinds",
         "tier": "other",
         "effect": "When used, it fires fast moving aero feathers. These feathers emit light particles and are capable of piercing or ricocheting once, disappearing on its second impact.",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -25560,7 +25561,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snapthorn",
         "materials": [
           {
@@ -27036,7 +27037,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a gravity affected knife that periodically releases homing explosive feathers. The feather and explosion deal 5% and 50% of the weapon's damage respectively."
       },
       {
@@ -27050,7 +27051,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hardened_Honeycomb",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, it throws honeycomb projectiles that are slightly affected by gravity and shatter into 2 fragments upon collision with an enemy or tile. The honeycomb fragments fly in random directions and deal 100% of the weapon's base damage."
       },
       {
@@ -27072,7 +27073,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it releases a rocket fist which connects to the player via a wire. After 1 second, the fist begins to accelerate and home towards the cursor's position, leaving a fiery trail behind it."
       },
       {
@@ -27087,7 +27088,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/P-LSR%3A_Aerial_Tracker",
         "tier": "other",
         "effect": "When thrown, the disk detects the nearest enemy and fires lasers towards them, accelerating further the longer it is out. These lasers do not directly damage enemies, and instead accumulate laser burn for each time they hit an enemy, equal to 20% of the disk's damage, which deals direct damage after enough time has passed or enough lasers have hit the enemy.",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "materials": [
           {
             "name": "Mysterious Circuitry",
@@ -30001,7 +30002,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Archerfish",
         "tier": "best",
         "effect": "When used, it converts Musket Balls into bubbly streams of water that pierce once and inflict the Riptide and Wet debuffs. It also fires a short-range water ring regardless of ammo used, which deals 50% of the weapon's damage and pierces once.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "flurrystorm-cannon",
@@ -30056,7 +30057,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gunk_Shot",
         "tier": "good",
         "effect": "When used, it fires 3-4 bullets in a shotgun pattern.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Purified Gel",
@@ -30083,7 +30084,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunarian_Bow",
         "tier": "other",
         "effect": "When used, it fires two arrows at once. If Wooden Arrows are used as ammo, it instead fires straight beams that are not affected by gravity and can bounce on a block once; however, the bolts will slide on the hit block rather than bounce off of it.",
-        "subclass": "bows",
+        "subclass": "bow",
         "materials": [
           {
             "name": "Demon Bow",
@@ -30125,7 +30126,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -31563,7 +31564,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "effect": "When used, it fires a slow-moving purple glob that passes through tiles and is not affected by gravity and will slowly decelerate before stopping in place. After hitting an enemy twice or after 5 seconds from being shot, it will explode, dealing damage in a small radius."
       },
       {
@@ -31577,7 +31578,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aqua_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "1/7 (14.29%)",
         "effect": "The water streams bounce upwards upon colliding with lava. They pierce infinitely after a bounce, move slower, are less affected by gravity and can last for a significantly longer time. [ 1 ]"
       },
@@ -31592,7 +31593,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it spawns 2-3 blood raindrops from the sky that pierce once but cannot pass through tiles. The raindrops inflict the Burning Blood debuff."
       },
       {
@@ -31606,7 +31607,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Scythe",
-        "subclass": "wands",
+        "subclass": "spell-tome",
         "dropRate": "2.86%",
         "effect": "When used, it fires a sickle projectile that is initially static before gradually accelerating. The sickles can hit up to five times before dissipating, and they cannot pass through blocks."
       },
@@ -31621,7 +31622,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eldritch_Tome",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "effect": "When used, it releases red tendrils which bend in random directions, similarly to the Shadowflame Hex Doll."
       },
       {
@@ -31635,7 +31636,7 @@
         "topPick": true,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Night's_Ray",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Demon Altar or Crimson Altar",
         "materials": [
           {
@@ -33301,7 +33302,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spinal_Tap",
         "tier": "other",
         "effect": "7 summon tag damage \u00b7 Your summons will focus struck enemies \u00b7 Performs better against multiple targets than most whips \u00b7 'This goes to eleven'",
-        "subclass": "whips",
+        "subclass": "whip",
         "materials": [
           {
             "name": "Bone",
@@ -34707,7 +34708,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a gravity affected knife that periodically releases homing explosive feathers. The feather and explosion deal 5% and 50% of the weapon's damage respectively."
       },
       {
@@ -34721,7 +34722,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glaive",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces three times. Each struck enemy will reduce the damage of the glaive by 10%."
       },
       {
@@ -34761,7 +34762,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shinobi_Blade",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a fast dagger that is unaffected by gravity and does not pierce or pass through tiles. Enemies killed by the dagger spawn homing blue orbs that heal the player for 5 health."
       }
     ],
@@ -36182,7 +36183,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bananarang",
         "dropRate": "10%",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "Unlike most boomerangs, it does not have to return to the player before being fired, with a maximum of ten Bananarangs that can be thrown out at one time."
       },
       {
@@ -36198,7 +36199,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "effect": "When used, they fire two blades attached to chains in rapid succession, with a maximum range of 32 tiles. They can pierce enemies that are very close by.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "comet-quasher",
@@ -37967,7 +37968,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
         "dropRate": "25%",
         "effect": "When used, it causes a wide spread of arrows to rain from the sky, directed towards the cursor. It fires two to four arrows per use, while only consuming a single arrow from the player's inventory.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "dart-pistol",
@@ -37981,7 +37982,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Pistol",
         "dropRate": "20%",
-        "subclass": "guns",
+        "subclass": "gun",
         "effect": "It has a 1/5 (20%) chance of being dropped by Crimson Mimics."
       },
       {
@@ -37996,7 +37997,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Rifle",
         "dropRate": "20%",
-        "subclass": "guns",
+        "subclass": "gun",
         "effect": "It has a 1/5 (20%) chance of being dropped by Corrupt Mimics."
       },
       {
@@ -38011,7 +38012,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Needler",
         "effect": "If Musket Balls are used as ammo, bullets are converted into needles that stick to enemies and tiles which explode after a delay and inflict the Acid Venom debuff.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "polaris-parrotfish",
@@ -38047,7 +38048,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uzi",
         "dropRate": "1%",
         "effect": "When used, it rapidly fires bullets at a high velocity. It also converts Musket Balls and Tungsten Bullets (Desktop, Console and Mobile versions) into High Velocity Bullets, giving them the special effects but not affecting their damage.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -39971,7 +39972,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "12.5%",
         "effect": "It has a 1/8 (12.5%) chance of being dropped by Hemogoblin Sharks."
       },
@@ -39986,7 +39987,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Valley_Duster",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -40018,7 +40019,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "materials": [
           {
             "name": "Meteorite Bar",
@@ -40050,7 +40051,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
-        "subclass": "wands",
+        "subclass": "summon-magic",
         "dropRate": "6.67%",
         "effect": "When cast, a cloud projectile is fired from the Nimbus Rod and travels towards the cursor. Upon reaching its destination or colliding with a solid block, the cloud stops and starts sending damaging raindrop particles downward, each dealing the weapon's stated damage."
       },
@@ -40065,7 +40066,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Poseidon",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "effect": "It shoots a circular Poseidon typhoon sigil that inflicts the Eutrophication debuff while homing in on enemies, lingering on top of them for a short duration, repeatedly dealing damage until it dissipates. Poseidon typhoons will pierce up to 5 times, dissipating on the sixth hit."
       },
       {
@@ -40079,7 +40080,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowflame_Hex_Doll",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "16.7% 33.3%",
         "effect": "While it only fires three tentacles per use, it can be fired continuously to have up to nine projectiles at once. The third tentacle fired in each use is always aimed directly towards the cursor, but the first two keep their random spread."
       }
@@ -41996,7 +41997,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip",
         "materials": [
           {
@@ -42028,7 +42029,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firecracker",
         "dropRate": "25%",
         "effect": "Your summons will focus struck enemies \u00b7 Strike enemies with blazing energy \u00b7 Blazing energy explodes from enemies hit by summons"
@@ -43685,7 +43686,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a cobalt dagger that pierces twice and travels a moderate distance before being affected by gravity."
       },
       {
@@ -43699,7 +43700,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dagger",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a set of three daggers with one always aimed at the cursor while the other two are inaccurate. The daggers pierce once, deal 80% damage on the second hit, and inflict the Cursed Inferno debuff."
       },
       {
@@ -43714,7 +43715,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Spear",
         "tier": "good",
         "effect": "When used, it throws a fast ichor javelin that travels a moderate distance before being affected by gravity. Javelins pierce 5 times, grant 50 local immunity frames and inflict the Ichor debuff.",
-        "subclass": "javelins"
+        "subclass": "javelin"
       },
       {
         "id": "ice-star",
@@ -43727,7 +43728,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -43749,7 +43750,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It throws a javelin that pierces twice, travels a moderate distance before being affected by gravity."
       },
       {
@@ -43781,7 +43782,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a prism dagger that is affected by gravity and pierces infinitely. Shortly after it is thrown, it splits into 3 copies of itself in a random spread."
       },
       {
@@ -43823,7 +43824,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a boomerang that has a custom throw animation and can ricochet between enemies. On enemy hits, the boomerang alternates between spawning piercing dark shards and homing light shards."
       }
     ],
@@ -45610,7 +45611,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "effect": "When used, they fire two blades attached to chains in rapid succession, with a maximum range of 32 tiles. They can pierce enemies that are very close by.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "inferna-cutter",
@@ -47327,7 +47328,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
         "dropRate": "25%",
         "effect": "When used, it causes a wide spread of arrows to rain from the sky, directed towards the cursor. It fires two to four arrows per use, while only consuming a single arrow from the player's inventory.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "dart-pistol",
@@ -47341,7 +47342,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Pistol",
         "dropRate": "20%",
-        "subclass": "guns",
+        "subclass": "gun",
         "effect": "It has a 1/5 (20%) chance of being dropped by Crimson Mimics."
       },
       {
@@ -47356,7 +47357,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Rifle",
         "dropRate": "20%",
-        "subclass": "guns",
+        "subclass": "gun",
         "effect": "It has a 1/5 (20%) chance of being dropped by Corrupt Mimics."
       },
       {
@@ -47394,7 +47395,7 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "effect": "When used, it fires bullets very rapidly in a small spread. It also has a 50% chance not to consume ammunition.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "polaris-parrotfish",
@@ -49193,7 +49194,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "12.5%",
         "effect": "It has a 1/8 (12.5%) chance of being dropped by Hemogoblin Sharks."
       },
@@ -49208,7 +49209,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -49230,7 +49231,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
-        "subclass": "wands",
+        "subclass": "summon-magic",
         "dropRate": "6.67%",
         "effect": "When cast, a cloud projectile is fired from the Nimbus Rod and travels towards the cursor. Upon reaching its destination or colliding with a solid block, the cloud stops and starts sending damaging raindrop particles downward, each dealing the weapon's stated damage."
       },
@@ -49245,7 +49246,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -49282,7 +49283,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowstorm_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it spawns a large flying snowflake that is controlled with the cursor, staying close to it in a similar manner to the Flying Knife. The snowflake can pass through tiles and pierce infinity but will disappear after 4.67 seconds."
       },
       {
@@ -49296,7 +49297,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "3.33%",
         "effect": "When used, it rapidly fires high-velocity purple tridents that pierce two enemies. A trident's damage is reduced by 10% each time it pierces an enemy."
       }
@@ -51124,7 +51125,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip",
         "materials": [
           {
@@ -51156,7 +51157,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firecracker",
         "dropRate": "25%",
         "effect": "Your summons will focus struck enemies \u00b7 Strike enemies with blazing energy \u00b7 Blazing energy explodes from enemies hit by summons"
@@ -52739,7 +52740,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -52761,7 +52762,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a cobalt dagger that pierces twice and travels a moderate distance before being affected by gravity."
       },
       {
@@ -52775,7 +52776,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -52797,7 +52798,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It throws a javelin that pierces twice, travels a moderate distance before being affected by gravity."
       },
       {
@@ -52829,7 +52830,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a prism dagger that is affected by gravity and pierces infinitely. Shortly after it is thrown, it splits into 3 copies of itself in a random spread."
       },
       {
@@ -52844,7 +52845,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Seas",
         "tier": "other",
         "effect": "When used, it throws a javelin that gains velocity while in flight before being affected by gravity. Thrown javelins are slightly affected by gravity and when in contact with an enemy or tile, they will explode into 3-4 toxic clouds.",
-        "subclass": "javelins"
+        "subclass": "javelin"
       },
       {
         "id": "equanimity",
@@ -52885,7 +52886,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a boomerang that has a custom throw animation and can ricochet between enemies. On enemy hits, the boomerang alternates between spawning piercing dark shards and homing light shards."
       }
     ],
@@ -54553,7 +54554,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "effect": "When used, they fire two blades attached to chains in rapid succession, with a maximum range of 32 tiles. They can pierce enemies that are very close by.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "darklight-greatsword",
@@ -56239,7 +56240,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flak_Toxicannon",
         "tier": "good",
         "effect": "When used, it fires a flak shell that erupts into 4 sludge shrapnel projectiles upon contact with enemies or the cursor. Each shrapnel projectile deals 60% of the weapon's damage, which is reduced to 20% if the flak shell hits an enemy directly.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "hellborn",
@@ -56253,7 +56254,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "megashark",
@@ -56290,7 +56291,7 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "effect": "When used, it fires bullets very rapidly in a small spread. It also has a 50% chance not to consume ammunition.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "phantom-phoenix",
@@ -56304,7 +56305,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantom_Phoenix",
         "tier": "other",
         "effect": "When used, it fires a slight spread of two arrows, alongside a large Phoenix projectile on every third use. The weapon only consumes 1 arrow per use, and its use time is increased by 50% after firing a Phoenix projectile (base use time of 27 (Average)) but returns to normal after firing arrows.",
-        "subclass": "bows",
+        "subclass": "bow",
         "dropRate": "10% 20%"
       }
     ],
@@ -58046,7 +58047,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimrose_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -58068,7 +58069,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frigidflash_Bolt",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -58105,7 +58106,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ion_Blaster",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -58132,7 +58133,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nimbus_Rod",
-        "subclass": "wands",
+        "subclass": "summon-magic",
         "dropRate": "6.67%",
         "effect": "When cast, a cloud projectile is fired from the Nimbus Rod and travels towards the cursor. Upon reaching its destination or colliding with a solid block, the cloud stops and starts sending damaging raindrop particles downward, each dealing the weapon's stated damage."
       },
@@ -58147,7 +58148,7 @@
         "topPick": true,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/R-GSS%3A_Vulcan",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -58184,7 +58185,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Trident",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "3.33%",
         "effect": "When used, it rapidly fires high-velocity purple tridents that pierce two enemies. A trident's damage is reduced by 10% each time it pierces an enemy."
       }
@@ -59929,7 +59930,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cool_Whip",
         "materials": [
           {
@@ -59961,7 +59962,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firecracker",
         "dropRate": "25%",
         "effect": "Your summons will focus struck enemies \u00b7 Strike enemies with blazing energy \u00b7 Blazing energy explodes from enemies hit by summons"
@@ -61580,7 +61581,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Adamantite_Throwing_Axe",
         "tier": "best",
         "effect": "When used, it throws an adamantite axe that pierces twice and travels a short distance before being affected by gravity and losing 25% of the weapon's damage per hit.",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "materials": [
           {
             "name": "Adamantite Bar",
@@ -61619,7 +61620,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -61634,7 +61635,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Consecrated_Water",
         "tier": "good",
         "effect": "When used, it throws a gravity affected holy flask that breaks upon contact with enemies or tiles. Upon breaking, the flask releases a 20-block high flame pillar that damages enemies and dissipates after three seconds.",
-        "subclass": "bombs",
+        "subclass": "bomb",
         "materials": [
           {
             "name": "Holy Water",
@@ -61671,7 +61672,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Piercer",
         "tier": "other",
         "effect": "When used, it throws a crystal javelin that pierces infinitely and inflicts the Frostbite debuff. It travels a short distance before being affected by gravity.",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "materials": [
           {
             "name": "Cryonic Bar",
@@ -61692,7 +61693,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -61729,7 +61730,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, a gravity affected flask is thrown that breaks upon contact with enemies and blocks. Upon breaking, the flask releases five bubbles that travel in multiple directions away from where the flask broke."
       },
       {
@@ -61751,7 +61752,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It throws a javelin that pierces twice, travels a moderate distance before being affected by gravity."
       }
     ],
@@ -63535,7 +63536,7 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "effect": "When thrust, it fires a Spore Cloud projectile that deals the weapon's damage and knockback, lasts for a short time, can pass through blocks, and pierces an infinite number of enemies.",
-        "subclass": "projectile-melee"
+        "subclass": "true-melee"
       },
       {
         "id": "darklight-greatsword",
@@ -65115,7 +65116,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Animosity",
         "effect": "When used with its primary fire (left-click), it fires a narrow spread of 6 bullets that inflicts the Brimstone Flames debuff regardless of what ammo type was used. When used with its secondary fire (right-click), it fires a brimstone round with 900% damage, 200% velocity, and 1.35x the critical strike chance, at the cost of halving the rate of fire.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "chlorophyte-shotbow",
@@ -65136,7 +65137,7 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
-        "subclass": "bows",
+        "subclass": "bow",
         "effect": "When used, it fires 2\u20133 arrows per shot, consuming one piece of ammunition."
       },
       {
@@ -65151,7 +65152,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "pulse-bow",
@@ -65165,7 +65166,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pulse_Bow",
         "effect": "When used, it converts any type of arrow into a high-velocity Pulse Bolt. The Pulse Bolt is unaffected by gravity, can either pierce enemies or bounce off blocks up to five times, and travels for 3.33 seconds before dissipating.",
-        "subclass": "bows"
+        "subclass": "bow"
       }
     ],
     "armor": [
@@ -66790,7 +66791,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gleaming_Magnolia",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -66817,7 +66818,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadecrystal_Barrage",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -66844,7 +66845,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -66891,7 +66892,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "materials": [
           {
             "name": "Poison Staff",
@@ -68642,7 +68643,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "minions",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Durendal",
         "materials": [
           {
@@ -70262,7 +70263,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, it throws a glaive that ricochets towards nearby enemies upon contact with tiles or enemies, and pierces five times. Upon striking tiles, the glaive can re-hit enemies that were hit before."
       },
       {
@@ -70299,7 +70300,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, a gravity affected flask is thrown that breaks upon contact with enemies and blocks. Upon breaking, the flask releases five bubbles that travel in multiple directions away from where the flask broke."
       },
       {
@@ -70313,7 +70314,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ice_Star",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "It is a large throwing star made of ice, which pierces 3 times and will fall after traveling a short distance. It also has slight homing abilities."
       },
       {
@@ -70340,7 +70341,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corroded_Fossil"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, they fire a skyfin bomb that homes in on enemies below them, erupting into three sulphuric clouds on hit."
       },
       {
@@ -70368,7 +70369,7 @@
           }
         ],
         "effect": "When used, they throw a flask that explodes on impact with tiles or enemies. The flasks create shortly lingering explosions and fire 5 explosive tar projectiles that each release lingering flames.",
-        "subclass": "bombs"
+        "subclass": "bomb"
       },
       {
         "id": "crushsaw-crasher",
@@ -70381,7 +70382,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crushsaw_Crasher",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, the player swings a claw and throws a homing, spinning axe that can pierce one enemy or bounce once before disappearing on its next impact. The axe inflicts Heavy Bleeding upon any enemy it hits."
       },
       {
@@ -70416,7 +70417,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Bar"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It throws a javelin that pierces twice, travels a moderate distance before being affected by gravity."
       }
     ],
@@ -73812,7 +73813,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladedge_Railbow",
         "tier": "best",
         "effect": "It fires out 4 arrows at once, quickly followed by a pair of leaves. The leaves inflict no knockback and deal 70% of the weapon's base damage.",
-        "subclass": "bows",
+        "subclass": "bow",
         "materials": [
           {
             "name": "Perennial Bar",
@@ -73834,7 +73835,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blossom_Flux",
         "tier": "good",
         "effect": "It has two modes of attack: its primary fire (left-click) will shoot leaf arrows at a very high rate, and its secondary fire (right-click) launches a spore orb that travels in a wave pattern and explodes into spore clouds upon impact.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "hydra",
@@ -73848,7 +73849,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydra",
         "tier": "good",
         "effect": "When used, it fires a spread of 3 toxic bullets which inflicts the Acid Venom debuff upon contact. While the weapon is in use, it will summon a gun-head every 3 seconds, up to a maximum of 3 gun-heads can exist at a time.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Quad-Barrel Shotgun",
@@ -73880,7 +73881,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megalodon",
         "tier": "other",
         "effect": "When used, it loads a magazine of 30 shots, then alternates between firing bullets and pressurized water jets that pierce once and inflict the Riptide debuff. After exhausting the entire magazine, the gun fires a homing rocket that inflicts Crush Depth before having to reload again, repeating the process.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Megashark",
@@ -73917,7 +73918,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wildfire_Bloom",
         "tier": "other",
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used, it fires a long burst of green flames at a moderate range.",
-        "subclass": "guns",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Flamethrower",
@@ -75594,7 +75595,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky."
       },
       {
@@ -75608,7 +75609,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Earth",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -75640,7 +75641,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "effect": "Enemies touching the rainbow take damage repeatedly, approximately five times per second. The Rainbow Gun is always found in the Dungeon 's Hallowed Chest, which can only be unlocked with a Hallowed Key after Plantera has been defeated."
       },
       {
@@ -75654,7 +75655,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -75701,7 +75702,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Undine's_Retribution",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -75728,7 +75729,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wasp_Gun",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "dropRate": "12.5%",
         "effect": "When used, it fires 2\u20134 homing wasp projectiles that ricochet or hit enemies a maximum of three times before dissipating. The wasp projectiles also have 10 armor penetration."
       }
@@ -77666,7 +77667,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Morning_Star",
         "tier": "other",
         "effect": "8 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies",
-        "subclass": "whips",
+        "subclass": "whip",
         "dropRate": "0.5% 1%"
       }
     ],
@@ -79336,7 +79337,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Defective_Sphere",
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "They can be thrown up to five times. Spheres thrown can become one of four variants, listed below."
       },
       {
@@ -79382,7 +79383,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth",
         "effect": "When used, they rapidly throw an inaccurate tight spread of 2 gravity-affected teeth that inflict the Heavy Bleeding debuff on contact with enemies and stick to them. After sticking for 2 seconds, teeth will launch out the other side of the enemy, dealing an additional burst of damage.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       },
       {
         "id": "phantasmal-ruin",
@@ -79408,7 +79409,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a fast ghost lance that goes through tiles and explodes into 4 homing spirits on enemy hits while disappearing on direct hit."
       },
       {
@@ -79440,7 +79441,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Shard"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that quickly returns to the player after hitting an enemy or after traveling for a short distance. The disk can pass through blocks and pierce infinitely, and has a chance to fire 6 smaller disks outwards from it when an enemy is nearby, which linger for a short time before dissipating."
       },
       {
@@ -79454,7 +79455,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When thrown, it moves and rapidly spins in the direction it was initially thrown, slowly decelerating and losing spin speed over time. Once the knife fully decelerates, it then remains still until an enemy is within its detection range for it to home in."
       },
       {
@@ -79486,7 +79487,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Scale"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it throws a bottle that shatters into a dust cloud after a delay, or when hitting an enemy. Holding down left-click charges the weapon, generating stealth but causing it to shatter sooner."
       }
     ],
@@ -81234,7 +81235,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Christmas_Tree_Sword",
         "dropRate": "3.46\u201310.37% 6.22\u201331.11%",
         "effect": "The stars dissipate after piercing one enemy or after 1.67 seconds. The balls linger for 0.83 seconds before falling.",
-        "subclass": "true-melee"
+        "subclass": "projectile-melee"
       },
       {
         "id": "fallen-paladins-hammer",
@@ -83018,7 +83019,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Electrosphere_Launcher",
         "dropRate": "16.66%",
-        "subclass": "launchers",
+        "subclass": "launcher",
         "effect": "When used, it consumes rockets and fires blue missiles that form an Electrosphere upon impact with blocks, enemies, or reaching the cursor's position when fired. Electrospheres deal damage repeatedly and last for 5 seconds, but do not inflict any knockback."
       },
       {
@@ -83047,7 +83048,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowman_Cannon",
         "dropRate": "5.19\u201310.37% 15.56\u201331.11%",
         "effect": "When used, it consumes rockets and fires homing snowman-shaped rockets that explode on impact with enemies. The Snowman Cannon is dropped from the Ice Queen during the Frost Moon event with a 5.19%\u201310.37% (15.56%\u201331.11%) chance depending on the current wave. [ 1 ]",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "stynger",
@@ -83062,7 +83063,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stynger",
         "dropRate": "14.29%",
         "effect": "When used, it fires high-velocity Stynger Bolts that explode upon contact with enemies or blocks. The explosion additionally releases 2\u20135 shrapnel fragments that spread out in random directions and can also explode, each dealing the weapon's full damage and knockback.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "xenopopper",
@@ -83076,7 +83077,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Xenopopper",
         "dropRate": "16.66%",
-        "subclass": "guns",
+        "subclass": "gun",
         "effect": "When used, it fires a burst of 4\u20135 purple bubbles, consuming one bullet. The bubbles deal no damage and will bounce off solid blocks, but pop after a 0.5-second delay, each firing a bullet directly towards the cursor."
       }
     ],
@@ -85022,7 +85023,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky."
       },
       {
@@ -85036,7 +85037,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bat_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "2.5\u201312.5% 6.25\u201312.5%",
         "effect": "Summons bats to attack your enemies"
       },
@@ -85051,7 +85052,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Charged_Blaster_Cannon",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "dropRate": "0.13%",
         "effect": "It possesses multiple firing modes with escalating speed, damage, and method of attack depending on how long the \u2692 Use / Attack key is held while firing it. [ 1 ]"
       },
@@ -85066,7 +85067,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "effect": "Enemies touching the rainbow take damage repeatedly, approximately five times per second. The Rainbow Gun is always found in the Dungeon 's Hallowed Chest, which can only be unlocked with a Hallowed Key after Plantera has been defeated."
       },
       {
@@ -85080,7 +85081,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Razorpine",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "3.46\u201310.37% 6.22\u201331.11%",
         "effect": "The needles become affected by gravity after traveling a medium distance."
       },
@@ -85095,7 +85096,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "effect": "When used with its primary fire (left-click), it summons two Wingmen to the sides of the player perpendicular to the direction of the cursor, that each switch sides and fire lasers towards the cursor that travel through tiles and pierce once. The Wingmen gradually increase in firing rate and laser velocity the longer it is held for, reaching a full speed of 6 lasers per second after 6 shots."
       }
     ],
@@ -87115,7 +87116,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Harvest",
         "dropRate": "2.5\u201312.5% 6.25\u201312.5%",
         "effect": "Your summons will focus struck enemies \u00b7 Strike enemies with dark energy to gain whip attack speed \u00b7 Dark energy jumps from enemies hit by summons"
@@ -87132,7 +87133,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Morning_Star",
         "tier": "other",
         "effect": "8 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies",
-        "subclass": "whips",
+        "subclass": "whip",
         "dropRate": "0.5% 1%"
       }
     ],
@@ -88872,7 +88873,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Doomsday_Device",
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "While holding \u2692 Use / Attack the player will rapidly charge a throw of the Doomsday Device, throwing the device when released. The device bounces off of enemies that it hits."
       },
       {
@@ -88904,7 +88905,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a plague disk that pierces five times and returns to the player after traveling a moderate distance. The disk can bounce on tiles indefinitely until it reaches the player or despawns."
       },
       {
@@ -88931,7 +88932,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "It is an explosive projectile that release 20 plague-infected bees upon explosion. Both the explosion and the bees inflict the Plague debuff on contact."
       },
       {
@@ -88945,7 +88946,7 @@
         "topPick": true,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When thrown, it moves and rapidly spins in the direction it was initially thrown, slowly decelerating and losing spin speed over time. Once the knife fully decelerates, it then remains still until an enemy is within its detection range for it to home in."
       },
       {
@@ -88960,7 +88961,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth",
         "effect": "When used, they rapidly throw an inaccurate tight spread of 2 gravity-affected teeth that inflict the Heavy Bleeding debuff on contact with enemies and stick to them. After sticking for 2 seconds, teeth will launch out the other side of the enemy, dealing an additional burst of damage.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       },
       {
         "id": "samsara-slicer",
@@ -88991,7 +88992,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Shard"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that quickly returns to the player after hitting an enemy or after traveling for a short distance. The disk can pass through blocks and pierce infinitely, and has a chance to fire 6 smaller disks outwards from it when an enemy is nearby, which linger for a short time before dissipating."
       }
     ],
@@ -90869,7 +90870,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flying_Dragon",
         "dropRate": "25%",
         "effect": "When swung, it fires red crescent-shaped projectiles every 20 ticks [ 1 ] [ 2 ], which pierce four enemies, pass through blocks, and dissipate after one second.",
-        "subclass": "true-melee"
+        "subclass": "projectile-melee"
       },
       {
         "id": "galvanizing-glaive",
@@ -92620,7 +92621,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerial_Bane",
         "tier": "best",
         "effect": "When used, it converts any type of arrow into Aerial Bane arrows. The Aerial Bane fires a volley of six arrows per use, which travel in a sharp arc.",
-        "subclass": "bows",
+        "subclass": "bow",
         "dropRate": "25%"
       },
       {
@@ -92685,7 +92686,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stynger",
         "dropRate": "14.29%",
         "effect": "When used, it fires high-velocity Stynger Bolts that explode upon contact with enemies or blocks. The explosion additionally releases 2\u20135 shrapnel fragments that spread out in random directions and can also explode, each dealing the weapon's full damage and knockback.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "the-hive",
@@ -92699,7 +92700,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Hive",
         "tier": "other",
         "effect": "When used, it fires a spread of 4 short-ranged plague missiles that explode on impact with tiles or enemies, each releasing 2 homing plague bees. Holding down the fire button will charge the weapon, narrowing the spread of the missiles while increasing their velocity and range.",
-        "subclass": "launchers",
+        "subclass": "launcher",
         "materials": [
           {
             "name": "Mineral Mortar",
@@ -94599,7 +94600,7 @@
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubble_Gun",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "dropRate": "16.67%",
         "effect": "When used, it rapidly fires a large spread of short-range bubbles, with three bubbles per use. Bubble projectiles gradually slow down and dissipate upon contact with an enemy or block, or after 1.67 seconds."
       },
@@ -94614,7 +94615,7 @@
         "topPick": true,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hematemesis",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires 10 blood bolts that spawn from below the screen and move upwards at high speed near the cursor's position. The blood bolts can pass through tiles but cannot pierce."
       },
       {
@@ -94628,7 +94629,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "It shoots out a spread of 4 plague fangs while one is always directed at the cursor, which are colored green and are trailed by pink light. The player can tighten the spread of the projectiles by aiming the cursor further away."
       },
       {
@@ -94642,7 +94643,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
-        "subclass": "wands",
+        "subclass": "magic-gun",
         "effect": "Enemies touching the rainbow take damage repeatedly, approximately five times per second. The Rainbow Gun is always found in the Dungeon 's Hallowed Chest, which can only be unlocked with a Hallowed Key after Plantera has been defeated."
       },
       {
@@ -94656,7 +94657,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Tune",
-        "subclass": "wands",
+        "subclass": "wand",
         "dropRate": "2%",
         "effect": "Star projectiles will have their damage reduced by 25% (down to 63 base damage) when the line of sight between the player and the projectiles' point of impact is obstructed. [ 1 ] It also plays an acoustic guitar chord when fired based on the distance between the player and the cursor (in a similar fashion to the Magical Harp). There are a total of six chords, and each one spans about a four-block distance from the player, except for the last one, which is played at a distance of 21 blocks or more."
       },
@@ -94671,7 +94672,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "effect": "When used with its primary fire (left-click), it summons two Wingmen to the sides of the player perpendicular to the direction of the cursor, that each switch sides and fire lasers towards the cursor that travel through tiles and pierce once. The Wingmen gradually increase in firing rate and laser velocity the longer it is held for, reaching a full speed of 6 lasers per second after 6 shots."
       }
     ],
@@ -96638,7 +96639,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Harvest",
         "dropRate": "2.5\u201312.5% 6.25\u201312.5%",
         "effect": "Your summons will focus struck enemies \u00b7 Strike enemies with dark energy to gain whip attack speed \u00b7 Dark energy jumps from enemies hit by summons"
@@ -96653,7 +96654,7 @@
         "tags": [],
         "topPick": true,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
@@ -98504,7 +98505,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a black knife that spawns smaller homing red knives as it travels. The red knives pass through tiles, deal 40% of the weapon's damage, and heal the player for 5% of their damage dealt. 10% of the player's missing health is added to the weapon's base damage."
       },
       {
@@ -98518,7 +98519,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cranium_Smasher",
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it alternates between throwing rolling disks and explosive disks. Rolling disks travels a moderate distance before being affected by gravity, and will roll on the ground and pierce up to 4 times before dissipating on the fifth."
       },
       {
@@ -98545,7 +98546,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "It is an explosive projectile that release 20 plague-infected bees upon explosion. Both the explosion and the bees inflict the Plague debuff on contact."
       },
       {
@@ -98559,7 +98560,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Knife",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When thrown, it moves and rapidly spins in the direction it was initially thrown, slowly decelerating and losing spin speed over time. Once the knife fully decelerates, it then remains still until an enemy is within its detection range for it to home in."
       },
       {
@@ -98573,7 +98574,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "It auto-fires a high velocity syringe that increases damage as it travels and inflicts the Plague debuff. On contact with an enemy or block, it will shatter into glass and plague cinders."
       },
       {
@@ -98587,7 +98588,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a fast-spinning axe that slowly decelerates to a stop and breaks shortly after. It will stick onto an enemy upon contact, dealing damage."
       },
       {
@@ -98602,7 +98603,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth",
         "effect": "When used, they rapidly throw an inaccurate tight spread of 2 gravity-affected teeth that inflict the Heavy Bleeding debuff on contact with enemies and stick to them. After sticking for 2 seconds, teeth will launch out the other side of the enemy, dealing an additional burst of damage.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       },
       {
         "id": "system-bane",
@@ -98638,7 +98639,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, the player throws a gravity-affected electric machine that continuously deals damage to targets that come into contact with it. Occasionally if there's a target nearby, the device releases lightning to triple-strike it."
       }
     ],
@@ -102376,7 +102377,7 @@
           }
         ],
         "effect": "When used, it fires high-velocity blasts of cosmic plasma that cause explosions on enemy hits, each explosion dealing 150% of the weapon's damage and increasing in size with consecutive hits. The plasma blasts can also ricochet off tiles, after which they gain the ability to home in aggressively on nearby enemies.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "plague-tainted-smg",
@@ -102413,7 +102414,7 @@
           }
         ],
         "effect": "When used with its primary fire (\u2692 Use / Attack), it converts all bullets into plague bullets that inflict the Plague debuff on hit, dealing 150% damage and knockback if the target is within 50 tiles of the player. Critical strikes from plague bullets fire a plague drone that homes in on enemies and explodes upon contact with an enemy or block, with a 75% chance to critically strike if the target is afflicted with the Plague debuff.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "vortexpopper",
@@ -102440,7 +102441,7 @@
           }
         ],
         "effect": "When used, it fires a spread of bubbles from the gun, and extra bubbles off-screen from any direction. After a short delay, the bubbles will pop and fire a bullet towards the cursor.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -104434,7 +104435,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Apoctosis_Array",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Ancient Manipulator",
         "materials": [
           {
@@ -104461,7 +104462,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nebula_Arcanum",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Ancient Manipulator",
         "materials": [
           {
@@ -104483,7 +104484,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nebula_Blaze",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Ancient Manipulator",
         "materials": [
           {
@@ -104505,7 +104506,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_Shower",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "effect": "When used, it summons a spread of 5 astral stars from the sky that quickly travel to meet at the cursor's location, then continue to fall in that direction. The stars do not pierce enemies but can go through tiles."
       },
       {
@@ -104519,7 +104520,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Swarmer",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Ancient Manipulator",
         "materials": [
           {
@@ -106498,7 +106499,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -108511,7 +108512,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "It is an explosive projectile that release 20 plague-infected bees upon explosion. Both the explosion and the bees inflict the Plague debuff on contact."
       },
       {
@@ -108548,7 +108549,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "When used, it throws an astral dagger that is not affected by gravity and pierces 3 times. Shortly after it is thrown, it causes a lingering explosion and splits into 3 copies of itself that home in on the closest enemy and deal half of the weapon's damage."
       },
       {
@@ -108583,7 +108584,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It pierces infinitely and travels significant distances before being affected by gravity. Its damage is decreased by 10% every time it pierces an enemy."
       },
       {
@@ -108605,7 +108606,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
         ],
-        "subclass": "spiky-balls",
+        "subclass": "spiky-ball",
         "effect": "On use, it throws a large spread of cosmic bolts which converge into a bomb. The bomb weakly follows the cursor, exploding when it hits an enemy or after 5 seconds."
       },
       {
@@ -108619,7 +108620,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke's_Decapitator",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a fast-spinning axe that slowly decelerates to a stop and breaks shortly after. It will stick onto an enemy upon contact, dealing damage."
       },
       {
@@ -108634,7 +108635,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth",
         "effect": "When used, they rapidly throw an inaccurate tight spread of 2 gravity-affected teeth that inflict the Heavy Bleeding debuff on contact with enemies and stick to them. After sticking for 2 seconds, teeth will launch out the other side of the enemy, dealing an additional burst of damage.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       }
     ],
     "armor": [
@@ -112349,7 +112350,7 @@
           }
         ],
         "effect": "Holding left-click will fire four barracudas that latch on to enemies and deal continuous damage as long as left-click is held down. After an enemy dies, the barracudas will automatically latch onto other enemies in range.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "clockwork-bow",
@@ -112376,7 +112377,7 @@
           }
         ],
         "effect": "When used, it slowly loads up to 6 precision bolts. Each bolt loaded reduces the time taken to load the next bolt by 5%.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "planetary-annihilation",
@@ -112418,7 +112419,7 @@
           }
         ],
         "effect": "It converts Wooden Arrows into rainbow blasts that home in on enemies. Each set of bolts consists of a Red, Orange, Yellow, Green, Blue, Indigo, and Violet bolt which all act identically to each other and are fired in a random order from the sky.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "prideful-hunters-planar-ripper",
@@ -112455,7 +112456,7 @@
           }
         ],
         "effect": "When used, it rapidly fires bullets. Musket balls turn into fast lightning bolts which do not pierce enemies or tiles, inflict the Electrified debuff, and explode when enemies are killed.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "superradiant-slaughterer",
@@ -114332,7 +114333,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chronomancer's_Scythe",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -114369,7 +114370,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Genesis",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -114401,7 +114402,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nuclear_Fury",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -114433,7 +114434,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nucleosynthesis",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -114470,7 +114471,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rouge_Slash",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "effect": "When used, it fires three curved waves out from the player, which each vary in their size and speed and pass through tiles. The waves each pierce twice and disappear upon contact with a third."
       }
     ],
@@ -116336,7 +116337,7 @@
         "tags": [],
         "topPick": false,
         "tier": "other",
-        "subclass": "whips",
+        "subclass": "whip",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
@@ -118083,7 +118084,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws 3 gravity-ignoring lunar kunai that slightly home in on enemies and do not pierce. After being in the air for roughly 1 second, the kunai will supercharge, causing them to speed up, changing their color from brown to teal, start emitting dust, and home in far more aggressively."
       },
       {
@@ -118110,7 +118111,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "On use, it throws a javelin that splits into holy spears on hit. Holy spears have oscillating velocity and can pierce through enemies."
       },
       {
@@ -118147,7 +118148,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it rapidly throws a disk that has a chance of splitting into 8 more disks when near an enemy. The split disks move outward from the point they split from before returning in the player's direction and they last for a shorter duration before dissipating."
       },
       {
@@ -118161,7 +118162,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Utensil_Poker",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it fires a set of three random utensils."
       }
     ],
@@ -120038,7 +120039,7 @@
           }
         ],
         "effect": "When used, the player swings two glowing electric dragon heads which move in a whip-like manner. As they converge, up to eight short-lasting electrosphere projectiles are spawned per flail.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "stellar-contempt",
@@ -121513,7 +121514,7 @@
           }
         ],
         "effect": "Each time the weapon is fired, it shoots 5-6 bullets and summons a radiant beam from the sky towards the cursor. The beam deals 200% of the weapon's damage, pierces infinitely and passes through tiles.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "blood-boiler",
@@ -121535,7 +121536,7 @@
           }
         ],
         "effect": "It uses health for ammunition, with a 20% chance to not consume ammo. When used, it fires two long and continuous streams of bloodfire.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "ontological-despoiler",
@@ -121567,7 +121568,7 @@
           }
         ],
         "effect": "It does not consume any ammo.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "spyker",
@@ -121599,7 +121600,7 @@
           }
         ],
         "effect": "When used with Musket Balls, bullets are converted into spikes which stick to enemies and tiles and explode into more spikes, which also have a delayed explosion and inflict the Acid Venom debuff.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "telluric-glare",
@@ -121613,7 +121614,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Telluric_Glare",
         "effect": "When used, it rapidly fires volleys of arrows and radiant arrows in a sequential stream, with slight variation in their position of origin. Wooden Arrows are all converted into radiant greatarrows that deal 120% base damage.",
-        "subclass": "bows"
+        "subclass": "bow"
       }
     ],
     "armor": [
@@ -123092,7 +123093,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nano_Purge",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -123124,7 +123125,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plasma_Caster",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -123161,7 +123162,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purge_Guzzler",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "effect": "When used, it fires a barrage of beams which gets faster but more inaccurate as the weapon is fired. After 2.5 seconds of firing, the barrage of beams is replaced with two large, sweeping holy rays which deal 650% base damage."
       },
       {
@@ -123175,7 +123176,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thorn_Blossom",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -123207,7 +123208,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Volterion",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "effect": "When used, it fires an ultracharged electric filament that bursts into 5 balls of lightning upon contact with an enemy or tile, accompanied by a muzzle flash which can damage enemies. Each orb fire shots at enemies within a 50-tile radius every second before exploding after 2.5 seconds."
       }
     ],
@@ -124898,7 +124899,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunar_Portal_Staff",
-        "subclass": "minions",
+        "subclass": "sentries",
         "dropRate": "20%",
         "effect": "It continuously fires beams that sweep across enemies, which pierce infinite enemies but cannot pass through blocks. Unlike most sentries, the Lunar Portal floats midair."
       },
@@ -124913,7 +124914,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Crystal_Staff",
-        "subclass": "minions",
+        "subclass": "sentries",
         "dropRate": "20%",
         "effect": "It fires spreads of three multicolored light beams towards enemies, but cannot target through blocks. Each beam releases a star that explodes shortly after."
       },
@@ -124942,7 +124943,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -126478,7 +126479,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Kunai",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it rapidly fires a stream of quick-moving, short-range kunai that go through tiles and are not affected by gravity. The kunai turn transparent as they travel; however, this does not affect their damage and is only aesthetic."
       },
       {
@@ -126492,7 +126493,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Amputator",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a rapidly spinning scythe which lingers at the position of the cursor when it was fired before returning. Right-clicking recalls all existing scythes; recalling a scythe that is on top of an enemy rends them, dealing 700% base damage."
       },
       {
@@ -126524,7 +126525,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armored_Shell"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "It automatically throws a gravity-defying lightning bolt that does not pierce and travels faster while raining. When it hits an enemy, lightning strikes vertically from the sky which pierces indefinitely and can pass through tiles."
       },
       {
@@ -126561,7 +126562,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it throws a gravity-affected bomb that sticks onto solid tiles for 3 seconds or until a target is struck before it explodes. When it explodes, a large shockwave is formed along with cosmetic cloud particles, continuously dealing damage for a short time."
       },
       {
@@ -126588,7 +126589,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "On use, it throws a javelin that splits into holy spears on hit. Holy spears have oscillating velocity and can pierce through enemies."
       },
       {
@@ -126625,7 +126626,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It alternates between throwing 3 small homing spears which pierce twice, and 1 piercing lance which deals 400% base damage, but loses 5% damage on each hit."
       }
     ],
@@ -128344,7 +128345,7 @@
           }
         ],
         "effect": "When used, it spins a flail around the player, throwing out the flail towards the cursor when the attack button is released and creating homing crescent moon projectiles as it travels. While spinning the flail, homing crescents are spawned and the weapon generates Starburst, a unique resource with a cap of 100; the player's current Starburst amount is tracked on the Cooldown Rack and is shared among weapons.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "deaths-ascension",
@@ -129898,7 +129899,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fetid_Emesis",
         "effect": "It fires bullets at a gradually increasing rate, up to a maximum of 20 bullets per second after 5 seconds. After 7 seconds, the gun fires a massive spread of 11 rotten chunks outwards which deal 250% base damage and inflict the Sulphuric Poisoning debuff.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "halleys-inferno",
@@ -129935,7 +129936,7 @@
           }
         ],
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used with its primary fire (\u2692 Use / Attack), it fires a rapid burst of five blue comets that pierce four times.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "monsoon",
@@ -129972,7 +129973,7 @@
           }
         ],
         "effect": "When firing Wooden Arrows, four of the five arrows are converted into sharks, and the fifth, middle arrow is converted into a Typhoon Arrow. Typhoon Arrows erupt into a swirling typhoon on contact with enemies or tiles, dealing damage over time in a wide area.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "sulphuric-acid-cannon",
@@ -129986,7 +129987,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sulphuric_Acid_Cannon",
         "effect": "When used, it slowly fires acid rockets which home in on enemies and stick to them. After being stuck to an enemy for 3.33 seconds, the acid rocket creates a large sulphuric mist explosion, dealing 200% base damage and inflicting the Sulphuric Poisoning debuff.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "tau-cannon",
@@ -130028,7 +130029,7 @@
           }
         ],
         "effect": "It is one of the final upgrades to the Magna Cannon and Opal Striker, alongside the Ontological Despoiler. While holding, the player channels a glowing blue orb at the tip of the cannon which increases in charge level every second, as indicated by a pulse.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -131772,7 +131773,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Spark",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -131809,7 +131810,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantasmal_Fury",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -131841,7 +131842,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowbolt_Staff",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -131873,7 +131874,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venusian_Trident",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
@@ -131905,7 +131906,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vitriolic_Viper",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it charges up to fire a spread of radioactive beams that inflict the Irradiated debuff, whose spread gets tighter the longer it is charged. After 1 second to fully charge, it instead fires a large spread of 33 short-range fangs that inflict the Sulphuric Poisoning debuff."
       }
     ],
@@ -133687,7 +133688,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunar_Portal_Staff",
-        "subclass": "minions",
+        "subclass": "sentries",
         "dropRate": "20%",
         "effect": "It continuously fires beams that sweep across enemies, which pierce infinite enemies but cannot pass through blocks. Unlike most sentries, the Lunar Portal floats midair."
       },
@@ -133716,7 +133717,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -135372,7 +135373,7 @@
           }
         ],
         "effect": "When used, they rapidly throw a tight spread of 6 gravity-ignoring reaper teeth that stick to enemies and inflict the Acid Venom and Armor Crunch debuffs. Like its predecessor, the damage from the Acid Venom debuff can stack.",
-        "subclass": "daggers"
+        "subclass": "dagger"
       },
       {
         "id": "sealed-singularity",
@@ -135398,7 +135399,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, it throws a circular, void-containing flask that stops moving after a short time, shattering if enough time has passed or upon any collision with solid tiles or enemies. Once shattered, a black hole is formed at the center of the impact, along with 3 gravity-affected shards which each deal 25% damage."
       },
       {
@@ -135425,7 +135426,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a fan of 4 boomerangs that spin and cluster around the cursor."
       },
       {
@@ -135462,7 +135463,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "It throws a rapid stratus spear that breaks upon hitting a tile and explodes upon striking an enemy, releasing 4 stratus stars that inflict Nightwither. These stars can pierce for a short amount of time and the explosion from the spear will not be triggered if the spear doesn't strike an enemy."
       },
       {
@@ -135476,7 +135477,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Amputator",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a rapidly spinning scythe which lingers at the position of the cursor when it was fired before returning. Right-clicking recalls all existing scythes; recalling a scythe that is on top of an enemy rends them, dealing 700% base damage."
       },
       {
@@ -135508,7 +135509,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armored_Shell"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "It automatically throws a gravity-defying lightning bolt that does not pierce and travels faster while raining. When it hits an enemy, lightning strikes vertically from the sky which pierces indefinitely and can pass through tiles."
       }
     ],
@@ -137330,7 +137331,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Discharge",
         "effect": "Striking an enemy with the whip causes glacial explosions that grant the player the Cosmic Freeze buff \u00b7 Cosmic Freeze gives the player +2 HP/s life regen while standing still and freezes enemies near the player",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "devils-devastation",
@@ -137417,7 +137418,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Obliterator",
         "effect": "While deployed, it is able to charge towards an enemy every 2 seconds, dealing 600% damage and inflicting the God Slayer Inferno debuff. Counterweight hits can instantly trigger charges.",
-        "subclass": "yoyos"
+        "subclass": "yoyo"
       }
     ],
     "armor": [
@@ -139208,7 +139209,7 @@
           }
         ],
         "effect": "When used, it fires a large spread of purple flames that pierce infinitely, pass through tiles, and inflict the God Slayer Inferno debuff on hit.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "onyxia",
@@ -139240,7 +139241,7 @@
           }
         ],
         "effect": "When used, it rapidly fires bursts of six bullets in a tight spread along with an onyx blast that deals 145% base damage. The gun has a 50% chance to not consume ammo.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "scorched-earth",
@@ -139277,7 +139278,7 @@
           }
         ],
         "effect": "When used, it fires a burst of four homing rockets which can travel through tiles. After five seconds or upon enemy hits, the rockets creates a large explosion which inflict the Daybroken and Oiled debuffs and spawns five additional cluster bombs in random directions outward from the enemy.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "thread-of-eradication",
@@ -139291,7 +139292,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thread_of_Eradication",
         "effect": "Upon use, it takes 1 second to charge up a magenta laser beam. Continuing to hold \u2692 Use / Attack (default: Left Click) will fire a stronger blue laser beam that deals 400% of the weapon's base damage and takes 3 seconds to charge.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "universal-genesis",
@@ -139328,7 +139329,7 @@
           }
         ],
         "effect": "When used, it fires a tight spread of six bullets from the gun and five additional stars from above which are aimed towards the cursor. If Musket Balls are used as ammo, bullets are replaced with Starcaller Shots which spawn 1 additional star on hit.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -141225,7 +141226,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks."
       },
       {
@@ -141239,7 +141240,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omicron",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -141276,7 +141277,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Ancient",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -141308,7 +141309,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tesla_Cannon",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -141345,7 +141346,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Voltaic_Climax",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -143296,7 +143297,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -145081,7 +145082,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that passes through tiles and returns to the player after traveling a moderate distance. When thrown at nearby enemies, it will fire a nebula laser beam that deal 70% of the weapon's damage."
       },
       {
@@ -145139,7 +145140,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
           }
         ],
-        "subclass": "bombs",
+        "subclass": "bomb",
         "effect": "When used, the bomb is affected by gravity after a short time. When it collides with a surface or enemy, it explodes, dealing damage within the area."
       },
       {
@@ -145166,7 +145167,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a fan of 4 boomerangs that spin and cluster around the cursor."
       }
     ],
@@ -147003,7 +147004,7 @@
           }
         ],
         "effect": "It fires out a dragon head that releases red, orange, and yellow homing sparks that inflict Dragonfire on hit, and each spark will deal one-eighth of the initial swing. When fired, the roar of Yharon, Dragon of Rebirth can be heard.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "orderbringer",
@@ -147115,7 +147116,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
           }
         ],
-        "subclass": "true-melee",
+        "subclass": "projectile-melee",
         "effect": "When used, it rapidly fires fast-moving sword sprites towards the cursor in an arc returning to the player. The sword sprites can pass through blocks, pierce enemies infinitely, home in on nearby enemies, and create visual trails while traveling."
       }
     ],
@@ -148771,7 +148772,7 @@
           }
         ],
         "effect": "When used, it fires a line of four playing cards in the order of a heart, club, diamond, and spade, with a mild delay between each set. Each of the cards has varying effects.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "chicken-cannon",
@@ -148785,7 +148786,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chicken_Cannon",
         "effect": "When used, it rapidly fires chicken rockets that bounce straight up when hitting the ground before causing a gigantic explosion after a short delay, inflicting the Dragonfire debuff. The explosion lingers for a few seconds and ignores immunity frames.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "dragons-breath",
@@ -148799,7 +148800,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "starmada",
@@ -148831,7 +148832,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "tyrannys-end",
@@ -148868,7 +148869,7 @@
           }
         ],
         "effect": "When used with its primary fire (\u2692 Use / Attack), it converts Musket Balls into high-velocity bullets, which inflict the Marked for Death debuff on hit and ignore enemy defense if it is less than 1,000. If the main shot critically strikes, six bullets will appear from the sides of the target and will be fired towards it, each dealing 17.5% of the weapon's damage.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -150775,7 +150776,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -150812,7 +150813,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks."
       },
       {
@@ -150826,7 +150827,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Ancient",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -150858,7 +150859,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -150885,7 +150886,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback."
       }
     ],
@@ -152832,7 +152833,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -154499,7 +154500,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that passes through tiles and returns to the player after traveling a moderate distance. When thrown at nearby enemies, it will fire a nebula laser beam that deal 70% of the weapon's damage."
       },
       {
@@ -154531,7 +154532,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a high-velocity boomerang which returns on hit or after 0.75 seconds. It initially moves slowly upon returning, but gradually accelerate until it reaches the player."
       },
       {
@@ -154558,7 +154559,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a holy dagger that naturally slows down exponentially as it travels, while also reducing its speed by 60% for each enemy hit. After 0.83 seconds, it glows and bursts into 6 daggers and an angelic light orb."
       },
       {
@@ -154572,7 +154573,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wrathwing",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a fiery javelin which homes in on enemies while releasing gravity-affected fireballs as it travels, which explode violently on contact. The javelin also inflicts the Dragonfire debuff."
       },
       {
@@ -156474,7 +156475,7 @@
           }
         ],
         "effect": "While deployed, it constantly fires roughly-stationary cosmic orbs. The cosmic orbs do not pass through tiles, and they deal 40% of the weapon's damage and have an innate 100 armor penetration.",
-        "subclass": "yoyos"
+        "subclass": "yoyo"
       },
       {
         "id": "red-sun",
@@ -158368,7 +158369,7 @@
           }
         ],
         "effect": "It fires arrows that leave behind a trail of orbs, exploding after a short delay. Holding left-click will cause the bow to \"spin-up\", increasing the fire rate appreciably.",
-        "subclass": "bows"
+        "subclass": "bow"
       },
       {
         "id": "halibut-cannon",
@@ -158382,7 +158383,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Halibut_Cannon",
         "effect": "When used, it fires out between 25 and 35 bullets per shot that slowly spread out, while only consuming one unit of ammo.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "soma-prime",
@@ -158414,7 +158415,7 @@
           }
         ],
         "effect": "When used, it very rapidly fires bullets in a small spread. It also converts Musket Balls into high-damage High Velocity Bullets which have 4 additional base damage.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "svantechnical",
@@ -158441,7 +158442,7 @@
           }
         ],
         "effect": "When used, it fires three streams of charged energy bolts in a sine-wave pattern. Each bolt splits off into 2 small bolts in a wide backwards spread upon hitting an enemy or tile, before turning around after travelling a small distance.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "voidragon",
@@ -158473,7 +158474,7 @@
           }
         ],
         "effect": "When used, it loads a magazine of 50 shots, then alternates between firing bullets and concentrated void blasts that inflict the Whispering Death debuff. After exhausting the entire magazine, the gun charges up before unleashing a massive abyssal fire beam for 8.33 seconds that inflicts Whispering Death and Demonic Flames before having to reload again, repeating the process.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -160439,7 +160440,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Apotheosis",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -160491,7 +160492,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eternity",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -160528,7 +160529,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Party_Cannon",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -160575,7 +160576,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Staff_of_Blushie",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -160607,7 +160608,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sylvestaff",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -160649,7 +160650,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Dance_of_Light",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -162762,7 +162763,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       },
@@ -164734,7 +164735,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Miracle_Matter"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it rapidly throws a high velocity scythe that pierces infinitely, passes through tiles and returns to the player after traveling a moderate distance. Every time it hits an enemy, it releases 8 double-edged phantom blades that travel outward from the point of impact."
       },
       {
@@ -164781,7 +164782,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nanites"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "It rapidly throws high velocity scythes at a massive range which can pass through tiles. Each scythe thrown summons tesselations that fire zero-point energy strikes with 150 armor penetration."
       },
       {
@@ -164795,7 +164796,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sacrifice",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used with the left-click, it rapidly throws daggers that stick to enemies and constantly deal damage for 0.83 seconds. Up to a maximum of 15 daggers can be stuck at a time."
       },
       {
@@ -164837,7 +164838,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws an extremely fast spear that pierces 4 times and releases scarlet bullets as it travels. The scarlet bullets are not affected by gravity and home in on enemies after a short delay."
       }
     ],
@@ -166774,7 +166775,7 @@
           }
         ],
         "effect": "It fires out a dragon head that releases red, orange, and yellow homing sparks that inflict Dragonfire on hit, and each spark will deal one-eighth of the initial swing. When fired, the roar of Yharon, Dragon of Rebirth can be heard.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "orderbringer",
@@ -166886,7 +166887,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
           }
         ],
-        "subclass": "true-melee",
+        "subclass": "projectile-melee",
         "effect": "When used, it rapidly fires fast-moving sword sprites towards the cursor in an arc returning to the player. The sword sprites can pass through blocks, pierce enemies infinitely, home in on nearby enemies, and create visual trails while traveling."
       }
     ],
@@ -168544,7 +168545,7 @@
           }
         ],
         "effect": "When used, it fires a line of four playing cards in the order of a heart, club, diamond, and spade, with a mild delay between each set. Each of the cards has varying effects.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "chicken-cannon",
@@ -168558,7 +168559,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chicken_Cannon",
         "effect": "When used, it rapidly fires chicken rockets that bounce straight up when hitting the ground before causing a gigantic explosion after a short delay, inflicting the Dragonfire debuff. The explosion lingers for a few seconds and ignores immunity frames.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "dragons-breath",
@@ -168572,7 +168573,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "starmada",
@@ -168604,7 +168605,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "tyrannys-end",
@@ -168641,7 +168642,7 @@
           }
         ],
         "effect": "When used with its primary fire (\u2692 Use / Attack), it converts Musket Balls into high-velocity bullets, which inflict the Marked for Death debuff on hit and ignore enemy defense if it is less than 1,000. If the main shot critically strikes, six bullets will appear from the sides of the target and will be fired towards it, each dealing 17.5% of the weapon's damage.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -170471,7 +170472,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -170508,7 +170509,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks."
       },
       {
@@ -170522,7 +170523,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Ancient",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -170554,7 +170555,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -170581,7 +170582,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback."
       }
     ],
@@ -172526,7 +172527,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -174194,7 +174195,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sacrifice",
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used with the left-click, it rapidly throws daggers that stick to enemies and constantly deal damage for 0.83 seconds. Up to a maximum of 15 daggers can be stuck at a time."
       },
       {
@@ -174208,7 +174209,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that passes through tiles and returns to the player after traveling a moderate distance. When thrown at nearby enemies, it will fire a nebula laser beam that deal 70% of the weapon's damage."
       },
       {
@@ -174240,7 +174241,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a high-velocity boomerang which returns on hit or after 0.75 seconds. It initially moves slowly upon returning, but gradually accelerate until it reaches the player."
       },
       {
@@ -174267,7 +174268,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a holy dagger that naturally slows down exponentially as it travels, while also reducing its speed by 60% for each enemy hit. After 0.83 seconds, it glows and bursts into 6 daggers and an angelic light orb."
       },
       {
@@ -174281,7 +174282,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wrathwing",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a fiery javelin which homes in on enemies while releasing gravity-affected fireballs as it travels, which explode violently on contact. The javelin also inflicts the Dragonfire debuff."
       },
       {
@@ -176142,7 +176143,7 @@
           }
         ],
         "effect": "It fires out a dragon head that releases red, orange, and yellow homing sparks that inflict Dragonfire on hit, and each spark will deal one-eighth of the initial swing. When fired, the roar of Yharon, Dragon of Rebirth can be heard.",
-        "subclass": "flails"
+        "subclass": "flail"
       },
       {
         "id": "orderbringer",
@@ -176254,7 +176255,7 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
           }
         ],
-        "subclass": "true-melee",
+        "subclass": "projectile-melee",
         "effect": "When used, it rapidly fires fast-moving sword sprites towards the cursor in an arc returning to the player. The sword sprites can pass through blocks, pierce enemies infinitely, home in on nearby enemies, and create visual trails while traveling."
       }
     ],
@@ -178103,7 +178104,7 @@
           }
         ],
         "effect": "When used, it fires a line of four playing cards in the order of a heart, club, diamond, and spade, with a mild delay between each set. Each of the cards has varying effects.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "chicken-cannon",
@@ -178117,7 +178118,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chicken_Cannon",
         "effect": "When used, it rapidly fires chicken rockets that bounce straight up when hitting the ground before causing a gigantic explosion after a short delay, inflicting the Dragonfire debuff. The explosion lingers for a few seconds and ignores immunity frames.",
-        "subclass": "launchers"
+        "subclass": "launcher"
       },
       {
         "id": "dragons-breath",
@@ -178131,7 +178132,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "starmada",
@@ -178163,7 +178164,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "guns"
+        "subclass": "gun"
       },
       {
         "id": "tyrannys-end",
@@ -178200,7 +178201,7 @@
           }
         ],
         "effect": "When used with its primary fire (\u2692 Use / Attack), it converts Musket Balls into high-velocity bullets, which inflict the Marked for Death debuff on hit and ignore enemy defense if it is less than 1,000. If the main shot critically strikes, six bullets will appear from the sides of the target and will be fired towards it, each dealing 17.5% of the weapon's damage.",
-        "subclass": "guns"
+        "subclass": "gun"
       }
     ],
     "armor": [
@@ -180168,7 +180169,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
-        "subclass": "magic-guns",
+        "subclass": "magic-gun",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -180205,7 +180206,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks."
       },
       {
@@ -180219,7 +180220,7 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Ancient",
-        "subclass": "spell-tomes",
+        "subclass": "spell-tome",
         "station": "Bookcase",
         "materials": [
           {
@@ -180251,7 +180252,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
-        "subclass": "wands",
+        "subclass": "wand",
         "station": "Cosmic Anvil",
         "materials": [
           {
@@ -180278,7 +180279,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
-        "subclass": "wands",
+        "subclass": "wand",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback."
       }
     ],
@@ -182383,7 +182384,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Kaleidoscope",
-        "subclass": "minions",
+        "subclass": "whip",
         "dropRate": "25%",
         "effect": "20 summon tag damage \u00b7 10% summon tag critical strike chance \u00b7 Your summons will focus struck enemies"
       }
@@ -184259,7 +184260,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Miracle_Matter"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it rapidly throws a high velocity scythe that pierces infinitely, passes through tiles and returns to the player after traveling a moderate distance. Every time it hits an enemy, it releases 8 double-edged phantom blades that travel outward from the point of impact."
       },
       {
@@ -184273,7 +184274,7 @@
         "topPick": true,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk",
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a disk that passes through tiles and returns to the player after traveling a moderate distance. When thrown at nearby enemies, it will fire a nebula laser beam that deal 70% of the weapon's damage."
       },
       {
@@ -184305,7 +184306,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "boomerangs",
+        "subclass": "boomerang",
         "effect": "When used, it throws a high-velocity boomerang which returns on hit or after 0.75 seconds. It initially moves slowly upon returning, but gradually accelerate until it reaches the player."
       },
       {
@@ -184332,7 +184333,7 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
           }
         ],
-        "subclass": "daggers",
+        "subclass": "dagger",
         "effect": "When used, it throws a holy dagger that naturally slows down exponentially as it travels, while also reducing its speed by 60% for each enemy hit. After 0.83 seconds, it glows and bursts into 6 daggers and an angelic light orb."
       },
       {
@@ -184346,7 +184347,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wrathwing",
-        "subclass": "javelins",
+        "subclass": "javelin",
         "effect": "When used, it throws a fiery javelin which homes in on enemies while releasing gravity-affected fireballs as it travels, which explode violently on contact. The javelin also inflicts the Dragonfire debuff."
       },
       {

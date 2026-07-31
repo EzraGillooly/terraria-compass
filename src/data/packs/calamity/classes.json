@@ -10,24 +10,24 @@
         "description": "Short-range swords, spears, and contact-focused melee weapons."
       },
       {
-        "id": "yoyos",
-        "name": "Yoyos",
+        "id": "yoyo",
+        "name": "Yoyo",
         "description": "Cursor-controlled yoyos that trade reach and safety for sustained control."
       },
       {
-        "id": "boomerangs",
-        "name": "Boomerangs",
+        "id": "boomerang",
+        "name": "Boomerang",
         "description": "Thrown melee weapons that arc out and return."
       },
       {
-        "id": "flails",
-        "name": "Flails",
+        "id": "flail",
+        "name": "Flail",
         "description": "Chain-based melee options with awkward but powerful area control."
       },
       {
         "id": "projectile-melee",
         "name": "Projectile Melee",
-        "description": "Melee weapons that fire or hurl a projectile - swords with beams and the like."
+        "description": "Melee weapons that fire or hurl a projectile - swords with beams, plus thrown knives and spears."
       }
     ]
   },
@@ -37,17 +37,17 @@
     "blurb": "Ammo-based damage dealer relying on guns, bows, and launchers for strong sustained ranged DPS at the cost of managing ammunition.",
     "subclasses": [
       {
-        "id": "bows",
+        "id": "bow",
         "name": "Bows",
         "description": "Arrow-based ranged setups that scale especially well with ammo effects."
       },
       {
-        "id": "guns",
+        "id": "gun",
         "name": "Guns",
         "description": "Bullet-firing ranged builds built around sustained pressure."
       },
       {
-        "id": "launchers",
+        "id": "launcher",
         "name": "Launchers",
         "description": "Rocket-heavy ranged weapons with explosive crowd control."
       }
@@ -59,19 +59,24 @@
     "blurb": "Mana-fueled spellcaster with high-damage, versatile magic weapons balanced against a limited mana pool and lower defense.",
     "subclasses": [
       {
-        "id": "wands",
-        "name": "Wands",
-        "description": "Wands and staffs"
+        "id": "wand",
+        "name": "Wands / Staves",
+        "description": "Single-shot spellcasters such as staves and focused magic projectiles."
       },
       {
-        "id": "spell-tomes",
+        "id": "spell-tome",
         "name": "Spell Tomes",
-        "description": "Spell tomes"
+        "description": "Book-based spells that often bring piercing, arcs, or unusual behavior."
       },
       {
-        "id": "magic-guns",
+        "id": "magic-gun",
         "name": "Magic Guns",
-        "description": "Magic guns"
+        "description": "Rapid-fire magic weapons that behave more like sustained ranged tools."
+      },
+      {
+        "id": "summon-magic",
+        "name": "Summon Magic",
+        "description": "Magic tools that create persistent hazards or supporting summons."
       }
     ]
   },
@@ -83,17 +88,17 @@
       {
         "id": "minions",
         "name": "Minions",
-        "description": "Minion summons"
+        "description": "Persistent summon slots spent on orbiting or pursuing allies."
       },
       {
-        "id": "whips",
+        "id": "whip",
         "name": "Whips",
-        "description": "Whips"
+        "description": "Tag-focused melee tools that boost minion target priority and damage."
       },
       {
         "id": "sentries",
         "name": "Sentries",
-        "description": "Sentries"
+        "description": "Stationary summons that add area control to boss arenas and events."
       }
     ]
   },
@@ -103,27 +108,27 @@
     "blurb": "Calamity's signature stealth-based throwing class that builds stealth while still to unleash powerful empowered strikes from thrown weapons.",
     "subclasses": [
       {
-        "id": "daggers",
+        "id": "dagger",
         "name": "Daggers",
         "description": "Rogue daggers - thrown weapons that share a handling style."
       },
       {
-        "id": "javelins",
+        "id": "javelin",
         "name": "Javelins",
         "description": "Rogue javelins - thrown weapons that share a handling style."
       },
       {
-        "id": "boomerangs",
-        "name": "Boomerangs",
-        "description": "Rogue boomerangs - thrown weapons that share a handling style."
+        "id": "boomerang",
+        "name": "Boomerang",
+        "description": "Thrown melee weapons that arc out and return."
       },
       {
-        "id": "spiky-balls",
+        "id": "spiky-ball",
         "name": "Spiky Balls",
         "description": "Rogue spiky balls - thrown weapons that share a handling style."
       },
       {
-        "id": "bombs",
+        "id": "bomb",
         "name": "Bombs",
         "description": "Rogue bombs - thrown weapons that share a handling style."
       }
