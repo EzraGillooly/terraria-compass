@@ -119,7 +119,7 @@ function BossSlot({
 
 export function Bosses() {
   const { phases, bosses } = usePack();
-  const { difficulty, calamityMode } = useAppState();
+  const { difficulty, calamityMode, packId } = useAppState();
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
   const [modalItem, setModalItem] = useState<Item | null>(null);
@@ -181,6 +181,37 @@ export function Bosses() {
     </div>
   );
 
+  // Calamity's boss data is still on the old format, so the page is gated for it
+  // until the pass reaches those bosses - switch to Vanilla to view progression.
+  if (packId === 'calamity') {
+    return (
+      <div className={`${styles.page} ${styles.gated}`}>
+        <div
+          className={styles.backdrop}
+          style={{ backgroundImage: `url(${BASE}biomes/underworld.png)` }}
+          aria-hidden="true"
+        />
+        <div className={styles.backdropWash} aria-hidden="true" />
+        <section className={styles.hero} aria-label="Boss Progression">
+          <Header variant="photo" />
+          <div className={styles.heroBody}>
+            <p className={styles.crumb}>
+              <Link to="/">Home</Link> <span className={styles.crumbSep}>/</span> Boss Progression
+            </p>
+            <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
+            <p className={styles.heroLede}>
+              Calamity boss progression is being rebuilt and isn&rsquo;t ready yet. Switch the
+              Mod back to Vanilla in the header to view the boss roadmap.
+            </p>
+          </div>
+        </section>
+        <div className={styles.footerLayer}>
+          <Footer flush />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.page}>
       {/* Full-page biome backdrop - underworld for pre-hardmode, hallow for hardmode */}
@@ -219,14 +250,17 @@ export function Bosses() {
             >
               Pre-Hardmode
             </button>
+            {/* Hardmode bosses are not converted to the new format yet, so the
+                tab is gated until the pass reaches them. */}
             <button
               type="button"
               role="tab"
-              aria-selected={showHardmode}
-              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
-              onClick={() => setPhase(true)}
+              aria-selected={false}
+              disabled
+              title="Hardmode bosses are being rebuilt - coming soon"
+              className={`${styles.phaseBtn} ${styles.phaseBtnSoon}`}
             >
-              Hardmode
+              Hardmode <span className={styles.soonTag}>soon</span>
             </button>
           </div>
         </div>

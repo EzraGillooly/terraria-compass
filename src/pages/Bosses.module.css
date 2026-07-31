@@ -2,6 +2,10 @@
    BOSSES - Vertical roadmap (Guide Green)
 ═══════════════════════════════════════════════════ */
 .page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
+/* Gated (Calamity) placeholder: short content, so lay the page out as a column
+   and let the footer drop to the bottom of the viewport. */
+.gated { display: flex; flex-direction: column; }
+.gated .footerLayer { margin-top: auto; }
 
 /* ── Full-page biome backdrop (covers the whole page, like Loadouts) ── */
 /* Viewport-anchored so the image doesn't re-fit (zoom/drift) as the page grows */
@@ -107,6 +111,20 @@
 .phasePre, .phaseHard { --px-u: 1px; }
 .phasePre { color: #04263f; --px-fill: var(--sky); --px-border: var(--sky); }
 .phaseHard { color: #0b1524; --px-fill: #e0552e; --px-border: #e0552e; }
+
+/* Hardmode gated until its bosses are converted: dimmed, not clickable. */
+.phaseBtnSoon { color: #6f7f95; cursor: not-allowed; }
+.phaseBtnSoon:hover { color: #6f7f95; }
+.soonTag {
+  font-size: 8px;
+  letter-spacing: .08em;
+  color: #0b1524;
+  background: #e0552e;
+  border-radius: var(--radius-sm);
+  padding: 1px 4px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
 
 .rail {
   display: flex;

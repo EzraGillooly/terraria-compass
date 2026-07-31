@@ -6,7 +6,9 @@ import { PACK_META } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  { to: '/bosses',   label: 'Bosses'   },
+  /** Boss progression is converted to the new format for vanilla only so far, so
+   *  it is hidden under Calamity until that pass reaches its bosses. */
+  { to: '/bosses',   label: 'Bosses', packs: ['vanilla'] },
   { to: '/loadouts', label: 'Loadouts' },
   { to: '/crafting', label: 'Crafting' },
   /** the materials index is scraped from the Calamity wiki, so it is pack-gated */
