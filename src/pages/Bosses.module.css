@@ -17,7 +17,9 @@
 }
 
 /* Footer sits above the backdrop wash (which otherwise covers non-positioned content) */
-.footerLayer { position: relative; z-index: 2; }
+/* Extra top space (about the footer's own height) so the footer starts below
+   the fold rather than peeking in under the detail card on first load. */
+.footerLayer { position: relative; z-index: 2; margin-top: 108px; }
 
 /* ── Hero (transparent - the backdrop shows through) ── */
 .hero {
@@ -181,6 +183,60 @@
   text-shadow: 1px 1px 0 #000;
 }
 .node.side .nodeName { color: #b7c8dd; }
+
+/* ── Progression Mode node states ─────────────────────────────
+   The slot anchors the lock / done badges that overlay the icon. */
+.slot { position: relative; }
+
+/* The lock/unlock look animates: the icon brightens as the state changes. */
+.slot img { transition: filter .25s ease; }
+.lockBadge {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(255,255,255,.9);
+  pointer-events: none;
+}
+/* Closed padlock at rest; the open one only appears on a `next` node hover. */
+.lockBadge svg { grid-area: 1 / 1; }
+.lockOpen { display: none; }
+
+/* Locked: icon blacked out behind a padlock. Not interactive, so it gets no
+   hover lift and no gold ring - even though :hover can still fire on a disabled
+   button, it must stay visually static. */
+.node.locked { cursor: default; }
+.node.locked .slot img { filter: brightness(.22) saturate(.25); }
+.node.locked .slot,
+.node.locked:hover .slot { --px-border: rgba(255,255,255,.18); transform: none; }
+.node.locked .nodeName { color: #6f7f95; }
+
+/* Next (frontier): locked-looking at rest - dimmed, padlocked, greyed name.
+   Hover is a deliberate half-step, not the full reveal: a green ring, the
+   padlock swaps to open, and the icon only half-brightens - a clear "you can
+   unlock this" preview. A full click advances it to `passed` (normal). */
+.node.next .slot img { filter: brightness(.22) saturate(.25); }
+.node.next .slot { --px-border: rgba(255,255,255,.18); }
+.node.next .nodeName { color: #6f7f95; }
+.node.next:hover .slot img { filter: brightness(.6) saturate(.7); }
+.node.next:hover .slot { transform: translateY(-2px); --px-border: #5fd37e; }
+.node.next:hover .nodeName { color: #a9c6b3; }
+.node.next:hover .lockBadge { color: #7de29a; }
+.node.next:hover .lockClosed { display: none; }
+.node.next:hover .lockOpen { display: block; }
+
+/* The pixel-frame ring is its ::before background, so transitioning that eases
+   the border colour - the hover green settles to the selected gold on unlock. */
+.slot::before { transition: background .4s ease; }
+
+/* Unlocking: the just-clicked node holds its (open) padlock for a beat and fades
+   it out while the ring eases green→gold - a medium fade, neither snap nor slow. */
+.node.unlocking .lockClosed { display: none; }
+.node.unlocking .lockOpen { display: block; }
+.node.unlocking .lockBadge { animation: lockFade .4s ease forwards; }
+@keyframes lockFade { from { opacity: 1; } to { opacity: 0; } }
+
+/* Passed bosses read as ordinary unlocked nodes - no marker, no coloured text. */
 
 .scrollHint {
   text-align: center;

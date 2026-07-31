@@ -87,31 +87,65 @@ function worldLabel(boss: BossDef): string | null {
   return boss.world === 'corruption' ? 'Corruption only' : 'Crimson only';
 }
 
+/** Progression Mode lock state for a roadmap node. null = mode off (all open). */
+type LockState = 'passed' | 'next' | 'locked' | null;
+
 function BossSlot({
-  boss, selected, onSelect,
-}: { boss: BossDef; selected: boolean; onSelect: () => void }) {
+  boss, selected, onSelect, lock, unlocking,
+}: {
+  boss: BossDef; selected: boolean; onSelect: () => void;
+  lock: LockState; unlocking: boolean;
+}) {
+  const locked = lock === 'locked';        // fully locked: dimmed + disabled
+  const isNext = lock === 'next';          // frontier: looks locked at rest, lights up on hover, click unlocks
+  const hasLock = locked || isNext || unlocking;  // padlock at rest, plus the brief fade-out after a click
+  const title = locked
+    ? `${boss.name} - locked (reach the previous boss first)`
+    : isNext ? `${boss.name} - click to unlock`
+    : boss.side ? `${boss.name} - optional` : boss.name;
   return (
     <button
       type="button"
-      className={`${styles.node} ${boss.side ? styles.side : ''} ${selected ? styles.selected : ''}`}
+      className={`${styles.node} ${boss.side ? styles.side : ''} ${selected ? styles.selected : ''} ${
+        locked ? styles.locked : isNext ? styles.next : lock === 'passed' ? styles.passed : ''
+      } ${unlocking ? styles.unlocking : ''}`}
       onClick={onSelect}
+      disabled={locked}
       aria-pressed={selected}
-      title={boss.side ? `${boss.name} - optional` : boss.name}
+      title={title}
     >
       <span className={`${styles.slot} pixel-frame`} style={{ ['--boss' as string]: boss.color }}>
         <img
-          src={`${BASE}icons/bosses/${boss.id}.png`}
+          src={`${BASE}icons/bosses/${boss.id}-map.png`}
           alt=""
           aria-hidden="true"
           width="40"
           height="40"
           className="pixel-img"
-          onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+          /* Prefer the small map-marker sprite; fall back to the full boss
+             sprite when a boss has no map icon yet, then hide if neither loads. */
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (img.src.includes('-map.png')) img.src = `${BASE}icons/bosses/${boss.id}.png`;
+            else img.style.visibility = 'hidden';
+          }}
         />
+        {hasLock && (
+          <span className={styles.lockBadge} aria-hidden="true">
+            {/* Closed at rest; on a `next` node hover swaps to the open padlock. */}
+            <svg className={styles.lockClosed} viewBox="0 0 24 24" width="16" height="16">
+              <path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm3 8H9V6a3 3 0 0 1 6 0z" />
+            </svg>
+            <svg className={styles.lockOpen} viewBox="0 0 24 24" width="16" height="16">
+              <path fill="currentColor" d="M12 1a5 5 0 0 0-5 5 1 1 0 0 0 2 0 3 3 0 0 1 6 0v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5z" />
+            </svg>
+          </span>
+        )}
       </span>
       <span className={styles.nodeName}>
         {boss.name}
         {boss.side && <span className="sr-only"> (optional)</span>}
+        {locked && <span className="sr-only"> (locked)</span>}
       </span>
     </button>
   );
@@ -119,8 +153,10 @@ function BossSlot({
 
 export function Bosses() {
   const { phases, bosses } = usePack();
-  const { difficulty, calamityMode } = useAppState();
-  const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
+  const { difficulty, calamityMode, progressionMode, progress, setProgress } = useAppState();
+  // Empty by default so the selection resolves to the first boss in the active
+  // pack's order (see `selected` below) rather than a hardcoded vanilla boss.
+  const [selectedId, setSelectedId] = useState<string>('');
   const [showHardmode, setShowHardmode] = useState(false);
   const [modalItem, setModalItem] = useState<Item | null>(null);
 
@@ -149,7 +185,50 @@ export function Bosses() {
   const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
   const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);
   const flat = useMemo(() => stages.flatMap((s) => s.nodes), [stages]);
-  const selected = useMemo(() => flat.find((b) => b.id === selectedId) ?? flat[0]!, [flat, selectedId]);
+
+  // Progression Mode: `progress` is the furthest boss reached. With nothing
+  // saved yet the first boss is already the starting point (index 0), so it
+  // reads as reached and the second boss is immediately clickable.
+  const reachedIndex = useMemo(() => {
+    if (!progress) return 0;
+    const i = flat.findIndex((b) => b.id === progress);
+    return i >= 0 ? i : 0;
+  }, [flat, progress]);
+  const lockFor = (bossId: string): LockState => {
+    if (!progressionMode) return null;
+    const i = flat.findIndex((b) => b.id === bossId);
+    if (i <= reachedIndex) return 'passed';
+    if (i === reachedIndex + 1) return 'next';
+    return 'locked';
+  };
+
+  // When Progression Mode is on the selection can only rest on a reached boss -
+  // the current one (reachedIndex) or an earlier one being reviewed. Clicking the
+  // next boss advances first, so it is reached by the time it becomes selected.
+  // This also means a reset (reachedIndex → 0) snaps the selection to the first
+  // boss rather than leaving it on whatever was open.
+  const selected = useMemo(() => {
+    const pick = flat.find((b) => b.id === selectedId) ?? flat[0]!;
+    if (!progressionMode) return pick;
+    const maxIdx = Math.min(reachedIndex, flat.length - 1);
+    const pickIdx = flat.findIndex((b) => b.id === pick.id);
+    return pickIdx <= maxIdx ? pick : (flat[maxIdx] ?? pick);
+  }, [flat, selectedId, progressionMode, reachedIndex]);
+
+  // Clicking the next (frontier) boss reaches it, unlocking the one after. It
+  // advances at once (so the ring settles to the selected gold), while a brief
+  // `unlocking` flag keeps the padlock mounted so it can fade out - the CSS then
+  // eases the ring green→gold and the lock to nothing. A passed boss just opens
+  // for review; locked nodes are disabled, so they never fire.
+  const [unlockingId, setUnlockingId] = useState<string | null>(null);
+  const onSelectBoss = (boss: BossDef) => {
+    setSelectedId(boss.id);
+    if (progressionMode && flat.findIndex((b) => b.id === boss.id) === reachedIndex + 1) {
+      setProgress(boss.id);
+      setUnlockingId(boss.id);
+      window.setTimeout(() => setUnlockingId((cur) => (cur === boss.id ? null : cur)), 450);
+    }
+  };
 
   // Switch the whole rail between the pre-hardmode and hardmode sets.
   const setPhase = (hard: boolean) => {
@@ -173,7 +252,9 @@ export function Bosses() {
               key={boss.id}
               boss={boss}
               selected={boss.id === selected.id}
-              onSelect={() => setSelectedId(boss.id)}
+              onSelect={() => onSelectBoss(boss)}
+              lock={lockFor(boss.id)}
+              unlocking={unlockingId === boss.id}
             />
           ))}
         </div>

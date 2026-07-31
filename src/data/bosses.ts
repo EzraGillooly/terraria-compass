@@ -53,7 +53,7 @@ export interface BossDef {
   blurb: string;
   color: string;
   /** an animated bosses/<id>.gif exists; the big detail card uses it (the small
-   *  roadmap icons stay the static .png). */
+   *  roadmap icons show the map-marker sprite - see the roadmap node's icon). */
   animated?: boolean;
 }
 

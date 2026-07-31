@@ -229,6 +229,10 @@ export const PhaseDef = z.object({
   bossIcon: z.string().optional(),
   cues: z.array(z.string()),
   description: z.string(),
+  /** A short, plain one-liner shown under the phase name on the Loadouts banner -
+   *  says what the gear tier is, straightforwardly. Preferred there over a cue
+   *  (which is a checklist state) when present. */
+  blurb: z.string().optional(),
   /**
    * The section intro from the mod's own progression guide - what this phase
    * opens up and what to do in it. Preferred over `cues` in the banner: a cue
