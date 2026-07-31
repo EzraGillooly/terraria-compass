@@ -360,7 +360,10 @@
   /* Nav: all four tabs share one row, splitting the width evenly. Font matched
      to the selector value (13px), padding trimmed so "Materials" still fits. */
   .topnav { flex-direction: row; gap: 6px; width: 100%; }
-  .navLink { flex: 1; min-width: 0; text-align: center; font-size: 13px; padding: 0 4px; }
+  /* keep the base rule's top-heavy vertical padding (Andy Bold sits high, so the
+     text needs more room above than below to read centred); only the horizontal
+     padding is trimmed so four tabs fit the row */
+  .navLink { flex: 1; min-width: 0; text-align: center; font-size: 13px; padding: 4px 4px 2px; }
 
   /* Controls stack full-width, each selector spanning the row - and a touch
      taller than the fluid height so they read as comfortable tap targets. */
