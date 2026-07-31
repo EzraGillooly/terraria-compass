@@ -335,7 +335,9 @@
    breakpoint, so the desktop header is untouched. */
 @media (max-width: 700px) {
   .inner { grid-template-columns: 1fr auto; }
-  .menuToggle { display: grid; }
+  /* Comfortable, tappable hamburger - sized on its own (not via --control-h) so
+     it doesn't drag the nav-tab height with it. padding:0 centres the bars. */
+  .menuToggle { display: grid; width: 38px; height: 38px; padding: 0; }
 
   /* The wrapper stops being `display: contents` and becomes the panel: a
      full-width dropdown anchored under the bar, shown only when open. */
@@ -355,14 +357,16 @@
   }
   .headerMenu[data-open='true'] { display: flex; }
 
-  /* Nav: a vertical list of full-width tabs. */
-  .topnav { flex-direction: column; align-items: stretch; gap: 6px; width: 100%; }
-  .navLink { text-align: center; }
+  /* Nav: all four tabs share one row, splitting the width evenly. Font matched
+     to the selector value (13px), padding trimmed so "Materials" still fits. */
+  .topnav { flex-direction: row; gap: 6px; width: 100%; }
+  .navLink { flex: 1; min-width: 0; text-align: center; font-size: 13px; padding: 0 4px; }
 
-  /* Controls stack full-width, each selector spanning the row. */
+  /* Controls stack full-width, each selector spanning the row - and a touch
+     taller than the fluid height so they read as comfortable tap targets. */
   .controls { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
   .diffSelect, .worldColumn { width: 100%; height: auto; }
-  .diffTrigger { width: 100%; justify-content: space-between; }
+  .diffTrigger { width: 100%; justify-content: space-between; height: 34px; }
   .diffValue { margin-left: auto; }
   /* Pop-outs open in flow here (not absolutely, which would escape the panel). */
   .diffSelect .diffMenu { position: static; margin-top: 6px; }
