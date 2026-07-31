@@ -22,7 +22,9 @@ export async function loadPack(id: string): Promise<Pack> {
   // the app stuck on the loading splash.
   const pack = key === 'calamity'
     ? (await retryChunk(() => import('./calamity'))).calamityPack
-    : (await retryChunk(() => import('./vanilla'))).vanillaPack;
+    : key === 'thorium'
+      ? (await retryChunk(() => import('./thorium'))).thoriumPack
+      : (await retryChunk(() => import('./vanilla'))).vanillaPack;
   cache.set(key, pack);
   return pack;
 }

@@ -111,6 +111,40 @@ function CalamityModeToggle() {
   );
 }
 
+/* Progression Mode - a plain on/off switch (not a dropdown) that sits under the
+   World selector. When on, the boss roadmap locks every boss more than one step
+   ahead, so the reader unlocks them one at a time. */
+function ProgressionToggle() {
+  const { progressionMode, setProgressionMode, progress, setProgress } = useAppState();
+  return (
+    <div className={styles.progWrap}>
+      <div className={styles.progRow}>
+        <span className={styles.progCap}>Progression</span>
+        <button
+          type="button"
+          role="switch"
+          aria-checked={progressionMode}
+          aria-label="Progression Mode"
+          className={`${styles.progSwitch} ${progressionMode ? styles.progSwitchOn : ''}`}
+          onClick={() => setProgressionMode(!progressionMode)}
+        >
+          <span className={styles.progKnob} aria-hidden="true" />
+        </button>
+      </div>
+      {progressionMode && progress && (
+        <button
+          type="button"
+          className={styles.progReset}
+          onClick={() => setProgress(null)}
+          title="Clear your saved progress and lock the roadmap back to the start"
+        >
+          Reset progress
+        </button>
+      )}
+    </div>
+  );
+}
+
 /* Class selector - the loadout class moved here from the page so it stops reading
    as a second nav bar. Only meaningful on the Loadouts page, so the header shows
    it there alone (see Header). A pop-out dropdown like Mod / World, carrying each
@@ -279,7 +313,10 @@ export function Header({ variant = 'paper' }: HeaderProps) {
               stretch the header. */}
           <div className={styles.worldColumn}>
             <WorldSelect />
-            {packId === 'calamity' && <CalamityModeToggle />}
+            <div className={styles.underWorld}>
+              {packId === 'calamity' && <CalamityModeToggle />}
+              <ProgressionToggle />
+            </div>
           </div>
 
           {/* Day / night - disabled for now */}

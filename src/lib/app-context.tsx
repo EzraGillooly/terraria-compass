@@ -6,6 +6,10 @@ import { Loading } from '../components/Loading';
 const PACK_STORAGE_KEY = 'tc.pack';
 const CLASS_STORAGE_KEY = 'tc.class';
 const CAL_MODE_STORAGE_KEY = 'tc.calamityMode';
+const PROGRESSION_KEY = 'tc.progressionMode';
+/* Progression is saved per pack - each mod has its own boss roster, so the
+   furthest boss you have reached in Calamity is not the same as in vanilla. */
+const progressKey = (pid: string) => `tc.progress.${pid}`;
 
 /* Calamity's own difficulty, which is a separate axis from the world type: it is
    toggled through the Difficulty Indicator on top of an existing world, and
@@ -30,6 +34,15 @@ interface AppState {
       than being a world type of its own. Always 'off' outside Calamity. */
   calamityMode: CalamityMode;
   setCalamityMode: (m: CalamityMode) => void;
+  /** Progression Mode: when on, the boss roadmap locks every boss more than one
+      step ahead of your furthest, so you unlock them one at a time. Off by
+      default; the toggle lives under the World selector. */
+  progressionMode: boolean;
+  setProgressionMode: (v: boolean) => void;
+  /** the furthest-reached boss id for the active pack (null = none yet). Advance
+      it by clicking the next boss; pass null to reset. Persisted per pack. */
+  progress: string | null;
+  setProgress: (bossId: string | null) => void;
   /** the resolved active pack - every page reads its data from here. Never null
       to a consumer: the provider withholds children until the active pack has
       loaded, so this is always the data for the current packId. */
@@ -61,6 +74,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [packId, setPackIdState] = useState<string>(() => readStoredPack());
   const [classId, setClassId] = useState<string>(() => readStoredClass(getPackMeta(readStoredPack())));
   const [calamityChoice, setCalamityMode] = useState<CalamityMode>(() => readStoredCalamityMode());
+  const [progressionMode, setProgressionMode] = useState<boolean>(
+    () => window.localStorage.getItem(PROGRESSION_KEY) === '1',
+  );
+  const [progress, setProgressState] = useState<string | null>(
+    () => window.localStorage.getItem(progressKey(readStoredPack())) || null,
+  );
+  const setProgress = (bossId: string | null) => {
+    setProgressState(bossId);
+    if (bossId) window.localStorage.setItem(progressKey(packId), bossId);
+    else window.localStorage.removeItem(progressKey(packId));
+  };
 
   /* The active pack's data, loaded lazily. Held in state and swapped only once
      the dynamic import resolves, so `pack` always matches `packId` by the time a
@@ -92,6 +116,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     );
     // Revengeance is Calamity's, so leaving the pack turns it off
     if (id !== 'calamity') setCalamityMode('off');
+    // Swap in the new pack's saved progression (each pack tracks its own).
+    setProgressState(window.localStorage.getItem(progressKey(id)) || null);
   };
 
   useEffect(() => {
@@ -117,6 +143,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [calamityChoice]);
 
   useEffect(() => {
+    window.localStorage.setItem(PROGRESSION_KEY, progressionMode ? '1' : '0');
+  }, [progressionMode]);
+
+  useEffect(() => {
     document.documentElement.dataset.calamityMode =
       calamityMode === 'off' ? '' : calamityMode;
   }, [calamityMode]);
@@ -135,7 +165,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
       value={{
         difficulty, setDifficulty, isDayMode, setIsDayMode,
         packId, setPackId, classId, setClassId,
-        calamityMode, setCalamityMode, pack,
+        calamityMode, setCalamityMode,
+        progressionMode, setProgressionMode, progress, setProgress,
+        pack,
       }}
     >
       {children}

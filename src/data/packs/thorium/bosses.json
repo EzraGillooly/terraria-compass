@@ -1,0 +1,99 @@
+[
+  {
+    "id": "the-grand-thunder-bird",
+    "name": "The Grand Thunder Bird",
+    "stage": "pre-bosses",
+    "tier": -1,
+    "side": true,
+    "role": "optional",
+    "summon": "Fire the Grand Flare Gun (loaded with Storm Flares) in the Desert during the day.",
+    "summonItem": {
+      "name": "Grand Flare Gun",
+      "icon": "thorium/grand-flare-gun.png",
+      "slot": "summon",
+      "effect": "Fired in the Desert during the day, using Storm Flares as ammo, to summon The Grand Thunder Bird.",
+      "source": "Crafted at an Iron Anvil",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Grand_Flare_Gun",
+      "materials": [
+        {
+          "name": "Any Iron Bar",
+          "qty": 5
+        },
+        {
+          "name": "Talon",
+          "qty": 2
+        }
+      ]
+    },
+    "drops": [
+      {
+        "name": "Thunder Talon",
+        "icon": "thorium/thunder-talon.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword that zaps another nearby enemy on hit.",
+        "stats": "12 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thunder_Talon"
+      },
+      {
+        "name": "Talon Burst",
+        "icon": "thorium/talon-burst.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Turns wooden arrows into Storm Bolts that can strike nearby enemies.",
+        "stats": "5 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Talon_Burst"
+      },
+      {
+        "name": "Didgeridoo",
+        "icon": "thorium/didgeridoo.png",
+        "slot": "weapon",
+        "subclass": "instrument",
+        "effect": "A Bard instrument that releases a slow-moving, sonorous pulse.",
+        "stats": "14 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Didgeridoo"
+      },
+      {
+        "name": "Storm-Hatchling Staff",
+        "icon": "thorium/storm-hatchling-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a storm hatchling minion that zaps your foes.",
+        "stats": "15 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Storm-Hatchling_Staff"
+      },
+      {
+        "name": "Sandstone Ingot",
+        "icon": "thorium/sandstone-ingot.png",
+        "slot": "material",
+        "effect": "Thorium crafting material used for early desert-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sandstone_Ingot"
+      },
+      {
+        "name": "Grand Thunder Bird Mask",
+        "icon": "thorium/grand-thunder-bird-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Grand Thunder Bird.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Grand_Thunder_Bird_Mask"
+      },
+      {
+        "name": "Zephyr's Grip",
+        "icon": "thorium/zephyrs-grip.png",
+        "slot": "tool",
+        "mode": "expert",
+        "effect": "A fast grappling hook - even young Grand Thunder Birds are incredibly nimble.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Zephyr%27s_Grip"
+      }
+    ],
+    "blurb": "A desert bird boss fought during the day. It hovers above the player firing feathers and lightning, speeding up below 45% health.",
+    "color": "#6FB7E8",
+    "animated": true
+  }
+]

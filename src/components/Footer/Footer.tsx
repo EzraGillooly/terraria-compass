@@ -1,5 +1,9 @@
 import styles from './Footer.module.css';
 
+/* Injected from package.json by Vite's define (see vite.config.ts). Guarded with
+   typeof so it also resolves under Vitest, where that define is not applied. */
+const APP_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '';
+
 interface FooterProps {
   /** Drop the top margin so the footer sits flush against full-bleed content (e.g. Home). */
   flush?: boolean;
@@ -15,7 +19,19 @@ export function Footer({ flush = false }: FooterProps) {
           <div className={styles.brand}>
             Terraria Compass
           </div>
-          <p className={styles.tagline}>Your guide through Terraria.</p>
+          <p className={styles.tagline}>
+            Your guide through Terraria.{APP_VERSION && ' '}
+            {APP_VERSION && (
+              <a
+                className={styles.version}
+                href="https://github.com/EzraGillooly/terraria-compass/releases"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                v{APP_VERSION}
+              </a>
+            )}
+          </p>
         </div>
 
         <div className={styles.mid} aria-hidden="true" />

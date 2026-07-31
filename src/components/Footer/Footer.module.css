@@ -44,6 +44,14 @@
   color: var(--ink-mute);
   margin: 4px 0 0;
 }
+.version {
+  font-style: normal;
+  font-size: 12px;
+  color: var(--ink-mute);
+  opacity: .8;
+  text-decoration: none;
+}
+.version:hover { color: var(--accent); text-decoration: underline; }
 
 /* ── Middle: reserved ── */
 .mid { justify-self: center; }

@@ -38,6 +38,30 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'pre-cultist': 'lunatic-cultist',
   'pre-moonlord': 'moon-lord',
   endgame: 'moon-lord',
+  // Calamity's phase waypoints show a curated map icon per phase; these map each
+  // one to the boss that icon depicts (matched by icon content) so the banner's
+  // in-game sprite/gif lines up with the map marker in the progress bar.
+  'cal-pre-boss': 'desert-scourge',
+  'cal-pre-evil': 'brain-of-cthulhu',
+  'cal-pre-hive-perf': 'the-perforators',
+  'cal-pre-skeletron': 'skeletron',
+  'cal-pre-wof': 'wall-of-flesh',
+  'cal-pre-mech': 'cryogen',
+  'cal-post-mech1': 'aquatic-scourge',
+  'cal-post-mech2': 'brimstone-elemental',
+  'cal-pre-plantera': 'plantera',
+  'cal-pre-golem': 'golem',
+  'cal-pre-lunar': 'lunatic-cultist',
+  'cal-pre-ml': 'moon-lord',
+  'cal-pre-providence': 'providence-the-profaned-goddess',
+  'cal-pre-polterghast': 'polterghast',
+  'cal-pre-dog': 'the-devourer-of-gods',
+  'cal-pre-yharon': 'yharon-dragon-of-rebirth',
+  'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material, distinct from post-Exo
+  'cal-post-calamitas': 'supreme-witch-calamitas',
+  'cal-post-exo': 'exo-mechs',
+  // cal-post-golem (prismatic crystal) and cal-endgame (compass) have no single
+  // boss, so they are left out - the banner falls back to their own map art.
 };
 
 function makeWikiName(stem: string): string {
@@ -595,16 +619,40 @@ function BuffCell(
 }
 
 export function Loadouts() {
-  const { difficulty, setDifficulty, classId } = useAppState();
+  const { difficulty, setDifficulty, classId, progressionMode, progress, setProgress } = useAppState();
   const { id: packId, classes, phases, loadouts, bosses } = usePack();
   const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
   const [showPool, setShowPool] = useState(false);
 
+  // Progression Mode ties the Loadouts phases to the boss roadmap: the reached
+  // boss (or the first, before any progress) sits in some phase, and every phase
+  // past it is locked - you can only open gear for tiers you have progressed to.
+  const reachedBoss = progress ? bosses.find((b) => b.id === progress) : undefined;
+  const reachedPhase = reachedBoss ? phases.find((p) => p.id === reachedBoss.stage) : undefined;
+  const reachedPhaseOrder = reachedPhase ? reachedPhase.order : Math.min(...phases.map((p) => p.order));
+  // Phase gating mirrors the boss roadmap: the phase after the reached one is the
+  // clickable "next" (advancing progression), and anything past that is locked.
+  const phaseState = (order: number): 'open' | 'next' | 'locked' => {
+    if (!progressionMode || order <= reachedPhaseOrder) return 'open';
+    return order === reachedPhaseOrder + 1 ? 'next' : 'locked';
+  };
+  // The first boss of a phase in roadmap order (optional/side bosses lead), used
+  // to advance progression when the reader clicks the next phase here.
+  const firstBossOfPhase = (pid: string) => {
+    const inStage = bosses.filter((b) => b.stage === pid).sort((a, b) => a.tier - b.tier);
+    return (inStage.find((b) => b.side) ?? inStage[0])?.id;
+  };
+
   // classId lives in app-context (header selector); it is already clamped to the
-  // active pack there, so no local clamp is needed.
-  const activePhaseId = phases.some((p) => p.id === phaseId) ? phaseId : (phases[0]?.id ?? phaseId);
+  // active pack there, so no local clamp is needed. A phase selection past the
+  // reached tier snaps back to the furthest unlocked phase.
+  const validPhaseId = phases.some((p) => p.id === phaseId) ? phaseId : (phases[0]?.id ?? phaseId);
+  const validOrder = phases.find((p) => p.id === validPhaseId)?.order ?? 0;
+  const activePhaseId = (progressionMode && validOrder > reachedPhaseOrder)
+    ? (phases.filter((p) => p.order <= reachedPhaseOrder).sort((a, b) => b.order - a.order)[0]?.id ?? validPhaseId)
+    : validPhaseId;
   const activeClassId = classId;
 
   // Backdrop + phase-bar boss icon per phase. Vanilla uses fixed maps; other
@@ -621,7 +669,28 @@ export function Loadouts() {
     const def = phases.find((p) => p.id === pid);
     return def?.bossIcon
       ? `${BASE}icons/phases/${def.bossIcon}.png`
-      : `${BASE}icons/bosses/${phaseBossIcon(pid)}.png`;
+      : `${BASE}icons/bosses/${phaseBossIcon(pid)}-map.png`;
+  };
+  /* The banner shows the representative boss's full in-game art (animated gif
+     where one exists) for every pack - the same split the Bosses page makes
+     between its small roadmap map markers and its blown-up detail card. The
+     waypoints keep the map marker (phaseIconSrc); only the banner uses this. */
+  const phaseBannerSrc = (pid: string) => {
+    // An explicit representative boss (vanilla gate bosses + the matched Calamity
+    // phases) shows that boss's full sprite/gif.
+    if (pid in PHASE_BOSS) {
+      const bid = PHASE_BOSS[pid]!;
+      const boss = bosses.find((b) => b.id === bid);
+      return `${BASE}icons/bosses/${bid}.${boss?.animated ? 'gif' : 'png'}`;
+    }
+    // A Calamity phase with curated art but no single boss (the endgame compass,
+    // the post-Golem crystal) shows the same art its waypoint uses.
+    const def = phases.find((p) => p.id === pid);
+    if (def?.bossIcon) return `${BASE}icons/phases/${def.bossIcon}.png`;
+    // Otherwise fall back to the phase's representative boss sprite.
+    const bid = phaseBossIcon(pid);
+    const boss = bosses.find((b) => b.id === bid);
+    return `${BASE}icons/bosses/${bid}.${boss?.animated ? 'gif' : 'png'}`;
   };
 
   const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
@@ -961,14 +1030,28 @@ export function Loadouts() {
           {phases.map((p, i) => {
             const done = p.order < activeOrder;
             const active = p.id === activePhaseId;
+            const state = phaseState(p.order);   // 'open' | 'next' | 'locked'
+            const hasLock = state !== 'open';
             return (
               <button
                 key={p.id}
                 type="button"
-                className={`${styles.waypoint} ${active ? styles.on : ''} ${done ? styles.done : ''}`}
+                className={`${styles.waypoint} ${active ? styles.on : ''} ${done ? styles.done : ''} ${
+                  state === 'locked' ? styles.wpLocked : state === 'next' ? styles.wpNext : ''
+                }`}
                 aria-pressed={active}
-                aria-label={p.name}
-                onClick={() => { setPhaseId(p.id as PhaseId); setShowRest(false); }}
+                aria-label={hasLock ? `${p.name} - ${state === 'next' ? 'click to unlock' : 'locked'}` : p.name}
+                disabled={state === 'locked'}
+                title={
+                  state === 'next' ? `${p.name} - click to unlock`
+                  : state === 'locked' ? `${p.name} - locked (progress further in the boss roadmap)`
+                  : undefined
+                }
+                onClick={() => {
+                  if (state === 'locked') return;
+                  if (state === 'next') { const b = firstBossOfPhase(p.id); if (b) setProgress(b); }
+                  setPhaseId(p.id as PhaseId); setShowRest(false);
+                }}
               >
                 {i > 0 && <span className={`${styles.vein} ${p.order <= activeOrder ? styles.veinFill : ''}`} aria-hidden="true" />}
                 <span className={`${styles.wpDisc} pixel-frame pixel-circle`}>
@@ -977,8 +1060,19 @@ export function Loadouts() {
                     alt="" aria-hidden="true"
                     className={`${styles.wpIcon} pixel-img`}
                     width="30" height="30" loading="lazy"
-                    onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
+                    onError={(e) => {
+                      const img = e.currentTarget;
+                      if (img.src.includes('-map.png')) img.src = img.src.replace('-map.png', '.png');
+                      else img.src = FALLBACK_ICON;
+                    }}
                   />
+                  {hasLock && (
+                    <span className={styles.wpLock} aria-hidden="true">
+                      <svg viewBox="0 0 24 24" width="14" height="14">
+                        <path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm3 8H9V6a3 3 0 0 1 6 0z" />
+                      </svg>
+                    </span>
+                  )}
                 </span>
                 <span className={styles.wpName}>{p.name}</span>
               </button>
@@ -989,11 +1083,15 @@ export function Loadouts() {
         {/* Boss banner (re-mounts per phase to replay the slide-in) */}
         <div key={activePhaseId} className={`${styles.banner} pixel-frame`}>
           <img
-            src={phaseIconSrc(activePhaseId)}
+            src={phaseBannerSrc(activePhaseId)}
             alt="" aria-hidden="true"
             className={`${styles.bannerIcon} pixel-img`}
             width="44" height="44"
-            onError={(e) => { e.currentTarget.src = FALLBACK_ICON; }}
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (img.src.endsWith('.gif')) img.src = img.src.replace(/\.gif$/, '.png');
+              else img.src = FALLBACK_ICON;
+            }}
           />
           <div className={styles.bannerBody}>
             <span className={styles.bannerName}>{phaseName}</span>
@@ -1005,7 +1103,7 @@ export function Loadouts() {
                 resort rather than the first. */}
             {phaseDef && (
               <span className={styles.bannerHint}>
-                {phaseDef.guideNote ?? phaseDef.cues[0] ?? phaseDef.triggeredBy}
+                {phaseDef.guideNote ?? phaseDef.blurb ?? phaseDef.cues[0] ?? phaseDef.triggeredBy}
               </span>
             )}
           </div>
