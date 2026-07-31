@@ -575,16 +575,109 @@
     "stage": "cal-pre-hive-perf",
     "tier": 2,
     "side": false,
-    "summon": "Kill a Hive Tumor in the Corruption, or craft and use a Teratoma.",
+    "summon": "Kill a Hive Tumor in the Corruption to summon it. After the first kill you can craft a Teratoma to summon it anywhere.",
     "drops": [
-      "Perfect Dark",
-      "Shadethrower",
-      "Shaderain Staff",
-      "Dank Staff",
-      "Rot Ball"
+      {
+        "name": "Perfect Dark",
+        "icon": "calamity/perfect-dark.png",
+        "slot": "weapon",
+        "subclass": "broadsword",
+        "effect": "A broadsword that fires a vile ball which sticks to tiles and explodes.",
+        "stats": "29 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perfect_Dark"
+      },
+      {
+        "name": "Shadethrower",
+        "icon": "calamity/shadethrower.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Spits clouds of shade that afflict enemies with Shadowflame.",
+        "stats": "21 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower"
+      },
+      {
+        "name": "Shaderain Staff",
+        "icon": "calamity/shaderain-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires a spray of evil clouds and rain onto enemies.",
+        "stats": "20 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shaderain_Staff"
+      },
+      {
+        "name": "Dank Staff",
+        "icon": "calamity/dank-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a dank creeper minion to fight for you.",
+        "stats": "14 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dank_Staff"
+      },
+      {
+        "name": "Rot Ball",
+        "icon": "calamity/rot-ball.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "A thrown rogue ball. Stealth strikes spawn rain clouds on enemy hits.",
+        "stats": "26 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rot_Ball"
+      },
+      {
+        "name": "Filthy Glove",
+        "icon": "calamity/filthy-glove.png",
+        "slot": "accessory",
+        "subclass": "rogue",
+        "effect": "Stealth strikes gain +8 armor penetration and deal 8% more damage.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Filthy_Glove"
+      },
+      {
+        "name": "Rotting Eyeball",
+        "icon": "calamity/rotting-eyeball.png",
+        "slot": "pet",
+        "effect": "Summons a corrupted conglomeration pet to follow you.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotting_Eyeball"
+      },
+      {
+        "name": "Hive Mind Mask",
+        "icon": "calamity/hive-mind-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Hive Mind.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hive_Mind_Mask"
+      }
     ],
     "blurb": "Calamity's Corruption boss, a shade-slinging mass that shifts from stationary to a mobile second phase.",
-    "color": "#7a9a3a"
+    "color": "#7a9a3a",
+    "world": "corruption",
+    "summonItem": {
+      "name": "Teratoma",
+      "icon": "calamity/teratoma.png",
+      "slot": "summon",
+      "effect": "Summons The Hive Mind when used in the Corruption.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Teratoma",
+      "materials": [
+        {
+          "name": "Demonite Bar",
+          "qty": 3
+        },
+        {
+          "name": "Aerialite Bar",
+          "qty": 7
+        },
+        {
+          "name": "Rotten Chunk",
+          "qty": 13
+        }
+      ]
+    }
   },
   {
     "id": "the-perforators",
@@ -592,17 +685,129 @@
     "stage": "cal-pre-hive-perf",
     "tier": 3,
     "side": false,
-    "summon": "Kill a Perforator Cyst in the Crimson, or craft and use Bloody Worm Food.",
+    "summon": "Kill a Perforator Cyst in the Crimson to summon them. After the first kill you can craft a Bloody Worm Food to summon them anywhere.",
     "drops": [
-      "Bloodstained Glove",
-      "Aorta",
-      "Sausage Maker",
-      "Vein Burster",
-      "Eviscerator",
-      "Blood Bath"
+      {
+        "name": "Aorta",
+        "icon": "calamity/aorta.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A yoyo that fires homing blood when enemies are near.",
+        "stats": "31 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aorta"
+      },
+      {
+        "name": "Sausage Maker",
+        "icon": "calamity/sausage-maker.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "A spear that sprays homing blood on hit.",
+        "stats": "32 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sausage_Maker"
+      },
+      {
+        "name": "Vein Burster",
+        "icon": "calamity/vein-burster.png",
+        "slot": "weapon",
+        "subclass": "broadsword",
+        "effect": "A broadsword that fires a blood ball which sticks to tiles and explodes.",
+        "stats": "45 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vein_Burster"
+      },
+      {
+        "name": "Eviscerator",
+        "icon": "calamity/eviscerator.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Converts musket balls into fast-moving blood clots.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eviscerator"
+      },
+      {
+        "name": "Blood Bath",
+        "icon": "calamity/blood-bath.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Drenches your foes in blood, dealing rapid magic damage.",
+        "stats": "24 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath"
+      },
+      {
+        "name": "Flesh of Infidelity",
+        "icon": "calamity/flesh-of-infidelity.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a tentacled ball of flesh that splashes blood onto enemies.",
+        "stats": "20 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flesh_of_Infidelity"
+      },
+      {
+        "name": "Tooth Ball",
+        "icon": "calamity/tooth-ball.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "A thrown rogue ball. Stealth strikes spawn rain clouds on enemy hits.",
+        "stats": "26 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tooth_Ball"
+      },
+      {
+        "name": "Bloodstained Glove",
+        "icon": "calamity/bloodstained-glove.png",
+        "slot": "accessory",
+        "subclass": "rogue",
+        "effect": "Stealth strikes gain +8 armor penetration and heal 5 HP.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstained_Glove"
+      },
+      {
+        "name": "Bloody Vein",
+        "icon": "calamity/bloody-vein.png",
+        "slot": "pet",
+        "effect": "Summons an amalgamated pile of flesh pet to follow you.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Vein"
+      },
+      {
+        "name": "Perforator Mask",
+        "icon": "calamity/perforator-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Perforators.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perforator_Mask"
+      }
     ],
     "blurb": "Calamity's Crimson boss: a hive that unleashes escalating blood-worms of gore.",
-    "color": "#a11f2e"
+    "color": "#a11f2e",
+    "world": "crimson",
+    "summonItem": {
+      "name": "Bloody Worm Food",
+      "icon": "calamity/bloody-worm-food.png",
+      "slot": "summon",
+      "effect": "Summons The Perforators when used in the Crimson.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Worm_Food",
+      "materials": [
+        {
+          "name": "Vertebra",
+          "qty": 13
+        },
+        {
+          "name": "Aerialite Bar",
+          "qty": 7
+        },
+        {
+          "name": "Crimtane Bar",
+          "qty": 3
+        }
+      ]
+    }
   },
   {
     "id": "queen-bee",
