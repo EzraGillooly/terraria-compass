@@ -16,10 +16,11 @@ const THORIUM_CLASSES: ClassDef[] = [
     name: 'Bard',
     blurb: "Thorium's support-damage class: symphonic instruments deal damage while building Empowerments that buff the whole team, and Inspiration is its resource instead of mana.",
     subclasses: [
-      { id: 'instrument', name: 'Instruments', description: 'Wind and string instruments that fire symphonic projectiles.' },
-      { id: 'guitar', name: 'Guitars', description: 'Guitars that strum piercing sound waves.' },
-      { id: 'drum', name: 'Drums', description: 'Percussion weapons dealing close-range burst damage.' },
-      { id: 'other', name: 'Other', description: 'Miscellaneous symphonic weapons that fit no standard type.' },
+      { id: 'brass', name: 'Brass Instruments', description: 'Horns and shells that fire symphonic blasts.' },
+      { id: 'percussion', name: 'Percussion Instruments', description: 'Drums and struck instruments dealing close-range burst damage.' },
+      { id: 'string', name: 'String Instruments', description: 'Guitars and harps that strum piercing sound waves.' },
+      { id: 'wind', name: 'Wind Instruments', description: 'Flutes and pipes that fire sustained symphonic notes.' },
+      { id: 'electronic', name: 'Electronic Instruments', description: 'Amplified instruments that fire energised sound.' },
     ],
   },
   {
@@ -27,9 +28,9 @@ const THORIUM_CLASSES: ClassDef[] = [
     name: 'Healer',
     blurb: "Thorium's dedicated support class: Radiant weapons damage enemies while healing allies, making it built for multiplayer - though its self-sustain helps in single-player too.",
     subclasses: [
-      { id: 'radiant', name: 'Radiant', description: 'Healing weapons that damage enemies and heal allies at once.' },
-      { id: 'staff', name: 'Healing Staves', description: 'Staves that channel healing to allies.' },
-      { id: 'other', name: 'Other', description: 'Miscellaneous healing weapons that fit no standard type.' },
+      { id: 'scythe', name: 'Scythes', description: 'Radiant scythes that gather soul essence to heal allies.' },
+      { id: 'mace', name: 'Maces', description: 'Radiant maces that heal allies on hit.' },
+      { id: 'other', name: 'Other', description: 'Miscellaneous radiant weapons that fit no standard type.' },
     ],
   },
   {
@@ -37,9 +38,8 @@ const THORIUM_CLASSES: ClassDef[] = [
     name: 'Throwing',
     blurb: 'The consumable-thrown class Thorium keeps alive and expands: javelins, knives, and thrown explosives that scale with dedicated throwing armor and accessories.',
     subclasses: [
-      { id: 'javelin', name: 'Javelins', description: 'Thrown javelins and spears.' },
-      { id: 'knife', name: 'Knives', description: 'Thrown knives and shurikens.' },
-      { id: 'other', name: 'Other', description: 'Miscellaneous thrown weapons that fit no standard type.' },
+      { id: 'consumable', name: 'Consumable Weapons', description: 'Thrown weapons that are used up as ammo.' },
+      { id: 'non-consumable', name: 'Non-Consumable Weapons', description: 'Reusable thrown weapons that return or never deplete.' },
     ],
   },
 ];
