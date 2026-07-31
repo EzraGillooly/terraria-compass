@@ -60,13 +60,14 @@ export function Home() {
         <Header variant="photo" />
 
         <div className={styles.heroBody}>
-          <p className={styles.kicker}>Your compass through Terraria</p>
+          <p className={styles.kicker}>Your guide through Terraria</p>
           <h1 className={styles.heroTitle}>
-            Never wonder <em>what&rsquo;s next</em> again.
+            Never wonder <em>what&rsquo;s next</em> again
           </h1>
           <p className={styles.heroLede}>
-            Boss order, biome tips, and the right gear for every stage. Built for players
-            who got a little lost between Day 1 and the Wall of Flesh.
+            Recommended weapons, armor, accessories and buffs for every class at each
+            stage of progression, with a boss roadmap and full crafting trees. Vanilla and
+            Calamity.
           </p>
           <div className={styles.ctaRow}>
             <Link to="/bosses" className={`${styles.btnPrimary} pixel-frame`}>
