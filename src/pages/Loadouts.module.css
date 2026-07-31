@@ -67,8 +67,7 @@
 .waypoint.on .wpName { color: #EAF0FF; }
 
 /* ── Boss banner ── */
-.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; --px-fill: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, rgba(16,26,54,.9)) 0%, rgba(16,26,54,.9) 100%); --px-border: rgba(150,180,230,.4); animation: bannerIn .4s cubic-bezier(.2,.8,.3,1); }
-@keyframes bannerIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.banner { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 18px; --px-fill: rgba(16,26,54,.9); --px-border: rgba(150,180,230,.4); }
 .bannerIcon { width: 44px; height: 44px; object-fit: contain; flex: none; }
 .bannerName { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; color: #EAF0FF; line-height: 1.1; text-shadow: var(--tshadow); }
 /* Holds a sentence or two from the mod's guide now, not a four-word cue, so it
