@@ -2011,16 +2011,137 @@
     "stage": "cal-pre-plantera",
     "tier": 0,
     "side": false,
-    "summon": "Use an Eye of Desolation at night.",
+    "summon": "Use the Eye of Desolation anywhere, at any time.",
     "drops": [
-      "Ashes of Calamity",
-      "Oblivion",
-      "Animosity",
-      "Hood of Calamity",
-      "Void of Calamity"
+      {
+        "name": "Oblivion",
+        "icon": "calamity/oblivion.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A yoyo that fires brimstone darts at nearby enemies.",
+        "stats": "50 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Oblivion"
+      },
+      {
+        "name": "Animosity",
+        "icon": "calamity/animosity.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires a tight-spread shotgun blast imbued with brimstone.",
+        "stats": "39 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Animosity"
+      },
+      {
+        "name": "Lashes of Chaos",
+        "icon": "calamity/lashes-of-chaos.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Alternates between exploding hellfireballs and piercing hellblasts.",
+        "stats": "130 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lashes_of_Chaos"
+      },
+      {
+        "name": "Entropy's Vigil",
+        "icon": "calamity/entropys-vigil.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a mini Calamitas Clone and her brothers to protect you.",
+        "stats": "47 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Entropy%27s_Vigil"
+      },
+      {
+        "name": "Crushsaw Crasher",
+        "icon": "calamity/crushsaw-crasher.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws bouncing axes; stealth strikes throw six at once. From Catastrophe.",
+        "stats": "57 damage",
+        "dropRate": "100% (if Catastrophe dies last)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crushsaw_Crasher"
+      },
+      {
+        "name": "Havoc's Breath",
+        "icon": "calamity/havocs-breath.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Projects cone-shaped blasts of scorching brimstone. From Cataclysm.",
+        "stats": "62 damage",
+        "dropRate": "100% (if Cataclysm dies last)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Havoc%27s_Breath"
+      },
+      {
+        "name": "Chaos Stone",
+        "icon": "calamity/chaos-stone.png",
+        "slot": "accessory",
+        "effect": "Disables automatic potion use, but lets mana-consuming items be used with no mana.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chaos_Stone"
+      },
+      {
+        "name": "Regenerator",
+        "icon": "calamity/regenerator.png",
+        "slot": "accessory",
+        "effect": "Caps your health at 50% of maximum but greatly increases post-hit invincibility.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regenerator"
+      },
+      {
+        "name": "Hood of Calamity",
+        "icon": "calamity/hood-of-calamity.png",
+        "slot": "armor",
+        "effect": "Magic headpiece of the Calamity armor set.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamity_armor"
+      },
+      {
+        "name": "Robes of Calamity",
+        "icon": "calamity/robes-of-calamity.png",
+        "slot": "armor",
+        "effect": "Magic body piece of the Calamity armor set.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamity_armor"
+      },
+      {
+        "name": "Ashes of Calamity",
+        "icon": "calamity/ashes-of-calamity.png",
+        "slot": "material",
+        "effect": "Key brimstone crafting material used for many post-mech weapons and gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+      },
+      {
+        "name": "Calamitas Clone Mask",
+        "icon": "calamity/calamitas-clone-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Calamitas Clone.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamitas_Clone_Mask"
+      }
     ],
-    "blurb": "A brimstone-themed clone that chases the player while summoning minion constructs, gating post-mech Calamity gear.",
-    "color": "#A61C1C"
+    "blurb": "A brimstone boss summoned anywhere. She fights like Retinazer - chasing and firing projectiles - and summons her brothers Cataclysm and Catastrophe to assist.",
+    "color": "#A61C1C",
+    "summonItem": {
+      "name": "Eye of Desolation",
+      "icon": "calamity/eye-of-desolation.png",
+      "slot": "summon",
+      "effect": "Summons the Calamitas Clone when used.",
+      "source": "Crafted at an Iron or Lead Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Desolation",
+      "materials": [
+        {
+          "name": "Hellstone Bar",
+          "qty": 10
+        },
+        {
+          "name": "Essence of Havoc",
+          "qty": 5
+        }
+      ]
+    }
   },
   {
     "id": "plantera",
@@ -2028,16 +2149,170 @@
     "stage": "cal-pre-plantera",
     "tier": 1,
     "side": false,
-    "summon": "Break a Plantera's Bulb in the Underground Jungle.",
+    "summon": "Break a Plantera's Bulb in the Underground Jungle. In Calamity, Bulbs appear after the Wall of Flesh (no need to beat the mechs first).",
     "drops": [
-      "Temple Key",
-      "Seedler",
-      "Venus Magnum",
-      "Nettle Burst",
-      "Pygmy Staff"
+      {
+        "name": "Temple Key",
+        "icon": "items/temple-key.png",
+        "slot": "tool",
+        "effect": "Unlocks the Lihzahrd Door into the Jungle Temple, home of Golem.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Temple_Key"
+      },
+      {
+        "name": "Grenade Launcher",
+        "icon": "items/grenade-launcher.png",
+        "slot": "weapon",
+        "subclass": "launcher",
+        "effect": "Fires rockets in an arc; comes with a stack of Rocket I on the first kill.",
+        "stats": "60 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade_Launcher"
+      },
+      {
+        "name": "Venus Magnum",
+        "icon": "items/venus-magnum.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A fast, high-velocity pistol.",
+        "stats": "50 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venus_Magnum"
+      },
+      {
+        "name": "Nettle Burst",
+        "icon": "items/nettle-burst.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Grows a chain of thorny vines toward the cursor.",
+        "stats": "35 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst"
+      },
+      {
+        "name": "Leaf Blower",
+        "icon": "items/leaf-blower.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Rapidly sprays a stream of razor leaves.",
+        "stats": "48 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Leaf_Blower"
+      },
+      {
+        "name": "Flower Pow",
+        "icon": "items/flower-pow.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that launches thorny vines on swing.",
+        "stats": "130 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flower_Pow"
+      },
+      {
+        "name": "Wasp Gun",
+        "icon": "items/wasp-gun.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Fires homing wasps at enemies.",
+        "stats": "31 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun"
+      },
+      {
+        "name": "Seedler",
+        "icon": "items/seedler.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A sword that shoots seeds which burst into homing thorn balls.",
+        "stats": "50 damage",
+        "dropRate": "25% (one of seven weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
+      },
+      {
+        "name": "Blossom Flux",
+        "icon": "calamity/blossom-flux.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires a stream of leaves and alternates with a piercing thorn bolt.",
+        "stats": "18 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blossom_Flux"
+      },
+      {
+        "name": "Pygmy Staff",
+        "icon": "items/pygmy-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons Pygmy minions that throw spears.",
+        "stats": "40 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff"
+      },
+      {
+        "name": "The Axe",
+        "icon": "items/the-axe.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A rare, very strong melee axe.",
+        "stats": "72 damage",
+        "dropRate": "2%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Axe"
+      },
+      {
+        "name": "Thorn Hook",
+        "icon": "items/thorn-hook.png",
+        "slot": "tool",
+        "effect": "A grappling hook with a thorny reach.",
+        "dropRate": "10%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Thorn_Hook"
+      },
+      {
+        "name": "Bloom Stone",
+        "icon": "calamity/bloom-stone.png",
+        "slot": "accessory",
+        "effect": "Healing Potions heal 50% more over time, grappling hooks reach further, and a stone orbits you dealing contact damage.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloom_Stone"
+      },
+      {
+        "name": "Living Shard",
+        "icon": "calamity/living-shard.png",
+        "slot": "material",
+        "effect": "Jungle crafting material used for post-Plantera Calamity gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Shard"
+      },
+      {
+        "name": "Seedling",
+        "icon": "items/seedling.png",
+        "slot": "pet",
+        "effect": "Summons a Baby Plantera pet to follow you.",
+        "dropRate": "5%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Seedling"
+      },
+      {
+        "name": "Plantera Mask",
+        "icon": "items/plantera-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Plantera.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Plantera_Mask"
+      },
+      {
+        "name": "Spore Sac",
+        "icon": "accessories/spore-sac.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Periodically releases spores that damage nearby enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spore_Sac"
+      }
     ],
-    "blurb": "The vanilla jungle boss whose defeat unlocks the Jungle Temple and much of the late Hardmode roadmap.",
-    "color": "#D14E8C"
+    "blurb": "Summoned by breaking a Plantera's Bulb in the Underground Jungle. It is tethered to hooks in the first phase, then breaks free and pursues directly below half health.",
+    "color": "#D14E8C",
+    "unlocks": "The Jungle Temple (home of Golem) can now be entered, the Cyborg NPC can move in, and the Dungeon fills with tougher post-Plantera enemies and loot.",
+    "animated": true
   },
   {
     "id": "leviathan-and-anahita",
