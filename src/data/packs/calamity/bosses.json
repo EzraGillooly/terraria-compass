@@ -1665,16 +1665,117 @@
     "stage": "cal-post-mech1",
     "tier": 0,
     "side": false,
-    "summon": "Use a Seafood item at any time.",
+    "summon": "Use the Seafood anywhere, at any time. It can also spawn rarely in the Sulphurous Sea.",
     "drops": [
-      "Scourge of the Seas",
-      "Submarine Shocker",
-      "Deepsea Staff",
-      "Corrosive Spine",
-      "Barinautical"
+      {
+        "name": "Submarine Shocker",
+        "icon": "calamity/submarine-shocker.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A shortsword that makes struck enemies release electric sparks.",
+        "stats": "90 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Submarine_Shocker"
+      },
+      {
+        "name": "Barinautical",
+        "icon": "calamity/barinautical.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Converts wooden arrows into strings of three electric bolt arrows that explode.",
+        "stats": "32 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Barinautical"
+      },
+      {
+        "name": "Downpour",
+        "icon": "calamity/downpour.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires an explosive stream of sand that detonates on enemy hits.",
+        "stats": "50 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Downpour"
+      },
+      {
+        "name": "Deepsea Staff",
+        "icon": "calamity/deepsea-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons an aquatic star minion to fight for you.",
+        "stats": "40 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deepsea_Staff"
+      },
+      {
+        "name": "Scourge of the Seas",
+        "icon": "calamity/scourge-of-the-seas.png",
+        "slot": "weapon",
+        "subclass": "javelin",
+        "effect": "A rogue javelin that snaps apart into smaller projectiles.",
+        "stats": "50 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Seas"
+      },
+      {
+        "name": "Sea's Searing",
+        "icon": "calamity/seas-searing.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires a string of bubbles that summons a shower of bubbles on hit.",
+        "stats": "40 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea%27s_Searing"
+      },
+      {
+        "name": "Corrosive Spine",
+        "icon": "calamity/corrosive-spine.png",
+        "slot": "accessory",
+        "effect": "+5% movement speed, +25% Sickness/Water debuff damage, and all attacks inflict Irradiated.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corrosive_Spine"
+      },
+      {
+        "name": "Sulphurous Sand",
+        "icon": "calamity/sulphurous-sand.png",
+        "slot": "material",
+        "effect": "Sulphurous Sea crafting material used for early Hardmode gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sulphurous_Sand"
+      },
+      {
+        "name": "Aquatic Scourge Mask",
+        "icon": "calamity/aquatic-scourge-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Aquatic Scourge.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aquatic_Scourge_Mask"
+      }
     ],
-    "blurb": "A mutated sea serpent of the Sulphurous Sea with acidic toxin attacks and murky teal coloration.",
-    "color": "#2E8B8B"
+    "blurb": "A worm boss of the Sulphurous Sea. It stays passive and slowly follows the player until hit, then turns hostile and rapidly accelerates.",
+    "color": "#2E8B8B",
+    "summonItem": {
+      "name": "Seafood",
+      "icon": "calamity/seafood.png",
+      "slot": "summon",
+      "effect": "Summons the Aquatic Scourge when used.",
+      "source": "Crafted at an Iron or Lead Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafood",
+      "materials": [
+        {
+          "name": "Sulphurous Sand",
+          "qty": 20
+        },
+        {
+          "name": "Starfish",
+          "qty": 10
+        },
+        {
+          "name": "Shark Fin",
+          "qty": 5
+        }
+      ]
+    }
   },
   {
     "id": "the-destroyer",
@@ -1682,15 +1783,61 @@
     "stage": "cal-post-mech1",
     "tier": 1,
     "side": false,
-    "summon": "Use a Mechanical Worm at night.",
+    "summon": "Use it at night in Hardmode. The Destroyer can also spawn on its own at night.",
     "drops": [
-      "Soul of Might",
-      "Hallowed Bar",
-      "Megashark",
-      "Mechanical Wagon Piece"
+      {
+        "name": "Soul of Might",
+        "icon": "materials/soul-of-might.png",
+        "slot": "material",
+        "effect": "Hardmode crafting material used for the Megashark, the Flamethrower, and Hallowed drills.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+      },
+      {
+        "name": "Hallowed Bar",
+        "icon": "materials/hallowed-bar.png",
+        "slot": "material",
+        "effect": "Crafts Hallowed armor, drills and chainsaws, and mech-tier weapons. Mechs only drop it once all three are defeated.",
+        "dropRate": "100% (after all three mechs)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+      },
+      {
+        "name": "Destroyer Mask",
+        "icon": "items/destroyer-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Destroyer's head.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Mask"
+      }
     ],
-    "blurb": "A vanilla mechanical worm bristling with lasers and probes, one of the required Hardmode mechs.",
-    "color": "#8A8FA0"
+    "blurb": "A mechanical worm that releases Probes as it takes damage. Its segments overlap, so piercing weapons hit several at once.",
+    "color": "#8A8FA0",
+    "unlocks": "Advances the Hardmode ore tier by defeat order: the 1st mech beaten spawns Mythril and Orichalcum, the 2nd Adamantite and Titanium, and the 3rd Hallowed Ore in the Underground Hallow - after which all mechs drop Hallowed Bars.",
+    "summonItem": {
+      "name": "Mechanical Worm",
+      "icon": "items/mechanical-worm.png",
+      "slot": "summon",
+      "effect": "Summons The Destroyer at night in Hardmode.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Worm",
+      "materials": [
+        {
+          "name": "Rotten Chunk or Vertebra",
+          "qty": 6,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Rotten_Chunk"
+        },
+        {
+          "name": "Iron or Lead Bar",
+          "qty": 5,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+        },
+        {
+          "name": "Soul of Night",
+          "qty": 6,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+        }
+      ]
+    }
   },
   {
     "id": "brimstone-elemental",
