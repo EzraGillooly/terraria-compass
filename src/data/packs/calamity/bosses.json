@@ -4149,15 +4149,98 @@
     "stage": "cal-pre-dog",
     "tier": 0,
     "side": true,
-    "summon": "Complete the Acid Rain event or fish with a Bloodworm in the Sulphurous Sea",
+    "summon": "Fish in the Sulphurous Sea with a Bloodworm (after Moon Lord). It also appears during the final tier of the Acid Rain event, once Polterghast is beaten.",
     "drops": [
-      "The Old Reaper",
-      "Mutated Truffle",
-      "Insidious Impaler",
-      "Fetid Emesis",
-      "Septic Skewer"
+      {
+        "name": "Insidious Impaler",
+        "icon": "calamity/insidious-impaler.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "Throws self-propelling radioactive harpoons that chase foes.",
+        "stats": "250 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Insidious_Impaler"
+      },
+      {
+        "name": "Fetid Emesis",
+        "icon": "calamity/fetid-emesis.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires an accelerating stream of bullets until the barrel overheats.",
+        "stats": "214 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fetid_Emesis"
+      },
+      {
+        "name": "Septic Skewer",
+        "icon": "calamity/septic-skewer.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Launches a chained harpoon infested with toxins.",
+        "stats": "933 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Septic_Skewer"
+      },
+      {
+        "name": "Vitriolic Viper",
+        "icon": "calamity/vitriolic-viper.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Charges up and fires a slithering beam of radiation.",
+        "stats": "2626 damage (charged)",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vitriolic_Viper"
+      },
+      {
+        "name": "Cadaverous Carrion",
+        "icon": "calamity/cadaverous-carrion.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a shark-puking Old Duke head sentry.",
+        "stats": "384 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cadaverous_Carrion"
+      },
+      {
+        "name": "Mutated Truffle",
+        "icon": "calamity/mutated-truffle.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a younger fishron minion that irradiates your foes.",
+        "stats": "250 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mutated_Truffle"
+      },
+      {
+        "name": "Toxicant Twister",
+        "icon": "calamity/toxicant-twister.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a fan of four spinning disks that swirl around your cursor.",
+        "stats": "272 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxicant_Twister"
+      },
+      {
+        "name": "The Old Reaper",
+        "icon": "calamity/the-old-reaper.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a scythe that cuts through enemies and deposits unstable isotopes.",
+        "stats": "1420 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Old_Reaper"
+      },
+      {
+        "name": "Old Duke Mask",
+        "icon": "calamity/old-duke-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Old Duke.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Old_Duke_Mask"
+      }
     ],
-    "blurb": "An optional mutated Duke Fishron of the Sulphurous Sea, unleashed at the climax of the tier-3 Acid Rain event.",
+    "blurb": "An optional Acid Rain boss of the Sulphurous Sea. A mutated Duke Fishron that charges and fires sulphurous sharks and toxic bubbles.",
     "color": "#B7C43A"
   },
   {
@@ -4166,16 +4249,120 @@
     "stage": "cal-pre-dog",
     "tier": 1,
     "side": false,
-    "summon": "Use a Cosmic Worm anywhere at any time",
+    "summon": "Use the Cosmic Worm anywhere, at any time.",
     "drops": [
-      "Hyperdeath Rift Scepter",
-      "Void Eater Marionette",
-      "Dimension-Tearing Disk",
-      "Cosmilite Bar",
-      "Norfleet"
+      {
+        "name": "Maw of Infinity",
+        "icon": "calamity/maw-of-infinity.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A blade forged from the Devourer's maw that swings in a 3-hit combo.",
+        "stats": "2080 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Maw_of_Infinity"
+      },
+      {
+        "name": "The Obliterator",
+        "icon": "calamity/the-obliterator.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A long-reach yoyo that occasionally fires cosmic bolts.",
+        "stats": "400 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Obliterator"
+      },
+      {
+        "name": "Thread of Eradication",
+        "icon": "calamity/thread-of-eradication.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Charges up and channels God's Bane Doombeam.",
+        "stats": "1500 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thread_of_Eradication"
+      },
+      {
+        "name": "Hyperdeath Rift Scepter",
+        "icon": "calamity/hyperdeath-rift-scepter.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Tears space in two with the Hyperdeath Rift Ripper.",
+        "stats": "4100 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter"
+      },
+      {
+        "name": "Void Eater Marionette",
+        "icon": "calamity/void-eater-marionette.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a mini Devourer minion under your control.",
+        "stats": "100 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Eater_Marionette"
+      },
+      {
+        "name": "Dimension-Tearing Disk",
+        "icon": "calamity/dimension-tearing-disk.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a disk that tears space toward the nearest enemy.",
+        "stats": "725 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dimension-Tearing_Disk"
+      },
+      {
+        "name": "Cosmic Discharge",
+        "icon": "calamity/cosmic-discharge.png",
+        "slot": "weapon",
+        "subclass": "whip",
+        "effect": "A whip whose strikes cause glacial explosions and boost your minions.",
+        "stats": "450 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Discharge"
+      },
+      {
+        "name": "Cosmilite Bar",
+        "icon": "calamity/cosmilite-bar.png",
+        "slot": "material",
+        "effect": "Top-tier post-Polterghast crafting material for Cosmilite gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
+      },
+      {
+        "name": "Devourer of Gods Mask",
+        "icon": "calamity/devourer-of-gods-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Devourer of Gods.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Devourer_of_Gods_Mask"
+      }
     ],
-    "blurb": "The god-eating cosmic serpent and Calamity's signature superboss, a brutal endgame gate that tears through dimensions.",
-    "color": "#2E5BC4"
+    "blurb": "A cosmic worm fought anywhere. In its second phase it teleports through portals and speeds across the arena, forcing constant movement.",
+    "color": "#2E5BC4",
+    "unlocks": "Opens the path to Yharon, Dragon of Rebirth (the next major boss), and its Cosmilite Bars craft the top post-Polterghast gear.",
+    "summonItem": {
+      "name": "Cosmic Worm",
+      "icon": "calamity/cosmic-worm.png",
+      "slot": "summon",
+      "effect": "Summons The Devourer of Gods when used.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil from the three Sentinel materials",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Worm",
+      "materials": [
+        {
+          "name": "Armored Shell",
+          "qty": 1
+        },
+        {
+          "name": "Twisting Nether",
+          "qty": 1
+        },
+        {
+          "name": "Dark Plasma",
+          "qty": 1
+        }
+      ]
+    }
   },
   {
     "id": "yharon-dragon-of-rebirth",
