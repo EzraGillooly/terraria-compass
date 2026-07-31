@@ -3542,15 +3542,78 @@
     "stage": "cal-pre-providence",
     "tier": 0,
     "side": false,
-    "summon": "Use a Profaned Shard in the Underworld or the Hallow",
+    "summon": "Use a Profaned Shard in the Hallow or the Underworld, at any time.",
     "drops": [
-      "Profaned Core",
-      "Unholy Essence",
-      "Relic of Deliverance",
-      "Profaned Guardian Mask"
+      {
+        "name": "Profaned Core",
+        "icon": "calamity/profaned-core.png",
+        "slot": "summon",
+        "effect": "Summons Providence, the Profaned Goddess. This is the Guardians' key drop.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Profaned_Core"
+      },
+      {
+        "name": "Relic of Deliverance",
+        "icon": "calamity/relic-of-deliverance.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A one-use profaned relic that unleashes a devastating burst of holy damage.",
+        "stats": "1700 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance"
+      },
+      {
+        "name": "Relic of Resilience",
+        "icon": "calamity/relic-of-resilience.png",
+        "slot": "tool",
+        "effect": "Hold to surround yourself and nearby allies with orbiting defensive rock shards.",
+        "dropRate": "25%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Resilience"
+      },
+      {
+        "name": "Relic of Convergence",
+        "icon": "calamity/relic-of-convergence.png",
+        "slot": "tool",
+        "effect": "Creates a profaned crystal at the cursor that channels a healing aura.",
+        "dropRate": "25%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Convergence"
+      },
+      {
+        "name": "Unholy Essence",
+        "icon": "calamity/unholy-essence.png",
+        "slot": "material",
+        "effect": "Profaned crafting material used for post-Moon-Lord gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
+      },
+      {
+        "name": "Profaned Guardian Mask",
+        "icon": "calamity/profaned-guardian-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like a Profaned Guardian.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Profaned_Guardian_Mask"
+      },
+      {
+        "name": "Warbanner of the Righteous",
+        "icon": "calamity/warbanner-of-the-righteous.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Multiplies all your damage based on how close you are to enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Warbanner_of_the_Righteous"
+      }
     ],
-    "blurb": "A trio of holy fire guardians that gatekeep Providence, dropping the Profaned Core needed to summon her.",
-    "color": "#E8A33D"
+    "blurb": "Two profaned guardians fought together in the Hallow or Underworld. The Defender and Healer must be destroyed before the Attacker becomes vulnerable.",
+    "color": "#E8A33D",
+    "summonItem": {
+      "name": "Profaned Shard",
+      "icon": "calamity/profaned-shard.png",
+      "slot": "summon",
+      "effect": "Summons the Profaned Guardians when used in the Hallow or Underworld.",
+      "source": "Crafted at an Ancient Manipulator",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Profaned_Shard"
+    }
   },
   {
     "id": "the-dragonfolly",
@@ -3558,16 +3621,82 @@
     "stage": "cal-pre-providence",
     "tier": 1,
     "side": true,
-    "summon": "Use Exotic Pheromones in the Jungle",
+    "summon": "Use Exotic Pheromones in the Jungle or Underground Jungle.",
     "drops": [
-      "Gilded Proboscis",
-      "Golden Eagle",
-      "Rouge Slash",
-      "Effulgent Feather",
-      "Dynamo Stem Cells"
+      {
+        "name": "Gilded Proboscis",
+        "icon": "calamity/gilded-proboscis.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A lifesteal weapon that heals in proportion to the damage it deals.",
+        "stats": "2090 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Proboscis"
+      },
+      {
+        "name": "Golden Eagle",
+        "icon": "calamity/golden-eagle.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires five bullets at once in a tight spread.",
+        "stats": "88 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Golden_Eagle"
+      },
+      {
+        "name": "Rouge Slash",
+        "icon": "calamity/rouge-slash.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a wave of three air slashes.",
+        "stats": "119 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rouge_Slash"
+      },
+      {
+        "name": "Folly Feed",
+        "icon": "calamity/folly-feed.png",
+        "slot": "mount",
+        "effect": "Summons a rideable Bumblefuck mount.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Folly_Feed"
+      },
+      {
+        "name": "Effulgent Feather",
+        "icon": "calamity/effulgent-feather.png",
+        "slot": "material",
+        "effect": "Crafting material used for post-Moon-Lord gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Effulgent_Feather"
+      },
+      {
+        "name": "Red Lightning Container",
+        "icon": "calamity/red-lightning-container.png",
+        "slot": "buff",
+        "mode": "revengeance",
+        "effect": "Permanent power-up. Increases the duration of Rage Mode by 1 second when consumed.",
+        "dropRate": "100% (Revengeance bag)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Red_Lightning_Container"
+      },
+      {
+        "name": "Dragonfolly Mask",
+        "icon": "calamity/dragonfolly-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Dragonfolly.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragonfolly_Mask"
+      }
     ],
-    "blurb": "An optional cybernetic bird-of-prey, a faster and deadlier echo of the Bumblebirds, dropping Effulgent Feathers for progression gear.",
-    "color": "#C4432E"
+    "blurb": "A very fast bird boss summoned in the Jungle. It darts around the arena and spawns Baby Flies, staying aligned with the player.",
+    "color": "#C4432E",
+    "summonItem": {
+      "name": "Exotic Pheromones",
+      "icon": "calamity/exotic-pheromones.png",
+      "slot": "summon",
+      "effect": "Summons The Dragonfolly when used in the Jungle.",
+      "source": "Crafted at an Ancient Manipulator",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exotic_Pheromones"
+    }
   },
   {
     "id": "providence-the-profaned-goddess",
@@ -3575,17 +3704,139 @@
     "stage": "cal-pre-providence",
     "tier": 2,
     "side": false,
-    "summon": "Use a Profaned Core in the Hallow or the Underworld",
+    "summon": "Use a Profaned Core in the Hallow or the Underworld. Fighting her in the Underworld enrages her for tougher, better rewards.",
     "drops": [
-      "Mark of Providence",
-      "Holy Collider",
-      "Telluric Glare",
-      "Purge Guzzler",
-      "Elysian Aegis",
-      "Divine Geode"
+      {
+        "name": "Holy Collider",
+        "icon": "calamity/holy-collider.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A holy greatsword that can be charged for far higher damage.",
+        "stats": "2900 damage (charged)",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Collider"
+      },
+      {
+        "name": "Burning Revelation",
+        "icon": "calamity/burning-revelation.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "An ever-burning yoyo with long reach.",
+        "stats": "300 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Burning_Revelation"
+      },
+      {
+        "name": "Blissful Bombardier",
+        "icon": "calamity/blissful-bombardier.png",
+        "slot": "weapon",
+        "subclass": "launcher",
+        "effect": "Launches a crystalline missile skyward that rains holy fire on enemies.",
+        "stats": "550 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blissful_Bombardier"
+      },
+      {
+        "name": "Telluric Glare",
+        "icon": "calamity/telluric-glare.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Rapidly fires volleys of arrows, every other one converted into a radiant bolt.",
+        "stats": "83 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Telluric_Glare"
+      },
+      {
+        "name": "Purge Guzzler",
+        "icon": "calamity/purge-guzzler.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a barrage of holy rays that converge into two massive sweeping beams.",
+        "stats": "152 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purge_Guzzler"
+      },
+      {
+        "name": "Dazzling Stabber Staff",
+        "icon": "calamity/dazzling-stabber-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons three holy dagger minions to fight for you.",
+        "stats": "35 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dazzling_Stabber_Staff"
+      },
+      {
+        "name": "Molten Amputator",
+        "icon": "calamity/molten-amputator.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a spinning scythe that lingers at the cursor.",
+        "stats": "200 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Amputator"
+      },
+      {
+        "name": "Pristine Fury",
+        "icon": "calamity/pristine-fury.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Fires an intense helix of flames.",
+        "stats": "60 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pristine_Fury"
+      },
+      {
+        "name": "Elysian Aegis",
+        "icon": "calamity/elysian-aegis.png",
+        "slot": "accessory",
+        "effect": "Grants knockback immunity and an empowered dash that damages enemies.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Aegis"
+      },
+      {
+        "name": "Elysian Wings",
+        "icon": "calamity/elysian-wings.png",
+        "slot": "accessory",
+        "effect": "High-tier wings with excellent flight and a holy trail.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Wings"
+      },
+      {
+        "name": "Divine Geode",
+        "icon": "calamity/divine-geode.png",
+        "slot": "material",
+        "effect": "Profaned crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Divine_Geode"
+      },
+      {
+        "name": "Unholy Essence",
+        "icon": "calamity/unholy-essence.png",
+        "slot": "material",
+        "effect": "Profaned crafting material used for post-Moon-Lord gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
+      },
+      {
+        "name": "Providence Mask",
+        "icon": "calamity/providence-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Providence.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Providence_Mask"
+      }
     ],
-    "blurb": "The radiant goddess of the Profaned flame, the first major Post-Moon Lord wall and the source of the Mark that unlocks the Sentinels.",
-    "color": "#F5C542"
+    "blurb": "A profaned goddess fought in the Hallow or Underworld. She cycles through holy and profaned phases, and fighting her in the Underworld enrages her.",
+    "color": "#F5C542",
+    "summonItem": {
+      "name": "Profaned Core",
+      "icon": "calamity/profaned-core.png",
+      "slot": "summon",
+      "effect": "Summons Providence, the Profaned Goddess, in the Hallow or Underworld.",
+      "source": "Dropped by the Profaned Guardians",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Profaned_Core"
+    }
   },
   {
     "id": "storm-weaver",
