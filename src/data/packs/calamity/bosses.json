@@ -1845,16 +1845,97 @@
     "stage": "cal-post-mech2",
     "tier": 0,
     "side": false,
-    "summon": "Use a Charred Idol in the Brimstone Crag.",
+    "summon": "Use the Charred Idol in the Brimstone Crag.",
     "drops": [
-      "Essence of Havoc",
-      "Brimlance",
-      "Seething Discharge",
-      "Dormant Brimseeker",
-      "Flame-Licked Shell"
+      {
+        "name": "Brimlance",
+        "icon": "calamity/brimlance.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "A spear that creates an explosion of brimstone on hit.",
+        "stats": "50 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimlance"
+      },
+      {
+        "name": "Hellborn",
+        "icon": "calamity/hellborn.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "An ornate firearm - hold to charge, then release a powerful high-damage shot.",
+        "stats": "300 damage (charged)",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn"
+      },
+      {
+        "name": "Seething Discharge",
+        "icon": "calamity/seething-discharge.png",
+        "slot": "weapon",
+        "subclass": "spell-tome",
+        "effect": "Fires an accelerating arc of brimstone hellblasts; every third cast spawns a brimstone fireball.",
+        "stats": "40 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seething_Discharge"
+      },
+      {
+        "name": "Dormant Brimseeker",
+        "icon": "calamity/dormant-brimseeker.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a brimseeker minion to fight for you.",
+        "stats": "42 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dormant_Brimseeker"
+      },
+      {
+        "name": "Rose Stone",
+        "icon": "calamity/rose-stone.png",
+        "slot": "accessory",
+        "effect": "Summons a Brimstone Elemental guardian to fight for you.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rose_Stone"
+      },
+      {
+        "name": "Essence of Havoc",
+        "icon": "calamity/essence-of-havoc.png",
+        "slot": "material",
+        "effect": "Brimstone Crag crafting material used for post-mech gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+      },
+      {
+        "name": "Brimstone Elemental Mask",
+        "icon": "calamity/brimstone-elemental-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Brimstone Elemental.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimstone_Elemental_Mask"
+      }
     ],
-    "blurb": "A fiery red-and-orange elemental of the Brimstone Crag that escalates aggression across three attack phases.",
-    "color": "#C0392B"
+    "blurb": "A boss of the Brimstone Crag. She randomly cycles through three attack phases - never repeating the same one twice - and reaches her final phase only at low health.",
+    "color": "#C0392B",
+    "summonItem": {
+      "name": "Charred Idol",
+      "icon": "calamity/charred-idol.png",
+      "slot": "summon",
+      "effect": "Summons the Brimstone Elemental when used in the Brimstone Crag.",
+      "source": "Crafted at a Hellforge",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Charred_Idol",
+      "materials": [
+        {
+          "name": "Soul of Night",
+          "qty": 5
+        },
+        {
+          "name": "Essence of Havoc",
+          "qty": 7
+        },
+        {
+          "name": "Unholy Core",
+          "qty": 2
+        }
+      ]
+    }
   },
   {
     "id": "skeletron-prime",
@@ -1862,14 +1943,67 @@
     "stage": "cal-post-mech2",
     "tier": 1,
     "side": false,
-    "summon": "Use a Mechanical Skull at night.",
+    "summon": "Use it at night in Hardmode. Skeletron Prime can also spawn on its own at night, and like Skeletron it dies at dawn.",
     "drops": [
-      "Soul of Fright",
-      "Hallowed Bar",
-      "Mechanical Wagon Piece"
+      {
+        "name": "Soul of Fright",
+        "icon": "materials/soul-of-fright.png",
+        "slot": "material",
+        "effect": "Hardmode crafting material used for the Death Sickle and other mech-tier weapons.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
+      },
+      {
+        "name": "Hallowed Bar",
+        "icon": "materials/hallowed-bar.png",
+        "slot": "material",
+        "effect": "Crafts Hallowed armor, drills and chainsaws, and mech-tier weapons. Mechs only drop it once all three are defeated.",
+        "dropRate": "100% (after all three mechs)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+      },
+      {
+        "name": "Skeletron Prime Mask",
+        "icon": "items/skeletron-prime-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Skeletron Prime.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Skeletron_Prime_Mask"
+      }
     ],
-    "blurb": "A vanilla mechanical skull with spinning limbs, the last of the three mechs before Plantera opens up.",
-    "color": "#B8B29A"
+    "blurb": "Four arms - Vice, Saw, Cannon and Laser - each with its own attack. Like Skeletron, it kills instantly at dawn.",
+    "color": "#B8B29A",
+    "unlocks": "Advances the Hardmode ore tier by defeat order: the 1st mech beaten spawns Mythril and Orichalcum, the 2nd Adamantite and Titanium, and the 3rd Hallowed Ore in the Underground Hallow - after which all mechs drop Hallowed Bars.",
+    "summonItem": {
+      "name": "Mechanical Skull",
+      "icon": "items/mechanical-skull.png",
+      "slot": "summon",
+      "effect": "Summons Skeletron Prime at night in Hardmode.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Skull",
+      "materials": [
+        {
+          "name": "Bone",
+          "qty": 30,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
+        },
+        {
+          "name": "Iron or Lead Bar",
+          "qty": 5,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+        },
+        {
+          "name": "Soul of Light",
+          "qty": 3,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+        },
+        {
+          "name": "Soul of Night",
+          "qty": 3,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "calamitas-clone",
