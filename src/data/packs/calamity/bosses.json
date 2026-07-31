@@ -4657,16 +4657,141 @@
     "stage": "cal-pre-exo",
     "tier": 1,
     "side": false,
-    "summon": "Interact with an Altar of the Accursed using Ashes of Calamity or a Ceremonial Urn",
+    "summon": "Use Ashes of Calamity on an Altar of the Accursed. She can be summoned anywhere, at any time.",
     "drops": [
-      "Violence",
-      "Condemnation",
-      "Heresy",
-      "Vehemence",
-      "Ashes of Annihilation",
-      "Calamity"
+      {
+        "name": "Violence",
+        "icon": "calamity/violence.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "A demonic pitchfork cursed to cause endless bloodshed.",
+        "stats": "485 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Violence"
+      },
+      {
+        "name": "Condemnation",
+        "icon": "calamity/condemnation.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires powerful scarlet bolts suffused with hateful magics.",
+        "stats": "2130 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Condemnation"
+      },
+      {
+        "name": "Heresy",
+        "icon": "calamity/heresy.png",
+        "slot": "weapon",
+        "subclass": "spell-tome",
+        "effect": "Releases fire and souls upward from a held book.",
+        "stats": "960 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Heresy"
+      },
+      {
+        "name": "Vehemence",
+        "icon": "calamity/vehemence.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Casts intense bolts of hellish power that explode into skulls.",
+        "stats": "6666 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vehemence"
+      },
+      {
+        "name": "Perdition",
+        "icon": "calamity/perdition.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a beacon sentry at the cursor that scorches enemies.",
+        "stats": "375 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perdition"
+      },
+      {
+        "name": "Vigilance",
+        "icon": "calamity/vigilance.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a soul seeker minion to fight for you.",
+        "stats": "115 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vigilance"
+      },
+      {
+        "name": "Sacrifice",
+        "icon": "calamity/sacrifice.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws sacrificial daggers that lodge into enemies and detonate.",
+        "stats": "300 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sacrifice"
+      },
+      {
+        "name": "Gael's Greatsword",
+        "icon": "calamity/gaels-greatsword.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "mode": "death",
+        "effect": "A greatsword that fires homing skulls, then a giant soul spear on the second swing.",
+        "stats": "850 damage",
+        "dropRate": "100% (Death Mode only)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gael%27s_Greatsword"
+      },
+      {
+        "name": "Ashes of Annihilation",
+        "icon": "calamity/ashes-of-annihilation.png",
+        "slot": "material",
+        "effect": "Calamity's ultimate crafting material, used for the endgame weapons and armor.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Annihilation"
+      },
+      {
+        "name": "Ashen Horns",
+        "icon": "calamity/ashen-horns.png",
+        "slot": "vanity",
+        "effect": "A vanity headpiece from the Calamitas cosmetic set.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashen_Horns"
+      },
+      {
+        "name": "Calamitous Hood",
+        "icon": "calamity/calamitous-hood.png",
+        "slot": "vanity",
+        "effect": "Vanity hood from the Calamitas cosmetic set.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamitous_Hood"
+      },
+      {
+        "name": "Calamitous Robes",
+        "icon": "calamity/calamitous-robes.png",
+        "slot": "vanity",
+        "effect": "Vanity robes from the Calamitas cosmetic set.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamitous_Robes"
+      },
+      {
+        "name": "Levi",
+        "icon": "calamity/levi.png",
+        "slot": "pet",
+        "mode": "death",
+        "effect": "Summons a tiny Leviathan pet to follow you.",
+        "dropRate": "100% (Death Mode only)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Levi"
+      }
     ],
-    "blurb": "The brimstone witch and Calamity's true final boss, an unrelenting bullet-hell duel that caps the mod's progression.",
-    "color": "#B01E2E"
+    "blurb": "The final boss - a supreme incarnation of Calamitas. She summons her brothers and fills the arena with brimstone bullet-hell patterns across escalating phases.",
+    "color": "#B01E2E",
+    "unlocks": "The final boss of Calamity (alongside the Exo Mechs). Her Ashes of Annihilation craft the mod\u2019s ultimate weapons and the endgame armor sets - there is no further progression.",
+    "summonItem": {
+      "name": "Ashes of Calamity",
+      "icon": "calamity/ashes-of-calamity.png",
+      "slot": "summon",
+      "effect": "Used on an Altar of the Accursed to summon Supreme Witch, Calamitas.",
+      "source": "Dropped by the Calamitas Clone",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+    }
   }
 ]
