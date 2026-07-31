@@ -111,19 +111,24 @@
     "blurb": "Minion- and whip-focused class that commands summoned allies to fight while the player dodges, offering strong passive DPS but fragile defense.",
     "subclasses": [
       {
+        "id": "sentries",
+        "name": "Sentries",
+        "description": "Stationary sentry summons."
+      },
+      {
         "id": "minions",
         "name": "Minions",
-        "description": "Persistent summon slots spent on orbiting or pursuing allies."
+        "description": "Minion-summoning staves."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Miscellaneous summon weapons that fit no standard type."
       },
       {
         "id": "whip",
         "name": "Whips",
-        "description": "Tag-focused melee tools that boost minion target priority and damage."
-      },
-      {
-        "id": "sentries",
-        "name": "Sentries",
-        "description": "Stationary summons that add area control to boss arenas and events."
+        "description": "Summon-tag whips."
       }
     ]
   },

@@ -162670,7 +162670,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flamsteed_Ring",
-        "subclass": "minions",
+        "subclass": "other",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -162727,7 +162727,7 @@
         "topPick": false,
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Universe_Splitter",
-        "subclass": "minions",
+        "subclass": "other",
         "station": "Draedon's Forge",
         "materials": [
           {
@@ -172288,7 +172288,8 @@
           }
         ],
         "station": "Exhume",
-        "effect": "When used, a full-sized apparition of Cataclysm or Catastrophe appears at the player's cursor. After 0.67 seconds, its damage increases by 45% and it charges at the player."
+        "effect": "When used, a full-sized apparition of Cataclysm or Catastrophe appears at the player's cursor. After 0.67 seconds, its damage increases by 45% and it charges at the player.",
+        "subclass": "minions"
       },
       {
         "id": "perdition",
@@ -172322,7 +172323,8 @@
           }
         ],
         "station": "Exhume",
-        "effect": "When used, it summons a full-sized Sepulcher that follows the player. The Sepulcher takes 4 minion slots to summon and attacks by alternating between circling the enemy while firing brimstone darts from its segments, and rapidly charging at the enemy back and forth."
+        "effect": "When used, it summons a full-sized Sepulcher that follows the player. The Sepulcher takes 4 minion slots to summon and attacks by alternating between circling the enemy while firing brimstone darts from its segments, and rapidly charging at the enemy back and forth.",
+        "subclass": "minions"
       },
       {
         "id": "lilies-of-finality",
@@ -182171,7 +182173,8 @@
           }
         ],
         "station": "Draedon's Forge",
-        "effect": "When used, it summons an entity of cosmic energy that fires homing energy bolts and exploding stars at enemies. It requires 10 minion slots to summon 1 energy, and only 1 energy can be active at once."
+        "effect": "When used, it summons an entity of cosmic energy that fires homing energy bolts and exploding stars at enemies. It requires 10 minion slots to summon 1 energy, and only 1 energy can be active at once.",
+        "subclass": "minions"
       },
       {
         "id": "ares-exoskeleton",
@@ -182183,7 +182186,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ares'_Exoskeleton",
-        "effect": "When used, the player throws out a box which opens up a control panel. The control panel features four weapon choices on top and weapon slots on the bottom."
+        "effect": "When used, the player throws out a box which opens up a control panel. The control panel features four weapon choices on top and weapon slots on the bottom.",
+        "subclass": "minions"
       },
       {
         "id": "lilies-of-finality",
