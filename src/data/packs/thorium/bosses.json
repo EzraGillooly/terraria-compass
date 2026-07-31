@@ -490,5 +490,114 @@
     "blurb": "A marble knight boss fought inside the Marble Caves. It cycles through blade, bow, and staff attacks as its health drops through 66% and 33%.",
     "color": "#C7A24A",
     "animated": true
+  },
+  {
+    "id": "star-scouter",
+    "name": "Star Scouter",
+    "stage": "pre-wof",
+    "tier": 4.8,
+    "side": true,
+    "role": "optional",
+    "summon": "Use a Star Caller in Space, around Floating Island heights.",
+    "summonItem": {
+      "name": "Star Caller",
+      "icon": "thorium/star-caller.png",
+      "slot": "summon",
+      "effect": "Summons the Star Scouter. It works only in Space.",
+      "source": "Crafted; usable only in Space",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Caller"
+    },
+    "drops": [
+      {
+        "name": "Star Trail",
+        "icon": "thorium/star-trail.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that fires homing stars when fully spun and released at range.",
+        "stats": "62 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Trail"
+      },
+      {
+        "name": "Hit Scanner",
+        "icon": "thorium/hit-scanner.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun whose musket balls hit instantly, with no travel time.",
+        "stats": "26 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hit_Scanner"
+      },
+      {
+        "name": "Particle Whip",
+        "icon": "thorium/particle-whip.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic wand that shoots a lightning burst which bounces between enemies.",
+        "stats": "36 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Particle_Whip"
+      },
+      {
+        "name": "Distress Caller",
+        "icon": "thorium/distress-caller.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a stationary U.F.O. sentry that blasts enemies below it with lasers.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Distress_Caller"
+      },
+      {
+        "name": "Gauss Flinger",
+        "icon": "thorium/gauss-flinger.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Throws a limitless supply of energy daggers; overuse exhausts you.",
+        "stats": "28 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Gauss_Flinger"
+      },
+      {
+        "name": "Star Rod",
+        "icon": "thorium/star-rod.png",
+        "slot": "weapon",
+        "subclass": "other",
+        "effect": "A Healer rod that summons healing stars which fall onto your cursor.",
+        "stats": "Healer weapon",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Rod"
+      },
+      {
+        "name": "Roboboe",
+        "icon": "thorium/roboboe.png",
+        "slot": "weapon",
+        "subclass": "electronic",
+        "effect": "A Bard instrument that propels a zig-zagging burst of energy.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Roboboe"
+      },
+      {
+        "name": "Star Scouter Mask",
+        "icon": "thorium/star-scouter-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Star Scouter.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Scouter_Mask"
+      },
+      {
+        "name": "Omega Drive",
+        "icon": "thorium/omega-drive.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Summons an offensive pet probe that fires at nearby enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Omega_Drive"
+      }
+    ],
+    "blurb": "A sky boss fought in Space. This alien scout flies above the player, firing lasers, beams, and energy balls, and its core changes attacks as it takes damage.",
+    "color": "#58C6D8",
+    "animated": true
   }
 ]
