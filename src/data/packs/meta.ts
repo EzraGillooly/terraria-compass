@@ -40,6 +40,18 @@ export const PACK_META: PackMeta[] = [
     ],
     classIds: ['melee', 'ranger', 'mage', 'summoner', 'rogue'],
   },
+  {
+    id: 'thorium',
+    name: 'Thorium',
+    // Mid-conversion (bosses in progress, loadouts not started), so it is
+    // selectable in the dev preview but shows as "Soon" on the live site until
+    // the pass finishes. Flip to a plain `true` to ship it.
+    available: import.meta.env.DEV,
+    // Same world types as vanilla - Thorium adds no difficulty axis of its own.
+    difficulties: VANILLA_DIFFICULTIES,
+    // Vanilla four plus Thorium's Bard, Healer, and the kept Throwing class.
+    classIds: ['melee', 'ranger', 'mage', 'summoner', 'bard', 'healer', 'throwing'],
+  },
 ];
 
 export const DEFAULT_PACK_ID = 'vanilla';
