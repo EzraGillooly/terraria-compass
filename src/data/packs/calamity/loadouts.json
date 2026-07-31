@@ -74,7 +74,7 @@
           }
         ],
         "effect": "When used, the player throws a spread of 3-4 gravity-affected knives that heal the player for 5% to 10% of the damage dealt. The knives fade away after a short amount of time, losing 10% of its damage and knockback every 0.5 seconds, then disappear into cosmetic red dust when fully transparent.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "starfury",
@@ -6207,7 +6207,7 @@
           }
         ],
         "effect": "When swung, it fires a glowing aquamarine sword beam that emits glowing particles, deals damage and travels indefinitely, disappearing upon hitting a block or an enemy.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "trimarang",
@@ -13707,7 +13707,7 @@
           }
         ],
         "effect": "When swung, it fires a glowing aquamarine sword beam that emits glowing particles, deals damage and travels indefinitely, disappearing upon hitting a block or an enemy.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "smoking-comet",
@@ -20885,7 +20885,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladecrest_Oathsword",
         "tier": "good",
         "effect": "It throws a sword that sticks into enemies, with a max of 3 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "goldplume-spear",
@@ -20899,7 +20899,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Goldplume_Spear",
         "tier": "good",
         "effect": "At the peak of its thrust it fires a burst of 3 gravity-affected, non-piercing feathers that deal 50% of the weapon's damage.",
-        "subclass": "true-melee",
+        "subclass": "melee",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -20921,7 +20921,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perfect_Dark",
         "tier": "other",
         "effect": "When swung, it fires a dark ball that sticks to any tile that it contacts. After sticking onto a tile for 4 seconds or upon hitting an enemy, it explodes, emitting purple particles and damaging all enemies in a small radius.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "vein-burster",
@@ -20935,7 +20935,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vein_Burster",
         "tier": "other",
         "effect": "When swung, it fires a blood ball that sticks to any tile that it contacts. After sticking onto a tile for 4 seconds or upon hitting an enemy, it explodes, emitting red projectiles and damaging all enemies in a small radius.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "wind-blade",
@@ -20949,7 +20949,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wind_Blade",
         "tier": "other",
         "effect": "When swung, it emits glowing blue dust particles and fires a wind cyclone that pierces once before disappearing on the second hit. The cyclone deals 60% of the sword's damage and drags non- boss enemies towards it for a short amount of time before disappearing.",
-        "subclass": "true-melee",
+        "subclass": "melee",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -28608,7 +28608,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fractured_Ark",
         "tier": "good",
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a simple combo of a downwards slash followed by an upwards one.",
-        "subclass": "true-melee",
+        "subclass": "melee",
         "materials": [
           {
             "name": "Enchanted Sword",
@@ -28645,7 +28645,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Goldplume_Spear",
         "tier": "good",
         "effect": "At the peak of its thrust it fires a burst of 3 gravity-affected, non-piercing feathers that deal 50% of the weapon's damage.",
-        "subclass": "true-melee",
+        "subclass": "melee",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -28667,7 +28667,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wind_Blade",
         "tier": "other",
         "effect": "When swung, it emits glowing blue dust particles and fires a wind cyclone that pierces once before disappearing on the second hit. The cyclone deals 60% of the sword's damage and drags non- boss enemies towards it for a short amount of time before disappearing.",
-        "subclass": "true-melee",
+        "subclass": "melee",
         "materials": [
           {
             "name": "Aerialite Bar",
@@ -36265,7 +36265,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Saber",
         "effect": "It has a chance to be dropped from Cloud Elementals. When swung, it fires a slow and homing glowing sword-like projectile from the blade, and another from the sky towards the cursor.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -45643,7 +45643,7 @@
           }
         ],
         "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "majestic-guard",
@@ -45714,7 +45714,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Saber",
         "effect": "It has a chance to be dropped from Cloud Elementals. When swung, it fires a slow and homing glowing sword-like projectile from the blade, and another from the sky towards the cursor.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -54586,7 +54586,7 @@
           }
         ],
         "effect": "When swung, it fires a blue or purple blade that starts off slow before accelerating at full speed but will lose velocity as it goes through tiles and fade out before disappearing. The blades pierce twice and function similarly to the Death Sickle 's scythes.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "inferna-cutter",
@@ -54618,7 +54618,7 @@
           }
         ],
         "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "majestic-guard",
@@ -54682,7 +54682,7 @@
           }
         ],
         "effect": "When used, it fires a starlight beam that pierces twice and travels a moderate distance before dissipating. The spear and beams inflict the Frostbite debuff.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -63514,7 +63514,7 @@
           }
         ],
         "effect": "By default, it does not fire any projectile nor does it have any special effects. However, if the player stands still on flat ground while holding \u26b7 Open / Activate (default: Right Click) for 2 seconds, they will strike the sword into the ground, attuning it to the surrounding biome, which will let them perform unique attacks.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "chlorophyte-partisan",
@@ -63568,7 +63568,7 @@
           }
         ],
         "effect": "When swung, it fires a blue or purple blade that starts off slow before accelerating at full speed but will lose velocity as it goes through tiles and fade out before disappearing. The blades pierce twice and function similarly to the Death Sickle 's scythes.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "pwnagehammer",
@@ -63610,7 +63610,7 @@
           }
         ],
         "effect": "When used, it throws a slow gravity-affected hammer which cannot pass through tiles and will travel a short distance before falling. Upon hitting an enemy, it releases a small explosion, dealing 50% of the weapon's damage to all enemies within its radius.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "true-excalibur",
@@ -72180,7 +72180,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a simple combo of a downwards slash followed by an upwards one that shoots an arc of three homing ancient stars, which deal 100% of the weapon's base damage and pass through tiles.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "blighted-cleaver",
@@ -72217,7 +72217,7 @@
           }
         ],
         "effect": "When swung, it fires a large, spinning, blazing phantom blade that homes in on enemies and pierces 3 times. The sword and blades inflict the Acid Venom and Hellfire debuffs.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "botanic-piercer",
@@ -72254,7 +72254,7 @@
           }
         ],
         "effect": "When swung, it will fire out a green spear beam that deals 70% of the weapon's damage and knockback, pierces once, and can pass through tiles.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "hellkite",
@@ -81272,7 +81272,7 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "lucrecia",
@@ -81309,7 +81309,7 @@
           }
         ],
         "effect": "When used, it swings back and forth in front of the player, firing a darklight shard that pierces infinitely but cannot pass through tiles with each swing. Hitting with the sword itself builds up Darklight Energy, a resource that dissipates slowly over time, but briefly stops anytime it is gained.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "omniblade",
@@ -90818,7 +90818,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Briny_Baron",
         "effect": "When used with its primary fire (left-click), it will swing, and deal damage in a normal manner. Striking an enemy with the sword spawns a shortly lingering typhoon that deals 50% of the weapon's damage in rapid successions and only one typhoon can exist at a time.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "exalted-oathblade",
@@ -90855,7 +90855,7 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it throws a sword that sticks into enemies and reduces their speed, with a max of 4 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "flying-dragon",
@@ -90907,7 +90907,7 @@
           }
         ],
         "effect": "When used, the player swings a spear around similarly to the Ghastly Glaive, and releases five gauss energy projectiles, each dealing 40% of the weapon's damage. If the target is struck by the spear itself, there is a 1/12 chance per hit for an energy flux to spawn on the enemy, which continuously deals the weapon's damage.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "lucrecia",
@@ -90944,7 +90944,7 @@
           }
         ],
         "effect": "When used, it swings back and forth in front of the player, firing a darklight shard that pierces infinitely but cannot pass through tiles with each swing. Hitting with the sword itself builds up Darklight Energy, a resource that dissipates slowly over time, but briefly stops anytime it is gained.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -100450,7 +100450,7 @@
           }
         ],
         "effect": "When swung, it fires a spread of 5 tapeworm projectiles on swing. Tapeworm projectiles deal 50% base damage, have an innate 15 armor penetration, and will home in toward the cursor, or toward enemies within a small range, losing their homing after hitting an enemy once.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "grand-guardian",
@@ -100514,7 +100514,7 @@
           }
         ],
         "effect": "When used, it swings back and forth in front of the player, firing a darklight shard that pierces infinitely but cannot pass through tiles with each swing. Hitting with the sword itself builds up Darklight Energy, a resource that dissipates slowly over time, but briefly stops anytime it is gained.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "storm-ruler",
@@ -100546,7 +100546,7 @@
           }
         ],
         "effect": "When swung it shoots out a beam which, upon impact with an enemy or tile, spawns a small tornado similar to the one the Cloud Elemental spawns. The tornado lingers for 10 seconds, hits 4 times per second with infinite piercing, dealing damage to enemies that come in contact with it.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -110621,7 +110621,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a five-swing combo of an upwards slash followed by a downwards one that shoots a fast solar needle alongside an arc of four homing elemental glass stars, repeating the last two swings once, and then following it up with a medium-ranged throw, where the ark will be sent out spinning in the direction of the player's mouse, before coming back to them.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "greatsword-of-judgement",
@@ -110653,7 +110653,7 @@
           }
         ],
         "effect": "When swung, it fires a large energy wave that slows down as it travels and pierces infinitely, but loses 12% damage per hit. The wave spawns 2 homing stars that deal 35% base damage and pierce once.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "lightspeed",
@@ -110747,7 +110747,7 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -119973,7 +119973,7 @@
           }
         ],
         "effect": "When used, they throw a spread of 4 to 8 homing knives, each dealing damage and healing the player for 1.5% of the damage dealt. The knives bounce off of tiles twice and travel much farther than the Vampire Knives before spinning and fading away.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "holy-collider",
@@ -120076,7 +120076,7 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "terratomere",
@@ -120108,7 +120108,7 @@
           }
         ],
         "effect": "When used, it fires 4 homing energy bolts that cause an explosion which deals 50% of the weapon's damage and also fires a short-range slash projectile after every swing. Both the blade and energy bolts create 3 light beam slashes that deal 40% of the weapon's damage on hit.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -128308,7 +128308,7 @@
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Banshee_Hook",
         "effect": "It is swung in front of the player at an odd angle, similarly to the Ghastly Glaive, and releases a line of five projectiles at once, each dealing 85% of the weapon's damage. Hitting an enemy directly with the weapon causes a ghostly explosion, rapidly dealing 25% of the weapon's damage.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "crescent-moon",
@@ -128382,7 +128382,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) swings the scythe back and forth in front of the player. Holding \u26b7 Open / Activate (default: Right Click) instead swings the scythe in a similar manner to a broadsword, and a large spread of four homing scythes are fired.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "galileo-gladius",
@@ -128451,7 +128451,7 @@
           }
         ],
         "effect": "When used, it throws a gravity-affected spinning abyssal sword that pierces infinitely. While spinning, the sword releases infinitely piercing water blasts which deal 16.67% damage in random directions, or towards nearby enemies if any are present.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -137363,7 +137363,7 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it throws a sword that sticks into enemies and reduces their speed, with a max of 5 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "galaxy-smasher",
@@ -137390,7 +137390,7 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "murasama",
@@ -146947,7 +146947,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a five-swing combo of a small upwards slash followed by a very wide circular one that shoots 6 homing eon bolts, repeating the last two swings once, and then following it up with a medium-ranged throw, where the ark will be sent out spinning, following the player's cursor for a maximum of 2.33 seconds, before coming back to them.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "dragon-pow",
@@ -147036,7 +147036,7 @@
           }
         ],
         "effect": "When swung, it fires a large energy wave that slows down as it travels and pierces infinitely. 4 homing stars are also fired alongside the beam near the cursor that deal 12% base damage and pierce 3 times. Hitting an enemy with the sword rains down 2 beams from the sky toward the cursor that home in on nearby enemies, dealing 10% base damage but losing 20% damage per hit.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "the-burning-sky",
@@ -147050,7 +147050,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Burning_Sky",
         "effect": "When used, the player holds the weapon out similarly to a wand, and a stream of burning meteors rain down from the sky in the direction of the cursor. The meteors inflict melee damage and can travel through tiles but do not pierce enemies.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "zenith",
@@ -156374,7 +156374,7 @@
           }
         ],
         "effect": "When swung, it fires a high-velocity sword beam that pierces infinitely, passes through tiles, and splits into 8 more sword beams in a circular formation on enemy hits. The split beams move out for a quick moment before erratically flying up and down constantly while spacing away from each other as they travel before dissipating.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "earth",
@@ -156443,7 +156443,7 @@
           }
         ],
         "effect": "When used, the weapon launches a spread of 4-8 slow moving green knives, similar to the Vampire Knives. The knives are destroyed upon contact with tiles but will rapidly accelerate and home in on nearby enemies.",
-        "subclass": "projectile-melee"
+        "subclass": "melee"
       },
       {
         "id": "ozzathoth",
@@ -156512,7 +156512,7 @@
           }
         ],
         "effect": "When it is swung, a large number of solar flares fall from the sky at varying speeds and angles. The flares explode after some time or upon hitting an enemy, releasing multiple homing fragments when they do.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "triactis-true-paladinian-mage-hammer-of-might",
@@ -156544,7 +156544,7 @@
           }
         ],
         "effect": "When used, it throws a heavy, gravity-affected hammer that will return to the player after striking an enemy. Every hit of the hammer spawns a prismatic light flare which orbits around the struck enemy.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       }
     ],
     "armor": [
@@ -166686,7 +166686,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Violence",
-        "effect": "When used, it summons a spinning demonic pitchfork which follows the cursor, rapidly dealing contact damage. Pressing \u26b7 Open / Activate (default: Right Click) throws the trident at fast speed which violently tears through enemies, dealing 1500% base damage and inflicting the Vulnerability Hex debuff."
+        "effect": "When used, it summons a spinning demonic pitchfork which follows the cursor, rapidly dealing contact damage. Pressing \u26b7 Open / Activate (default: Right Click) throws the trident at fast speed which violently tears through enemies, dealing 1500% base damage and inflicting the Vulnerability Hex debuff.",
+        "subclass": "melee"
       },
       {
         "id": "ark-of-the-cosmos",
@@ -166718,7 +166719,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a five-swing combo of a small upwards slash followed by a very wide circular one that shoots 6 homing eon bolts, repeating the last two swings once, and then following it up with a medium-ranged throw, where the ark will be sent out spinning, following the player's cursor for a maximum of 2.33 seconds, before coming back to them.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "dragon-pow",
@@ -166807,7 +166808,7 @@
           }
         ],
         "effect": "When swung, it fires a large energy wave that slows down as it travels and pierces infinitely. 4 homing stars are also fired alongside the beam near the cursor that deal 12% base damage and pierce 3 times. Hitting an enemy with the sword rains down 2 beams from the sky toward the cursor that home in on nearby enemies, dealing 10% base damage but losing 20% damage per hit.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "the-burning-sky",
@@ -166821,7 +166822,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Burning_Sky",
         "effect": "When used, the player holds the weapon out similarly to a wand, and a stream of burning meteors rain down from the sky in the direction of the cursor. The meteors inflict melee damage and can travel through tiles but do not pierce enemies.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "zenith",
@@ -176014,7 +176015,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Photon_Ripper",
-        "effect": "When used, it rapidly fires out rainbow teeth which circle back after passing through the cursor or past a set distance. The maximum set distance along with tooth damage increases as the weapon is used up to 3 seconds where it is fully charged."
+        "effect": "When used, it rapidly fires out rainbow teeth which circle back after passing through the cursor or past a set distance. The maximum set distance along with tooth damage increases as the weapon is used up to 3 seconds where it is fully charged.",
+        "subclass": "melee"
       },
       {
         "id": "exoblade",
@@ -176054,7 +176056,8 @@
           }
         ],
         "station": "Draedon's Forge",
-        "effect": "Press \u2692 Use / Attack to release multiple energy beams that home in on enemies and slice them on hit \u00b7 Press \u26b7 Open / Activate to dash in the direction of the cursor with the blade \u00b7 Enemy hits from the blade during the dash result in massive damage and a rebound \u00b7 Press \u2692 Use / Attack immediately after a rebound to perform a powerful slash \u00b7 Powerful slashes are larger, heal you, and create a large explosion \u00b7 Struck enemies are torn apart by Miracle Blight"
+        "effect": "Press \u2692 Use / Attack to release multiple energy beams that home in on enemies and slice them on hit \u00b7 Press \u26b7 Open / Activate to dash in the direction of the cursor with the blade \u00b7 Enemy hits from the blade during the dash result in massive damage and a rebound \u00b7 Press \u2692 Use / Attack immediately after a rebound to perform a powerful slash \u00b7 Powerful slashes are larger, heal you, and create a large explosion \u00b7 Struck enemies are torn apart by Miracle Blight",
+        "subclass": "melee"
       },
       {
         "id": "ark-of-the-cosmos",
@@ -176086,7 +176089,7 @@
           }
         ],
         "effect": "Holding \u2692 Use / Attack (default: Left Click) performs a five-swing combo of a small upwards slash followed by a very wide circular one that shoots 6 homing eon bolts, repeating the last two swings once, and then following it up with a medium-ranged throw, where the ark will be sent out spinning, following the player's cursor for a maximum of 2.33 seconds, before coming back to them.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "dragon-pow",
@@ -176175,7 +176178,7 @@
           }
         ],
         "effect": "When swung, it fires a large energy wave that slows down as it travels and pierces infinitely. 4 homing stars are also fired alongside the beam near the cursor that deal 12% base damage and pierce 3 times. Hitting an enemy with the sword rains down 2 beams from the sky toward the cursor that home in on nearby enemies, dealing 10% base damage but losing 20% damage per hit.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "the-burning-sky",
@@ -176189,7 +176192,7 @@
         "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Burning_Sky",
         "effect": "When used, the player holds the weapon out similarly to a wand, and a stream of burning meteors rain down from the sky in the direction of the cursor. The meteors inflict melee damage and can travel through tiles but do not pierce enemies.",
-        "subclass": "true-melee"
+        "subclass": "melee"
       },
       {
         "id": "zenith",
