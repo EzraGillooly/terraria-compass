@@ -89,8 +89,12 @@
 .treeName { font-family: var(--game); font-size: 26px; margin: 0; color: #fff; text-shadow: var(--tshadow); }
 .treeMeta { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #C2D2E8; }
 
-.treeLayout { display: flex; gap: 14px; align-items: flex-start; }
-.treePanel { flex: 1; min-width: 0; }
+/* Centred so the tree card + farm list sit in the middle of the page. The tree
+   card sizes to its own content (grows for deep trees, shrinks for shallow ones)
+   rather than greedily filling the row, which used to leave a wide empty gap on
+   the right of the card. */
+.treeLayout { display: flex; gap: 14px; align-items: flex-start; justify-content: center; }
+.treePanel { flex: 0 1 auto; min-width: 0; }
 .matPanel { flex: none; width: 240px; }
 /* Shape, fill and black border all come from the global .pixel-frame utility
    (see pixel.css) - this element must not set its own background/border/radius,
@@ -178,7 +182,8 @@
 
 @media (max-width: 860px) {
   .treeLayout { flex-direction: column; }
-  .matPanel { width: 100%; }
+  /* stacked: both cards span the column (the tree card no longer fits-content) */
+  .treePanel, .matPanel { width: 100%; }
 }
 @media (max-width: 620px) {
   .heroBody, .main { padding-inline: 16px; }
