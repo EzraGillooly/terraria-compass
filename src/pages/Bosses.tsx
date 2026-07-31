@@ -152,8 +152,8 @@ export function Bosses() {
           </p>
           <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
           <p className={styles.heroLede}>
-            The whole road from your first fight to the Moon Lord, left to right. Pick any boss for its
-            summon method and key drops.
+            Every boss in progression order, left to right. Select one for its summon
+            method and key drops.
           </p>
         </div>
       </section>

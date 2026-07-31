@@ -233,8 +233,7 @@ export function Crafting() {
             </p>
             <h1 className={styles.heroTitle}>Crafting <em>Trees</em></h1>
             <p className={styles.heroLede}>
-              Every ingredient for the game&apos;s deepest crafts, all the way down to the
-              drops and ores you actually have to farm.
+              Full crafting trees, expanded down to the base ores and drops.
             </p>
           </div>
         </section>
