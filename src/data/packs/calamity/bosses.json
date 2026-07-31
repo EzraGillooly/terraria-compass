@@ -248,17 +248,93 @@
     "stage": "cal-pre-evil",
     "tier": 1,
     "side": true,
-    "summon": "Use the Decapodita Sprout in the Glowing Mushroom biome.",
+    "summon": "Use the Decapodita Sprout in the Glowing Mushroom biome at any time.",
     "drops": [
-      "Mycelial Claws",
-      "Fungicide",
-      "Hyphae Rod",
-      "Infested Clawmerang",
-      "Mycoroot",
-      "Puff Shroom"
+      {
+        "name": "Mycelial Claws",
+        "icon": "calamity/mycelial-claws.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A fast autoswinging claw that grants the Mushy buff on hit, boosting life regen.",
+        "stats": "28 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mycelial_Claws"
+      },
+      {
+        "name": "Fungicide",
+        "icon": "calamity/fungicide.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Converts musket balls into fungal rounds that split into spores on impact.",
+        "stats": "19 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide"
+      },
+      {
+        "name": "Hyphae Rod",
+        "icon": "calamity/hyphae-rod.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires a bouncing spore that creates lingering mushroom clouds near the player.",
+        "stats": "22 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyphae_Rod"
+      },
+      {
+        "name": "Infested Clawmerang",
+        "icon": "calamity/infested-clawmerang.png",
+        "slot": "weapon",
+        "subclass": "boomerang",
+        "effect": "A slow, long-ranged rogue boomerang. Stealth strikes summon homing spores and grant the Mushy buff.",
+        "stats": "18 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infested_Clawmerang"
+      },
+      {
+        "name": "Mycoroot",
+        "icon": "calamity/mycoroot.png",
+        "slot": "weapon",
+        "subclass": "dagger",
+        "effect": "Fires a stream of short-range fungal roots. Stealth strikes burst into an explosion of spores.",
+        "stats": "12 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mycoroot"
+      },
+      {
+        "name": "Puff Shroom",
+        "icon": "calamity/puff-shroom.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a mushroom warrior minion that fights for you and grants the Puff Warrior buff.",
+        "stats": "14 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Puff_Shroom"
+      },
+      {
+        "name": "Crabulon Mask",
+        "icon": "calamity/crabulon-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Crabulon's fungal crab head.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crabulon_Mask"
+      }
     ],
     "blurb": "A towering fungal crab that showers the arena with spores and mushroom crabs.",
-    "color": "#6a5acd"
+    "color": "#6a5acd",
+    "summonItem": {
+      "name": "Decapodita Sprout",
+      "icon": "calamity/decapodita-sprout.png",
+      "slot": "summon",
+      "effect": "Summons Crabulon when used inside the Glowing Mushroom biome.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Decapodita_Sprout",
+      "materials": [
+        {
+          "name": "Glowing Mushroom",
+          "qty": 50
+        }
+      ]
+    }
   },
   {
     "id": "eater-of-worlds",
