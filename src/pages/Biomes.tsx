@@ -115,7 +115,7 @@ export function Biomes() {
           </p>
           <h1 className={styles.heroTitle}>Biomes &amp; <em>Bestiary</em></h1>
           <p className={styles.heroLede}>
-            Every environment, its mobs, and the loot worth farming. Scroll the world from safe to deadly.
+            Each biome, its enemies, and its notable drops.
           </p>
         </div>
       </section>
