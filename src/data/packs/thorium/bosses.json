@@ -191,5 +191,114 @@
     ],
     "blurb": "An ocean boss fought during the day. She hovers above the player, fires bubbles, and summons Royal Jellies to swarm.",
     "color": "#E86F9E"
+  },
+  {
+    "id": "viscount",
+    "name": "The Viscount",
+    "stage": "pre-skeletron",
+    "tier": 3.5,
+    "side": true,
+    "role": "optional",
+    "summon": "Use 5 Unholy Shards at a Blood Altar while below the surface.",
+    "summonItem": {
+      "name": "Unholy Shards",
+      "icon": "thorium/unholy-shard.png",
+      "slot": "summon",
+      "effect": "Sacrifice five at a Blood Altar, below the surface, to summon The Viscount.",
+      "source": "Drops from any enemy during a Blood Moon",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Unholy_Shards"
+    },
+    "drops": [
+      {
+        "name": "Bat Wing",
+        "icon": "thorium/bat-wing.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A yoyo that releases bats as it strikes enemies.",
+        "stats": "25 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bat_Wing"
+      },
+      {
+        "name": "Guano Gunner",
+        "icon": "thorium/guano-gunner.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires piercing bolts of waste that slow the enemies they hit.",
+        "stats": "18 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Guano_Gunner"
+      },
+      {
+        "name": "Vampire Scepter",
+        "icon": "thorium/vampire-scepter.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Fires a vampiric bolt that heals the player when it strikes an enemy.",
+        "stats": "26 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Vampire_Scepter"
+      },
+      {
+        "name": "Viscount's Cane",
+        "icon": "thorium/viscounts-cane.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a Blood Drinker minion that heals you as it fights.",
+        "stats": "18 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Viscount%27s_Cane"
+      },
+      {
+        "name": "Bat Scythe",
+        "icon": "thorium/bat-scythe.png",
+        "slot": "weapon",
+        "subclass": "radiant",
+        "effect": "A Healer scythe that gathers soul essence on hit to heal allies.",
+        "stats": "16 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bat_Scythe"
+      },
+      {
+        "name": "Sonar Cannon",
+        "icon": "thorium/sonar-cannon.png",
+        "slot": "weapon",
+        "subclass": "instrument",
+        "effect": "A Bard instrument that fires a sound pulse which ricochets between enemies.",
+        "stats": "22 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sonar_Cannon"
+      },
+      {
+        "name": "Dracula Fang",
+        "icon": "thorium/dracula-fang.png",
+        "slot": "weapon",
+        "subclass": "knife",
+        "effect": "A thrown blood tooth; critical hits release piercing blood.",
+        "stats": "14 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dracula_Fang"
+      },
+      {
+        "name": "Viscount Mask",
+        "icon": "thorium/viscount-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Viscount.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Viscount_Mask"
+      },
+      {
+        "name": "Vampire's Catalyst",
+        "icon": "thorium/vampires-catalyst.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Turns the player into a bat that can fly, at the cost of defense.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Vampire%27s_Catalyst"
+      }
+    ],
+    "blurb": "An underground Crimson boss summoned during any time below the surface. This bat-winged vampire swoops at the player, spits blood, and calls bat swarms.",
+    "color": "#C0392B",
+    "animated": true
   }
 ]
