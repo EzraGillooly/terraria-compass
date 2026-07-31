@@ -3210,13 +3210,29 @@
     "stage": "cal-pre-lunar",
     "tier": 0,
     "side": false,
-    "summon": "Kill the cultists at the Dungeon entrance after Golem.",
+    "summon": "Kill the four Cultists that gather at the Dungeon entrance after Golem is defeated.",
     "drops": [
-      "Ancient Cultist Trophy",
-      "Lunatic Cultist Mask"
+      {
+        "name": "Ancient Manipulator",
+        "icon": "items/ancient-manipulator.png",
+        "slot": "tool",
+        "effect": "The crafting station for all Luminite and Celestial Fragment gear - the endgame workbench.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ancient_Manipulator"
+      },
+      {
+        "name": "Lunatic Cultist Mask",
+        "icon": "items/lunatic-cultist-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Lunatic Cultist.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lunatic_Cultist_Mask"
+      }
     ],
-    "blurb": "The vanilla robed cultist whose defeat triggers the Lunar Events and the Celestial Pillars.",
-    "color": "#3FA8A0"
+    "blurb": "Appears at the Dungeon once Golem is defeated. It creates clones that must be ignored, and killing it starts the Lunar Events.",
+    "color": "#3FA8A0",
+    "unlocks": "The Lunar Events begin - four Celestial Pillars (Solar, Vortex, Nebula, Stardust) spawn across the world. Clearing all four summons the Moon Lord.",
+    "animated": true
   },
   {
     "id": "astrum-deus",
@@ -3224,16 +3240,107 @@
     "stage": "cal-pre-ml",
     "tier": 0,
     "side": false,
-    "summon": "Use a Titan Heart or Starcore at the Astral Beacon at night.",
+    "summon": "Interact with a placed Astral Beacon at night while holding a Titan Heart or Starcore, in the Astral Infection.",
     "drops": [
-      "Solar Fragment",
-      "Meld Blob",
-      "Star Sputter",
-      "Starspawn Helix Staff",
-      "Hide of Astrum Deus"
+      {
+        "name": "The Microwave",
+        "icon": "calamity/the-microwave.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A long-reach yoyo that fries nearby enemies with astral energy.",
+        "stats": "111 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Microwave"
+      },
+      {
+        "name": "Star Sputter",
+        "icon": "calamity/star-sputter.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires a chain of comets that spread Astral Infection.",
+        "stats": "138 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_Sputter"
+      },
+      {
+        "name": "Star Shower",
+        "icon": "calamity/star-shower.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Casts a spread of astral stars from the sky that converge at the cursor.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_Shower"
+      },
+      {
+        "name": "Starspawn Helix Staff",
+        "icon": "calamity/starspawn-helix-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons astral probe minions that spread Astral Infection.",
+        "stats": "103 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starspawn_Helix_Staff"
+      },
+      {
+        "name": "Regulus Riot",
+        "icon": "calamity/regulus-riot.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Fires a swift homing disk that inflicts Astral Infection.",
+        "stats": "100 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Regulus_Riot"
+      },
+      {
+        "name": "Chromatic Orb",
+        "icon": "calamity/chromatic-orb.png",
+        "slot": "pet",
+        "effect": "Summons an ancient dragon light pet that highlights nearby enemies and hazards.",
+        "dropRate": "20%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chromatic_Orb"
+      },
+      {
+        "name": "Meld Blob",
+        "icon": "calamity/meld-blob.png",
+        "slot": "material",
+        "effect": "Astral crafting material used for Meld-tier gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
+      },
+      {
+        "name": "Astrum Deus Mask",
+        "icon": "calamity/astrum-deus-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Astrum Deus.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astrum_Deus_Mask"
+      }
     ],
-    "blurb": "A celestial burrowing worm with shifting blue-and-orange astral phases, the intended final pre-Moon Lord Calamity boss.",
-    "color": "#3B6FD4"
+    "blurb": "A twin astral serpent of the Astral Infection. Both worms must be worn down together, and it burrows and charges through the arena.",
+    "color": "#3B6FD4",
+    "summonItem": {
+      "name": "Astral Beacon",
+      "icon": "calamity/astral-beacon.png",
+      "slot": "summon",
+      "effect": "A placed beacon used at night with a Titan Heart or Starcore to summon Astrum Deus.",
+      "source": "Crafted at a Heavy Work Bench",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Beacon",
+      "materials": [
+        {
+          "name": "Aureus Cell",
+          "qty": 5
+        },
+        {
+          "name": "Starblight Soot",
+          "qty": 20
+        },
+        {
+          "name": "Astral Stone",
+          "qty": 30
+        }
+      ]
+    }
   },
   {
     "id": "moon-lord",
@@ -3241,16 +3348,193 @@
     "stage": "cal-pre-ml",
     "tier": 1,
     "side": false,
-    "summon": "Defeat all four Celestial Pillars, or use a Celestial Sigil.",
+    "summon": "Summons on his own once all four Celestial Pillars fall; a Celestial Sigil also summons him.",
     "drops": [
-      "Luminite",
-      "Meowmere",
-      "Terrarian",
-      "Star Wrath",
-      "Last Prism"
+      {
+        "name": "Luminite",
+        "icon": "items/luminite.png",
+        "slot": "material",
+        "effect": "The endgame ore - smelt it into Luminite Bars for the best armor, tools, and ammo.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite"
+      },
+      {
+        "name": "Portal Gun",
+        "icon": "items/portal-gun.png",
+        "slot": "tool",
+        "effect": "Fires two linked portals you can travel between.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Portal_Gun"
+      },
+      {
+        "name": "Meowmere",
+        "icon": "items/meowmere.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A sword that fires bouncing rainbow cats.",
+        "stats": "200 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere"
+      },
+      {
+        "name": "Terrarian",
+        "icon": "items/terrarian.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A yoyo that unleashes rainbow energy while deployed.",
+        "stats": "190 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terrarian"
+      },
+      {
+        "name": "Star Wrath",
+        "icon": "items/star-wrath.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A sword that calls down falling stars on swing.",
+        "stats": "170 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+      },
+      {
+        "name": "S.D.M.G.",
+        "icon": "items/sdmg.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "The Space Dolphin Machine Gun - rapid fire with a chance not to consume ammo.",
+        "stats": "85 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/S.D.M.G."
+      },
+      {
+        "name": "Celebration Mk2",
+        "icon": "items/celebration-mk2.png",
+        "slot": "weapon",
+        "subclass": "launcher",
+        "effect": "Launches homing fireworks.",
+        "stats": "50 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celebration_Mk2"
+      },
+      {
+        "name": "Last Prism",
+        "icon": "items/last-prism.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Channels a converging rainbow laser that intensifies the longer you hold it.",
+        "stats": "100 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Last_Prism"
+      },
+      {
+        "name": "Lunar Flare",
+        "icon": "items/lunar-flare.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Calls down a volley of lunar flares from above the cursor.",
+        "stats": "100 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lunar_Flare"
+      },
+      {
+        "name": "Rainbow Crystal Staff",
+        "icon": "items/rainbow-crystal-staff.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a Rainbow Crystal sentry that fires a colour-shifting beam.",
+        "stats": "130 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Crystal_Staff"
+      },
+      {
+        "name": "Lunar Portal Staff",
+        "icon": "items/lunar-portal-staff.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a portal sentry that fires the Phantasmal Eye at enemies.",
+        "stats": "100 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lunar_Portal_Staff"
+      },
+      {
+        "name": "Utensil Poker",
+        "icon": "calamity/utensil-poker.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws utensils in bursts of three; stealth strikes fire a golden fork.",
+        "stats": "333 damage",
+        "dropRate": "25% (one of ten weapons)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Utensil_Poker"
+      },
+      {
+        "name": "Meowmere Minecart",
+        "icon": "items/meowmere-minecart.png",
+        "slot": "mount",
+        "effect": "A rideable minecart that plays the Meowmere theme and fires cats.",
+        "dropRate": "10%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere_Minecart"
+      },
+      {
+        "name": "Moon Lord Mask",
+        "icon": "items/moon-lord-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Moon Lord.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Lord_Mask"
+      },
+      {
+        "name": "Celestial Onion",
+        "icon": "calamity/celestial-onion.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Consumed to permanently unlock an extra accessory slot (Calamity Expert bag).",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Celestial_Onion"
+      },
+      {
+        "name": "Gravity Globe",
+        "icon": "accessories/gravity-globe.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Lets you flip your personal gravity at will.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gravity_Globe"
+      }
     ],
-    "blurb": "The vanilla final boss and the climax of Hardmode, whose defeat opens the door to Calamity's post-Moon Lord content.",
-    "color": "#6FBFB0"
+    "blurb": "Summoned once all four Celestial Pillars fall, or with a Celestial Sigil. Two eyes and a forehead eye open in turn, and the core is only exposed once all three are destroyed.",
+    "color": "#6FBFB0",
+    "unlocks": "The final vanilla boss. Its Luminite lets you craft the endgame Lunar armor sets, tools, and weapons - and in Calamity it opens the door to the post-Moon-Lord bosses.",
+    "summonItem": {
+      "name": "Celestial Sigil",
+      "icon": "items/celestial-sigil.png",
+      "slot": "summon",
+      "effect": "Summons the Moon Lord immediately, from anywhere.",
+      "source": "Crafted at the Ancient Manipulator from Celestial Fragments",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Sigil",
+      "materials": [
+        {
+          "name": "Solar Fragment",
+          "qty": 12,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+        },
+        {
+          "name": "Vortex Fragment",
+          "qty": 12,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+        },
+        {
+          "name": "Nebula Fragment",
+          "qty": 12,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+        },
+        {
+          "name": "Stardust Fragment",
+          "qty": 12,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "profaned-guardians",
