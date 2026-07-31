@@ -2320,16 +2320,144 @@
     "stage": "cal-pre-golem",
     "tier": 0,
     "side": false,
-    "summon": "Use a Naiad's Warhorn item in the Ocean biome.",
+    "summon": "Kill the ??? that swims in the Ocean, or use the Naiad's Warhorn. Anahita spawns first; the Leviathan joins once Anahita drops to 40% health.",
     "drops": [
-      "Pearl of Enthrallment",
-      "Greentide",
-      "Leviatitan",
-      "Anahita's Arpeggio",
-      "Atlantis"
+      {
+        "name": "Greentide",
+        "icon": "calamity/greentide.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A sword that launches a spread of four teeth with a stronger piercing tooth in the center.",
+        "stats": "81 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Greentide"
+      },
+      {
+        "name": "Leviatitan",
+        "icon": "calamity/leviatitan.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires high-velocity aqua blasts and releases homing aberrations.",
+        "stats": "89 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviatitan"
+      },
+      {
+        "name": "Anahita's Arpeggio",
+        "icon": "calamity/anahitas-arpeggio.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "A charge-up magic weapon that fires escalating waves of sound.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Anahita%27s_Arpeggio"
+      },
+      {
+        "name": "Atlantis",
+        "icon": "calamity/atlantis.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "Casts aquatic spears that split as they travel.",
+        "stats": "81 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Atlantis"
+      },
+      {
+        "name": "Gastric Belcher Staff",
+        "icon": "calamity/gastric-belcher-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons aquatic aberration minions that spit vomit at nearby enemies.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gastric_Belcher_Staff"
+      },
+      {
+        "name": "Whitewater",
+        "icon": "calamity/whitewater.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a flask of magic white water that erupts after a short delay.",
+        "stats": "80 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Whitewater"
+      },
+      {
+        "name": "Leviathan Teeth",
+        "icon": "calamity/leviathan-teeth.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Rapidly throws a spread of teeth that stick to enemies.",
+        "stats": "43 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Teeth"
+      },
+      {
+        "name": "Deep Sea Anchor",
+        "icon": "calamity/deep-sea-anchor.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "A rogue weapon that hurls a heavy anchor which drags along the ground.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Sea_Anchor"
+      },
+      {
+        "name": "Pearl of Enthrallment",
+        "icon": "calamity/pearl-of-enthrallment.png",
+        "slot": "accessory",
+        "effect": "Summons a water elemental that hovers above you and shoots at enemies.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_of_Enthrallment"
+      },
+      {
+        "name": "The Community",
+        "icon": "calamity/the-community.png",
+        "slot": "accessory",
+        "effect": "A powerful all-round accessory boosting many stats, scaling with your other equipment.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community"
+      },
+      {
+        "name": "Anahita Mask",
+        "icon": "calamity/anahita-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Anahita.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Anahita_Mask"
+      },
+      {
+        "name": "Leviathan Mask",
+        "icon": "calamity/leviathan-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Leviathan.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviathan_Mask"
+      }
     ],
-    "blurb": "An ocean-themed duo pairing a water elemental with a massive marine reptile that unleash ice and meteor attacks.",
-    "color": "#2A6FB0"
+    "blurb": "A dual ocean boss. Anahita fights first, and the Leviathan joins once Anahita drops to 40% health - both must be defeated.",
+    "color": "#2A6FB0",
+    "summonItem": {
+      "name": "Naiad's Warhorn",
+      "icon": "calamity/naiads-warhorn.png",
+      "slot": "summon",
+      "effect": "Summons the Leviathan and Anahita fight when used in the Ocean.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Naiad%27s_Warhorn",
+      "materials": [
+        {
+          "name": "Driftwood",
+          "qty": 10
+        },
+        {
+          "name": "Abyss Gravel",
+          "qty": 15
+        },
+        {
+          "name": "Lumenyl",
+          "qty": 10
+        }
+      ]
+    }
   },
   {
     "id": "astrum-aureus",
@@ -2337,16 +2465,125 @@
     "stage": "cal-pre-golem",
     "tier": 1,
     "side": false,
-    "summon": "Use an Astral Chunk in the Astral Infection biome.",
+    "summon": "Use the Astral Chunk in the Astral Infection biome.",
     "drops": [
-      "Nebulash",
-      "Aurora Blazer",
-      "Alula Australis",
-      "Borealis Bomber",
-      "Interstellar Stompers"
+      {
+        "name": "Nebulash",
+        "icon": "calamity/nebulash.png",
+        "slot": "weapon",
+        "subclass": "whip",
+        "effect": "A whip-sword that emits particle explosions on hit and spreads Astral Infection.",
+        "stats": "85 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nebulash"
+      },
+      {
+        "name": "Aurora Blazer",
+        "icon": "calamity/aurora-blazer.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Spews a nebula stream that forms a star-shaped pattern.",
+        "stats": "69 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aurora_Blazer"
+      },
+      {
+        "name": "Alula Australis",
+        "icon": "calamity/alula-australis.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a beautiful aurora that spreads Astral Infection.",
+        "stats": "65 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis"
+      },
+      {
+        "name": "Borealis Bomber",
+        "icon": "calamity/borealis-bomber.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons aureus bomber minions that chase enemies and explode violently.",
+        "stats": "34 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Borealis_Bomber"
+      },
+      {
+        "name": "Auroradical Throw",
+        "icon": "calamity/auroradical-throw.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Launches a star that splits into homing stars after a short delay.",
+        "stats": "48 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auroradical_Throw"
+      },
+      {
+        "name": "Leonid Progenitor",
+        "icon": "calamity/leonid-progenitor.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a bombshell that summons a meteor to impact the site and spread Astral Infection.",
+        "stats": "64 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leonid_Progenitor"
+      },
+      {
+        "name": "Suspicious Looking Jelly Bean",
+        "icon": "calamity/suspicious-looking-jelly-bean.png",
+        "slot": "mount",
+        "effect": "Summons a rideable astral mount.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Suspicious_Looking_Jelly_Bean"
+      },
+      {
+        "name": "Aureus Cell",
+        "icon": "calamity/aureus-cell.png",
+        "slot": "material",
+        "effect": "Astral Infection crafting material used for post-mech gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aureus_Cell"
+      },
+      {
+        "name": "Starblight Soot",
+        "icon": "calamity/starblight-soot.png",
+        "slot": "material",
+        "effect": "Astral crafting material, also used to craft the Astral Chunk summon.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
+      },
+      {
+        "name": "Astrum Aureus Mask",
+        "icon": "calamity/astrum-aureus-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Astrum Aureus.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astrum_Aureus_Mask"
+      }
     ],
-    "blurb": "A mechanical construct corrupted by the Astral Infection, leaping and firing laser spreads with a golden cosmic sheen.",
-    "color": "#E0A030"
+    "blurb": "A mechanical beast summoned in the Astral Infection biome. It charges and leaps at the player, growing more aggressive as it loses health.",
+    "color": "#E0A030",
+    "summonItem": {
+      "name": "Astral Chunk",
+      "icon": "calamity/astral-chunk.png",
+      "slot": "summon",
+      "effect": "Summons Astrum Aureus when used in the Astral Infection.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Chunk",
+      "materials": [
+        {
+          "name": "Starblight Soot",
+          "qty": 30
+        },
+        {
+          "name": "Fallen Star",
+          "qty": 20
+        },
+        {
+          "name": "Dubious Plating",
+          "qty": 8
+        }
+      ]
+    }
   },
   {
     "id": "golem",
@@ -2354,16 +2591,129 @@
     "stage": "cal-pre-golem",
     "tier": 2,
     "side": false,
-    "summon": "Use a Lihzahrd Power Cell at the altar in the Jungle Temple.",
+    "summon": "Use a Lihzahrd Power Cell at the Lihzahrd Altar in the final chamber of the Jungle Temple.",
     "drops": [
-      "Picksaw",
-      "Stynger",
-      "Possessed Hatchet",
-      "Sun Stone",
-      "Eye of the Golem"
+      {
+        "name": "Picksaw",
+        "icon": "items/picksaw.png",
+        "slot": "tool",
+        "effect": "A pickaxe that mines Lihzahrd Bricks and everything short of Lunar blocks.",
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Picksaw"
+      },
+      {
+        "name": "Beetle Husk",
+        "icon": "items/beetle-husk.png",
+        "slot": "material",
+        "effect": "Crafting material for Beetle armor, the tier's top melee set.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk"
+      },
+      {
+        "name": "Essence of Sunlight",
+        "icon": "calamity/essence-of-sunlight.png",
+        "slot": "material",
+        "effect": "Calamity crafting material used for post-Golem gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+      },
+      {
+        "name": "Aegis Blade",
+        "icon": "calamity/aegis-blade.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword whose strikes cause an earthen eruption.",
+        "stats": "152 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aegis_Blade"
+      },
+      {
+        "name": "Stynger",
+        "icon": "items/stynger.png",
+        "slot": "weapon",
+        "subclass": "launcher",
+        "effect": "Fires a bolt that bursts into homing shrapnel; comes with Stynger Bolts.",
+        "stats": "17 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stynger"
+      },
+      {
+        "name": "Possessed Hatchet",
+        "icon": "items/possessed-hatchet.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A flying axe that homes in on enemies and returns.",
+        "stats": "80 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Possessed_Hatchet"
+      },
+      {
+        "name": "Heat Ray",
+        "icon": "items/heat-ray.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Fires a bouncing beam of superheated light.",
+        "stats": "90 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Heat_Ray"
+      },
+      {
+        "name": "Staff of Earth",
+        "icon": "items/staff-of-earth.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Summons huge rolling boulders that crush everything in their path.",
+        "stats": "125 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_Earth"
+      },
+      {
+        "name": "Golem Fist",
+        "icon": "items/golem-fist.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "Launches a stone fist on a chain that punches through enemies.",
+        "stats": "90 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Golem_Fist"
+      },
+      {
+        "name": "Sun Stone",
+        "icon": "accessories/sun-stone.png",
+        "slot": "accessory",
+        "effect": "During the day, boosts damage, crit, defense, life, and movement.",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sun_Stone"
+      },
+      {
+        "name": "Eye of the Golem",
+        "icon": "accessories/eye-of-the-golem.png",
+        "slot": "accessory",
+        "effect": "Increases critical strike chance by 10%.",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
+      },
+      {
+        "name": "Golem Mask",
+        "icon": "items/golem-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Golem's head.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Golem_Mask"
+      }
     ],
-    "blurb": "The vanilla Lihzahrd Temple guardian whose defeat opens post-Golem progression.",
-    "color": "#C77A3B"
+    "blurb": "Fought in the Jungle Temple using a Lihzahrd Power Cell. Its fists and head detach, and the head keeps fighting after the body falls.",
+    "color": "#C77A3B",
+    "unlocks": "The Lunatic Cultist appears at the Dungeon entrance - the path to the Moon Lord - and the Martian Madness event can now occur.",
+    "summonItem": {
+      "name": "Lihzahrd Power Cell",
+      "icon": "items/lihzahrd-power-cell.png",
+      "slot": "summon",
+      "effect": "Used at the Lihzahrd Altar in the Jungle Temple to summon Golem.",
+      "source": "Dropped by Lihzahrds and Flying Snakes, or found in Lihzahrd Chests",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Lihzahrd_Power_Cell"
+    },
+    "animated": true
   },
   {
     "id": "duke-fishron",
