@@ -15,6 +15,9 @@ test('reduced-motion: transitions are zeroed when prefers-reduced-motion is redu
 
   // A nav tab has a transition under normal motion; it must be zeroed here.
   // (Class selection lives in a header dropdown, so there is no class tab to probe.)
+  // The nav is behind the hamburger on mobile, so open it before probing the tab.
+  const menu = page.getByRole('button', { name: 'Menu' });
+  if (await menu.isVisible()) await menu.click();
   const tab = page.getByRole('link', { name: /^Bosses/ });
   await expect(tab).toBeVisible();
 
