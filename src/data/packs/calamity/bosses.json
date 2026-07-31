@@ -1378,7 +1378,7 @@
     ],
     "blurb": "Summoned by throwing a Guide Voodoo Doll into Underworld lava. It moves across the world at a steady speed, so the fight should happen on a long bridge, and it speeds up as it loses health.",
     "color": "#8a2f24",
-    "unlocks": "Activates Hardmode: the Hallow appears, the world evil spreads faster, Hardmode ores generate once you smash Altars with the Pwnhammer, and far tougher enemies and the mechanical bosses arrive.",
+    "unlocks": "Activates Hardmode. With Calamity\u2019s Early Hardmode Rework, Cobalt/Palladium Ore spawn immediately (no altar-smashing needed), the Hallow appears, mechanical bosses can spawn at night, and Life Fruit and Plantera\u2019s Bulbs start growing in the Jungle.",
     "summonItem": {
       "name": "Guide Voodoo Doll",
       "icon": "items/guide-voodoo-doll.png",
@@ -1616,8 +1616,8 @@
         "name": "Hallowed Bar",
         "icon": "materials/hallowed-bar.png",
         "slot": "material",
-        "effect": "Crafts Hallowed armor, drills and chainsaws, and mech-tier weapons.",
-        "dropRate": "100%",
+        "effect": "Crafts Hallowed armor, drills and chainsaws, and mech-tier weapons. Mechs only drop it once all three are defeated.",
+        "dropRate": "100% (after all three mechs)",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
       },
       {
@@ -1631,7 +1631,7 @@
     ],
     "blurb": "Two mechanical eyes. Spazmatism deals contact damage and cursed flames, Retinazer fires lasers, and each changes form below half health.",
     "color": "#C43F3F",
-    "unlocks": "The Steampunker can move in and Hallowed gear becomes craftable. Once all three mechs are defeated, Plantera\u2019s Bulbs grow in the Underground Jungle.",
+    "unlocks": "Advances the Hardmode ore tier by defeat order: the 1st mech beaten spawns Mythril and Orichalcum, the 2nd Adamantite and Titanium, and the 3rd Hallowed Ore in the Underground Hallow - after which all mechs drop Hallowed Bars.",
     "summonItem": {
       "name": "Mechanical Eye",
       "icon": "items/mechanical-eye.png",
