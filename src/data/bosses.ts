@@ -18,8 +18,6 @@ export interface BossDrop {
   stats?: string;
   /** the rate a player sees, e.g. "25%" or "25% (33% Expert)" */
   dropRate?: string;
-  /** extra caveat shown as a Notes row, e.g. "one of five - one drops per kill" */
-  notes?: string;
   /** only for a summon item - how it is obtained (drops omit it; it is implied) */
   source?: string;
   /** difficulty gate; omitted = every mode */

@@ -25,7 +25,6 @@ function dropToItem(d: BossDrop): Item {
     effect: d.effect,
     stats: d.stats,
     dropRate: d.dropRate,
-    notes: d.notes,
     subclass: d.subclass,
     materials: d.materials,
     wikiUrl: d.wikiUrl,
