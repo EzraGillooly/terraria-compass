@@ -3847,15 +3847,73 @@
     "stage": "cal-pre-polterghast",
     "tier": 0,
     "side": false,
-    "summon": "Use the Mark of Providence while in the sky",
+    "summon": "Use the Mark of Providence in Space (the top layer of the sky).",
     "drops": [
-      "Skytide Dragoon",
-      "The Storm",
-      "Volterion",
-      "Arc Flash Ring"
+      {
+        "name": "Skytide Dragoon",
+        "icon": "calamity/skytide-dragoon.png",
+        "slot": "weapon",
+        "subclass": "spear",
+        "effect": "A spear that calls down a thunderbolt to charge its tip.",
+        "stats": "365 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Skytide_Dragoon"
+      },
+      {
+        "name": "The Storm",
+        "icon": "calamity/the-storm.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires a spread of homing lightning bolts and arrows from the sky.",
+        "stats": "40 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Storm"
+      },
+      {
+        "name": "Volterion",
+        "icon": "calamity/volterion.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Discharges a high-voltage stream that bursts into balls of lightning.",
+        "stats": "890 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Volterion"
+      },
+      {
+        "name": "Little Light",
+        "icon": "calamity/little-light.png",
+        "slot": "pet",
+        "effect": "Summons a small construct light pet that lights your way.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Little_Light"
+      },
+      {
+        "name": "Armored Shell",
+        "icon": "calamity/armored-shell.png",
+        "slot": "material",
+        "effect": "Crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armored_Shell"
+      },
+      {
+        "name": "Storm Weaver Mask",
+        "icon": "calamity/storm-weaver-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Storm Weaver.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Weaver_Mask"
+      }
     ],
-    "blurb": "A colossal electric serpent and one of the three Sentinels of the Devourer, fought high in the sky.",
-    "color": "#3FC7D4"
+    "blurb": "A Sentinel of the Devourer summoned in Space. A long lightning worm that speeds up and sheds its armor in its second phase.",
+    "color": "#3FC7D4",
+    "summonItem": {
+      "name": "Mark of Providence",
+      "icon": "calamity/mark-of-providence.png",
+      "slot": "summon",
+      "effect": "A reusable summoning tool - use it in Space to summon this Sentinel.",
+      "source": "Crafted, or dropped by Providence",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mark_of_Providence"
+    }
   },
   {
     "id": "ceaseless-void",
@@ -3863,14 +3921,55 @@
     "stage": "cal-pre-polterghast",
     "tier": 1,
     "side": false,
-    "summon": "Use the Mark of Providence while in the Dungeon",
+    "summon": "Use the Mark of Providence in the Dungeon.",
     "drops": [
-      "Mirror Blade",
-      "Void Concentration Staff",
-      "The Evolution"
+      {
+        "name": "Mirror Blade",
+        "icon": "calamity/mirror-blade.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "Striking an enemy or hostile projectile summons orbiting mirror swords.",
+        "stats": "600 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mirror_Blade"
+      },
+      {
+        "name": "Void Concentration Staff",
+        "icon": "calamity/void-concentration-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Surrounds you with dark energy that weakens your attacks but empowers its minions.",
+        "stats": "105 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Concentration_Staff"
+      },
+      {
+        "name": "Dark Plasma",
+        "icon": "calamity/dark-plasma.png",
+        "slot": "material",
+        "effect": "Crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
+      },
+      {
+        "name": "Ceaseless Void Mask",
+        "icon": "calamity/ceaseless-void-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Ceaseless Void.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ceaseless_Void_Mask"
+      }
     ],
-    "blurb": "A tear in reality flanked by orbiting Dark Energies, a Sentinel of the Devourer fought within the Dungeon.",
-    "color": "#4B2E83"
+    "blurb": "A Sentinel of the Devourer summoned in the Dungeon. A stationary rift that pulls you in and spawns dark energy orbs to dodge.",
+    "color": "#4B2E83",
+    "summonItem": {
+      "name": "Mark of Providence",
+      "icon": "calamity/mark-of-providence.png",
+      "slot": "summon",
+      "effect": "A reusable summoning tool - use it in the Dungeon to summon this Sentinel.",
+      "source": "Crafted, or dropped by Providence",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mark_of_Providence"
+    }
   },
   {
     "id": "signus-envoy-of-the-devourer",
@@ -3878,14 +3977,55 @@
     "stage": "cal-pre-polterghast",
     "tier": 2,
     "side": false,
-    "summon": "Use the Mark of Providence while in the Underworld",
+    "summon": "Use the Mark of Providence in the Underworld.",
     "drops": [
-      "Twisting Nether",
-      "Cosmilamp",
-      "Cosmic Kunai"
+      {
+        "name": "Cosmilamp",
+        "icon": "calamity/cosmilamp.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a cosmic lantern minion that fights above your head.",
+        "stats": "127 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilamp"
+      },
+      {
+        "name": "Cosmic Kunai",
+        "icon": "calamity/cosmic-kunai.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Fires a rapid stream of short-range kunai; stealth strikes make them home in.",
+        "stats": "92 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Kunai"
+      },
+      {
+        "name": "Twisting Nether",
+        "icon": "calamity/twisting-nether.png",
+        "slot": "material",
+        "effect": "Crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Twisting_Nether"
+      },
+      {
+        "name": "Signus Mask",
+        "icon": "calamity/signus-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Signus.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Signus_Mask"
+      }
     ],
-    "blurb": "A shadowy assassin Sentinel of the Devourer that drops Twisting Nether used to craft the Cosmic Worm.",
-    "color": "#6A3FA0"
+    "blurb": "A Sentinel of the Devourer summoned in the Underworld. It teleports and turns invisible as it charges the player.",
+    "color": "#6A3FA0",
+    "summonItem": {
+      "name": "Mark of Providence",
+      "icon": "calamity/mark-of-providence.png",
+      "slot": "summon",
+      "effect": "A reusable summoning tool - use it in the Underworld to summon this Sentinel.",
+      "source": "Crafted, or dropped by Providence",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mark_of_Providence"
+    }
   },
   {
     "id": "polterghast",
@@ -3893,16 +4033,115 @@
     "stage": "cal-pre-polterghast",
     "tier": 3,
     "side": false,
-    "summon": "Kill 30 Phantom Spirits or use the Necroplasmic Beacon in the Dungeon",
+    "summon": "Kill 30 Phantom Spirits in the Dungeon (they appear there after Moon Lord is defeated) to make Polterghast spawn.",
     "drops": [
-      "Terror Blade",
-      "Banshee Hook",
-      "Daemon's Flame",
-      "Fate's Reveal",
-      "Ghastly Visage"
+      {
+        "name": "Terror Blade",
+        "icon": "calamity/terror-blade.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "Fires a terror beam that bounces off tiles and splits on each bounce.",
+        "stats": "560 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terror_Blade"
+      },
+      {
+        "name": "Banshee Hook",
+        "icon": "calamity/banshee-hook.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that fires blades and explodes on hit.",
+        "stats": "250 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Banshee_Hook"
+      },
+      {
+        "name": "Daemon's Flame",
+        "icon": "calamity/daemons-flame.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Shoots daemon fireballs along with four regular arrows.",
+        "stats": "162 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daemon%27s_Flame"
+      },
+      {
+        "name": "Ghastly Visage",
+        "icon": "calamity/ghastly-visage.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires homing ghast energy that explodes on impact.",
+        "stats": "120 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ghastly_Visage"
+      },
+      {
+        "name": "Fate's Reveal",
+        "icon": "calamity/fates-reveal.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Spawns ghostly fireballs that follow the player and strike enemies.",
+        "stats": "120 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fate%27s_Reveal"
+      },
+      {
+        "name": "Ethereal Subjugator",
+        "icon": "calamity/ethereal-subjugator.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a phantom minion to protect you.",
+        "stats": "200 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ethereal_Subjugator"
+      },
+      {
+        "name": "Ghoulish Gouger",
+        "icon": "calamity/ghoulish-gouger.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws sets of four ghoulish scythes at ultra-high velocity.",
+        "stats": "204 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ghoulish_Gouger"
+      },
+      {
+        "name": "Ruinous Soul",
+        "icon": "calamity/ruinous-soul.png",
+        "slot": "material",
+        "effect": "Crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
+      },
+      {
+        "name": "Necroplasm",
+        "icon": "calamity/necroplasm.png",
+        "slot": "material",
+        "effect": "Ghostly crafting material used for post-Providence gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Necroplasm"
+      },
+      {
+        "name": "Ectoheart",
+        "icon": "calamity/ectoheart.png",
+        "slot": "buff",
+        "mode": "revengeance",
+        "effect": "Permanent power-up. Increases Adrenaline Mode damage by 20% and damage reduction by 5% when consumed.",
+        "dropRate": "100% (Revengeance bag)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ectoheart"
+      },
+      {
+        "name": "Polterghast Mask",
+        "icon": "calamity/polterghast-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Polterghast.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polterghast_Mask"
+      }
     ],
-    "blurb": "A tormented mass of Dungeon souls that awakened from the necromantic energy, gating access to the deeper abyss.",
-    "color": "#2FBFA0"
+    "blurb": "A ghost boss summoned deep in the Dungeon. It splits into hooked clones and grows more frantic as it loses health.",
+    "color": "#2FBFA0",
+    "unlocks": "Abyss minibosses begin dropping weapons, and the final tier of the Acid Rain event unlocks. Recommended before challenging the Devourer of Gods."
   },
   {
     "id": "the-old-duke",
