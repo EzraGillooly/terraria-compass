@@ -95,5 +95,101 @@
     "blurb": "A desert bird boss fought during the day. It hovers above the player firing feathers and lightning, speeding up below 45% health.",
     "color": "#6FB7E8",
     "animated": true
+  },
+  {
+    "id": "queen-jellyfish",
+    "name": "Queen Jellyfish",
+    "stage": "pre-skeletron",
+    "tier": 2.5,
+    "side": true,
+    "role": "optional",
+    "summon": "Use a Jellyfish Resonator near the Ocean during the day.",
+    "summonItem": {
+      "name": "Jellyfish Resonator",
+      "icon": "thorium/jellyfish-resonator.png",
+      "slot": "summon",
+      "effect": "Summons the Queen Jellyfish near the Ocean during the day.",
+      "source": "Crafted at a Demon or Crimson Altar, or found in Aquatic Depths chests",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Jellyfish_Resonator",
+      "materials": [
+        {
+          "name": "Coral",
+          "qty": 2
+        },
+        {
+          "name": "Pink Jellyfish",
+          "qty": 1
+        }
+      ]
+    },
+    "drops": [
+      {
+        "name": "Sparking Jelly Ball",
+        "icon": "thorium/sparking-jelly-ball.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail whose hits may briefly paralyze the enemy.",
+        "stats": "42 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sparking_Jelly_Ball"
+      },
+      {
+        "name": "Buccaneer's Blunderbuss",
+        "icon": "thorium/buccaneers-blunderbuss.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Unleashes a torrent of bullets in a spread.",
+        "stats": "10 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Buccaneer%27s_Blunderbuss"
+      },
+      {
+        "name": "Jelly Pond Wand",
+        "icon": "thorium/jelly-pond-wand.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Sends out an aquatic orb that summons a swarm of jellyfish.",
+        "stats": "21 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Jelly_Pond_Wand"
+      },
+      {
+        "name": "Conch Shell",
+        "icon": "thorium/conch-shell.png",
+        "slot": "weapon",
+        "subclass": "instrument",
+        "effect": "A Bard instrument that plays a rising song of the sea for increased damage.",
+        "stats": "28 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Conch_Shell"
+      },
+      {
+        "name": "Pink Gel",
+        "icon": "items/pink-gel.png",
+        "slot": "material",
+        "effect": "A gel used for pink slime gear and gel-based crafting.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Gel"
+      },
+      {
+        "name": "Queen Jellyfish Mask",
+        "icon": "thorium/queen-jellyfish-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Queen Jellyfish.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Queen_Jellyfish_Mask"
+      },
+      {
+        "name": "Sea Breeze Pendant",
+        "icon": "thorium/sea-breeze-pendant.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Grants water breathing and improved movement in liquids.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sea_Breeze_Pendant"
+      }
+    ],
+    "blurb": "An ocean boss fought during the day. She hovers above the player, fires bubbles, and summons Royal Jellies to swarm.",
+    "color": "#E86F9E"
   }
 ]
