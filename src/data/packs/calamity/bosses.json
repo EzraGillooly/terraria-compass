@@ -5,16 +5,113 @@
     "stage": "cal-pre-boss",
     "tier": 0,
     "side": true,
-    "summon": "Use a Slime Crown, or spawns naturally during a Slime Rain.",
+    "summon": "Use it in any biome, at any time. King Slime also spawns on its own during a Slime Rain.",
     "drops": [
-      "Ninja Hood",
-      "Ninja Shirt",
-      "Ninja Pants",
-      "Slimy Saddle",
-      "Royal Gel"
+      {
+        "name": "Crown Jewel",
+        "icon": "calamity/crown-jewel.png",
+        "slot": "accessory",
+        "effect": "Grants +0.5 HP/s life regen and reduces damage-over-time taken by 2 HP/s.",
+        "dropRate": "25% (33% Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel"
+      },
+      {
+        "name": "Katana",
+        "icon": "items/katana.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A fast, autoswinging katana.",
+        "stats": "18 damage",
+        "dropRate": "25% (33% Expert)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Katana"
+      },
+      {
+        "name": "Slimy Saddle",
+        "icon": "items/slimy-saddle.png",
+        "slot": "mount",
+        "effect": "Summons the Slime Mount, which hovers and slams down onto enemies.",
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slimy_Saddle"
+      },
+      {
+        "name": "Slime Gun",
+        "icon": "items/slime-gun.png",
+        "slot": "weapon",
+        "effect": "Sprays harmless slime - a novelty item that deals no damage.",
+        "dropRate": "66.67%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Gun"
+      },
+      {
+        "name": "Slime Hook",
+        "icon": "items/slime-hook.png",
+        "slot": "tool",
+        "effect": "A single-claw grappling hook with slime-green reach.",
+        "dropRate": "33.33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Hook"
+      },
+      {
+        "name": "Ninja Hood",
+        "icon": "items/ninja-hood.png",
+        "slot": "vanity",
+        "effect": "Vanity headpiece from the ninja trapped inside King Slime.",
+        "dropRate": "33.33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ninja_Hood"
+      },
+      {
+        "name": "Ninja Shirt",
+        "icon": "items/ninja-shirt.png",
+        "slot": "vanity",
+        "effect": "Vanity shirt from the ninja trapped inside King Slime.",
+        "dropRate": "33.33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ninja_Shirt"
+      },
+      {
+        "name": "Ninja Pants",
+        "icon": "items/ninja-pants.png",
+        "slot": "vanity",
+        "effect": "Vanity leggings from the ninja trapped inside King Slime.",
+        "dropRate": "33.33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ninja_Pants"
+      },
+      {
+        "name": "King Slime Mask",
+        "icon": "items/king-slime-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like King Slime's crown and face.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/King_Slime_Mask"
+      },
+      {
+        "name": "Royal Gel",
+        "icon": "accessories/royal-gel.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Slimes become friendly and no longer harm you.",
+        "dropRate": "100% (Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Royal_Gel"
+      }
     ],
     "blurb": "A giant blue slime king and an optional early warm-up before diving into Calamity's own bosses.",
-    "color": "#3fa8d6"
+    "color": "#3fa8d6",
+    "summonItem": {
+      "name": "Slime Crown",
+      "icon": "items/slime-crown.png",
+      "slot": "summon",
+      "effect": "Summons King Slime when used, in any biome at any time.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/King_Slime",
+      "materials": [
+        {
+          "name": "Gel",
+          "qty": 20
+        },
+        {
+          "name": "Gold or Platinum Crown",
+          "qty": 1
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "desert-scourge",
