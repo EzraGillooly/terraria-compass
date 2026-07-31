@@ -181,9 +181,10 @@ export function Bosses() {
     </div>
   );
 
-  // Calamity's boss data is still on the old format, so the page is gated for it
-  // until the pass reaches those bosses - switch to Vanilla to view progression.
-  if (packId === 'calamity') {
+  // Calamity's boss data is mid-conversion, so the page is gated for it on the
+  // live site until the pass finishes - but open in the dev preview so it can be
+  // built and reviewed. Drop the `!import.meta.env.DEV` guard to ship it.
+  if (packId === 'calamity' && !import.meta.env.DEV) {
     return (
       <div className={`${styles.page} ${styles.gated}`}>
         <div

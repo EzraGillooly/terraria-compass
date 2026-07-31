@@ -6,9 +6,10 @@ import { PACK_META } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  /** Boss progression is converted to the new format for vanilla only so far, so
-   *  it is hidden under Calamity until that pass reaches its bosses. */
-  { to: '/bosses',   label: 'Bosses', packs: ['vanilla'] },
+  /** Boss progression is fully converted for vanilla; Calamity's bosses are
+   *  mid-conversion, so the tab is hidden under Calamity on the live site but
+   *  shown in the dev preview (matching the page's own env gate). */
+  { to: '/bosses', label: 'Bosses', ...(import.meta.env.DEV ? {} : { packs: ['vanilla'] }) },
   { to: '/loadouts', label: 'Loadouts' },
   { to: '/crafting', label: 'Crafting' },
   /** the materials index is scraped from the Calamity wiki, so it is pack-gated */
