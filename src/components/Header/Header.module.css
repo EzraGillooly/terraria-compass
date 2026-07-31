@@ -130,6 +130,34 @@
   gap: clamp(6px, 1vw, 10px);
 }
 
+/* Nav + controls wrapper. `display: contents` makes it invisible to layout, so
+   on desktop the nav and controls stay grid items of .inner exactly as before -
+   this rule is a no-op until the mobile block below turns it into a panel. */
+.headerMenu { display: contents; }
+
+/* Hamburger, hidden until the mobile breakpoint. */
+.menuToggle {
+  display: none;
+  justify-self: end;
+  place-items: center;
+  width: var(--control-h);
+  height: var(--control-h);
+  cursor: pointer;
+  background: rgba(40, 54, 122, .18);
+  border: 1px solid #000;
+  border-radius: var(--radius-lg);
+}
+.menuToggle:hover { background: rgba(40, 54, 122, .32); }
+.menuToggle:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
+/* three bars drawn from the middle bar plus its two box-shadows */
+.menuBars, .menuBars::before, .menuBars::after {
+  content: ''; display: block; width: 20px; height: 2.5px;
+  background: #fff; border-radius: 1px;
+}
+.menuBars { position: relative; }
+.menuBars::before { position: absolute; top: -6px; }
+.menuBars::after { position: absolute; top: 6px; }
+
 .navLink { min-height: var(--control-h); }
 
 /* ── World + Calamity mode ──
@@ -299,12 +327,51 @@
 .modeToggle[hidden] { display: none; }
 
 /* ── Responsive ──
-   The header scales fluidly via clamp() above. Below the point where brand + nav
-   + controls can no longer share a line even scaled down, the nav wraps to its
-   own centred row instead of disappearing. */
-@media (max-width: 560px) {
-  .inner { grid-template-columns: 1fr auto; row-gap: 10px; }
-  .topnav { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
+   The header scales fluidly via clamp() above; below this width brand + nav +
+   controls can no longer share a line, so the nav and every selector collapse
+   behind the hamburger into a dropdown panel. Everything here is scoped to the
+   breakpoint, so the desktop header is untouched. */
+@media (max-width: 700px) {
+  .inner { grid-template-columns: 1fr auto; }
+  .menuToggle { display: grid; }
+
+  /* The wrapper stops being `display: contents` and becomes the panel: a
+     full-width dropdown anchored under the bar, shown only when open. */
+  .headerMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px clamp(12px, 3vw, 32px) 20px;
+    background: rgba(20, 30, 68, .98);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 10px 24px rgba(8, 14, 34, .5);
+  }
+  .headerMenu[data-open='true'] { display: flex; }
+
+  /* Nav: a vertical list of full-width tabs. */
+  .topnav { flex-direction: column; align-items: stretch; gap: 6px; width: 100%; }
+  .navLink { text-align: center; }
+
+  /* Controls stack full-width, each selector spanning the row. */
+  .controls { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
+  .diffSelect, .worldColumn, .classStack { width: 100%; height: auto; }
+  .diffTrigger { width: 100%; justify-content: space-between; }
+  .diffValue { margin-left: auto; }
+  /* Pop-outs open in flow here (not absolutely, which would escape the panel). */
+  .diffSelect .diffMenu { position: static; margin-top: 6px; }
+
+  /* The class stack is always-open; in the panel it sits in flow, full width. */
+  .classStackList { position: static; }
+  .classStackItem { width: 100%; }
+
+  /* Calamity mode sits in flow under World rather than overlaid. */
+  .worldColumn { display: flex; flex-direction: column; gap: 8px; }
+  .calModeRow { position: static; align-self: flex-start; }
 }
 
 /* "Soon" badge on packs that aren't populated yet (mod dropdown) */
@@ -376,3 +443,14 @@
 .classStackItem:hover .classItemIcon,
 .classStackItemOn .classItemIcon { opacity: 1; }
 .classStackName { white-space: nowrap; }
+
+/* Class-stack mobile overrides live at the end of the file on purpose: the base
+   .classStack rules above are defined after the main @media block, so putting
+   these here is what lets them win (media queries add no specificity). In the
+   mobile panel the always-open stack sits in flow, full width, taking real
+   height instead of overlaying the selectors below it. */
+@media (max-width: 700px) {
+  .classStack { width: 100%; height: auto; }
+  .classStackList { position: static; }
+  .classStackItem { width: 100%; }
+}
