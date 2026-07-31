@@ -24,6 +24,18 @@ come from.
   under Calamity
 - No ads, no tracking, no external fonts
 
+## Currently adding mods
+
+These are being worked on now, so please don't start a pack for them - pick
+something else or open an issue to coordinate:
+
+- **The Stars Above (STA)**
+- **Thorium**
+
+Want to add a different mod? See [`CONTRIBUTING.md`](CONTRIBUTING.md) - each mod is
+a self-contained data pack, so a new one slots in alongside Vanilla and Calamity
+without touching the core.
+
 ## Tech stack
 
 Vite + React + TypeScript, CSS Modules, React Router v6 (HashRouter), Zod for
