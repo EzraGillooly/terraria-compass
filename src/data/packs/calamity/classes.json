@@ -81,22 +81,27 @@
       {
         "id": "wand",
         "name": "Wands / Staves",
-        "description": "Single-shot spellcasters such as staves and focused magic projectiles."
-      },
-      {
-        "id": "spell-tome",
-        "name": "Spell Tomes",
-        "description": "Book-based spells that often bring piercing, arcs, or unusual behavior."
+        "description": "Wands and staves."
       },
       {
         "id": "magic-gun",
         "name": "Magic Guns",
-        "description": "Rapid-fire magic weapons that behave more like sustained ranged tools."
+        "description": "Magic weapons that fire like guns."
+      },
+      {
+        "id": "spell-tome",
+        "name": "Spell Tomes",
+        "description": "Spell tomes."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Miscellaneous magic weapons that fit no standard type."
       },
       {
         "id": "summon-magic",
         "name": "Summon Magic",
-        "description": "Magic tools that create persistent hazards or supporting summons."
+        "description": "Vanilla magic weapons that summon."
       }
     ]
   },
