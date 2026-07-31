@@ -395,5 +395,100 @@
     "blurb": "A granite elemental boss fought inside the Granite Caves. It hovers and orbits blocks of charged granite, firing energy charges and pulling in stone.",
     "color": "#6E7BC4",
     "animated": true
+  },
+  {
+    "id": "buried-champion",
+    "name": "Buried Champion",
+    "stage": "pre-wof",
+    "tier": 4.6,
+    "side": true,
+    "role": "optional",
+    "summon": "Kill a Bizarre Rock Formation in the Marble Caves (spawns after Skeletron), or use an Ancient Blade in the Marble Caves.",
+    "summonItem": {
+      "name": "Ancient Blade",
+      "icon": "thorium/ancient-blade.png",
+      "slot": "summon",
+      "effect": "Summons the Buried Champion. It works only inside the Marble Caves.",
+      "source": "Crafted; usable only in the Marble Caves",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ancient_Blade"
+    },
+    "drops": [
+      {
+        "name": "Champion's Swift Blade",
+        "icon": "thorium/champions-swift-blade.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword whose first hit each swing releases a quick wind slash.",
+        "stats": "30 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Swift_Blade"
+      },
+      {
+        "name": "Champion's Trifecta-Shot",
+        "icon": "thorium/champions-trifecta-shot.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "A bow whose arrows cycle between different elements.",
+        "stats": "28 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Trifecta-Shot"
+      },
+      {
+        "name": "Champion's Bomber Staff",
+        "icon": "thorium/champions-bomber-staff.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "A staff that fires bombs; killing an enemy restores 15 mana.",
+        "stats": "24 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Bomber_Staff"
+      },
+      {
+        "name": "Champion's God Hand",
+        "icon": "thorium/champions-god-hand.png",
+        "slot": "weapon",
+        "subclass": "other",
+        "effect": "Throws paralyzing lightning strikes; overuse exhausts you and lowers its damage.",
+        "stats": "33 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_God_Hand"
+      },
+      {
+        "name": "Champion's Rebuttal",
+        "icon": "thorium/champions-rebuttal.png",
+        "slot": "accessory",
+        "effect": "A shield that stores twice the damage you take into your next attack, up to 300.",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Rebuttal"
+      },
+      {
+        "name": "Bronze Alloy Fragments",
+        "icon": "thorium/bronze-alloy-fragments.png",
+        "slot": "material",
+        "effect": "A Thorium crafting material used for marble-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bronze_Alloy_Fragments"
+      },
+      {
+        "name": "Buried Champion Mask",
+        "icon": "thorium/buried-champion-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Buried Champion.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Buried_Champion_Mask"
+      },
+      {
+        "name": "Champion's Wings",
+        "icon": "thorium/champions-wings.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Wings that grant flight, styled after the Buried Champion.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Wings"
+      }
+    ],
+    "blurb": "A marble knight boss fought inside the Marble Caves. It cycles through blade, bow, and staff attacks as its health drops through 66% and 33%.",
+    "color": "#C7A24A",
+    "animated": true
   }
 ]
