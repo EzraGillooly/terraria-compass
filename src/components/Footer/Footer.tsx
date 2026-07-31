@@ -15,7 +15,7 @@ export function Footer({ flush = false }: FooterProps) {
           <div className={styles.brand}>
             Terraria Compass
           </div>
-          <p className={styles.tagline}>Your compass through Terraria.</p>
+          <p className={styles.tagline}>Your guide through Terraria.</p>
         </div>
 
         <div className={styles.mid} aria-hidden="true" />

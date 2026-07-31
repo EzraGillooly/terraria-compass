@@ -199,8 +199,15 @@ interface HeaderProps {
 export function Header({ variant = 'paper' }: HeaderProps) {
   const { isDayMode, setIsDayMode, packId } = useAppState();
   const isPhoto = variant === 'photo';
+  const { pathname } = useLocation();
   // class only matters on the loadouts page, so its selector rides the header there
-  const onLoadouts = useLocation().pathname === '/loadouts';
+  const onLoadouts = pathname === '/loadouts';
+
+  /* The nav and selectors do not fit a phone's width, so below the mobile
+     breakpoint they collapse behind this button into a dropdown panel (see
+     .menuToggle / .headerMenu in the CSS - both are desktop no-ops). Tapping a
+     nav link closes it (below), so it never hangs open after navigating. */
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className={`${styles.header} ${isPhoto ? styles.onPhoto : styles.onPaper}`}>
@@ -217,12 +224,30 @@ export function Header({ variant = 'paper' }: HeaderProps) {
           />
         </NavLink>
 
+        {/* Mobile menu toggle - hidden on desktop via CSS */}
+        <button
+          type="button"
+          className={styles.menuToggle}
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+          aria-controls="header-menu"
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <span className={styles.menuBars} aria-hidden="true" />
+        </button>
+
+        {/* Nav + controls. `display: contents` on desktop, so these stay grid
+            items of .inner exactly as before; on mobile the wrapper becomes the
+            dropdown panel. */}
+        <div className={styles.headerMenu} id="header-menu" data-open={menuOpen}>
+
         {/* Nav */}
         <nav className={styles.topnav} aria-label="Site navigation">
           {NAV_LINKS.filter((l) => !l.packs || l.packs.includes(packId)).map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
+              onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
                 `${styles.navLink} pixel-frame ${isActive ? styles.active : ''}`
               }
@@ -257,6 +282,8 @@ export function Header({ variant = 'paper' }: HeaderProps) {
             {isDayMode ? <SunMark /> : <MoonMark />}
           </button>
         </div>
+
+        </div>{/* .headerMenu */}
 
       </div>
     </header>
