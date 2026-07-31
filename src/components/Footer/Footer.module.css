@@ -47,8 +47,9 @@
 .version {
   font-style: normal;
   font-size: 12px;
+  /* Full --ink-mute (no opacity): opacity dropped it below the WCAG AA 4.5:1
+     contrast the a11y test requires for small text. */
   color: var(--ink-mute);
-  opacity: .8;
   text-decoration: none;
 }
 .version:hover { color: var(--accent); text-decoration: underline; }
