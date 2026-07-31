@@ -2,10 +2,6 @@
    BOSSES - Vertical roadmap (Guide Green)
 ═══════════════════════════════════════════════════ */
 .page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
-/* Gated (Calamity) placeholder: short content, so lay the page out as a column
-   and let the footer drop to the bottom of the viewport. */
-.gated { display: flex; flex-direction: column; }
-.gated .footerLayer { margin-top: auto; }
 
 /* ── Full-page biome backdrop (covers the whole page, like Loadouts) ── */
 /* Viewport-anchored so the image doesn't re-fit (zoom/drift) as the page grows */

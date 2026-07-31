@@ -119,7 +119,7 @@ function BossSlot({
 
 export function Bosses() {
   const { phases, bosses } = usePack();
-  const { difficulty, calamityMode, packId } = useAppState();
+  const { difficulty, calamityMode } = useAppState();
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
   const [modalItem, setModalItem] = useState<Item | null>(null);
@@ -180,38 +180,6 @@ export function Bosses() {
       </div>
     </div>
   );
-
-  // Calamity's boss data is mid-conversion, so the page is gated for it on the
-  // live site until the pass finishes - but open in the dev preview so it can be
-  // built and reviewed. Drop the `!import.meta.env.DEV` guard to ship it.
-  if (packId === 'calamity' && !import.meta.env.DEV) {
-    return (
-      <div className={`${styles.page} ${styles.gated}`}>
-        <div
-          className={styles.backdrop}
-          style={{ backgroundImage: `url(${BASE}biomes/underworld.png)` }}
-          aria-hidden="true"
-        />
-        <div className={styles.backdropWash} aria-hidden="true" />
-        <section className={styles.hero} aria-label="Boss Progression">
-          <Header variant="photo" />
-          <div className={styles.heroBody}>
-            <p className={styles.crumb}>
-              <Link to="/">Home</Link> <span className={styles.crumbSep}>/</span> Boss Progression
-            </p>
-            <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
-            <p className={styles.heroLede}>
-              Calamity boss progression is being rebuilt and isn&rsquo;t ready yet. Switch the
-              Mod back to Vanilla in the header to view the boss roadmap.
-            </p>
-          </div>
-        </section>
-        <div className={styles.footerLayer}>
-          <Footer flush />
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className={styles.page}>
