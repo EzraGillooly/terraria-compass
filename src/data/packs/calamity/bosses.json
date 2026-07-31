@@ -1395,15 +1395,86 @@
     "stage": "cal-pre-mech",
     "tier": 0,
     "side": true,
-    "summon": "Use a Gelatin Crystal in the Hallow.",
+    "summon": "Place a Gelatin Crystal in the Hallow and activate it. The crystal generates naturally in the Underground Hallow.",
     "drops": [
-      "Volatile Gelatin",
-      "Blade Staff",
-      "Crystal Assassin armor",
-      "Gelatin Crystal"
+      {
+        "name": "Crystal Assassin Hood",
+        "icon": "items/crystal-assassin-hood.png",
+        "slot": "armor",
+        "effect": "Crystal Assassin set - grants a dash and +10% damage and critical strike chance.",
+        "dropRate": "33.33% (one of three pieces)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Assassin_armor"
+      },
+      {
+        "name": "Crystal Assassin Shirt",
+        "icon": "items/crystal-assassin-shirt.png",
+        "slot": "armor",
+        "effect": "Part of the Crystal Assassin set - a dash and +10% damage and crit.",
+        "dropRate": "33.33% (one of three pieces)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Assassin_armor"
+      },
+      {
+        "name": "Crystal Assassin Pants",
+        "icon": "items/crystal-assassin-pants.png",
+        "slot": "armor",
+        "effect": "Part of the Crystal Assassin set - a dash and +10% damage and crit.",
+        "dropRate": "33.33% (one of three pieces)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Assassin_armor"
+      },
+      {
+        "name": "Blade Staff",
+        "icon": "items/blade-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons an Enchanted Dagger minion - low base damage that ramps hard with armor penetration.",
+        "stats": "6 damage",
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff"
+      },
+      {
+        "name": "Gelatinous Pillion",
+        "icon": "items/gelatinous-pillion.png",
+        "slot": "mount",
+        "effect": "Summons a slime mount that hovers and bounces high off enemies.",
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gelatinous_Pillion"
+      },
+      {
+        "name": "Hook of Dissonance",
+        "icon": "items/hook-of-dissonance.png",
+        "slot": "tool",
+        "effect": "A grappling hook that teleports you to wherever it latches.",
+        "dropRate": "33.33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hook_of_Dissonance"
+      },
+      {
+        "name": "Queen Slime Mask",
+        "icon": "items/queen-slime-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Queen Slime.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Slime_Mask"
+      },
+      {
+        "name": "Volatile Gelatin",
+        "icon": "accessories/volatile-gelatin.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Occasionally launches a bouncing gel projectile at nearby enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Volatile_Gelatin"
+      }
     ],
-    "blurb": "An optional early-Hardmode Hallow boss that bounces and spawns crystal slimes, offering strong early minion and summoner gear.",
-    "color": "#E5559E"
+    "blurb": "Summoned in the Hallow with a Gelatin Crystal. She gains flight in her later phases and spawns crystal slimes throughout.",
+    "color": "#E5559E",
+    "summonItem": {
+      "name": "Gelatin Crystal",
+      "icon": "items/gelatin-crystal.png",
+      "slot": "summon",
+      "effect": "Placed in the Hallow and activated to summon Queen Slime.",
+      "source": "Found in the Underground Hallow",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Gelatin_Crystal"
+    }
   },
   {
     "id": "cryogen",
@@ -1411,16 +1482,119 @@
     "stage": "cal-pre-mech",
     "tier": 1,
     "side": false,
-    "summon": "Use a Cryo Key in the Snow or Ice biome.",
+    "summon": "Use a Cryo Key in the Snow or Ice biome at any time.",
     "drops": [
-      "Essence of Eleum",
-      "Frost Flare",
-      "Avalanche",
-      "Hoarfrost Bow",
-      "Cryo Stone"
+      {
+        "name": "Avalanche",
+        "icon": "calamity/avalanche.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword whose hits spawn orbiting ice bombs that later explode.",
+        "stats": "75 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Avalanche"
+      },
+      {
+        "name": "Hoarfrost Bow",
+        "icon": "calamity/hoarfrost-bow.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires two arrows at once and converts wooden arrows into frost mist arrows.",
+        "stats": "36 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hoarfrost_Bow"
+      },
+      {
+        "name": "Snowstorm Staff",
+        "icon": "calamity/snowstorm-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires cursor-tracking snowflakes that split into ice stars on hit.",
+        "stats": "39 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowstorm_Staff"
+      },
+      {
+        "name": "Icebreaker",
+        "icon": "calamity/icebreaker.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws an icy hammer that returns to you. Stealth strikes spawn a cosmic explosion.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Icebreaker"
+      },
+      {
+        "name": "Glacial Embrace",
+        "icon": "calamity/glacial-embrace.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons the power of the ancient ice castle, adding an attack per minion slot used.",
+        "stats": "48 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glacial_Embrace"
+      },
+      {
+        "name": "Cryo Stone",
+        "icon": "calamity/cryo-stone.png",
+        "slot": "accessory",
+        "effect": "Creates a rotating ice shield that damages and slows enemies, and boosts Cold debuff damage.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryo_Stone"
+      },
+      {
+        "name": "Frost Flare",
+        "icon": "calamity/frost-flare.png",
+        "slot": "accessory",
+        "effect": "All attacks inflict Frostbite; above 50% life grants +10% damage, below 50% grants +10 defense.",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frost_Flare"
+      },
+      {
+        "name": "Essence of Eleum",
+        "icon": "calamity/essence-of-eleum.png",
+        "slot": "material",
+        "effect": "Calamity ice crafting material used for early Hardmode gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Eleum"
+      },
+      {
+        "name": "Cryogen Mask",
+        "icon": "calamity/cryogen-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Cryogen.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryogen_Mask"
+      }
     ],
-    "blurb": "A sealed magical guardian with an icy-blue aesthetic that cycles through multiphase projectile barrages, the intended first Calamity Hardmode boss.",
-    "color": "#5BC8E8"
+    "blurb": "An ice boss summoned in the Snow or Ice biome. It spawns behind an ice shield that must be broken, then shifts attack patterns through several phases as its health drops.",
+    "color": "#5BC8E8",
+    "summonItem": {
+      "name": "Cryo Key",
+      "icon": "calamity/cryo-key.png",
+      "slot": "summon",
+      "effect": "Summons Cryogen when used in the Snow or Ice biome.",
+      "source": "Crafted at an Iron or Lead Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryo_Key",
+      "materials": [
+        {
+          "name": "Any Ice Block",
+          "qty": 50
+        },
+        {
+          "name": "Soul of Light",
+          "qty": 5
+        },
+        {
+          "name": "Soul of Night",
+          "qty": 5
+        },
+        {
+          "name": "Essence of Eleum",
+          "qty": 8
+        }
+      ]
+    }
   },
   {
     "id": "the-twins",
@@ -1428,15 +1602,62 @@
     "stage": "cal-pre-mech",
     "tier": 2,
     "side": false,
-    "summon": "Use a Mechanical Eye at night.",
+    "summon": "Use it at night in Hardmode. The Twins can also spawn on their own at night.",
     "drops": [
-      "Soul of Sight",
-      "Hallowed Bar",
-      "Optic Staff",
-      "Mechanical Wagon Piece"
+      {
+        "name": "Soul of Sight",
+        "icon": "materials/soul-of-sight.png",
+        "slot": "material",
+        "effect": "Hardmode crafting material used for the Optic Staff, the Marrow, and more.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
+      },
+      {
+        "name": "Hallowed Bar",
+        "icon": "materials/hallowed-bar.png",
+        "slot": "material",
+        "effect": "Crafts Hallowed armor, drills and chainsaws, and mech-tier weapons.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+      },
+      {
+        "name": "Twin Mask",
+        "icon": "items/twin-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Twins.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Twin_Mask"
+      }
     ],
-    "blurb": "A vanilla mechanical boss of twin mechanical eyes, one of the three mechs that must fall to advance progression.",
-    "color": "#C43F3F"
+    "blurb": "Two mechanical eyes. Spazmatism deals contact damage and cursed flames, Retinazer fires lasers, and each changes form below half health.",
+    "color": "#C43F3F",
+    "unlocks": "The Steampunker can move in and Hallowed gear becomes craftable. Once all three mechs are defeated, Plantera\u2019s Bulbs grow in the Underground Jungle.",
+    "summonItem": {
+      "name": "Mechanical Eye",
+      "icon": "items/mechanical-eye.png",
+      "slot": "summon",
+      "effect": "Summons The Twins at night in Hardmode.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Eye",
+      "materials": [
+        {
+          "name": "Lens",
+          "qty": 3,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
+        },
+        {
+          "name": "Iron or Lead Bar",
+          "qty": 5,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Bar"
+        },
+        {
+          "name": "Soul of Light",
+          "qty": 6,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "aquatic-scourge",
