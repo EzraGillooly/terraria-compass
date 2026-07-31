@@ -2721,16 +2721,115 @@
     "stage": "cal-post-golem",
     "tier": 0,
     "side": true,
-    "summon": "Fish with Truffle Worm bait in the Ocean biome.",
+    "summon": "Fish in the Ocean using a Truffle Worm as bait. The worm is a rare critter netted in the Underground Mushroom biome.",
     "drops": [
-      "Flairon",
-      "Razorblade Typhoon",
-      "Tempest Staff",
-      "Bubble Gun",
-      "Fishron Wings"
+      {
+        "name": "Tsunami",
+        "icon": "items/tsunami.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires five arrows in a wide spread.",
+        "stats": "53 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tsunami"
+      },
+      {
+        "name": "Flairon",
+        "icon": "items/flairon.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that unleashes homing bubbles on swing.",
+        "stats": "132 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon"
+      },
+      {
+        "name": "Razorblade Typhoon",
+        "icon": "items/razorblade-typhoon.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires homing razor blades that weave toward enemies.",
+        "stats": "85 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon"
+      },
+      {
+        "name": "Tempest Staff",
+        "icon": "items/tempest-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons Sharknado minions that fire sharks at enemies.",
+        "stats": "50 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tempest_Staff"
+      },
+      {
+        "name": "Bubble Gun",
+        "icon": "items/bubble-gun.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Sprays a rapid, short-range stream of bubbles.",
+        "stats": "27 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun"
+      },
+      {
+        "name": "Duke's Decapitator",
+        "icon": "calamity/dukes-decapitator.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a hydro axe that shreds enemies on contact.",
+        "stats": "90 damage",
+        "dropRate": "16.67% (one of six weapons)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Duke%27s_Decapitator"
+      },
+      {
+        "name": "Briny Baron",
+        "icon": "calamity/briny-baron.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword whose strikes summon a briny typhoon.",
+        "stats": "182 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Briny_Baron"
+      },
+      {
+        "name": "Fishron Wings",
+        "icon": "accessories/fishron-wings.png",
+        "slot": "accessory",
+        "effect": "Wings with excellent flight time and a fast hover.",
+        "dropRate": "6.67%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+      },
+      {
+        "name": "Duke Fishron Mask",
+        "icon": "items/duke-fishron-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Duke Fishron.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Duke_Fishron_Mask"
+      },
+      {
+        "name": "Shrimpy Truffle",
+        "icon": "accessories/shrimpy-truffle.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Summons the powerful Cute Fishron mount when your health drops low.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shrimpy_Truffle"
+      }
     ],
-    "blurb": "An optional vanilla pigron-dragon of the Ocean, dangerous but dropping some of the best endgame-adjacent weapons.",
-    "color": "#4FB0C6"
+    "blurb": "Summoned by fishing in the Ocean with a Truffle Worm. Three phases, each faster than the last, with charges that cross the arena.",
+    "color": "#4FB0C6",
+    "summonItem": {
+      "name": "Truffle Worm",
+      "icon": "items/truffle-worm.png",
+      "slot": "summon",
+      "effect": "Used as fishing bait in the Ocean to hook Duke Fishron.",
+      "source": "A rare critter caught with a Bug Net in the Underground Mushroom biome",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Truffle_Worm"
+    },
+    "animated": true
   },
   {
     "id": "the-plaguebringer-goliath",
@@ -2738,16 +2837,123 @@
     "stage": "cal-post-golem",
     "tier": 1,
     "side": false,
-    "summon": "Use an Abombination item in the Jungle or Underground Jungle.",
+    "summon": "Use the Abombination in the Jungle.",
     "drops": [
-      "Infected Armor Plating",
-      "Plague Cell Canister",
-      "Virulence",
-      "Malevolence",
-      "Plague Staff"
+      {
+        "name": "Virulence",
+        "icon": "calamity/virulence.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword that fires a spread of plague projectiles.",
+        "stats": "100 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Virulence"
+      },
+      {
+        "name": "Malevolence",
+        "icon": "calamity/malevolence.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires two arrows at once and converts wooden arrows into plague arrows.",
+        "stats": "56 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Malevolence"
+      },
+      {
+        "name": "Plague Staff",
+        "icon": "calamity/plague-staff.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Fires a tight spread of four homing plague missiles.",
+        "stats": "70 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Staff"
+      },
+      {
+        "name": "Fuel Cell Bundle",
+        "icon": "calamity/fuel-cell-bundle.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Releases a small special plaguebringer minion to fight for you.",
+        "stats": "22 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fuel_Cell_Bundle"
+      },
+      {
+        "name": "Infected Remote",
+        "icon": "calamity/infected-remote.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a humanoid Plaguebringer minion, 'Virili', to aid you.",
+        "stats": "50 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Remote"
+      },
+      {
+        "name": "The Syringe",
+        "icon": "calamity/the-syringe.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a high-velocity syringe that gains damage as it travels.",
+        "stats": "60 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Syringe"
+      },
+      {
+        "name": "Malachite",
+        "icon": "calamity/malachite.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a stream of kunai that stick to enemies and explode.",
+        "stats": "52 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Malachite"
+      },
+      {
+        "name": "Plague Caller",
+        "icon": "calamity/plague-caller.png",
+        "slot": "pet",
+        "effect": "Summons a baby Plaguebringer pet to follow you.",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Caller"
+      },
+      {
+        "name": "Infected Armor Plating",
+        "icon": "calamity/infected-armor-plating.png",
+        "slot": "material",
+        "effect": "Plague crafting material used for post-Golem gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
+      },
+      {
+        "name": "Plaguebringer Goliath Mask",
+        "icon": "calamity/plaguebringer-goliath-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Plaguebringer Goliath.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plaguebringer_Goliath_Mask"
+      }
     ],
-    "blurb": "A Draedon-built plague creature of biological control, sickly green and bristling with toxic missile and drone attacks.",
-    "color": "#7BA82F"
+    "blurb": "A robotic plague hornet fought in the Jungle. It hovers and dashes at the player while raining missiles and plague stingers.",
+    "color": "#7BA82F",
+    "summonItem": {
+      "name": "Abombination",
+      "icon": "calamity/abombination.png",
+      "slot": "summon",
+      "effect": "Summons The Plaguebringer Goliath when used in the Jungle.",
+      "source": "Crafted at a Mythril or Orichalcum Anvil",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abombination",
+      "materials": [
+        {
+          "name": "Plague Cell Canister",
+          "qty": 20
+        },
+        {
+          "name": "Mysterious Circuitry",
+          "qty": 12
+        }
+      ]
+    }
   },
   {
     "id": "empress-of-light",
@@ -2755,16 +2961,88 @@
     "stage": "cal-post-golem",
     "tier": 2,
     "side": true,
-    "summon": "Kill a Prismatic Lacewing at night in the Hallow.",
+    "summon": "Kill a Prismatic Lacewing - a rare critter that flutters over the surface Hallow at night, after Plantera.",
     "drops": [
-      "Terraprisma",
-      "Starlight",
-      "Nightglow",
-      "Kaleidoscope",
-      "Empress Wings"
+      {
+        "name": "Nightglow",
+        "icon": "items/nightglow.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires a slow homing bolt that then rains down light lances.",
+        "stats": "50 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow"
+      },
+      {
+        "name": "Starlight",
+        "icon": "items/starlight.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "Hold to unleash a rapid barrage of star beams from the blade.",
+        "stats": "80 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Starlight"
+      },
+      {
+        "name": "Kaleidoscope",
+        "icon": "items/kaleidoscope.png",
+        "slot": "weapon",
+        "subclass": "whip",
+        "effect": "A whip that hits multiple times and greatly boosts your minions.",
+        "stats": "170 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope"
+      },
+      {
+        "name": "Eventide",
+        "icon": "items/eventide.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires three arrows that convert into homing stars.",
+        "stats": "50 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide"
+      },
+      {
+        "name": "Stellar Tune",
+        "icon": "items/stellar-tune.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Plays a rising scale of homing musical notes.",
+        "stats": "85 damage",
+        "dropRate": "2%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune"
+      },
+      {
+        "name": "Terraprisma",
+        "icon": "items/terraprisma.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons prismatic swords that dart at enemies from around the player.",
+        "stats": "90 damage",
+        "dropRate": "Daytime kill only",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraprisma"
+      },
+      {
+        "name": "Empress Wings",
+        "icon": "accessories/empress-wings.png",
+        "slot": "accessory",
+        "effect": "Wings with excellent flight time and a rainbow trail.",
+        "dropRate": "6.67%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_Wings"
+      },
+      {
+        "name": "Empress of Light Mask",
+        "icon": "items/empress-of-light-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Empress of Light.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_of_Light_Mask"
+      }
     ],
-    "blurb": "An optional prismatic Hallow fairy whose dazzling rainbow attack patterns reward precise dodging with elite gear.",
-    "color": "#E86FC0"
+    "blurb": "Summoned by killing a Prismatic Lacewing in the Hallow at night. Killing her in daylight makes every attack an instant kill, which is the only way she drops the Terraprisma.",
+    "color": "#E86FC0",
+    "animated": true
   },
   {
     "id": "ravager",
@@ -2772,17 +3050,123 @@
     "stage": "cal-post-golem",
     "tier": 3,
     "side": false,
-    "summon": "Use a Death Whistle item.",
+    "summon": "Use the Death Whistle anywhere, at any time.",
     "drops": [
-      "Ultimus Cleaver",
-      "Realm Ravager",
-      "Hematemesis",
-      "Spikecrag Staff",
-      "Bloodflare Core",
-      "Necromantic Geode"
+      {
+        "name": "Ultimus Cleaver",
+        "icon": "calamity/ultimus-cleaver.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "Launches damaging homing sparks and explodes on enemy hits.",
+        "stats": "130 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ultimus_Cleaver"
+      },
+      {
+        "name": "Realm Ravager",
+        "icon": "calamity/realm-ravager.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Shoots a burst of four bullets and converts musket balls into explosive bullets.",
+        "stats": "54 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Realm_Ravager"
+      },
+      {
+        "name": "Hematemesis",
+        "icon": "calamity/hematemesis.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Casts a barrage of blood geysers from below the target.",
+        "stats": "75 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hematemesis"
+      },
+      {
+        "name": "Spikecrag Staff",
+        "icon": "calamity/spikecrag-staff.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a bed of stalagmites that spray spikes at enemies.",
+        "stats": "25 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spikecrag_Staff"
+      },
+      {
+        "name": "Cranium Smasher",
+        "icon": "calamity/cranium-smasher.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Alternates between piercing rolling disks and explosive disks.",
+        "stats": "140 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cranium_Smasher"
+      },
+      {
+        "name": "Corpus Avertor",
+        "icon": "calamity/corpus-avertor.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a spinning dagger that spawns a rebounding clone and heals on hit.",
+        "stats": "98 damage",
+        "dropRate": "5%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corpus_Avertor"
+      },
+      {
+        "name": "Vesuvius",
+        "icon": "calamity/vesuvius.png",
+        "slot": "weapon",
+        "subclass": "staff",
+        "effect": "Calls down a swarm of molten asteroids onto enemies.",
+        "stats": "55 damage",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vesuvius"
+      },
+      {
+        "name": "Flesh Totem",
+        "icon": "calamity/flesh-totem.png",
+        "slot": "accessory",
+        "effect": "+5% magic crit, +20 max mana, and summons a totem that heals you periodically.",
+        "dropRate": "33.33% (50% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flesh_Totem"
+      },
+      {
+        "name": "Fleshy Geode",
+        "icon": "calamity/fleshy-geode.png",
+        "slot": "material",
+        "effect": "Crafting material dropped by the Ravager before Providence is defeated.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fleshy_Geode"
+      },
+      {
+        "name": "Ravager Mask",
+        "icon": "calamity/ravager-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Ravager.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ravager_Mask"
+      }
     ],
-    "blurb": "A grotesque grounded flesh construct that hops and hurls its own dismembered limbs across the surface battlefield.",
-    "color": "#9E3B3B"
+    "blurb": "A construct of flesh and bone summoned anywhere. It leaps at the player and detaches its limbs, which keep attacking until destroyed.",
+    "color": "#9E3B3B",
+    "summonItem": {
+      "name": "Death Whistle",
+      "icon": "calamity/death-whistle.png",
+      "slot": "summon",
+      "effect": "Summons The Ravager when used.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Whistle",
+      "materials": [
+        {
+          "name": "Solar Tablet Fragment",
+          "qty": 15
+        },
+        {
+          "name": "Lihzahrd Brick",
+          "qty": 25
+        }
+      ]
+    }
   },
   {
     "id": "lunatic-cultist",
