@@ -829,7 +829,7 @@ export const bosses: BossDef[] = [
     name: 'Moon Lord',
     stage: 'pre-moonlord',
     tier: 10,
-    summon: 'Summons on his own once all four Celestial Pillars fall, or use a Celestial Sigil to skip straight to him.',
+    summon: 'Summons on his own once all four Celestial Pillars fall; a Celestial Sigil also summons him.',
     summonItem: {
       name: 'Celestial Sigil',
       icon: 'items/celestial-sigil.png',

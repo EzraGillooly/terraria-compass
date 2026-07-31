@@ -301,19 +301,33 @@ export function Bosses() {
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Summon</span>
               <span className={styles.detailVal}>
-                {selected.summonItem && (
-                  <>
+                {(() => {
+                  const it = selected.summonItem;
+                  if (!it) return selected.summon;
+                  const link = (
                     <button
+                      key="summon-link"
                       type="button"
                       className={styles.summonLink}
-                      onClick={() => setModalItem(dropToItem(selected.summonItem!))}
+                      onClick={() => setModalItem(dropToItem(it))}
                     >
-                      {selected.summonItem.name}
+                      {it.name}
                     </button>
-                    {' – '}
-                  </>
-                )}
-                {selected.summon}
+                  );
+                  // If the prose names the item, link that word in place;
+                  // otherwise lead with the link and an en dash.
+                  const at = selected.summon.indexOf(it.name);
+                  if (at >= 0) {
+                    return (
+                      <>
+                        {selected.summon.slice(0, at)}
+                        {link}
+                        {selected.summon.slice(at + it.name.length)}
+                      </>
+                    );
+                  }
+                  return <>{link}{' – '}{selected.summon}</>;
+                })()}
               </span>
             </div>
             <div className={styles.detailRow}>
