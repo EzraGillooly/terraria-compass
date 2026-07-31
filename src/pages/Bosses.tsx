@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
-import { usePack } from '../lib/app-context';
+import { usePack, useAppState } from '../lib/app-context';
 import type { BossDef, BossDrop } from '../data/bosses';
 import type { Item } from '../data/schema';
 import styles from './Bosses.module.css';
@@ -23,6 +23,9 @@ function dropToItem(d: BossDrop): Item {
     source: d.source ?? '',
     why: '',
     effect: d.effect,
+    stats: d.stats,
+    dropRate: d.dropRate,
+    notes: d.notes,
     subclass: d.subclass,
     materials: d.materials,
     wikiUrl: d.wikiUrl,
@@ -33,6 +36,24 @@ function dropToItem(d: BossDrop): Item {
 }
 
 const isDrop = (d: string | BossDrop): d is BossDrop => typeof d === 'object';
+
+/* Whether the current world/Calamity settings can actually get this drop. A drop
+   with no `mode` drops in every mode; the rest are gated so a Classic world greys
+   its Expert-bag items, and so on. */
+function dropObtainable(mode: BossDrop['mode'], difficulty: string, calamityMode: string): boolean {
+  if (!mode) return true;
+  if (mode === 'expert') return difficulty === 'expert';
+  if (mode === 'revengeance') return calamityMode === 'revengeance' || calamityMode === 'death';
+  if (mode === 'death') return calamityMode === 'death';
+  return false; // master - not modeled by the difficulty filter
+}
+
+const LOCK_LABEL: Record<NonNullable<BossDrop['mode']>, string> = {
+  expert: 'Expert worlds only',
+  revengeance: 'Revengeance or Death only',
+  death: 'Death Mode only',
+  master: 'Master Mode only',
+};
 
 // Display labels for the detail-panel stage tag. Falls back to the phase name for
 // stages not listed here (e.g. a mod's own stages).
@@ -99,6 +120,7 @@ function BossSlot({
 
 export function Bosses() {
   const { phases, bosses } = usePack();
+  const { difficulty, calamityMode } = useAppState();
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
   const [modalItem, setModalItem] = useState<Item | null>(null);
@@ -270,19 +292,21 @@ export function Bosses() {
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Drops</span>
               <span className={styles.drops}>
-                {selected.drops.map((d) => (isDrop(d)
-                  ? (
+                {selected.drops.map((d) => {
+                  if (!isDrop(d)) return <span key={d} className={`${styles.dropPill} pixel-frame`}>{d}</span>;
+                  const locked = !dropObtainable(d.mode, difficulty, calamityMode);
+                  return (
                     <button
                       key={d.name}
                       type="button"
-                      className={`${styles.dropPill} ${styles.dropPillBtn} pixel-frame`}
+                      className={`${styles.dropPill} ${styles.dropPillBtn} ${locked ? styles.dropLocked : ''} pixel-frame`}
+                      title={locked && d.mode ? LOCK_LABEL[d.mode] : undefined}
                       onClick={() => setModalItem(dropToItem(d))}
                     >
                       {d.name}
                     </button>
-                  )
-                  : <span key={d} className={`${styles.dropPill} pixel-frame`}>{d}</span>
-                ))}
+                  );
+                })}
               </span>
             </div>
           </div>

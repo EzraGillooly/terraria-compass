@@ -307,6 +307,10 @@
 .dropPillBtn { border: 0; cursor: pointer; transition: transform .1s, --px-fill .12s; }
 .dropPillBtn:hover { --px-fill: var(--warm); --px-border: var(--warm); transform: translateY(-1px); }
 .dropPillBtn:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
+/* A drop the current world/Calamity mode cannot get - dimmed, but still openable
+   so the reader can see what it is and why it is gated. */
+.dropLocked { opacity: .4; filter: grayscale(.55); }
+.dropLocked:hover { --px-fill: color-mix(in oklab, var(--warm) 82%, #fff); --px-border: color-mix(in oklab, var(--warm) 82%, #fff); transform: none; }
 
 /* The summon item is a link-styled button in the Summon row - underlined so it
    reads as "click to see how to craft it". */

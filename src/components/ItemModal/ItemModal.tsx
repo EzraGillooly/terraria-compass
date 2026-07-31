@@ -184,6 +184,11 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           {item.stats && (
             <div className={styles.kvRow}><span className={styles.kvKey}>Stats</span><span>{item.stats}</span></div>
           )}
+          {/* Drop rate sits with the stats. On a boss drop the source is implied
+              (it is from that boss), so those omit `source` and show this instead. */}
+          {item.dropRate && (
+            <div className={styles.kvRow}><span className={styles.kvKey}>Drop rate</span><span>{item.dropRate}</span></div>
+          )}
           {/* A few entries are category guidance ("Any Double Jump") or buff
               states rather than single items, so they have no acquisition line.
               Omit the row instead of printing an empty one. */}
