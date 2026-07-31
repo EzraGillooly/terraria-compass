@@ -241,8 +241,11 @@ export function Bosses() {
         {/* ── Detail panel ── */}
         <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
           <div className={`${styles.detailIcon} pixel-frame`}>
+            {/* the big card shows the animated sprite where one exists; key on the
+                boss id so React swaps the <img> (and restarts the gif) per boss */}
             <img
-              src={`${BASE}icons/bosses/${selected.id}.png`}
+              key={selected.id}
+              src={`${BASE}icons/bosses/${selected.id}.${selected.animated ? 'gif' : 'png'}`}
               alt={selected.name}
               width="64"
               height="64"

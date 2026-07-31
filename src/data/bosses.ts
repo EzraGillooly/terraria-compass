@@ -52,6 +52,9 @@ export interface BossDef {
   drops: (string | BossDrop)[];
   blurb: string;
   color: string;
+  /** an animated bosses/<id>.gif exists; the big detail card uses it (the small
+   *  roadmap icons stay the static .png). */
+  animated?: boolean;
 }
 
 export const bosses: BossDef[] = [
@@ -107,18 +110,44 @@ export const bosses: BossDef[] = [
     ],
     blurb: 'A giant slime with a ninja trapped inside. It teleports, spawns smaller slimes, and shrinks as it loses health.',
     color: '#5BB3FF',
+    animated: true,
   },
   {
     id: 'eye-of-cthulhu',
     role: 'recommended',
-    unlocks: 'Demonite / Crimtane Ore, and the Corruption or Crimson spreads faster afterwards',
+    unlocks: 'Drops a stack of Demonite or Crimtane Ore (world-dependent) - the first upgrade ore, enough to craft the Nightmare or Deathbringer Pickaxe and start mining the evil biome’s deeper ores. If the world has no Altar it also drops one.',
     name: 'Eye of Cthulhu',
     stage: 'pre-bosses',
     tier: 1,
-    summon: 'Craft a Suspicious Looking Eye at a Demon Altar, or wait for a natural spawn once you have 200 HP and 3 Demonite Ore.',
-    drops: ['Demonite Ore', 'Corrupt Seeds', 'Binoculars', 'Eye of Cthulhu Mask', 'Shield of Cthulhu (Expert)'],
+    summon: 'Use it at night to summon the Eye. It can also spawn on its own at night once you have 200 HP and a few defeated town NPCs.',
+    summonItem: {
+      name: 'Suspicious Looking Eye',
+      icon: 'items/suspicious-looking-eye.png',
+      slot: 'summon',
+      effect: 'Summons the Eye of Cthulhu when used at night.',
+      source: 'Crafted at a Demon or Crimson Altar',
+      wikiUrl: 'https://terraria.wiki.gg/wiki/Suspicious_Looking_Eye',
+      materials: [
+        { name: 'Lens', qty: 6, wikiUrl: 'https://terraria.wiki.gg/wiki/Lens' },
+      ],
+    },
+    drops: [
+      { name: 'Binoculars', icon: 'items/binoculars.png', slot: 'tool',
+        effect: 'Hold to zoom the camera out for a wider view.',
+        dropRate: '2.5%', wikiUrl: 'https://terraria.wiki.gg/wiki/Binoculars' },
+      { name: 'Eye of Cthulhu Mask', icon: 'items/eye-of-cthulhu-mask.png', slot: 'vanity',
+        effect: 'A vanity mask shaped like the Eye of Cthulhu.',
+        dropRate: '14.29%', wikiUrl: 'https://terraria.wiki.gg/wiki/Eye_of_Cthulhu_Mask' },
+      { name: "Badger's Hat", icon: 'items/badgers-hat.png', slot: 'vanity',
+        effect: 'A promotional vanity hat - only drops if the Eye is beaten on the same day as the Wall of Flesh.',
+        dropRate: '100% (conditional)', wikiUrl: 'https://terraria.wiki.gg/wiki/Badger%27s_Hat' },
+      { name: 'Shield of Cthulhu', icon: 'accessories/shield-of-cthulhu.png', slot: 'accessory', mode: 'expert',
+        effect: 'Dash into enemies to damage and knock them back; also cancels fall damage.',
+        dropRate: '100% (Expert Treasure Bag)', wikiUrl: 'https://terraria.wiki.gg/wiki/Shield_of_Cthulhu' },
+    ],
     blurb: 'Summoned at night with a Suspicious Looking Eye. It circles and spawns Servants until half health, then stops summoning and charges instead.',
     color: '#E84A4A',
+    animated: true,
   },
   {
     id: 'eater-of-worlds',
