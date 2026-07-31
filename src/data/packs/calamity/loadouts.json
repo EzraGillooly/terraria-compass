@@ -1097,42 +1097,6 @@
         "subclass": "gun"
       },
       {
-        "id": "molotov-cocktail",
-        "name": "Molotov Cocktail",
-        "slot": "weapon",
-        "icon": "calamity/molotov-cocktail.png",
-        "source": "Crafted at a By Hand",
-        "why": "area fire damage",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molotov_Cocktail",
-        "materials": [
-          {
-            "name": "Ale",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ale"
-          },
-          {
-            "name": "Gel",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Gel"
-          },
-          {
-            "name": "Silk",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
-          },
-          {
-            "name": "Torch",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
-          }
-        ],
-        "station": "By Hand",
-        "effect": "Upon hitting a solid object or enemy, it will explode and release 6 Molotov Fire light emitting projectiles, which can hit up to 3 targets. These smaller projectiles deal 50% damage (11 base damage), apply no knockback and inflict the On Fire! debuff on enemies for 3\u20136 seconds."
-      },
-      {
         "id": "paintball-gun",
         "name": "Paintball Gun",
         "slot": "weapon",
@@ -1177,7 +1141,7 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       }
     ],
     "armor": [
@@ -7568,20 +7532,7 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "gun"
-      },
-      {
-        "id": "spiky-ball",
-        "name": "Spiky Ball",
-        "slot": "weapon",
-        "icon": "calamity/spiky-ball.png",
-        "source": "Dropped by all goblins during the Goblin Army event, and can be purchased from the Goblin Tinkerer for 80 CC each",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spiky_Ball",
-        "tier": "other",
-        "effect": "If not destroyed, they will automatically vanish after 1 minute and 20 seconds. [ 1 ] They can also be directly thrown at enemies, but they have a very short arc and quickly fall to the ground. Spiky Balls have a 199/400 (49.75%) chance of being dropped by all goblins during the Goblin Army event (except for the Goblin Warlock), and can be purchased from the Goblin Tinkerer for 80 CC each."
+        "subclass": "flamethrower"
       }
     ],
     "armor": [
@@ -15051,7 +15002,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
         "tier": "good",
         "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "gun",
+        "subclass": "other",
         "materials": [
           {
             "name": "Flare Gun",
@@ -15083,7 +15034,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magna_Cannon",
         "tier": "good",
         "effect": "While holding, the player channels a glowing blue orb at the tip of the gun and loads one crystal bolt every 0.15 seconds. After channeling for 2.3 seconds, the orb reaches maximum power, increasing the amount of loaded bolts to 20.",
-        "subclass": "gun",
+        "subclass": "other",
         "materials": [
           {
             "name": "Granite Block",
@@ -15120,7 +15071,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Opal_Striker",
         "tier": "other",
         "effect": "While holding, the player channels a glowing orange orb at the tip of the gun which reaches its maximum power after 1.47 seconds. Releasing while fully charged discharges a charged bolt which deals 500% damage and 300% knockback, inflicts the Hellfire debuff, and pierces twice.",
-        "subclass": "gun",
+        "subclass": "other",
         "materials": [
           {
             "name": "Marble Block",
@@ -15166,19 +15117,6 @@
         "station": "Iron Anvil or Lead Anvil",
         "effect": "When used, it converts Wooden Arrows into Flaming Arrows, causing them to inflict the On Fire! debuff on hit.",
         "subclass": "bow"
-      },
-      {
-        "id": "spiky-ball",
-        "name": "Spiky Ball",
-        "slot": "weapon",
-        "icon": "calamity/spiky-ball.png",
-        "source": "Dropped by all goblins during the Goblin Army event, and can be purchased from the Goblin Tinkerer for 80 CC each",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spiky_Ball",
-        "tier": "other",
-        "effect": "If not destroyed, they will automatically vanish after 1 minute and 20 seconds. [ 1 ] They can also be directly thrown at enemies, but they have a very short arc and quickly fall to the ground. Spiky Balls have a 199/400 (49.75%) chance of being dropped by all goblins during the Goblin Army event (except for the Goblin Warlock), and can be purchased from the Goblin Tinkerer for 80 CC each."
       }
     ],
     "armor": [
@@ -22362,7 +22300,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
         "tier": "good",
         "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "gun",
+        "subclass": "other",
         "materials": [
           {
             "name": "Flare Gun",
@@ -22438,7 +22376,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "subclass": "other"
       },
       {
         "id": "shadethrower",
@@ -22452,7 +22391,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       }
     ],
     "armor": [
@@ -30043,7 +29982,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "subclass": "other"
       },
       {
         "id": "gunk-shot",
@@ -30126,7 +30066,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
         "tier": "other",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       }
     ],
     "armor": [
@@ -38033,7 +37973,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ursa_Sergeant"
           }
         ],
-        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed."
+        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
+        "subclass": "other"
       },
       {
         "id": "uzi",
@@ -47313,7 +47254,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
           }
         ],
-        "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds."
+        "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds.",
+        "subclass": "other"
       },
       {
         "id": "daedalus-stormbow",
@@ -47416,7 +47358,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ursa_Sergeant"
           }
         ],
-        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed."
+        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -56226,7 +56169,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
           }
         ],
-        "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds."
+        "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds.",
+        "subclass": "other"
       },
       {
         "id": "flak-toxicannon",
@@ -56254,7 +56198,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "megashark",
@@ -65152,7 +65096,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "pulse-bow",
@@ -73813,7 +73757,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladedge_Railbow",
         "tier": "best",
         "effect": "It fires out 4 arrows at once, quickly followed by a pair of leaves. The leaves inflict no knockback and deal 70% of the weapon's base damage.",
-        "subclass": "bow",
+        "subclass": "repeater",
         "materials": [
           {
             "name": "Perennial Bar",
@@ -73918,7 +73862,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wildfire_Bloom",
         "tier": "other",
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used, it fires a long burst of green flames at a moderate range.",
-        "subclass": "gun",
+        "subclass": "flamethrower",
         "materials": [
           {
             "name": "Flamethrower",
@@ -83033,7 +82977,8 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nullification_Pistol",
-        "effect": "It does not use any ammo."
+        "effect": "It does not use any ammo.",
+        "subclass": "other"
       },
       {
         "id": "snowman-cannon",
@@ -92658,7 +92603,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
           }
         ],
-        "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time."
+        "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time.",
+        "subclass": "other"
       },
       {
         "id": "nullification-pistol",
@@ -92671,7 +92617,8 @@
         "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nullification_Pistol",
-        "effect": "It does not use any ammo."
+        "effect": "It does not use any ammo.",
+        "subclass": "other"
       },
       {
         "id": "stynger",
@@ -102355,7 +102302,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
           }
         ],
-        "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time."
+        "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time.",
+        "subclass": "other"
       },
       {
         "id": "dead-suns-wind",
@@ -102377,7 +102325,7 @@
           }
         ],
         "effect": "When used, it fires high-velocity blasts of cosmic plasma that cause explosions on enemy hits, each explosion dealing 150% of the weapon's damage and increasing in size with consecutive hits. The plasma blasts can also ricochet off tiles, after which they gain the ability to home in aggressively on nearby enemies.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "plague-tainted-smg",
@@ -112350,7 +112298,7 @@
           }
         ],
         "effect": "Holding left-click will fire four barracudas that latch on to enemies and deal continuous damage as long as left-click is held down. After an enemy dies, the barracudas will automatically latch onto other enemies in range.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "clockwork-bow",
@@ -112497,7 +112445,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
           }
         ],
-        "effect": "When held, it charges up a handheld buzzsaw which deals 150% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 6 pierce over 2 seconds."
+        "effect": "When held, it charges up a handheld buzzsaw which deals 150% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 6 pierce over 2 seconds.",
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -121536,7 +121485,7 @@
           }
         ],
         "effect": "It uses health for ammunition, with a 20% chance to not consume ammo. When used, it fires two long and continuous streams of bloodfire.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "ontological-despoiler",
@@ -121568,7 +121517,7 @@
           }
         ],
         "effect": "It does not consume any ammo.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "spyker",
@@ -129936,7 +129885,7 @@
           }
         ],
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used with its primary fire (\u2692 Use / Attack), it fires a rapid burst of five blue comets that pierce four times.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "monsoon",
@@ -130029,7 +129978,7 @@
           }
         ],
         "effect": "It is one of the final upgrades to the Magna Cannon and Opal Striker, alongside the Ontological Despoiler. While holding, the player channels a glowing blue orb at the tip of the cannon which increases in charge level every second, as indicated by a pulse.",
-        "subclass": "gun"
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -139209,7 +139158,7 @@
           }
         ],
         "effect": "When used, it fires a large spread of purple flames that pierce infinitely, pass through tiles, and inflict the God Slayer Inferno debuff on hit.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "onyxia",
@@ -148800,7 +148749,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "starmada",
@@ -148832,7 +148781,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "tyrannys-end",
@@ -168574,7 +168523,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "starmada",
@@ -168606,7 +168555,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "tyrannys-end",
@@ -178035,7 +177984,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Surge_Driver",
-        "effect": "Holding \u2692 Use / Attack (default: Left Click) fires a laser beam which creates a large glowing explosion upon hitting an enemy or tile. The laser beam deals 600% base damage while the large explosion deals 300% base damage, and both attacks inflict the Miracle Blight debuff."
+        "effect": "Holding \u2692 Use / Attack (default: Left Click) fires a laser beam which creates a large glowing explosion upon hitting an enemy or tile. The laser beam deals 600% base damage while the large explosion deals 300% base damage, and both attacks inflict the Miracle Blight debuff.",
+        "subclass": "gun"
       },
       {
         "id": "photoviscerator",
@@ -178070,7 +178020,8 @@
           }
         ],
         "station": "Draedon's Forge",
-        "effect": "It uses Gel for ammunition, with a 95% chance to not consume ammo."
+        "effect": "It uses Gel for ammunition, with a 95% chance to not consume ammo.",
+        "subclass": "flamethrower"
       },
       {
         "id": "aces-high",
@@ -178135,7 +178086,7 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dragon's_Breath",
         "effect": "It uses Gel for ammunition, with an 80% chance to not consume ammo. When used, it fires a stream of fireballs that pierce infinitely but lose 5% damage per hit.",
-        "subclass": "gun"
+        "subclass": "flamethrower"
       },
       {
         "id": "starmada",
@@ -178167,7 +178118,7 @@
           }
         ],
         "effect": "These attacks can be used independently. Timing these attacks together increases damage and reduces the spread of star shots, while boosting the number of star shots fired.",
-        "subclass": "gun"
+        "subclass": "other"
       },
       {
         "id": "tyrannys-end",

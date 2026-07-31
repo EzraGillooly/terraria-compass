@@ -42,19 +42,34 @@
     "blurb": "Ammo-based damage dealer relying on guns, bows, and launchers for strong sustained ranged DPS at the cost of managing ammunition.",
     "subclasses": [
       {
+        "id": "repeater",
+        "name": "Repeaters",
+        "description": "Auto-firing arrow weapons."
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrowers",
+        "description": "Fuel-burning close-range ranged weapons."
+      },
+      {
         "id": "bow",
         "name": "Bows",
-        "description": "Arrow-based ranged setups that scale especially well with ammo effects."
+        "description": "Arrow-firing bows."
       },
       {
         "id": "gun",
         "name": "Guns",
-        "description": "Bullet-firing ranged builds built around sustained pressure."
+        "description": "Bullet-firing ranged weapons."
       },
       {
         "id": "launcher",
         "name": "Launchers",
-        "description": "Rocket-heavy ranged weapons with explosive crowd control."
+        "description": "Rocket-firing ranged weapons."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Miscellaneous ranged weapons that fit no standard type."
       }
     ]
   },
