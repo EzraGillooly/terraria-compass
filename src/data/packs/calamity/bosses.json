@@ -4540,17 +4540,116 @@
     "stage": "cal-pre-exo",
     "tier": 0,
     "side": false,
-    "summon": "Press the Contact button on a fully completed Codebreaker",
+    "summon": "Fought after Yharon, alongside Supreme Calamitas. Summoned by activating Draedon at the Codebreaker (built from Draedon\u2019s Log and lab schematics) - choose which mech spawns first.",
     "drops": [
-      "Exo Prism",
-      "Ares' Exoskeleton",
-      "Photon Ripper",
-      "Spine of Thanatos",
-      "Surge Driver",
-      "The Atom Splitter"
+      {
+        "name": "Photon Ripper",
+        "icon": "calamity/photon-ripper.png",
+        "slot": "weapon",
+        "subclass": "melee",
+        "effect": "Projects a directed stream of hardlight teeth at ultra-high velocity.",
+        "stats": "1400 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Photon_Ripper"
+      },
+      {
+        "name": "Spine of Thanatos",
+        "icon": "calamity/spine-of-thanatos.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "Releases three fast metallic whips that collide and explode.",
+        "stats": "128 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spine_of_Thanatos"
+      },
+      {
+        "name": "The Jailor",
+        "icon": "calamity/the-jailor.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Releases electric mines that connect to each other with damaging beams.",
+        "stats": "235 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Jailor"
+      },
+      {
+        "name": "Surge Driver",
+        "icon": "calamity/surge-driver.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A charge-up cannon that fires a powerful piercing plasma round.",
+        "stats": "156 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Surge_Driver"
+      },
+      {
+        "name": "Ares\u2019 Exoskeleton",
+        "icon": "calamity/ares-exoskeleton.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a configurable panel of Exo arm minions to fight for you.",
+        "stats": "625 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ares%27_Exoskeleton"
+      },
+      {
+        "name": "Atlas Munitions Beacon",
+        "icon": "calamity/atlas-munitions-beacon.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons an Exo sentry that bombards enemies with munitions.",
+        "stats": "200 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Atlas_Munitions_Beacon"
+      },
+      {
+        "name": "The Atom Splitter",
+        "icon": "calamity/the-atom-splitter.png",
+        "slot": "weapon",
+        "subclass": "javelin",
+        "effect": "Throws a quantum-superimposed javelin that strikes from numerous positions.",
+        "stats": "296 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Atom_Splitter"
+      },
+      {
+        "name": "Refraction Rotor",
+        "icon": "calamity/refraction-rotor.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a huge prismatic shuriken that shatters into homing shards.",
+        "stats": "240 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Refraction_Rotor"
+      },
+      {
+        "name": "Exo Prism",
+        "icon": "calamity/exo-prism.png",
+        "slot": "material",
+        "effect": "Top-tier crafting material for the Exo weapons and endgame armor.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exo_Prism"
+      },
+      {
+        "name": "Exo Box",
+        "icon": "calamity/exo-box.png",
+        "slot": "mount",
+        "effect": "Summons a rideable hovering Exo box mount.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exo_Box"
+      },
+      {
+        "name": "Draedon Mask",
+        "icon": "calamity/draedon-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask of Draedon, the Exo Mechs' creator.",
+        "dropRate": "28.57%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Draedon_Mask"
+      }
     ],
-    "blurb": "Draedon's ultimate war machines - Ares, Thanatos, and Artemis & Apollo - fought together as one of the two final bosses.",
-    "color": "#2FD0C4"
+    "blurb": "Three Exo Mechs - Ares, the Apollo & Artemis twins, and Thanatos - fought as one battle. You pick which spawns first, then they combine and swap in as their health drops.",
+    "color": "#2FD0C4",
+    "unlocks": "Together with Supreme Calamitas, one of the two final bosses. Its Exo Prisms craft the top-tier Exo weapons and the Auric Tesla / endgame armor sets."
   },
   {
     "id": "supreme-witch-calamitas",
