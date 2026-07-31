@@ -35,7 +35,7 @@ function MaterialLink(
 const SLOT_LABEL: Record<string, string> = {
   weapon: 'Weapon', armor: 'Armor', accessory: 'Accessory', buff: 'Buff',
   ammo: 'Ammo', material: 'Material', vanity: 'Vanity', mount: 'Mount',
-  tool: 'Tool', summon: 'Summon',
+  tool: 'Tool', summon: 'Summon', pet: 'Pet',
 };
 
 const OVERRIDES: Record<string, string> = {
