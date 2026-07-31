@@ -1,3 +1,28 @@
+/**
+ * A boss drop or summon item rich enough to open the shared ItemModal - the same
+ * card weapons and accessories use on the Loadouts page. `mode` gates it to a
+ * difficulty (undefined = drops in every mode); the Drops row greys anything the
+ * current world/Calamity mode cannot get. A plain string drop still works (older
+ * bosses not yet converted) and renders as a non-clickable pill.
+ */
+export interface BossDrop {
+  name: string;
+  /** icons/ path, e.g. "calamity/sahara-slicers.png" */
+  icon: string;
+  /** display type for the modal subtitle: weapon | accessory | vanity | summon | material | ... */
+  slot?: string;
+  subclass?: string;
+  /** what it does - the modal's one-line subtext */
+  effect?: string;
+  /** how it drops, e.g. "25% · one of five weapons" or "Treasure Bag" */
+  source?: string;
+  /** difficulty gate; omitted = every mode */
+  mode?: 'expert' | 'revengeance' | 'death' | 'master';
+  wikiUrl?: string;
+  /** craft recipe, shown for a summon item so the reader can make it */
+  materials?: { name: string; qty: number; wikiUrl?: string }[];
+}
+
 export interface BossDef {
   id: string;
   name: string;
@@ -18,7 +43,9 @@ export interface BossDef {
   /** world-variant boss (corruption | crimson) */
   world?: string;
   summon: string;
-  drops: string[];
+  /** the craftable/obtainable item that summons it, clickable in the Summon row */
+  summonItem?: BossDrop;
+  drops: (string | BossDrop)[];
   blurb: string;
   color: string;
 }

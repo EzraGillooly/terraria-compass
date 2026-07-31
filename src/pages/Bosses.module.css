@@ -288,6 +288,7 @@
   .detailVal { min-height: 6em; }
 }
 .dropPill {
+  font-family: var(--body);
   font-weight: 700;
   font-size: 11.5px;
   color: #0b1524;
@@ -301,6 +302,26 @@
   justify-content: center;
   white-space: nowrap;
 }
+/* A drop with modal data is a button - same pill, but it lifts on hover to read
+   as clickable, like the weapon tiles on Loadouts. */
+.dropPillBtn { border: 0; cursor: pointer; transition: transform .1s, --px-fill .12s; }
+.dropPillBtn:hover { --px-fill: var(--warm); --px-border: var(--warm); transform: translateY(-1px); }
+.dropPillBtn:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
+
+/* The summon item is a link-styled button in the Summon row - underlined so it
+   reads as "click to see how to craft it". */
+.summonLink {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--warm);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.summonLink:hover { color: #fff; }
+.summonLink:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
 
 @media (max-width: 620px) {
   .detail { flex-direction: column; align-items: flex-start; margin-inline: 16px; }

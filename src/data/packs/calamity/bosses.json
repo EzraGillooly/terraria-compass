@@ -22,17 +22,106 @@
     "stage": "cal-pre-boss",
     "tier": 1,
     "side": false,
-    "summon": "Use the Desert Medallion in the Desert or Underground Desert.",
+    "summon": "Use it in the Desert or Underground Desert.",
     "drops": [
-      "Pearl Shard",
-      "Sahara Slicers",
-      "Barinade",
-      "Sandstream Scepter",
-      "Scourge of the Desert",
-      "Sand Cloak"
+      {
+        "name": "Sahara Slicers",
+        "icon": "calamity/sahara-slicers.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "When swung, a pair of dual daggers rapidly stab in front of the player. Hitting an enemy with one of the daggers will spawn 2 bolts which appear behind the player, up to a maximum of 10.",
+        "source": "25% \u00b7 one of five weapons",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sahara_Slicers"
+      },
+      {
+        "name": "Barinade",
+        "icon": "calamity/barinade.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "Fires two converging high-velocity fin arrows that soar through the air.",
+        "source": "25% \u00b7 one of five weapons",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Barinade"
+      },
+      {
+        "name": "Sandstream Scepter",
+        "icon": "calamity/sandstream-scepter.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Fires an explosive stream of sand that detonates when the projectile expires.",
+        "source": "25% \u00b7 one of five weapons",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sandstream_Scepter"
+      },
+      {
+        "name": "Brittle Star Staff",
+        "icon": "calamity/brittle-star-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "When used, it summons a Brittle Star minion, which follows the player and attacks enemies by dashing at them to deal damage. Brittle stars hit up to 4 enemies before shattering, quickly regenerating afterwards.",
+        "source": "25% \u00b7 one of five weapons",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff"
+      },
+      {
+        "name": "Scourge of the Desert",
+        "icon": "calamity/scourge-of-the-desert.png",
+        "slot": "weapon",
+        "subclass": "javelin",
+        "effect": "When used, it throws a javelin that burrows into tiles and launches itself towards the closest enemy when burrowing through tiles. Thrown javelins are slightly affected by gravity and pierce twice.",
+        "source": "25% \u00b7 one of five weapons",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scourge_of_the_Desert"
+      },
+      {
+        "name": "Sand Cloak",
+        "icon": "calamity/sand-cloak.png",
+        "slot": "accessory",
+        "effect": "Dashing creates a protective sand veil that damages enemies and grants +3 defense and 75% acceleration inside it.",
+        "source": "25%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Cloak"
+      },
+      {
+        "name": "Ocean Crest",
+        "icon": "calamity/ocean-crest.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Recover air while standing still underwater, and 15% increased mining speed while wet.",
+        "source": "Treasure Bag",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ocean_Crest"
+      },
+      {
+        "name": "Desert Scourge Mask",
+        "icon": "calamity/desert-scourge-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask modeled on the Desert Scourge.",
+        "source": "14.29%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Desert_Scourge_Mask"
+      }
     ],
     "blurb": "A colossal sea serpent adapted to the sands, serving as Calamity's intended first boss.",
-    "color": "#d9b45b"
+    "color": "#d9b45b",
+    "summonItem": {
+      "name": "Desert Medallion",
+      "icon": "calamity/desert-medallion.png",
+      "slot": "summon",
+      "effect": "Summons the Desert Scourge when used in the Desert; enrages elsewhere. Reusable.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Desert_Medallion",
+      "materials": [
+        {
+          "name": "Any Sand Block",
+          "qty": 40
+        },
+        {
+          "name": "Antlion Mandible",
+          "qty": 4,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Antlion_Mandible"
+        },
+        {
+          "name": "Stormlion Mandible",
+          "qty": 2,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stormlion_Mandible"
+        }
+      ]
+    },
+    "unlocks": "Sandstorms can now occur naturally, and the Sunken Sea opens up - fish there for the Sparkling Empress and Sea Spirit Amulet, and Giant Clams start to spawn. Prism-Backs begin dropping Prism Shards, and Ghost Bells drop Voltaic Jelly."
   },
   {
     "id": "eye-of-cthulhu",

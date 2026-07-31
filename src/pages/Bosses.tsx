@@ -2,11 +2,37 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { ItemModal } from '../components/ItemModal/ItemModal';
 import { usePack } from '../lib/app-context';
-import type { BossDef } from '../data/bosses';
+import type { BossDef, BossDrop } from '../data/bosses';
+import type { Item } from '../data/schema';
 import styles from './Bosses.module.css';
 
 const BASE = import.meta.env.BASE_URL;
+
+/* Bridge a boss drop / summon item into the shape the shared ItemModal wants, so
+   a drop opens the same card weapons do. slot is cast because a drop's type
+   ("vanity", "summon", ...) is broader than a loadout item's slot enum - the
+   modal only uses it for a label and falls back to the raw string. */
+function dropToItem(d: BossDrop): Item {
+  return {
+    id: d.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+    name: d.name,
+    slot: (d.slot ?? 'accessory') as Item['slot'],
+    icon: d.icon,
+    source: d.source ?? '',
+    why: '',
+    effect: d.effect,
+    subclass: d.subclass,
+    materials: d.materials,
+    wikiUrl: d.wikiUrl,
+    tags: [],
+    topPick: false,
+    tier: 'good',
+  } as Item;
+}
+
+const isDrop = (d: string | BossDrop): d is BossDrop => typeof d === 'object';
 
 // Display labels for the detail-panel stage tag. Falls back to the phase name for
 // stages not listed here (e.g. a mod's own stages).
@@ -75,6 +101,7 @@ export function Bosses() {
   const { phases, bosses } = usePack();
   const [selectedId, setSelectedId] = useState<string>('eye-of-cthulhu');
   const [showHardmode, setShowHardmode] = useState(false);
+  const [modalItem, setModalItem] = useState<Item | null>(null);
 
   // Bosses grouped by the active pack's phases, optional ones first within each
   // stage so they read before the boss that gates progress. Recomputed when the
@@ -218,7 +245,21 @@ export function Bosses() {
             <p className={styles.detailBlurb}>{selected.blurb}</p>
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Summon</span>
-              <span className={styles.detailVal}>{selected.summon}</span>
+              <span className={styles.detailVal}>
+                {selected.summonItem && (
+                  <>
+                    <button
+                      type="button"
+                      className={styles.summonLink}
+                      onClick={() => setModalItem(dropToItem(selected.summonItem!))}
+                    >
+                      {selected.summonItem.name}
+                    </button>
+                    {' – '}
+                  </>
+                )}
+                {selected.summon}
+              </span>
             </div>
             <div className={styles.detailRow}>
               <span className={styles.detailKey}>Unlocks</span>
@@ -227,14 +268,28 @@ export function Bosses() {
               </span>
             </div>
             <div className={styles.detailRow}>
-              <span className={styles.detailKey}>Key Drops</span>
+              <span className={styles.detailKey}>Drops</span>
               <span className={styles.drops}>
-                {selected.drops.map((d) => <span key={d} className={`${styles.dropPill} pixel-frame`}>{d}</span>)}
+                {selected.drops.map((d) => (isDrop(d)
+                  ? (
+                    <button
+                      key={d.name}
+                      type="button"
+                      className={`${styles.dropPill} ${styles.dropPillBtn} pixel-frame`}
+                      onClick={() => setModalItem(dropToItem(d))}
+                    >
+                      {d.name}
+                    </button>
+                  )
+                  : <span key={d} className={`${styles.dropPill} pixel-frame`}>{d}</span>
+                ))}
               </span>
             </div>
           </div>
         </div>
       </section>
+
+      <ItemModal item={modalItem} onClose={() => setModalItem(null)} />
 
       <div className={styles.footerLayer}>
         <Footer flush />
