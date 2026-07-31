@@ -115,7 +115,7 @@ export const bosses: BossDef[] = [
   {
     id: 'eye-of-cthulhu',
     role: 'recommended',
-    unlocks: 'Drops a stack of Demonite or Crimtane Ore (world-dependent) - enough to craft the Nightmare or Deathbringer Pickaxe, the first pickaxes that can mine Hellstone.',
+    unlocks: 'Drops a stack of Demonite or Crimtane Ore (world-dependent) - enough to craft the Nightmare or Deathbringer Pickaxe.',
     name: 'Eye of Cthulhu',
     stage: 'pre-bosses',
     tier: 1,
