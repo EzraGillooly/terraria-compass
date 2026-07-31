@@ -1021,16 +1021,100 @@
     "stage": "cal-pre-wof",
     "tier": 0,
     "side": true,
-    "summon": "Use a Deer Thing in a Snow biome at night, or spawns during a Blizzard.",
+    "summon": "Use it in a Snow biome at night. Deerclops can also spawn on its own during a Blizzard.",
     "drops": [
-      "Eye Bone",
-      "Weather Pain",
-      "Houndius Shootius",
-      "Pew-matic Horn",
-      "Lucy the Axe"
+      {
+        "name": "Pew-matic Horn",
+        "icon": "items/pew-matic-horn.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires random projectiles - bullets, coins, darts, and more.",
+        "stats": "20 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pew-matic_Horn"
+      },
+      {
+        "name": "Weather Pain",
+        "icon": "items/weather-pain.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A hammer that launches a controllable cloud dealing area damage.",
+        "stats": "13 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain"
+      },
+      {
+        "name": "Houndius Shootius",
+        "icon": "items/houndius-shootius.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a Houndius Shootius sentry that fires eye lasers at nearby enemies.",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius"
+      },
+      {
+        "name": "Lucy the Axe",
+        "icon": "items/lucy-the-axe.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A talking axe that can be swung or thrown and returns to you.",
+        "stats": "27 damage",
+        "dropRate": "25% (one of four weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lucy_the_Axe"
+      },
+      {
+        "name": "Eye Bone",
+        "icon": "items/eye-bone.png",
+        "slot": "pet",
+        "effect": "Summons Chester, a mobile storage chest that follows you.",
+        "dropRate": "33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_Bone"
+      },
+      {
+        "name": "Eyebrella",
+        "icon": "items/eyebrella.png",
+        "slot": "vanity",
+        "effect": "A vanity umbrella-eye hat from the Don\u2019t Starve crossover.",
+        "dropRate": "33%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eyebrella"
+      },
+      {
+        "name": "Deerclops Mask",
+        "icon": "items/deerclops-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Deerclops.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Deerclops_Mask"
+      }
     ],
-    "blurb": "A one-eyed frozen cyclops from Don't Starve that slams shadow hands across the snow.",
-    "color": "#6fa8c8"
+    "blurb": "A Don't Starve crossover fought in the Snow biome. Ground-based, with a shadow attack that reaches through blocks.",
+    "color": "#6fa8c8",
+    "summonItem": {
+      "name": "Deer Thing",
+      "icon": "items/deer-thing.png",
+      "slot": "summon",
+      "effect": "Summons Deerclops when used in a Snow biome.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Deer_Thing",
+      "materials": [
+        {
+          "name": "Flinx Fur",
+          "qty": 3,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Fur"
+        },
+        {
+          "name": "Demonite or Crimtane Ore",
+          "qty": 5,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore"
+        },
+        {
+          "name": "Lens",
+          "qty": 1,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "the-slime-god",
@@ -1038,17 +1122,103 @@
     "stage": "cal-pre-wof",
     "tier": 1,
     "side": false,
-    "summon": "Use the Overloaded Sludge anywhere.",
+    "summon": "Use the Overloaded Sludge anywhere, at any time.",
     "drops": [
-      "Overloaded Blaster",
-      "Abyssal Tome",
-      "Eldritch Tome",
-      "Corroslime Staff",
-      "Crimslime Staff",
-      "Mana Polarizer"
+      {
+        "name": "Overloaded Blaster",
+        "icon": "calamity/overloaded-blaster.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "Converts gel into a spread of energized slime pearls that overload when they stop.",
+        "stats": "19 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Overloaded_Blaster"
+      },
+      {
+        "name": "Abyssal Tome",
+        "icon": "calamity/abyssal-tome.png",
+        "slot": "weapon",
+        "subclass": "spell-tome",
+        "effect": "Casts a slow-moving ball of dark energy.",
+        "stats": "22 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome"
+      },
+      {
+        "name": "Eldritch Tome",
+        "icon": "calamity/eldritch-tome.png",
+        "slot": "weapon",
+        "subclass": "spell-tome",
+        "effect": "Casts eldritch tentacles to spear your enemies.",
+        "stats": "32 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eldritch_Tome"
+      },
+      {
+        "name": "Corroslime Staff",
+        "icon": "calamity/corroslime-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a corro slime minion to fight for you.",
+        "stats": "24 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Corroslime_Staff"
+      },
+      {
+        "name": "Crimslime Staff",
+        "icon": "calamity/crimslime-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a crim slime minion to fight for you.",
+        "stats": "24 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crimslime_Staff"
+      },
+      {
+        "name": "Purified Gel",
+        "icon": "calamity/purified-gel.png",
+        "slot": "material",
+        "effect": "Calamity crafting material used for early gear and ammo.",
+        "dropRate": "100%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purified_Gel"
+      },
+      {
+        "name": "Slime God Mask (Corruption)",
+        "icon": "calamity/slime-god-mask-corruption.png",
+        "slot": "vanity",
+        "effect": "A vanity mask of the Slime God - drops in Corruption worlds.",
+        "dropRate": "7.14%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slime_God_Mask"
+      },
+      {
+        "name": "Slime God Mask (Crimson)",
+        "icon": "calamity/slime-god-mask-crimson.png",
+        "slot": "vanity",
+        "effect": "A vanity mask of the Slime God - drops in Crimson worlds.",
+        "dropRate": "7.14%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slime_God_Mask"
+      }
     ],
-    "blurb": "A tri-part gelatinous god of two paladins and an invulnerable core, Calamity's final pre-hardmode gate.",
-    "color": "#8a3a5a"
+    "blurb": "Made up of the Slime God Core and its two paladins. The core cannot be damaged, so the fight is won by defeating both paladins.",
+    "color": "#8a3a5a",
+    "summonItem": {
+      "name": "Overloaded Sludge",
+      "icon": "calamity/overloaded-sludge.png",
+      "slot": "summon",
+      "effect": "Summons The Slime God when used.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/Overloaded_Sludge",
+      "materials": [
+        {
+          "name": "Blighted Gel",
+          "qty": 40
+        },
+        {
+          "name": "Any Evil Block",
+          "qty": 40
+        }
+      ]
+    }
   },
   {
     "id": "wall-of-flesh",
@@ -1056,16 +1226,168 @@
     "stage": "cal-pre-wof",
     "tier": 2,
     "side": false,
-    "summon": "Drop a Guide Voodoo Doll into lava in the Underworld.",
+    "summon": "Throw a Guide Voodoo Doll into lava in the Underworld while the Guide is alive - it kills the Guide and spawns the Wall.",
     "drops": [
-      "Pwnhammer",
-      "Breaker Blade",
-      "Laser Rifle",
-      "Warrior Emblem",
-      "Demon Heart"
+      {
+        "name": "Pwnhammer",
+        "icon": "items/pwnhammer.png",
+        "slot": "tool",
+        "effect": "Smashes Demon and Crimson Altars, seeding the world with Hardmode ores.",
+        "stats": "26 damage",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pwnhammer"
+      },
+      {
+        "name": "Breaker Blade",
+        "icon": "items/breaker-blade.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A heavy, slow broadsword with very high base damage.",
+        "stats": "70 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Breaker_Blade"
+      },
+      {
+        "name": "Clockwork Assault Rifle",
+        "icon": "items/clockwork-assault-rifle.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires a three-round burst with each shot.",
+        "stats": "17 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Clockwork_Assault_Rifle"
+      },
+      {
+        "name": "Meowthrower",
+        "icon": "calamity/meowthrower.png",
+        "slot": "weapon",
+        "subclass": "flamethrower",
+        "effect": "A flamethrower that occasionally launches homing feline projectiles.",
+        "stats": "29 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meowthrower"
+      },
+      {
+        "name": "Laser Rifle",
+        "icon": "items/laser-rifle.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Fires a rapid, mana-cheap laser beam.",
+        "stats": "29 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Laser_Rifle"
+      },
+      {
+        "name": "Black Hawk Remote",
+        "icon": "calamity/black-hawk-remote.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a Black Hawk jet minion that fires bullets from your inventory.",
+        "stats": "25 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Hawk_Remote"
+      },
+      {
+        "name": "Firecracker",
+        "icon": "items/firecracker.png",
+        "slot": "weapon",
+        "subclass": "whip",
+        "effect": "A whip that makes the next minion strike on the tagged enemy detonate for bonus damage.",
+        "stats": "37 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker"
+      },
+      {
+        "name": "Blast Barrel",
+        "icon": "calamity/blast-barrel.png",
+        "slot": "weapon",
+        "subclass": "rogue",
+        "effect": "Throws a rolling barrel that explodes on wall collision. Stealth strikes make it bounce twice.",
+        "stats": "32 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blast_Barrel"
+      },
+      {
+        "name": "Carnage",
+        "icon": "calamity/carnage.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword that makes enemies explode into homing blood on death.",
+        "stats": "130 damage",
+        "dropRate": "25% (one of eight weapons)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Carnage"
+      },
+      {
+        "name": "Warrior Emblem",
+        "icon": "accessories/warrior-emblem.png",
+        "slot": "accessory",
+        "effect": "Increases melee damage by 15%.",
+        "dropRate": "25% (one of five emblems)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+      },
+      {
+        "name": "Ranger Emblem",
+        "icon": "accessories/ranger-emblem.png",
+        "slot": "accessory",
+        "effect": "Increases ranged damage by 15%.",
+        "dropRate": "25% (one of five emblems)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
+      },
+      {
+        "name": "Sorcerer Emblem",
+        "icon": "accessories/sorcerer-emblem.png",
+        "slot": "accessory",
+        "effect": "Increases magic damage by 15%.",
+        "dropRate": "25% (one of five emblems)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sorcerer_Emblem"
+      },
+      {
+        "name": "Summoner Emblem",
+        "icon": "accessories/summoner-emblem.png",
+        "slot": "accessory",
+        "effect": "Increases summon damage by 15%.",
+        "dropRate": "25% (one of five emblems)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
+      },
+      {
+        "name": "Rogue Emblem",
+        "icon": "calamity/rogue-emblem.png",
+        "slot": "accessory",
+        "subclass": "rogue",
+        "effect": "Increases rogue damage by 15%.",
+        "dropRate": "25% (one of five emblems)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rogue_Emblem"
+      },
+      {
+        "name": "Wall of Flesh Mask",
+        "icon": "items/wall-of-flesh-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Wall of Flesh.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wall_of_Flesh_Mask"
+      },
+      {
+        "name": "Demon Heart",
+        "icon": "accessories/demon-heart.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Permanently unlocks a sixth accessory slot.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Heart"
+      }
     ],
-    "blurb": "The Underworld's fleshy wall whose defeat shatters the world into Hardmode.",
-    "color": "#8a2f24"
+    "blurb": "Summoned by throwing a Guide Voodoo Doll into Underworld lava. It moves across the world at a steady speed, so the fight happens on a long bridge, and it speeds up as it loses health.",
+    "color": "#8a2f24",
+    "unlocks": "Activates Hardmode: the Hallow appears, the world evil spreads faster, Hardmode ores generate once you smash Altars with the Pwnhammer, and far tougher enemies and the mechanical bosses arrive.",
+    "summonItem": {
+      "name": "Guide Voodoo Doll",
+      "icon": "items/guide-voodoo-doll.png",
+      "slot": "summon",
+      "effect": "Thrown into lava in the Underworld (while the Guide is alive) to summon the Wall of Flesh.",
+      "source": "Dropped by Voodoo Demons in the Underworld",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Guide_Voodoo_Doll"
+    },
+    "animated": true
   },
   {
     "id": "queen-slime",
