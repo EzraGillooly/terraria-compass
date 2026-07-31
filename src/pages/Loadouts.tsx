@@ -706,17 +706,18 @@ export function Loadouts() {
     ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
       .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
     : bestTier;
-  /* Inside a subclass the tiers are re-derived from position in that subclass,
-     not carried over from the whole class. `tier` only ever recorded a row's
-     place in the guide's column, so filtering to one family could leave every
-     weapon in it below "best": Pre-Mech projectile melee showed no
-     Recommended, no Also great, and "Show 2 others", and any subclass holding
-     a single weapon filed it under "Also great". Re-ranking in scope means the
-     first weapon of a family is its recommendation, and a family of one shows
-     exactly one card. */
-  const scopedBest = showingAll ? filteredBest : inScope.slice(0, 1);
-  const filteredAlso = showingAll ? [] : inScope.slice(1, 3);
-  const filteredRest = showingAll ? [] : inScope.slice(3);
+  /* Inside one open subclass the recommendation is the weapon the data ranks
+     'best' - the very pick Top Picks features for that family - so drilling into
+     a subclass surfaces the same weapon rather than whichever sorts first. The
+     guide lists a family alphabetically, so position is not a ranking; tier is
+     (that is why projectile melee recommended Blade of Grass over its top pick
+     Starfury). Falls back to first when a family has no ranked 'best', and for
+     unranked packs (see `ranked`), which keep their position order. */
+  const scopedRec = (ranked ? inScope.find((w) => w.tier === 'best') : undefined) ?? inScope[0];
+  const scopedRest = inScope.filter((w) => w !== scopedRec);
+  const scopedBest = showingAll ? filteredBest : (scopedRec ? [scopedRec] : []);
+  const filteredAlso = showingAll ? [] : scopedRest.slice(0, 2);
+  const filteredRest = showingAll ? [] : scopedRest.slice(2);
 
   // Unranked: one flat list, so no tier reads as a recommendation.
   const unrankedShown = showingAll ? filteredBest : inScope.slice(0, 3);
