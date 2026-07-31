@@ -112,20 +112,6 @@
 .phasePre { color: #04263f; --px-fill: var(--sky); --px-border: var(--sky); }
 .phaseHard { color: #0b1524; --px-fill: #e0552e; --px-border: #e0552e; }
 
-/* Hardmode gated until its bosses are converted: dimmed, not clickable. */
-.phaseBtnSoon { color: #6f7f95; cursor: not-allowed; }
-.phaseBtnSoon:hover { color: #6f7f95; }
-.soonTag {
-  font-size: 8px;
-  letter-spacing: .08em;
-  color: #0b1524;
-  background: #e0552e;
-  border-radius: var(--radius-sm);
-  padding: 1px 4px;
-  margin-left: 5px;
-  vertical-align: middle;
-}
-
 .rail {
   display: flex;
   align-items: flex-start;

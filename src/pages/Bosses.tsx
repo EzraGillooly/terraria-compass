@@ -250,17 +250,14 @@ export function Bosses() {
             >
               Pre-Hardmode
             </button>
-            {/* Hardmode bosses are not converted to the new format yet, so the
-                tab is gated until the pass reaches them. */}
             <button
               type="button"
               role="tab"
-              aria-selected={false}
-              disabled
-              title="Hardmode bosses are being rebuilt - coming soon"
-              className={`${styles.phaseBtn} ${styles.phaseBtnSoon}`}
+              aria-selected={showHardmode}
+              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
+              onClick={() => setPhase(true)}
             >
-              Hardmode <span className={styles.soonTag}>soon</span>
+              Hardmode
             </button>
           </div>
         </div>
