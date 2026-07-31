@@ -231,16 +231,97 @@
     "stage": "cal-pre-evil",
     "tier": 0,
     "side": false,
-    "summon": "Use a Suspicious Looking Eye at night, or spawns naturally on eligible worlds.",
+    "summon": "Use it at night to summon the Eye. It can also spawn on its own at night once you have 200 HP and a few defeated town NPCs.",
     "drops": [
-      "Demonite Ore",
-      "Crimtane Ore",
-      "Unholy Arrow",
-      "Corrupt Seeds",
-      "Crimson Seeds"
+      {
+        "name": "Teardrop Cleaver",
+        "icon": "calamity/teardrop-cleaver.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword that inflicts Temporal Sadness on hit, sharply slowing enemy movement.",
+        "stats": "38 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Teardrop_Cleaver"
+      },
+      {
+        "name": "Deathstare Rod",
+        "icon": "calamity/deathstare-rod.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a floating eye above your head that watches you and shoots at enemies. Only one can exist at a time.",
+        "stats": "20 damage",
+        "dropRate": "25% (33% in Expert)",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deathstare_Rod"
+      },
+      {
+        "name": "Demonite Ore",
+        "icon": "materials/demonite-ore.png",
+        "slot": "material",
+        "effect": "The Corruption world's first upgrade ore; smelt it into Demonite Bars.",
+        "dropRate": "100% (Corruption worlds)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Ore"
+      },
+      {
+        "name": "Corrupt Seeds",
+        "icon": "items/corrupt-seeds.png",
+        "slot": "material",
+        "effect": "Plants a patch of Corruption where used.",
+        "dropRate": "100% (Corruption worlds)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Corrupt_Seeds"
+      },
+      {
+        "name": "Crimtane Ore",
+        "icon": "materials/crimtane-ore.png",
+        "slot": "material",
+        "effect": "The Crimson world's first upgrade ore; smelt it into Crimtane Bars.",
+        "dropRate": "100% (Crimson worlds)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Ore"
+      },
+      {
+        "name": "Crimson Seeds",
+        "icon": "items/crimson-seeds.png",
+        "slot": "material",
+        "effect": "Plants a patch of Crimson where used.",
+        "dropRate": "100% (Crimson worlds)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Seeds"
+      },
+      {
+        "name": "Eye of Cthulhu Mask",
+        "icon": "items/eye-of-cthulhu-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Eye of Cthulhu.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_Cthulhu_Mask"
+      },
+      {
+        "name": "Shield of Cthulhu",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Dash into enemies to damage and knock them back; also cancels fall damage.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu"
+      }
     ],
     "blurb": "A giant floating eye that splits into servants of Cthulhu as it takes damage.",
-    "color": "#b13a3a"
+    "color": "#b13a3a",
+    "unlocks": "Can now smelt Demonite/Crimtane Bars for the first evil-metal weapons (Light\u2019s Bane, the Demon Bow, and more).",
+    "summonItem": {
+      "name": "Suspicious Looking Eye",
+      "icon": "items/suspicious-looking-eye.png",
+      "slot": "summon",
+      "effect": "Summons the Eye of Cthulhu when used at night.",
+      "source": "Crafted at a Demon or Crimson Altar",
+      "wikiUrl": "https://terraria.wiki.gg/wiki/Suspicious_Looking_Eye",
+      "materials": [
+        {
+          "name": "Lens",
+          "qty": 6,
+          "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
+        }
+      ]
+    },
+    "animated": true
   },
   {
     "id": "crabulon",
