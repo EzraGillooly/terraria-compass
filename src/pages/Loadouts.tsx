@@ -715,13 +715,22 @@ export function Loadouts() {
      unranked packs (see `ranked`), which keep their position order. */
   const scopedRec = (ranked ? inScope.find((w) => w.tier === 'best') : undefined) ?? inScope[0];
   const scopedRest = inScope.filter((w) => w !== scopedRec);
+  /* Also Great is the family's good-tier weapons, not just its next rows: the
+     guide lists a family alphabetically, so slicing by position filed weak
+     'other' swords above genuinely good ones (Ash Wood Sword ahead of Light's
+     Bane). Rank the rest by tier - stable, so ties keep the guide's order - and
+     the good picks rise into Also Great, the rest fall behind "Show others". */
+  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
+  const scopedByTier = ranked
+    ? [...scopedRest].sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
+    : scopedRest;
   const scopedBest = showingAll ? filteredBest : (scopedRec ? [scopedRec] : []);
-  const filteredAlso = showingAll ? [] : scopedRest.slice(0, 2);
-  const filteredRest = showingAll ? [] : scopedRest.slice(2);
+  const filteredAlso = showingAll ? [] : scopedByTier.slice(0, 2);
+  const filteredRest = showingAll ? [] : scopedByTier.slice(2);
 
-  // Unranked: one flat list, so no tier reads as a recommendation.
+  // Unranked (Calamity): the guide's own order, with no tier read as a pick.
   const unrankedShown = showingAll ? filteredBest : inScope.slice(0, 3);
-  const unrankedRest = filteredRest;
+  const unrankedRest = showingAll ? [] : inScope.slice(3);
 
   const groupedArmor = curateArmor(groupArmor(safeLoadout.armor, packId === 'vanilla'));
   const armorSprite = groupedArmor[0]?.icon;
