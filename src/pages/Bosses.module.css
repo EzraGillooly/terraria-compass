@@ -273,9 +273,10 @@
 }
 /* same reservation for the Summon and Unlocks values */
 .detailVal { font-size: 14px; color: #eaf4fb; line-height: 1.5; min-height: 3em; }
-/* two rows of pills reserved; a boss with more scrolls rather than
-   stretching the card */
-.drops { display: flex; flex-wrap: wrap; gap: 7px; min-height: 50px; max-height: 50px; overflow-y: auto; }
+/* Pills wrap to as many rows as needed and the row sizes to them - no tall
+   reserved box. Each pill stays single-line (see .dropPill white-space), so a
+   long name widens its pill rather than growing the row's height. */
+.drops { display: flex; flex-wrap: wrap; gap: 7px; min-height: 28px; }
 
 /* Narrow screens wrap the same text about twice as far, so the reservations
    grow with them - measured worst case at 375px is four lines of prose and
@@ -285,7 +286,6 @@
   .detailHead { min-height: 56px; }
   .detailBlurb { min-height: 6em; }
   .detailVal { min-height: 6em; }
-  .drops { min-height: 87px; max-height: 87px; }
 }
 .dropPill {
   font-weight: 700;
@@ -299,7 +299,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  white-space: nowrap;
 }
 
 @media (max-width: 620px) {
