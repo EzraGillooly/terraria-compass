@@ -917,5 +917,102 @@
     "blurb": "A late-Hardmode undead boss summoned at night once the mechs are dead. It chases the player with dark magic and rams for heavy damage.",
     "color": "#5FB08A",
     "animated": true
+  },
+  {
+    "id": "forgotten-one",
+    "name": "Forgotten One",
+    "stage": "pre-golem",
+    "tier": 7.3,
+    "side": true,
+    "role": "optional",
+    "summon": "Kill Aquatic Hallucinations in the Aquatic Depths and pick up three Abyssal Shadows to build the False Presence debuff.",
+    "summonItem": {
+      "name": "Abyssal Shadow",
+      "icon": "thorium/abyssal-shadow.png",
+      "slot": "summon",
+      "effect": "Dropped by Aquatic Hallucinations. Pick up three to stack False Presence and make the Forgotten One emerge.",
+      "source": "Dropped by Aquatic Hallucinations in the Aquatic Depths",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Abyssal_Shadow"
+    },
+    "drops": [
+      {
+        "name": "Mantis Shrimp Punch",
+        "icon": "thorium/mantis-shrimp-punch.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that breaks the sound barrier on a full swing.",
+        "stats": "115 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mantis_Shrimp_Punch"
+      },
+      {
+        "name": "Trench Spitter",
+        "icon": "thorium/trench-spitter.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that spits a rapid stream of abyssal shots.",
+        "stats": "65 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Trench_Spitter"
+      },
+      {
+        "name": "Old God's Vision",
+        "icon": "thorium/old-gods-vision.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that unleashes a maddening surge of ancient magic.",
+        "stats": "60 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Old_God%27s_Vision"
+      },
+      {
+        "name": "The Incubator",
+        "icon": "thorium/the-incubator.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a monolith sentry that continually spawns abyssal minions.",
+        "stats": "42 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Incubator"
+      },
+      {
+        "name": "Siren's Lyre",
+        "icon": "thorium/sirens-lyre.png",
+        "slot": "weapon",
+        "subclass": "string",
+        "effect": "A Bard string instrument that releases a forceful siren's wail.",
+        "stats": "94 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Siren%27s_Lyre"
+      },
+      {
+        "name": "R'lyeh's Lost Rod",
+        "icon": "thorium/rlyehs-lost-rod.png",
+        "slot": "tool",
+        "effect": "A high-power fishing pole pulled from the depths.",
+        "dropRate": "10%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fishing_Poles"
+      },
+      {
+        "name": "Forgotten One Mask",
+        "icon": "thorium/forgotten-one-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Forgotten One.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Forgotten_One_Mask"
+      },
+      {
+        "name": "Abyssal Shell",
+        "icon": "thorium/abyssal-shell.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "An accessory that grants a protective abyssal barrier on command.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Abyssal_Shell"
+      }
+    ],
+    "blurb": "A post-Golem boss summoned in the Aquatic Depths. This armored abyssal horror cracks its shell into a faster second phase below half health.",
+    "color": "#3E8C7A",
+    "animated": true
   }
 ]
