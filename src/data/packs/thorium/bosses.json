@@ -599,5 +599,93 @@
     "blurb": "A sky boss fought in Space. This alien scout flies above the player, firing lasers, beams, and energy balls, and its core changes attacks as it takes damage.",
     "color": "#58C6D8",
     "animated": true
+  },
+  {
+    "id": "borean-strider",
+    "name": "Borean Strider",
+    "stage": "pre-mech",
+    "tier": 5.3,
+    "side": true,
+    "role": "optional",
+    "summon": "It spawns on its own inside a Hardmode Blizzard, or you can summon it with a Strider's Tear.",
+    "summonItem": {
+      "name": "Strider's Tear",
+      "icon": "thorium/striders-tear.png",
+      "slot": "summon",
+      "effect": "Summons the Borean Strider in the Snow biome.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Strider%27s_Tear"
+    },
+    "drops": [
+      {
+        "name": "Glacier",
+        "icon": "thorium/glacier.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A sword that, every 4 seconds, releases freezing shards on the next strike.",
+        "stats": "50 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacier"
+      },
+      {
+        "name": "Glacial Sting",
+        "icon": "thorium/glacial-sting.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "A bow that turns wooden arrows into freezing glacial arrows.",
+        "stats": "48 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacial_Sting"
+      },
+      {
+        "name": "Freeze Ray",
+        "icon": "thorium/freeze-ray.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that turns musket balls into chilling beams of frost.",
+        "stats": "25 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Freeze_Ray"
+      },
+      {
+        "name": "Borean Fang Staff",
+        "icon": "thorium/borean-fang-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that releases a volley of freezing fangs.",
+        "stats": "26 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Borean_Fang_Staff"
+      },
+      {
+        "name": "The Cryo-Fang",
+        "icon": "thorium/the-cryo-fang.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "A thrown fang that bursts with ice when it hits an enemy or a tile.",
+        "stats": "28 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Cryo-Fang"
+      },
+      {
+        "name": "Borean Strider Mask",
+        "icon": "thorium/borean-strider-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Borean Strider.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Borean_Strider_Mask"
+      },
+      {
+        "name": "Ice Bound Strider Hide",
+        "icon": "thorium/ice-bound-strider-hide.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Raises your damage while you stand in a Blizzard.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Bound_Strider_Hide"
+      }
+    ],
+    "blurb": "An early-Hardmode spider boss that prowls Blizzards. It leaps around the field like a slime and fires freezing projectiles.",
+    "color": "#8FD0E8"
   }
 ]
