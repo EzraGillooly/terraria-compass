@@ -48,6 +48,45 @@ const THORIUM_CLASSES: ClassDef[] = [
 ];
 
 /**
+ * Thorium keeps the four vanilla classes but sorts their weapons with its own
+ * Weapons-page taxonomy (Spears, Repeaters, and an Other bucket that vanilla has
+ * no name for). So the pack re-declares their subclasses while reusing the
+ * vanilla name and blurb - the vanilla pack itself is untouched.
+ */
+const THORIUM_VANILLA_SUBCLASSES: Record<string, ClassDef['subclasses']> = {
+  melee: [
+    { id: 'true-melee', name: 'Swords', description: 'Broadswords and shortswords swung in melee.' },
+    { id: 'yoyo', name: 'Yoyos', description: 'Yoyos flung out on a string.' },
+    { id: 'projectile-melee', name: 'Spears', description: 'Spears and lances that stab through enemies.' },
+    { id: 'boomerang', name: 'Boomerangs', description: 'Thrown melee weapons that return to you.' },
+    { id: 'flail', name: 'Flails', description: 'Flails swung on a chain.' },
+    { id: 'other', name: 'Other', description: 'Melee weapons that fit no standard type.' },
+  ],
+  ranger: [
+    { id: 'bow', name: 'Bows', description: 'Bows that fire arrows.' },
+    { id: 'repeater', name: 'Repeaters', description: 'Mechanical bows that auto-fire arrows.' },
+    { id: 'gun', name: 'Guns', description: 'Guns that fire bullets.' },
+    { id: 'launcher', name: 'Launchers', description: 'Launchers that fire rockets.' },
+    { id: 'other', name: 'Other', description: 'Ranged weapons that fit no standard type.' },
+  ],
+  mage: [
+    { id: 'wand', name: 'Wands', description: 'Wands and staves that fire magic bolts.' },
+    { id: 'magic-gun', name: 'Magic Guns', description: 'Magic weapons that fire like a gun.' },
+    { id: 'spell-tome', name: 'Spell Tomes', description: 'Tomes that cast spells.' },
+    { id: 'other', name: 'Other', description: 'Magic weapons that fit no standard type.' },
+  ],
+  summoner: [
+    { id: 'minions', name: 'Minion Summoning', description: 'Staves that summon following minions.' },
+    { id: 'sentries', name: 'Sentry Summoning', description: 'Staves that place stationary sentries.' },
+    { id: 'whip', name: 'Whips', description: 'Whips that tag enemies for your minions.' },
+    { id: 'other', name: 'Other', description: 'Summon weapons that fit no standard type.' },
+  ],
+};
+const thoriumVanillaClasses: ClassDef[] = vanillaClasses
+  .filter((c) => c.id in THORIUM_VANILLA_SUBCLASSES)
+  .map((c) => ({ ...c, subclasses: THORIUM_VANILLA_SUBCLASSES[c.id]! }));
+
+/**
  * Thorium - a large content mod that slots its bosses into the vanilla
  * progression rather than reworking vanilla drops (unlike Calamity). So this
  * pack reuses the vanilla phases, boss data and recipe graph unchanged, then
@@ -94,7 +133,7 @@ export const thoriumPack: Pack = {
   name: 'Thorium',
   available: true,
   phases: parseData(PhaseCollection, phasesJson),
-  classes: [...vanillaClasses, ...THORIUM_CLASSES],
+  classes: [...thoriumVanillaClasses, ...THORIUM_CLASSES],
   loadouts: parseData(LoadoutCollection, loadoutsJson),
   bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
   // Follow the mod's recommended fight order exactly - order by tier, not by the

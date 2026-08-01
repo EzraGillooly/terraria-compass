@@ -15,7 +15,8 @@
         "tier": "best",
         "effect": "Attacks might frostburn the target briefly",
         "stats": "9 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Lance"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Lance",
+        "subclass": "projectile-melee"
       },
       {
         "id": "the-snowball",
@@ -29,7 +30,8 @@
         "tier": "good",
         "effect": "Attacks might frostburn the target briefly",
         "stats": "16 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Snowball"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Snowball",
+        "subclass": "flail"
       },
       {
         "id": "cold-front",
@@ -43,7 +45,8 @@
         "tier": "good",
         "effect": "Attacks might frostburn the target briefly",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cold_Front"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cold_Front",
+        "subclass": "boomerang"
       },
       {
         "id": "coral-slasher",
@@ -57,7 +60,8 @@
         "tier": "good",
         "effect": "Unleashes sharp coral after 3 successful strikes",
         "stats": "11 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Slasher"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Slasher",
+        "subclass": "true-melee"
       },
       {
         "id": "coral-polearm",
@@ -71,7 +75,8 @@
         "tier": "good",
         "effect": "Summons a coral spike after 4 successful strikes",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Polearm"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Polearm",
+        "subclass": "projectile-melee"
       },
       {
         "id": "red-hourglass",
@@ -85,7 +90,8 @@
         "tier": "good",
         "effect": "Envenoms the hit target briefly",
         "stats": "15 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Red_Hourglass"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Red_Hourglass",
+        "subclass": "yoyo"
       }
     ],
     "tools": [],
@@ -295,7 +301,8 @@
         "topPick": true,
         "tier": "best",
         "stats": "8 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Frost_Fury"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Frost_Fury",
+        "subclass": "bow"
       },
       {
         "id": "coral-crossbow",
@@ -309,7 +316,8 @@
         "tier": "good",
         "effect": "Turns wooden arrows into coral arrows that splinter downwards",
         "stats": "13 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Crossbow"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Crossbow",
+        "subclass": "repeater"
       },
       {
         "id": "thorium-bow",
@@ -322,7 +330,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "14 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Bow"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Bow",
+        "subclass": "bow"
       },
       {
         "id": "thorium-revolver",
@@ -335,7 +344,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "12 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Revolver"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Revolver",
+        "subclass": "gun"
       },
       {
         "id": "trapper",
@@ -349,7 +359,8 @@
         "tier": "good",
         "effect": "'Give them a taste of their own medicine'",
         "stats": "15 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Trapper"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Trapper",
+        "subclass": "other"
       },
       {
         "id": "webgun",
@@ -363,7 +374,8 @@
         "tier": "good",
         "effect": "Fires out a sticky globule of wet web",
         "stats": "16 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Webgun"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Webgun",
+        "subclass": "other"
       }
     ],
     "tools": [],
@@ -618,7 +630,8 @@
         "tier": "best",
         "effect": "'Unleash a flurry of ice!'<br/>Attacks frostburn the hit target briefly",
         "stats": "9 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Flurry"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Flurry",
+        "subclass": "spell-tome"
       },
       {
         "id": "ice-cube",
@@ -632,7 +645,8 @@
         "tier": "good",
         "effect": "Sends out a tile-sliding cube of ice<br/>Ice cubes frostburn the target briefly",
         "stats": "12 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Cube"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Cube",
+        "subclass": "wand"
       },
       {
         "id": "opal-staff",
@@ -645,7 +659,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "16 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Opal_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Opal_Staff",
+        "subclass": "wand"
       },
       {
         "id": "aquamarine-staff",
@@ -658,7 +673,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "17 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Aquamarine_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Aquamarine_Staff",
+        "subclass": "wand"
       },
       {
         "id": "thorium-staff",
@@ -672,7 +688,8 @@
         "tier": "good",
         "effect": "Fires out a bolt of magic, that will send out additional sparks at nearby enemies",
         "stats": "12 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Staff",
+        "subclass": "wand"
       },
       {
         "id": "enchanted-staff",
@@ -686,7 +703,8 @@
         "tier": "good",
         "effect": "Releases an enchanted bolt that increases mana recovery on kill",
         "stats": "14 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Staff",
+        "subclass": "wand"
       },
       {
         "id": "magick-staff",
@@ -700,7 +718,8 @@
         "tier": "good",
         "effect": "Creates a bolt of fluctuating elements",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Magick_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Magick_Staff",
+        "subclass": "wand"
       }
     ],
     "tools": [],
@@ -936,7 +955,8 @@
         "tier": "best",
         "effect": "Summons a living tree sprout as your chosen familiar<br/>You may only have one familiar summoned at a time<br/>Right click to select various actions for your familiar<br/>Left click to perform your selected action",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Living_Wood_Acorn"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Living_Wood_Acorn",
+        "subclass": "minions"
       },
       {
         "id": "seahorse-wand",
@@ -950,7 +970,8 @@
         "tier": "good",
         "effect": "Summons a seahorse that spits a barrage of bubbles",
         "stats": "7 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Seahorse_Wand"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Seahorse_Wand",
+        "subclass": "minions"
       },
       {
         "id": "enchanted-cane",
@@ -964,7 +985,8 @@
         "tier": "good",
         "effect": "Summons an orbiting, defensive shield around the user that stuns hit enemies<br/>After damaging an enemy, the shield must regenerate",
         "stats": "18 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Cane"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Cane",
+        "subclass": "minions"
       },
       {
         "id": "butterfly-staff",
@@ -978,7 +1000,8 @@
         "tier": "good",
         "effect": "'The latest in butterfly technology'<br/>Summons 3 random butterflies that attack enemies",
         "stats": "12 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Butterfly_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Butterfly_Staff",
+        "subclass": "minions"
       },
       {
         "id": "antlion-staff",
@@ -992,7 +1015,8 @@
         "tier": "good",
         "effect": "Summons an antlion spitter to attack nearby enemies",
         "stats": "14 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Antlion_Staff"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Antlion_Staff",
+        "subclass": "sentries"
       },
       {
         "id": "spittin-fish",
@@ -1006,7 +1030,8 @@
         "tier": "good",
         "effect": "Summons a water-bound fish to spit up at enemies<br/>The fish can only be summoned within a body of water",
         "stats": "18 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Spittin'_Fish"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Spittin'_Fish",
+        "subclass": "sentries"
       }
     ],
     "tools": [],
@@ -1242,7 +1267,8 @@
         "topPick": true,
         "tier": "best",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Iron_Tomahawk"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Iron_Tomahawk",
+        "subclass": "consumable"
       },
       {
         "id": "lead-tomahawk",
@@ -1255,7 +1281,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "11 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lead_Tomahawk"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lead_Tomahawk",
+        "subclass": "consumable"
       },
       {
         "id": "icy-tomahawk",
@@ -1269,7 +1296,8 @@
         "tier": "good",
         "effect": "Attacks might frostburn the target briefly",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Icy_Tomahawk"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Icy_Tomahawk",
+        "subclass": "consumable"
       },
       {
         "id": "coral-caltrop",
@@ -1283,7 +1311,8 @@
         "tier": "good",
         "effect": "The rough, coral edges have a chance to gouge the hit enemy, dealing additional damage",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Caltrop"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Caltrop",
+        "subclass": "consumable"
       },
       {
         "id": "enchanted-knife",
@@ -1296,7 +1325,8 @@
         "topPick": false,
         "tier": "good",
         "stats": "18 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Knife"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Enchanted_Knife",
+        "subclass": "consumable"
       }
     ],
     "tools": [],
@@ -1507,7 +1537,8 @@
         "tier": "best",
         "effect": "Spins an icy sickle all around you",
         "stats": "7 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Shaver"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Shaver",
+        "subclass": "scythe"
       },
       {
         "id": "pill",
@@ -1521,7 +1552,8 @@
         "tier": "good",
         "effect": "Throws out a bouncing pill<br/>Right click to throw a pill that increases an allies life recovery briefly",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pill"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pill",
+        "subclass": "other"
       },
       {
         "id": "palm-cross",
@@ -1535,7 +1567,8 @@
         "tier": "good",
         "effect": "Charges a burst of holy light in front of you<br/>Charging the burst increases its size and damage greatly<br/>Burns and deals double damage against most undead enemies",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Palm_Cross"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Palm_Cross",
+        "subclass": "other"
       },
       {
         "id": "deep-staff",
@@ -1549,8 +1582,11 @@
         "tier": "good",
         "effect": "Releases a bolt of dark magic at the cost of life<br/>Hit enemies are briefly burned by shadow energy<br/>Half the life cost is given to your ally with the least health",
         "stats": "20 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Deep_Staff"
-      },
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Deep_Staff",
+        "subclass": "other"
+      }
+    ],
+    "tools": [
       {
         "id": "gauze",
         "name": "Gauze",
@@ -1643,7 +1679,6 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Purifier"
       }
     ],
-    "tools": [],
     "armor": [
       {
         "id": "coral-armor",
@@ -1890,7 +1925,8 @@
         "tier": "best",
         "effect": "Releases a twin pulse of sound",
         "stats": "11 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Gold_Bugle_Horn"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Gold_Bugle_Horn",
+        "subclass": "brass"
       },
       {
         "id": "platinum-bugle-horn",
@@ -1904,7 +1940,8 @@
         "tier": "good",
         "effect": "Releases a twin pulse of sound",
         "stats": "13 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Platinum_Bugle_Horn"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Platinum_Bugle_Horn",
+        "subclass": "brass"
       },
       {
         "id": "tambourine",
@@ -1918,7 +1955,8 @@
         "tier": "good",
         "effect": "Throws a single jingly tambourine",
         "stats": "11 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tambourine"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tambourine",
+        "subclass": "percussion"
       },
       {
         "id": "antlion-maraca",
@@ -1932,7 +1970,8 @@
         "tier": "good",
         "effect": "Throws out a shaken sand splash",
         "stats": "7 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Antlion_Maraca"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Antlion_Maraca",
+        "subclass": "percussion"
       },
       {
         "id": "seashell-castanets",
@@ -1946,7 +1985,8 @@
         "tier": "good",
         "effect": "Holds a pair of Castanets in front of you, that release damaging vibrations<br/>Holding them longer increases its damage and knockback",
         "stats": "18 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Seashell_Castanets"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Seashell_Castanets",
+        "subclass": "percussion"
       },
       {
         "id": "ukulele",
@@ -1960,7 +2000,8 @@
         "tier": "good",
         "effect": "Releases a gentle strum of the ukulele, which bounces against tiles",
         "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ukulele"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ukulele",
+        "subclass": "string"
       },
       {
         "id": "icy-piccolo",
@@ -1974,7 +2015,8 @@
         "tier": "good",
         "effect": "Releases a super chilled piccolo toot<br/>Damage briefly applies frostburn to hit enemies",
         "stats": "12 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Icy_Piccolo"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Icy_Piccolo",
+        "subclass": "wind"
       },
       {
         "id": "dynasty-guzheng",
@@ -1988,7 +2030,8 @@
         "tier": "good",
         "effect": "Releases a set of soothing multi-shot, bouncing riffs",
         "stats": "14 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dynasty_Guzheng"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dynasty_Guzheng",
+        "subclass": "string"
       },
       {
         "id": "grand-piano",
@@ -2002,7 +2045,8 @@
         "tier": "good",
         "effect": "Allows you to rhythmically play on a big piano<br/>Successfully timing hits will steadily increase its damage, empowerment level, and bounce amount<br/>Mistiming hits will decrease these bonuses greatly and cost 5 inspiration<br/>These bonuses will stay between weapon swaps, but gradually fade while not your active weapon<br/>Weapon automatically targets the nearest enemy",
         "stats": "13 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Grand_Piano"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Grand_Piano",
+        "subclass": "string"
       }
     ],
     "tools": [],
