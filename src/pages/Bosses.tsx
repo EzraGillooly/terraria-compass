@@ -152,7 +152,7 @@ function BossSlot({
 }
 
 export function Bosses() {
-  const { phases, bosses } = usePack();
+  const { phases, bosses, strictBossOrder } = usePack();
   const { difficulty, calamityMode, progressionMode, progress, setProgress } = useAppState();
   // Empty by default so the selection resolves to the first boss in the active
   // pack's order (see `selected` below) rather than a hardcoded vanilla boss.
@@ -177,10 +177,14 @@ export function Bosses() {
       return {
         stage,
         hard: isHard(stage),
-        nodes: [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
+        // Packs may pin the order to tier alone; otherwise optional bosses read
+        // first within a stage, before the boss that gates progress.
+        nodes: strictBossOrder
+          ? inStage
+          : [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
       };
     });
-  }, [phases, bosses, isHard]);
+  }, [phases, bosses, isHard, strictBossOrder]);
 
   const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
   const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);

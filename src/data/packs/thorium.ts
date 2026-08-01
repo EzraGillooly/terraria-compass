@@ -61,6 +61,8 @@ const THORIUM_CLASSES: ClassDef[] = [
  * shared vanilla data - and the vanilla and Calamity packs - stay untouched.
  */
 const VANILLA_PLACEMENT_OVERRIDES: Record<string, { stage?: string; tier?: number }> = {
+  // Pre-Skeletron: fight Deerclops next to Queen Jellyfish, before Queen Bee.
+  deerclops: { tier: 2.8 },
   'queen-slime': { stage: 'pre-mech', tier: 5.8 },
   golem: { tier: 7.0 },
   'empress-of-light': { tier: 7.5 },
@@ -78,6 +80,9 @@ export const thoriumPack: Pack = {
   classes: [...vanillaClasses, ...THORIUM_CLASSES],
   loadouts: [],
   bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
+  // Follow the mod's recommended fight order exactly - order by tier, not by the
+  // default optional-first grouping (see Pack.strictBossOrder).
+  strictBossOrder: true,
   recipes: vanillaRecipeApi,
   difficulties: VANILLA_DIFFICULTIES,
 };

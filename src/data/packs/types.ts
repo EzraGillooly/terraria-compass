@@ -23,6 +23,13 @@ export interface Pack {
   classes: ClassDef[];
   loadouts: Loadout[];
   bosses: BossDef[];
+  /**
+   * Order the boss roadmap strictly by each boss's `tier`, ignoring the default
+   * "optional bosses first within a stage" grouping. Thorium sets this so its
+   * roadmap follows the mod's own recommended fight order exactly (e.g. the
+   * required Golem before the optional Empress of Light and Duke Fishron).
+   */
+  strictBossOrder?: boolean;
   recipes: RecipeApi;
   /** difficulty options this pack exposes in the World dropdown */
   difficulties: DifficultyDef[];
