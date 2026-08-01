@@ -152,7 +152,7 @@ function BossSlot({
 }
 
 export function Bosses() {
-  const { phases, bosses, strictBossOrder } = usePack();
+  const { phases, bosses, strictBossOrder, bossClusters } = usePack();
   const { difficulty, calamityMode, progressionMode, progress, setProgress } = useAppState();
   // Empty by default so the selection resolves to the first boss in the active
   // pack's order (see `selected` below) rather than a hardcoded vanilla boss.
@@ -172,19 +172,44 @@ export function Bosses() {
 
   const stages: Stage[] = useMemo(() => {
     const order = [...phases].sort((a, b) => a.order - b.order).map((p) => p.id);
-    return order.map((stage) => {
+    // Full boss list in progression order (per-phase, honouring strict/optional order).
+    const ordered = order.flatMap((stage) => {
       const inStage = bosses.filter((b) => b.stage === stage).sort((a, b) => a.tier - b.tier);
-      return {
-        stage,
-        hard: isHard(stage),
-        // Packs may pin the order to tier alone; otherwise optional bosses read
-        // first within a stage, before the boss that gates progress.
-        nodes: strictBossOrder
-          ? inStage
-          : [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
-      };
+      // Packs may pin the order to tier alone; otherwise optional bosses read
+      // first within a stage, before the boss that gates progress.
+      return strictBossOrder
+        ? inStage
+        : [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)];
     });
-  }, [phases, bosses, isHard, strictBossOrder]);
+
+    // Explicit clumping: walk the ordered list and emit each boss's whole cluster
+    // (parallel "and"/"or" step) at its first member's position; unlisted bosses
+    // are their own single clump. One clump = one spaced column on the rail.
+    if (bossClusters?.length) {
+      const clusterOf = new Map<string, string[]>();
+      for (const c of bossClusters) for (const id of c) clusterOf.set(id, c);
+      const byId = new Map(ordered.map((b) => [b.id, b]));
+      const emitted = new Set<string>();
+      const result: Stage[] = [];
+      for (const b of ordered) {
+        if (emitted.has(b.id)) continue;
+        const cluster = clusterOf.get(b.id);
+        const nodes = cluster
+          ? (cluster.map((id) => byId.get(id)).filter(Boolean) as typeof ordered)
+          : [b];
+        nodes.forEach((n) => emitted.add(n.id));
+        result.push({ stage: nodes[0]!.id, hard: isHard(nodes[0]!.stage), nodes });
+      }
+      return result;
+    }
+
+    // Default: one clump per loadout phase.
+    return order.map((stage) => ({
+      stage,
+      hard: isHard(stage),
+      nodes: ordered.filter((b) => b.stage === stage),
+    }));
+  }, [phases, bosses, isHard, strictBossOrder, bossClusters]);
 
   const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
   const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);

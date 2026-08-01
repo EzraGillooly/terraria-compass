@@ -83,6 +83,18 @@ export const thoriumPack: Pack = {
   // Follow the mod's recommended fight order exactly - order by tier, not by the
   // default optional-first grouping (see Pack.strictBossOrder).
   strictBossOrder: true,
+  // Clump the roadmap to match the mod's boss diagram (see Pack.bossClusters).
+  // Only the parallel "and"/"or" steps are listed; every other boss is its own
+  // single clump, placed by tier.
+  bossClusters: [
+    ['the-grand-thunder-bird', 'king-slime', 'eye-of-cthulhu'],
+    ['eater-of-worlds', 'brain-of-cthulhu'],
+    ['queen-jellyfish', 'deerclops'],
+    ['queen-bee', 'viscount'],
+    ['granite-energy-storm', 'buried-champion'],
+    ['the-twins', 'the-destroyer', 'skeletron-prime'],
+    ['empress-of-light', 'duke-fishron'],
+  ],
   recipes: vanillaRecipeApi,
   difficulties: VANILLA_DIFFICULTIES,
 };
