@@ -687,5 +687,120 @@
     ],
     "blurb": "An early-Hardmode spider boss that prowls Blizzards. It leaps around the field like a slime and fires freezing projectiles.",
     "color": "#8FD0E8"
+  },
+  {
+    "id": "fallen-beholder",
+    "name": "Fallen Beholder",
+    "stage": "pre-mech",
+    "tier": 5.6,
+    "side": true,
+    "role": "optional",
+    "summon": "Use a Void Lens while in The Underworld.",
+    "summonItem": {
+      "name": "Void Lens",
+      "icon": "thorium/void-lens.png",
+      "slot": "summon",
+      "effect": "Summons the Fallen Beholder in The Underworld.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Void_Lens"
+    },
+    "drops": [
+      {
+        "name": "Hellish Halberd",
+        "icon": "thorium/hellish-halberd.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A spear that unleashes a homing fiery vortex after five hits.",
+        "stats": "35 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hellish_Halberd"
+      },
+      {
+        "name": "Obliterator",
+        "icon": "thorium/obliterator.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that fires delayed shrapnel blasts you can detonate on release.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Obliterator"
+      },
+      {
+        "name": "Pyroclast Staff",
+        "icon": "thorium/pyroclast-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that rapidly fires molten explosions.",
+        "stats": "33 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyroclast_Staff"
+      },
+      {
+        "name": "Beholder Staff",
+        "icon": "thorium/beholder-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a beholder minion that reveals and vaporizes nearby enemies.",
+        "stats": "44 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Beholder_Staff"
+      },
+      {
+        "name": "Hell Roller",
+        "icon": "thorium/hell-roller.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Throws an explosive roller that rebounds and grows in power.",
+        "stats": "37 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hell_Roller"
+      },
+      {
+        "name": "Cello",
+        "icon": "thorium/cello.png",
+        "slot": "weapon",
+        "subclass": "string",
+        "effect": "A Bard string instrument that sends out a long-lived, fiery sound wave.",
+        "stats": "68 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cello"
+      },
+      {
+        "name": "Beholder's Gaze",
+        "icon": "thorium/beholders-gaze.png",
+        "slot": "accessory",
+        "effect": "An accessory that grants 10 seconds of guaranteed critical strikes on command, then a brief damage penalty.",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Beholder%27s_Gaze"
+      },
+      {
+        "name": "Void Planter",
+        "icon": "thorium/void-planter.png",
+        "slot": "tool",
+        "effect": "Plants up to three void seeds at your cursor that heal you over time.",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Void_Planter"
+      },
+      {
+        "name": "Fallen Beholder Mask",
+        "icon": "thorium/fallen-beholder-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Fallen Beholder.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fallen_Beholder_Mask"
+      },
+      {
+        "name": "Mirror of the Beholder",
+        "icon": "thorium/mirror-of-the-beholder.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Grants extended vision and reveals nearby enemies through walls.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mirror_of_the_Beholder"
+      }
+    ],
+    "blurb": "An early-Hardmode eye boss summoned in The Underworld. It flies and lunges at the player between barrages of fiery magical attacks.",
+    "color": "#A24BC4",
+    "animated": true
   }
 ]
