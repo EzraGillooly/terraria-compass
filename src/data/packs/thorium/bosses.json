@@ -1014,5 +1014,113 @@
     "blurb": "A post-Golem boss summoned in the Aquatic Depths. This armored abyssal horror cracks its shell into a faster second phase below half health.",
     "color": "#3E8C7A",
     "animated": true
+  },
+  {
+    "id": "the-primordials",
+    "name": "The Primordials",
+    "stage": "endgame",
+    "tier": 11,
+    "side": true,
+    "role": "optional",
+    "summon": "Use a Doom Sayer's Coin anywhere at night.",
+    "summonItem": {
+      "name": "Doom Sayer's Coin",
+      "icon": "thorium/doom-sayers-coin.png",
+      "slot": "summon",
+      "effect": "Summons The Primordials - Aquaius, Slag Fury, and Omnicide - at night.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Doom_Sayer%27s_Coin"
+    },
+    "drops": [
+      {
+        "name": "Ocean Essence",
+        "icon": "thorium/ocean-essence.png",
+        "slot": "material",
+        "effect": "Aquaius's essence, used to craft the Primordials' ocean-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ocean_Essence"
+      },
+      {
+        "name": "Inferno Essence",
+        "icon": "thorium/inferno-essence.png",
+        "slot": "material",
+        "effect": "Slag Fury's essence, used to craft the Primordials' fire-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Inferno_Essence"
+      },
+      {
+        "name": "Death Essence",
+        "icon": "thorium/death-essence.png",
+        "slot": "material",
+        "effect": "Omnicide's essence, used to craft the Primordials' death-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Death_Essence"
+      },
+      {
+        "name": "Aquaius Mask",
+        "icon": "thorium/aquaius-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Aquaius, the Endless Tide.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Aquaius_Mask"
+      },
+      {
+        "name": "Slag Fury Mask",
+        "icon": "thorium/slag-fury-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Slag Fury.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Slag_Fury_Mask"
+      },
+      {
+        "name": "Omnicide Mask",
+        "icon": "thorium/omnicide-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Omnicide.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Omnicide_Mask"
+      },
+      {
+        "name": "Bow of Light",
+        "icon": "thorium/bow-of-light.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "mode": "expert",
+        "effect": "Charges up an arrow of incredibly potent light energy. A rare Expert drop.",
+        "stats": "300 damage",
+        "dropRate": "1% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bow_of_Light"
+      },
+      {
+        "name": "The Omega Core",
+        "icon": "thorium/the-omega-core.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "An endgame accessory imbued with reality-ending power.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Omega_Core"
+      },
+      {
+        "name": "Dormant Hammer",
+        "icon": "thorium/dormant-hammer.png",
+        "slot": "material",
+        "mode": "expert",
+        "effect": "A hammer with an empty socket, used to craft a powerful endgame weapon.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dormant_Hammer"
+      },
+      {
+        "name": "Thorium Party Hat",
+        "icon": "thorium/thorium-party-hat.png",
+        "slot": "vanity",
+        "mode": "expert",
+        "effect": "A celebratory vanity hat for clearing the mod's final fight.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Party_Hat"
+      }
+    ],
+    "blurb": "Thorium's final fight: a trio of superbosses - Aquaius the Endless Tide, Slag Fury, and Omnicide - summoned at night. Each brings its own attack set, and their essences craft the mod's endgame gear.",
+    "color": "#B048C0",
+    "animated": true
   }
 ]
