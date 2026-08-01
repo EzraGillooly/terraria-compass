@@ -802,5 +802,120 @@
     "blurb": "An early-Hardmode eye boss summoned in The Underworld. It flies and lunges at the player between barrages of fiery magical attacks.",
     "color": "#A24BC4",
     "animated": true
+  },
+  {
+    "id": "lich",
+    "name": "Lich",
+    "stage": "pre-plantera",
+    "tier": 6.5,
+    "side": true,
+    "role": "optional",
+    "summon": "Use 30 Pumpkins at an Ancient Phylactery in the Graveyard, at night, after all three mechanical bosses are dead.",
+    "summonItem": {
+      "name": "Ancient Phylactery",
+      "icon": "thorium/ancient-phylactery.png",
+      "slot": "summon",
+      "effect": "A station placed in a Graveyard. Use 30 Pumpkins here at night, after the mechs, to summon the Lich.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ancient_Phylactery"
+    },
+    "drops": [
+      {
+        "name": "Soul Render",
+        "icon": "thorium/soul-render.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A sword that shoots a volatile soul blade with each swing.",
+        "stats": "80 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Render"
+      },
+      {
+        "name": "Wither Staff",
+        "icon": "thorium/wither-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that rapidly withers the enemy under your cursor, ignoring defense.",
+        "stats": "46 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Wither_Staff"
+      },
+      {
+        "name": "Soul Cleaver",
+        "icon": "thorium/soul-cleaver.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Rapidly throws a large piercing cleaver that lowers enemy defense.",
+        "stats": "54 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Cleaver"
+      },
+      {
+        "name": "Soul Bomb",
+        "icon": "thorium/soul-bomb.png",
+        "slot": "weapon",
+        "subclass": "consumable",
+        "effect": "A thrown bomb that bursts into damaging souls.",
+        "stats": "62 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Bomb"
+      },
+      {
+        "name": "Cadaver's Cornet",
+        "icon": "thorium/cadavers-cornet.png",
+        "slot": "weapon",
+        "subclass": "brass",
+        "effect": "A Bard instrument that releases grasping tendrils of ghastly sound energy.",
+        "stats": "60 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cadaver%27s_Cornet"
+      },
+      {
+        "name": "Phantom Wand",
+        "icon": "thorium/phantom-wand.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a pack of volatile phantom minions that fire energy at your cursor.",
+        "stats": "48 damage",
+        "dropRate": "16.67%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Phantom_Wand"
+      },
+      {
+        "name": "The Lost Cross",
+        "icon": "thorium/the-lost-cross.png",
+        "slot": "accessory",
+        "effect": "A Healer accessory that strengthens your healing spells.",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Lost_Cross"
+      },
+      {
+        "name": "Cursed Cloth",
+        "icon": "thorium/cursed-cloth.png",
+        "slot": "material",
+        "effect": "A Thorium crafting material used for Lich-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cursed_Cloth"
+      },
+      {
+        "name": "Lich Mask",
+        "icon": "thorium/lich-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Lich.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lich_Mask"
+      },
+      {
+        "name": "Phylactery",
+        "icon": "thorium/phylactery.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Taking fatal damage instead revives you once, on a long cooldown.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Phylactery"
+      }
+    ],
+    "blurb": "A late-Hardmode undead boss summoned at night once the mechs are dead. It chases the player with dark magic and rams for heavy damage.",
+    "color": "#5FB08A",
+    "animated": true
   }
 ]
