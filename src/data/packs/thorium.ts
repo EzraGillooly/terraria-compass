@@ -52,6 +52,24 @@ const THORIUM_CLASSES: ClassDef[] = [
  * scraped from thoriummod.wiki.gg the same way Calamity's was; loadouts are a
  * later pass, so the class roster is present but the loadout list is still empty.
  */
+/**
+ * Thorium's own boss guide slots several vanilla bosses differently from
+ * vanilla's roadmap: Queen Slime is fought before the mechs, and after Plantera
+ * the order is Golem, then the Forgotten One, then the Empress and Duke Fishron
+ * (the reverse of vanilla's tier order). So the pack re-places those vanilla
+ * bosses for its own roadmap. Each entry is applied as a fresh copy, so the
+ * shared vanilla data - and the vanilla and Calamity packs - stay untouched.
+ */
+const VANILLA_PLACEMENT_OVERRIDES: Record<string, { stage?: string; tier?: number }> = {
+  'queen-slime': { stage: 'pre-mech', tier: 5.8 },
+  golem: { tier: 7.0 },
+  'empress-of-light': { tier: 7.5 },
+  'duke-fishron': { tier: 7.7 },
+};
+const retieredVanilla = vanillaBosses.map((b) =>
+  b.id in VANILLA_PLACEMENT_OVERRIDES ? { ...b, ...VANILLA_PLACEMENT_OVERRIDES[b.id]! } : b,
+);
+
 export const thoriumPack: Pack = {
   id: 'thorium',
   name: 'Thorium',
@@ -59,7 +77,7 @@ export const thoriumPack: Pack = {
   phases,
   classes: [...vanillaClasses, ...THORIUM_CLASSES],
   loadouts: [],
-  bosses: [...vanillaBosses, ...(thoriumBossesJson as BossDef[])],
+  bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
   recipes: vanillaRecipeApi,
   difficulties: VANILLA_DIFFICULTIES,
 };
