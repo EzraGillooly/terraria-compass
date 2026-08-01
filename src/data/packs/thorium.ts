@@ -1,9 +1,10 @@
 import { classes as vanillaClasses } from '../../lib/data';
 import { bosses as vanillaBosses, type BossDef } from '../bosses';
 import { vanillaRecipeApi } from '../recipes';
-import { ClassDef, PhaseCollection } from '../schema';
+import { ClassDef, LoadoutCollection, PhaseCollection } from '../schema';
 import { parseData } from '../parse';
 import phasesJson from './thorium/phases.json';
+import loadoutsJson from './thorium/loadouts.json';
 import thoriumBossesJson from './thorium/bosses.json';
 import { VANILLA_DIFFICULTIES, type Pack } from './types';
 
@@ -94,7 +95,7 @@ export const thoriumPack: Pack = {
   available: true,
   phases: parseData(PhaseCollection, phasesJson),
   classes: [...vanillaClasses, ...THORIUM_CLASSES],
-  loadouts: [],
+  loadouts: parseData(LoadoutCollection, loadoutsJson),
   bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
   // Follow the mod's recommended fight order exactly - order by tier, not by the
   // default optional-first grouping (see Pack.strictBossOrder).
