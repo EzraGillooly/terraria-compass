@@ -27,6 +27,18 @@ const PHASE_BIOME: Record<PhaseId, string> = {
   'pre-cultist': 'dungeon',
   'pre-moonlord': 'hallow',
   endgame: 'sky',
+  // Thorium phases (its own progression tiers).
+  'thor-pre-boss': 'forest',
+  'thor-pre-evil': 'forest',
+  'thor-mid-prehm': 'snow',
+  'thor-pre-skeletron': 'dungeon',
+  'thor-pre-wof': 'underworld',
+  'thor-post-wof': 'hallow',
+  'thor-pre-mech': 'snow',
+  'thor-post-mech': 'jungle',
+  'thor-pre-lunar': 'dungeon',
+  'thor-pre-primordials': 'hallow',
+  'thor-endgame': 'sky',
 };
 const PHASE_BOSS: Record<PhaseId, string> = {
   'pre-bosses': 'eye-of-cthulhu',
@@ -62,6 +74,18 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'cal-post-exo': 'exo-mechs',
   // cal-post-golem (prismatic crystal) and cal-endgame (compass) have no single
   // boss, so they are left out - the banner falls back to their own map art.
+  // Thorium phases → the boss whose map icon marks that tier.
+  'thor-pre-boss': 'the-grand-thunder-bird',
+  'thor-pre-evil': 'brain-of-cthulhu',
+  'thor-mid-prehm': 'queen-jellyfish',
+  'thor-pre-skeletron': 'skeletron',
+  'thor-pre-wof': 'wall-of-flesh',
+  'thor-post-wof': 'borean-strider',
+  'thor-pre-mech': 'the-twins',
+  'thor-post-mech': 'plantera',
+  'thor-pre-lunar': 'lunatic-cultist',
+  'thor-pre-primordials': 'moon-lord',
+  'thor-endgame': 'the-primordials',
 };
 
 function makeWikiName(stem: string): string {
@@ -195,6 +219,9 @@ const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
   'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
   'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  // Thorium hardmode phases (Post-Wall of Flesh and later).
+  'thor-post-wof', 'thor-pre-mech', 'thor-post-mech', 'thor-pre-lunar',
+  'thor-pre-primordials', 'thor-endgame',
   ...CALAMITY_POST_ML,
 ]);
 

@@ -1,7 +1,9 @@
-import { phases, classes as vanillaClasses } from '../../lib/data';
+import { classes as vanillaClasses } from '../../lib/data';
 import { bosses as vanillaBosses, type BossDef } from '../bosses';
 import { vanillaRecipeApi } from '../recipes';
-import type { ClassDef } from '../schema';
+import { ClassDef, PhaseCollection } from '../schema';
+import { parseData } from '../parse';
+import phasesJson from './thorium/phases.json';
 import thoriumBossesJson from './thorium/bosses.json';
 import { VANILLA_DIFFICULTIES, type Pack } from './types';
 
@@ -61,12 +63,26 @@ const THORIUM_CLASSES: ClassDef[] = [
  * shared vanilla data - and the vanilla and Calamity packs - stay untouched.
  */
 const VANILLA_PLACEMENT_OVERRIDES: Record<string, { stage?: string; tier?: number }> = {
-  // Pre-Skeletron: fight Deerclops next to Queen Jellyfish, before Queen Bee.
-  deerclops: { tier: 2.8 },
-  'queen-slime': { stage: 'pre-mech', tier: 5.8 },
-  golem: { tier: 7.0 },
-  'empress-of-light': { tier: 7.5 },
-  'duke-fishron': { tier: 7.7 },
+  'king-slime': { stage: 'thor-pre-boss' },
+  'eye-of-cthulhu': { stage: 'thor-pre-boss' },
+  'eater-of-worlds': { stage: 'thor-pre-evil' },
+  'brain-of-cthulhu': { stage: 'thor-pre-evil' },
+  // Mid pre-Hardmode: Deerclops reads next to Queen Jellyfish, before Queen Bee.
+  deerclops: { stage: 'thor-mid-prehm', tier: 2.8 },
+  'queen-bee': { stage: 'thor-mid-prehm' },
+  skeletron: { stage: 'thor-pre-skeletron' },
+  'wall-of-flesh': { stage: 'thor-pre-wof' },
+  'queen-slime': { stage: 'thor-post-wof', tier: 5.8 },
+  'the-twins': { stage: 'thor-pre-mech' },
+  'the-destroyer': { stage: 'thor-pre-mech' },
+  'skeletron-prime': { stage: 'thor-pre-mech' },
+  plantera: { stage: 'thor-post-mech' },
+  // Post-mech order: Golem before the Empress of Light and Duke Fishron.
+  golem: { stage: 'thor-post-mech', tier: 7.0 },
+  'empress-of-light': { stage: 'thor-post-mech', tier: 7.5 },
+  'duke-fishron': { stage: 'thor-post-mech', tier: 7.7 },
+  'lunatic-cultist': { stage: 'thor-pre-lunar' },
+  'moon-lord': { stage: 'thor-pre-primordials' },
 };
 const retieredVanilla = vanillaBosses.map((b) =>
   b.id in VANILLA_PLACEMENT_OVERRIDES ? { ...b, ...VANILLA_PLACEMENT_OVERRIDES[b.id]! } : b,
@@ -76,7 +92,7 @@ export const thoriumPack: Pack = {
   id: 'thorium',
   name: 'Thorium',
   available: true,
-  phases,
+  phases: parseData(PhaseCollection, phasesJson),
   classes: [...vanillaClasses, ...THORIUM_CLASSES],
   loadouts: [],
   bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
