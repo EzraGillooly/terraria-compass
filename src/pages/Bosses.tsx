@@ -349,7 +349,7 @@ export function Bosses() {
         <p className={styles.scrollHint}>Tap a boss for its summon method and key drops</p>
 
         {/* ── Detail panel ── */}
-        <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
+        <div className={`${styles.detail} pixel-frame pixel-hollow`}>
           <div className={`${styles.detailIcon} pixel-frame`}>
             {/* the big card shows the animated sprite where one exists; key on the
                 boss id so React swaps the <img> (and restarts the gif) per boss */}

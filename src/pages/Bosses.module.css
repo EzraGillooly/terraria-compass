@@ -254,16 +254,16 @@
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
-  /* pixel corners via .pixel-frame + .pixel-hollow - same fill and per-boss
-     border colour as before, only the corner shape changes. The utility supplies
+  /* pixel corners via .pixel-frame + .pixel-hollow. The utility supplies the
      background/border, so they must not be set here, and a box-shadow would
-     render against the real rectangular box and cut square corners. */
-  --px-fill: linear-gradient(180deg, rgba(70,84,150,.28) 0%, rgba(40,50,96,.28) 100%);
-  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 45%, rgba(150,164,224,.4));
+     render against the real rectangular box and cut square corners. Fill and
+     border match the Loadouts cards - one shared blue, not a per-boss colour. */
+  --px-fill: rgba(16, 26, 54, .82);
+  --px-border: rgba(150, 180, 230, .45);
   padding: 20px 22px;
 }
-/* Same treatment as the rail slots: the icon container is a pixel-frame, so
-   the fill and per-boss edge come from the utility. */
+/* The icon container is a pixel-frame, so the fill and edge come from the
+   utility - the same shared blue border as the card, not a per-boss colour. */
 .detailIcon {
   flex: none;
   width: 84px;
@@ -272,7 +272,7 @@
   place-items: center;
   --px-u: 2px;
   --px-fill: rgba(10,16,32,.45);
-  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 55%, rgba(150,164,224,.35));
+  --px-border: rgba(150, 180, 230, .45);
 }
 .detailIcon img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.55)); }
 
