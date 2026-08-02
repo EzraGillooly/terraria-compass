@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
-import { PACK_META } from '../../data/packs';
+import { PACK_META, isPackAllowedOnPath } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -199,9 +199,14 @@ function ClassSelect() {
    populated yet are listed but disabled. */
 function ModSelect() {
   const { packId, setPackId, pack } = useAppState();
+  const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useDismiss(open, () => setOpen(false), ref);
+  // Thorium is Bosses-only: on other pages it stays in the menu but shows as
+  // "Soon" (disabled) rather than being selectable.
+  const availableHere = (p: (typeof PACK_META)[number]) =>
+    p.available && isPackAllowedOnPath(p.id, pathname);
 
   return (
     <div className={styles.diffSelect} ref={ref}>
@@ -219,19 +224,22 @@ function ModSelect() {
       </button>
       {open && (
         <ul className={styles.diffMenu} role="listbox" aria-label="Mod">
-          {PACK_META.map((p) => (
-            <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!p.available}>
-              <button
-                type="button"
-                className={`${styles.diffItem} ${p.id === packId ? styles.diffItemOn : ''}`}
-                disabled={!p.available}
-                onClick={() => { setPackId(p.id); setOpen(false); }}
-              >
-                {p.name}
-                {!p.available && <span className={styles.diffSoon}>Soon</span>}
-              </button>
-            </li>
-          ))}
+          {PACK_META.map((p) => {
+            const avail = availableHere(p);
+            return (
+              <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!avail}>
+                <button
+                  type="button"
+                  className={`${styles.diffItem} ${p.id === packId ? styles.diffItemOn : ''}`}
+                  disabled={!avail}
+                  onClick={() => { setPackId(p.id); setOpen(false); }}
+                >
+                  {p.name}
+                  {!avail && <span className={styles.diffSoon}>Soon</span>}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

@@ -1,6 +1,7 @@
 import { createContext, type ReactNode, useContext, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import type { DifficultyFilter } from './difficulty';
-import { DEFAULT_PACK_ID, getPackMeta, loadPack, type Pack, type PackMeta } from '../data/packs';
+import { DEFAULT_PACK_ID, getPackMeta, isPackAllowedOnPath, loadPack, type Pack, type PackMeta } from '../data/packs';
 import { Loading } from '../components/Loading';
 
 const PACK_STORAGE_KEY = 'tc.pack';
@@ -133,6 +134,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
     window.localStorage.setItem(PACK_STORAGE_KEY, packId);
     document.documentElement.dataset.pack = packId;
   }, [packId]);
+
+  // Page-scoped packs (Thorium is Bosses-only): if the active pack is not allowed
+  // on the page you land on - by navigating, or by opening a deep link with the
+  // pack still stored - fall back to the default so the restricted pages never
+  // render it. The header also hides it from the mod menu off its pages.
+  const { pathname } = useLocation();
+  useEffect(() => {
+    // Resetting the pack from an effect is intended: the page changed under us,
+    // so a pack that isn't allowed here has to follow it back to the default.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (!isPackAllowedOnPath(packId, pathname)) setPackId(DEFAULT_PACK_ID);
+  }, [pathname, packId]);
 
   useEffect(() => {
     window.localStorage.setItem(CLASS_STORAGE_KEY, classId);
