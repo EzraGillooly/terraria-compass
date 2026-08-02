@@ -618,6 +618,42 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
     href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
     label: 'Calamity modifier table on the wiki',
   },
+  thorium: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is the default. Thorium adds two accessory modifiers on top of vanilla\'s - Lucrative for coins, and Engrossing for bard empowerments.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+      { name: 'Lucrative', stat: '+15% coin drops', note: 'Thorium only, farming utility' },
+      { name: 'Engrossing', stat: '+2s empowerment', note: 'Thorium only, only useful to bard', onlyClass: 'bard' },
+    ],
+    href: 'https://thoriummod.wiki.gg/wiki/Modifiers',
+    label: 'Thorium modifier table on the wiki',
+  },
+};
+
+/* ── Weapon reforges ──
+   Vanilla weapon modifiers are broad and well-known, so they are not spelled out
+   here. Thorium adds a whole symphonic set, though, which the Goblin Tinkerer only
+   offers on symphonic weapons - bard weapons in Thorium. Healer weapons are radiant,
+   not symphonic, so this shows for bard alone. */
+interface WeaponReforgeSet { title: string; classes: string[]; intro: string; list: Reforge[]; href: string; label: string }
+const WEAPON_REFORGES: Record<string, WeaponReforgeSet[]> = {
+  thorium: [
+    {
+      title: 'Symphonic weapon reforges',
+      classes: ['bard'],
+      intro: 'Reforge symphonic weapons at the Goblin Tinkerer. Fabled is the best - it raises every stat at once.',
+      list: [
+        { name: 'Fabled', stat: '+15% dmg · +10% speed · +5% crit', note: 'best overall' },
+        { name: 'Melodic', stat: '+10% dmg · +5% speed · +2% crit', note: 'strong all-round alternative' },
+        { name: 'Loud', stat: '+10% dmg · +3% crit', note: 'simple damage boost' },
+      ],
+      href: 'https://thoriummod.wiki.gg/wiki/Modifiers',
+      label: 'All 12 symphonic modifiers on the wiki',
+    },
+  ],
 };
 
 function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: string }) {
@@ -636,6 +672,30 @@ function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: st
         <a href={pack.href} rel="noopener noreferrer" target="_blank">{pack.label}</a>
       </p>
     </div>
+  );
+}
+
+/* Weapon-reforge blocks that apply only to the active class (symphonic → bard). */
+function WeaponReforgeBlocks({ packId, activeClass }: { packId: string; activeClass: string }) {
+  const sets = (WEAPON_REFORGES[packId] ?? []).filter((s) => s.classes.includes(activeClass));
+  if (sets.length === 0) return null;
+  return (
+    <>
+      {sets.map((set) => (
+        <div key={set.title} className={styles.reforgeBlock}>
+          <div className={styles.reforgeLabel}>{set.title}</div>
+          <p className={styles.reforgeIntro}>{set.intro}</p>
+          <ul className={styles.reforgeList}>
+            {set.list.map((r) => (
+              <li key={r.name}><b>{r.name}</b> <span>{r.stat}</span> {r.note}</li>
+            ))}
+          </ul>
+          <p className={styles.reforgeMore}>
+            <a href={set.href} rel="noopener noreferrer" target="_blank">{set.label}</a>
+          </p>
+        </div>
+      ))}
+    </>
   );
 }
 
@@ -1333,6 +1393,7 @@ export function Loadouts() {
                 )}
               </div>
             )}
+            <WeaponReforgeBlocks packId={packId} activeClass={activeClassId} />
             <ReforgeBlock packId={packId} activeClass={activeClassId} />
             <AccLegend packId={packId} hasQuality={poolHasQuality} />
           </div>
