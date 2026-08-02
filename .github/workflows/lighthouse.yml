@@ -1,8 +1,10 @@
 name: Lighthouse CI
 
+# Disabled: this ran on every PR to main and is muted for now. It only runs when
+# triggered by hand from the Actions tab. Restore the `pull_request` trigger to
+# re-enable it.
 on:
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   lighthouse:
