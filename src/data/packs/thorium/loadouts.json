@@ -9295,7 +9295,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "at least 17 defense \u00b7 15% increased summon damage \u00b7 in addition to any stats given by the particular headpiece \u00b7 Set bonus: Killing enemies or continually damaging bosses generates soul wisps \u00b7 After generating 5 wisps, they are instantly consumed to heal you for 10 life \u00b7 File:Spirit Trapper's Cowl.png",
+        "effect": "Set bonus: Killing enemies or continually damaging bosses generates soul wisps<br/>After generating 5 wisps, they are instantly consumed to heal you for 10 life<br/> : Increases your max number of minions by 1<br/> : Increases your max number of sentries by 1",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Spirit_Trapper's_armor",
         "pieces": [
           "Spirit Trapper's Cuirass",
@@ -17396,7 +17396,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -17579,7 +17579,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -17806,7 +17806,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -18005,7 +18005,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -18413,7 +18413,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -18863,7 +18863,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -19256,7 +19256,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "[[File:Titan Headgear.png defense \u00b7 Set bonus: Damage done increased by 18%",
+        "effect": "Set bonus: 18% increased damage",
         "allClass": true,
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_armor",
         "pieces": [
@@ -21759,7 +21759,58 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Maestro_armor"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Maestro_armor",
+        "effect": "54 defense \u00b7 24% increased symphonic damage \u00b7 5% increased symphonic playing speed \u00b7 12% increased symphonic critical strike chance \u00b7 15% increased inspiration regeneration rate \u00b7 15% increased movement speed \u00b7 a 10% increased chance for inspiration notes to drop \u00b7 symphonic empowerments last 3 seconds longer \u00b7 Set bonus: Pressing the {{key",
+        "defense": 54,
+        "pieces": [
+          "Maestro's Wig",
+          "Maestro's Suit",
+          "Maestro's Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Maestro's Leggings",
+            "station": "Mythril Anvil",
+            "materials": [
+              {
+                "name": "Dark Matter",
+                "qty": 6
+              },
+              {
+                "name": "Silk",
+                "qty": 8
+              }
+            ]
+          },
+          {
+            "piece": "Maestro's Suit",
+            "station": "Mythril Anvil",
+            "materials": [
+              {
+                "name": "Dark Matter",
+                "qty": 8
+              },
+              {
+                "name": "Silk",
+                "qty": 12
+              }
+            ]
+          },
+          {
+            "piece": "Maestro's Wig",
+            "station": "Mythril Anvil",
+            "materials": [
+              {
+                "name": "Dark Matter",
+                "qty": 4
+              },
+              {
+                "name": "Silk",
+                "qty": 6
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "conduit-armor",
@@ -23482,7 +23533,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner_armor"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner_armor",
+        "effect": "Set bonus: Pressing the key will envelop you within an impervious bubble, converting all damage taken into healing \u00b7 : Throwing damage has a 20% chance to unleash aquatic homing daggers all around you"
       },
       {
         "id": "tide-turner-s-depth-helmet",
@@ -23494,7 +23546,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner's_Depth-Helmet"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner's_Depth-Helmet",
+        "effect": "Set bonus: Pressing the key will envelop you within an impervious bubble, converting all damage taken into healing \u00b7 : Throwing damage has a 20% chance to unleash aquatic homing daggers all around you"
       }
     ],
     "accessories": [
@@ -23593,7 +23646,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "[[File:Master Arbalest Hood.png defense \u00b7 Set bonus: File:Master Arbalest Hood.png",
+        "effect": "Set bonus: a 5% chance that the hit target is instantly killed, displaying when the effect occurs on an enemy with an \"ERADICATED\" message instead of the damage output; this effect only works on bosses below 5% maximum life",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Assassin_armor",
         "pieces": [
           "Assassin's Guard",
@@ -23709,7 +23762,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "[[File:Pyromancer's Cowl.png defense \u00b7 Set bonus: File:Pyromancer's Cowl.png",
+        "effect": "Set bonus: Your magic damage will heavily burn and damage all adjacent enemies<br/> : All summon damage leaves a lingering burn that deals significant damage over time",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyromancer_armor",
         "pieces": [
           "Pyromancer's Tabard",
@@ -23768,7 +23821,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyromancer's_Cowl"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyromancer's_Cowl",
+        "effect": "Set bonus: Your magic damage will heavily burn and damage all adjacent enemies \u00b7 : All summon damage leaves a lingering burn that deals significant damage over time"
       }
     ],
     "accessories": [
@@ -23851,7 +23905,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "[[File:Pyromancer's Cowl.png defense \u00b7 Set bonus: File:Pyromancer's Cowl.png",
+        "effect": "Set bonus: Your magic damage will heavily burn and damage all adjacent enemies<br/> : All summon damage leaves a lingering burn that deals significant damage over time",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyromancer_armor",
         "pieces": [
           "Pyromancer's Tabard",
@@ -23910,7 +23964,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Magma_Seer's_Mask"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Magma_Seer's_Mask",
+        "effect": "Set bonus: Your magic damage will heavily burn and damage all adjacent enemies \u00b7 : All summon damage leaves a lingering burn that deals significant damage over time"
       }
     ],
     "accessories": [
@@ -24038,7 +24093,8 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner_armor"
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tide_Turner_armor",
+        "effect": "Set bonus: Pressing the key will envelop you within an impervious bubble, converting all damage taken into healing \u00b7 : Throwing damage has a 20% chance to unleash aquatic homing daggers all around you"
       }
     ],
     "accessories": [
@@ -24262,7 +24318,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "[[File:Dream Weaver's Helmet.png defense \u00b7 Set bonus: File:Dream Weaver's Helmet.png",
+        "effect": "Set bonus: Pressing the accessory key will spend 200 mana and bend the very fabric of reality<br/>Enemies will be heavily slowed and take 15% more damage from all sources<br/>Allies will receive greatly increased movement and attack speed turning incoming non-lethal damage into healing<br/> : Pressing the accessory key will spend 200 mana and place you within the Dream<br/>While in the Dream, healed allies will become briefly invulnerable and be cured of all debuffs",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dream_Weaver_armor",
         "pieces": [
           "Dream Weaver's Tabard",
@@ -24480,7 +24536,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "effect": "[[File:Soloist's Hat.png defense \u00b7 Set bonus: File:Soloist's Hat.png",
+        "effect": "Set bonus: Pressing the key will grant you endless inspiration, greatly increased symphonic damage and playing speed<br/>This effect lasts for 10 seconds and needs to recharge for 1 minute<br/> : Pressing the key will overload all nearby allies with every empowerment III for 15 seconds<br/>Using this ability requires 20 inspiration and must recharge for one minute",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Rhapsodist_armor",
         "pieces": [
           "Rhapsodist's Chest-Woofer",
