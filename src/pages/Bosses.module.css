@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════
    BOSSES - Vertical roadmap (Guide Green)
 ═══════════════════════════════════════════════════ */
-.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
+.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
 /* ── Full-page biome backdrop (covers the whole page, like Loadouts) ── */
 /* Viewport-anchored so the image doesn't re-fit (zoom/drift) as the page grows */
@@ -17,9 +17,11 @@
 }
 
 /* Footer sits above the backdrop wash (which otherwise covers non-positioned content) */
-/* Extra top space (about the footer's own height) so the footer starts below
-   the fold rather than peeking in under the detail card on first load. */
-.footerLayer { position: relative; z-index: 2; margin-top: 108px; }
+/* margin-top:auto pushes the footer to the bottom of the flex-column page, so a
+   short detail panel can't leave a gap of bare backdrop beneath the footer.
+   When content is taller than the viewport the auto margin collapses to 0 and
+   the footer flows after it as usual. */
+.footerLayer { position: relative; z-index: 2; margin-top: auto; }
 
 /* ── Hero (transparent - the backdrop shows through) ── */
 /* z-index sits above .railSection: the hero now holds only the absolute header
