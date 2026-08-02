@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -304,41 +303,29 @@ export function Bosses() {
       {/* ── Hero ── */}
       <section className={styles.hero} aria-label="Boss Progression">
         <Header variant="photo" />
-        <div className={styles.heroBody}>
-          <p className={styles.crumb}>
-            <Link to="/">Home</Link> <span className={styles.crumbSep}>/</span> Boss Progression
-          </p>
-          <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
-          <p className={styles.heroLede}>
-            Every boss in progression order, left to right. Select one for its summon
-            method and key drops.
-          </p>
-        </div>
       </section>
 
       {/* ── Scroll rail ── */}
       <section className={styles.railSection} aria-label="Boss order timeline">
-        <div className={styles.phaseBar}>
-          <div className={`${styles.phaseToggle} pixel-frame pixel-hollow`} role="tablist" aria-label="Progression phase">
-            <button
-              type="button"
-              role="tab"
-              aria-selected={!showHardmode}
-              className={`${styles.phaseBtn} ${!showHardmode ? `${styles.phasePre} pixel-frame` : ''}`}
-              onClick={() => setPhase(false)}
-            >
-              Pre-Hardmode
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected={showHardmode}
-              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
-              onClick={() => setPhase(true)}
-            >
-              Hardmode
-            </button>
-          </div>
+        <div className={styles.phaseBar} role="tablist" aria-label="Progression phase">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={!showHardmode}
+            className={`${styles.phaseBtn} pixel-frame ${!showHardmode ? styles.phasePre : 'pixel-hollow'}`}
+            onClick={() => setPhase(false)}
+          >
+            Pre-Hardmode
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={showHardmode}
+            className={`${styles.phaseBtn} pixel-frame ${showHardmode ? styles.phaseHard : 'pixel-hollow'}`}
+            onClick={() => setPhase(true)}
+          >
+            Hardmode
+          </button>
         </div>
 
         <div className={styles.railScroll}>

@@ -22,9 +22,12 @@
 .footerLayer { position: relative; z-index: 2; margin-top: 108px; }
 
 /* ── Hero (transparent - the backdrop shows through) ── */
+/* z-index sits above .railSection: the hero now holds only the absolute header
+   and collapses to ~0 height, so an equal z-index let the later rail sibling
+   paint over the header and eat its nav clicks. */
 .hero {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   color: #fff;
   isolation: isolate;
 }
@@ -66,7 +69,9 @@
   z-index: 2;
   margin-top: 0;
   background: transparent;
-  padding: 44px 0 64px;
+  /* Top clears the absolute photo header (~64px), which floats over this
+     section now that the hero text - and its spacer padding - is gone. */
+  padding: 88px 0 64px;
   color: var(--paper);
 }
 
@@ -80,15 +85,7 @@
 .railScroll::-webkit-scrollbar-thumb { background: rgba(150,164,224,.35); border-radius: 6px; }
 
 /* ── Phase switch: pre-hardmode ⇄ hardmode ── */
-.phaseBar { display: flex; justify-content: center; padding: 4px 32px 20px; }
-.phaseToggle {
-  display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  --px-fill: rgba(10,16,32,.5);
-  --px-border: rgba(150,164,224,.3);
-  --px-u: 1px;   /* half-scale step, as on the nav tabs and class selectors */
-}
+.phaseBar { display: flex; justify-content: center; gap: 10px; padding: 4px 32px 20px; }
 .phaseBtn {
   font-family: var(--game);
   font-size: 13px;
@@ -100,13 +97,15 @@
   cursor: pointer;
   padding: 8px 20px;
   transition: color .15s;
+  /* Each button now carries its own pixel-frame - the shared container is gone.
+     --px-u stays at 1px (the half-scale step used on the nav tabs); the unselected
+     button renders hollow (pixel-hollow), the selected one fills via the classes
+     below. */
+  --px-u: 1px;
+  --px-fill: rgba(10,16,32,.5);
+  --px-border: rgba(150,164,224,.3);
 }
 .phaseBtn:hover { color: #fff; }
-/* The selected half is a filled pixel-frame rather than a rounded fill, so it
-   matches the switch it sits inside. --px-u stays at 1px: the container uses
-   the half-scale step and a 2px step here would read as a bigger, mismatched
-   corner on a nested box. */
-.phasePre, .phaseHard { --px-u: 1px; }
 .phasePre { color: #04263f; --px-fill: var(--sky); --px-border: var(--sky); }
 .phaseHard { color: #0b1524; --px-fill: #e0552e; --px-border: #e0552e; }
 
