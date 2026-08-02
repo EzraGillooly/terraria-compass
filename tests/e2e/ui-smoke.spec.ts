@@ -41,7 +41,10 @@ test.describe('main screens', () => {
   test('home renders the shell and difficulty control', async ({ page }) => {
     await page.goto('/#/');
 
-    await expect(page.getByText('Terraria Compass').first()).toBeVisible();
+    // The brand is an image link (the footer no longer carries the name as text).
+    await expect(
+      page.getByRole('link', { name: /terraria compass/i }),
+    ).toBeVisible();
     await toggleMenuIfMobile(page); // difficulty lives in the menu on mobile
     await expect(
       page.getByRole('button', { name: /world difficulty/i }),
