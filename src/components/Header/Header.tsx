@@ -325,8 +325,14 @@ export function Header({ variant = 'paper' }: HeaderProps) {
           <div className={styles.worldColumn}>
             <WorldSelect />
             <div className={styles.underWorld}>
-              {onLoadouts && <ClassSelect />}
-              {packId === 'calamity' && <CalamityModeToggle />}
+              {/* Revengeance mode sits on the same row, to the left of the class
+                  picker, rather than stacked under it. */}
+              {(onLoadouts || packId === 'calamity') && (
+                <div className={styles.classRow}>
+                  {packId === 'calamity' && <CalamityModeToggle />}
+                  {onLoadouts && <ClassSelect />}
+                </div>
+              )}
               {!onCrafting && <ProgressionToggle />}
             </div>
           </div>

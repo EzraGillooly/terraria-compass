@@ -186,6 +186,12 @@
   align-items: flex-end;
   gap: 6px;
 }
+/* Revengeance toggle + class picker share one row (mode on the left). */
+.classRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .calModeRow {
   display: inline-flex;
   align-items: center;
