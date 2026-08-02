@@ -91,8 +91,9 @@ const thoriumVanillaClasses: ClassDef[] = vanillaClasses
  * progression rather than reworking vanilla drops (unlike Calamity). So this
  * pack reuses the vanilla phases, boss data and recipe graph unchanged, then
  * layers on Thorium's own bosses and its two extra classes. Boss data is
- * scraped from thoriummod.wiki.gg the same way Calamity's was; loadouts are a
- * later pass, so the class roster is present but the loadout list is still empty.
+ * scraped from thoriummod.wiki.gg the same way Calamity's was; the loadouts are
+ * still in progress, so they ship in the dev build only (see the `loadouts`
+ * field below).
  */
 /**
  * Thorium's own boss guide slots several vanilla bosses differently from
@@ -134,7 +135,13 @@ export const thoriumPack: Pack = {
   available: true,
   phases: parseData(PhaseCollection, phasesJson),
   classes: [...thoriumVanillaClasses, ...THORIUM_CLASSES],
-  loadouts: parseData(LoadoutCollection, loadoutsJson),
+  // Ship the loadouts to the dev build only. They are unfinished, and the
+  // Bosses-only gate hides them in production - but the gate is client-side, so
+  // keeping the data itself out of the prod bundle is what stops anyone reaching
+  // it through devtools or the network tab. `import.meta.env.DEV` is statically
+  // `false` in the production build, so Rollup drops both the branch and the
+  // JSON import. The Bosses page never reads loadouts, so nothing else breaks.
+  loadouts: import.meta.env.DEV ? parseData(LoadoutCollection, loadoutsJson) : [],
   bosses: [...retieredVanilla, ...(thoriumBossesJson as BossDef[])],
   // Follow the mod's recommended fight order exactly - order by tier, not by the
   // default optional-first grouping (see Pack.strictBossOrder).
