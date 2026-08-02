@@ -249,6 +249,9 @@ export function Header({ variant = 'paper' }: HeaderProps) {
   const { pathname } = useLocation();
   // class only matters on the loadouts page, so its selector rides the header there
   const onLoadouts = pathname === '/loadouts';
+  // progression tracking has nothing to act on in the crafting trees, so hide the
+  // toggle there; it stays on loadouts, bosses and home.
+  const onCrafting = pathname === '/crafting';
 
   /* The nav and selectors do not fit a phone's width, so below the mobile
      breakpoint they collapse behind this button into a dropdown panel (see
@@ -306,16 +309,17 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Controls */}
         <div className={styles.controls}>
-          {onLoadouts && <ClassSelect />}
           <ModSelect />
           {/* The Calamity mode rides under World rather than beside it - it is a
-              layer on the world, not a peer of it. Out of flow, so it cannot
-              stretch the header. */}
+              layer on the world, not a peer of it. The class picker joins the same
+              under-World strip on the loadouts page (under World, above
+              Progression). Out of flow, so it cannot stretch the header. */}
           <div className={styles.worldColumn}>
             <WorldSelect />
             <div className={styles.underWorld}>
+              {onLoadouts && <ClassSelect />}
               {packId === 'calamity' && <CalamityModeToggle />}
-              <ProgressionToggle />
+              {!onCrafting && <ProgressionToggle />}
             </div>
           </div>
 

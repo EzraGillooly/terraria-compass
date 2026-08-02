@@ -39,9 +39,10 @@
   max-width: 1240px;
   margin: 0 auto;
   display: grid;
-  /* Logo and nav sit together on the left; the settings take the remaining
-     space and align to the right. The nav is not centered in the header. */
-  grid-template-columns: auto auto 1fr;
+  /* Logo (left) and settings (right) are content-sized; the nav takes the
+     flexible middle and centers within it, so it rests midway between the logo
+     and the settings rather than against the logo or the header centre. */
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: clamp(8px, 1.6vw, 20px);
 }
@@ -82,9 +83,9 @@
   filter: drop-shadow(1px 2px 2px rgba(0,0,0,.45));
 }
 
-/* ── Top nav (beside the logo) - each link in its own Terraria menu slot ── */
+/* ── Top nav (midway between logo and settings) - each link in its own slot ── */
 .topnav {
-  justify-self: start;
+  justify-self: center;
   display: flex;
   gap: clamp(4px, 0.9vw, 10px);
 }
