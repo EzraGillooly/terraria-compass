@@ -871,14 +871,17 @@ export function Loadouts() {
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
+  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
   const bestTier = inScope.filter((w) => w.tier === 'best');
   /* Top Picks aims for at least three weapons. One pick per subclass leaves
      phases where a class has only one or two on-tier families showing a single
      card, which reads as "this is your only option" rather than a shortlist.
-     The top-up keeps the list's own order, so the added cards are the next
-     best rather than an arbitrary pick. */
+     The top-up takes the next best-tier weapons (good before other, stable so
+     ties keep the guide's order), so a phase with one 'best' fills with its
+     genuine also-great picks rather than whatever sorts first. */
   const filteredBest = showingAll && bestTier.length < MIN_TOP_PICKS
-    ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
+    ? [...bestTier, ...[...inScope.filter((w) => w.tier !== 'best')]
+      .sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
       .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
     : bestTier;
   /* Inside one open subclass the recommendation is the weapon the data ranks
@@ -895,7 +898,6 @@ export function Loadouts() {
      'other' swords above genuinely good ones (Ash Wood Sword ahead of Light's
      Bane). Rank the rest by tier - stable, so ties keep the guide's order - and
      the good picks rise into Also Great, the rest fall behind "Show others". */
-  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
   const scopedByTier = ranked
     ? [...scopedRest].sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
     : scopedRest;

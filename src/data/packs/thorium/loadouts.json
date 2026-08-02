@@ -4,6 +4,72 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "blade-of-grass",
+        "name": "Blade of Grass",
+        "slot": "weapon",
+        "icon": "items/blade-of-grass.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Fires a homing Leaf Blade projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "18 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "starfury",
+        "name": "Starfury",
+        "slot": "weapon",
+        "icon": "items/starfury.png",
+        "source": "Found in Skyware Chests (Floating Islands)",
+        "why": "Calls a falling star from the sky on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "projectile-melee",
+        "stats": "25 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
+        "tier": "good",
+        "dropRate": "1/4 (25%)"
+      },
+      {
+        "id": "enchanted-sword",
+        "name": "Enchanted Sword",
+        "slot": "weapon",
+        "icon": "items/enchanted-sword.png",
+        "source": "From Enchanted Sword Shrine background object",
+        "why": "Fires an Enchanted Beam projectile at high health.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "projectile-melee",
+        "stats": "23 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword",
+        "tier": "good",
+        "dropRate": "1/30 (3.33%)"
+      },
+      {
         "id": "ice-lance",
         "name": "Ice Lance",
         "slot": "weapon",
@@ -11,71 +77,11 @@
         "source": "Crafted",
         "why": "early-game melee pick",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "effect": "Attacks might frostburn the target briefly",
         "stats": "9 damage",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Lance",
-        "subclass": "projectile-melee"
-      },
-      {
-        "id": "the-snowball",
-        "name": "The Snowball",
-        "slot": "weapon",
-        "icon": "thorium/the-snowball.png",
-        "source": "Crafted",
-        "why": "early-game melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Attacks might frostburn the target briefly",
-        "stats": "16 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Snowball",
-        "subclass": "flail"
-      },
-      {
-        "id": "cold-front",
-        "name": "Cold Front",
-        "slot": "weapon",
-        "icon": "thorium/cold-front.png",
-        "source": "Crafted",
-        "why": "early-game melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Attacks might frostburn the target briefly",
-        "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cold_Front",
-        "subclass": "boomerang"
-      },
-      {
-        "id": "coral-slasher",
-        "name": "Coral Slasher",
-        "slot": "weapon",
-        "icon": "thorium/coral-slasher.png",
-        "source": "Crafted",
-        "why": "early-game melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Unleashes sharp coral after 3 successful strikes",
-        "stats": "11 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Slasher",
-        "subclass": "true-melee"
-      },
-      {
-        "id": "coral-polearm",
-        "name": "Coral Polearm",
-        "slot": "weapon",
-        "icon": "thorium/coral-polearm.png",
-        "source": "Crafted",
-        "why": "early-game melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Summons a coral spike after 4 successful strikes",
-        "stats": "10 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Polearm",
         "subclass": "projectile-melee"
       },
       {
@@ -92,6 +98,66 @@
         "stats": "15 damage",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Red_Hourglass",
         "subclass": "yoyo"
+      },
+      {
+        "id": "the-snowball",
+        "name": "The Snowball",
+        "slot": "weapon",
+        "icon": "thorium/the-snowball.png",
+        "source": "Crafted",
+        "why": "early-game melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Attacks might frostburn the target briefly",
+        "stats": "16 damage",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Snowball",
+        "subclass": "flail"
+      },
+      {
+        "id": "cold-front",
+        "name": "Cold Front",
+        "slot": "weapon",
+        "icon": "thorium/cold-front.png",
+        "source": "Crafted",
+        "why": "early-game melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Attacks might frostburn the target briefly",
+        "stats": "10 damage",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cold_Front",
+        "subclass": "boomerang"
+      },
+      {
+        "id": "coral-slasher",
+        "name": "Coral Slasher",
+        "slot": "weapon",
+        "icon": "thorium/coral-slasher.png",
+        "source": "Crafted",
+        "why": "early-game melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Unleashes sharp coral after 3 successful strikes",
+        "stats": "11 damage",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Slasher",
+        "subclass": "true-melee"
+      },
+      {
+        "id": "coral-polearm",
+        "name": "Coral Polearm",
+        "slot": "weapon",
+        "icon": "thorium/coral-polearm.png",
+        "source": "Crafted",
+        "why": "early-game melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Summons a coral spike after 4 successful strikes",
+        "stats": "10 damage",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Coral_Polearm",
+        "subclass": "projectile-melee"
       }
     ],
     "tools": [],
@@ -203,6 +269,71 @@
     ],
     "accessories": [
       {
+        "id": "pool-dunerider-boots",
+        "name": "Dunerider Boots",
+        "slot": "accessory",
+        "icon": "thorium/dunerider-boots.png",
+        "source": "Crafted",
+        "why": "mobility accessory",
+        "tags": [
+          "movement"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dunerider_Boots"
+      },
+      {
+        "id": "pool-fledgling-wings",
+        "name": "Fledgling Wings",
+        "slot": "accessory",
+        "icon": "accessories/fledgling-wings.png",
+        "source": "Found in Azure Crate and 2 other sources",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
+        "quality": "great",
+        "tedious": true
+      },
+      {
+        "id": "pool-sandstorm-in-a-bottle",
+        "name": "Sandstorm in a Bottle",
+        "slot": "accessory",
+        "icon": "thorium/sandstorm-in-a-bottle.png",
+        "source": "Crafted",
+        "why": "mobility accessory",
+        "tags": [
+          "movement"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sandstorm_in_a_Bottle",
+        "altOf": "Fledgling Wings"
+      },
+      {
+        "id": "pool-shark-tooth-necklace",
+        "name": "Shark Tooth Necklace",
+        "slot": "accessory",
+        "icon": "accessories/shark-tooth-necklace.png",
+        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "offense"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+        "quality": "great",
+        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+      },
+      {
         "id": "ruby-ring",
         "name": "Ruby Ring",
         "slot": "accessory",
@@ -216,6 +347,25 @@
         "tier": "good",
         "effect": "Increases melee damage by 1",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ruby_Ring",
+        "categories": [
+          "offense"
+        ],
+        "altOf": "Shark Tooth Necklace"
+      },
+      {
+        "id": "leather-sheath",
+        "name": "Leather Sheath",
+        "slot": "accessory",
+        "icon": "thorium/leather-sheath.png",
+        "source": "Crafted",
+        "why": "melee accessory",
+        "tags": [
+          "combat"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "effect": "Sword strikes critically strike for 1200% damage if held and not used for 4 seconds",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Leather_Sheath",
         "categories": [
           "offense"
         ]
@@ -236,187 +386,24 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Silver_Spear_Tip",
         "categories": [
           "offense"
-        ]
+        ],
+        "altOf": "Leather Sheath"
       },
       {
-        "id": "metallurgy-shield",
-        "name": "Metallurgy Shield",
+        "id": "pool-thorium-shield",
+        "name": "Thorium Shield",
         "slot": "accessory",
-        "icon": "thorium/metallurgy-shield.png",
+        "icon": "thorium/thorium-shield.png",
         "source": "Crafted",
-        "why": "all-class accessory",
+        "why": "throwing accessory",
         "tags": [
           "shield"
         ],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Metallurgy_Shield",
         "categories": [
           "survivability"
-        ]
-      },
-      {
-        "id": "crietz",
-        "name": "Crietz",
-        "slot": "accessory",
-        "icon": "thorium/crietz.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
-        "tags": [
-          "combat"
         ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Once every second, your next critical strike causes a burst of damaging energy",
-        "stats": "15 damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Crietz",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
-        "id": "band-of-replenishment",
-        "name": "Band of Replenishment",
-        "slot": "accessory",
-        "icon": "thorium/band-of-replenishment.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
-        "tags": [
-          "health-mana"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Increased Health and Mana regeneration · Taking more than three damage will replenish some Health and Mana",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Band_of_Replenishment",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "amethyst-ring",
-        "name": "Amethyst Ring",
-        "slot": "accessory",
-        "icon": "thorium/amethyst-ring.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "all-class accessory",
-        "tags": [
-          "ring"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Increases armor penetration by 1",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Amethyst_Ring",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
-        "id": "diamond-ring",
-        "name": "Diamond Ring",
-        "slot": "accessory",
-        "icon": "thorium/diamond-ring.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "all-class accessory",
-        "tags": [
-          "ring"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Increases critical strike chance by 2%",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Diamond_Ring",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
-        "id": "ring-of-unity",
-        "name": "Ring of Unity",
-        "slot": "accessory",
-        "icon": "thorium/ring-of-unity.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "all-class accessory",
-        "tags": [
-          "combat"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Increases damage by 1 · Increases damage by an additional 1 for every nearby player that also has it equipped",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ring_of_Unity",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
-        "id": "spring-steps",
-        "name": "Spring Steps",
-        "slot": "accessory",
-        "icon": "thorium/spring-steps.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "all-class accessory",
-        "tags": [
-          "movement"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Allows you to do a triple hop super jump · Increases fall resistance and allows you to auto-jump",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Spring_Steps",
-        "categories": [
-          "mobility"
-        ]
-      },
-      {
-        "id": "salamander-eye",
-        "name": "Salamander Eye",
-        "slot": "accessory",
-        "icon": "thorium/salamander-eye.png",
-        "source": "Dropped by Salamander",
-        "why": "all-class accessory",
-        "tags": [
-          "health-mana"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "While in combat for 5 seconds, your life recovery increases by 1",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Salamander_Eye",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "giant-shell-spine",
-        "name": "Giant Shell Spine",
-        "slot": "accessory",
-        "icon": "thorium/giant-shell-spine.png",
-        "source": "Dropped by Giant Shelly",
-        "why": "all-class accessory",
-        "tags": [
-          "combat"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "While in combat, your defense increases by 1 over time up to 4",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Giant_Shell_Spine",
-        "categories": [
-          "offense"
-        ]
-      },
-      {
-        "id": "crawdad-claw",
-        "name": "Crawdad Claw",
-        "slot": "accessory",
-        "icon": "thorium/crawdad-claw.png",
-        "source": "Dropped by Crawdad",
-        "why": "all-class accessory",
-        "tags": [
-          "combat"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "While in combat, your armor penetration increases by 1 over time up to 2",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Crawdad_Claw",
-        "categories": [
-          "offense"
-        ]
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Shield"
       }
     ],
     "buffs": [],
@@ -7270,6 +7257,72 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "trimarang",
+        "name": "Trimarang",
+        "slot": "weapon",
+        "icon": "items/trimarang.png",
+        "source": "Crafted at Work Bench",
+        "why": "Throws three boomerangs at once, combining three pre-boss boomerangs.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "boomerang",
+        "stats": "21 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Trimarang",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Enchanted Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang"
+          },
+          {
+            "name": "Shroomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomerang"
+          },
+          {
+            "name": "Ice Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Boomerang"
+          }
+        ],
+        "station": "Work Bench"
+      },
+      {
+        "id": "blade-of-grass",
+        "name": "Blade of Grass",
+        "slot": "weapon",
+        "icon": "items/blade-of-grass.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Fires a homing Leaf Blade projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "projectile-melee",
+        "stats": "18 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
         "id": "thunder-talon",
         "name": "Thunder Talon",
         "slot": "weapon",
@@ -7277,42 +7330,12 @@
         "source": "Dropped by The Grand Thunder Bird",
         "why": "melee pick",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "effect": "Zaps another nearby enemy on hit",
         "stats": "12 damage",
         "subclass": "true-melee",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thunder_Talon"
-      },
-      {
-        "id": "fork",
-        "name": "Fork",
-        "slot": "weapon",
-        "icon": "thorium/fork.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Defeated enemies drop 'meat slabs' which grant Well Fed",
-        "stats": "12 damage",
-        "subclass": "projectile-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fork"
-      },
-      {
-        "id": "tracker-s-skinning-blade",
-        "name": "Tracker's Skinning Blade",
-        "slot": "weapon",
-        "icon": "thorium/tracker-s-skinning-blade.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Generates 2% of the enemies' coin value on hit",
-        "stats": "16 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tracker's_Skinning_Blade"
       },
       {
         "id": "aerial",
@@ -7328,6 +7351,36 @@
         "stats": "16 damage",
         "subclass": "yoyo",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Aerial"
+      },
+      {
+        "id": "fork",
+        "name": "Fork",
+        "slot": "weapon",
+        "icon": "thorium/fork.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Defeated enemies drop 'meat slabs' which grant Well Fed",
+        "stats": "12 damage",
+        "subclass": "projectile-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fork"
+      },
+      {
+        "id": "tracker-s-skinning-blade",
+        "name": "Tracker's Skinning Blade",
+        "slot": "weapon",
+        "icon": "thorium/tracker-s-skinning-blade.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Generates 2% of the enemies' coin value on hit",
+        "stats": "16 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Tracker's_Skinning_Blade"
       }
     ],
     "tools": [],
@@ -7387,39 +7440,77 @@
     ],
     "accessories": [
       {
-        "id": "ruby-ring",
-        "name": "Ruby Ring",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "thorium/ruby-ring.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "melee accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
-          "ring"
+          "hardmode"
         ],
         "topPick": false,
-        "tier": "good",
-        "effect": "Increases melee damage by 1",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ruby_Ring",
         "categories": [
-          "offense"
-        ]
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       },
       {
-        "id": "silver-spear-tip",
-        "name": "Silver Spear Tip",
+        "id": "pool-bundle-of-horseshoe-balloons",
+        "name": "Bundle of Horseshoe Balloons",
         "slot": "accessory",
-        "icon": "thorium/silver-spear-tip.png",
-        "source": "Crafted",
-        "why": "melee accessory",
-        "tags": [
-          "combat"
-        ],
+        "icon": "accessories/bundle-of-horseshoe-balloons.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+        "tags": [],
         "topPick": false,
-        "tier": "good",
-        "effect": "50% basic damage · Spear weapons will release a damaging spear tip",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Silver_Spear_Tip",
         "categories": [
-          "offense"
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Bundle of Balloons",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+          },
+          {
+            "name": "Lucky Horseshoe",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
         ]
       },
       {
@@ -7441,75 +7532,40 @@
         ]
       },
       {
-        "id": "blacksmith-s-barrier",
-        "name": "Blacksmith's Barrier",
+        "id": "silver-spear-tip",
+        "name": "Silver Spear Tip",
         "slot": "accessory",
-        "icon": "thorium/blacksmith-s-barrier.png",
+        "icon": "thorium/silver-spear-tip.png",
         "source": "Crafted",
-        "why": "all-class accessory",
-        "tags": [
-          "shield"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Reduces the amount of knockback you take from getting hit",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Blacksmith's_Barrier",
-        "categories": [
-          "survivability"
-        ]
-      },
-      {
-        "id": "magma-locket",
-        "name": "Magma Locket",
-        "slot": "accessory",
-        "icon": "thorium/magma-locket.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "all-class accessory",
+        "why": "melee accessory",
         "tags": [
           "combat"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "'Seems to be made out of a familiar material' · Enemies you hit take 200% more damage from fiery damage over time debuffs",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Magma_Locket",
+        "effect": "50% basic damage · Spear weapons will release a damaging spear tip",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Silver_Spear_Tip",
         "categories": [
           "offense"
-        ]
+        ],
+        "altOf": "Leather Sheath"
       },
       {
-        "id": "nightshade-flower",
-        "name": "Nightshade Flower",
+        "id": "the-ring",
+        "name": "The Ring",
         "slot": "accessory",
-        "icon": "thorium/nightshade-flower.png",
+        "icon": "thorium/the-ring.png",
         "source": "Crafted",
         "why": "all-class accessory",
         "tags": [
-          "combat"
+          "ring"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "Enemies you hit take 200% more damage from poison and venom damage over time",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Nightshade_Flower",
+        "effect": "Increases all damage by 2 · Increases armor penetration by 2 · Increases critical strike chance by 4%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Ring",
         "categories": [
           "offense"
-        ]
-      },
-      {
-        "id": "potion-chaser",
-        "name": "Potion Chaser",
-        "slot": "accessory",
-        "icon": "thorium/potion-chaser.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
-        "tags": [
-          "health-mana"
-        ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Drinking a potion heals an additional 25 life",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Potion_Chaser",
-        "categories": [
-          "survivability"
         ]
       }
     ],
@@ -17794,19 +17850,57 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "blooming-blade",
-        "name": "Blooming Blade",
+        "id": "volcano",
+        "name": "Volcano",
         "slot": "weapon",
-        "icon": "thorium/blooming-blade.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
+        "icon": "items/volcano.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Creates an explosion on hitting enemies.",
+        "tags": [
+          "carry-over"
+        ],
         "topPick": true,
-        "tier": "best",
-        "effect": "Damaging enemies grants brief life recovery",
-        "stats": "22 damage",
         "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Blooming_Blade"
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "flamarang",
+        "name": "Flamarang",
+        "slot": "weapon",
+        "icon": "items/flamarang.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Hellstone-tier boomerang that inflicts On Fire.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "boomerang",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flamarang",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          },
+          {
+            "name": "Enchanted Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "pearl-pike",
@@ -17824,21 +17918,6 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pearl_Pike"
       },
       {
-        "id": "giant-glowstick",
-        "name": "Giant Glowstick",
-        "slot": "weapon",
-        "icon": "thorium/giant-glowstick.png",
-        "source": "Dropped by Queen Jellyfish",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Attacks may briefly paralyze the hit enemy",
-        "stats": "30 damage",
-        "subclass": "boomerang",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Giant_Glowstick"
-      },
-      {
         "id": "sparking-jelly-ball",
         "name": "Sparking Jelly Ball",
         "slot": "weapon",
@@ -17854,18 +17933,19 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sparking_Jelly_Ball"
       },
       {
-        "id": "illustrious",
-        "name": "Illustrious",
+        "id": "giant-glowstick",
+        "name": "Giant Glowstick",
         "slot": "weapon",
-        "icon": "thorium/illustrious.png",
-        "source": "Crafted",
+        "icon": "thorium/giant-glowstick.png",
+        "source": "Dropped by Queen Jellyfish",
         "why": "melee pick",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "stats": "24 damage",
-        "subclass": "yoyo",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Illustrious"
+        "effect": "Attacks may briefly paralyze the hit enemy",
+        "stats": "30 damage",
+        "subclass": "boomerang",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Giant_Glowstick"
       },
       {
         "id": "bat-wing",
@@ -17883,6 +17963,35 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bat_Wing"
       },
       {
+        "id": "blooming-blade",
+        "name": "Blooming Blade",
+        "slot": "weapon",
+        "icon": "thorium/blooming-blade.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Damaging enemies grants brief life recovery",
+        "stats": "22 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Blooming_Blade"
+      },
+      {
+        "id": "illustrious",
+        "name": "Illustrious",
+        "slot": "weapon",
+        "icon": "thorium/illustrious.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "stats": "24 damage",
+        "subclass": "yoyo",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Illustrious"
+      },
+      {
         "id": "drenched-dirk",
         "name": "Drenched Dirk",
         "slot": "weapon",
@@ -17891,7 +18000,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Wildly stabs in a frontal cone",
         "stats": "18 damage",
         "subclass": "other",
@@ -17955,21 +18064,77 @@
     ],
     "accessories": [
       {
-        "id": "ruby-ring",
-        "name": "Ruby Ring",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "thorium/ruby-ring.png",
-        "source": "Dropped by Scarlet Chest",
-        "why": "melee accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
-          "ring"
+          "hardmode"
         ],
         "topPick": false,
-        "tier": "good",
-        "effect": "Increases melee damage by 1",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ruby_Ring",
         "categories": [
-          "offense"
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-bundle-of-horseshoe-balloons",
+        "name": "Bundle of Horseshoe Balloons",
+        "slot": "accessory",
+        "icon": "accessories/bundle-of-horseshoe-balloons.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Bundle of Balloons",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+          },
+          {
+            "name": "Lucky Horseshoe",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
         ]
       },
       {
@@ -17989,6 +18154,25 @@
         "categories": [
           "offense"
         ]
+      },
+      {
+        "id": "molten-spear-tip",
+        "name": "Molten Spear Tip",
+        "slot": "accessory",
+        "icon": "thorium/molten-spear-tip.png",
+        "source": "Crafted",
+        "why": "melee accessory",
+        "tags": [
+          "combat"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "effect": "75% basic damage · Spear weapons will release a flaming spear tip",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Molten_Spear_Tip",
+        "categories": [
+          "offense"
+        ],
+        "altOf": "Leather Sheath"
       },
       {
         "id": "sea-turtle-s-bulwark",
@@ -22622,34 +22806,56 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "darksteel-broadsword",
-        "name": "Darksteel Broadsword",
+        "id": "night-s-edge",
+        "name": "Night's Edge",
         "slot": "weapon",
-        "icon": "thorium/darksteel-broadsword.png",
-        "source": "Crafted",
-        "why": "melee pick",
+        "icon": "items/night-s-edge.png",
+        "source": "Crafted at Demon Altar or Crimson Altar",
+        "why": "Wide-arc broadsword with the highest pre-Hardmode melee damage.",
         "tags": [],
         "topPick": true,
-        "tier": "best",
-        "effect": "Right click to stun enemies in front of you with a spike",
-        "stats": "28 damage",
         "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Darksteel_Broadsword"
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Night%27s_Edge",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Light's Bane",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Light%27s_Bane"
+          },
+          {
+            "name": "Muramasa",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Muramasa"
+          },
+          {
+            "name": "Blade of Grass",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass"
+          },
+          {
+            "name": "Volcano",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano"
+          }
+        ],
+        "station": "Demon Altar or Crimson Altar"
       },
       {
-        "id": "champion-s-swift-blade",
-        "name": "Champion's Swift Blade",
+        "id": "dark-lance",
+        "name": "Dark Lance",
         "slot": "weapon",
-        "icon": "thorium/champion-s-swift-blade.png",
-        "source": "Dropped by Buried Champion",
-        "why": "melee pick",
+        "icon": "items/dark-lance.png",
+        "source": "Found in Underworld Shadow Chests (Shadow Key) and Obsidian Lock Boxes",
+        "why": "Underworld Shadow Chest spear opened with a Dungeon-found Shadow Key.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "effect": "Your first hit every swing releases a quick wind slash",
-        "stats": "30 damage",
         "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion's_Swift_Blade"
+        "stats": "34 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Lance",
+        "tier": "good",
+        "dropRate": "1/5 (20%)"
       },
       {
         "id": "energy-storm-partisan",
@@ -22667,6 +22873,51 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Energy_Storm_Partisan"
       },
       {
+        "id": "sunfury",
+        "name": "Sunfury",
+        "slot": "weapon",
+        "icon": "items/sunfury.png",
+        "source": "Found in Shadow Chests (Underworld) and Obsidian Lock Boxes",
+        "why": "Underworld Shadow Chest flail from the Hellstone tier.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "64 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sunfury",
+        "tier": "good",
+        "dropRate": "1/5 (20%)"
+      },
+      {
+        "id": "darksteel-broadsword",
+        "name": "Darksteel Broadsword",
+        "slot": "weapon",
+        "icon": "thorium/darksteel-broadsword.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Right click to stun enemies in front of you with a spike",
+        "stats": "28 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Darksteel_Broadsword"
+      },
+      {
+        "id": "champion-s-swift-blade",
+        "name": "Champion's Swift Blade",
+        "slot": "weapon",
+        "icon": "thorium/champion-s-swift-blade.png",
+        "source": "Dropped by Buried Champion",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Your first hit every swing releases a quick wind slash",
+        "stats": "30 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion's_Swift_Blade"
+      },
+      {
         "id": "granite-reflector",
         "name": "Granite Reflector",
         "slot": "weapon",
@@ -22675,7 +22926,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Overflows nearby enemies with granite energy after its first hit",
         "stats": "30 damage",
         "subclass": "boomerang",
@@ -22690,7 +22941,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "If fully spun, and released to maximum distance, homing stars are created",
         "stats": "62 damage",
         "subclass": "flail",
@@ -22705,7 +22956,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Briefly petrifies hit enemies",
         "stats": "24 damage",
         "subclass": "yoyo",
@@ -22720,7 +22971,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Every five hits releases a spread of cursed flame",
         "stats": "32 damage",
         "subclass": "yoyo",
@@ -22735,7 +22986,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Every five hits releases a spread of ichor",
         "stats": "34 damage",
         "subclass": "yoyo",
@@ -22881,22 +23132,114 @@
     ],
     "accessories": [
       {
-        "id": "molten-spear-tip",
-        "name": "Molten Spear Tip",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "thorium/molten-spear-tip.png",
-        "source": "Crafted",
-        "why": "melee accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
-          "combat"
+          "hardmode"
         ],
         "topPick": false,
-        "tier": "good",
-        "effect": "75% basic damage · Spear weapons will release a flaming spear tip",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Molten_Spear_Tip",
         "categories": [
-          "offense"
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-champion-s-wings",
+        "name": "Champion's Wings",
+        "slot": "accessory",
+        "icon": "thorium/champion-s-wings.png",
+        "source": "Crafted",
+        "why": "mobility accessory",
+        "tags": [
+          "movement"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion's_Wings",
+        "markers": [
+          "expert"
         ]
+      },
+      {
+        "id": "pool-bundle-of-horseshoe-balloons",
+        "name": "Bundle of Horseshoe Balloons",
+        "slot": "accessory",
+        "icon": "accessories/bundle-of-horseshoe-balloons.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Bundle of Balloons",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+          },
+          {
+            "name": "Lucky Horseshoe",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "altOf": "Champion's Wings"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "magma-stone",
+        "name": "Magma Stone",
+        "slot": "accessory",
+        "icon": "accessories/magma-stone.png",
+        "source": "Dropped by Hellbats and Lava Bats",
+        "why": "Adds fire damage to melee strikes.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone",
+        "categories": [
+          "melee"
+        ],
+        "dropRate": "0.67%",
+        "altOf": "Shield of Cthulhu"
       },
       {
         "id": "iron-flail-core",
@@ -22917,19 +23260,38 @@
         ]
       },
       {
-        "id": "grave-goods",
-        "name": "Grave Goods",
+        "id": "molten-spear-tip",
+        "name": "Molten Spear Tip",
         "slot": "accessory",
-        "icon": "thorium/grave-goods.png",
-        "source": "Dropped by Big Bone",
-        "why": "all-class accessory",
+        "icon": "thorium/molten-spear-tip.png",
+        "source": "Crafted",
+        "why": "melee accessory",
         "tags": [
-          "health-mana"
+          "combat"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "Nearby allies that die drop a wisp of spirit energy · Players that touch the wisp replenish health equal to 15% of the allies maximum health",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Grave_Goods",
+        "effect": "75% basic damage · Spear weapons will release a flaming spear tip",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Molten_Spear_Tip",
+        "categories": [
+          "offense"
+        ],
+        "altOf": "Iron Flail-Core"
+      },
+      {
+        "id": "champion-s-rebuttal",
+        "name": "Champion's Rebuttal",
+        "slot": "accessory",
+        "icon": "thorium/champion-s-rebuttal.png",
+        "source": "Dropped by Buried Champion",
+        "why": "all-class accessory",
+        "tags": [
+          "shield"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "effect": "Twice the damage you take is stored into your next damaging attack · This can reach a maximum limit of 300 bonus damage",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion's_Rebuttal",
         "categories": [
           "survivability"
         ]
@@ -22950,25 +23312,8 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Obsidian_Scale",
         "categories": [
           "survivability"
-        ]
-      },
-      {
-        "id": "champion-s-rebuttal",
-        "name": "Champion's Rebuttal",
-        "slot": "accessory",
-        "icon": "thorium/champion-s-rebuttal.png",
-        "source": "Dropped by Buried Champion",
-        "why": "all-class accessory",
-        "tags": [
-          "shield"
         ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Twice the damage you take is stored into your next damaging attack · This can reach a maximum limit of 300 bonus damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion's_Rebuttal",
-        "categories": [
-          "survivability"
-        ]
+        "altOf": "Champion's Rebuttal"
       }
     ],
     "buffs": [],
@@ -39013,64 +39358,19 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "glacier",
-        "name": "Glacier",
+        "id": "poseidon-s-charge",
+        "name": "Poseidon's Charge",
         "slot": "weapon",
-        "icon": "thorium/glacier.png",
-        "source": "Dropped by Borean Strider",
+        "icon": "thorium/poseidon-s-charge.png",
+        "source": "Dropped by Submerged Mimic",
         "why": "melee pick",
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "effect": "Every 4 seconds, your next strike releases freezing shards",
-        "stats": "50 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacier"
-      },
-      {
-        "id": "executioner",
-        "name": "Executioner",
-        "slot": "weapon",
-        "icon": "thorium/executioner.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Continuous strikes increase speed and damage, then reduce enemy defense at max power",
-        "stats": "46 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Executioner"
-      },
-      {
-        "id": "back-stabber",
-        "name": "Back Stabber",
-        "slot": "weapon",
-        "icon": "thorium/back-stabber.png",
-        "source": "Dropped by Mister Stabby",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Damaging the back of an enemy will always critically strike for 400% damage · While holding this weapon, enemies are far less likely to target you",
-        "stats": "29 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Back_Stabber"
-      },
-      {
-        "id": "lodestone-claymore",
-        "name": "Lodestone Claymore",
-        "slot": "weapon",
-        "icon": "thorium/lodestone-claymore.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Right click to create an eruption of earth · Damage will sunder enemies, increasing the damage they take by 10%",
-        "stats": "42 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lodestone_Claymore"
+        "effect": "Right click to release a damaging line of bubbles",
+        "stats": "38 damage",
+        "subclass": "projectile-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Poseidon's_Charge"
       },
       {
         "id": "hellish-halberd",
@@ -39088,34 +39388,34 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hellish_Halberd"
       },
       {
-        "id": "ship-s-helm",
-        "name": "Ship's Helm",
+        "id": "dragon-s-tooth",
+        "name": "Dragon's Tooth",
         "slot": "weapon",
-        "icon": "thorium/ship-s-helm.png",
-        "source": "Dropped by Flying Dutchman",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Throws up to two large steering wheels · Enemies killed will drop more money",
-        "stats": "58 damage",
-        "subclass": "boomerang",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ship's_Helm"
-      },
-      {
-        "id": "the-sea-mine",
-        "name": "The Sea Mine",
-        "slot": "weapon",
-        "icon": "thorium/the-sea-mine.png",
+        "icon": "thorium/dragon-s-tooth.png",
         "source": "Crafted",
         "why": "melee pick",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "effect": "'You've gotta be a lunatic to wield an explosive device on a chain' · While being spun, every four hits releases a fiery explosion",
-        "stats": "96 damage",
-        "subclass": "flail",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Sea_Mine"
+        "effect": "Critical strikes store up to 5 dragon rages · Right click to unleash any stored dragon rage",
+        "stats": "36 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dragon's_Tooth"
+      },
+      {
+        "id": "glacier",
+        "name": "Glacier",
+        "slot": "weapon",
+        "icon": "thorium/glacier.png",
+        "source": "Dropped by Borean Strider",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "effect": "Every 4 seconds, your next strike releases freezing shards",
+        "stats": "50 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacier"
       },
       {
         "id": "lodestone-breaker",
@@ -39133,6 +39433,81 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lodestone_Breaker"
       },
       {
+        "id": "the-sea-mine",
+        "name": "The Sea Mine",
+        "slot": "weapon",
+        "icon": "thorium/the-sea-mine.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "effect": "'You've gotta be a lunatic to wield an explosive device on a chain' · While being spun, every four hits releases a fiery explosion",
+        "stats": "96 damage",
+        "subclass": "flail",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Sea_Mine"
+      },
+      {
+        "id": "executioner",
+        "name": "Executioner",
+        "slot": "weapon",
+        "icon": "thorium/executioner.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Continuous strikes increase speed and damage, then reduce enemy defense at max power",
+        "stats": "46 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Executioner"
+      },
+      {
+        "id": "back-stabber",
+        "name": "Back Stabber",
+        "slot": "weapon",
+        "icon": "thorium/back-stabber.png",
+        "source": "Dropped by Mister Stabby",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Damaging the back of an enemy will always critically strike for 400% damage · While holding this weapon, enemies are far less likely to target you",
+        "stats": "29 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Back_Stabber"
+      },
+      {
+        "id": "lodestone-claymore",
+        "name": "Lodestone Claymore",
+        "slot": "weapon",
+        "icon": "thorium/lodestone-claymore.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Right click to create an eruption of earth · Damage will sunder enemies, increasing the damage they take by 10%",
+        "stats": "42 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lodestone_Claymore"
+      },
+      {
+        "id": "ship-s-helm",
+        "name": "Ship's Helm",
+        "slot": "weapon",
+        "icon": "thorium/ship-s-helm.png",
+        "source": "Dropped by Flying Dutchman",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Throws up to two large steering wheels · Enemies killed will drop more money",
+        "stats": "58 damage",
+        "subclass": "boomerang",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ship's_Helm"
+      },
+      {
         "id": "the-juggernaut",
         "name": "The Juggernaut",
         "slot": "weapon",
@@ -39141,7 +39516,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "While extending, critical strikes hurl a bouncing ball forward",
         "stats": "84 damage",
         "subclass": "flail",
@@ -39204,21 +39579,95 @@
     ],
     "accessories": [
       {
-        "id": "writhing-sheath",
-        "name": "Writhing Sheath",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "thorium/writhing-sheath.png",
-        "source": "Crafted",
-        "why": "melee accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
         "tags": [
-          "combat"
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-fairy-wings",
+        "name": "Fairy Wings",
+        "slot": "accessory",
+        "icon": "accessories/fairy-wings.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fairy_Wings",
+        "quality": "great",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Pixie Dust",
+            "qty": 99,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "quality": "good",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "ocean-s-retaliation",
+        "name": "Ocean's Retaliation",
+        "slot": "accessory",
+        "icon": "thorium/ocean-s-retaliation.png",
+        "source": "Crafted",
+        "why": "all-class accessory",
+        "tags": [
+          "shield"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "200% basic damage · Sword strikes summon a barrage of void blades if held and not used for 3 seconds",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Writhing_Sheath",
+        "effect": "50% basic damage · Defense increased by 4 · 50% of the damage you take is also dealt to the attacker · Taking damage releases a touchable mote that recovers 25% of the damage you took · Taking damage releases a spread of venom inflicting spines",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ocean's_Retaliation",
         "categories": [
-          "offense"
+          "survivability"
         ]
       },
       {
@@ -39240,43 +39689,42 @@
         ]
       },
       {
-        "id": "beholder-s-gaze",
-        "name": "Beholder's Gaze",
+        "id": "titan-slayer-sheath",
+        "name": "Titan Slayer Sheath",
         "slot": "accessory",
-        "icon": "thorium/beholder-s-gaze.png",
-        "source": "Dropped by Fallen Beholder",
-        "why": "all-class accessory",
+        "icon": "thorium/titan-slayer-sheath.png",
+        "source": "Crafted",
+        "why": "melee accessory",
         "tags": [
           "combat"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "Pressing the {{key",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Beholder's_Gaze",
+        "effect": "Sword strikes critically strike bosses for 2000% damage if held for 3 seconds",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Titan_Slayer_Sheath",
         "categories": [
           "offense"
-        ]
+        ],
+        "altOf": "Rapier Badge"
       },
       {
-        "id": "mirror-of-the-beholder",
-        "name": "Mirror of the Beholder",
+        "id": "leeching-sheath",
+        "name": "Leeching Sheath",
         "slot": "accessory",
-        "icon": "thorium/mirror-of-the-beholder.png",
-        "source": "Dropped",
-        "why": "all-class accessory",
+        "icon": "thorium/leeching-sheath.png",
+        "source": "Crafted",
+        "why": "melee accessory",
         "tags": [
-          "misc"
+          "combat"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "'Beauty is subjective after all' · While equipped, you gain vision of your cursor's current position · Enemies around your cursor are briefly revealed and take 15% more damage from all sources",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mirror_of_the_Beholder",
+        "effect": "Sword strikes critically strike for 1000% damage if held and not used for 3 seconds · Additionally you recover 10% of your missing health from this attack",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Leeching_Sheath",
         "categories": [
-          "all-around"
+          "offense"
         ],
-        "markers": [
-          "expert"
-        ]
+        "altOf": "Rapier Badge"
       }
     ],
     "buffs": [],
@@ -45304,6 +45752,85 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "terra-blade",
+        "name": "Terra Blade",
+        "slot": "weapon",
+        "icon": "items/terra-blade.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Fires a fast green sword beam projectile on each swing.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "85 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "True Night's Edge",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge"
+          },
+          {
+            "name": "True Excalibur",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur"
+          },
+          {
+            "name": "Broken Hero Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Hero_Sword"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "the-eye-of-cthulhu",
+        "name": "The Eye of Cthulhu",
+        "slot": "weapon",
+        "icon": "items/the-eye-of-cthulhu.png",
+        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "115 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
+        "tier": "best",
+        "dropRate": "33.33% 55.56%"
+      },
+      {
+        "id": "scourge-of-the-corruptor",
+        "name": "Scourge of the Corruptor",
+        "slot": "weapon",
+        "icon": "items/scourge-of-the-corruptor.png",
+        "source": "Found in the Dungeon's Corruption Chest (post-Plantera)",
+        "why": "Fires an Eater's Bite projectile that splits into homing worms.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "projectile-melee",
+        "stats": "70 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Scourge_of_the_Corruptor"
+      },
+      {
+        "id": "vampire-knives",
+        "name": "Vampire Knives",
+        "slot": "weapon",
+        "icon": "items/vampire-knives.png",
+        "source": "Found in the Dungeon's Crimson Chest (post-Plantera)",
+        "why": "Fires a spread of knives that heal the player on hit.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "projectile-melee",
+        "stats": "29 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Knives"
+      },
+      {
         "id": "prime-s-fury",
         "name": "Prime's Fury",
         "slot": "weapon",
@@ -45311,8 +45838,8 @@
         "source": "Crafted",
         "why": "melee pick",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "other",
         "effect": "Has a chance to discharge an energy wave dealing triple damage",
         "stats": "90 damage",
         "subclass": "true-melee",
@@ -45327,7 +45854,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Unleashes laser beams at nearby enemies",
         "stats": "48 damage",
         "subclass": "yoyo",
@@ -45342,7 +45869,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Release a pulse of titanic energy on use · Critical strikes will deal additional damage",
         "stats": "52 damage",
         "subclass": "true-melee",
@@ -45357,7 +45884,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Three boomerangs may be out at once · Critical strikes will deal additional damage",
         "stats": "48 damage",
         "subclass": "boomerang",
@@ -45372,7 +45899,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "Shoots a volatile soul blade",
         "stats": "80 damage",
         "subclass": "true-melee",
@@ -45387,7 +45914,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "'Be careful if you set the fan speed to max!' · While grounded, it sucks in nearby enemies and slices them up",
         "stats": "112 damage",
         "subclass": "flail",
@@ -45469,40 +45996,129 @@
     ],
     "accessories": [
       {
-        "id": "flawless-chrysalis",
-        "name": "Flawless Chrysalis",
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "thorium/flawless-chrysalis.png",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "pool-mothron-wings",
+        "name": "Mothron Wings",
+        "slot": "accessory",
+        "icon": "accessories/mothron-wings.png",
+        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
+        "quality": "fine"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "holy-aegis",
+        "name": "Holy Aegis",
+        "slot": "accessory",
+        "icon": "thorium/holy-aegis.png",
         "source": "Crafted",
         "why": "all-class accessory",
         "tags": [
-          "combat"
+          "shield"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "Pressing the 'Encase' key will place you within a fragile cocoon for 10 seconds, preventing item use · Increases damage taken by 25%, but life recovery by 10 while within the cocoon · Increases damage and attack speed by 30% for 10 seconds after hatching · The cocoon must recharge for 1 minute after use",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Flawless_Chrysalis",
+        "effect": "Maximum life increased by 20 · Absorbs 25% of damage done to nearby players on your team when above 25% life · Increases length of invincibility after taking damage · Grants immunity to knockback",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Holy_Aegis",
         "categories": [
-          "offense"
+          "survivability"
         ]
       },
       {
-        "id": "spirit-band",
-        "name": "Spirit Band",
+        "id": "ankh-shield",
+        "name": "Ankh Shield",
         "slot": "accessory",
-        "icon": "thorium/spirit-band.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
+        "icon": "accessories/ankh-shield.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Debuff immunity and knockback protection are especially comforting once Jungle enemies and events get more chaotic.",
         "tags": [
-          "misc"
+          "hardmode"
         ],
         "topPick": false,
-        "tier": "good",
-        "effect": "'Your body has become incorporeal...' · Damage taken cannot exceed 150 · This effect can only occur every 10 seconds",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Spirit_Band",
         "categories": [
-          "all-around"
-        ]
+          "survivability"
+        ],
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Obsidian Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
+          },
+          {
+            "name": "Ankh Charm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "altOf": "Holy Aegis"
       },
       {
         "id": "phylactery",
@@ -52379,49 +52995,53 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "the-black-blade",
-        "name": "The Black Blade",
+        "id": "flying-dragon",
+        "name": "Flying Dragon",
         "slot": "weapon",
-        "icon": "thorium/the-black-blade.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
+        "icon": "items/flying-dragon.png",
+        "source": "Dropped by Betsy (Old One's Army Tier 3)",
+        "why": "Fires a red crescent-shaped projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
         "topPick": true,
-        "tier": "best",
-        "effect": "Unleashes a dark wind slice · Dealing damage grants you stacking damage and withers enemies at 50 stacks",
-        "stats": "50 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Black_Blade"
-      },
-      {
-        "id": "sol-scorched-slab",
-        "name": "Sol-Scorched Slab",
-        "slot": "weapon",
-        "icon": "thorium/sol-scorched-slab.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Melee strikes collapse scorched earth upon nearby enemies",
-        "stats": "94 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sol-Scorched_Slab"
-      },
-      {
-        "id": "illumite-spear",
-        "name": "Illumite Spear",
-        "slot": "weapon",
-        "icon": "thorium/illumite-spear.png",
-        "source": "Crafted",
-        "why": "melee pick",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "effect": "Hit enemies will be illuminated and take 10% more damage",
-        "stats": "48 damage",
         "subclass": "projectile-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Illumite_Spear"
+        "stats": "180 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Dragon",
+        "tier": "best",
+        "dropRate": "25%"
+      },
+      {
+        "id": "north-pole",
+        "name": "North Pole",
+        "slot": "weapon",
+        "icon": "items/north-pole.png",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
+        "why": "Frost Moon spear that releases a homing snowflake and falling ice.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "true-melee",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole",
+        "tier": "good",
+        "dropRate": "5.19–10.37% 15.56–31.11%"
+      },
+      {
+        "id": "flairon",
+        "name": "Flairon",
+        "slot": "weapon",
+        "icon": "items/flairon.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Hardmode flail from Duke Fishron, who requires no boss prerequisite to summon.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "flail",
+        "stats": "132 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon",
+        "tier": "good",
+        "dropRate": "16.67%"
       },
       {
         "id": "mantis-shrimp-punch",
@@ -52439,6 +53059,51 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mantis_Shrimp_Punch"
       },
       {
+        "id": "the-black-blade",
+        "name": "The Black Blade",
+        "slot": "weapon",
+        "icon": "thorium/the-black-blade.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Unleashes a dark wind slice · Dealing damage grants you stacking damage and withers enemies at 50 stacks",
+        "stats": "50 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Black_Blade"
+      },
+      {
+        "id": "sol-scorched-slab",
+        "name": "Sol-Scorched Slab",
+        "slot": "weapon",
+        "icon": "thorium/sol-scorched-slab.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Melee strikes collapse scorched earth upon nearby enemies",
+        "stats": "94 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sol-Scorched_Slab"
+      },
+      {
+        "id": "illumite-spear",
+        "name": "Illumite Spear",
+        "slot": "weapon",
+        "icon": "thorium/illumite-spear.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "effect": "Hit enemies will be illuminated and take 10% more damage",
+        "stats": "48 damage",
+        "subclass": "projectile-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Illumite_Spear"
+      },
+      {
         "id": "livewire-crasher",
         "name": "Livewire Crasher",
         "slot": "weapon",
@@ -52447,7 +53112,7 @@
         "why": "melee pick",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "effect": "While extending, hitting enemies generates an electrical explosion",
         "stats": "126 damage",
         "subclass": "flail",
@@ -52613,6 +53278,130 @@
     ],
     "accessories": [
       {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "fishron-wings",
+        "name": "Fishron Wings",
+        "slot": "accessory",
+        "icon": "accessories/fishron-wings.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Flight, and faster movement in rain and water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ]
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "soaring-insignia",
+        "name": "Soaring Insignia",
+        "slot": "accessory",
+        "icon": "accessories/soaring-insignia.png",
+        "source": "Empress of Light Treasure Bag (Expert)",
+        "why": "Infinite flight, plus increased flight and jump mobility.",
+        "tags": [
+          "hardmode",
+          "expert-only"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia",
+        "expertOnly": true
+      },
+      {
+        "id": "celestial-shell",
+        "name": "Celestial Shell",
+        "slot": "accessory",
+        "icon": "accessories/celestial-shell.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "All-round stats, plus werewolf at night and merfolk in water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "offense",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+          },
+          {
+            "name": "Moon Shell",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
         "id": "holy-aegis",
         "name": "Holy Aegis",
         "slot": "accessory",
@@ -52628,25 +53417,8 @@
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Holy_Aegis",
         "categories": [
           "survivability"
-        ]
-      },
-      {
-        "id": "mask-of-the-crystal-eye",
-        "name": "Mask of the Crystal Eye",
-        "slot": "accessory",
-        "icon": "thorium/mask-of-the-crystal-eye.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
-        "tags": [
-          "combat"
         ],
-        "topPick": false,
-        "tier": "good",
-        "effect": "8% Increased critical strike chance · Critical strikes deal 12% more damage",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mask_of_the_Crystal_Eye",
-        "categories": [
-          "offense"
-        ]
+        "altOf": "Celestial Shell"
       }
     ],
     "buffs": [],
@@ -60386,18 +61158,86 @@
     "class": "melee",
     "weapons": [
       {
-        "id": "terrarium-saber",
-        "name": "Terrarium Saber",
+        "id": "zenith",
+        "name": "Zenith",
         "slot": "weapon",
-        "icon": "thorium/terrarium-saber.png",
-        "source": "Crafted",
-        "why": "melee pick",
+        "icon": "items/zenith.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Rapidly fires homing sword-sprite projectiles on each swing; needs Moon Lord swords.",
         "tags": [],
         "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Zenith",
         "tier": "best",
-        "stats": "115 damage",
-        "subclass": "true-melee",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Saber"
+        "materials": [
+          {
+            "name": "Terra Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade"
+          },
+          {
+            "name": "Meowmere",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere"
+          },
+          {
+            "name": "Star Wrath",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+          },
+          {
+            "name": "Influx Waver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver"
+          },
+          {
+            "name": "The Horseman's Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+          },
+          {
+            "name": "Seedler",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
+          },
+          {
+            "name": "Starfury",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury"
+          },
+          {
+            "name": "Bee Keeper",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper"
+          },
+          {
+            "name": "Enchanted Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword"
+          },
+          {
+            "name": "Copper Shortsword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "terrarian",
+        "name": "Terrarian",
+        "slot": "weapon",
+        "icon": "items/terrarian.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Moon Lord drop that emits homing projectiles; strongest yoyo.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terrarian",
+        "tier": "best",
+        "dropRate": "20%"
       },
       {
         "id": "terrarium-spear",
@@ -60428,6 +61268,20 @@
         "stats": "104 damage",
         "subclass": "boomerang",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Hyper_Disc"
+      },
+      {
+        "id": "terrarium-saber",
+        "name": "Terrarium Saber",
+        "slot": "weapon",
+        "icon": "thorium/terrarium-saber.png",
+        "source": "Crafted",
+        "why": "melee pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "stats": "115 damage",
+        "subclass": "true-melee",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Saber"
       }
     ],
     "tools": [],
@@ -60492,34 +61346,85 @@
         "slot": "accessory",
         "icon": "thorium/terrarium-particle-sprinters.png",
         "source": "Crafted",
-        "why": "all-class accessory",
+        "why": "throwing accessory",
         "tags": [
           "movement"
         ],
         "topPick": false,
-        "tier": "good",
-        "effect": "Allows flight, hyper fast running, and extra mobility on ice · 12% increased movement speed · Provides the ability to walk on water, honey & lava · Grants immunity to fire blocks and lava",
+        "tier": "best",
+        "effect": "Allows flight, hyper fast running, and extra mobility on ice<br/>12% increased movement speed<br/>Provides the ability to walk on water, honey & lava<br/>Grants immunity to fire blocks and lava",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Particle_Sprinters",
         "categories": [
           "mobility"
         ]
       },
       {
-        "id": "terrarium-wings",
-        "name": "Terrarium Wings",
+        "id": "celestial-starboard",
+        "name": "Celestial Starboard",
         "slot": "accessory",
-        "icon": "thorium/terrarium-wings.png",
-        "source": "Crafted",
-        "why": "all-class accessory",
+        "icon": "accessories/celestial-starboard.png",
+        "source": "Dropped by Moon Lord",
+        "why": "The fastest wings in the game, with the longest flight time.",
         "tags": [
-          "movement"
+          "hardmode"
         ],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Wings",
         "categories": [
           "mobility"
-        ]
+        ],
+        "dropRate": "100%"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "soaring-insignia",
+        "name": "Soaring Insignia",
+        "slot": "accessory",
+        "icon": "accessories/soaring-insignia.png",
+        "source": "Empress of Light Treasure Bag (Expert)",
+        "why": "Infinite flight, plus increased flight and jump mobility.",
+        "tags": [
+          "hardmode",
+          "expert-only"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia",
+        "expertOnly": true
       },
       {
         "id": "terrarium-defender",
@@ -60527,17 +61432,47 @@
         "slot": "accessory",
         "icon": "thorium/terrarium-defender.png",
         "source": "Crafted",
-        "why": "all-class accessory",
+        "why": "throwing accessory",
         "tags": [
           "shield"
         ],
         "topPick": false,
         "tier": "good",
-        "effect": "Maximum life increased by 20 · Prolonges after hit invincibility · Grants immunity to most status debuffs, knockback, and fire blocks · When above 25% life, absorbs 25% of damage done to nearby players on your team · When below 25% life, you will rapidly regenerate life and gain increased defense",
+        "effect": "Maximum life increased by 20<br/>Prolonges after hit invincibility<br/>Grants immunity to most status debuffs, knockback, and fire blocks<br/>When above 25% life, absorbs 25% of damage done to nearby players on your team<br/>When below 25% life, you will rapidly regenerate life and gain increased defense",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Defender",
         "categories": [
           "survivability"
         ]
+      },
+      {
+        "id": "celestial-shell",
+        "name": "Celestial Shell",
+        "slot": "accessory",
+        "icon": "accessories/celestial-shell.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "All-round stats, plus werewolf at night and merfolk in water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "offense",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+          },
+          {
+            "name": "Moon Shell",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "altOf": "Terrarium Defender"
       }
     ],
     "buffs": [],
@@ -67601,6 +68536,73 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "zenith",
+        "name": "Zenith",
+        "slot": "weapon",
+        "icon": "items/zenith.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Rapidly fires homing sword-sprite projectiles on each swing; needs Moon Lord swords.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "projectile-melee",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Zenith",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Terra Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade"
+          },
+          {
+            "name": "Meowmere",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meowmere"
+          },
+          {
+            "name": "Star Wrath",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+          },
+          {
+            "name": "Influx Waver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver"
+          },
+          {
+            "name": "The Horseman's Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+          },
+          {
+            "name": "Seedler",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Seedler"
+          },
+          {
+            "name": "Starfury",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury"
+          },
+          {
+            "name": "Bee Keeper",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper"
+          },
+          {
+            "name": "Enchanted Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword"
+          },
+          {
+            "name": "Copper Shortsword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
         "id": "ocean-s-judgement",
         "name": "Ocean's Judgement",
         "slot": "weapon",
@@ -67629,6 +68631,21 @@
         "stats": "275 damage",
         "subclass": "flail",
         "wikiUrl": "https://thoriummod.wiki.gg/wiki/Seven_Seas_Devastator"
+      },
+      {
+        "id": "terrarian",
+        "name": "Terrarian",
+        "slot": "weapon",
+        "icon": "items/terrarian.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Moon Lord drop that emits homing projectiles; strongest yoyo.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "yoyo",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terrarian",
+        "tier": "best",
+        "dropRate": "20%"
       }
     ],
     "tools": [],
@@ -67681,6 +68698,122 @@
         "markers": [
           "expert"
         ]
+      },
+      {
+        "id": "celestial-starboard",
+        "name": "Celestial Starboard",
+        "slot": "accessory",
+        "icon": "accessories/celestial-starboard.png",
+        "source": "Dropped by Moon Lord",
+        "why": "The fastest wings in the game, with the longest flight time.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "dropRate": "100%"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "soaring-insignia",
+        "name": "Soaring Insignia",
+        "slot": "accessory",
+        "icon": "accessories/soaring-insignia.png",
+        "source": "Empress of Light Treasure Bag (Expert)",
+        "why": "Infinite flight, plus increased flight and jump mobility.",
+        "tags": [
+          "hardmode",
+          "expert-only"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia",
+        "expertOnly": true
+      },
+      {
+        "id": "terrarium-defender",
+        "name": "Terrarium Defender",
+        "slot": "accessory",
+        "icon": "thorium/terrarium-defender.png",
+        "source": "Crafted",
+        "why": "throwing accessory",
+        "tags": [
+          "shield"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "effect": "Maximum life increased by 20<br/>Prolonges after hit invincibility<br/>Grants immunity to most status debuffs, knockback, and fire blocks<br/>When above 25% life, absorbs 25% of damage done to nearby players on your team<br/>When below 25% life, you will rapidly regenerate life and gain increased defense",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Terrarium_Defender",
+        "categories": [
+          "survivability"
+        ]
+      },
+      {
+        "id": "celestial-shell",
+        "name": "Celestial Shell",
+        "slot": "accessory",
+        "icon": "accessories/celestial-shell.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "All-round stats, plus werewolf at night and merfolk in water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "offense",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
+          },
+          {
+            "name": "Moon Shell",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "altOf": "Terrarium Defender"
       }
     ],
     "buffs": [],
