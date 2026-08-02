@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════
    CRAFTING - recursive recipe trees
 ═══════════════════════════════════════════════════ */
-.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
+.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
 /* Viewport-anchored so the image doesn't re-fit as the tree expands */
 .backdrop {
@@ -13,7 +13,9 @@
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
   background: linear-gradient(180deg, rgba(8,14,34,.78) 0%, rgba(8,14,34,.88) 45%, rgba(8,14,34,.95) 100%);
 }
-.footerLayer { position: relative; z-index: 2; }
+/* margin-top:auto keeps the footer pinned to the bottom of the flex-column page
+   so a short recipe tree can't leave a strip of bare backdrop beneath it. */
+.footerLayer { position: relative; z-index: 2; margin-top: auto; }
 
 /* ── Hero (matches Home / Bosses) ── */
 .hero { position: relative; z-index: 2; color: #fff; isolation: isolate; }
@@ -34,7 +36,9 @@
   color: rgba(255,255,255,.94); text-shadow: 0 2px 12px rgba(0,0,0,.55); margin: 0;
 }
 
-.main { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: 8px 32px 72px; }
+/* Top clears the absolute photo header (~64px), which floats over this content
+   now that the hero text - and its spacer padding - is gone. */
+.main { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: 88px 32px 72px; }
 
 /* ════════════════════════════════════════════════
    LANDING - the marquee chains

@@ -43,10 +43,11 @@ export const PACK_META: PackMeta[] = [
   {
     id: 'thorium',
     name: 'Thorium',
-    // Mid-conversion (bosses in progress, loadouts not started), so it is
-    // selectable in the dev preview but shows as "Soon" on the live site until
-    // the pass finishes. Flip to a plain `true` to ship it.
-    available: import.meta.env.DEV,
+    // The boss roadmap ships; the loadouts are still mid-conversion. So Thorium is
+    // available, but the header only offers it on the Bosses page - see
+    // PACK_PAGE_SCOPE and the reset guard in app-context. Same behaviour in dev and
+    // production, so the dev preview matches the live site exactly.
+    available: true,
     // Same world types as vanilla - Thorium adds no difficulty axis of its own.
     difficulties: VANILLA_DIFFICULTIES,
     // Vanilla four plus Thorium's Bard, Healer, and the kept Throwing class.
@@ -55,6 +56,22 @@ export const PACK_META: PackMeta[] = [
 ];
 
 export const DEFAULT_PACK_ID = 'vanilla';
+
+/**
+ * Packs that are only offered on a subset of pages. Thorium's boss roadmap is
+ * ready but its loadouts are not, so it may be selected on the Bosses page only.
+ * A pack absent from this map is available everywhere. Paths are the router
+ * pathnames (hash-router, so no base path).
+ */
+export const PACK_PAGE_SCOPE: Record<string, string[]> = {
+  thorium: ['/bosses'],
+};
+
+/** Whether `packId` may be selected/active on `pathname`. */
+export function isPackAllowedOnPath(packId: string, pathname: string): boolean {
+  const scope = PACK_PAGE_SCOPE[packId];
+  return !scope || scope.includes(pathname);
+}
 
 export function getPackMeta(id: string): PackMeta {
   return PACK_META.find((p) => p.id === id) ?? PACK_META[0]!;

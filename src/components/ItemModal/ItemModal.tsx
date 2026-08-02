@@ -104,7 +104,19 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
             <img src={local} alt={item.name} width="48" height="48" className="pixel-img" onError={onImgError} />
           </span>
           <div>
-            <h2 id="item-title" className={styles.name}>{item.name}</h2>
+            <div className={styles.titleRow}>
+              <h2 id="item-title" className={styles.name}>{item.name}</h2>
+              {item.wikiUrl && (
+                <a
+                  className={styles.wikiLink}
+                  href={item.wikiUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  wiki
+                </a>
+              )}
+            </div>
             <span className={styles.kind}>
               {SLOT_LABEL[item.slot] ?? item.slot}{item.subclass ? ` · ${item.subclass}` : ''}
             </span>

@@ -3,7 +3,7 @@ import { getPackMeta } from './meta';
 import { retryChunk } from '../../lib/lazy-retry';
 
 export type { Pack, DifficultyDef } from './types';
-export { PACK_META, DEFAULT_PACK_ID, getPackMeta, type PackMeta } from './meta';
+export { PACK_META, DEFAULT_PACK_ID, getPackMeta, PACK_PAGE_SCOPE, isPackAllowedOnPath, type PackMeta } from './meta';
 
 /**
  * Load a pack's full data. Each pack is a dynamic import, so its loadouts,

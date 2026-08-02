@@ -27,6 +27,18 @@ const PHASE_BIOME: Record<PhaseId, string> = {
   'pre-cultist': 'dungeon',
   'pre-moonlord': 'hallow',
   endgame: 'sky',
+  // Thorium phases (its own progression tiers).
+  'thor-pre-boss': 'forest',
+  'thor-pre-evil': 'forest',
+  'thor-mid-prehm': 'snow',
+  'thor-pre-skeletron': 'dungeon',
+  'thor-pre-wof': 'underworld',
+  'thor-post-wof': 'hallow',
+  'thor-pre-mech': 'snow',
+  'thor-post-mech': 'jungle',
+  'thor-pre-lunar': 'dungeon',
+  'thor-pre-primordials': 'hallow',
+  'thor-endgame': 'sky',
 };
 const PHASE_BOSS: Record<PhaseId, string> = {
   'pre-bosses': 'eye-of-cthulhu',
@@ -62,6 +74,18 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'cal-post-exo': 'exo-mechs',
   // cal-post-golem (prismatic crystal) and cal-endgame (compass) have no single
   // boss, so they are left out - the banner falls back to their own map art.
+  // Thorium phases → the boss whose map icon marks that tier.
+  'thor-pre-boss': 'the-grand-thunder-bird',
+  'thor-pre-evil': 'brain-of-cthulhu',
+  'thor-mid-prehm': 'queen-jellyfish',
+  'thor-pre-skeletron': 'skeletron',
+  'thor-pre-wof': 'wall-of-flesh',
+  'thor-post-wof': 'borean-strider',
+  'thor-pre-mech': 'the-twins',
+  'thor-post-mech': 'plantera',
+  'thor-pre-lunar': 'lunatic-cultist',
+  'thor-pre-primordials': 'moon-lord',
+  'thor-endgame': 'the-primordials',
 };
 
 function makeWikiName(stem: string): string {
@@ -195,6 +219,9 @@ const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
   'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
   'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  // Thorium hardmode phases (Post-Wall of Flesh and later).
+  'thor-post-wof', 'thor-pre-mech', 'thor-post-mech', 'thor-pre-lunar',
+  'thor-pre-primordials', 'thor-endgame',
   ...CALAMITY_POST_ML,
 ]);
 
@@ -311,7 +338,16 @@ const CATEGORY_LABEL: Record<string, string> = {
   'primary-mobility': 'Primary Mobility', 'extra-mobility': 'Extra Mobility',
   'all-around': 'All-Around',
   melee: 'Melee', ranged: 'Ranged', magic: 'Magic', summon: 'Summon',
+  // Thorium's own accessory types, from the wiki's Accessories page.
+  movement: 'Movement', 'health-mana': 'Health & Mana', combat: 'Combat',
+  ring: 'Ring', shield: 'Shield', thrower: 'Thrower', healer: 'Healer',
+  bard: 'Bard', vanity: 'Vanity', 'music-box': 'Music Box', misc: 'Misc',
 };
+/* The Thorium accessory types, as tag ids. Used to tell a Thorium type tag from
+   the app's own category on an item that carries both. */
+const THORIUM_ACC_TYPES = ['movement', 'health-mana', 'combat', 'ring', 'shield',
+  'thrower', 'healer', 'bard', 'vanity', 'music-box', 'misc'] as const;
+const THORIUM_ACC_TYPE_SET = new Set<string>(THORIUM_ACC_TYPES);
 /** taxonomy damage-type -> our class id, so a class badge only shows on its own page */
 const CATEGORY_CLASS: Record<string, string> = {
   melee: 'melee', ranged: 'ranger', magic: 'mage', summon: 'summoner',
@@ -345,6 +381,9 @@ const PACK_MARKERS: Record<string, readonly string[]> = {
   vanilla: ['expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos'],
   calamity: ['tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
     'calamity-changed', 'pairs'],
+  // Expert Mode is the wiki's 12th accessory type; it rides as a marker since an
+  // Expert accessory also belongs to one of the other eleven types.
+  thorium: ['expert'],
 };
 
 /** Class-specific categories are noise on the other three classes' pages. */
@@ -372,6 +411,7 @@ function AccCell({
   }
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   const cats = visibleCategories(item, activeClass);
+  const typeTag = item.tags?.find((t) => THORIUM_ACC_TYPE_SET.has(t));
   const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty);
   /* The cell is the primary card plus, when the guide offers a swap, an "or" and
@@ -397,16 +437,18 @@ function AccCell({
         <span className={styles.accSlotName}>{item.name}</span>
       </button>
 
-      {(cats.length > 0 || item.quality || markers.length > 0) && (
+      {(typeTag || cats.length > 0 || item.quality || markers.length > 0) && (
         <span className={styles.accTags}>
           {item.quality && (
             <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>
               {item.quality}
             </span>
           )}
-          {cats.map((c) => (
+          {/* A Thorium item carries the wiki's own type (Shield, Ring, Thrower…)
+              as a tag, with its own colour; otherwise show the app categories. */}
+          {(typeTag ? [typeTag] : cats).map((c) => (
             <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
-              {CATEGORY_LABEL[c]}
+              {CATEGORY_LABEL[c] ?? c}
             </span>
           ))}
           {markers.map((m) => (
@@ -497,11 +539,15 @@ function PoolRow(
 /** Key to the accessory tags, so the colours mean something on first read. */
 function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
   const markers = PACK_MARKERS[packId] ?? [];
+  /* Thorium tags accessories with the wiki's own 12 accessory types; every other
+     pack uses the app's own accessory categories. */
+  const cats: readonly string[] = packId === 'thorium'
+    ? THORIUM_ACC_TYPES
+    : ['primary-mobility', 'extra-mobility', 'all-around', 'offense', 'survivability'];
   return (
     <div className={styles.accLegend}>
       <span className={styles.accLegendLabel}>Tags</span>
-      {(['primary-mobility', 'extra-mobility', 'all-around',
-        'offense', 'survivability'] as const).map((c) => (
+      {cats.map((c) => (
         <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
           {CATEGORY_LABEL[c]}
         </span>
@@ -572,6 +618,42 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
     href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
     label: 'Calamity modifier table on the wiki',
   },
+  thorium: {
+    intro: 'Reforge at the Goblin Tinkerer. Warding is the default. Thorium adds two accessory modifiers on top of vanilla\'s - Lucrative for coins, and Engrossing for bard empowerments.',
+    list: [
+      { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
+      { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
+      { name: 'Lucky', stat: '+4% crit', note: 'better the higher your base damage' },
+      { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
+      { name: 'Lucrative', stat: '+15% coin drops', note: 'Thorium only, farming utility' },
+      { name: 'Engrossing', stat: '+2s empowerment', note: 'Thorium only, only useful to bard', onlyClass: 'bard' },
+    ],
+    href: 'https://thoriummod.wiki.gg/wiki/Modifiers',
+    label: 'Thorium modifier table on the wiki',
+  },
+};
+
+/* ── Weapon reforges ──
+   Vanilla weapon modifiers are broad and well-known, so they are not spelled out
+   here. Thorium adds a whole symphonic set, though, which the Goblin Tinkerer only
+   offers on symphonic weapons - bard weapons in Thorium. Healer weapons are radiant,
+   not symphonic, so this shows for bard alone. */
+interface WeaponReforgeSet { title: string; classes: string[]; intro: string; list: Reforge[]; href: string; label: string }
+const WEAPON_REFORGES: Record<string, WeaponReforgeSet[]> = {
+  thorium: [
+    {
+      title: 'Symphonic weapon reforges',
+      classes: ['bard'],
+      intro: 'Reforge symphonic weapons at the Goblin Tinkerer. Fabled is the best - it raises every stat at once.',
+      list: [
+        { name: 'Fabled', stat: '+15% dmg · +10% speed · +5% crit', note: 'best overall' },
+        { name: 'Melodic', stat: '+10% dmg · +5% speed · +2% crit', note: 'strong all-round alternative' },
+        { name: 'Loud', stat: '+10% dmg · +3% crit', note: 'simple damage boost' },
+      ],
+      href: 'https://thoriummod.wiki.gg/wiki/Modifiers',
+      label: 'All 12 symphonic modifiers on the wiki',
+    },
+  ],
 };
 
 function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: string }) {
@@ -590,6 +672,30 @@ function ReforgeBlock({ packId, activeClass }: { packId: string; activeClass: st
         <a href={pack.href} rel="noopener noreferrer" target="_blank">{pack.label}</a>
       </p>
     </div>
+  );
+}
+
+/* Weapon-reforge blocks that apply only to the active class (symphonic → bard). */
+function WeaponReforgeBlocks({ packId, activeClass }: { packId: string; activeClass: string }) {
+  const sets = (WEAPON_REFORGES[packId] ?? []).filter((s) => s.classes.includes(activeClass));
+  if (sets.length === 0) return null;
+  return (
+    <>
+      {sets.map((set) => (
+        <div key={set.title} className={styles.reforgeBlock}>
+          <div className={styles.reforgeLabel}>{set.title}</div>
+          <p className={styles.reforgeIntro}>{set.intro}</p>
+          <ul className={styles.reforgeList}>
+            {set.list.map((r) => (
+              <li key={r.name}><b>{r.name}</b> <span>{r.stat}</span> {r.note}</li>
+            ))}
+          </ul>
+          <p className={styles.reforgeMore}>
+            <a href={set.href} rel="noopener noreferrer" target="_blank">{set.label}</a>
+          </p>
+        </div>
+      ))}
+    </>
   );
 }
 
@@ -765,14 +871,17 @@ export function Loadouts() {
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
+  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
   const bestTier = inScope.filter((w) => w.tier === 'best');
   /* Top Picks aims for at least three weapons. One pick per subclass leaves
      phases where a class has only one or two on-tier families showing a single
      card, which reads as "this is your only option" rather than a shortlist.
-     The top-up keeps the list's own order, so the added cards are the next
-     best rather than an arbitrary pick. */
+     The top-up takes the next best-tier weapons (good before other, stable so
+     ties keep the guide's order), so a phase with one 'best' fills with its
+     genuine also-great picks rather than whatever sorts first. */
   const filteredBest = showingAll && bestTier.length < MIN_TOP_PICKS
-    ? [...bestTier, ...inScope.filter((w) => w.tier !== 'best')
+    ? [...bestTier, ...[...inScope.filter((w) => w.tier !== 'best')]
+      .sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
       .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
     : bestTier;
   /* Inside one open subclass the recommendation is the weapon the data ranks
@@ -789,7 +898,6 @@ export function Loadouts() {
      'other' swords above genuinely good ones (Ash Wood Sword ahead of Light's
      Bane). Rank the rest by tier - stable, so ties keep the guide's order - and
      the good picks rise into Also Great, the rest fall behind "Show others". */
-  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
   const scopedByTier = ranked
     ? [...scopedRest].sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
     : scopedRest;
@@ -1010,15 +1118,6 @@ export function Loadouts() {
 
       <Header variant="photo" />
       <section className={styles.wrap}>
-
-        {/* Class now lives in the header selector; the title reflects the choice. */}
-        <div className={styles.pageHead}>
-          <div>
-            <p className={styles.kick}>Class Loadouts</p>
-            <h1 className={styles.title}>{classDef.name} <em>· {phaseName}</em></h1>
-            <p className={styles.lede}>Pick your stage below and your class from the header. Armor and accessory picks update with every choice.</p>
-          </div>
-        </div>
 
         {/* Boss progression map */}
         <div
@@ -1296,6 +1395,7 @@ export function Loadouts() {
                 )}
               </div>
             )}
+            <WeaponReforgeBlocks packId={packId} activeClass={activeClassId} />
             <ReforgeBlock packId={packId} activeClass={activeClassId} />
             <AccLegend packId={packId} hasQuality={poolHasQuality} />
           </div>

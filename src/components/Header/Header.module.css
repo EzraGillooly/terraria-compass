@@ -39,7 +39,10 @@
   max-width: 1240px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  /* Logo (left) and settings (right) are content-sized; the nav takes the
+     flexible middle and centers within it, so it rests midway between the logo
+     and the settings rather than against the logo or the header centre. */
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: clamp(8px, 1.6vw, 20px);
 }
@@ -80,7 +83,7 @@
   filter: drop-shadow(1px 2px 2px rgba(0,0,0,.45));
 }
 
-/* ── Top nav (centered) - each link in its own Terraria menu slot ── */
+/* ── Top nav (midway between logo and settings) - each link in its own slot ── */
 .topnav {
   justify-self: center;
   display: flex;
@@ -181,6 +184,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 6px;
+}
+/* Revengeance toggle + class picker share one row (mode on the left). */
+.classRow {
+  display: flex;
+  align-items: center;
   gap: 6px;
 }
 .calModeRow {

@@ -216,7 +216,10 @@ export const Loadout = z.object({
     // updating one of them is what broke the schema when Calamity's
     // mobility buckets were split.
     category: z.enum(['mobility', 'survivability', 'offense', 'melee', 'ranged',
-      'magic', 'summon', 'primary-mobility', 'extra-mobility', 'all-around']),
+      'magic', 'summon', 'primary-mobility', 'extra-mobility', 'all-around',
+      // Thorium's own accessory types, from the wiki's Accessories page.
+      'movement', 'health-mana', 'combat', 'ring', 'shield', 'thrower', 'healer',
+      'bard', 'vanity', 'music-box', 'misc']),
     items: z.array(Item),
   })).default([]),
 });

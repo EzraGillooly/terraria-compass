@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useAppState } from '../../lib/app-context';
 import type { DifficultyFilter } from '../../lib/difficulty';
-import { PACK_META } from '../../data/packs';
+import { PACK_META, isPackAllowedOnPath } from '../../data/packs';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -199,9 +199,14 @@ function ClassSelect() {
    populated yet are listed but disabled. */
 function ModSelect() {
   const { packId, setPackId, pack } = useAppState();
+  const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useDismiss(open, () => setOpen(false), ref);
+  // Thorium is Bosses-only: on other pages it stays in the menu but shows as
+  // "Soon" (disabled) rather than being selectable.
+  const availableHere = (p: (typeof PACK_META)[number]) =>
+    p.available && isPackAllowedOnPath(p.id, pathname);
 
   return (
     <div className={styles.diffSelect} ref={ref}>
@@ -219,19 +224,22 @@ function ModSelect() {
       </button>
       {open && (
         <ul className={styles.diffMenu} role="listbox" aria-label="Mod">
-          {PACK_META.map((p) => (
-            <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!p.available}>
-              <button
-                type="button"
-                className={`${styles.diffItem} ${p.id === packId ? styles.diffItemOn : ''}`}
-                disabled={!p.available}
-                onClick={() => { setPackId(p.id); setOpen(false); }}
-              >
-                {p.name}
-                {!p.available && <span className={styles.diffSoon}>Soon</span>}
-              </button>
-            </li>
-          ))}
+          {PACK_META.map((p) => {
+            const avail = availableHere(p);
+            return (
+              <li key={p.id} role="option" aria-selected={p.id === packId} aria-disabled={!avail}>
+                <button
+                  type="button"
+                  className={`${styles.diffItem} ${p.id === packId ? styles.diffItemOn : ''}`}
+                  disabled={!avail}
+                  onClick={() => { setPackId(p.id); setOpen(false); }}
+                >
+                  {p.name}
+                  {!avail && <span className={styles.diffSoon}>Soon</span>}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>
@@ -249,6 +257,9 @@ export function Header({ variant = 'paper' }: HeaderProps) {
   const { pathname } = useLocation();
   // class only matters on the loadouts page, so its selector rides the header there
   const onLoadouts = pathname === '/loadouts';
+  // progression tracking has nothing to act on in the crafting trees, so hide the
+  // toggle there; it stays on loadouts, bosses and home.
+  const onCrafting = pathname === '/crafting';
 
   /* The nav and selectors do not fit a phone's width, so below the mobile
      breakpoint they collapse behind this button into a dropdown panel (see
@@ -306,16 +317,23 @@ export function Header({ variant = 'paper' }: HeaderProps) {
 
         {/* Controls */}
         <div className={styles.controls}>
-          {onLoadouts && <ClassSelect />}
           <ModSelect />
           {/* The Calamity mode rides under World rather than beside it - it is a
-              layer on the world, not a peer of it. Out of flow, so it cannot
-              stretch the header. */}
+              layer on the world, not a peer of it. The class picker joins the same
+              under-World strip on the loadouts page (under World, above
+              Progression). Out of flow, so it cannot stretch the header. */}
           <div className={styles.worldColumn}>
             <WorldSelect />
             <div className={styles.underWorld}>
-              {packId === 'calamity' && <CalamityModeToggle />}
-              <ProgressionToggle />
+              {/* Revengeance mode sits on the same row, to the left of the class
+                  picker, rather than stacked under it. */}
+              {(onLoadouts || packId === 'calamity') && (
+                <div className={styles.classRow}>
+                  {packId === 'calamity' && <CalamityModeToggle />}
+                  {onLoadouts && <ClassSelect />}
+                </div>
+              )}
+              {!onCrafting && <ProgressionToggle />}
             </div>
           </div>
 

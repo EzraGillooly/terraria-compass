@@ -2,10 +2,11 @@
   {
     "id": "the-grand-thunder-bird",
     "name": "The Grand Thunder Bird",
-    "stage": "pre-bosses",
+    "stage": "thor-pre-boss",
     "tier": -1,
     "side": true,
     "role": "optional",
+    "unlocks": "Lets the Desert Acolyte NPC move in, if you provide housing.",
     "summon": "Fire the Grand Flare Gun (loaded with Storm Flares) in the Desert during the day.",
     "summonItem": {
       "name": "Grand Flare Gun",
@@ -50,7 +51,7 @@
         "name": "Didgeridoo",
         "icon": "thorium/didgeridoo.png",
         "slot": "weapon",
-        "subclass": "instrument",
+        "subclass": "brass",
         "effect": "A Bard instrument that releases a slow-moving, sonorous pulse.",
         "stats": "14 damage",
         "dropRate": "25%",
@@ -94,6 +95,1042 @@
     ],
     "blurb": "A desert bird boss fought during the day. It hovers above the player firing feathers and lightning, speeding up below 45% health.",
     "color": "#6FB7E8",
+    "animated": true
+  },
+  {
+    "id": "queen-jellyfish",
+    "name": "Queen Jellyfish",
+    "stage": "thor-mid-prehm",
+    "tier": 2.5,
+    "side": true,
+    "role": "optional",
+    "unlocks": "Spawns the Diverman NPC, who can then move in. The Cobbler starts selling Water Walking Boots and the Dye Trader sells Ripple Dye.",
+    "summon": "Use a Jellyfish Resonator near the Ocean during the day.",
+    "summonItem": {
+      "name": "Jellyfish Resonator",
+      "icon": "thorium/jellyfish-resonator.png",
+      "slot": "summon",
+      "effect": "Summons the Queen Jellyfish near the Ocean during the day.",
+      "source": "Crafted at a Demon or Crimson Altar, or found in Aquatic Depths chests",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Jellyfish_Resonator",
+      "materials": [
+        {
+          "name": "Coral",
+          "qty": 2
+        },
+        {
+          "name": "Pink Jellyfish",
+          "qty": 1
+        }
+      ]
+    },
+    "drops": [
+      {
+        "name": "Sparking Jelly Ball",
+        "icon": "thorium/sparking-jelly-ball.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail whose hits may briefly paralyze the enemy.",
+        "stats": "42 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sparking_Jelly_Ball"
+      },
+      {
+        "name": "Buccaneer's Blunderbuss",
+        "icon": "thorium/buccaneers-blunderbuss.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Unleashes a torrent of bullets in a spread.",
+        "stats": "10 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Buccaneer%27s_Blunderbuss"
+      },
+      {
+        "name": "Jelly Pond Wand",
+        "icon": "thorium/jelly-pond-wand.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "Sends out an aquatic orb that summons a swarm of jellyfish.",
+        "stats": "21 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Jelly_Pond_Wand"
+      },
+      {
+        "name": "Conch Shell",
+        "icon": "thorium/conch-shell.png",
+        "slot": "weapon",
+        "subclass": "brass",
+        "effect": "A Bard instrument that plays a rising song of the sea for increased damage.",
+        "stats": "28 damage",
+        "dropRate": "20%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Conch_Shell"
+      },
+      {
+        "name": "Pink Gel",
+        "icon": "items/pink-gel.png",
+        "slot": "material",
+        "effect": "A gel used for pink slime gear and gel-based crafting.",
+        "dropRate": "100%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Gel"
+      },
+      {
+        "name": "Queen Jellyfish Mask",
+        "icon": "thorium/queen-jellyfish-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Queen Jellyfish.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Queen_Jellyfish_Mask"
+      },
+      {
+        "name": "Sea Breeze Pendant",
+        "icon": "thorium/sea-breeze-pendant.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Grants water breathing and improved movement in liquids.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sea_Breeze_Pendant"
+      }
+    ],
+    "blurb": "An ocean boss fought during the day. She hovers above the player, fires bubbles, and summons Royal Jellies to swarm.",
+    "color": "#E86F9E"
+  },
+  {
+    "id": "viscount",
+    "name": "The Viscount",
+    "stage": "thor-pre-skeletron",
+    "tier": 3.5,
+    "side": true,
+    "role": "optional",
+    "unlocks": "The Confused Zombie NPC starts selling Dracula Fangs and the Blood Altar.",
+    "summon": "Use 5 Unholy Shards at a Blood Altar while below the surface.",
+    "summonItem": {
+      "name": "Unholy Shards",
+      "icon": "thorium/unholy-shard.png",
+      "slot": "summon",
+      "effect": "Sacrifice five at a Blood Altar, below the surface, to summon The Viscount.",
+      "source": "Drops from any enemy during a Blood Moon",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Unholy_Shards"
+    },
+    "drops": [
+      {
+        "name": "Bat Wing",
+        "icon": "thorium/bat-wing.png",
+        "slot": "weapon",
+        "subclass": "yoyo",
+        "effect": "A yoyo that releases bats as it strikes enemies.",
+        "stats": "25 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bat_Wing"
+      },
+      {
+        "name": "Guano Gunner",
+        "icon": "thorium/guano-gunner.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Fires piercing bolts of waste that slow the enemies they hit.",
+        "stats": "18 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Guano_Gunner"
+      },
+      {
+        "name": "Vampire Scepter",
+        "icon": "thorium/vampire-scepter.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "Fires a vampiric bolt that heals the player when it strikes an enemy.",
+        "stats": "26 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Vampire_Scepter"
+      },
+      {
+        "name": "Viscount's Cane",
+        "icon": "thorium/viscounts-cane.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a Blood Drinker minion that heals you as it fights.",
+        "stats": "18 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Viscount%27s_Cane"
+      },
+      {
+        "name": "Bat Scythe",
+        "icon": "thorium/bat-scythe.png",
+        "slot": "weapon",
+        "subclass": "scythe",
+        "effect": "A Healer scythe that gathers soul essence on hit to heal allies.",
+        "stats": "16 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bat_Scythe"
+      },
+      {
+        "name": "Sonar Cannon",
+        "icon": "thorium/sonar-cannon.png",
+        "slot": "weapon",
+        "subclass": "electronic",
+        "effect": "A Bard instrument that fires a sound pulse which ricochets between enemies.",
+        "stats": "22 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Sonar_Cannon"
+      },
+      {
+        "name": "Dracula Fang",
+        "icon": "thorium/dracula-fang.png",
+        "slot": "weapon",
+        "subclass": "consumable",
+        "effect": "A thrown blood tooth; critical hits release piercing blood.",
+        "stats": "14 damage",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dracula_Fang"
+      },
+      {
+        "name": "Viscount Mask",
+        "icon": "thorium/viscount-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like The Viscount.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Viscount_Mask"
+      },
+      {
+        "name": "Vampire's Catalyst",
+        "icon": "thorium/vampires-catalyst.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Turns the player into a bat that can fly, at the cost of defense.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Vampire%27s_Catalyst"
+      }
+    ],
+    "blurb": "An underground Crimson boss summoned during any time below the surface. This bat-winged vampire swoops at the player, spits blood, and calls bat swarms.",
+    "color": "#C0392B",
+    "animated": true
+  },
+  {
+    "id": "granite-energy-storm",
+    "name": "Granite Energy Storm",
+    "stage": "thor-pre-wof",
+    "tier": 4.5,
+    "side": true,
+    "role": "optional",
+    "summon": "Kill an Unstable Energy Anomaly in the Granite Caves (spawns after Skeletron), or use an Unstable Core inside the Granite Caves.",
+    "summonItem": {
+      "name": "Unstable Core",
+      "icon": "thorium/unstable-core.png",
+      "slot": "summon",
+      "effect": "Summons the Granite Energy Storm. It works only inside the Granite Caves.",
+      "source": "Crafted; usable only in the Granite Caves",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Unstable_Core"
+    },
+    "drops": [
+      {
+        "name": "Energy Storm Partisan",
+        "icon": "thorium/energy-storm-partisan.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A spear that unleashes an energized explosion when it hits twice in one throw.",
+        "stats": "24 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Energy_Storm_Partisan"
+      },
+      {
+        "name": "Energy Storm Bolter",
+        "icon": "thorium/energy-storm-bolter.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "Turns musket balls into homing energy bolts.",
+        "stats": "18 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Energy_Storm_Bolter"
+      },
+      {
+        "name": "Energy Projector",
+        "icon": "thorium/energy-projector.png",
+        "slot": "weapon",
+        "subclass": "spell-tome",
+        "effect": "Projects a rotating magical barrier of energy around you.",
+        "stats": "12 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Energy_Projector"
+      },
+      {
+        "name": "Boulder Probe Staff",
+        "icon": "thorium/boulder-probe-staff.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a floating granite energy probe that zaps enemies near your cursor.",
+        "stats": "22 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Boulder_Probe_Staff"
+      },
+      {
+        "name": "Shock Absorber",
+        "icon": "thorium/shock-absorber.png",
+        "slot": "accessory",
+        "effect": "A Bard accessory that raises Inspiration regeneration and stores symphonic damage for a burst.",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Shock_Absorber"
+      },
+      {
+        "name": "Granite Energy Core",
+        "icon": "thorium/granite-energy-core.png",
+        "slot": "material",
+        "effect": "A Thorium crafting material used for granite-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Granite_Energy_Core"
+      },
+      {
+        "name": "Granite Energy Storm Mask",
+        "icon": "thorium/granite-energy-storm-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Granite Energy Storm.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Granite_Energy_Storm_Mask"
+      },
+      {
+        "name": "Eye of the Storm",
+        "icon": "thorium/eye-of-the-storm.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "While in combat, granite energy seeps out and damages nearby enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Eye_of_the_Storm"
+      }
+    ],
+    "blurb": "A granite elemental boss fought inside the Granite Caves. It hovers and orbits blocks of charged granite, firing energy charges and pulling in stone.",
+    "color": "#6E7BC4",
+    "animated": true
+  },
+  {
+    "id": "buried-champion",
+    "name": "Buried Champion",
+    "stage": "thor-pre-wof",
+    "tier": 4.6,
+    "side": true,
+    "role": "optional",
+    "unlocks": "Lets the Spiritualist NPC move in. The Cobbler starts selling Spartan Sandals.",
+    "summon": "Kill a Bizarre Rock Formation in the Marble Caves (spawns after Skeletron), or use an Ancient Blade in the Marble Caves.",
+    "summonItem": {
+      "name": "Ancient Blade",
+      "icon": "thorium/ancient-blade.png",
+      "slot": "summon",
+      "effect": "Summons the Buried Champion. It works only inside the Marble Caves.",
+      "source": "Crafted; usable only in the Marble Caves",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ancient_Blade"
+    },
+    "drops": [
+      {
+        "name": "Champion's Swift Blade",
+        "icon": "thorium/champions-swift-blade.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A broadsword whose first hit each swing releases a quick wind slash.",
+        "stats": "30 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Swift_Blade"
+      },
+      {
+        "name": "Champion's Trifecta-Shot",
+        "icon": "thorium/champions-trifecta-shot.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "A bow whose arrows cycle between different elements.",
+        "stats": "28 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Trifecta-Shot"
+      },
+      {
+        "name": "Champion's Bomber Staff",
+        "icon": "thorium/champions-bomber-staff.png",
+        "slot": "weapon",
+        "subclass": "magic-gun",
+        "effect": "A staff that fires bombs; killing an enemy restores 15 mana.",
+        "stats": "24 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Bomber_Staff"
+      },
+      {
+        "name": "Champion's God Hand",
+        "icon": "thorium/champions-god-hand.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Throws paralyzing lightning strikes; overuse exhausts you and lowers its damage.",
+        "stats": "33 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_God_Hand"
+      },
+      {
+        "name": "Champion's Rebuttal",
+        "icon": "thorium/champions-rebuttal.png",
+        "slot": "accessory",
+        "effect": "A shield that stores twice the damage you take into your next attack, up to 300.",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Rebuttal"
+      },
+      {
+        "name": "Bronze Alloy Fragments",
+        "icon": "thorium/bronze-alloy-fragments.png",
+        "slot": "material",
+        "effect": "A Thorium crafting material used for marble-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bronze_Alloy_Fragments"
+      },
+      {
+        "name": "Buried Champion Mask",
+        "icon": "thorium/buried-champion-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Buried Champion.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Buried_Champion_Mask"
+      },
+      {
+        "name": "Champion's Wings",
+        "icon": "thorium/champions-wings.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Wings that grant flight, styled after the Buried Champion.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Champion%27s_Wings"
+      }
+    ],
+    "blurb": "A marble knight boss fought inside the Marble Caves. It cycles through blade, bow, and staff attacks as its health drops through 66% and 33%.",
+    "color": "#C7A24A",
+    "animated": true
+  },
+  {
+    "id": "star-scouter",
+    "name": "Star Scouter",
+    "stage": "thor-pre-wof",
+    "tier": 4.8,
+    "side": true,
+    "role": "optional",
+    "unlocks": "The Mechanic starts selling the Track Player and the Cobbler sells Jet Boots.",
+    "summon": "Use a Star Caller in Space, around Floating Island heights.",
+    "summonItem": {
+      "name": "Star Caller",
+      "icon": "thorium/star-caller.png",
+      "slot": "summon",
+      "effect": "Summons the Star Scouter. It works only in Space.",
+      "source": "Crafted; usable only in Space",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Caller"
+    },
+    "drops": [
+      {
+        "name": "Star Trail",
+        "icon": "thorium/star-trail.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that fires homing stars when fully spun and released at range.",
+        "stats": "62 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Trail"
+      },
+      {
+        "name": "Hit Scanner",
+        "icon": "thorium/hit-scanner.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun whose musket balls hit instantly, with no travel time.",
+        "stats": "26 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hit_Scanner"
+      },
+      {
+        "name": "Particle Whip",
+        "icon": "thorium/particle-whip.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic wand that shoots a lightning burst which bounces between enemies.",
+        "stats": "36 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Particle_Whip"
+      },
+      {
+        "name": "Distress Caller",
+        "icon": "thorium/distress-caller.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a stationary U.F.O. sentry that blasts enemies below it with lasers.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Distress_Caller"
+      },
+      {
+        "name": "Gauss Flinger",
+        "icon": "thorium/gauss-flinger.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Throws a limitless supply of energy daggers; overuse exhausts you.",
+        "stats": "28 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Gauss_Flinger"
+      },
+      {
+        "name": "Star Rod",
+        "icon": "thorium/star-rod.png",
+        "slot": "weapon",
+        "subclass": "other",
+        "effect": "A Healer rod that summons healing stars which fall onto your cursor.",
+        "stats": "Healer weapon",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Rod"
+      },
+      {
+        "name": "Roboboe",
+        "icon": "thorium/roboboe.png",
+        "slot": "weapon",
+        "subclass": "electronic",
+        "effect": "A Bard instrument that propels a zig-zagging burst of energy.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Roboboe"
+      },
+      {
+        "name": "Star Scouter Mask",
+        "icon": "thorium/star-scouter-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Star Scouter.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Star_Scouter_Mask"
+      },
+      {
+        "name": "Omega Drive",
+        "icon": "thorium/omega-drive.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Summons an offensive pet probe that fires at nearby enemies.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Omega_Drive"
+      }
+    ],
+    "blurb": "A sky boss fought in Space. This alien scout flies above the player, firing lasers, beams, and energy balls, and its core changes attacks as it takes damage.",
+    "color": "#58C6D8",
+    "animated": true
+  },
+  {
+    "id": "borean-strider",
+    "name": "Borean Strider",
+    "stage": "thor-post-wof",
+    "tier": 5.3,
+    "side": true,
+    "role": "optional",
+    "unlocks": "New spiders - the Black Widow, Brown Recluse, Tarantula, and the Frost Fang in Ice biomes - start spawning in underground Spider Nests. The Cobbler sells Ice Skates.",
+    "summon": "It spawns on its own inside a Hardmode Blizzard, or you can summon it with a Strider's Tear.",
+    "summonItem": {
+      "name": "Strider's Tear",
+      "icon": "thorium/striders-tear.png",
+      "slot": "summon",
+      "effect": "Summons the Borean Strider in the Snow biome.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Strider%27s_Tear"
+    },
+    "drops": [
+      {
+        "name": "Glacier",
+        "icon": "thorium/glacier.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A sword that, every 4 seconds, releases freezing shards on the next strike.",
+        "stats": "50 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacier"
+      },
+      {
+        "name": "Glacial Sting",
+        "icon": "thorium/glacial-sting.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "effect": "A bow that turns wooden arrows into freezing glacial arrows.",
+        "stats": "48 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Glacial_Sting"
+      },
+      {
+        "name": "Freeze Ray",
+        "icon": "thorium/freeze-ray.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that turns musket balls into chilling beams of frost.",
+        "stats": "25 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Freeze_Ray"
+      },
+      {
+        "name": "Borean Fang Staff",
+        "icon": "thorium/borean-fang-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that releases a volley of freezing fangs.",
+        "stats": "26 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Borean_Fang_Staff"
+      },
+      {
+        "name": "The Cryo-Fang",
+        "icon": "thorium/the-cryo-fang.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "A thrown fang that bursts with ice when it hits an enemy or a tile.",
+        "stats": "28 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Cryo-Fang"
+      },
+      {
+        "name": "Borean Strider Mask",
+        "icon": "thorium/borean-strider-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Borean Strider.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Borean_Strider_Mask"
+      },
+      {
+        "name": "Ice Bound Strider Hide",
+        "icon": "thorium/ice-bound-strider-hide.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Raises your damage while you stand in a Blizzard.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ice_Bound_Strider_Hide"
+      }
+    ],
+    "blurb": "An early-Hardmode spider boss that prowls Blizzards. It leaps around the field like a slime and fires freezing projectiles.",
+    "color": "#8FD0E8"
+  },
+  {
+    "id": "fallen-beholder",
+    "name": "Fallen Beholder",
+    "stage": "thor-post-wof",
+    "tier": 5.6,
+    "side": true,
+    "role": "optional",
+    "unlocks": "Generates the Hardmode ores Lodestone or Valadium Chunks throughout the world, with more on repeat kills. Lets the Weapon Master NPC move in.",
+    "summon": "Use a Void Lens while in The Underworld.",
+    "summonItem": {
+      "name": "Void Lens",
+      "icon": "thorium/void-lens.png",
+      "slot": "summon",
+      "effect": "Summons the Fallen Beholder in The Underworld.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Void_Lens"
+    },
+    "drops": [
+      {
+        "name": "Hellish Halberd",
+        "icon": "thorium/hellish-halberd.png",
+        "slot": "weapon",
+        "subclass": "projectile-melee",
+        "effect": "A spear that unleashes a homing fiery vortex after five hits.",
+        "stats": "35 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hellish_Halberd"
+      },
+      {
+        "name": "Obliterator",
+        "icon": "thorium/obliterator.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that fires delayed shrapnel blasts you can detonate on release.",
+        "stats": "22 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Obliterator"
+      },
+      {
+        "name": "Pyroclast Staff",
+        "icon": "thorium/pyroclast-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that rapidly fires molten explosions.",
+        "stats": "33 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Pyroclast_Staff"
+      },
+      {
+        "name": "Beholder Staff",
+        "icon": "thorium/beholder-staff.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a beholder minion that reveals and vaporizes nearby enemies.",
+        "stats": "44 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Beholder_Staff"
+      },
+      {
+        "name": "Hell Roller",
+        "icon": "thorium/hell-roller.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Throws an explosive roller that rebounds and grows in power.",
+        "stats": "37 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Hell_Roller"
+      },
+      {
+        "name": "Cello",
+        "icon": "thorium/cello.png",
+        "slot": "weapon",
+        "subclass": "string",
+        "effect": "A Bard string instrument that sends out a long-lived, fiery sound wave.",
+        "stats": "68 damage",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cello"
+      },
+      {
+        "name": "Beholder's Gaze",
+        "icon": "thorium/beholders-gaze.png",
+        "slot": "accessory",
+        "effect": "An accessory that grants 10 seconds of guaranteed critical strikes on command, then a brief damage penalty.",
+        "dropRate": "14.29% (one of seven)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Beholder%27s_Gaze"
+      },
+      {
+        "name": "Void Planter",
+        "icon": "thorium/void-planter.png",
+        "slot": "tool",
+        "effect": "Plants up to three void seeds at your cursor that heal you over time.",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Void_Planter"
+      },
+      {
+        "name": "Fallen Beholder Mask",
+        "icon": "thorium/fallen-beholder-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Fallen Beholder.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fallen_Beholder_Mask"
+      },
+      {
+        "name": "Mirror of the Beholder",
+        "icon": "thorium/mirror-of-the-beholder.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Grants extended vision and reveals nearby enemies through walls.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mirror_of_the_Beholder"
+      }
+    ],
+    "blurb": "An early-Hardmode eye boss summoned in The Underworld. It flies and lunges at the player between barrages of fiery magical attacks.",
+    "color": "#A24BC4",
+    "animated": true
+  },
+  {
+    "id": "lich",
+    "name": "Lich",
+    "stage": "thor-post-mech",
+    "tier": 6.5,
+    "side": true,
+    "role": "optional",
+    "unlocks": "The Confused Zombie NPC starts selling Soul Bombs.",
+    "summon": "Use 30 Pumpkins at an Ancient Phylactery in the Graveyard, at night, after all three mechanical bosses are dead.",
+    "summonItem": {
+      "name": "Ancient Phylactery",
+      "icon": "thorium/ancient-phylactery.png",
+      "slot": "summon",
+      "effect": "A station placed in a Graveyard. Use 30 Pumpkins here at night, after the mechs, to summon the Lich.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ancient_Phylactery"
+    },
+    "drops": [
+      {
+        "name": "Soul Render",
+        "icon": "thorium/soul-render.png",
+        "slot": "weapon",
+        "subclass": "true-melee",
+        "effect": "A sword that shoots a volatile soul blade with each swing.",
+        "stats": "80 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Render"
+      },
+      {
+        "name": "Wither Staff",
+        "icon": "thorium/wither-staff.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that rapidly withers the enemy under your cursor, ignoring defense.",
+        "stats": "46 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Wither_Staff"
+      },
+      {
+        "name": "Soul Cleaver",
+        "icon": "thorium/soul-cleaver.png",
+        "slot": "weapon",
+        "subclass": "non-consumable",
+        "effect": "Rapidly throws a large piercing cleaver that lowers enemy defense.",
+        "stats": "54 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Cleaver"
+      },
+      {
+        "name": "Soul Bomb",
+        "icon": "thorium/soul-bomb.png",
+        "slot": "weapon",
+        "subclass": "consumable",
+        "effect": "A thrown bomb that bursts into damaging souls.",
+        "stats": "62 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Soul_Bomb"
+      },
+      {
+        "name": "Cadaver's Cornet",
+        "icon": "thorium/cadavers-cornet.png",
+        "slot": "weapon",
+        "subclass": "brass",
+        "effect": "A Bard instrument that releases grasping tendrils of ghastly sound energy.",
+        "stats": "60 damage",
+        "dropRate": "20% (one of five)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cadaver%27s_Cornet"
+      },
+      {
+        "name": "Phantom Wand",
+        "icon": "thorium/phantom-wand.png",
+        "slot": "weapon",
+        "subclass": "minions",
+        "effect": "Summons a pack of volatile phantom minions that fire energy at your cursor.",
+        "stats": "48 damage",
+        "dropRate": "16.67%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Phantom_Wand"
+      },
+      {
+        "name": "The Lost Cross",
+        "icon": "thorium/the-lost-cross.png",
+        "slot": "accessory",
+        "effect": "A Healer accessory that strengthens your healing spells.",
+        "dropRate": "25%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Lost_Cross"
+      },
+      {
+        "name": "Cursed Cloth",
+        "icon": "thorium/cursed-cloth.png",
+        "slot": "material",
+        "effect": "A Thorium crafting material used for Lich-themed gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Cursed_Cloth"
+      },
+      {
+        "name": "Lich Mask",
+        "icon": "thorium/lich-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Lich.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Lich_Mask"
+      },
+      {
+        "name": "Phylactery",
+        "icon": "thorium/phylactery.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "Taking fatal damage instead revives you once, on a long cooldown.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Phylactery"
+      }
+    ],
+    "blurb": "A late-Hardmode undead boss summoned at night once the mechs are dead. It chases the player with dark magic and rams for heavy damage.",
+    "color": "#5FB08A",
+    "animated": true
+  },
+  {
+    "id": "forgotten-one",
+    "name": "Forgotten One",
+    "stage": "thor-post-mech",
+    "tier": 7.3,
+    "side": true,
+    "role": "optional",
+    "unlocks": "Grants the Purified Waters buff, so you can breathe in the Aquatic Depths without taking damage. The Diverman sells The Whirlpool.",
+    "summon": "Kill Aquatic Hallucinations in the Aquatic Depths and pick up three Abyssal Shadows to build the False Presence debuff.",
+    "summonItem": {
+      "name": "Abyssal Shadow",
+      "icon": "thorium/abyssal-shadow.png",
+      "slot": "summon",
+      "effect": "Dropped by Aquatic Hallucinations. Pick up three to stack False Presence and make the Forgotten One emerge.",
+      "source": "Dropped by Aquatic Hallucinations in the Aquatic Depths",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Abyssal_Shadow"
+    },
+    "drops": [
+      {
+        "name": "Mantis Shrimp Punch",
+        "icon": "thorium/mantis-shrimp-punch.png",
+        "slot": "weapon",
+        "subclass": "flail",
+        "effect": "A flail that breaks the sound barrier on a full swing.",
+        "stats": "115 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Mantis_Shrimp_Punch"
+      },
+      {
+        "name": "Trench Spitter",
+        "icon": "thorium/trench-spitter.png",
+        "slot": "weapon",
+        "subclass": "gun",
+        "effect": "A gun that spits a rapid stream of abyssal shots.",
+        "stats": "65 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Trench_Spitter"
+      },
+      {
+        "name": "Old God's Vision",
+        "icon": "thorium/old-gods-vision.png",
+        "slot": "weapon",
+        "subclass": "wand",
+        "effect": "A magic staff that unleashes a maddening surge of ancient magic.",
+        "stats": "60 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Old_God%27s_Vision"
+      },
+      {
+        "name": "The Incubator",
+        "icon": "thorium/the-incubator.png",
+        "slot": "weapon",
+        "subclass": "sentries",
+        "effect": "Summons a monolith sentry that continually spawns abyssal minions.",
+        "stats": "42 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Incubator"
+      },
+      {
+        "name": "Siren's Lyre",
+        "icon": "thorium/sirens-lyre.png",
+        "slot": "weapon",
+        "subclass": "string",
+        "effect": "A Bard string instrument that releases a forceful siren's wail.",
+        "stats": "94 damage",
+        "dropRate": "16.67% (one of six)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Siren%27s_Lyre"
+      },
+      {
+        "name": "R'lyeh's Lost Rod",
+        "icon": "thorium/rlyehs-lost-rod.png",
+        "slot": "tool",
+        "effect": "A high-power fishing pole pulled from the depths.",
+        "dropRate": "10%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Fishing_Poles"
+      },
+      {
+        "name": "Forgotten One Mask",
+        "icon": "thorium/forgotten-one-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like the Forgotten One.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Forgotten_One_Mask"
+      },
+      {
+        "name": "Abyssal Shell",
+        "icon": "thorium/abyssal-shell.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "An accessory that grants a protective abyssal barrier on command.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Abyssal_Shell"
+      }
+    ],
+    "blurb": "A post-Golem boss summoned in the Aquatic Depths. This armored abyssal horror cracks its shell into a faster second phase below half health.",
+    "color": "#3E8C7A",
+    "animated": true
+  },
+  {
+    "id": "the-primordials",
+    "name": "The Primordials",
+    "stage": "thor-endgame",
+    "tier": 11,
+    "side": true,
+    "role": "optional",
+    "unlocks": "Grants the victors the Reality Bearer buff. As Thorium's final fight, it opens no further progression.",
+    "summon": "Use a Doom Sayer's Coin anywhere at night.",
+    "summonItem": {
+      "name": "Doom Sayer's Coin",
+      "icon": "thorium/doom-sayers-coin.png",
+      "slot": "summon",
+      "effect": "Summons The Primordials - Aquaius, Slag Fury, and Omnicide - at night.",
+      "source": "Crafted",
+      "wikiUrl": "https://thoriummod.wiki.gg/wiki/Doom_Sayer%27s_Coin"
+    },
+    "drops": [
+      {
+        "name": "Ocean Essence",
+        "icon": "thorium/ocean-essence.png",
+        "slot": "material",
+        "effect": "Aquaius's essence, used to craft the Primordials' ocean-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Ocean_Essence"
+      },
+      {
+        "name": "Inferno Essence",
+        "icon": "thorium/inferno-essence.png",
+        "slot": "material",
+        "effect": "Slag Fury's essence, used to craft the Primordials' fire-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Inferno_Essence"
+      },
+      {
+        "name": "Death Essence",
+        "icon": "thorium/death-essence.png",
+        "slot": "material",
+        "effect": "Omnicide's essence, used to craft the Primordials' death-themed endgame gear.",
+        "dropRate": "100%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Death_Essence"
+      },
+      {
+        "name": "Aquaius Mask",
+        "icon": "thorium/aquaius-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Aquaius, the Endless Tide.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Aquaius_Mask"
+      },
+      {
+        "name": "Slag Fury Mask",
+        "icon": "thorium/slag-fury-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Slag Fury.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Slag_Fury_Mask"
+      },
+      {
+        "name": "Omnicide Mask",
+        "icon": "thorium/omnicide-mask.png",
+        "slot": "vanity",
+        "effect": "A vanity mask shaped like Omnicide.",
+        "dropRate": "14.29%",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Omnicide_Mask"
+      },
+      {
+        "name": "Bow of Light",
+        "icon": "thorium/bow-of-light.png",
+        "slot": "weapon",
+        "subclass": "bow",
+        "mode": "expert",
+        "effect": "Charges up an arrow of incredibly potent light energy. A rare Expert drop.",
+        "stats": "300 damage",
+        "dropRate": "1% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Bow_of_Light"
+      },
+      {
+        "name": "The Omega Core",
+        "icon": "thorium/the-omega-core.png",
+        "slot": "accessory",
+        "mode": "expert",
+        "effect": "An endgame accessory imbued with reality-ending power.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/The_Omega_Core"
+      },
+      {
+        "name": "Dormant Hammer",
+        "icon": "thorium/dormant-hammer.png",
+        "slot": "material",
+        "mode": "expert",
+        "effect": "A hammer with an empty socket, used to craft a powerful endgame weapon.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Dormant_Hammer"
+      },
+      {
+        "name": "Thorium Party Hat",
+        "icon": "thorium/thorium-party-hat.png",
+        "slot": "vanity",
+        "mode": "expert",
+        "effect": "A celebratory vanity hat for clearing the mod's final fight.",
+        "dropRate": "100% (Expert Treasure Bag)",
+        "wikiUrl": "https://thoriummod.wiki.gg/wiki/Thorium_Party_Hat"
+      }
+    ],
+    "blurb": "Thorium's final fight: a trio of superbosses - Aquaius the Endless Tide, Slag Fury, and Omnicide - summoned at night. Each brings its own attack set, and their essences craft the mod's endgame gear.",
+    "color": "#B048C0",
     "animated": true
   }
 ]

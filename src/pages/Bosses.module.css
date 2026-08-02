@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════
    BOSSES - Vertical roadmap (Guide Green)
 ═══════════════════════════════════════════════════ */
-.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; }
+.page { position: relative; background: var(--paper); min-height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
 /* ── Full-page biome backdrop (covers the whole page, like Loadouts) ── */
 /* Viewport-anchored so the image doesn't re-fit (zoom/drift) as the page grows */
@@ -17,14 +17,19 @@
 }
 
 /* Footer sits above the backdrop wash (which otherwise covers non-positioned content) */
-/* Extra top space (about the footer's own height) so the footer starts below
-   the fold rather than peeking in under the detail card on first load. */
-.footerLayer { position: relative; z-index: 2; margin-top: 108px; }
+/* margin-top:auto pushes the footer to the bottom of the flex-column page, so a
+   short detail panel can't leave a gap of bare backdrop beneath the footer.
+   When content is taller than the viewport the auto margin collapses to 0 and
+   the footer flows after it as usual. */
+.footerLayer { position: relative; z-index: 2; margin-top: auto; }
 
 /* ── Hero (transparent - the backdrop shows through) ── */
+/* z-index sits above .railSection: the hero now holds only the absolute header
+   and collapses to ~0 height, so an equal z-index let the later rail sibling
+   paint over the header and eat its nav clicks. */
 .hero {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   color: #fff;
   isolation: isolate;
 }
@@ -66,7 +71,9 @@
   z-index: 2;
   margin-top: 0;
   background: transparent;
-  padding: 44px 0 64px;
+  /* Top clears the absolute photo header (~64px), which floats over this
+     section now that the hero text - and its spacer padding - is gone. */
+  padding: 88px 0 64px;
   color: var(--paper);
 }
 
@@ -80,15 +87,7 @@
 .railScroll::-webkit-scrollbar-thumb { background: rgba(150,164,224,.35); border-radius: 6px; }
 
 /* ── Phase switch: pre-hardmode ⇄ hardmode ── */
-.phaseBar { display: flex; justify-content: center; padding: 4px 32px 20px; }
-.phaseToggle {
-  display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  --px-fill: rgba(10,16,32,.5);
-  --px-border: rgba(150,164,224,.3);
-  --px-u: 1px;   /* half-scale step, as on the nav tabs and class selectors */
-}
+.phaseBar { display: flex; justify-content: center; gap: 10px; padding: 4px 32px 20px; }
 .phaseBtn {
   font-family: var(--game);
   font-size: 13px;
@@ -100,13 +99,15 @@
   cursor: pointer;
   padding: 8px 20px;
   transition: color .15s;
+  /* Each button now carries its own pixel-frame - the shared container is gone.
+     --px-u stays at 1px (the half-scale step used on the nav tabs); the unselected
+     button renders hollow (pixel-hollow), the selected one fills via the classes
+     below. */
+  --px-u: 1px;
+  --px-fill: rgba(10,16,32,.5);
+  --px-border: rgba(150,164,224,.3);
 }
 .phaseBtn:hover { color: #fff; }
-/* The selected half is a filled pixel-frame rather than a rounded fill, so it
-   matches the switch it sits inside. --px-u stays at 1px: the container uses
-   the half-scale step and a 2px step here would read as a bigger, mismatched
-   corner on a nested box. */
-.phasePre, .phaseHard { --px-u: 1px; }
 .phasePre { color: #04263f; --px-fill: var(--sky); --px-border: var(--sky); }
 .phaseHard { color: #0b1524; --px-fill: #e0552e; --px-border: #e0552e; }
 
@@ -254,16 +255,16 @@
   margin: 32px auto 0;
   display: flex;
   gap: 18px;
-  /* pixel corners via .pixel-frame + .pixel-hollow - same fill and per-boss
-     border colour as before, only the corner shape changes. The utility supplies
+  /* pixel corners via .pixel-frame + .pixel-hollow. The utility supplies the
      background/border, so they must not be set here, and a box-shadow would
-     render against the real rectangular box and cut square corners. */
-  --px-fill: linear-gradient(180deg, rgba(70,84,150,.28) 0%, rgba(40,50,96,.28) 100%);
-  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 45%, rgba(150,164,224,.4));
+     render against the real rectangular box and cut square corners. Fill and
+     border match the Loadouts cards - one shared blue, not a per-boss colour. */
+  --px-fill: rgba(16, 26, 54, .82);
+  --px-border: rgba(150, 180, 230, .45);
   padding: 20px 22px;
 }
-/* Same treatment as the rail slots: the icon container is a pixel-frame, so
-   the fill and per-boss edge come from the utility. */
+/* The icon container is a pixel-frame, so the fill and edge come from the
+   utility - the same shared blue border as the card, not a per-boss colour. */
 .detailIcon {
   flex: none;
   width: 84px;
@@ -272,7 +273,7 @@
   place-items: center;
   --px-u: 2px;
   --px-fill: rgba(10,16,32,.45);
-  --px-border: color-mix(in oklab, var(--boss, #96a4e0) 55%, rgba(150,164,224,.35));
+  --px-border: rgba(150, 180, 230, .45);
 }
 .detailIcon img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(1px 1px 0 rgba(0,0,0,.55)); }
 

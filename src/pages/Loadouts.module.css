@@ -2,7 +2,11 @@
    LOADOUTS - Terraria inventory over a phase biome backdrop
 ═══════════════════════════════════════════════════ */
 .page { position: relative; min-height: 100vh; background: var(--paper); color: var(--ink-soft); overflow: hidden; }
-.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 92px 24px 80px; }
+/* Top clearance holds the content below the under-World control strip, which now
+   stacks Class + Progression and hangs ~119px down over the hero on desktop. Below
+   the 700px header breakpoint that strip flows in-line (not absolute), so the
+   mobile rule drops back to just clearing the header. */
+.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 130px 24px 80px; }
 
 /* ── Biome backdrop ──
    Anchored to the viewport, not the page: an absolutely-positioned backdrop grows
@@ -401,6 +405,12 @@
   .accBox { width: 100%; align-self: stretch; }
 }
 
+/* Below the header breakpoint the control strip is in-flow, so the content only
+   needs to clear the header, not the strip. */
+@media (max-width: 700px) {
+  .wrap { padding-top: 92px; }
+}
+
 /* Many-phase packs (Calamity) use smaller phase discs so 19 fit comfortably. */
 :root[data-pack="calamity"] .bossmap { --cu: 1.4px; }
 
@@ -426,6 +436,19 @@
 .c_ranged        { background: #8cfabd; }
 .c_magic         { background: #ffabdd; }
 .c_summon        { background: #abdfff; }
+/* Thorium's own accessory types (the wiki's Accessories page). Distinct hues so
+   each of the twelve reads on its own; dark text unless noted. */
+.c_movement      { background: #97f779; }
+.c_health-mana   { background: #ff9ec4; }
+.c_combat        { background: #eb345e; color: #fff; }
+.c_ring          { background: #ffd24a; }
+.c_shield        { background: #7bb8ff; }
+.c_thrower       { background: #d9a066; }
+.c_healer        { background: #7ff0c0; }
+.c_bard          { background: #c79bff; }
+.c_vanity        { background: #d7c7e6; }
+.c_music-box     { background: #b7c0d0; }
+.c_misc          { background: #c2cad6; }
 
 .accQuality { text-transform: uppercase; }
 .q_great { background: #2bbcd6; }

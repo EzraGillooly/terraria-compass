@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -152,7 +151,7 @@ function BossSlot({
 }
 
 export function Bosses() {
-  const { phases, bosses } = usePack();
+  const { phases, bosses, strictBossOrder, bossClusters } = usePack();
   const { difficulty, calamityMode, progressionMode, progress, setProgress } = useAppState();
   // Empty by default so the selection resolves to the first boss in the active
   // pack's order (see `selected` below) rather than a hardcoded vanilla boss.
@@ -172,15 +171,44 @@ export function Bosses() {
 
   const stages: Stage[] = useMemo(() => {
     const order = [...phases].sort((a, b) => a.order - b.order).map((p) => p.id);
-    return order.map((stage) => {
+    // Full boss list in progression order (per-phase, honouring strict/optional order).
+    const ordered = order.flatMap((stage) => {
       const inStage = bosses.filter((b) => b.stage === stage).sort((a, b) => a.tier - b.tier);
-      return {
-        stage,
-        hard: isHard(stage),
-        nodes: [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)],
-      };
+      // Packs may pin the order to tier alone; otherwise optional bosses read
+      // first within a stage, before the boss that gates progress.
+      return strictBossOrder
+        ? inStage
+        : [...inStage.filter((b) => b.side), ...inStage.filter((b) => !b.side)];
     });
-  }, [phases, bosses, isHard]);
+
+    // Explicit clumping: walk the ordered list and emit each boss's whole cluster
+    // (parallel "and"/"or" step) at its first member's position; unlisted bosses
+    // are their own single clump. One clump = one spaced column on the rail.
+    if (bossClusters?.length) {
+      const clusterOf = new Map<string, string[]>();
+      for (const c of bossClusters) for (const id of c) clusterOf.set(id, c);
+      const byId = new Map(ordered.map((b) => [b.id, b]));
+      const emitted = new Set<string>();
+      const result: Stage[] = [];
+      for (const b of ordered) {
+        if (emitted.has(b.id)) continue;
+        const cluster = clusterOf.get(b.id);
+        const nodes = cluster
+          ? (cluster.map((id) => byId.get(id)).filter(Boolean) as typeof ordered)
+          : [b];
+        nodes.forEach((n) => emitted.add(n.id));
+        result.push({ stage: nodes[0]!.id, hard: isHard(nodes[0]!.stage), nodes });
+      }
+      return result;
+    }
+
+    // Default: one clump per loadout phase.
+    return order.map((stage) => ({
+      stage,
+      hard: isHard(stage),
+      nodes: ordered.filter((b) => b.stage === stage),
+    }));
+  }, [phases, bosses, isHard, strictBossOrder, bossClusters]);
 
   const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
   const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);
@@ -275,41 +303,29 @@ export function Bosses() {
       {/* ── Hero ── */}
       <section className={styles.hero} aria-label="Boss Progression">
         <Header variant="photo" />
-        <div className={styles.heroBody}>
-          <p className={styles.crumb}>
-            <Link to="/">Home</Link> <span className={styles.crumbSep}>/</span> Boss Progression
-          </p>
-          <h1 className={styles.heroTitle}>Boss <em>Progression</em></h1>
-          <p className={styles.heroLede}>
-            Every boss in progression order, left to right. Select one for its summon
-            method and key drops.
-          </p>
-        </div>
       </section>
 
       {/* ── Scroll rail ── */}
       <section className={styles.railSection} aria-label="Boss order timeline">
-        <div className={styles.phaseBar}>
-          <div className={`${styles.phaseToggle} pixel-frame pixel-hollow`} role="tablist" aria-label="Progression phase">
-            <button
-              type="button"
-              role="tab"
-              aria-selected={!showHardmode}
-              className={`${styles.phaseBtn} ${!showHardmode ? `${styles.phasePre} pixel-frame` : ''}`}
-              onClick={() => setPhase(false)}
-            >
-              Pre-Hardmode
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected={showHardmode}
-              className={`${styles.phaseBtn} ${showHardmode ? `${styles.phaseHard} pixel-frame` : ''}`}
-              onClick={() => setPhase(true)}
-            >
-              Hardmode
-            </button>
-          </div>
+        <div className={styles.phaseBar} role="tablist" aria-label="Progression phase">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={!showHardmode}
+            className={`${styles.phaseBtn} pixel-frame ${!showHardmode ? styles.phasePre : 'pixel-hollow'}`}
+            onClick={() => setPhase(false)}
+          >
+            Pre-Hardmode
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={showHardmode}
+            className={`${styles.phaseBtn} pixel-frame ${showHardmode ? styles.phaseHard : 'pixel-hollow'}`}
+            onClick={() => setPhase(true)}
+          >
+            Hardmode
+          </button>
         </div>
 
         <div className={styles.railScroll}>
@@ -320,7 +336,7 @@ export function Bosses() {
         <p className={styles.scrollHint}>Tap a boss for its summon method and key drops</p>
 
         {/* ── Detail panel ── */}
-        <div className={`${styles.detail} pixel-frame pixel-hollow`} style={{ ['--boss' as string]: selected.color }}>
+        <div className={`${styles.detail} pixel-frame pixel-hollow`}>
           <div className={`${styles.detailIcon} pixel-frame`}>
             {/* the big card shows the animated sprite where one exists; key on the
                 boss id so React swaps the <img> (and restarts the gif) per boss */}

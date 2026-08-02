@@ -79,6 +79,22 @@
 /* smaller than the tile so tall sprites (swords) don't touch the stepped edge */
 .sprite img { width: 38px; height: 38px; object-fit: contain; }
 .name { font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.1; color: var(--ink-soft); }
+/* Title + its "wiki" link on one row, baseline-aligned so the small link sits
+   next to the large title. */
+.titleRow { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+/* A small link out to the item's wiki page, in the app's highlight yellow
+   (the same --warm used on page titles and button hovers). */
+.wikiLink {
+  flex: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--warm);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.wikiLink:hover { filter: brightness(1.08); }
 .kind {
   font-weight: 800;
   font-size: 10px;

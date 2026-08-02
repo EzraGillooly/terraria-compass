@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { usePack } from '../lib/app-context';
@@ -222,22 +222,7 @@ export function Crafting() {
 
       <Header variant="photo" />
 
-      {/* hero lives inside <main> so no content sits outside a landmark */}
       <main>
-        <section className={styles.hero}>
-          <div className={styles.heroBody}>
-            <p className={styles.crumb}>
-              <Link to="/">Home</Link>
-              <span className={styles.crumbSep}>/</span>
-              Crafting
-            </p>
-            <h1 className={styles.heroTitle}>Crafting <em>Trees</em></h1>
-            <p className={styles.heroLede}>
-              Full crafting trees, expanded down to the base ores and drops.
-            </p>
-          </div>
-        </section>
-
         <div className={styles.main}>
         {root ? (
           <>
