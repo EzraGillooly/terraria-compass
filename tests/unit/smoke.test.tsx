@@ -20,8 +20,11 @@ describe('App', () => {
 
     // The active pack's data is loaded lazily now, so the provider shows a
     // loading splash for a tick before the page mounts - await the content
-    // rather than asserting on the first synchronous frame.
-    expect((await screen.findAllByText('Terraria Compass')).length).toBeGreaterThan(0);
+    // rather than asserting on the first synchronous frame. The brand is an image
+    // link (the footer no longer carries the name as text), so match its label.
+    expect(
+      await screen.findByRole('link', { name: /terraria compass/i }),
+    ).toBeInTheDocument();
     expect(
       screen.getByRole('button', { name: /world difficulty/i }),
     ).toBeInTheDocument();
