@@ -338,7 +338,16 @@ const CATEGORY_LABEL: Record<string, string> = {
   'primary-mobility': 'Primary Mobility', 'extra-mobility': 'Extra Mobility',
   'all-around': 'All-Around',
   melee: 'Melee', ranged: 'Ranged', magic: 'Magic', summon: 'Summon',
+  // Thorium's own accessory types, from the wiki's Accessories page.
+  movement: 'Movement', 'health-mana': 'Health & Mana', combat: 'Combat',
+  ring: 'Ring', shield: 'Shield', thrower: 'Thrower', healer: 'Healer',
+  bard: 'Bard', vanity: 'Vanity', 'music-box': 'Music Box', misc: 'Misc',
 };
+/* The Thorium accessory types, as tag ids. Used to tell a Thorium type tag from
+   the app's own category on an item that carries both. */
+const THORIUM_ACC_TYPES = ['movement', 'health-mana', 'combat', 'ring', 'shield',
+  'thrower', 'healer', 'bard', 'vanity', 'music-box', 'misc'] as const;
+const THORIUM_ACC_TYPE_SET = new Set<string>(THORIUM_ACC_TYPES);
 /** taxonomy damage-type -> our class id, so a class badge only shows on its own page */
 const CATEGORY_CLASS: Record<string, string> = {
   melee: 'melee', ranged: 'ranger', magic: 'mage', summon: 'summoner',
@@ -372,6 +381,9 @@ const PACK_MARKERS: Record<string, readonly string[]> = {
   vanilla: ['expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos'],
   calamity: ['tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
     'calamity-changed', 'pairs'],
+  // Expert Mode is the wiki's 12th accessory type; it rides as a marker since an
+  // Expert accessory also belongs to one of the other eleven types.
+  thorium: ['expert'],
 };
 
 /** Class-specific categories are noise on the other three classes' pages. */
@@ -399,6 +411,7 @@ function AccCell({
   }
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   const cats = visibleCategories(item, activeClass);
+  const typeTag = item.tags?.find((t) => THORIUM_ACC_TYPE_SET.has(t));
   const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty);
   /* The cell is the primary card plus, when the guide offers a swap, an "or" and
@@ -424,16 +437,18 @@ function AccCell({
         <span className={styles.accSlotName}>{item.name}</span>
       </button>
 
-      {(cats.length > 0 || item.quality || markers.length > 0) && (
+      {(typeTag || cats.length > 0 || item.quality || markers.length > 0) && (
         <span className={styles.accTags}>
           {item.quality && (
             <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>
               {item.quality}
             </span>
           )}
-          {cats.map((c) => (
+          {/* A Thorium item carries the wiki's own type (Shield, Ring, Thrower…)
+              as a tag, with its own colour; otherwise show the app categories. */}
+          {(typeTag ? [typeTag] : cats).map((c) => (
             <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
-              {CATEGORY_LABEL[c]}
+              {CATEGORY_LABEL[c] ?? c}
             </span>
           ))}
           {markers.map((m) => (
@@ -524,11 +539,15 @@ function PoolRow(
 /** Key to the accessory tags, so the colours mean something on first read. */
 function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
   const markers = PACK_MARKERS[packId] ?? [];
+  /* Thorium tags accessories with the wiki's own 12 accessory types; every other
+     pack uses the app's own accessory categories. */
+  const cats: readonly string[] = packId === 'thorium'
+    ? THORIUM_ACC_TYPES
+    : ['primary-mobility', 'extra-mobility', 'all-around', 'offense', 'survivability'];
   return (
     <div className={styles.accLegend}>
       <span className={styles.accLegendLabel}>Tags</span>
-      {(['primary-mobility', 'extra-mobility', 'all-around',
-        'offense', 'survivability'] as const).map((c) => (
+      {cats.map((c) => (
         <span key={c} className={`${styles.accCat} ${styles[`c_${c}`]}`}>
           {CATEGORY_LABEL[c]}
         </span>
@@ -1037,15 +1056,6 @@ export function Loadouts() {
 
       <Header variant="photo" />
       <section className={styles.wrap}>
-
-        {/* Class now lives in the header selector; the title reflects the choice. */}
-        <div className={styles.pageHead}>
-          <div>
-            <p className={styles.kick}>Class Loadouts</p>
-            <h1 className={styles.title}>{classDef.name} <em>· {phaseName}</em></h1>
-            <p className={styles.lede}>Pick your stage below and your class from the header. Armor and accessory picks update with every choice.</p>
-          </div>
-        </div>
 
         {/* Boss progression map */}
         <div
