@@ -68,13 +68,12 @@ export const PACK_PAGE_SCOPE: Record<string, string[]> = {
 };
 
 /**
- * Whether `packId` may be selected/active on `pathname`. The page scope is a
- * production gate only: in the dev build every pack is available everywhere, so
- * the loadouts can be built out on the Loadouts page while the live site keeps
- * Thorium to the Bosses page.
+ * Whether `packId` may be selected/active on `pathname`. Thorium's loadouts and
+ * recipes are not ready, so it is offered on the Bosses page only - in dev and
+ * production alike, so the dev preview matches the live site. A pack absent from
+ * PACK_PAGE_SCOPE is available on every page.
  */
 export function isPackAllowedOnPath(packId: string, pathname: string): boolean {
-  if (import.meta.env.DEV) return true;
   const scope = PACK_PAGE_SCOPE[packId];
   return !scope || scope.includes(pathname);
 }
