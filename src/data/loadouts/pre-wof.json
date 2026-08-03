@@ -356,7 +356,7 @@
           }
         ],
         "defense": 25,
-        "effect": "+25 defense \u00b7 +17% melee damage \u00b7 +7% melee critical strike chance \u00b7 +7% melee speed \u00b7 Immunity to the On Fire! and Burning debuffs"
+        "effect": "+17% melee damage \u00b7 +7% melee critical strike chance \u00b7 +7% melee speed \u00b7 Immunity to the On Fire! and Burning debuffs"
       }
     ],
     "accessories": [
@@ -1086,11 +1086,11 @@
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Upgrade to the Handgun, with higher damage and fire rate.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "gun",
         "stats": "30 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -1113,11 +1113,11 @@
         "source": "Purchased from the Arms Dealer in a Graveyard after Skeletron is defeated (35 GC)",
         "why": "Sold by the Arms Dealer in a Graveyard only after Skeletron is defeated.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "gun",
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Quad-Barrel_Shotgun",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "handgun",
@@ -1208,6 +1208,36 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees",
         "tier": "good",
         "dropRate": "33%"
+      },
+      {
+        "id": "beenade",
+        "name": "Beenade",
+        "slot": "weapon",
+        "icon": "items/beenade.png",
+        "source": "Crafted at a Work Bench from Grenades and Bee Wax",
+        "why": "Thrown grenade that releases bees on impact.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "other",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beenade",
+        "tier": "good"
+      },
+      {
+        "id": "boomstick",
+        "name": "Boomstick",
+        "slot": "weapon",
+        "icon": "items/boomstick.png",
+        "source": "Found in Ivy Chests and Jungle/Bramble Crates",
+        "why": "Pre-Hardmode shotgun that fires a spread of bullets, found in the Jungle.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "14 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Boomstick",
+        "tier": "good",
+        "dropRate": "19%"
       }
     ],
     "armor": [
@@ -1217,7 +1247,7 @@
         "slot": "armor",
         "icon": "armor/necro-armor.png",
         "source": "Crafted at Work Bench",
-        "why": "10% increased ranged critical strike chance.",
+        "why": "",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Necro_armor",
         "tags": [],
         "topPick": true,
@@ -1276,7 +1306,8 @@
             "station": "Work Bench"
           }
         ],
-        "defense": 19
+        "defense": 19,
+        "effect": "+15% ranged damage \u00b7 +10% ranged critical strike chance"
       }
     ],
     "accessories": [
@@ -1493,16 +1524,69 @@
     ],
     "ammo": [
       {
+        "id": "ammo-hellfire-arrow",
+        "name": "Hellfire Arrow",
+        "slot": "ammo",
+        "icon": "ammo/hellfire-arrow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Explodes on impact.",
+        "stats": "13 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hellfire_Arrow",
+        "tags": [],
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 100,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Hellstone Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "ammo-party-bullet",
+        "name": "Party Bullet",
+        "slot": "ammo",
+        "icon": "ammo/party-bullet.png",
+        "source": "Obtained from a Pigronata (bought from the Party Girl)",
+        "why": "Bursts into confetti on hit.",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Party_Bullet",
+        "tags": [],
+        "topPick": false,
+        "stats": "10 ranged dmg",
+        "dropRate": "11.11%"
+      },
+      {
+        "id": "ammo-shimmer-arrow",
+        "name": "Shimmer Arrow",
+        "slot": "ammo",
+        "icon": "ammo/shimmer-arrow.png",
+        "source": "Made by tossing a Wooden Arrow into Shimmer",
+        "why": "Passes through blocks and enemies.",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shimmer_Arrow",
+        "tags": [],
+        "topPick": false,
+        "stats": "12 ranged dmg"
+      },
+      {
         "id": "ammo-jesters-arrow",
         "name": "Jester's Arrow",
         "slot": "ammo",
         "icon": "ammo/jesters-arrow.png",
-        "source": "Crafted at By Hand",
-        "why": "Passes through blocks and enemies, hitting everything in a line. Useful against the Eater of Worlds and the Wall of Flesh.",
+        "source": "Crafted at a Work Bench",
+        "why": "Pierces infinitely and passes through blocks.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "10 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow",
         "materials": [
           {
             "name": "Wooden Arrow",
@@ -1515,7 +1599,29 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "By Hand"
+        "station": "Work Bench",
+        "stats": "10 ranged dmg"
+      },
+      {
+        "id": "ammo-meteor-shot",
+        "name": "Meteor Shot",
+        "slot": "ammo",
+        "icon": "ammo/meteor-shot.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Ricochets off surfaces.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meteor_Shot",
+        "tags": [],
+        "topPick": false,
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "8 ranged dmg"
       },
       {
         "id": "ammo-unholy-arrow",
@@ -1523,15 +1629,15 @@
         "slot": "ammo",
         "icon": "ammo/unholy-arrow.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Pierces several enemies. Worm Teeth come from the Eater of Worlds.",
+        "why": "Pierces several enemies.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "12 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Arrow",
         "materials": [
           {
             "name": "Wooden Arrow",
-            "qty": 20,
+            "qty": 25,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
           },
           {
@@ -1541,32 +1647,20 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "dropRate": "100%"
+        "stats": "12 ranged dmg"
       },
       {
-        "id": "ammo-meteor-shot",
-        "name": "Meteor Shot",
+        "id": "ammo-fallen-star",
+        "name": "Fallen Star",
         "slot": "ammo",
-        "icon": "ammo/meteor-shot.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Ricochets off blocks.",
+        "icon": "ammo/fallen-star.png",
+        "source": "Falls from the sky at night",
+        "why": "Ammunition for the Star Cannon.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
         "tags": [],
         "topPick": false,
-        "stats": "8 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Meteor_Shot",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 70,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Meteorite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil"
+        "stats": "55 ranged dmg"
       }
     ],
     "accessoryPool": [

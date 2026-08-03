@@ -2068,12 +2068,56 @@
         "source": "Dropped by Angry Trappers in the Hardmode Underground Jungle",
         "why": "Rapid-fire gun dropped by Angry Trappers, which spawn in the Hardmode Jungle.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "gun",
         "stats": "30 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Uzi",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "1%"
+      },
+      {
+        "id": "adamantite-repeater",
+        "name": "Adamantite Repeater",
+        "slot": "weapon",
+        "icon": "items/adamantite-repeater.png",
+        "source": "Crafted at Adamantite Forge or Titanium Forge",
+        "why": "Repeater that auto-fires arrows.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "repeater",
+        "stats": "42 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Repeater",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Adamantite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+          }
+        ],
+        "station": "Adamantite Forge or Titanium Forge"
+      },
+      {
+        "id": "titanium-repeater",
+        "name": "Titanium Repeater",
+        "slot": "weapon",
+        "icon": "items/titanium-repeater.png",
+        "source": "Crafted at Adamantite Forge or Titanium Forge",
+        "why": "Repeater that auto-fires arrows.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "repeater",
+        "stats": "46 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Repeater",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Titanium Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+          }
+        ],
+        "station": "Adamantite Forge or Titanium Forge"
       },
       {
         "id": "cobalt-repeater",
@@ -2271,7 +2315,7 @@
         "subclass": "other",
         "stats": "0 base (coin ammo) dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Coin_Gun",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "2%"
       },
       {
@@ -2282,8 +2326,8 @@
         "source": "Dropped by Corrupt Mimics",
         "why": "Corruption dart weapon; pairs with Crystal or Cursed Darts.",
         "tags": [],
-        "topPick": false,
-        "tier": "good",
+        "topPick": true,
+        "tier": "best",
         "subclass": "other",
         "stats": "52 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dart_Rifle",
@@ -2297,8 +2341,8 @@
         "source": "Dropped by Crimson Mimics",
         "why": "Crimson counterpart of the Dart Rifle.",
         "tags": [],
-        "topPick": false,
-        "tier": "good",
+        "topPick": true,
+        "tier": "best",
         "subclass": "other",
         "stats": "28 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dart_Pistol",
@@ -2507,7 +2551,7 @@
         "icon": "armor-sets/frost-armor.png",
         "source": "Crafted at a Mythril or Orichalcum Anvil",
         "why": "",
-        "effect": "Melee and ranged attacks inflict Frostburn \u00b7 10% increased melee and ranged damage",
+        "effect": "+26% melee and ranged damage \u00b7 +11% melee and ranged critical strike chance \u00b7 +10% melee speed \u00b7 +8% movement speed \u00b7 Melee and ranged hits inflict Frostbite for 5\u201314 seconds",
         "tags": [
           "hardmode"
         ],
@@ -2825,105 +2869,91 @@
         "name": "Crystal Bullet",
         "slot": "ammo",
         "icon": "ammo/crystal-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Splits into crystal shards on impact.",
-        "tags": [],
-        "topPick": false,
+        "source": "Crafted at Iron Anvil or Lead Anvil from Crystal Shards and Musket Balls",
+        "why": "Splits into crystal shards on hit.",
         "stats": "9 ranged dmg",
+        "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Crystal Shard",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-ichor-arrow",
+        "name": "Ichor Arrow",
+        "slot": "ammo",
+        "icon": "ammo/ichor-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from 150 Wooden Arrows and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "16 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "tags": [],
+        "topPick": false
       },
       {
         "id": "ammo-holy-arrow",
         "name": "Holy Arrow",
         "slot": "ammo",
         "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
-        "tags": [],
-        "topPick": false,
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows, Unicorn Horns, and Pixie Dust",
+        "why": "Summons falling stars on impact.",
         "stats": "13 ranged dmg",
+        "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "tags": [],
+        "topPick": false
       },
       {
-        "id": "ammo-ichor-bullet",
-        "name": "Ichor Bullet",
+        "id": "ammo-ichor-dart",
+        "name": "Ichor Dart",
         "slot": "ammo",
-        "icon": "ammo/ichor-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Lowers enemy defense. Crimson worlds only.",
+        "icon": "ammo/ichor-dart.png",
+        "source": "Crafted at a Hardmode Anvil from Darts and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "20 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Dart",
         "tags": [],
-        "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "topPick": false
       },
       {
-        "id": "ammo-cursed-bullet",
-        "name": "Cursed Bullet",
+        "id": "ammo-cursed-dart",
+        "name": "Cursed Dart",
         "slot": "ammo",
-        "icon": "ammo/cursed-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Corruption worlds only. Higher base damage than a Crystal Bullet, but it does not split.",
+        "icon": "ammo/cursed-dart.png",
+        "source": "Crafted at a Hardmode Anvil from Darts and Cursed Flames",
+        "why": "Inflicts Cursed Inferno.",
+        "stats": "20 ranged dmg",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Dart",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-crystal-dart",
+        "name": "Crystal Dart",
+        "slot": "ammo",
+        "icon": "ammo/crystal-dart.png",
+        "source": "Crafted at a Hardmode Anvil from Darts and Crystal Shards",
+        "why": "Ricochets and pierces enemies.",
+        "stats": "22 ranged dmg",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Dart",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-fallen-star",
+        "name": "Fallen Star",
+        "slot": "ammo",
+        "icon": "ammo/fallen-star.png",
+        "source": "Falls from the sky at night",
+        "why": "Ammunition for the Star Cannon.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
         "tags": [],
         "topPick": false,
-        "stats": "12 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Cursed Flame",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "55 ranged dmg"
       }
     ],
     "accessoryPool": [
@@ -3442,7 +3472,8 @@
             "categories": [
               "ranged"
             ],
-            "dropRate": "2.5% 1.25% (Old-gen console and 3DS versions)"
+            "dropRate": "2.5%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
           }
         ]
       }

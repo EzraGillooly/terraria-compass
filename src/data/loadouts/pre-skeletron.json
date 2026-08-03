@@ -360,7 +360,7 @@
           }
         ],
         "defense": 25,
-        "effect": "+25 defense \u00b7 +17% melee damage \u00b7 +7% melee critical strike chance \u00b7 +7% melee speed \u00b7 Immunity to the On Fire! and Burning debuffs"
+        "effect": "+17% melee damage \u00b7 +7% melee critical strike chance \u00b7 +7% melee speed \u00b7 Immunity to the On Fire! and Burning debuffs"
       },
       {
         "id": "shadow-armor",
@@ -430,7 +430,7 @@
           }
         ],
         "defense": 19,
-        "effect": "+19 defense \u00b7 +15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
+        "effect": "+15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
         "markers": [
           "corruption"
         ]
@@ -503,7 +503,7 @@
           }
         ],
         "defense": 19,
-        "effect": "+19 defense \u00b7 +9% damage \u00b7 Greatly increased health regeneration",
+        "effect": "+9% damage \u00b7 Greatly increased health regeneration",
         "markers": [
           "crimson"
         ]
@@ -1377,7 +1377,7 @@
           }
         ],
         "defense": 19,
-        "effect": "+19 defense \u00b7 +15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
+        "effect": "+15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
         "markers": [
           "corruption"
         ]
@@ -1450,7 +1450,7 @@
           }
         ],
         "defense": 19,
-        "effect": "+19 defense \u00b7 +9% damage \u00b7 Greatly increased health regeneration",
+        "effect": "+9% damage \u00b7 Greatly increased health regeneration",
         "markers": [
           "crimson"
         ]
@@ -1728,13 +1728,14 @@
         "name": "Party Bullet",
         "slot": "ammo",
         "icon": "ammo/party-bullet.png",
-        "source": "Sold by the Party Girl",
+        "source": "Obtained from a Pigronata (bought from the Party Girl)",
         "why": "Bursts into confetti on hit.",
         "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Party_Bullet",
         "tags": [],
         "topPick": false,
-        "stats": "10 ranged dmg"
+        "stats": "10 ranged dmg",
+        "dropRate": "11.11%"
       },
       {
         "id": "ammo-shimmer-arrow",
