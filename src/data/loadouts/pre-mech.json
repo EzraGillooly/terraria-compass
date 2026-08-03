@@ -24,10 +24,10 @@
         "slot": "weapon",
         "icon": "items/fetid-baghnakhs.png",
         "source": "Dropped by Crimson Mimics",
-        "why": "The fastest melee weapon in the game, with very short range. Dropped by Crimson Mimics.",
+        "why": "Very fast melee attacks at very short range.",
         "tags": [],
         "topPick": true,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs",
         "tier": "best",
@@ -59,7 +59,7 @@
         "subclass": "yoyo",
         "stats": "39 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chik",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Wooden Yoyo",
@@ -87,11 +87,11 @@
         "source": "Bought from the Skeleton Merchant during moon phases 1-4 (Hardmode)",
         "why": "Hardmode Skeleton Merchant yoyo sold on full-moon-side phases.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "yoyo",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gradient",
-        "tier": "best"
+        "tier": "other"
       },
       {
         "id": "hel-fire",
@@ -105,7 +105,7 @@
         "subclass": "yoyo",
         "stats": "39 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hel-Fire",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "bananarang",
@@ -131,7 +131,7 @@
         "why": "Player-controlled hovering knife dropped by Hallowed Mimics.",
         "tags": [],
         "topPick": false,
-        "subclass": "boomerang",
+        "subclass": "other",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Knife",
         "tier": "good",
@@ -149,7 +149,7 @@
         "subclass": "boomerang",
         "stats": "80 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sergeant_United_Shield",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "anchor",
@@ -174,11 +174,11 @@
         "source": "Dropped by Corrupt Mimics (Hardmode)",
         "why": "Launched flail dropped by Corrupt Mimics in Hardmode.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "flail",
         "stats": "59 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Guillotines",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "20%"
       },
       {
@@ -193,7 +193,7 @@
         "subclass": "flail",
         "stats": "100 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dao_of_Pow",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Dark Shard",
@@ -257,7 +257,7 @@
         "why": "Fires a yellow Sword Beam projectile on each swing.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "52 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Beam_Sword",
         "tier": "other",
@@ -272,10 +272,10 @@
         "why": "Fires an ichor spray projectile on swing and inflicts Ichor.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "55 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bladetongue",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "frostbrand",
@@ -286,7 +286,7 @@
         "why": "Fires a Frost Bolt projectile on swing and inflicts Frostbite.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Frostbrand",
         "tier": "other",
@@ -301,11 +301,11 @@
         "why": "Fires a spinning blue sickle projectile that pierces.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Sickle",
         "tier": "good",
-        "dropRate": "1% / (Old-gen console and 3DS versions) 0.56%"
+        "dropRate": "1%"
       },
       {
         "id": "blue-phasesaber",
@@ -316,7 +316,7 @@
         "why": "Hardmode upgrade of the Blue Phaseblade using Crystal Shards.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Phasesaber",
         "tier": "other",
@@ -343,7 +343,7 @@
         "why": "High-damage broadsword dropped by the Wall of Flesh.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Breaker_Blade",
         "tier": "other",
@@ -358,11 +358,55 @@
         "why": "Dropped by the Tax Collector; can damage town NPCs.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Classy_Cane",
         "tier": "other",
         "dropRate": "12.5%"
+      },
+      {
+        "id": "adamantite-glaive",
+        "name": "Adamantite Glaive",
+        "slot": "weapon",
+        "icon": "items/adamantite-glaive.png",
+        "source": "Crafted at Adamantite Forge or Titanium Forge",
+        "why": "Long-reach spear that stabs through several enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spear",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Glaive",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Adamantite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+          }
+        ],
+        "station": "Adamantite Forge or Titanium Forge"
+      },
+      {
+        "id": "titanium-trident",
+        "name": "Titanium Trident",
+        "slot": "weapon",
+        "icon": "items/titanium-trident.png",
+        "source": "Crafted at Adamantite Forge or Titanium Forge",
+        "why": "Long-reach spear that stabs through several enemies.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spear",
+        "stats": "43 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Trident",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Titanium Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+          }
+        ],
+        "station": "Adamantite Forge or Titanium Forge"
       },
       {
         "id": "cobalt-naginata",
@@ -373,7 +417,7 @@
         "why": "Early Hardmode Cobalt-tier spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "44 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Naginata",
         "tier": "other",
@@ -395,7 +439,7 @@
         "why": "First-tier Hardmode ore broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Sword",
         "tier": "other",
@@ -417,7 +461,7 @@
         "why": "Dropped during the Pirate Invasion, which can occur in early Hardmode.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "53 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cutlass",
         "tier": "other",
@@ -432,7 +476,7 @@
         "why": "Hardmode upgrade of the Green Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Green_Phasesaber",
         "tier": "other",
@@ -459,7 +503,7 @@
         "why": "Dropped by Pigrons; grants a healing buff on hit.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "57 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ham_Bat",
         "tier": "other",
@@ -474,7 +518,7 @@
         "why": "Mid-tier Hardmode Mythril spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "45 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Halberd",
         "tier": "other",
@@ -496,7 +540,7 @@
         "why": "Second-tier Hardmode ore broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Sword",
         "tier": "other",
@@ -518,7 +562,7 @@
         "why": "Hardmode upgrade of the Orange Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Phasesaber",
         "tier": "other",
@@ -545,7 +589,7 @@
         "why": "Mid-tier Hardmode Orichalcum spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "46 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Halberd",
         "tier": "other",
@@ -567,7 +611,7 @@
         "why": "Orichalcum-ore equivalent of the Mythril Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "59 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Sword",
         "tier": "other",
@@ -589,7 +633,7 @@
         "why": "Early Hardmode Palladium-tier spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "44 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Pike",
         "tier": "other",
@@ -611,7 +655,7 @@
         "why": "Palladium-ore equivalent of the Cobalt Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Sword",
         "tier": "other",
@@ -633,7 +677,7 @@
         "why": "Hallow wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pearlwood_Sword",
         "tier": "other",
@@ -655,7 +699,7 @@
         "why": "Hardmode upgrade of the Pink Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Phasesaber",
         "tier": "other",
@@ -682,7 +726,7 @@
         "why": "Hardmode upgrade of the Purple Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Purple_Phasesaber",
         "tier": "other",
@@ -709,7 +753,7 @@
         "why": "Hardmode upgrade of the Rainbow Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Phasesaber",
         "tier": "other",
@@ -736,7 +780,7 @@
         "why": "Hardmode upgrade of the Red Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Red_Phasesaber",
         "tier": "other",
@@ -763,7 +807,7 @@
         "why": "Purchased from the Skeleton Merchant during a Hardmode Blood Moon.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "55 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slap_Hand",
         "tier": "other"
@@ -777,7 +821,7 @@
         "why": "Hardmode upgrade of the White Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/White_Phasesaber",
         "tier": "other",
@@ -804,7 +848,7 @@
         "why": "Hardmode upgrade of the Yellow Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Yellow_Phasesaber",
         "tier": "other",
@@ -845,8 +889,8 @@
         "why": "Direct Hardmode upgrade to the Phaseblades.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "subclass": "true-melee",
+        "tier": "other",
+        "subclass": "sword",
         "stats": "50 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phasesabers"
       },
@@ -860,7 +904,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "true-melee",
+        "subclass": "other",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flint",
         "materials": [
@@ -887,10 +931,10 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "projectile-melee",
+        "subclass": "other",
         "stats": "43 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife",
-        "dropRate": "16.7% 33.3%"
+        "dropRate": "16.7%"
       },
       {
         "id": "night-s-edge",
@@ -903,7 +947,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Night%27s_Edge",
         "tier": "other",
@@ -991,7 +1035,7 @@
         "stats": "64 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sunfury",
         "tier": "other",
-        "dropRate": "1/5 (20%)"
+        "dropRate": "20%"
       },
       {
         "id": "starfury",
@@ -1004,11 +1048,11 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
         "tier": "other",
-        "dropRate": "1/4 (25%)"
+        "dropRate": "25%"
       }
     ],
     "armor": [
@@ -1019,6 +1063,7 @@
         "icon": "armor-sets/titanium-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_armor",
         "tags": [
           "hardmode"
         ],
@@ -1074,6 +1119,7 @@
         "icon": "armor-sets/adamantite-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_armor",
         "tags": [
           "hardmode"
         ],
@@ -1129,7 +1175,7 @@
         "name": "Warrior Emblem",
         "slot": "accessory",
         "icon": "accessories/warrior-emblem.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Dropped by the Wall of Flesh",
         "why": "Increases melee damage by 15%.",
         "tags": [],
         "topPick": false,
@@ -1137,15 +1183,7 @@
           "melee"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts."
       },
       {
         "id": "pool-berserkers-glove",
@@ -1194,7 +1232,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1212,7 +1250,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -1232,7 +1270,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-fairy-wings",
@@ -1358,7 +1397,7 @@
         "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false,
-        "dropRate": "1/12 (8.33%)",
+        "dropRate": "8.33%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -1537,7 +1576,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1622,7 +1661,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1697,7 +1736,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1706,15 +1745,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
           },
           {
             "id": "pool-frozen-turtle-shell",
@@ -1756,7 +1787,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
           },
           {
             "id": "pool-charm-of-myths",
@@ -1796,7 +1828,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1804,15 +1836,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "great"
           },
           {
             "id": "pool-apprentices-scarf",
@@ -1886,7 +1910,7 @@
             "slot": "accessory",
             "icon": "accessories/yoyo-bag.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Grants the following effects:",
+            "why": "Lets yoyos throw a second yoyo, adds a counterweight, and extends their reach.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2060,7 +2084,7 @@
         "why": "First-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "35 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cobalt_Repeater",
         "tier": "other",
@@ -2112,7 +2136,7 @@
         "why": "Second-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "39 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mythril_Repeater",
         "tier": "other",
@@ -2134,7 +2158,7 @@
         "why": "Orichalcum equivalent of the Mythril Repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "40 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Repeater",
         "tier": "other",
@@ -2156,7 +2180,7 @@
         "why": "Palladium equivalent of the Cobalt Repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "37 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_Repeater",
         "tier": "other",
@@ -2244,7 +2268,7 @@
         "why": "Fires coins as ammo for damage scaling with coin value, dropped during the Hardmode Pirate Invasion.",
         "tags": [],
         "topPick": false,
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "0 base (coin ammo) dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Coin_Gun",
         "tier": "good",
@@ -2260,7 +2284,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "52 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dart_Rifle",
         "dropRate": "20%"
@@ -2275,7 +2299,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "28 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dart_Pistol",
         "dropRate": "20%"
@@ -2290,7 +2314,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "launcher",
+        "subclass": "other",
         "stats": "100 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Barrel_Launcher",
         "dropRate": "10%"
@@ -2323,7 +2347,7 @@
         ],
         "topPick": true,
         "tier": "best",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "55 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
         "materials": [
@@ -2360,7 +2384,7 @@
         "stats": "22 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hellwing_Bow",
         "tier": "other",
-        "dropRate": "1/5 (20%)"
+        "dropRate": "20%"
       }
     ],
     "armor": [
@@ -2371,6 +2395,7 @@
         "icon": "armor-sets/adamantite-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_armor",
         "tags": [
           "hardmode"
         ],
@@ -2426,6 +2451,7 @@
         "icon": "armor-sets/titanium-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_armor",
         "tags": [
           "hardmode"
         ],
@@ -2616,7 +2642,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil"
       },
       {
         "id": "pool-shield-of-cthulhu",
@@ -2624,7 +2651,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2642,7 +2669,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -2662,7 +2689,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-fairy-wings",
@@ -2703,7 +2731,7 @@
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "dropRate": "9.52% (Underground), 11.11% (Cavern)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3045,7 +3073,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3130,7 +3158,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3233,7 +3261,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3242,15 +3270,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
           },
           {
             "id": "pool-frozen-turtle-shell",
@@ -3292,7 +3312,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
           }
         ]
       },
@@ -3304,7 +3325,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3312,15 +3333,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "great"
           },
           {
             "id": "pool-apprentices-scarf",
@@ -3620,7 +3633,7 @@
         "why": "Summons homing spirit flames that circle before striking enemies.",
         "tags": [],
         "topPick": true,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spirit_Flame",
         "tier": "best",
@@ -3713,7 +3726,7 @@
         "why": "Generates a lasting wall of Cursed Flame that damages and inflicts Cursed Inferno on enemies passing through.",
         "tags": [],
         "topPick": true,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
         "tier": "best",
@@ -3728,7 +3741,7 @@
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [],
         "topPick": false,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
         "tier": "good",
@@ -3743,7 +3756,7 @@
         "why": "Fires a thorny projectile that splits into homing spikes.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "34 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Thorn",
         "tier": "other",
@@ -3807,7 +3820,7 @@
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
         "tier": "other",
-        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions) 9.75%"
+        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions), 9.75%"
       },
       {
         "id": "killing-deck",
@@ -3818,7 +3831,7 @@
         "why": "Launches serpentine card projectiles that deal bonus damage when they return.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "22 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Killing_Deck",
         "tier": "good"
@@ -3847,7 +3860,7 @@
         "why": "Throws a returning magic dagger toward the cursor.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Dagger",
         "tier": "other",
@@ -3862,7 +3875,7 @@
         "why": "Fires a horizontal stone beam that petrifies enemies it hits.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "40 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Medusa_Head",
         "tier": "other",
@@ -3892,7 +3905,7 @@
         "why": "Fires high-velocity homing typhoons that pierce enemies and bounce off blocks.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "spell-tome",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon",
         "tier": "other",
@@ -3911,7 +3924,7 @@
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
         "tier": "other",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions) 9.75%"
+        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
       },
       {
         "id": "shadowflame-hex-doll",
@@ -3922,7 +3935,7 @@
         "why": "Fires homing shadowflame bolts that inflict the Shadowflame debuff.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
         "tier": "good",
@@ -3941,7 +3954,7 @@
         "stats": "65 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
         "tier": "other",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions) 9.75%"
+        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
       },
       {
         "id": "unholy-trident",
@@ -3973,7 +3986,7 @@
         "stats": "27 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Aqua_Scepter",
         "tier": "other",
-        "dropRate": "1/7 (14.29%)"
+        "dropRate": "14.29%"
       },
       {
         "id": "gray-zapinator",
@@ -4019,7 +4032,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
         "tier": "other",
@@ -4034,6 +4047,7 @@
         "icon": "armor/forbidden-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Double-tap the set bonus key to call a storm at the cursor. Boosts both magic and summon damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Forbidden_armor",
         "tags": [
           "hardmode"
         ],
@@ -4182,7 +4196,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -4200,7 +4214,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -4220,7 +4234,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-fairy-wings",
@@ -4261,7 +4276,7 @@
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -4295,7 +4310,7 @@
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -4508,7 +4523,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4560,7 +4575,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4663,7 +4678,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4672,15 +4687,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
           },
           {
             "id": "pool-frozen-turtle-shell",
@@ -4722,7 +4729,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
           }
         ]
       },
@@ -4734,7 +4742,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4742,15 +4750,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "great"
           },
           {
             "id": "pool-apprentices-scarf",
@@ -5195,6 +5195,7 @@
         "icon": "armor/spider-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summon damage +12%.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_armor",
         "tags": [
           "hardmode"
         ],
@@ -5328,7 +5329,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -5346,7 +5347,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -5366,7 +5367,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-fairy-wings",
@@ -5701,7 +5703,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. This accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5753,7 +5755,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5856,7 +5858,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -5865,15 +5867,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to simply maximize their defense can stack the Flesh Knuckles with a Berserker's Glove, even if they don't use melee weapons or whips. When reforged to Warding, these two accessories alone will provide the player with 24 extra defense."
           },
           {
             "id": "pool-frozen-turtle-shell",
@@ -5915,7 +5909,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Skull"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_Shield"
           }
         ]
       },
@@ -5927,7 +5922,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -5935,15 +5930,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "great"
           },
           {
             "id": "pool-apprentices-scarf",
@@ -6083,7 +6070,7 @@
             "slot": "accessory",
             "icon": "accessories/feral-claws.png",
             "source": "Found in Jungle chests or Jungle Crates",
-            "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+            "why": "Increases melee attack speed and grants autoswing to melee weapons.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -6093,7 +6080,8 @@
             "markers": [
               "whips"
             ],
-            "dropRate": "19/100 (19%)"
+            "dropRate": "19%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
           }
         ]
       }

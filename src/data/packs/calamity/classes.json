@@ -5,34 +5,34 @@
     "blurb": "High-defense close-range fighter using swords, spears, and true-melee weapons, backed by Calamity's rage and adrenaline durability.",
     "subclasses": [
       {
-        "id": "true-melee",
-        "name": "True Melee",
-        "description": "Short-range swords, spears, and contact-focused melee weapons."
+        "id": "sword",
+        "name": "Swords",
+        "description": "Swords swung in melee."
       },
       {
-        "id": "melee",
-        "name": "Melee",
-        "description": "General melee weapons - swords and spears that fire or hurl a projectile, which Calamity groups simply as melee rather than true melee."
+        "id": "spear",
+        "name": "Spears",
+        "description": "Spears and lances."
       },
       {
         "id": "yoyo",
-        "name": "Yoyo",
-        "description": "Cursor-controlled yoyos that trade reach and safety for sustained control."
+        "name": "Yoyos",
+        "description": "Yoyos on a string."
       },
       {
         "id": "boomerang",
-        "name": "Boomerang",
-        "description": "Thrown melee weapons that arc out and return."
+        "name": "Boomerangs",
+        "description": "Returning thrown weapons."
       },
       {
         "id": "flail",
-        "name": "Flail",
-        "description": "Chain-based melee options with awkward but powerful area control."
+        "name": "Flails",
+        "description": "Flails on a chain."
       },
       {
-        "id": "projectile-melee",
-        "name": "Projectile Melee",
-        "description": "Melee weapons that fire or hurl a projectile - swords with beams, plus thrown knives and spears."
+        "id": "other",
+        "name": "Other",
+        "description": "Weapons that fit no standard type."
       }
     ]
   },
@@ -42,34 +42,29 @@
     "blurb": "Ammo-based damage dealer relying on guns, bows, and launchers for strong sustained ranged DPS at the cost of managing ammunition.",
     "subclasses": [
       {
-        "id": "repeater",
-        "name": "Repeaters",
-        "description": "Auto-firing arrow weapons."
-      },
-      {
-        "id": "flamethrower",
-        "name": "Flamethrowers",
-        "description": "Fuel-burning close-range ranged weapons."
-      },
-      {
         "id": "bow",
         "name": "Bows",
-        "description": "Arrow-firing bows."
+        "description": "Bows firing arrows."
+      },
+      {
+        "id": "repeater",
+        "name": "Repeaters",
+        "description": "Auto-firing bows."
       },
       {
         "id": "gun",
         "name": "Guns",
-        "description": "Bullet-firing ranged weapons."
+        "description": "Guns firing bullets."
       },
       {
         "id": "launcher",
         "name": "Launchers",
-        "description": "Rocket-firing ranged weapons."
+        "description": "Launchers firing rockets."
       },
       {
         "id": "other",
         "name": "Other",
-        "description": "Miscellaneous ranged weapons that fit no standard type."
+        "description": "Weapons that fit no standard type."
       }
     ]
   },
@@ -80,28 +75,23 @@
     "subclasses": [
       {
         "id": "wand",
-        "name": "Wands / Staves",
+        "name": "Wands",
         "description": "Wands and staves."
       },
       {
         "id": "magic-gun",
         "name": "Magic Guns",
-        "description": "Magic weapons that fire like guns."
+        "description": "Magic weapons that fire like a gun."
       },
       {
         "id": "spell-tome",
         "name": "Spell Tomes",
-        "description": "Spell tomes."
+        "description": "Tomes that cast spells."
       },
       {
         "id": "other",
         "name": "Other",
-        "description": "Miscellaneous magic weapons that fit no standard type."
-      },
-      {
-        "id": "summon-magic",
-        "name": "Summon Magic",
-        "description": "Vanilla magic weapons that summon."
+        "description": "Weapons that fit no standard type."
       }
     ]
   },
@@ -111,24 +101,24 @@
     "blurb": "Minion- and whip-focused class that commands summoned allies to fight while the player dodges, offering strong passive DPS but fragile defense.",
     "subclasses": [
       {
-        "id": "sentries",
-        "name": "Sentries",
-        "description": "Stationary sentry summons."
-      },
-      {
         "id": "minions",
         "name": "Minions",
-        "description": "Minion-summoning staves."
+        "description": "Staves that summon minions."
       },
       {
-        "id": "other",
-        "name": "Other",
-        "description": "Miscellaneous summon weapons that fit no standard type."
+        "id": "sentries",
+        "name": "Sentries",
+        "description": "Staves that place sentries."
       },
       {
         "id": "whip",
         "name": "Whips",
-        "description": "Summon-tag whips."
+        "description": "Whips that tag enemies."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Weapons that fit no standard type."
       }
     ]
   },

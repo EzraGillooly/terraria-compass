@@ -508,15 +508,19 @@
       "wikiUrl": "https://calamitymod.wiki.gg/wiki/Enchanted_Boomerang",
       "recipes": [
         {
-          "station": "By Hand",
+          "station": "Iron Anvil or Lead Anvil",
           "ingredients": [
             {
               "id": "wooden-boomerang",
               "qty": 1
             },
             {
+              "id": "gold-bar",
+              "qty": 8
+            },
+            {
               "id": "fallen-star",
-              "qty": 1
+              "qty": 6
             }
           ]
         }
@@ -16815,10 +16819,10 @@
     },
     "king-of-constellations-tenry": {
       "id": "king-of-constellations-tenry",
-      "name": "King of Constellations, Tenry\u016b",
-      "page": "King of Constellations, Tenry\u016b",
+      "name": "King of Constellations, Tenryū",
+      "page": "King of Constellations, Tenryū",
       "icon": "calamity/king-of-constellations-tenry.png",
-      "wikiUrl": "https://calamitymod.wiki.gg/wiki/King_of_Constellations,_Tenry\u016b",
+      "wikiUrl": "https://calamitymod.wiki.gg/wiki/King_of_Constellations,_Tenryū",
       "recipes": [
         {
           "station": "Bookcase",

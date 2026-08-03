@@ -54,7 +54,11 @@ const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' w
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const { recipes } = usePack();
-  const { packId } = useAppState();
+  const { packId, difficulty } = useAppState();
+  /* Many drops double in Expert (Keybrand 0.5% -> 1%), so an Expert world shows
+     the Expert rate when the item carries one. */
+  const shownDropRate = difficulty === 'expert' && item?.dropRateExpert
+    ? item.dropRateExpert : item?.dropRate;
 
   useEffect(() => {
     if (!item) return;
@@ -140,16 +144,33 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              dropping `why` from the modal blanked every vanilla card -
              65 of vanilla's 67 armour entries describe themselves there
              and have no effect text at all. */
-          const parts = [item.effect || item.why, item.headpieceBonus]
-            .filter(Boolean).join(' · ');
-          if (!parts) return null;
-          return parts.includes(' · ')
-            ? (
-              <ul className={`${styles.desc} ${styles.effects}`}>
-                {parts.split(' · ').map((line) => <li key={line}>{line}</li>)}
-              </ul>
-            )
-            : <p className={styles.desc}>{parts}</p>;
+          const setBullets = (item.effect || item.why || '').split(' · ').filter(Boolean);
+          const helmetBullets = (item.headpieceBonus || '')
+            .split(/,\s*|\s+and\s+/).map((s) => s.trim()).filter(Boolean);
+          if (!setBullets.length && !helmetBullets.length) return null;
+          const list = (bullets: string[]) => bullets.length > 1
+            ? <ul className={`${styles.desc} ${styles.effects}`}>{bullets.map((l) => <li key={l}>{l}</li>)}</ul>
+            : <p className={styles.desc}>{bullets[0]}</p>;
+          /* Armour with a class helmet bonus splits into two labelled blocks so
+             the reader can tell the one helmet's bonus from the shared set bonus.
+             Everything else (accessories, plain vanilla armour) is one list. */
+          if (item.slot !== 'armor' || helmetBullets.length === 0) {
+            return list([...helmetBullets, ...setBullets]);
+          }
+          return (
+            <div className={styles.bonusGroups}>
+              <div className={styles.bonusGroup}>
+                <span className={styles.bonusLabel}>Helmet bonus</span>
+                {list(helmetBullets)}
+              </div>
+              {setBullets.length > 0 && (
+                <div className={styles.bonusGroup}>
+                  <span className={styles.bonusLabel}>Set bonus</span>
+                  {list(setBullets)}
+                </div>
+              )}
+            </div>
+          );
         })()}
 
         {/* An item that stands for a family (Candles) lists its members here,
@@ -200,8 +221,8 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           )}
           {/* Drop rate sits with the stats. On a boss drop the source is implied
               (it is from that boss), so those omit `source` and show this instead. */}
-          {item.dropRate && (
-            <div className={styles.kvRow}><span className={styles.kvKey}>Drop rate</span><span>{item.dropRate}</span></div>
+          {shownDropRate && (
+            <div className={styles.kvRow}><span className={styles.kvKey}>Drop rate</span><span>{shownDropRate}</span></div>
           )}
           {/* A few entries are category guidance ("Any Double Jump") or buff
               states rather than single items, so they have no acquisition line.

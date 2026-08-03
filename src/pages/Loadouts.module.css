@@ -217,6 +217,9 @@
   line-height: 1; vertical-align: middle; color: #0b1524;
   --px-u: 1px; --px-fill: var(--warm); --px-border: var(--warm);
 }
+/* World-restriction chip in the armor title: match the def/Mix spacing and sit
+   on the text's midline rather than dropping to the inline-flex baseline. */
+.armorMarker { margin-left: 8px; vertical-align: middle; }
 .mixNote {
   margin: 14px 0 0; padding-top: 12px;
   border-top: 1px dashed rgba(255,255,255,.14);

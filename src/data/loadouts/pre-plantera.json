@@ -11,12 +11,12 @@
         "source": "Dropped by Reapers (Solar Eclipse)",
         "why": "Fires a wall-piercing spinning sickle projectile on each swing.",
         "tags": [],
-        "topPick": false,
-        "subclass": "projectile-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "57 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Death_Sickle",
-        "tier": "good",
-        "dropRate": "2.5% 0.4% (Old-gen console and 3DS versions) 4.94%"
+        "tier": "best",
+        "dropRate": "2.5%"
       },
       {
         "id": "developer-yoyo",
@@ -26,11 +26,11 @@
         "source": "Any Hardmode boss's Expert/Master Treasure Bag, except Queen Slime",
         "why": "Developer set yoyo. Red's Throw and the Valkyrie Yoyo both drop here and have the same damage, so either one works.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "yoyo",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Developer_items",
-        "tier": "best",
+        "tier": "other",
         "expertOnly": true
       },
       {
@@ -55,11 +55,11 @@
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Bouncing disc requiring Souls of Might from the Destroyer.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "boomerang",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Disc",
-        "tier": "best",
+        "tier": "other",
         "materials": [
           {
             "name": "Hallowed Bar",
@@ -88,7 +88,7 @@
         "why": "Occasionally fires a piercing Chlorophyte Orb when swung.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "95 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Claymore",
         "tier": "other",
@@ -110,7 +110,7 @@
         "why": "Occasionally fires a wall-piercing Spore Cloud when swung.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "57 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Saber",
         "tier": "other",
@@ -132,7 +132,7 @@
         "why": "Adamantite-tier Hardmode spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Glaive",
         "tier": "other",
@@ -154,7 +154,7 @@
         "why": "Third-tier Hardmode ore broadsword forged from Adamantite.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "61 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Sword",
         "tier": "other",
@@ -176,7 +176,7 @@
         "why": "Dropped by Ogres; allows shield parrying and inflicts Hellfire.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "95 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Brand_of_the_Inferno",
         "tier": "other",
@@ -191,7 +191,7 @@
         "why": "Chlorophyte spear that releases homing leaf crystals.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "49 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Partisan",
         "tier": "good",
@@ -213,7 +213,7 @@
         "why": "Crafted from Hallowed Bars after a mechanical boss.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "72 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Excalibur",
         "tier": "other",
@@ -235,7 +235,7 @@
         "why": "Ogre drop from the Old One's Army after a mechanical boss.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "45 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ghastly_Glaive",
         "tier": "other",
@@ -250,7 +250,7 @@
         "why": "Hallowed Bar spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "61 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gungnir",
         "tier": "other",
@@ -272,7 +272,7 @@
         "why": "Truffle-sold spear that emits mushroom projectiles, available post-mech boss.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Spear",
         "tier": "good"
@@ -286,7 +286,7 @@
         "why": "Titanium-ore equivalent of the Adamantite Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "61 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Sword",
         "tier": "other",
@@ -308,7 +308,7 @@
         "why": "Titanium-tier spear.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "48 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Trident",
         "tier": "other",
@@ -341,10 +341,10 @@
         "slot": "weapon",
         "icon": "items/true-excalibur.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Fires a projectile on swing; needs post-Plantera Broken Hero Sword.",
+        "why": "Swings a wide yellow aura reaching about twice the sword length, hitting up to six enemies.",
         "tags": [],
         "topPick": true,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "72 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/True_Excalibur",
         "tier": "best",
@@ -368,13 +368,13 @@
         "slot": "weapon",
         "icon": "items/true-night-s-edge.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Fires a spinning projectile on swing; needs Broken Hero Sword.",
+        "why": "Fires a spinning projectile on each swing.",
         "tags": [],
-        "topPick": false,
-        "subclass": "projectile-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "70 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/True_Night%27s_Edge",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Night's Edge",
@@ -427,7 +427,7 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "60 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fetid_Baghnakhs",
         "tier": "best",
@@ -445,10 +445,10 @@
         ],
         "topPick": false,
         "tier": "other",
-        "subclass": "projectile-melee",
+        "subclass": "other",
         "stats": "43 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Knife",
-        "dropRate": "16.7% 33.3%"
+        "dropRate": "16.7%"
       },
       {
         "id": "gradient",
@@ -494,7 +494,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "55 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bladetongue",
         "tier": "other"
@@ -507,7 +507,8 @@
         "slot": "armor",
         "icon": "armor-sets/chlorophyte-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
         "tags": [
           "hardmode"
         ],
@@ -554,7 +555,8 @@
           }
         ],
         "defense": 51,
-        "headpieceBonus": "+21% melee damage, +21% melee critical strike chance and +5% damage reduction."
+        "headpieceBonus": "+21% melee damage, +21% melee critical strike chance and +5% damage reduction.",
+        "effect": "+51 defense \u00b7 +5% movement speed \u00b7 Leaf Crystal minion fires bolts at nearby enemies"
       },
       {
         "id": "turtle-armor",
@@ -562,12 +564,12 @@
         "slot": "armor",
         "icon": "armor/turtle-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Attackers take double damage and you take 15% less damage.",
+        "why": "",
         "tags": [
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_armor",
         "pieceRecipes": [
           {
             "piece": "Turtle Helmet",
@@ -623,7 +625,8 @@
           "Turtle Scale Mail",
           "Turtle Leggings"
         ],
-        "defense": 65
+        "defense": 65,
+        "effect": "+65 defense \u00b7 +15% damage reduction \u00b7 +14% melee damage \u00b7 +12% melee critical strike chance \u00b7 +750 aggro \u00b7 Stronger Thorns: reflects 200% of contact damage"
       }
     ],
     "accessories": [
@@ -632,7 +635,7 @@
         "name": "Warrior Emblem",
         "slot": "accessory",
         "icon": "accessories/warrior-emblem.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Dropped by the Wall of Flesh",
         "why": "Increases melee damage by 15%.",
         "tags": [],
         "topPick": false,
@@ -640,15 +643,7 @@
           "melee"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts."
       },
       {
         "id": "pool-berserkers-glove",
@@ -678,6 +673,23 @@
         "station": "Tinkerer's Workshop"
       },
       {
+        "id": "pool-shield-of-cthulhu",
+        "name": "Shield of Cthulhu",
+        "slot": "accessory",
+        "icon": "accessories/shield-of-cthulhu.png",
+        "source": "Found in Treasure Bag (Eye of Cthulhu)",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
         "id": "fire-gauntlet",
         "name": "Fire Gauntlet",
         "slot": "accessory",
@@ -703,25 +715,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
           }
         ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "pool-shield-of-cthulhu",
-        "name": "Shield of Cthulhu",
-        "slot": "accessory",
-        "icon": "accessories/shield-of-cthulhu.png",
-        "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Shield_of_Cthulhu",
-        "quality": "good",
-        "markers": [
-          "expert"
-        ]
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet"
       },
       {
         "id": "terraspark-boots",
@@ -729,7 +724,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -749,7 +744,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-butterfly-wings",
@@ -896,6 +892,34 @@
         "category": "mobility",
         "items": [
           {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
             "id": "pool-jetpack",
             "name": "Jetpack",
             "slot": "accessory",
@@ -923,22 +947,10 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Red's_Wings",
-            "quality": "good"
-          },
-          {
-            "id": "pool-heroicis-wings",
-            "name": "Heroicis' Wings",
-            "slot": "accessory",
-            "icon": "accessories/heroicis-wings.png",
-            "source": "Found in a Hardmode Expert/Master Treasure Bag, except Queen Slime's",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Heroicis'_Wings",
-            "quality": "good"
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "pool-butterfly-wings",
@@ -1030,7 +1042,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1058,7 +1070,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1097,34 +1109,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-bee-wings",
-            "name": "Bee Wings",
-            "slot": "accessory",
-            "icon": "accessories/bee-wings.png",
-            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Soul of Flight",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-              },
-              {
-                "name": "Tattered Bee Wing",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -1156,7 +1140,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1202,7 +1186,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -1218,7 +1202,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1226,15 +1210,7 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "ankh-shield",
@@ -1263,7 +1239,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           },
           {
             "id": "star-veil",
@@ -1292,7 +1269,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil"
           }
         ]
       },
@@ -1304,8 +1282,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1320,7 +1298,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1328,15 +1306,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "avenger-emblem",
@@ -1375,7 +1345,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
           }
         ]
       },
@@ -1387,7 +1358,7 @@
             "name": "Warrior Emblem",
             "slot": "accessory",
             "icon": "accessories/warrior-emblem.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by the Wall of Flesh",
             "why": "Increases melee damage by 15%.",
             "tags": [],
             "topPick": false,
@@ -1395,15 +1366,7 @@
               "melee"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-            "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
-            "materials": [
-              {
-                "name": "Summoner Emblem",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts."
           },
           {
             "id": "pool-magic-yoyo-bag",
@@ -1411,7 +1374,7 @@
             "slot": "accessory",
             "icon": "accessories/magic-yoyo-bag.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Grants the following effects:",
+            "why": "Combines the Yoyo Bag with Magic String: your yoyo throws a second one, gains a counterweight, reaches further, and glows.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1468,7 +1431,7 @@
             "slot": "accessory",
             "icon": "accessories/yoyo-bag.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Grants the following effects:",
+            "why": "Lets yoyos throw a second yoyo, adds a counterweight, and extends their reach.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1518,7 +1481,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
           }
         ]
       }
@@ -1537,7 +1501,7 @@
         "why": "Can fire up to four arrows at once when held.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "34 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Shotbow",
         "tier": "good",
@@ -1625,7 +1589,7 @@
         "why": "Third-tier Hardmode repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "42 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Repeater",
         "tier": "other",
@@ -1647,7 +1611,7 @@
         "why": "Crafted from Hallowed Bars dropped by the mechanical bosses.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Repeater",
         "tier": "other",
@@ -1684,7 +1648,7 @@
         "why": "Titanium equivalent of the Adamantite Repeater.",
         "tags": [],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "43 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Repeater",
         "tier": "other",
@@ -1707,7 +1671,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "launcher",
+        "subclass": "other",
         "stats": "35 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flamethrower",
         "materials": [
@@ -1739,7 +1703,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "60 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Star_Shooter",
         "materials": [
@@ -1785,7 +1749,7 @@
         ],
         "topPick": false,
         "tier": "other",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "55 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
         "materials": [
@@ -1819,7 +1783,7 @@
         ],
         "topPick": false,
         "tier": "other",
-        "subclass": "launcher",
+        "subclass": "other",
         "stats": "100 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Barrel_Launcher",
         "dropRate": "10%"
@@ -1832,7 +1796,8 @@
         "slot": "armor",
         "icon": "armor-sets/chlorophyte-armor-ranger.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
         "tags": [
           "hardmode"
         ],
@@ -1879,7 +1844,8 @@
           }
         ],
         "defense": 44,
-        "headpieceBonus": "+21% ranged damage, +15% critical strike chance and +20% ammo conservation."
+        "headpieceBonus": "+21% ranged damage, +15% critical strike chance and +20% ammo conservation.",
+        "effect": "+51 defense \u00b7 +5% movement speed \u00b7 Leaf Crystal minion fires bolts at nearby enemies"
       },
       {
         "id": "hallowed-armor",
@@ -2021,7 +1987,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Fright"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
       },
       {
         "id": "pool-shield-of-cthulhu",
@@ -2029,7 +1996,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2047,7 +2014,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -2067,7 +2034,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-butterfly-wings",
@@ -2108,7 +2076,7 @@
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "dropRate": "9.52% (Underground), 11.11% (Cavern)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -2307,6 +2275,34 @@
         "category": "mobility",
         "items": [
           {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
             "id": "pool-jetpack",
             "name": "Jetpack",
             "slot": "accessory",
@@ -2334,22 +2330,10 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Red's_Wings",
-            "quality": "good"
-          },
-          {
-            "id": "pool-heroicis-wings",
-            "name": "Heroicis' Wings",
-            "slot": "accessory",
-            "icon": "accessories/heroicis-wings.png",
-            "source": "Found in a Hardmode Expert/Master Treasure Bag, except Queen Slime's",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Heroicis'_Wings",
-            "quality": "good"
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "pool-butterfly-wings",
@@ -2441,7 +2425,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2469,7 +2453,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2508,34 +2492,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-bee-wings",
-            "name": "Bee Wings",
-            "slot": "accessory",
-            "icon": "accessories/bee-wings.png",
-            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Soul of Flight",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-              },
-              {
-                "name": "Tattered Bee Wing",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -2567,7 +2523,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2613,7 +2569,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -2629,7 +2585,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2637,15 +2593,7 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "ankh-shield",
@@ -2674,7 +2622,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           },
           {
             "id": "star-veil",
@@ -2703,7 +2652,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil"
           }
         ]
       },
@@ -2715,8 +2665,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2769,7 +2719,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2777,15 +2727,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           }
         ]
       },
@@ -2869,7 +2811,7 @@
         "why": "Fires bursts of pages, or with right-click a large piercing tornado.",
         "tags": [],
         "topPick": true,
-        "subclass": "spell-tome",
+        "subclass": "wand",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
         "tier": "best",
@@ -2884,7 +2826,7 @@
         "why": "Fires music-note projectiles whose damage scales with velocity.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "42 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magical_Harp",
         "tier": "good",
@@ -2963,7 +2905,7 @@
         "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
         "tier": "other",
@@ -3007,7 +2949,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
         "tier": "good",
@@ -3057,7 +2999,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spirit_Flame",
         "tier": "good",
@@ -3108,7 +3050,7 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
         "tier": "best",
@@ -3125,7 +3067,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
         "tier": "good",
@@ -3173,7 +3115,8 @@
         "slot": "armor",
         "icon": "armor-sets/chlorophyte-armor-mage.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Spawns a leaf crystal that shoots at nearby enemies on its own.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
         "tags": [
           "hardmode"
         ],
@@ -3220,7 +3163,8 @@
           }
         ],
         "defense": 38,
-        "headpieceBonus": "+21% magic damage, +15% critical strike chance, +80 maximum mana and +17% reduced mana cost."
+        "headpieceBonus": "+21% magic damage, +15% critical strike chance, +80 maximum mana and +17% reduced mana cost.",
+        "effect": "+51 defense \u00b7 +5% movement speed \u00b7 Leaf Crystal minion fires bolts at nearby enemies"
       },
       {
         "id": "hallowed-armor",
@@ -3407,7 +3351,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -3427,7 +3371,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-butterfly-wings",
@@ -3468,7 +3413,7 @@
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3502,7 +3447,7 @@
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3573,6 +3518,34 @@
         "category": "mobility",
         "items": [
           {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
             "id": "pool-jetpack",
             "name": "Jetpack",
             "slot": "accessory",
@@ -3600,22 +3573,10 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Red's_Wings",
-            "quality": "good"
-          },
-          {
-            "id": "pool-heroicis-wings",
-            "name": "Heroicis' Wings",
-            "slot": "accessory",
-            "icon": "accessories/heroicis-wings.png",
-            "source": "Found in a Hardmode Expert/Master Treasure Bag, except Queen Slime's",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Heroicis'_Wings",
-            "quality": "good"
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "pool-butterfly-wings",
@@ -3707,7 +3668,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3735,7 +3696,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3774,34 +3735,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-bee-wings",
-            "name": "Bee Wings",
-            "slot": "accessory",
-            "icon": "accessories/bee-wings.png",
-            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Soul of Flight",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-              },
-              {
-                "name": "Tattered Bee Wing",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -3833,7 +3766,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3907,7 +3840,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -3923,7 +3856,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3931,15 +3864,7 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "ankh-shield",
@@ -3968,7 +3893,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           }
         ]
       },
@@ -3980,8 +3906,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4034,7 +3960,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4042,15 +3968,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           }
         ]
       },
@@ -4446,6 +4364,7 @@
         "icon": "armor/spider-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Summon damage +12%.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_armor",
         "tags": [
           "hardmode"
         ],
@@ -4627,7 +4546,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -4645,7 +4564,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -4665,7 +4584,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "pool-butterfly-wings",
@@ -4858,6 +4778,34 @@
         "category": "mobility",
         "items": [
           {
+            "id": "pool-bee-wings",
+            "name": "Bee Wings",
+            "slot": "accessory",
+            "icon": "accessories/bee-wings.png",
+            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "mobility"
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
+            "quality": "great",
+            "materials": [
+              {
+                "name": "Soul of Flight",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+              },
+              {
+                "name": "Tattered Bee Wing",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
             "id": "pool-jetpack",
             "name": "Jetpack",
             "slot": "accessory",
@@ -4885,22 +4833,10 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Red's_Wings",
-            "quality": "good"
-          },
-          {
-            "id": "pool-heroicis-wings",
-            "name": "Heroicis' Wings",
-            "slot": "accessory",
-            "icon": "accessories/heroicis-wings.png",
-            "source": "Found in a Hardmode Expert/Master Treasure Bag, except Queen Slime's",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Heroicis'_Wings",
-            "quality": "good"
+            "quality": "good",
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "pool-butterfly-wings",
@@ -4992,7 +4928,7 @@
             "slot": "accessory",
             "icon": "accessories/bundle-of-horseshoe-balloons.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration. As stated before, this accessory becomes easier to obtain in Hardmode, as the Blizzard in a Bottle and Sandstorm in a Bottle are now able to be crafted.",
+            "why": "Provides substantial vertical mobility and acceleration.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5020,7 +4956,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5059,34 +4995,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-bee-wings",
-            "name": "Bee Wings",
-            "slot": "accessory",
-            "icon": "accessories/bee-wings.png",
-            "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wings",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Soul of Flight",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-              },
-              {
-                "name": "Tattered Bee Wing",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Bee_Wing"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ]
       },
@@ -5118,7 +5026,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5164,7 +5072,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -5180,7 +5088,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -5188,15 +5096,7 @@
               "survivability"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "ankh-shield",
@@ -5225,7 +5125,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           },
           {
             "id": "star-veil",
@@ -5254,7 +5155,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Veil"
           }
         ]
       },
@@ -5266,8 +5168,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5320,7 +5222,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -5328,15 +5230,7 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           }
         ]
       },
@@ -5414,7 +5308,7 @@
             "slot": "accessory",
             "icon": "accessories/feral-claws.png",
             "source": "Found in Jungle chests or Jungle Crates",
-            "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+            "why": "Increases melee attack speed and grants autoswing to melee weapons.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5424,7 +5318,8 @@
             "markers": [
               "whips"
             ],
-            "dropRate": "19/100 (19%)"
+            "dropRate": "19%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
           }
         ]
       }

@@ -67,7 +67,12 @@ export const PACK_PAGE_SCOPE: Record<string, string[]> = {
   thorium: ['/bosses'],
 };
 
-/** Whether `packId` may be selected/active on `pathname`. */
+/**
+ * Whether `packId` may be selected/active on `pathname`. Thorium's loadouts and
+ * recipes are not ready, so it is offered on the Bosses page only - in dev and
+ * production alike, so the dev preview matches the live site. A pack absent from
+ * PACK_PAGE_SCOPE is available on every page.
+ */
 export function isPackAllowedOnPath(packId: string, pathname: string): boolean {
   const scope = PACK_PAGE_SCOPE[packId];
   return !scope || scope.includes(pathname);

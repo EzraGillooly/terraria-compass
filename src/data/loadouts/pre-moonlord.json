@@ -11,9 +11,9 @@
         "source": "Crafted at Ancient Manipulator",
         "why": "Hurls sun spears that stick to enemies and inflict Daybroken.",
         "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "subclass": "projectile-melee",
+        "topPick": true,
+        "tier": "best",
+        "subclass": "spear",
         "stats": "150 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Daybreak",
         "materials": [
@@ -33,9 +33,9 @@
         "source": "Crafted at Ancient Manipulator",
         "why": "Swings a long whipsword that passes through blocks and pierces infinitely.",
         "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "subclass": "flail",
+        "topPick": true,
+        "tier": "best",
+        "subclass": "other",
         "stats": "105 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption",
         "materials": [
@@ -57,11 +57,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": false,
-        "subclass": "projectile-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "85 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terra_Blade",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "True Night's Edge",
@@ -92,7 +92,7 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "180 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Dragon",
         "tier": "best",
@@ -108,11 +108,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
-        "subclass": "true-melee",
+        "topPick": false,
+        "subclass": "sword",
         "stats": "150 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
       },
       {
@@ -125,12 +125,13 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
+        "topPick": false,
         "subclass": "yoyo",
         "stats": "115 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Eye_of_Cthulhu",
-        "tier": "best",
-        "dropRate": "33.33% 55.56%"
+        "tier": "other",
+        "dropRate": "33.33%",
+        "dropRateExpert": "55.56%"
       },
       {
         "id": "possessed-hatchet",
@@ -142,11 +143,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
+        "topPick": false,
         "subclass": "boomerang",
         "stats": "80 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Possessed_Hatchet",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "14.29%"
       },
       {
@@ -159,11 +160,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
+        "topPick": false,
         "subclass": "flail",
         "stats": "132 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flairon",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "16.67%"
       },
       {
@@ -178,9 +179,57 @@
         ],
         "topPick": false,
         "tier": "other",
-        "subclass": "projectile-melee",
+        "subclass": "other",
         "stats": "29 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Knives"
+      },
+      {
+        "id": "influx-waver",
+        "name": "Influx Waver",
+        "slot": "weapon",
+        "icon": "items/influx-waver.png",
+        "source": "Dropped by Martian Saucer (Martian Madness)",
+        "why": "Fires a teleporting blue sword projectile on each swing.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sword",
+        "stats": "100 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Influx_Waver",
+        "tier": "good",
+        "dropRate": "16.66%"
+      },
+      {
+        "id": "starlight",
+        "name": "Starlight",
+        "slot": "weapon",
+        "icon": "items/starlight.png",
+        "source": "Dropped by the Empress of Light",
+        "why": "Post-Plantera sword that streams rapid light slashes while held.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "sword",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Starlight",
+        "dropRate": "25%"
+      },
+      {
+        "id": "north-pole",
+        "name": "North Pole",
+        "slot": "weapon",
+        "icon": "items/north-pole.png",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
+        "why": "Frost Moon spear that releases a homing snowflake and falling ice.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "spear",
+        "stats": "80 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole",
+        "tier": "good",
+        "dropRate": "5.19\u201310.37% depending on the wave",
+        "dropRateExpert": "15.56\u201331.11% depending on the wave"
       }
     ],
     "armor": [
@@ -190,7 +239,8 @@
         "slot": "armor",
         "icon": "armor/beetle-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Beetles either raise melee damage and speed or absorb damage, depending on the chestplate you wear.",
+        "why": "Pick one chest: Beetle Scale Mail for offense or Beetle Shell for defense.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_armor",
         "tags": [
           "hardmode"
         ],
@@ -198,6 +248,7 @@
         "pieces": [
           "Beetle Helmet",
           "Beetle Scale Mail",
+          "Beetle Shell",
           "Beetle Leggings"
         ],
         "pieceRecipes": [
@@ -234,6 +285,22 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
+            "piece": "Beetle Shell",
+            "materials": [
+              {
+                "name": "Beetle Husk",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Beetle_Husk"
+              },
+              {
+                "name": "Turtle Scale Mail",
+                "qty": 1,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Scale_Mail"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
             "piece": "Beetle Leggings",
             "materials": [
               {
@@ -250,7 +317,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 61
+        "defense": 61,
+        "effect": "+61 defense \u00b7 +14% melee damage \u00b7 +8% melee critical strike chance \u00b7 +12% melee speed \u00b7 +12% movement speed \u00b7 +500 aggro \u00b7 Beetle Might (Scale Mail): melee damage and speed rise +10% per hit, up to +30% \u00b7 Beetle Endurance (Shell): up to 45% damage reduction instead"
       }
     ],
     "accessories": [
@@ -259,7 +327,7 @@
         "name": "Warrior Emblem",
         "slot": "accessory",
         "icon": "accessories/warrior-emblem.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Dropped by the Wall of Flesh",
         "why": "Increases melee damage by 15%.",
         "tags": [],
         "topPick": false,
@@ -267,15 +335,7 @@
           "melee"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts.",
-        "materials": [
-          {
-            "name": "Summoner Emblem",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "notes": "The Mechanical Glove (and Fire Gauntlet by extension) can potentially be worse than a Warrior Emblem, if the player is using a melee weapon that does not benefit from speed boosts."
       },
       {
         "id": "pool-berserkers-glove",
@@ -330,7 +390,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mechanical_Glove"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet"
       },
       {
         "id": "master-ninja-gear",
@@ -364,7 +425,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
       },
       {
         "id": "terraspark-boots",
@@ -372,7 +434,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -392,7 +454,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "fishron-wings",
@@ -407,7 +470,8 @@
         "topPick": false,
         "categories": [
           "mobility"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
       }
     ],
     "buffs": [
@@ -443,7 +507,7 @@
         "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false,
-        "dropRate": "1/12 (8.33%)",
+        "dropRate": "8.33%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -640,7 +704,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -710,7 +774,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -812,7 +876,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -856,7 +920,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -865,15 +929,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "ankh-shield",
@@ -902,7 +958,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           }
         ]
       },
@@ -914,8 +971,8 @@
             "name": "Sun Stone",
             "slot": "accessory",
             "icon": "accessories/sun-stone.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "During the day (7:30 AM to 7:30 PM) it raises defense, damage, crit, melee speed, movement speed, and life regen - the day counterpart to the Moon Stone.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -929,8 +986,8 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "accessories/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "Increases critical strike chance by 10%.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -944,8 +1001,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1043,7 +1100,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -1052,15 +1109,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "destroyer-emblem",
@@ -1088,7 +1137,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Eye_of_the_Golem"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem"
           },
           {
             "id": "celestial-shell",
@@ -1117,7 +1167,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Shell"
           }
         ]
       },
@@ -1129,22 +1180,14 @@
             "name": "Warrior Emblem",
             "slot": "accessory",
             "icon": "accessories/warrior-emblem.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by the Wall of Flesh",
             "why": "Increases melee damage by 15%.",
             "tags": [],
             "topPick": false,
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem",
-            "materials": [
-              {
-                "name": "Summoner Emblem",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Summoner_Emblem"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
           },
           {
             "id": "pool-magic-yoyo-bag",
@@ -1152,7 +1195,7 @@
             "slot": "accessory",
             "icon": "accessories/magic-yoyo-bag.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Grants the following effects:",
+            "why": "Combines the Yoyo Bag with Magic String: your yoyo throws a second one, gains a counterweight, reaches further, and glows.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1237,7 +1280,7 @@
             "slot": "accessory",
             "icon": "accessories/yoyo-bag.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Grants the following effects:",
+            "why": "Lets yoyos throw a second yoyo, adds a counterweight, and extends their reach.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1341,7 +1384,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "bow",
+        "subclass": "repeater",
         "stats": "75 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
         "tier": "other",
@@ -1373,6 +1416,7 @@
         "icon": "armor-sets/shroomite-armor.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_armor",
         "tags": [
           "hardmode"
         ],
@@ -1545,7 +1589,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
       },
       {
         "id": "terraspark-boots",
@@ -1553,7 +1598,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -1573,7 +1618,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "empress-wings",
@@ -1602,7 +1648,7 @@
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "dropRate": "9.52% (Underground), 11.11% (Cavern)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -1852,7 +1898,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1923,7 +1969,8 @@
             "topPick": false,
             "categories": [
               "mobility"
-            ]
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
           }
         ]
       },
@@ -1955,7 +2002,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2057,7 +2104,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -2101,7 +2148,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2110,15 +2157,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "ankh-shield",
@@ -2147,7 +2186,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           }
         ]
       },
@@ -2187,8 +2227,8 @@
             "name": "Sun Stone",
             "slot": "accessory",
             "icon": "accessories/sun-stone.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "During the day (7:30 AM to 7:30 PM) it raises defense, damage, crit, melee speed, movement speed, and life regen - the day counterpart to the Moon Stone.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2202,8 +2242,8 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "accessories/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "Increases critical strike chance by 10%.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2217,8 +2257,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2316,7 +2356,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -2325,15 +2365,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "celestial-shell",
@@ -2362,7 +2394,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Shell"
           }
         ]
       },
@@ -2457,7 +2490,7 @@
         "why": "Fires homing star projectiles with a chance to fire a stronger high-damage shot.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "55 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze",
         "tier": "good",
@@ -2479,7 +2512,7 @@
         "why": "Fires slow homing orbs that spawn additional star projectiles.",
         "tags": [],
         "topPick": true,
-        "subclass": "wand",
+        "subclass": "other",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum",
         "tier": "best",
@@ -2520,7 +2553,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "wand",
+        "subclass": "spell-tome",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon",
         "tier": "other",
@@ -2552,6 +2585,7 @@
         "icon": "armor/spectre-armor-mage.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "The Mask converts a share of magic damage into extra damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
         "tags": [
           "hardmode"
         ],
@@ -2606,6 +2640,7 @@
         "icon": "armor/spectre-armor-hood.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
         "tags": [
           "hardmode"
         ],
@@ -2765,7 +2800,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
       },
       {
         "id": "terraspark-boots",
@@ -2773,7 +2809,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -2793,7 +2829,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "empress-wings",
@@ -2822,7 +2859,7 @@
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -2856,7 +2893,7 @@
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3063,7 +3100,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3134,7 +3171,8 @@
             "topPick": false,
             "categories": [
               "mobility"
-            ]
+            ],
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
           }
         ]
       },
@@ -3166,7 +3204,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3240,7 +3278,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -3284,7 +3322,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3293,15 +3331,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "pool-master-ninja-gear",
@@ -3363,7 +3393,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           },
           {
             "id": "pool-charm-of-myths",
@@ -3431,8 +3462,8 @@
             "name": "Sun Stone",
             "slot": "accessory",
             "icon": "accessories/sun-stone.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "During the day (7:30 AM to 7:30 PM) it raises defense, damage, crit, melee speed, movement speed, and life regen - the day counterpart to the Moon Stone.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3446,8 +3477,8 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "accessories/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "Increases critical strike chance by 10%.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3461,8 +3492,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3560,7 +3591,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -3569,15 +3600,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "celestial-shell",
@@ -3606,7 +3629,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Shell"
           }
         ]
       },
@@ -3851,6 +3875,7 @@
         "icon": "armor/tiki-armor.png",
         "source": "Bought from the Witch Doctor",
         "why": "+1 minion slot and 20% whip range.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tiki_armor",
         "tags": [
           "hardmode"
         ],
@@ -4022,7 +4047,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
       },
       {
         "id": "terraspark-boots",
@@ -4030,7 +4056,7 @@
         "slot": "accessory",
         "icon": "accessories/terraspark-boots.png",
         "source": "Combined through the full boots crafting chain",
-        "why": "Even when wings are online, the best boots still improve the feel and consistency of a finished build.",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
         "tags": [
           "hardmode"
         ],
@@ -4050,7 +4076,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
       },
       {
         "id": "fishron-wings",
@@ -4065,7 +4092,8 @@
         "topPick": false,
         "categories": [
           "mobility"
-        ]
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
       }
     ],
     "buffs": [
@@ -4275,7 +4303,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4345,7 +4373,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4447,7 +4475,7 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
+            "source": "Dropped by Vampires during a Solar Eclipse",
             "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
@@ -4491,7 +4519,7 @@
             "name": "Flesh Knuckles",
             "slot": "accessory",
             "icon": "accessories/flesh-knuckles.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Crimson Mimics (1/5 chance)",
             "why": "Provides 8 defense, and increases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4500,15 +4528,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Putrid Scent",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "ankh-shield",
@@ -4537,7 +4557,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Charm"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ankh_Shield"
           }
         ]
       },
@@ -4577,8 +4598,8 @@
             "name": "Sun Stone",
             "slot": "accessory",
             "icon": "accessories/sun-stone.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "During the day (7:30 AM to 7:30 PM) it raises defense, damage, crit, melee speed, movement speed, and life regen - the day counterpart to the Moon Stone.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4592,8 +4613,8 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "accessories/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
-            "why": "",
+            "source": "Dropped by Golem",
+            "why": "Increases critical strike chance by 10%.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4607,8 +4628,8 @@
             "name": "Moon Stone",
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
-            "source": "Dropped by Vampire and 1 other source",
-            "why": "In respect to offensiveness, the Moon Stone increases the following stats from 7:30 PM to 4:30 AM:",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4678,7 +4699,7 @@
             "name": "Putrid Scent",
             "slot": "accessory",
             "icon": "accessories/putrid-scent.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Dropped by Corrupt Mimics (20% chance)",
             "why": "Increases damage by 5% and critical strike chance by 5%, and decreases the player's aggro by 400.",
             "tags": [],
             "topPick": false,
@@ -4687,15 +4708,7 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent",
             "quality": "good",
-            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
-            "materials": [
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious."
           },
           {
             "id": "celestial-shell",
@@ -4724,7 +4737,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Shell"
           }
         ]
       },
