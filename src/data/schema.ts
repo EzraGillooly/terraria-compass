@@ -107,8 +107,16 @@ export const Item = z.object({
   tedious: z.boolean().optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
+  /** the Expert/Master drop rate, shown instead of `dropRate` when the world is
+   * Expert - many drops double in Expert (Keybrand 0.5% -> 1%). */
+  dropRateExpert: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
+  /** A pick recommended only for the Expert/Master extra accessory slot: the item
+   * itself is obtainable in Classic, but there is no sixth slot to hold it, so it
+   * is dropped there with a distinct note (unlike `markers: ['expert']`, which is
+   * for content that cannot be obtained in Classic at all). */
+  slotExtra: z.boolean().optional(),
   /**
    * How strongly the item is recommended for its phase:
    * 'best'  → best in slot for its subclass (shown in the "All" overview)
@@ -116,6 +124,14 @@ export const Item = z.object({
    * 'other' → kept for reference, hidden behind "show all"
    */
   tier: z.enum(['best', 'good', 'other']).default('good'),
+  /**
+   * In a video-silent subclass (one the guide shows no "Best" pick for), the
+   * good-tier weapons all display as "Best" - they are co-equal, like the
+   * Adamantite Glaive and Titanium Trident world variants. Flag a good-tier
+   * weapon `secondary` to demote it into that subclass's "Other Options" row
+   * instead - the lesser alternative, e.g. Cascade sitting under Hive-Five.
+   */
+  secondary: z.boolean().optional(),
   subclass: SubclassId.optional(),
   /**
    * What an accessory is actually for. Some genuinely serve two roles (Feral

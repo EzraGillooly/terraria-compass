@@ -67,8 +67,14 @@ export const PACK_PAGE_SCOPE: Record<string, string[]> = {
   thorium: ['/bosses'],
 };
 
-/** Whether `packId` may be selected/active on `pathname`. */
+/**
+ * Whether `packId` may be selected/active on `pathname`. The page scope is a
+ * production gate only: in the dev build every pack is available everywhere, so
+ * the loadouts can be built out on the Loadouts page while the live site keeps
+ * Thorium to the Bosses page.
+ */
 export function isPackAllowedOnPath(packId: string, pathname: string): boolean {
+  if (import.meta.env.DEV) return true;
   const scope = PACK_PAGE_SCOPE[packId];
   return !scope || scope.includes(pathname);
 }

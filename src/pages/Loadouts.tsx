@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -724,10 +724,24 @@ function BuffCell(
   );
 }
 
+/* Remember the phase across navigation: the page unmounts when you leave it, so
+   without this the chosen phase resets to pre-bosses every time you come back.
+   Kept in localStorage the same way the pack and class are. A stored phase that
+   the active pack does not have falls back to that pack's first phase (see
+   `validPhaseId` below). */
+const PHASE_STORAGE_KEY = 'tc:loadout-phase';
+const readStoredPhase = (): PhaseId => {
+  try { return (window.localStorage.getItem(PHASE_STORAGE_KEY) as PhaseId) || 'pre-bosses'; }
+  catch { return 'pre-bosses'; }
+};
+
 export function Loadouts() {
   const { difficulty, setDifficulty, classId, progressionMode, progress, setProgress } = useAppState();
   const { id: packId, classes, phases, loadouts, bosses } = usePack();
-  const [phaseId, setPhaseId] = useState<PhaseId>('pre-bosses');
+  const [phaseId, setPhaseId] = useState<PhaseId>(readStoredPhase);
+  useEffect(() => {
+    try { window.localStorage.setItem(PHASE_STORAGE_KEY, phaseId); } catch { /* storage disabled */ }
+  }, [phaseId]);
   const [modalItem, setModalItem] = useState<Item | null>(null);
   const [showRest, setShowRest] = useState(false);
   const [showPool, setShowPool] = useState(false);
@@ -884,26 +898,35 @@ export function Loadouts() {
       .sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
       .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
     : bestTier;
-  /* Inside one open subclass the recommendation is the weapon the data ranks
-     'best' - the very pick Top Picks features for that family - so drilling into
-     a subclass surfaces the same weapon rather than whichever sorts first. The
-     guide lists a family alphabetically, so position is not a ranking; tier is
-     (that is why projectile melee recommended Blade of Grass over its top pick
-     Starfury). Falls back to first when a family has no ranked 'best', and for
-     unranked packs (see `ranked`), which keep their position order. */
-  const scopedRec = (ranked ? inScope.find((w) => w.tier === 'best') : undefined) ?? inScope[0];
-  const scopedRest = inScope.filter((w) => w !== scopedRec);
-  /* Also Great is the family's good-tier weapons, not just its next rows: the
-     guide lists a family alphabetically, so slicing by position filed weak
-     'other' swords above genuinely good ones (Ash Wood Sword ahead of Light's
-     Bane). Rank the rest by tier - stable, so ties keep the guide's order - and
-     the good picks rise into Also Great, the rest fall behind "Show others". */
-  const scopedByTier = ranked
-    ? [...scopedRest].sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
-    : scopedRest;
-  const scopedBest = showingAll ? filteredBest : (scopedRec ? [scopedRec] : []);
-  const filteredAlso = showingAll ? [] : scopedByTier.slice(0, 2);
-  const filteredRest = showingAll ? [] : scopedByTier.slice(2);
+  /* Drilled into one subclass, the featured "Best" row is every best-tier
+     weapon in that family - the video guide's Best picks - not just one. A
+     family the video showed nothing for has no best-tier pick: it is filled
+     from the video's Recommended row, or from the wiki's class-setup table when
+     the video is silent too. Those good-tier weapons then become the primary
+     row, with no "Other Options" to append above the fold. Falls back to the
+     first entry for a family that somehow ranks nothing, and unranked packs
+     (see `ranked`) keep their own position order via `unrankedShown`. */
+  const scopedBestTier = inScope.filter((w) => w.tier === 'best');
+  const scopedGoodTier = inScope.filter((w) => w.tier === 'good');
+  const hasBest = scopedBestTier.length > 0;
+  /* In a video-silent family (no best-tier pick) the good weapons are co-equal
+     Best picks - the Adamantite Glaive and Titanium Trident both lead the Spears
+     row - unless one is flagged `secondary`, which drops it to Other Options
+     (Cascade under Hive-Five). A real best-tier row keeps every good pick as an
+     Other Option beneath it. */
+  const goodPrimary = scopedGoodTier.filter((w) => !w.secondary);
+  const goodSecondary = scopedGoodTier.filter((w) => w.secondary);
+  const scopedBest = showingAll
+    ? filteredBest
+    : hasBest
+      ? scopedBestTier
+      : goodPrimary.length > 0
+        ? goodPrimary
+        : inScope.slice(0, 1);
+  /* Low-tier 'other' reference weapons - ~60 starter swords in a family like
+     pre-boss melee - stay out of the drilled view entirely. */
+  const filteredAlso = showingAll ? [] : hasBest ? scopedGoodTier : goodSecondary;
+  const filteredRest: Item[] = [];
 
   // Unranked (Calamity): the guide's own order, with no tier read as a pick.
   const unrankedShown = showingAll ? filteredBest : inScope.slice(0, 3);
@@ -958,9 +981,19 @@ export function Loadouts() {
          because either fills the slot
      Only then does it fall back to the pool, preferring the same category so a
      defensive slot is replaced by something defensive. */
-  const substitutions: { original: Item; replacement: Item }[] = [];
+  const substitutions: { original: Item; replacement: Item | null; reason: 'swap' | 'expert' | 'slot' }[] = [];
+  /* Slot-only extras (Master Ninja Gear, recommended for the Expert sixth slot)
+     are obtainable in Classic but have no slot to sit in, so they drop out when
+     the world has fewer than six slots - noted apart from Expert-only content. */
+  const slotFitHolders = slotHolders.filter((h) => {
+    if (h.slotExtra && slotCount < 6) {
+      substitutions.push({ original: h, replacement: null, reason: 'slot' });
+      return false;
+    }
+    return true;
+  });
   const accessories = ((): Item[] => {
-    if (slotHolders.every((a) => isObtainable(a, difficulty))) return slotHolders;
+    if (slotFitHolders.every((a) => isObtainable(a, difficulty))) return slotFitHolders;
     const rank = (q?: string) => (q === 'great' ? 0 : q === 'good' ? 1 : 2);
     /* Boots, wings and balloons do not stack - a build wants one of each at
        most - so a substitute must not double up a family already equipped.
@@ -983,22 +1016,34 @@ export function Loadouts() {
     /* Seeded with the alternatives too, not just the holders: an alternative is
        already on screen under its pick, so promoting it into another slot showed
        the same accessory twice - Fledgling Wings sat under the balloon and again
-       where the Shield of Cthulhu had been. */
+       where the Shield of Cthulhu had been. Only alternatives of an *obtainable*
+       holder count as taken though: an alt whose holder is itself unobtainable is
+       not on screen, so it is free to fill that holder's slot (Fire Gauntlet is
+       the Shield of Cthulhu's alt, and steps in for it in a Classic world). */
     const taken = new Set([
-      ...slotHolders.filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
-      ...[...altsBy.values()].flat()
+      ...slotFitHolders.filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
+      ...slotFitHolders.filter((a) => isObtainable(a, difficulty))
+        .flatMap((a) => altsBy.get(a.name) ?? [])
         .filter((a) => isObtainable(a, difficulty)).map((a) => a.name),
     ]);
     /* Families already covered, seeded from every obtainable holder up front -
        not just the ones processed so far - so a wing substituted for slot 3 still
        sees the wings the guide equips in slot 6. */
     const covered = new Set(
-      slotHolders.filter((a) => isObtainable(a, difficulty))
+      slotFitHolders.filter((a) => isObtainable(a, difficulty))
         .map((a) => family(a.name)).filter(Boolean) as string[],
     );
+    /* When the obtainable holders already fill every slot, an Expert-only holder
+       is a genuine extra (Master/Expert has more slots than Classic), so it is
+       dropped rather than swapped for a pool pick - that is what keeps both the
+       Shield of Cthulhu and its slotmate Fire Gauntlet as their own slots in an
+       Expert world, while a Classic world simply loses the Shield. The reader is
+       still told via the note below. */
+    const haveEnough = slotFitHolders.filter((a) => isObtainable(a, difficulty)).length >= slotCount;
     const out: Item[] = [];
-    for (const holder of slotHolders) {
+    for (const holder of slotFitHolders) {
       if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
+      if (haveEnough) { substitutions.push({ original: holder, replacement: null, reason: 'expert' }); continue; }
 
       const ownAlt = (altsBy.get(holder.name) ?? [])
         .find((a) => isObtainable(a, difficulty) && !taken.has(a.name));
@@ -1028,7 +1073,7 @@ export function Loadouts() {
       taken.add(pick.name);
       const pf = family(pick.name);
       if (pf) covered.add(pf);
-      substitutions.push({ original: holder, replacement: pick });
+      substitutions.push({ original: holder, replacement: pick, reason: 'swap' });
       out.push(pick);
     }
     return out;
@@ -1244,7 +1289,7 @@ export function Loadouts() {
               <>
                 {scopedBest.length > 0 && (
                   <>
-                    {!showingAll && <div className={styles.groupLabel}>Recommended</div>}
+                    {!showingAll && <div className={styles.groupLabel}>Best</div>}
                     <div className={styles.weaponRow}>
                       {scopedBest.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>
@@ -1253,7 +1298,7 @@ export function Loadouts() {
 
                 {filteredAlso.length > 0 && (
                   <>
-                    <div className={styles.groupLabel}>Also Great</div>
+                    <div className={styles.groupLabel}>Other Options</div>
                     <div className={styles.weaponRow}>
                       {filteredAlso.map((w) => <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />)}
                     </div>
@@ -1331,10 +1376,12 @@ export function Loadouts() {
               <div className={styles.classicNote}>
                 <p className={styles.classicNoteText}>
                   <strong>Classic world:</strong> {substitutions.length}
-                  {substitutions.length === 1 ? ' pick is' : ' picks are'} Expert-only here, so
-                  {substitutions.length === 1 ? ' it has been' : ' they have been'} swapped for
-                  {substitutions.length === 1 ? ' something' : ' things'} a Classic world can get
-                  {' '}({substitutions.map((s2) => `${s2.original.name} → ${s2.replacement.name}`).join(', ')}).
+                  {substitutions.length === 1 ? ' pick needs' : ' picks need'} an Expert world here:
+                  {' '}{substitutions.map((s2) => s2.reason === 'swap' && s2.replacement
+                    ? `${s2.original.name} → ${s2.replacement.name}`
+                    : s2.reason === 'slot'
+                      ? `${s2.original.name} (extra slot)`
+                      : `${s2.original.name} (Expert-only)`).join(', ')}.
                   {packId === 'calamity'
                     ? ' Calamity is balanced for Expert or above.'
                     : ' Play in an Expert world to use the full guide.'}
@@ -1443,6 +1490,13 @@ export function Loadouts() {
                           {a.singlePiece && (
                             <span className={`${styles.mixTag} pixel-frame`}>Mix</span>
                           )}
+                          {/* World-restriction (Corruption/Crimson) rides as a chip
+                              so the set-bonus line can be pure stats. */}
+                          {(a.markers ?? []).map((m) => (
+                            <span key={m} className={`${styles.accMarker} ${styles.armorMarker}`} title={MARKER_TITLE[m]}>
+                              {MARKER_LABEL[m]}
+                            </span>
+                          ))}
                         </div>
                       {a.headpiece && a.pieces && a.pieces.length > 0 && (
                         <div className={styles.armorPieces}>
@@ -1465,54 +1519,30 @@ export function Loadouts() {
                           `why` stands in when there is no effect, so vanilla
                           armour (no effect text) is not left with a blank card. */}
                       {(() => {
-                        const effectBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
-                        const hpBullets = (a.headpieceBonus || '').split(' · ').filter(Boolean);
-                        if (!effectBullets.length && !hpBullets.length) return null;
-
-                        /* One capped list: the first three bullets, then a note
-                           that the rest is in the modal rather than truncating
-                           silently or running the card off the page. */
-                        const capped = (bullets: string[]) => {
-                          const shown = bullets.slice(0, ARMOR_EFFECT_LINES);
-                          const rest = bullets.length - shown.length;
-                          return (
-                            <>
-                              <ul className={styles.armorEffects}>
-                                {shown.map((line) => <li key={line}>{line}</li>)}
-                              </ul>
-                              {rest > 0 && (
-                                <div className={styles.armorMore}>
-                                  +{rest} more - click to see the full set bonus
-                                </div>
-                              )}
-                            </>
-                          );
-                        };
-
-                        /* A helmet-differentiating set (Reaver, Shroomite,
-                           Spectre) names no single headpiece - the reader picks
-                           between the helmet variations, so those bullets are the
-                           card's whole point and show in full under the shared
-                           set bonus. A set that does name this class's headpiece
-                           (Victide, Hallowed) is one set bonus for that class:
-                           the headpiece bonus leads, then the shared bonus,
-                           capped together at three with the rest in the modal -
-                           otherwise two lists of three showed six lines and never
-                           offered the "+N more" the modal is there for. */
-                        const differentiating = !a.headpiece && hpBullets.length > 0;
-                        if (differentiating) {
-                          return (
-                            <>
-                              {effectBullets.length > 0 && capped(effectBullets)}
-                              {hpBullets.length > 0 && (
-                                <ul className={styles.armorEffects}>
-                                  {hpBullets.map((line) => <li key={line}>{line}</li>)}
-                                </ul>
-                              )}
-                            </>
-                          );
-                        }
-                        return capped([...hpBullets, ...effectBullets]);
+                        /* The card preview leads with the helmet (class) bonuses;
+                           the set bonus and any overflow move to the modal, which
+                           labels the two apart. Helmet bonuses are stored comma-
+                           joined, so split them into their own bullets. */
+                        const setBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
+                        const helmetBullets = (a.headpieceBonus || '')
+                          .split(/,\s*|\s+and\s+/).map((s) => s.trim()).filter(Boolean);
+                        if (!setBullets.length && !helmetBullets.length) return null;
+                        const preview = helmetBullets.length > 0 ? helmetBullets : setBullets;
+                        const shown = preview.slice(0, ARMOR_EFFECT_LINES);
+                        const hidden = (preview.length - shown.length)
+                          + (helmetBullets.length > 0 ? setBullets.length : 0);
+                        return (
+                          <>
+                            <ul className={styles.armorEffects}>
+                              {shown.map((line) => <li key={line}>{line}</li>)}
+                            </ul>
+                            {hidden > 0 && (
+                              <div className={styles.armorMore}>
+                                +{hidden} more - click to see the full bonuses
+                              </div>
+                            )}
+                          </>
+                        );
                       })()}
                       </div>
                     </button>

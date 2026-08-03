@@ -11,11 +11,11 @@
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Fires a homing Leaf Blade projectile on each swing.",
         "tags": [],
-        "topPick": false,
-        "subclass": "projectile-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Stinger",
@@ -43,12 +43,12 @@
         "source": "Found in Skyware Chests (Floating Islands)",
         "why": "Calls a falling star from the sky on each swing.",
         "tags": [],
-        "topPick": true,
-        "subclass": "projectile-melee",
+        "topPick": false,
+        "subclass": "sword",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
-        "tier": "best",
-        "dropRate": "1/4 (25%)"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "amazon",
@@ -56,13 +56,13 @@
         "slot": "weapon",
         "icon": "items/amazon.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Strongest yoyo available before any boss.",
+        "why": "One of the strongest yoyos craftable this early.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "yoyo",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amazon",
-        "tier": "best",
+        "tier": "good",
         "materials": [
           {
             "name": "Rich Mahogany",
@@ -195,11 +195,11 @@
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Bouncing chakram that inflicts Poisoned.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "boomerang",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thorn_Chakram",
-        "tier": "best",
+        "tier": "other",
         "materials": [
           {
             "name": "Jungle Spores",
@@ -226,7 +226,7 @@
         "subclass": "boomerang",
         "stats": "21 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Trimarang",
-        "tier": "other",
+        "tier": "good",
         "materials": [
           {
             "name": "Enchanted Boomerang",
@@ -259,7 +259,7 @@
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Boomerang",
         "tier": "other",
-        "dropRate": "1/10 (10%)"
+        "dropRate": "10%"
       },
       {
         "id": "ball-o-hurt",
@@ -267,7 +267,7 @@
         "slot": "weapon",
         "icon": "items/ball-o-hurt.png",
         "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt/Defiled Crates",
-        "why": "Corruption flail obtained by breaking Shadow Orbs, needs no boss.",
+        "why": "Corruption flail obtained by breaking Shadow Orbs.",
         "tags": [],
         "topPick": true,
         "subclass": "flail",
@@ -303,7 +303,7 @@
         "subclass": "flail",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Mace",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Mace",
@@ -331,7 +331,7 @@
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mace",
         "tier": "other",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)"
       },
       {
         "id": "the-meatball",
@@ -369,11 +369,11 @@
         "why": "Fires an Enchanted Beam projectile at high health.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "23 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Sword",
-        "tier": "good",
-        "dropRate": "1/30 (3.33%)"
+        "tier": "other",
+        "dropRate": "3.33%"
       },
       {
         "id": "ice-blade",
@@ -384,7 +384,7 @@
         "why": "Occasionally fires an Ice Bolt projectile when swung.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "17 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Blade",
         "tier": "other",
@@ -399,7 +399,7 @@
         "why": "Rapidly releases a flurry of slash projectiles toward the cursor when used.",
         "tags": [],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "17 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terragrim",
         "tier": "other"
@@ -413,7 +413,7 @@
         "why": "Underworld ash-wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ash_Wood_Sword",
         "tier": "other",
@@ -434,11 +434,11 @@
         "source": "Dropped by bats",
         "why": "Dropped by any bat; heals the player on hit.",
         "tags": [],
-        "topPick": true,
-        "subclass": "true-melee",
+        "topPick": false,
+        "subclass": "sword",
         "stats": "36 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bat_Bat",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "0.33%"
       },
       {
@@ -450,7 +450,7 @@
         "why": "Dropped by weak enemies during the Halloween event.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bladed_Glove",
         "tier": "other"
@@ -464,10 +464,10 @@
         "why": "Crimson counterpart of Light's Bane.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "22 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Butcherer",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Crimtane Bar",
@@ -486,7 +486,7 @@
         "why": "Sapphire energy blade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Phaseblade",
         "tier": "other",
@@ -513,7 +513,7 @@
         "why": "Dropped by Skeletons; lobs a bone projectile on hitting an enemy.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "19 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Sword",
         "tier": "other",
@@ -528,7 +528,7 @@
         "why": "Snow-biome wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boreal_Wood_Sword",
         "tier": "other",
@@ -550,11 +550,11 @@
         "why": "A novelty broadsword found in Water Chests and Ocean-fishing crates.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Breathing_Reed",
         "tier": "other",
-        "dropRate": "9/40 (22.5%)"
+        "dropRate": "22.5%"
       },
       {
         "id": "cactus-sword",
@@ -565,7 +565,7 @@
         "why": "Crafted from Cactus gathered in the Desert.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus_Sword",
         "tier": "other",
@@ -587,7 +587,7 @@
         "why": "Obtained from Presents dropped during the Christmas event.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "19 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Candy_Cane_Sword",
         "tier": "other",
@@ -602,7 +602,7 @@
         "why": "Early metal broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Broadsword",
         "tier": "other",
@@ -624,7 +624,7 @@
         "why": "Basic stabbing shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "5 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Copper_Shortsword",
         "tier": "other",
@@ -646,7 +646,7 @@
         "why": "Corruption wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "11 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ebonwood_Sword",
         "tier": "other",
@@ -668,7 +668,7 @@
         "why": "Rare drop from the Dye Trader town NPC.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "20 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Exotic_Scimitar",
         "tier": "other",
@@ -683,11 +683,11 @@
         "why": "Obtained from Iron and Mythril fishing crates.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Falcon_Blade",
         "tier": "other",
-        "dropRate": "38/625 (6.08%)"
+        "dropRate": "6.08%"
       },
       {
         "id": "flymeal",
@@ -698,7 +698,7 @@
         "why": "Joke sword; can damage town NPCs.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flymeal",
         "tier": "other",
@@ -725,7 +725,7 @@
         "why": "Shortsword dropped by Hoplites in Marble Caves.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gladius",
         "tier": "other",
@@ -740,7 +740,7 @@
         "why": "Gold-tier broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Broadsword",
         "tier": "other",
@@ -762,7 +762,7 @@
         "why": "Gold-tier stabbing shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "12 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Shortsword",
         "tier": "other",
@@ -784,7 +784,7 @@
         "why": "Emerald color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Green_Phaseblade",
         "tier": "other",
@@ -811,7 +811,7 @@
         "why": "Iron-tier broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "12 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Broadsword",
         "tier": "other",
@@ -833,7 +833,7 @@
         "why": "Iron-tier stabbing shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Shortsword",
         "tier": "other",
@@ -855,7 +855,7 @@
         "why": "Purchased from the Traveling Merchant.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Katana",
         "tier": "other"
@@ -869,7 +869,7 @@
         "why": "Lead-ore equivalent of the Iron Broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Broadsword",
         "tier": "other",
@@ -891,7 +891,7 @@
         "why": "Lead-ore equivalent of the Iron Shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lead_Shortsword",
         "tier": "other",
@@ -913,7 +913,7 @@
         "why": "Corruption broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Light%27s_Bane",
         "tier": "good",
@@ -934,11 +934,11 @@
         "source": "Dropped by Antlions (Desert)",
         "why": "Dropped by Antlion Chargers and Swarmers in the Desert.",
         "tags": [],
-        "topPick": false,
-        "subclass": "true-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mandible_Blade",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "2%"
       },
       {
@@ -950,7 +950,7 @@
         "why": "Amber color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Orange_Phaseblade",
         "tier": "other",
@@ -977,7 +977,7 @@
         "why": "Oasis palm-wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palm_Wood_Sword",
         "tier": "other",
@@ -999,7 +999,7 @@
         "why": "Pink Pearl color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pink_Phaseblade",
         "tier": "other",
@@ -1026,7 +1026,7 @@
         "why": "Platinum-ore equivalent of the Gold Broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "16 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Broadsword",
         "tier": "other",
@@ -1048,7 +1048,7 @@
         "why": "Platinum-ore equivalent of the Gold Shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "13 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Shortsword",
         "tier": "other",
@@ -1070,7 +1070,7 @@
         "why": "Obtained by fishing in the Corruption biome.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "35 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Purple_Clubberfish",
         "tier": "other"
@@ -1084,7 +1084,7 @@
         "why": "Amethyst color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Purple_Phaseblade",
         "tier": "other",
@@ -1111,7 +1111,7 @@
         "why": "Multi-gem color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Phaseblade",
         "tier": "other",
@@ -1168,7 +1168,7 @@
         "why": "Ruby color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Red_Phaseblade",
         "tier": "other",
@@ -1195,7 +1195,7 @@
         "why": "Jungle wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rich_Mahogany_Sword",
         "tier": "other",
@@ -1217,7 +1217,7 @@
         "why": "A shortsword purchased from the Goblin Tinkerer that stabs four times per use.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "12 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ruler",
         "tier": "other"
@@ -1231,7 +1231,7 @@
         "why": "Crimson wood variation of the Wooden Sword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "11 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadewood_Sword",
         "tier": "other",
@@ -1253,7 +1253,7 @@
         "why": "Silver-tier broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Broadsword",
         "tier": "other",
@@ -1275,7 +1275,7 @@
         "why": "Silver-tier stabbing shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Shortsword",
         "tier": "other",
@@ -1297,11 +1297,11 @@
         "why": "Basic thrusting spear found in early chests.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "8 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spear",
         "tier": "other",
-        "dropRate": "1/10 (10%)"
+        "dropRate": "10%"
       },
       {
         "id": "storm-spear",
@@ -1312,7 +1312,7 @@
         "why": "Desert spear that fires a short-range wind projectile on thrust.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Storm_Spear",
         "tier": "good",
@@ -1326,11 +1326,11 @@
         "source": "Dropped by the Stylist",
         "why": "Dropped by the Stylist; inflicts Bleeding.",
         "tags": [],
-        "topPick": false,
-        "subclass": "true-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stylish_Scissors",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -1342,7 +1342,7 @@
         "why": "Fishing-obtained spear with strong pre-boss reach.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "19 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Swordfish",
         "tier": "other"
@@ -1356,7 +1356,7 @@
         "why": "Dropped by Crimson enemies; hits apply a stacking spike.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "20 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tentacle_Spike",
         "tier": "other",
@@ -1368,10 +1368,10 @@
         "slot": "weapon",
         "icon": "items/the-rotted-fork.png",
         "source": "Dropped by Crimson Hearts; found in Crimson/Hematic Crates",
-        "why": "Crimson-biome spear obtained without defeating a boss.",
+        "why": "When thrust, it creates a small shockwave at its tip.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "17 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Rotted_Fork",
         "tier": "good",
@@ -1386,7 +1386,7 @@
         "why": "Tin-ore equivalent of the Copper Broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Broadsword",
         "tier": "other",
@@ -1408,7 +1408,7 @@
         "why": "Tin-ore equivalent of the Copper Shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "7 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tin_Shortsword",
         "tier": "other",
@@ -1430,11 +1430,11 @@
         "why": "Ocean-sourced spear with reach through walls.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Trident",
         "tier": "other",
-        "dropRate": "9/40 (22.5%)"
+        "dropRate": "22.5%"
       },
       {
         "id": "tungsten-broadsword",
@@ -1445,7 +1445,7 @@
         "why": "Tungsten-ore equivalent of the Silver Broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Broadsword",
         "tier": "other",
@@ -1467,7 +1467,7 @@
         "why": "Tungsten-ore equivalent of the Silver Shortsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "10 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Shortsword",
         "tier": "other",
@@ -1489,7 +1489,7 @@
         "why": "Diamond color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/White_Phaseblade",
         "tier": "other",
@@ -1516,7 +1516,7 @@
         "why": "Basic starter broadsword.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "7 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Sword",
         "tier": "other",
@@ -1538,7 +1538,7 @@
         "why": "Topaz color variation of the Phaseblade.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Yellow_Phaseblade",
         "tier": "other",
@@ -1565,7 +1565,7 @@
         "why": "Dropped by Zombies during a Blood Moon.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "15 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Zombie_Arm",
         "tier": "other",
@@ -1666,6 +1666,7 @@
         "icon": "armor/platinum-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "No set bonus. Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_armor",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -1718,7 +1719,7 @@
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
         "source": "Found in Jungle chests or Jungle Crates",
-        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+        "why": "Increases melee attack speed and grants autoswing to melee weapons.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1728,7 +1729,8 @@
         "markers": [
           "whips"
         ],
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
       },
       {
         "id": "magma-stone",
@@ -1751,20 +1753,21 @@
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
+        "why": "Grants a double jump for extra vertical mobility.",
         "tags": [],
         "topPick": false,
         "categories": [
           "mobility"
         ],
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Bottle"
       },
       {
         "id": "pool-shiny-red-balloon",
         "name": "Shiny Red Balloon",
         "slot": "accessory",
         "icon": "accessories/shiny-red-balloon.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Found in Skyware Chests on Floating Islands",
         "why": "Increases jump height of the player.",
         "tags": [],
         "topPick": false,
@@ -1772,15 +1775,7 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Balloon Pufferfish",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "quality": "good"
       },
       {
         "id": "hermes-boots",
@@ -1788,14 +1783,15 @@
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "why": "Increases movement speed while running.",
         "tags": [],
         "topPick": true,
         "categories": [
           "mobility"
         ],
         "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
       }
     ],
     "buffs": [
@@ -1866,7 +1862,7 @@
         "why": "It gives a steady survivability bump through long exploration trips and drawn-out boss fights.",
         "tags": [],
         "topPick": false,
-        "dropRate": "2/21 (9.52%) (Underground)",
+        "dropRate": "9.52% (Underground)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -1907,7 +1903,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "Found in Chest and 2 other sources",
+            "source": "Found in surface Chests, Wooden Crates, and Pearlwood Crates",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -1921,22 +1917,14 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Allows the player to slide down walls.",
+            "source": "Found in surface Chests (including Water Chests), rarely in Wooden and Pearlwood Crates; sold by the Skeleton Merchant",
+            "why": "Lets you cling to block sides and slowly slide down them in midair.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
-            "materials": [
-              {
-                "name": "Shoe Spikes",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
           },
           {
             "id": "pool-magiluminescence",
@@ -1954,7 +1942,7 @@
             "quality": "great",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -1988,7 +1976,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Allows the player to perform a double-jump.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2003,7 +1991,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "Crafted",
+            "source": "Found in Chests inside Pyramids in the Desert",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -2011,21 +1999,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Pharaoh's Robe",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
-              }
-            ]
+            "quality": "great"
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2035,14 +2016,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
             "tedious": true,
-            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg.",
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-shiny-red-balloon",
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Found in Skyware Chests on Floating Islands",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -2050,22 +2032,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Balloon Pufferfish",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "Found in Bramble Crate and 2 other sources",
+            "source": "Found in Ivy Chests in Jungle Shrines and at the base of Living Mahogany Trees, or in Jungle and Bramble Crates, in the Underground Jungle",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -2073,7 +2047,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "21.72% (Ivy Chests), 19% (Crates)"
           },
           {
             "id": "pool-panic-necklace",
@@ -2112,13 +2087,14 @@
             "slot": "accessory",
             "icon": "accessories/lucky-horseshoe.png",
             "source": "Found in Skyware Chests and Sky Crates",
-            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "why": "Negates fall damage.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "dropRate": "1/4 (25%)"
+            "dropRate": "25%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
         ]
       },
@@ -2130,21 +2106,22 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "Dropped by Frozen Zombie and 2 other sources",
+            "source": "Dropped by most Zombies",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
             "categories": [
               "survivability"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
+            "dropRate": "2%"
           },
           {
             "id": "pool-band-of-regeneration",
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -2164,14 +2141,15 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
             "categories": [
               "offense"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       },
@@ -2184,7 +2162,7 @@
             "slot": "accessory",
             "icon": "accessories/white-string.png",
             "source": "Crafted at Loom",
-            "why": "Increases the range of yoyos, and allows them to spin for longer.",
+            "why": "Boosts all yoyos: +50% spin duration and +25% range (plus 2 tiles).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2194,7 +2172,6 @@
             "markers": [
               "yoyos"
             ],
-            "notes": "Multiple White Strings can be crafted and used by all classes for specific modifiers due to their cheap crafting cost:",
             "materials": [
               {
                 "name": "Cobweb",
@@ -2209,7 +2186,7 @@
             "name": "Counterweights",
             "slot": "accessory",
             "icon": "accessories/counterweights.png",
-            "source": "",
+            "source": "Sold by the Traveling Merchant and the Skeleton Merchant",
             "why": "Causes yoyos after landing a hit on enemies to produce a \"counterweight\" projectile, which travels towards the enemy before arcing over the player.",
             "tags": [],
             "topPick": false,
@@ -2244,20 +2221,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "counterweight",
-            "name": "Counterweight",
-            "slot": "accessory",
-            "icon": "accessories/counterweight.png",
-            "source": "Sold by the Traveling Merchant or Skeleton Merchant",
-            "why": "Throws a counterweight along your yoyo string after hitting an enemy.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "melee"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweight"
           }
         ]
       }
@@ -2295,7 +2258,7 @@
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boomstick",
         "tier": "best",
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%"
       },
       {
         "id": "minishark",
@@ -2737,7 +2700,7 @@
         "why": "Pre-Hardmode gun that fires sand blocks as ammo.",
         "tags": [],
         "topPick": false,
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "30 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sandgun",
         "tier": "other",
@@ -2770,7 +2733,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "12 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Paintball_Gun",
         "dropRate": "10%"
@@ -2785,7 +2748,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "25 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Harpoon",
         "dropRate": "0.5%"
@@ -2799,6 +2762,7 @@
         "icon": "armor/platinum-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "No set bonus. Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_armor",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -2902,7 +2866,7 @@
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+        "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -2911,7 +2875,8 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
-        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+        "dropRate": "0.67% / 1.33%"
       },
       {
         "id": "pool-panic-necklace",
@@ -2956,14 +2921,15 @@
         "categories": [
           "mobility"
         ],
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Bottle"
       },
       {
         "id": "pool-shiny-red-balloon",
         "name": "Shiny Red Balloon",
         "slot": "accessory",
         "icon": "accessories/shiny-red-balloon.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Found in Skyware Chests on Floating Islands",
         "why": "Increases jump height of the player.",
         "tags": [],
         "topPick": false,
@@ -2971,15 +2937,7 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Balloon Pufferfish",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "quality": "good"
       },
       {
         "id": "hermes-boots",
@@ -2994,7 +2952,8 @@
           "mobility"
         ],
         "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
       }
     ],
     "buffs": [
@@ -3007,7 +2966,7 @@
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "dropRate": "9.52% (Underground), 11.11% (Cavern)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3108,7 +3067,7 @@
         "topPick": false,
         "stats": "5 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow",
-        "dropRate": "1/3 (33.33%)"
+        "dropRate": "33.33%"
       },
       {
         "id": "ammo-flaming-arrow",
@@ -3158,7 +3117,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "Found in Chest and 2 other sources",
+            "source": "Found in surface Chests, Wooden Crates, and Pearlwood Crates",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -3172,22 +3131,14 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Allows the player to slide down walls.",
+            "source": "Found in surface Chests (including Water Chests), rarely in Wooden and Pearlwood Crates; sold by the Skeleton Merchant",
+            "why": "Lets you cling to block sides and slowly slide down them in midair.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
-            "materials": [
-              {
-                "name": "Shoe Spikes",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
           },
           {
             "id": "pool-magiluminescence",
@@ -3205,7 +3156,7 @@
             "quality": "great",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -3239,7 +3190,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Allows the player to perform a double-jump.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3254,7 +3205,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "Crafted",
+            "source": "Found in Chests inside Pyramids in the Desert",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -3262,21 +3213,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Pharaoh's Robe",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
-              }
-            ]
+            "quality": "great"
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3286,14 +3230,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
             "tedious": true,
-            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg.",
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-shiny-red-balloon",
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Found in Skyware Chests on Floating Islands",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -3301,22 +3246,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Balloon Pufferfish",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "Found in Bramble Crate and 2 other sources",
+            "source": "Found in Ivy Chests in Jungle Shrines and at the base of Living Mahogany Trees, or in Jungle and Bramble Crates, in the Underground Jungle",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -3324,7 +3261,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "21.72% (Ivy Chests), 19% (Crates)"
           },
           {
             "id": "pool-panic-necklace",
@@ -3363,13 +3301,14 @@
             "slot": "accessory",
             "icon": "accessories/lucky-horseshoe.png",
             "source": "Found in Skyware Chests and Sky Crates",
-            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "why": "Negates fall damage.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "dropRate": "1/4 (25%)"
+            "dropRate": "25%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
         ]
       },
@@ -3381,14 +3320,15 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
             "categories": [
               "offense"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       },
@@ -3400,7 +3340,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -3415,14 +3355,15 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "Dropped by Frozen Zombie and 2 other sources",
+            "source": "Dropped by most Zombies",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
             "categories": [
               "survivability"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
+            "dropRate": "2%"
           }
         ]
       }
@@ -3472,7 +3413,7 @@
         "stats": "27 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Aqua_Scepter",
         "tier": "other",
-        "dropRate": "1/7 (14.29%)"
+        "dropRate": "14.29%"
       },
       {
         "id": "diamond-staff",
@@ -3583,7 +3524,7 @@
         "stats": "14 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Sparking",
         "tier": "other",
-        "dropRate": "1/10 (10%)"
+        "dropRate": "10%"
       },
       {
         "id": "gray-zapinator",
@@ -3630,7 +3571,7 @@
         "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
         "tags": [],
         "topPick": true,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
         "tier": "best",
@@ -3783,6 +3724,7 @@
         "icon": "armor/jungle-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "16% reduced mana costs.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_armor",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -3936,7 +3878,8 @@
         "categories": [
           "mobility"
         ],
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Bottle"
       },
       {
         "id": "hermes-boots",
@@ -3951,7 +3894,8 @@
           "mobility"
         ],
         "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
       }
     ],
     "buffs": [
@@ -3964,7 +3908,7 @@
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -3998,7 +3942,7 @@
         "why": "A healthy stack keeps your early magic weapons usable during longer fights.",
         "tags": [],
         "topPick": false,
-        "dropRate": "1/6 (16.67%)"
+        "dropRate": "16.67%"
       },
       {
         "id": "ironskin-potion",
@@ -4062,7 +4006,7 @@
           }
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
-        "dropRate": "1/4 (25%)"
+        "dropRate": "25%"
       },
       {
         "id": "magic-power-potion",
@@ -4073,7 +4017,7 @@
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -4146,7 +4090,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "Found in Chest and 2 other sources",
+            "source": "Found in surface Chests, Wooden Crates, and Pearlwood Crates",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -4160,22 +4104,14 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Allows the player to slide down walls.",
+            "source": "Found in surface Chests (including Water Chests), rarely in Wooden and Pearlwood Crates; sold by the Skeleton Merchant",
+            "why": "Lets you cling to block sides and slowly slide down them in midair.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
-            "materials": [
-              {
-                "name": "Shoe Spikes",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
           },
           {
             "id": "pool-magiluminescence",
@@ -4193,7 +4129,7 @@
             "quality": "great",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -4227,7 +4163,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Allows the player to perform a double-jump.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4242,7 +4178,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "Crafted",
+            "source": "Found in Chests inside Pyramids in the Desert",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -4250,21 +4186,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Pharaoh's Robe",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
-              }
-            ]
+            "quality": "great"
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4274,14 +4203,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
             "tedious": true,
-            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg.",
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-shiny-red-balloon",
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Found in Skyware Chests on Floating Islands",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -4289,22 +4219,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Balloon Pufferfish",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "Found in Bramble Crate and 2 other sources",
+            "source": "Found in Ivy Chests in Jungle Shrines and at the base of Living Mahogany Trees, or in Jungle and Bramble Crates, in the Underground Jungle",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -4312,7 +4234,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "21.72% (Ivy Chests), 19% (Crates)"
           },
           {
             "id": "pool-panic-necklace",
@@ -4351,13 +4274,14 @@
             "slot": "accessory",
             "icon": "accessories/lucky-horseshoe.png",
             "source": "Found in Skyware Chests and Sky Crates",
-            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "why": "Negates fall damage.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "dropRate": "1/4 (25%)"
+            "dropRate": "25%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
         ]
       },
@@ -4369,21 +4293,22 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "Dropped by Frozen Zombie and 2 other sources",
+            "source": "Dropped by most Zombies",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
             "categories": [
               "survivability"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
+            "dropRate": "2%"
           },
           {
             "id": "pool-band-of-regeneration",
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -4402,14 +4327,15 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
             "categories": [
               "offense"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       },
@@ -4523,7 +4449,7 @@
         "stats": "7 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Finch_Staff",
         "tier": "good",
-        "dropRate": "1/3 (33.33%)"
+        "dropRate": "33.33%"
       },
       {
         "id": "flinx-staff",
@@ -4692,6 +4618,7 @@
         "icon": "armor/flinx-fur-coat.png",
         "source": "Crafted at Loom",
         "why": "+5% minion damage and +1 minion slot.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Fur_Coat",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -4722,7 +4649,7 @@
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
         "source": "Found in Jungle chests or Jungle Crates",
-        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+        "why": "Increases melee attack speed and grants autoswing to melee weapons.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -4732,14 +4659,15 @@
         "markers": [
           "whips"
         ],
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
       },
       {
         "id": "pool-shark-tooth-necklace",
         "name": "Shark Tooth Necklace",
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
-        "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+        "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
         "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
         "tags": [],
         "topPick": false,
@@ -4748,7 +4676,8 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
-        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+        "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+        "dropRate": "0.67% / 1.33%"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -4762,14 +4691,15 @@
         "categories": [
           "mobility"
         ],
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Bottle"
       },
       {
         "id": "pool-shiny-red-balloon",
         "name": "Shiny Red Balloon",
         "slot": "accessory",
         "icon": "accessories/shiny-red-balloon.png",
-        "source": "Crafted at Tinkerer's Workshop",
+        "source": "Found in Skyware Chests on Floating Islands",
         "why": "Increases jump height of the player.",
         "tags": [],
         "topPick": false,
@@ -4777,15 +4707,7 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-        "quality": "good",
-        "materials": [
-          {
-            "name": "Balloon Pufferfish",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
+        "quality": "good"
       },
       {
         "id": "hermes-boots",
@@ -4800,7 +4722,8 @@
           "mobility"
         ],
         "quality": "great",
-        "dropRate": "1/6 (16.67%) (Underground) 2/15 (13.33%) (Cavern) 19/150 (12.67%) (\"lava layer\")"
+        "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hermes_Boots"
       }
     ],
     "buffs": [
@@ -4882,7 +4805,7 @@
             "name": "Aglet",
             "slot": "accessory",
             "icon": "accessories/aglet.png",
-            "source": "Found in Chest and 2 other sources",
+            "source": "Found in surface Chests, Wooden Crates, and Pearlwood Crates",
             "why": "Increases the player's movement speed by 5%.",
             "tags": [],
             "topPick": false,
@@ -4896,22 +4819,14 @@
             "name": "Climbing Claws",
             "slot": "accessory",
             "icon": "accessories/climbing-claws.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Allows the player to slide down walls.",
+            "source": "Found in surface Chests (including Water Chests), rarely in Wooden and Pearlwood Crates; sold by the Skeleton Merchant",
+            "why": "Lets you cling to block sides and slowly slide down them in midair.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws",
-            "materials": [
-              {
-                "name": "Shoe Spikes",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shoe_Spikes"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Climbing_Claws"
           },
           {
             "id": "pool-magiluminescence",
@@ -4929,7 +4844,7 @@
             "quality": "great",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -4963,7 +4878,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Allows the player to perform a double-jump.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4978,7 +4893,7 @@
             "name": "Flying Carpet",
             "slot": "accessory",
             "icon": "accessories/flying-carpet.png",
-            "source": "Crafted",
+            "source": "Found in Chests inside Pyramids in the Desert",
             "why": "Enables the player to briefly hover.",
             "tags": [],
             "topPick": false,
@@ -4986,21 +4901,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet",
-            "quality": "great",
-            "materials": [
-              {
-                "name": "Pharaoh's Robe",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Pharaoh%27s_Robe"
-              }
-            ]
+            "quality": "great"
           },
           {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -5010,14 +4918,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
             "tedious": true,
-            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg."
+            "notes": "If acquired early, the Fledgling Wings' vertical mobility is significantly improved with the Frog Leg.",
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-shiny-red-balloon",
             "name": "Shiny Red Balloon",
             "slot": "accessory",
             "icon": "accessories/shiny-red-balloon.png",
-            "source": "Crafted at Tinkerer's Workshop",
+            "source": "Found in Skyware Chests on Floating Islands",
             "why": "Increases jump height of the player.",
             "tags": [],
             "topPick": false,
@@ -5025,22 +4934,14 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shiny_Red_Balloon",
-            "quality": "good",
-            "materials": [
-              {
-                "name": "Balloon Pufferfish",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Balloon_Pufferfish"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "quality": "good"
           },
           {
             "id": "pool-anklet-of-the-wind",
             "name": "Anklet of the Wind",
             "slot": "accessory",
             "icon": "accessories/anklet-of-the-wind.png",
-            "source": "Found in Bramble Crate and 2 other sources",
+            "source": "Found in Ivy Chests in Jungle Shrines and at the base of Living Mahogany Trees, or in Jungle and Bramble Crates, in the Underground Jungle",
             "why": "Increases the player's movement speed by 10%.",
             "tags": [],
             "topPick": false,
@@ -5048,7 +4949,8 @@
               "mobility"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind",
-            "quality": "good"
+            "quality": "good",
+            "dropRate": "21.72% (Ivy Chests), 19% (Crates)"
           },
           {
             "id": "pool-panic-necklace",
@@ -5087,13 +4989,14 @@
             "slot": "accessory",
             "icon": "accessories/lucky-horseshoe.png",
             "source": "Found in Skyware Chests and Sky Crates",
-            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "why": "Negates fall damage.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "dropRate": "1/4 (25%)"
+            "dropRate": "25%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           }
         ]
       },
@@ -5105,21 +5008,22 @@
             "name": "Shackle",
             "slot": "accessory",
             "icon": "accessories/shackle.png",
-            "source": "Dropped by Frozen Zombie and 2 other sources",
+            "source": "Dropped by most Zombies",
             "why": "Increases the player's defense by 1.",
             "tags": [],
             "topPick": false,
             "categories": [
               "survivability"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shackle",
+            "dropRate": "2%"
           },
           {
             "id": "pool-band-of-regeneration",
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -5139,14 +5043,15 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration.",
             "tags": [],
             "topPick": false,
             "categories": [
               "offense"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       }

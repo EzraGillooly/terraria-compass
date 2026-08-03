@@ -12,10 +12,10 @@
         "why": "Dropped by Queen Bee; summons bees on hit and inflicts Confused.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Keeper",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "33%"
       },
       {
@@ -27,7 +27,7 @@
         "why": "Crafted at a Solidifier, first obtainable via King Slime's drop.",
         "tags": [],
         "topPick": false,
-        "subclass": "true-melee",
+        "subclass": "spear",
         "stats": "9 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Spear",
         "tier": "other",
@@ -112,7 +112,7 @@
         "why": "Creates an explosion on hitting enemies.",
         "tags": [],
         "topPick": true,
-        "subclass": "true-melee",
+        "subclass": "sword",
         "stats": "40 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Volcano",
         "tier": "best",
@@ -134,8 +134,8 @@
         "why": "Group of nine identical broadswords; can be thrown while swinging.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "subclass": "true-melee",
+        "tier": "other",
+        "subclass": "sword",
         "stats": "26 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phaseblades"
       },
@@ -149,11 +149,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": false,
-        "subclass": "true-melee",
+        "topPick": true,
+        "subclass": "sword",
         "stats": "14 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stylish_Scissors",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -167,7 +167,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "projectile-melee",
+        "subclass": "sword",
         "stats": "18 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_of_Grass",
         "tier": "good",
@@ -189,6 +189,21 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "mandible-blade",
+        "name": "Mandible Blade",
+        "slot": "weapon",
+        "icon": "items/mandible-blade.png",
+        "source": "Dropped by Antlions (Desert)",
+        "why": "Dropped by Antlion Chargers and Swarmers in the Desert.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sword",
+        "stats": "16 melee dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mandible_Blade",
+        "tier": "good",
+        "dropRate": "2%"
       },
       {
         "id": "amazon",
@@ -239,12 +254,12 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
-        "subclass": "projectile-melee",
+        "topPick": false,
+        "subclass": "sword",
         "stats": "25 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starfury",
-        "tier": "best",
-        "dropRate": "1/4 (25%)"
+        "tier": "good",
+        "dropRate": "25%"
       },
       {
         "id": "ball-o-hurt",
@@ -256,11 +271,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
+        "topPick": false,
         "subclass": "flail",
         "stats": "30 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ball_O%27_Hurt",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "20%"
       },
       {
@@ -295,16 +310,70 @@
     ],
     "armor": [
       {
+        "id": "molten-armor",
+        "name": "Molten Armor",
+        "slot": "armor",
+        "icon": "armor/molten-armor.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "10% extra melee damage, immunity to fire blocks, and you cannot be set on fire.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_armor",
+        "tags": [],
+        "topPick": true,
+        "pieces": [
+          "Molten Helmet",
+          "Molten Breastplate",
+          "Molten Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Molten Helmet",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Molten Breastplate",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Molten Greaves",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
+        ],
+        "defense": 25,
+        "effect": "+25 defense \u00b7 +17% melee damage \u00b7 +7% melee critical strike chance \u00b7 +7% melee speed \u00b7 Immunity to the On Fire! and Burning debuffs"
+      },
+      {
         "id": "shadow-armor",
         "name": "Shadow Armor",
         "slot": "armor",
         "icon": "armor/shadow-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Corruption worlds only. Increased movement speed and acceleration.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_armor",
         "tags": [
           "corruption-only"
         ],
-        "topPick": true,
+        "topPick": false,
         "pieces": [
           "Shadow Helmet",
           "Shadow Scalemail",
@@ -360,7 +429,11 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 19
+        "defense": 19,
+        "effect": "+19 defense \u00b7 +15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
+        "markers": [
+          "corruption"
+        ]
       },
       {
         "id": "crimson-armor",
@@ -368,7 +441,8 @@
         "slot": "armor",
         "icon": "armor/crimson-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crimson worlds only. Greatly increased life regeneration.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_armor",
         "tags": [
           "crimson-only"
         ],
@@ -428,7 +502,11 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 19
+        "defense": 19,
+        "effect": "+19 defense \u00b7 +9% damage \u00b7 Greatly increased health regeneration",
+        "markers": [
+          "crimson"
+        ]
       }
     ],
     "accessories": [
@@ -438,7 +516,7 @@
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
         "source": "Found in Jungle chests or Jungle Crates",
-        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+        "why": "Increases melee attack speed and grants autoswing to melee weapons.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -448,7 +526,8 @@
         "markers": [
           "whips"
         ],
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
       },
       {
         "id": "magma-stone",
@@ -471,7 +550,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -481,33 +560,6 @@
         "quality": "good",
         "markers": [
           "expert"
-        ]
-      },
-      {
-        "id": "blue-horseshoe-balloon",
-        "name": "Blue Horseshoe Balloon",
-        "slot": "accessory",
-        "icon": "accessories/blue-horseshoe-balloon.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Double jump, increased jump height, and negates fall damage.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Blue_Horseshoe_Balloon",
-        "station": "Tinkerer's Workshop",
-        "materials": [
-          {
-            "name": "Cloud in a Balloon",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud_in_a_Balloon"
-          },
-          {
-            "name": "Lucky Horseshoe",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
-          }
         ]
       },
       {
@@ -538,6 +590,35 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ice_Skates"
           }
         ]
+      },
+      {
+        "id": "pool-bundle-of-horseshoe-balloons",
+        "name": "Bundle of Horseshoe Balloons",
+        "slot": "accessory",
+        "icon": "accessories/bundle-of-horseshoe-balloons.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Provides substantial vertical mobility and acceleration.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
+        "quality": "great",
+        "tedious": true,
+        "materials": [
+          {
+            "name": "Bundle of Balloons",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
+          },
+          {
+            "name": "Lucky Horseshoe",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
       }
     ],
     "buffs": [
@@ -608,7 +689,7 @@
         "why": "It smooths out incoming damage during long arena fights and exploration loops.",
         "tags": [],
         "topPick": false,
-        "dropRate": "2/21 (9.52%) (Underground)",
+        "dropRate": "9.52% (Underground)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -704,7 +785,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -715,27 +796,11 @@
             "isGroup": true
           },
           {
-            "id": "pool-balloons",
-            "name": "Balloons",
-            "slot": "accessory",
-            "icon": "accessories/balloons.png",
-            "source": "",
-            "why": "Combines the effects of an extra jump with balloons.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Balloons",
-            "quality": "good",
-            "isGroup": true
-          },
-          {
             "id": "pool-fledgling-wings",
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -744,36 +809,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
-            "tedious": true
-          },
-          {
-            "id": "pool-bundle-of-horseshoe-balloons",
-            "name": "Bundle of Horseshoe Balloons",
-            "slot": "accessory",
-            "icon": "accessories/bundle-of-horseshoe-balloons.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Provides substantial vertical mobility and acceleration.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Horseshoe_Balloons",
-            "quality": "great",
             "tedious": true,
-            "materials": [
-              {
-                "name": "Bundle of Balloons",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Bundle_of_Balloons"
-              },
-              {
-                "name": "Lucky Horseshoe",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-magiluminescence",
@@ -791,7 +828,7 @@
             "quality": "good",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -897,7 +934,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -915,8 +952,8 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "Dropped by Queen Bee and 1 other source",
-            "why": "When the player is hit:",
+            "source": "Dropped by Queen Bee (1/3 chance)",
+            "why": "When hit, releases 1-3 bees that attack nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -931,7 +968,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -985,7 +1022,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -994,7 +1031,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       },
@@ -1024,9 +1062,9 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/White_String"
               },
               {
-                "name": "Black Counterweight",
+                "name": "Any Counterweight",
                 "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Counterweight"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweights"
               }
             ],
             "station": "Tinkerer's Workshop"
@@ -1054,18 +1092,22 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "counterweight",
-            "name": "Counterweight",
+            "id": "pool-counterweights",
+            "name": "Counterweights",
             "slot": "accessory",
-            "icon": "accessories/counterweight.png",
-            "source": "Sold by the Traveling Merchant or Skeleton Merchant",
-            "why": "Throws a counterweight along your yoyo string after hitting an enemy.",
+            "icon": "accessories/counterweights.png",
+            "source": "Sold by the Traveling Merchant and the Skeleton Merchant",
+            "why": "Causes yoyos after landing a hit on enemies to produce a \"counterweight\" projectile, which travels towards the enemy before arcing over the player.",
             "tags": [],
             "topPick": false,
             "categories": [
               "melee"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweight"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Counterweights",
+            "markers": [
+              "yoyos"
+            ],
+            "isGroup": true
           }
         ]
       }
@@ -1159,7 +1201,7 @@
         "tags": [],
         "topPick": true,
         "tier": "best",
-        "subclass": "gun",
+        "subclass": "other",
         "stats": "55 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
         "materials": [
@@ -1196,7 +1238,7 @@
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Boomstick",
         "tier": "good",
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%"
       },
       {
         "id": "tendon-bow",
@@ -1230,7 +1272,8 @@
         "slot": "armor",
         "icon": "armor/shadow-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Corruption worlds only. Increased movement speed and acceleration.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_armor",
         "tags": [
           "corruption-only"
         ],
@@ -1290,7 +1333,11 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 19
+        "defense": 19,
+        "effect": "+19 defense \u00b7 +15% critical strike chance \u00b7 +75% acceleration/deceleration and \u00d71.15 max movement speed",
+        "markers": [
+          "corruption"
+        ]
       },
       {
         "id": "crimson-armor",
@@ -1298,7 +1345,8 @@
         "slot": "armor",
         "icon": "armor/crimson-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crimson worlds only. Greatly increased life regeneration.",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_armor",
         "tags": [
           "crimson-only"
         ],
@@ -1358,7 +1406,11 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 19
+        "defense": 19,
+        "effect": "+19 defense \u00b7 +9% damage \u00b7 Greatly increased health regeneration",
+        "markers": [
+          "crimson"
+        ]
       }
     ],
     "accessories": [
@@ -1396,7 +1448,7 @@
         "slot": "accessory",
         "icon": "accessories/brain-of-confusion.png",
         "source": "Found in Treasure Bag (Brain of Cthulhu)",
-        "why": "",
+        "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1415,7 +1467,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -1494,7 +1546,7 @@
         "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
         "tags": [],
         "topPick": true,
-        "dropRate": "2/21 (9.52%) (Underground) 1/9 (11.11%) (Cavern)",
+        "dropRate": "9.52% (Underground), 11.11% (Cavern)",
         "materials": [
           {
             "name": "Bottled Water",
@@ -1688,7 +1740,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1719,7 +1771,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1728,7 +1780,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -1775,7 +1828,7 @@
             "quality": "good",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -1824,13 +1877,14 @@
             "slot": "accessory",
             "icon": "accessories/lucky-horseshoe.png",
             "source": "Found in Skyware Chests and Sky Crates",
-            "why": "It lets you use height aggressively for kiting without losing runs to fall damage.",
+            "why": "Negates fall damage.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "dropRate": "1/4 (25%)"
+            "dropRate": "25%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lucky_Horseshoe"
           },
           {
             "id": "pool-lightning-boots",
@@ -1895,7 +1949,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1913,8 +1967,8 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "Dropped by Queen Bee and 1 other source",
-            "why": "When the player is hit:",
+            "source": "Dropped by Queen Bee (1/3 chance)",
+            "why": "When hit, releases 1-3 bees that attack nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -1929,7 +1983,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -1983,7 +2037,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Feeders, Crimeras and Face Monsters in the Crimson",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -1992,7 +2046,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
             "quality": "great",
-            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense."
+            "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
+            "dropRate": "0.67% / 1.33%"
           }
         ]
       }
@@ -2151,7 +2206,7 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "summon-magic",
+        "subclass": "other",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
         "tier": "best",
@@ -2219,6 +2274,7 @@
         "icon": "armor/meteor-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Space Gun costs 0 mana, so it pairs with that weapon specifically.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Meteor_armor",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -2494,7 +2550,7 @@
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -2528,7 +2584,7 @@
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
-        "dropRate": "3/32 (9.38%)",
+        "dropRate": "9.38%",
         "materials": [
           {
             "name": "Bottled Water",
@@ -2591,7 +2647,7 @@
         "why": "You still want a large stack ready for sustained arena or underworld attempts.",
         "tags": [],
         "topPick": false,
-        "dropRate": "1/6 (16.67%)"
+        "dropRate": "16.67%"
       },
       {
         "id": "mana-potion",
@@ -2616,7 +2672,7 @@
           }
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
-        "dropRate": "1/4 (25%)"
+        "dropRate": "25%"
       }
     ],
     "ammo": [],
@@ -2630,7 +2686,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2662,7 +2718,7 @@
             "slot": "accessory",
             "icon": "accessories/shield-of-cthulhu.png",
             "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "",
+            "why": "Grants a short dash that damages enemies (double-tap a direction).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2679,7 +2735,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2688,7 +2744,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -2735,7 +2792,7 @@
             "quality": "good",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -2841,7 +2898,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2859,8 +2916,8 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "Dropped by Queen Bee and 1 other source",
-            "why": "When the player is hit:",
+            "source": "Dropped by Queen Bee (1/3 chance)",
+            "why": "When hit, releases 1-3 bees that attack nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -2875,7 +2932,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -2895,7 +2952,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -2903,7 +2960,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% / 1.33%"
           },
           {
             "id": "pool-hive-pack",
@@ -3388,6 +3446,7 @@
         "icon": "armor/obsidian-armor.png",
         "source": "Crafted at Hellforge",
         "why": "Whip range +30%, whip speed +15%, summon damage +15%.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian_armor",
         "tags": [],
         "topPick": true,
         "pieces": [
@@ -3522,7 +3581,7 @@
         "slot": "accessory",
         "icon": "accessories/feral-claws.png",
         "source": "Found in Jungle chests or Jungle Crates",
-        "why": "The whip speed boost remains a simple but noticeable improvement to the part of summoner gameplay you actively pilot.",
+        "why": "Increases melee attack speed and grants autoswing to melee weapons.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3532,7 +3591,8 @@
         "markers": [
           "whips"
         ],
-        "dropRate": "19/100 (19%)"
+        "dropRate": "19%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
       },
       {
         "id": "pygmy-necklace",
@@ -3554,7 +3614,7 @@
         "slot": "accessory",
         "icon": "accessories/shield-of-cthulhu.png",
         "source": "Found in Treasure Bag (Eye of Cthulhu)",
-        "why": "",
+        "why": "Grants a short dash that damages enemies (double-tap a direction).",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3715,7 +3775,7 @@
             "slot": "accessory",
             "icon": "accessories/extra-jump.png",
             "source": "",
-            "why": "Combines the effects of an extra jump with balloons and a Lucky Horseshoe.",
+            "why": "Any double-jump bottle works here: Cloud in a Bottle (Underground and Cavern Chests), Blizzard in a Bottle (Frozen Chests), Sandstorm in a Bottle (Pyramid Chests), or Tsunami in a Bottle (Ocean Chests).",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3746,7 +3806,7 @@
             "name": "Fledgling Wings",
             "slot": "accessory",
             "icon": "accessories/fledgling-wings.png",
-            "source": "Found in Azure Crate and 2 other sources",
+            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3755,7 +3815,8 @@
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fledgling_Wings",
             "quality": "great",
-            "tedious": true
+            "tedious": true,
+            "dropRate": "2.5%"
           },
           {
             "id": "pool-bundle-of-horseshoe-balloons",
@@ -3802,7 +3863,7 @@
             "quality": "good",
             "materials": [
               {
-                "name": "Demonite Bar",
+                "name": "Demonite Bar or Crimtane Bar",
                 "qty": 12,
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
               },
@@ -3908,7 +3969,7 @@
             "slot": "accessory",
             "icon": "accessories/brain-of-confusion.png",
             "source": "Found in Treasure Bag (Brain of Cthulhu)",
-            "why": "",
+            "why": "16.67% chance to dodge an attack when hit, which grants +10% crit and summon damage for 4s; taking damage also has a 60% chance to confuse nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3926,8 +3987,8 @@
             "name": "Honey Comb",
             "slot": "accessory",
             "icon": "accessories/honey-comb.png",
-            "source": "Dropped by Queen Bee and 1 other source",
-            "why": "When the player is hit:",
+            "source": "Dropped by Queen Bee (1/3 chance)",
+            "why": "When hit, releases 1-3 bees that attack nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3942,7 +4003,7 @@
             "name": "Band of Regeneration",
             "slot": "accessory",
             "icon": "accessories/band-of-regeneration.png",
-            "source": "Found in Gold Chest and 1 other source",
+            "source": "Found in Gold Chests in the Underground and Cavern, and in Living Mahogany Trees in the Underground Jungle",
             "why": "Increases the player's passive health regeneration by 1 HP/s (which ignores the effects of the Bleeding debuff).",
             "tags": [],
             "topPick": false,
@@ -3962,7 +4023,7 @@
             "name": "Shark Tooth Necklace",
             "slot": "accessory",
             "icon": "accessories/shark-tooth-necklace.png",
-            "source": "Dropped by Blood Zombie and 1 other source",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
             "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
             "tags": [],
             "topPick": false,
@@ -3970,7 +4031,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "quality": "great"
+            "quality": "great",
+            "dropRate": "0.67% / 1.33%"
           },
           {
             "id": "pool-hive-pack",

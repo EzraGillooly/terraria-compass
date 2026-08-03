@@ -5,29 +5,34 @@
     "blurb": "Close-range damage with strong durability, plus several weapon families that still let you fight from relative safety.",
     "subclasses": [
       {
-        "id": "true-melee",
-        "name": "True Melee",
-        "description": "Short-range swords, spears, and contact-focused melee weapons."
+        "id": "sword",
+        "name": "Swords",
+        "description": "Broadswords and shortswords swung in melee, including the ones that fire a projectile."
+      },
+      {
+        "id": "spear",
+        "name": "Spears",
+        "description": "Spears, lances, glaives, and halberds that stab through enemies."
       },
       {
         "id": "yoyo",
-        "name": "Yoyo",
-        "description": "Cursor-controlled yoyos that trade reach and safety for sustained control."
+        "name": "Yoyos",
+        "description": "Yoyos flung out on a string."
       },
       {
         "id": "boomerang",
-        "name": "Boomerang",
-        "description": "Thrown melee weapons that arc out and return."
+        "name": "Boomerangs",
+        "description": "Thrown melee weapons that return to you."
       },
       {
         "id": "flail",
-        "name": "Flail",
-        "description": "Chain-based melee options with awkward but powerful area control."
+        "name": "Flails",
+        "description": "Flails swung on a chain."
       },
       {
-        "id": "projectile-melee",
-        "name": "Projectile Melee",
-        "description": "Melee weapons that fire or hurl a projectile - swords with beams, plus thrown knives and spears."
+        "id": "other",
+        "name": "Other",
+        "description": "Melee weapons that fit no standard type."
       }
     ]
   },
@@ -39,22 +44,27 @@
       {
         "id": "bow",
         "name": "Bows",
-        "description": "Arrow-based ranged setups that scale especially well with ammo effects."
+        "description": "Bows that fire arrows."
+      },
+      {
+        "id": "repeater",
+        "name": "Repeaters",
+        "description": "Mechanical bows that auto-fire arrows."
       },
       {
         "id": "gun",
         "name": "Guns",
-        "description": "Bullet-firing ranged builds built around sustained pressure."
-      },
-      {
-        "id": "throwing",
-        "name": "Thrown",
-        "description": "Consumable explosives, knives, and other thrown ranged options."
+        "description": "Guns that fire bullets."
       },
       {
         "id": "launcher",
         "name": "Launchers",
-        "description": "Rocket-heavy ranged weapons with explosive crowd control."
+        "description": "Launchers that fire rockets."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Weapons that fit no standard type."
       }
     ]
   },
@@ -65,23 +75,23 @@
     "subclasses": [
       {
         "id": "wand",
-        "name": "Wands / Staves",
-        "description": "Single-shot spellcasters such as staves and focused magic projectiles."
+        "name": "Wands",
+        "description": "Wands and staves that fire magic bolts."
       },
       {
         "id": "magic-gun",
         "name": "Magic Guns",
-        "description": "Rapid-fire magic weapons that behave more like sustained ranged tools."
+        "description": "Magic weapons that fire like a gun."
       },
       {
         "id": "spell-tome",
         "name": "Spell Tomes",
-        "description": "Book-based spells that often bring piercing, arcs, or unusual behavior."
+        "description": "Tomes and books that cast spells."
       },
       {
-        "id": "summon-magic",
-        "name": "Summon Magic",
-        "description": "Magic tools that create persistent hazards or supporting summons."
+        "id": "other",
+        "name": "Other",
+        "description": "Weapons that fit no standard type."
       }
     ]
   },
@@ -93,17 +103,22 @@
       {
         "id": "minions",
         "name": "Minions",
-        "description": "Persistent summon slots spent on orbiting or pursuing allies."
-      },
-      {
-        "id": "whip",
-        "name": "Whips",
-        "description": "Tag-focused melee tools that boost minion target priority and damage."
+        "description": "Staves that summon following minions."
       },
       {
         "id": "sentries",
         "name": "Sentries",
-        "description": "Stationary summons that add area control to boss arenas and events."
+        "description": "Staves that place stationary sentries."
+      },
+      {
+        "id": "whip",
+        "name": "Whips",
+        "description": "Whips that tag enemies for your minions."
+      },
+      {
+        "id": "other",
+        "name": "Other",
+        "description": "Weapons that fit no standard type."
       }
     ]
   }

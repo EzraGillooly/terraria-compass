@@ -55,9 +55,9 @@ const THORIUM_CLASSES: ClassDef[] = [
  */
 const THORIUM_VANILLA_SUBCLASSES: Record<string, ClassDef['subclasses']> = {
   melee: [
-    { id: 'true-melee', name: 'Swords', description: 'Broadswords and shortswords swung in melee.' },
+    { id: 'sword', name: 'Swords', description: 'Broadswords and shortswords swung in melee, including the ones that fire a projectile.' },
+    { id: 'spear', name: 'Spears', description: 'Spears, lances, glaives, and halberds that stab through enemies.' },
     { id: 'yoyo', name: 'Yoyos', description: 'Yoyos flung out on a string.' },
-    { id: 'projectile-melee', name: 'Spears', description: 'Spears and lances that stab through enemies.' },
     { id: 'boomerang', name: 'Boomerangs', description: 'Thrown melee weapons that return to you.' },
     { id: 'flail', name: 'Flails', description: 'Flails swung on a chain.' },
     { id: 'other', name: 'Other', description: 'Melee weapons that fit no standard type.' },
@@ -76,8 +76,8 @@ const THORIUM_VANILLA_SUBCLASSES: Record<string, ClassDef['subclasses']> = {
     { id: 'other', name: 'Other', description: 'Magic weapons that fit no standard type.' },
   ],
   summoner: [
-    { id: 'minions', name: 'Minion Summoning', description: 'Staves that summon following minions.' },
-    { id: 'sentries', name: 'Sentry Summoning', description: 'Staves that place stationary sentries.' },
+    { id: 'minions', name: 'Minions', description: 'Staves that summon following minions.' },
+    { id: 'sentries', name: 'Sentries', description: 'Staves that place stationary sentries.' },
     { id: 'whip', name: 'Whips', description: 'Whips that tag enemies for your minions.' },
     { id: 'other', name: 'Other', description: 'Summon weapons that fit no standard type.' },
   ],
