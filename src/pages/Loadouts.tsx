@@ -1537,7 +1537,7 @@ export function Loadouts() {
                            joined, so split them into their own bullets. */
                         const setBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
                         const helmetBullets = (a.headpieceBonus || '')
-                          .split(/,\s*|\s+and\s+/).map((s) => s.trim()).filter(Boolean);
+                          .split(' · ').map((s) => s.trim()).filter(Boolean);
                         if (!setBullets.length && !helmetBullets.length) return null;
                         const preview = helmetBullets.length > 0 ? helmetBullets : setBullets;
                         const shown = preview.slice(0, ARMOR_EFFECT_LINES);

@@ -146,7 +146,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              and have no effect text at all. */
           const setBullets = (item.effect || item.why || '').split(' · ').filter(Boolean);
           const helmetBullets = (item.headpieceBonus || '')
-            .split(/,\s*|\s+and\s+/).map((s) => s.trim()).filter(Boolean);
+            .split(' · ').map((s) => s.trim()).filter(Boolean);
           if (!setBullets.length && !helmetBullets.length) return null;
           const list = (bullets: string[]) => bullets.length > 1
             ? <ul className={`${styles.desc} ${styles.effects}`}>{bullets.map((l) => <li key={l}>{l}</li>)}</ul>

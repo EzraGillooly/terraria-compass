@@ -470,7 +470,7 @@
         ],
         "headpiece": "Chlorophyte Mask",
         "defense": 51,
-        "headpieceBonus": "+21% melee damage, +21% melee critical strike chance and +5% damage reduction.",
+        "headpieceBonus": "+21% melee damage \u00b7 +21% melee critical strike chance \u00b7 +5% damage reduction",
         "effect": "+5% movement speed \u00b7 Leaf Crystal minion fires bolts at nearby enemies"
       }
     ],
@@ -1178,7 +1178,7 @@
             "slot": "accessory",
             "icon": "accessories/avenger-emblem.png",
             "source": "Combined from a class emblem and mech-boss materials",
-            "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+            "why": "Increases all damage by 12%.",
             "tags": [
               "hardmode"
             ],
@@ -1396,7 +1396,7 @@
         "subclass": "gun",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "6.25\u201316.67% 12.5\u201350%"
       },
       {
@@ -1407,7 +1407,7 @@
         "source": "Dropped by Skeleton Snipers in the post-Plantera Hardmode Dungeon",
         "why": "High single-shot damage gun dropped by Skeleton Snipers after Plantera.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "subclass": "gun",
         "stats": "200 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle",
@@ -1456,7 +1456,7 @@
         "subclass": "gun",
         "stats": "36 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "8.33% 15.97%"
       },
       {
@@ -1502,7 +1502,8 @@
         "stats": "85 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nail_Gun",
         "tier": "best",
-        "dropRate": "4% 7.84%"
+        "dropRate": "4%",
+        "dropRateExpert": "7.84%"
       },
       {
         "id": "proximity-mine-launcher",
@@ -1775,7 +1776,7 @@
         "slot": "accessory",
         "icon": "accessories/avenger-emblem.png",
         "source": "Combined from a class emblem and mech-boss materials",
-        "why": "A universal damage boost stays useful no matter which exact melee weapon family you lean into.",
+        "why": "Increases all damage by 12%.",
         "tags": [
           "hardmode"
         ],
@@ -1988,84 +1989,108 @@
     ],
     "ammo": [
       {
+        "id": "ammo-crystal-bullet",
+        "name": "Crystal Bullet",
+        "slot": "ammo",
+        "icon": "ammo/crystal-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Crystal Shards and Musket Balls",
+        "why": "Splits into crystal shards on hit.",
+        "stats": "9 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-ichor-arrow",
+        "name": "Ichor Arrow",
+        "slot": "ammo",
+        "icon": "ammo/ichor-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from 150 Wooden Arrows and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "16 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "tags": [],
+        "topPick": false
+      },
+      {
         "id": "ammo-chlorophyte-bullet",
         "name": "Chlorophyte Bullet",
         "slot": "ammo",
         "icon": "ammo/chlorophyte-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
-        "tags": [],
-        "topPick": false,
-        "stats": "9 ranged dmg",
+        "source": "Crafted at a Hardmode Anvil from Musket Balls and Chlorophyte Bars",
+        "why": "Homes in on nearby enemies.",
+        "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 60,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Chlorophyte Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ammo-ichor-bullet",
-        "name": "Ichor Bullet",
-        "slot": "ammo",
-        "icon": "ammo/ichor-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Lowers enemy defense. Crimson worlds only.",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "9 ranged dmg"
       },
       {
-        "id": "ammo-holy-arrow",
-        "name": "Holy Arrow",
+        "id": "ammo-venom-arrow",
+        "name": "Venom Arrow",
         "slot": "ammo",
-        "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
+        "icon": "ammo/venom-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Vials of Venom",
+        "why": "Inflicts Venom.",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "19 ranged dmg"
+      },
+      {
+        "id": "ammo-chlorophyte-arrow",
+        "name": "Chlorophyte Arrow",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Chlorophyte Bars",
+        "why": "Homes in on enemies and bounces.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Arrow",
+        "tags": [],
+        "topPick": false,
+        "stats": "16 ranged dmg"
+      },
+      {
+        "id": "ammo-high-velocity-bullet",
+        "name": "High Velocity Bullet",
+        "slot": "ammo",
+        "icon": "ammo/high-velocity-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Musket Balls, Pixie Dust, and Crystal Shards",
+        "why": "Very fast bullet with long range.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/High_Velocity_Bullet",
+        "tags": [],
+        "topPick": false,
+        "stats": "11 ranged dmg"
+      },
+      {
+        "id": "ammo-nano-bullet",
+        "name": "Nano Bullet",
+        "slot": "ammo",
+        "icon": "ammo/nano-bullet.png",
+        "source": "Crafted at a Hardmode Anvil from Musket Balls and Nanites",
+        "why": "Inflicts Confused on enemies.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nano_Bullet",
+        "tags": [],
+        "topPick": false,
+        "stats": "15 ranged dmg"
+      },
+      {
+        "id": "ammo-nail",
+        "name": "Nail",
+        "slot": "ammo",
+        "icon": "ammo/nail.png",
+        "source": "Crafted at an Anvil from Iron or Lead Bars",
+        "why": "Ammunition for the Nail Gun.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Nail",
+        "tags": [],
+        "topPick": false,
+        "stats": "30 ranged dmg"
       }
     ],
     "accessoryPool": [
