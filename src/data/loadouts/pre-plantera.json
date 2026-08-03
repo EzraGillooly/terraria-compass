@@ -1500,11 +1500,11 @@
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Can fire up to four arrows at once when held.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "repeater",
         "stats": "34 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Shotbow",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Chlorophyte Bar",
@@ -1637,7 +1637,8 @@
         "stats": "32 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Phantom_Phoenix",
         "tier": "good",
-        "dropRate": "10% 20%"
+        "dropRate": "10%",
+        "dropRateExpert": "20%"
       },
       {
         "id": "titanium-repeater",
@@ -1701,8 +1702,8 @@
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Hallowed upgrade to the Star Cannon.",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "subclass": "other",
         "stats": "60 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Super_Star_Shooter",
@@ -1787,6 +1788,53 @@
         "stats": "100 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Barrel_Launcher",
         "dropRate": "10%"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "slot": "weapon",
+        "icon": "items/uzi.png",
+        "source": "Dropped by Angry Trappers in the Hardmode Underground Jungle",
+        "why": "Rapid-fire gun dropped by Angry Trappers, which spawn in the Hardmode Jungle.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "30 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Uzi",
+        "tier": "good",
+        "dropRate": "1%"
+      },
+      {
+        "id": "onyx-blaster",
+        "name": "Onyx Blaster",
+        "slot": "weapon",
+        "icon": "items/onyx-blaster.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Hardmode upgrade to the Shotgun, firing a wider spread.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "24 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Onyx_Blaster",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Shotgun",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shotgun"
+          },
+          {
+            "name": "Dark Shard",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ],
     "armor": [
@@ -2169,105 +2217,103 @@
         "name": "Crystal Bullet",
         "slot": "ammo",
         "icon": "ammo/crystal-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Splits into crystal shards on impact.",
-        "tags": [],
-        "topPick": false,
+        "source": "Crafted at Iron Anvil or Lead Anvil from Crystal Shards and Musket Balls",
+        "why": "Splits into crystal shards on hit.",
         "stats": "9 ranged dmg",
+        "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Crystal Shard",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "tags": [],
+        "topPick": false
       },
       {
-        "id": "ammo-chlorophyte-bullet",
-        "name": "Chlorophyte Bullet",
+        "id": "ammo-ichor-arrow",
+        "name": "Ichor Arrow",
         "slot": "ammo",
-        "icon": "ammo/chlorophyte-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
+        "icon": "ammo/ichor-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from 150 Wooden Arrows and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "16 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
         "tags": [],
-        "topPick": false,
-        "stats": "9 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 60,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Chlorophyte Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ammo-ichor-bullet",
-        "name": "Ichor Bullet",
-        "slot": "ammo",
-        "icon": "ammo/ichor-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Lowers enemy defense. Crimson worlds only.",
-        "tags": [],
-        "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "topPick": false
       },
       {
         "id": "ammo-holy-arrow",
         "name": "Holy Arrow",
         "slot": "ammo",
         "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows, Unicorn Horns, and Pixie Dust",
+        "why": "Summons falling stars on impact.",
+        "stats": "13 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-high-velocity-bullet",
+        "name": "High Velocity Bullet",
+        "slot": "ammo",
+        "icon": "ammo/high-velocity-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Musket Balls, Pixie Dust, and Crystal Shards",
+        "why": "Very fast bullet with long range.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/High_Velocity_Bullet",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "11 ranged dmg"
+      },
+      {
+        "id": "ammo-chlorophyte-arrow",
+        "name": "Chlorophyte Arrow",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Chlorophyte Bars",
+        "why": "Homes in on enemies and bounces.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Arrow",
+        "tags": [],
+        "topPick": false,
+        "stats": "16 ranged dmg"
+      },
+      {
+        "id": "ammo-cursed-dart",
+        "name": "Cursed Dart",
+        "slot": "ammo",
+        "icon": "ammo/cursed-dart.png",
+        "source": "Crafted at a Hardmode Anvil from Darts and Cursed Flames",
+        "why": "Inflicts Cursed Inferno.",
+        "stats": "9 ranged dmg",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Dart",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "ammo/gel.png",
+        "source": "Dropped by Slimes",
+        "why": "Ammunition for the Flamethrower.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-fallen-star",
+        "name": "Fallen Star",
+        "slot": "ammo",
+        "icon": "ammo/fallen-star.png",
+        "source": "Falls from the sky at night",
+        "why": "Ammunition for the Star Cannon.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
+        "tags": [],
+        "topPick": false,
+        "stats": "55 ranged dmg"
       }
     ],
     "accessoryPool": [
@@ -2793,7 +2839,8 @@
               "ranged"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Rifle_Scope",
-            "dropRate": "8.33% 15.97%"
+            "dropRate": "8.33%",
+            "dropRateExpert": "15.97%"
           }
         ]
       }
