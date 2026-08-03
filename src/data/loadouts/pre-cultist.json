@@ -1388,11 +1388,11 @@
         "source": "Dropped by Betsy (Tier 3 Old One's Army, post-Golem)",
         "why": "Fires arrows that split into extra arrows when aimed upward.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "bow",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Aerial_Bane",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -1467,7 +1467,8 @@
         "subclass": "other",
         "stats": "57 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Elf_Melter",
-        "dropRate": "6.25\u201316.67% 12.5\u201350%"
+        "dropRate": "6.25\u201316.67%",
+        "dropRateExpert": "12.5\u201350%"
       },
       {
         "id": "eventide",
@@ -1479,11 +1480,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": false,
+        "topPick": true,
         "subclass": "bow",
         "stats": "50 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Eventide",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -1501,7 +1502,8 @@
         "stats": "67 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
         "tier": "best",
-        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
+        "dropRate": "5.19\u201310.37%",
+        "dropRateExpert": "15.56\u201331.11%"
       },
       {
         "id": "chain-gun",
@@ -1517,8 +1519,9 @@
         "subclass": "gun",
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
-        "tier": "best",
-        "dropRate": "6.25\u201316.67% 12.5\u201350%"
+        "tier": "good",
+        "dropRate": "6.25\u201316.67%",
+        "dropRateExpert": "12.5\u201350%"
       },
       {
         "id": "stake-launcher",
@@ -1530,11 +1533,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": true,
+        "topPick": false,
         "subclass": "repeater",
         "stats": "75 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "2.86\u201320% 5\u201320%"
       },
       {
@@ -1548,7 +1551,7 @@
           "carry-over"
         ],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "subclass": "other",
         "stats": "40 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Piranha_Gun"
@@ -1567,7 +1570,7 @@
         "subclass": "gun",
         "stats": "200 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "8.33% 15.97%"
       },
       {
@@ -1580,11 +1583,11 @@
         "tags": [
           "carry-over"
         ],
-        "topPick": false,
+        "topPick": true,
         "subclass": "bow",
         "stats": "53 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tsunami",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "16.67%"
       },
       {
@@ -1712,7 +1715,8 @@
         "categories": [
           "ranged"
         ],
-        "dropRate": "25%"
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
       },
       {
         "id": "pool-recon-scope",
@@ -1979,104 +1983,107 @@
     ],
     "ammo": [
       {
+        "id": "ammo-crystal-bullet",
+        "name": "Crystal Bullet",
+        "slot": "ammo",
+        "icon": "ammo/crystal-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Crystal Shards and Musket Balls",
+        "why": "Splits into crystal shards on hit.",
+        "stats": "9 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-ichor-arrow",
+        "name": "Ichor Arrow",
+        "slot": "ammo",
+        "icon": "ammo/ichor-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from 150 Wooden Arrows and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "16 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "tags": [],
+        "topPick": false
+      },
+      {
         "id": "ammo-chlorophyte-bullet",
         "name": "Chlorophyte Bullet",
         "slot": "ammo",
         "icon": "ammo/chlorophyte-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Homes in on enemies. Less damage than a Crystal Bullet, but it rarely misses.",
-        "tags": [],
-        "topPick": false,
-        "stats": "9 ranged dmg",
+        "source": "Crafted at a Hardmode Anvil from Musket Balls and Chlorophyte Bars",
+        "why": "Homes in on nearby enemies.",
+        "ammoRole": "single-target",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 60,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Chlorophyte Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
-      },
-      {
-        "id": "ammo-ichor-bullet",
-        "name": "Ichor Bullet",
-        "slot": "ammo",
-        "icon": "ammo/ichor-bullet.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Lowers enemy defense. Crimson worlds only.",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "9 ranged dmg"
       },
       {
-        "id": "ammo-holy-arrow",
-        "name": "Holy Arrow",
+        "id": "ammo-high-velocity-bullet",
+        "name": "High Velocity Bullet",
         "slot": "ammo",
-        "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
+        "icon": "ammo/high-velocity-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Musket Balls, Pixie Dust, and Crystal Shards",
+        "why": "Very fast bullet with long range.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/High_Velocity_Bullet",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "stats": "11 ranged dmg"
       },
       {
-        "id": "ammo-endless-musket-pouch",
-        "name": "Endless Musket Pouch",
+        "id": "ammo-chlorophyte-arrow",
+        "name": "Chlorophyte Arrow",
         "slot": "ammo",
-        "icon": "ammo/endless-musket-pouch.png",
-        "source": "Crafted at Crystal Ball",
-        "why": "An infinite stack of Musket Balls, so ammo never runs out.",
+        "icon": "ammo/chlorophyte-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Chlorophyte Bars",
+        "why": "Homes in on enemies and bounces.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Endless_Musket_Pouch",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 9999,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          }
-        ],
-        "station": "Crystal Ball"
+        "stats": "16 ranged dmg"
+      },
+      {
+        "id": "ammo-mini-nuke-i",
+        "name": "Mini Nuke I",
+        "slot": "ammo",
+        "icon": "ammo/mini-nuke-i.png",
+        "source": "Crafted at a Hardmode Anvil from Rocket I and Nanites",
+        "why": "Rocket with a large explosion.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mini_Nuke_I",
+        "tags": [],
+        "topPick": false,
+        "stats": "75 ranged dmg"
+      },
+      {
+        "id": "ammo-gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "ammo/gel.png",
+        "source": "Dropped by Slimes",
+        "why": "Ammunition for the Flamethrower.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-stake",
+        "name": "Stake",
+        "slot": "ammo",
+        "icon": "ammo/stake.png",
+        "source": "Crafted at a Sawmill from Wood",
+        "why": "Ammunition for the Stake Launcher.",
+        "ammoRole": "special",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake",
+        "tags": [],
+        "topPick": false,
+        "stats": "25 ranged dmg"
       }
     ],
     "accessoryPool": [
