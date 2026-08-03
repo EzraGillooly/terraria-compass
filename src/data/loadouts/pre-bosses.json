@@ -3138,29 +3138,55 @@
     ],
     "ammo": [
       {
-        "id": "ammo-wooden-arrow",
-        "name": "Wooden Arrow",
+        "id": "ammo-frostburn-arrow",
+        "name": "Frostburn Arrow",
         "slot": "ammo",
-        "icon": "ammo/wooden-arrow.png",
-        "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
-        "why": "The default arrow.",
-        "tags": [],
-        "topPick": false,
-        "stats": "5 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow",
-        "dropRate": "33.33%"
-      },
-      {
-        "id": "ammo-flaming-arrow",
-        "name": "Flaming Arrow",
-        "slot": "ammo",
-        "icon": "ammo/flaming-arrow.png",
-        "source": "Crafted at By Hand",
-        "why": "Sets enemies on fire.",
+        "icon": "ammo/frostburn-arrow.png",
+        "source": "Crafted at a Work Bench from Wooden Arrows and Ice Torches",
+        "why": "Inflicts the Frostburn debuff for extra damage over time.",
         "tags": [],
         "topPick": false,
         "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Arrow",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostburn_Arrow",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-silver-bullet",
+        "name": "Silver Bullet",
+        "slot": "ammo",
+        "icon": "ammo/silver-bullet.png",
+        "source": "Crafted at a Work Bench from Silver Bars",
+        "why": "A cheap early upgrade over Musket Balls.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bullet",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-tungsten-bullet",
+        "name": "Tungsten Bullet",
+        "slot": "ammo",
+        "icon": "ammo/tungsten-bullet.png",
+        "source": "Crafted at a Work Bench from Tungsten Bars",
+        "why": "The Tungsten equivalent of the Silver Bullet.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bullet",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "ammo/jesters-arrow.png",
+        "source": "Crafted at a Work Bench",
+        "why": "Pierces infinitely and passes through blocks.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow",
+        "tags": [],
+        "topPick": false,
         "materials": [
           {
             "name": "Wooden Arrow",
@@ -3168,25 +3194,39 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
           },
           {
-            "name": "Torch",
+            "name": "Fallen Star",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "By Hand"
+        "station": "Work Bench",
+        "stats": "10 ranged dmg"
       },
       {
-        "id": "ammo-musket-ball",
-        "name": "Musket Ball",
+        "id": "ammo-unholy-arrow",
+        "name": "Unholy Arrow",
         "slot": "ammo",
-        "icon": "ammo/musket-ball.png",
-        "source": "Sold by the Arms Dealer",
-        "why": "The default bullet.",
+        "icon": "ammo/unholy-arrow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Pierces several enemies.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball",
-        "dropRate": "0.64% 0.6% (Hardmode)"
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 25,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Worm Tooth",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Tooth"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "12 ranged dmg"
       }
     ],
     "accessoryPool": [
