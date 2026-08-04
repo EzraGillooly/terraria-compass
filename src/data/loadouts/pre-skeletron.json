@@ -3294,20 +3294,6 @@
         "station": "Iron Anvil or Lead Anvil"
       },
       {
-        "id": "explosive-trap-rod",
-        "name": "Explosive Trap Rod",
-        "slot": "weapon",
-        "icon": "items/explosive-trap-rod.png",
-        "source": "Bought from the Tavernkeep for Defender Medals (tier 1)",
-        "why": "Tier 1 Tavernkeep sentry that lays a trap detonating when enemies pass over it.",
-        "tags": [],
-        "topPick": false,
-        "subclass": "sentries",
-        "stats": "24 summon dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Rod",
-        "tier": "good"
-      },
-      {
         "id": "flameburst-rod",
         "name": "Flameburst Rod",
         "slot": "weapon",
@@ -3419,7 +3405,7 @@
         "slot": "weapon",
         "icon": "items/flinx-staff.png",
         "source": "Crafted at Work Bench",
-        "why": "Summons a Flinx minion; Flinx Fur drops from Snow Flinxes in the Snow biome.",
+        "why": "Summons a Flinx minion.",
         "tags": [
           "carry-over"
         ],
@@ -3448,7 +3434,7 @@
         "slot": "weapon",
         "icon": "items/vampire-frog-staff.png",
         "source": "Dropped by Zombie Merman and Wandering Eye Fish (Blood Moon)",
-        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon with no boss required.",
+        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon.",
         "tags": [
           "carry-over"
         ],
@@ -3728,14 +3714,15 @@
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor",
+        "source": "Bought from the Witch Doctor at night.",
         "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
           "summon"
         ],
-        "quality": "good"
+        "quality": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
         "id": "pool-shield-of-cthulhu",
