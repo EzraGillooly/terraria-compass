@@ -76,7 +76,7 @@
         "slot": "weapon",
         "icon": "items/sunfury.png",
         "source": "Found in Shadow Chests (Underworld) and Obsidian Lock Boxes",
-        "why": "Underworld Shadow Chest flail from the Hellstone tier.",
+        "why": "A flail that inflicts On Fire!.",
         "tags": [],
         "topPick": true,
         "subclass": "flail",
@@ -150,7 +150,7 @@
         "slot": "weapon",
         "icon": "items/hive-five.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crafted from Queen Bee's Bee Wax and releases homing bee projectiles.",
+        "why": "Releases homing bee projectiles.",
         "tags": [
           "carry-over"
         ],
@@ -174,7 +174,7 @@
         "slot": "weapon",
         "icon": "items/flamarang.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Hellstone-tier boomerang that inflicts On Fire.",
+        "why": "A boomerang that inflicts On Fire!.",
         "tags": [
           "carry-over"
         ],
@@ -292,7 +292,7 @@
         "slot": "weapon",
         "icon": "items/ball-o-hurt.png",
         "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt/Defiled Crates",
-        "why": "Corruption flail obtained by breaking Shadow Orbs, needs no boss.",
+        "why": "A Corruption flail.",
         "tags": [
           "carry-over"
         ],
@@ -370,8 +370,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -468,6 +467,35 @@
         ],
         "station": "Tinkerer's Workshop",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar or Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "altOf": "Shield of Cthulhu"
       }
     ],
     "buffs": [
@@ -476,8 +504,8 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "This remains the safest default combat potion for late pre-Hardmode melee.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": true,
         "dropRate": "0.18%",
@@ -498,15 +526,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "regeneration-potion",
         "name": "Regeneration Potion",
         "slot": "buff",
         "icon": "potions/regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "It makes long boss bridges and Underworld fights more forgiving.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground chests.",
+        "why": "Grants steady life regeneration.",
         "tags": [],
         "topPick": false,
         "dropRate": "9.52% (Underground)",
@@ -527,15 +556,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Regeneration_Potion"
       },
       {
         "id": "swiftness-potion",
         "name": "Swiftness Potion",
         "slot": "buff",
         "icon": "potions/swiftness-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Extra movement speed is still one of the best ways to improve real fight consistency.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases movement speed by 25%.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -556,15 +586,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Swiftness_Potion"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Damage reduction gets better the scarier the fight becomes, and this phase has the scariest pre-Hardmode one.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -584,17 +615,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       },
       {
         "id": "sharpening-station",
         "name": "Sharpening Station",
         "slot": "buff",
         "icon": "potions/sharpening-station.png",
-        "source": "Found in Underground Cabins in the Underground Jungle",
-        "why": "The armor penetration bonus is one of the best class-specific pre-Hardmode melee boosts.",
+        "source": "Found in Underground Cabins in the Underground Jungle, or bought from the Merchant in Hardmode.",
+        "why": "Melee attacks and projectiles gain 12 armor penetration.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sharpening_Station"
       },
       {
         "id": "ale",
@@ -602,7 +635,7 @@
         "slot": "buff",
         "icon": "potions/ale.png",
         "source": "Purchased from the Tavernkeep",
-        "why": "Tipsy: more melee damage and crit for less defense.",
+        "why": "More melee damage and crit for less defense.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ale",
@@ -621,7 +654,7 @@
         "slot": "buff",
         "icon": "potions/sake.png",
         "source": "Purchased from the Traveling Merchant",
-        "why": "Longer-lasting Tipsy than Ale.",
+        "why": "More melee damage and critical strike chance for less defense; lasts longer than Ale.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sake"
@@ -703,22 +736,6 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-ram-rune",
-            "name": "Ram Rune",
-            "slot": "accessory",
-            "icon": "accessories/ram-rune.png",
-            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
-            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
-            "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
-          },
-          {
             "id": "pool-panic-necklace",
             "name": "Panic Necklace",
             "slot": "accessory",
@@ -783,32 +800,20 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
             "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "icon": "accessories/ram-rune.png",
+            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "materials": [
-              {
-                "name": "Demonite Bar or Crimtane Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Topaz",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           }
         ]
       },
@@ -1125,7 +1130,7 @@
         "slot": "weapon",
         "icon": "items/handgun.png",
         "source": "Found in Locked Gold Chests and Golden Lock Boxes in the Dungeon",
-        "why": "Pre-Hardmode gun found in the Dungeon, which requires defeating Skeletron.",
+        "why": "A pre-Hardmode gun.",
         "tags": [],
         "topPick": false,
         "subclass": "gun",
@@ -1140,7 +1145,7 @@
         "slot": "weapon",
         "icon": "items/molten-fury.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Hellstone-tier bow that ignites the arrows it fires.",
+        "why": "A bow that ignites the arrows it fires.",
         "tags": [
           "carry-over"
         ],
@@ -1432,6 +1437,35 @@
         ],
         "station": "Tinkerer's Workshop",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar or Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "altOf": "Shield of Cthulhu"
       }
     ],
     "buffs": [
@@ -1440,8 +1474,8 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground and Cavern chests.",
+        "why": "+20% arrow speed and +10% arrow damage.",
         "tags": [],
         "topPick": true,
         "dropRate": "9.52% (Underground), 11.11% (Cavern)",
@@ -1462,15 +1496,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Archery_Potion"
       },
       {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
         "icon": "potions/ammo-reservation-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "This keeps your best arrows and bullets alive longer in a phase where boss attempts can chew through supplies.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "20% chance not to consume ammo.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -1490,15 +1525,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ammo_Reservation_Potion"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Defense remains useful because even ranged mistakes get punished hard in the Underworld.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -1519,7 +1555,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       }
     ],
     "ammo": [
@@ -1714,22 +1751,6 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-ram-rune",
-            "name": "Ram Rune",
-            "slot": "accessory",
-            "icon": "accessories/ram-rune.png",
-            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
-            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
-            "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
-          },
-          {
             "id": "pool-balloons",
             "name": "Balloons",
             "slot": "accessory",
@@ -1810,32 +1831,20 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
             "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "icon": "accessories/ram-rune.png",
+            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "materials": [
-              {
-                "name": "Demonite Bar or Crimtane Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Topaz",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           }
         ]
       },
@@ -2095,7 +2104,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Missile",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "14.29%"
       },
       {
@@ -2125,11 +2134,12 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "wand",
         "stats": "13 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain",
         "tier": "good",
-        "dropRate": "25%"
+        "dropRate": "25%",
+        "support": true,
+        "subclass": "other"
       },
       {
         "id": "demon-scythe",
@@ -2176,11 +2186,12 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "other",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
-        "tier": "best",
-        "dropRate": "20%"
+        "tier": "good",
+        "dropRate": "20%",
+        "support": true,
+        "subclass": "other"
       },
       {
         "id": "thunder-zapper",
@@ -2251,7 +2262,8 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 16
+        "defense": 16,
+        "effect": "+27% magic damage \u00b7 Reduces the mana cost of the Space Gun, Laser Rifle, Gray Zapinator, and Orange Zapinator to 0 \u00b7 Immunity to meteorite projectiles during the Meteor Shower event \u00b7 Leaves behind a trail of flames."
       },
       {
         "id": "jungle-armor",
@@ -2313,7 +2325,8 @@
           "Desktop version",
           "Jungle Pants"
         ],
-        "defense": 17
+        "defense": 17,
+        "effect": "+6% magic damage \u00b7 +12% magic critical strike chance \u00b7 +80 maximum mana \u00b7 +16% mana cost reduction \u00b7 Emits grass particles while moving."
       },
       {
         "id": "wizard-set",
@@ -2359,7 +2372,9 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "pool-magnet-flower",
@@ -2387,7 +2402,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
       },
       {
         "id": "pool-shield-of-cthulhu",
@@ -2463,6 +2479,35 @@
         ],
         "station": "Tinkerer's Workshop",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar or Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "altOf": "Shield of Cthulhu"
       }
     ],
     "buffs": [
@@ -2471,7 +2516,7 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
@@ -2498,14 +2543,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Power_Potion"
       },
       {
         "id": "mana-regeneration-potion",
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
@@ -2532,15 +2578,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "The defense boost still buys much-needed breathing room for a fragile class.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -2561,17 +2608,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "crystal-ball",
         "name": "Crystal Ball",
         "slot": "buff",
         "icon": "potions/crystal-ball.png",
-        "source": "Bought from the Wizard",
-        "why": "The Clairvoyance station buff is an easy mage-specific bonus if you have the setup time.",
+        "source": "Purchased from the Wizard.",
+        "why": "+20 maximum mana, +5% magic damage, +2% magic critical strike chance, and -2% mana usage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Ball"
       }
     ],
     "ammo": [],
@@ -2642,22 +2691,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-ram-rune",
-            "name": "Ram Rune",
-            "slot": "accessory",
-            "icon": "accessories/ram-rune.png",
-            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
-            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
-            "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           },
           {
             "id": "pool-balloons",
@@ -2740,32 +2773,20 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
             "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "icon": "accessories/ram-rune.png",
+            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "materials": [
-              {
-                "name": "Demonite Bar or Crimtane Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Topaz",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           }
         ]
       },
@@ -2976,7 +2997,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
           },
           {
             "id": "pool-mana-regeneration-band",
@@ -3030,7 +3052,9 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           }
         ]
       }
@@ -3046,7 +3070,7 @@
         "slot": "weapon",
         "icon": "items/spinal-tap.png",
         "source": "Crafted at Work Bench",
-        "why": "Crafted from Bones and offers long range with piercing.",
+        "why": "Offers long range with piercing.",
         "tags": [],
         "topPick": true,
         "subclass": "whip",
@@ -3073,7 +3097,7 @@
         "slot": "weapon",
         "icon": "items/snapthorn.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Jungle-material whip that inflicts Acid Venom and grants summon tag damage.",
+        "why": "A whip that inflicts Acid Venom and grants summon tag damage.",
         "tags": [
           "carry-over"
         ],
@@ -3081,7 +3105,7 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snapthorn",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Stinger",
@@ -3107,7 +3131,7 @@
         "slot": "weapon",
         "icon": "items/imp-staff.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Summons an Imp minion that fires On Fire! bolts; needs Underworld Hellstone.",
+        "why": "Summons an Imp minion that fires On Fire! bolts.",
         "tags": [
           "carry-over"
         ],
@@ -3155,7 +3179,7 @@
         "subclass": "sentries",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Rod",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "mushroom-staff",
@@ -3197,7 +3221,7 @@
         "slot": "weapon",
         "icon": "items/flinx-staff.png",
         "source": "Crafted at Work Bench",
-        "why": "Summons a Flinx minion; Flinx Fur drops from Snow Flinxes in the Snow biome.",
+        "why": "Summons a Flinx minion.",
         "tags": [
           "carry-over"
         ],
@@ -3205,7 +3229,7 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Flinx Fur",
@@ -3226,7 +3250,7 @@
         "slot": "weapon",
         "icon": "items/vampire-frog-staff.png",
         "source": "Dropped by Zombie Merman and Wandering Eye Fish (Blood Moon)",
-        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon with no boss required.",
+        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon.",
         "tags": [
           "carry-over"
         ],
@@ -3234,7 +3258,7 @@
         "subclass": "minions",
         "stats": "11 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -3251,7 +3275,7 @@
         "subclass": "sentries",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Houndius_Shootius",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -3268,7 +3292,7 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starcrash",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Meteorite Bar",
@@ -3284,6 +3308,100 @@
             "name": "Fallen Star",
             "qty": 10,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "hornet-staff",
+        "name": "Hornet Staff",
+        "slot": "weapon",
+        "icon": "items/hornet-staff.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Summons a Hornet minion that inflicts Poisoned.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "12 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Hornet_Staff",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Bee Wax",
+            "qty": 14,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Wax"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "foxparks",
+        "name": "Foxparks",
+        "slot": "weapon",
+        "icon": "items/foxparks.png",
+        "source": "Found during the day on surface grass, Jungle grass, Snow or Ice (guarded by two Goblin Archers)",
+        "why": "Summons a single Foxparks minion with a held flamethrower attack.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "20 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Foxparks",
+        "tier": "good"
+      },
+      {
+        "id": "abigails-flower",
+        "name": "Abigail's Flower",
+        "slot": "weapon",
+        "icon": "items/abigails-flower.png",
+        "source": "Found growing on grass near a placed Tombstone",
+        "why": "Summons Abigail, a single ghost minion that grows stronger with each re-summon.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "6 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
+        "tier": "good"
+      },
+      {
+        "id": "soulscourge",
+        "name": "Soulscourge",
+        "slot": "weapon",
+        "icon": "items/soulscourge.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption whip.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "vasculash",
+        "name": "Vasculash",
+        "slot": "weapon",
+        "icon": "items/vasculash.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart to the Soulscourge.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "19 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
           }
         ],
         "station": "Iron Anvil or Lead Anvil"
@@ -3370,7 +3488,8 @@
             "station": "Hellforge"
           }
         ],
-        "defense": 15
+        "defense": 15,
+        "effect": "+31% summon damage \u00b7 +1 minion slot \u00b7 +15% whip speed (stacks multiplicatively with melee speed) \u00b7 +30% whip range"
       },
       {
         "id": "bee-armor",
@@ -3381,7 +3500,7 @@
         "why": "Summon damage +10%. No whip bonus, so it suits minion-led builds.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_armor",
         "pieceRecipes": [
           {
             "piece": "Bee Headgear",
@@ -3422,7 +3541,8 @@
           "Bee Breastplate",
           "Bee Greaves"
         ],
-        "defense": 13
+        "defense": 13,
+        "effect": "+23% summon damage \u00b7 +2 minion slots"
       }
     ],
     "accessories": [
@@ -3436,8 +3556,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -3450,14 +3569,15 @@
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor",
+        "source": "Bought from the Witch Doctor at night.",
         "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
           "summon"
         ],
-        "quality": "good"
+        "quality": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
         "id": "pool-shield-of-cthulhu",
@@ -3533,6 +3653,35 @@
         ],
         "station": "Tinkerer's Workshop",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "pool-magiluminescence",
+        "name": "Magiluminescence",
+        "slot": "accessory",
+        "icon": "accessories/magiluminescence.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+        "quality": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar or Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          },
+          {
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "altOf": "Shield of Cthulhu"
       }
     ],
     "buffs": [
@@ -3541,8 +3690,8 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "This remains the most important summon-specific buff because the extra minion slot is such a large power increase.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -3562,35 +3711,38 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Summoning_Potion"
       },
       {
         "id": "bewitching-table",
         "name": "Bewitching Table",
         "slot": "buff",
         "icon": "potions/bewitching-table.png",
-        "source": "Found in Dungeon chests",
-        "why": "It is another easy minion-slot increase and should be part of any serious boss prep routine.",
+        "source": "Found in the Dungeon.",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bewitching_Table"
       },
       {
         "id": "well-fed",
         "name": "Well Fed",
         "slot": "buff",
         "icon": "potions/well-fed.png",
-        "source": "Any cooked food buff",
-        "why": "Summoner still wants every easy stat edge it can get, and this one is almost free.",
+        "source": "Granted by eating most cooked food.",
+        "why": "A minor boost to all stats.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Well_Fed"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "The defense gain helps offset the class's usual fragility during longer boss attempts.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -3611,7 +3763,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       }
     ],
     "ammo": [],
@@ -3682,22 +3835,6 @@
               }
             ],
             "station": "Tinkerer's Workshop"
-          },
-          {
-            "id": "pool-ram-rune",
-            "name": "Ram Rune",
-            "slot": "accessory",
-            "icon": "accessories/ram-rune.png",
-            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
-            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
-            "quality": "good",
-            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           },
           {
             "id": "pool-balloons",
@@ -3780,32 +3917,20 @@
             "station": "Tinkerer's Workshop"
           },
           {
-            "id": "pool-magiluminescence",
-            "name": "Magiluminescence",
+            "id": "pool-ram-rune",
+            "name": "Ram Rune",
             "slot": "accessory",
-            "icon": "accessories/magiluminescence.png",
-            "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
+            "icon": "accessories/ram-rune.png",
+            "source": "Found in Locked Gold Chests in the Dungeon, and in Golden Lock Boxes from Dungeon Crates or Stockade Crates",
+            "why": "Allows the player to perform a ground-pound, which greatly increases the player's downward mobility and damages nearby enemies.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magiluminescence",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ram_Rune",
             "quality": "good",
-            "materials": [
-              {
-                "name": "Demonite Bar or Crimtane Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Topaz",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            "notes": "The Ram Rune can be relevant into Hardmode in some niche scenarios if combined with a Gravitation Potion, as it provides high vertical acceleration on par with the Slimy Saddle, but can be used both upwards and downwards."
           }
         ]
       },
@@ -4020,6 +4145,44 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
+          }
+        ]
+      }
+    ],
+    "minionMix": [
+      {
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 2
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 1
+          },
+          {
+            "id": "hornet-staff",
+            "count": 2
+          },
+          {
+            "id": "imp-staff",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 3
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 2
+          },
+          {
+            "id": "imp-staff",
+            "count": 1
           }
         ]
       }

@@ -53,7 +53,7 @@
         "slot": "weapon",
         "icon": "items/chik.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Only One Drop yoyo, made from early-Hardmode materials.",
+        "why": "Only One Drop yoyo.",
         "tags": [],
         "topPick": false,
         "subclass": "yoyo",
@@ -157,7 +157,7 @@
         "slot": "weapon",
         "icon": "items/anchor.png",
         "source": "Found in Pearlwood Crates (fished in Hardmode)",
-        "why": "Launched flail found in Pearlwood Crates fished in Hardmode.",
+        "why": "A launched flail.",
         "tags": [],
         "topPick": false,
         "subclass": "flail",
@@ -224,7 +224,7 @@
         "slot": "weapon",
         "icon": "items/flairon.png",
         "source": "Dropped by Duke Fishron",
-        "why": "Hardmode flail from Duke Fishron, who requires no boss prerequisite to summon.",
+        "why": "A Hardmode flail.",
         "tags": [],
         "topPick": false,
         "subclass": "flail",
@@ -313,7 +313,7 @@
         "slot": "weapon",
         "icon": "items/blue-phasesaber.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Hardmode upgrade of the Blue Phaseblade using Crystal Shards.",
+        "why": "Hardmode upgrade of the Blue Phaseblade.",
         "tags": [],
         "topPick": false,
         "subclass": "sword",
@@ -370,7 +370,7 @@
         "slot": "weapon",
         "icon": "items/adamantite-glaive.png",
         "source": "Crafted at Adamantite Forge or Titanium Forge",
-        "why": "Long-reach spear that stabs through several enemies.",
+        "why": "A Hardmode spear.",
         "tags": [],
         "topPick": false,
         "subclass": "spear",
@@ -392,7 +392,7 @@
         "slot": "weapon",
         "icon": "items/titanium-trident.png",
         "source": "Crafted at Adamantite Forge or Titanium Forge",
-        "why": "Long-reach spear that stabs through several enemies.",
+        "why": "A Hardmode spear.",
         "tags": [],
         "topPick": false,
         "subclass": "spear",
@@ -997,7 +997,7 @@
         "slot": "weapon",
         "icon": "items/flamarang.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Hellstone-tier boomerang that inflicts On Fire.",
+        "why": "A boomerang that inflicts On Fire!.",
         "tags": [
           "carry-over"
         ],
@@ -1026,7 +1026,7 @@
         "slot": "weapon",
         "icon": "items/sunfury.png",
         "source": "Found in Shadow Chests (Underworld) and Obsidian Lock Boxes",
-        "why": "Underworld Shadow Chest flail from the Hellstone tier.",
+        "why": "A flail that inflicts On Fire!.",
         "tags": [
           "carry-over"
         ],
@@ -1308,8 +1308,8 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "This is still the easiest always-worth-it potion in a phase where every boss hits much harder.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": true,
         "dropRate": "0.18%",
@@ -1330,15 +1330,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Damage reduction scales beautifully once Hardmode boss patterns start punishing every mistake.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -1358,14 +1359,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       },
       {
         "id": "wrath-potion",
         "name": "Wrath Potion",
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
         "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false,
@@ -1386,14 +1388,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wrath_Potion"
       },
       {
         "id": "lifeforce-potion",
         "name": "Lifeforce Potion",
         "slot": "buff",
         "icon": "potions/lifeforce-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests in the Underworld.",
         "why": "Raises maximum health by 20%.",
         "tags": [],
         "topPick": false,
@@ -1425,7 +1428,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Waterleaf"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lifeforce_Potion"
       }
     ],
     "ammo": [],
@@ -2243,7 +2247,7 @@
         "slot": "weapon",
         "icon": "items/pearlwood-bow.png",
         "source": "Crafted at Work Bench",
-        "why": "Crafted from Pearlwood, which only generates in the Hardmode Hallow.",
+        "why": "A Hardmode bow that fires arrows.",
         "tags": [],
         "topPick": false,
         "subclass": "bow",
@@ -2772,8 +2776,8 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground and Cavern chests.",
+        "why": "+20% arrow speed and +10% arrow damage.",
         "tags": [],
         "topPick": true,
         "dropRate": "9.52% (Underground), 11.11% (Cavern)",
@@ -2794,15 +2798,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Archery_Potion"
       },
       {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
         "icon": "potions/ammo-reservation-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Saving ammo matters a lot once Hardmode weapons and special arrows start getting expensive.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "20% chance not to consume ammo.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -2822,25 +2827,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ammo_Reservation_Potion"
       },
       {
         "id": "ammo-box",
         "name": "Ammo Box",
         "slot": "buff",
         "icon": "potions/ammo-box.png",
-        "source": "Placed station buff",
-        "why": "It stacks with potion support and is basically free value before any major ranged boss attempt.",
+        "source": "Purchased from the Arms Dealer (Hardmode).",
+        "why": "20% chance not to consume ammo.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ammo_Box"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Ranger still benefits from the universal defense bump because avoiding every hit is unrealistic.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -2861,7 +2868,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       }
     ],
     "ammo": [
@@ -3489,7 +3497,7 @@
         "name": "Bubble Gun",
         "slot": "weapon",
         "icon": "items/bubble-gun.png",
-        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Rapidly fires a short-range spread of bubbles.",
         "tags": [],
         "topPick": false,
@@ -3525,7 +3533,7 @@
         "subclass": "spell-tome",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Storm",
-        "tier": "best",
+        "tier": "other",
         "materials": [
           {
             "name": "Spell Tome",
@@ -3583,7 +3591,7 @@
         "name": "Crystal Serpent",
         "slot": "weapon",
         "icon": "items/crystal-serpent.png",
-        "source": "Fished in The Hallow (Hardmode)",
+        "source": "Fished only in the Hallow (Hardmode)",
         "why": "Fires a crystal bolt that bursts into shards on impact.",
         "tags": [],
         "topPick": false,
@@ -3761,7 +3769,7 @@
         "subclass": "other",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -3773,11 +3781,12 @@
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [],
         "topPick": false,
-        "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
         "tier": "good",
-        "dropRate": "6.67%"
+        "dropRate": "6.67%",
+        "support": true,
+        "subclass": "other"
       },
       {
         "id": "blood-thorn",
@@ -3852,7 +3861,8 @@
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
         "tier": "other",
-        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "killing-deck",
@@ -3866,7 +3876,7 @@
         "subclass": "other",
         "stats": "22 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Killing_Deck",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "life-drain",
@@ -3880,7 +3890,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Drain",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "20%"
       },
       {
@@ -3956,7 +3966,8 @@
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
         "tier": "other",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "shadowflame-hex-doll",
@@ -3970,7 +3981,7 @@
         "subclass": "other",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "16.7% 33.3%"
       },
       {
@@ -3986,7 +3997,8 @@
         "stats": "65 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
         "tier": "other",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "unholy-trident",
@@ -4073,6 +4085,118 @@
     ],
     "armor": [
       {
+        "id": "adamantite-armor",
+        "name": "Adamantite Armor",
+        "slot": "armor",
+        "icon": "armor-sets/adamantite-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_armor",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": true,
+        "headpiece": "Adamantite Headgear",
+        "pieces": [
+          "Adamantite Headgear",
+          "Adamantite Breastplate",
+          "Adamantite Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Adamantite Headgear",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Adamantite Breastplate",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Adamantite Leggings",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 32,
+        "headpieceBonus": "+20% magic damage \u00b7 +19% magic critical strike chance \u00b7 +80 maximum mana \u00b7 +19% mana cost reduction \u00b7 +5% movement speed"
+      },
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor-sets/titanium-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_armor",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "headpiece": "Titanium Headgear",
+        "pieces": [
+          "Titanium Headgear",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Titanium Headgear",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 13,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Breastplate",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 26,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Leggings",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 30,
+        "headpieceBonus": "+23% magic damage \u00b7 +13% magic critical strike chance \u00b7 +100 maximum mana \u00b7 +6% movement speed"
+      },
+      {
         "id": "forbidden-armor",
         "name": "Forbidden Armor",
         "slot": "armor",
@@ -4083,7 +4207,7 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true,
+        "topPick": false,
         "pieces": [
           "Forbidden Mask",
           "Forbidden Robes",
@@ -4139,7 +4263,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 26
+        "defense": 26,
+        "effect": "+25% magic and summon damage \u00b7 +80 maximum mana \u00b7 +2 minion slots \u00b7 A Forbidden Sign minion floats behind you; double-tap Down (or Up) to spend 20 mana and call an Ancient Storm at the cursor that rapidly deals 20 contact damage."
       }
     ],
     "accessories": [
@@ -4192,7 +4317,9 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "mana-cloak",
@@ -4304,7 +4431,7 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
@@ -4331,14 +4458,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Power_Potion"
       },
       {
         "id": "mana-regeneration-potion",
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
@@ -4365,25 +4493,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion"
       },
       {
         "id": "crystal-ball",
         "name": "Crystal Ball",
         "slot": "buff",
         "icon": "potions/crystal-ball.png",
-        "source": "Placed station buff from the Wizard",
-        "why": "It is a free pre-fight magic buff, so there is very little reason not to pick it up before boss attempts.",
+        "source": "Purchased from the Wizard.",
+        "why": "+20 maximum mana, +5% magic damage, +2% magic critical strike chance, and -2% mana usage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Ball"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Mage still needs baseline defense because one mistake can turn into a very short attempt.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -4404,7 +4534,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       }
     ],
     "ammo": [],
@@ -4903,7 +5034,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
           },
           {
             "id": "arcane-flower",
@@ -4958,7 +5090,9 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           }
         ]
       }
@@ -4980,7 +5114,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4989,14 +5123,15 @@
         "slot": "weapon",
         "icon": "items/sanguine-staff.png",
         "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
-        "why": "Summons fast Sanguine Bat minions; obtainable early Hardmode with no mechanical boss required.",
+        "why": "Summons fast Sanguine Bat minions.",
         "tags": [],
         "topPick": true,
         "subclass": "minions",
         "stats": "35 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
         "tier": "best",
-        "dropRate": "50% 100%"
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
       },
       {
         "id": "spider-staff",
@@ -5004,13 +5139,13 @@
         "slot": "weapon",
         "icon": "items/spider-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "why": "Summons Spider minions that inflict Acid Venom.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -5032,7 +5167,7 @@
         "subclass": "sentries",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -5054,7 +5189,7 @@
         "subclass": "whip",
         "stats": "37 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -5062,8 +5197,8 @@
         "name": "Tempest Staff",
         "slot": "weapon",
         "icon": "items/tempest-staff.png",
-        "source": "Dropped by Duke Fishron (summonable any time in Hardmode)",
-        "why": "Summons Sharknado minions; Duke Fishron requires only Hardmode, no mechanical boss.",
+        "source": "Dropped by Duke Fishron",
+        "why": "Summons Sharknado minions.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
@@ -5123,7 +5258,7 @@
         "name": "Electric Eel",
         "slot": "weapon",
         "icon": "items/electric-eel.png",
-        "source": "Dropped by Duke Fishron (summonable in Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Duke Fishron drop with long range that chains lightning between enemies.",
         "tags": [],
         "topPick": false,
@@ -5147,7 +5282,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "imp-staff",
@@ -5155,7 +5290,7 @@
         "slot": "weapon",
         "icon": "items/imp-staff.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Summons an Imp minion that fires On Fire! bolts; needs Underworld Hellstone.",
+        "why": "Summons an Imp minion that fires On Fire! bolts.",
         "tags": [
           "carry-over"
         ],
@@ -5163,7 +5298,7 @@
         "subclass": "minions",
         "stats": "17 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff",
-        "tier": "other",
+        "tier": "good",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -5179,7 +5314,7 @@
         "slot": "weapon",
         "icon": "items/spinal-tap.png",
         "source": "Crafted at Work Bench",
-        "why": "Crafted from Bones and offers long range with piercing.",
+        "why": "Offers long range with piercing.",
         "tags": [
           "carry-over"
         ],
@@ -5272,7 +5407,8 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 20
+        "defense": 20,
+        "effect": "+28% summon damage \u00b7 +3 minion slots"
       },
       {
         "id": "titanium-mask",
@@ -5346,14 +5482,15 @@
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor",
+        "source": "Bought from the Witch Doctor at night.",
         "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
           "summon"
         ],
-        "quality": "good"
+        "quality": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
         "id": "pool-shield-of-cthulhu",
@@ -5437,8 +5574,8 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "An extra minion is too good to pass up, so this is the baseline summoner buff for every serious boss attempt.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -5458,25 +5595,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Summoning_Potion"
       },
       {
         "id": "bewitching-table",
         "name": "Bewitching Table",
         "slot": "buff",
         "icon": "potions/bewitching-table.png",
-        "source": "Placed station buff from the Dungeon",
-        "why": "The free extra minion slot stacks perfectly with your potion support and should be active whenever possible.",
+        "source": "Found in the Dungeon.",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bewitching_Table"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Summoner is fragile, so the universal defense potion stays mandatory in practice.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -5497,15 +5636,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Damage reduction is especially helpful for the squishiest class while you learn aggressive Hardmode fights.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -5525,15 +5665,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       },
       {
         "id": "flask-of-ichor",
         "name": "Flask of Ichor",
         "slot": "buff",
         "icon": "potions/flask-of-ichor.png",
-        "source": "Crafted at Imbuing Station",
-        "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
+        "source": "Crafted at an Imbuing Station.",
+        "why": "Coats melee and whip attacks with Ichor, reducing enemy defense.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -5548,7 +5689,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
           }
         ],
-        "station": "Imbuing Station"
+        "station": "Imbuing Station",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Ichor"
       },
       {
         "id": "flask-of-cursed-flames",
@@ -5580,11 +5722,12 @@
         "slot": "buff",
         "icon": "potions/war-table.png",
         "source": "Dropped by the Dark Mage and Ogre during the Old One's Army",
-        "why": "Table buff that boosts minion damage.",
+        "why": "Increases your maximum number of sentries by 1.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table",
-        "dropRate": "50% 100%"
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
       }
     ],
     "ammo": [],
@@ -6087,30 +6230,6 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
-          }
-        ]
-      },
-      {
-        "category": "melee",
-        "items": [
-          {
-            "id": "feral-claws",
-            "name": "Feral Claws",
-            "slot": "accessory",
-            "icon": "accessories/feral-claws.png",
-            "source": "Found in Jungle chests or Jungle Crates",
-            "why": "Increases melee attack speed and grants autoswing to melee weapons.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "melee",
-              "summon"
-            ],
-            "markers": [
-              "whips"
-            ],
-            "dropRate": "19%",
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feral_Claws"
           }
         ]
       }

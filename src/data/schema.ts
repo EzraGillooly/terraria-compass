@@ -59,6 +59,12 @@ export const Item = z.object({
   allClass: z.boolean().optional(),
   /** total defense for this class's configuration of the set */
   defense: z.number().int().optional(),
+  /**
+   * A second defense value, for a set with two viable headpieces at different
+   * defense (Spectre Mask 42 vs Spectre Hood 30). When set, the card preview
+   * shows both as "42 / 30 def".
+   */
+  defenseAlt: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
   /** crafting station, e.g. "Mythril Anvil or Orichalcum Anvil" */
@@ -121,6 +127,13 @@ export const Item = z.object({
    * is dropped there with a distinct note (unlike `markers: ['expert']`, which is
    * for content that cannot be obtained in Classic at all). */
   slotExtra: z.boolean().optional(),
+  /**
+   * A weapon the guide lists under "Support" rather than as a damage pick (the
+   * Crimson Rod's raining cloud, say). It gets its own "Support Items" row in
+   * the Top Picks overview, and ranks in its own subclass once a subclass chip
+   * is selected - so it is never mixed into the Best/Recommended rows.
+   */
+  support: z.boolean().optional(),
   /**
    * How strongly the item is recommended for its phase:
    * 'best'  → best in slot for its subclass (shown in the "All" overview)
@@ -209,6 +222,27 @@ export const Loadout = z.object({
    * the class's actual picks.
    */
   tools: z.array(Item).default([]),
+  /**
+   * Summoner only: the guide's recommended minion combinations for this phase.
+   * A phase may list more than one - a Best combination and an Alternative -
+   * each a set of minions summoned together with a count. Each `id` matches a
+   * weapon in `weapons`, so the card reuses that item's icon, name and modal.
+   * Empty for every non-summoner loadout.
+   */
+  minionMix: z.array(z.object({
+    items: z.array(z.object({
+      id: z.string(),
+      /** How many to summon. Omit when `fillRest` is set - that minion just
+       *  takes whatever slots are left. */
+      count: z.number().int().positive().optional(),
+      /** This minion fills the remaining minion slots rather than a fixed count
+       *  ("Spider x3 + Optic Staff for the rest"). Rendered as "rest". */
+      fillRest: z.boolean().optional(),
+      /** An interchangeable minion for this slot ("Vampire Frog or Foxparks"),
+       *  shown at the same count with an "or" between the two. */
+      or: z.string().optional(),
+    })),
+  })).default([]),
   armor: z.array(Item),
   accessories: z.array(Item),
   buffs: z.array(Item),

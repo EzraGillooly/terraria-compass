@@ -40,7 +40,7 @@
         "name": "The Eye of Cthulhu",
         "slot": "weapon",
         "icon": "items/the-eye-of-cthulhu.png",
-        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
         "tags": [],
         "topPick": true,
@@ -616,7 +616,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -633,8 +633,8 @@
         "name": "Flask of Ichor",
         "slot": "buff",
         "icon": "potions/flask-of-ichor.png",
-        "source": "Crafted at Imbuing Station",
-        "why": "The defense shred is still the most efficient weapon imbue you can carry into hard targets.",
+        "source": "Crafted at an Imbuing Station.",
+        "why": "Coats melee and whip attacks with Ichor, reducing enemy defense.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -649,15 +649,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
           }
         ],
-        "station": "Imbuing Station"
+        "station": "Imbuing Station",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Ichor"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "It remains the universal baseline buff because every new event or Temple pull can hit hard.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -678,15 +679,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Damage reduction continues to scale beautifully once you are tackling denser enemy packs and longer encounters.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -706,14 +708,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       },
       {
         "id": "wrath-potion",
         "name": "Wrath Potion",
         "slot": "buff",
         "icon": "potions/wrath-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
         "why": "Raises damage by 10%.",
         "tags": [],
         "topPick": false,
@@ -734,7 +737,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Deathweed"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Wrath_Potion"
       }
     ],
     "ammo": [],
@@ -775,7 +779,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1359,7 +1363,7 @@
         "name": "Eventide",
         "slot": "weapon",
         "icon": "items/eventide.png",
-        "source": "Dropped by Empress of Light (post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires homing star arrows, converting wooden arrows for free.",
         "tags": [],
         "topPick": false,
@@ -1479,7 +1483,7 @@
         "name": "Jack 'O Lantern Launcher",
         "slot": "weapon",
         "icon": "items/jack-o-lantern-launcher.png",
-        "source": "Dropped by Pumpking during the Pumpkin Moon (post-Plantera)",
+        "source": "Dropped by Pumpking during the Pumpkin Moon",
         "why": "Fires jack-o'-lantern projectiles using rocket ammo.",
         "tags": [],
         "topPick": false,
@@ -1494,7 +1498,7 @@
         "name": "Nail Gun",
         "slot": "weapon",
         "icon": "items/nail-gun.png",
-        "source": "Dropped by Nailheads during a Solar Eclipse (post-Plantera)",
+        "source": "Dropped by Nailheads during a Solar Eclipse",
         "why": "Fires Nails that stick into surfaces and enemies.",
         "tags": [],
         "topPick": true,
@@ -1524,7 +1528,7 @@
         "name": "Rocket Launcher",
         "slot": "weapon",
         "icon": "items/rocket-launcher.png",
-        "source": "Dropped by Skeleton Commandos in the Hardmode Dungeon (post-Plantera)",
+        "source": "Dropped by Skeleton Commandos in the Hardmode Dungeon",
         "why": "Fires rockets whose loaded ammo type sets the projectile's damage and blast behavior.",
         "tags": [],
         "topPick": false,
@@ -1539,7 +1543,7 @@
         "name": "Snowman Cannon",
         "slot": "weapon",
         "icon": "items/snowman-cannon.png",
-        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
         "why": "Fires homing rockets that track the nearest enemy.",
         "tags": [],
         "topPick": false,
@@ -1881,7 +1885,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -1898,8 +1902,8 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground and Cavern chests.",
+        "why": "+20% arrow speed and +10% arrow damage.",
         "tags": [],
         "topPick": true,
         "dropRate": "9.52% (Underground), 11.11% (Cavern)",
@@ -1920,15 +1924,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Archery_Potion"
       },
       {
         "id": "ammo-reservation-potion",
         "name": "Ammo Reservation Potion",
         "slot": "buff",
         "icon": "potions/ammo-reservation-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Ammo savings matter more once rapid-fire endgame-adjacent weapons enter the picture.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "20% chance not to consume ammo.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -1948,25 +1953,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ammo_Reservation_Potion"
       },
       {
         "id": "ammo-box",
         "name": "Ammo Box",
         "slot": "buff",
         "icon": "potions/ammo-box.png",
-        "source": "Placed station buff",
-        "why": "This is free ranged value before every major encounter and stacks with the potion nicely.",
+        "source": "Purchased from the Arms Dealer (Hardmode).",
+        "why": "20% chance not to consume ammo.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ammo_Box"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Even ranger benefits from a sturdier baseline once events and Temple pulls get chaotic.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -1986,7 +1993,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       }
     ],
     "ammo": [
@@ -2160,7 +2168,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2615,7 +2623,7 @@
         "subclass": "magic-gun",
         "stats": "31 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "12.5%"
       },
       {
@@ -2661,7 +2669,8 @@
         "stats": "58 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
         "tier": "other",
-        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
+        "dropRate": "5.19\u201310.37% (increases with wave)",
+        "dropRateExpert": "15.56\u201331.11% (increases with wave)"
       },
       {
         "id": "magnet-sphere",
@@ -2672,11 +2681,13 @@
         "why": "Launches a slow sphere that fires lightning bolts at nearby enemies.",
         "tags": [],
         "topPick": false,
-        "subclass": "spell-tome",
+        "subclass": "other",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
         "tier": "good",
-        "dropRate": "0.33% 0.67%"
+        "dropRate": "0.33%",
+        "support": true,
+        "dropRateExpert": "0.67%"
       },
       {
         "id": "nettle-burst",
@@ -2690,7 +2701,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "12.5%"
       },
       {
@@ -2698,7 +2709,7 @@
         "name": "Nightglow",
         "slot": "weapon",
         "icon": "items/nightglow.png",
-        "source": "Dropped by Empress of Light (summoned post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires a homing prismatic bolt that rains down piercing feathers.",
         "tags": [],
         "topPick": false,
@@ -2721,14 +2732,15 @@
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine",
         "tier": "other",
-        "dropRate": "3.46\u201310.37% 6.22\u201331.11%"
+        "dropRate": "3.46\u201310.37% (increases with wave)",
+        "dropRateExpert": "6.22\u201331.11% (increases with wave)"
       },
       {
         "id": "resonance-scepter",
         "name": "Resonance Scepter",
         "slot": "weapon",
         "icon": "items/resonance-scepter.png",
-        "source": "Dropped by the Princess town NPC when killed (Princess requires Plantera-gated Cyborg and all other NPCs)",
+        "source": "Dropped by the Princess town NPC when killed",
         "why": "Fires a spread of rainbow music notes that pierce enemies.",
         "tags": [],
         "topPick": false,
@@ -2743,7 +2755,7 @@
         "name": "Stellar Tune",
         "slot": "weapon",
         "icon": "items/stellar-tune.png",
-        "source": "Dropped by the Empress of Light (summoned post-Plantera)",
+        "source": "Dropped by the Empress of Light",
         "why": "Fires homing star projectiles that pass through blocks and explode on impact.",
         "tags": [],
         "topPick": false,
@@ -2767,8 +2779,9 @@
         "subclass": "wand",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
-        "tier": "good",
-        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "tier": "best",
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "rainbow-gun",
@@ -2781,17 +2794,18 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "magic-gun",
+        "subclass": "other",
         "stats": "45 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
-        "tier": "good"
+        "tier": "good",
+        "support": true
       },
       {
         "id": "toxic-flask",
         "name": "Toxic Flask",
         "slot": "weapon",
         "icon": "items/toxic-flask.png",
-        "source": "Dropped by Dr. Man Fly (Solar Eclipse, post-mechanical boss)",
+        "source": "Dropped by Dr. Man Fly (Solar Eclipse)",
         "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
         "tags": [
           "carry-over"
@@ -2801,7 +2815,8 @@
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
         "tier": "good",
-        "dropRate": "2.5% 4.94%"
+        "dropRate": "2.5%",
+        "dropRateExpert": "4.94%"
       },
       {
         "id": "nimbus-rod",
@@ -2817,7 +2832,7 @@
         "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "6.67%"
       },
       {
@@ -2835,7 +2850,8 @@
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
         "tier": "best",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "spectre-staff",
@@ -2851,15 +2867,16 @@
         "subclass": "wand",
         "stats": "65 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
-        "tier": "good",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "tier": "best",
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "tome-of-infinite-wisdom",
         "name": "Tome of Infinite Wisdom",
         "slot": "weapon",
         "icon": "items/tome-of-infinite-wisdom.png",
-        "source": "Dropped by Ogres during Tier 2 Old One's Army (requires one mechanical boss)",
+        "source": "Dropped by Ogres during Tier 2 Old One's Army",
         "why": "Fires bursts of pages, or with right-click a large piercing tornado.",
         "tags": [
           "carry-over"
@@ -2868,7 +2885,7 @@
         "subclass": "wand",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "10% 20%"
       },
       {
@@ -2971,61 +2988,8 @@
           }
         ],
         "defense": 42,
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health"
-      },
-      {
-        "id": "spectre-armor-hood",
-        "name": "Spectre Hood Loadout",
-        "slot": "armor",
-        "icon": "armor/spectre-armor-hood.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "pieces": [
-          "Spectre Hood",
-          "Spectre Robe",
-          "Spectre Pants"
-        ],
-        "pieceRecipes": [
-          {
-            "piece": "Spectre Hood",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Robe",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 30
+        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health",
+        "defenseAlt": 30
       }
     ],
     "accessories": [
@@ -3055,7 +3019,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem"
       },
       {
         "id": "pool-sorcerer-emblem",
@@ -3075,35 +3040,6 @@
             "name": "Ranger Emblem",
             "qty": 1,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
-          }
-        ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
         "station": "Tinkerer's Workshop"
@@ -3177,7 +3113,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -3186,6 +3122,38 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
         "quality": "fine"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -3194,7 +3162,7 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
@@ -3221,14 +3189,15 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Power_Potion"
       },
       {
         "id": "mana-regeneration-potion",
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": false,
@@ -3255,25 +3224,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion"
       },
       {
         "id": "crystal-ball",
         "name": "Crystal Ball",
         "slot": "buff",
         "icon": "potions/crystal-ball.png",
-        "source": "Placed station buff from the Wizard",
-        "why": "It is still free magic power before every serious attempt, so it belongs in the routine.",
+        "source": "Purchased from the Wizard.",
+        "why": "+20 maximum mana, +5% magic damage, +2% magic critical strike chance, and -2% mana usage.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Ball"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "The extra forgiveness is welcome because post-Plantera content can punish mage instantly when positioning slips.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -3293,7 +3264,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       }
     ],
     "ammo": [],
@@ -3362,7 +3334,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3849,7 +3821,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
           },
           {
             "id": "mana-flower",
@@ -3875,7 +3848,9 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           }
         ]
       }
@@ -3890,7 +3865,7 @@
         "name": "Deadly Sphere Staff",
         "slot": "weapon",
         "icon": "items/deadly-sphere-staff.png",
-        "source": "Dropped by Deadly Spheres during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Deadly Spheres during a Solar Eclipse",
         "why": "Summons orbiting Deadly Sphere minions that dash at enemies.",
         "tags": [],
         "topPick": true,
@@ -3898,7 +3873,8 @@
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
         "tier": "best",
-        "dropRate": "3.33% 6.56%"
+        "dropRate": "3.33%",
+        "dropRateExpert": "6.56%"
       },
       {
         "id": "desert-tiger-staff",
@@ -3912,7 +3888,7 @@
         "subclass": "minions",
         "stats": "41 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "terraprisma",
@@ -3934,7 +3910,7 @@
         "name": "Kaleidoscope",
         "slot": "weapon",
         "icon": "items/kaleidoscope.png",
-        "source": "Dropped by the Empress of Light (summoned after Plantera)",
+        "source": "Dropped by the Empress of Light",
         "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
         "tags": [],
         "topPick": false,
@@ -3950,14 +3926,15 @@
         "slot": "weapon",
         "icon": "items/morning-star.png",
         "source": "Dropped by Armored Bones enemies in the post-Plantera Hardmode Dungeon",
-        "why": "Dropped by Hardmode Dungeon Armored Bones and gains crit chance with combos.",
+        "why": "A flail that gains critical strike chance with combos.",
         "tags": [],
         "topPick": true,
         "subclass": "whip",
         "stats": "160 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star",
         "tier": "best",
-        "dropRate": "0.5% 1%"
+        "dropRate": "0.5%",
+        "dropRateExpert": "1%"
       },
       {
         "id": "pygmy-staff",
@@ -3971,7 +3948,7 @@
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -3987,7 +3964,8 @@
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff",
         "tier": "other",
-        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
+        "dropRate": "2.5\u201312.5% (increases with wave)",
+        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -4016,7 +3994,8 @@
         "stats": "110 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest",
         "tier": "other",
-        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
+        "dropRate": "2.5\u201312.5% (increases with wave)",
+        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
       },
       {
         "id": "vulgar-display-of-flower",
@@ -4030,7 +4009,7 @@
         "subclass": "whip",
         "stats": "75 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -4047,7 +4026,7 @@
         "subclass": "sentries",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -4071,7 +4050,7 @@
         "subclass": "sentries",
         "stats": "74 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Cane",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "firecracker",
@@ -4096,7 +4075,7 @@
         "slot": "weapon",
         "icon": "items/optic-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Twins (Retanimini and Spazmamini) as one minion; needs Souls of Sight from The Twins.",
+        "why": "Summons Twins (Retanimini and Spazmamini) as one minion.",
         "tags": [
           "carry-over"
         ],
@@ -4104,7 +4083,7 @@
         "subclass": "minions",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Optic_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Black Lens",
@@ -4143,7 +4122,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4152,7 +4131,7 @@
         "slot": "weapon",
         "icon": "items/spider-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "why": "Summons Spider minions that inflict Acid Venom.",
         "tags": [
           "carry-over"
         ],
@@ -4176,7 +4155,7 @@
         "slot": "weapon",
         "icon": "items/durendal.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Hallowed Bar whip with fast use time that boosts minion attack speed.",
+        "why": "A whip with fast use time that boosts minion attack speed.",
         "tags": [
           "carry-over"
         ],
@@ -4193,6 +4172,39 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "sanguine-staff",
+        "name": "Sanguine Staff",
+        "slot": "weapon",
+        "icon": "items/sanguine-staff.png",
+        "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
+        "why": "Summons fast Sanguine Bat minions.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "35 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
+        "tier": "good",
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
+      },
+      {
+        "id": "pirate-staff",
+        "name": "Pirate Staff",
+        "slot": "weapon",
+        "icon": "items/pirate-staff.png",
+        "source": "Dropped by Pirates and the Flying Dutchman during the Pirate Invasion",
+        "why": "Summons a Pirate minion.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "40 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pirate_Staff",
+        "tier": "good",
+        "dropRate": "6.67%"
       }
     ],
     "armor": [
@@ -4213,7 +4225,8 @@
           "Tiki Shirt",
           "Tiki Pants"
         ],
-        "defense": 35
+        "defense": 35,
+        "effect": "+30% summon damage \u00b7 +30% whip range \u00b7 +4 minion slots"
       },
       {
         "id": "spooky-armor",
@@ -4226,7 +4239,7 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_armor",
         "pieceRecipes": [
           {
             "piece": "Spooky Helmet",
@@ -4267,7 +4280,8 @@
           "Spooky Breastplate",
           "Spooky Leggings"
         ],
-        "defense": 30
+        "defense": 30,
+        "effect": "+58% summon damage \u00b7 +4 minion slots \u00b7 +20% movement speed \u00b7 A visual glowing effect around the player."
       }
     ],
     "accessories": [
@@ -4317,49 +4331,15 @@
         "name": "Pygmy Necklace",
         "slot": "accessory",
         "icon": "accessories/pygmy-necklace.png",
-        "source": "Bought from the Witch Doctor",
+        "source": "Bought from the Witch Doctor at night.",
         "why": "+1 minion slot.",
         "tags": [],
         "topPick": false,
         "categories": [
           "summon"
         ],
-        "quality": "good"
-      },
-      {
-        "id": "master-ninja-gear",
-        "name": "Master Ninja Gear",
-        "slot": "accessory",
-        "icon": "accessories/master-ninja-gear.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility",
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Tiger Climbing Gear",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
-          },
-          {
-            "name": "Tabi",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
-          },
-          {
-            "name": "Black Belt",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
+        "quality": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
         "id": "terraspark-boots",
@@ -4395,7 +4375,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -4404,6 +4384,42 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
         "quality": "fine"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -4412,8 +4428,8 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "An extra minion is still the best single buff you can bring into a summoner build.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -4433,25 +4449,27 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Summoning_Potion"
       },
       {
         "id": "bewitching-table",
         "name": "Bewitching Table",
         "slot": "buff",
         "icon": "potions/bewitching-table.png",
-        "source": "Placed station buff from the Dungeon",
-        "why": "It stacks cleanly with the potion and remains part of every real summoner pre-fight routine.",
+        "source": "Found in the Dungeon.",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bewitching_Table"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Summoner still needs all the baseline survivability help it can get.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -4472,15 +4490,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "endurance-potion",
         "name": "Endurance Potion",
         "slot": "buff",
         "icon": "potions/endurance-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "The damage reduction is especially welcome when a summoner gets clipped by dense event patterns.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Reduces damage taken by 10%.",
         "tags": [],
         "topPick": false,
         "materials": [
@@ -4500,15 +4519,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Blinkroot"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Endurance_Potion"
       },
       {
         "id": "flask-of-ichor",
         "name": "Flask of Ichor",
         "slot": "buff",
         "icon": "potions/flask-of-ichor.png",
-        "source": "Crafted at Imbuing Station",
-        "why": "The defense reduction is too strong to ignore, which makes this the best melee weapon imbue for the phase.",
+        "source": "Crafted at an Imbuing Station.",
+        "why": "Coats melee and whip attacks with Ichor, reducing enemy defense.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -4523,7 +4543,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
           }
         ],
-        "station": "Imbuing Station"
+        "station": "Imbuing Station",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flask_of_Ichor"
       },
       {
         "id": "flask-of-venom",
@@ -4555,11 +4576,12 @@
         "slot": "buff",
         "icon": "potions/war-table.png",
         "source": "Dropped by the Dark Mage and Ogre during the Old One's Army",
-        "why": "Table buff that boosts minion damage.",
+        "why": "Increases your maximum number of sentries by 1.",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://terraria.wiki.gg/wiki/War_Table",
-        "dropRate": "50% 100%"
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
       }
     ],
     "ammo": [],
@@ -4628,7 +4650,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -5132,7 +5154,9 @@
             "categories": [
               "summon"
             ],
-            "dropRate": "2.86\u201320% 5\u201320%"
+            "dropRate": "2.86\u201320%",
+            "dropRateExpert": "5\u201320%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
           }
         ]
       }

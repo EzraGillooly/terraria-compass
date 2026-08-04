@@ -284,3 +284,7 @@
 .variantText { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .variantName { font-weight: 700; font-size: 13px; color: var(--ink-soft); line-height: 1.2; }
 .variantEffect { font-size: 12px; color: var(--ink-mute); line-height: 1.35; }
+
+/* Boss names inside an item's Source line link to the boss roadmap. */
+.bossLink { color: var(--accent); text-decoration: underline; font-weight: 700; }
+.bossLink:hover { color: var(--warm); }

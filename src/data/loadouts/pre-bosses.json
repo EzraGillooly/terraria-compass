@@ -220,7 +220,7 @@
         "slot": "weapon",
         "icon": "items/trimarang.png",
         "source": "Crafted at Work Bench",
-        "why": "Throws three boomerangs at once, combining three pre-boss boomerangs.",
+        "why": "Throws three boomerangs at once.",
         "tags": [],
         "topPick": false,
         "subclass": "boomerang",
@@ -267,7 +267,7 @@
         "slot": "weapon",
         "icon": "items/ball-o-hurt.png",
         "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt/Defiled Crates",
-        "why": "Corruption flail obtained by breaking Shadow Orbs.",
+        "why": "A Corruption flail.",
         "tags": [],
         "topPick": true,
         "subclass": "flail",
@@ -510,7 +510,7 @@
         "slot": "weapon",
         "icon": "items/bone-sword.png",
         "source": "Dropped by Skeletons",
-        "why": "Dropped by Skeletons; lobs a bone projectile on hitting an enemy.",
+        "why": "Lobs a bone projectile on hitting an enemy.",
         "tags": [],
         "topPick": false,
         "subclass": "sword",
@@ -562,7 +562,7 @@
         "slot": "weapon",
         "icon": "items/cactus-sword.png",
         "source": "Crafted at Work Bench",
-        "why": "Crafted from Cactus gathered in the Desert.",
+        "why": "A pre-Hardmode broadsword with more range than most early-game weapons.",
         "tags": [],
         "topPick": false,
         "subclass": "sword",
@@ -1723,8 +1723,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -1800,8 +1799,8 @@
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "This is the default early combat potion because the defense increase matters in every fight.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": true,
         "dropRate": "0.18%",
@@ -1822,15 +1821,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "swiftness-potion",
         "name": "Swiftness Potion",
         "slot": "buff",
         "icon": "potions/swiftness-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Extra movement speed compounds with your mobility accessories and makes dodging much more forgiving.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases movement speed by 25%.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -1851,15 +1851,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Swiftness_Potion"
       },
       {
         "id": "regeneration-potion",
         "name": "Regeneration Potion",
         "slot": "buff",
         "icon": "potions/regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "It gives a steady survivability bump through long exploration trips and drawn-out boss fights.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground chests.",
+        "why": "Grants steady life regeneration.",
         "tags": [],
         "topPick": false,
         "dropRate": "9.52% (Underground)",
@@ -1880,17 +1881,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Regeneration_Potion"
       },
       {
         "id": "well-fed",
         "name": "Well Fed",
         "slot": "buff",
         "icon": "potions/well-fed.png",
-        "source": "Any cooked food buff",
-        "why": "A food buff is easy value and should be active almost all the time once you can maintain it.",
+        "source": "Granted by eating most cooked food.",
+        "why": "A minor boost to all stats.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Well_Fed"
       }
     ],
     "ammo": [],
@@ -3043,8 +3046,8 @@
         "name": "Archery Potion",
         "slot": "buff",
         "icon": "potions/archery-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Raises arrow damage by 10% and arrow speed by 20%. Bows only.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Underground and Cavern chests.",
+        "why": "+20% arrow speed and +10% arrow damage.",
         "tags": [],
         "topPick": true,
         "dropRate": "9.52% (Underground), 11.11% (Cavern)",
@@ -3065,15 +3068,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Lens"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Archery_Potion"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Even ranged classes need extra defense when bosses or cave enemies close the gap.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -3094,15 +3098,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "swiftness-potion",
         "name": "Swiftness Potion",
         "slot": "buff",
         "icon": "potions/swiftness-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Kiting gets much easier when you stack this with early movement accessories.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases movement speed by 25%.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -3123,17 +3128,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Cactus"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Swiftness_Potion"
       },
       {
         "id": "well-fed",
         "name": "Well Fed",
         "slot": "buff",
         "icon": "potions/well-fed.png",
-        "source": "Any cooked food buff",
-        "why": "It is a free all-purpose bump to damage, survivability, and movement.",
+        "source": "Granted by eating most cooked food.",
+        "why": "A minor boost to all stats.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Well_Fed"
       }
     ],
     "ammo": [
@@ -3507,7 +3514,7 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amber_Staff",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Sturdy Fossil",
@@ -3660,7 +3667,7 @@
         "subclass": "magic-gun",
         "stats": "42 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Gray_Zapinator",
-        "tier": "best"
+        "tier": "other"
       },
       {
         "id": "space-gun",
@@ -3683,21 +3690,6 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil"
-      },
-      {
-        "id": "crimson-rod",
-        "name": "Crimson Rod",
-        "slot": "weapon",
-        "icon": "items/crimson-rod.png",
-        "source": "Destroyed from Crimson Hearts, or fished in Crimson/Hematic Crates",
-        "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
-        "tags": [],
-        "topPick": true,
-        "subclass": "other",
-        "stats": "12 magic dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
-        "tier": "best",
-        "dropRate": "20%"
       },
       {
         "id": "amethyst-staff",
@@ -3834,8 +3826,24 @@
         "subclass": "spell-tome",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Scythe",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "2.86%"
+      },
+      {
+        "id": "crimson-rod",
+        "name": "Crimson Rod",
+        "slot": "weapon",
+        "icon": "items/crimson-rod.png",
+        "source": "Destroyed from Crimson Hearts, or fished in Crimson/Hematic Crates",
+        "why": "Places a lingering blood cloud that rains piercing droplets downward onto enemies below.",
+        "tags": [],
+        "topPick": true,
+        "stats": "12 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
+        "tier": "good",
+        "dropRate": "20%",
+        "support": true,
+        "subclass": "other"
       }
     ],
     "armor": [
@@ -3846,6 +3854,7 @@
         "icon": "armor/jungle-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "16% reduced mana costs.",
+        "effect": "+6% magic damage \u00b7 +12% magic critical strike chance \u00b7 +80 maximum mana \u00b7 +16% mana cost reduction \u00b7 Emits grass particles while moving.",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_armor",
         "tags": [],
         "topPick": true,
@@ -3909,7 +3918,7 @@
         "slot": "accessory",
         "icon": "accessories/celestial-cuffs.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "why": "Adds mana-on-hit and extra maximum mana to a caster build.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3930,7 +3939,9 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "pool-magnet-flower",
@@ -3938,7 +3949,7 @@
         "slot": "accessory",
         "icon": "accessories/magnet-flower.png",
         "source": "Crafted at Tinkerer's Workshop",
-        "why": "Reduces mana cost by 8% and enables the player to collect mana stars more easily.",
+        "why": "Combines the Mana Flower and Celestial Magnet into one slot.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3958,7 +3969,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
       },
       {
         "id": "pool-mana-regeneration-band",
@@ -4026,7 +4038,7 @@
         "name": "Mana Regeneration Potion",
         "slot": "buff",
         "icon": "potions/mana-regeneration-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Speeds up mana regeneration, so you stop to drink fewer mana potions.",
         "tags": [],
         "topPick": true,
@@ -4053,7 +4065,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Regeneration_Potion"
       },
       {
         "id": "lesser-mana-potion",
@@ -4061,18 +4074,19 @@
         "slot": "buff",
         "icon": "potions/lesser-mana-potion.png",
         "source": "Purchased from the Merchant, or found in Wooden and Pearlwood Crates from fishing",
-        "why": "A healthy stack keeps your early magic weapons usable during longer fights.",
+        "why": "Restores 50 mana; causes Mana Sickness.",
         "tags": [],
         "topPick": false,
-        "dropRate": "16.67%"
+        "dropRate": "16.67%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Mana_Potion"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "Mage has less room for mistakes, so the bonus defense matters a lot.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -4093,17 +4107,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "well-fed",
         "name": "Well Fed",
         "slot": "buff",
         "icon": "potions/well-fed.png",
-        "source": "Any cooked food buff",
-        "why": "The global stat bump is easy to maintain and always worth it.",
+        "source": "Granted by eating most cooked food.",
+        "why": "A minor boost to all stats.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Well_Fed"
       },
       {
         "id": "mana-potion",
@@ -4135,7 +4151,7 @@
         "name": "Magic Power Potion",
         "slot": "buff",
         "icon": "potions/magic-power-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or found in Shadow Chests and Pots in the Underworld.",
         "why": "Raises magic damage by 20%.",
         "tags": [],
         "topPick": true,
@@ -4162,7 +4178,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Power_Potion"
       },
       {
         "id": "mana-crystal",
@@ -4188,18 +4205,11 @@
         "name": "Arcane Crystal",
         "slot": "buff",
         "icon": "potions/arcane-crystal.png",
-        "source": "Crafted",
-        "why": "Permanently improves mana regeneration.",
+        "source": "Made by dropping a Mana Crystal into Shimmer.",
+        "why": "Permanently increases mana regeneration.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal",
-        "materials": [
-          {
-            "name": "Mana Crystal",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Crystal"
-          }
-        ]
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Arcane_Crystal"
       }
     ],
     "ammo": [],
@@ -4470,14 +4480,15 @@
             "name": "Celestial Magnet",
             "slot": "accessory",
             "icon": "accessories/celestial-magnet.png",
-            "source": "Found in Azure Crate and 2 other sources",
-            "why": "Greatly increases the pickup range of mana stars.",
+            "source": "Found in Azure Crates, Sky Crates, and Skyware Chests (Floating Islands)",
+            "why": "Pulls in mana stars from a wider range.",
             "tags": [],
             "topPick": false,
             "categories": [
               "magic"
             ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet",
+            "effect": "Increases pickup range for mana stars"
           },
           {
             "id": "pool-natures-gift",
@@ -4499,7 +4510,7 @@
             "slot": "accessory",
             "icon": "accessories/mana-flower.png",
             "source": "Combined at the Tinkerer's Workshop",
-            "why": "Auto-potions reduce cognitive load and keep your strongest spells online more consistently.",
+            "why": "Auto-drinks mana potions and cuts mana cost.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4517,15 +4528,17 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           },
           {
             "id": "band-of-starpower",
             "name": "Band of Starpower",
             "slot": "accessory",
             "icon": "accessories/band-of-starpower.png",
-            "source": "Found in Shadow Orbs / Crimson Hearts",
-            "why": "+20 max mana for early casters.",
+            "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt and Defiled Crates",
+            "why": "+20 maximum mana for early casters.",
             "tags": [],
             "topPick": false,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Band_of_Starpower",
@@ -4535,11 +4548,13 @@
             "markers": [
               "corruption"
             ],
-            "dropRate": "20%"
+            "dropRate": "20%",
+            "effect": "Increases maximum mana by 20"
           }
         ]
       }
-    ]
+    ],
+    "tools": []
   },
   {
     "phase": "pre-bosses",
@@ -4557,7 +4572,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "finch-staff",
@@ -4571,7 +4586,7 @@
         "subclass": "minions",
         "stats": "7 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Finch_Staff",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "33.33%"
       },
       {
@@ -4580,13 +4595,13 @@
         "slot": "weapon",
         "icon": "items/flinx-staff.png",
         "source": "Crafted at Work Bench",
-        "why": "Summons a Flinx minion; Flinx Fur drops from Snow Flinxes in the Snow biome.",
+        "why": "Summons a Flinx minion.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Flinx Fur",
@@ -4607,7 +4622,7 @@
         "slot": "weapon",
         "icon": "items/vampire-frog-staff.png",
         "source": "Dropped by Zombie Merman and Wandering Eye Fish (Blood Moon)",
-        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon with no boss required.",
+        "why": "Summons a Vampire Frog minion; obtainable during a Blood Moon.",
         "tags": [],
         "topPick": true,
         "subclass": "minions",
@@ -4655,7 +4670,7 @@
         "subclass": "whip",
         "stats": "14 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Leather_Whip",
-        "tier": "other"
+        "tier": "good"
       },
       {
         "id": "snapthorn",
@@ -4663,7 +4678,7 @@
         "slot": "weapon",
         "icon": "items/snapthorn.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Jungle-material whip that inflicts Acid Venom and grants summon tag damage.",
+        "why": "A whip that inflicts Acid Venom and grants summon tag damage.",
         "tags": [],
         "topPick": true,
         "subclass": "whip",
@@ -4715,7 +4730,7 @@
         "subclass": "minions",
         "stats": "20 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Foxparks",
-        "tier": "other"
+        "tier": "best"
       },
       {
         "id": "slime-staff",
@@ -4729,8 +4744,85 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Staff",
-        "tier": "other",
-        "dropRate": "0.01% 0.014%"
+        "tier": "good",
+        "dropRate": "0.01%",
+        "dropRateExpert": "0.014%"
+      },
+      {
+        "id": "mushroom-staff",
+        "name": "Mushroom Staff",
+        "slot": "weapon",
+        "icon": "items/mushroom-staff.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Summons a Mushroom Boi minion.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "8 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Glowing Mushroom",
+            "qty": 300,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+          },
+          {
+            "name": "Mushroom Grass Seeds",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Grass_Seeds"
+          },
+          {
+            "name": "Shadow Scale",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "soulscourge",
+        "name": "Soulscourge",
+        "slot": "weapon",
+        "icon": "items/soulscourge.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption whip.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "vasculash",
+        "name": "Vasculash",
+        "slot": "weapon",
+        "icon": "items/vasculash.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart to the Soulscourge.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "19 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -4776,8 +4868,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -4856,8 +4947,8 @@
         "name": "Summoning Potion",
         "slot": "buff",
         "icon": "potions/summoning-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "The extra minion slot is too valuable to skip, even in the earliest summoner boss prep.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table",
+        "why": "Increases your maximum number of minions by 1.",
         "tags": [],
         "topPick": true,
         "materials": [
@@ -4877,15 +4968,16 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Moonglow"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Summoning_Potion"
       },
       {
         "id": "ironskin-potion",
         "name": "Ironskin Potion",
         "slot": "buff",
         "icon": "potions/ironskin-potion.png",
-        "source": "Brewed at Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "You are still fragile even with summons doing the work, so extra defense is welcome.",
+        "source": "Crafted at a Placed Bottle or Alchemy Table, or dropped by slimes.",
+        "why": "Increases defense by 8.",
         "tags": [],
         "topPick": false,
         "dropRate": "0.18%",
@@ -4906,17 +4998,19 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Iron_Ore"
           }
         ],
-        "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ironskin_Potion"
       },
       {
         "id": "well-fed",
         "name": "Well Fed",
         "slot": "buff",
         "icon": "potions/well-fed.png",
-        "source": "Any cooked food buff",
-        "why": "It is a painless always-on stat boost for a class that wants every slot and every edge.",
+        "source": "Granted by eating most cooked food.",
+        "why": "A minor boost to all stats.",
         "tags": [],
-        "topPick": false
+        "topPick": false,
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Well_Fed"
       }
     ],
     "ammo": [],
@@ -5181,6 +5275,21 @@
         ]
       }
     ],
-    "mixNote": "The Flinx Fur Coat is the chest piece, not an extra layer - it replaces whatever shirt you are wearing. That costs nothing here, because the ore sets have no set bonus to break, and it is the only summon damage available before the first boss."
+    "mixNote": "The Flinx Fur Coat is the chest piece, not an extra layer - it replaces whatever shirt you are wearing. That costs nothing here, because the ore sets have no set bonus to break, and it is the only summon damage available before the first boss.",
+    "minionMix": [
+      {
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 2
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 1,
+            "or": "foxparks"
+          }
+        ]
+      }
+    ]
   }
 ]

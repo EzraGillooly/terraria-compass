@@ -6,7 +6,7 @@ import { useAppState, usePack } from '../lib/app-context';
 import { isObtainable } from '../lib/difficulty';
 import type { DifficultyFilter } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
-import type { Item, PhaseId } from '../data/schema';
+import type { Item, Loadout, PhaseId } from '../data/schema';
 import type { SyntheticEvent } from 'react';
 import styles from './Loadouts.module.css';
 
@@ -154,6 +154,33 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
       <div className={styles.wName}>{item.name}</div>
       {item.source && <div className={styles.wSource}>{item.source}</div>}
       {item.subclass && <span className={`${styles.wSub} pixel-frame pixel-hollow`}>{item.subclass}</span>}
+    </button>
+  );
+}
+
+/* One minion in the Minion Mixing card: its sprite, its name, and the count to
+   summon shown as gold text in the top-right corner (not a pill). */
+function MinionMixCard(
+  { item, count, fillRest, onOpen }:
+  { item: Item; count?: number; fillRest?: boolean; onOpen: (i: Item) => void },
+) {
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  return (
+    <button
+      type="button"
+      className={`${styles.mixItem} pixel-frame pixel-hollow`}
+      onClick={() => onOpen(item)}
+      title={fillRest ? `${item.name} for the rest of the minion slots` : `${count} × ${item.name}`}
+    >
+      <span className={styles.mixIcon}>
+        <img
+          src={local} alt="" aria-hidden="true"
+          className="pixel-img" width="40" height="40" loading="lazy"
+          onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+        />
+        <span className={styles.mixCount}>{fillRest ? 'rest' : `×${count}`}</span>
+      </span>
+      <span className={styles.mixName}>{item.name}</span>
     </button>
   );
 }
@@ -838,7 +865,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
+  const safeLoadout: Loadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [], minionMix: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
@@ -856,7 +883,8 @@ export function Loadouts() {
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
-  if (hasUntyped && availableSubclasses.length > 0) {
+  if (hasUntyped && availableSubclasses.length > 0
+      && !availableSubclasses.some((s) => s.id === OTHER_SUB)) {
     availableSubclasses.push({
       id: OTHER_SUB, name: 'Other',
       description: 'Weapons the wiki does not place in a family.',
@@ -870,6 +898,11 @@ export function Loadouts() {
   // With no subclasses (e.g. Calamity classes) there are no filter chips, so show
   // the full best/good/other split rather than only best-in-slot.
   const showingAll = hasSubclasses && activeSubclasses.size === 0;
+  /* The overview - Top Picks, or a pack with no subclass chips at all - is the
+     only view that gets a "Support Items" row. Inside a subclass, a support
+     weapon ranks with its family instead, so it is pulled out of the ranked
+     rows here and shown in that row on its own. */
+  const inOverview = !hasSubclasses || showingAll;
 
   /* An uncategorised weapon belongs to no chip, so it appears only when no chip
      is active. It used to pass every filter, which put items like the Rod of
@@ -884,7 +917,14 @@ export function Loadouts() {
   const subOrder = new Map(classDef.subclasses.map((sc, i) => [sc.id, i]));
   const bySubclass = (a: Item, b: Item) =>
     (subOrder.get(a.subclass ?? '') ?? Infinity) - (subOrder.get(b.subclass ?? '') ?? Infinity);
-  const inScope = safeLoadout.weapons.filter(matchSub).sort(bySubclass);
+  const inScope = safeLoadout.weapons
+    .filter((w) => matchSub(w) && !(inOverview && w.support))
+    .sort(bySubclass);
+  /* Support items (the guide's "Support" column) plus classless tools share the
+     one row, shown only in the overview. */
+  const supportRow = inOverview
+    ? [...safeLoadout.tools, ...safeLoadout.weapons.filter((w) => w.support)]
+    : [];
 
   /*
    * Whether this loadout was actually ranked. Curated entries carry a `why`
@@ -1281,7 +1321,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  Top Picks
+                  {classDef.id === 'summoner' ? 'Viable Picks' : 'Top Picks'}
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button
@@ -1295,6 +1335,12 @@ export function Loadouts() {
                   </button>
                 ))}
               </div>
+            )}
+
+            {classDef.id === 'summoner' && (
+              <p className={styles.summonerNote}>
+                I&rsquo;m still working out the best minion, sentry, and whip for each phase.
+              </p>
             )}
 
             {ranked ? (
@@ -1351,26 +1397,60 @@ export function Loadouts() {
               </>
             )}
 
-            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
+            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && supportRow.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
 
-            {/* Tools sit under the weapons, not among them: they belong to no
-                subclass, so they have no type pill and no filter chip, and
-                mixed into the list they read as picks the class had simply
-                failed to categorise. Shown whatever chip is active, since a
-                tool is useful to every build. */}
-            {safeLoadout.tools.length > 0 && (
+            {/* Support items and classless tools sit under the weapons, not
+                among them: they have no type pill and no filter chip, so mixed
+                into the list they read as picks the class failed to categorise.
+                Shown only in the overview - inside a subclass a support weapon
+                ranks with its family instead. */}
+            {supportRow.length > 0 && (
               <>
                 <div className={styles.groupLabel}>Support Items</div>
                 <div className={styles.weaponRow}>
-                  {safeLoadout.tools.map((w) => (
+                  {supportRow.map((w) => (
                     <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
                   ))}
                 </div>
               </>
             )}
           </div>
+            {/* Minion Mixing (summoner only): the guide's recommended mix of
+                minions to summon together, with a count per minion. Reuses each
+                minion's own icon, name and modal from the weapons list. */}
+            {safeLoadout.minionMix.length > 0 && (
+              <div className={`${styles.invPanel} pixel-frame`}>
+                <div className={styles.tlabel}>
+                  <span>Minion Mixing</span><span className={styles.em}>Recommended combinations</span>
+                </div>
+                {safeLoadout.minionMix.map((combo, ci) => (
+                  <div key={ci} className={styles.mixCombo}>
+                    <div className={styles.mixComboLabel}>#{ci + 1}</div>
+                    <div className={styles.mixRow}>
+                      {combo.items.map((m, i) => {
+                        const item = safeLoadout.weapons.find((w) => w.id === m.id);
+                        if (!item) return null;
+                        const alt = m.or ? safeLoadout.weapons.find((w) => w.id === m.or) : undefined;
+                        return (
+                          <Fragment key={m.id}>
+                            {i > 0 && <span className={styles.mixPlus} aria-hidden="true">+</span>}
+                            <MinionMixCard item={item} count={m.count} fillRest={m.fillRest} onOpen={setModalItem} />
+                            {alt && (
+                              <>
+                                <span className={styles.mixOr}>or</span>
+                                <MinionMixCard item={alt} count={m.count} fillRest={m.fillRest} onOpen={setModalItem} />
+                              </>
+                            )}
+                          </Fragment>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
             {/* Accessories sit under the weapons panel in the left column, so the
                 card runs tall rather than spanning the full width. */}
           <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>
@@ -1497,7 +1577,9 @@ export function Loadouts() {
                         <div className={styles.armorName}>
                           {a.name}
                           {a.defense != null && (
-                            <span className={styles.armorDef}>{a.defense} def</span>
+                            <span className={styles.armorDef}>
+                              {a.defenseAlt != null ? `${a.defense} / ${a.defenseAlt}` : a.defense} def
+                            </span>
                           )}
                           {a.singlePiece && (
                             <span className={`${styles.mixTag} pixel-frame`}>Mix</span>
