@@ -3525,7 +3525,7 @@
         "subclass": "spell-tome",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Storm",
-        "tier": "best",
+        "tier": "other",
         "materials": [
           {
             "name": "Spell Tome",
@@ -3583,7 +3583,7 @@
         "name": "Crystal Serpent",
         "slot": "weapon",
         "icon": "items/crystal-serpent.png",
-        "source": "Fished in The Hallow (Hardmode)",
+        "source": "Fished only in the Hallow (Hardmode)",
         "why": "Fires a crystal bolt that bursts into shards on impact.",
         "tags": [],
         "topPick": false,
@@ -3761,7 +3761,7 @@
         "subclass": "other",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -3773,11 +3773,12 @@
         "why": "Spawns up to two lasting storm clouds that drop damaging rain projectiles below them.",
         "tags": [],
         "topPick": false,
-        "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
         "tier": "good",
-        "dropRate": "6.67%"
+        "dropRate": "6.67%",
+        "support": true,
+        "subclass": "other"
       },
       {
         "id": "blood-thorn",
@@ -3866,7 +3867,7 @@
         "subclass": "other",
         "stats": "22 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Killing_Deck",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "life-drain",
@@ -3880,7 +3881,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Drain",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "20%"
       },
       {
@@ -3970,7 +3971,7 @@
         "subclass": "other",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "16.7% 33.3%"
       },
       {
@@ -4073,6 +4074,118 @@
     ],
     "armor": [
       {
+        "id": "adamantite-armor",
+        "name": "Adamantite Armor",
+        "slot": "armor",
+        "icon": "armor-sets/adamantite-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_armor",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": true,
+        "headpiece": "Adamantite Headgear",
+        "pieces": [
+          "Adamantite Headgear",
+          "Adamantite Breastplate",
+          "Adamantite Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Adamantite Headgear",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Adamantite Breastplate",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Adamantite Leggings",
+            "materials": [
+              {
+                "name": "Adamantite Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Adamantite_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 32,
+        "headpieceBonus": "+20% magic damage \u00b7 +19% magic critical strike chance \u00b7 +80 maximum mana \u00b7 +19% mana cost reduction \u00b7 +5% movement speed"
+      },
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor-sets/titanium-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_armor",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "headpiece": "Titanium Headgear",
+        "pieces": [
+          "Titanium Headgear",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Titanium Headgear",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 13,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Breastplate",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 26,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Leggings",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 30,
+        "headpieceBonus": "+23% magic damage \u00b7 +13% magic critical strike chance \u00b7 +100 maximum mana \u00b7 +6% movement speed"
+      },
+      {
         "id": "forbidden-armor",
         "name": "Forbidden Armor",
         "slot": "armor",
@@ -4083,7 +4196,7 @@
         "tags": [
           "hardmode"
         ],
-        "topPick": true,
+        "topPick": false,
         "pieces": [
           "Forbidden Mask",
           "Forbidden Robes",
@@ -4139,7 +4252,8 @@
             "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
-        "defense": 26
+        "defense": 26,
+        "effect": "+25% magic and summon damage \u00b7 +80 maximum mana \u00b7 +2 minion slots \u00b7 A Forbidden Sign minion floats behind you; double-tap Down (or Up) to spend 20 mana and call an Ancient Storm at the cursor that rapidly deals 20 contact damage."
       }
     ],
     "accessories": [
@@ -4962,7 +5076,8 @@
               }
             ],
             "station": "Tinkerer's Workshop",
-            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed"
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           }
         ]
       }
