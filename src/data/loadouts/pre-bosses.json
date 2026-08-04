@@ -5269,13 +5269,17 @@
     "mixNote": "The Flinx Fur Coat is the chest piece, not an extra layer - it replaces whatever shirt you are wearing. That costs nothing here, because the ore sets have no set bonus to break, and it is the only summon damage available before the first boss.",
     "minionMix": [
       {
-        "id": "flinx-staff",
-        "count": 2
-      },
-      {
-        "id": "vampire-frog-staff",
-        "count": 1,
-        "or": "foxparks"
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 2
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 1,
+            "or": "foxparks"
+          }
+        ]
       }
     ]
   }

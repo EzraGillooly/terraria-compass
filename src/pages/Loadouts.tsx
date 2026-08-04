@@ -1414,27 +1414,32 @@ export function Loadouts() {
             {safeLoadout.minionMix.length > 0 && (
               <div className={`${styles.invPanel} pixel-frame`}>
                 <div className={styles.tlabel}>
-                  <span>Minion Mixing</span><span className={styles.em}>Best combination</span>
+                  <span>Minion Mixing</span><span className={styles.em}>Recommended combinations</span>
                 </div>
-                <div className={styles.mixRow}>
-                  {safeLoadout.minionMix.map((m, i) => {
-                    const item = safeLoadout.weapons.find((w) => w.id === m.id);
-                    if (!item) return null;
-                    const alt = m.or ? safeLoadout.weapons.find((w) => w.id === m.or) : undefined;
-                    return (
-                      <Fragment key={m.id}>
-                        {i > 0 && <span className={styles.mixPlus} aria-hidden="true">+</span>}
-                        <MinionMixCard item={item} count={m.count} onOpen={setModalItem} />
-                        {alt && (
-                          <>
-                            <span className={styles.mixOr}>or</span>
-                            <MinionMixCard item={alt} count={m.count} onOpen={setModalItem} />
-                          </>
-                        )}
-                      </Fragment>
-                    );
-                  })}
-                </div>
+                {safeLoadout.minionMix.map((combo, ci) => (
+                  <div key={ci} className={styles.mixCombo}>
+                    <div className={styles.mixComboLabel}>#{ci + 1}</div>
+                    <div className={styles.mixRow}>
+                      {combo.items.map((m, i) => {
+                        const item = safeLoadout.weapons.find((w) => w.id === m.id);
+                        if (!item) return null;
+                        const alt = m.or ? safeLoadout.weapons.find((w) => w.id === m.or) : undefined;
+                        return (
+                          <Fragment key={m.id}>
+                            {i > 0 && <span className={styles.mixPlus} aria-hidden="true">+</span>}
+                            <MinionMixCard item={item} count={m.count} onOpen={setModalItem} />
+                            {alt && (
+                              <>
+                                <span className={styles.mixOr}>or</span>
+                                <MinionMixCard item={alt} count={m.count} onOpen={setModalItem} />
+                              </>
+                            )}
+                          </Fragment>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
             {/* Accessories sit under the weapons panel in the left column, so the

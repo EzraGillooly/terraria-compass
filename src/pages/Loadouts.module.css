@@ -172,8 +172,12 @@
 .wtile:hover { transform: translateY(-3px); --px-border: var(--warm); }
 .wtile:hover .wtileImg { transform: scale(1.16) translateY(-2px); filter: drop-shadow(0 0 8px color-mix(in oklab, var(--warm) 60%, transparent)); }
 
-/* Minion Mixing card: a horizontal run of minions with a count badge, joined by
-   plus signs - "2x Flinx + 1x Vampire Frog". */
+/* Minion Mixing card: one or more combinations, each a horizontal run of
+   minions with a count badge, joined by plus signs - "2x Flinx + 1x Vampire
+   Frog". A phase can list a Best and an Alternative combination. */
+.mixCombo { margin-top: 14px; }
+.mixCombo:first-of-type { margin-top: 4px; }
+.mixComboLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin-bottom: 10px; }
 .mixRow { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 6px; }
 .mixItem { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 96px; padding: 12px 8px; font-family: inherit; color: inherit; cursor: pointer; transition: transform .12s; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 .mixItem:hover { transform: translateY(-3px); --px-border: var(--warm); }
