@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import type { SyntheticEvent } from 'react';
+import type { ReactNode, SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
 import { usePack, useAppState } from '../../lib/app-context';
 import materialsData from '../../data/packs/calamity/materials.json';
@@ -60,6 +60,51 @@ function makeWikiName(stem: string): string {
 }
 
 const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='48' height='48' fill='%23EAF4FB'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24' fill='%234A6373' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
+
+/* Bosses a drop source can name. Longest first so "Skeletron Prime" wins over
+   "Skeletron" and "Empress of Light" over any shorter run. Each becomes a link
+   to the boss roadmap. Event bosses (Pumpking, Ice Queen, Martian Saucer) are
+   included even though the roadmap does not list them individually - the link
+   still takes the reader to the bosses page. */
+// Bosses the roadmap page lists: their name links there. The rest (event
+// bosses like Pumpking or the Martian Saucer) are not on the roadmap, so their
+// name links out to the wiki instead.
+const ROADMAP_BOSSES = new Set([
+  'King Slime', 'Eye of Cthulhu', 'Eater of Worlds', 'Brain of Cthulhu',
+  'Queen Bee', 'Skeletron', 'Deerclops', 'Wall of Flesh', 'The Twins',
+  'The Destroyer', 'Skeletron Prime', 'Plantera', 'Queen Slime', 'Golem',
+  'Duke Fishron', 'Empress of Light', 'Lunatic Cultist', 'Moon Lord',
+]);
+const BOSS_NAMES = [
+  ...ROADMAP_BOSSES,
+  'Martian Saucer', 'Mourning Wood', 'Ice Queen', 'Pumpking',
+].sort((a, b) => b.length - a.length);
+const BOSS_RE = new RegExp(`\\b(${BOSS_NAMES.join('|')})\\b`, 'g');
+
+/** Renders a source string with any boss name turned into a link, underlined so
+    the reader sees it is clickable. Roadmap bosses go to the boss page; event
+    bosses and mobs not on the roadmap go to their wiki page. */
+function SourceText({ text, onClose }: { text: string; onClose: () => void }) {
+  const parts: ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(BOSS_RE)) {
+    const i = m.index ?? 0;
+    const name = m[0];
+    if (i > last) parts.push(text.slice(last, i));
+    parts.push(ROADMAP_BOSSES.has(name)
+      ? <Link key={i} to="/bosses" onClick={onClose} className={styles.bossLink}>{name}</Link>
+      : (
+        <a
+          key={i} className={styles.bossLink}
+          href={`${WIKI.replace('/Special:FilePath', '')}/${name.replace(/ /g, '_')}`}
+          target="_blank" rel="noreferrer noopener"
+        >{name}</a>
+      ));
+    last = i + name.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
+}
 
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -238,7 +283,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
               states rather than single items, so they have no acquisition line.
               Omit the row instead of printing an empty one. */}
           {item.source && (
-            <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span>{item.source}</span></div>
+            <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span><SourceText text={item.source} onClose={onClose} /></span></div>
           )}
           {pieceRecipes.length > 0 && (
             <div className={styles.kvRow}>
