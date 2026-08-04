@@ -5114,7 +5114,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -5123,14 +5123,15 @@
         "slot": "weapon",
         "icon": "items/sanguine-staff.png",
         "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
-        "why": "Summons fast Sanguine Bat minions; obtainable early Hardmode with no mechanical boss required.",
+        "why": "Summons fast Sanguine Bat minions.",
         "tags": [],
         "topPick": true,
         "subclass": "minions",
         "stats": "35 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
         "tier": "best",
-        "dropRate": "50% 100%"
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
       },
       {
         "id": "spider-staff",
@@ -5138,13 +5139,13 @@
         "slot": "weapon",
         "icon": "items/spider-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "why": "Summons Spider minions that inflict Acid Venom.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -5166,7 +5167,7 @@
         "subclass": "sentries",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -5188,7 +5189,7 @@
         "subclass": "whip",
         "stats": "37 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -5281,7 +5282,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "imp-staff",
@@ -5297,7 +5298,7 @@
         "subclass": "minions",
         "stats": "17 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Imp_Staff",
-        "tier": "other",
+        "tier": "good",
         "materials": [
           {
             "name": "Hellstone Bar",
@@ -5406,7 +5407,8 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 20
+        "defense": 20,
+        "effect": "+28% summon damage \u00b7 +3 minion slots"
       },
       {
         "id": "titanium-mask",
