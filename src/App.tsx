@@ -13,10 +13,13 @@ import { lazyRoute } from './lib/lazy-retry';
    lazyRoute (not lazy) so a chunk that 404s after a deploy reloads the page to
    fetch the current build instead of white-screening. */
 const Bosses = lazyRoute(() => import('./pages/Bosses').then((m) => ({ default: m.Bosses })));
-const Biomes = lazyRoute(() => import('./pages/Biomes').then((m) => ({ default: m.Biomes })));
 const Loadouts = lazyRoute(() => import('./pages/Loadouts').then((m) => ({ default: m.Loadouts })));
-const Crafting = lazyRoute(() => import('./pages/Crafting').then((m) => ({ default: m.Crafting })));
-const Materials = lazyRoute(() => import('./pages/Materials').then((m) => ({ default: m.Materials })));
+// Biomes, Crafting and Materials are hidden from the public for now. The pages
+// still build; their routes fall through to the "*" redirect below. Restore the
+// lazy imports, routes and nav links (Header.tsx) to bring them back.
+// const Biomes = lazyRoute(() => import('./pages/Biomes').then((m) => ({ default: m.Biomes })));
+// const Crafting = lazyRoute(() => import('./pages/Crafting').then((m) => ({ default: m.Crafting })));
+// const Materials = lazyRoute(() => import('./pages/Materials').then((m) => ({ default: m.Materials })));
 
 export default function App() {
   const { pathname } = useLocation();
@@ -26,10 +29,9 @@ export default function App() {
         <Routes>
           <Route path="/"          element={<Home />} />
           <Route path="/bosses"    element={<Bosses />} />
-          <Route path="/biomes"    element={<Biomes />} />
           <Route path="/loadouts"  element={<Loadouts />} />
-          <Route path="/crafting"  element={<Crafting />} />
-          <Route path="/materials" element={<Materials />} />
+          {/* /biomes, /crafting, /materials are hidden for now - they fall
+              through to this redirect instead of rendering. */}
           <Route path="*"          element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>

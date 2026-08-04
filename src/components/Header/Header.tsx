@@ -5,12 +5,13 @@ import type { DifficultyFilter } from '../../lib/difficulty';
 import { PACK_META, isPackAllowedOnPath } from '../../data/packs';
 import styles from './Header.module.css';
 
-const NAV_LINKS = [
+const NAV_LINKS: { to: string; label: string; packs?: string[] }[] = [
   { to: '/bosses', label: 'Bosses' },
   { to: '/loadouts', label: 'Loadouts' },
-  { to: '/crafting', label: 'Crafting' },
-  /** the materials index is scraped from the Calamity wiki, so it is pack-gated */
-  { to: '/materials', label: 'Materials', packs: ['calamity'] },
+  // Crafting and Materials are hidden from the public for now. Restore these
+  // entries (and their routes in App.tsx) to bring the pages back.
+  // { to: '/crafting', label: 'Crafting' },
+  // { to: '/materials', label: 'Materials', packs: ['calamity'] },
 ];
 
 /** Shared dismiss-on-outside-click / Escape behaviour for the pop-out selects. */

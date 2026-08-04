@@ -66,8 +66,7 @@ export function Home() {
           </h1>
           <p className={styles.heroLede}>
             Recommended weapons, armor, accessories and buffs for every class at each
-            stage of progression, with a boss roadmap and full crafting trees. Vanilla and
-            Calamity.
+            stage of progression, with a boss roadmap. Vanilla and Calamity.
           </p>
           <div className={styles.ctaRow}>
             <Link to="/bosses" className={`${styles.btnPrimary} pixel-frame`}>
