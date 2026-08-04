@@ -122,6 +122,13 @@ export const Item = z.object({
    * for content that cannot be obtained in Classic at all). */
   slotExtra: z.boolean().optional(),
   /**
+   * A weapon the guide lists under "Support" rather than as a damage pick (the
+   * Crimson Rod's raining cloud, say). It gets its own "Support Items" row in
+   * the Top Picks overview, and ranks in its own subclass once a subclass chip
+   * is selected - so it is never mixed into the Best/Recommended rows.
+   */
+  support: z.boolean().optional(),
+  /**
    * How strongly the item is recommended for its phase:
    * 'best'  → best in slot for its subclass (shown in the "All" overview)
    * 'good'  → a genuinely viable alternative ("Also Great")

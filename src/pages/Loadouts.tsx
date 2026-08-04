@@ -870,6 +870,11 @@ export function Loadouts() {
   // With no subclasses (e.g. Calamity classes) there are no filter chips, so show
   // the full best/good/other split rather than only best-in-slot.
   const showingAll = hasSubclasses && activeSubclasses.size === 0;
+  /* The overview - Top Picks, or a pack with no subclass chips at all - is the
+     only view that gets a "Support Items" row. Inside a subclass, a support
+     weapon ranks with its family instead, so it is pulled out of the ranked
+     rows here and shown in that row on its own. */
+  const inOverview = !hasSubclasses || showingAll;
 
   /* An uncategorised weapon belongs to no chip, so it appears only when no chip
      is active. It used to pass every filter, which put items like the Rod of
@@ -884,7 +889,14 @@ export function Loadouts() {
   const subOrder = new Map(classDef.subclasses.map((sc, i) => [sc.id, i]));
   const bySubclass = (a: Item, b: Item) =>
     (subOrder.get(a.subclass ?? '') ?? Infinity) - (subOrder.get(b.subclass ?? '') ?? Infinity);
-  const inScope = safeLoadout.weapons.filter(matchSub).sort(bySubclass);
+  const inScope = safeLoadout.weapons
+    .filter((w) => matchSub(w) && !(inOverview && w.support))
+    .sort(bySubclass);
+  /* Support items (the guide's "Support" column) plus classless tools share the
+     one row, shown only in the overview. */
+  const supportRow = inOverview
+    ? [...safeLoadout.tools, ...safeLoadout.weapons.filter((w) => w.support)]
+    : [];
 
   /*
    * Whether this loadout was actually ranked. Curated entries carry a `why`
@@ -1351,20 +1363,20 @@ export function Loadouts() {
               </>
             )}
 
-            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && (
+            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && supportRow.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
 
-            {/* Tools sit under the weapons, not among them: they belong to no
-                subclass, so they have no type pill and no filter chip, and
-                mixed into the list they read as picks the class had simply
-                failed to categorise. Shown whatever chip is active, since a
-                tool is useful to every build. */}
-            {safeLoadout.tools.length > 0 && (
+            {/* Support items and classless tools sit under the weapons, not
+                among them: they have no type pill and no filter chip, so mixed
+                into the list they read as picks the class failed to categorise.
+                Shown only in the overview - inside a subclass a support weapon
+                ranks with its family instead. */}
+            {supportRow.length > 0 && (
               <>
                 <div className={styles.groupLabel}>Support Items</div>
                 <div className={styles.weaponRow}>
-                  {safeLoadout.tools.map((w) => (
+                  {supportRow.map((w) => (
                     <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
                   ))}
                 </div>
