@@ -6,7 +6,7 @@ import { useAppState, usePack } from '../lib/app-context';
 import { isObtainable } from '../lib/difficulty';
 import type { DifficultyFilter } from '../lib/difficulty';
 import { useSubclassFilters } from '../lib/subclasses';
-import type { Item, PhaseId } from '../data/schema';
+import type { Item, Loadout, PhaseId } from '../data/schema';
 import type { SyntheticEvent } from 'react';
 import styles from './Loadouts.module.css';
 
@@ -865,7 +865,7 @@ export function Loadouts() {
   const phaseName = phaseDef?.name ?? '';
   const activeOrder = phaseDef?.order ?? 0;
 
-  const safeLoadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [] };
+  const safeLoadout: Loadout = loadout ?? { phase: activePhaseId, class: activeClassId, weapons: [], tools: [], armor: [], accessories: [], buffs: [], ammo: [], accessoryPool: [], minionMix: [] };
 
   const { clearSubclassFilters, selectedSubclassSet, toggleSubclass } =
     useSubclassFilters(activeClassId);
