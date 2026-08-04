@@ -3873,7 +3873,8 @@
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
         "tier": "best",
-        "dropRate": "3.33% 6.56%"
+        "dropRate": "3.33%",
+        "dropRateExpert": "6.56%"
       },
       {
         "id": "desert-tiger-staff",
@@ -3887,7 +3888,7 @@
         "subclass": "minions",
         "stats": "41 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "terraprisma",
@@ -3932,7 +3933,8 @@
         "stats": "160 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star",
         "tier": "best",
-        "dropRate": "0.5% 1%"
+        "dropRate": "0.5%",
+        "dropRateExpert": "1%"
       },
       {
         "id": "pygmy-staff",
@@ -3946,7 +3948,7 @@
         "subclass": "minions",
         "stats": "40 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Staff",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4005,7 +4007,7 @@
         "subclass": "whip",
         "stats": "75 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vulgar_Display_of_Flower",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -4022,7 +4024,7 @@
         "subclass": "sentries",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -4046,7 +4048,7 @@
         "subclass": "sentries",
         "stats": "74 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ballista_Cane",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "firecracker",
@@ -4079,7 +4081,7 @@
         "subclass": "minions",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Optic_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Black Lens",
@@ -4118,7 +4120,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4127,7 +4129,7 @@
         "slot": "weapon",
         "icon": "items/spider-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "why": "Summons Spider minions that inflict Acid Venom.",
         "tags": [
           "carry-over"
         ],
@@ -4168,6 +4170,39 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "sanguine-staff",
+        "name": "Sanguine Staff",
+        "slot": "weapon",
+        "icon": "items/sanguine-staff.png",
+        "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
+        "why": "Summons fast Sanguine Bat minions.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "35 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
+        "tier": "good",
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
+      },
+      {
+        "id": "pirate-staff",
+        "name": "Pirate Staff",
+        "slot": "weapon",
+        "icon": "items/pirate-staff.png",
+        "source": "Dropped by Pirates and the Flying Dutchman during the Pirate Invasion",
+        "why": "Summons a Pirate minion.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "40 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Pirate_Staff",
+        "tier": "good",
+        "dropRate": "6.67%"
       }
     ],
     "armor": [
@@ -4188,7 +4223,8 @@
           "Tiki Shirt",
           "Tiki Pants"
         ],
-        "defense": 35
+        "defense": 35,
+        "effect": "+30% summon damage \u00b7 +30% whip range \u00b7 +4 minion slots"
       },
       {
         "id": "spooky-armor",
@@ -4201,7 +4237,7 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_armor",
         "pieceRecipes": [
           {
             "piece": "Spooky Helmet",
@@ -4242,7 +4278,8 @@
           "Spooky Breastplate",
           "Spooky Leggings"
         ],
-        "defense": 30
+        "defense": 30,
+        "effect": "+58% summon damage \u00b7 +4 minion slots \u00b7 +20% movement speed \u00b7 A visual glowing effect around the player."
       }
     ],
     "accessories": [
@@ -4303,41 +4340,6 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
-        "id": "master-ninja-gear",
-        "name": "Master Ninja Gear",
-        "slot": "accessory",
-        "icon": "accessories/master-ninja-gear.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility",
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Tiger Climbing Gear",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
-          },
-          {
-            "name": "Tabi",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
-          },
-          {
-            "name": "Black Belt",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
-      },
-      {
         "id": "terraspark-boots",
         "name": "Terraspark Boots",
         "slot": "accessory",
@@ -4380,6 +4382,42 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
         "quality": "fine"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -5114,7 +5152,9 @@
             "categories": [
               "summon"
             ],
-            "dropRate": "2.86\u201320% 5\u201320%"
+            "dropRate": "2.86\u201320%",
+            "dropRateExpert": "5\u201320%",
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
           }
         ]
       }
