@@ -59,6 +59,12 @@ export const Item = z.object({
   allClass: z.boolean().optional(),
   /** total defense for this class's configuration of the set */
   defense: z.number().int().optional(),
+  /**
+   * A second defense value, for a set with two viable headpieces at different
+   * defense (Spectre Mask 42 vs Spectre Hood 30). When set, the card preview
+   * shows both as "42 / 30 def".
+   */
+  defenseAlt: z.number().int().optional(),
   /** short display stats, e.g. "42 melee damage · fast" */
   stats: z.string().optional(),
   /** crafting station, e.g. "Mythril Anvil or Orichalcum Anvil" */

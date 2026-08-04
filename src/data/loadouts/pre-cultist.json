@@ -183,7 +183,7 @@
         "name": "The Eye of Cthulhu",
         "slot": "weapon",
         "icon": "items/the-eye-of-cthulhu.png",
-        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
         "tags": [
           "carry-over"
@@ -729,7 +729,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1612,7 +1612,7 @@
         "name": "Nail Gun",
         "slot": "weapon",
         "icon": "items/nail-gun.png",
-        "source": "Dropped by Nailheads during a Solar Eclipse (post-Plantera)",
+        "source": "Dropped by Nailheads during a Solar Eclipse",
         "why": "Fires Nails that stick into surfaces and enemies.",
         "tags": [
           "carry-over"
@@ -2153,7 +2153,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2922,7 +2922,8 @@
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
         "tier": "good",
-        "dropRate": "0.33% 0.67%"
+        "dropRate": "0.33%",
+        "dropRateExpert": "0.67%"
       },
       {
         "id": "nightglow",
@@ -2990,7 +2991,8 @@
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
         "tier": "other",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "wasp-gun",
@@ -3064,61 +3066,8 @@
           }
         ],
         "defense": 42,
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health"
-      },
-      {
-        "id": "spectre-armor-hood",
-        "name": "Spectre Hood Loadout",
-        "slot": "armor",
-        "icon": "armor/spectre-armor-hood.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "pieces": [
-          "Spectre Hood",
-          "Spectre Robe",
-          "Spectre Pants"
-        ],
-        "pieceRecipes": [
-          {
-            "piece": "Spectre Hood",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Robe",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 30
+        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health",
+        "defenseAlt": 30
       }
     ],
     "accessories": [
@@ -3148,7 +3097,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem"
       },
       {
         "id": "pool-sorcerer-emblem",
@@ -3458,7 +3408,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -4369,7 +4319,7 @@
         "name": "Deadly Sphere Staff",
         "slot": "weapon",
         "icon": "items/deadly-sphere-staff.png",
-        "source": "Dropped by Deadly Spheres during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Deadly Spheres during a Solar Eclipse",
         "why": "Summons orbiting Deadly Sphere minions that dash at enemies.",
         "tags": [
           "carry-over"
@@ -4833,7 +4783,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,

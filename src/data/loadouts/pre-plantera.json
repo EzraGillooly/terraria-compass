@@ -2951,7 +2951,7 @@
         "name": "Toxic Flask",
         "slot": "weapon",
         "icon": "items/toxic-flask.png",
-        "source": "Dropped by Dr. Man Fly (Solar Eclipse, post-mechanical boss)",
+        "source": "Dropped by Dr. Man Fly (Solar Eclipse)",
         "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
         "tags": [],
         "topPick": false,
@@ -2959,7 +2959,8 @@
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
         "tier": "other",
-        "dropRate": "2.5% 4.94%"
+        "dropRate": "2.5%",
+        "dropRateExpert": "4.94%"
       },
       {
         "id": "venom-staff",
@@ -3316,7 +3317,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem"
       },
       {
         "id": "pool-sorcerer-emblem",

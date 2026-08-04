@@ -1510,7 +1510,9 @@ export function Loadouts() {
                         <div className={styles.armorName}>
                           {a.name}
                           {a.defense != null && (
-                            <span className={styles.armorDef}>{a.defense} def</span>
+                            <span className={styles.armorDef}>
+                              {a.defenseAlt != null ? `${a.defense} / ${a.defenseAlt}` : a.defense} def
+                            </span>
                           )}
                           {a.singlePiece && (
                             <span className={`${styles.mixTag} pixel-frame`}>Mix</span>
