@@ -40,7 +40,7 @@
         "name": "The Eye of Cthulhu",
         "slot": "weapon",
         "icon": "items/the-eye-of-cthulhu.png",
-        "source": "Dropped by Mothron during a Solar Eclipse (occurs post-Plantera)",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Post-Plantera Solar Eclipse Mothron drop with infinite spin.",
         "tags": [],
         "topPick": true,
@@ -616,7 +616,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -775,7 +775,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -1494,7 +1494,7 @@
         "name": "Nail Gun",
         "slot": "weapon",
         "icon": "items/nail-gun.png",
-        "source": "Dropped by Nailheads during a Solar Eclipse (post-Plantera)",
+        "source": "Dropped by Nailheads during a Solar Eclipse",
         "why": "Fires Nails that stick into surfaces and enemies.",
         "tags": [],
         "topPick": true,
@@ -1881,7 +1881,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -2160,7 +2160,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -2615,7 +2615,7 @@
         "subclass": "magic-gun",
         "stats": "31 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Wasp_Gun",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "12.5%"
       },
       {
@@ -2672,11 +2672,13 @@
         "why": "Launches a slow sphere that fires lightning bolts at nearby enemies.",
         "tags": [],
         "topPick": false,
-        "subclass": "spell-tome",
+        "subclass": "other",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
         "tier": "good",
-        "dropRate": "0.33% 0.67%"
+        "dropRate": "0.33%",
+        "support": true,
+        "dropRateExpert": "0.67%"
       },
       {
         "id": "nettle-burst",
@@ -2690,7 +2692,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nettle_Burst",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "12.5%"
       },
       {
@@ -2728,7 +2730,7 @@
         "name": "Resonance Scepter",
         "slot": "weapon",
         "icon": "items/resonance-scepter.png",
-        "source": "Dropped by the Princess town NPC when killed (Princess requires Plantera-gated Cyborg and all other NPCs)",
+        "source": "Dropped by the Princess town NPC when killed (Princess requires Cyborg and all other NPCs)",
         "why": "Fires a spread of rainbow music notes that pierce enemies.",
         "tags": [],
         "topPick": false,
@@ -2767,8 +2769,9 @@
         "subclass": "wand",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Inferno_Fork",
-        "tier": "good",
-        "dropRate": "5% / 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "tier": "best",
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "rainbow-gun",
@@ -2781,17 +2784,18 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "magic-gun",
+        "subclass": "other",
         "stats": "45 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
-        "tier": "good"
+        "tier": "good",
+        "support": true
       },
       {
         "id": "toxic-flask",
         "name": "Toxic Flask",
         "slot": "weapon",
         "icon": "items/toxic-flask.png",
-        "source": "Dropped by Dr. Man Fly (Solar Eclipse, post-mechanical boss)",
+        "source": "Dropped by Dr. Man Fly (Solar Eclipse)",
         "why": "Throws a flask that bursts into a lingering cloud inflicting Venom.",
         "tags": [
           "carry-over"
@@ -2801,7 +2805,8 @@
         "stats": "52 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask",
         "tier": "good",
-        "dropRate": "2.5% 4.94%"
+        "dropRate": "2.5%",
+        "dropRateExpert": "4.94%"
       },
       {
         "id": "nimbus-rod",
@@ -2817,7 +2822,7 @@
         "subclass": "other",
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "6.67%"
       },
       {
@@ -2835,7 +2840,8 @@
         "stats": "80 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowbeam_Staff",
         "tier": "best",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "spectre-staff",
@@ -2851,8 +2857,9 @@
         "subclass": "wand",
         "stats": "65 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Staff",
-        "tier": "good",
-        "dropRate": "5% 2.5% (Old-gen console and 3DS versions), 9.75%"
+        "tier": "best",
+        "dropRate": "5%",
+        "dropRateExpert": "9.75%"
       },
       {
         "id": "tome-of-infinite-wisdom",
@@ -2868,7 +2875,7 @@
         "subclass": "wand",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "10% 20%"
       },
       {
@@ -2971,61 +2978,8 @@
           }
         ],
         "defense": 42,
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health"
-      },
-      {
-        "id": "spectre-armor-hood",
-        "name": "Spectre Hood Loadout",
-        "slot": "armor",
-        "icon": "armor/spectre-armor-hood.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "The Hood converts 40% of magic damage into healing. For staying alive rather than for damage.",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "pieces": [
-          "Spectre Hood",
-          "Spectre Robe",
-          "Spectre Pants"
-        ],
-        "pieceRecipes": [
-          {
-            "piece": "Spectre Hood",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Robe",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 30
+        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health",
+        "defenseAlt": 30
       }
     ],
     "accessories": [
@@ -3055,7 +3009,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem"
       },
       {
         "id": "pool-sorcerer-emblem",
@@ -3078,37 +3033,6 @@
           }
         ],
         "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "master-ninja-gear",
@@ -3179,7 +3103,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -3188,6 +3112,38 @@
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mothron_Wings",
         "quality": "fine"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -3364,7 +3320,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
@@ -3895,7 +3851,7 @@
         "name": "Deadly Sphere Staff",
         "slot": "weapon",
         "icon": "items/deadly-sphere-staff.png",
-        "source": "Dropped by Deadly Spheres during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Deadly Spheres during a Solar Eclipse",
         "why": "Summons orbiting Deadly Sphere minions that dash at enemies.",
         "tags": [],
         "topPick": true,
@@ -4400,7 +4356,7 @@
         "name": "Mothron Wings",
         "slot": "accessory",
         "icon": "accessories/mothron-wings.png",
-        "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+        "source": "Dropped by Mothron during a Solar Eclipse",
         "why": "Allows the player to fly briefly and glide (and negates fall damage).",
         "tags": [],
         "topPick": false,
@@ -4633,7 +4589,7 @@
             "name": "Mothron Wings",
             "slot": "accessory",
             "icon": "accessories/mothron-wings.png",
-            "source": "Dropped by Mothron during a post-Plantera Solar Eclipse",
+            "source": "Dropped by Mothron during a Solar Eclipse",
             "why": "Allows the player to fly briefly and glide (and negates fall damage).",
             "tags": [],
             "topPick": false,
