@@ -2587,7 +2587,7 @@
         "subclass": "other",
         "stats": "55 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Nebula Fragment",
@@ -2633,7 +2633,7 @@
         "subclass": "magic-gun",
         "stats": "100 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Charged_Blaster_Cannon",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "0.13%"
       },
       {
@@ -2650,7 +2650,7 @@
         "subclass": "spell-tome",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorblade_Typhoon",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "16.67%"
       },
       {
@@ -2667,8 +2667,76 @@
         "subclass": "magic-gun",
         "stats": "70 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun",
-        "tier": "other",
+        "tier": "good",
         "dropRate": "16.67%"
+      },
+      {
+        "id": "blizzard-staff",
+        "name": "Blizzard Staff",
+        "slot": "weapon",
+        "icon": "items/blizzard-staff.png",
+        "source": "Dropped by Ice Queen (Frost Moon)",
+        "why": "Calls down a barrage of ice shards from the sky over an area.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "58 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
+        "tier": "best",
+        "dropRate": "5.19\u201310.37% (increases with wave)",
+        "dropRateExpert": "15.56\u201331.11% (increases with wave)"
+      },
+      {
+        "id": "razorpine",
+        "name": "Razorpine",
+        "slot": "weapon",
+        "icon": "items/razorpine.png",
+        "source": "Dropped by Everscream (Frost Moon)",
+        "why": "Rapidly fires piercing pine-needle projectiles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "48 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine",
+        "tier": "good",
+        "dropRate": "3.46\u201310.37% (increases with wave)",
+        "dropRateExpert": "6.22\u201331.11% (increases with wave)"
+      },
+      {
+        "id": "betsys-wrath",
+        "name": "Betsy's Wrath",
+        "slot": "weapon",
+        "icon": "items/betsys-wrath.png",
+        "source": "Dropped by Betsy (Old One's Army Tier 3, post-Golem)",
+        "why": "Fires a projectile that reduces enemy defense and creates homing shards.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "100 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Betsy%27s_Wrath",
+        "tier": "good",
+        "dropRate": "25%"
+      },
+      {
+        "id": "rainbow-gun",
+        "name": "Rainbow Gun",
+        "slot": "weapon",
+        "icon": "items/rainbow-gun.png",
+        "source": "Found in Hallowed Chest in the Dungeon (opened with a Hallowed Key)",
+        "why": "Launches a lasting rainbow that damages enemies along its arc.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "other",
+        "stats": "45 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
+        "tier": "good",
+        "support": true
       }
     ],
     "armor": [
@@ -2782,37 +2850,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
-      },
-      {
         "id": "master-ninja-gear",
         "name": "Master Ninja Gear",
         "slot": "accessory",
@@ -2891,6 +2928,38 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_Wings"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
