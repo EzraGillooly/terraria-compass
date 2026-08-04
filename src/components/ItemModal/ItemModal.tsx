@@ -18,6 +18,16 @@ const MATERIAL_SOURCE = new Map(
 );
 const materialSource = (name: string) => MATERIAL_SOURCE.get(name) ?? '';
 
+/* Lunar pillar fragments list their drop quantity as "in stacks of 12-60 / 24-100"
+   - the first range is Classic, the second Expert. Show only the one that matches
+   the world, so the reader is not left to guess which half applies. */
+function stacksForDifficulty(source: string, difficulty: string): string {
+  return source.replace(
+    /in stacks of ([\d–-]+)\s*\/\s*([\d–-]+)/,
+    (_, classic, expert) => `in stacks of ${difficulty === 'expert' ? expert : classic}`,
+  );
+}
+
 /* The materials index only covers Calamity, so a vanilla material must not link
    into it - the page would just tell the reader to switch packs. Vanilla links
    go to the wiki instead, which is where that material is actually documented. */
@@ -263,7 +273,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
               <span className={styles.kvKey}>Materials</span>
               <ul className={`${styles.materials} ${styles.materialsFlat}`}>
                 {item.materials.map((m) => {
-                  const how = materialSource(m.name);
+                  const how = stacksForDifficulty(materialSource(m.name), difficulty);
                   return (
                     <li key={m.name}>
                       <span className={styles.matBody}>

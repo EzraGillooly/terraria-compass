@@ -206,7 +206,9 @@
 .progWrap {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+  /* Reset progress aligns to the right edge of the Progression row (under the
+     switch), not centred - so it reads as hanging off that control. */
+  align-items: flex-end;
   gap: 3px;
 }
 .progRow {

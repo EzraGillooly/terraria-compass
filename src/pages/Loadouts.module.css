@@ -6,7 +6,7 @@
    stacks Class + Progression and hangs ~119px down over the hero on desktop. Below
    the 700px header breakpoint that strip flows in-line (not absolute), so the
    mobile rule drops back to just clearing the header. */
-.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 130px 24px 80px; }
+.wrap { position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; padding: 146px 24px 80px; }
 
 /* ── Biome backdrop ──
    Anchored to the viewport, not the page: an absolutely-positioned backdrop grows
