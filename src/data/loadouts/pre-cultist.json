@@ -1390,7 +1390,7 @@
         "name": "Aerial Bane",
         "slot": "weapon",
         "icon": "items/aerial-bane.png",
-        "source": "Dropped by Betsy (Tier 3 Old One's Army, post-Golem)",
+        "source": "Dropped by Betsy",
         "why": "Fires arrows that split into extra arrows when aimed upward.",
         "tags": [],
         "topPick": true,
@@ -1434,7 +1434,7 @@
         "name": "Electrosphere Launcher",
         "slot": "weapon",
         "icon": "items/electrosphere-launcher.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness (post-Golem)",
+        "source": "Dropped by the Martian Saucer during Martian Madness",
         "why": "Fires rockets that leave a lingering electrified damage field.",
         "tags": [],
         "topPick": false,
@@ -1480,7 +1480,7 @@
         "name": "Eventide",
         "slot": "weapon",
         "icon": "items/eventide.png",
-        "source": "Dropped by Empress of Light (post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires homing star arrows, converting wooden arrows for free.",
         "tags": [
           "carry-over"
@@ -1497,7 +1497,7 @@
         "name": "Snowman Cannon",
         "slot": "weapon",
         "icon": "items/snowman-cannon.png",
-        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
         "why": "Fires homing rockets that track the nearest enemy.",
         "tags": [
           "carry-over"
@@ -2779,7 +2779,7 @@
         "name": "Charged Blaster Cannon",
         "slot": "weapon",
         "icon": "items/charged-blaster-cannon.png",
-        "source": "Dropped by Martian Madness enemies (post-Golem)",
+        "source": "Dropped by Martian Madness enemies",
         "why": "Charges up to fire a large piercing laser beam.",
         "tags": [],
         "topPick": false,
@@ -2794,7 +2794,7 @@
         "name": "Laser Machinegun",
         "slot": "weapon",
         "icon": "items/laser-machinegun.png",
-        "source": "Dropped by the Martian Saucer during Martian Madness (post-Golem)",
+        "source": "Dropped by the Martian Saucer during Martian Madness",
         "why": "Rapidly fires lasers in a cone, increasing fire rate when used continuously.",
         "tags": [],
         "topPick": false,
@@ -2824,7 +2824,7 @@
         "name": "Betsy's Wrath",
         "slot": "weapon",
         "icon": "items/betsys-wrath.png",
-        "source": "Dropped by Betsy (Old One's Army Tier 3, post-Golem)",
+        "source": "Dropped by Betsy",
         "why": "Fires a projectile that reduces enemy defense and creates homing shards.",
         "tags": [],
         "topPick": false,
@@ -2942,7 +2942,7 @@
         "name": "Nightglow",
         "slot": "weapon",
         "icon": "items/nightglow.png",
-        "source": "Dropped by Empress of Light (summoned post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires a homing prismatic bolt that rains down piercing feathers.",
         "tags": [
           "carry-over"
@@ -2959,7 +2959,7 @@
         "name": "Stellar Tune",
         "slot": "weapon",
         "icon": "items/stellar-tune.png",
-        "source": "Dropped by the Empress of Light (summoned post-Plantera)",
+        "source": "Dropped by the Empress of Light",
         "why": "Fires homing star projectiles that pass through blocks and explode on impact.",
         "tags": [
           "carry-over"
@@ -2976,7 +2976,7 @@
         "name": "Bubble Gun",
         "slot": "weapon",
         "icon": "items/bubble-gun.png",
-        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Rapidly fires a short-range spread of bubbles.",
         "tags": [
           "carry-over"
@@ -4114,13 +4114,13 @@
         "slot": "weapon",
         "icon": "items/xeno-staff.png",
         "source": "Dropped by the Martian Saucer during Martian Madness",
-        "why": "Summons UFO minions with instantaneous non-missing attacks; event is post-Golem.",
+        "why": "Summons UFO minions with instantaneous non-missing attacks.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
         "stats": "36 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Xeno_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "16.66%"
       },
       {
@@ -4149,7 +4149,7 @@
         "subclass": "sentries",
         "stats": "126 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Staff",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "flameburst-staff",
@@ -4177,14 +4177,14 @@
         "subclass": "sentries",
         "stats": "34 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Aura_Staff",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "tempest-staff",
         "name": "Tempest Staff",
         "slot": "weapon",
         "icon": "items/tempest-staff.png",
-        "source": "Dropped by Duke Fishron (summonable any time in Hardmode)",
+        "source": "Dropped by Duke Fishron",
         "why": "Summons Sharknado minions.",
         "tags": [
           "carry-over"
@@ -4193,7 +4193,7 @@
         "subclass": "minions",
         "stats": "50 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tempest_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "16.67%"
       },
       {
@@ -4211,7 +4211,8 @@
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff",
         "tier": "good",
-        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
+        "dropRate": "2.5\u201312.5% (increases with wave)",
+        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -4227,7 +4228,7 @@
         "subclass": "sentries",
         "stats": "100 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_the_Frost_Hydra",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "morning-star",
@@ -4243,15 +4244,16 @@
         "subclass": "whip",
         "stats": "160 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Morning_Star",
-        "tier": "good",
-        "dropRate": "0.5% 1%"
+        "tier": "best",
+        "dropRate": "0.5%",
+        "dropRateExpert": "1%"
       },
       {
         "id": "electric-eel",
         "name": "Electric Eel",
         "slot": "weapon",
         "icon": "items/electric-eel.png",
-        "source": "Dropped by Duke Fishron (summonable in Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Duke Fishron drop with long range that chains lightning between enemies.",
         "tags": [
           "carry-over"
@@ -4260,7 +4262,7 @@
         "subclass": "whip",
         "stats": "150 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Electric_Eel",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "16.67%"
       },
       {
@@ -4277,7 +4279,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "25%"
       },
       {
@@ -4285,7 +4287,7 @@
         "name": "Kaleidoscope",
         "slot": "weapon",
         "icon": "items/kaleidoscope.png",
-        "source": "Dropped by the Empress of Light (summoned after Plantera)",
+        "source": "Dropped by the Empress of Light",
         "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
         "tags": [
           "carry-over"
@@ -4328,8 +4330,9 @@
         "subclass": "whip",
         "stats": "110 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest",
-        "tier": "good",
-        "dropRate": "2.5\u201312.5% 6.25\u201312.5%"
+        "tier": "best",
+        "dropRate": "2.5\u201312.5% (increases with wave)",
+        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
       },
       {
         "id": "deadly-sphere-staff",
@@ -4345,8 +4348,64 @@
         "subclass": "minions",
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Deadly_Sphere_Staff",
-        "tier": "other",
-        "dropRate": "3.33% 6.56%"
+        "tier": "best",
+        "dropRate": "3.33%",
+        "dropRateExpert": "6.56%"
+      },
+      {
+        "id": "desert-tiger-staff",
+        "name": "Desert Tiger Staff",
+        "slot": "weapon",
+        "icon": "items/desert-tiger-staff.png",
+        "source": "Found in the Dungeon's Desert Chest, unlocked with a Desert Key after Plantera",
+        "why": "Summons a single Desert Tiger minion that grows stronger with additional summons.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "41 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Desert_Tiger_Staff",
+        "tier": "good"
+      },
+      {
+        "id": "queen-spider-staff",
+        "name": "Queen Spider Staff",
+        "slot": "weapon",
+        "icon": "items/queen-spider-staff.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Early Hardmode sentry summoning a Spider Turret that lobs bouncing egg projectiles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Spider Fang",
+            "qty": 24,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "firecracker",
+        "name": "Firecracker",
+        "slot": "weapon",
+        "icon": "items/firecracker.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "Wall of Flesh drop whose tag detonates for a large burst of minion damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "37 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
+        "tier": "good",
+        "dropRate": "25%"
       }
     ],
     "armor": [
@@ -4367,7 +4426,8 @@
           "Tiki Shirt",
           "Tiki Pants"
         ],
-        "defense": 35
+        "defense": 35,
+        "effect": "+30% summon damage \u00b7 +30% whip range \u00b7 +4 minion slots"
       },
       {
         "id": "spooky-armor",
@@ -4380,7 +4440,7 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_armor",
         "pieceRecipes": [
           {
             "piece": "Spooky Helmet",
@@ -4421,7 +4481,8 @@
           "Spooky Breastplate",
           "Spooky Leggings"
         ],
-        "defense": 30
+        "defense": 30,
+        "effect": "+58% summon damage \u00b7 +4 minion slots \u00b7 +20% movement speed \u00b7 A visual glowing effect around the player."
       },
       {
         "id": "valhalla-knights-breastplate",
@@ -4453,7 +4514,9 @@
         "categories": [
           "summon"
         ],
-        "dropRate": "2.86\u201320% 5\u201320%"
+        "dropRate": "2.86\u201320%",
+        "dropRateExpert": "5\u201320%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
       },
       {
         "id": "pool-papyrus-scarab",
@@ -4499,41 +4562,6 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Pygmy_Necklace"
       },
       {
-        "id": "master-ninja-gear",
-        "name": "Master Ninja Gear",
-        "slot": "accessory",
-        "icon": "accessories/master-ninja-gear.png",
-        "source": "Combined at the Tinkerer's Workshop",
-        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility",
-          "survivability"
-        ],
-        "materials": [
-          {
-            "name": "Tiger Climbing Gear",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
-          },
-          {
-            "name": "Tabi",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
-          },
-          {
-            "name": "Black Belt",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
-      },
-      {
         "id": "terraspark-boots",
         "name": "Terraspark Boots",
         "slot": "accessory",
@@ -4577,6 +4605,42 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+      },
+      {
+        "id": "master-ninja-gear",
+        "name": "Master Ninja Gear",
+        "slot": "accessory",
+        "icon": "accessories/master-ninja-gear.png",
+        "source": "Combined at the Tinkerer's Workshop",
+        "why": "Dash, wall climbing, and a 10% chance to dodge an attack.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility",
+          "survivability"
+        ],
+        "materials": [
+          {
+            "name": "Tiger Climbing Gear",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tiger_Climbing_Gear"
+          },
+          {
+            "name": "Tabi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tabi"
+          },
+          {
+            "name": "Black Belt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Belt"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -5370,38 +5434,6 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
-          }
-        ]
-      },
-      {
-        "category": "melee",
-        "items": [
-          {
-            "id": "pool-berserkers-glove",
-            "name": "Berserker's Glove",
-            "slot": "accessory",
-            "icon": "accessories/berserkers-glove.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "melee"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
-            "materials": [
-              {
-                "name": "Power Glove",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
-              },
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
           }
         ]
       }

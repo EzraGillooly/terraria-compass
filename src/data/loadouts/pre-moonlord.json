@@ -1366,7 +1366,7 @@
         "name": "Snowman Cannon",
         "slot": "weapon",
         "icon": "items/snowman-cannon.png",
-        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
         "why": "Fires homing rockets that track the nearest enemy.",
         "tags": [
           "carry-over"
@@ -1417,7 +1417,7 @@
         "name": "Aerial Bane",
         "slot": "weapon",
         "icon": "items/aerial-bane.png",
-        "source": "Dropped by Betsy (Tier 3 Old One's Army, post-Golem)",
+        "source": "Dropped by Betsy",
         "why": "Fires arrows that split into extra arrows when aimed upward.",
         "tags": [],
         "topPick": true,
@@ -1449,7 +1449,7 @@
         "name": "Eventide",
         "slot": "weapon",
         "icon": "items/eventide.png",
-        "source": "Dropped by Empress of Light (post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires homing star arrows, converting wooden arrows for free.",
         "tags": [
           "carry-over"
@@ -2631,7 +2631,7 @@
         "name": "Charged Blaster Cannon",
         "slot": "weapon",
         "icon": "items/charged-blaster-cannon.png",
-        "source": "Dropped by Martian Madness enemies (post-Golem)",
+        "source": "Dropped by Martian Madness enemies",
         "why": "Charges up to fire a large piercing laser beam.",
         "tags": [
           "carry-over"
@@ -2665,7 +2665,7 @@
         "name": "Bubble Gun",
         "slot": "weapon",
         "icon": "items/bubble-gun.png",
-        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Rapidly fires a short-range spread of bubbles.",
         "tags": [
           "carry-over"
@@ -2718,7 +2718,7 @@
         "name": "Betsy's Wrath",
         "slot": "weapon",
         "icon": "items/betsys-wrath.png",
-        "source": "Dropped by Betsy (Old One's Army Tier 3, post-Golem)",
+        "source": "Dropped by Betsy",
         "why": "Fires a projectile that reduces enemy defense and creates homing shards.",
         "tags": [],
         "topPick": false,
@@ -3889,7 +3889,7 @@
         "subclass": "minions",
         "stats": "60 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Cell_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Stardust Fragment",
@@ -3981,7 +3981,7 @@
         "name": "Kaleidoscope",
         "slot": "weapon",
         "icon": "items/kaleidoscope.png",
-        "source": "Dropped by the Empress of Light (summoned after Plantera)",
+        "source": "Dropped by the Empress of Light",
         "why": "Empress of Light drop giving one of the largest summon tag damage bonuses.",
         "tags": [
           "carry-over"
@@ -3990,8 +3990,125 @@
         "subclass": "whip",
         "stats": "170 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Kaleidoscope",
-        "tier": "other",
+        "tier": "best",
         "dropRate": "25%"
+      },
+      {
+        "id": "xeno-staff",
+        "name": "Xeno Staff",
+        "slot": "weapon",
+        "icon": "items/xeno-staff.png",
+        "source": "Dropped by the Martian Saucer during Martian Madness",
+        "why": "Summons UFO minions with instantaneous non-missing attacks.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "36 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Xeno_Staff",
+        "tier": "best",
+        "dropRate": "16.66%"
+      },
+      {
+        "id": "electric-eel",
+        "name": "Electric Eel",
+        "slot": "weapon",
+        "icon": "items/electric-eel.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Duke Fishron drop with long range that chains lightning between enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "150 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Electric_Eel",
+        "tier": "best",
+        "dropRate": "16.67%"
+      },
+      {
+        "id": "firecracker",
+        "name": "Firecracker",
+        "slot": "weapon",
+        "icon": "items/firecracker.png",
+        "source": "Dropped by the Wall of Flesh",
+        "why": "Wall of Flesh drop whose tag detonates for a large burst of minion damage.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "37 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
+        "tier": "good",
+        "dropRate": "25%"
+      },
+      {
+        "id": "explosive-trap-staff",
+        "name": "Explosive Trap Staff",
+        "slot": "weapon",
+        "icon": "items/explosive-trap-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the explosive trap sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "126 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "lightning-aura-staff",
+        "name": "Lightning Aura Staff",
+        "slot": "weapon",
+        "icon": "items/lightning-aura-staff.png",
+        "source": "Bought from the Tavernkeep after defeating Golem (tier 3)",
+        "why": "Tier 3 Tavernkeep upgrade of the lightning aura sentry.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "34 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Lightning_Aura_Staff",
+        "tier": "best"
+      },
+      {
+        "id": "staff-of-the-frost-hydra",
+        "name": "Staff of the Frost Hydra",
+        "slot": "weapon",
+        "icon": "items/staff-of-the-frost-hydra.png",
+        "source": "Found in the Dungeon's Ice Chest, opened with a Frozen Key (post-Plantera)",
+        "why": "Post-Plantera sentry summoning a Frost Hydra that fires piercing frost blasts.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "100 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Staff_of_the_Frost_Hydra",
+        "tier": "best"
+      },
+      {
+        "id": "queen-spider-staff",
+        "name": "Queen Spider Staff",
+        "slot": "weapon",
+        "icon": "items/queen-spider-staff.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Early Hardmode sentry summoning a Spider Turret that lobs bouncing egg projectiles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sentries",
+        "stats": "26 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Spider Fang",
+            "qty": 24,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
       }
     ],
     "armor": [
@@ -4012,7 +4129,8 @@
           "Tiki Shirt",
           "Tiki Pants"
         ],
-        "defense": 35
+        "defense": 35,
+        "effect": "+30% summon damage \u00b7 +30% whip range \u00b7 +4 minion slots"
       },
       {
         "id": "spooky-armor",
@@ -4025,7 +4143,7 @@
           "hardmode"
         ],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spooky_armor",
         "pieceRecipes": [
           {
             "piece": "Spooky Helmet",
@@ -4066,7 +4184,8 @@
           "Spooky Breastplate",
           "Spooky Leggings"
         ],
-        "defense": 30
+        "defense": 30,
+        "effect": "+58% summon damage \u00b7 +4 minion slots \u00b7 +20% movement speed \u00b7 A visual glowing effect around the player."
       },
       {
         "id": "valhalla-knights-breastplate",
@@ -4131,6 +4250,51 @@
         "station": "Tinkerer's Workshop"
       },
       {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "fishron-wings",
+        "name": "Fishron Wings",
+        "slot": "accessory",
+        "icon": "accessories/fishron-wings.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Flight, and faster movement in rain and water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+      },
+      {
         "id": "pygmy-necklace",
         "name": "Pygmy Necklace",
         "slot": "accessory",
@@ -4178,52 +4342,8 @@
           }
         ],
         "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
-      },
-      {
-        "id": "terraspark-boots",
-        "name": "Terraspark Boots",
-        "slot": "accessory",
-        "icon": "accessories/terraspark-boots.png",
-        "source": "Combined through the full boots crafting chain",
-        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "materials": [
-          {
-            "name": "Frostspark Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
-          },
-          {
-            "name": "Lava Waders",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
-      },
-      {
-        "id": "fishron-wings",
-        "name": "Fishron Wings",
-        "slot": "accessory",
-        "icon": "accessories/fishron-wings.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Flight, and faster movement in rain and water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -4972,40 +5092,22 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
           }
         ]
-      },
+      }
+    ],
+    "mixNote": "Valhalla Knight's Breastplate has the largest summon damage bonus of any chest piece. Mixing it into a Tiki or Spooky set trades that set's bonus for the bigger raw number.",
+    "minionMix": [
       {
-        "category": "melee",
         "items": [
           {
-            "id": "pool-berserkers-glove",
-            "name": "Berserker's Glove",
-            "slot": "accessory",
-            "icon": "accessories/berserkers-glove.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "melee"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
-            "materials": [
-              {
-                "name": "Power Glove",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
-              },
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
+            "id": "stardust-cell-staff",
+            "count": 3
+          },
+          {
+            "id": "stardust-dragon-staff",
+            "fillRest": true
           }
         ]
       }
-    ],
-    "mixNote": "Valhalla Knight's Breastplate has the largest summon damage bonus of any chest piece. Mixing it into a Tiki or Spooky set trades that set's bonus for the bigger raw number."
+    ]
   }
 ]

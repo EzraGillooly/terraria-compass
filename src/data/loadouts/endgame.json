@@ -1374,7 +1374,7 @@
         "name": "Eventide",
         "slot": "weapon",
         "icon": "items/eventide.png",
-        "source": "Dropped by Empress of Light (post-Plantera)",
+        "source": "Dropped by Empress of Light",
         "why": "Fires homing star arrows, converting wooden arrows for free.",
         "tags": [
           "carry-over"
@@ -1391,7 +1391,7 @@
         "name": "Snowman Cannon",
         "slot": "weapon",
         "icon": "items/snowman-cannon.png",
-        "source": "Dropped by the Ice Queen during the Frost Moon (post-Plantera)",
+        "source": "Dropped by the Ice Queen during the Frost Moon",
         "why": "Fires homing rockets that track the nearest enemy.",
         "tags": [
           "carry-over"
@@ -2838,7 +2838,7 @@
         "name": "Betsy's Wrath",
         "slot": "weapon",
         "icon": "items/betsys-wrath.png",
-        "source": "Dropped by Betsy (Old One's Army Tier 3, post-Golem)",
+        "source": "Dropped by Betsy",
         "why": "Fires a projectile that reduces enemy defense and creates homing shards.",
         "tags": [
           "carry-over"
@@ -2914,7 +2914,7 @@
         "name": "Charged Blaster Cannon",
         "slot": "weapon",
         "icon": "items/charged-blaster-cannon.png",
-        "source": "Dropped by Martian Madness enemies (post-Golem)",
+        "source": "Dropped by Martian Madness enemies",
         "why": "Charges up to fire a large piercing laser beam.",
         "tags": [
           "carry-over"
@@ -2931,7 +2931,7 @@
         "name": "Bubble Gun",
         "slot": "weapon",
         "icon": "items/bubble-gun.png",
-        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "source": "Dropped by Duke Fishron",
         "why": "Rapidly fires a short-range spread of bubbles.",
         "tags": [
           "carry-over"
@@ -4407,6 +4407,51 @@
         "station": "Tinkerer's Workshop"
       },
       {
+        "id": "terraspark-boots",
+        "name": "Terraspark Boots",
+        "slot": "accessory",
+        "icon": "accessories/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
+      },
+      {
+        "id": "fishron-wings",
+        "name": "Fishron Wings",
+        "slot": "accessory",
+        "icon": "accessories/fishron-wings.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Flight, and faster movement in rain and water.",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+      },
+      {
         "id": "pygmy-necklace",
         "name": "Pygmy Necklace",
         "slot": "accessory",
@@ -4454,52 +4499,8 @@
           }
         ],
         "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear"
-      },
-      {
-        "id": "terraspark-boots",
-        "name": "Terraspark Boots",
-        "slot": "accessory",
-        "icon": "accessories/terraspark-boots.png",
-        "source": "Combined through the full boots crafting chain",
-        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "materials": [
-          {
-            "name": "Frostspark Boots",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
-          },
-          {
-            "name": "Lava Waders",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Terraspark_Boots"
-      },
-      {
-        "id": "fishron-wings",
-        "name": "Fishron Wings",
-        "slot": "accessory",
-        "icon": "accessories/fishron-wings.png",
-        "source": "Dropped by Duke Fishron",
-        "why": "Flight, and faster movement in rain and water.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Fishron_Wings"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Master_Ninja_Gear",
+        "slotExtra": true
       }
     ],
     "buffs": [
@@ -5404,38 +5405,6 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Apprentice's_Scarf"
-          }
-        ]
-      },
-      {
-        "category": "melee",
-        "items": [
-          {
-            "id": "pool-berserkers-glove",
-            "name": "Berserker's Glove",
-            "slot": "accessory",
-            "icon": "accessories/berserkers-glove.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "melee"
-            ],
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
-            "materials": [
-              {
-                "name": "Power Glove",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Power_Glove"
-              },
-              {
-                "name": "Flesh Knuckles",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flesh_Knuckles"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
           }
         ]
       }
