@@ -856,7 +856,8 @@ export function Loadouts() {
   const availableSubclasses = classDef.subclasses.filter((s) =>
     safeLoadout.weapons.some((w) => w.subclass === s.id),
   );
-  if (hasUntyped && availableSubclasses.length > 0) {
+  if (hasUntyped && availableSubclasses.length > 0
+      && !availableSubclasses.some((s) => s.id === OTHER_SUB)) {
     availableSubclasses.push({
       id: OTHER_SUB, name: 'Other',
       description: 'Weapons the wiki does not place in a family.',
