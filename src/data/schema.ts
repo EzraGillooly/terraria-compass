@@ -222,6 +222,19 @@ export const Loadout = z.object({
    * the class's actual picks.
    */
   tools: z.array(Item).default([]),
+  /**
+   * Summoner only: the guide's recommended minion combination for this phase -
+   * how many of each minion to summon together (e.g. two Flinx, one Vampire
+   * Frog). Each `id` matches a weapon in `weapons`, so the card reuses that
+   * item's icon, name and modal. Empty for every non-summoner loadout.
+   */
+  minionMix: z.array(z.object({
+    id: z.string(),
+    count: z.number().int().positive(),
+    /** An interchangeable minion for this slot ("Vampire Frog or Foxparks"),
+     *  shown at the same count with an "or" between the two. */
+    or: z.string().optional(),
+  })).default([]),
   armor: z.array(Item),
   accessories: z.array(Item),
   buffs: z.array(Item),

@@ -1723,8 +1723,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -4567,7 +4566,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
-        "tier": "good"
+        "tier": "best"
       },
       {
         "id": "finch-staff",
@@ -4581,7 +4580,7 @@
         "subclass": "minions",
         "stats": "7 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Finch_Staff",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "33.33%"
       },
       {
@@ -4596,7 +4595,7 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Flinx Fur",
@@ -4665,7 +4664,7 @@
         "subclass": "whip",
         "stats": "14 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Leather_Whip",
-        "tier": "other"
+        "tier": "good"
       },
       {
         "id": "snapthorn",
@@ -4725,7 +4724,7 @@
         "subclass": "minions",
         "stats": "20 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Foxparks",
-        "tier": "other"
+        "tier": "best"
       },
       {
         "id": "slime-staff",
@@ -4739,8 +4738,85 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Staff",
-        "tier": "other",
-        "dropRate": "0.01% 0.014%"
+        "tier": "good",
+        "dropRate": "0.01%",
+        "dropRateExpert": "0.014%"
+      },
+      {
+        "id": "mushroom-staff",
+        "name": "Mushroom Staff",
+        "slot": "weapon",
+        "icon": "items/mushroom-staff.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Summons a Mushroom Boi minion.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "8 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Glowing Mushroom",
+            "qty": 300,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+          },
+          {
+            "name": "Mushroom Grass Seeds",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Grass_Seeds"
+          },
+          {
+            "name": "Shadow Scale",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "soulscourge",
+        "name": "Soulscourge",
+        "slot": "weapon",
+        "icon": "items/soulscourge.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption whip.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "17 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "vasculash",
+        "name": "Vasculash",
+        "slot": "weapon",
+        "icon": "items/vasculash.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart to the Soulscourge.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "whip",
+        "stats": "19 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -4786,8 +4862,7 @@
         "tags": [],
         "topPick": false,
         "categories": [
-          "melee",
-          "summon"
+          "melee"
         ],
         "markers": [
           "whips"
@@ -5191,6 +5266,17 @@
         ]
       }
     ],
-    "mixNote": "The Flinx Fur Coat is the chest piece, not an extra layer - it replaces whatever shirt you are wearing. That costs nothing here, because the ore sets have no set bonus to break, and it is the only summon damage available before the first boss."
+    "mixNote": "The Flinx Fur Coat is the chest piece, not an extra layer - it replaces whatever shirt you are wearing. That costs nothing here, because the ore sets have no set bonus to break, and it is the only summon damage available before the first boss.",
+    "minionMix": [
+      {
+        "id": "flinx-staff",
+        "count": 2
+      },
+      {
+        "id": "vampire-frog-staff",
+        "count": 1,
+        "or": "foxparks"
+      }
+    ]
   }
 ]

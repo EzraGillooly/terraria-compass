@@ -158,6 +158,30 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
   );
 }
 
+/* One minion in the Minion Mixing card: its sprite, its name, and the count to
+   summon shown as gold text in the top-right corner (not a pill). */
+function MinionMixCard({ item, count, onOpen }: { item: Item; count: number; onOpen: (i: Item) => void }) {
+  const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
+  return (
+    <button
+      type="button"
+      className={`${styles.mixItem} pixel-frame pixel-hollow`}
+      onClick={() => onOpen(item)}
+      title={`${count} × ${item.name}`}
+    >
+      <span className={styles.mixIcon}>
+        <img
+          src={local} alt="" aria-hidden="true"
+          className="pixel-img" width="40" height="40" loading="lazy"
+          onError={makeErrorHandler(wiki, FALLBACK_ICON)}
+        />
+        <span className={styles.mixCount}>×{count}</span>
+      </span>
+      <span className={styles.mixName}>{item.name}</span>
+    </button>
+  );
+}
+
 /* Ammo reads better grouped by what fires it: every arrow together, then
    bullets, then rockets. The guide lists them in one run, so a bow user had to
    pick their arrows out from among bullets and darts. Anything that matches no
@@ -1384,6 +1408,35 @@ export function Loadouts() {
               </>
             )}
           </div>
+            {/* Minion Mixing (summoner only): the guide's recommended mix of
+                minions to summon together, with a count per minion. Reuses each
+                minion's own icon, name and modal from the weapons list. */}
+            {safeLoadout.minionMix.length > 0 && (
+              <div className={`${styles.invPanel} pixel-frame`}>
+                <div className={styles.tlabel}>
+                  <span>Minion Mixing</span><span className={styles.em}>Best combination</span>
+                </div>
+                <div className={styles.mixRow}>
+                  {safeLoadout.minionMix.map((m, i) => {
+                    const item = safeLoadout.weapons.find((w) => w.id === m.id);
+                    if (!item) return null;
+                    const alt = m.or ? safeLoadout.weapons.find((w) => w.id === m.or) : undefined;
+                    return (
+                      <Fragment key={m.id}>
+                        {i > 0 && <span className={styles.mixPlus} aria-hidden="true">+</span>}
+                        <MinionMixCard item={item} count={m.count} onOpen={setModalItem} />
+                        {alt && (
+                          <>
+                            <span className={styles.mixOr}>or</span>
+                            <MinionMixCard item={alt} count={m.count} onOpen={setModalItem} />
+                          </>
+                        )}
+                      </Fragment>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
             {/* Accessories sit under the weapons panel in the left column, so the
                 card runs tall rather than spanning the full width. */}
           <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>

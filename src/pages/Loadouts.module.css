@@ -172,6 +172,18 @@
 .wtile:hover { transform: translateY(-3px); --px-border: var(--warm); }
 .wtile:hover .wtileImg { transform: scale(1.16) translateY(-2px); filter: drop-shadow(0 0 8px color-mix(in oklab, var(--warm) 60%, transparent)); }
 
+/* Minion Mixing card: a horizontal run of minions with a count badge, joined by
+   plus signs - "2x Flinx + 1x Vampire Frog". */
+.mixRow { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 6px; }
+.mixItem { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 96px; padding: 12px 8px; font-family: inherit; color: inherit; cursor: pointer; transition: transform .12s; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
+.mixItem:hover { transform: translateY(-3px); --px-border: var(--warm); }
+.mixIcon { position: relative; width: 40px; height: 40px; display: grid; place-items: center; }
+.mixIcon img { width: 40px; height: 40px; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
+.mixCount { position: absolute; top: -8px; right: -10px; font-weight: 800; font-size: 13px; line-height: 1; color: var(--warm); text-shadow: 1px 1px 0 rgba(0,0,0,.6); }
+.mixName { font-weight: 700; font-size: 11px; line-height: 1.15; color: #EAF0FF; text-align: center; }
+.mixPlus { align-self: center; font-weight: 800; font-size: 18px; color: #A9BCE0; padding: 6px 2px 0; }
+.mixOr { align-self: center; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #A9BCE0; padding: 6px 2px 0; }
+
 /* ── Armor ── */
 .armor { display: flex; gap: 14px; align-items: flex-start; }
 .armorDoll { position: relative; width: 60px; height: 60px; flex: none; display: grid; place-items: center; --px-u: 1.5px; --px-fill: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 62%, #000 6%)); --px-border: transparent; }
