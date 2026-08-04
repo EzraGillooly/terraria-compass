@@ -2792,7 +2792,7 @@
         "subclass": "magic-gun",
         "stats": "60 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Laser_Machinegun",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "16.66%"
       },
       {
@@ -2845,7 +2845,7 @@
         "name": "Blizzard Staff",
         "slot": "weapon",
         "icon": "items/blizzard-staff.png",
-        "source": "Dropped by Ice Queen (Frost Moon)",
+        "source": "Dropped by Ice Queen (Frost Moon); drop rate rises with the wave",
         "why": "Calls down a barrage of ice shards from the sky over an area.",
         "tags": [
           "carry-over"
@@ -2854,8 +2854,9 @@
         "subclass": "wand",
         "stats": "58 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
-        "tier": "good",
-        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
+        "tier": "best",
+        "dropRate": "5.19\u201310.37%",
+        "dropRateExpert": "15.56\u201331.11%"
       },
       {
         "id": "razorpine",
@@ -2885,10 +2886,11 @@
           "carry-over"
         ],
         "topPick": false,
-        "subclass": "magic-gun",
+        "subclass": "other",
         "stats": "45 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
-        "tier": "good"
+        "tier": "good",
+        "support": true
       },
       {
         "id": "razorblade-typhoon",
@@ -2921,7 +2923,7 @@
         "subclass": "spell-tome",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "0.33%",
         "dropRateExpert": "0.67%"
       },
@@ -2939,7 +2941,7 @@
         "subclass": "other",
         "stats": "50 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nightglow",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "25%"
       },
       {
@@ -2956,7 +2958,7 @@
         "subclass": "other",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stellar_Tune",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "2%"
       },
       {
@@ -3123,37 +3125,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
-      },
-      {
         "id": "master-ninja-gear",
         "name": "Master Ninja Gear",
         "slot": "accessory",
@@ -3232,6 +3203,38 @@
           "mobility"
         ],
         "wikiUrl": "https://terraria.wiki.gg/wiki/Empress_Wings"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
