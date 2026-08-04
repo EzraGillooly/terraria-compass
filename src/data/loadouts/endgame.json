@@ -2778,7 +2778,7 @@
         "subclass": "spell-tome",
         "stats": "100 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Lunar_Flare",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "20%"
       },
       {
@@ -2816,10 +2816,11 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "magic-gun",
+        "subclass": "other",
         "stats": "45 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun",
-        "tier": "best"
+        "tier": "good",
+        "support": true
       },
       {
         "id": "betsys-wrath",
@@ -2869,7 +2870,7 @@
         "subclass": "spell-tome",
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magnet_Sphere",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "0.33%",
         "dropRateExpert": "0.67%"
       },
@@ -2913,6 +2914,23 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Charged_Blaster_Cannon",
         "tier": "other",
         "dropRate": "0.13%"
+      },
+      {
+        "id": "bubble-gun",
+        "name": "Bubble Gun",
+        "slot": "weapon",
+        "icon": "items/bubble-gun.png",
+        "source": "Dropped by Duke Fishron (summonable in early Hardmode, no boss prerequisite)",
+        "why": "Rapidly fires a short-range spread of bubbles.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "70 magic dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bubble_Gun",
+        "tier": "good",
+        "dropRate": "16.67%"
       }
     ],
     "armor": [
@@ -2983,63 +3001,8 @@
             "station": "Ancient Manipulator"
           }
         ],
-        "defense": 46
-      },
-      {
-        "id": "spectre-armor",
-        "name": "Spectre Armor",
-        "slot": "armor",
-        "icon": "armor/spectre-armor-mage.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Still on-tier at this point. The Mask raises damage, and the Hood variant converts magic damage into healing instead.",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Armor",
-        "pieceRecipes": [
-          {
-            "piece": "Spectre Mask",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Robe",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Spectre Pants",
-            "materials": [
-              {
-                "name": "Spectre Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "pieces": [
-          "Spectre Mask",
-          "Spectre Robe",
-          "Spectre Pants"
-        ],
-        "defense": 42,
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health",
-        "defenseAlt": 30
+        "defense": 46,
+        "effect": "+26% magic damage \u00b7 +16% magic critical strike chance \u00b7 +60 maximum mana \u00b7 +15% mana cost reduction \u00b7 +10% movement speed \u00b7 Striking enemies with magic weapons has a chance to spawn booster items (Damage, Mana, or Life); each grants a stacking buff, up to 3 of a kind, that lasts 8 seconds and can be picked up by any player."
       }
     ],
     "accessories": [
@@ -3093,37 +3056,6 @@
           }
         ],
         "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "master-ninja-gear",
@@ -3204,6 +3136,38 @@
           "mobility"
         ],
         "dropRate": "100%"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
