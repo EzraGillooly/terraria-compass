@@ -1321,7 +1321,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  Top Picks
+                  {classDef.id === 'summoner' ? 'Viable Picks' : 'Top Picks'}
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button
@@ -1335,6 +1335,12 @@ export function Loadouts() {
                   </button>
                 ))}
               </div>
+            )}
+
+            {classDef.id === 'summoner' && (
+              <p className={styles.summonerNote}>
+                I&rsquo;m still working out the best minion, sentry, and whip for each phase.
+              </p>
             )}
 
             {ranked ? (
