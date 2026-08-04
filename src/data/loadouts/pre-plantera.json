@@ -2863,8 +2863,9 @@
         "subclass": "wand",
         "stats": "36 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Tome_of_Infinite_Wisdom",
-        "tier": "best",
-        "dropRate": "10% 20%"
+        "tier": "good",
+        "dropRate": "10%",
+        "dropRateExpert": "20%"
       },
       {
         "id": "magical-harp",
@@ -2878,7 +2879,7 @@
         "subclass": "other",
         "stats": "42 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Magical_Harp",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Harp",
@@ -3001,8 +3002,9 @@
         "subclass": "other",
         "stats": "32 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shadowflame_Hex_Doll",
-        "tier": "good",
-        "dropRate": "16.7% 33.3%"
+        "tier": "best",
+        "dropRate": "16.7%",
+        "dropRateExpert": "33.3%"
       },
       {
         "id": "orange-zapinator",
@@ -3034,7 +3036,7 @@
         "subclass": "wand",
         "stats": "35 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Drain",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -3051,7 +3053,7 @@
         "subclass": "other",
         "stats": "85 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Spirit_Flame",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Desert Spirit Lamp",
@@ -3102,7 +3104,7 @@
         "subclass": "other",
         "stats": "43 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Clinger_Staff",
-        "tier": "best",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -3120,7 +3122,8 @@
         "stats": "30 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Nimbus_Rod",
         "tier": "good",
-        "dropRate": "6.67%"
+        "dropRate": "6.67%",
+        "support": true
       },
       {
         "id": "crystal-storm",
@@ -3338,37 +3341,6 @@
         "station": "Tinkerer's Workshop"
       },
       {
-        "id": "celestial-cuffs",
-        "name": "Celestial Cuffs",
-        "slot": "accessory",
-        "icon": "accessories/celestial-cuffs.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "magic"
-        ],
-        "markers": [
-          "tank"
-        ],
-        "materials": [
-          {
-            "name": "Celestial Magnet",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
-          },
-          {
-            "name": "Magic Cuffs",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
-      },
-      {
         "id": "mana-cloak",
         "name": "Mana Cloak",
         "slot": "accessory",
@@ -3452,6 +3424,38 @@
           }
         ],
         "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "celestial-cuffs",
+        "name": "Celestial Cuffs",
+        "slot": "accessory",
+        "icon": "accessories/celestial-cuffs.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "The mana-on-hit effect helps salvage otherwise doomed attempts when a boss pattern catches you.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "magic"
+        ],
+        "markers": [
+          "tank"
+        ],
+        "materials": [
+          {
+            "name": "Celestial Magnet",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
+          },
+          {
+            "name": "Magic Cuffs",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
+        "slotExtra": true
       }
     ],
     "buffs": [
