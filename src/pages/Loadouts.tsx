@@ -187,14 +187,33 @@ function groupAmmo(ammo: Item[]): { label: string; items: Item[] }[] {
   return out;
 }
 
+/* The Ammo panel groups by role - single-target, crowd-control, then a weapon's
+   own special ammo - so a reader picks by what the fight needs. Ammo the data
+   has not tagged yet keeps the family order (arrows, bullets, …) in one last
+   unlabelled group, so untagged phases read as they did before. */
+const AMMO_ROLES: [NonNullable<Item['ammoRole']>, string][] = [
+  ['single-target', 'Single Target'],
+  ['crowd-control', 'Crowd Control'],
+  ['special', 'Special'],
+];
+function groupAmmoByRole(ammo: Item[]): { label: string; items: Item[] }[] {
+  const rest = [...ammo];
+  const out: { label: string; items: Item[] }[] = [];
+  for (const [role, label] of AMMO_ROLES) {
+    const hit = rest.filter((a) => a.ammoRole === role);
+    if (!hit.length) continue;
+    hit.forEach((a) => rest.splice(rest.indexOf(a), 1));
+    out.push({ label, items: hit });
+  }
+  if (rest.length) out.push({ label: '', items: groupAmmo(rest).flatMap((g) => g.items) });
+  return out;
+}
+
 /* Most armour sets a phase shows. The guide names two or three class-specific
    sets plus an all-class one; past three the column reads as a list rather
    than a recommendation. */
 const MAX_ARMOR_SHOWN = 3;
 
-/* Fewest weapons Top Picks tries to show. Below this the shortlist reads as
-   "your only option" rather than a choice. */
-const MIN_TOP_PICKS = 3;
 
 /* Set-bonus lines shown on an armour card before it defers to the modal. Three
    lines wrap to about six on a narrow card, which is as much as the card can
@@ -885,19 +904,12 @@ export function Loadouts() {
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
   // subclass opens it up to the viable alternates, with the rest behind a toggle.
-  const TIER_RANK: Record<string, number> = { best: 0, good: 1, other: 2 };
+  /* Top Picks is exactly the best-tier picks the guide marks "Best" - no
+     top-up. Padding it to a minimum count pulled Recommended weapons into the
+     shortlist and made them read as Top Picks, which the curated split does not
+     intend. A phase with two Best picks shows two. */
   const bestTier = inScope.filter((w) => w.tier === 'best');
-  /* Top Picks aims for at least three weapons. One pick per subclass leaves
-     phases where a class has only one or two on-tier families showing a single
-     card, which reads as "this is your only option" rather than a shortlist.
-     The top-up takes the next best-tier weapons (good before other, stable so
-     ties keep the guide's order), so a phase with one 'best' fills with its
-     genuine also-great picks rather than whatever sorts first. */
-  const filteredBest = showingAll && bestTier.length < MIN_TOP_PICKS
-    ? [...bestTier, ...[...inScope.filter((w) => w.tier !== 'best')]
-      .sort((a, b) => (TIER_RANK[a.tier] ?? 3) - (TIER_RANK[b.tier] ?? 3))
-      .slice(0, MIN_TOP_PICKS - bestTier.length)].sort(bySubclass)
-    : bestTier;
+  const filteredBest = bestTier;
   /* Drilled into one subclass, the featured "Best" row is every best-tier
      weapon in that family - the video guide's Best picks - not just one. A
      family the video showed nothing for has no best-tier pick: it is filled
@@ -1525,7 +1537,7 @@ export function Loadouts() {
                            joined, so split them into their own bullets. */
                         const setBullets = (a.effect || a.why || '').split(' · ').filter(Boolean);
                         const helmetBullets = (a.headpieceBonus || '')
-                          .split(/,\s*|\s+and\s+/).map((s) => s.trim()).filter(Boolean);
+                          .split(' · ').map((s) => s.trim()).filter(Boolean);
                         if (!setBullets.length && !helmetBullets.length) return null;
                         const preview = helmetBullets.length > 0 ? helmetBullets : setBullets;
                         const shown = preview.slice(0, ARMOR_EFFECT_LINES);
@@ -1566,38 +1578,43 @@ export function Loadouts() {
           {safeLoadout.ammo.length > 0 && (
             <div className={`${styles.invPanel} pixel-frame`}>
               <div className={styles.tlabel}><span>Ammo</span></div>
-              {/* Ammo is ordered by family - arrows, then bullets, then the
-                  rest - so like ammo sits together, but the family labels
-                  themselves are not shown: the grouping is enough. */}
-              <div className={styles.ammoList}>
-                {groupAmmo(safeLoadout.ammo).flatMap((group) => group.items).map((m) => {
-                  const img = iconSrcs(m.icon);
-                  return (
-                    <button
-                      key={m.id}
-                      type="button"
-                      className={`${styles.ammoEntry} ${isObtainable(m, difficulty) ? '' : styles.locked}`}
-                      title={isObtainable(m, difficulty) ? undefined : 'Not obtainable in a Classic world'}
-                      onClick={() => setModalItem(m)}
-                    >
-                      <div className={`${styles.ammoSlot} pixel-frame`}>
-                        <img
-                          src={img.local} alt=""
-                          className={`${styles.ammoImg} pixel-img`}
-                          loading="lazy"
-                          onError={makeErrorHandler(img.wiki, FALLBACK_ICON)}
-                        />
-                      </div>
-                      <div className={styles.ammoBody}>
-                        <div className={styles.ammoHead}>
-                          <span className={styles.ammoName}>{m.name}</span>
-                          {m.stats && <span className={styles.ammoStat}>{m.stats}</span>}
-                        </div>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
+              {/* Grouped by role - Single Target, Crowd Control, then a weapon's
+                  own Special ammo. Untagged ammo keeps the old family order in a
+                  final unlabelled group. */}
+              {groupAmmoByRole(safeLoadout.ammo).map((group) => (
+                <Fragment key={group.label || 'ammo-untagged'}>
+                  {group.label && <div className={styles.groupLabel}>{group.label}</div>}
+                  <div className={styles.ammoList}>
+                    {group.items.map((m) => {
+                      const img = iconSrcs(m.icon);
+                      return (
+                        <button
+                          key={m.id}
+                          type="button"
+                          className={`${styles.ammoEntry} ${isObtainable(m, difficulty) ? '' : styles.locked}`}
+                          title={isObtainable(m, difficulty) ? undefined : 'Not obtainable in a Classic world'}
+                          onClick={() => setModalItem(m)}
+                        >
+                          <div className={`${styles.ammoSlot} pixel-frame`}>
+                            <img
+                              src={img.local} alt=""
+                              className={`${styles.ammoImg} pixel-img`}
+                              loading="lazy"
+                              onError={makeErrorHandler(img.wiki, FALLBACK_ICON)}
+                            />
+                          </div>
+                          <div className={styles.ammoBody}>
+                            <div className={styles.ammoHead}>
+                              <span className={styles.ammoName}>{m.name}</span>
+                              {m.stats && <span className={styles.ammoStat}>{m.stats}</span>}
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </Fragment>
+              ))}
             </div>
           )}
 

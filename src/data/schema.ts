@@ -105,6 +105,10 @@ export const Item = z.object({
    * a player can realistically get.
    */
   tedious: z.boolean().optional(),
+  /** How an ammo pick is meant to be used, so the Ammo panel can group it:
+   * single-target (raw damage), crowd-control (piercing/bouncing), special
+   * (a weapon's dedicated ammo, e.g. Fallen Star for the Star Cannon). */
+  ammoRole: z.enum(['single-target', 'crowd-control', 'special']).optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
   /** the Expert/Master drop rate, shown instead of `dropRate` when the world is

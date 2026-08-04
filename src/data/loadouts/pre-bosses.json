@@ -2149,7 +2149,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "dropRate": "0.67% / 1.33%"
+            "dropRate": "0.67%",
+            "dropRateExpert": "1.33%"
           }
         ]
       },
@@ -2238,7 +2239,7 @@
         "source": "Dropped by Wandering Eye Fish and Zombie Merman (Blood Moon fishing)",
         "why": "Fires arrows in an arc that rain down from above.",
         "tags": [],
-        "topPick": false,
+        "topPick": true,
         "subclass": "bow",
         "stats": "14 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blood_Rain_Bow",
@@ -2286,7 +2287,7 @@
         "subclass": "gun",
         "stats": "31 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Musket",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -2301,7 +2302,7 @@
         "subclass": "gun",
         "stats": "19 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Undertaker",
-        "tier": "good",
+        "tier": "other",
         "dropRate": "20%"
       },
       {
@@ -2733,7 +2734,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "subclass": "other",
+        "subclass": "gun",
         "stats": "12 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Paintball_Gun",
         "dropRate": "10%"
@@ -2747,11 +2748,89 @@
         "why": "Auto-fires a retracting harpoon that consumes no ammunition.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "subclass": "other",
         "stats": "25 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Harpoon",
         "dropRate": "0.5%"
+      },
+      {
+        "id": "demon-bow",
+        "name": "Demon Bow",
+        "slot": "weapon",
+        "icon": "items/demon-bow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption bow crafted from Demonite Bars.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "14 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Bow",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "tendon-bow",
+        "name": "Tendon Bow",
+        "slot": "weapon",
+        "icon": "items/tendon-bow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson bow crafted from Crimtane Bars.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "bow",
+        "stats": "15 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tendon_Bow",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "grenade",
+        "name": "Grenade",
+        "slot": "weapon",
+        "icon": "items/grenade.png",
+        "source": "Purchased from the Demolitionist, or found in Chests.",
+        "why": "Thrown explosive that deals area damage.",
+        "tags": [],
+        "topPick": true,
+        "subclass": "other",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Grenade",
+        "tier": "best"
+      },
+      {
+        "id": "bone-javelin",
+        "name": "Bone Javelin",
+        "slot": "weapon",
+        "icon": "items/bone-javelin.png",
+        "source": "Crafted from Sturdy Fossils",
+        "why": "Thrown javelin that sticks into enemies and inflicts Penetrated.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "other",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bone_Javelin",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Sturdy Fossil",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
+          }
+        ],
+        "station": "Work Bench"
       }
     ],
     "armor": [
@@ -2813,10 +2892,10 @@
         "slot": "armor",
         "icon": "armor/fossil-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "20% chance to save ammo.",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_armor",
         "pieceRecipes": [
           {
             "piece": "Fossil Helmet",
@@ -2857,7 +2936,8 @@
           "Fossil Plate",
           "Fossil Greaves"
         ],
-        "defense": 13
+        "defense": 13,
+        "effect": "+5% ranged damage \u00b7 +8% ranged critical strike chance \u00b7 +20% ammo conservation"
       }
     ],
     "accessories": [
@@ -2867,7 +2947,7 @@
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
         "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
-        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+        "why": "Provides all weapons with 5 unconditional armor penetration.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2876,7 +2956,8 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
-        "dropRate": "0.67% / 1.33%"
+        "dropRate": "0.67%",
+        "dropRateExpert": "1.33%"
       },
       {
         "id": "pool-panic-necklace",
@@ -2884,7 +2965,7 @@
         "slot": "accessory",
         "icon": "accessories/panic-necklace.png",
         "source": "Crafted at Tinkerer's Workshop and Ecto Mist",
-        "why": "Briefly increases the player's movement speed after they take damage. Can be upgraded into the Stinger Necklace.",
+        "why": "Briefly increases the player's movement speed after they take damage.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2915,7 +2996,7 @@
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
+        "why": "Grants a double jump for extra vertical mobility.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -2945,7 +3026,7 @@
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "why": "Increases movement speed while running.",
         "tags": [],
         "topPick": true,
         "categories": [
@@ -3057,29 +3138,55 @@
     ],
     "ammo": [
       {
-        "id": "ammo-wooden-arrow",
-        "name": "Wooden Arrow",
+        "id": "ammo-frostburn-arrow",
+        "name": "Frostburn Arrow",
         "slot": "ammo",
-        "icon": "ammo/wooden-arrow.png",
-        "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
-        "why": "The default arrow.",
-        "tags": [],
-        "topPick": false,
-        "stats": "5 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow",
-        "dropRate": "33.33%"
-      },
-      {
-        "id": "ammo-flaming-arrow",
-        "name": "Flaming Arrow",
-        "slot": "ammo",
-        "icon": "ammo/flaming-arrow.png",
-        "source": "Crafted at By Hand",
-        "why": "Sets enemies on fire.",
+        "icon": "ammo/frostburn-arrow.png",
+        "source": "Crafted at a Work Bench from Wooden Arrows and Ice Torches",
+        "why": "Inflicts the Frostburn debuff for extra damage over time.",
         "tags": [],
         "topPick": false,
         "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Flaming_Arrow",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Frostburn_Arrow",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-silver-bullet",
+        "name": "Silver Bullet",
+        "slot": "ammo",
+        "icon": "ammo/silver-bullet.png",
+        "source": "Crafted at a Work Bench from Silver Bars",
+        "why": "A cheap early upgrade over Musket Balls.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bullet",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-tungsten-bullet",
+        "name": "Tungsten Bullet",
+        "slot": "ammo",
+        "icon": "ammo/tungsten-bullet.png",
+        "source": "Crafted at a Work Bench from Tungsten Bars",
+        "why": "The Tungsten equivalent of the Silver Bullet.",
+        "tags": [],
+        "topPick": false,
+        "stats": "9 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bullet",
+        "ammoRole": "single-target"
+      },
+      {
+        "id": "ammo-jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "ammo/jesters-arrow.png",
+        "source": "Crafted at a Work Bench",
+        "why": "Pierces infinitely and passes through blocks.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Jester%27s_Arrow",
+        "tags": [],
+        "topPick": false,
         "materials": [
           {
             "name": "Wooden Arrow",
@@ -3087,25 +3194,39 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
           },
           {
-            "name": "Torch",
+            "name": "Fallen Star",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Torch"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
           }
         ],
-        "station": "By Hand"
+        "station": "Work Bench",
+        "stats": "10 ranged dmg"
       },
       {
-        "id": "ammo-musket-ball",
-        "name": "Musket Ball",
+        "id": "ammo-unholy-arrow",
+        "name": "Unholy Arrow",
         "slot": "ammo",
-        "icon": "ammo/musket-ball.png",
-        "source": "Sold by the Arms Dealer",
-        "why": "The default bullet.",
+        "icon": "ammo/unholy-arrow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Pierces several enemies.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Unholy_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "7 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball",
-        "dropRate": "0.64% 0.6% (Hardmode)"
+        "materials": [
+          {
+            "name": "Wooden Arrow",
+            "qty": 25,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
+          },
+          {
+            "name": "Worm Tooth",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Tooth"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "12 ranged dmg"
       }
     ],
     "accessoryPool": [
@@ -3146,7 +3267,7 @@
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
             "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3328,7 +3449,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "dropRate": "0.67% / 1.33%"
+            "dropRate": "0.67%",
+            "dropRateExpert": "1.33%"
           }
         ]
       },
@@ -3872,7 +3994,7 @@
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
+        "why": "Grants a double jump for extra vertical mobility.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -3887,7 +4009,7 @@
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "why": "Increases movement speed while running.",
         "tags": [],
         "topPick": true,
         "categories": [
@@ -4119,7 +4241,7 @@
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
             "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -4335,7 +4457,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "dropRate": "0.67% / 1.33%"
+            "dropRate": "0.67%",
+            "dropRateExpert": "1.33%"
           }
         ]
       },
@@ -4668,7 +4791,7 @@
         "slot": "accessory",
         "icon": "accessories/shark-tooth-necklace.png",
         "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
-        "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+        "why": "Provides all weapons with 5 unconditional armor penetration.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -4677,7 +4800,8 @@
         "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
         "quality": "great",
         "notes": "The player should use the Shark Tooth Necklace (or its upgrade) if they are unable to consistently damage the Wall of Flesh's eyes, as its mouth has considerably higher defense.",
-        "dropRate": "0.67% / 1.33%"
+        "dropRate": "0.67%",
+        "dropRateExpert": "1.33%"
       },
       {
         "id": "cloud-in-a-bottle",
@@ -4685,7 +4809,7 @@
         "slot": "accessory",
         "icon": "accessories/cloud-in-a-bottle.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "The double-jump makes cave traversal and emergency boss repositioning much easier.",
+        "why": "Grants a double jump for extra vertical mobility.",
         "tags": [],
         "topPick": false,
         "categories": [
@@ -4715,7 +4839,7 @@
         "slot": "accessory",
         "icon": "accessories/hermes-boots.png",
         "source": "Found in Underground and Cavern Chests",
-        "why": "Movement is survival in early Terraria, and Hermes Boots give you the speed to dodge, kite, and position better.",
+        "why": "Increases movement speed while running.",
         "tags": [],
         "topPick": true,
         "categories": [
@@ -4834,7 +4958,7 @@
             "slot": "accessory",
             "icon": "accessories/magiluminescence.png",
             "source": "Crafted at Iron Anvil or Lead Anvil",
-            "why": "",
+            "why": "Increases the player's movement speed by 15%, and their acceleration (and deceleration) by 75%. This movement speed buff no longer applies if the player is not grounded.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5051,7 +5175,8 @@
               "offense"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace",
-            "dropRate": "0.67% / 1.33%"
+            "dropRate": "0.67%",
+            "dropRateExpert": "1.33%"
           }
         ]
       }

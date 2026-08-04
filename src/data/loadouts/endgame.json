@@ -350,7 +350,7 @@
           }
         ],
         "defense": 78,
-        "effect": "+78 defense \u00b7 +12% damage reduction \u00b7 +29% melee damage \u00b7 +26% melee critical strike chance \u00b7 +15% melee speed \u00b7 +900 aggro \u00b7 +15% movement speed \u00b7 +3 HP/s health regeneration \u00b7 Solar Blaze: builds up to 3 charges (each adds a damaging dash with a Solar Radiance explosion and +20% damage reduction); taking a hit spends a charge"
+        "effect": "+12% damage reduction \u00b7 +29% melee damage \u00b7 +26% melee critical strike chance \u00b7 +15% melee speed \u00b7 +900 aggro \u00b7 +15% movement speed \u00b7 +3 HP/s health regeneration \u00b7 Solar Blaze: builds up to 3 charges (each adds a damaging dash with a Solar Radiance explosion and +20% damage reduction); taking a hit spends a charge"
       }
     ],
     "accessories": [
@@ -423,7 +423,8 @@
           }
         ],
         "station": "Tinkerer's Workshop",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet"
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Gauntlet",
+        "slotExtra": true
       },
       {
         "id": "master-ninja-gear",
@@ -1455,6 +1456,7 @@
         "icon": "armor/vortex-armor.png",
         "source": "Crafted at Ancient Manipulator",
         "why": "Toggle stealth to raise ranged damage and make enemies less likely to target you.",
+        "effect": "+36% ranged damage \u00b7 +27% ranged critical strike chance \u00b7 +25% ammo conservation \u00b7 +10% movement speed \u00b7 Double-tap Down to toggle stealth: turn nearly invisible and stop most enemies from targeting you. While stealthed, boosts ramp up to +80% ranged damage, +20% ranged critical strike chance, +50% ranged knockback, and -1200 aggro, at 0.3x movement speed; taking damage or using an item breaks it.",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_armor",
         "tags": [
           "hardmode"
@@ -1533,7 +1535,8 @@
         "categories": [
           "ranged"
         ],
-        "dropRate": "25%"
+        "dropRate": "25%",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ranger_Emblem"
       },
       {
         "id": "pool-recon-scope",
@@ -1589,7 +1592,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Destroyer_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "slotExtra": true
       },
       {
         "id": "master-ninja-gear",
@@ -1857,24 +1861,43 @@
     ],
     "ammo": [
       {
-        "id": "ammo-luminite-bullet",
-        "name": "Luminite Bullet",
+        "id": "ammo-crystal-bullet",
+        "name": "Crystal Bullet",
         "slot": "ammo",
-        "icon": "ammo/luminite-bullet.png",
-        "source": "Crafted at Ancient Manipulator",
-        "why": "The highest base damage of any bullet.",
+        "icon": "ammo/crystal-bullet.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil from Crystal Shards and Musket Balls",
+        "why": "Splits into crystal shards on hit.",
+        "stats": "9 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Bullet",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-ichor-arrow",
+        "name": "Ichor Arrow",
+        "slot": "ammo",
+        "icon": "ammo/ichor-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from 150 Wooden Arrows and Ichor",
+        "why": "Inflicts Ichor, lowering enemy defense.",
+        "stats": "16 ranged dmg",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "tags": [],
+        "topPick": false
+      },
+      {
+        "id": "ammo-venom-arrow",
+        "name": "Venom Arrow",
+        "slot": "ammo",
+        "icon": "ammo/venom-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Vials of Venom",
+        "why": "Inflicts Venom.",
+        "ammoRole": "single-target",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Arrow",
         "tags": [],
         "topPick": false,
-        "stats": "20 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet",
-        "materials": [
-          {
-            "name": "Luminite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
-          }
-        ],
-        "station": "Ancient Manipulator"
+        "stats": "19 ranged dmg"
       },
       {
         "id": "ammo-chlorophyte-bullet",
@@ -1899,37 +1922,68 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "ammoRole": "single-target"
       },
       {
-        "id": "ammo-holy-arrow",
-        "name": "Holy Arrow",
+        "id": "ammo-luminite-bullet",
+        "name": "Luminite Bullet",
         "slot": "ammo",
-        "icon": "ammo/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
+        "icon": "ammo/luminite-bullet.png",
+        "source": "Crafted at Ancient Manipulator",
+        "why": "The highest base damage of any bullet.",
         "tags": [],
         "topPick": false,
-        "stats": "13 ranged dmg",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Arrow",
+        "stats": "20 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet",
         "materials": [
           {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
+            "name": "Luminite Bar",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Ancient Manipulator",
+        "ammoRole": "crowd-control"
+      },
+      {
+        "id": "ammo-luminite-arrow",
+        "name": "Luminite Arrow",
+        "slot": "ammo",
+        "icon": "ammo/luminite-arrow.png",
+        "source": "Crafted at Ancient Manipulator from Wooden Arrows and Luminite Bars",
+        "why": "Splits into homing fragments on impact.",
+        "tags": [],
+        "topPick": false,
+        "stats": "15 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Arrow",
+        "ammoRole": "crowd-control"
+      },
+      {
+        "id": "ammo-chlorophyte-arrow",
+        "name": "Chlorophyte Arrow",
+        "slot": "ammo",
+        "icon": "ammo/chlorophyte-arrow.png",
+        "source": "Crafted at a Hardmode Anvil from Wooden Arrows and Chlorophyte Bars",
+        "why": "Homes in on enemies and bounces.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Arrow",
+        "tags": [],
+        "topPick": false,
+        "stats": "16 ranged dmg"
+      },
+      {
+        "id": "ammo-mini-nuke-i",
+        "name": "Mini Nuke I",
+        "slot": "ammo",
+        "icon": "ammo/mini-nuke-i.png",
+        "source": "Crafted at a Hardmode Anvil from Rocket I and Nanites",
+        "why": "Rocket with a large explosion.",
+        "ammoRole": "crowd-control",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Mini_Nuke_I",
+        "tags": [],
+        "topPick": false,
+        "stats": "75 ranged dmg"
       }
     ],
     "accessoryPool": [
@@ -2423,7 +2477,7 @@
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
             "source": "Dropped by Vampires during a Solar Eclipse",
-            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -3832,7 +3886,7 @@
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
             "source": "Dropped by Vampires during a Solar Eclipse",
-            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5159,7 +5213,7 @@
             "slot": "accessory",
             "icon": "accessories/moon-stone.png",
             "source": "Dropped by Vampires during a Solar Eclipse",
-            "why": "At night (7:30 PM to 4:30 AM) it raises damage, critical strike chance, melee speed, movement speed, and life regen.",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -5317,16 +5371,13 @@
             "slot": "accessory",
             "icon": "accessories/berserkers-glove.png",
             "source": "Crafted at Tinkerer's Workshop",
-            "why": "Effectively combines the effects of the Flesh Knuckles with Feral Claws, both increasing the player's defense (and aggro) and whip speed.",
+            "why": "",
             "tags": [],
             "topPick": false,
             "categories": [
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Berserker's_Glove",
-            "markers": [
-              "whips"
-            ],
             "notes": "Players seeking to use defensive setups that use the Hero Shield, Flesh Knuckles, and Berserker's Glove simultaneously will need a total of three Flesh Knuckles (or Putrid Scents to shimmer into them). Strongly consider making a place to farm enemies for Souls of Night, as obtaining all three will no doubt be tedious.",
             "materials": [
               {
@@ -5348,7 +5399,7 @@
             "slot": "accessory",
             "icon": "accessories/apprentices-scarf.png",
             "source": "Dropped by Dark Mage (T1) and 1 other source",
-            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%.",
+            "why": "Increases the player's sentry slots by one and buffs overall summon damage by 10%. Can be useful in hybrid summoner setups, depending on how high the base damage of your summons is.",
             "tags": [],
             "topPick": false,
             "categories": [
