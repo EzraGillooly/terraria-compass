@@ -160,14 +160,17 @@ function WeaponTile({ item, difficulty, onOpen }: { item: Item; difficulty: Diff
 
 /* One minion in the Minion Mixing card: its sprite, its name, and the count to
    summon shown as gold text in the top-right corner (not a pill). */
-function MinionMixCard({ item, count, onOpen }: { item: Item; count: number; onOpen: (i: Item) => void }) {
+function MinionMixCard(
+  { item, count, fillRest, onOpen }:
+  { item: Item; count?: number; fillRest?: boolean; onOpen: (i: Item) => void },
+) {
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   return (
     <button
       type="button"
       className={`${styles.mixItem} pixel-frame pixel-hollow`}
       onClick={() => onOpen(item)}
-      title={`${count} × ${item.name}`}
+      title={fillRest ? `${item.name} for the rest of the minion slots` : `${count} × ${item.name}`}
     >
       <span className={styles.mixIcon}>
         <img
@@ -175,7 +178,7 @@ function MinionMixCard({ item, count, onOpen }: { item: Item; count: number; onO
           className="pixel-img" width="40" height="40" loading="lazy"
           onError={makeErrorHandler(wiki, FALLBACK_ICON)}
         />
-        <span className={styles.mixCount}>×{count}</span>
+        <span className={styles.mixCount}>{fillRest ? 'rest' : `×${count}`}</span>
       </span>
       <span className={styles.mixName}>{item.name}</span>
     </button>
@@ -1427,11 +1430,11 @@ export function Loadouts() {
                         return (
                           <Fragment key={m.id}>
                             {i > 0 && <span className={styles.mixPlus} aria-hidden="true">+</span>}
-                            <MinionMixCard item={item} count={m.count} onOpen={setModalItem} />
+                            <MinionMixCard item={item} count={m.count} fillRest={m.fillRest} onOpen={setModalItem} />
                             {alt && (
                               <>
                                 <span className={styles.mixOr}>or</span>
-                                <MinionMixCard item={alt} count={m.count} onOpen={setModalItem} />
+                                <MinionMixCard item={alt} count={m.count} fillRest={m.fillRest} onOpen={setModalItem} />
                               </>
                             )}
                           </Fragment>

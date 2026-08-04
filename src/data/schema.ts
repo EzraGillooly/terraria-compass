@@ -232,7 +232,12 @@ export const Loadout = z.object({
   minionMix: z.array(z.object({
     items: z.array(z.object({
       id: z.string(),
-      count: z.number().int().positive(),
+      /** How many to summon. Omit when `fillRest` is set - that minion just
+       *  takes whatever slots are left. */
+      count: z.number().int().positive().optional(),
+      /** This minion fills the remaining minion slots rather than a fixed count
+       *  ("Spider x3 + Optic Staff for the rest"). Rendered as "rest". */
+      fillRest: z.boolean().optional(),
       /** An interchangeable minion for this slot ("Vampire Frog or Foxparks"),
        *  shown at the same count with an "or" between the two. */
       or: z.string().optional(),

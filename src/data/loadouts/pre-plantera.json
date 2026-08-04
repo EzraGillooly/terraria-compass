@@ -4144,7 +4144,7 @@
         "subclass": "minions",
         "stats": "24 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Optic_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Black Lens",
@@ -4211,7 +4211,7 @@
         "slot": "weapon",
         "icon": "items/pirate-staff.png",
         "source": "Dropped by Pirates and the Flying Dutchman during the Pirate Invasion",
-        "why": "Summons a Pirate minion; obtained from the Hardmode Pirate Invasion event.",
+        "why": "Summons a Pirate minion.",
         "tags": [],
         "topPick": false,
         "subclass": "minions",
@@ -4232,7 +4232,7 @@
         "subclass": "sentries",
         "stats": "59 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Explosive_Trap_Cane",
-        "tier": "good"
+        "tier": "other"
       },
       {
         "id": "flameburst-cane",
@@ -4276,7 +4276,7 @@
         "subclass": "sentries",
         "stats": "26 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Queen_Spider_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Spider Fang",
@@ -4292,7 +4292,7 @@
         "slot": "weapon",
         "icon": "items/sanguine-staff.png",
         "source": "Dropped by Dreadnautilus (Blood Moon fishing in Hardmode)",
-        "why": "Summons fast Sanguine Bat minions; obtainable early Hardmode with no mechanical boss required.",
+        "why": "Summons fast Sanguine Bat minions.",
         "tags": [
           "carry-over"
         ],
@@ -4300,8 +4300,9 @@
         "subclass": "minions",
         "stats": "35 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Sanguine_Staff",
-        "tier": "good",
-        "dropRate": "50% 100%"
+        "tier": "best",
+        "dropRate": "50%",
+        "dropRateExpert": "100%"
       },
       {
         "id": "spider-staff",
@@ -4309,7 +4310,7 @@
         "slot": "weapon",
         "icon": "items/spider-staff.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Summons Spider minions that inflict Acid Venom; Spider Fangs drop from Hardmode Black Recluses.",
+        "why": "Summons Spider minions that inflict Acid Venom.",
         "tags": [
           "carry-over"
         ],
@@ -4357,7 +4358,7 @@
         "subclass": "whip",
         "stats": "37 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Firecracker",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4374,7 +4375,7 @@
         "subclass": "minions",
         "stats": "6 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blade_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "25%"
       },
       {
@@ -4391,7 +4392,7 @@
         "subclass": "whip",
         "stats": "45 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Cool_Whip",
-        "tier": "other",
+        "tier": "best",
         "materials": [
           {
             "name": "Soul of Light",
@@ -4429,60 +4430,6 @@
       }
     ],
     "armor": [
-      {
-        "id": "spider-armor",
-        "name": "Spider Armor",
-        "slot": "armor",
-        "icon": "armor/spider-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Summon damage +12%.",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_armor",
-        "tags": [
-          "hardmode"
-        ],
-        "topPick": true,
-        "pieces": [
-          "Spider Mask",
-          "Spider Breastplate",
-          "Spider Greaves"
-        ],
-        "pieceRecipes": [
-          {
-            "piece": "Spider Mask",
-            "materials": [
-              {
-                "name": "Spider Fang",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Spider Breastplate",
-            "materials": [
-              {
-                "name": "Spider Fang",
-                "qty": 16,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Spider Greaves",
-            "materials": [
-              {
-                "name": "Spider Fang",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 20
-      },
       {
         "id": "hallowed-armor",
         "name": "Hallowed Armor",
@@ -4538,6 +4485,63 @@
         "headpiece": "Hallowed Hood",
         "defense": 27,
         "headpieceBonus": "+17% summon damage \u00b7 +7% critical strike chance \u00b7 +3 minion slots"
+      },
+      {
+        "id": "chlorophyte-armor",
+        "name": "Chlorophyte Armor",
+        "slot": "armor",
+        "icon": "armor-sets/chlorophyte-armor-summoner.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_armor",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "pieces": [
+          "Chlorophyte Visor",
+          "Chlorophyte Plate Mail",
+          "Chlorophyte Greaves"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Chlorophyte Visor",
+            "materials": [
+              {
+                "name": "Chlorophyte Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Chlorophyte Plate Mail",
+            "materials": [
+              {
+                "name": "Chlorophyte Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Chlorophyte Greaves",
+            "materials": [
+              {
+                "name": "Chlorophyte Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 33,
+        "effect": "+5% movement speed \u00b7 Leaf Crystal minion fires bolts at nearby enemies",
+        "headpiece": "Chlorophyte Visor",
+        "headpieceBonus": "+21% summon damage \u00b7 +15% critical strike chance (does not affect summon weapons) \u00b7 +3 minion slots"
       },
       {
         "id": "monks-bushy-brow-bald-cap",
@@ -5399,6 +5403,20 @@
         ]
       }
     ],
-    "mixNote": "Melee speed raises whip speed, which is why Monk's Bushy Brow Bald Cap is a summoner piece despite the name. Wearing it means giving up the Spider or Hallowed set bonus."
+    "mixNote": "Melee speed raises whip speed, which is why Monk's Bushy Brow Bald Cap is a summoner piece despite the name. Wearing it means giving up the Spider or Hallowed set bonus.",
+    "minionMix": [
+      {
+        "items": [
+          {
+            "id": "spider-staff",
+            "count": 3
+          },
+          {
+            "id": "optic-staff",
+            "fillRest": true
+          }
+        ]
+      }
+    ]
   }
 ]
