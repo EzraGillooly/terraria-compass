@@ -3210,7 +3210,7 @@
         "subclass": "minions",
         "stats": "12 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Hornet_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Bee Wax",
@@ -3261,7 +3261,7 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom_Staff",
-        "tier": "other",
+        "tier": "good",
         "materials": [
           {
             "name": "Glowing Mushroom",
@@ -3335,7 +3335,7 @@
         "subclass": "whip",
         "stats": "12 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Slime_Whip",
-        "tier": "other",
+        "tier": "good",
         "materials": [
           {
             "name": "Gel",
@@ -3415,7 +3415,7 @@
         "subclass": "minions",
         "stats": "8 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Flinx_Staff",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Flinx Fur",
@@ -3444,7 +3444,7 @@
         "subclass": "minions",
         "stats": "11 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vampire_Frog_Staff",
-        "tier": "good",
+        "tier": "best",
         "dropRate": "12.5%"
       },
       {
@@ -3461,7 +3461,7 @@
         "subclass": "whip",
         "stats": "18 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Starcrash",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Meteorite Bar",
@@ -3493,7 +3493,7 @@
         "subclass": "whip",
         "stats": "17 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Soulscourge",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Demonite Bar",
@@ -3515,7 +3515,7 @@
         "subclass": "whip",
         "stats": "19 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Vasculash",
-        "tier": "good",
+        "tier": "best",
         "materials": [
           {
             "name": "Crimtane Bar",
@@ -3524,6 +3524,34 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "foxparks",
+        "name": "Foxparks",
+        "slot": "weapon",
+        "icon": "items/foxparks.png",
+        "source": "Found during the day on surface grass, Jungle grass, Snow or Ice (guarded by two Goblin Archers)",
+        "why": "Summons a single Foxparks minion with a held flamethrower attack.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "20 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Foxparks",
+        "tier": "good"
+      },
+      {
+        "id": "abigails-flower",
+        "name": "Abigail's Flower",
+        "slot": "weapon",
+        "icon": "items/abigails-flower.png",
+        "source": "Found growing on grass near a placed Tombstone",
+        "why": "Summons Abigail, a single ghost minion that grows stronger with each re-summon.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "minions",
+        "stats": "6 summon dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Abigail%27s_Flower",
+        "tier": "good"
       }
     ],
     "armor": [
@@ -3607,7 +3635,8 @@
             "station": "Hellforge"
           }
         ],
-        "defense": 15
+        "defense": 15,
+        "effect": "+31% summon damage \u00b7 +1 minion slot \u00b7 +15% whip speed (stacks multiplicatively with melee speed) \u00b7 +30% whip range"
       },
       {
         "id": "bee-armor",
@@ -3618,7 +3647,7 @@
         "why": "Summon damage +10%. No whip bonus, so it suits minion-led builds.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_armor",
         "pieceRecipes": [
           {
             "piece": "Bee Headgear",
@@ -3659,7 +3688,8 @@
           "Bee Breastplate",
           "Bee Greaves"
         ],
-        "defense": 13
+        "defense": 13,
+        "effect": "+23% summon damage \u00b7 +2 minion slots"
       }
     ],
     "accessories": [
@@ -4175,6 +4205,44 @@
               "summon"
             ],
             "wikiUrl": "https://terraria.wiki.gg/wiki/Squire%27s_Shield"
+          }
+        ]
+      }
+    ],
+    "minionMix": [
+      {
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 2
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 1
+          },
+          {
+            "id": "hornet-staff",
+            "count": 1
+          },
+          {
+            "id": "imp-staff",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "id": "flinx-staff",
+            "count": 2
+          },
+          {
+            "id": "vampire-frog-staff",
+            "count": 1
+          },
+          {
+            "id": "imp-staff",
+            "count": 2
           }
         ]
       }
