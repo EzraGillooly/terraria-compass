@@ -2653,7 +2653,7 @@
         "name": "Blizzard Staff",
         "slot": "weapon",
         "icon": "items/blizzard-staff.png",
-        "source": "Dropped by Ice Queen (Frost Moon)",
+        "source": "Dropped by Ice Queen (Frost Moon); drop rate rises with the wave",
         "why": "Calls down a barrage of ice shards from the sky over an area.",
         "tags": [],
         "topPick": false,
@@ -2661,7 +2661,8 @@
         "stats": "58 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
         "tier": "other",
-        "dropRate": "5.19\u201310.37% 15.56\u201331.11%"
+        "dropRate": "5.19\u201310.37%",
+        "dropRateExpert": "15.56\u201331.11%"
       },
       {
         "id": "magnet-sphere",
