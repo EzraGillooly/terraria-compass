@@ -2154,7 +2154,7 @@
         "name": "Bee Gun",
         "slot": "weapon",
         "icon": "items/bee-gun.png",
-        "source": "Dropped by Queen Beechance)",
+        "source": "Dropped by Queen Bee",
         "why": "Fires several homing bee projectiles per shot.",
         "tags": [],
         "topPick": false,
@@ -2162,7 +2162,8 @@
         "stats": "9 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Gun",
         "tier": "good",
-        "dropRate": "33%"
+        "dropRate": "33%",
+        "dropRateExpert": "50%"
       },
       {
         "id": "weather-pain",
@@ -2173,11 +2174,11 @@
         "why": "Fires a slow weather-front projectile that spawns damaging effects.",
         "tags": [],
         "topPick": false,
-        "subclass": "wand",
         "stats": "13 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Weather_Pain",
         "tier": "good",
-        "dropRate": "25%"
+        "dropRate": "25%",
+        "support": true
       },
       {
         "id": "gray-zapinator",
@@ -2209,7 +2210,7 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Ruby_Staff",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Gold Bar",
@@ -2267,7 +2268,7 @@
         "subclass": "wand",
         "stats": "24 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Thunder_Zapper",
-        "tier": "best",
+        "tier": "good",
         "dropRate": "12.5%"
       },
       {
@@ -2298,11 +2299,11 @@
           "carry-over"
         ],
         "topPick": true,
-        "subclass": "other",
         "stats": "12 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_Rod",
-        "tier": "best",
-        "dropRate": "20%"
+        "tier": "good",
+        "dropRate": "20%",
+        "support": true
       },
       {
         "id": "amber-staff",
@@ -2318,7 +2319,7 @@
         "subclass": "wand",
         "stats": "21 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Amber_Staff",
-        "tier": "good",
+        "tier": "other",
         "materials": [
           {
             "name": "Sturdy Fossil",
@@ -2409,7 +2410,8 @@
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
-        "defense": 16
+        "defense": 16,
+        "effect": "+27% magic damage \u00b7 Reduces the mana cost of the Space Gun, Laser Rifle, Gray Zapinator, and Orange Zapinator to 0 \u00b7 Immunity to meteorite projectiles during the Meteor Shower event \u00b7 Leaves behind a trail of flames."
       },
       {
         "id": "jungle-armor",
@@ -2471,7 +2473,8 @@
           "Desktop version",
           "Jungle Pants"
         ],
-        "defense": 17
+        "defense": 17,
+        "effect": "+6% magic damage \u00b7 +12% magic critical strike chance \u00b7 +80 maximum mana \u00b7 +16% mana cost reduction \u00b7 Emits grass particles while moving."
       },
       {
         "id": "wizard-set",
@@ -2517,7 +2520,9 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Cuffs"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs"
       },
       {
         "id": "pool-magnet-flower",
@@ -2545,7 +2550,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
           }
         ],
-        "station": "Tinkerer's Workshop"
+        "station": "Tinkerer's Workshop",
+        "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
       },
       {
         "id": "pool-mana-regeneration-band",
@@ -3105,7 +3111,8 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Magnet"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed \u00b7 Increases pickup range for mana stars"
           },
           {
             "id": "pool-mana-regeneration-band",
@@ -3159,14 +3166,15 @@
                 "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Potion"
               }
             ],
-            "station": "Tinkerer's Workshop"
+            "station": "Tinkerer's Workshop",
+            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed"
           },
           {
             "id": "band-of-starpower",
             "name": "Band of Starpower",
             "slot": "accessory",
             "icon": "accessories/band-of-starpower.png",
-            "source": "Found in Shadow Orbs / Crimson Hearts",
+            "source": "Dropped by Shadow Orbs (Corruption); found in Corrupt and Defiled Crates",
             "why": "+20 max mana for early casters.",
             "tags": [],
             "topPick": false,
@@ -3177,7 +3185,8 @@
             "markers": [
               "corruption"
             ],
-            "dropRate": "20%"
+            "dropRate": "20%",
+            "effect": "Increases maximum mana by 20"
           }
         ]
       }
