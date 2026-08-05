@@ -7245,7 +7245,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -8679,7 +8682,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -9067,7 +9073,7 @@
         "why": "strong sustained damage",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "subclass": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sparkling_Empress",
         "effect": "When used, it briefly charges, then releases a concentrated light-blue laser that pierces infinitely. Upon killing an enemy, they explode into two to three prism shards that shoot out in random directions, dealing 20% of the weapon's base damage."
@@ -9081,7 +9087,7 @@
         "why": "Fires an electric bolt that pierces one enemy, found in the Desert.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "subclass": "wand",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thunder_Zapper",
         "dropRate": "12.5%",
@@ -9254,117 +9260,6 @@
         "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
         "desc": "Victide armor is a Pre-Hardmode armor set.",
         "headpieceBonus": "+1.5 HP/s life regen and 10% increased magic damage while submerged in liquid"
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
-        "source": "Crafted",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Gold Chainmail",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Greaves",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
-        ],
-        "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "armor-sets/platinum-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "No set bonus. Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Platinum Helmet",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Platinum Chainmail",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Platinum Greaves",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "pieces": [
-          "Platinum Helmet",
-          "Platinum Chainmail",
-          "Platinum Greaves"
-        ],
-        "defense": 16,
-        "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
       }
     ],
     "accessories": [
@@ -10215,7 +10110,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -10488,9 +10386,11 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
         ],
-        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting."
+        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-evil",
@@ -11608,7 +11508,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-spirit-glyph",
@@ -13017,7 +12920,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -14345,7 +14251,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -15760,7 +15669,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -16372,77 +16284,6 @@
         ],
         "effect": "+6% magic damage · +12% magic critical strike chance · +80 maximum mana · +16% mana cost reduction · Emits grass particles while moving.",
         "desc": "Jungle armor is a pre-Hardmode mage armor set consisting of the Jungle Shirt, Jungle Hat, and Jungle Pants."
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "defense": 19,
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
-        "allClass": true
       }
     ],
     "accessories": [
@@ -17252,7 +17093,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -18072,7 +17916,10 @@
         ],
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
         "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-        "expertOnly": true
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "brain-of-confusion",
@@ -18635,7 +18482,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-spirit-glyph",
@@ -19912,7 +19762,10 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
             "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -23068,7 +22921,7 @@
         "why": "area magic weapon option",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Bath",
         "subclass": "wand",
         "effect": "When used, it spawns 2-3 blood raindrops from the sky that pierce once but cannot pass through tiles. The raindrops inflict the Burning Blood debuff."
@@ -23097,7 +22950,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Space_Gun",
-        "tier": "good",
+        "tier": "other",
         "subclass": "magic-gun",
         "materials": [
           {
@@ -23119,7 +22972,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tradewinds",
-        "tier": "other",
+        "tier": "best",
         "effect": "When used, it fires fast moving aero feathers. These feathers emit light particles and are capable of piercing or ricocheting once, disappearing on its second impact.",
         "subclass": "spell-tome",
         "materials": [
@@ -23130,64 +22983,77 @@
           }
         ],
         "station": "Bookcase"
+      },
+      {
+        "id": "bee-gun",
+        "name": "Bee Gun",
+        "slot": "weapon",
+        "icon": "items/bee-gun.png",
+        "source": "Dropped by Queen Bee",
+        "why": "Fires several homing bee projectiles per shot.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "magic-gun",
+        "stats": "9 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bee_Gun",
+        "tier": "best",
+        "dropRate": "33%",
+        "dropRateExpert": "50%"
+      },
+      {
+        "id": "gray-zapinator",
+        "name": "Gray Zapinator",
+        "slot": "weapon",
+        "icon": "calamity/gray-zapinator.png",
+        "source": "Purchased from the Traveling Merchant (pre-Hardmode)",
+        "why": "Fires an erratic light beam that ricochets and varies in size.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "magic-gun",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gray_Zapinator",
+        "stats": "42 magic dmg"
+      },
+      {
+        "id": "pulse-pistol",
+        "name": "P-PLS: Pulse Pistol",
+        "slot": "weapon",
+        "icon": "calamity/pulse-pistol.png",
+        "subclass": "magic-gun",
+        "stats": "42 magic dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/P-PLS:_Pulse_Pistol",
+        "effect": "Fires a pulse orb that tracks nearby targets and splits in two after hitting an enemy.",
+        "why": "Homing splitting orb gun.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Mysterious Circuitry",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mysterious_Circuitry"
+          },
+          {
+            "name": "Dubious Plating",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dubious_Plating"
+          },
+          {
+            "name": "Aerialite Bar",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
+          },
+          {
+            "name": "Sea Prism",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
+          }
+        ]
       }
     ],
     "armor": [
-      {
-        "id": "meteor-armor",
-        "name": "Meteor armor",
-        "slot": "armor",
-        "icon": "armor-sets/meteor-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Space Gun costs 0 mana, so it pairs with that weapon specifically.",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Meteor Helmet",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Meteor Suit",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Meteor Leggings",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 16,
-        "pieces": [
-          "Meteor Helmet",
-          "Meteor Suit",
-          "Meteor Leggings"
-        ],
-        "effect": "+27% magic damage · Reduces the mana cost of the Space Gun, Laser Rifle, Gray Zapinator, and Orange Zapinator to 0 · Immunity to meteorite projectiles during the Meteor Shower event · Leaves behind a trail of flames.",
-        "desc": "Meteor armor is a pre-Hardmode mage armor set consisting of the Meteor Helmet, Meteor Suit, and Meteor Leggings."
-      },
       {
         "id": "aerospec-armor",
         "name": "Aerospec armor",
@@ -23325,146 +23191,69 @@
         "headpieceBonus": "8% reduced mana cost · 5% increased movement speed and magic critical strike chance"
       },
       {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
+        "id": "jungle-armor",
+        "name": "Jungle armor",
         "slot": "armor",
-        "icon": "armor-sets/crimson-armor.png",
+        "icon": "armor-sets/jungle-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "why": "16% reduced mana costs.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
         "pieceRecipes": [
           {
-            "piece": "Crimson Helmet",
+            "piece": "Jungle Hat",
             "materials": [
               {
-                "name": "Crimtane Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Desktop version",
+            "materials": [
+              {
+                "name": "Jungle Spores",
+                "qty": 16,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
               },
               {
-                "name": "Tissue Sample",
+                "name": "Stinger",
                 "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
               }
             ],
             "station": "Iron Anvil or Lead Anvil"
           },
           {
-            "piece": "Crimson Scalemail",
+            "piece": "Jungle Pants",
             "materials": [
               {
-                "name": "Crimtane Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+                "name": "Jungle Spores",
+                "qty": 8,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
               },
               {
-                "name": "Tissue Sample",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Crimson Greaves",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+                "name": "Vine",
+                "qty": 2,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
               }
             ],
             "station": "Iron Anvil or Lead Anvil"
           }
         ],
+        "defense": 17,
         "pieces": [
-          "Crimson Helmet",
-          "Crimson Scalemail",
-          "Crimson Greaves"
+          "Jungle Hat",
+          "Desktop version",
+          "Jungle Pants"
         ],
-        "defense": 19,
-        "effect": "+9% damage · Greatly increased health regeneration",
-        "desc": "Crimson armor is a pre-Hardmode armor set consisting of the Crimson Helmet, Crimson Scalemail, and Crimson Greaves.",
-        "allClass": true
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "defense": 19,
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
-        "allClass": true
+        "effect": "+6% magic damage · +12% magic critical strike chance · +80 maximum mana · +16% mana cost reduction · Emits grass particles while moving.",
+        "desc": "Jungle armor is a pre-Hardmode mage armor set consisting of the Jungle Shirt, Jungle Hat, and Jungle Pants."
       }
     ],
     "accessories": [
@@ -24525,9 +24314,11 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
         ],
-        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting."
+        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-skeletron",
@@ -27791,7 +27582,7 @@
         ],
         "headpiece": "Statigel Helm",
         "defense": 27,
-        "effect": "Grants an extra jump and increased jump height · 12% increased jump speed",
+        "effect": "+5 blocks jump height · +12% jump speed · double jump",
         "desc": "Statigel armor is a Pre-Hardmode armor set.",
         "headpieceBonus": "Enemies are more likely to target you"
       }
@@ -29190,7 +28981,7 @@
         ],
         "headpiece": "Statigel Headgear",
         "defense": 25,
-        "effect": "Grants an extra jump and increased jump height · 12% increased jump speed",
+        "effect": "+5 blocks jump height · +12% jump speed · double jump",
         "desc": "Statigel armor is a Pre-Hardmode armor set."
       }
     ],
@@ -30357,7 +30148,7 @@
         "why": "first-listed primary magic weapon at this tier",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome",
         "subclass": "spell-tome",
         "effect": "When used, it fires a slow-moving purple glob that passes through tiles and is not affected by gravity and will slowly decelerate before stopping in place. After hitting an enemy twice or after 5 seconds from being shot, it will explode, dealing damage in a small radius."
@@ -30415,7 +30206,7 @@
         "why": "homing magic weapon",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eldritch_Tome",
         "subclass": "spell-tome",
         "effect": "When used, it releases red tendrils which bend in random directions, similarly to the Shadowflame Hex Doll."
@@ -30429,7 +30220,7 @@
         "why": "multi-star magic weapon with high DPS",
         "tags": [],
         "topPick": true,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Night's_Ray",
         "subclass": "wand",
         "station": "Demon Altar or Crimson Altar",
@@ -30461,210 +30252,50 @@
           }
         ],
         "effect": "When used, it fires a purple beam that pierces ten times. When the beam hits an enemy, it spawns 4 four short-range particle beams to damage nearby enemies."
+      },
+      {
+        "id": "black-anurian",
+        "name": "Black Anurian",
+        "slot": "weapon",
+        "icon": "calamity/black-anurian.png",
+        "subclass": "other",
+        "stats": "24 magic dmg",
+        "source": "Found in Ancient Treasure Chests in the Abyss, or in Hydrothermal Crates",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Black_Anurian",
+        "effect": "Spews bubbles and homing plankton.",
+        "why": "Homing bubble-and-plankton magic weapon.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good"
+      },
+      {
+        "id": "book-of-skulls",
+        "name": "Book of Skulls",
+        "slot": "weapon",
+        "icon": "items/book-of-skulls.png",
+        "source": "Dropped by Skeletron",
+        "why": "Fires slow homing skull projectiles that pierce twice.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spell-tome",
+        "stats": "29 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Book_of_Skulls",
+        "tier": "good",
+        "dropRate": "10.5%"
       }
     ],
     "armor": [
-      {
-        "id": "aerospec-armor",
-        "name": "Aerospec armor",
-        "slot": "armor",
-        "icon": "armor-sets/aerospec-armor-mage.png",
-        "source": "Crafted",
-        "why": "primary class-specific summoner armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerospec_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Aerospec Breastplate",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 2,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Hat",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Headgear",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Helm",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Hood",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          },
-          {
-            "piece": "Aerospec Leggings",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Aerialite Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
-              },
-              {
-                "name": "Feather",
-                "qty": 2,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Aerospec Hat",
-          "Aerospec Breastplate",
-          "Aerospec Leggings"
-        ],
-        "headpiece": "Aerospec Hat",
-        "defense": 16,
-        "effect": "Taking over 25 damage in one hit will cause a spread of homing feathers to fall · Allows you to fall more quickly and disables fall damage",
-        "desc": "Aerospec armor is a Pre-Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player will emit afterimages.",
-        "headpieceBonus": "8% reduced mana cost · 5% increased movement speed and magic critical strike chance"
-      },
-      {
-        "id": "meteor-armor",
-        "name": "Meteor armor",
-        "slot": "armor",
-        "icon": "armor-sets/meteor-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Space Gun costs 0 mana, so it pairs with that weapon specifically.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Meteor Helmet",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Meteor Suit",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Meteor Leggings",
-            "materials": [
-              {
-                "name": "Meteorite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 16,
-        "pieces": [
-          "Meteor Helmet",
-          "Meteor Suit",
-          "Meteor Leggings"
-        ],
-        "effect": "+27% magic damage · Reduces the mana cost of the Space Gun, Laser Rifle, Gray Zapinator, and Orange Zapinator to 0 · Immunity to meteorite projectiles during the Meteor Shower event · Leaves behind a trail of flames.",
-        "desc": "Meteor armor is a pre-Hardmode mage armor set consisting of the Meteor Helmet, Meteor Suit, and Meteor Leggings."
-      },
       {
         "id": "statigel-armor",
         "name": "Statigel armor",
         "slot": "armor",
         "icon": "armor-sets/statigel-armor-mage.png",
         "source": "Crafted",
-        "why": "alternative magic armor option",
+        "why": "Best magic armor for this stage",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor",
         "pieceRecipes": [
           {
@@ -30787,8 +30418,9 @@
         ],
         "headpiece": "Statigel Cap",
         "defense": 23,
-        "effect": "Grants an extra jump and increased jump height · 12% increased jump speed",
-        "desc": "Statigel armor is a Pre-Hardmode armor set."
+        "effect": "+5 blocks jump height · +12% jump speed · double jump",
+        "desc": "Statigel armor is a Pre-Hardmode armor set.",
+        "headpieceBonus": "+15% magic damage · +12% magic critical strike chance · +40 maximum mana · -10% mana usage · +5% movement speed"
       }
     ],
     "accessories": [
@@ -31928,9 +31560,11 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Metal_Scrap"
           }
         ],
-        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting."
+        "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-wof",
@@ -32330,7 +31964,7 @@
         ],
         "headpiece": "Statigel Hood",
         "defense": 22,
-        "effect": "Grants an extra jump and increased jump height · 12% increased jump speed",
+        "effect": "+5 blocks jump height · +12% jump speed · double jump",
         "desc": "Statigel armor is a Pre-Hardmode armor set.",
         "headpieceBonus": "15% increased summon damage · Summons a mini paladin to fight for you, the type depends on what world evil you have"
       }
@@ -33582,7 +33216,7 @@
         ],
         "headpiece": "Statigel Mask",
         "defense": 24,
-        "effect": "Grants an extra jump and increased jump height · 12% increased jump speed",
+        "effect": "+5 blocks jump height · +12% jump speed · double jump",
         "desc": "Statigel armor is a Pre-Hardmode armor set.",
         "headpieceBonus": "+90 maximum stealth"
       }

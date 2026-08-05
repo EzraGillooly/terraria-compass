@@ -18,6 +18,15 @@ const MATERIAL_SOURCE = new Map(
 );
 const materialSource = (name: string) => MATERIAL_SOURCE.get(name) ?? '';
 
+/* A material's own wiki page, so a recipe ingredient links out even when the
+   loadout entry did not carry a wikiUrl of its own. */
+const MATERIAL_WIKI = new Map(
+  (materialsData as { name: string; wikiUrl?: string }[])
+    .filter((m) => m.wikiUrl)
+    .map((m) => [m.name, m.wikiUrl as string]),
+);
+const materialWiki = (name: string) => MATERIAL_WIKI.get(name);
+
 /* Lunar pillar fragments list their drop quantity as "in stacks of 12-60 / 24-100"
    - the first range is Classic, the second Expert. Show only the one that matches
    the world, so the reader is not left to guess which half applies. */
@@ -291,7 +300,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                           <span className={styles.matQty}>{m.qty}</span>
                           <MaterialLink
                             name={m.name}
-                            wikiUrl={m.wikiUrl}
+                            wikiUrl={m.wikiUrl ?? materialWiki(m.name)}
                           />
                         </li>
                       ))}
@@ -315,7 +324,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                               search prefilled; vanilla goes out to the wiki */}
                           <MaterialLink
                             name={m.name}
-                            wikiUrl={m.wikiUrl}
+                            wikiUrl={m.wikiUrl ?? materialWiki(m.name)}
                           />
                           <span className={styles.matQty}>{m.qty}</span>
                         </span>
