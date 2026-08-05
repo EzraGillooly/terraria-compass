@@ -150,7 +150,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           used to scroll the whole card, taking the title and close button with
           it and running to a hard clipped edge with nothing to say there was
           more below. */}
-      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
+      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} data-mode="dark" role="dialog" aria-modal="true" aria-labelledby="item-title">
         <button ref={closeRef} type="button" className={`${styles.close} pixel-frame`} aria-label="Close" onClick={onClose}>
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
             <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />

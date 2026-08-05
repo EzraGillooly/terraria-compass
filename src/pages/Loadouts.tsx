@@ -441,10 +441,10 @@ function visibleCategories(item: Item, activeClass: string): string[] {
 }
 
 function AccCell({
-  item, alts = [], demonHeart, activeClass, difficulty, onOpen,
+  item, alts = [], demonHeart, expertSlot, activeClass, difficulty, onOpen,
 }: {
-  item: Item | null; alts?: Item[]; demonHeart?: boolean; activeClass: string;
-  difficulty: DifficultyFilter; onOpen: (i: Item) => void;
+  item: Item | null; alts?: Item[]; demonHeart?: boolean; expertSlot?: boolean;
+  activeClass: string; difficulty: DifficultyFilter; onOpen: (i: Item) => void;
 }) {
   if (!item) {
     return (
@@ -458,8 +458,14 @@ function AccCell({
   const { local, wiki } = iconSrcs(item.icon, item.wikiUrl);
   const cats = visibleCategories(item, activeClass);
   const typeTag = item.tags?.find((t) => THORIUM_ACC_TYPE_SET.has(t));
-  const markers = item.markers ?? [];
-  const locked = !isObtainable(item, difficulty);
+  /* The Demon Heart preview slot is not obtainable on this difficulty, so it
+     dims like a Classic-locked pick and carries the Expert marker even though
+     the item itself (Ankh Shield) is a plain accessory - the slot is what needs
+     Expert, not the pick. */
+  const markers = expertSlot && !(item.markers ?? []).includes('expert')
+    ? [...(item.markers ?? []), 'expert']
+    : item.markers ?? [];
+  const locked = !isObtainable(item, difficulty) || !!expertSlot;
   /* The cell is the primary card plus, when the guide offers a swap, an "or" and
      a smaller card beneath it - both outside the primary's frame, so the pick
      itself stays one clean card.
@@ -471,7 +477,7 @@ function AccCell({
     <div className={styles.accCell}>
     <div
       className={`${styles.accSlot} pixel-frame pixel-hollow ${demonHeart ? styles.accDemon : ''} ${locked ? styles.locked : ''}`}
-      title={locked ? 'Not obtainable in a Classic world' : undefined}
+      title={expertSlot ? 'Sixth slot needs a Demon Heart (Expert Mode and above)' : locked ? 'Not obtainable in a Classic world' : undefined}
     >
       <button type="button" className={styles.accMain} onClick={() => onOpen(item)}>
         <img
@@ -519,7 +525,7 @@ function AccCell({
           <span className={styles.accOr}>or</span>
           <button
             type="button"
-            className={`${styles.accAlt} pixel-frame pixel-hollow`}
+            className={`${styles.accAlt} pixel-frame pixel-hollow ${locked ? styles.locked : ''}`}
             title={alt.name}
             onClick={() => onOpen(alt)}
           >
@@ -530,6 +536,11 @@ function AccCell({
               onError={makeErrorHandler(altImg.wiki, FALLBACK_ICON)}
             />
             <span className={styles.accAltName}>{alt.name}</span>
+            {(alt.markers ?? []).map((m) => (
+              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+                {MARKER_LABEL[m]}
+              </span>
+            ))}
           </button>
         </Fragment>
       );
@@ -1012,7 +1023,15 @@ export function Loadouts() {
    */
   const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
   const onionUnlocked = packId === 'calamity' && CALAMITY_POST_ML.has(activePhaseId);
-  const slotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
+  /* The Demon Heart adds a hardmode sixth slot, but the bag it comes from is
+     Expert-and-above. Rather than drop that slot on a lower difficulty, still
+     show it - filled with its guide pick and marked as needing Expert - so the
+     reader sees the full loadout and the "play in Expert" nudge. Skipped once a
+     Celestial Onion already grants the extra slot post-Moon Lord. */
+  const demonHeartPreview = HARDMODE_PHASES.has(activePhaseId) && !demonHeartUnlocked && !onionUnlocked;
+  /* Slots the world can really fill - what the "N slots" label counts. */
+  const realSlotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
+  const slotCount = realSlotCount + (demonHeartPreview ? 1 : 0);
 
   /*
    * In Classic, an Expert-only pick is not a recommendation - it is a slot the
@@ -1041,7 +1060,7 @@ export function Loadouts() {
          because either fills the slot
      Only then does it fall back to the pool, preferring the same category so a
      defensive slot is replaced by something defensive. */
-  const substitutions: { original: Item; replacement: Item | null; reason: 'swap' | 'expert' | 'slot' }[] = [];
+  const substitutions: { original: Item; replacement: Item | null; reason: 'swap' | 'expert' | 'slot' | 'demon-heart' }[] = [];
   /* Slot-only extras (Master Ninja Gear, recommended for the Expert sixth slot)
      are obtainable in Classic but have no slot to sit in, so they drop out when
      the world has fewer than six slots - noted apart from Expert-only content. */
@@ -1186,6 +1205,13 @@ export function Loadouts() {
     if (mob) shown.splice(Math.max(0, slotCount - 1), 1, mob);
   }
   const accSlots = Array.from({ length: slotCount }, (_, i) => shown[i] ?? null);
+  /* The sixth slot shown on a lower difficulty is the Demon Heart preview: note
+     it alongside the Classic swaps so the reader gets the same "needs Expert"
+     nudge, and the cell itself is dimmed and marked below. */
+  if (demonHeartPreview) {
+    const sixth = accSlots[slotCount - 1];
+    if (sixth) substitutions.push({ original: sixth, replacement: null, reason: 'demon-heart' });
+  }
 
   /* This is the only place that knows the final equipped list - it includes
      whatever the Classic substitution promoted into a slot a moment ago - so
@@ -1476,7 +1502,7 @@ export function Loadouts() {
           <div className={`${styles.invPanel} ${styles.accPanel} pixel-frame`}>
             <div className={styles.tlabel}>
               <span>Accessories</span>
-              <span className={styles.em}>{slotCount} slots</span>
+              <span className={styles.em}>{realSlotCount} slots</span>
             </div>
             {substitutions.length > 0 && (
               /* The class guides recommend Expert-only picks (treasure-bag
@@ -1493,7 +1519,9 @@ export function Loadouts() {
                     ? `${s2.original.name} → ${s2.replacement.name}`
                     : s2.reason === 'slot'
                       ? `${s2.original.name} (extra slot)`
-                      : `${s2.original.name} (Expert-only)`).join(', ')}.
+                      : s2.reason === 'demon-heart'
+                        ? `${s2.original.name} (sixth slot, needs a Demon Heart)`
+                        : `${s2.original.name} (Expert-only)`).join(', ')}.
                   {packId === 'calamity'
                     ? ' Calamity is balanced for Expert or above.'
                     : ' Play in an Expert world to use the full guide.'}
@@ -1513,9 +1541,11 @@ export function Loadouts() {
                   key={acc?.id ?? `slot-${i}`}
                   item={acc}
                   alts={acc
-                    ? (altsBy.get(acc.name) ?? []).filter((a) => isObtainable(a, difficulty))
+                    ? (altsBy.get(acc.name) ?? []).filter((a) =>
+                        isObtainable(a, difficulty) || (a.markers ?? []).includes('expert'))
                     : undefined}
-                  demonHeart={demonHeartUnlocked && i === 5}
+                  demonHeart={(demonHeartUnlocked || demonHeartPreview) && i === slotCount - 1}
+                  expertSlot={demonHeartPreview && i === slotCount - 1}
                   activeClass={activeClassId}
                   difficulty={difficulty}
                   onOpen={setModalItem}

@@ -34601,7 +34601,7 @@
         "defense": 32,
         "desc": "Cobalt armor is a Hardmode armor set consisting of the Cobalt Breastplate and Cobalt Leggings, as well as three different headpieces: the Cobalt Helmet, Cobalt Mask, and Cobalt Hat, providing bonuses for the melee, ranged, and magic damage type respectively.",
         "headpieceBonus": "15% increased melee speed",
-        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10%"
+        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10% · The player also emits visual afterimages while moving."
       },
       {
         "id": "palladium-armor",
@@ -34613,7 +34613,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_armor",
         "pieceRecipes": [
           {
             "piece": "Palladium Breastplate",
@@ -34678,7 +34678,7 @@
         ],
         "headpiece": "Palladium Mask",
         "defense": 32,
-        "effect": "Greatly increases life regeneration after striking an enemy",
+        "effect": "Hitting an enemy grants Rapid Healing for 5 seconds (+2 HP per second flat regeneration); further hits refresh the duration.",
         "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
       }
     ],
@@ -36349,7 +36349,7 @@
         "defense": 23,
         "desc": "Cobalt armor is a Hardmode armor set consisting of the Cobalt Breastplate and Cobalt Leggings, as well as three different headpieces: the Cobalt Helmet, Cobalt Mask, and Cobalt Hat, providing bonuses for the melee, ranged, and magic damage type respectively.",
         "headpieceBonus": "20% chance to save ammo",
-        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10%"
+        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10% · The player also emits visual afterimages while moving."
       },
       {
         "id": "palladium-armor",
@@ -36361,7 +36361,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_armor",
         "pieceRecipes": [
           {
             "piece": "Palladium Breastplate",
@@ -36426,7 +36426,7 @@
         ],
         "headpiece": "Palladium Helmet",
         "defense": 23,
-        "effect": "Greatly increases life regeneration after striking an enemy",
+        "effect": "Hitting an enemy grants Rapid Healing for 5 seconds (+2 HP per second flat regeneration); further hits refresh the duration.",
         "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
       }
     ],
@@ -38080,8 +38080,8 @@
         "source": "Dropped by Hemogoblin Sharks (Blood Moon in Hardmode Crimson)",
         "why": "Fires a thorny projectile that splits into homing spikes.",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Thorn",
         "subclass": "other",
         "dropRate": "12.5%",
@@ -38096,7 +38096,7 @@
         "why": "sandnado area damage",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Valley_Duster",
         "subclass": "spell-tome",
         "station": "Bookcase",
@@ -38128,7 +38128,7 @@
         "why": "Calls a meteor down from the sky at the cursor for direct impact damage.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Staff",
         "subclass": "wand",
         "materials": [
@@ -38175,7 +38175,7 @@
         "why": "piercing water sickles off enemies",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Poseidon",
         "subclass": "spell-tome",
         "effect": "It shoots a circular Poseidon typhoon sigil that inflicts the Eutrophication debuff while homing in on enemies, lingering on top of them for a short duration, repeatedly dealing damage until it dissipates. Poseidon typhoons will pierce up to 5 times, dissipating on the sixth hit."
@@ -38195,6 +38195,92 @@
         "dropRate": "16.7%",
         "dropRateExpert": "33.3%",
         "stats": "32 magic dmg"
+      },
+      {
+        "id": "frigidflash-bolt",
+        "name": "Frigidflash Bolt",
+        "slot": "weapon",
+        "icon": "calamity/frigidflash-bolt.png",
+        "subclass": "spell-tome",
+        "stats": "95 magic dmg",
+        "source": "Crafted at a Bookcase",
+        "station": "Bookcase",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frigidflash_Bolt",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Casts a fast ball of flash-freezing magma that bounces off tiles and makes a flarefrost burst on impact.",
+        "why": "Bouncing flarefrost magma tome.",
+        "materials": [
+          {
+            "name": "Frost Bolt",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frost_Bolt"
+          },
+          {
+            "name": "Flare Bolt",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flare_Bolt"
+          },
+          {
+            "name": "Essence of Havoc",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+          },
+          {
+            "name": "Essence of Eleum",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Eleum"
+          }
+        ]
+      },
+      {
+        "id": "crystal-storm",
+        "name": "Crystal Storm",
+        "slot": "weapon",
+        "icon": "items/crystal-storm.png",
+        "source": "Crafted at Bookcase",
+        "why": "Hallow counterpart that rapidly fires small bouncing crystal shards.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "spell-tome",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Storm",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Spell Tome",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spell_Tome"
+          },
+          {
+            "name": "Crystal Shard",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          }
+        ],
+        "station": "Bookcase"
+      },
+      {
+        "id": "crystal-serpent",
+        "name": "Crystal Serpent",
+        "slot": "weapon",
+        "icon": "items/crystal-serpent.png",
+        "source": "Fished only in the Hallow (Hardmode)",
+        "why": "Fires a crystal bolt that bursts into shards on impact.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "wand",
+        "stats": "40 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crystal_Serpent",
+        "tier": "good"
       }
     ],
     "armor": [
@@ -38274,8 +38360,8 @@
         "headpiece": "Cobalt Hat",
         "defense": 21,
         "desc": "Cobalt armor is a Hardmode armor set consisting of the Cobalt Breastplate and Cobalt Leggings, as well as three different headpieces: the Cobalt Helmet, Cobalt Mask, and Cobalt Hat, providing bonuses for the melee, ranged, and magic damage type respectively.",
-        "headpieceBonus": "14% reduced mana costs",
-        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10%"
+        "headpieceBonus": "+13% magic damage · +14% magic critical strike chance · +40 maximum mana · +14% mana cost reduction · +10% movement speed",
+        "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10% · The player also emits visual afterimages while moving."
       },
       {
         "id": "palladium-armor",
@@ -38287,7 +38373,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_armor",
         "pieceRecipes": [
           {
             "piece": "Palladium Breastplate",
@@ -38352,29 +38438,9 @@
         ],
         "headpiece": "Palladium Headgear",
         "defense": 21,
-        "effect": "Greatly increases life regeneration after striking an enemy",
-        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
-      },
-      {
-        "id": "crystal-assassin-armor",
-        "name": "Crystal Assassin armor",
-        "slot": "armor",
-        "icon": "armor-sets/crystal-assassin-armor.png",
-        "source": "",
-        "why": "all-class armor alternative",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieces": [
-          "Crystal Assassin Hood",
-          "Crystal Assassin Shirt",
-          "Crystal Assassin Pants"
-        ],
-        "defense": 36,
-        "effect": "Allows the ability to dash · +10% damage and critical strike chance · +90 maximum stealth",
-        "desc": "Crystal Assassin armor is a Hardmode armor set consisting of the Crystal Assassin Hood, Crystal Assassin Shirt, and Crystal Assassin Pants. Queen Slime always drops one piece / two pieces upon defeat.",
-        "allClass": true
+        "effect": "Hitting an enemy grants Rapid Healing for 5 seconds (+2 HP per second flat regeneration); further hits refresh the duration.",
+        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively.",
+        "headpieceBonus": "+14% magic damage · +12% magic critical strike chance · +60 maximum mana"
       }
     ],
     "accessories": [
@@ -39889,43 +39955,57 @@
     ],
     "tools": [
       {
-        "id": "lunic-eye",
-        "name": "Lunic Eye",
+        "id": "golden-shower",
+        "name": "Golden Shower",
         "slot": "weapon",
-        "icon": "calamity/lunic-eye.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "support utility item",
+        "icon": "items/golden-shower.png",
+        "source": "Crafted at Bookcase",
+        "why": "Crimson counterpart firing ichor streams that inflict the armor-reducing Ichor debuff.",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
-        "station": "Iron Anvil or Lead Anvil",
+        "subclass": "spell-tome",
+        "stats": "30 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Golden_Shower",
+        "tier": "good",
         "materials": [
           {
-            "name": "Any Cobalt Bar",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Cobalt_Bar"
+            "name": "Spell Tome",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spell_Tome"
           },
           {
-            "name": "Starblight Soot",
+            "name": "Ichor",
             "qty": 20,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
           }
         ],
-        "effect": "When used, it fires an orange particle bolt that does not pierce nor pass through tiles and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 15-tile radius, gradually turning itself purple as it moves closer to the target."
+        "station": "Bookcase",
+        "dropRate": "33%"
       },
       {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
+        "id": "life-drain",
+        "name": "Life Drain",
         "slot": "weapon",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "Dropped by Chaos Elementals",
-        "why": "support mobility/dodge tool",
-        "tags": [],
+        "icon": "items/life-drain.png",
+        "source": "Dropped by Crimson Mimics",
+        "why": "Channels a homing beam that heals the player as it damages enemies.",
+        "tags": [
+          "carry-over"
+        ],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health."
+        "subclass": "wand",
+        "stats": "35 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Drain",
+        "tier": "good",
+        "dropRate": "20%"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-mech",
