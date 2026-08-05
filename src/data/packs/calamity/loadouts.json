@@ -72318,8 +72318,8 @@
         "source": "Dropped by Astrum Aureus",
         "why": "first-listed primary magic weapon for this tier",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
         "subclass": "wand",
         "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky."
@@ -72333,7 +72333,7 @@
         "why": "listed magic weapon option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Earth",
         "subclass": "spell-tome",
         "station": "Bookcase",
@@ -72365,7 +72365,7 @@
         "why": "Launches a lasting rainbow that damages enemies along its arc.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
         "subclass": "other",
         "stats": "45 magic dmg"
@@ -72426,7 +72426,7 @@
         "why": "listed magic weapon option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Undine's_Retribution",
         "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -72458,6 +72458,115 @@
         "subclass": "magic-gun",
         "dropRate": "12.5%",
         "stats": "31 magic dmg"
+      },
+      {
+        "id": "hadal-urn",
+        "name": "Hadal Urn",
+        "slot": "weapon",
+        "icon": "calamity/hadal-urn.png",
+        "subclass": "other",
+        "stats": "37 magic dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hadal_Urn",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a random assortment of ocean creatures.",
+        "why": "Random sea-creature swarm.",
+        "materials": [
+          {
+            "name": "Black Anurian",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Black_Anurian"
+          },
+          {
+            "name": "Voidstone",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Voidstone"
+          },
+          {
+            "name": "Depth Cells",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
+          },
+          {
+            "name": "Bone",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
+          }
+        ]
+      },
+      {
+        "id": "atlantis",
+        "name": "Atlantis",
+        "slot": "weapon",
+        "icon": "calamity/atlantis.png",
+        "subclass": "wand",
+        "stats": "81 magic dmg",
+        "source": "Dropped by Leviathan and Anahita",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Atlantis",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Casts aquatic spears that split as they travel.",
+        "why": "Splitting water spears."
+      },
+      {
+        "id": "tears-of-heaven",
+        "name": "Tears of Heaven",
+        "slot": "weapon",
+        "icon": "calamity/tears-of-heaven.png",
+        "subclass": "spell-tome",
+        "stats": "43 magic dmg",
+        "source": "Crafted at a Bookcase",
+        "station": "Bookcase",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tears_of_Heaven",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Casts slow homing balls of heavenly light that inflict Hellfire and Frostbite.",
+        "why": "Homing light with dual debuffs.",
+        "materials": [
+          {
+            "name": "Frigidflash Bolt",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frigidflash_Bolt"
+          },
+          {
+            "name": "Water Bolt",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Water_Bolt"
+          },
+          {
+            "name": "Sea Prism",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
+          },
+          {
+            "name": "Ectoplasm",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm"
+          }
+        ]
+      },
+      {
+        "id": "bat-scepter",
+        "name": "Bat Scepter",
+        "slot": "weapon",
+        "icon": "calamity/bat-scepter.png",
+        "source": "Dropped by Pumpking (Pumpkin Moon)",
+        "why": "Fires a spread of homing bats at nearby enemies.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bat_Scepter",
+        "subclass": "wand",
+        "dropRate": "2.5–12.5%",
+        "stats": "45 magic dmg",
+        "dropRateExpert": "6.25–12.5%"
       }
     ],
     "armor": [
@@ -72528,64 +72637,8 @@
           "Brimflame Boots"
         ],
         "defense": 41,
-        "effect": "8% increased damage and magic critical strike chance · Brimflame Frenzy - Armor Set Bonus for 10 seconds of 40% increased magic damage · However, this inflicts rapid life loss and disables mana regeneration and mana potions · This effect can be toggled off and has a cooldown of 30 seconds",
-        "desc": "Brimflame armor is a Hardmode mage armor set. If the full set is visible (whether equipped or in social slots), the player emits a tiny pulsating aura around them."
-      },
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
-        "slot": "armor",
-        "icon": "armor-sets/hallowed-armor-mage.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Brief immunity after striking an enemy.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Hallowed Helmet",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Plate Mail",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Hallowed Greaves",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 35,
-        "pieces": [
-          "Hallowed Helmet",
-          "Hallowed Plate Mail",
-          "Hallowed Greaves"
-        ],
-        "headpiece": "Hallowed Helmet",
-        "desc": "Hallowed armor is a Hardmode, post-one mechanical boss armor set consisting of the Hallowed Plate Mail and Hallowed Greaves, as well as four different headpieces: the Hallowed Mask, Hallowed Helmet, Hallowed Headgear, and Hallowed Hood, providing bonuses for melee, ranged, magic, and summon damage type respectively.",
-        "headpieceBonus": "+22% ranged damage · +15% ranged critical strike chance"
+        "effect": "Brimflame Frenzy (press the armor set bonus key): +40% magic damage for 10 seconds at the cost of -21 HP/s and no mana regeneration; 30-second cooldown.",
+        "headpieceBonus": "+30% magic damage · +25% magic critical strike chance · +80 maximum mana · -10% mana usage · +5% movement speed · Immune to Brimstone Flames, Burning, Frostburn, and On Fire!"
       },
       {
         "id": "spectre-armor",
@@ -72596,8 +72649,8 @@
         "why": "Still on-tier at this point. The Mask raises damage, and the Hood variant converts magic damage into healing instead.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
         "pieceRecipes": [
           {
             "piece": "Spectre Mask",
@@ -72640,85 +72693,18 @@
           "Spectre Pants"
         ],
         "desc": "Spectre armor is a Hardmode, post- Plantera magic armor set consisting of the Spectre Robe and Spectre Pants, as well as two different headpieces: the Spectre Hood and Spectre Mask, providing offensive and defensive bonuses respectively.",
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies · Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health"
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
+        "headVariants": [
           {
-            "piece": "Reaver Cuisses",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
+            "name": "Mask",
+            "headpieceBonus": "+42 defense · +25% magic damage · +17% magic critical strike chance · +60 maximum mana · +13% mana cost reduction · +8% movement speed",
+            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon’s damage and able to crit."
           },
           {
-            "piece": "Reaver Headgear",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
+            "name": "Hood",
+            "headpieceBonus": "+30 defense · -25% magic damage · +7% magic critical strike chance · +8% movement speed",
+            "effect": "Lifesteal orbs spawn when you deal magic damage, flying to you and restoring 20% of the damage dealt as health."
           }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "desc": "Reaver armor is a Hardmode armor set.",
-        "headpieceBonus": "Helm: Enemies are more likely to target you; Reduces the life regen lost from damage over time debuffs by 20%; 30% decreased movement speed and flight time; Grants Reaver Rage for 5 seconds after taking damage · Visage: Grants immunity to fall damage and allows constant jumping; 10% increased flight time and horizontal wing speed; Grappling hooks retract and pull the player 50% faster; Reduces the cooldown of dashes by 33% · Headgear: Emits light and shows the location of treasure and ore; Enemies are less likely to target you and grants underwater breathing; Greatly enhances visibility in the abyss; Increased block placement & tool range by 7; Increases pickup range for items",
-        "allClass": true
+        ]
       }
     ],
     "accessories": [
@@ -72784,7 +72770,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Tattered_Fairy_Wings",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tattered_Fairy_Wings",
         "materials": [
           {
             "name": "Soul of Flight",
@@ -72813,7 +72799,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://terraria.wiki.gg/wiki/Festive_Wings",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Festive_Wings",
         "effect": "Allows flight and slow fall",
         "altOf": "Tattered Fairy Wings"
       },
@@ -72945,7 +72931,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chaos_Stone",
         "altOf": "Permafrost's Concoction",
-        "effect": "Disables automatic potion consumption · Items that consume mana can be used even without the required mana amount · Mana usage can overflow into negative mana, causing you to both receive and inflict Mana Burn · The lower your mana, the more intense the manafire burns · Negative Mana is capped at your maximum mana amount · Current maximum intensity with your maximum mana: -[REGEN] HP/s, and burns enemies for [DAMAGE]% of dealt damage"
+        "effect": "Disables automatic potion consumption · Items that consume mana can be used even without the required mana amount · Mana usage can overflow into negative mana, causing you to both receive and inflict Mana Burn · The lower your mana, the more intense the manafire burns · Negative Mana is capped at your maximum mana amount · Current maximum intensity with your maximum mana: -[REGEN] HP/s, and burns enemies for [DAMAGE]% of dealt damage",
+        "notes": "Only worth equipping with Brimflame armor."
       },
       {
         "id": "celestial-emblem",
@@ -73763,22 +73750,6 @@
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
             "expertOnly": true
-          },
-          {
-            "id": "calpool-moon-stone",
-            "name": "Moon Stone",
-            "slot": "accessory",
-            "icon": "calamity/moon-stone.png",
-            "source": "Dropped by Vampires during a Solar Eclipse",
-            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Moon_Stone",
-            "dropRate": "2.86% 5.63%",
-            "quality": "good"
           }
         ]
       },
@@ -73890,22 +73861,6 @@
             "effect": "It multiplies natural life regeneration by 1.5x and makes it generate 100% faster while equipped."
           },
           {
-            "id": "calpool-mana-polarizer",
-            "name": "Mana Polarizer",
-            "slot": "accessory",
-            "icon": "calamity/mana-polarizer.png",
-            "source": "Dropped by The Slime God",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mana_Polarizer",
-            "effect": "Increases maximum mana by 40 · Provides life regeneration and magic damage that scales based on how much mana you have · Lower mana means more life regeneration, but less magic damage · These scale from -2 to +2 HP/s, and 15% to 5% damage · The provided regeneration is halved when under Mana Sickness · Magic projectiles steal enemy life",
-            "expertOnly": true
-          },
-          {
             "id": "calpool-star-veil",
             "name": "Star Veil",
             "slot": "accessory",
@@ -73932,25 +73887,6 @@
             ],
             "station": "Tinkerer's Workshop",
             "quality": "great"
-          },
-          {
-            "id": "calpool-moon-stone",
-            "name": "Moon Stone",
-            "slot": "accessory",
-            "icon": "calamity/moon-stone.png",
-            "source": "Dropped by Vampires during a Solar Eclipse",
-            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Moon_Stone",
-            "markers": [
-              "tedious"
-            ],
-            "dropRate": "2.86% 5.63%",
-            "quality": "good"
           }
         ]
       },
@@ -74045,20 +73981,36 @@
             "effect": "When equipped, it increases armor penetration by 10 and increases all damage by 10%."
           },
           {
-            "id": "mana-polarizer",
+            "id": "calpool-moon-stone",
+            "name": "Moon Stone",
+            "slot": "accessory",
+            "icon": "calamity/moon-stone.png",
+            "source": "Dropped by Vampires during a Solar Eclipse",
+            "why": "In respect to survivability, the Moon Stone increases the player's defense by 4 and health regeneration by 1 HP/s, from 7:30 PM to 4:30 AM.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Moon_Stone",
+            "dropRate": "2.86%",
+            "quality": "good",
+            "dropRateExpert": "5.63%"
+          },
+          {
+            "id": "calpool-mana-polarizer",
             "name": "Mana Polarizer",
             "slot": "accessory",
             "icon": "calamity/mana-polarizer.png",
             "source": "Dropped by The Slime God",
-            "why": "offensive magic damage accessory",
+            "why": "",
             "tags": [],
             "topPick": false,
-            "tier": "good",
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mana_Polarizer",
-            "effect": "Increases maximum mana by 40 · Provides life regeneration and magic damage that scales based on how much mana you have · Lower mana means more life regeneration, but less magic damage · These scale from -2 to +2 HP/s, and 15% to 5% damage · The provided regeneration is halved when under Mana Sickness · Magic projectiles steal enemy life",
             "categories": [
               "offense"
             ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mana_Polarizer",
+            "effect": "Increases maximum mana by 40 · Provides life regeneration and magic damage that scales based on how much mana you have · Lower mana means more life regeneration, but less magic damage · These scale from -2 to +2 HP/s, and 15% to 5% damage · The provided regeneration is halved when under Mana Sickness · Magic projectiles steal enemy life",
             "expertOnly": true
           }
         ]
@@ -74066,41 +74018,32 @@
     ],
     "tools": [
       {
-        "id": "lunic-eye",
-        "name": "Lunic Eye",
+        "id": "everglade-spray",
+        "name": "Everglade Spray",
         "slot": "weapon",
-        "icon": "calamity/lunic-eye.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "listed as a support item",
-        "tags": [],
+        "icon": "calamity/everglade-spray.png",
+        "subclass": "spell-tome",
+        "stats": "65 magic dmg",
+        "source": "Crafted at a Bookcase",
+        "station": "Bookcase",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Everglade_Spray",
+        "tier": "good",
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
-        "station": "Iron Anvil or Lead Anvil",
+        "tags": [],
+        "effect": "Fires a stream of burning green ichor that inflicts Ichor and Cursed Inferno.",
+        "why": "Ichor + Cursed Inferno stream.",
         "materials": [
           {
-            "name": "Any Cobalt Bar",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Cobalt_Bar"
+            "name": "Golden Shower",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Golden_Shower"
           },
           {
-            "name": "Starblight Soot",
-            "qty": 20,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
+            "name": "Perennial Bar",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
           }
-        ],
-        "effect": "When used, it fires an orange particle bolt that does not pierce nor pass through tiles and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 15-tile radius, gradually turning itself purple as it moves closer to the target."
-      },
-      {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
-        "slot": "weapon",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "Dropped by Chaos Elementals",
-        "why": "support mobility/dodge tool",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health."
+        ]
       }
     ],
     "ammo": [
@@ -74117,7 +74060,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Sight",
         "effect": "The Soul of Sight is one of the six souls that can be obtained in Hardmode. It is a crafting material dropped by The Twins."
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-golem",
@@ -81360,8 +81304,8 @@
         "source": "Dropped by Astrum Aureus",
         "why": "strong homing star magic weapon, listed first",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
         "subclass": "wand",
         "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky."
@@ -81406,7 +81350,7 @@
         "why": "Launches a lasting rainbow that damages enemies along its arc.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
         "subclass": "other",
         "stats": "45 magic dmg"
@@ -81420,7 +81364,7 @@
         "why": "Rapidly fires piercing pine-needle projectiles.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Razorpine",
         "subclass": "wand",
         "dropRate": "3.46–10.37% (increases with wave)",
@@ -81436,83 +81380,45 @@
         "why": "homing shots plus healing capability",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
         "subclass": "magic-gun",
         "effect": "When used with its primary fire (left-click), it summons two Wingmen to the sides of the player perpendicular to the direction of the cursor, that each switch sides and fire lasers towards the cursor that travel through tiles and pierce once. The Wingmen gradually increase in firing rate and laser velocity the longer it is held for, reaching a full speed of 6 lasers per second after 6 shots."
-      }
-    ],
-    "armor": [
+      },
       {
-        "id": "brimflame-armor",
-        "name": "Brimflame armor",
-        "slot": "armor",
-        "icon": "armor-sets/brimflame-armor.png",
-        "source": "Crafted",
-        "why": "primary listed magic armor set",
+        "id": "primordial-earth",
+        "name": "Primordial Earth",
+        "slot": "weapon",
+        "icon": "calamity/primordial-earth.png",
+        "source": "Crafted at a Bookcase",
+        "why": "listed magic weapon option",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimflame_armor",
-        "pieceRecipes": [
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Earth",
+        "subclass": "spell-tome",
+        "station": "Bookcase",
+        "materials": [
           {
-            "piece": "Brimflame Boots",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
+            "name": "Death Valley Duster",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death_Valley_Duster"
           },
           {
-            "piece": "Brimflame Cowl",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
+            "name": "Amber",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
           },
           {
-            "piece": "Brimflame Robes",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
+            "name": "Ectoplasm",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm"
           }
         ],
-        "pieces": [
-          "Brimflame Cowl",
-          "Brimflame Robes",
-          "Brimflame Boots"
-        ],
-        "defense": 41,
-        "effect": "Brimflame Frenzy (press the armor set bonus key): +40% magic damage for 10 seconds at the cost of -21 HP/s and no mana regeneration; 30-second cooldown.",
-        "headpieceBonus": "+30% magic damage · +25% magic critical strike chance · +80 maximum mana · -10% mana usage · +5% movement speed · Immune to Brimstone Flames, Burning, Frostburn, and On Fire!"
-      },
+        "effect": "It is a direct upgrade to the Death Valley Duster, firing 2 dust blows that pass through tiles and converge into an explosion of dust that inflicts the Armor Crunch debuff. Using it at full mana and with no Mana Sickness gives the player, and any player that touches the dust particles, the Sand's Wind buff which increases defense by 4, damage by 12%, and mana regeneration."
+      }
+    ],
+    "armor": [
       {
         "id": "hydrothermic-armor",
         "name": "Hydrothermic armor",
@@ -81522,7 +81428,7 @@
         "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor",
         "pieceRecipes": [
           {
@@ -81610,87 +81516,79 @@
         ],
         "headpiece": "Hydrothermic Mask",
         "defense": 43,
-        "effect": "Inferno effect when below 50% life · You emit a blazing explosion when you are hit",
+        "effect": "+20 maximum health · Immune to On Fire! and lava · Below 50% health, a modified Inferno deals 50 damage and inflicts Brimstone Flames, plus an on-hit explosion for 115/230/345 damage that inflicts Hellfire",
         "desc": "Hydrothermic armor is a Hardmode armor set.",
-        "headpieceBonus": "Magic attacks summon damaging and healing flare orbs on hit"
+        "headpieceBonus": "+25% magic damage · +19% magic critical strike chance · +100 maximum mana · -15% mana usage · +10% movement speed · Magic hits summon damaging and healing chaos orbs (62.5% of weapon damage, soft-capped at 100; healing orbs restore 10% of damage dealt, -5% per pierce)"
       },
       {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
+        "id": "brimflame-armor",
+        "name": "Brimflame armor",
         "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
+        "icon": "armor-sets/brimflame-armor.png",
         "source": "Crafted",
-        "why": "all-class set option",
+        "why": "primary listed magic armor set",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimflame_armor",
         "pieceRecipes": [
           {
-            "piece": "Reaver Cuisses",
+            "piece": "Brimflame Boots",
             "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Ashes of Calamity",
+                "qty": 5,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+              },
+              {
+                "name": "Unholy Core",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
               }
             ]
           },
           {
-            "piece": "Reaver Headgear",
+            "piece": "Brimflame Cowl",
             "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Ashes of Calamity",
+                "qty": 4,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+              },
+              {
+                "name": "Unholy Core",
+                "qty": 2,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
               }
             ]
           },
           {
-            "piece": "Reaver Helm",
+            "piece": "Brimflame Robes",
             "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
+                "name": "Ashes of Calamity",
+                "qty": 8,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+              },
               {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Unholy Core",
+                "qty": 4,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
               }
             ]
           }
         ],
         "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
+          "Brimflame Cowl",
+          "Brimflame Robes",
+          "Brimflame Boots"
         ],
-        "defense": 70,
-        "desc": "Reaver armor is a Hardmode armor set.",
-        "headpieceBonus": "Helm: Enemies are more likely to target you; Reduces the life regen lost from damage over time debuffs by 20%; 30% decreased movement speed and flight time; Grants Reaver Rage for 5 seconds after taking damage · Visage: Grants immunity to fall damage and allows constant jumping; 10% increased flight time and horizontal wing speed; Grappling hooks retract and pull the player 50% faster; Reduces the cooldown of dashes by 33% · Headgear: Emits light and shows the location of treasure and ore; Enemies are less likely to target you and grants underwater breathing; Greatly enhances visibility in the abyss; Increased block placement & tool range by 7; Increases pickup range for items",
-        "allClass": true
+        "defense": 41,
+        "effect": "Brimflame Frenzy (press the armor set bonus key): +40% magic damage for 10 seconds at the cost of -21 HP/s and no mana regeneration; 30-second cooldown.",
+        "headpieceBonus": "+30% magic damage · +25% magic critical strike chance · +80 maximum mana · -10% mana usage · +5% movement speed · Immune to Brimstone Flames, Burning, Frostburn, and On Fire!"
       }
     ],
     "accessories": [
@@ -83169,9 +83067,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "curated": true
   },
   {
     "phase": "cal-post-golem",

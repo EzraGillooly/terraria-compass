@@ -536,7 +536,9 @@ function AccCell({
               onError={makeErrorHandler(altImg.wiki, FALLBACK_ICON)}
             />
             <span className={styles.accAltName}>{alt.name}</span>
-            {(alt.markers ?? []).map((m) => (
+            {(alt.expertOnly && !(alt.markers ?? []).includes('expert')
+              ? [...(alt.markers ?? []), 'expert']
+              : alt.markers ?? []).map((m) => (
               <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
                 {MARKER_LABEL[m]}
               </span>
@@ -1546,7 +1548,7 @@ export function Loadouts() {
                   item={acc}
                   alts={acc
                     ? (altsBy.get(acc.name) ?? []).filter((a) =>
-                        isObtainable(a, difficulty) || (a.markers ?? []).includes('expert'))
+                        isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true)
                     : undefined}
                   demonHeart={(demonHeartUnlocked || demonHeartPreview) && i === slotCount - 1}
                   expertSlot={demonHeartPreview && i === slotCount - 1}
