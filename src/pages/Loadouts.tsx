@@ -1457,7 +1457,7 @@ export function Loadouts() {
                       </div>
                       {(supportAlts.get(w.name) ?? []).map((alt) => (
                         <Fragment key={alt.id}>
-                          <span className={styles.mixOr}>or</span>
+                          <span className={styles.mixOr}>{safeLoadout.supportJoin === 'and' ? 'and' : 'or'}</span>
                           <div className={styles.supportItem}>
                             <WeaponTile item={alt} difficulty={difficulty} onOpen={setModalItem} />
                           </div>

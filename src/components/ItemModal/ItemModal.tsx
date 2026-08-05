@@ -216,8 +216,8 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              shows a toggle: each variant carries its own bonus and set effect,
              so the reader swaps between them in place. */
           const vars = item.headVariants;
-          if (vars && vars.length > 0) {
-            const v = vars[Math.min(variant, vars.length - 1)];
+          const v = vars?.[Math.min(variant, vars.length - 1)];
+          if (vars && vars.length > 0 && v) {
             const hb = split(v.headpieceBonus);
             const sb = split(v.effect);
             return (

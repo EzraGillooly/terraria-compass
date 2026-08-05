@@ -276,6 +276,13 @@ export const Loadout = z.object({
    */
   mixNote: z.string().optional(),
   /**
+   * How to join a support item with its alternatives in the Support row. Early
+   * game the picks are interchangeable ("Brittle Star Staff or Wulfrum
+   * Controller"), but from hardmode on the guide equips them together, so those
+   * phases set this to "and". Defaults to "or".
+   */
+  supportJoin: z.enum(['and', 'or']).optional(),
+  /**
    * Set once a Calamity phase has been hand-curated against the class guide, so
    * its weapons carry a real Best / Other-Options ranking. Vanilla is always
    * ranked; Calamity defaults to an unranked list until this flag is set, since

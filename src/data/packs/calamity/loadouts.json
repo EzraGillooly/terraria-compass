@@ -39973,10 +39973,12 @@
         "stats": "35 magic dmg",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Drain",
         "tier": "good",
-        "dropRate": "20%"
+        "dropRate": "20%",
+        "altOf": "Golden Shower"
       }
     ],
-    "curated": true
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-mech",
@@ -48647,11 +48649,13 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
     "curated": true,
-    "note": "Still finding out which weapons and accessories are the best for this phase"
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech1",
@@ -57047,11 +57051,13 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
     "curated": true,
-    "note": "Still finding out which weapons and accessories are the best for this phase"
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech2",
@@ -79257,7 +79263,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -79269,7 +79275,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-fire-gauntlet",
@@ -82918,7 +82925,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -82930,7 +82937,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-sand-shark-tooth-necklace",
@@ -83072,7 +83080,8 @@
       }
     ],
     "note": "Still finding out which weapons and accessories are the best for this phase",
-    "curated": true
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-golem",
@@ -86541,7 +86550,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "This grants critical strike damage.",
             "tags": [],
             "topPick": false,
@@ -86553,7 +86562,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-ruin-medallion",
@@ -87427,8 +87437,8 @@
         "name": "Soaring Insignia",
         "slot": "accessory",
         "icon": "calamity/soaring-insignia.png",
-        "source": "Empress of Light Treasure Bag (Expert)",
-        "why": "Infinite flight, plus increased flight and jump mobility.",
+        "source": "Empress of Light Treasure Bag (Expert or Master)",
+        "why": "Improved jump, run, and flight mobility.",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -87437,7 +87447,8 @@
           "mobility"
         ],
         "altOf": "The Community",
-        "expertOnly": true
+        "expertOnly": true,
+        "effect": "+10% jump speed · +25% run acceleration · +33% flight time"
       }
     ],
     "buffs": [
@@ -87940,7 +87951,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -87948,7 +87959,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -88201,8 +88213,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -88212,7 +88224,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -88456,7 +88468,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -88468,7 +88480,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-fire-gauntlet",
@@ -89750,7 +89763,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -89758,7 +89771,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -90011,8 +90025,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -90022,7 +90036,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -93587,7 +93601,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -93595,7 +93609,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -93848,8 +93863,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -93859,7 +93874,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -95417,7 +95432,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -95425,7 +95440,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -95678,8 +95694,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -95689,7 +95705,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -95926,7 +95942,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "This grants critical strike damage.",
             "tags": [],
             "topPick": false,
@@ -95938,7 +95954,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-ruin-medallion",
@@ -97392,7 +97409,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -97400,7 +97417,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -97614,8 +97632,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -97625,7 +97643,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -97945,7 +97963,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -97957,7 +97975,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-fire-gauntlet",
@@ -99389,7 +99408,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -99397,7 +99416,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -99611,8 +99631,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -99622,7 +99642,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -100137,8 +100157,8 @@
         "source": "Crafted at an Ancient Manipulator",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Apoctosis_Array",
         "subclass": "magic-gun",
         "station": "Ancient Manipulator",
@@ -100187,7 +100207,7 @@
         "why": "Fires homing star projectiles with a chance to fire a stronger high-damage shot.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nebula_Blaze",
         "subclass": "other",
         "station": "Ancient Manipulator",
@@ -100209,7 +100229,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_Shower",
         "subclass": "spell-tome",
         "effect": "When used, it summons a spread of 5 astral stars from the sky that quickly travel to meet at the cursor's location, then continue to fall in that direction. The stars do not pierce enemies but can go through tiles."
@@ -100223,7 +100243,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Swarmer",
         "subclass": "magic-gun",
         "station": "Ancient Manipulator",
@@ -100245,6 +100265,62 @@
           }
         ],
         "effect": "When used, it rapidly fires 2 homing bees and wasps per shot that dissipate upon contact with enemies or tiles."
+      },
+      {
+        "id": "arch-amaryllis",
+        "name": "Arch Amaryllis",
+        "slot": "weapon",
+        "icon": "calamity/arch-amaryllis.png",
+        "subclass": "wand",
+        "stats": "58 magic dmg",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Arch_Amaryllis",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Casts a beaming flower that explodes into homing petals.",
+        "why": "Homing petal burst.",
+        "materials": [
+          {
+            "name": "Gleaming Magnolia",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gleaming_Magnolia"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "apathanull",
+        "name": "Apathanull",
+        "slot": "weapon",
+        "icon": "calamity/apathanull.png",
+        "subclass": "spell-tome",
+        "stats": "63 magic dmg",
+        "source": "Crafted at a Bookcase",
+        "station": "Bookcase",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Apathanull",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Casts a spread of dark cosmic tentacles that aim at the cursor and lash out three times.",
+        "why": "Cursor-aimed cosmic tentacles.",
+        "materials": [
+          {
+            "name": "Spell Tome",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spell_Tome"
+          },
+          {
+            "name": "Meld Blob",
+            "qty": 18,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
+          }
+        ]
       }
     ],
     "armor": [
@@ -100345,158 +100421,75 @@
         ],
         "headpiece": "Hydrothermic Mask",
         "defense": 43,
-        "effect": "Inferno effect when below 50% life · You emit a blazing explosion when you are hit",
+        "effect": "+20 maximum health · Immune to On Fire! and lava · Below 50% health, a modified Inferno deals 50 damage and inflicts Brimstone Flames, plus an on-hit explosion for 115/230/345 damage that inflicts Hellfire",
         "desc": "Hydrothermic armor is a Hardmode armor set.",
-        "headpieceBonus": "Magic attacks summon damaging and healing flare orbs on hit"
+        "headpieceBonus": "+25% magic damage · +19% magic critical strike chance · +100 maximum mana · -15% mana usage · +10% movement speed · Magic hits summon damaging and healing chaos orbs (62.5% of weapon damage, soft-capped at 100; healing orbs restore 10% of damage dealt, -5% per pierce)"
       },
       {
-        "id": "astral-armor",
-        "name": "Astral armor",
+        "id": "spectre-armor",
+        "name": "Spectre armor",
         "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted",
-        "why": "all-class armor option",
+        "icon": "armor/spectre-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Still on-tier at this point. The Mask raises damage, and the Hood variant converts magic damage into healing instead.",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
         "pieceRecipes": [
           {
-            "piece": "Astral Breastplate",
-            "station": "Ancient Manipulator",
+            "piece": "Spectre Mask",
             "materials": [
               {
-                "name": "Astral Bar",
+                "name": "Spectre Bar",
                 "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Astral Helm",
-            "station": "Ancient Manipulator",
+            "piece": "Spectre Robe",
             "materials": [
               {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+                "name": "Spectre Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Astral Leggings",
-            "station": "Ancient Manipulator",
+            "piece": "Spectre Pants",
             "materials": [
               {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
+        "defense": 42,
         "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
         ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
+        "desc": "Spectre armor is a Hardmode, post- Plantera magic armor set consisting of the Spectre Robe and Spectre Pants, as well as two different headpieces: the Spectre Hood and Spectre Mask, providing offensive and defensive bonuses respectively.",
+        "headVariants": [
           {
-            "piece": "Reaver Cuisses",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
+            "name": "Mask",
+            "headpieceBonus": "+42 defense · +25% magic damage · +17% magic critical strike chance · +60 maximum mana · +13% mana cost reduction · +8% movement speed",
+            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon’s damage and able to crit."
           },
           {
-            "piece": "Reaver Headgear",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
+            "name": "Hood",
+            "headpieceBonus": "+30 defense · -25% magic damage · +7% magic critical strike chance · +8% movement speed",
+            "effect": "Lifesteal orbs spawn when you deal magic damage, flying to you and restoring 20% of the damage dealt as health."
           }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "desc": "Reaver armor is a Hardmode armor set.",
-        "headpieceBonus": "Helm: Enemies are more likely to target you; Reduces the life regen lost from damage over time debuffs by 20%; 30% decreased movement speed and flight time; Grants Reaver Rage for 5 seconds after taking damage · Visage: Grants immunity to fall damage and allows constant jumping; 10% increased flight time and horizontal wing speed; Grappling hooks retract and pull the player 50% faster; Reduces the cooldown of dashes by 33% · Headgear: Emits light and shows the location of treasure and ore; Enemies are less likely to target you and grants underwater breathing; Greatly enhances visibility in the abyss; Increased block placement & tool range by 7; Increases pickup range for items",
-        "allClass": true
+        ]
       }
     ],
     "accessories": [
@@ -101280,7 +101273,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -101288,7 +101281,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -101502,8 +101496,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -101513,7 +101507,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -101868,7 +101862,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -101880,7 +101874,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-hive-pack",
@@ -102018,7 +102013,7 @@
         "slot": "weapon",
         "icon": "calamity/eye-of-magnus.png",
         "source": "Crafted at an Ancient Manipulator",
-        "why": "",
+        "why": "support weapon",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Magnus",
@@ -102035,7 +102030,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
           }
         ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target."
+        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
+        "altOf": "Betsy's Wrath"
       },
       {
         "id": "rod-of-discord",
@@ -102043,15 +102039,18 @@
         "slot": "weapon",
         "icon": "calamity/rod-of-discord.png",
         "source": "Dropped by Chaos Elementals",
-        "why": "",
+        "why": "support mobility/dodge tool",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Betsy's Wrath"
       }
-    ]
+    ],
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-ml",
@@ -103310,7 +103309,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -103318,7 +103317,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -103532,8 +103532,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -103543,7 +103543,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -105302,7 +105302,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -105310,7 +105310,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -105524,8 +105525,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -105535,7 +105536,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -105896,7 +105897,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "This grants critical strike damage.",
             "tags": [],
             "topPick": false,
@@ -105908,7 +105909,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-sand-shark-tooth-necklace",
@@ -106773,8 +106775,8 @@
         "name": "Soaring Insignia",
         "slot": "accessory",
         "icon": "calamity/soaring-insignia.png",
-        "source": "Empress of Light Treasure Bag (Expert)",
-        "why": "Infinite flight, plus increased flight and jump mobility.",
+        "source": "Empress of Light Treasure Bag (Expert or Master)",
+        "why": "Improved jump, run, and flight mobility.",
         "tags": [],
         "topPick": false,
         "tier": "other",
@@ -106783,7 +106785,8 @@
           "mobility"
         ],
         "altOf": "The Community",
-        "expertOnly": true
+        "expertOnly": true,
+        "effect": "+10% jump speed · +25% run acceleration · +33% flight time"
       }
     ],
     "buffs": [
@@ -107465,8 +107468,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -107476,7 +107479,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -109295,8 +109298,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -109306,7 +109309,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -111217,8 +111220,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -111228,7 +111231,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -111609,7 +111612,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
-        "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear."
+        "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
+        "altOf": "Eye of Magnus"
       },
       {
         "id": "rod-of-discord",
@@ -111623,9 +111627,11 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-providence",
@@ -113009,8 +113015,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -113020,7 +113026,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -114837,8 +114843,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -114848,7 +114854,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -120096,7 +120102,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
           }
         ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target."
+        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "relic-of-deliverance",
@@ -120108,7 +120115,8 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
-        "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear."
+        "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "rod-of-discord",
@@ -120122,9 +120130,11 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Claret Cannon"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-polterghast",
@@ -128815,7 +128825,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
           }
         ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target."
+        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "rod-of-discord",
@@ -128829,7 +128840,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "stratus-sphere",
@@ -128864,9 +128876,11 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
         ],
-        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles."
+        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles.",
+        "altOf": "Claret Cannon"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-dog",
@@ -138359,7 +138373,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
           }
         ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target."
+        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "rod-of-discord",
@@ -138373,7 +138388,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "stratus-sphere",
@@ -138408,9 +138424,11 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
         ],
-        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles."
+        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles.",
+        "altOf": "Claret Cannon"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-yharon",
@@ -147934,9 +147952,11 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-exo",
@@ -157784,9 +157804,11 @@
             "qty": 1,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Rod_of_Discord"
           }
-        ]
+        ],
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-endgame",
@@ -167503,9 +167525,11 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-calamitas",
@@ -177337,9 +177361,11 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-exo",
