@@ -3078,8 +3078,19 @@
           }
         ],
         "defense": 42,
-        "headpieceBonus": "Mask: Magic damage done will hurt extra nearby enemies \u00b7 Hood: Reduces Magic damage by 40% and converts it to healing force; Magic damage done to enemies heals the player with lowest health",
-        "defenseAlt": 30
+        "defenseAlt": 30,
+        "headVariants": [
+          {
+            "name": "Mask",
+            "headpieceBonus": "+42 defense \u00b7 +25% magic damage \u00b7 +17% magic critical strike chance \u00b7 +60 maximum mana \u00b7 +13% mana cost reduction \u00b7 +8% movement speed",
+            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon\u2019s damage and able to crit."
+          },
+          {
+            "name": "Hood",
+            "headpieceBonus": "+30 defense \u00b7 -25% magic damage \u00b7 +7% magic critical strike chance \u00b7 +8% movement speed",
+            "effect": "Lifesteal orbs spawn when you deal magic damage, flying to you and restoring 20% of the damage dealt as health."
+          }
+        ]
       }
     ],
     "accessories": [

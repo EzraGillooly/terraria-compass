@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { ReactNode, SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
@@ -111,6 +111,16 @@ function SourceText({ text, onClose }: { text: string; onClose: () => void }) {
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const { difficulty } = useAppState();
+  /* Which headpiece variant (Spectre Mask vs Hood) the reader is looking at.
+     Reset to the first variant whenever the modal opens a different item -
+     done during render (React's reset-on-prop-change pattern) rather than in
+     an effect, which would cascade an extra render. */
+  const [variant, setVariant] = useState(0);
+  const [variantFor, setVariantFor] = useState(item?.id);
+  if (item && item.id !== variantFor) {
+    setVariantFor(item.id);
+    setVariant(0);
+  }
   /* Many drops double in Expert (Keybrand 0.5% -> 1%), so an Expert world shows
      the Expert rate when the item carries one. */
   const shownDropRate = difficulty === 'expert' && item?.dropRateExpert
@@ -198,13 +208,50 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              dropping `why` from the modal blanked every vanilla card -
              65 of vanilla's 67 armour entries describe themselves there
              and have no effect text at all. */
-          const setBullets = (item.effect || item.why || '').split(' · ').filter(Boolean);
-          const helmetBullets = (item.headpieceBonus || '')
-            .split(' · ').map((s) => s.trim()).filter(Boolean);
-          if (!setBullets.length && !helmetBullets.length) return null;
           const list = (bullets: string[]) => bullets.length > 1
             ? <ul className={`${styles.desc} ${styles.effects}`}>{bullets.map((l) => <li key={l}>{l}</li>)}</ul>
             : <p className={styles.desc}>{bullets[0]}</p>;
+          const split = (s?: string) => (s || '').split(' · ').map((x) => x.trim()).filter(Boolean);
+          /* A set with two interchangeable headpieces (Spectre Mask vs Hood)
+             shows a toggle: each variant carries its own bonus and set effect,
+             so the reader swaps between them in place. */
+          const vars = item.headVariants;
+          if (vars && vars.length > 0) {
+            const v = vars[Math.min(variant, vars.length - 1)];
+            const hb = split(v.headpieceBonus);
+            const sb = split(v.effect);
+            return (
+              <div className={styles.bonusGroups}>
+                <div className={styles.headToggle} role="group" aria-label="Headpiece">
+                  {vars.map((hv, i) => (
+                    <button
+                      key={hv.name} type="button"
+                      className={`${styles.headToggleBtn} pixel-frame ${i === variant ? styles.headToggleOn : ''}`}
+                      aria-pressed={i === variant}
+                      onClick={() => setVariant(i)}
+                    >
+                      {hv.name}
+                    </button>
+                  ))}
+                </div>
+                {hb.length > 0 && (
+                  <div className={styles.bonusGroup}>
+                    <span className={styles.bonusLabel}>{v.name} bonus</span>
+                    {list(hb)}
+                  </div>
+                )}
+                {sb.length > 0 && (
+                  <div className={styles.bonusGroup}>
+                    <span className={styles.bonusLabel}>Set bonus</span>
+                    {list(sb)}
+                  </div>
+                )}
+              </div>
+            );
+          }
+          const setBullets = split(item.effect || item.why);
+          const helmetBullets = split(item.headpieceBonus);
+          if (!setBullets.length && !helmetBullets.length) return null;
           /* Armour with a class helmet bonus splits into two labelled blocks so
              the reader can tell the one helmet's bonus from the shared set bonus.
              Everything else (accessories, plain vanilla armour) is one list. */

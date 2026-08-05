@@ -52,6 +52,16 @@ export const Item = z.object({
    */
   headpieceBonus: z.string().optional(),
   /**
+   * A set with two interchangeable headpieces (Spectre's damage Mask vs healing
+   * Hood) whose bonuses and set effect differ. When present, the item modal
+   * shows a toggle to swap between them, each with its own bonus and effect.
+   */
+  headVariants: z.array(z.object({
+    name: z.string(),
+    headpieceBonus: z.string().optional(),
+    effect: z.string().optional(),
+  })).optional(),
+  /**
    * The guide lists this under "All-class armor" rather than
    * "Class-specific armor". It is always listed last, so without the flag it
    * fell off whenever the column was capped.
@@ -272,6 +282,12 @@ export const Loadout = z.object({
    * the scraped phases only record layout order, not judgement.
    */
   curated: z.boolean().optional(),
+  /**
+   * A short caveat shown under the weapon list for a phase still being worked
+   * out - e.g. the post-mech phases carry the pre-mech picks as a placeholder
+   * until their own guide pass lands.
+   */
+  note: z.string().optional(),
   accessoryPool: z.array(z.object({
     // Must track Item.categories - these are the same vocabulary, and only
     // updating one of them is what broke the schema when Calamity's

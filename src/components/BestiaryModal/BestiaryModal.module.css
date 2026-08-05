@@ -232,6 +232,20 @@
 }
 .bonusGroup .effects { margin-bottom: 0; }
 
+/* Toggle between a set's two headpieces (Spectre Mask vs Hood). */
+.headToggle { display: flex; gap: 6px; }
+.headToggleBtn {
+  flex: 1 1 0;
+  padding: 7px 10px 5px;
+  font-family: inherit; font-weight: 800; font-size: 11px;
+  letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ink-mute); cursor: pointer;
+  --px-u: 1.5px; --px-fill: var(--card-2); --px-border: var(--line);
+  transition: color .15s;
+}
+.headToggleBtn:hover { color: var(--ink-soft); --px-border: var(--accent); }
+.headToggleOn { color: #12283B; --px-fill: var(--warm); --px-border: var(--warm); }
+
 
 /* Tall item modal: header pinned, body scrolls.
    The card used to scroll as a whole, so on a long item the title and close

@@ -1377,6 +1377,10 @@ export function Loadouts() {
               </p>
             )}
 
+            {safeLoadout.note && (
+              <p className={styles.summonerNote}>{safeLoadout.note}</p>
+            )}
+
             {ranked ? (
               <>
                 {scopedBest.length > 0 && (
