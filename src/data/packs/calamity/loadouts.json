@@ -11,11 +11,12 @@
         "source": "Dropped by Tomb Crawlers",
         "why": "strong early ranged melee whip option",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Burnt_Sienna",
         "effect": "Enemies killed using the weapon will drop three small orbs that each heal the player for 2 HP when picked up.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "enchanted-boomerang",
@@ -42,39 +43,8 @@
         ],
         "station": "By Hand",
         "subclass": "boomerang",
-        "stats": "17 melee dmg"
-      },
-      {
-        "id": "monstrous-knives",
-        "name": "Monstrous Knives",
-        "slot": "weapon",
-        "icon": "calamity/monstrous-knives.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "rapid thrown knife damage",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Monstrous_Knives",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Throwing Knife",
-            "qty": 50,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Throwing_Knife"
-          },
-          {
-            "name": "Life Crystal",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
-          },
-          {
-            "name": "Lesser Healing Potion",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Healing_Potion"
-          }
-        ],
-        "effect": "When used, the player throws a spread of 3-4 gravity-affected knives that heal the player for 5% to 10% of the damage dealt. The knives fade away after a short amount of time, losing 10% of its damage and knockback every 0.5 seconds, then disappear into cosmetic red dust when fully transparent.",
-        "subclass": "other"
+        "stats": "17 melee dmg",
+        "secondary": true
       },
       {
         "id": "starfury",
@@ -85,11 +55,12 @@
         "why": "Calls a falling star from the sky on each swing.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starfury",
         "dropRate": "25%",
         "subclass": "sword",
-        "stats": "25 melee dmg"
+        "stats": "25 melee dmg",
+        "secondary": true
       },
       {
         "id": "terragrim",
@@ -100,69 +71,166 @@
         "why": "Rapidly releases a flurry of slash projectiles toward the cursor when used.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terragrim",
         "subclass": "sword",
-        "stats": "17 melee dmg"
-      }
-    ],
-    "armor": [
+        "stats": "17 melee dmg",
+        "secondary": true
+      },
       {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
-        "source": "Crafted",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
+        "id": "bladecrest-oathsword",
+        "name": "Bladecrest Oathsword",
+        "slot": "weapon",
+        "icon": "calamity/bladecrest-oathsword.png",
+        "source": "Dropped by Demons and Voodoo Demons in The Underworld",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladecrest_Oathsword",
+        "tier": "best",
+        "effect": "It throws a sword that sticks into enemies, with a max of 3 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
+        "subclass": "sword"
+      },
+      {
+        "id": "old-lord-claymore",
+        "name": "Old Lord Claymore",
+        "slot": "weapon",
+        "icon": "calamity/old-lord-claymore.png",
+        "source": "Dropped by Bone Serpents",
+        "why": "strong projectile melee sword, primary pick",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Old_Lord_Claymore",
+        "effect": "When used, it performs a slow, high knockback slash with a custom animation that inflicts the Hellfire debuff.",
+        "subclass": "sword"
+      },
+      {
+        "id": "blade-of-grass",
+        "name": "Blade of Grass",
+        "slot": "weapon",
+        "icon": "items/blade-of-grass.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Fires a homing Leaf Blade projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sword",
+        "stats": "18 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blade_of_Grass",
+        "tier": "good",
+        "materials": [
           {
-            "piece": "Gold Chainmail",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
           },
           {
-            "piece": "Gold Greaves",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
           },
           {
-            "piece": "Gold Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
           }
         ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
-        ],
-        "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
+        "station": "Iron Anvil or Lead Anvil"
       },
+      {
+        "id": "depth-crusher",
+        "name": "Depth Crusher",
+        "slot": "weapon",
+        "icon": "calamity/depth-crusher.png",
+        "subclass": "other",
+        "stats": "48 melee dmg",
+        "source": "Dropped by Viperfish, or found in the Void Chest in the Abyss Shrine",
+        "dropRate": "10%",
+        "dropRateExpert": "16.67%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Crusher",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Tosses a heavy crusher that ricochets off tiles and enemies and releases water energy, inflicting Riptide.",
+        "why": "Ricocheting abyssal crusher."
+      },
+      {
+        "id": "malaise",
+        "name": "Malaise",
+        "slot": "weapon",
+        "icon": "items/malaise.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption counterpart of the Crimson's Artery.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "16 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Malaise",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "artery",
+        "name": "Artery",
+        "slot": "weapon",
+        "icon": "items/artery.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart of the Corruption's Malaise.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "17 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Artery",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "thorn-chakram",
+        "name": "Thorn Chakram",
+        "slot": "weapon",
+        "icon": "items/thorn-chakram.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Bouncing chakram that inflicts Poisoned.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "25 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thorn_Chakram",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Jungle Spores",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Stinger",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      }
+    ],
+    "armor": [
       {
         "id": "platinum-armor",
         "name": "Platinum armor",
@@ -216,63 +284,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
-      },
-      {
-        "id": "silver-armor",
-        "name": "Silver armor",
-        "slot": "armor",
-        "icon": "armor-sets/silver-armor.png",
-        "source": "Crafted",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Silver Chainmail",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Silver Greaves",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Silver Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Silver Helmet",
-          "Silver Chainmail",
-          "Silver Greaves"
-        ],
-        "defense": 10,
-        "effect": "+3 defense · 2 seconds after being hit for ≥20 damage, heal for 10 health; getting hit again during this time will reset the timer",
-        "desc": "Silver armor is a pre-Hardmode armor set consisting of the Silver Helmet, Silver Chainmail, and Silver Greaves. The full set grants 13 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       }
     ],
     "accessories": [
@@ -383,39 +396,33 @@
         "dropRateExpert": "1.33%"
       },
       {
-        "id": "black-glass-band",
-        "name": "Black Glass Band",
+        "id": "magiluminescence",
+        "name": "Magiluminescence",
         "slot": "accessory",
-        "icon": "calamity/black-glass-band.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "offensive damage accessory",
+        "icon": "items/magiluminescence.png",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+        "categories": [
+          "mobility"
+        ],
+        "effect": "+15% maximum speed, +75% acceleration, and emits light.",
+        "why": "Grounded speed and light.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Black_Glass_Band",
-        "station": "Iron Anvil or Lead Anvil",
+        "altOf": "Shark Tooth Necklace",
         "materials": [
           {
-            "name": "Any Gold Bar",
-            "qty": 8,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Gold_Bar"
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
           },
           {
-            "name": "Diamond",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
-          },
-          {
-            "name": "Obsidian",
-            "qty": 35,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Obsidian"
+            "name": "Topaz",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
           }
-        ],
-        "effect": "While equipped, it releases an obsidian strike upon enemy hits that deals 20 typeless damage and always critically strikes, with a 5 second cooldown that is halved if the enemy is killed with the strike. The strike's damage value scales with the player's highest class' damage.",
-        "categories": [
-          "offense"
-        ],
-        "altOf": "Shark Tooth Necklace"
+        ]
       },
       {
         "id": "feral-claws",
@@ -436,6 +443,22 @@
           "whips"
         ],
         "quality": "great"
+      },
+      {
+        "id": "counterweight",
+        "name": "Counterweight",
+        "slot": "accessory",
+        "icon": "items/counterweight.png",
+        "source": "Purchased from the Traveling Merchant or Skeleton Merchant",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counterweight",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Throws a counterweight at enemies after a yoyo hit.",
+        "why": "Extra yoyo projectile.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Feral Claws"
       },
       {
         "id": "rover-drive",
@@ -1053,6 +1076,38 @@
     ],
     "tools": [
       {
+        "id": "monstrous-knives",
+        "name": "Monstrous Knives",
+        "slot": "weapon",
+        "icon": "calamity/monstrous-knives.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "rapid thrown knife damage",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Monstrous_Knives",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Throwing Knife",
+            "qty": 50,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Throwing_Knife"
+          },
+          {
+            "name": "Life Crystal",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Life_Crystal"
+          },
+          {
+            "name": "Lesser Healing Potion",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Healing_Potion"
+          }
+        ],
+        "effect": "When used, the player throws a spread of 3-4 gravity-affected knives that heal the player for 5% to 10% of the damage dealt. The knives fade away after a short amount of time, losing 10% of its damage and knockback every 0.5 seconds, then disappear into cosmetic red dust when fully transparent.",
+        "subclass": "other"
+      },
+      {
         "id": "wulfrum-controller",
         "name": "Wulfrum Controller",
         "slot": "weapon",
@@ -1071,9 +1126,11 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Monstrous Knives"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-boss",
@@ -1435,7 +1492,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       },
       {
         "id": "silver-armor",
@@ -2729,62 +2787,6 @@
         "desc": "Jungle armor is a pre-Hardmode mage armor set consisting of the Jungle Shirt, Jungle Hat, and Jungle Pants."
       },
       {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
-        "source": "Crafted",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Gold Chainmail",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Greaves",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
-        ],
-        "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
-      },
-      {
         "id": "platinum-armor",
         "name": "Platinum armor",
         "slot": "armor",
@@ -2837,7 +2839,8 @@
         ],
         "defense": 16,
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       },
       {
         "id": "silver-armor",
@@ -4048,7 +4051,8 @@
         ],
         "defense": 16,
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       },
       {
         "id": "silver-armor",
@@ -5238,7 +5242,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       },
       {
         "id": "silver-armor",
@@ -6180,6 +6185,158 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "bladecrest-oathsword",
+        "name": "Bladecrest Oathsword",
+        "slot": "weapon",
+        "icon": "calamity/bladecrest-oathsword.png",
+        "source": "Dropped by Demons and Voodoo Demons in The Underworld",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladecrest_Oathsword",
+        "tier": "best",
+        "effect": "It throws a sword that sticks into enemies, with a max of 3 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
+        "subclass": "sword"
+      },
+      {
+        "id": "old-lord-claymore",
+        "name": "Old Lord Claymore",
+        "slot": "weapon",
+        "icon": "calamity/old-lord-claymore.png",
+        "source": "Dropped by Bone Serpents",
+        "why": "strong projectile melee sword, primary pick",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Old_Lord_Claymore",
+        "effect": "When used, it performs a slow, high knockback slash with a custom animation that inflicts the Hellfire debuff.",
+        "subclass": "sword"
+      },
+      {
+        "id": "blade-of-grass",
+        "name": "Blade of Grass",
+        "slot": "weapon",
+        "icon": "items/blade-of-grass.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Fires a homing Leaf Blade projectile on each swing.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sword",
+        "stats": "18 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blade_of_Grass",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Stinger",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          },
+          {
+            "name": "Jungle Spores",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Vine",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vine"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "depth-crusher",
+        "name": "Depth Crusher",
+        "slot": "weapon",
+        "icon": "calamity/depth-crusher.png",
+        "subclass": "other",
+        "stats": "48 melee dmg",
+        "source": "Dropped by Viperfish, or found in the Void Chest in the Abyss Shrine",
+        "dropRate": "10%",
+        "dropRateExpert": "16.67%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Crusher",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Tosses a heavy crusher that ricochets off tiles and enemies and releases water energy, inflicting Riptide.",
+        "why": "Ricocheting abyssal crusher."
+      },
+      {
+        "id": "malaise",
+        "name": "Malaise",
+        "slot": "weapon",
+        "icon": "items/malaise.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption counterpart of the Crimson's Artery.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "16 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Malaise",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "artery",
+        "name": "Artery",
+        "slot": "weapon",
+        "icon": "items/artery.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart of the Corruption's Malaise.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "17 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Artery",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "thorn-chakram",
+        "name": "Thorn Chakram",
+        "slot": "weapon",
+        "icon": "items/thorn-chakram.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Bouncing chakram that inflicts Poisoned.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "25 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thorn_Chakram",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Jungle Spores",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Jungle_Spores"
+          },
+          {
+            "name": "Stinger",
+            "qty": 9,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stinger"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
         "id": "basher",
         "name": "Basher",
         "slot": "weapon",
@@ -6187,8 +6344,8 @@
         "source": "Crafted at an Iron Anvil or Lead Anvil",
         "why": "primary melee weapon at this tier",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Basher",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -6204,7 +6361,8 @@
           }
         ],
         "effect": "When used, it swings back and forth in almost a complete circle toward the cursor and inflicts the Irradiated debuff, while also knocking the player back in the process.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "sahara-slicers",
@@ -6218,7 +6376,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sahara_Slicers",
         "effect": "When swung, a pair of dual daggers rapidly stab in front of the player. Hitting an enemy with one of the daggers will spawn 2 bolts which appear behind the player, up to a maximum of 10.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "seashine-sword",
@@ -6250,7 +6409,8 @@
           }
         ],
         "effect": "When swung, it fires a glowing aquamarine sword beam that emits glowing particles, deals damage and travels indefinitely, disappearing upon hitting a block or an enemy.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "trimarang",
@@ -6261,7 +6421,7 @@
         "why": "Throws three boomerangs at once.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Trimarang",
         "materials": [
           {
@@ -6282,7 +6442,8 @@
         ],
         "station": "Work Bench",
         "subclass": "boomerang",
-        "stats": "21 melee dmg"
+        "stats": "21 melee dmg",
+        "secondary": true
       },
       {
         "id": "urchin-mace",
@@ -6293,7 +6454,7 @@
         "why": "flail option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Mace",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -6304,7 +6465,8 @@
           }
         ],
         "effect": "When used, the player starts spinning the mace around, creating a whirlpool around themselves. If the player stops using the weapon after 1.83 or more seconds of spinning, they launch the whirlpool towards their mouse cursor, which pierces infinitely, deals double damage, and travels a short distance before popping, emitting glowing water dust in a large radius.",
-        "subclass": "flail"
+        "subclass": "flail",
+        "secondary": true
       }
     ],
     "armor": [
@@ -6405,65 +6567,8 @@
         ],
         "headpiece": "Victide Shellmet",
         "defense": 13,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
-        "headpieceBonus": "Enemies are more likely to target you · +1.5 HP/s life regen and 10% increased melee damage while submerged in liquid"
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
-        "source": "Crafted",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Gold Chainmail",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Greaves",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Helmet",
-            "station": "Iron Anvil or Lead Anvil",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
-        ],
-        "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
+        "headpieceBonus": "+5% melee damage · +10% melee damage while submerged in liquids · +200 aggro"
       },
       {
         "id": "platinum-armor",
@@ -6518,7 +6623,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       }
     ],
     "accessories": [
@@ -7482,9 +7588,12 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wulfrum_Controller",
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "curated": true
   },
   {
     "phase": "cal-pre-evil",
@@ -7805,8 +7914,7 @@
         ],
         "headpiece": "Victide Coral Turban",
         "defense": 12,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
         "headpieceBonus": "+1.5 HP/s life regen and 10% increased ranged damage while submerged in liquid"
       },
       {
@@ -7918,7 +8026,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       }
     ],
     "accessories": [
@@ -9268,8 +9377,7 @@
         ],
         "headpiece": "Victide Hermit Helmet",
         "defense": 11,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
         "headpieceBonus": "+1.5 HP/s life regen and 10% increased magic damage while submerged in liquid"
       }
     ],
@@ -10611,8 +10719,7 @@
         ],
         "headpiece": "Victide Mask",
         "defense": 10,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
         "headpieceBonus": "+1 max minion · Summons a sea snail to protect you · +1.5 HP/s life regen and 10% increased summon damage while submerged in liquid"
       },
       {
@@ -10794,7 +10901,8 @@
         ],
         "defense": 16,
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       }
     ],
     "accessories": [
@@ -12062,8 +12170,7 @@
         ],
         "headpiece": "Victide Headcrab",
         "defense": 12,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
         "headpieceBonus": "+60 maximum stealth · +1.5 HP/s life regen and 10% increased rogue damage while submerged in liquid"
       },
       {
@@ -12175,7 +12282,8 @@
           "Platinum Greaves"
         ],
         "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true
+        "allClass": true,
+        "effect": "+4 defense · +10% damage reduction"
       }
     ],
     "accessories": [
@@ -13208,6 +13316,20 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "bladecrest-oathsword",
+        "name": "Bladecrest Oathsword",
+        "slot": "weapon",
+        "icon": "calamity/bladecrest-oathsword.png",
+        "source": "Dropped by Demons and Voodoo Demons in The Underworld",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladecrest_Oathsword",
+        "tier": "good",
+        "effect": "It throws a sword that sticks into enemies, with a max of 3 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
+        "subclass": "sword"
+      },
+      {
         "id": "old-lord-claymore",
         "name": "Old Lord Claymore",
         "slot": "weapon",
@@ -13215,11 +13337,95 @@
         "source": "Dropped by Bone Serpents",
         "why": "strong projectile melee sword, primary pick",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Old_Lord_Claymore",
         "effect": "When used, it performs a slow, high knockback slash with a custom animation that inflicts the Hellfire debuff.",
         "subclass": "sword"
+      },
+      {
+        "id": "volcano",
+        "name": "Volcano",
+        "slot": "weapon",
+        "icon": "items/volcano.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Creates an explosion on hitting enemies.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "sword",
+        "stats": "40 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Volcano",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
+      },
+      {
+        "id": "mycelial-claws",
+        "name": "Mycelial Claws",
+        "slot": "weapon",
+        "icon": "calamity/mycelial-claws.png",
+        "subclass": "other",
+        "stats": "28 melee dmg",
+        "source": "Dropped by Crabulon",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mycelial_Claws",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Grants the Mushy buff on hit (+3 defense, +1 HP/s) for 6 seconds.",
+        "why": "On-hit defense and regen."
+      },
+      {
+        "id": "sahara-slicers",
+        "name": "Sahara Slicers",
+        "slot": "weapon",
+        "icon": "calamity/sahara-slicers.png",
+        "source": "Dropped by the Desert Scourge",
+        "why": "solid boomerang alternative",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sahara_Slicers",
+        "effect": "When swung, a pair of dual daggers rapidly stab in front of the player. Hitting an enemy with one of the daggers will spawn 2 bolts which appear behind the player, up to a maximum of 10.",
+        "subclass": "sword"
+      },
+      {
+        "id": "flamarang",
+        "name": "Flamarang",
+        "slot": "weapon",
+        "icon": "items/flamarang.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "A boomerang that inflicts On Fire!.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "boomerang",
+        "stats": "49 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flamarang",
+        "tier": "best",
+        "materials": [
+          {
+            "name": "Hellstone Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          },
+          {
+            "name": "Enchanted Boomerang",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Enchanted_Boomerang"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       },
       {
         "id": "seashine-sword",
@@ -13251,7 +13457,59 @@
           }
         ],
         "effect": "When swung, it fires a glowing aquamarine sword beam that emits glowing particles, deals damage and travels indefinitely, disappearing upon hitting a block or an enemy.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
+      },
+      {
+        "id": "the-meatball",
+        "name": "The Meatball",
+        "slot": "weapon",
+        "icon": "calamity/the-meatball.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart of Ball O' Hurt.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Meatball",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          },
+          {
+            "name": "Tissue Sample",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "subclass": "flail",
+        "stats": "34 melee dmg",
+        "secondary": true
+      },
+      {
+        "id": "urchin-mace",
+        "name": "Urchin Mace",
+        "slot": "weapon",
+        "icon": "calamity/urchin-mace.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "crowd control option",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Mace",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Sea Remains",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+          }
+        ],
+        "effect": "When used, the player starts spinning the mace around, creating a whirlpool around themselves. If the player stops using the weapon after 1.83 or more seconds of spinning, they launch the whirlpool towards their mouse cursor, which pierces infinitely, deals double damage, and travels a short distance before popping, emitting glowing water dust in a large radius.",
+        "subclass": "flail",
+        "secondary": true
       },
       {
         "id": "smoking-comet",
@@ -13296,53 +13554,37 @@
         "subclass": "yoyo"
       },
       {
-        "id": "the-meatball",
-        "name": "The Meatball",
+        "id": "riptide",
+        "name": "Riptide",
         "slot": "weapon",
-        "icon": "calamity/the-meatball.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Crimson counterpart of Ball O' Hurt.",
-        "tags": [],
+        "icon": "calamity/riptide.png",
+        "subclass": "yoyo",
+        "stats": "12 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Riptide",
+        "tier": "good",
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Meatball",
+        "tags": [],
+        "effect": "Sprays a spiral of piercing aqua streams while deployed.",
+        "why": "Spiral water streams.",
         "materials": [
           {
-            "name": "Crimtane Bar",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+            "name": "Pearl Shard",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
           },
           {
-            "name": "Tissue Sample",
-            "qty": 5,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
-        "subclass": "flail",
-        "stats": "34 melee dmg"
-      },
-      {
-        "id": "urchin-mace",
-        "name": "Urchin Mace",
-        "slot": "weapon",
-        "icon": "calamity/urchin-mace.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "crowd control option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Urchin_Mace",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
+            "name": "Sea Prism",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
+          },
           {
-            "name": "Sea Remains",
-            "qty": 3,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+            "name": "Navystone",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Navystone"
           }
-        ],
-        "effect": "When used, the player starts spinning the mace around, creating a whirlpool around themselves. If the player stops using the weapon after 1.83 or more seconds of spinning, they launch the whirlpool towards their mouse cursor, which pierces infinitely, deals double damage, and travels a short distance before popping, emitting glowing water dust in a large radius.",
-        "subclass": "flail"
+        ]
       }
     ],
     "armor": [
@@ -13398,150 +13640,108 @@
           "Molten Breastplate",
           "Molten Greaves"
         ],
-        "effect": "+17% melee damage · +7% melee critical strike chance · +7% melee speed · Immunity to the On Fire! and Burning debuffs",
-        "desc": "Molten armor is a pre-Hardmode armor set consisting of the Molten Helmet, Molten Breastplate, and Molten Greaves."
+        "effect": "Immune to On Fire!, Burning, and fire blocks; temporary immunity to lava · Leaves a visual trail of flames",
+        "headpieceBonus": "+24% melee damage · +10% true melee damage · +7% melee critical strike chance · +7% melee speed"
       },
       {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
+        "id": "victide-armor",
+        "name": "Victide armor",
         "slot": "armor",
-        "icon": "armor-sets/crimson-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "icon": "armor-sets/victide-armor-melee.png",
+        "source": "Crafted",
+        "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor",
         "pieceRecipes": [
           {
-            "piece": "Crimson Helmet",
+            "piece": "Victide Breastplate",
+            "station": "Iron Anvil or Lead Anvil",
             "materials": [
               {
-                "name": "Crimtane Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+                "name": "Sea Remains",
+                "qty": 5,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
               }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            ]
           },
           {
-            "piece": "Crimson Scalemail",
+            "piece": "Victide Coral Turban",
+            "station": "Iron Anvil or Lead Anvil",
             "materials": [
               {
-                "name": "Crimtane Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+                "name": "Sea Remains",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
               }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            ]
           },
           {
-            "piece": "Crimson Greaves",
+            "piece": "Victide Greaves",
+            "station": "Iron Anvil or Lead Anvil",
             "materials": [
               {
-                "name": "Crimtane Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+                "name": "Sea Remains",
+                "qty": 4,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
               }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
+            ]
+          },
+          {
+            "piece": "Victide Headcrab",
+            "station": "Iron Anvil or Lead Anvil",
+            "materials": [
+              {
+                "name": "Sea Remains",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+              }
+            ]
+          },
+          {
+            "piece": "Victide Hermit Helmet",
+            "station": "Iron Anvil or Lead Anvil",
+            "materials": [
+              {
+                "name": "Sea Remains",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+              }
+            ]
+          },
+          {
+            "piece": "Victide Mask",
+            "station": "Iron Anvil or Lead Anvil",
+            "materials": [
+              {
+                "name": "Sea Remains",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+              }
+            ]
+          },
+          {
+            "piece": "Victide Shellmet",
+            "station": "Iron Anvil or Lead Anvil",
+            "materials": [
+              {
+                "name": "Sea Remains",
+                "qty": 3,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+              }
+            ]
           }
         ],
-        "defense": 19,
         "pieces": [
-          "Crimson Helmet",
-          "Crimson Scalemail",
-          "Crimson Greaves"
+          "Victide Shellmet",
+          "Victide Breastplate",
+          "Victide Greaves"
         ],
-        "effect": "+9% damage · Greatly increased health regeneration",
-        "desc": "Crimson armor is a pre-Hardmode armor set consisting of the Crimson Helmet, Crimson Scalemail, and Crimson Greaves.",
-        "allClass": true
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
-        "allClass": true
+        "headpiece": "Victide Shellmet",
+        "defense": 13,
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
+        "headpieceBonus": "+5% melee damage · +10% melee damage while submerged in liquids · +200 aggro"
       }
     ],
     "accessories": [
@@ -13680,6 +13880,22 @@
           "whips"
         ],
         "quality": "great"
+      },
+      {
+        "id": "counterweight",
+        "name": "Counterweight",
+        "slot": "accessory",
+        "icon": "items/counterweight.png",
+        "source": "Purchased from the Traveling Merchant or Skeleton Merchant",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counterweight",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Throws a counterweight at enemies after a yoyo hit.",
+        "why": "Extra yoyo projectile.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Feral Claws"
       },
       {
         "id": "brain-of-confusion",
@@ -14507,7 +14723,7 @@
         "slot": "weapon",
         "icon": "calamity/brittle-star-staff.png",
         "source": "Dropped by the Desert Scourge",
-        "why": "defensive support weapon",
+        "why": "support summon item",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff",
@@ -14533,9 +14749,11 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-hive-perf",
@@ -14783,8 +15001,7 @@
         ],
         "headpiece": "Victide Coral Turban",
         "defense": 12,
-        "effect": "When using any weapon you have a 10% chance to throw a returning seashell projectile · This seashell does true damage and does not benefit from any damage class · Provides increased underwater mobility and slightly reduces breath loss in the abyss",
-        "desc": "Victide armor is a Pre-Hardmode armor set.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
         "headpieceBonus": "+1.5 HP/s life regen and 10% increased ranged damage while submerged in liquid"
       },
       {
@@ -20411,8 +20628,8 @@
           "Molten Breastplate",
           "Molten Greaves"
         ],
-        "effect": "+17% melee damage · +7% melee critical strike chance · +7% melee speed · Immunity to the On Fire! and Burning debuffs",
-        "desc": "Molten armor is a pre-Hardmode armor set consisting of the Molten Helmet, Molten Breastplate, and Molten Greaves."
+        "effect": "Immune to On Fire!, Burning, and fire blocks; temporary immunity to lava · Leaves a visual trail of flames",
+        "headpieceBonus": "+24% melee damage · +10% true melee damage · +7% melee critical strike chance · +7% melee speed"
       },
       {
         "id": "crimson-armor",
@@ -27485,8 +27702,8 @@
           "Molten Breastplate",
           "Molten Greaves"
         ],
-        "effect": "+17% melee damage · +7% melee critical strike chance · +7% melee speed · Immunity to the On Fire! and Burning debuffs",
-        "desc": "Molten armor is a pre-Hardmode armor set consisting of the Molten Helmet, Molten Breastplate, and Molten Greaves."
+        "effect": "Immune to On Fire!, Burning, and fire blocks; temporary immunity to lava · Leaves a visual trail of flames",
+        "headpieceBonus": "+24% melee damage · +10% true melee damage · +7% melee critical strike chance · +7% melee speed"
       },
       {
         "id": "statigel-armor",
