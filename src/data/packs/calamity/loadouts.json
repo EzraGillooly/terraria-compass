@@ -20348,7 +20348,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aorta",
-        "tier": "best",
+        "tier": "good",
         "effect": "While deployed, it fires blood clots to enemies within 16 tiles, which first travel a short distance in that direction before homing in on the target; only then can they deal damage. The blood clots do not pierce or pass through tiles, and they deal 25% of the weapon's damage.",
         "subclass": "yoyo"
       },
@@ -20364,7 +20364,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladecrest_Oathsword",
         "tier": "good",
         "effect": "It throws a sword that sticks into enemies, with a max of 3 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "goldplume-spear",
@@ -20398,9 +20399,10 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perfect_Dark",
-        "tier": "other",
+        "tier": "good",
         "effect": "When swung, it fires a dark ball that sticks to any tile that it contacts. After sticking onto a tile for 4 seconds or upon hitting an enemy, it explodes, emitting purple particles and damaging all enemies in a small radius.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "vein-burster",
@@ -20412,9 +20414,10 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vein_Burster",
-        "tier": "other",
+        "tier": "good",
         "effect": "When swung, it fires a blood ball that sticks to any tile that it contacts. After sticking onto a tile for 4 seconds or upon hitting an enemy, it explodes, emitting red projectiles and damaging all enemies in a small radius.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "wind-blade",
@@ -20426,7 +20429,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wind_Blade",
-        "tier": "other",
+        "tier": "good",
         "effect": "When swung, it emits glowing blue dust particles and fires a wind cyclone that pierces once before disappearing on the second hit. The cyclone deals 60% of the sword's damage and drags non- boss enemies towards it for a short amount of time before disappearing.",
         "subclass": "sword",
         "materials": [
@@ -20436,10 +20439,187 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "secondary": true
+      },
+      {
+        "id": "broken-biome-blade",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Broken_Biome_Blade",
+        "tier": "best",
+        "name": "Broken Biome Blade",
+        "icon": "calamity/broken-biome-blade.png",
+        "subclass": "sword",
+        "stats": "38 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Attune it to your biome for unique attacks; stores a second attunement.",
+        "why": "Biome-attuned broadsword.",
+        "materials": [
+          {
+            "name": "Wooden Sword",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Sword"
+          },
+          {
+            "name": "Aerialite Bar",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
+          },
+          {
+            "name": "Hellstone Bar",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+          },
+          {
+            "name": "Dirt Block",
+            "qty": 50,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Dirt_Block"
+          },
+          {
+            "name": "Stone Block",
+            "qty": 50,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stone_Block"
+          }
+        ]
+      },
+      {
+        "id": "p-gss-auger",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/P-GSS_Auger",
+        "tier": "best",
+        "name": "P-GSS: Auger",
+        "icon": "calamity/p-gss-auger.png",
+        "subclass": "sword",
+        "stats": "60 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Emits a magnetic energy blade; alt-fire pulls enemies in and empowers your next slash to 250% damage.",
+        "why": "Magnetic energy slashes.",
+        "materials": [
+          {
+            "name": "Mysterious Circuitry",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mysterious_Circuitry"
+          },
+          {
+            "name": "Dubious Plating",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dubious_Plating"
+          },
+          {
+            "name": "Aerialite Bar",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
+          },
+          {
+            "name": "Sea Prism",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
+          }
+        ]
+      },
+      {
+        "id": "sausage-maker",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sausage_Maker",
+        "tier": "good",
+        "name": "Sausage Maker",
+        "icon": "calamity/sausage-maker.png",
+        "subclass": "spear",
+        "stats": "32 melee dmg",
+        "source": "Dropped by The Perforators",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "effect": "Sprays homing blood on hit, inflicting Burning Blood.",
+        "why": "Homing blood spear."
+      },
+      {
+        "id": "air-spinner",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Air_Spinner",
+        "tier": "good",
+        "name": "Air Spinner",
+        "icon": "calamity/air-spinner.png",
+        "subclass": "yoyo",
+        "stats": "29 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires small golden feathers at nearby enemies while deployed.",
+        "why": "Feather-firing yoyo.",
+        "materials": [
+          {
+            "name": "Aerialite Bar",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
+          }
+        ]
       }
     ],
     "armor": [
+      {
+        "id": "molten-armor",
+        "name": "Molten armor",
+        "slot": "armor",
+        "icon": "armor-sets/molten-armor.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "10% extra melee damage, immunity to fire blocks, and you cannot be set on fire.",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "pieceRecipes": [
+          {
+            "piece": "Molten Helmet",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Molten Breastplate",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          },
+          {
+            "piece": "Molten Greaves",
+            "materials": [
+              {
+                "name": "Hellstone Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
+              }
+            ],
+            "station": "Iron Anvil or Lead Anvil"
+          }
+        ],
+        "defense": 25,
+        "pieces": [
+          "Molten Helmet",
+          "Molten Breastplate",
+          "Molten Greaves"
+        ],
+        "effect": "Immune to On Fire!, Burning, and fire blocks; temporary immunity to lava · Leaves a visual trail of flames",
+        "headpieceBonus": "+24% melee damage · +10% true melee damage · +7% melee critical strike chance · +7% melee speed"
+      },
       {
         "id": "aerospec-armor",
         "name": "Aerospec armor",
@@ -20449,7 +20629,7 @@
         "why": "primary class-specific summoner armor",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerospec_armor",
         "pieceRecipes": [
           {
@@ -20572,206 +20752,8 @@
         ],
         "headpiece": "Aerospec Helm",
         "defense": 20,
-        "effect": "Taking over 25 damage in one hit will cause a spread of homing feathers to fall · Allows you to fall more quickly and disables fall damage",
-        "desc": "Aerospec armor is a Pre-Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player will emit afterimages.",
-        "headpieceBonus": "5% increased movement speed and melee critical strike chance · Enemies are more likely to target you"
-      },
-      {
-        "id": "molten-armor",
-        "name": "Molten armor",
-        "slot": "armor",
-        "icon": "armor-sets/molten-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "10% extra melee damage, immunity to fire blocks, and you cannot be set on fire.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Molten Helmet",
-            "materials": [
-              {
-                "name": "Hellstone Bar",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Molten Breastplate",
-            "materials": [
-              {
-                "name": "Hellstone Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Molten Greaves",
-            "materials": [
-              {
-                "name": "Hellstone Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 25,
-        "pieces": [
-          "Molten Helmet",
-          "Molten Breastplate",
-          "Molten Greaves"
-        ],
-        "effect": "Immune to On Fire!, Burning, and fire blocks; temporary immunity to lava · Leaves a visual trail of flames",
-        "headpieceBonus": "+24% melee damage · +10% true melee damage · +7% melee critical strike chance · +7% melee speed"
-      },
-      {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
-        "slot": "armor",
-        "icon": "armor-sets/crimson-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Crimson Helmet",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Crimson Scalemail",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Crimson Greaves",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Crimson Helmet",
-          "Crimson Scalemail",
-          "Crimson Greaves"
-        ],
-        "effect": "+9% damage · Greatly increased health regeneration",
-        "desc": "Crimson armor is a pre-Hardmode armor set consisting of the Crimson Helmet, Crimson Scalemail, and Crimson Greaves.",
-        "allClass": true
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil"
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
-        "allClass": true
+        "effect": "Faster falling and immunity to fall damage · Taking over 25 damage in a single hit drops homing feathers that stick to enemies and explode for 15/30/45 damage",
+        "headpieceBonus": "+13% melee damage · +8% melee critical strike chance · +300 aggro · +17% movement speed"
       }
     ],
     "accessories": [
@@ -20898,6 +20880,22 @@
           "whips"
         ],
         "quality": "great"
+      },
+      {
+        "id": "counterweight",
+        "name": "Counterweight",
+        "slot": "accessory",
+        "icon": "items/counterweight.png",
+        "source": "Purchased from the Traveling Merchant or Skeleton Merchant",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counterweight",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Throws a counterweight at enemies after a yoyo hit.",
+        "why": "Extra yoyo projectile.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Feral Claws"
       },
       {
         "id": "calpool-bloody-worm-tooth",
@@ -21695,9 +21693,11 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-skeletron",
