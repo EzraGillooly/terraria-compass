@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { ReactNode, SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
-import { usePack, useAppState } from '../../lib/app-context';
+import { useAppState } from '../../lib/app-context';
 import materialsData from '../../data/packs/calamity/materials.json';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
@@ -18,6 +18,15 @@ const MATERIAL_SOURCE = new Map(
 );
 const materialSource = (name: string) => MATERIAL_SOURCE.get(name) ?? '';
 
+/* A material's own wiki page, so a recipe ingredient links out even when the
+   loadout entry did not carry a wikiUrl of its own. */
+const MATERIAL_WIKI = new Map(
+  (materialsData as { name: string; wikiUrl?: string }[])
+    .filter((m) => m.wikiUrl)
+    .map((m) => [m.name, m.wikiUrl as string]),
+);
+const materialWiki = (name: string) => MATERIAL_WIKI.get(name);
+
 /* Lunar pillar fragments list their drop quantity as "in stacks of 12-60 / 24-100"
    - the first range is Classic, the second Expert. Show only the one that matches
    the world, so the reader is not left to guess which half applies. */
@@ -28,16 +37,9 @@ function stacksForDifficulty(source: string, difficulty: string): string {
   );
 }
 
-/* The materials index only covers Calamity, so a vanilla material must not link
-   into it - the page would just tell the reader to switch packs. Vanilla links
-   go to the wiki instead, which is where that material is actually documented. */
-function MaterialLink(
-  { name, wikiUrl, internal, onClose }:
-  { name: string; wikiUrl?: string; internal: boolean; onClose: () => void },
-) {
-  if (internal) {
-    return <Link to={`/materials?q=${encodeURIComponent(name)}`} onClick={onClose}>{name}</Link>;
-  }
+/* Materials link out to their wiki page. (The in-app materials index page was
+   retired, so an internal link would just bounce to the home redirect.) */
+function MaterialLink({ name, wikiUrl }: { name: string; wikiUrl?: string }) {
   if (!wikiUrl) return <span>{name}</span>;
   return <a href={wikiUrl} target="_blank" rel="noreferrer noopener">{name}</a>;
 }
@@ -108,8 +110,17 @@ function SourceText({ text, onClose }: { text: string; onClose: () => void }) {
 
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
-  const { recipes } = usePack();
-  const { packId, difficulty } = useAppState();
+  const { difficulty } = useAppState();
+  /* Which headpiece variant (Spectre Mask vs Hood) the reader is looking at.
+     Reset to the first variant whenever the modal opens a different item -
+     done during render (React's reset-on-prop-change pattern) rather than in
+     an effect, which would cascade an extra render. */
+  const [variant, setVariant] = useState(0);
+  const [variantFor, setVariantFor] = useState(item?.id);
+  if (item && item.id !== variantFor) {
+    setVariantFor(item.id);
+    setVariant(0);
+  }
   /* Many drops double in Expert (Keybrand 0.5% -> 1%), so an Expert world shows
      the Expert rate when the item carries one. */
   const shownDropRate = difficulty === 'expert' && item?.dropRateExpert
@@ -124,8 +135,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   }, [item, onClose]);
 
   if (!item) return null;
-
-  const craftable = recipes.findCraftable(item.name);
   /* A set page lists a recipe for every class's helmet - Aerospec has five -
      but `pieces` already names the three this class actually wears. Showing
      all of them told a melee reader how to craft the summoner hood. */
@@ -151,7 +160,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           used to scroll the whole card, taking the title and close button with
           it and running to a hard clipped edge with nothing to say there was
           more below. */}
-      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} role="dialog" aria-modal="true" aria-labelledby="item-title">
+      <div className={`${styles.modal} ${styles.modalTall} pixel-frame`} data-mode="dark" role="dialog" aria-modal="true" aria-labelledby="item-title">
         <button ref={closeRef} type="button" className={`${styles.close} pixel-frame`} aria-label="Close" onClick={onClose}>
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
             <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -199,13 +208,50 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
              dropping `why` from the modal blanked every vanilla card -
              65 of vanilla's 67 armour entries describe themselves there
              and have no effect text at all. */
-          const setBullets = (item.effect || item.why || '').split(' · ').filter(Boolean);
-          const helmetBullets = (item.headpieceBonus || '')
-            .split(' · ').map((s) => s.trim()).filter(Boolean);
-          if (!setBullets.length && !helmetBullets.length) return null;
           const list = (bullets: string[]) => bullets.length > 1
             ? <ul className={`${styles.desc} ${styles.effects}`}>{bullets.map((l) => <li key={l}>{l}</li>)}</ul>
             : <p className={styles.desc}>{bullets[0]}</p>;
+          const split = (s?: string) => (s || '').split(' · ').map((x) => x.trim()).filter(Boolean);
+          /* A set with two interchangeable headpieces (Spectre Mask vs Hood)
+             shows a toggle: each variant carries its own bonus and set effect,
+             so the reader swaps between them in place. */
+          const vars = item.headVariants;
+          const v = vars?.[Math.min(variant, vars.length - 1)];
+          if (vars && vars.length > 0 && v) {
+            const hb = split(v.headpieceBonus);
+            const sb = split(v.effect);
+            return (
+              <div className={styles.bonusGroups}>
+                <div className={styles.headToggle} role="group" aria-label="Headpiece">
+                  {vars.map((hv, i) => (
+                    <button
+                      key={hv.name} type="button"
+                      className={`${styles.headToggleBtn} pixel-frame ${i === variant ? styles.headToggleOn : ''}`}
+                      aria-pressed={i === variant}
+                      onClick={() => setVariant(i)}
+                    >
+                      {hv.name}
+                    </button>
+                  ))}
+                </div>
+                {hb.length > 0 && (
+                  <div className={styles.bonusGroup}>
+                    <span className={styles.bonusLabel}>{v.name} bonus</span>
+                    {list(hb)}
+                  </div>
+                )}
+                {sb.length > 0 && (
+                  <div className={styles.bonusGroup}>
+                    <span className={styles.bonusLabel}>Set bonus</span>
+                    {list(sb)}
+                  </div>
+                )}
+              </div>
+            );
+          }
+          const setBullets = split(item.effect || item.why);
+          const helmetBullets = split(item.headpieceBonus);
+          if (!setBullets.length && !helmetBullets.length) return null;
           /* Armour with a class helmet bonus splits into two labelled blocks so
              the reader can tell the one helmet's bonus from the shared set bonus.
              Everything else (accessories, plain vanilla armour) is one list. */
@@ -301,9 +347,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                           <span className={styles.matQty}>{m.qty}</span>
                           <MaterialLink
                             name={m.name}
-                            wikiUrl={m.wikiUrl}
-                            internal={packId === 'calamity'}
-                            onClose={onClose}
+                            wikiUrl={m.wikiUrl ?? materialWiki(m.name)}
                           />
                         </li>
                       ))}
@@ -327,9 +371,7 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                               search prefilled; vanilla goes out to the wiki */}
                           <MaterialLink
                             name={m.name}
-                            wikiUrl={m.wikiUrl}
-                            internal={packId === 'calamity'}
-                            onClose={onClose}
+                            wikiUrl={m.wikiUrl ?? materialWiki(m.name)}
                           />
                           <span className={styles.matQty}>{m.qty}</span>
                         </span>
@@ -349,15 +391,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           )}
         </div>
 
-        {craftable && (
-          <Link
-            className={`${styles.craftLink} pixel-frame`}
-            to={`/crafting?item=${craftable.id}`}
-            onClick={onClose}
-          >
-            View in crafting tree
-          </Link>
-        )}
         <span className={styles.scrollFade} aria-hidden="true" />
         </div>
       </div>

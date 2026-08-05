@@ -52,6 +52,16 @@ export const Item = z.object({
    */
   headpieceBonus: z.string().optional(),
   /**
+   * A set with two interchangeable headpieces (Spectre's damage Mask vs healing
+   * Hood) whose bonuses and set effect differ. When present, the item modal
+   * shows a toggle to swap between them, each with its own bonus and effect.
+   */
+  headVariants: z.array(z.object({
+    name: z.string(),
+    headpieceBonus: z.string().optional(),
+    effect: z.string().optional(),
+  })).optional(),
+  /**
    * The guide lists this under "All-class armor" rather than
    * "Class-specific armor". It is always listed last, so without the flag it
    * fell off whenever the column was capped.
@@ -265,6 +275,26 @@ export const Loadout = z.object({
    * the piece you gain is worth more than the bonus you lose.
    */
   mixNote: z.string().optional(),
+  /**
+   * How to join a support item with its alternatives in the Support row. Early
+   * game the picks are interchangeable ("Brittle Star Staff or Wulfrum
+   * Controller"), but from hardmode on the guide equips them together, so those
+   * phases set this to "and". Defaults to "or".
+   */
+  supportJoin: z.enum(['and', 'or']).optional(),
+  /**
+   * Set once a Calamity phase has been hand-curated against the class guide, so
+   * its weapons carry a real Best / Other-Options ranking. Vanilla is always
+   * ranked; Calamity defaults to an unranked list until this flag is set, since
+   * the scraped phases only record layout order, not judgement.
+   */
+  curated: z.boolean().optional(),
+  /**
+   * A short caveat shown under the weapon list for a phase still being worked
+   * out - e.g. the post-mech phases carry the pre-mech picks as a placeholder
+   * until their own guide pass lands.
+   */
+  note: z.string().optional(),
   accessoryPool: z.array(z.object({
     // Must track Item.categories - these are the same vocabulary, and only
     // updating one of them is what broke the schema when Calamity's
