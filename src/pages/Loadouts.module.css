@@ -180,6 +180,11 @@
 .mixComboLabel { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; color: #A9BCE0; margin-bottom: 10px; }
 .summonerNote { margin: 2px 0 0; font-size: 12px; font-style: italic; color: var(--ink-mute); }
 
+/* Support Items row: like the weapon grid, but flex so an "or" can sit between
+   two interchangeable support picks (Brittle Star Staff or Wulfrum Controller). */
+.supportRow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.supportItem { width: 128px; }
+
 .mixRow { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 6px; }
 .mixItem { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 96px; padding: 12px 8px; font-family: inherit; color: inherit; cursor: pointer; transition: transform .12s; --px-fill: rgba(255,255,255,.06); --px-border: rgba(150,180,230,.28); }
 .mixItem:hover { transform: translateY(-3px); --px-border: var(--warm); }

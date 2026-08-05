@@ -265,6 +265,13 @@ export const Loadout = z.object({
    * the piece you gain is worth more than the bonus you lose.
    */
   mixNote: z.string().optional(),
+  /**
+   * Set once a Calamity phase has been hand-curated against the class guide, so
+   * its weapons carry a real Best / Other-Options ranking. Vanilla is always
+   * ranked; Calamity defaults to an unranked list until this flag is set, since
+   * the scraped phases only record layout order, not judgement.
+   */
+  curated: z.boolean().optional(),
   accessoryPool: z.array(z.object({
     // Must track Item.categories - these are the same vocabulary, and only
     // updating one of them is what broke the schema when Calamity's

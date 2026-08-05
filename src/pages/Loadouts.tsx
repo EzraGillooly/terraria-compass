@@ -921,10 +921,17 @@ export function Loadouts() {
     .filter((w) => matchSub(w) && !(inOverview && w.support))
     .sort(bySubclass);
   /* Support items (the guide's "Support" column) plus classless tools share the
-     one row, shown only in the overview. */
-  const supportRow = inOverview
+     one row, shown only in the overview. A support item marked `altOf` another
+     is an interchangeable pick ("Brittle Star Staff or Wulfrum Controller") and
+     renders beside its primary with an "or". */
+  const supportItems = inOverview
     ? [...safeLoadout.tools, ...safeLoadout.weapons.filter((w) => w.support)]
     : [];
+  const supportPrimaries = supportItems.filter((t) => !t.altOf);
+  const supportAlts = new Map<string, Item[]>();
+  for (const t of supportItems) {
+    if (t.altOf) supportAlts.set(t.altOf, [...(supportAlts.get(t.altOf) ?? []), t]);
+  }
 
   /*
    * Whether this loadout was actually ranked. Curated entries carry a `why`
@@ -939,7 +946,8 @@ export function Loadouts() {
      some entries and not others, so this flipped between phases: Pre-Skeletron
      read "Options" and Pre-Mech "Recommended" for no reason a reader could
      see. One unranked list across every Calamity phase instead. */
-  const ranked = packId !== 'calamity' && safeLoadout.weapons.some((w) => w.why);
+  const ranked = (packId !== 'calamity' || safeLoadout.curated === true)
+    && safeLoadout.weapons.some((w) => w.why);
 
   // "Overview" shows one pick per subclass rather than every weapon, which is
   // why it is not called "All". Picking a
@@ -1397,7 +1405,7 @@ export function Loadouts() {
               </>
             )}
 
-            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && supportRow.length === 0 && (
+            {scopedBest.length === 0 && filteredAlso.length === 0 && filteredRest.length === 0 && supportItems.length === 0 && (
               <p className={styles.empty}>No weapons match your filters for this phase.</p>
             )}
 
@@ -1406,12 +1414,24 @@ export function Loadouts() {
                 into the list they read as picks the class failed to categorise.
                 Shown only in the overview - inside a subclass a support weapon
                 ranks with its family instead. */}
-            {supportRow.length > 0 && (
+            {supportItems.length > 0 && (
               <>
                 <div className={styles.groupLabel}>Support Items</div>
-                <div className={styles.weaponRow}>
-                  {supportRow.map((w) => (
-                    <WeaponTile key={w.id} item={w} difficulty={difficulty} onOpen={setModalItem} />
+                <div className={styles.supportRow}>
+                  {supportPrimaries.map((w) => (
+                    <Fragment key={w.id}>
+                      <div className={styles.supportItem}>
+                        <WeaponTile item={w} difficulty={difficulty} onOpen={setModalItem} />
+                      </div>
+                      {(supportAlts.get(w.name) ?? []).map((alt) => (
+                        <Fragment key={alt.id}>
+                          <span className={styles.mixOr}>or</span>
+                          <div className={styles.supportItem}>
+                            <WeaponTile item={alt} difficulty={difficulty} onOpen={setModalItem} />
+                          </div>
+                        </Fragment>
+                      ))}
+                    </Fragment>
                   ))}
                 </div>
               </>

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import type { ReactNode, SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
-import { usePack, useAppState } from '../../lib/app-context';
+import { useAppState } from '../../lib/app-context';
 import materialsData from '../../data/packs/calamity/materials.json';
 import styles from '../BestiaryModal/BestiaryModal.module.css';
 
@@ -28,16 +28,9 @@ function stacksForDifficulty(source: string, difficulty: string): string {
   );
 }
 
-/* The materials index only covers Calamity, so a vanilla material must not link
-   into it - the page would just tell the reader to switch packs. Vanilla links
-   go to the wiki instead, which is where that material is actually documented. */
-function MaterialLink(
-  { name, wikiUrl, internal, onClose }:
-  { name: string; wikiUrl?: string; internal: boolean; onClose: () => void },
-) {
-  if (internal) {
-    return <Link to={`/materials?q=${encodeURIComponent(name)}`} onClick={onClose}>{name}</Link>;
-  }
+/* Materials link out to their wiki page. (The in-app materials index page was
+   retired, so an internal link would just bounce to the home redirect.) */
+function MaterialLink({ name, wikiUrl }: { name: string; wikiUrl?: string }) {
   if (!wikiUrl) return <span>{name}</span>;
   return <a href={wikiUrl} target="_blank" rel="noreferrer noopener">{name}</a>;
 }
@@ -108,8 +101,7 @@ function SourceText({ text, onClose }: { text: string; onClose: () => void }) {
 
 export function ItemModal({ item, onClose }: { item: Item | null; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
-  const { recipes } = usePack();
-  const { packId, difficulty } = useAppState();
+  const { difficulty } = useAppState();
   /* Many drops double in Expert (Keybrand 0.5% -> 1%), so an Expert world shows
      the Expert rate when the item carries one. */
   const shownDropRate = difficulty === 'expert' && item?.dropRateExpert
@@ -124,8 +116,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
   }, [item, onClose]);
 
   if (!item) return null;
-
-  const craftable = recipes.findCraftable(item.name);
   /* A set page lists a recipe for every class's helmet - Aerospec has five -
      but `pieces` already names the three this class actually wears. Showing
      all of them told a melee reader how to craft the summoner hood. */
@@ -302,8 +292,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                           <MaterialLink
                             name={m.name}
                             wikiUrl={m.wikiUrl}
-                            internal={packId === 'calamity'}
-                            onClose={onClose}
                           />
                         </li>
                       ))}
@@ -328,8 +316,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
                           <MaterialLink
                             name={m.name}
                             wikiUrl={m.wikiUrl}
-                            internal={packId === 'calamity'}
-                            onClose={onClose}
                           />
                           <span className={styles.matQty}>{m.qty}</span>
                         </span>
@@ -349,15 +335,6 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
           )}
         </div>
 
-        {craftable && (
-          <Link
-            className={`${styles.craftLink} pixel-frame`}
-            to={`/crafting?item=${craftable.id}`}
-            onClick={onClose}
-          >
-            View in crafting tree
-          </Link>
-        )}
         <span className={styles.scrollFade} aria-hidden="true" />
         </div>
       </div>
