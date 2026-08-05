@@ -146476,7 +146476,7 @@
         "source": "Crafted at a Cosmic Anvil",
         "why": "",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
         "subclass": "magic-gun",
@@ -146519,7 +146519,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
         "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks.",
-        "stats": "4100 magic dmg"
+        "stats": "4100 magic dmg",
+        "secondary": true
       },
       {
         "id": "primordial-ancient",
@@ -146552,7 +146553,8 @@
           }
         ],
         "effect": "When used, it fires 5 dust blows that pass through tiles and converge at the cursor into an explosion of dust that inflicts the Armor Crunch debuff. Using it at full health and with no Mana Sickness gives the player, and any player that touches the dust particles, the Aeolian Earth buff which increases damage reduction by 8%, damage by 15%, and mana regeneration.",
-        "stats": "3825 magic dmg"
+        "stats": "3825 magic dmg",
+        "secondary": true
       },
       {
         "id": "void-vortex",
@@ -146563,7 +146565,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
         "subclass": "wand",
         "station": "Cosmic Anvil",
@@ -146591,11 +146593,70 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
         "subclass": "other",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback.",
         "stats": "65 magic dmg"
+      },
+      {
+        "id": "phoenix-flame-barrage",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phoenix_Flame_Barrage",
+        "tier": "good",
+        "name": "Phoenix Flame Barrage",
+        "icon": "calamity/phoenix-flame-barrage.png",
+        "subclass": "wand",
+        "stats": "140 magic dmg",
+        "source": "Dropped by Yharon, Dragon of Rebirth",
+        "dropRate": "25%",
+        "effect": "Casts a barrage of Dragonfire from the sky, inflicting Dragonfire.",
+        "why": "Sky Dragonfire barrage."
+      },
+      {
+        "id": "helium-flash",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Helium_Flash",
+        "tier": "good",
+        "name": "Helium Flash",
+        "icon": "calamity/helium-flash.png",
+        "subclass": "wand",
+        "stats": "3000 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "effect": "Launches volatile star cores that erupt into colossal fusion blasts; always crits.",
+        "why": "Always-crit fusion blasts.",
+        "materials": [
+          {
+            "name": "Venusian Trident",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venusian_Trident"
+          },
+          {
+            "name": "Forbidden Sun",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Forbidden_Sun"
+          },
+          {
+            "name": "Auric Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
+          },
+          {
+            "name": "Solar Fragment",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ]
       }
     ],
     "armor": [
@@ -146806,8 +146867,8 @@
         ],
         "headpiece": "Auric Tesla Wire-Hemmed Visage",
         "defense": 110,
-        "effect": "Inherits the set bonuses of the post-Moon Lord armors it is crafted from - Tarragon, Bloodflare and God Slayer · Dimensional Drive dashes you toward the cursor · Releases god killer darts when you take a heavy hit",
-        "desc": "The Auric Tesla armor is a post- Moon Lord armor set. If the full set is equipped, the player will emit afterimages and release a trail of golden sparkles while moving."
+        "effect": "Every 5th magic crit fires 8-10 leaf projectiles (20% of the attack’s damage each) · Magic weapons fire ghostly bolts (130% of the attack’s damage, soft cap 2,600; 1.67s cooldown) · Magic critical strikes cause blood explosions that inflict Laceration (2s cooldown) · Non-piercing magic projectiles explode on hit (800 + 60% of projectile damage, soft cap 1,400; 5s cooldown) · On reaching 0 HP, revive to 1 HP with Silva Immunity (no damage for 5 seconds; 5-minute cooldown) · Immune to Auric Ore damage and knockback · Magic Carpet flight after jumps and wings run out · Heartreach heart pickup, and enemies drop extra hearts (below 50% health, on hit, 5s cooldown)",
+        "headpieceBonus": "+50% magic damage · +30% magic critical strike chance · +100 maximum mana · -20% mana usage · +10% movement speed · +5% max run speed and acceleration · +3 HP/s"
       }
     ],
     "accessories": [
@@ -148335,48 +148396,36 @@
     ],
     "tools": [
       {
-        "id": "eye-of-magnus",
-        "name": "Eye of Magnus",
+        "id": "the-wand",
+        "name": "The Wand",
         "slot": "weapon",
-        "icon": "calamity/eye-of-magnus.png",
-        "source": "Crafted at an Ancient Manipulator",
-        "why": "",
-        "tags": [],
+        "icon": "calamity/the-wand.png",
+        "subclass": "wand",
+        "stats": "14 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Wand",
+        "tier": "good",
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Magnus",
-        "station": "Ancient Manipulator",
+        "tags": [],
+        "effect": "Fires a projectile that inflicts Dragonfire and erupts into a large infernado (one at a time).",
+        "why": "Persistent infernado.",
         "materials": [
           {
-            "name": "Lunic Eye",
+            "name": "Wand of Sparking",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Sparking"
           },
           {
-            "name": "Nebula Fragment",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+            "name": "Yharon Soul Fragment",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon_Soul_Fragment"
           }
-        ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
-      },
-      {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
-        "slot": "weapon",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "Dropped by Chaos Elementals",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
-        "dropRate": "1%",
-        "dropRateExpert": "2%",
-        "altOf": "Eye of Magnus"
+        ]
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-exo",
@@ -156117,8 +156166,8 @@
         "source": "Crafted at a Draedon's Forge",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Apotheosis",
         "subclass": "spell-tome",
         "station": "Draedon's Forge",
@@ -156171,7 +156220,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eternity",
         "subclass": "spell-tome",
         "station": "Draedon's Forge",
@@ -156257,7 +156306,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Staff_of_Blushie",
         "subclass": "wand",
         "station": "Draedon's Forge",
@@ -156290,7 +156339,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sylvestaff",
         "subclass": "wand",
         "station": "Draedon's Forge",
@@ -156333,7 +156382,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Dance_of_Light",
         "subclass": "spell-tome",
         "station": "Draedon's Forge",
@@ -156360,214 +156409,25 @@
     ],
     "armor": [
       {
-        "id": "auric-tesla-armor",
-        "name": "Auric Tesla armor",
+        "id": "demonshade-armor",
+        "name": "Demonshade Armor",
         "slot": "armor",
-        "icon": "armor-sets/auric-tesla-armor-mage.png",
+        "icon": "calamity/demonshade-armor.png",
         "source": "Crafted",
-        "why": "",
-        "tags": [],
-        "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Auric Tesla Body Armor",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Armor",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Armor"
-              },
-              {
-                "name": "Bloodflare Body Armor",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Body_Armor"
-              },
-              {
-                "name": "Tarragon Breastplate",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Breastplate"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 18,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Cuisses",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Leggings",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Leggings"
-              },
-              {
-                "name": "Bloodflare Cuisses",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Cuisses"
-              },
-              {
-                "name": "Tarragon Leggings",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Leggings"
-              },
-              {
-                "name": "Flying Carpet",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Hooded Facemask",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Helmet",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Helmet"
-              },
-              {
-                "name": "Bloodflare Demon Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Demon_Helm"
-              },
-              {
-                "name": "Tarragon Visage",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Visage"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Plumed Helm",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Mask"
-              },
-              {
-                "name": "Bloodflare Imp Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Imp_Mask"
-              },
-              {
-                "name": "Tarragon Helmet",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Helmet"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Royal Helm",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Horned Greathelm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Horned_Greathelm"
-              },
-              {
-                "name": "Bloodflare Ram Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Ram_Mask"
-              },
-              {
-                "name": "Tarragon Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Helm"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Space Helmet",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Horned Hood",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Horned_Hood"
-              },
-              {
-                "name": "Bloodflare Wyvern Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Wyvern_Helm"
-              },
-              {
-                "name": "Tarragon Horned Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Horned_Helm"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Wire-Hemmed Visage",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Masked Cap",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Masked_Cap"
-              },
-              {
-                "name": "Bloodflare Hydra Hood",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Hydra_Hood"
-              },
-              {
-                "name": "Tarragon Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Mask"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          }
-        ],
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor",
+        "defense": 150,
+        "headpiece": "Demonshade Helm",
         "pieces": [
-          "Auric Tesla Wire-Hemmed Visage",
-          "Auric Tesla Body Armor",
-          "Auric Tesla Cuisses"
+          "Demonshade Helm",
+          "Demonshade Breastplate",
+          "Demonshade Greaves"
         ],
-        "headpiece": "Auric Tesla Wire-Hemmed Visage",
-        "defense": 110,
-        "effect": "Inherits the set bonuses of the post-Moon Lord armors it is crafted from - Tarragon, Bloodflare and God Slayer · Dimensional Drive dashes you toward the cursor · Releases god killer darts when you take a heavy hit",
-        "desc": "The Auric Tesla armor is a post- Moon Lord armor set. If the full set is equipped, the player will emit afterimages and release a trail of golden sparkles while moving."
+        "headpieceBonus": "+45% damage · +100% summon damage · +30% critical strike chance · +25% melee speed · +30% chance to not consume ammo · +30% movement speed · 1.5x acceleration · +200 maximum mana · +10 minion slots · +2 HP/s and +400% natural life regen while standing still (30-second headstart) · When damaged, shadowbeams (300/600/900) and demon scythes (500/1000/1500) rain from the sky",
+        "effect": "Press the armor set bonus key to inflict Enraged on nearby enemies and yourself for 10 seconds: enemies take 1.5x damage but deal 1.25x damage to you.",
+        "why": "The ultimate endgame magic armor."
       },
       {
         "id": "gem-tech-armor",
@@ -156578,7 +156438,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor",
         "pieceRecipes": [
           {
@@ -158239,7 +158099,8 @@
         "altOf": "Eye of Magnus"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-endgame",
@@ -166106,20 +165967,6 @@
     "class": "mage",
     "weapons": [
       {
-        "id": "vehemence",
-        "name": "Vehemence",
-        "slot": "weapon",
-        "icon": "calamity/vehemence.png",
-        "source": "Dropped by Supreme Witch, Calamitas",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vehemence",
-        "effect": "It fires a high-velocity hellish bolt that explodes into 18 skull clouds upon contact with enemies or tiles which deal 11% of the weapon 's damage.",
-        "subclass": "wand",
-        "stats": "6666 magic dmg"
-      },
-      {
         "id": "aetherflux-cannon",
         "name": "Aetherflux Cannon",
         "slot": "weapon",
@@ -166127,7 +165974,7 @@
         "source": "Crafted at a Cosmic Anvil",
         "why": "",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
         "subclass": "magic-gun",
@@ -166170,7 +166017,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
         "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks.",
-        "stats": "4100 magic dmg"
+        "stats": "4100 magic dmg",
+        "secondary": true
       },
       {
         "id": "primordial-ancient",
@@ -166203,7 +166051,8 @@
           }
         ],
         "effect": "When used, it fires 5 dust blows that pass through tiles and converge at the cursor into an explosion of dust that inflicts the Armor Crunch debuff. Using it at full health and with no Mana Sickness gives the player, and any player that touches the dust particles, the Aeolian Earth buff which increases damage reduction by 8%, damage by 15%, and mana regeneration.",
-        "stats": "3825 magic dmg"
+        "stats": "3825 magic dmg",
+        "secondary": true
       },
       {
         "id": "void-vortex",
@@ -166214,7 +166063,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
         "subclass": "wand",
         "station": "Cosmic Anvil",
@@ -166242,11 +166091,85 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
         "subclass": "other",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback.",
         "stats": "65 magic dmg"
+      },
+      {
+        "id": "phoenix-flame-barrage",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phoenix_Flame_Barrage",
+        "tier": "good",
+        "name": "Phoenix Flame Barrage",
+        "icon": "calamity/phoenix-flame-barrage.png",
+        "subclass": "wand",
+        "stats": "140 magic dmg",
+        "source": "Dropped by Yharon, Dragon of Rebirth",
+        "dropRate": "25%",
+        "effect": "Casts a barrage of Dragonfire from the sky, inflicting Dragonfire.",
+        "why": "Sky Dragonfire barrage."
+      },
+      {
+        "id": "helium-flash",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Helium_Flash",
+        "tier": "good",
+        "name": "Helium Flash",
+        "icon": "calamity/helium-flash.png",
+        "subclass": "wand",
+        "stats": "3000 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "effect": "Launches volatile star cores that erupt into colossal fusion blasts; always crits.",
+        "why": "Always-crit fusion blasts.",
+        "materials": [
+          {
+            "name": "Venusian Trident",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venusian_Trident"
+          },
+          {
+            "name": "Forbidden Sun",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Forbidden_Sun"
+          },
+          {
+            "name": "Auric Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
+          },
+          {
+            "name": "Solar Fragment",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "vehemence",
+        "name": "Vehemence",
+        "slot": "weapon",
+        "icon": "calamity/vehemence.png",
+        "source": "Dropped by Supreme Witch, Calamitas",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vehemence",
+        "effect": "It fires a high-velocity hellish bolt that explodes into 18 skull clouds upon contact with enemies or tiles which deal 11% of the weapon 's damage.",
+        "subclass": "wand",
+        "stats": "6666 magic dmg",
+        "tier": "best"
       }
     ],
     "armor": [
@@ -166457,8 +166380,8 @@
         ],
         "headpiece": "Auric Tesla Wire-Hemmed Visage",
         "defense": 110,
-        "effect": "Inherits the set bonuses of the post-Moon Lord armors it is crafted from - Tarragon, Bloodflare and God Slayer · Dimensional Drive dashes you toward the cursor · Releases god killer darts when you take a heavy hit",
-        "desc": "The Auric Tesla armor is a post- Moon Lord armor set. If the full set is equipped, the player will emit afterimages and release a trail of golden sparkles while moving."
+        "effect": "Every 5th magic crit fires 8-10 leaf projectiles (20% of the attack’s damage each) · Magic weapons fire ghostly bolts (130% of the attack’s damage, soft cap 2,600; 1.67s cooldown) · Magic critical strikes cause blood explosions that inflict Laceration (2s cooldown) · Non-piercing magic projectiles explode on hit (800 + 60% of projectile damage, soft cap 1,400; 5s cooldown) · On reaching 0 HP, revive to 1 HP with Silva Immunity (no damage for 5 seconds; 5-minute cooldown) · Immune to Auric Ore damage and knockback · Magic Carpet flight after jumps and wings run out · Heartreach heart pickup, and enemies drop extra hearts (below 50% health, on hit, 5s cooldown)",
+        "headpieceBonus": "+50% magic damage · +30% magic critical strike chance · +100 maximum mana · -20% mana usage · +10% movement speed · +5% max run speed and acceleration · +3 HP/s"
       }
     ],
     "accessories": [
@@ -166536,6 +166459,41 @@
         "categories": [
           "all-around"
         ]
+      },
+      {
+        "id": "reaper-tooth-necklace",
+        "name": "Reaper Tooth Necklace",
+        "slot": "accessory",
+        "icon": "calamity/reaper-tooth-necklace.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth_Necklace",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Sand Shark Tooth Necklace",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Shark_Tooth_Necklace"
+          },
+          {
+            "name": "Reaper Tooth",
+            "qty": 6,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
+          },
+          {
+            "name": "Depth Cells",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
+          }
+        ],
+        "effect": "When equipped, it increases all damage by 20% and increases armor penetration by 30.",
+        "categories": [
+          "offense"
+        ],
+        "altOf": "Shattered Community"
       },
       {
         "id": "asgardian-aegis",
@@ -166703,6 +166661,45 @@
         "altOf": "Yharim's Gift"
       },
       {
+        "id": "radiance",
+        "name": "Radiance",
+        "slot": "accessory",
+        "icon": "calamity/radiance.png",
+        "source": "Crafted at a Cosmic Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiance",
+        "station": "Cosmic Anvil",
+        "materials": [
+          {
+            "name": "Ambrosial Ampoule",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule"
+          },
+          {
+            "name": "Infected Jewel",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Jewel"
+          },
+          {
+            "name": "Auric Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
+          },
+          {
+            "name": "Ascendant Spirit Essence",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
+          }
+        ],
+        "effect": "+1 to +4 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Reduces damage over time taken by 10 HP/s and jump-starts regeneration after a damaging debuff ends · Natural life regen is 50% more potent and returns 100% faster · You emit shining blue light if visibility is enabled · 'A once putrid crystal, now glimmering with immaculate purity'",
+        "categories": [
+          "survivability"
+        ]
+      },
+      {
         "id": "the-sponge",
         "name": "The Sponge",
         "slot": "accessory",
@@ -166744,7 +166741,8 @@
         "effect": "After eight seconds of equipping the item without taking damage, a barrier covers its user, which grants 10% damage reduction. As the barrier is formed, it builds up to 120 shield durability at a rate of 12 durability per second.",
         "categories": [
           "survivability"
-        ]
+        ],
+        "altOf": "Radiance"
       },
       {
         "id": "chalice-of-the-blood-god",
@@ -167256,19 +167254,6 @@
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
         "dropRate": "0.18%"
-      },
-      {
-        "id": "oblatory",
-        "name": "Oblatory",
-        "slot": "buff",
-        "icon": "calamity/oblatory.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Oblatory",
-        "effect": "Enchanting is a game mechanic unlocked after defeating Supreme Witch, Calamitas, which allows the player to apply enchantments to their items, granting them unique additional qualities. It changes the name of an item by adding a prefix to the item's name (before any modifier the item may have), such as \"Aflame Strong Photon Ripper.\" Hovering the cursor over an item with an enchantment in an inventory slot will show the enchantment details beneath the item's description. This description is colored #8B0000."
       }
     ],
     "accessoryPool": [
@@ -167908,70 +167893,42 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil",
             "effect": "Increases maximum mana by 60 · 15% increased magic damage · Increases pickup range for mana stars"
-          },
-          {
-            "id": "calpool-calamity",
-            "name": "Calamity",
-            "slot": "accessory",
-            "icon": "calamity/calamity.png",
-            "source": "Dropped by Supreme Witch, Calamitas",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "offense"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Calamity",
-            "effect": "When equipped, a flaming aura spawns at the player's cursor. While an enemy is within range, the aura glows and continuously deals 320 damage at a rate of 12 hits per second, inflicting the Vulnerability Hex debuff.",
-            "expertOnly": true
           }
         ]
       }
     ],
     "tools": [
       {
-        "id": "eye-of-magnus",
-        "name": "Eye of Magnus",
+        "id": "the-wand",
+        "name": "The Wand",
         "slot": "weapon",
-        "icon": "calamity/eye-of-magnus.png",
-        "source": "Crafted at an Ancient Manipulator",
-        "why": "",
-        "tags": [],
+        "icon": "calamity/the-wand.png",
+        "subclass": "wand",
+        "stats": "14 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Wand",
+        "tier": "good",
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Magnus",
-        "station": "Ancient Manipulator",
+        "tags": [],
+        "effect": "Fires a projectile that inflicts Dragonfire and erupts into a large infernado (one at a time).",
+        "why": "Persistent infernado.",
         "materials": [
           {
-            "name": "Lunic Eye",
+            "name": "Wand of Sparking",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Sparking"
           },
           {
-            "name": "Nebula Fragment",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+            "name": "Yharon Soul Fragment",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon_Soul_Fragment"
           }
-        ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
-      },
-      {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
-        "slot": "weapon",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "Dropped by Chaos Elementals",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
-        "dropRate": "1%",
-        "dropRateExpert": "2%",
-        "altOf": "Eye of Magnus"
+        ]
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-post-calamitas",
@@ -175811,7 +175768,7 @@
         "source": "Crafted at a Cosmic Anvil",
         "why": "",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherflux_Cannon",
         "subclass": "magic-gun",
@@ -175854,7 +175811,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
         "subclass": "wand",
         "effect": "It fires down a large beam at the cursor's position to disintegrate nearly anything it is aimed at. The laser can pierce infinitely, losing small chunks of damage for every few enemies it pierces, and will phase through blocks.",
-        "stats": "4100 magic dmg"
+        "stats": "4100 magic dmg",
+        "secondary": true
       },
       {
         "id": "primordial-ancient",
@@ -175887,7 +175845,8 @@
           }
         ],
         "effect": "When used, it fires 5 dust blows that pass through tiles and converge at the cursor into an explosion of dust that inflicts the Armor Crunch debuff. Using it at full health and with no Mana Sickness gives the player, and any player that touches the dust particles, the Aeolian Earth buff which increases damage reduction by 8%, damage by 15%, and mana regeneration.",
-        "stats": "3825 magic dmg"
+        "stats": "3825 magic dmg",
+        "secondary": true
       },
       {
         "id": "void-vortex",
@@ -175898,7 +175857,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Vortex",
         "subclass": "wand",
         "station": "Cosmic Anvil",
@@ -175926,11 +175885,85 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim's_Crystal",
         "subclass": "other",
         "effect": "When used, it fires six red and orange beams that converge into one yellow beam as it charges, dealing massive damage and inflicting the Dragonfire debuff on contact. Yharim's Crystal cannot deal any knockback.",
         "stats": "65 magic dmg"
+      },
+      {
+        "id": "phoenix-flame-barrage",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phoenix_Flame_Barrage",
+        "tier": "good",
+        "name": "Phoenix Flame Barrage",
+        "icon": "calamity/phoenix-flame-barrage.png",
+        "subclass": "wand",
+        "stats": "140 magic dmg",
+        "source": "Dropped by Yharon, Dragon of Rebirth",
+        "dropRate": "25%",
+        "effect": "Casts a barrage of Dragonfire from the sky, inflicting Dragonfire.",
+        "why": "Sky Dragonfire barrage."
+      },
+      {
+        "id": "helium-flash",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Helium_Flash",
+        "tier": "good",
+        "name": "Helium Flash",
+        "icon": "calamity/helium-flash.png",
+        "subclass": "wand",
+        "stats": "3000 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "effect": "Launches volatile star cores that erupt into colossal fusion blasts; always crits.",
+        "why": "Always-crit fusion blasts.",
+        "materials": [
+          {
+            "name": "Venusian Trident",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venusian_Trident"
+          },
+          {
+            "name": "Forbidden Sun",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Forbidden_Sun"
+          },
+          {
+            "name": "Auric Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
+          },
+          {
+            "name": "Solar Fragment",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "vehemence",
+        "name": "Vehemence",
+        "slot": "weapon",
+        "icon": "calamity/vehemence.png",
+        "source": "Dropped by Supreme Witch, Calamitas",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vehemence",
+        "effect": "It fires a high-velocity hellish bolt that explodes into 18 skull clouds upon contact with enemies or tiles which deal 11% of the weapon 's damage.",
+        "subclass": "wand",
+        "stats": "6666 magic dmg",
+        "tier": "best"
       }
     ],
     "armor": [
@@ -176141,8 +176174,8 @@
         ],
         "headpiece": "Auric Tesla Wire-Hemmed Visage",
         "defense": 110,
-        "effect": "Inherits the set bonuses of the post-Moon Lord armors it is crafted from - Tarragon, Bloodflare and God Slayer · Dimensional Drive dashes you toward the cursor · Releases god killer darts when you take a heavy hit",
-        "desc": "The Auric Tesla armor is a post- Moon Lord armor set. If the full set is equipped, the player will emit afterimages and release a trail of golden sparkles while moving."
+        "effect": "Every 5th magic crit fires 8-10 leaf projectiles (20% of the attack’s damage each) · Magic weapons fire ghostly bolts (130% of the attack’s damage, soft cap 2,600; 1.67s cooldown) · Magic critical strikes cause blood explosions that inflict Laceration (2s cooldown) · Non-piercing magic projectiles explode on hit (800 + 60% of projectile damage, soft cap 1,400; 5s cooldown) · On reaching 0 HP, revive to 1 HP with Silva Immunity (no damage for 5 seconds; 5-minute cooldown) · Immune to Auric Ore damage and knockback · Magic Carpet flight after jumps and wings run out · Heartreach heart pickup, and enemies drop extra hearts (below 50% health, on hit, 5s cooldown)",
+        "headpieceBonus": "+50% magic damage · +30% magic critical strike chance · +100 maximum mana · -20% mana usage · +10% movement speed · +5% max run speed and acceleration · +3 HP/s"
       },
       {
         "id": "gem-tech-armor",
@@ -176153,7 +176186,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor",
         "pieceRecipes": [
           {
@@ -176344,37 +176377,27 @@
         "altOf": "Seraph Tracers"
       },
       {
-        "id": "sigil-of-calamitas",
-        "name": "Sigil of Calamitas",
+        "id": "shattered-community",
+        "name": "Shattered Community",
         "slot": "accessory",
-        "icon": "calamity/sigil-of-calamitas.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "magic damage and mana cost boost",
+        "icon": "calamity/shattered-community.png",
+        "source": "Crafted at an Exhume",
+        "why": "",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sigil_of_Calamitas",
-        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Community",
+        "station": "Exhume",
         "materials": [
           {
-            "name": "Celestial Emblem",
+            "name": "The Community",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Emblem"
-          },
-          {
-            "name": "Scoria Bar",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-          },
-          {
-            "name": "Ashes of Calamity",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community"
           }
         ],
-        "effect": "Increases maximum mana by 60 · 15% increased magic damage · Increases pickup range for mana stars",
+        "effect": "Increases damage, max health, and movement speed by 10% · Increases defense by 10, and life regen by 1 HP/s · Increases critical strike chance and damage reduction by 5%, and flight time by 20% · You generate rage over time and rage does not fade out of combat · Gain rage after taking damage regardless of defensive stats · While Rage Mode is active, taking damage gives only half as much rage · Deal damage with Rage Mode to further empower your wrath · Current level: [LEVEL] (+[BOOST]% Rage Mode damage) · Progress to next level: [PROGRESS RATIO]% · Total Rage Mode damage: [CUMULATIVE DAMAGE DEALT]",
         "categories": [
-          "offense"
+          "all-around"
         ]
       },
       {
@@ -176410,7 +176433,7 @@
         "categories": [
           "offense"
         ],
-        "altOf": "Sigil of Calamitas"
+        "altOf": "Shattered Community"
       },
       {
         "id": "asgardian-aegis",
@@ -176521,21 +176544,61 @@
         ]
       },
       {
-        "id": "draedons-heart",
-        "name": "Draedon's Heart",
+        "id": "yharims-gift",
+        "name": "Yharim's Gift",
         "slot": "accessory",
-        "icon": "calamity/draedons-heart.png",
-        "source": "Dropped by the Exo Mechs",
+        "icon": "calamity/yharims-gift.png",
+        "source": "Dropped by Yharon, Dragon of Rebirth",
+        "why": "",
+        "categories": [
+          "offense"
+        ],
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharim%27s_Gift",
+        "effect": "Grants immunity to knockback · Increases damage by 10% and movement speed by 20% · All attacks inflict Auric Rebuke · Flaming meteors rain down while invincible · 'The power to kill a god pulses from within this artifact'",
+        "expertOnly": true
+      },
+      {
+        "id": "rampart-of-deities",
+        "name": "Rampart of Deities",
+        "slot": "accessory",
+        "icon": "calamity/rampart-of-deities.png",
+        "source": "Crafted at a Cosmic Anvil",
         "why": "",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Draedon's_Heart",
-        "effect": "Grants immunity to knockback · 15% reduced contact damage from enemies · Replaces Adrenaline with the Nanomachines meter · Unlike Adrenaline, you lose no Nanomachines when you take damage, but they stop accumulating for 1 second · With full Nanomachines, press Adrenaline Mode to heal 180 health over 2 seconds · While healing you take [DR]% less damage · 'Nanomachines, son'",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rampart_of_Deities",
+        "station": "Cosmic Anvil",
+        "materials": [
+          {
+            "name": "Frozen Shield",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frozen_Shield"
+          },
+          {
+            "name": "Deific Amulet",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deific_Amulet"
+          },
+          {
+            "name": "Auric Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
+          },
+          {
+            "name": "Ascendant Spirit Essence",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
+          }
+        ],
+        "effect": "Grants immunity to knockback · Releases a blast of homing star-bees, increases movement speed, and drenches you in Honey after taking damage · Increases the length of invincibility, with it increasing even more when at low health or taking high damage attacks · Reduces damage taken by 25% when below 50% life · Absorbs 25% of damage done to players on your team when you are above 25% life · Shift- ⚷ Open / Activate this item in your inventory to toggle Panic Necklace's effect",
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "altOf": "Yharim's Gift"
       },
       {
         "id": "radiance",
@@ -177776,48 +177839,36 @@
     ],
     "tools": [
       {
-        "id": "eye-of-magnus",
-        "name": "Eye of Magnus",
+        "id": "the-wand",
+        "name": "The Wand",
         "slot": "weapon",
-        "icon": "calamity/eye-of-magnus.png",
-        "source": "Crafted at an Ancient Manipulator",
-        "why": "",
-        "tags": [],
+        "icon": "calamity/the-wand.png",
+        "subclass": "wand",
+        "stats": "14 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Wand",
+        "tier": "good",
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eye_of_Magnus",
-        "station": "Ancient Manipulator",
+        "tags": [],
+        "effect": "Fires a projectile that inflicts Dragonfire and erupts into a large infernado (one at a time).",
+        "why": "Persistent infernado.",
         "materials": [
           {
-            "name": "Lunic Eye",
+            "name": "Wand of Sparking",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Wand_of_Sparking"
           },
           {
-            "name": "Nebula Fragment",
-            "qty": 12,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+            "name": "Yharon Soul Fragment",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yharon_Soul_Fragment"
           }
-        ],
-        "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
-      },
-      {
-        "id": "rod-of-discord",
-        "name": "Rod of Discord",
-        "slot": "weapon",
-        "icon": "calamity/rod-of-discord.png",
-        "source": "Dropped by Chaos Elementals",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
-        "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
-        "dropRate": "1%",
-        "dropRateExpert": "2%",
-        "altOf": "Eye of Magnus"
+        ]
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-post-exo",
