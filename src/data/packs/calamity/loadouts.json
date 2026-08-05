@@ -72325,10 +72325,11 @@
         "why": "first-listed primary magic weapon for this tier",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Alula_Australis",
         "subclass": "wand",
-        "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky."
+        "effect": "When used, it fires an aurora beam which travels in a cosine pattern. As the beam travels, homing astral stars trail with the beam and rain down from the sky.",
+        "secondary": true
       },
       {
         "id": "primordial-earth",
@@ -72371,10 +72372,11 @@
         "why": "Launches a lasting rainbow that damages enemies along its arc.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
         "subclass": "other",
-        "stats": "45 magic dmg"
+        "stats": "45 magic dmg",
+        "secondary": true
       },
       {
         "id": "shpc",
@@ -72385,7 +72387,7 @@
         "why": "used with Souls of Sight ammo",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/SHPC",
         "subclass": "magic-gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -72421,7 +72423,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Sight"
           }
         ],
-        "effect": "Consumes Souls as ammo · Ejects orbs of unstable, concentrated soulpower that linger and explode · Orbs emit seeking souls and lingering pickup souls after collapse · Orbs have varying effects depending on Soul type used · [SOUL DESCRIPTION] · Press ⚷ Open / Activate to use the machine as a vacuum, pulling in lingering souls · Once released, a torrent of soul lasers is discharged scaling with the number of souls pulled in · Shift- ⚷ Open / Activate this item in your inventory to eject the currently loaded Soul · Tales of legends past radiate around you... · Hold Shift to listen closer 'Though soul-powered machines were a near failure, potential remained in souls as a form of fuel. · To avoid my last experiments' main flaw, the Soul-Harnessing Plasma Cannon was designed to expel souls as projectiles before they exert control over the weapon. · Each soul type appears to react differently to the base plasma. Yet, lacking volunteers, obtaining potential ammunition is currently too difficult to undergo further testing. · A shame, for a weapon that could have practically unlimited ammunition in the battlefield. Perhaps some day, its potential can be truly tested.'"
+        "effect": "Consumes Souls as ammo · Ejects orbs of unstable, concentrated soulpower that linger and explode · Orbs emit seeking souls and lingering pickup souls after collapse · Orbs have varying effects depending on Soul type used · [SOUL DESCRIPTION] · Press ⚷ Open / Activate to use the machine as a vacuum, pulling in lingering souls · Once released, a torrent of soul lasers is discharged scaling with the number of souls pulled in · Shift- ⚷ Open / Activate this item in your inventory to eject the currently loaded Soul · Tales of legends past radiate around you... · Hold Shift to listen closer 'Though soul-powered machines were a near failure, potential remained in souls as a form of fuel. · To avoid my last experiments' main flaw, the Soul-Harnessing Plasma Cannon was designed to expel souls as projectiles before they exert control over the weapon. · Each soul type appears to react differently to the base plasma. Yet, lacking volunteers, obtaining potential ammunition is currently too difficult to undergo further testing. · A shame, for a weapon that could have practically unlimited ammunition in the battlefield. Perhaps some day, its potential can be truly tested.'",
+        "secondary": true
       },
       {
         "id": "undines-retribution",
@@ -72459,11 +72462,12 @@
         "why": "Fires several homing wasp projectiles per shot.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wasp_Gun",
         "subclass": "magic-gun",
         "dropRate": "12.5%",
-        "stats": "31 magic dmg"
+        "stats": "31 magic dmg",
+        "secondary": true
       },
       {
         "id": "hadal-urn",
@@ -90539,11 +90543,12 @@
         "why": "Rapidly fires a short-range spread of bubbles.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubble_Gun",
         "subclass": "magic-gun",
         "dropRate": "16.67%",
-        "stats": "70 magic dmg"
+        "stats": "70 magic dmg",
+        "secondary": true
       },
       {
         "id": "hematemesis",
@@ -90553,11 +90558,12 @@
         "source": "Dropped by the Ravager",
         "why": "strong homing single-target DPS",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hematemesis",
         "subclass": "wand",
-        "effect": "When used, it fires 10 blood bolts that spawn from below the screen and move upwards at high speed near the cursor's position. The blood bolts can pass through tiles but cannot pierce."
+        "effect": "When used, it fires 10 blood bolts that spawn from below the screen and move upwards at high speed near the cursor's position. The blood bolts can pass through tiles but cannot pierce.",
+        "secondary": true
       },
       {
         "id": "plague-staff",
@@ -90571,7 +90577,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Staff",
         "subclass": "wand",
-        "effect": "It shoots out a spread of 4 plague fangs while one is always directed at the cursor, which are colored green and are trailed by pink light. The player can tighten the spread of the projectiles by aiming the cursor further away."
+        "effect": "It shoots out a spread of 4 plague fangs while one is always directed at the cursor, which are colored green and are trailed by pink light. The player can tighten the spread of the projectiles by aiming the cursor further away.",
+        "secondary": true
       },
       {
         "id": "rainbow-gun",
@@ -90582,10 +90589,11 @@
         "why": "Launches a lasting rainbow that damages enemies along its arc.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rainbow_Gun",
         "subclass": "other",
-        "stats": "45 magic dmg"
+        "stats": "45 magic dmg",
+        "secondary": true
       },
       {
         "id": "stellar-tune",
@@ -90596,7 +90604,7 @@
         "why": "Fires homing star projectiles that pass through blocks and explode on impact.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Tune",
         "subclass": "other",
         "dropRate": "2%",
@@ -90611,83 +90619,127 @@
         "why": "secondary lower-priority option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wingman",
         "subclass": "magic-gun",
         "effect": "When used with its primary fire (left-click), it summons two Wingmen to the sides of the player perpendicular to the direction of the cursor, that each switch sides and fire lasers towards the cursor that travel through tiles and pierce once. The Wingmen gradually increase in firing rate and laser velocity the longer it is held for, reaching a full speed of 6 lasers per second after 6 shots."
+      },
+      {
+        "id": "vesuvius",
+        "name": "Vesuvius",
+        "slot": "weapon",
+        "icon": "calamity/vesuvius.png",
+        "subclass": "wand",
+        "stats": "55 magic dmg",
+        "source": "Dropped by the Ravager",
+        "dropRate": "10%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vesuvius",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Calls down a swarm of molten asteroids.",
+        "why": "Molten asteroid rain."
+      },
+      {
+        "id": "infernal-rift",
+        "name": "Infernal Rift",
+        "slot": "weapon",
+        "icon": "calamity/infernal-rift.png",
+        "subclass": "wand",
+        "stats": "50 magic dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infernal_Rift",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Summons infernal blades that spawn more blades on enemy hits.",
+        "why": "Splitting infernal blades.",
+        "materials": [
+          {
+            "name": "Sky Fracture",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sky_Fracture"
+          },
+          {
+            "name": "Scoria Bar",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
+          }
+        ]
+      },
+      {
+        "id": "b-lsr-countermeasure-mitt",
+        "name": "B-LSR: Countermeasure Mitt",
+        "slot": "weapon",
+        "icon": "calamity/b-lsr-countermeasure-mitt.png",
+        "subclass": "magic-gun",
+        "stats": "45 magic dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/B-LSR:_Countermeasure_Mitt",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fingertip lasers; focus into a short-range palm blast that always crits and restores mana on hit.",
+        "why": "Always-crit palm blast with mana return.",
+        "materials": [
+          {
+            "name": "Mysterious Circuitry",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mysterious_Circuitry"
+          },
+          {
+            "name": "Dubious Plating",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dubious_Plating"
+          },
+          {
+            "name": "Life Alloy",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+          },
+          {
+            "name": "Infected Armor Plating",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
+          }
+        ]
+      },
+      {
+        "id": "razorblade-typhoon",
+        "name": "Razorblade Typhoon",
+        "slot": "weapon",
+        "icon": "items/razorblade-typhoon.png",
+        "source": "Dropped by Duke Fishron",
+        "why": "Fires high-velocity homing typhoons that pierce enemies and bounce off blocks.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "subclass": "spell-tome",
+        "stats": "85 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Razorblade_Typhoon",
+        "tier": "best",
+        "dropRate": "16.67%"
+      },
+      {
+        "id": "nightglow",
+        "name": "Nightglow",
+        "slot": "weapon",
+        "icon": "items/nightglow.png",
+        "source": "Dropped by Empress of Light",
+        "why": "Fires a homing prismatic bolt that rains down piercing feathers.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "other",
+        "stats": "50 magic dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nightglow",
+        "tier": "good",
+        "dropRate": "25%"
       }
     ],
     "armor": [
-      {
-        "id": "brimflame-armor",
-        "name": "Brimflame armor",
-        "slot": "armor",
-        "icon": "armor-sets/brimflame-armor.png",
-        "source": "Crafted",
-        "why": "primary listed magic armor set",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimflame_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Brimflame Boots",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
-          },
-          {
-            "piece": "Brimflame Cowl",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
-          },
-          {
-            "piece": "Brimflame Robes",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Ashes of Calamity",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
-              },
-              {
-                "name": "Unholy Core",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Brimflame Cowl",
-          "Brimflame Robes",
-          "Brimflame Boots"
-        ],
-        "defense": 41,
-        "effect": "Brimflame Frenzy (press the armor set bonus key): +40% magic damage for 10 seconds at the cost of -21 HP/s and no mana regeneration; 30-second cooldown.",
-        "headpieceBonus": "+30% magic damage · +25% magic critical strike chance · +80 maximum mana · -10% mana usage · +5% movement speed · Immune to Brimstone Flames, Burning, Frostburn, and On Fire!"
-      },
       {
         "id": "hydrothermic-armor",
         "name": "Hydrothermic armor",
@@ -90697,7 +90749,7 @@
         "why": "melee set with brimstone offensive bonuses",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor",
         "pieceRecipes": [
           {
@@ -90785,87 +90837,75 @@
         ],
         "headpiece": "Hydrothermic Mask",
         "defense": 43,
-        "effect": "Inferno effect when below 50% life · You emit a blazing explosion when you are hit",
+        "effect": "+20 maximum health · Immune to On Fire! and lava · Below 50% health, a modified Inferno deals 50 damage and inflicts Brimstone Flames, plus an on-hit explosion for 115/230/345 damage that inflicts Hellfire",
         "desc": "Hydrothermic armor is a Hardmode armor set.",
-        "headpieceBonus": "Magic attacks summon damaging and healing flare orbs on hit"
+        "headpieceBonus": "+25% magic damage · +19% magic critical strike chance · +100 maximum mana · -15% mana usage · +10% movement speed · Magic hits summon damaging and healing chaos orbs (62.5% of weapon damage, soft-capped at 100; healing orbs restore 10% of damage dealt, -5% per pierce)"
       },
       {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
+        "id": "spectre-armor",
+        "name": "Spectre armor",
         "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted",
-        "why": "all-class set option",
+        "icon": "armor/spectre-armor-mage.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Still on-tier at this point. The Mask raises damage, and the Hood variant converts magic damage into healing instead.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_armor",
         "pieceRecipes": [
           {
-            "piece": "Reaver Cuisses",
-            "station": "Mythril Anvil or Orichalcum Anvil",
+            "piece": "Spectre Mask",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Spectre Bar",
+                "qty": 12,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Reaver Headgear",
-            "station": "Mythril Anvil or Orichalcum Anvil",
+            "piece": "Spectre Robe",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Spectre Bar",
+                "qty": 24,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           },
           {
-            "piece": "Reaver Helm",
-            "station": "Mythril Anvil or Orichalcum Anvil",
+            "piece": "Spectre Pants",
             "materials": [
               {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
+                "name": "Spectre Bar",
+                "qty": 18,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Bar"
               }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
           }
         ],
+        "defense": 42,
         "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
+          "Spectre Mask",
+          "Spectre Robe",
+          "Spectre Pants"
         ],
-        "defense": 70,
-        "desc": "Reaver armor is a Hardmode armor set.",
-        "headpieceBonus": "Helm: Enemies are more likely to target you; Reduces the life regen lost from damage over time debuffs by 20%; 30% decreased movement speed and flight time; Grants Reaver Rage for 5 seconds after taking damage · Visage: Grants immunity to fall damage and allows constant jumping; 10% increased flight time and horizontal wing speed; Grappling hooks retract and pull the player 50% faster; Reduces the cooldown of dashes by 33% · Headgear: Emits light and shows the location of treasure and ore; Enemies are less likely to target you and grants underwater breathing; Greatly enhances visibility in the abyss; Increased block placement & tool range by 7; Increases pickup range for items",
-        "allClass": true
+        "desc": "Spectre armor is a Hardmode, post- Plantera magic armor set consisting of the Spectre Robe and Spectre Pants, as well as two different headpieces: the Spectre Hood and Spectre Mask, providing offensive and defensive bonuses respectively.",
+        "headVariants": [
+          {
+            "name": "Mask",
+            "headpieceBonus": "+42 defense · +25% magic damage · +17% magic critical strike chance · +60 maximum mana · +13% mana cost reduction · +8% movement speed",
+            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon’s damage and able to crit."
+          },
+          {
+            "name": "Hood",
+            "headpieceBonus": "+30 defense · -25% magic damage · +7% magic critical strike chance · +8% movement speed",
+            "effect": "Lifesteal orbs spawn when you deal magic damage, flying to you and restoring 20% of the damage dealt as health."
+          }
+        ]
       }
     ],
     "accessories": [
@@ -91656,7 +91696,7 @@
             "name": "Betsy's Wings",
             "slot": "accessory",
             "icon": "calamity/betsys-wings.png",
-            "source": "",
+            "source": "Dropped by Betsy (Old One’s Army)",
             "why": "This should be used with Angel Treads",
             "tags": [],
             "topPick": false,
@@ -91664,7 +91704,8 @@
               "primary-mobility"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Betsy%27s_Wings",
-            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
+            "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+            "dropRate": "25%"
           },
           {
             "id": "calpool-empress-wings",
@@ -91917,8 +91958,8 @@
             "name": "Soaring Insignia",
             "slot": "accessory",
             "icon": "calamity/soaring-insignia.png",
-            "source": "",
-            "why": "This no longer grants infinite flight.",
+            "source": "Empress of Light Treasure Bag (Expert or Master)",
+            "why": "Improved jump, run, and flight mobility.",
             "tags": [],
             "topPick": false,
             "categories": [
@@ -91928,7 +91969,7 @@
             "markers": [
               "calamity-changed"
             ],
-            "effect": "Grants infinite wing and rocket boot flight · Increases flight and jump mobility",
+            "effect": "+10% jump speed · +25% run acceleration · +33% flight time",
             "expertOnly": true
           }
         ]
@@ -91946,8 +91987,7 @@
             "tags": [],
             "topPick": false,
             "categories": [
-              "offense",
-              "survivability"
+              "all-around"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Celestial_Shell",
             "materials": [
@@ -92192,7 +92232,7 @@
             "name": "Eye of the Golem",
             "slot": "accessory",
             "icon": "calamity/eye-of-the-golem.png",
-            "source": "Dropped by Golem and 1 other source",
+            "source": "Dropped by Golem, or found in its Treasure Bag",
             "why": "",
             "tags": [],
             "topPick": false,
@@ -92204,7 +92244,8 @@
               "calamity-changed"
             ],
             "quality": "great",
-            "effect": "It has a 1/7 (14.29%) chance of being dropped by Golem."
+            "effect": "+15% critical strike chance",
+            "dropRate": "14.29%"
           },
           {
             "id": "calpool-sand-shark-tooth-necklace",
@@ -92271,34 +92312,6 @@
             ],
             "station": "Mythril Anvil or Orichalcum Anvil",
             "effect": "Increases maximum mana by 60 · 15% increased magic damage · Increases pickup range for mana stars"
-          },
-          {
-            "id": "calpool-celestial-shell",
-            "name": "Celestial Shell",
-            "slot": "accessory",
-            "icon": "calamity/celestial-shell.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "All-round stats, plus werewolf at night and merfolk in water.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "offense",
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Celestial_Shell",
-            "materials": [
-              {
-                "name": "Celestial Stone",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Stone"
-              },
-              {
-                "name": "Moon Shell",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Moon_Shell"
-              }
-            ],
-            "station": "Tinkerer's Workshop"
           }
         ]
       }
@@ -92324,7 +92337,7 @@
         "slot": "weapon",
         "icon": "calamity/lunic-eye.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "support weapon usable by all classes",
+        "why": "support utility item",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Eye",
@@ -92341,7 +92354,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
           }
         ],
-        "effect": "When used, it fires an orange particle bolt that does not pierce nor pass through tiles and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 15-tile radius, gradually turning itself purple as it moves closer to the target."
+        "effect": "When used, it fires an orange particle bolt that does not pierce nor pass through tiles and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 15-tile radius, gradually turning itself purple as it moves closer to the target.",
+        "altOf": "Betsy's Wrath"
       },
       {
         "id": "rod-of-discord",
@@ -92355,9 +92369,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Betsy's Wrath"
       }
-    ]
+    ],
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-lunar",
@@ -100174,7 +100191,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
           }
         ],
-        "effect": "When used, it fires spreads of three blasts that have 40 armor penetration and explode on hit, dealing 30% base damage. Holding ⚷ Open / Activate causes the gun to charge up by restoring the player's mana at a rate of 2.5% every two frames."
+        "effect": "When used, it fires spreads of three blasts that have 40 armor penetration and explode on hit, dealing 30% base damage. Holding ⚷ Open / Activate causes the gun to charge up by restoring the player's mana at a rate of 2.5% every two frames.",
+        "secondary": true
       },
       {
         "id": "nebula-arcanum",
@@ -100232,7 +100250,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Star_Shower",
         "subclass": "spell-tome",
-        "effect": "When used, it summons a spread of 5 astral stars from the sky that quickly travel to meet at the cursor's location, then continue to fall in that direction. The stars do not pierce enemies but can go through tiles."
+        "effect": "When used, it summons a spread of 5 astral stars from the sky that quickly travel to meet at the cursor's location, then continue to fall in that direction. The stars do not pierce enemies but can go through tiles.",
+        "secondary": true
       },
       {
         "id": "the-swarmer",
@@ -109827,7 +109846,7 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "primary recommended magic weapon, high homing DPS",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chronomancer's_Scythe",
         "subclass": "other",
@@ -109886,7 +109905,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
           }
         ],
-        "effect": "When used, it fires an array of eight lasers that pierce once and decrease in their spread on successive shots. Every 6th shot, the weapon instead fires a powerful splitting beam in a Y-shape, which deals 900% damage and resets the laser spread for the following set of shots."
+        "effect": "When used, it fires an array of eight lasers that pierce once and decrease in their spread on successive shots. Every 6th shot, the weapon instead fires a powerful splitting beam in a Y-shape, which deals 900% damage and resets the laser spread for the following set of shots.",
+        "secondary": true
       },
       {
         "id": "nuclear-fury",
@@ -109897,7 +109917,7 @@
         "why": "solid piercing damage",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nuclear_Fury",
         "subclass": "spell-tome",
         "station": "Bookcase",
@@ -109929,7 +109949,7 @@
         "why": "alternative magic weapon",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nucleosynthesis",
         "subclass": "wand",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -109966,10 +109986,157 @@
         "why": "alternative magic weapon",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rouge_Slash",
         "subclass": "spell-tome",
         "effect": "When used, it fires three curved waves out from the player, which each vary in their size and speed and pass through tiles. The waves each pierce twice and disappear upon contact with a third."
+      },
+      {
+        "id": "cosmic-rainbow",
+        "name": "Cosmic Rainbow",
+        "slot": "weapon",
+        "icon": "calamity/cosmic-rainbow.png",
+        "subclass": "other",
+        "stats": "120 magic dmg",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Rainbow",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Launches a barrage of rainbows and homing sparkles.",
+        "why": "Rainbow barrage with homing sparkles.",
+        "materials": [
+          {
+            "name": "Rainbow Gun",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Rainbow_Gun"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          },
+          {
+            "name": "Crystal Shard",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          }
+        ]
+      },
+      {
+        "id": "effervescence",
+        "name": "Effervescence",
+        "slot": "weapon",
+        "icon": "calamity/effervescence.png",
+        "subclass": "magic-gun",
+        "stats": "60 magic dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Effervescence",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Shoots a wide spread of piercing bubbles that split into homing bubbles.",
+        "why": "Piercing bubbles that split and home.",
+        "materials": [
+          {
+            "name": "Bubble Gun",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubble_Gun"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          },
+          {
+            "name": "Aetherium Block",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aetherium_Block"
+          }
+        ]
+      },
+      {
+        "id": "unstable-casters-gauntlet",
+        "name": "Unstable Caster's Gauntlet",
+        "slot": "weapon",
+        "icon": "calamity/unstable-casters-gauntlet.png",
+        "subclass": "other",
+        "stats": "320 magic dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unstable_Caster's_Gauntlet",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Uses Vis instead of mana: fires piercing needles, and summons a ring of elemental sigils you can activate for varied effects.",
+        "why": "Vis-powered needles and elemental sigils.",
+        "materials": [
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          },
+          {
+            "name": "Life Alloy",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "mad-alchemists-cocktail-glove",
+        "name": "Mad Alchemist's Cocktail Glove",
+        "slot": "weapon",
+        "icon": "calamity/mad-alchemists-cocktail-glove.png",
+        "subclass": "other",
+        "stats": "240 magic dmg",
+        "source": "Crafted at an Alchemy Table",
+        "station": "Alchemy Table",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mad_Alchemist's_Cocktail_Glove",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires high-velocity flasks that cycle red, blue, green, and purple effects; alt-fire throws a prismatic flask that inflicts Elemental Mix.",
+        "why": "Cycling elemental flasks.",
+        "materials": [
+          {
+            "name": "Toxic Flask",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Toxic_Flask"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Leather",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Leather"
+          },
+          {
+            "name": "Effulgent Feathers",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Effulgent_Feathers"
+          },
+          {
+            "name": "Core of Calamity",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Core_of_Calamity"
+          }
+        ]
       }
     ],
     "armor": [
@@ -110040,79 +110207,9 @@
           "Nebula Breastplate",
           "Nebula Leggings"
         ],
-        "effect": "+26% magic damage · +16% magic critical strike chance · +60 maximum mana · +15% mana cost reduction · +10% movement speed · Striking enemies with magic weapons has a chance to spawn booster items (Damage, Mana, or Life); each grants a stacking buff, up to 3 of a kind, that lasts 8 seconds and can be picked up by any player.",
-        "desc": "Nebula armor is a Hardmode, post- Moon Lord mage armor set consisting of the Nebula Helmet, Nebula Breastplate, and Nebula Leggings."
-      },
-      {
-        "id": "astral-armor",
-        "name": "Astral armor",
-        "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Astral Breastplate",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Helm",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Leggings",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
-        ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
+        "effect": "Magic hits can spawn booster orbs that orbit you (stack up to 3, expire after 8 seconds): Damage boosters (+7.5%/15%/22.5% damage), Life boosters (+2/4/5 HP per second regen), and Mana boosters (+5/10/15 mana per second).",
+        "desc": "Nebula armor is a Hardmode, post- Moon Lord mage armor set consisting of the Nebula Helmet, Nebula Breastplate, and Nebula Leggings.",
+        "headpieceBonus": "+26% magic damage · +16% magic critical strike chance · +60 maximum mana · +15% mana cost reduction · +10% movement speed"
       }
     ],
     "accessories": [
@@ -111631,7 +111728,8 @@
         "altOf": "Eye of Magnus"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-providence",
@@ -127396,8 +127494,8 @@
           "Prismatic Greaves"
         ],
         "defense": 72,
-        "effect": "Increased mana regeneration rate · Prismatic Barrage - Armor Set Bonus to unleash a laser barrage at the cursor for 5 seconds · This has a 30 second cooldown",
-        "desc": "Prismatic armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player emits a faint pulsing aura."
+        "effect": "Press the armor set bonus key to rain lasers at the cursor for 5 seconds (30 magic damage, inflicts God Slayer Inferno); 30-second cooldown.",
+        "headpieceBonus": "-60% non-magic damage · +40% magic damage · +39% magic critical strike chance · +80 maximum mana · -15% mana usage · +9 mana regeneration · +2% jump speed · +10% flight time · While no bosses are alive, enemies under 500 max health deal no contact damage · Magic hits have a chance to fire two homing rockets that explode for 80% of their damage"
       },
       {
         "id": "omega-blue-armor",

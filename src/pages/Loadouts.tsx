@@ -995,10 +995,22 @@ export function Loadouts() {
       ? scopedBestTier
       : goodPrimary.length > 0
         ? goodPrimary
-        : inScope.slice(0, 1);
+        : goodSecondary.length > 0
+          ? goodSecondary
+          : inScope.slice(0, 1);
   /* Low-tier 'other' reference weapons - ~60 starter swords in a family like
      pre-boss melee - stay out of the drilled view entirely. */
-  const filteredAlso = showingAll ? [] : hasBest ? scopedGoodTier : goodSecondary;
+  /* No best-tier pick: the video's Recommended (non-secondary) weapons lead as
+     Best and the wiki-only (secondary) ones drop to Other Options. When the
+     video showed nothing at all for the family, the wiki picks became Best
+     above, so there is nothing left to append here. */
+  const filteredAlso = showingAll
+    ? []
+    : hasBest
+      ? scopedGoodTier
+      : goodPrimary.length > 0
+        ? goodSecondary
+        : [];
   const filteredRest: Item[] = [];
 
   // Unranked (Calamity): the guide's own order, with no tier read as a pick.
@@ -1025,12 +1037,12 @@ export function Loadouts() {
    */
   const demonHeartUnlocked = HARDMODE_PHASES.has(activePhaseId) && difficulty === 'expert';
   const onionUnlocked = packId === 'calamity' && CALAMITY_POST_ML.has(activePhaseId);
-  /* The Demon Heart adds a hardmode sixth slot, but the bag it comes from is
-     Expert-and-above. Rather than drop that slot on a lower difficulty, still
-     show it - filled with its guide pick and marked as needing Expert - so the
-     reader sees the full loadout and the "play in Expert" nudge. Skipped once a
-     Celestial Onion already grants the extra slot post-Moon Lord. */
-  const demonHeartPreview = HARDMODE_PHASES.has(activePhaseId) && !demonHeartUnlocked && !onionUnlocked;
+  /* The Demon Heart adds an Expert-only slot (the sixth in hardmode, the
+     seventh once a Celestial Onion has added the post-Moon-Lord slot). Rather
+     than drop it on a lower difficulty, still show it - filled with its guide
+     pick and marked as needing Expert - so the reader sees the full loadout and
+     the "play in Expert" nudge. */
+  const demonHeartPreview = HARDMODE_PHASES.has(activePhaseId) && !demonHeartUnlocked;
   /* Slots the world can really fill - what the "N slots" label counts. */
   const realSlotCount = 5 + (demonHeartUnlocked ? 1 : 0) + (onionUnlocked ? 1 : 0);
   const slotCount = realSlotCount + (demonHeartPreview ? 1 : 0);
@@ -1526,7 +1538,7 @@ export function Loadouts() {
                     : s2.reason === 'slot'
                       ? `${s2.original.name} (extra slot)`
                       : s2.reason === 'demon-heart'
-                        ? `${s2.original.name} (sixth slot, needs a Demon Heart)`
+                        ? `${s2.original.name} (needs a Demon Heart)`
                         : `${s2.original.name} (Expert-only)`).join(', ')}.
                   {packId === 'calamity'
                     ? ' Calamity is balanced for Expert or above.'
