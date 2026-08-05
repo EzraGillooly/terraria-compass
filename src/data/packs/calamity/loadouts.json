@@ -136847,7 +136847,7 @@
         "source": "Dropped by The Devourer of Gods",
         "why": "",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperdeath_Rift_Scepter",
         "subclass": "wand",
@@ -136901,7 +136901,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Primordial_Ancient",
         "subclass": "spell-tome",
         "station": "Bookcase",
@@ -136934,7 +136934,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tesla_Cannon",
         "subclass": "magic-gun",
         "station": "Cosmic Anvil",
@@ -136972,7 +136972,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Voltaic_Climax",
         "subclass": "wand",
         "station": "Cosmic Anvil",
@@ -136995,6 +136995,97 @@
         ],
         "effect": "When used, it summons a circular spread of 9 tile-ignoring magnetic orbs around the cursor that spread out before stopping. Each orb fires one electric beam consecutively that pierces infinitely when dealing more than 1 damage, and inflicts the Electrified debuff.",
         "stats": "235 magic dmg"
+      },
+      {
+        "id": "light-gods-brilliance",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Light_God%27s_Brilliance",
+        "tier": "good",
+        "name": "Light God's Brilliance",
+        "icon": "calamity/light-gods-brilliance.png",
+        "subclass": "spell-tome",
+        "stats": "111 magic dmg",
+        "source": "Crafted at a Bookcase",
+        "station": "Bookcase",
+        "effect": "Casts small homing light beads along with explosive light balls.",
+        "why": "Homing light beads and explosive orbs.",
+        "materials": [
+          {
+            "name": "Shadecrystal Barrage",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadecrystal_Barrage"
+          },
+          {
+            "name": "Abyssal Tome",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Abyssal_Tome"
+          },
+          {
+            "name": "Holy Water",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Holy_Water"
+          },
+          {
+            "name": "Cosmilite Bar",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
+          },
+          {
+            "name": "Nightmare Fuel",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nightmare_Fuel"
+          },
+          {
+            "name": "Effulgent Feathers",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Effulgent_Feathers"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 30,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          }
+        ]
+      },
+      {
+        "id": "nebulous-cataclysm",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nebulous_Cataclysm",
+        "tier": "good",
+        "name": "Nebulous Cataclysm",
+        "icon": "calamity/nebulous-cataclysm.png",
+        "subclass": "wand",
+        "stats": "530 magic dmg",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "effect": "Fires a slow homing cloud core that pierces twice, then bursts into several small explosions.",
+        "why": "Homing cloud core with a burst.",
+        "materials": [
+          {
+            "name": "Nebula Arcanum",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
+          },
+          {
+            "name": "Nebula Blaze",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Blaze"
+          },
+          {
+            "name": "Cosmilite Bar",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
+          },
+          {
+            "name": "Nightmare Fuel",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nightmare_Fuel"
+          }
+        ]
       }
     ],
     "armor": [
@@ -137102,9 +137193,8 @@
         ],
         "headpiece": "Silva Masked Cap",
         "defense": 90,
-        "effect": "+3 HP/s life regen · 5% increased max run speed and acceleration · Taking fatal damage will revive you and make you invulnerable to all damage for 5 seconds · This effect has a 5 minute cooldown, which does not decrement if any bosses or events are active",
-        "desc": "The Silva armor is a post- Moon Lord armor set. It is the mage/summoner counterpart to God Slayer armor. If the full set is visible (whether equipped or in social slots), the player will emit afterimages.",
-        "headpieceBonus": "Magic projectiles which cannot pierce will occasionally set off potent blasts of nature energy"
+        "effect": "+10% movement speed · +5% max run speed and acceleration · +3 HP/s life regen · On reaching 0 HP, revive to 1 HP with Silva Immunity (no damage for 5 seconds); 5-minute cooldown",
+        "headpieceBonus": "+44% magic damage · +32% magic critical strike chance · +100 maximum mana · -19% mana usage · Non-piercing magic projectiles cause a large explosion on hit (5s cooldown; 800 + 60% of projectile damage, soft cap 1,400)"
       }
     ],
     "accessories": [
@@ -138743,7 +138833,8 @@
         "stats": "400 dmg"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-yharon",
