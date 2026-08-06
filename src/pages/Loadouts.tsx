@@ -72,8 +72,8 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material, distinct from post-Exo
   'cal-post-calamitas': 'supreme-witch-calamitas',
   'cal-post-exo': 'exo-mechs',
-  // cal-post-golem (prismatic crystal) and cal-endgame (compass) have no single
-  // boss, so they are left out - the banner falls back to their own map art.
+  // cal-endgame (compass) has no single boss, so it is left out - the banner
+  // falls back to its own map art.
   // Thorium phases → the boss whose map icon marks that tier.
   'thor-pre-boss': 'the-grand-thunder-bird',
   'thor-pre-evil': 'brain-of-cthulhu',
@@ -264,7 +264,7 @@ const CALAMITY_POST_ML = new Set<string>([
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
   'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
-  'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  'cal-pre-golem', 'cal-pre-lunar', 'cal-pre-ml',
   // Thorium hardmode phases (Post-Wall of Flesh and later).
   'thor-post-wof', 'thor-pre-mech', 'thor-post-mech', 'thor-pre-lunar',
   'thor-pre-primordials', 'thor-endgame',
@@ -1559,12 +1559,17 @@ export function Loadouts() {
               </div>
             )}
             <div className={styles.accGrid}>
-              {accSlots.map((acc, i) => (
+              {accSlots.map((acc, i) => {
+                /* On Classic, a slot shows its `classicAlt` in place of the
+                   Expert-tier holder (Celestial Shell for Blood Pact, etc.).
+                   Expert keeps the holder. */
+                const shown = acc && difficulty === 'normal' && acc.classicAlt ? acc.classicAlt : acc;
+                return (
                 <AccCell
-                  key={acc?.id ?? `slot-${i}`}
-                  item={acc}
-                  alts={acc
-                    ? (altsBy.get(acc.name) ?? []).filter((a) =>
+                  key={shown?.id ?? `slot-${i}`}
+                  item={shown}
+                  alts={shown
+                    ? (altsBy.get(shown.name) ?? []).filter((a) =>
                         isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true)
                     : undefined}
                   demonHeart={(demonHeartUnlocked || demonHeartPreview) && i === slotCount - 1}
@@ -1573,7 +1578,8 @@ export function Loadouts() {
                   difficulty={difficulty}
                   onOpen={setModalItem}
                 />
-              ))}
+                );
+              })}
             </div>
             {accessoryPool.length > 0 && (
               <div className={styles.poolWrap}>

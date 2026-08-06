@@ -10,7 +10,7 @@ export const SubclassId = z.string();
 
 export const ItemSlot = z.enum(['weapon', 'armor', 'accessory', 'buff', 'ammo']);
 
-export const Item = z.object({
+const ItemBase = z.object({
   id: z.string(),
   name: z.string(),
   slot: ItemSlot,
@@ -217,6 +217,17 @@ export const Item = z.object({
     group: z.string().optional(),
     wikiUrl: z.string().url().optional(),
   })).optional(),
+});
+
+/**
+ * An accessory shown in this slot on Classic in place of the holder, when the
+ * guide's real (Expert-tier) pick does not apply to a Classic world - e.g.
+ * pre-Lunar melee runs Blood Pact on Expert but Celestial Shell on Classic.
+ * One level deep only (a Classic pick has no Classic pick of its own), which
+ * keeps the schema out of true recursion.
+ */
+export const Item = ItemBase.extend({
+  classicAlt: ItemBase.optional(),
 });
 
 export const Loadout = z.object({
