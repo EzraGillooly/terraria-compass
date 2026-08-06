@@ -34792,7 +34792,7 @@
         "why": "Multiple can be thrown at once; dropped by Hardmode Clowns.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bananarang",
         "dropRate": "10%",
         "subclass": "boomerang",
@@ -34807,7 +34807,7 @@
         "why": "Launched flail dropped by Corrupt Mimics in Hardmode.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "subclass": "flail",
@@ -34821,8 +34821,8 @@
         "source": "Crafted at an Iron Anvil or Lead Anvil",
         "why": "high-damage melee hammer",
         "tags": [],
-        "topPick": true,
-        "tier": "good",
+        "topPick": false,
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Comet_Quasher",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -34859,11 +34859,12 @@
         "why": "Throws ricocheting knives that inflict the Shadowflame debuff.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowflame_Knife",
         "dropRate": "16.7%",
         "subclass": "other",
-        "stats": "43 melee dmg"
+        "stats": "43 melee dmg",
+        "secondary": true
       },
       {
         "id": "storm-saber",
@@ -34874,10 +34875,119 @@
         "why": "solid melee sword",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Saber",
         "effect": "It has a chance to be dropped from Cloud Elementals. When swung, it fires a slow and homing glowing sword-like projectile from the blade, and another from the sky towards the cursor.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
+      },
+      {
+        "id": "caustic-edge",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Caustic_Edge",
+        "name": "Caustic Edge",
+        "icon": "calamity/caustic-edge.png",
+        "subclass": "sword",
+        "stats": "100 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires a bouncing caustic beam that inflicts Acid Venom and slows on hit.",
+        "why": "Bouncing acid beam.",
+        "materials": [
+          {
+            "name": "Tainted Blade",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tainted_Blade"
+          },
+          {
+            "name": "Cursed Flame",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
+          },
+          {
+            "name": "Spider Fang",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
+          }
+        ],
+        "tier": "good"
+      },
+      {
+        "id": "earthen-pike",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Earthen_Pike",
+        "name": "Earthen Pike",
+        "icon": "calamity/earthen-pike.png",
+        "subclass": "spear",
+        "stats": "85 melee dmg",
+        "source": "Dropped by the Earth Elemental",
+        "dropRate": "25%",
+        "effect": "Sprays gravity-affected fossil shards on swing, inflicting Armor Crunch.",
+        "why": "Fossil-shard spear.",
+        "tier": "best"
+      },
+      {
+        "id": "clam-crusher",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clam_Crusher",
+        "name": "Clam Crusher",
+        "icon": "calamity/clam-crusher.png",
+        "subclass": "flail",
+        "stats": "150 melee dmg",
+        "source": "Dropped by the Giant Clam mini boss",
+        "dropRate": "25%",
+        "effect": "Launches a huge clam that inflicts Eutrophication; hits harder after being airborne.",
+        "why": "Stunning clam flail.",
+        "tier": "good"
+      },
+      {
+        "id": "yin-yo",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yin-Yo",
+        "name": "Yin-Yo",
+        "icon": "calamity/yin-yo.png",
+        "subclass": "yoyo",
+        "stats": "44 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires light and dark shards at nearby enemies.",
+        "why": "Light/dark shard yoyo.",
+        "materials": [
+          {
+            "name": "Valor",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Valor"
+          },
+          {
+            "name": "Dark Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard"
+          },
+          {
+            "name": "Light Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Shard"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          }
+        ],
+        "tier": "good"
       }
     ],
     "armor": [
@@ -34957,7 +35067,7 @@
         "headpiece": "Cobalt Helmet",
         "defense": 32,
         "desc": "Cobalt armor is a Hardmode armor set consisting of the Cobalt Breastplate and Cobalt Leggings, as well as three different headpieces: the Cobalt Helmet, Cobalt Mask, and Cobalt Hat, providing bonuses for the melee, ranged, and magic damage type respectively.",
-        "headpieceBonus": "15% increased melee speed",
+        "headpieceBonus": "+18% melee damage · +5% critical strike chance · +15% melee speed · +20% movement speed",
         "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10% · The player also emits visual afterimages while moving."
       },
       {
@@ -35036,7 +35146,8 @@
         "headpiece": "Palladium Mask",
         "defense": 32,
         "effect": "Hitting an enemy grants Rapid Healing for 5 seconds (+2 HP per second flat regeneration); further hits refresh the duration.",
-        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively.",
+        "headpieceBonus": "+17% melee damage · +3% critical strike chance · +12% melee speed"
       }
     ],
     "accessories": [
@@ -35230,6 +35341,23 @@
         ]
       },
       {
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
+        "slot": "accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Power Glove"
+      },
+      {
         "id": "bloody-worm-scarf",
         "name": "Bloody Worm Scarf",
         "slot": "accessory",
@@ -35262,7 +35390,10 @@
         "categories": [
           "all-around"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "grand-gelatin",
@@ -36147,7 +36278,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-bloody-worm-scarf",
@@ -36181,7 +36315,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -36526,9 +36663,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-mech",
@@ -38091,7 +38231,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -39956,7 +40099,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -40756,7 +40902,10 @@
         ],
         "station": "Iron Anvil or Lead Anvil",
         "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-        "expertOnly": true
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "summoner-emblem",
@@ -41606,7 +41755,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -43402,7 +43554,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -43810,6 +43965,21 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "bananarang",
+        "name": "Bananarang",
+        "slot": "weapon",
+        "icon": "calamity/bananarang.png",
+        "source": "Dropped by Clowns during a Hardmode Blood Moon",
+        "why": "Multiple can be thrown at once; dropped by Hardmode Clowns.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bananarang",
+        "dropRate": "10%",
+        "subclass": "boomerang",
+        "stats": "45 melee dmg"
+      },
+      {
         "id": "chain-guillotines",
         "name": "Chain Guillotines",
         "slot": "weapon",
@@ -43817,12 +43987,157 @@
         "source": "Dropped by Corrupt Mimics (Hardmode)",
         "why": "Launched flail dropped by Corrupt Mimics in Hardmode.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "subclass": "flail",
         "stats": "59 melee dmg"
+      },
+      {
+        "id": "comet-quasher",
+        "name": "Comet Quasher",
+        "slot": "weapon",
+        "icon": "calamity/comet-quasher.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "high-damage melee hammer",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Comet_Quasher",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Essence of Sunlight",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+          },
+          {
+            "name": "Starblight Soot",
+            "qty": 12,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "effect": "On use, it swings in a full circle around the player. Hitting an enemy launches them away from the player and rains a barrage of 4 meteors on them that deals 150% base damage.",
+        "subclass": "other"
+      },
+      {
+        "id": "caustic-edge",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Caustic_Edge",
+        "name": "Caustic Edge",
+        "icon": "calamity/caustic-edge.png",
+        "subclass": "sword",
+        "stats": "100 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires a bouncing caustic beam that inflicts Acid Venom and slows on hit.",
+        "why": "Bouncing acid beam.",
+        "materials": [
+          {
+            "name": "Tainted Blade",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tainted_Blade"
+          },
+          {
+            "name": "Cursed Flame",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
+          },
+          {
+            "name": "Spider Fang",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
+          }
+        ],
+        "tier": "good"
+      },
+      {
+        "id": "earthen-pike",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Earthen_Pike",
+        "name": "Earthen Pike",
+        "icon": "calamity/earthen-pike.png",
+        "subclass": "spear",
+        "stats": "85 melee dmg",
+        "source": "Dropped by the Earth Elemental",
+        "dropRate": "25%",
+        "effect": "Sprays gravity-affected fossil shards on swing, inflicting Armor Crunch.",
+        "why": "Fossil-shard spear.",
+        "tier": "best"
+      },
+      {
+        "id": "clam-crusher",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clam_Crusher",
+        "name": "Clam Crusher",
+        "icon": "calamity/clam-crusher.png",
+        "subclass": "flail",
+        "stats": "150 melee dmg",
+        "source": "Dropped by the Giant Clam mini boss",
+        "dropRate": "25%",
+        "effect": "Launches a huge clam that inflicts Eutrophication; hits harder after being airborne.",
+        "why": "Stunning clam flail.",
+        "tier": "good"
+      },
+      {
+        "id": "yin-yo",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yin-Yo",
+        "name": "Yin-Yo",
+        "icon": "calamity/yin-yo.png",
+        "subclass": "yoyo",
+        "stats": "44 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires light and dark shards at nearby enemies.",
+        "why": "Light/dark shard yoyo.",
+        "materials": [
+          {
+            "name": "Valor",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Valor"
+          },
+          {
+            "name": "Dark Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard"
+          },
+          {
+            "name": "Light Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Shard"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          }
+        ],
+        "tier": "good"
       },
       {
         "id": "inferna-cutter",
@@ -43854,7 +44169,8 @@
           }
         ],
         "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "majestic-guard",
@@ -43896,7 +44212,8 @@
           }
         ],
         "effect": "When used, the sword is swung back and forth in front of the player. Striking an enemy launches them away, and heals the player for 7 health; health gained has diminishing returns on consecutive hits.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "shadowflame-knife",
@@ -43907,11 +44224,12 @@
         "why": "Throws ricocheting knives that inflict the Shadowflame debuff.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadowflame_Knife",
         "dropRate": "16.7%",
         "subclass": "other",
-        "stats": "43 melee dmg"
+        "stats": "43 melee dmg",
+        "secondary": true
       },
       {
         "id": "storm-saber",
@@ -43922,10 +44240,11 @@
         "why": "beam-firing melee sword",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Saber",
         "effect": "It has a chance to be dropped from Cloud Elementals. When swung, it fires a slow and homing glowing sword-like projectile from the blade, and another from the sky towards the cursor.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       }
     ],
     "armor": [
@@ -44004,8 +44323,7 @@
         ],
         "headpiece": "Mythril Helmet",
         "defense": 37,
-        "desc": "Mythril armor is a Hardmode armor set consisting of the Mythril Chainmail and Mythril Greaves, as well as three different headpieces: the Mythril Helmet, Mythril Hat, and Mythril Hood, providing bonuses for the melee, ranged, and magic damage type respectively.",
-        "headpieceBonus": "10% increased melee critical strike chance",
+        "headpieceBonus": "+17% melee damage · +28% melee critical strike chance",
         "effect": "Enemy hits release mythril flares, which home in on enemies after a short delay. Mythril flares deal 30% of the damage of the attack that spawned them, softcapped at 40 damage, and have a 12 frame delay before another can be spawned"
       },
       {
@@ -44083,8 +44401,8 @@
         ],
         "headpiece": "Orichalcum Mask",
         "defense": 42,
-        "effect": "Flower petals will fall on your target for extra damage",
-        "desc": "Orichalcum armor is a Hardmode armor set consisting of the Orichalcum Breastplate and Orichalcum Leggings, as well as three different headpieces: the Orichalcum Mask, Orichalcum Helmet, and Orichalcum Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "effect": "Enemy hits summon a fast flower petal that crosses the whole screen, passing through blocks and hitting every enemy in its path for 36 damage (0.33s cooldown).",
+        "headpieceBonus": "+19% melee damage · +6% critical strike chance · +11% melee speed · +18% movement speed"
       }
     ],
     "accessories": [
@@ -44310,7 +44628,10 @@
         "categories": [
           "all-around"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "grand-gelatin",
@@ -45149,7 +45470,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-bloody-worm-scarf",
@@ -45183,7 +45507,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -45457,9 +45784,13 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech1",
@@ -46881,7 +47212,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -48740,7 +49074,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -49505,7 +49842,10 @@
         "station": "Iron Anvil or Lead Anvil",
         "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
         "expertOnly": true,
-        "altOf": "Summoner Emblem"
+        "altOf": "Summoner Emblem",
+        "markers": [
+          "expert"
+        ]
       }
     ],
     "buffs": [
@@ -50285,7 +50625,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -51954,7 +52297,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -52316,6 +52662,21 @@
     "class": "melee",
     "weapons": [
       {
+        "id": "bananarang",
+        "name": "Bananarang",
+        "slot": "weapon",
+        "icon": "calamity/bananarang.png",
+        "source": "Dropped by Clowns during a Hardmode Blood Moon",
+        "why": "Multiple can be thrown at once; dropped by Hardmode Clowns.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bananarang",
+        "dropRate": "10%",
+        "subclass": "boomerang",
+        "stats": "45 melee dmg"
+      },
+      {
         "id": "chain-guillotines",
         "name": "Chain Guillotines",
         "slot": "weapon",
@@ -52323,12 +52684,157 @@
         "source": "Dropped by Corrupt Mimics (Hardmode)",
         "why": "Launched flail dropped by Corrupt Mimics in Hardmode.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Guillotines",
         "dropRate": "20%",
         "subclass": "flail",
         "stats": "59 melee dmg"
+      },
+      {
+        "id": "comet-quasher",
+        "name": "Comet Quasher",
+        "slot": "weapon",
+        "icon": "calamity/comet-quasher.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "high-damage melee hammer",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Comet_Quasher",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Essence of Sunlight",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+          },
+          {
+            "name": "Starblight Soot",
+            "qty": 12,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starblight_Soot"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "effect": "On use, it swings in a full circle around the player. Hitting an enemy launches them away from the player and rains a barrage of 4 meteors on them that deals 150% base damage.",
+        "subclass": "other"
+      },
+      {
+        "id": "caustic-edge",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Caustic_Edge",
+        "name": "Caustic Edge",
+        "icon": "calamity/caustic-edge.png",
+        "subclass": "sword",
+        "stats": "100 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires a bouncing caustic beam that inflicts Acid Venom and slows on hit.",
+        "why": "Bouncing acid beam.",
+        "materials": [
+          {
+            "name": "Tainted Blade",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tainted_Blade"
+          },
+          {
+            "name": "Cursed Flame",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
+          },
+          {
+            "name": "Spider Fang",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Spider_Fang"
+          }
+        ],
+        "tier": "good"
+      },
+      {
+        "id": "earthen-pike",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Earthen_Pike",
+        "name": "Earthen Pike",
+        "icon": "calamity/earthen-pike.png",
+        "subclass": "spear",
+        "stats": "85 melee dmg",
+        "source": "Dropped by the Earth Elemental",
+        "dropRate": "25%",
+        "effect": "Sprays gravity-affected fossil shards on swing, inflicting Armor Crunch.",
+        "why": "Fossil-shard spear.",
+        "tier": "best"
+      },
+      {
+        "id": "clam-crusher",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clam_Crusher",
+        "name": "Clam Crusher",
+        "icon": "calamity/clam-crusher.png",
+        "subclass": "flail",
+        "stats": "150 melee dmg",
+        "source": "Dropped by the Giant Clam mini boss",
+        "dropRate": "25%",
+        "effect": "Launches a huge clam that inflicts Eutrophication; hits harder after being airborne.",
+        "why": "Stunning clam flail.",
+        "tier": "good"
+      },
+      {
+        "id": "yin-yo",
+        "slot": "weapon",
+        "topPick": false,
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yin-Yo",
+        "name": "Yin-Yo",
+        "icon": "calamity/yin-yo.png",
+        "subclass": "yoyo",
+        "stats": "44 melee dmg",
+        "source": "Crafted at an Iron or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "Fires light and dark shards at nearby enemies.",
+        "why": "Light/dark shard yoyo.",
+        "materials": [
+          {
+            "name": "Valor",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Valor"
+          },
+          {
+            "name": "Dark Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Shard"
+          },
+          {
+            "name": "Light Shard",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Light_Shard"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          }
+        ],
+        "tier": "good"
       },
       {
         "id": "darklight-greatsword",
@@ -52360,7 +52866,8 @@
           }
         ],
         "effect": "When swung, it fires a blue or purple blade that starts off slow before accelerating at full speed but will lose velocity as it goes through tiles and fade out before disappearing. The blades pierce twice and function similarly to the Death Sickle 's scythes.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "inferna-cutter",
@@ -52392,7 +52899,8 @@
           }
         ],
         "effect": "When swung, it emits light particles and releases several sparks similar to those fired by the Butcher's Chainsaw, which deal 50% of the weapon's damage. When performing critical hits, it will also cause a small explosion, dealing 50% of the weapon's damage and can only hit the same enemy.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "majestic-guard",
@@ -52403,7 +52911,7 @@
         "why": "difficult to use; suits multi-hit targets",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Majestic_Guard",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -52434,7 +52942,8 @@
           }
         ],
         "effect": "When used, the sword is swung back and forth in front of the player. Striking an enemy launches them away, and heals the player for 7 health; health gained has diminishing returns on consecutive hits.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "starnight-lance",
@@ -52445,7 +52954,7 @@
         "why": "viable melee spear option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starnight_Lance",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -52456,10 +52965,69 @@
           }
         ],
         "effect": "When used, it fires a starlight beam that pierces twice and travels a moderate distance before dissipating. The spear and beams inflict the Frostbite debuff.",
-        "subclass": "spear"
+        "subclass": "spear",
+        "secondary": true
       }
     ],
     "armor": [
+      {
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
+        "slot": "armor",
+        "icon": "armor-sets/titanium-armor-melee.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "tags": [
+          "hardmode"
+        ],
+        "topPick": false,
+        "headpiece": "Titanium Mask",
+        "pieces": [
+          "Titanium Mask",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ],
+        "pieceRecipes": [
+          {
+            "piece": "Titanium Mask",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 13,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Breastplate",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 26,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          },
+          {
+            "piece": "Titanium Leggings",
+            "materials": [
+              {
+                "name": "Titanium Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
+              }
+            ],
+            "station": "Mythril Anvil or Orichalcum Anvil"
+          }
+        ],
+        "defense": 49,
+        "headpieceBonus": "+16% melee damage · +15% melee critical strike chance · +14% melee speed · +6% movement speed",
+        "effect": "Titanium Barrier: being hit or attacking surrounds you with rotating titanium shards that block incoming damage.",
+        "tier": "best"
+      },
       {
         "id": "adamantite-armor",
         "name": "Adamantite armor",
@@ -52469,7 +53037,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
         "pieceRecipes": [
           {
@@ -52514,85 +53082,7 @@
         ],
         "headpiece": "Adamantite Helmet",
         "headpieceBonus": "+22% melee damage · +14% melee critical strike chance · +20% melee speed · +25% movement speed",
-        "desc": "Adamantite armor is a Hardmode armor set consisting of the Adamantite Breastplate and Adamantite Leggings, as well as three different headpieces: the Adamantite Helmet, Adamantite Mask, and Adamantite Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
-      },
-      {
-        "id": "orichalcum-armor",
-        "name": "Orichalcum armor",
-        "slot": "armor",
-        "icon": "armor-sets/orichalcum-armor-melee.png",
-        "source": "Crafted",
-        "why": "alternate class-specific armor",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Orichalcum Breastplate",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Headgear",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Helmet",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Leggings",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Mask",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Orichalcum Mask",
-          "Orichalcum Breastplate",
-          "Orichalcum Leggings"
-        ],
-        "headpiece": "Orichalcum Mask",
-        "defense": 42,
-        "effect": "Flower petals will fall on your target for extra damage",
-        "desc": "Orichalcum armor is a Hardmode armor set consisting of the Orichalcum Breastplate and Orichalcum Leggings, as well as three different headpieces: the Orichalcum Mask, Orichalcum Helmet, and Orichalcum Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "effect": "25% of your current damage reduction is added to your critical strike chance. Doing damage builds bonus defense up to +10; it decays over 3.5 seconds when you stop dealing damage."
       }
     ],
     "accessories": [
@@ -52833,7 +53323,10 @@
         "categories": [
           "all-around"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "charm-of-myths",
@@ -53652,7 +54145,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-bloody-worm-scarf",
@@ -53686,7 +54182,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -53930,9 +54429,13 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "note": "Still finding out which weapons and accessories are the best for this phase",
+    "curated": true,
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech2",
@@ -55426,7 +55929,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -57151,7 +57657,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -58767,7 +59276,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -60538,7 +61050,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-frost-flare",
@@ -60907,7 +61422,7 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "versatile melee weapon with multiple usable attunements",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Biome_Blade",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -60998,7 +61513,8 @@
           }
         ],
         "effect": "When swung, it fires a blue or purple blade that starts off slow before accelerating at full speed but will lose velocity as it goes through tiles and fade out before disappearing. The blades pierce twice and function similarly to the Death Sickle 's scythes.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "pwnagehammer",
@@ -61009,7 +61525,7 @@
         "why": "returning hammer with strong area damage",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pwnagehammer",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -61051,7 +61567,7 @@
         "why": "Swings a wide yellow aura reaching about twice the sword length, hitting up to six enemies.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/True_Excalibur",
         "materials": [
           {
@@ -61067,7 +61583,75 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "subclass": "sword",
-        "stats": "72 melee dmg"
+        "stats": "72 melee dmg",
+        "secondary": true
+      },
+      {
+        "id": "gungnir",
+        "name": "Gungnir",
+        "slot": "weapon",
+        "icon": "items/gungnir.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "A fast-attacking spear.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "spear",
+        "stats": "61 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gungnir",
+        "tier": "good",
+        "materials": [
+          {
+            "name": "Hallowed Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil"
+      },
+      {
+        "id": "brimlash",
+        "name": "Brimlash",
+        "slot": "weapon",
+        "icon": "calamity/brimlash.png",
+        "subclass": "sword",
+        "stats": "60 melee dmg",
+        "source": "Crafted at a Mythril or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brimlash",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a brimstone bolt that explodes into more bolts on hit.",
+        "why": "Splitting brimstone bolts.",
+        "materials": [
+          {
+            "name": "Ashes of Calamity",
+            "qty": 12,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ashes_of_Calamity"
+          },
+          {
+            "name": "Unholy Core",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
+          }
+        ]
+      },
+      {
+        "id": "oblivion",
+        "name": "Oblivion",
+        "slot": "weapon",
+        "icon": "calamity/oblivion.png",
+        "subclass": "yoyo",
+        "stats": "50 melee dmg",
+        "source": "Dropped by the Calamitas Clone",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Oblivion",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires brimstone darts at nearby enemies, inflicting Brimstone Flames.",
+        "why": "Brimstone-dart yoyo."
       }
     ],
     "armor": [
@@ -61081,7 +61665,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_armor",
         "pieceRecipes": [
           {
             "piece": "Chlorophyte Mask",
@@ -61124,135 +61708,64 @@
           "Chlorophyte Greaves"
         ],
         "headpiece": "Chlorophyte Mask",
-        "headpieceBonus": "+21% melee damage · +21% melee critical strike chance · +5% damage reduction",
-        "effect": "+5% movement speed · Leaf Crystal minion fires bolts at nearby enemies",
+        "headpieceBonus": "+5% damage reduction · +21% melee damage · +21% melee critical strike chance · +5% movement speed",
+        "effect": "Summons a Leaf Crystal above you that periodically fires a homing bolt for 100 base damage.",
         "desc": "Chlorophyte armor is a Hardmode, post- mechanical bosses armor set consisting of the Chlorophyte Plate Mail and Chlorophyte Greaves, as well as four different headpieces: the Chlorophyte Mask, Chlorophyte Helmet, Chlorophyte Headgear, and Chlorophyte Visor, providing bonuses for the melee, ranged, magic and summon damage type respectively."
       },
       {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
+        "id": "daedalus-armor",
+        "name": "Daedalus Armor",
         "slot": "armor",
-        "icon": "armor-sets/hallowed-armor-melee.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Brief immunity after striking an enemy.",
+        "icon": "armor-sets/daedalus-armor-melee.png",
+        "source": "Crafted",
         "tags": [],
         "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_armor",
+        "defense": 55,
+        "headpiece": "Daedalus Helm",
+        "pieces": [
+          "Daedalus Helm",
+          "Daedalus Breastplate",
+          "Daedalus Greaves"
+        ],
+        "why": "Reflective melee armor.",
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "effect": "+55 defense · +18% melee damage · +18% melee critical strike chance · +10% melee speed · +500 aggro · +10% movement speed · Reflect enemy projectiles, negating all damage from the attack · Reflect does not trigger for hits under 5% of max health; its cooldown scales from 20s to 90s with the damage dodged, and is shared with all other dodges and reflects",
         "pieceRecipes": [
           {
-            "piece": "Hallowed Helmet",
+            "piece": "Daedalus Helm",
+            "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
+            ]
           },
           {
-            "piece": "Hallowed Plate Mail",
+            "piece": "Daedalus Breastplate",
+            "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 15,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
+            ]
           },
           {
-            "piece": "Hallowed Greaves",
+            "piece": "Daedalus Greaves",
+            "station": "Mythril Anvil or Orichalcum Anvil",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 10,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
+            ]
           }
-        ],
-        "pieces": [
-          "Hallowed Helmet",
-          "Hallowed Plate Mail",
-          "Hallowed Greaves"
-        ],
-        "headpiece": "Hallowed Helmet",
-        "defense": 35,
-        "desc": "Hallowed armor is a Hardmode, post-one mechanical boss armor set consisting of the Hallowed Plate Mail and Hallowed Greaves, as well as four different headpieces: the Hallowed Mask, Hallowed Helmet, Hallowed Headgear, and Hallowed Hood, providing bonuses for melee, ranged, magic, and summon damage type respectively.",
-        "headpieceBonus": "+22% ranged damage · +15% ranged critical strike chance"
-      },
-      {
-        "id": "turtle-armor",
-        "name": "Turtle armor",
-        "slot": "armor",
-        "icon": "armor-sets/turtle-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Turtle Helmet",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              },
-              {
-                "name": "Turtle Shell",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Turtle Scale Mail",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              },
-              {
-                "name": "Turtle Shell",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          },
-          {
-            "piece": "Turtle Leggings",
-            "materials": [
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              },
-              {
-                "name": "Turtle Shell",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Turtle_Shell"
-              }
-            ],
-            "station": "Mythril Anvil or Orichalcum Anvil"
-          }
-        ],
-        "defense": 65,
-        "pieces": [
-          "Turtle Helmet",
-          "Turtle Scale Mail",
-          "Turtle Leggings"
-        ],
-        "effect": "+15% damage reduction · +14% melee damage · +12% melee critical strike chance · +750 aggro · Stronger Thorns: reflects 200% of contact damage",
-        "desc": "Turtle armor is a Hardmode, post- mechanical bosses melee armor set consisting of the Turtle Helmet, Turtle Scale Mail, and Turtle Leggings."
+        ]
       }
     ],
     "accessories": [
@@ -61461,39 +61974,21 @@
         ]
       },
       {
-        "id": "bloody-worm-scarf",
-        "name": "Bloody Worm Scarf",
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
         "slot": "accessory",
-        "icon": "calamity/bloody-worm-scarf.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "all-around accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Worm_Scarf",
-        "station": "Iron Anvil or Lead Anvil",
-        "materials": [
-          {
-            "name": "Bloody Worm Tooth",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Worm_Tooth"
-          },
-          {
-            "name": "Worm Scarf",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf"
-          },
-          {
-            "name": "Soul of Night",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
-          }
-        ],
-        "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-        "categories": [
-          "all-around"
-        ],
-        "expertOnly": true
+        "altOf": "Mechanical Glove"
       },
       {
         "id": "charm-of-myths",
@@ -61552,6 +62047,44 @@
           }
         ],
         "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "bloody-worm-scarf",
+        "name": "Bloody Worm Scarf",
+        "slot": "accessory",
+        "icon": "calamity/bloody-worm-scarf.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "all-around accessory",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Worm_Scarf",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Bloody Worm Tooth",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloody_Worm_Tooth"
+          },
+          {
+            "name": "Worm Scarf",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Worm_Scarf"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          }
+        ],
+        "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
+        "categories": [
+          "all-around"
+        ],
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       }
     ],
     "buffs": [
@@ -62246,7 +62779,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-bloody-worm-scarf",
@@ -62280,7 +62816,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -62513,9 +63052,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-plantera",
@@ -62597,7 +63139,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_armor",
         "pieceRecipes": [
           {
             "piece": "Chlorophyte Mask",
@@ -63872,7 +64414,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -64454,7 +64999,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_armor",
         "pieceRecipes": [
           {
             "piece": "Chlorophyte Headgear",
@@ -65605,7 +66150,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -67230,7 +67778,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-hallowed-rune",
@@ -69006,7 +69557,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -69539,7 +70093,7 @@
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_armor",
         "pieceRecipes": [
           {
             "piece": "Chlorophyte Mask",
@@ -69582,8 +70136,8 @@
           "Chlorophyte Greaves"
         ],
         "headpiece": "Chlorophyte Mask",
-        "headpieceBonus": "+21% melee damage · +21% melee critical strike chance · +5% damage reduction",
-        "effect": "+5% movement speed · Leaf Crystal minion fires bolts at nearby enemies",
+        "headpieceBonus": "+5% damage reduction · +21% melee damage · +21% melee critical strike chance · +5% movement speed",
+        "effect": "Summons a Leaf Crystal above you that periodically fires a homing bolt for 100 base damage.",
         "desc": "Chlorophyte armor is a Hardmode, post- mechanical bosses armor set consisting of the Chlorophyte Plate Mail and Chlorophyte Greaves, as well as four different headpieces: the Chlorophyte Mask, Chlorophyte Helmet, Chlorophyte Headgear, and Chlorophyte Visor, providing bonuses for the melee, ranged, magic and summon damage type respectively."
       },
       {
@@ -70727,7 +71281,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-bloody-worm-scarf",
@@ -70761,7 +71318,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -72412,7 +72972,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -74154,7 +74717,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -75850,7 +76416,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-hallowed-rune",
@@ -77580,7 +78149,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "Taking damage confuses nearby enemies and spawns a dank creeper · The dank creeper flies above you, exploding into several shaderain clouds · Grants or improves the ability to dodge attacks · After dodging, summon damage and crit chance are boosted by 10%",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           }
         ]
       },
@@ -79482,7 +80054,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-celestial-shell",
@@ -88673,7 +89248,10 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "effect": "When equipped, it provides 2 defense, and increases damage reduction and melee damage by 10%.",
-            "expertOnly": true
+            "expertOnly": true,
+            "markers": [
+              "expert"
+            ]
           },
           {
             "id": "calpool-celestial-shell",

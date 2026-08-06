@@ -1136,6 +1136,11 @@ export function Loadouts() {
     const out: Item[] = [];
     for (const holder of slotFitHolders) {
       if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
+      /* An Expert-only pick (Bloody Worm Scarf, Amalgamated Brain) is the guide's
+         real choice, so it stays in its slot - dimmed and marked Expert - rather
+         than being swapped for a pool pick like Star Veil. This matches how the
+         "or" alternatives and the Demon Heart slot already surface Expert content. */
+      if ((holder.markers ?? []).includes('expert') || holder.expertOnly === true) { out.push(holder); continue; }
       if (haveEnough) { substitutions.push({ original: holder, replacement: null, reason: 'expert' }); continue; }
 
       const ownAlt = (altsBy.get(holder.name) ?? [])
