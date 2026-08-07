@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import type { ReactNode, SyntheticEvent } from 'react';
 import type { Item } from '../../data/schema';
 import { useAppState } from '../../lib/app-context';
@@ -63,45 +62,78 @@ function makeWikiName(stem: string): string {
 
 const FALLBACK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect width='48' height='48' fill='%23EAF4FB'/%3E%3Ctext x='24' y='32' text-anchor='middle' font-size='24' fill='%234A6373' font-family='sans-serif'%3E%3F%3C/text%3E%3C/svg%3E";
 
-/* Bosses a drop source can name. Longest first so "Skeletron Prime" wins over
-   "Skeletron" and "Empress of Light" over any shorter run. Each becomes a link
-   to the boss roadmap. Event bosses (Pumpking, Ice Queen, Martian Saucer) are
-   included even though the roadmap does not list them individually - the link
-   still takes the reader to the bosses page. */
-// Bosses the roadmap page lists: their name links there. The rest (event
-// bosses like Pumpking or the Martian Saucer) are not on the roadmap, so their
-// name links out to the wiki instead.
-const ROADMAP_BOSSES = new Set([
-  'King Slime', 'Eye of Cthulhu', 'Eater of Worlds', 'Brain of Cthulhu',
-  'Queen Bee', 'Skeletron', 'Deerclops', 'Wall of Flesh', 'The Twins',
-  'The Destroyer', 'Skeletron Prime', 'Plantera', 'Queen Slime', 'Golem',
-  'Duke Fishron', 'Empress of Light', 'Lunatic Cultist', 'Moon Lord',
-]);
-const BOSS_NAMES = [
-  ...ROADMAP_BOSSES,
-  'Martian Saucer', 'Mourning Wood', 'Ice Queen', 'Pumpking',
-].sort((a, b) => b.length - a.length);
-const BOSS_RE = new RegExp(`\\b(${BOSS_NAMES.join('|')})\\b`, 'g');
+/* Every boss or mob a drop source can name, mapped to its exact wiki URL. Vanilla
+   entities point straight at the Terraria wiki (linking them on the Calamity wiki
+   would 30x-redirect and stall); Calamity entities point at the Calamity wiki.
+   Plural forms in the text ("Red Devils", "Ice Claspers") map to the singular
+   page. Longest names are matched first so "Skeletron Prime" beats "Skeletron". */
+const V = 'https://terraria.wiki.gg/wiki';
+const C = 'https://calamitymod.wiki.gg/wiki';
+const ENTITY_URL: Record<string, string> = {
+  // Vanilla bosses that Calamity rebalances (Revengeance / Death) have their own
+  // Calamity wiki page, so they link there - not the Terraria wiki.
+  'King Slime': `${C}/King_Slime`, 'Eye of Cthulhu': `${C}/Eye_of_Cthulhu`,
+  'Eater of Worlds': `${C}/Eater_of_Worlds`, 'Brain of Cthulhu': `${C}/Brain_of_Cthulhu`,
+  'Queen Bee': `${C}/Queen_Bee`, 'Skeletron Prime': `${C}/Skeletron_Prime`,
+  'Skeletron': `${C}/Skeletron`, 'Deerclops': `${C}/Deerclops`, 'Wall of Flesh': `${C}/Wall_of_Flesh`,
+  'The Twins': `${C}/The_Twins`, 'The Destroyer': `${C}/The_Destroyer`, 'Plantera': `${C}/Plantera`,
+  'Queen Slime': `${C}/Queen_Slime`, 'Golem': `${C}/Golem`, 'Duke Fishron': `${C}/Duke_Fishron`,
+  'Empress of Light': `${C}/Empress_of_Light`, 'Lunatic Cultist': `${C}/Lunatic_Cultist`,
+  'Moon Lord': `${C}/Moon_Lord`,
+  // Vanilla entities Calamity does NOT give a page (they redirect, which stalls) -
+  // link straight to the Terraria wiki.
+  'Betsy': `${V}/Betsy`, 'Martian Saucer': `${V}/Martian_Saucer`,
+  'Mourning Wood': `${V}/Mourning_Wood`, 'Ice Queen': `${V}/Ice_Queen`, 'Pumpking': `${V}/Pumpking`,
+  'Everscream': `${V}/Everscream`,
+  // vanilla mobs (plural in text -> singular page)
+  'Red Devils': `${V}/Red_Devil`, 'Vampires': `${V}/Vampire`, 'Hellbats': `${V}/Hellbat`,
+  'Lava Bats': `${V}/Lava_Bat`, 'Blood Zombies': `${V}/Blood_Zombie`, 'Dripplers': `${V}/Drippler`,
+  'Corrupt Mimics': `${V}/Mimic`, 'Clowns': `${V}/Clown`, 'Voodoo Demons': `${V}/Voodoo_Demon`,
+  'Goblin Warlocks': `${V}/Goblin_Warlock`, 'Bone Serpents': `${V}/Bone_Serpent`,
+  // Calamity bosses/mobs
+  'Desert Scourge': `${C}/Desert_Scourge`, 'Crabulon': `${C}/Crabulon`,
+  'The Hive Mind': `${C}/The_Hive_Mind`, 'Hive Mind': `${C}/The_Hive_Mind`,
+  'The Perforators': `${C}/The_Perforators`, 'Perforators': `${C}/The_Perforators`,
+  'Cryogen': `${C}/Cryogen`, 'Calamitas Clone': `${C}/Calamitas_Clone`,
+  'Astrum Aureus': `${C}/Astrum_Aureus`, 'Astrum Deus': `${C}/Astrum_Deus`,
+  'Ravager': `${C}/Ravager`, 'Leviathan and Anahita': `${C}/Leviathan_and_Anahita`,
+  'Providence': `${C}/Providence,_the_Profaned_Goddess`, 'Profaned Guardians': `${C}/Profaned_Guardians`,
+  'Ceaseless Void': `${C}/Ceaseless_Void`, 'Storm Weaver': `${C}/Storm_Weaver`,
+  'Signus': `${C}/Signus,_Envoy_of_the_Devourer`, 'Polterghast': `${C}/Polterghast`,
+  'The Old Duke': `${C}/The_Old_Duke`, 'The Devourer of Gods': `${C}/The_Devourer_of_Gods`,
+  'Devourer of Gods': `${C}/The_Devourer_of_Gods`, 'Yharon': `${C}/Yharon,_Dragon_of_Rebirth`,
+  'Exo Mechs': `${C}/Exo_Mechs`, 'Supreme Witch, Calamitas': `${C}/Supreme_Witch,_Calamitas`,
+  'Supreme Witch': `${C}/Supreme_Witch,_Calamitas`, 'Supreme Calamitas': `${C}/Supreme_Witch,_Calamitas`,
+  'The Dragonfolly': `${C}/The_Dragonfolly`, 'Dragonfolly': `${C}/The_Dragonfolly`,
+  'Giant Clam': `${C}/Giant_Clam`, 'Cnidrions': `${C}/Cnidrion`, 'Cnidrion': `${C}/Cnidrion`,
+  'Wulfrum Rovers': `${C}/Wulfrum_Rover`, 'Ice Claspers': `${C}/Ice_Clasper`,
+  'Cloud Elementals': `${C}/Cloud_Elemental`, 'Earth Elemental': `${C}/Earth_Elemental`,
+  'Viperfish': `${C}/Viperfish`, 'Eidolon Wyrms': `${C}/Eidolon_Wyrm`, 'Eidolon Wyrm': `${C}/Eidolon_Wyrm`,
+  'The Slime God': `${C}/The_Slime_God`, 'Slime God': `${C}/The_Slime_God`,
+  'The Plaguebringer Goliath': `${C}/The_Plaguebringer_Goliath`, 'Plaguebringer Goliath': `${C}/The_Plaguebringer_Goliath`,
+  'Hemogoblin Sharks': `${C}/Hemogoblin_Shark`, 'Aquatic Scourge': `${C}/Aquatic_Scourge`,
+  // vanilla event/mob entities without a Calamity page
+  'Martian Engineers': `${V}/Martian_Engineer`, 'Angry Nimbus': `${V}/Angry_Nimbus`,
+};
+const ENTITY_RE = new RegExp(
+  `\\b(${Object.keys(ENTITY_URL).sort((a, b) => b.length - a.length)
+    .map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'g',
+);
 
-/** Renders a source string with any boss name turned into a link, underlined so
-    the reader sees it is clickable. Roadmap bosses go to the boss page; event
-    bosses and mobs not on the roadmap go to their wiki page. */
-function SourceText({ text, onClose }: { text: string; onClose: () => void }) {
+/** Renders a source string with every known boss or mob name turned into an
+    external wiki link (its exact page), underlined so it reads as clickable. */
+function SourceText({ text }: { text: string }) {
   const parts: ReactNode[] = [];
   let last = 0;
-  for (const m of text.matchAll(BOSS_RE)) {
+  for (const m of text.matchAll(ENTITY_RE)) {
     const i = m.index ?? 0;
+    if (i < last) continue;
     const name = m[0];
     if (i > last) parts.push(text.slice(last, i));
-    parts.push(ROADMAP_BOSSES.has(name)
-      ? <Link key={i} to="/bosses" onClick={onClose} className={styles.bossLink}>{name}</Link>
-      : (
-        <a
-          key={i} className={styles.bossLink}
-          href={`${WIKI.replace('/Special:FilePath', '')}/${name.replace(/ /g, '_')}`}
-          target="_blank" rel="noreferrer noopener"
-        >{name}</a>
-      ));
+    parts.push(
+      <a key={i} className={styles.bossLink} href={ENTITY_URL[name]}
+        target="_blank" rel="noreferrer noopener">{name}</a>,
+    );
     last = i + name.length;
   }
   if (last < text.length) parts.push(text.slice(last));
@@ -336,17 +368,16 @@ export function ItemModal({ item, onClose }: { item: Item | null; onClose: () =>
               states rather than single items, so they have no acquisition line.
               Omit the row instead of printing an empty one. */}
           {item.source && (
-            <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span><SourceText text={item.source} onClose={onClose} /></span></div>
+            <div className={styles.kvRow}><span className={styles.kvKey}>Source</span><span><SourceText text={item.source} /></span></div>
           )}
           {pieceRecipes.length > 0 && (
             <div className={styles.kvRow}>
-              <span className={styles.kvKey}>Craft</span>
+              <span className={styles.kvKey}>Materials</span>
               <div className={styles.pieces}>
                 {pieceRecipes.map((p) => (
                   <div key={p.piece} className={styles.piece}>
                     <div className={styles.pieceName}>
                       {p.piece}
-                      {p.station && <span className={styles.pieceAt}>at {p.station}</span>}
                     </div>
                     <ul className={styles.materials}>
                       {p.materials.map((m) => (
