@@ -80,10 +80,10 @@
       },
       {
         "id": "sky-dragons-fury",
-        "name": "Sky Dragon\u2019s Fury",
+        "name": "Sky Dragon’s Fury",
         "slot": "weapon",
         "icon": "items/sky-dragons-fury.png",
-        "source": "Dropped by Betsy during Tier 3 of the Old One\u2019s Army",
+        "source": "Dropped by Betsy during Tier 3 of the Old One’s Army",
         "why": "Nunchaku-style flail that spins and fires a homing burst.",
         "tags": [],
         "topPick": false,
@@ -158,7 +158,7 @@
         "stats": "86 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Christmas_Tree_Sword",
         "tier": "other",
-        "dropRate": "3.46\u201310.37% 6.22\u201331.11%"
+        "dropRate": "3.46–10.37% 6.22–31.11%"
       },
       {
         "id": "north-pole",
@@ -175,8 +175,8 @@
         "stats": "80 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/North_Pole",
         "tier": "good",
-        "dropRate": "5.19\u201310.37% depending on the wave",
-        "dropRateExpert": "15.56\u201331.11% depending on the wave"
+        "dropRate": "5.19–10.37% depending on the wave",
+        "dropRateExpert": "15.56–31.11% depending on the wave"
       },
       {
         "id": "the-eye-of-cthulhu",
@@ -228,8 +228,8 @@
         "stats": "150 melee dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade",
         "tier": "good",
-        "dropRate": "2.5\u201312.5% depending on the wave",
-        "dropRateExpert": "6.25\u201312.5% depending on the wave"
+        "dropRate": "2.5–12.5% depending on the wave",
+        "dropRateExpert": "6.25–12.5% depending on the wave"
       },
       {
         "id": "vampire-knives",
@@ -381,7 +381,7 @@
           }
         ],
         "defense": 61,
-        "effect": "+14% melee damage \u00b7 +8% melee critical strike chance \u00b7 +12% melee speed \u00b7 +12% movement speed \u00b7 +500 aggro \u00b7 Beetle Might (Scale Mail): melee damage and speed rise +10% per hit, up to +30% \u00b7 Beetle Endurance (Shell): up to 45% damage reduction instead"
+        "effect": "+14% melee damage · +8% melee critical strike chance · +12% melee speed · +12% movement speed · +500 aggro · Beetle Might (Scale Mail): melee damage and speed rise +10% per hit, up to +30% · Beetle Endurance (Shell): up to 45% damage reduction instead"
       }
     ],
     "accessories": [
@@ -1468,8 +1468,8 @@
         "subclass": "other",
         "stats": "57 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Elf_Melter",
-        "dropRate": "6.25\u201316.67%",
-        "dropRateExpert": "12.5\u201350%"
+        "dropRate": "6.25–16.67%",
+        "dropRateExpert": "12.5–50%"
       },
       {
         "id": "eventide",
@@ -1503,8 +1503,8 @@
         "stats": "67 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Snowman_Cannon",
         "tier": "best",
-        "dropRate": "5.19\u201310.37%",
-        "dropRateExpert": "15.56\u201331.11%"
+        "dropRate": "5.19–10.37%",
+        "dropRateExpert": "15.56–31.11%"
       },
       {
         "id": "chain-gun",
@@ -1521,8 +1521,8 @@
         "stats": "38 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun",
         "tier": "good",
-        "dropRate": "6.25\u201316.67%",
-        "dropRateExpert": "12.5\u201350%"
+        "dropRate": "6.25–16.67%",
+        "dropRateExpert": "12.5–50%"
       },
       {
         "id": "stake-launcher",
@@ -1539,7 +1539,7 @@
         "stats": "75 ranged dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Stake_Launcher",
         "tier": "good",
-        "dropRate": "2.86\u201320% 5\u201320%"
+        "dropRate": "2.86–20% 5–20%"
       },
       {
         "id": "piranha-gun",
@@ -1676,7 +1676,24 @@
           }
         ],
         "defense": 51,
-        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance \u00b7 Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance \u00b7 Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
+        "headVariants": [
+          {
+            "name": "Headgear",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of bows, repeaters, arrows, and Stakes",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Mask",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of guns, bullets, and Candy Corn",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Helmet",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of specialist ranged weapons (non-consumable, not bows or guns) and their ammunition",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          }
+        ],
+        "headpiece": "Shroomite Headgear"
       },
       {
         "id": "red-riding-armor",
@@ -2857,8 +2874,8 @@
         "stats": "58 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Blizzard_Staff",
         "tier": "best",
-        "dropRate": "5.19\u201310.37% (increases with wave)",
-        "dropRateExpert": "15.56\u201331.11% (increases with wave)"
+        "dropRate": "5.19–10.37% (increases with wave)",
+        "dropRateExpert": "15.56–31.11% (increases with wave)"
       },
       {
         "id": "razorpine",
@@ -2875,8 +2892,8 @@
         "stats": "48 magic dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Razorpine",
         "tier": "good",
-        "dropRate": "3.46\u201310.37% (increases with wave)",
-        "dropRateExpert": "6.22\u201331.11% (increases with wave)"
+        "dropRate": "3.46–10.37% (increases with wave)",
+        "dropRateExpert": "6.22–31.11% (increases with wave)"
       },
       {
         "id": "rainbow-gun",
@@ -3072,12 +3089,12 @@
         "headVariants": [
           {
             "name": "Mask",
-            "headpieceBonus": "+42 defense \u00b7 +25% magic damage \u00b7 +17% magic critical strike chance \u00b7 +60 maximum mana \u00b7 +13% mana cost reduction \u00b7 +8% movement speed",
-            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon\u2019s damage and able to crit."
+            "headpieceBonus": "+42 defense · +25% magic damage · +17% magic critical strike chance · +60 maximum mana · +13% mana cost reduction · +8% movement speed",
+            "effect": "Homing damage orbs spawn when you deal magic damage, each dealing 100% of the weapon’s damage and able to crit."
           },
           {
             "name": "Hood",
-            "headpieceBonus": "+30 defense \u00b7 -25% magic damage \u00b7 +7% magic critical strike chance \u00b7 +8% movement speed",
+            "headpieceBonus": "+30 defense · -25% magic damage · +7% magic critical strike chance · +8% movement speed",
             "effect": "Lifesteal orbs spawn when you deal magic damage, flying to you and restoring 20% of the damage dealt as health."
           }
         ]
@@ -3243,7 +3260,7 @@
           }
         ],
         "station": "Tinkerer's Workshop",
-        "effect": "Increases pickup range for mana stars \u00b7 Restores mana when damaged \u00b7 Increases maximum mana by 20",
+        "effect": "Increases pickup range for mana stars · Restores mana when damaged · Increases maximum mana by 20",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Celestial_Cuffs",
         "slotExtra": true
       }
@@ -4098,7 +4115,7 @@
               }
             ],
             "station": "Tinkerer's Workshop",
-            "effect": "8% reduced mana cost \u00b7 Automatically use mana potions when needed",
+            "effect": "8% reduced mana cost · Automatically use mana potions when needed",
             "wikiUrl": "https://terraria.wiki.gg/wiki/Mana_Flower"
           }
         ]
@@ -4212,8 +4229,8 @@
         "stats": "55 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Raven_Staff",
         "tier": "good",
-        "dropRate": "2.5\u201312.5% (increases with wave)",
-        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
+        "dropRate": "2.5–12.5% (increases with wave)",
+        "dropRateExpert": "6.25–12.5% (increases with wave)"
       },
       {
         "id": "staff-of-the-frost-hydra",
@@ -4332,8 +4349,8 @@
         "stats": "110 summon dmg",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Dark_Harvest",
         "tier": "best",
-        "dropRate": "2.5\u201312.5% (increases with wave)",
-        "dropRateExpert": "6.25\u201312.5% (increases with wave)"
+        "dropRate": "2.5–12.5% (increases with wave)",
+        "dropRateExpert": "6.25–12.5% (increases with wave)"
       },
       {
         "id": "deadly-sphere-staff",
@@ -4428,7 +4445,7 @@
           "Tiki Pants"
         ],
         "defense": 35,
-        "effect": "+30% summon damage \u00b7 +30% whip range \u00b7 +4 minion slots"
+        "effect": "+30% summon damage · +30% whip range · +4 minion slots"
       },
       {
         "id": "spooky-armor",
@@ -4480,7 +4497,7 @@
           "Spooky Leggings"
         ],
         "defense": 30,
-        "effect": "+58% summon damage \u00b7 +4 minion slots \u00b7 +20% movement speed \u00b7 A visual glowing effect around the player."
+        "effect": "+58% summon damage · +4 minion slots · +20% movement speed · A visual glowing effect around the player."
       },
       {
         "id": "valhalla-knights-breastplate",
@@ -4512,8 +4529,8 @@
         "categories": [
           "summon"
         ],
-        "dropRate": "2.86\u201320%",
-        "dropRateExpert": "5\u201320%",
+        "dropRate": "2.86–20%",
+        "dropRateExpert": "5–20%",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Necromantic_Scroll"
       },
       {

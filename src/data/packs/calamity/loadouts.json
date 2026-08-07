@@ -71486,7 +71486,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bladedge_Railbow",
-        "tier": "best",
+        "tier": "good",
         "effect": "It fires out 4 arrows at once, quickly followed by a pair of leaves. The leaves inflict no knockback and deal 70% of the weapon's base damage.",
         "subclass": "bow",
         "materials": [
@@ -71496,7 +71496,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "secondary": true
       },
       {
         "id": "blossom-flux",
@@ -71510,7 +71511,9 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blossom_Flux",
         "tier": "good",
         "effect": "It has two modes of attack: its primary fire (left-click) will shoot leaf arrows at a very high rate, and its secondary fire (right-click) launches a spore orb that travels in a wave pattern and explodes into spore clouds upon impact.",
-        "subclass": "bow"
+        "subclass": "bow",
+        "stats": "18 ranged dmg",
+        "dropRate": "25%"
       },
       {
         "id": "hydra",
@@ -71542,7 +71545,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vial_of_Venom"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "secondary": true
       },
       {
         "id": "megalodon",
@@ -71554,14 +71558,14 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megalodon",
-        "tier": "other",
+        "tier": "good",
         "effect": "When used, it loads a magazine of 30 shots, then alternates between firing bullets and pressurized water jets that pierce once and inflict the Riptide debuff. After exhausting the entire magazine, the gun fires a homing rocket that inflicts Crush Depth before having to reload again, repeating the process.",
         "subclass": "gun",
         "materials": [
           {
             "name": "Megashark",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megashark"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Megashark"
           },
           {
             "name": "Archerfish",
@@ -71569,9 +71573,9 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Archerfish"
           },
           {
-            "name": "Depth Cells",
+            "name": "Depth Cell",
             "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cell"
           },
           {
             "name": "Planty Mush",
@@ -71579,7 +71583,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Planty_Mush"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "stats": "37 ranged dmg"
       },
       {
         "id": "wildfire-bloom",
@@ -71591,7 +71596,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wildfire_Bloom",
-        "tier": "other",
+        "tier": "good",
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used, it fires a long burst of green flames at a moderate range.",
         "subclass": "other",
         "materials": [
@@ -71611,63 +71616,143 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Shard"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "secondary": true
+      },
+      {
+        "id": "chain-gun",
+        "name": "Chain Gun",
+        "slot": "weapon",
+        "icon": "calamity/chain-gun.png",
+        "subclass": "gun",
+        "stats": "38 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chain_Gun",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "A rapid-fire minigun.",
+        "why": "A rapid-fire minigun",
+        "source": "Dropped by Santa-NK1 during the Frost Moon",
+        "dropRate": "6.25%"
+      },
+      {
+        "id": "aurora-blazer",
+        "name": "Aurora Blazer",
+        "slot": "weapon",
+        "icon": "calamity/aurora-blazer.png",
+        "subclass": "gun",
+        "stats": "69 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aurora_Blazer",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "A flamethrower that sprays astral flames.",
+        "why": "A flamethrower that sprays astral flames",
+        "source": "Dropped by Astrum Aureus",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "vernal-bolter",
+        "name": "Vernal Bolter",
+        "slot": "weapon",
+        "icon": "calamity/vernal-bolter.png",
+        "subclass": "repeater",
+        "stats": "35 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vernal_Bolter",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "An auto-firing bow that fires nature bolts.",
+        "why": "An auto-firing bow that fires nature bolts",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Lunarian Bow",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunarian_Bow"
+          },
+          {
+            "name": "Hallowed Repeater",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Repeater"
+          },
+          {
+            "name": "Living Shard",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Living_Shard"
+          }
+        ]
+      },
+      {
+        "id": "leviatitan",
+        "name": "Leviatitan",
+        "slot": "weapon",
+        "icon": "calamity/leviatitan.png",
+        "subclass": "gun",
+        "stats": "89 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Leviatitan",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires water blasts.",
+        "why": "Fires water blasts",
+        "source": "Dropped by Leviathan and Anahita",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "stake-launcher",
+        "name": "Stake Launcher",
+        "slot": "weapon",
+        "icon": "calamity/stake-launcher.png",
+        "subclass": "gun",
+        "stats": "75 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stake_Launcher",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires stakes that pierce.",
+        "why": "Fires stakes that pierce",
+        "source": "Dropped by Mourning Wood during the Pumpkin Moon, or sold by the Witch Doctor and Arms Dealer",
+        "dropRate": "2.86–20% (by wave)"
+      },
+      {
+        "id": "flak-kraken",
+        "name": "Flak Kraken",
+        "slot": "weapon",
+        "icon": "calamity/flak-kraken.png",
+        "subclass": "launcher",
+        "stats": "78 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flak_Kraken",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires flak rounds that burst.",
+        "why": "Fires flak rounds that burst",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Flak Toxicannon",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flak_Toxicannon"
+          },
+          {
+            "name": "Voidstone",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Voidstone"
+          },
+          {
+            "name": "Depth Cell",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cell"
+          }
+        ]
       }
     ],
     "armor": [
-      {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
-        "slot": "armor",
-        "icon": "armor-sets/hallowed-armor-ranger.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Brief immunity after striking an enemy.",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Hallowed Helmet",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hallowed Plate Mail",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hallowed Greaves",
-            "materials": [
-              {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-              }
-            ]
-          }
-        ],
-        "defense": 35,
-        "pieces": [
-          "Hallowed Helmet",
-          "Hallowed Plate Mail",
-          "Hallowed Greaves"
-        ],
-        "headpiece": "Hallowed Helmet",
-        "desc": "Hallowed armor is a Hardmode, post-one mechanical boss armor set consisting of the Hallowed Plate Mail and Hallowed Greaves, as well as four different headpieces: the Hallowed Mask, Hallowed Helmet, Hallowed Headgear, and Hallowed Hood, providing bonuses for melee, ranged, magic, and summon damage type respectively.",
-        "headpieceBonus": "+22% ranged damage · +15% ranged critical strike chance"
-      },
       {
         "id": "shroomite-armor",
         "name": "Shroomite armor",
@@ -71677,7 +71762,7 @@
         "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
         "pieceRecipes": [
           {
@@ -71718,93 +71803,24 @@
           "Shroomite Leggings"
         ],
         "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance · Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance · Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Reaver Cuisses",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Headgear",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "allClass": true,
         "headVariants": [
           {
-            "name": "Helm",
-            "headpieceBonus": "+70 defense · +10% damage reduction · +600 aggro · +50 maximum health · +4 HP/s · -18% movement speed · -30% flight time · Reduces damage-over-time from debuffs by 20% · On hit, Reaver Rage grants +10% damage, +5% melee speed, and +5 defense"
-          },
-          {
-            "name": "Visage",
-            "headpieceBonus": "+55 defense · +10% damage reduction · +27% movement speed · +10% jump speed · +10% flight time · +10% horizontal flight speed · +50% hook pull and retract speed · Auto-jump · -33% dash cooldown · Immunity to fall damage"
-          },
-          {
             "name": "Headgear",
-            "headpieceBonus": "+48 defense · +10% damage reduction · +12% movement speed · -400 aggro · +20% mining speed · +50% block and wall placement speed · Increased block placement range · Immunity to lava · Move freely through liquids · Spelunker effect · Increased item collection range · Breathe underwater · Emits light · Improved vision in the Abyss"
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of bows, repeaters, arrows, and Stakes",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Mask",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of guns, bullets, and Candy Corn",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Helmet",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of specialist ranged weapons (non-consumable, not bows or guns) and their ammunition",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
           }
         ],
-        "headpiece": "Reaver Helm"
+        "headpiece": "Shroomite Headgear"
       }
     ],
     "accessories": [
@@ -72582,42 +72598,87 @@
     ],
     "ammo": [
       {
+        "id": "sprouting-arrow",
+        "name": "Sprouting Arrow",
+        "slot": "ammo",
+        "icon": "calamity/sprouting-arrow.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sprouting_Arrow",
+        "why": "Grows damaging vines on hit."
+      },
+      {
         "id": "venom-arrow",
         "name": "Venom Arrow",
         "slot": "ammo",
         "icon": "calamity/venom-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 35,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Vial of Venom",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Vial_of_Venom"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It has the highest base damage of all arrows and inflicts the Acid Venom debuff for 10 seconds upon hitting enemies."
+        "source": "Crafted from Cursed Arrows and Vile Powder",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Arrow",
+        "why": "Inflicts Venom.",
+        "altOf": "Sprouting Arrow"
+      },
+      {
+        "id": "dryads-tear",
+        "name": "Dryad's Tear",
+        "slot": "ammo",
+        "icon": "calamity/dryads-tear.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dryad%27s_Tear",
+        "why": "Homing nature bullet."
       },
       {
         "id": "venom-bullet",
         "name": "Venom Bullet",
         "slot": "ammo",
         "icon": "calamity/venom-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Bullet",
-        "effect": "It inflicts the Acid Venom debuff on hit for 10 seconds."
+        "source": "Crafted from Musket Balls and Vile Powder",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Bullet",
+        "why": "Inflicts Venom.",
+        "altOf": "Dryad's Tear"
+      },
+      {
+        "id": "rocket-iii",
+        "name": "Rocket III",
+        "slot": "ammo",
+        "icon": "calamity/rocket-iii.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Purchased from the Cyborg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_III",
+        "why": "Explosive launcher ammo.",
+        "stats": "launcher ammo"
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
+      },
+      {
+        "id": "stake",
+        "name": "Stake",
+        "slot": "ammo",
+        "icon": "calamity/stake.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Sold by the Witch Doctor and Arms Dealer",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stake",
+        "why": "Ammo for the Stake Launcher.",
+        "stats": "Stake Launcher ammo"
       }
     ],
     "accessoryPool": [
@@ -73148,9 +73209,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-golem",
@@ -80737,7 +80801,24 @@
           "Shroomite Leggings"
         ],
         "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headpieceBonus": "Headgear: Increases bow damage by 12%; 5% increased ranged critical strike chance · Mask: Increases gun damage by 12%; 5% increased ranged critical strike chance · Helmet: Increases specialist ranged damage by 12%; These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets; 5% increased ranged critical strike chance"
+        "headVariants": [
+          {
+            "name": "Headgear",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of bows, repeaters, arrows, and Stakes",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Mask",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of guns, bullets, and Candy Corn",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          },
+          {
+            "name": "Helmet",
+            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of specialist ranged weapons (non-consumable, not bows or guns) and their ammunition",
+            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
+          }
+        ],
+        "headpiece": "Shroomite Headgear"
       },
       {
         "id": "reaver-armor",
