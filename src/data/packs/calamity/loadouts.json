@@ -1149,8 +1149,8 @@
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "Corruption bow requiring Shadow Scales dropped by the Eater of Worlds.",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Bow",
         "materials": [
           {
@@ -1197,7 +1197,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flintlock_Pistol",
         "subclass": "gun",
-        "stats": "13 ranged dmg"
+        "stats": "13 ranged dmg",
+        "secondary": true
       },
       {
         "id": "paintball-gun",
@@ -1208,11 +1209,12 @@
         "why": "Fires a three-shot burst of arcing paintballs and uses no ammunition.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Paintball_Gun",
         "dropRate": "10%",
         "subclass": "gun",
-        "stats": "12 ranged dmg"
+        "stats": "12 ranged dmg",
+        "secondary": true
       },
       {
         "id": "spark-spreader",
@@ -1223,7 +1225,7 @@
         "why": "Wulfrum-set gun option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spark_Spreader",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -1244,72 +1246,81 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "other"
-      }
-    ],
-    "armor": [
+        "subclass": "gun",
+        "stats": "16 ranged dmg"
+      },
       {
-        "id": "fossil-armor",
-        "name": "Fossil armor",
-        "slot": "armor",
-        "icon": "armor-sets/fossil-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "id": "minishark",
+        "name": "Minishark",
+        "slot": "weapon",
+        "icon": "calamity/minishark.png",
+        "source": "Purchased from the Arms Dealer (35 GC)",
+        "why": "Fast-firing gun sold by the Arms Dealer before any boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "6 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark",
+        "tier": "good"
+      },
+      {
+        "id": "slagfire-douser",
+        "name": "Slagfire Douser",
+        "slot": "weapon",
+        "icon": "calamity/slagfire-douser.png",
+        "subclass": "gun",
+        "stats": "5 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slagfire_Douser",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Sprays bursts of molten pollen that ignore 10 defense and coat enemies in Searing Lava.",
+        "why": "Molten-pollen flamethrower.",
+        "source": "Found in Brimstone Crates and Slag Crates, or in Ashen Chests in the Brimstone Crag",
+        "dropRate": "10%"
+      },
+      {
+        "id": "boomstick",
+        "name": "Boomstick",
+        "slot": "weapon",
+        "icon": "calamity/boomstick.png",
+        "source": "Found in Ivy Chests and Jungle/Bramble Crates",
+        "why": "Pre-Hardmode shotgun that fires a spread of bullets, found in the Jungle.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
+        "dropRate": "19%",
+        "subclass": "gun",
+        "stats": "14 ranged dmg"
+      },
+      {
+        "id": "blood-rain-bow",
+        "name": "Blood Rain Bow",
+        "slot": "weapon",
+        "icon": "calamity/blood-rain-bow.png",
+        "source": "Dropped by Wandering Eye Fish and Zombie Merman (Blood Moon fishing)",
+        "why": "Fires arrows in an arc that rain down from above.",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Fossil Helmet",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          },
-          {
-            "piece": "Fossil Plate",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          },
-          {
-            "piece": "Fossil Greaves",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          }
-        ],
-        "defense": 13,
-        "pieces": [
-          "Fossil Helmet",
-          "Fossil Plate",
-          "Fossil Greaves"
-        ],
-        "effect": "+5% ranged damage · +8% ranged critical strike chance · +20% ammo conservation",
-        "desc": "Fossil armor is a pre-Hardmode ranged armor set consisting of the Fossil Helmet, Fossil Plate, and Fossil Greaves."
-      },
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Rain_Bow",
+        "dropRate": "12.5%",
+        "subclass": "bow",
+        "stats": "14 ranged dmg"
+      }
+    ],
+    "armor": [
       {
         "id": "snow-ruffian-armor",
         "name": "Snow Ruffian armor",
         "slot": "armor",
         "icon": "armor-sets/snow-ruffian-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
         "why": "alternative class ranged armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snow_Ruffian_armor",
         "pieceRecipes": [
           {
@@ -1379,167 +1390,61 @@
           "Snow Ruffian Greaves"
         ],
         "defense": 9,
-        "effect": "You can glide to negate fall damage · Ranged critical strikes inflict Frostburn for 2 seconds",
-        "desc": "Snow Ruffian armor is a Pre-Hardmode ranged armor set."
+        "effect": "Glide by holding Jump for slow falling and immunity to fall damage · Ranged critical strikes inflict Frostburn for 2 seconds",
+        "headpiece": "Snow Ruffian Mask",
+        "headpieceBonus": "+10% ranged damage · +4% ranged critical strike chance"
       },
       {
-        "id": "gold-armor",
-        "name": "Gold armor",
+        "id": "fossil-armor",
+        "name": "Fossil armor",
         "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
+        "icon": "armor-sets/fossil-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_armor",
         "pieceRecipes": [
           {
-            "piece": "Gold Chainmail",
+            "piece": "Fossil Helmet",
             "materials": [
               {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+                "name": "Sturdy Fossil",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           },
           {
-            "piece": "Gold Greaves",
+            "piece": "Fossil Plate",
             "materials": [
               {
-                "name": "Gold Bar",
+                "name": "Sturdy Fossil",
                 "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           },
           {
-            "piece": "Gold Helmet",
+            "piece": "Fossil Greaves",
             "materials": [
               {
-                "name": "Gold Bar",
+                "name": "Sturdy Fossil",
                 "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           }
-        ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
         ],
         "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "armor-sets/platinum-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "No set bonus. Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Platinum Helmet",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Platinum Chainmail",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Platinum Greaves",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          }
-        ],
-        "defense": 16,
         "pieces": [
-          "Platinum Helmet",
-          "Platinum Chainmail",
-          "Platinum Greaves"
+          "Fossil Helmet",
+          "Fossil Plate",
+          "Fossil Greaves"
         ],
-        "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true,
-        "effect": "+4 defense · +10% damage reduction"
-      },
-      {
-        "id": "silver-armor",
-        "name": "Silver armor",
-        "slot": "armor",
-        "icon": "armor-sets/silver-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Silver Chainmail",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Silver Greaves",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Silver Helmet",
-            "materials": [
-              {
-                "name": "Silver Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Silver_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Silver Helmet",
-          "Silver Chainmail",
-          "Silver Greaves"
-        ],
-        "defense": 10,
-        "effect": "+3 defense · 2 seconds after being hit for ≥20 damage, heal for 10 health; getting hit again during this time will reset the timer",
-        "desc": "Silver armor is a pre-Hardmode armor set consisting of the Silver Helmet, Silver Chainmail, and Silver Greaves. The full set grants 13 defense while equipped.",
-        "allClass": true
+        "effect": "+5% ranged damage · +8% ranged critical strike chance · +20% ammo conservation",
+        "desc": "Fossil armor is a pre-Hardmode ranged armor set consisting of the Fossil Helmet, Fossil Plate, and Fossil Greaves."
       }
     ],
     "accessories": [
@@ -2479,7 +2384,8 @@
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
         "stats": "19 summon dmg"
       }
-    ]
+    ],
+    "curated": true
   },
   {
     "phase": "cal-pre-boss",
@@ -7557,48 +7463,79 @@
     "class": "ranger",
     "weapons": [
       {
-        "id": "blood-rain-bow",
-        "name": "Blood Rain Bow",
+        "id": "demon-bow",
+        "name": "Demon Bow",
         "slot": "weapon",
-        "icon": "calamity/blood-rain-bow.png",
-        "source": "Dropped by Wandering Eye Fish and Zombie Merman (Blood Moon fishing)",
-        "why": "Fires arrows in an arc that rain down from above.",
+        "icon": "calamity/demon-bow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Corruption bow requiring Shadow Scales dropped by the Eater of Worlds.",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Rain_Bow",
-        "dropRate": "12.5%",
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Bow",
+        "materials": [
+          {
+            "name": "Demonite Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
         "subclass": "bow",
         "stats": "14 ranged dmg"
       },
       {
-        "id": "boomstick",
-        "name": "Boomstick",
+        "id": "tendon-bow",
+        "name": "Tendon Bow",
         "slot": "weapon",
-        "icon": "calamity/boomstick.png",
-        "source": "Found in Ivy Chests and Jungle/Bramble Crates",
-        "why": "Pre-Hardmode shotgun that fires a spread of bullets, found in the Jungle.",
+        "icon": "calamity/tendon-bow.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Crimson counterpart to the Demon Bow.",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
-        "dropRate": "19%",
-        "subclass": "gun",
-        "stats": "14 ranged dmg"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tendon_Bow",
+        "materials": [
+          {
+            "name": "Crimtane Bar",
+            "qty": 8,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "subclass": "bow",
+        "stats": "19 ranged dmg"
       },
       {
-        "id": "fungicide",
-        "name": "Fungicide",
+        "id": "flintlock-pistol",
+        "name": "Flintlock Pistol",
         "slot": "weapon",
-        "icon": "calamity/fungicide.png",
-        "source": "Dropped by Crabulon",
-        "why": "reliable auto-firing gun",
+        "icon": "calamity/flintlock-pistol.png",
+        "source": "Purchased from the Arms Dealer (5 GC)",
+        "why": "Basic pistol sold by the Arms Dealer before any boss.",
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide",
-        "effect": "When Musket Balls are used as ammo, it fires a fungus bullet that, upon impact with an enemy or tile, splits into smaller spores which are affected by gravity. These spores quickly home in on nearby enemies and are not affected by gravity while doing so.",
-        "subclass": "gun"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flintlock_Pistol",
+        "subclass": "gun",
+        "stats": "13 ranged dmg",
+        "secondary": true
+      },
+      {
+        "id": "paintball-gun",
+        "name": "Paintball Gun",
+        "slot": "weapon",
+        "icon": "calamity/paintball-gun.png",
+        "source": "Purchased from the Painter",
+        "why": "Fires a three-shot burst of arcing paintballs and uses no ammunition.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Paintball_Gun",
+        "dropRate": "10%",
+        "subclass": "gun",
+        "stats": "12 ranged dmg",
+        "secondary": true
       },
       {
         "id": "spark-spreader",
@@ -7606,10 +7543,10 @@
         "slot": "weapon",
         "icon": "calamity/spark-spreader.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "continuous flame gun for crowds",
+        "why": "Wulfrum-set gun option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spark_Spreader",
         "station": "Iron Anvil or Lead Anvil",
         "materials": [
@@ -7630,72 +7567,96 @@
           }
         ],
         "effect": "When used, it fires bursts of 4 short-ranged orange sparks with a 0.2 second delay in between. The sparks inflict the On Fire! debuff and pierce three enemies.",
-        "subclass": "other"
-      }
-    ],
-    "armor": [
+        "subclass": "gun",
+        "stats": "16 ranged dmg"
+      },
       {
-        "id": "fossil-armor",
-        "name": "Fossil armor",
-        "slot": "armor",
-        "icon": "armor-sets/fossil-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
+        "id": "minishark",
+        "name": "Minishark",
+        "slot": "weapon",
+        "icon": "calamity/minishark.png",
+        "source": "Purchased from the Arms Dealer (35 GC)",
+        "why": "Fast-firing gun sold by the Arms Dealer before any boss.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "gun",
+        "stats": "6 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark",
+        "tier": "good"
+      },
+      {
+        "id": "slagfire-douser",
+        "name": "Slagfire Douser",
+        "slot": "weapon",
+        "icon": "calamity/slagfire-douser.png",
+        "subclass": "gun",
+        "stats": "5 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slagfire_Douser",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Sprays bursts of molten pollen that ignore 10 defense and coat enemies in Searing Lava.",
+        "why": "Molten-pollen flamethrower.",
+        "source": "Found in Brimstone Crates and Slag Crates, or in Ashen Chests in the Brimstone Crag",
+        "dropRate": "10%"
+      },
+      {
+        "id": "boomstick",
+        "name": "Boomstick",
+        "slot": "weapon",
+        "icon": "calamity/boomstick.png",
+        "source": "Found in Ivy Chests and Jungle/Bramble Crates",
+        "why": "Pre-Hardmode shotgun that fires a spread of bullets, found in the Jungle.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
+        "dropRate": "19%",
+        "subclass": "gun",
+        "stats": "14 ranged dmg"
+      },
+      {
+        "id": "blood-rain-bow",
+        "name": "Blood Rain Bow",
+        "slot": "weapon",
+        "icon": "calamity/blood-rain-bow.png",
+        "source": "Dropped by Wandering Eye Fish and Zombie Merman (Blood Moon fishing)",
+        "why": "Fires arrows in an arc that rain down from above.",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Fossil Helmet",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          },
-          {
-            "piece": "Fossil Plate",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          },
-          {
-            "piece": "Fossil Greaves",
-            "materials": [
-              {
-                "name": "Sturdy Fossil",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
-              }
-            ]
-          }
-        ],
-        "defense": 13,
-        "pieces": [
-          "Fossil Helmet",
-          "Fossil Plate",
-          "Fossil Greaves"
-        ],
-        "effect": "+5% ranged damage · +8% ranged critical strike chance · +20% ammo conservation",
-        "desc": "Fossil armor is a pre-Hardmode ranged armor set consisting of the Fossil Helmet, Fossil Plate, and Fossil Greaves."
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Rain_Bow",
+        "dropRate": "12.5%",
+        "subclass": "bow",
+        "stats": "14 ranged dmg"
       },
+      {
+        "id": "fungicide",
+        "name": "Fungicide",
+        "slot": "weapon",
+        "icon": "calamity/fungicide.png",
+        "source": "Dropped by Crabulon",
+        "why": "reliable auto-firing gun",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide",
+        "effect": "When Musket Balls are used as ammo, it fires a fungus bullet that, upon impact with an enemy or tile, splits into smaller spores which are affected by gravity. These spores quickly home in on nearby enemies and are not affected by gravity while doing so.",
+        "subclass": "gun",
+        "secondary": true
+      }
+    ],
+    "armor": [
       {
         "id": "snow-ruffian-armor",
         "name": "Snow Ruffian armor",
         "slot": "armor",
         "icon": "armor-sets/snow-ruffian-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
         "why": "alternative class ranged armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snow_Ruffian_armor",
         "pieceRecipes": [
           {
@@ -7765,265 +7726,117 @@
           "Snow Ruffian Greaves"
         ],
         "defense": 9,
-        "effect": "You can glide to negate fall damage · Ranged critical strikes inflict Frostburn for 2 seconds",
-        "desc": "Snow Ruffian armor is a Pre-Hardmode ranged armor set."
+        "effect": "Glide by holding Jump for slow falling and immunity to fall damage · Ranged critical strikes inflict Frostburn for 2 seconds",
+        "headpiece": "Snow Ruffian Mask",
+        "headpieceBonus": "+10% ranged damage · +4% ranged critical strike chance"
       },
       {
-        "id": "victide-armor",
-        "name": "Victide armor",
+        "id": "fossil-armor",
+        "name": "Fossil armor",
         "slot": "armor",
-        "icon": "armor-sets/victide-armor-ranger.png",
+        "icon": "armor-sets/fossil-armor.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "class-specific set bonus",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor",
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fossil_armor",
         "pieceRecipes": [
           {
-            "piece": "Victide Breastplate",
+            "piece": "Fossil Helmet",
             "materials": [
               {
-                "name": "Sea Remains",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
+                "name": "Sturdy Fossil",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           },
           {
-            "piece": "Victide Coral Turban",
+            "piece": "Fossil Plate",
             "materials": [
               {
-                "name": "Sea Remains",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          },
-          {
-            "piece": "Victide Greaves",
-            "materials": [
-              {
-                "name": "Sea Remains",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          },
-          {
-            "piece": "Victide Headcrab",
-            "materials": [
-              {
-                "name": "Sea Remains",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          },
-          {
-            "piece": "Victide Hermit Helmet",
-            "materials": [
-              {
-                "name": "Sea Remains",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          },
-          {
-            "piece": "Victide Mask",
-            "materials": [
-              {
-                "name": "Sea Remains",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          },
-          {
-            "piece": "Victide Shellmet",
-            "materials": [
-              {
-                "name": "Sea Remains",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Remains"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Victide Coral Turban",
-          "Victide Breastplate",
-          "Victide Greaves"
-        ],
-        "headpiece": "Victide Coral Turban",
-        "defense": 12,
-        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
-        "headpieceBonus": "+1.5 HP/s life regen and 10% increased ranged damage while submerged in liquid"
-      },
-      {
-        "id": "gold-armor",
-        "name": "Gold armor",
-        "slot": "armor",
-        "icon": "armor-sets/gold-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Gold Chainmail",
-            "materials": [
-              {
-                "name": "Gold Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Gold Greaves",
-            "materials": [
-              {
-                "name": "Gold Bar",
+                "name": "Sturdy Fossil",
                 "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           },
           {
-            "piece": "Gold Helmet",
+            "piece": "Fossil Greaves",
             "materials": [
               {
-                "name": "Gold Bar",
+                "name": "Sturdy Fossil",
                 "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Bar"
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Sturdy_Fossil"
               }
             ]
           }
-        ],
-        "pieces": [
-          "Gold Helmet",
-          "Gold Chainmail",
-          "Gold Greaves"
         ],
         "defense": 13,
-        "effect": "+3 defense · Enemies have a 2% chance to drop 1 gold coin, and bosses always drop an extra 3 gold coin · +1% critical strike chance per 5 gold coin in inventory, capped at +5%",
-        "desc": "Gold armor is a pre-Hardmode armor set consisting of the Gold Helmet, Gold Chainmail, and Gold Greaves. The full set grants 16 defense while equipped.",
-        "allClass": true
-      },
-      {
-        "id": "platinum-armor",
-        "name": "Platinum armor",
-        "slot": "armor",
-        "icon": "armor-sets/platinum-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "No set bonus. Worth wearing if you find the ore, but not worth mining for: the first boss drops a better set.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Platinum Helmet",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Platinum Chainmail",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 30,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Platinum Greaves",
-            "materials": [
-              {
-                "name": "Platinum Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Bar"
-              }
-            ]
-          }
-        ],
-        "defense": 16,
         "pieces": [
-          "Platinum Helmet",
-          "Platinum Chainmail",
-          "Platinum Greaves"
+          "Fossil Helmet",
+          "Fossil Plate",
+          "Fossil Greaves"
         ],
-        "desc": "Platinum armor is a pre-Hardmode armor set consisting of the Platinum Helmet, Platinum Chainmail, and Platinum Greaves. The full set grants 20 defense while equipped.",
-        "allClass": true,
-        "effect": "+4 defense · +10% damage reduction"
+        "effect": "+5% ranged damage · +8% ranged critical strike chance · +20% ammo conservation",
+        "desc": "Fossil armor is a pre-Hardmode ranged armor set consisting of the Fossil Helmet, Fossil Plate, and Fossil Greaves."
       }
     ],
     "accessories": [
       {
-        "name": "Spectre Boots",
+        "id": "dunerider-boots",
+        "name": "Dunerider Boots",
         "slot": "accessory",
-        "source": "Crafted at a Tinkerer's Workshop",
+        "icon": "calamity/dunerider-boots.png",
+        "source": "Dropped by Desert enemies, or found in Sandstone Chests in the Underground Desert",
         "why": "",
-        "station": "Tinkerer's Workshop",
+        "effect": "The wearer can run super fast, and even faster on sand",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "id": "spectre-boots",
-        "icon": "accessories/spectre-boots.png",
-        "effect": "Grants flight · The wearer can run super fast",
-        "materials": [
-          {
-            "name": "Hermes Boots",
-            "qty": 1
-          },
-          {
-            "name": "Rocket Boots",
-            "qty": 1
-          }
-        ],
         "categories": [
           "extra-mobility"
         ],
-        "quality": "great",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spectre_Boots"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dunerider_Boots",
+        "quality": "great"
       },
       {
-        "name": "Sandstorm in a Balloon",
+        "id": "sandstorm-in-a-bottle",
+        "name": "Sandstorm in a Bottle",
         "slot": "accessory",
-        "source": "Crafted at a Tinkerer's Workshop",
+        "icon": "calamity/sandstorm-in-a-bottle.png",
+        "source": "Found in Pyramids in the Desert, and craftable by hand.",
         "why": "",
-        "station": "Tinkerer's Workshop",
+        "effect": "Allows the holder to do an improved double jump",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "id": "sandstorm-in-a-balloon",
-        "icon": "accessories/sandstorm-in-a-balloon.png",
-        "effect": "Grants an improved double jump · Increases jump height",
-        "materials": [
-          {
-            "name": "Sandstorm in a Bottle",
-            "qty": 1
-          },
-          {
-            "name": "Shiny Red Balloon",
-            "qty": 1
-          }
-        ],
         "categories": [
           "primary-mobility"
         ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sandstorm_in_a_Bottle",
         "quality": "great",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sandstorm_in_a_Balloon"
+        "materials": [
+          {
+            "name": "Bottle",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottle"
+          },
+          {
+            "name": "Cloud",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud"
+          },
+          {
+            "name": "Any Sand Block",
+            "qty": 40,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sand_Block"
+          },
+          {
+            "name": "Feather",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+          }
+        ]
       },
       {
         "id": "fledgling-wings",
@@ -8039,7 +7852,7 @@
         "categories": [
           "mobility"
         ],
-        "altOf": "Sandstorm in a Balloon",
+        "altOf": "Sandstorm in a Bottle",
         "dropRate": "2.5%",
         "materials": [
           {
@@ -8140,83 +7953,86 @@
         "quality": "great"
       },
       {
-        "id": "crown-jewel",
-        "name": "Crown Jewel",
+        "id": "luxors-gift",
+        "name": "Luxor's Gift",
         "slot": "accessory",
-        "icon": "calamity/crown-jewel.png",
-        "source": "Dropped by King Slime",
-        "why": "defensive accessory",
+        "icon": "calamity/luxors-gift.png",
+        "source": "Dropped by the Desert Scourge",
+        "why": "",
+        "effect": "Summons a scarab launcher that follows you closely · The scarab launcher fires different projectiles at enemies depending on your held weapon type",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel",
-        "effect": "+0.5 HP/s life regen · Reduces damage over time taken by 2 HP/s",
         "categories": [
-          "survivability"
+          "offense"
         ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Luxor%27s_Gift",
         "altOf": "Rover Drive"
       }
     ],
     "buffs": [
       {
-        "id": "healing-potion",
-        "name": "Healing Potion",
+        "id": "lesser-healing-potion",
+        "name": "Lesser Healing Potion",
         "slot": "buff",
-        "icon": "calamity/healing-potion.png",
+        "icon": "calamity/lesser-healing-potion.png",
         "source": "Crafted at a Placed Bottle or Alchemy Table or Alchemy Flask",
-        "why": "restores health in combat",
+        "why": "restores health",
         "tags": [],
         "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Healing_Potion",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lesser_Healing_Potion",
         "materials": [
           {
-            "name": "Lesser Healing Potion",
-            "qty": 2,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Lesser_Healing_Potion"
+            "name": "Mushroom",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Mushroom"
           },
           {
-            "name": "Glowing Mushroom",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Glowing_Mushroom"
+            "name": "Gel",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gel"
+          },
+          {
+            "name": "Bottle",
+            "qty": 2,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottle"
           }
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
-        "effect": "This duration can be reduced via the Philosopher's Stone or Charm of Myths. It is the second tier of healing potion, succeeding the Lesser Healing Potion and preceding the Greater Healing Potion, Jungle Juice and Super Healing Potion."
+        "effect": "This duration can be reduced via the Philosopher's Stone or Charm of Myths. It is the first tier of healing potion, preceding the Healing Potion, Greater Healing Potion, Jungle Juice and Super Healing Potion."
       },
       {
-        "id": "strange-brew",
-        "name": "Strange Brew",
+        "id": "eggnog",
+        "name": "Eggnog",
         "slot": "buff",
-        "icon": "calamity/strange-brew.png",
-        "source": "Purchased from the Skeleton Merchant during certain moon phases for 5 SC",
-        "why": "healing consumable",
+        "icon": "calamity/eggnog.png",
+        "source": "Dropped by Presents obtained during the Christmas seasonal event",
+        "why": "food buff for regeneration",
         "tags": [],
         "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Strange_Brew",
-        "effect": "When used, it restores 70–120 health, inflicts 40–70 seconds of Potion Sickness, and has a 3/5 (60%) chance to grant up to 4 seconds of invincibility. The duration of Potion Sickness can be reduced via the Philosopher's Stone or Charm of Myths."
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eggnog",
+        "effect": "When used, it restores 80 health and inflicts Potion Sickness for 40 seconds. This duration can be reduced via the Philosopher's Stone or Charm of Myths."
       },
       {
-        "id": "seafood-dinner",
-        "name": "Seafood Dinner",
+        "id": "roasted-bird",
+        "name": "Roasted Bird",
         "slot": "buff",
-        "icon": "calamity/seafood-dinner.png",
+        "icon": "calamity/roasted-bird.png",
         "source": "Crafted at a Cooking Pot or Cauldron",
-        "why": "all-around Plenty Satisfied buff",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seafood_Dinner",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Roasted_Bird",
         "materials": [
           {
-            "name": "Hemopiranha",
-            "qty": 2,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hemopiranha"
+            "name": "Bird",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bird"
           }
         ],
         "station": "Cooking Pot or Cauldron",
-        "effect": "This lasts for 14 minutes, but can be canceled at any time by right-clicking the icon (), by selecting the icon using Cycle Next/Previous Buff and then pressing Remove Buff (), or by double-tapping the buff icon ()."
+        "effect": "This lasts for 10 minutes, but can be canceled at any time by right-clicking the icon (), by selecting the icon using Cycle Next/Previous Buff and then pressing Remove Buff (), or by double-tapping the buff icon ()."
       },
       {
         "id": "endurance-potion",
@@ -8494,32 +8310,6 @@
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask"
       },
       {
-        "id": "bounding-potion",
-        "name": "Bounding Potion",
-        "slot": "buff",
-        "icon": "calamity/bounding-potion.png",
-        "source": "Crafted at an Alchemy Table",
-        "why": "mobility jump boost",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bounding_Potion",
-        "station": "Alchemy Table",
-        "materials": [
-          {
-            "name": "Bottled Water",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
-          },
-          {
-            "name": "Blood Orb",
-            "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Orb"
-          }
-        ],
-        "effect": "Upon consumption, it grants the Bounding buff, which increases jump speed by 5% and jump height by 20%."
-      },
-      {
         "id": "swiftness-potion",
         "name": "Swiftness Potion",
         "slot": "buff",
@@ -8570,39 +8360,6 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Extra_jump",
             "isGroup": true,
             "quality": "great"
-          },
-          {
-            "id": "calpool-fledgling-wings",
-            "name": "Fledgling Wings",
-            "slot": "accessory",
-            "icon": "calamity/fledgling-wings.png",
-            "source": "Found in Skyware Chests, Sky Crates, and Azure Crates, and craftable by hand.",
-            "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fledgling_Wings",
-            "quality": "great",
-            "dropRate": "2.5%",
-            "materials": [
-              {
-                "name": "Ancient Bone Dust",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ancient_Bone_Dust"
-              },
-              {
-                "name": "Cloud",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Cloud"
-              },
-              {
-                "name": "Feather",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-              }
-            ]
           }
         ]
       },
@@ -8635,39 +8392,35 @@
             ]
           },
           {
-            "id": "calpool-lightning-boots",
-            "name": "Lightning Boots",
+            "id": "calpool-hermes-boots",
+            "name": "Hermes Boots",
             "slot": "accessory",
-            "icon": "calamity/lightning-boots.png",
-            "source": "Crafted at Tinkerer's Workshop",
-            "why": "Sprint and flight movement in one slot, accelerating faster and reaching a higher top speed than Spectre Boots.",
+            "icon": "calamity/hermes-boots.png",
+            "source": "Found in Underground and Cavern Chests, and craftable by hand.",
+            "why": "Increases movement speed while running.",
             "tags": [],
             "topPick": false,
             "categories": [
               "mobility"
             ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lightning_Boots",
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hermes_Boots",
             "markers": [
               "upgradeable"
             ],
+            "dropRate": "16.67% (Underground), 13.33% (Cavern), 12.67% (lava layer)",
+            "quality": "great",
             "materials": [
               {
-                "name": "Spectre Boots",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Spectre_Boots"
+                "name": "Silk",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Silk"
               },
               {
-                "name": "Anklet of the Wind",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Anklet_of_the_Wind"
-              },
-              {
-                "name": "Aglet",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Aglet"
+                "name": "Swiftness Potion",
+                "qty": 5,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Swiftness_Potion"
               }
-            ],
-            "station": "Tinkerer's Workshop"
+            ]
           },
           {
             "id": "calpool-magiluminescence",
@@ -8696,74 +8449,12 @@
             ],
             "station": "Iron Anvil or Lead Anvil",
             "quality": "great"
-          },
-          {
-            "id": "calpool-shield-of-cthulhu",
-            "name": "Shield of Cthulhu",
-            "slot": "accessory",
-            "icon": "calamity/shield-of-cthulhu.png",
-            "source": "Found in Treasure Bag (Eye of Cthulhu)",
-            "why": "Grants a short dash that damages enemies (double-tap a direction).",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "mobility"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shield_of_Cthulhu",
-            "dropRate": "100%",
-            "expertOnly": true,
-            "quality": "good",
-            "markers": [
-              "expert"
-            ]
-          }
-        ]
-      },
-      {
-        "category": "all-around",
-        "items": [
-          {
-            "id": "calpool-fungal-clump",
-            "name": "Fungal Clump",
-            "slot": "accessory",
-            "icon": "calamity/fungal-clump.png",
-            "source": "Dropped by Crabulon",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "all-around"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungal_Clump",
-            "effect": "When equipped, it summons a Fungal Clump minion that attaches to enemies, damaging them and spawning blue healing orbs that home in on the player and heal them for 25% of the damage the minion deals.",
-            "expertOnly": true,
-            "markers": [
-              "expert"
-            ]
           }
         ]
       },
       {
         "category": "survivability",
         "items": [
-          {
-            "id": "calpool-crown-jewel",
-            "name": "Crown Jewel",
-            "slot": "accessory",
-            "icon": "calamity/crown-jewel.png",
-            "source": "Dropped by King Slime",
-            "why": "This is difficult to obtain.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crown_Jewel",
-            "markers": [
-              "tedious"
-            ],
-            "effect": "+0.5 HP/s life regen · Reduces damage over time taken by 2 HP/s"
-          },
           {
             "id": "calpool-gladiators-locket",
             "name": "Gladiator's Locket",
@@ -8783,6 +8474,24 @@
             "effect": "When equipped, it makes enemies drop healing orbs upon death which are affected by gravity. The healing orbs restore 10 health when touched and disappear after 20 seconds."
           },
           {
+            "id": "calpool-ilmeris-spark",
+            "name": "Ilmeris' Spark",
+            "slot": "accessory",
+            "icon": "calamity/ilmeris-spark.png",
+            "source": "Dropped by Cnidrions",
+            "why": "This is best on worms and other multi-hit scenarios.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "survivability"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ilmeris%27_Spark",
+            "markers": [
+              "crowd-control"
+            ],
+            "effect": "When equipped, it causes the player to release 8 gravity-affected sparks around them when harmed by any source of damage. These sparks linger for 2 seconds, partially ignore immunity frames, and deal 6 base damage, which is boosted by the player's highest class' damage."
+          },
+          {
             "id": "calpool-rover-drive",
             "name": "Rover Drive",
             "slot": "accessory",
@@ -8796,83 +8505,12 @@
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rover_Drive",
             "effect": "When equipped for 10 seconds without taking damage, a protective matrix covers its user, which grants 20 matrix durability. If the player gets hit, durability is lost instead of health by the amount of damage taken."
-          },
-          {
-            "id": "calpool-unholy-tonic",
-            "name": "Unholy Tonic",
-            "slot": "accessory",
-            "icon": "calamity/unholy-tonic.png",
-            "source": "Crafted at an Iron Anvil or Lead Anvil",
-            "why": "Use which matches your world evil.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Tonic",
-            "materials": [
-              {
-                "name": "Vile Powder",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vile_Powder"
-              },
-              {
-                "name": "Rotten Chunk",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rotten_Chunk"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil",
-            "effect": "When equipped, it grants +3 defense while in The Corruption. It also grants immunity to the Brain Rot debuff."
-          },
-          {
-            "id": "calpool-vicious-tonic",
-            "name": "Vicious Tonic",
-            "slot": "accessory",
-            "icon": "calamity/vicious-tonic.png",
-            "source": "Crafted at an Iron Anvil or Lead Anvil",
-            "why": "Use which matches your world evil.",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "survivability"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Tonic",
-            "materials": [
-              {
-                "name": "Vicious Powder",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vicious_Powder"
-              },
-              {
-                "name": "Vertebra",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vertebra"
-              }
-            ],
-            "station": "Iron Anvil or Lead Anvil",
-            "effect": "When equipped, it grants +3 defense while in The Crimson. It also grants immunity to the Burning Blood debuff."
           }
         ]
       },
       {
         "category": "offense",
         "items": [
-          {
-            "id": "calpool-amidias-pendant",
-            "name": "Amidias' Pendant",
-            "slot": "accessory",
-            "icon": "calamity/amidias-pendant.png",
-            "source": "Dropped by the Giant Clam",
-            "why": "",
-            "tags": [],
-            "topPick": false,
-            "categories": [
-              "offense"
-            ],
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amidias%27_Pendant",
-            "effect": "While equipped, it causes 3 homing prism shards to fall from the sky every 2 seconds. Each shard deals 30 base damage."
-          },
           {
             "id": "calpool-black-glass-band",
             "name": "Black Glass Band",
@@ -8928,32 +8566,39 @@
             "slot": "accessory",
             "icon": "calamity/scions-curio.png",
             "source": "Found in Rusty Chests",
-            "why": "",
+            "why": "This is difficult to obtain.",
             "tags": [],
             "topPick": false,
             "categories": [
               "offense"
             ],
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scions_Curio",
+            "markers": [
+              "tedious"
+            ],
             "effect": "Ranged hits increase the effectiveness of Irradiated · Irradiated damage over time scales off of your ranged damage and crit chance · On kill, enemies burst, spreading Irradiated · Taking damage causes the curio to explode in retaliation · Current Irradiated damage: [DAMAGE]"
+          },
+          {
+            "id": "calpool-shark-tooth-necklace",
+            "name": "Shark Tooth Necklace",
+            "slot": "accessory",
+            "icon": "calamity/shark-tooth-necklace.png",
+            "source": "Drops from Blood Zombies and Dripplers during a Blood Moon",
+            "why": "Provides all weapons with 5 unconditional armor penetration. Can be stacked with or upgraded into the Stinger Necklace.",
+            "tags": [],
+            "topPick": false,
+            "categories": [
+              "offense"
+            ],
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shark_Tooth_Necklace",
+            "quality": "great",
+            "dropRate": "0.67%",
+            "dropRateExpert": "1.33%"
           }
         ]
       }
     ],
     "tools": [
-      {
-        "id": "brittle-star-staff",
-        "name": "Brittle Star Staff",
-        "slot": "weapon",
-        "icon": "calamity/brittle-star-staff.png",
-        "source": "Dropped by the Desert Scourge",
-        "why": "support summon item",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff",
-        "effect": "When used, it summons a Brittle Star minion, which follows the player and attacks enemies by dashing at them to deal damage. Brittle stars hit up to 4 enemies before shattering, quickly regenerating afterwards.",
-        "stats": "10 summon dmg"
-      },
       {
         "id": "wulfrum-controller",
         "name": "Wulfrum Controller",
@@ -9058,7 +8703,9 @@
         ],
         "effect": "It experiences reversed gravity when fired."
       }
-    ]
+    ],
+    "curated": true,
+    "note": "This phase has no class-guide video, so it carries the previous phase's picks forward and adds this phase's wiki weapons as other options."
   },
   {
     "phase": "cal-pre-evil",
@@ -14668,11 +14315,12 @@
         "why": "Pre-Hardmode shotgun that fires a spread of bullets, found in the Jungle.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick",
         "dropRate": "19%",
         "subclass": "gun",
-        "stats": "14 ranged dmg"
+        "stats": "14 ranged dmg",
+        "secondary": true
       },
       {
         "id": "firestorm-cannon",
@@ -14680,31 +14328,32 @@
         "slot": "weapon",
         "icon": "calamity/firestorm-cannon.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "",
+        "why": "Fires bursts of fire",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
-        "tier": "good",
-        "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "other",
+        "tier": "best",
+        "effect": "Fires bursts of fire.",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Flare Gun",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flare_Gun"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Flare_Gun"
           },
           {
             "name": "Hellstone Bar",
             "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellstone_Bar"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hellstone_Bar"
           },
           {
             "name": "Illegal Gun Parts",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Illegal_Gun_Parts"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "15 ranged dmg"
       },
       {
         "id": "magna-cannon",
@@ -14712,36 +14361,37 @@
         "slot": "weapon",
         "icon": "calamity/magna-cannon.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "",
+        "why": "Fires magnetically-charged rounds",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magna_Cannon",
-        "tier": "good",
-        "effect": "While holding, the player channels a glowing blue orb at the tip of the gun and loads one crystal bolt every 0.15 seconds. After channeling for 2.3 seconds, the orb reaches maximum power, increasing the amount of loaded bolts to 20.",
-        "subclass": "other",
+        "tier": "best",
+        "effect": "Fires magnetically-charged rounds.",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Granite Block",
             "qty": 25,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Granite_Block"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Granite_Block"
           },
           {
             "name": "Meteorite Bar",
             "qty": 12,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteorite_Bar"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
           },
           {
             "name": "Diamond",
             "qty": 3,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Diamond"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
           },
           {
             "name": "Sapphire",
             "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sapphire"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sapphire"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "25 ranged dmg"
       },
       {
         "id": "opal-striker",
@@ -14749,36 +14399,37 @@
         "slot": "weapon",
         "icon": "calamity/opal-striker.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "",
+        "why": "Chargeable; fully charged shots deal extra damage and inflic",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Opal_Striker",
-        "tier": "other",
-        "effect": "While holding, the player channels a glowing orange orb at the tip of the gun which reaches its maximum power after 1.47 seconds. Releasing while fully charged discharges a charged bolt which deals 500% damage and 300% knockback, inflicts the Hellfire debuff, and pierces twice.",
-        "subclass": "other",
+        "tier": "good",
+        "effect": "Chargeable; fully charged shots deal extra damage and inflict Hellfire.",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Marble Block",
             "qty": 25,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Marble_Block"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Marble_Block"
           },
           {
             "name": "Meteorite Bar",
             "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteorite_Bar"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
           },
           {
             "name": "Diamond",
             "qty": 3,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Diamond"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Diamond"
           },
           {
             "name": "Amber",
             "qty": 3,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Amber"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Amber"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "33 ranged dmg"
       },
       {
         "id": "molten-fury",
@@ -14788,8 +14439,8 @@
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "A bow that ignites the arrows it fires.",
         "tags": [],
-        "topPick": true,
-        "tier": "other",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Fury",
         "materials": [
           {
@@ -14801,19 +14452,238 @@
         "station": "Iron Anvil or Lead Anvil",
         "subclass": "bow",
         "stats": "31 ranged dmg"
+      },
+      {
+        "id": "fungicide",
+        "name": "Fungicide",
+        "slot": "weapon",
+        "icon": "calamity/fungicide.png",
+        "subclass": "gun",
+        "stats": "19 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Converts musket balls into fungal rounds that split on impact.",
+        "why": "Converts musket balls into fungal rounds that split on impac",
+        "source": "Dropped by Crabulon",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "toxibow",
+        "name": "Toxibow",
+        "slot": "weapon",
+        "icon": "calamity/toxibow.png",
+        "subclass": "bow",
+        "stats": "15 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Toxibow",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires arrows coated in acid.",
+        "why": "Fires arrows coated in acid",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Acidwood",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Acidwood"
+          },
+          {
+            "name": "Sulphuric Scale",
+            "qty": 12,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sulphuric_Scale"
+          }
+        ]
+      },
+      {
+        "id": "storm-surge",
+        "name": "Storm Surge",
+        "slot": "weapon",
+        "icon": "calamity/storm-surge.png",
+        "subclass": "other",
+        "stats": "18 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Surge",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a blue shockwave that passes through blocks; no ammo needed.",
+        "why": "Fires a blue shockwave that passes through blocks; no ammo n",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Stormlion Mandible",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stormlion_Mandible"
+          },
+          {
+            "name": "Pearl Shard",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_Shard"
+          },
+          {
+            "name": "Sea Prism",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
+          },
+          {
+            "name": "Navystone",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Navystone"
+          }
+        ]
       }
     ],
     "armor": [
       {
+        "id": "crimson-armor",
+        "name": "Crimson armor",
+        "slot": "armor",
+        "icon": "armor-sets/crimson-armor.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Crimson_armor",
+        "pieceRecipes": [
+          {
+            "piece": "Crimson Helmet",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ]
+          },
+          {
+            "piece": "Crimson Scalemail",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ]
+          },
+          {
+            "piece": "Crimson Greaves",
+            "materials": [
+              {
+                "name": "Crimtane Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
+              },
+              {
+                "name": "Tissue Sample",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
+              }
+            ]
+          }
+        ],
+        "defense": 19,
+        "pieces": [
+          "Crimson Helmet",
+          "Crimson Scalemail",
+          "Crimson Greaves"
+        ],
+        "effect": "+9% damage · Greatly increased health regeneration (+50% natural regen, doubled ramp-up; more frequent the longer you avoid damage and while standing still) · Leaves a trail of red bubbles while moving · Calamity: +3% damage and +0.5 HP/s per piece",
+        "allClass": false,
+        "headpiece": "Crimson Helmet"
+      },
+      {
+        "id": "shadow-armor",
+        "name": "Shadow armor",
+        "slot": "armor",
+        "icon": "armor-sets/shadow-armor.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_armor",
+        "pieceRecipes": [
+          {
+            "piece": "Shadow Helmet",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 10,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ]
+          },
+          {
+            "piece": "Shadow Scalemail",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 25,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ]
+          },
+          {
+            "piece": "Shadow Greaves",
+            "materials": [
+              {
+                "name": "Demonite Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+              },
+              {
+                "name": "Shadow Scale",
+                "qty": 15,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
+              }
+            ]
+          }
+        ],
+        "defense": 19,
+        "pieces": [
+          "Shadow Helmet",
+          "Shadow Scalemail",
+          "Shadow Greaves"
+        ],
+        "effect": "+15% critical strike chance · +75% acceleration and deceleration · ×1.15 maximum movement speed · Emits afterimages and shadow particles while moving (Rocket Boots emit purple flames) · Calamity: each piece adds +5% critical strike chance, 1.05x max movement speed, 1.25x acceleration, 1.5x deceleration",
+        "allClass": false,
+        "headpiece": "Shadow Helmet"
+      },
+      {
         "id": "victide-armor",
         "name": "Victide armor",
         "slot": "armor",
-        "icon": "armor-sets/victide-armor-ranger.png",
+        "icon": "armor-sets/victide-armor-melee.png",
         "source": "Crafted at Iron Anvil or Lead Anvil",
         "why": "class-specific set bonus",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Victide_armor",
         "pieceRecipes": [
           {
@@ -14888,149 +14758,14 @@
           }
         ],
         "pieces": [
-          "Victide Coral Turban",
+          "Victide Shellmet",
           "Victide Breastplate",
           "Victide Greaves"
         ],
-        "headpiece": "Victide Coral Turban",
+        "headpiece": "Coral Turban",
         "defense": 12,
-        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · 10% chance on attack to fire a returning seashell (double weapon damage, softcap 46, true damage, no crit; not from weapons of Yellow rarity or higher)",
-        "headpieceBonus": "+1.5 HP/s life regen and 10% increased ranged damage while submerged in liquid"
-      },
-      {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
-        "slot": "armor",
-        "icon": "armor-sets/crimson-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Crimson Helmet",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          },
-          {
-            "piece": "Crimson Scalemail",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          },
-          {
-            "piece": "Crimson Greaves",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Crimson Helmet",
-          "Crimson Scalemail",
-          "Crimson Greaves"
-        ],
-        "effect": "+9% damage · Greatly increased health regeneration",
-        "desc": "Crimson armor is a pre-Hardmode armor set consisting of the Crimson Helmet, Crimson Scalemail, and Crimson Greaves.",
-        "allClass": true
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
+        "effect": "+5% damage reduction · +5% critical strike chance · +8% movement speed · While submerged in liquids: +5 defense, +10% damage reduction, +1.5 HP/s, +30% movement speed · Reduced breath loss in the Abyss · Move freely through liquids · Weapons have a 10% chance to fire a returning seashell (double the weapon’s damage, softcap 46, true damage, no crits; not from Yellow-rarity or higher weapons)",
+        "headpieceBonus": "+5% ranged damage · +10% ranged damage while submerged in liquids",
         "allClass": true
       }
     ],
@@ -15150,7 +14885,35 @@
         "quality": "good",
         "markers": [
           "expert"
-        ]
+        ],
+        "classicAlt": {
+          "id": "magiluminescence",
+          "name": "Magiluminescence",
+          "slot": "accessory",
+          "icon": "items/magiluminescence.png",
+          "source": "Crafted at an Iron or Lead Anvil",
+          "station": "Iron Anvil or Lead Anvil",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+          "categories": [
+            "mobility"
+          ],
+          "effect": "+15% maximum speed, +75% acceleration, and emits light.",
+          "why": "Grounded speed and light.",
+          "tags": [],
+          "topPick": false,
+          "materials": [
+            {
+              "name": "Demonite Bar",
+              "qty": 12,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+            },
+            {
+              "name": "Topaz",
+              "qty": 5,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+            }
+          ]
+        }
       },
       {
         "id": "scions-curio",
@@ -16031,11 +15794,13 @@
         "slot": "weapon",
         "icon": "calamity/brittle-star-staff.png",
         "source": "Dropped by the Desert Scourge",
-        "why": "support summon item",
+        "why": "primary minion recommendation",
         "tags": [],
         "topPick": false,
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Brittle_Star_Staff",
         "effect": "When used, it summons a Brittle Star minion, which follows the player and attacks enemies by dashing at them to deal damage. Brittle stars hit up to 4 enemies before shattering, quickly regenerating afterwards.",
+        "subclass": "minions",
         "stats": "10 summon dmg"
       },
       {
@@ -16057,10 +15822,23 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
     ],
     "ammo": [
+      {
+        "id": "jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "calamity/jesters-arrow.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jester%27s_Arrow",
+        "effect": "It is unaffected by gravity and can pierce an infinite number of enemies, and its damage decreases by 10% per each enemy pierced."
+      },
       {
         "id": "hellfire-arrow",
         "name": "Hellfire Arrow",
@@ -16070,7 +15848,33 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow",
+        "altOf": "Jester's Arrow"
+      },
+      {
+        "id": "flash-round",
+        "name": "Flash Round",
+        "slot": "ammo",
+        "icon": "calamity/flash-round.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flash_Round",
+        "materials": [
+          {
+            "name": "Any Copper Bar",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Copper_Bar"
+          },
+          {
+            "name": "Glass",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glass"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
       },
       {
         "id": "meteor-shot",
@@ -16082,21 +15886,25 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Shot",
-        "effect": "When fired, it can either bounce from a solid block once or pierce through one enemy."
+        "effect": "When fired, it can either bounce from a solid block once or pierce through one enemy.",
+        "altOf": "Flash Round"
       },
       {
-        "id": "unholy-arrow",
-        "name": "Unholy Arrow",
+        "id": "flare",
+        "name": "Flare",
         "slot": "ammo",
-        "icon": "calamity/unholy-arrow.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/flare.png",
+        "stats": "1 ranged dmg",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Arrow",
-        "effect": "It can pierce 4 enemies, and its damage decreases by 5% per enemy pierced."
+        "source": "Purchased from the Merchant, or crafted",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Flare",
+        "effect": "Ammo for the Flare Gun and flare-based weapons; lights up the area.",
+        "why": "Cheap flare-gun ammo for early flame weapons."
       }
-    ]
+    ],
+    "curated": true,
+    "supportJoin": "or"
   },
   {
     "phase": "cal-pre-hive-perf",
