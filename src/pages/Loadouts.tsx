@@ -1570,7 +1570,8 @@ export function Loadouts() {
                   item={shown}
                   alts={shown
                     ? (altsBy.get(shown.name) ?? []).filter((a) =>
-                        isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true)
+                        !(difficulty === 'normal' && a.classicHide)
+                        && (isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true))
                     : undefined}
                   demonHeart={(demonHeartUnlocked || demonHeartPreview) && i === slotCount - 1}
                   expertSlot={demonHeartPreview && i === slotCount - 1}

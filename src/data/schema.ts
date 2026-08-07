@@ -110,6 +110,12 @@ const ItemBase = z.object({
    */
   expertOnly: z.boolean().optional(),
   /**
+   * Hide this alternative when the Classic difficulty is selected. Used when the
+   * same item is promoted to a primary slot on Classic (via a `classicAlt`
+   * elsewhere) and must not also appear as an "or" under another holder.
+   */
+  classicHide: z.boolean().optional(),
+  /**
    * Names a family rather than a single item ("Wings", "Extra jump"). Worth
    * listing as an option, but it can never fill a slot - you cannot equip
    * "Wings" - so substitution has to skip it.

@@ -78744,7 +78744,8 @@
           }
         ],
         "effect": "When used, it swings back and forth in front of the player, firing a darklight shard that pierces infinitely but cannot pass through tiles with each swing. Hitting with the sword itself builds up Darklight Energy, a resource that dissipates slowly over time, but briefly stops anytime it is gained.",
-        "subclass": "other"
+        "subclass": "other",
+        "stats": "132 melee dmg"
       },
       {
         "id": "omniblade",
@@ -79350,40 +79351,7 @@
         "effect": "When equipped, it grants the player various offensive, defensive, and mobility stat boosts which scale as the player progresses through the game by defeating more bosses.",
         "categories": [
           "all-around"
-        ],
-        "classicAlt": {
-          "id": "sand-shark-tooth-necklace",
-          "name": "Sand Shark Tooth Necklace",
-          "slot": "accessory",
-          "icon": "calamity/sand-shark-tooth-necklace.png",
-          "source": "Crafted at a Tinkerer's Workshop",
-          "why": "offensive armor-penetration",
-          "tags": [],
-          "topPick": false,
-          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Shark_Tooth_Necklace",
-          "station": "Tinkerer's Workshop",
-          "materials": [
-            {
-              "name": "Shark Tooth Necklace",
-              "qty": 1,
-              "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Tooth_Necklace"
-            },
-            {
-              "name": "Avenger Emblem",
-              "qty": 1,
-              "wikiUrl": "https://terraria.wiki.gg/wiki/Avenger_Emblem"
-            },
-            {
-              "name": "Grand Scale",
-              "qty": 1,
-              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Scale"
-            }
-          ],
-          "effect": "When equipped, it increases armor penetration by 10 and increases all damage by 10%.",
-          "categories": [
-            "offense"
-          ]
-        }
+        ]
       },
       {
         "id": "soaring-insignia",
@@ -88233,7 +88201,7 @@
         "source": "Crafted at an Ancient Manipulator",
         "why": "top primary melee weapon at this tier",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Entropic_Claymore",
         "station": "Ancient Manipulator",
@@ -88309,7 +88277,9 @@
           }
         ],
         "effect": "When used, it swings back and forth in front of the player, firing a darklight shard that pierces infinitely but cannot pass through tiles with each swing. Hitting with the sword itself builds up Darklight Energy, a resource that dissipates slowly over time, but briefly stops anytime it is gained.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true,
+        "stats": "132 melee dmg"
       },
       {
         "id": "storm-ruler",
@@ -88320,7 +88290,7 @@
         "why": "solid melee option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Storm_Ruler",
         "station": "Ancient Manipulator",
         "materials": [
@@ -88341,7 +88311,111 @@
           }
         ],
         "effect": "When swung it shoots out a beam which, upon impact with an enemy or tile, spawns a small tornado similar to the one the Cloud Elemental spawns. The tornado lingers for 10 seconds, hits 4 times per second with infinite piercing, dealing damage to enemies that come in contact with it.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
+      },
+      {
+        "id": "true-biome-blade",
+        "name": "True Biome Blade",
+        "slot": "weapon",
+        "icon": "calamity/true-biome-blade.png",
+        "subclass": "sword",
+        "stats": "200 melee dmg",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/True_Biome_Blade",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Attunes to your biome for unique attacks and stores a second attunement for passive bonuses.",
+        "why": "Upgraded biome-attuned sword.",
+        "materials": [
+          {
+            "name": "Biome Blade",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Biome_Blade"
+          },
+          {
+            "name": "Astral Bar",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
+          },
+          {
+            "name": "Life Alloy",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+          },
+          {
+            "name": "Core of Calamity",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Core_of_Calamity"
+          }
+        ]
+      },
+      {
+        "id": "the-microwave",
+        "name": "The Microwave",
+        "slot": "weapon",
+        "icon": "calamity/the-microwave.png",
+        "subclass": "yoyo",
+        "stats": "111 melee dmg",
+        "source": "Dropped by Astrum Deus",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Microwave",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Emits a radiation aura that fries nearby enemies and spreads Astral Infection.",
+        "why": "Astral radiation yoyo."
+      },
+      {
+        "id": "solar-eruption",
+        "name": "Solar Eruption",
+        "slot": "weapon",
+        "icon": "items/solar-eruption.png",
+        "source": "Crafted at Ancient Manipulator",
+        "why": "Swings a long whipsword that passes through blocks and pierces infinitely.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "best",
+        "subclass": "other",
+        "stats": "105 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Solar_Eruption",
+        "materials": [
+          {
+            "name": "Solar Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
+      },
+      {
+        "id": "daybreak",
+        "name": "Daybreak",
+        "slot": "weapon",
+        "icon": "items/daybreak.png",
+        "source": "Crafted at Ancient Manipulator",
+        "why": "Hurls sun spears that stick to enemies and inflict Daybroken.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "good",
+        "subclass": "spear",
+        "stats": "150 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daybreak",
+        "materials": [
+          {
+            "name": "Solar Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          }
+        ],
+        "station": "Ancient Manipulator"
       }
     ],
     "armor": [
@@ -88542,187 +88616,6 @@
         "defense": 67,
         "effect": "+20 maximum health · Immune to On Fire! and lava · Below 50% health, a modified Inferno deals 50 damage and inflicts Brimstone Flames, plus an on-hit explosion for 115/230/345 damage that inflicts Hellfire",
         "headpieceBonus": "+25% melee damage · +19% melee critical strike chance · +15% melee speed · +700 aggro · +10% movement speed · Melee weapons release chaos flames on hit, inflicting Hellfire (15% of the attack’s damage, up to 3 hits, softcap 45)"
-      },
-      {
-        "id": "valhalla-knight-armor",
-        "name": "Valhalla Knight armor",
-        "slot": "armor",
-        "icon": "armor-sets/valhalla-knight-armor.png",
-        "source": "Dropped by the Old One's Army, tier 3",
-        "why": "Heavy life regeneration and sentry slots. Trades the Stardust Guardian and minion slots for staying power.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieces": [
-          "Valhalla Knight's Helm",
-          "Valhalla Knight's Breastplate",
-          "Valhalla Knight's Greaves"
-        ],
-        "defense": 68,
-        "desc": "Valhalla Knight armor is a Hardmode, post- Golem melee/summoner armor set consisting of the Valhalla Knight's Helm, Valhalla Knight's Breastplate, and Valhalla Knight's Greaves. The set can be purchased from the Tavernkeep for a total of 1500000* 150."
-      },
-      {
-        "id": "astral-armor",
-        "name": "Astral armor",
-        "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Astral Breastplate",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Helm",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Leggings",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
-        ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Reaver Cuisses",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Headgear",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "allClass": true,
-        "headVariants": [
-          {
-            "name": "Helm",
-            "headpieceBonus": "+70 defense · +10% damage reduction · +600 aggro · +50 maximum health · +4 HP/s · -18% movement speed · -30% flight time · Reduces damage-over-time from debuffs by 20% · On hit, Reaver Rage grants +10% damage, +5% melee speed, and +5 defense"
-          },
-          {
-            "name": "Visage",
-            "headpieceBonus": "+55 defense · +10% damage reduction · +27% movement speed · +10% jump speed · +10% flight time · +10% horizontal flight speed · +50% hook pull and retract speed · Auto-jump · -33% dash cooldown · Immunity to fall damage"
-          },
-          {
-            "name": "Headgear",
-            "headpieceBonus": "+48 defense · +10% damage reduction · +12% movement speed · -400 aggro · +20% mining speed · +50% block and wall placement speed · Increased block placement range · Immunity to lava · Move freely through liquids · Spelunker effect · Increased item collection range · Breathe underwater · Emits light · Improved vision in the Abyss"
-          }
-        ],
-        "headpiece": "Reaver Helm"
       }
     ],
     "accessories": [
@@ -88929,6 +88822,23 @@
         ]
       },
       {
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
+        "slot": "accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Fire Gauntlet"
+      },
+      {
         "id": "blood-pact",
         "name": "Blood Pact",
         "slot": "accessory",
@@ -88943,7 +88853,46 @@
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "tier": "good",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "ambrosial-ampoule",
@@ -88986,21 +88935,64 @@
         "altOf": "Blood Pact"
       },
       {
-        "id": "hide-of-astrum-deus",
-        "name": "Hide of Astrum Deus",
+        "id": "the-absorber",
+        "name": "The Absorber",
         "slot": "accessory",
-        "icon": "calamity/hide-of-astrum-deus.png",
-        "source": "Dropped by Astrum Deus",
-        "why": "all-around accessory",
+        "icon": "calamity/the-absorber.png",
+        "source": "Crafted at an Ancient Manipulator",
+        "why": "all-around defensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hide_of_Astrum_Deus",
-        "effect": "True melee strikes drop astral stars from the sky · Releases an explosion and temporarily increases true melee damage by 30% when damaged · Boost duration scales with the amount of damage you took, up to 10 seconds · Nullifies the Astral Infection",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Absorber",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Grand Gelatin",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Gelatin"
+          },
+          {
+            "name": "Baroclaw",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Baroclaw"
+          },
+          {
+            "name": "Giant Tortoise Shell",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Tortoise_Shell"
+          },
+          {
+            "name": "Mollusk Husk",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
+          },
+          {
+            "name": "Meld Blob",
+            "qty": 14,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
+          }
+        ],
+        "effect": "Grants immunity to knockback · 12% increased movement and jump speed · Attackers take immense damage and are afflicted with Absorber Affliction · Using a healing potion will spawn a green aura that lasts for 30 seconds · Walking into the aura removes all debuffs once and grants 2 HP/s regen, 8% damage, and 5% damage reduction · 5% of the damage from enemy attacks is converted into healing",
         "categories": [
           "all-around"
+        ]
+      },
+      {
+        "id": "soaring-insignia",
+        "name": "Soaring Insignia",
+        "slot": "accessory",
+        "icon": "calamity/soaring-insignia.png",
+        "source": "Empress of Light Treasure Bag (Expert or Master)",
+        "why": "Improved jump, run, and flight mobility.",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soaring_Insignia",
+        "categories": [
+          "mobility"
         ],
-        "expertOnly": true
+        "altOf": "The Absorber",
+        "expertOnly": true,
+        "effect": "+10% jump speed · +25% run acceleration · +33% flight time"
       }
     ],
     "buffs": [
@@ -90122,7 +90114,8 @@
           }
         ],
         "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
+        "stats": "60 magic dmg",
+        "altOf": "Betsy's Wrath"
       },
       {
         "id": "rod-of-discord",
@@ -90136,9 +90129,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Betsy's Wrath"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-ml",
@@ -98226,7 +98222,7 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "primary melee weapon with high true-melee DPS",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ark_of_the_Elements",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -98338,11 +98334,12 @@
         "why": "Fires bouncing wall-piercing cat-head projectiles on swing.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meowmere",
         "dropRate": "20%",
         "subclass": "sword",
-        "stats": "200 melee dmg"
+        "stats": "200 melee dmg",
+        "secondary": true
       },
       {
         "id": "stellar-contempt",
@@ -98353,7 +98350,7 @@
         "why": "boomerang melee alternative",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Contempt",
         "station": "Ancient Manipulator",
         "materials": [
@@ -98380,6 +98377,66 @@
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
         "subclass": "other"
+      },
+      {
+        "id": "stellar-striker",
+        "name": "Stellar Striker",
+        "slot": "weapon",
+        "icon": "calamity/stellar-striker.png",
+        "subclass": "sword",
+        "stats": "123 melee dmg",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Striker",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Summons a swarm of lunar flares from the sky on enemy hits.",
+        "why": "Lunar-flare swarm sword.",
+        "materials": [
+          {
+            "name": "Comet Quasher",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Comet_Quasher"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          }
+        ]
+      },
+      {
+        "id": "gilded-proboscis",
+        "name": "Gilded Proboscis",
+        "slot": "weapon",
+        "icon": "calamity/gilded-proboscis.png",
+        "subclass": "spear",
+        "stats": "2090 melee dmg",
+        "source": "Dropped by The Dragonfolly",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gilded_Proboscis",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Steals life on hit; charge a precise thrust or dash forward with an upstrike; always crits.",
+        "why": "Life-stealing charge spear."
+      },
+      {
+        "id": "terrarian",
+        "name": "Terrarian",
+        "slot": "weapon",
+        "icon": "items/terrarian.png",
+        "source": "Dropped by the Moon Lord",
+        "why": "Moon Lord drop that emits homing projectiles; strongest yoyo.",
+        "tags": [],
+        "topPick": false,
+        "subclass": "yoyo",
+        "stats": "190 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terrarian",
+        "tier": "good",
+        "dropRate": "20%"
       }
     ],
     "armor": [
@@ -98450,82 +98507,45 @@
           "Solar Flare Breastplate",
           "Solar Flare Leggings"
         ],
-        "effect": "+12% damage reduction · +29% melee damage · +26% melee critical strike chance · +15% melee speed · +900 aggro · +15% movement speed · +3 HP/s health regeneration · Solar Blaze: builds up to 3 charges (each adds a damaging dash with a Solar Radiance explosion and +20% damage reduction); taking a hit spends a charge",
-        "desc": "Solar Flare armor is a Hardmode, post- Moon Lord melee armor set consisting of the Solar Flare Helmet, Solar Flare Breastplate, and Solar Flare Leggings."
-      },
-      {
-        "id": "astral-armor",
-        "name": "Astral armor",
-        "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Astral Breastplate",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Helm",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Leggings",
-            "station": "Ancient Manipulator",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
-        ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
+        "effect": "Solar Blaze: avoiding damage builds up to 3 charges (3s each); a double-tap dash slam deals 400 damage and grants 12 immunity frames; the solar shield grants +25% damage reduction (additive) · Emits light and afterimages while moving · Calamity removes the vanilla base 12% damage reduction",
+        "headpiece": "Solar Flare Helmet",
+        "headpieceBonus": "+29% melee damage · +26% melee critical strike chance · +15% melee speed · +900 aggro · +15% movement speed · +3 HP/s"
       }
     ],
     "accessories": [
+      {
+        "id": "solar-wings",
+        "name": "Solar Wings",
+        "slot": "accessory",
+        "icon": "calamity/solar-wings.png",
+        "source": "Crafted",
+        "why": "mobility wings option",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Solar_Wings",
+        "materials": [
+          {
+            "name": "Feather",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
+          },
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+          }
+        ],
+        "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+        "categories": [
+          "primary-mobility"
+        ]
+      },
       {
         "id": "moon-walkers",
         "name": "Moon Walkers",
@@ -98558,41 +98578,46 @@
         "effect": "Allows flight and slow fall · Flight time: 2.67 seconds · Max horizontal speed: Great · Max vertical speed: Great · Horizontal acceleration: Excellent · Vertical acceleration: Good · 24% increased running acceleration · Provides the effects of Angel Treads · Provides immunity to lava · Shift-Right Click this item in your inventory to toggle the wings · 'Hee hee!'",
         "categories": [
           "primary-mobility"
-        ]
+        ],
+        "altOf": "Solar Wings"
       },
       {
-        "id": "solar-wings",
-        "name": "Solar Wings",
+        "id": "deific-amulet",
+        "name": "Deific Amulet",
         "slot": "accessory",
-        "icon": "calamity/solar-wings.png",
-        "source": "Crafted",
-        "why": "mobility wings option",
+        "icon": "calamity/deific-amulet.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "defensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Solar_Wings",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deific_Amulet",
+        "station": "Tinkerer's Workshop",
         "materials": [
           {
-            "name": "Feather",
+            "name": "Bee Cloak",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bee_Cloak"
+          },
+          {
+            "name": "Cross Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Cross_Necklace"
+          },
+          {
+            "name": "Panic Necklace",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Panic_Necklace"
+          },
+          {
+            "name": "Astral Bar",
             "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Feather"
-          },
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 15,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Light"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
           }
         ],
-        "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%.",
+        "effect": "Releases a burst of homing star-bees, increases movement speed, and drenches you in Honey after taking damage · Increases the length of invincibility, with it increasing even more when at low health · Shift- ⚷ Open / Activate this item in your inventory to toggle Panic Necklace's effect",
         "categories": [
-          "primary-mobility"
-        ],
-        "altOf": "Moon Walkers"
+          "survivability"
+        ]
       },
       {
         "id": "warbanner-of-the-righteous",
@@ -98609,7 +98634,11 @@
         "categories": [
           "offense"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "altOf": "Deific Amulet",
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "asgards-valor",
@@ -98719,21 +98748,21 @@
         ]
       },
       {
-        "id": "hide-of-astrum-deus",
-        "name": "Hide of Astrum Deus",
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
         "slot": "accessory",
-        "icon": "calamity/hide-of-astrum-deus.png",
-        "source": "Dropped by Astrum Deus",
-        "why": "all-around accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hide_of_Astrum_Deus",
-        "effect": "True melee strikes drop astral stars from the sky · Releases an explosion and temporarily increases true melee damage by 30% when damaged · Boost duration scales with the amount of damage you took, up to 10 seconds · Nullifies the Astral Infection",
-        "categories": [
-          "all-around"
-        ],
-        "expertOnly": true
+        "altOf": "Fire Gauntlet"
       },
       {
         "id": "blood-pact",
@@ -98750,8 +98779,46 @@
         "categories": [
           "survivability"
         ],
-        "altOf": "Hide of Astrum Deus",
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "tier": "good",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "the-absorber",
@@ -98835,7 +98902,8 @@
         "categories": [
           "survivability"
         ],
-        "altOf": "The Absorber"
+        "altOf": "The Absorber",
+        "classicHide": true
       },
       {
         "id": "the-community",
@@ -99921,7 +99989,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
         "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
-        "stats": "1700 dmg"
+        "stats": "1700 dmg",
+        "altOf": "Eye of Magnus"
       },
       {
         "id": "rod-of-discord",
@@ -99935,9 +100004,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-providence",
@@ -107542,8 +107614,8 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Empyrean_Knives",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -107564,7 +107636,8 @@
           }
         ],
         "effect": "When used, they throw a spread of 4 to 8 homing knives, each dealing damage and healing the player for 1.5% of the damage dealt. The knives bounce off of tiles twice and travel much farther than the Vampire Knives before spinning and fading away.",
-        "subclass": "other"
+        "subclass": "other",
+        "support": true
       },
       {
         "id": "holy-collider",
@@ -107578,7 +107651,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Collider",
         "effect": "Pressing ⚒ Use / Attack (default: Left Click) swings the sword back and forth, dealing 20% base damage and creating 6 short-lived flares on hit that deal 1% base damage. Holding ⚒ Use / Attack will instead charge up the sword for a powerful swing when the button is released, dealing full damage on hit.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "meowmere",
@@ -107593,7 +107667,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meowmere",
         "dropRate": "20%",
         "subclass": "sword",
-        "stats": "200 melee dmg"
+        "stats": "200 melee dmg",
+        "secondary": true
       },
       {
         "id": "pulse-dragon",
@@ -107604,7 +107679,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pulse_Dragon",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -107630,7 +107705,8 @@
           }
         ],
         "effect": "When used, the player swings two glowing electric dragon heads which move in a whip-like manner. As they converge, up to eight short-lasting electrosphere projectiles are spawned per flail.",
-        "subclass": "flail"
+        "subclass": "flail",
+        "secondary": true
       },
       {
         "id": "stellar-contempt",
@@ -107641,7 +107717,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stellar_Contempt",
         "station": "Ancient Manipulator",
         "materials": [
@@ -107667,7 +107743,8 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "terratomere",
@@ -107678,7 +107755,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terratomere",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -107700,6 +107777,149 @@
         ],
         "effect": "When used, it fires 4 homing energy bolts that cause an explosion which deals 50% of the weapon's damage and also fires a short-range slash projectile after every swing. Both the blade and energy bolts create 3 light beam slashes that deal 40% of the weapon's damage on hit.",
         "subclass": "sword"
+      },
+      {
+        "id": "galactus-blade",
+        "name": "Galactus Blade",
+        "slot": "weapon",
+        "icon": "calamity/galactus-blade.png",
+        "subclass": "sword",
+        "stats": "185 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Galactus_Blade",
+        "topPick": false,
+        "tags": [],
+        "effect": "Launches a barrage of comets from the sky that travel through tiles and pierce.",
+        "why": "Launches a barrage of comets from the sky that travel throug",
+        "tier": "best",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Star Wrath",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Wrath"
+          },
+          {
+            "name": "Divine Geode",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Divine_Geode"
+          },
+          {
+            "name": "Solar Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          },
+          {
+            "name": "Vortex Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          },
+          {
+            "name": "Nebula Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
+          },
+          {
+            "name": "Stardust Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "mirror-blade",
+        "name": "Mirror Blade",
+        "slot": "weapon",
+        "icon": "calamity/mirror-blade.png",
+        "subclass": "sword",
+        "stats": "600 true melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mirror_Blade",
+        "topPick": false,
+        "tags": [],
+        "effect": "Striking an enemy or projectile summons orbiting mirror shards; hold to coalesce them into a shield.",
+        "why": "Striking an enemy or projectile summons orbiting mirror shar",
+        "tier": "best",
+        "source": "Dropped by the Ceaseless Void",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "lacerator",
+        "name": "Lacerator",
+        "slot": "weapon",
+        "icon": "calamity/lacerator.png",
+        "subclass": "yoyo",
+        "stats": "222 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lacerator",
+        "topPick": false,
+        "tags": [],
+        "effect": "Striking enemies conjures a bloody saw to shred them; the saw hits harder the more the yoyo lands.",
+        "why": "Striking enemies conjures a bloody saw to shred them; the sa",
+        "tier": "good",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Bloodstone Core",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
+          }
+        ]
+      },
+      {
+        "id": "burning-revelation",
+        "name": "Burning Revelation",
+        "slot": "weapon",
+        "icon": "calamity/burning-revelation.png",
+        "subclass": "yoyo",
+        "stats": "300 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Burning_Revelation",
+        "topPick": false,
+        "tags": [],
+        "effect": "An ever-burning yoyo that charges power; direct hits release profaned energy that scales with charge.",
+        "why": "An ever-burning yoyo that charges power; direct hits release",
+        "tier": "good",
+        "source": "Dropped by Providence, the Profaned Goddess",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "mourningstar",
+        "name": "Mourningstar",
+        "slot": "weapon",
+        "icon": "calamity/mourningstar.png",
+        "subclass": "flail",
+        "stats": "112 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mourningstar",
+        "topPick": false,
+        "tags": [],
+        "effect": "Launches two solar whip swords that explode on hit.",
+        "why": "Launches two solar whip swords that explode on hit",
+        "tier": "good",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Solar Eruption",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Eruption"
+          },
+          {
+            "name": "Divine Geode",
+            "qty": 6,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Divine_Geode"
+          },
+          {
+            "name": "Essence of Sunlight",
+            "qty": 6,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+          },
+          {
+            "name": "Essence of Havoc",
+            "qty": 6,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+          }
+        ]
       }
     ],
     "armor": [
@@ -107833,11 +108053,10 @@
           "Tarragon Breastplate",
           "Tarragon Leggings"
         ],
-        "headpiece": "Tarragon Helm",
+        "headpiece": "Tarragon Helmet",
         "defense": 100,
-        "effect": "Increased heart pickup range · Enemies have a chance to drop extra hearts on death",
-        "desc": "Tarragon armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit faint pulses.",
-        "headpieceBonus": "Enemies are more likely to target you · Taking damage gives Tarra Life, which grants +1.5 HP/s life regen · Armor Set Bonus to cloak yourself in life energy that heavily reduces contact damage for 10 seconds · This has a 30 second cooldown"
+        "effect": "+10% damage reduction · +2 HP/s · Heartreach Potion effect (increased heart pickup range) · Enemies have a chance to drop extra hearts on death",
+        "headpieceBonus": "+30% melee damage · +21% melee critical strike chance · +15% melee speed · +800 aggro · +10% movement speed · Taking damage grants Tarra Life (+1.5 HP/s for 5s) · Armor Set Bonus key activates Tarragon Cloak (0.5x contact damage taken for 10s, 30s cooldown)"
       }
     ],
     "accessories": [
@@ -107850,7 +108069,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Striders",
         "station": "Ancient Manipulator",
         "materials": [
@@ -107881,21 +108099,61 @@
         ]
       },
       {
-        "id": "elysian-wings",
-        "name": "Elysian Wings",
+        "id": "tarragon-wings",
+        "name": "Tarragon Wings",
         "slot": "accessory",
-        "icon": "calamity/elysian-wings.png",
-        "source": "Dropped by Providence",
-        "why": "",
+        "icon": "calamity/tarragon-wings.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "This has more flight time than the other wings.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Wings",
-        "effect": "When equipped, they allow the player to fly and glide.",
         "categories": [
           "primary-mobility"
         ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Wings",
+        "materials": [
+          {
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Flight"
+          },
+          {
+            "name": "Uelibloom Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uelibloom_Bar"
+          }
+        ],
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "effect": "While equipped, they allow the player to fly and glide.",
         "altOf": "Void Striders"
+      },
+      {
+        "id": "badge-of-bravery",
+        "name": "Badge of Bravery",
+        "slot": "accessory",
+        "icon": "calamity/badge-of-bravery.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Badge_of_Bravery",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Warrior Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+          },
+          {
+            "name": "Uelibloom Bar",
+            "qty": 2,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uelibloom_Bar"
+          }
+        ],
+        "effect": "When equipped, it increases melee damage and critical strike chance by 10%, and armor penetration by 5.",
+        "categories": [
+          "offense"
+        ]
       },
       {
         "id": "warbanner-of-the-righteous",
@@ -107906,13 +108164,13 @@
         "why": "offensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Warbanner_of_the_Righteous",
         "effect": "While equipped, it increases all damage depending on how close the player is to an enemy. The boost scales from -15% to +15%.",
         "categories": [
           "offense"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "altOf": "Badge of Bravery"
       },
       {
         "id": "elysian-aegis",
@@ -107923,7 +108181,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Aegis",
         "effect": "Grants immunity to knockback · Allows the ability to dash, empowered by holy fire · This dash can ram through enemies without taking damage · 'Blessed by the Profaned Flame'",
         "categories": [
@@ -107939,7 +108196,6 @@
         "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fire_Gauntlet",
         "materials": [
           {
@@ -107959,6 +108215,23 @@
         ]
       },
       {
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
+        "slot": "accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Fire Gauntlet"
+      },
+      {
         "id": "blood-pact",
         "name": "Blood Pact",
         "slot": "accessory",
@@ -107967,13 +108240,50 @@
         "why": "large max-life boost",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
         "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "the-absorber",
@@ -107984,7 +108294,6 @@
         "why": "all-around defensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Absorber",
         "station": "Ancient Manipulator",
         "materials": [
@@ -108028,7 +108337,6 @@
         "why": "defensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
         "station": "Ancient Manipulator",
         "materials": [
@@ -108057,7 +108365,8 @@
         "categories": [
           "survivability"
         ],
-        "altOf": "The Absorber"
+        "altOf": "The Absorber",
+        "classicHide": true
       },
       {
         "id": "ascendant-insignia",
@@ -108068,7 +108377,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Insignia",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -108100,32 +108408,26 @@
         "expertOnly": true
       },
       {
-        "id": "badge-of-bravery",
-        "name": "Badge of Bravery",
+        "id": "the-community",
+        "name": "The Community",
         "slot": "accessory",
-        "icon": "calamity/badge-of-bravery.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/the-community.png",
+        "source": "Dropped by Leviathan and Anahita",
+        "why": "all-around stat boost accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Badge_of_Bravery",
-        "station": "Mythril Anvil or Orichalcum Anvil",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community",
+        "station": "Shimmer Transmutation",
         "materials": [
           {
-            "name": "Warrior Emblem",
+            "name": "Shattered Community",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
-          },
-          {
-            "name": "Uelibloom Bar",
-            "qty": 2,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uelibloom_Bar"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Community"
           }
         ],
-        "effect": "When equipped, it increases melee damage and critical strike chance by 10%, and armor penetration by 5.",
+        "effect": "When equipped, it grants the player various offensive, defensive, and mobility stat boosts which scale as the player progresses through the game by defeating more bosses.",
         "categories": [
-          "offense"
+          "all-around"
         ],
         "altOf": "Ascendant Insignia"
       }
@@ -108990,27 +109292,6 @@
     ],
     "tools": [
       {
-        "id": "claret-cannon",
-        "name": "Claret Cannon",
-        "slot": "weapon",
-        "icon": "calamity/claret-cannon.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Claret_Cannon",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ],
-        "effect": "It fires a small claret round that explodes into 20 small floating blood orbs upon hitting an enemy. When collected by the player, each orb reduces the duration of the Potion Sickness debuff by 0.33 seconds.",
-        "stats": "500 dmg"
-      },
-      {
         "id": "eye-of-magnus",
         "name": "Eye of Magnus",
         "slot": "weapon",
@@ -109047,7 +109328,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
         "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
-        "stats": "1700 dmg"
+        "stats": "1700 dmg",
+        "altOf": "Eye of Magnus"
       },
       {
         "id": "rod-of-discord",
@@ -109061,9 +109343,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-polterghast",
@@ -115883,8 +116168,8 @@
         "source": "Dropped by Polterghast",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Banshee_Hook",
         "effect": "It is swung in front of the player at an odd angle, similarly to the Ghastly Glaive, and releases a line of five projectiles at once, each dealing 85% of the weapon's damage. Hitting an enemy directly with the weapon causes a ghostly explosion, rapidly dealing 25% of the weapon's damage.",
         "subclass": "spear"
@@ -115935,7 +116220,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Death's_Ascension",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -115972,7 +116257,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Galileo_Gladius",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -115998,7 +116283,8 @@
           }
         ],
         "effect": "When used with ⚒ Use / Attack (default: Left Click), the weapon rapidly stabs in front of the player with slightly varying angles, like the Gladius. Glowing blue energy extends a short distance from the weapon's tip with every stab, improving its range.",
-        "subclass": "sword"
+        "subclass": "sword",
+        "secondary": true
       },
       {
         "id": "neptunes-bounty",
@@ -116009,7 +116295,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Neptune's_Bounty",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -116031,6 +116317,101 @@
         ],
         "effect": "When used, it throws a gravity-affected spinning abyssal sword that pierces infinitely. While spinning, the sword releases infinitely piercing water blasts which deal 16.67% damage in random directions, or towards nearby enemies if any are present.",
         "subclass": "other"
+      },
+      {
+        "id": "the-last-mourning",
+        "name": "The Last Mourning",
+        "slot": "weapon",
+        "icon": "calamity/the-last-mourning.png",
+        "subclass": "sword",
+        "stats": "600 true melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Last_Mourning",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Summons flaming pumpkins and mourning skulls that split into homing fire orbs on hit.",
+        "why": "Homing pumpkin/skull broadsword.",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "The Horseman's Blade",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/The_Horseman%27s_Blade"
+          },
+          {
+            "name": "Soul of Night",
+            "qty": 30,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Night"
+          },
+          {
+            "name": "Reaper Tooth",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
+          },
+          {
+            "name": "Ruinous Soul",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
+          }
+        ]
+      },
+      {
+        "id": "terror-blade",
+        "name": "Terror Blade",
+        "slot": "weapon",
+        "icon": "calamity/terror-blade.png",
+        "subclass": "sword",
+        "stats": "560 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terror_Blade",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a terror beam that bounces off tiles, emitting an explosion on every bounce.",
+        "why": "Bouncing explosive beam sword.",
+        "source": "Dropped by Polterghast",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "lacerator",
+        "name": "Lacerator",
+        "slot": "weapon",
+        "icon": "calamity/lacerator.png",
+        "subclass": "yoyo",
+        "stats": "222 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lacerator",
+        "topPick": false,
+        "tags": [],
+        "effect": "Striking enemies conjures a bloody saw to shred them; the saw hits harder the more the yoyo lands.",
+        "why": "Striking enemies conjures a bloody saw to shred them; the sa",
+        "tier": "good",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Bloodstone Core",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
+          }
+        ]
+      },
+      {
+        "id": "burning-revelation",
+        "name": "Burning Revelation",
+        "slot": "weapon",
+        "icon": "calamity/burning-revelation.png",
+        "subclass": "yoyo",
+        "stats": "300 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Burning_Revelation",
+        "topPick": false,
+        "tags": [],
+        "effect": "An ever-burning yoyo that charges power; direct hits release profaned energy that scales with charge.",
+        "why": "An ever-burning yoyo that charges power; direct hits release",
+        "tier": "good",
+        "source": "Dropped by Providence, the Profaned Goddess",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
       }
     ],
     "armor": [
@@ -116070,9 +116451,8 @@
         ],
         "headpiece": "Bloodflare Ram Mask",
         "defense": 108,
-        "effect": "Enemies below 50% life drop a heart when struck · This effect has a 5 second cooldown",
-        "desc": "Bloodflare armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit faint pulses.",
-        "headpieceBonus": "Enemies are more likely to target you · After striking an enemy 15 times with true melee you will enter a blood frenzy for 5 seconds · During this you will gain 25% increased melee damage, critical strike chance, and 50% reduced contact damage · This effect has a 30 second cooldown"
+        "effect": "Enemies below 50% health drop a heart when hit (5s cooldown).",
+        "headpieceBonus": "+32% melee damage · +20% melee critical strike chance · +18% melee speed · +900 aggro · +17% movement speed · After 15 true melee strikes, gain Blood Frenzy (+25% melee damage & crit, 0.5x contact damage taken; 30s cooldown)"
       },
       {
         "id": "omega-blue-armor",
@@ -116156,9 +116536,9 @@
           "Omega Blue Tentacles"
         ],
         "defense": 50,
-        "effect": "Increases your max number of minions by 2 · Short-ranged tentacles heal you by sucking enemy life · Abyssal Madness - Armor Set Bonus to go berserk for 5 seconds · While active, tentacles attack with greater range and aggression, and always critically strike · This also grants 10% increased damage and critical strike chance · This effect has a 25 second cooldown",
-        "desc": "Omega Blue armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit a pulsating aura around them.",
-        "allClass": true
+        "effect": "+46% damage · +38% critical strike chance · +25% chance to save ammo · +2 minion slots · +12% movement speed · Move freely through liquids · All attacks inflict Hadopelagic Pressure · Negates positive health regeneration · Six blue tentacles swat nearby enemies for 350 damage (scales with class damage) and heal you via lifesteal (up to 10 HP/hit) · Set Bonus key activates Abyssal Madness for 5s (+10% damage, +10% crit, greater tentacle range and aggression; 25s cooldown)",
+        "allClass": true,
+        "headpiece": "Omega Blue Helmet"
       }
     ],
     "accessories": [
@@ -116171,7 +116551,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Striders",
         "station": "Ancient Manipulator",
         "materials": [
@@ -116210,7 +116589,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Wings",
         "effect": "When equipped, they allow the player to fly and glide.",
         "categories": [
@@ -116219,21 +116597,32 @@
         "altOf": "Void Striders"
       },
       {
-        "id": "old-dukes-scales",
-        "name": "Old Duke's Scales",
+        "id": "badge-of-bravery",
+        "name": "Badge of Bravery",
         "slot": "accessory",
-        "icon": "calamity/old-dukes-scales.png",
-        "source": "Dropped by The Old Duke",
+        "icon": "calamity/badge-of-bravery.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
-        "categories": [
-          "survivability"
-        ],
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Old_Duke%27s_Scales",
-        "effect": "Grants immunity to knockback · 10% increased damage reduction, max movement speed, and acceleration · 25% increased dash velocity and length · Adds a stamina tracker to the cooldown rack",
-        "expertOnly": true
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Badge_of_Bravery",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Warrior Emblem",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
+          },
+          {
+            "name": "Uelibloom Bar",
+            "qty": 2,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uelibloom_Bar"
+          }
+        ],
+        "effect": "When equipped, it increases melee damage and critical strike chance by 10%, and armor penetration by 5.",
+        "categories": [
+          "offense"
+        ]
       },
       {
         "id": "warbanner-of-the-righteous",
@@ -116244,14 +116633,16 @@
         "why": "offensive accessory",
         "tags": [],
         "topPick": false,
-        "tier": "other",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Warbanner_of_the_Righteous",
         "effect": "While equipped, it increases all damage depending on how close the player is to an enemy. The boost scales from -15% to +15%.",
         "categories": [
           "offense"
         ],
-        "altOf": "Old Duke's Scales",
-        "expertOnly": true
+        "expertOnly": true,
+        "altOf": "Badge of Bravery",
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "elysian-aegis",
@@ -116262,7 +116653,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Aegis",
         "effect": "Grants immunity to knockback · Allows the ability to dash, empowered by holy fire · This dash can ram through enemies without taking damage · 'Blessed by the Profaned Flame'",
         "categories": [
@@ -116278,7 +116668,6 @@
         "why": "Melee damage, speed and knockback, and sets enemies on fire. Upgrades from Mechanical Glove.",
         "tags": [],
         "topPick": false,
-        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fire_Gauntlet",
         "materials": [
           {
@@ -116298,6 +116687,23 @@
         ]
       },
       {
+        "id": "yoyo-bag",
+        "name": "Yoyo Bag",
+        "slot": "accessory",
+        "icon": "items/yoyo-bag.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "station": "Tinkerer's Workshop",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Yoyo_Bag",
+        "categories": [
+          "offense"
+        ],
+        "effect": "Combines a Counterweight, Yoyo Glove, White String, and Yoyo Bag effects for stronger yoyos.",
+        "why": "All-in-one yoyo upgrade.",
+        "tags": [],
+        "topPick": false,
+        "altOf": "Fire Gauntlet"
+      },
+      {
         "id": "blood-pact",
         "name": "Blood Pact",
         "slot": "accessory",
@@ -116306,13 +116712,50 @@
         "why": "large max-life boost",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
         "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "reaper-tooth-necklace",
@@ -116323,7 +116766,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth_Necklace",
         "station": "Tinkerer's Workshop",
         "materials": [
@@ -116357,13 +116799,123 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
         "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
         "categories": [
           "all-around"
         ],
+        "expertOnly": true,
+        "altOf": "Reaper Tooth Necklace",
+        "markers": [
+          "expert"
+        ]
+      },
+      {
+        "id": "ascendant-insignia",
+        "name": "Ascendant Insignia",
+        "slot": "accessory",
+        "icon": "calamity/ascendant-insignia.png",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Insignia",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Soaring Insignia",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soaring_Insignia"
+          },
+          {
+            "name": "Effulgent Feather",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Effulgent_Feather"
+          },
+          {
+            "name": "Divine Geode",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Divine_Geode"
+          },
+          {
+            "name": "Soul of Flight",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
+          }
+        ],
+        "effect": "Increases wing flight time by 50%, movement and jump speed by 15%, and acceleration by 1.5x · Pressing Ascendant Insignia Hotkey grants you the power of ascension, providing infinite flight time for 4 seconds · Ascension has a 40 second cooldown",
+        "categories": [
+          "extra-mobility"
+        ],
         "expertOnly": true
+      },
+      {
+        "id": "the-community",
+        "name": "The Community",
+        "slot": "accessory",
+        "icon": "calamity/the-community.png",
+        "source": "Dropped by Leviathan and Anahita",
+        "why": "all-around stat boost accessory",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community",
+        "station": "Shimmer Transmutation",
+        "materials": [
+          {
+            "name": "Shattered Community",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Community"
+          }
+        ],
+        "effect": "When equipped, it grants the player various offensive, defensive, and mobility stat boosts which scale as the player progresses through the game by defeating more bosses.",
+        "categories": [
+          "all-around"
+        ],
+        "altOf": "Ascendant Insignia"
+      },
+      {
+        "id": "the-absorber",
+        "name": "The Absorber",
+        "slot": "accessory",
+        "icon": "calamity/the-absorber.png",
+        "source": "Crafted at an Ancient Manipulator",
+        "why": "all-around defensive accessory",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Absorber",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Grand Gelatin",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Gelatin"
+          },
+          {
+            "name": "Baroclaw",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Baroclaw"
+          },
+          {
+            "name": "Giant Tortoise Shell",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Tortoise_Shell"
+          },
+          {
+            "name": "Mollusk Husk",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
+          },
+          {
+            "name": "Meld Blob",
+            "qty": 14,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
+          }
+        ],
+        "effect": "Grants immunity to knockback · 12% increased movement and jump speed · Attackers take immense damage and are afflicted with Absorber Affliction · Using a healing potion will spawn a green aura that lasts for 30 seconds · Walking into the aura removes all debuffs once and grants 2 HP/s regen, 8% damage, and 5% damage reduction · 5% of the damage from enemy attacks is converted into healing",
+        "categories": [
+          "all-around"
+        ],
+        "altOf": "Ambrosial Ampoule"
       }
     ],
     "buffs": [
@@ -117359,27 +117911,6 @@
     ],
     "tools": [
       {
-        "id": "claret-cannon",
-        "name": "Claret Cannon",
-        "slot": "weapon",
-        "icon": "calamity/claret-cannon.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Claret_Cannon",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ],
-        "effect": "It fires a small claret round that explodes into 20 small floating blood orbs upon hitting an enemy. When collected by the player, each orb reduces the duration of the Potion Sickness debuff by 0.33 seconds.",
-        "stats": "500 dmg"
-      },
-      {
         "id": "eye-of-magnus",
         "name": "Eye of Magnus",
         "slot": "weapon",
@@ -117417,45 +117948,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
-      },
-      {
-        "id": "stratus-sphere",
-        "name": "Stratus Sphere",
-        "slot": "weapon",
-        "icon": "calamity/stratus-sphere.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stratus_Sphere",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Nebula Arcanum",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
-          },
-          {
-            "name": "Lumenyl",
-            "qty": 6,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lumenyl"
-          },
-          {
-            "name": "Ruinous Soul",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-          },
-          {
-            "name": "Exodium Cluster",
-            "qty": 12,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
-          }
-        ],
-        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles.",
-        "stats": "400 dmg"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-dog",
@@ -124919,8 +125417,8 @@
         "source": "Dropped by The Devourer of Gods",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmic_Discharge",
         "effect": "Striking an enemy with the whip causes glacial explosions that grant the player the Cosmic Freeze buff · Cosmic Freeze gives the player +2 HP/s life regen while standing still and freezes enemies near the player",
         "subclass": "flail"
@@ -124955,7 +125453,8 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it throws a sword that sticks into enemies and reduces their speed, with a max of 5 being able to be stuck into a single enemy. If another is stuck, the oldest one will be launched out.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "galaxy-smasher",
@@ -124966,7 +125465,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Galaxy_Smasher",
         "station": "Cosmic Anvil",
         "materials": [
@@ -124982,7 +125481,7 @@
           }
         ],
         "effect": "When used, it throws a fast gravity-affected hammer that passes through tiles. Upon hitting an enemy, it slows down and starts returning to the player.",
-        "subclass": "other"
+        "subclass": "flail"
       },
       {
         "id": "murasama",
@@ -124993,7 +125492,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Murasama",
         "effect": "It can be found in The Underworld 's Bio-center Arsenal Lab, contained within a Security Chest.",
         "subclass": "sword"
@@ -125007,10 +125506,103 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Obliterator",
         "effect": "While deployed, it is able to charge towards an enemy every 2 seconds, dealing 600% damage and inflicting the God Slayer Inferno debuff. Counterweight hits can instantly trigger charges.",
         "subclass": "yoyo"
+      },
+      {
+        "id": "galaxia",
+        "name": "Galaxia",
+        "slot": "weapon",
+        "icon": "calamity/galaxia.png",
+        "subclass": "sword",
+        "stats": "250 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Galaxia",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Freed from earthly shackles; switch between four constellation-themed attack modes anywhere.",
+        "why": "Four-mode cosmic broadsword.",
+        "source": "Crafted at a Mythril / Orichalcum Anvil",
+        "station": "Mythril / Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "True Biome Blade",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/True_Biome_Blade"
+          },
+          {
+            "name": "Armored Shell",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armored_Shell"
+          },
+          {
+            "name": "Twisting Nether",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Twisting_Nether"
+          },
+          {
+            "name": "Dark Plasma",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
+          }
+        ]
+      },
+      {
+        "id": "maw-of-infinity",
+        "name": "Maw of Infinity",
+        "slot": "weapon",
+        "icon": "calamity/maw-of-infinity.png",
+        "subclass": "sword",
+        "stats": "2080 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Maw_of_Infinity",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A 3-swing combo; the third swing unleashes the Divinity Devourer at the cursor for massive damage.",
+        "why": "Devourer-forged combo sword.",
+        "source": "Dropped by The Devourer of Gods",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "phaseslayer",
+        "name": "Phaseslayer",
+        "slot": "weapon",
+        "icon": "calamity/phaseslayer.png",
+        "subclass": "sword",
+        "stats": "1350 melee dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phaseslayer",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Projects a colossal cursor-controlled laser blade; faster swings deal more damage and release sword beams.",
+        "why": "Cursor-controlled laser blade.",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "materials": [
+          {
+            "name": "Mysterious Circuitry",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mysterious_Circuitry"
+          },
+          {
+            "name": "Dubious Plating",
+            "qty": 25,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dubious_Plating"
+          },
+          {
+            "name": "Cosmilite Bar",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
+          },
+          {
+            "name": "Ascendant Spirit Essence",
+            "qty": 2,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
+          }
+        ]
       }
     ],
     "armor": [
@@ -125018,7 +125610,7 @@
         "id": "god-slayer-armor",
         "name": "God Slayer armor",
         "slot": "armor",
-        "icon": "armor-sets/god-slayer-armor-melee.png",
+        "icon": "calamity/god-slayer-armor.png",
         "source": "Crafted",
         "why": "",
         "tags": [],
@@ -125114,94 +125706,8 @@
         ],
         "headpiece": "God Slayer Horned Greathelm",
         "defense": 120,
-        "desc": "God Slayer armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit afterimages.",
-        "headpieceBonus": "Enemies are more likely to target you · Releases a swarm of god killer darts when taking over 80 damage in one hit",
-        "effect": "Enemies you dash through take massive damage · During Dimensional Drive you are immune to damage and most debuffs · Dimensional Drive has a 45 second cooldown"
-      },
-      {
-        "id": "omega-blue-armor",
-        "name": "Omega Blue armor",
-        "slot": "armor",
-        "icon": "armor-sets/omega-blue-armor.png",
-        "source": "Crafted",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Omega Blue Chestplate",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 18,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          },
-          {
-            "piece": "Omega Blue Helmet",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          },
-          {
-            "piece": "Omega Blue Tentacles",
-            "station": "Mythril Anvil or Orichalcum Anvil",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Omega Blue Helmet",
-          "Omega Blue Chestplate",
-          "Omega Blue Tentacles"
-        ],
-        "defense": 50,
-        "effect": "Increases your max number of minions by 2 · Short-ranged tentacles heal you by sucking enemy life · Abyssal Madness - Armor Set Bonus to go berserk for 5 seconds · While active, tentacles attack with greater range and aggression, and always critically strike · This also grants 10% increased damage and critical strike chance · This effect has a 25 second cooldown",
-        "desc": "Omega Blue armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit a pulsating aura around them."
+        "headpieceBonus": "+36% melee damage · +27% melee critical strike chance · +20% melee speed · +1000 aggro · +10% movement speed · Taking over 80 damage in one hit fires 8 god killer darts (350/700/1050 typeless damage, scale with melee bonuses, inflict God Slayer Inferno for 3s)",
+        "effect": "Press Dimensional Drive to dash toward the cursor for 1.25s, dealing great damage and inflicting God Slayer Inferno on contact; you are immune to damage and most debuffs while dashing (45s cooldown)."
       }
     ],
     "accessories": [
@@ -125214,7 +125720,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Void_Striders",
         "station": "Ancient Manipulator",
         "materials": [
@@ -125253,7 +125758,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Wings",
         "station": "Cosmic Anvil",
         "materials": [
@@ -125285,6 +125789,55 @@
         "altOf": "Void Striders"
       },
       {
+        "id": "affliction",
+        "name": "Affliction",
+        "slot": "accessory",
+        "icon": "calamity/affliction.png",
+        "source": "Dropped by Polterghast in Expert Mode",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
+        "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
+        "categories": [
+          "all-around"
+        ],
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "reaper-tooth-necklace",
+          "name": "Reaper Tooth Necklace",
+          "slot": "accessory",
+          "icon": "calamity/reaper-tooth-necklace.png",
+          "source": "Crafted at a Tinkerer's Workshop",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth_Necklace",
+          "station": "Tinkerer's Workshop",
+          "materials": [
+            {
+              "name": "Sand Shark Tooth Necklace",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sand_Shark_Tooth_Necklace"
+            },
+            {
+              "name": "Reaper Tooth",
+              "qty": 6,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
+            },
+            {
+              "name": "Depth Cells",
+              "qty": 15,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
+            }
+          ],
+          "effect": "When equipped, it increases all damage by 20% and increases armor penetration by 30.",
+          "categories": [
+            "offense"
+          ]
+        }
+      },
+      {
         "id": "reaper-tooth-necklace",
         "name": "Reaper Tooth Necklace",
         "slot": "accessory",
@@ -125293,7 +125846,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth_Necklace",
         "station": "Tinkerer's Workshop",
         "materials": [
@@ -125316,7 +125868,25 @@
         "effect": "When equipped, it increases all damage by 20% and increases armor penetration by 30.",
         "categories": [
           "offense"
-        ]
+        ],
+        "altOf": "Affliction"
+      },
+      {
+        "id": "affliction",
+        "name": "Affliction",
+        "slot": "accessory",
+        "icon": "calamity/affliction.png",
+        "source": "Dropped by Polterghast in Expert Mode",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
+        "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
+        "categories": [
+          "all-around"
+        ],
+        "expertOnly": true,
+        "altOf": "Reaper Tooth Necklace"
       },
       {
         "id": "asgardian-aegis",
@@ -125327,7 +125897,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Asgardian_Aegis",
         "station": "Cosmic Anvil",
         "materials": [
@@ -125366,7 +125935,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statis'_Void_Sash",
         "station": "Cosmic Anvil",
         "materials": [
@@ -125401,7 +125969,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elemental_Gauntlet",
         "station": "Cosmic Anvil",
         "materials": [
@@ -125430,7 +125997,6 @@
         "why": "all-around stat boost accessory",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community",
         "station": "Shimmer Transmutation",
         "materials": [
@@ -125446,22 +126012,35 @@
         ]
       },
       {
-        "id": "affliction",
-        "name": "Affliction",
+        "id": "dimensional-soul-artifact",
+        "name": "Dimensional Soul Artifact",
         "slot": "accessory",
-        "icon": "calamity/affliction.png",
-        "source": "Dropped by Polterghast in Expert Mode",
-        "why": "",
+        "icon": "calamity/dimensional-soul-artifact.png",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Crushing_Ego",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
-        "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
-        "categories": [
-          "all-around"
-        ],
         "altOf": "The Community",
-        "expertOnly": true
+        "effect": "Multiplies all damage dealt by 1.3x, but you take 20% more damage. (Now named Crushing Ego.)",
+        "why": "High-risk 1.3x damage multiplier.",
+        "source": "Crafted at a Cosmic Anvil",
+        "station": "Cosmic Anvil",
+        "materials": [
+          {
+            "name": "Cosmilite Bar",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cosmilite_Bar"
+          },
+          {
+            "name": "Elumplate",
+            "qty": 25,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elumplate"
+          },
+          {
+            "name": "Exodium Cluster",
+            "qty": 25,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
+          }
+        ]
       },
       {
         "id": "the-sponge",
@@ -125472,7 +126051,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Sponge",
         "station": "Cosmic Anvil",
         "materials": [
@@ -125516,7 +126094,6 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chalice_of_the_Blood_God",
         "station": "Cosmic Anvil",
         "materials": [
@@ -126674,27 +127251,6 @@
     ],
     "tools": [
       {
-        "id": "claret-cannon",
-        "name": "Claret Cannon",
-        "slot": "weapon",
-        "icon": "calamity/claret-cannon.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Claret_Cannon",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ],
-        "effect": "It fires a small claret round that explodes into 20 small floating blood orbs upon hitting an enemy. When collected by the player, each orb reduces the duration of the Potion Sickness debuff by 0.33 seconds.",
-        "stats": "500 dmg"
-      },
-      {
         "id": "eye-of-magnus",
         "name": "Eye of Magnus",
         "slot": "weapon",
@@ -126732,45 +127288,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
-      },
-      {
-        "id": "stratus-sphere",
-        "name": "Stratus Sphere",
-        "slot": "weapon",
-        "icon": "calamity/stratus-sphere.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stratus_Sphere",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Nebula Arcanum",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Arcanum"
-          },
-          {
-            "name": "Lumenyl",
-            "qty": 6,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lumenyl"
-          },
-          {
-            "name": "Ruinous Soul",
-            "qty": 4,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-          },
-          {
-            "name": "Exodium Cluster",
-            "qty": 12,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
-          }
-        ],
-        "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles.",
-        "stats": "400 dmg"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-yharon",

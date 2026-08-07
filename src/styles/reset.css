@@ -14,6 +14,25 @@ body {
   margin: 0;
 }
 
+/* Reserve the scrollbar gutter so locking the page behind a modal (which sets
+   body overflow:hidden and hides the scrollbar) does not shift the layout. Also
+   style the page scrollbar to match the modal's thin accent one, not the OS
+   default. */
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--accent) 45%, transparent) transparent;
+}
+html::-webkit-scrollbar { width: 10px; }
+html::-webkit-scrollbar-track { background: transparent; }
+html::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--accent) 40%, transparent);
+  border-radius: 6px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--accent) 60%, transparent);
+}
+
 /* Subtle paper-grain texture overlay */
 body::before {
   content: '';
