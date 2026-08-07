@@ -144738,8 +144738,8 @@
         "source": "Crafted at a Draedon's Forge",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Draconic_Destruction",
         "station": "Draedon's Forge",
         "materials": [
@@ -144776,7 +144776,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Earth",
         "station": "Draedon's Forge",
         "materials": [
@@ -144802,7 +144802,7 @@
           }
         ],
         "effect": "When used, the sword is rapidly swung in a circular motion around the player, leaving behind a rainbow trail, before swinging towards the cursor with a larger slash. The larger slash spawns 3 rainbow gaia meteors from the sky that deal 120% base damage and explode on hit, dealing an additional 75% base damage.",
-        "subclass": "other"
+        "subclass": "sword"
       },
       {
         "id": "illustrious-knives",
@@ -144845,7 +144845,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ozzathoth",
         "station": "Draedon's Forge",
         "materials": [
@@ -144877,7 +144877,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Red_Sun",
         "station": "Draedon's Forge",
         "materials": [
@@ -144914,7 +144914,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Triactis'_True_Paladinian_Mage-Hammer_of_Might",
         "station": "Draedon's Forge",
         "materials": [
@@ -144940,360 +144940,24 @@
     ],
     "armor": [
       {
-        "id": "auric-tesla-armor",
-        "name": "Auric Tesla armor",
+        "id": "demonshade-armor",
+        "name": "Demonshade Armor",
         "slot": "armor",
-        "icon": "armor-sets/auric-tesla-armor-melee.png",
+        "icon": "calamity/demonshade-armor.png",
         "source": "Crafted",
-        "why": "",
-        "tags": [],
-        "topPick": false,
         "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Tesla_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Auric Tesla Body Armor",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Armor",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Armor"
-              },
-              {
-                "name": "Bloodflare Body Armor",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Body_Armor"
-              },
-              {
-                "name": "Tarragon Breastplate",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Breastplate"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 18,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Cuisses",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Leggings",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Leggings"
-              },
-              {
-                "name": "Bloodflare Cuisses",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Cuisses"
-              },
-              {
-                "name": "Tarragon Leggings",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Leggings"
-              },
-              {
-                "name": "Flying Carpet",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Flying_Carpet"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Hooded Facemask",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Helmet",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Helmet"
-              },
-              {
-                "name": "Bloodflare Demon Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Demon_Helm"
-              },
-              {
-                "name": "Tarragon Visage",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Visage"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Plumed Helm",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Mask"
-              },
-              {
-                "name": "Bloodflare Imp Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Imp_Mask"
-              },
-              {
-                "name": "Tarragon Helmet",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Helmet"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Royal Helm",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "God Slayer Horned Greathelm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/God_Slayer_Horned_Greathelm"
-              },
-              {
-                "name": "Bloodflare Ram Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Ram_Mask"
-              },
-              {
-                "name": "Tarragon Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Helm"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Space Helmet",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Horned Hood",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Horned_Hood"
-              },
-              {
-                "name": "Bloodflare Wyvern Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Wyvern_Helm"
-              },
-              {
-                "name": "Tarragon Horned Helm",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Horned_Helm"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Auric Tesla Wire-Hemmed Visage",
-            "station": "Cosmic Anvil",
-            "materials": [
-              {
-                "name": "Silva Masked Cap",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silva_Masked_Cap"
-              },
-              {
-                "name": "Bloodflare Hydra Hood",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodflare_Hydra_Hood"
-              },
-              {
-                "name": "Tarragon Mask",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tarragon_Mask"
-              },
-              {
-                "name": "Auric Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Auric_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Auric Tesla Royal Helm",
-          "Auric Tesla Body Armor",
-          "Auric Tesla Cuisses"
-        ],
-        "headpiece": "Auric Tesla Royal Helm",
-        "defense": 140,
-        "effect": "Inherits the set bonuses of the post-Moon Lord armors it is crafted from - Tarragon, Bloodflare and God Slayer · Dimensional Drive dashes you toward the cursor · Releases god killer darts when you take a heavy hit",
-        "desc": "The Auric Tesla armor is a post- Moon Lord armor set. If the full set is equipped, the player will emit afterimages and release a trail of golden sparkles while moving."
-      },
-      {
-        "id": "gem-tech-armor",
-        "name": "Gem Tech armor",
-        "slot": "armor",
-        "icon": "armor-sets/gem-tech-armor.png",
-        "source": "Crafted",
-        "why": "",
-        "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gem_Tech_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Gem Tech Body Armor",
-            "station": "Draedon's Forge",
-            "materials": [
-              {
-                "name": "Exo Prism",
-                "qty": 16,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exo_Prism"
-              },
-              {
-                "name": "Solar Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
-              },
-              {
-                "name": "Vortex Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
-              },
-              {
-                "name": "Nebula Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
-              },
-              {
-                "name": "Stardust Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
-              },
-              {
-                "name": "Meld Blob",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
-              },
-              {
-                "name": "Core of Calamity",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Core_of_Calamity"
-              }
-            ]
-          },
-          {
-            "piece": "Gem Tech Headgear",
-            "station": "Draedon's Forge",
-            "materials": [
-              {
-                "name": "Exo Prism",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exo_Prism"
-              },
-              {
-                "name": "Solar Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
-              },
-              {
-                "name": "Vortex Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
-              },
-              {
-                "name": "Nebula Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
-              },
-              {
-                "name": "Stardust Fragment",
-                "qty": 5,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
-              },
-              {
-                "name": "Meld Blob",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
-              },
-              {
-                "name": "Core of Calamity",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Core_of_Calamity"
-              }
-            ]
-          },
-          {
-            "piece": "Gem Tech Schynbaulds",
-            "station": "Draedon's Forge",
-            "materials": [
-              {
-                "name": "Exo Prism",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exo_Prism"
-              },
-              {
-                "name": "Solar Fragment",
-                "qty": 4,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
-              },
-              {
-                "name": "Vortex Fragment",
-                "qty": 4,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
-              },
-              {
-                "name": "Nebula Fragment",
-                "qty": 4,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Nebula_Fragment"
-              },
-              {
-                "name": "Stardust Fragment",
-                "qty": 4,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
-              },
-              {
-                "name": "Meld Blob",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
-              },
-              {
-                "name": "Core of Calamity",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Core_of_Calamity"
-              }
-            ]
-          }
-        ],
+        "tags": [],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demonshade_armor",
+        "defense": 150,
+        "headpiece": "Demonshade Helm",
         "pieces": [
-          "Gem Tech Headgear",
-          "Gem Tech Body Armor",
-          "Gem Tech Schynbaulds"
+          "Demonshade Helm",
+          "Demonshade Breastplate",
+          "Demonshade Greaves"
         ],
-        "defense": 69,
-        "effect": "Power Gems - Six gem fragments idly orbit you; one for each class, and a base gem · Each active gem provides a bonus for its respective class, while the defensive gem grants defensive boosts · Powerful enemy hits will dislodge gems, launching them into the nearest enemy for huge damage · Lost gems regenerate after a while · The lost gem is the same class as the weapon you are using, so expect to switch weapons often. · The type of gem lost is the same as the class of the most recently used weapon · If said gem has already been lost, the base gem is lost instead · When a gem is lost, it breaks off and homes towards the nearest enemy or boss, dealing a base of 40000 damage · Gems have a 30 second delay before they appear again · The red gem grants 130 maximum stealth, increased rogue stats, and makes stealth only consumable by rogue weapons · The yellow gem provides increased melee stats and makes melee attacks release shards on hit with a cooldown. This cooldown is shorter for true melee attacks · The green gem provides increased ranged stats and causes flechettes to fly swiftly towards targets when they are damaged by a ranged projectile · The blue gem grants 4 maximum minions, increased summon damage, and negates the summon damage penalty while wielding non-summoner weapons · The violet gem grants 100 maximum mana, increased magic stats, and makes mana rapidly regenerate when holding a non-magic weapon · The pink base gem grants 75 defense, increased damage reduction, movement speed, jump speed, and +1 HP/s life regen · When all gems exist simultaneously, hitting a target with any weapon grants you +1 HP/s life regen for 8 seconds · This is increased to +1.5 HP/s life regen if a weapon of another class is used during that 8 second period for 2.5 seconds",
-        "desc": "Gem Tech armor is a post- Moon Lord armor set.",
-        "allClass": true
+        "effect": "+45% damage · +100% summon damage · +30% critical strike chance · +25% melee speed · +30% chance to not consume ammo · +30% movement speed · 1.5x acceleration · +200 maximum mana · +10 minion slots · +2 HP/s and +400% natural life regen while standing still and not using items (30-second regen headstart) · When damaged, shadowbeams (300/600/900) and demon scythes (500/1000/1500) typeless damage rain from the sky · Set Bonus key inflicts Enraged for 10s: nearby enemies take 1.5x damage but deal 1.25x damage to you.",
+        "why": "The ultimate endgame magic armor."
       }
     ],
     "accessories": [
@@ -145568,7 +145232,23 @@
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "draedons-heart",
+          "name": "Draedon's Heart",
+          "slot": "accessory",
+          "icon": "calamity/draedons-heart.png",
+          "source": "Dropped by the Exo Mechs",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "tier": "good",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Draedon's_Heart",
+          "effect": "Grants immunity to knockback · 15% reduced contact damage from enemies · Replaces Adrenaline with the Nanomachines meter · Unlike Adrenaline, you lose no Nanomachines when you take damage, but they stop accumulating for 1 second · With full Nanomachines, press Adrenaline Mode to heal 180 health over 2 seconds · While healing you take [DR]% less damage · 'Nanomachines, son'",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "draedons-heart",
@@ -145585,7 +145265,30 @@
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "classicAlt": {
+          "id": "shattered-community",
+          "name": "Shattered Community",
+          "slot": "accessory",
+          "icon": "calamity/shattered-community.png",
+          "source": "Crafted at an Exhume",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "tier": "good",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Community",
+          "station": "Exhume",
+          "materials": [
+            {
+              "name": "The Community",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community"
+            }
+          ],
+          "effect": "Increases damage, max health, and movement speed by 10% · Increases defense by 10, and life regen by 1 HP/s · Increases critical strike chance and damage reduction by 5%, and flight time by 20% · You generate rage over time and rage does not fade out of combat · Gain rage after taking damage regardless of defensive stats · While Rage Mode is active, taking damage gives only half as much rage · Deal damage with Rage Mode to further empower your wrath · Current level: [LEVEL] (+[BOOST]% Rage Mode damage) · Progress to next level: [PROGRESS RATIO]% · Total Rage Mode damage: [CUMULATIVE DAMAGE DEALT]",
+          "categories": [
+            "all-around"
+          ]
+        }
       },
       {
         "id": "shattered-community",
@@ -145609,7 +145312,47 @@
         "effect": "Increases damage, max health, and movement speed by 10% · Increases defense by 10, and life regen by 1 HP/s · Increases critical strike chance and damage reduction by 5%, and flight time by 20% · You generate rage over time and rage does not fade out of combat · Gain rage after taking damage regardless of defensive stats · While Rage Mode is active, taking damage gives only half as much rage · Deal damage with Rage Mode to further empower your wrath · Current level: [LEVEL] (+[BOOST]% Rage Mode damage) · Progress to next level: [PROGRESS RATIO]% · Total Rage Mode damage: [CUMULATIVE DAMAGE DEALT]",
         "categories": [
           "all-around"
-        ]
+        ],
+        "classicAlt": {
+          "id": "chalice-of-the-blood-god",
+          "name": "Chalice of the Blood God",
+          "slot": "accessory",
+          "icon": "calamity/chalice-of-the-blood-god.png",
+          "source": "Crafted at a Cosmic Anvil",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "tier": "good",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chalice_of_the_Blood_God",
+          "station": "Cosmic Anvil",
+          "materials": [
+            {
+              "name": "Blood Pact",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact"
+            },
+            {
+              "name": "Charm of Myths",
+              "qty": 1,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Charm_of_Myths"
+            },
+            {
+              "name": "Bloodstone Core",
+              "qty": 5,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
+            },
+            {
+              "name": "Ascendant Spirit Essence",
+              "qty": 4,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ascendant_Spirit_Essence"
+            }
+          ],
+          "effect": "Increases max HP by 25% · +2 HP/s life regen and reduces the cooldown of healing potions by 25% · Taking more than 5 damage converts the hit into a damage over time bleed effect · This bleeding does not interfere with life regeneration · Drinking a healing potion removes some of the remaining bleed, up to 50% of its heal value · Unequipping this accessory while bleeding inflicts the remaining damage instantly · Grants immunity to Bleeding , Burning Blood , Heavy Bleeding and Laceration · 'All that for a drop of blood...'",
+          "categories": [
+            "survivability"
+          ],
+          "expertOnly": true
+        }
       }
     ],
     "buffs": [
@@ -146715,9 +146458,12 @@
             "qty": 1,
             "wikiUrl": "https://terraria.wiki.gg/wiki/Rod_of_Discord"
           }
-        ]
+        ],
+        "altOf": "Eye of Magnus"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-endgame",
