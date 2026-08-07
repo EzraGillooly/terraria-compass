@@ -661,7 +661,7 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
     label: 'Menacing vs Lucky vs Warding on the wiki',
   },
   calamity: {
-    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds four modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
+    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
     list: [
       { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
       { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
@@ -669,8 +669,6 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
       { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
       { name: 'Silent', stat: '+8% stealth regen', note: 'Calamity only, and only useful to rogue', onlyClass: 'rogue' },
       { name: 'Friendly', stat: '+1 minion', note: 'Calamity only, and only useful to summoner', onlyClass: 'summoner' },
-      { name: 'Dauntless', stat: '+20 max life', note: 'Calamity only' },
-      { name: 'Invigorating', stat: '+0.25 HP/s regen', note: 'Calamity only' },
     ],
     href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
     label: 'Calamity modifier table on the wiki',
