@@ -69,9 +69,7 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'cal-pre-polterghast': 'polterghast',
   'cal-pre-dog': 'the-devourer-of-gods',
   'cal-pre-yharon': 'yharon-dragon-of-rebirth',
-  'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material, distinct from post-Exo
-  'cal-post-calamitas': 'supreme-witch-calamitas',
-  'cal-post-exo': 'exo-mechs',
+  'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material
   // cal-endgame (compass) has no single boss, so it is left out - the banner
   // falls back to its own map art.
   // Thorium phases → the boss whose map icon marks that tier.
@@ -252,7 +250,7 @@ const ARMOR_EFFECT_LINES = 3;
 /* Post-Moon Lord in Calamity, where the Celestial Onion becomes available. */
 const CALAMITY_POST_ML = new Set<string>([
   'cal-pre-providence', 'cal-pre-polterghast', 'cal-pre-dog',
-  'cal-pre-yharon', 'cal-pre-exo', 'cal-post-calamitas', 'cal-post-exo', 'cal-endgame',
+  'cal-pre-yharon', 'cal-pre-exo', 'cal-endgame',
 ]);
 
 /* Hardmode, where the Wall of Flesh has dropped its bag and the Demon Heart is
