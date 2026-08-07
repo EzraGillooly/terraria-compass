@@ -21404,7 +21404,7 @@
           {
             "name": "Boomstick",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Boomstick"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Boomstick"
           },
           {
             "name": "Aerialite Bar",
@@ -21417,7 +21417,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "12 ranged dmg"
       },
       {
         "id": "firestorm-cannon",
@@ -21431,7 +21432,7 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon",
         "tier": "good",
         "effect": "Like the Flare Gun, it uses Flares as ammunition and has a 33% chance to not consume ammo.",
-        "subclass": "other",
+        "subclass": "gun",
         "materials": [
           {
             "name": "Flare Gun",
@@ -21449,7 +21450,9 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Illegal_Gun_Parts"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "15 ranged dmg",
+        "secondary": true
       },
       {
         "id": "galeforce",
@@ -21471,7 +21474,9 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           }
         ],
-        "station": "Iron Anvil or Lead Anvil"
+        "station": "Iron Anvil or Lead Anvil",
+        "stats": "13 ranged dmg",
+        "secondary": true
       },
       {
         "id": "p-tsl-short-circuit",
@@ -21483,7 +21488,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/P-TSL%3A_Short_Circuit",
-        "tier": "other",
+        "tier": "good",
         "effect": "When used, it rapidly fires electric shots with slight inaccuracy which pierce once. Right-click launches a slow hook, which attaches to the first enemy it hits, deals 120% base damage, hits faster for each consecutive hit on its target, and inflicts the Static Discharge debuff for 2 seconds.",
         "materials": [
           {
@@ -21508,7 +21513,8 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "subclass": "other"
+        "subclass": "other",
+        "stats": "11 ranged dmg"
       },
       {
         "id": "shadethrower",
@@ -21520,9 +21526,96 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
-        "tier": "other",
+        "tier": "good",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "21 ranged dmg",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "bullet-filled-shotgun",
+        "name": "Bullet-Filled Shotgun",
+        "slot": "weapon",
+        "icon": "calamity/bullet-filled-shotgun.png",
+        "subclass": "gun",
+        "stats": "1 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bullet-Filled_Shotgun",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires 40 bullets per shot in an extremely wide spread as bouncy explosive rounds.",
+        "why": "Fires 40 bullets per shot in an extremely wide spread as bou",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Musket Ball",
+            "qty": 100,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+          },
+          {
+            "name": "Any Iron Bar",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Iron_Bar"
+          },
+          {
+            "name": "Aerialite Bar",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
+          }
+        ]
+      },
+      {
+        "id": "eviscerator",
+        "name": "Eviscerator",
+        "slot": "weapon",
+        "icon": "calamity/eviscerator.png",
+        "subclass": "gun",
+        "stats": "60 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eviscerator",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires blood-charged rounds.",
+        "why": "Fires blood-charged rounds",
+        "source": "Dropped by The Perforators",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "star-cannon",
+        "name": "Star Cannon",
+        "slot": "weapon",
+        "icon": "calamity/star-cannon.png",
+        "source": "Crafted at Iron Anvil or Lead Anvil",
+        "why": "Fires Fallen Stars for high damage, limited by how many stars you have collected.",
+        "tags": [
+          "carry-over"
+        ],
+        "topPick": false,
+        "tier": "best",
+        "subclass": "gun",
+        "stats": "55 ranged dmg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Star_Cannon",
+        "materials": [
+          {
+            "name": "Minishark",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark"
+          },
+          {
+            "name": "Meteorite Bar",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil"
       }
     ],
     "armor": [
@@ -21651,145 +21744,8 @@
         ],
         "headpiece": "Aerospec Hood",
         "defense": 18,
-        "effect": "Taking over 25 damage in one hit will cause a spread of homing feathers to fall · Allows you to fall more quickly and disables fall damage",
-        "desc": "Aerospec armor is a Pre-Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player will emit afterimages.",
-        "headpieceBonus": "5% increased movement speed and ranged critical strike chance"
-      },
-      {
-        "id": "crimson-armor",
-        "name": "Crimson armor",
-        "slot": "armor",
-        "icon": "armor-sets/crimson-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Crimson Helmet",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          },
-          {
-            "piece": "Crimson Scalemail",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          },
-          {
-            "piece": "Crimson Greaves",
-            "materials": [
-              {
-                "name": "Crimtane Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Crimtane_Bar"
-              },
-              {
-                "name": "Tissue Sample",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Tissue_Sample"
-              }
-            ]
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Crimson Helmet",
-          "Crimson Scalemail",
-          "Crimson Greaves"
-        ],
-        "effect": "+9% damage · Greatly increased health regeneration",
-        "desc": "Crimson armor is a pre-Hardmode armor set consisting of the Crimson Helmet, Crimson Scalemail, and Crimson Greaves.",
-        "allClass": true
-      },
-      {
-        "id": "shadow-armor",
-        "name": "Shadow armor",
-        "slot": "armor",
-        "icon": "armor-sets/shadow-armor.png",
-        "source": "Crafted at Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shadow Helmet",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 10,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          },
-          {
-            "piece": "Shadow Scalemail",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 25,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          },
-          {
-            "piece": "Shadow Greaves",
-            "materials": [
-              {
-                "name": "Demonite Bar",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
-              },
-              {
-                "name": "Shadow Scale",
-                "qty": 15,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shadow_Scale"
-              }
-            ]
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Shadow Helmet",
-          "Shadow Scalemail",
-          "Shadow Greaves"
-        ],
-        "effect": "+15% critical strike chance · +75% acceleration/deceleration and ×1.15 max movement speed",
-        "desc": "Shadow armor is a pre-Hardmode armor set consisting of the Shadow Helmet, Shadow Scalemail, and Shadow Greaves.",
-        "allClass": true
+        "effect": "Faster falling speed · Immunity to fall damage · Taking over 25 damage from an enemy in a single hit drops homing feathers that stick to enemies and explode for 15/30/45 damage to all in range",
+        "headpieceBonus": "+13% ranged damage · +8% ranged critical strike chance · +17% movement speed"
       }
     ],
     "accessories": [
@@ -21895,7 +21851,35 @@
         "quality": "good",
         "markers": [
           "expert"
-        ]
+        ],
+        "classicAlt": {
+          "id": "magiluminescence",
+          "name": "Magiluminescence",
+          "slot": "accessory",
+          "icon": "items/magiluminescence.png",
+          "source": "Crafted at an Iron or Lead Anvil",
+          "station": "Iron Anvil or Lead Anvil",
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Magiluminescence",
+          "categories": [
+            "mobility"
+          ],
+          "effect": "+15% maximum speed, +75% acceleration, and emits light.",
+          "why": "Grounded speed and light.",
+          "tags": [],
+          "topPick": false,
+          "materials": [
+            {
+              "name": "Demonite Bar",
+              "qty": 12,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Demonite_Bar"
+            },
+            {
+              "name": "Topaz",
+              "qty": 5,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Topaz"
+            }
+          ]
+        }
       },
       {
         "id": "stinger-necklace",
@@ -22399,6 +22383,18 @@
     ],
     "ammo": [
       {
+        "id": "jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "calamity/jesters-arrow.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jester%27s_Arrow",
+        "effect": "It is unaffected by gravity and can pierce an infinite number of enemies, and its damage decreases by 10% per each enemy pierced."
+      },
+      {
         "id": "hellfire-arrow",
         "name": "Hellfire Arrow",
         "slot": "ammo",
@@ -22407,44 +22403,72 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow",
+        "altOf": "Jester's Arrow"
       },
       {
-        "id": "musket-ball",
-        "name": "Musket Ball",
+        "id": "flash-round",
+        "name": "Flash Round",
         "slot": "ammo",
-        "icon": "calamity/musket-ball.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Musket_Ball",
-        "effect": "It has no special properties and is used for crafting a variety of more advanced ammunition. When either Musket Balls or Tungsten Bullets are fired with certain guns, they will be converted into a special projectile (e.g. the Uzi converting them into High Velocity Bullets)."
-      },
-      {
-        "id": "tungsten-bullet",
-        "name": "Tungsten Bullet",
-        "slot": "ammo",
-        "icon": "calamity/tungsten-bullet.png",
+        "icon": "calamity/flash-round.png",
         "source": "Crafted at an Iron Anvil or Lead Anvil",
         "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tungsten_Bullet",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flash_Round",
         "materials": [
           {
-            "name": "Musket Ball",
-            "qty": 70,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
+            "name": "Any Copper Bar",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Copper_Bar"
           },
           {
-            "name": "Tungsten Bar",
+            "name": "Glass",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glass"
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "effect": "It deals 2 more damage and is slightly faster than Musket Balls. When either Musket Balls or Tungsten Bullets are fired with certain guns, they will be converted into a special projectile (e.g. the Uzi converting them into High Velocity Bullets)."
+        "effect": "They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
+      },
+      {
+        "id": "meteor-shot",
+        "name": "Meteor Shot",
+        "slot": "ammo",
+        "icon": "calamity/meteor-shot.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Shot",
+        "effect": "When fired, it can either bounce from a solid block once or pierce through one enemy.",
+        "altOf": "Flash Round"
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
+      },
+      {
+        "id": "fallen-star",
+        "name": "Fallen Star",
+        "slot": "ammo",
+        "icon": "calamity/fallen-star.png",
+        "stats": "Star Cannon ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Falls from the sky at night",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
+        "why": "Ammunition for the Star Cannon.",
+        "effect": "Ammunition for the Star Cannon."
       }
     ],
     "accessoryPool": [
@@ -22823,9 +22847,12 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
-    ]
+    ],
+    "curated": true,
+    "supportJoin": "or"
   },
   {
     "phase": "cal-pre-skeletron",
@@ -28629,14 +28656,16 @@
         "name": "Archerfish",
         "slot": "weapon",
         "icon": "calamity/archerfish.png",
-        "source": "Found in the Ancient Treasure Chests within the Abyss",
+        "source": "Found in Ancient Treasure Chests and Hydrothermal Crates in the Abyss",
         "why": "",
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Archerfish",
         "tier": "best",
         "effect": "When used, it converts Musket Balls into bubbly streams of water that pierce once and inflict the Riptide and Wet debuffs. It also fires a short-range water ring regardless of ammo used, which deals 50% of the weapon's damage and pierces once.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "stats": "16 ranged dmg",
+        "dropRate": "10%"
       },
       {
         "id": "flurrystorm-cannon",
@@ -28654,12 +28683,12 @@
           {
             "name": "Snowball Cannon",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Snowball_Cannon"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Snowball_Cannon"
           },
           {
             "name": "Illegal Gun Parts",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Illegal_Gun_Parts"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
           },
           {
             "name": "Aerialite Bar",
@@ -28667,9 +28696,9 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerialite_Bar"
           },
           {
-            "name": "Bone",
+            "name": "Bones",
             "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bone"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bones"
           },
           {
             "name": "Pearl Shard",
@@ -28678,7 +28707,8 @@
           }
         ],
         "station": "Iron Anvil or Lead Anvil",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "10 ranged dmg"
       },
       {
         "id": "gunk-shot",
@@ -28690,7 +28720,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Gunk_Shot",
-        "tier": "good",
+        "tier": "best",
         "effect": "When used, it fires 3-4 bullets in a shotgun pattern.",
         "subclass": "gun",
         "materials": [
@@ -28705,7 +28735,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blighted_Gel"
           }
         ],
-        "station": "Solidifier"
+        "station": "Solidifier",
+        "stats": "22 ranged dmg"
       },
       {
         "id": "lunarian-bow",
@@ -28717,29 +28748,24 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunarian_Bow",
-        "tier": "other",
+        "tier": "best",
         "effect": "When used, it fires two arrows at once. If Wooden Arrows are used as ammo, it instead fires straight beams that are not affected by gravity and can bounce on a block once; however, the bolts will slide on the hit block rather than bounce off of it.",
         "subclass": "bow",
         "materials": [
           {
             "name": "Demon Bow",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Demon_Bow"
-          },
-          {
-            "name": "Tendon Bow",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tendon_Bow"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Demon_Bow"
           },
           {
             "name": "The Bee's Knees",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Bee%27s_Knees"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/The_Bee%27s_Knees"
           },
           {
             "name": "Molten Fury",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Fury"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Molten_Fury"
           },
           {
             "name": "Purified Gel",
@@ -28747,7 +28773,8 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purified_Gel"
           }
         ],
-        "station": "Demon Altar or Crimson Altar"
+        "station": "Demon Altar or Crimson Altar",
+        "stats": "27 ranged dmg"
       },
       {
         "id": "shadethrower",
@@ -28759,79 +28786,72 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shadethrower",
-        "tier": "other",
+        "tier": "good",
         "effect": "It uses Gel for ammunition. When used, it fires four bursts of shade clouds at a short range.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "21 ranged dmg",
+        "secondary": true
+      },
+      {
+        "id": "m1-garand",
+        "name": "M1 Garand",
+        "slot": "weapon",
+        "icon": "calamity/m1-garand.png",
+        "subclass": "gun",
+        "stats": "75 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/M1_Garand",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A rapid semi-auto rifle.",
+        "why": "A rapid semi-auto rifle",
+        "source": "Purchased from the Arms Dealer after Skeletron (20 GC)"
+      },
+      {
+        "id": "goobow",
+        "name": "Goobow",
+        "slot": "weapon",
+        "icon": "calamity/goobow.png",
+        "subclass": "bow",
+        "stats": "33 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Goobow",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires gel-coated arrows.",
+        "why": "Fires gel-coated arrows",
+        "source": "Crafted at a Solidifier",
+        "station": "Solidifier",
+        "materials": [
+          {
+            "name": "Purified Gel",
+            "qty": 18,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Purified_Gel"
+          },
+          {
+            "name": "Blighted Gel",
+            "qty": 18,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blighted_Gel"
+          }
+        ]
+      },
+      {
+        "id": "quad-barrel-shotgun",
+        "name": "Quad-Barrel Shotgun",
+        "slot": "weapon",
+        "icon": "calamity/quad-barrel-shotgun.png",
+        "subclass": "gun",
+        "stats": "14 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Quad-Barrel_Shotgun",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires four bullets at once.",
+        "why": "Fires four bullets at once",
+        "source": "Purchased from the Arms Dealer in a Graveyard after Skeletron (35 GC)"
       }
     ],
     "armor": [
-      {
-        "id": "necro-armor",
-        "name": "Necro armor",
-        "slot": "armor",
-        "icon": "armor-sets/necro-armor.png",
-        "source": "Crafted at Work Bench",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Necro Helmet",
-            "materials": [
-              {
-                "name": "Bone",
-                "qty": 40,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
-              },
-              {
-                "name": "Cobweb",
-                "qty": 40,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
-              }
-            ]
-          },
-          {
-            "piece": "Necro Breastplate",
-            "materials": [
-              {
-                "name": "Bone",
-                "qty": 60,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
-              },
-              {
-                "name": "Cobweb",
-                "qty": 50,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
-              }
-            ]
-          },
-          {
-            "piece": "Necro Greaves",
-            "materials": [
-              {
-                "name": "Bone",
-                "qty": 50,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Bone"
-              },
-              {
-                "name": "Cobweb",
-                "qty": 45,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Cobweb"
-              }
-            ]
-          }
-        ],
-        "defense": 19,
-        "pieces": [
-          "Necro Helmet",
-          "Necro Breastplate",
-          "Necro Greaves"
-        ],
-        "effect": "+15% ranged damage · +10% ranged critical strike chance",
-        "desc": "Necro armor is a pre-Hardmode, post- Skeletron ranged armor set consisting of the Necro Helmet, Necro Breastplate, and Necro Greaves."
-      },
       {
         "id": "statigel-armor",
         "name": "Statigel armor",
@@ -28841,7 +28861,7 @@
         "why": "alternative magic armor option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Statigel_armor",
         "pieceRecipes": [
           {
@@ -30039,10 +30059,60 @@
           }
         ],
         "effect": "When used with its primary function (left-click), it summons a Wulfrum Droid minion that floats by the player and attacks nearby enemies by firing green energy bolts that cannot pierce but can curve towards nearby enemies. The droid waits a random time from 0.49-1.83 seconds between shots, and recoils in the opposite direction of its shot while shooting.",
-        "stats": "19 summon dmg"
+        "stats": "19 summon dmg",
+        "altOf": "Brittle Star Staff"
       }
     ],
     "ammo": [
+      {
+        "id": "jesters-arrow",
+        "name": "Jester's Arrow",
+        "slot": "ammo",
+        "icon": "calamity/jesters-arrow.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Jester%27s_Arrow",
+        "effect": "It is unaffected by gravity and can pierce an infinite number of enemies, and its damage decreases by 10% per each enemy pierced."
+      },
+      {
+        "id": "hellfire-arrow",
+        "name": "Hellfire Arrow",
+        "slot": "ammo",
+        "icon": "calamity/hellfire-arrow.png",
+        "source": "",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow",
+        "altOf": "Jester's Arrow"
+      },
+      {
+        "id": "flash-round",
+        "name": "Flash Round",
+        "slot": "ammo",
+        "icon": "calamity/flash-round.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flash_Round",
+        "materials": [
+          {
+            "name": "Any Copper Bar",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Copper_Bar"
+          },
+          {
+            "name": "Glass",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Glass"
+          }
+        ],
+        "station": "Iron Anvil or Lead Anvil",
+        "effect": "They can bounce off enemies and tiles and creates a small flash which knocks away enemies. They become affected by gravity after bouncing, and can bounce off tiles twice, gaining 13% damage or +2 flat damage on each bounce, whichever is greater."
+      },
       {
         "id": "meteor-shot",
         "name": "Meteor Shot",
@@ -30053,65 +30123,25 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meteor_Shot",
-        "effect": "When fired, it can either bounce from a solid block once or pierce through one enemy."
+        "effect": "When fired, it can either bounce from a solid block once or pierce through one enemy.",
+        "altOf": "Flash Round"
       },
       {
-        "id": "musket-ball",
-        "name": "Musket Ball",
+        "id": "snowball",
+        "name": "Snowball",
         "slot": "ammo",
-        "icon": "calamity/musket-ball.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/snowball.png",
+        "stats": "Snowball Cannon ammo",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Musket_Ball",
-        "effect": "It has no special properties and is used for crafting a variety of more advanced ammunition. When either Musket Balls or Tungsten Bullets are fired with certain guns, they will be converted into a special projectile (e.g. the Uzi converting them into High Velocity Bullets)."
-      },
-      {
-        "id": "tungsten-bullet",
-        "name": "Tungsten Bullet",
-        "slot": "ammo",
-        "icon": "calamity/tungsten-bullet.png",
-        "source": "Crafted at an Iron Anvil or Lead Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tungsten_Bullet",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 70,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Tungsten Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Tungsten_Bar"
-          }
-        ],
-        "station": "Iron Anvil or Lead Anvil",
-        "effect": "It deals 2 more damage and is slightly faster than Musket Balls. When either Musket Balls or Tungsten Bullets are fired with certain guns, they will be converted into a special projectile (e.g. the Uzi converting them into High Velocity Bullets)."
-      },
-      {
-        "id": "shimmer-arrow",
-        "name": "Shimmer Arrow",
-        "slot": "ammo",
-        "icon": "calamity/shimmer-arrow.png",
-        "source": "Crafted",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shimmer_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          }
-        ],
-        "effect": "It experiences reversed gravity when fired."
+        "source": "Gathered from Snow Blocks, or bought from the Traveling Merchant",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Snowball",
+        "why": "Ammo for snowball weapons like the Flurrystorm Cannon.",
+        "effect": "Ammunition for snowball launchers."
       }
-    ]
+    ],
+    "supportJoin": "or",
+    "curated": true
   },
   {
     "phase": "cal-pre-wof",
@@ -38171,7 +38201,8 @@
         "dropRate": "1%",
         "dropRateExpert": "2%"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-mech",
@@ -47153,7 +47184,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Arrow",
         "effect": "It can pierce 4 enemies, and its damage decreases by 5% per enemy pierced."
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech1",
@@ -55748,7 +55780,8 @@
         "dropRate": "1%",
         "dropRateExpert": "2%"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-post-mech2",
@@ -64192,7 +64225,8 @@
         "dropRate": "1%",
         "dropRateExpert": "2%"
       }
-    ]
+    ],
+    "supportJoin": "and"
   },
   {
     "phase": "cal-pre-plantera",
