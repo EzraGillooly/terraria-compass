@@ -8705,7 +8705,7 @@
       }
     ],
     "curated": true,
-    "note": "This phase has no class-guide video, so it carries the previous phase's picks forward and adds this phase's wiki weapons as other options."
+    "note": "Still finding out which weapons and accessories are the best for this phase"
   },
   {
     "phase": "cal-pre-evil",
@@ -15894,7 +15894,6 @@
         "name": "Flare",
         "slot": "ammo",
         "icon": "calamity/flare.png",
-        "stats": "1 ranged dmg",
         "tags": [],
         "topPick": false,
         "source": "Purchased from the Merchant, or crafted",
@@ -28977,8 +28976,9 @@
         ],
         "headpiece": "Statigel Headgear",
         "defense": 25,
-        "effect": "+5 blocks jump height · +12% jump speed · double jump",
-        "desc": "Statigel armor is a Pre-Hardmode armor set."
+        "effect": "+5 blocks jump height · +12% jump speed · Double jump",
+        "desc": "Statigel armor is a Pre-Hardmode armor set.",
+        "headpieceBonus": "+15% ranged damage · +12% ranged critical strike chance · +5% movement speed"
       }
     ],
     "accessories": [
@@ -36321,8 +36321,8 @@
         "source": "Dropped by Hallowed Mimics",
         "why": "Fires arrows that rain down from the sky.",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
         "dropRate": "25%",
         "subclass": "bow",
@@ -36341,7 +36341,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Pistol",
         "dropRate": "20%",
         "subclass": "other",
-        "stats": "28 ranged dmg"
+        "stats": "28 ranged dmg",
+        "secondary": true
       },
       {
         "id": "dart-rifle",
@@ -36356,7 +36357,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Rifle",
         "dropRate": "20%",
         "subclass": "other",
-        "stats": "52 ranged dmg"
+        "stats": "52 ranged dmg",
+        "secondary": true
       },
       {
         "id": "needler",
@@ -36367,10 +36369,11 @@
         "why": "high fire-rate ranged option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Needler",
         "effect": "If Musket Balls are used as ammo, bullets are converted into needles that stick to enemies and tiles which explode after a delay and inflict the Acid Venom debuff.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "polaris-parrotfish",
@@ -36381,33 +36384,125 @@
         "why": "Calamity gun option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polaris_Parrotfish",
-        "station": "Shimmer Transmutation",
-        "materials": [
-          {
-            "name": "Ursa Sergeant",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ursa_Sergeant"
-          }
-        ],
         "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "35 ranged dmg"
       },
       {
         "id": "uzi",
         "name": "Uzi",
         "slot": "weapon",
         "icon": "calamity/uzi.png",
-        "source": "Dropped by Angry Trappers in the Hardmode Underground Jungle",
-        "why": "Rapid-fire gun dropped by Angry Trappers, which spawn in the Hardmode Jungle.",
+        "source": "Dropped by Angry Trappers",
+        "why": "Rapid-fire gun.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uzi",
         "dropRate": "1%",
         "subclass": "gun",
-        "stats": "30 ranged dmg"
+        "stats": "30 ranged dmg",
+        "effect": "A rapid-fire gun."
+      },
+      {
+        "id": "p90",
+        "name": "P90",
+        "slot": "weapon",
+        "icon": "calamity/p90.png",
+        "subclass": "gun",
+        "stats": "6 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/P90",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Converts bullets into rapid high-velocity rounds with 30 armor penetration; 50% chance to save ammo.",
+        "why": "Converts bullets into rapid high-velocity rounds with 30 arm",
+        "source": "Purchased from the Arms Dealer in Hardmode (35 GC)"
+      },
+      {
+        "id": "clamor-rifle",
+        "name": "Clamor Rifle",
+        "slot": "weapon",
+        "icon": "calamity/clamor-rifle.png",
+        "subclass": "gun",
+        "stats": "36 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clamor_Rifle",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires piercing rounds.",
+        "why": "Fires piercing rounds",
+        "source": "Dropped by the Giant Clam",
+        "dropRate": "25%"
+      },
+      {
+        "id": "thermocline-blaster",
+        "name": "Thermocline Blaster",
+        "slot": "weapon",
+        "icon": "calamity/thermocline-blaster.png",
+        "subclass": "gun",
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thermocline_Blaster",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires alternating fire and ice rounds.",
+        "why": "Fires alternating fire and ice rounds",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Phoenix Blaster",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster"
+          },
+          {
+            "name": "Essence of Havoc",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+          },
+          {
+            "name": "Essence of Eleum",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Eleum"
+          }
+        ]
+      },
+      {
+        "id": "meowthrower",
+        "name": "Meowthrower",
+        "slot": "weapon",
+        "icon": "calamity/meowthrower.png",
+        "subclass": "gun",
+        "stats": "29 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meowthrower",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A flamethrower that sprays flaming cats.",
+        "why": "A flamethrower that sprays flaming cats",
+        "source": "Dropped by the Wall of Flesh",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "midas-prime",
+        "name": "Midas Prime",
+        "slot": "weapon",
+        "icon": "calamity/midas-prime.png",
+        "subclass": "gun",
+        "stats": "81 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Midas_Prime",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires golden rounds.",
+        "why": "Fires golden rounds",
+        "source": "Dropped by Pirate Deadeyes",
+        "dropRate": "4%",
+        "dropRateExpert": "6.67%"
       }
     ],
     "armor": [
@@ -36482,7 +36577,7 @@
         "headpiece": "Cobalt Mask",
         "defense": 23,
         "desc": "Cobalt armor is a Hardmode armor set consisting of the Cobalt Breastplate and Cobalt Leggings, as well as three different headpieces: the Cobalt Helmet, Cobalt Mask, and Cobalt Hat, providing bonuses for the melee, ranged, and magic damage type respectively.",
-        "headpieceBonus": "20% chance to save ammo",
+        "headpieceBonus": "+13% ranged damage (+10% ranged, +3% all classes) · +15% ranged critical strike chance (+10% ranged, +5% all classes) · +20% ammo conservation · +10% movement speed",
         "effect": "10% increased max speed and acceleration · You gain a damage and critical strike chance boost relative to your current movement speed, up to 10% · The player also emits visual afterimages while moving."
       },
       {
@@ -36494,7 +36589,7 @@
         "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://terraria.wiki.gg/wiki/Palladium_armor",
         "pieceRecipes": [
           {
@@ -36556,7 +36651,8 @@
         "headpiece": "Palladium Helmet",
         "defense": 23,
         "effect": "Hitting an enemy grants Rapid Healing for 5 seconds (+2 HP per second flat regeneration); further hits refresh the duration.",
-        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "desc": "Palladium armor is a Hardmode armor set consisting of the Palladium Breastplate and Palladium Leggings, as well as three different headpieces: the Palladium Mask, Palladium Helmet, and Palladium Headgear, providing bonuses for the melee, ranged, and magic damage type respectively.",
+        "headpieceBonus": "+14% ranged damage (+9% ranged, +5% all classes) · +12% ranged critical strike chance (+9% ranged, +3% all classes)"
       }
     ],
     "accessories": [
@@ -37439,137 +37535,63 @@
     ],
     "ammo": [
       {
-        "id": "cursed-arrow",
-        "name": "Cursed Arrow",
-        "slot": "ammo",
-        "icon": "calamity/cursed-arrow.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Arrow",
-        "effect": "It inflicts the Cursed Inferno debuff for 7 seconds upon contact with enemies."
-      },
-      {
         "id": "ichor-arrow",
         "name": "Ichor Arrow",
         "slot": "ammo",
         "icon": "calamity/ichor-arrow.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Arrow",
-        "effect": "It inflicts the Ichor debuff for 10 seconds upon contact with enemies."
+        "source": "Crafted from Wooden Arrows and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
-        "id": "cursed-bullet",
-        "name": "Cursed Bullet",
+        "id": "cursed-arrow",
+        "name": "Cursed Arrow",
         "slot": "ammo",
-        "icon": "calamity/cursed-bullet.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/cursed-arrow.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Bullet",
-        "effect": "It inflicts the Cursed Inferno debuff for 7 seconds on hit, causing damage over time that cannot be extinguished by water (unlike the On Fire! debuff)."
+        "source": "Crafted from Wooden Arrows and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Arrow",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Arrow"
       },
       {
         "id": "ichor-bullet",
         "name": "Ichor Bullet",
         "slot": "ammo",
         "icon": "calamity/ichor-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Bullet",
-        "effect": "It inflicts the Ichor debuff on hit for 10 seconds (15 seconds in PvP), decreasing the enemy's defense by 15. Combined with the bullet's base damage, it effectively deals a total of 21 damage."
+        "source": "Crafted from Musket Balls and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
-        "id": "cursed-dart",
-        "name": "Cursed Dart",
+        "id": "cursed-bullet",
+        "name": "Cursed Bullet",
         "slot": "ammo",
-        "icon": "calamity/cursed-dart.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/cursed-bullet.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dart",
-        "materials": [
-          {
-            "name": "Cursed Flame",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "As it travels, it releases cursed flames that fall and land on blocks, lingering for 2 seconds before dissipating. The Cursed Dart can hit up to 2 targets. [ 1 ] The cursed flames cannot pierce enemies and deal 80% of the Cursed Dart's damage and 50% of its knockback. [ 2 ] The darts and flames both inflict the Cursed Inferno debuff for 3–6 seconds on hit."
+        "source": "Crafted from Musket Balls and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Bullet",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Bullet"
       },
       {
-        "id": "ichor-dart",
-        "name": "Ichor Dart",
+        "id": "gel",
+        "name": "Gel",
         "slot": "ammo",
-        "icon": "calamity/ichor-dart.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Dart",
-        "materials": [
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It can pierce infinitely when initially fired. After traveling for a random duration between 0.1 seconds to 0.5 seconds, the Ichor Dart splits into 3–5 non-piercing darts (average of 3.75 darts). [ 1 ] Ichor Darts inflict the Ichor debuff for 7–14 seconds."
-      },
-      {
-        "id": "endless-musket-pouch",
-        "name": "Endless Musket Pouch",
-        "slot": "ammo",
-        "icon": "calamity/endless-musket-pouch.png",
-        "source": "Crafted at Crystal Ball",
-        "why": "An infinite stack of Musket Balls, so ammo never runs out.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 9999,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          }
-        ],
-        "station": "Crystal Ball",
-        "effect": "While in the inventory, it acts as an infinite source of Musket Balls."
-      },
-      {
-        "id": "exploding-bullet",
-        "name": "Exploding Bullet",
-        "slot": "ammo",
-        "icon": "calamity/exploding-bullet.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exploding_Bullet",
-        "effect": "It explodes on impact with enemies or blocks, dealing damage and knockback within an area."
-      },
-      {
-        "id": "unholy-arrow",
-        "name": "Unholy Arrow",
-        "slot": "ammo",
-        "icon": "calamity/unholy-arrow.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Arrow",
-        "effect": "It can pierce 4 enemies, and its damage decreases by 5% per enemy pierced."
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -38199,10 +38221,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-mech",
@@ -43954,7 +43978,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_armor",
         "pieceRecipes": [
           {
             "piece": "Orichalcum Breastplate",
@@ -45410,6 +45434,150 @@
     "class": "ranger",
     "weapons": [
       {
+        "id": "daedalus-stormbow",
+        "name": "Daedalus Stormbow",
+        "slot": "weapon",
+        "icon": "calamity/daedalus-stormbow.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "Fires arrows that rain down from the sky.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
+        "dropRate": "25%",
+        "subclass": "bow",
+        "stats": "38 ranged dmg"
+      },
+      {
+        "id": "polaris-parrotfish",
+        "name": "Polaris Parrotfish",
+        "slot": "weapon",
+        "icon": "calamity/polaris-parrotfish.png",
+        "source": "Fished in the Astral Infection",
+        "why": "Calamity gun option",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polaris_Parrotfish",
+        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
+        "subclass": "gun",
+        "stats": "35 ranged dmg"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "slot": "weapon",
+        "icon": "calamity/uzi.png",
+        "source": "Dropped by Angry Trappers",
+        "why": "Rapid-fire gun.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uzi",
+        "dropRate": "1%",
+        "subclass": "gun",
+        "stats": "30 ranged dmg",
+        "effect": "A rapid-fire gun."
+      },
+      {
+        "id": "p90",
+        "name": "P90",
+        "slot": "weapon",
+        "icon": "calamity/p90.png",
+        "subclass": "gun",
+        "stats": "6 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/P90",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Converts bullets into rapid high-velocity rounds with 30 armor penetration; 50% chance to save ammo.",
+        "why": "Converts bullets into rapid high-velocity rounds with 30 arm",
+        "source": "Purchased from the Arms Dealer in Hardmode (35 GC)"
+      },
+      {
+        "id": "clamor-rifle",
+        "name": "Clamor Rifle",
+        "slot": "weapon",
+        "icon": "calamity/clamor-rifle.png",
+        "subclass": "gun",
+        "stats": "36 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clamor_Rifle",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires piercing rounds.",
+        "why": "Fires piercing rounds",
+        "source": "Dropped by the Giant Clam",
+        "dropRate": "25%"
+      },
+      {
+        "id": "thermocline-blaster",
+        "name": "Thermocline Blaster",
+        "slot": "weapon",
+        "icon": "calamity/thermocline-blaster.png",
+        "subclass": "gun",
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thermocline_Blaster",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires alternating fire and ice rounds.",
+        "why": "Fires alternating fire and ice rounds",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Phoenix Blaster",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster"
+          },
+          {
+            "name": "Essence of Havoc",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+          },
+          {
+            "name": "Essence of Eleum",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Eleum"
+          }
+        ]
+      },
+      {
+        "id": "meowthrower",
+        "name": "Meowthrower",
+        "slot": "weapon",
+        "icon": "calamity/meowthrower.png",
+        "subclass": "gun",
+        "stats": "29 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meowthrower",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A flamethrower that sprays flaming cats.",
+        "why": "A flamethrower that sprays flaming cats",
+        "source": "Dropped by the Wall of Flesh",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "midas-prime",
+        "name": "Midas Prime",
+        "slot": "weapon",
+        "icon": "calamity/midas-prime.png",
+        "subclass": "gun",
+        "stats": "81 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Midas_Prime",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires golden rounds.",
+        "why": "Fires golden rounds",
+        "source": "Dropped by Pirate Deadeyes",
+        "dropRate": "4%",
+        "dropRateExpert": "6.67%"
+      },
+      {
         "id": "buzzkill",
         "name": "Buzzkill",
         "slot": "weapon",
@@ -45418,7 +45586,7 @@
         "why": "first-listed ranged weapon at this tier",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Buzzkill",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -45439,22 +45607,8 @@
           }
         ],
         "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds.",
-        "subclass": "other"
-      },
-      {
-        "id": "daedalus-stormbow",
-        "name": "Daedalus Stormbow",
-        "slot": "weapon",
-        "icon": "calamity/daedalus-stormbow.png",
-        "source": "Dropped by Hallowed Mimics",
-        "why": "Fires arrows that rain down from the sky.",
-        "tags": [],
-        "topPick": true,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
-        "dropRate": "25%",
-        "subclass": "bow",
-        "stats": "38 ranged dmg"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "dart-pistol",
@@ -45469,7 +45623,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Pistol",
         "dropRate": "20%",
         "subclass": "other",
-        "stats": "28 ranged dmg"
+        "stats": "28 ranged dmg",
+        "secondary": true
       },
       {
         "id": "dart-rifle",
@@ -45480,11 +45635,12 @@
         "why": "Corruption dart weapon; pairs with Crystal or Cursed Darts.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dart_Rifle",
         "dropRate": "20%",
         "subclass": "other",
-        "stats": "52 ranged dmg"
+        "stats": "52 ranged dmg",
+        "secondary": true
       },
       {
         "id": "megashark",
@@ -45495,7 +45651,7 @@
         "why": "Post-Destroyer upgrade to the Minishark requiring Souls of Might from a mechanical boss.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megashark",
         "materials": [
           {
@@ -45521,29 +45677,8 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "subclass": "gun",
-        "stats": "25 ranged dmg"
-      },
-      {
-        "id": "polaris-parrotfish",
-        "name": "Polaris Parrotfish",
-        "slot": "weapon",
-        "icon": "calamity/polaris-parrotfish.png",
-        "source": "Fished in the Astral Infection",
-        "why": "alternative ranged weapon option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polaris_Parrotfish",
-        "station": "Shimmer Transmutation",
-        "materials": [
-          {
-            "name": "Ursa Sergeant",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ursa_Sergeant"
-          }
-        ],
-        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
-        "subclass": "other"
+        "stats": "25 ranged dmg",
+        "secondary": true
       }
     ],
     "armor": [
@@ -45618,7 +45753,7 @@
         "headpiece": "Mythril Hat",
         "defense": 27,
         "desc": "Mythril armor is a Hardmode armor set consisting of the Mythril Chainmail and Mythril Greaves, as well as three different headpieces: the Mythril Helmet, Mythril Hat, and Mythril Hood, providing bonuses for the melee, ranged, and magic damage type respectively.",
-        "headpieceBonus": "20% chance to save ammo",
+        "headpieceBonus": "+19% ranged damage (+12% ranged, +7% all classes) · +17% ranged critical strike chance (+7% ranged, +10% all classes) · +20% ammo conservation",
         "effect": "Enemy hits release mythril flares, which home in on enemies after a short delay. Mythril flares deal 30% of the damage of the attack that spawned them, softcapped at 40 damage, and have a 12 frame delay before another can be spawned"
       },
       {
@@ -45630,8 +45765,8 @@
         "why": "alternate class-specific armor",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "tier": "best",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_armor",
         "pieceRecipes": [
           {
             "piece": "Orichalcum Breastplate",
@@ -45692,7 +45827,8 @@
         "headpiece": "Orichalcum Helmet",
         "defense": 30,
         "effect": "Flower petals will fall on your target for extra damage",
-        "desc": "Orichalcum armor is a Hardmode armor set consisting of the Orichalcum Breastplate and Orichalcum Leggings, as well as three different headpieces: the Orichalcum Mask, Orichalcum Helmet, and Orichalcum Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "desc": "Orichalcum armor is a Hardmode armor set consisting of the Orichalcum Breastplate and Orichalcum Leggings, as well as three different headpieces: the Orichalcum Mask, Orichalcum Helmet, and Orichalcum Headgear, providing bonuses for the melee, ranged, and magic damage type respectively.",
+        "headpieceBonus": "+8% damage · +21% ranged critical strike chance (+15% ranged, +6% all classes) · +19% movement speed"
       }
     ],
     "accessories": [
@@ -45931,6 +46067,34 @@
         "altOf": "Stalker's Quiver"
       },
       {
+        "id": "molten-quiver",
+        "name": "Molten Quiver",
+        "slot": "accessory",
+        "icon": "accessories/molten-quiver.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "Increases arrow damage by 10% and arrow speed, and turns Wooden Arrows into Flaming Arrows.",
+        "categories": [
+          "ranged"
+        ],
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Quiver",
+        "station": "Tinkerer's Workshop",
+        "materials": [
+          {
+            "name": "Magic Quiver",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
+          },
+          {
+            "name": "Magma Stone",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
+          }
+        ]
+      },
+      {
         "id": "ranger-emblem",
         "name": "Ranger Emblem",
         "slot": "accessory",
@@ -45952,36 +46116,8 @@
             "wikiUrl": "https://terraria.wiki.gg/wiki/Warrior_Emblem"
           }
         ],
-        "station": "Tinkerer's Workshop"
-      },
-      {
-        "id": "molten-quiver",
-        "name": "Molten Quiver",
-        "slot": "accessory",
-        "icon": "accessories/molten-quiver.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "Increases arrow damage by 10% and arrow speed, and turns Wooden Arrows into Flaming Arrows.",
-        "categories": [
-          "ranged"
-        ],
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Molten_Quiver",
-        "altOf": "Ranger Emblem",
         "station": "Tinkerer's Workshop",
-        "materials": [
-          {
-            "name": "Magic Quiver",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magic_Quiver"
-          },
-          {
-            "name": "Magma Stone",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Magma_Stone"
-          }
-        ]
+        "altOf": "Molten Quiver"
       },
       {
         "id": "ankh-shield",
@@ -46345,6 +46481,37 @@
         ],
         "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
         "dropRate": "9.52% (Underground)"
+      },
+      {
+        "id": "warmth-potion",
+        "name": "Warmth Potion",
+        "slot": "buff",
+        "icon": "calamity/warmth-potion.png",
+        "source": "Crafted at a Placed Bottle or Alchemy Table or Alchemy Flask",
+        "why": "reduces cold damage",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Warmth_Potion",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Frost Minnow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Minnow"
+          },
+          {
+            "name": "Shiverthorn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiverthorn"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "effect": "This lasts for 15 minutes, but can be canceled at any time by right-clicking the icon (), by selecting the icon using Cycle Next/Previous Buff and then pressing Remove Buff (), or by double-tapping the buff icon ()."
       },
       {
         "id": "ammo-box",
@@ -47080,112 +47247,74 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
     "ammo": [
-      {
-        "id": "cursed-arrow",
-        "name": "Cursed Arrow",
-        "slot": "ammo",
-        "icon": "calamity/cursed-arrow.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Arrow",
-        "effect": "It inflicts the Cursed Inferno debuff for 7 seconds upon contact with enemies."
-      },
       {
         "id": "ichor-arrow",
         "name": "Ichor Arrow",
         "slot": "ammo",
         "icon": "calamity/ichor-arrow.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Arrow",
-        "effect": "It inflicts the Ichor debuff for 10 seconds upon contact with enemies."
+        "source": "Crafted from Wooden Arrows and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
-        "id": "cursed-dart",
-        "name": "Cursed Dart",
+        "id": "cursed-arrow",
+        "name": "Cursed Arrow",
         "slot": "ammo",
-        "icon": "calamity/cursed-dart.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/cursed-arrow.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Dart",
-        "materials": [
-          {
-            "name": "Cursed Flame",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Flame"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "As it travels, it releases cursed flames that fall and land on blocks, lingering for 2 seconds before dissipating. The Cursed Dart can hit up to 2 targets. [ 1 ] The cursed flames cannot pierce enemies and deal 80% of the Cursed Dart's damage and 50% of its knockback. [ 2 ] The darts and flames both inflict the Cursed Inferno debuff for 3–6 seconds on hit."
-      },
-      {
-        "id": "ichor-dart",
-        "name": "Ichor Dart",
-        "slot": "ammo",
-        "icon": "calamity/ichor-dart.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Dart",
-        "materials": [
-          {
-            "name": "Ichor",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It can pierce infinitely when initially fired. After traveling for a random duration between 0.1 seconds to 0.5 seconds, the Ichor Dart splits into 3–5 non-piercing darts (average of 3.75 darts). [ 1 ] Ichor Darts inflict the Ichor debuff for 7–14 seconds."
+        "source": "Crafted from Wooden Arrows and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Arrow",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Arrow"
       },
       {
         "id": "ichor-bullet",
         "name": "Ichor Bullet",
         "slot": "ammo",
         "icon": "calamity/ichor-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Bullet",
-        "effect": "It inflicts the Ichor debuff on hit for 10 seconds (15 seconds in PvP), decreasing the enemy's defense by 15. Combined with the bullet's base damage, it effectively deals a total of 21 damage."
+        "source": "Crafted from Musket Balls and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
         "id": "cursed-bullet",
         "name": "Cursed Bullet",
         "slot": "ammo",
         "icon": "calamity/cursed-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Bullet",
-        "effect": "It inflicts the Cursed Inferno debuff for 7 seconds on hit, causing damage over time that cannot be extinguished by water (unlike the On Fire! debuff)."
+        "source": "Crafted from Musket Balls and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Bullet",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Bullet"
       },
       {
-        "id": "unholy-arrow",
-        "name": "Unholy Arrow",
+        "id": "gel",
+        "name": "Gel",
         "slot": "ammo",
-        "icon": "calamity/unholy-arrow.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Arrow",
-        "effect": "It can pierce 4 enemies, and its damage decreases by 5% per enemy pierced."
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true,
+    "note": "Still finding out which weapons and accessories are the best for this phase"
   },
   {
     "phase": "cal-post-mech1",
@@ -47503,7 +47632,7 @@
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_armor",
         "pieceRecipes": [
           {
             "piece": "Orichalcum Breastplate",
@@ -54034,6 +54163,150 @@
     "class": "ranger",
     "weapons": [
       {
+        "id": "daedalus-stormbow",
+        "name": "Daedalus Stormbow",
+        "slot": "weapon",
+        "icon": "calamity/daedalus-stormbow.png",
+        "source": "Dropped by Hallowed Mimics",
+        "why": "Fires arrows that rain down from the sky.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_Stormbow",
+        "dropRate": "25%",
+        "subclass": "bow",
+        "stats": "38 ranged dmg"
+      },
+      {
+        "id": "polaris-parrotfish",
+        "name": "Polaris Parrotfish",
+        "slot": "weapon",
+        "icon": "calamity/polaris-parrotfish.png",
+        "source": "Fished in the Astral Infection",
+        "why": "Calamity gun option",
+        "tags": [],
+        "topPick": false,
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Polaris_Parrotfish",
+        "effect": "When used, it rapidly fires pink and blue lasers that vanish in a star-shaped flash after traveling a fixed distance or upon hitting enemies or tiles. It will also gain firing speed depending on how close the player is to an enemy, with the maximum modifier being 2x its standard firing speed.",
+        "subclass": "gun",
+        "stats": "35 ranged dmg"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "slot": "weapon",
+        "icon": "calamity/uzi.png",
+        "source": "Dropped by Angry Trappers",
+        "why": "Rapid-fire gun.",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uzi",
+        "dropRate": "1%",
+        "subclass": "gun",
+        "stats": "30 ranged dmg",
+        "effect": "A rapid-fire gun."
+      },
+      {
+        "id": "p90",
+        "name": "P90",
+        "slot": "weapon",
+        "icon": "calamity/p90.png",
+        "subclass": "gun",
+        "stats": "6 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/P90",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Converts bullets into rapid high-velocity rounds with 30 armor penetration; 50% chance to save ammo.",
+        "why": "Converts bullets into rapid high-velocity rounds with 30 arm",
+        "source": "Purchased from the Arms Dealer in Hardmode (35 GC)"
+      },
+      {
+        "id": "clamor-rifle",
+        "name": "Clamor Rifle",
+        "slot": "weapon",
+        "icon": "calamity/clamor-rifle.png",
+        "subclass": "gun",
+        "stats": "36 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Clamor_Rifle",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires piercing rounds.",
+        "why": "Fires piercing rounds",
+        "source": "Dropped by the Giant Clam",
+        "dropRate": "25%"
+      },
+      {
+        "id": "thermocline-blaster",
+        "name": "Thermocline Blaster",
+        "slot": "weapon",
+        "icon": "calamity/thermocline-blaster.png",
+        "subclass": "gun",
+        "stats": "45 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thermocline_Blaster",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires alternating fire and ice rounds.",
+        "why": "Fires alternating fire and ice rounds",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "station": "Iron Anvil or Lead Anvil",
+        "materials": [
+          {
+            "name": "Phoenix Blaster",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Phoenix_Blaster"
+          },
+          {
+            "name": "Essence of Havoc",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Havoc"
+          },
+          {
+            "name": "Essence of Eleum",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Eleum"
+          }
+        ]
+      },
+      {
+        "id": "meowthrower",
+        "name": "Meowthrower",
+        "slot": "weapon",
+        "icon": "calamity/meowthrower.png",
+        "subclass": "gun",
+        "stats": "29 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meowthrower",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A flamethrower that sprays flaming cats.",
+        "why": "A flamethrower that sprays flaming cats",
+        "source": "Dropped by the Wall of Flesh",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "midas-prime",
+        "name": "Midas Prime",
+        "slot": "weapon",
+        "icon": "calamity/midas-prime.png",
+        "subclass": "gun",
+        "stats": "81 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Midas_Prime",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires golden rounds.",
+        "why": "Fires golden rounds",
+        "source": "Dropped by Pirate Deadeyes",
+        "dropRate": "4%",
+        "dropRateExpert": "6.67%"
+      },
+      {
         "id": "buzzkill",
         "name": "Buzzkill",
         "slot": "weapon",
@@ -54042,7 +54315,7 @@
         "why": "first-listed ranged weapon at this tier",
         "tags": [],
         "topPick": false,
-        "tier": "best",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Buzzkill",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -54063,7 +54336,8 @@
           }
         ],
         "effect": "When held, it charges up a handheld buzzsaw which deals 100% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 5 pierce over 2 seconds.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "flak-toxicannon",
@@ -54077,7 +54351,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flak_Toxicannon",
         "tier": "good",
         "effect": "When used, it fires a flak shell that erupts into 4 sludge shrapnel projectiles upon contact with enemies or the cursor. Each shrapnel projectile deals 60% of the weapon's damage, which is reduced to 20% if the flak shell hits an enemy directly.",
-        "subclass": "launcher"
+        "subclass": "launcher",
+        "secondary": true
       },
       {
         "id": "hellborn",
@@ -54091,7 +54366,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "megashark",
@@ -54101,8 +54377,8 @@
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
         "why": "Post-Destroyer upgrade to the Minishark requiring Souls of Might from a mechanical boss.",
         "tags": [],
-        "topPick": true,
-        "tier": "other",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megashark",
         "materials": [
           {
@@ -54128,7 +54404,8 @@
         ],
         "station": "Mythril Anvil or Orichalcum Anvil",
         "subclass": "gun",
-        "stats": "25 ranged dmg"
+        "stats": "25 ranged dmg",
+        "secondary": true
       },
       {
         "id": "phantom-phoenix",
@@ -54140,11 +54417,12 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantom_Phoenix",
-        "tier": "other",
+        "tier": "good",
         "subclass": "bow",
         "dropRate": "10%",
         "dropRateExpert": "20%",
-        "stats": "32 ranged dmg"
+        "stats": "32 ranged dmg",
+        "secondary": true
       }
     ],
     "armor": [
@@ -54191,268 +54469,234 @@
             ]
           }
         ],
-        "defense": 50,
+        "defense": 36,
         "pieces": [
           "Adamantite Helmet",
           "Adamantite Breastplate",
           "Adamantite Leggings"
         ],
-        "headpiece": "Adamantite Helmet",
-        "headpieceBonus": "+22% melee damage · +14% melee critical strike chance · +20% melee speed · +25% movement speed",
-        "desc": "Adamantite armor is a Hardmode armor set consisting of the Adamantite Breastplate and Adamantite Leggings, as well as three different headpieces: the Adamantite Helmet, Adamantite Mask, and Adamantite Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "headpiece": "Adamantite Mask",
+        "headpieceBonus": "+22% ranged damage (+14% ranged, +8% all classes) · +17% ranged critical strike chance (+10% ranged, +7% all classes) · +25% ammo conservation · +5% movement speed",
+        "desc": "Adamantite armor is a Hardmode armor set consisting of the Adamantite Breastplate and Adamantite Leggings, as well as three different headpieces: the Adamantite Helmet, Adamantite Mask, and Adamantite Headgear, providing bonuses for the melee, ranged, and magic damage type respectively.",
+        "effect": "The player emits a faint pulsating aura."
       },
       {
-        "id": "orichalcum-armor",
-        "name": "Orichalcum armor",
+        "id": "titanium-armor",
+        "name": "Titanium Armor",
         "slot": "armor",
-        "icon": "armor-sets/orichalcum-armor-ranger.png",
+        "icon": "armor-sets/titanium-armor-melee.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "alternate class-specific armor",
-        "tags": [],
+        "why": "Attacking raises a barrier of titanium shards that absorbs damage.",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_armor",
+        "tags": [
+          "hardmode"
+        ],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "headpiece": "Titanium Helmet",
+        "pieces": [
+          "Titanium Mask",
+          "Titanium Breastplate",
+          "Titanium Leggings"
+        ],
         "pieceRecipes": [
           {
-            "piece": "Orichalcum Breastplate",
+            "piece": "Titanium Mask",
             "materials": [
               {
-                "name": "Orichalcum Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
+                "name": "Titanium Bar",
+                "qty": 13,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
               }
             ]
           },
           {
-            "piece": "Orichalcum Headgear",
+            "piece": "Titanium Breastplate",
             "materials": [
               {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
+                "name": "Titanium Bar",
+                "qty": 26,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
               }
             ]
           },
           {
-            "piece": "Orichalcum Helmet",
+            "piece": "Titanium Leggings",
             "materials": [
               {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Leggings",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Orichalcum Mask",
-            "materials": [
-              {
-                "name": "Orichalcum Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Orichalcum_Bar"
+                "name": "Titanium Bar",
+                "qty": 20,
+                "wikiUrl": "https://terraria.wiki.gg/wiki/Titanium_Bar"
               }
             ]
           }
         ],
-        "pieces": [
-          "Orichalcum Helmet",
-          "Orichalcum Breastplate",
-          "Orichalcum Leggings"
-        ],
-        "headpiece": "Orichalcum Helmet",
-        "defense": 30,
-        "effect": "Flower petals will fall on your target for extra damage",
-        "desc": "Orichalcum armor is a Hardmode armor set consisting of the Orichalcum Breastplate and Orichalcum Leggings, as well as three different headpieces: the Orichalcum Mask, Orichalcum Helmet, and Orichalcum Headgear, providing bonuses for the melee, ranged, and magic damage type respectively."
+        "defense": 34,
+        "headpieceBonus": "+23% ranged damage (+16% ranged, +7% all classes) · +13% ranged critical strike chance (+7% ranged, +6% all classes) · +6% movement speed",
+        "effect": "Titanium Barrier: being hit or attacking surrounds you with rotating titanium shards that block incoming damage.",
+        "tier": "best"
       }
     ],
     "accessories": [
       {
-        "id": "angel-treads",
-        "name": "Angel Treads",
+        "id": "calpool-terraspark-boots",
+        "name": "Terraspark Boots",
         "slot": "accessory",
-        "icon": "calamity/angel-treads.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "extra movement mobility",
+        "icon": "calamity/terraspark-boots.png",
+        "source": "Combined through the full boots crafting chain",
+        "why": "Super-fast running and flight, with lava, water, and honey walking plus ice mobility.",
+        "tags": [],
+        "topPick": false,
+        "categories": [
+          "mobility"
+        ],
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terraspark_Boots",
+        "materials": [
+          {
+            "name": "Frostspark Boots",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frostspark_Boots"
+          },
+          {
+            "name": "Lava Waders",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Lava_Waders"
+          }
+        ],
+        "station": "Tinkerer's Workshop"
+      },
+      {
+        "id": "fairy-boots",
+        "name": "Fairy Boots",
+        "slot": "accessory",
+        "icon": "calamity/fairy-boots.png",
+        "source": "Crafted at a Tinkerer's Workshop",
+        "why": "extra mobility accessory",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fairy_Boots",
+        "effect": "Allows flight · The wearer can run super fast · Flower grow on the grass you walk on · Fairies can spawn at any time on the surface and spawn far more frequently · Nearby fairies grant +1 HP/s life regen, 4 defense and 10% movement speed · Fairies are immune to damage and will no longer flee",
+        "materials": [
+          {
+            "name": "Spectre Boots",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spectre_Boots"
+          },
+          {
+            "name": "Flower Boots",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flower_Boots"
+          },
+          {
+            "name": "Soul of Light",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Light"
+          }
+        ],
+        "station": "Tinkerer's Workshop",
+        "categories": [
+          "extra-mobility"
+        ],
+        "altOf": "Terraspark Boots"
+      },
+      {
+        "id": "fairy-wings",
+        "name": "Fairy Wings",
+        "slot": "accessory",
+        "icon": "accessories/fairy-wings.png",
+        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
+        "categories": [
+          "mobility"
+        ],
         "tags": [],
         "topPick": false,
         "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Angel_Treads",
-        "effect": "Allows flight, super fast running, and extra mobility on ice · 12% increased movement speed and 10% increased flight time · Provides the ability to walk on water, honey & lava · Grants immunity to fire blocks and 7 seconds of immunity to lava · Reduces damage from touching lava · 'Extreme speed!'",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fairy_Wings",
+        "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
-            "name": "Terraspark Boots",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Terraspark_Boots"
+            "name": "Soul of Flight",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
           },
           {
-            "name": "Harpy Ring",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Harpy_Ring"
+            "name": "Pixie Dust",
+            "qty": 99,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
+          }
+        ]
+      },
+      {
+        "id": "soul-of-cryogen",
+        "name": "Soul of Cryogen",
+        "slot": "accessory",
+        "icon": "calamity/soul-of-cryogen.png",
+        "source": "Dropped by Cryogen",
+        "why": "",
+        "categories": [
+          "primary-mobility"
+        ],
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Cryogen",
+        "markers": [
+          "expert"
+        ],
+        "expertOnly": true,
+        "effect": "Allows flight and slow fall · Flight time: 2.67 seconds · Max horizontal speed: Good · Max vertical speed: Average · Horizontal acceleration: Average · Vertical acceleration: Average · Icicles rain down as you fly",
+        "altOf": "Fairy Wings"
+      },
+      {
+        "id": "deep-diver",
+        "name": "Deep Diver",
+        "slot": "accessory",
+        "icon": "calamity/deep-diver.png",
+        "source": "Crafted at an Iron Anvil or Lead Anvil",
+        "why": "extra mobility accessory",
+        "tags": [],
+        "topPick": false,
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Deep_Diver",
+        "effect": "When equipped, it negates the slow movement speed while submerged in water. It also allows the player to double-tap the ◀ Left or ▶ Right keys to perform a short dash with a base distance of 9 blocks, which can be used in rapid succession.",
+        "materials": [
+          {
+            "name": "Sea Prism",
+            "qty": 25,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea_Prism"
           },
           {
-            "name": "Essence of Sunlight",
+            "name": "Mollusk Husk",
             "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Essence_of_Sunlight"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
           },
           {
-            "name": "Soul of Fright",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Fright"
-          },
-          {
-            "name": "Soul of Might",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Might"
-          },
-          {
-            "name": "Soul of Sight",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Sight"
+            "name": "Any Cobalt Bar",
+            "qty": 10,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Cobalt_Bar"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
+        "station": "Iron Anvil or Lead Anvil",
         "categories": [
           "extra-mobility"
         ]
       },
       {
-        "id": "calpool-flame-wings",
-        "name": "Flame Wings",
+        "id": "calpool-counter-scarf",
+        "name": "Counter Scarf",
         "slot": "accessory",
-        "icon": "calamity/flame-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-        "tags": [],
-        "topPick": false,
-        "categories": [
-          "mobility"
-        ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Flame_Wings",
-        "markers": [
-          "calamity-changed"
-        ],
-        "materials": [
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Fire Feather",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Fire_Feather"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "quality": "good",
-        "effect": "Wings are accessories that allow the player to fly temporarily by holding the ↷ Jump button. They also provide immunity to fall damage. After flight time is exhausted, holding ↷ Jump allows the player to glide, slowing descent speed by 66.67%."
-      },
-      {
-        "id": "bat-wings",
-        "name": "Bat Wings",
-        "slot": "accessory",
-        "icon": "accessories/bat-wings.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Allows the player to fly briefly and glide (and negates fall damage).",
-        "categories": [
-          "mobility"
-        ],
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bat_Wings",
-        "materials": [
-          {
-            "name": "Soul of Flight",
-            "qty": 20,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Flight"
-          },
-          {
-            "name": "Broken Bat Wing",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Broken_Bat_Wing"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "altOf": "Flame Wings"
-      },
-      {
-        "id": "calpool-evasion-scarf",
-        "name": "Evasion Scarf",
-        "slot": "accessory",
-        "icon": "calamity/evasion-scarf.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "icon": "calamity/counter-scarf.png",
+        "source": "Purchased from the Clothier for 20 gold",
         "why": "",
         "tags": [],
         "topPick": false,
         "categories": [
           "extra-mobility"
         ],
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Evasion_Scarf",
-        "materials": [
-          {
-            "name": "Counter Scarf",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counter_Scarf"
-          },
-          {
-            "name": "Soul of Light",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Light"
-          },
-          {
-            "name": "Soul of Night",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Soul_of_Night"
-          },
-          {
-            "name": "Silk",
-            "qty": 15,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Silk"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It grants the ability to dash by double-tapping the ◀ Left or ▶ Right keys, with a base distance of 24 blocks."
-      },
-      {
-        "id": "ornate-shield",
-        "name": "Ornate Shield",
-        "slot": "accessory",
-        "icon": "calamity/ornate-shield.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "extra mobility alternative",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ornate_Shield",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Cryonic Bar",
-            "qty": 5,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
-          },
-          {
-            "name": "Crystal Shard",
-            "qty": 10,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Crystal_Shard"
-          }
-        ],
-        "effect": "Allows the ability to dash · This dash can ram through enemies without taking damage",
-        "categories": [
-          "extra-mobility"
-        ],
-        "altOf": "Evasion Scarf"
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Counter_Scarf",
+        "effect": "It grants the ability to dash by double-tapping the ◀ Left or ▶ Right keys, with a base distance of 14 blocks.",
+        "altOf": "Deep Diver"
       },
       {
         "id": "stalkers-quiver",
@@ -54944,6 +55188,37 @@
         "dropRate": "9.52% (Underground)"
       },
       {
+        "id": "warmth-potion",
+        "name": "Warmth Potion",
+        "slot": "buff",
+        "icon": "calamity/warmth-potion.png",
+        "source": "Crafted at a Placed Bottle or Alchemy Table or Alchemy Flask",
+        "why": "reduces cold damage",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Warmth_Potion",
+        "materials": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Frost Minnow",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Frost_Minnow"
+          },
+          {
+            "name": "Shiverthorn",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shiverthorn"
+          }
+        ],
+        "station": "Placed Bottle or Alchemy Table or Alchemy Flask",
+        "effect": "This lasts for 15 minutes, but can be canceled at any time by right-clicking the icon (), by selecting the icon using Cycle Next/Previous Buff and then pressing Remove Buff (), or by double-tapping the buff icon ()."
+      },
+      {
         "id": "ammo-box",
         "name": "Ammo Box",
         "slot": "buff",
@@ -55141,108 +55416,63 @@
     ],
     "ammo": [
       {
-        "id": "cinder-arrow",
-        "name": "Cinder Arrow",
+        "id": "ichor-arrow",
+        "name": "Ichor Arrow",
         "slot": "ammo",
-        "icon": "calamity/cinder-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/ichor-arrow.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cinder_Arrow",
-        "materials": [
-          {
-            "name": "Hellfire Arrow",
-            "qty": 250,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellfire_Arrow"
-          },
-          {
-            "name": "Unholy Core",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Core"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "They create a small explosion on hit, dealing 40% damage to all nearby enemies. They also additionally burst into three gravity-affected flaming pieces of shrapnel which do not pierce, deal 6% damage, and inflict Brimstone Flames."
+        "source": "Crafted from Wooden Arrows and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Arrow",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
-        "id": "holy-arrow",
-        "name": "Holy Arrow",
+        "id": "cursed-arrow",
+        "name": "Cursed Arrow",
         "slot": "ammo",
-        "icon": "calamity/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
+        "icon": "calamity/cursed-arrow.png",
         "tags": [],
         "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Upon contact with enemies or blocks, two Hallow Star projectiles will fall from the sky to the impact location. The stars deal 1/3 (33.33%) of the combined damage of the arrow and weapon, and do not pierce."
+        "source": "Crafted from Wooden Arrows and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Arrow",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Arrow"
       },
       {
         "id": "ichor-bullet",
         "name": "Ichor Bullet",
         "slot": "ammo",
         "icon": "calamity/ichor-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ichor_Bullet",
-        "effect": "It inflicts the Ichor debuff on hit for 10 seconds (15 seconds in PvP), decreasing the enemy's defense by 15. Combined with the bullet's base damage, it effectively deals a total of 21 damage."
+        "source": "Crafted from Musket Balls and Ichor",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Ichor_Bullet",
+        "why": "Lowers enemy defense with Ichor."
       },
       {
         "id": "cursed-bullet",
         "name": "Cursed Bullet",
         "slot": "ammo",
         "icon": "calamity/cursed-bullet.png",
-        "source": "",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Bullet",
-        "effect": "It inflicts the Cursed Inferno debuff for 7 seconds on hit, causing damage over time that cannot be extinguished by water (unlike the On Fire! debuff)."
+        "source": "Crafted from Musket Balls and Cursed Flames",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cursed_Bullet",
+        "why": "Inflicts Cursed Inferno.",
+        "altOf": "Ichor Bullet"
       },
       {
-        "id": "rocket-i",
-        "name": "Rocket I",
+        "id": "gel",
+        "name": "Gel",
         "slot": "ammo",
-        "icon": "calamity/rocket-i.png",
-        "source": "Dropped by Plantera when it drops the Grenade Launcher",
-        "why": "",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rocket_I",
-        "effect": "The Rocket I variant is also dropped by Plantera when it drops the Grenade Launcher. Most launchers use Rockets as ammunition."
-      },
-      {
-        "id": "unholy-arrow",
-        "name": "Unholy Arrow",
-        "slot": "ammo",
-        "icon": "calamity/unholy-arrow.png",
-        "source": "",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Arrow",
-        "effect": "It can pierce 4 enemies, and its damage decreases by 5% per enemy pierced."
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -55778,10 +56008,13 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true,
+    "note": "Still finding out which weapons and accessories are the best for this phase"
   },
   {
     "phase": "cal-post-mech2",
@@ -62633,24 +62866,27 @@
         "name": "Animosity",
         "slot": "weapon",
         "icon": "calamity/animosity.png",
-        "source": "Dropped by Calamitas Clone",
+        "source": "Dropped by the Calamitas Clone",
         "why": "reliable rapid-fire gun",
         "tags": [],
         "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Animosity",
         "effect": "When used with its primary fire (left-click), it fires a narrow spread of 6 bullets that inflicts the Brimstone Flames debuff regardless of what ammo type was used. When used with its secondary fire (right-click), it fires a brimstone round with 900% damage, 200% velocity, and 1.35x the critical strike chance, at the cost of halving the rate of fire.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "stats": "39 ranged dmg",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
       },
       {
         "id": "chlorophyte-shotbow",
         "name": "Chlorophyte Shotbow",
         "slot": "weapon",
         "icon": "calamity/chlorophyte-shotbow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "Can fire up to four arrows at once when held.",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_Shotbow",
         "materials": [
@@ -62676,7 +62912,10 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hellborn",
         "effect": "When used, the player twirls the gun in their hand, dealing 8% base damage to enemies. Each hit with the gun itself adds 1 charge to the gun, up to a maximum of 12.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "300 ranged dmg",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
       },
       {
         "id": "pulse-bow",
@@ -62687,10 +62926,121 @@
         "why": "Fires a piercing pulse arrow that bounces off blocks.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pulse_Bow",
         "subclass": "bow",
-        "stats": "80 ranged dmg"
+        "stats": "80 ranged dmg",
+        "secondary": true
+      },
+      {
+        "id": "arietes-41",
+        "name": "Arietes 41",
+        "slot": "weapon",
+        "icon": "calamity/arietes-41.png",
+        "subclass": "gun",
+        "stats": "77 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Arietes_41",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires charged rounds.",
+        "why": "Fires charged rounds",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Thermocline Blaster",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Thermocline_Blaster"
+          },
+          {
+            "name": "Shroomite Bar",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 3,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          }
+        ]
+      },
+      {
+        "id": "seas-searing",
+        "name": "Sea's Searing",
+        "slot": "weapon",
+        "icon": "calamity/seas-searing.png",
+        "subclass": "other",
+        "stats": "40 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sea's_Searing",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a string of bubbles that shower on hit; alt-fire is a large water blast.",
+        "why": "Fires a string of bubbles that shower on hit; alt-fire is a ",
+        "source": "Dropped by the Aquatic Scourge",
+        "dropRate": "10%"
+      },
+      {
+        "id": "megashark",
+        "name": "Megashark",
+        "slot": "weapon",
+        "icon": "calamity/megashark.png",
+        "subclass": "gun",
+        "stats": "25 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megashark",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A rapid-fire upgrade to the Minishark.",
+        "why": "A rapid-fire upgrade to the Minishark",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Minishark",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Minishark"
+          },
+          {
+            "name": "Illegal Gun Parts",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Illegal_Gun_Parts"
+          },
+          {
+            "name": "Shark Fin",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Shark_Fin"
+          },
+          {
+            "name": "Soul of Might",
+            "qty": 20,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Soul_of_Might"
+          }
+        ]
+      },
+      {
+        "id": "hallowed-repeater",
+        "name": "Hallowed Repeater",
+        "slot": "weapon",
+        "icon": "calamity/hallowed-repeater.png",
+        "subclass": "repeater",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallowed_Repeater",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A strong post-mech repeater.",
+        "why": "A strong post-mech repeater",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Hallowed Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+          }
+        ]
       }
     ],
     "armor": [
@@ -62737,69 +63087,109 @@
             ]
           }
         ],
-        "defense": 51,
+        "defense": 44,
         "pieces": [
           "Chlorophyte Mask",
           "Chlorophyte Plate Mail",
           "Chlorophyte Greaves"
         ],
-        "headpiece": "Chlorophyte Mask",
-        "effect": "+5% movement speed · Leaf Crystal minion fires bolts at nearby enemies",
+        "headpiece": "Chlorophyte Helmet",
+        "effect": "Summons a Leaf Crystal above you that periodically fires laser bolts dealing 100 base damage.",
         "desc": "Chlorophyte armor is a Hardmode, post- mechanical bosses armor set consisting of the Chlorophyte Plate Mail and Chlorophyte Greaves, as well as four different headpieces: the Chlorophyte Mask, Chlorophyte Helmet, Chlorophyte Headgear, and Chlorophyte Visor, providing bonuses for the melee, ranged, magic and summon damage type respectively.",
-        "headpieceBonus": "+21% melee damage · +21% melee critical strike chance · +5% damage reduction"
+        "headpieceBonus": "+21% ranged damage (+16% ranged, +5% all classes) · +15% critical strike chance · +20% ammo conservation · +5% movement speed"
       },
       {
-        "id": "hallowed-armor",
-        "name": "Hallowed armor",
+        "id": "daedalus-armor",
+        "name": "Daedalus armor",
         "slot": "armor",
-        "icon": "armor-sets/hallowed-armor-ranger.png",
+        "icon": "armor-sets/daedalus-armor-summoner.png",
         "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Brief immunity after striking an enemy.",
+        "why": "hybrid set offering summon boost and defense",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
+        "tier": "best",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daedalus_armor",
         "pieceRecipes": [
           {
-            "piece": "Hallowed Helmet",
+            "piece": "Daedalus Breastplate",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 15,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
             ]
           },
           {
-            "piece": "Hallowed Plate Mail",
+            "piece": "Daedalus Facemask",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
             ]
           },
           {
-            "piece": "Hallowed Greaves",
+            "piece": "Daedalus Headgear",
             "materials": [
               {
-                "name": "Hallowed Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
+              }
+            ]
+          },
+          {
+            "piece": "Daedalus Helm",
+            "materials": [
+              {
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
+              }
+            ]
+          },
+          {
+            "piece": "Daedalus Hood",
+            "materials": [
+              {
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
+              }
+            ]
+          },
+          {
+            "piece": "Daedalus Leggings",
+            "materials": [
+              {
+                "name": "Cryonic Bar",
+                "qty": 10,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
+              }
+            ]
+          },
+          {
+            "piece": "Daedalus Mask",
+            "materials": [
+              {
+                "name": "Cryonic Bar",
+                "qty": 7,
+                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
               }
             ]
           }
         ],
-        "defense": 35,
         "pieces": [
-          "Hallowed Helmet",
-          "Hallowed Plate Mail",
-          "Hallowed Greaves"
+          "Daedalus Mask",
+          "Daedalus Breastplate",
+          "Daedalus Leggings"
         ],
-        "headpiece": "Hallowed Helmet",
-        "desc": "Hallowed armor is a Hardmode, post-one mechanical boss armor set consisting of the Hallowed Plate Mail and Hallowed Greaves, as well as four different headpieces: the Hallowed Mask, Hallowed Helmet, Hallowed Headgear, and Hallowed Hood, providing bonuses for melee, ranged, magic, and summon damage type respectively.",
-        "headpieceBonus": "+22% ranged damage · +15% ranged critical strike chance"
+        "headpiece": "Daedalus Headgear",
+        "defense": 48,
+        "desc": "Daedalus armor is a Hardmode armor set.",
+        "headpieceBonus": "+21% ranged damage · +15% ranged critical strike chance · +20% chance to not consume ammo · +10% movement speed · Taking damage releases 10 crystal shards (30/60/90 true damage, unaffected by damage bonuses)"
       }
     ],
     "accessories": [
@@ -63606,108 +63996,63 @@
     ],
     "ammo": [
       {
-        "id": "chlorophyte-arrow",
-        "name": "Chlorophyte Arrow",
+        "id": "cinder",
+        "name": "Cinder Arrow",
         "slot": "ammo",
-        "icon": "calamity/chlorophyte-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "homing arrow ammo",
+        "icon": "calamity/cinder.png",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_Arrow",
-        "materials": [
-          {
-            "name": "Chlorophyte Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It can bounce off blocks up to four times, and will bounce towards the direction of the nearest enemy. After bouncing once, its damage is decreased by 1/3 (33.33%)."
-      },
-      {
-        "id": "hallow-point-round",
-        "name": "Hallow-Point Round",
-        "slot": "ammo",
-        "icon": "calamity/hallow-point-round.png",
-        "source": "Crafted at a Work Bench",
-        "why": "bullet ammo option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallow-Point_Round",
-        "station": "Work Bench",
-        "materials": [
-          {
-            "name": "Empty Bullet",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Empty_Bullet"
-          },
-          {
-            "name": "Hallowed Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Hallowed_Bar"
-          }
-        ],
-        "effect": "They sparkle on enemy hits, which deal 6 extra flat damage as long as they have not been converted into other bullets."
-      },
-      {
-        "id": "holy-arrow",
-        "name": "Holy Arrow",
-        "slot": "ammo",
-        "icon": "calamity/holy-arrow.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Calls down falling stars on impact.",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 200,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Pixie Dust",
-            "qty": 3,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Pixie_Dust"
-          },
-          {
-            "name": "Unicorn Horn",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Unicorn_Horn"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "Upon contact with enemies or blocks, two Hallow Star projectiles will fall from the sky to the impact location. The stars deal 1/3 (33.33%) of the combined damage of the arrow and weapon, and do not pierce."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cinder_Arrow",
+        "why": "Strong Calamity arrow."
       },
       {
         "id": "verium-bolt",
         "name": "Verium Bolt",
         "slot": "ammo",
         "icon": "calamity/verium-bolt.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "bolt ammo option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "source": "Crafted from Verium Bars",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Verium_Bolt",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Cryonic Bar",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cryonic_Bar"
-          }
-        ],
-        "effect": "When hitting enemies, it marks them, causing the enemy to emit star particles for 1.5 seconds before exploding, dealing additional flat damage. The explosion damage can be increased if additional Verium Bolts hit the target within the 1.5 second window."
+        "why": "Piercing Calamity arrow.",
+        "altOf": "Cinder Arrow"
+      },
+      {
+        "id": "hallow-point-round",
+        "name": "Hallow-Point Round",
+        "slot": "ammo",
+        "icon": "calamity/hallow-point-round.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hallow-Point_Round",
+        "why": "Splits into extra rounds."
+      },
+      {
+        "id": "chlorophyte-bullet",
+        "name": "Chlorophyte Bullet",
+        "slot": "ammo",
+        "icon": "calamity/chlorophyte-bullet.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted from Chlorophyte Bars",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bullet",
+        "why": "Homes in on enemies.",
+        "altOf": "Hallow-Point Round"
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -64223,10 +64568,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Lunic Eye"
       }
     ],
-    "supportJoin": "and"
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-plantera",
