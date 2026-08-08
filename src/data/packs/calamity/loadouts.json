@@ -80470,10 +80470,11 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Aerial_Bane",
-        "tier": "best",
+        "tier": "good",
         "subclass": "bow",
         "dropRate": "25%",
-        "stats": "38 ranged dmg"
+        "stats": "38 ranged dmg",
+        "secondary": true
       },
       {
         "id": "b-gss-nidhogg",
@@ -80483,7 +80484,7 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "first-listed primary ranged weapon at this tier",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/B-GSS%3A_Nidhogg",
         "station": "Mythril Anvil or Orichalcum Anvil",
@@ -80510,7 +80511,8 @@
           }
         ],
         "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "69 ranged dmg"
       },
       {
         "id": "nullification-pistol",
@@ -80524,7 +80526,8 @@
         "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Nullification_Pistol",
         "effect": "It does not use any ammo.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "stynger",
@@ -80535,7 +80538,7 @@
         "why": "Fires Stynger Bolts that burst into shrapnel on impact.",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Stynger",
         "dropRate": "14.29%",
         "subclass": "launcher",
@@ -80551,7 +80554,7 @@
         "tags": [],
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Hive",
-        "tier": "other",
+        "tier": "best",
         "effect": "When used, it fires a spread of 4 short-ranged plague missiles that explode on impact with tiles or enemies, each releasing 2 homing plague bees. Holding down the fire button will charge the weapon, narrowing the spread of the missiles while increasing their velocity and range.",
         "subclass": "launcher",
         "materials": [
@@ -80571,7 +80574,128 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
           }
         ],
-        "station": "Mythril Anvil or Orichalcum Anvil"
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "stats": "92 ranged dmg"
+      },
+      {
+        "id": "plague-tainted-smg",
+        "name": "Plague Tainted SMG",
+        "slot": "weapon",
+        "icon": "calamity/plague-tainted-smg.png",
+        "subclass": "gun",
+        "stats": "78 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Tainted_SMG",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires plague-infected rounds.",
+        "why": "Fires plague-infected rounds",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Black Hawk Remote",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Black_Hawk_Remote"
+          },
+          {
+            "name": "Uzi",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Uzi"
+          },
+          {
+            "name": "Helstorm",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Helstorm"
+          },
+          {
+            "name": "Infected Armor Plating",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
+          }
+        ]
+      },
+      {
+        "id": "realm-ravager",
+        "name": "Realm Ravager",
+        "slot": "weapon",
+        "icon": "calamity/realm-ravager.png",
+        "subclass": "gun",
+        "stats": "54 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Realm_Ravager",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires bone rounds.",
+        "why": "Fires bone rounds",
+        "source": "Dropped by the Ravager",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "eventide",
+        "name": "Eventide",
+        "slot": "weapon",
+        "icon": "calamity/eventide.png",
+        "subclass": "bow",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Eventide",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires prismatic arrows; occasional special shots deal 200% damage.",
+        "why": "Fires prismatic arrows; occasional special shots deal 200% d",
+        "source": "Dropped by the Empress of Light",
+        "dropRate": "25%"
+      },
+      {
+        "id": "tsunami",
+        "name": "Tsunami",
+        "slot": "weapon",
+        "icon": "calamity/tsunami.png",
+        "subclass": "bow",
+        "stats": "53 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tsunami",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires five arrows in a spread.",
+        "why": "Fires five arrows in a spread",
+        "source": "Dropped by Duke Fishron",
+        "dropRate": "16.67%"
+      },
+      {
+        "id": "pestilent-defiler",
+        "name": "Pestilent Defiler",
+        "slot": "weapon",
+        "icon": "calamity/pestilent-defiler.png",
+        "subclass": "gun",
+        "stats": "105 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pestilent_Defiler",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires plague missiles.",
+        "why": "Fires plague missiles",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Slag Magnum",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Slag_Magnum"
+          },
+          {
+            "name": "Infected Armor Plating",
+            "qty": 7,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Infected_Armor_Plating"
+          },
+          {
+            "name": "Plague Cell Canister",
+            "qty": 12,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
+          }
+        ]
       }
     ],
     "armor": [
@@ -80665,9 +80789,9 @@
         ],
         "headpiece": "Hydrothermic Headgear",
         "defense": 49,
-        "effect": "Inferno effect when below 50% life · You emit a blazing explosion when you are hit",
+        "effect": "Immunity to On Fire! and lava · Below 50% health, a modified Inferno deals 50 damage and inflicts Brimstone Flames on nearby enemies, and causes an on-hit explosion dealing 115/230/345 damage and inflicting Hellfire",
         "desc": "Hydrothermic armor is a Hardmode armor set.",
-        "headpieceBonus": "You fire a homing chaos flare when using ranged weapons every 0.33 seconds"
+        "headpieceBonus": "+25% ranged damage · +19% ranged critical strike chance · +25% chance to not consume ammo · +10% movement speed · Ranged weapons fire a homing chaos flare every 0.33s (25% of the weapon’s damage, soft cap 50)"
       },
       {
         "id": "plague-reaper-armor",
@@ -80678,7 +80802,7 @@
         "why": "strong ranged set bonus alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Reaper_armor",
         "pieceRecipes": [
           {
@@ -80748,163 +80872,10 @@
           "Plague Reaper Striders"
         ],
         "defense": 44,
-        "effect": "5% increased flight time · Enemies afflicted by the Plague take 1.1x damage from ranged projectiles · Plague Blackout - Armor Set Bonus to greatly empower your damage but completely blind yourself · 60% increased ranged damage and 20% increased ranged critical strike chance while blacked out · This effect lasts 5 seconds and has a cooldown of 25 seconds",
-        "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura."
-      },
-      {
-        "id": "shroomite-armor",
-        "name": "Shroomite armor",
-        "slot": "armor",
-        "icon": "armor-sets/shroomite-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "Standing still puts you in stealth, raising ranged damage and making enemies less likely to target you.",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
-        "pieceRecipes": [
-          {
-            "piece": "Shroomite Headgear",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 12,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Shroomite Breastplate",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 24,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Shroomite Leggings",
-            "materials": [
-              {
-                "name": "Shroomite Bar",
-                "qty": 18,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-              }
-            ]
-          }
-        ],
-        "defense": 51,
-        "pieces": [
-          "Shroomite Headgear",
-          "Shroomite Breastplate",
-          "Shroomite Leggings"
-        ],
-        "desc": "Shroomite armor is a Hardmode, post- Plantera ranged armor set consisting of the Shroomite Breastplate and Shroomite Leggings, as well as three different headpieces: the Shroomite Headgear, Shroomite Mask, and Shroomite Helmet, providing bonuses for ranged weapons using a specific type of ammunition.",
-        "headVariants": [
-          {
-            "name": "Headgear",
-            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of bows, repeaters, arrows, and Stakes",
-            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
-          },
-          {
-            "name": "Mask",
-            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of guns, bullets, and Candy Corn",
-            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
-          },
-          {
-            "name": "Helmet",
-            "headpieceBonus": "+51 defense · +13% ranged damage · ×1.12 damage of specialist ranged weapons (non-consumable, not bows or guns) and their ammunition",
-            "effect": "+25% ranged critical strike chance · +20% ammo conservation · +12% movement speed · Leaves dark blue afterimages while moving · Standing still and not using items enters stealth: turn nearly invisible and enemies stop firing at you, gaining up to +60% ranged damage, +10% ranged critical strike chance, -750 aggro, and +50% ranged knockback (lost on moving, taking damage, or mounting)"
-          }
-        ],
-        "headpiece": "Shroomite Headgear"
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Reaver Cuisses",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Headgear",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "allClass": true,
-        "headVariants": [
-          {
-            "name": "Helm",
-            "headpieceBonus": "+70 defense · +10% damage reduction · +600 aggro · +50 maximum health · +4 HP/s · -18% movement speed · -30% flight time · Reduces damage-over-time from debuffs by 20% · On hit, Reaver Rage grants +10% damage, +5% melee speed, and +5 defense"
-          },
-          {
-            "name": "Visage",
-            "headpieceBonus": "+55 defense · +10% damage reduction · +27% movement speed · +10% jump speed · +10% flight time · +10% horizontal flight speed · +50% hook pull and retract speed · Auto-jump · -33% dash cooldown · Immunity to fall damage"
-          },
-          {
-            "name": "Headgear",
-            "headpieceBonus": "+48 defense · +10% damage reduction · +12% movement speed · -400 aggro · +20% mining speed · +50% block and wall placement speed · Increased block placement range · Immunity to lava · Move freely through liquids · Spelunker effect · Increased item collection range · Breathe underwater · Emits light · Improved vision in the Abyss"
-          }
-        ],
-        "headpiece": "Reaver Helm"
+        "effect": "Set Bonus key blinds you for 5 seconds (Blackout, Darkness, Obstructed) but grants +60% ranged damage and +20% ranged critical strike chance (25-second cooldown)",
+        "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura.",
+        "headpiece": "Plague Reaper Visor",
+        "headpieceBonus": "+26% ranged damage · +16% ranged critical strike chance · +15% movement speed · +25% chance to not consume ammunition · +5% flight time · Immunity to the Plague debuff · The Plague debuff makes enemies take 10% more damage from ranged projectiles"
       }
     ],
     "accessories": [
@@ -81045,21 +81016,33 @@
         "altOf": "Asgard's Valor"
       },
       {
-        "id": "blood-pact",
-        "name": "Blood Pact",
+        "id": "recon-scope",
+        "name": "Recon Scope",
         "slot": "accessory",
-        "icon": "calamity/blood-pact.png",
-        "source": "Dropped by the Ravager",
-        "why": "large max-life boost",
+        "icon": "calamity/recon-scope.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
-        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
-        "categories": [
-          "survivability"
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Recon_Scope",
+        "materials": [
+          {
+            "name": "Sniper Scope",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope"
+          },
+          {
+            "name": "Putrid Scent",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+          }
         ],
-        "expertOnly": true
+        "station": "Tinkerer's Workshop",
+        "categories": [
+          "ranged"
+        ],
+        "quality": "great"
       },
       {
         "id": "calpool-deadshot-brooch",
@@ -81090,33 +81073,21 @@
         "effect": "12% increased ranged damage, 7% increased ranged critical strike chance and 20% reduced ammo usage · Pressing Ammo Cycle Hotkey will automatically swap the order of ammos in your ammo slots · The ammo type swapped depends on the ammo of the weapon you are holding"
       },
       {
-        "id": "recon-scope",
-        "name": "Recon Scope",
+        "id": "blood-pact",
+        "name": "Blood Pact",
         "slot": "accessory",
-        "icon": "calamity/recon-scope.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "",
+        "icon": "calamity/blood-pact.png",
+        "source": "Dropped by the Ravager",
+        "why": "large max-life boost",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Recon_Scope",
-        "materials": [
-          {
-            "name": "Sniper Scope",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope"
-          },
-          {
-            "name": "Putrid Scent",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
+        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
         "categories": [
-          "ranged"
+          "survivability"
         ],
-        "quality": "great"
+        "expertOnly": true
       }
     ],
     "buffs": [
@@ -82335,7 +82306,8 @@
           }
         ],
         "effect": "When used, it fires an orange particle bolt that does not pierce nor pass through tiles and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 15-tile radius, gradually turning itself purple as it moves closer to the target.",
-        "stats": "32 dmg"
+        "stats": "32 dmg",
+        "altOf": "Betsy's Wrath"
       },
       {
         "id": "rod-of-discord",
@@ -82349,49 +82321,96 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Betsy's Wrath"
       }
     ],
     "ammo": [
       {
-        "id": "rocket-iii",
-        "name": "Rocket III",
+        "id": "sprouting-arrow",
+        "name": "Sprouting Arrow",
         "slot": "ammo",
-        "icon": "calamity/rocket-iii.png",
-        "source": "Dropped by Plantera when it drops the Grenade Launcher",
-        "why": "",
+        "icon": "calamity/sprouting-arrow.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rocket_III",
-        "effect": "The Rocket I variant is also dropped by Plantera when it drops the Grenade Launcher. Most launchers use Rockets as ammunition."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sprouting_Arrow",
+        "why": "Grows damaging vines on hit."
       },
       {
         "id": "venom-arrow",
         "name": "Venom Arrow",
         "slot": "ammo",
         "icon": "calamity/venom-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 35,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Vial of Venom",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Vial_of_Venom"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It has the highest base damage of all arrows and inflicts the Acid Venom debuff for 10 seconds upon hitting enemies."
+        "source": "Crafted from Cursed Arrows and Vile Powder",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Arrow",
+        "why": "Inflicts Venom.",
+        "altOf": "Sprouting Arrow"
+      },
+      {
+        "id": "bubonic-round",
+        "name": "Bubonic Round",
+        "slot": "ammo",
+        "icon": "calamity/bubonic-round.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Round",
+        "why": "Plague-infused bullet."
+      },
+      {
+        "id": "hyperius-bullet",
+        "name": "Hyperius Bullet",
+        "slot": "ammo",
+        "icon": "calamity/hyperius-bullet.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperius_Bullet",
+        "why": "High-damage homing bullet.",
+        "altOf": "Bubonic Round"
+      },
+      {
+        "id": "rocket-iii",
+        "name": "Rocket III",
+        "slot": "ammo",
+        "icon": "calamity/rocket-iii.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Purchased from the Cyborg",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_III",
+        "why": "Explosive launcher ammo.",
+        "stats": "launcher ammo"
+      },
+      {
+        "id": "cluster-rocket-i",
+        "name": "Cluster Rocket I",
+        "slot": "ammo",
+        "icon": "calamity/cluster-rocket-i.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted from Rocket I and Grenades",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Cluster_Rocket_I",
+        "why": "Splits into cluster bomblets.",
+        "altOf": "Rocket III"
+      },
+      {
+        "id": "stynger-bolt",
+        "name": "Stynger Bolt",
+        "slot": "ammo",
+        "icon": "calamity/stynger-bolt.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Sold by the Witch Doctor and Arms Dealer",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Stynger_Bolt",
+        "why": "Ammo for the Stynger.",
+        "stats": "Stynger ammo"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-lunar",
@@ -90058,8 +90077,8 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "first-listed primary ranged weapon at this tier",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/B-GSS%3A_Nidhogg",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -90085,7 +90104,8 @@
           }
         ],
         "effect": "When used, it rapidly fires instant-traveling gauss shots with very slight inaccuracy. Gauss shots create a small lingering magnetic implosion which pulls in non-boss enemies, though only one can exist at a time.",
-        "subclass": "other"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "dead-suns-wind",
@@ -90107,7 +90127,8 @@
           }
         ],
         "effect": "When used, it fires high-velocity blasts of cosmic plasma that cause explosions on enemy hits, each explosion dealing 150% of the weapon's damage and increasing in size with consecutive hits. The plasma blasts can also ricochet off tiles, after which they gain the ability to home in aggressively on nearby enemies.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "115 ranged dmg"
       },
       {
         "id": "plague-tainted-smg",
@@ -90144,7 +90165,8 @@
           }
         ],
         "effect": "When used with its primary fire (⚒ Use / Attack), it converts all bullets into plague bullets that inflict the Plague debuff on hit, dealing 150% damage and knockback if the target is within 50 tiles of the player. Critical strikes from plague bullets fire a plague drone that homes in on enemies and explodes upon contact with an enemy or block, with a 75% chance to critically strike if the target is afflicted with the Plague debuff.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "vortexpopper",
@@ -90155,7 +90177,7 @@
         "why": "high-fire-rate ranged option",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vortexpopper",
         "station": "Ancient Manipulator",
         "materials": [
@@ -90171,104 +90193,151 @@
           }
         ],
         "effect": "When used, it fires a spread of bubbles from the gun, and extra bubbles off-screen from any direction. After a short delay, the bubbles will pop and fire a bullet towards the cursor.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "stats": "30 ranged dmg"
+      },
+      {
+        "id": "phantasm",
+        "name": "Phantasm",
+        "slot": "weapon",
+        "icon": "calamity/phantasm.png",
+        "subclass": "bow",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Phantasm",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "A Vortex bow that charges up to fire faster.",
+        "why": "A Vortex bow that charges up to fire faster",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Vortex Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "shroomer",
+        "name": "Shroomer",
+        "slot": "weapon",
+        "icon": "calamity/shroomer.png",
+        "subclass": "gun",
+        "stats": "150 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shroomer",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires high-velocity bullets plus a homing, piercing mushroom.",
+        "why": "Fires high-velocity bullets plus a homing, piercing mushroom",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Sniper Rifle",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Rifle"
+          },
+          {
+            "name": "Fungicide",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fungicide"
+          },
+          {
+            "name": "Stardust Fragment",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "conference-call",
+        "name": "Conference Call",
+        "slot": "weapon",
+        "icon": "calamity/conference-call.png",
+        "subclass": "gun",
+        "stats": "53 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Conference_Call",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a spread of bullets that split.",
+        "why": "Fires a spread of bullets that split",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Tactical Shotgun",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Tactical_Shotgun"
+          },
+          {
+            "name": "Vortex Fragment",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "vortex-beater",
+        "name": "Vortex Beater",
+        "slot": "weapon",
+        "icon": "calamity/vortex-beater.png",
+        "subclass": "gun",
+        "stats": "50 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Vortex_Beater",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "A chaingun that also fires homing rockets.",
+        "why": "A chaingun that also fires homing rockets",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Vortex Fragment",
+            "qty": 18,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "spectralstorm-cannon",
+        "name": "Spectralstorm Cannon",
+        "slot": "weapon",
+        "icon": "calamity/spectralstorm-cannon.png",
+        "subclass": "gun",
+        "stats": "85 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spectralstorm_Cannon",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires spectral storms; uses Flares as ammo.",
+        "why": "Fires spectral storms; uses Flares as ammo",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Firestorm Cannon",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Firestorm_Cannon"
+          },
+          {
+            "name": "Solar Fragment",
+            "qty": 6,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+          },
+          {
+            "name": "Ectoplasm",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Ectoplasm"
+          }
+        ]
       }
     ],
     "armor": [
-      {
-        "id": "hydrothermic-armor",
-        "name": "Hydrothermic armor",
-        "slot": "armor",
-        "icon": "armor-sets/hydrothermic-armor-ranger.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "melee set with brimstone offensive bonuses",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hydrothermic_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Hydrothermic Armor",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Headgear",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Helm",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Helmet",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Hood",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Mask",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Hydrothermic Subligar",
-            "materials": [
-              {
-                "name": "Scoria Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Scoria_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Hydrothermic Headgear",
-          "Hydrothermic Armor",
-          "Hydrothermic Subligar"
-        ],
-        "headpiece": "Hydrothermic Headgear",
-        "defense": 49,
-        "effect": "Inferno effect when below 50% life · You emit a blazing explosion when you are hit",
-        "desc": "Hydrothermic armor is a Hardmode armor set.",
-        "headpieceBonus": "You fire a homing chaos flare when using ranged weapons every 0.33 seconds"
-      },
       {
         "id": "lunic-corps-armor",
         "name": "Lunic Corps armor",
@@ -90278,7 +90347,7 @@
         "why": "class-specific armor alternative",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Corps_armor",
         "pieceRecipes": [
           {
@@ -90348,8 +90417,10 @@
           "Lunic Corps Boots"
         ],
         "defense": 56,
-        "effect": "20% increased jump speed · MJOLNIR Shield - Projects a bubble shield that absorbs up to 50 damage · Halves Adrenaline lost on hit if the shield fully absorbs the hit · The shield starts recharging 5 seconds after being hit · Recharging from zero to full charge takes 2 seconds · Being hit again while recharging restarts the charge timer · 'Finish the fight'",
-        "desc": "Lunic Corps armor is a Hardmode ranger armor set."
+        "effect": "After not taking damage for 5 seconds, an energy shield builds up to 50 durability (25/s); durability depletes instead of health when you take damage. It regenerates the same way, or on re-equip.",
+        "desc": "Lunic Corps armor is a Hardmode ranger armor set.",
+        "headpiece": "Lunic Corps Helmet",
+        "headpieceBonus": "+15% ranged damage · +15% damage for all ranged weapons that are not bows · +22% ranged critical strike chance · +25% ammo cost reduction · +15% movement speed · +20% jump speed · +15% maximum horizontal speed and acceleration · Night vision and creature detection"
       },
       {
         "id": "plague-reaper-armor",
@@ -90360,7 +90431,7 @@
         "why": "strong ranged set bonus alternative",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Reaper_armor",
         "pieceRecipes": [
           {
@@ -90430,162 +90501,10 @@
           "Plague Reaper Striders"
         ],
         "defense": 44,
-        "effect": "5% increased flight time · Enemies afflicted by the Plague take 1.1x damage from ranged projectiles · Plague Blackout - Armor Set Bonus to greatly empower your damage but completely blind yourself · 60% increased ranged damage and 20% increased ranged critical strike chance while blacked out · This effect lasts 5 seconds and has a cooldown of 25 seconds",
-        "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura."
-      },
-      {
-        "id": "astral-armor",
-        "name": "Astral armor",
-        "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted at Ancient Manipulator",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Astral Breastplate",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Helm",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Leggings",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
-        ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
-      },
-      {
-        "id": "reaver-armor",
-        "name": "Reaver armor",
-        "slot": "armor",
-        "icon": "armor-sets/reaver-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "all-class set option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaver_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Reaver Cuisses",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Headgear",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Helm",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Scale Mail",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Reaver Visage",
-            "materials": [
-              {
-                "name": "Perennial Bar",
-                "qty": 7,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Perennial_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Reaver Helm",
-          "Reaver Scale Mail",
-          "Reaver Cuisses"
-        ],
-        "defense": 70,
-        "allClass": true,
-        "headVariants": [
-          {
-            "name": "Helm",
-            "headpieceBonus": "+70 defense · +10% damage reduction · +600 aggro · +50 maximum health · +4 HP/s · -18% movement speed · -30% flight time · Reduces damage-over-time from debuffs by 20% · On hit, Reaver Rage grants +10% damage, +5% melee speed, and +5 defense"
-          },
-          {
-            "name": "Visage",
-            "headpieceBonus": "+55 defense · +10% damage reduction · +27% movement speed · +10% jump speed · +10% flight time · +10% horizontal flight speed · +50% hook pull and retract speed · Auto-jump · -33% dash cooldown · Immunity to fall damage"
-          },
-          {
-            "name": "Headgear",
-            "headpieceBonus": "+48 defense · +10% damage reduction · +12% movement speed · -400 aggro · +20% mining speed · +50% block and wall placement speed · Increased block placement range · Immunity to lava · Move freely through liquids · Spelunker effect · Increased item collection range · Breathe underwater · Emits light · Improved vision in the Abyss"
-          }
-        ],
-        "headpiece": "Reaver Helm"
+        "effect": "Set Bonus key blinds you for 5 seconds (Blackout, Darkness, Obstructed) but grants +60% ranged damage and +20% ranged critical strike chance (25-second cooldown)",
+        "desc": "Plague Reaper armor is a Hardmode ranger armor set. If the entire set is visible (regardless of whether it is equipped or in social slots), the player emits a faint pulsing aura.",
+        "headpiece": "Plague Reaper Visor",
+        "headpieceBonus": "+26% ranged damage · +16% ranged critical strike chance · +15% movement speed · +25% chance to not consume ammunition · +5% flight time · Immunity to the Plague debuff · The Plague debuff makes enemies take 10% more damage from ranged projectiles"
       }
     ],
     "accessories": [
@@ -90766,21 +90685,33 @@
         "altOf": "Asgard's Valor"
       },
       {
-        "id": "blood-pact",
-        "name": "Blood Pact",
+        "id": "recon-scope",
+        "name": "Recon Scope",
         "slot": "accessory",
-        "icon": "calamity/blood-pact.png",
-        "source": "Dropped by the Ravager",
-        "why": "large max-life boost",
+        "icon": "calamity/recon-scope.png",
+        "source": "Crafted at Tinkerer's Workshop",
+        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
-        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
-        "categories": [
-          "survivability"
+        "tier": "other",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Recon_Scope",
+        "materials": [
+          {
+            "name": "Sniper Scope",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope"
+          },
+          {
+            "name": "Putrid Scent",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
+          }
         ],
-        "expertOnly": true
+        "station": "Tinkerer's Workshop",
+        "categories": [
+          "ranged"
+        ],
+        "quality": "great"
       },
       {
         "id": "calpool-deadshot-brooch",
@@ -90811,33 +90742,21 @@
         "effect": "12% increased ranged damage, 7% increased ranged critical strike chance and 20% reduced ammo usage · Pressing Ammo Cycle Hotkey will automatically swap the order of ammos in your ammo slots · The ammo type swapped depends on the ammo of the weapon you are holding"
       },
       {
-        "id": "recon-scope",
-        "name": "Recon Scope",
+        "id": "blood-pact",
+        "name": "Blood Pact",
         "slot": "accessory",
-        "icon": "calamity/recon-scope.png",
-        "source": "Crafted at Tinkerer's Workshop",
-        "why": "",
+        "icon": "calamity/blood-pact.png",
+        "source": "Dropped by the Ravager",
+        "why": "large max-life boost",
         "tags": [],
         "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Recon_Scope",
-        "materials": [
-          {
-            "name": "Sniper Scope",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Sniper_Scope"
-          },
-          {
-            "name": "Putrid Scent",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Putrid_Scent"
-          }
-        ],
-        "station": "Tinkerer's Workshop",
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
+        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
         "categories": [
-          "ranged"
+          "survivability"
         ],
-        "quality": "great"
+        "expertOnly": true
       }
     ],
     "buffs": [
@@ -91291,53 +91210,75 @@
     ],
     "ammo": [
       {
+        "id": "sprouting-arrow",
+        "name": "Sprouting Arrow",
+        "slot": "ammo",
+        "icon": "calamity/sprouting-arrow.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sprouting_Arrow",
+        "why": "Grows damaging vines on hit."
+      },
+      {
+        "id": "venom-arrow",
+        "name": "Venom Arrow",
+        "slot": "ammo",
+        "icon": "calamity/venom-arrow.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted from Cursed Arrows and Vile Powder",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Venom_Arrow",
+        "why": "Inflicts Venom.",
+        "altOf": "Sprouting Arrow"
+      },
+      {
         "id": "bubonic-round",
         "name": "Bubonic Round",
         "slot": "ammo",
         "icon": "calamity/bubonic-round.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bubonic_Round",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 150,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Musket_Ball"
-          },
-          {
-            "name": "Plague Cell Canister",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Plague_Cell_Canister"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "They burst into a virulent plague upon contact which inflicts the Plague debuff and they ignore 10% of the enemy's defense."
+        "why": "Plague-infused bullet."
       },
       {
-        "id": "chlorophyte-bullet",
-        "name": "Chlorophyte Bullet",
+        "id": "hyperius-bullet",
+        "name": "Hyperius Bullet",
         "slot": "ammo",
-        "icon": "calamity/chlorophyte-bullet.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/hyperius-bullet.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chlorophyte_Bullet",
-        "effect": "It strongly homes in on the nearest enemy."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Hyperius_Bullet",
+        "why": "High-damage homing bullet.",
+        "altOf": "Bubonic Round"
       },
       {
-        "id": "exploding-bullet",
-        "name": "Exploding Bullet",
+        "id": "cursed-flare",
+        "name": "Cursed Flare",
         "slot": "ammo",
-        "icon": "calamity/exploding-bullet.png",
-        "source": "",
-        "why": "",
+        "icon": "calamity/cursed-flare.png",
         "tags": [],
         "topPick": false,
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exploding_Bullet",
-        "effect": "It explodes on impact with enemies or blocks, dealing damage and knockback within an area."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Cursed_Flare",
+        "why": "Flare ammo for flare-based weapons.",
+        "effect": "Inflicts Cursed Inferno."
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -92069,7 +92010,8 @@
           }
         ],
         "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
+        "stats": "60 magic dmg",
+        "altOf": "Betsy's Wrath"
       },
       {
         "id": "rod-of-discord",
@@ -92083,9 +92025,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Betsy's Wrath"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-ml",
@@ -99895,8 +99840,8 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "primary ranged recommendation at this tier",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Barracuda_Gun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -99917,7 +99862,8 @@
           }
         ],
         "effect": "Holding left-click will fire four barracudas that latch on to enemies and deal continuous damage as long as left-click is held down. After an enemy dies, the barracudas will automatically latch onto other enemies in range.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "clockwork-bow",
@@ -99944,7 +99890,8 @@
           }
         ],
         "effect": "When used, it slowly loads up to 6 precision bolts. Each bolt loaded reduces the time taken to load the next bolt by 5%.",
-        "subclass": "bow"
+        "subclass": "bow",
+        "stats": "770 ranged dmg"
       },
       {
         "id": "planetary-annihilation",
@@ -99955,7 +99902,7 @@
         "why": "high-damage ranged option",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Planetary_Annihilation",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -99986,7 +99933,8 @@
           }
         ],
         "effect": "It converts Wooden Arrows into rainbow blasts that home in on enemies. Each set of bolts consists of a Red, Orange, Yellow, Green, Blue, Indigo, and Violet bolt which all act identically to each other and are fired in a random order from the sky.",
-        "subclass": "bow"
+        "subclass": "bow",
+        "stats": "66 ranged dmg"
       },
       {
         "id": "prideful-hunters-planar-ripper",
@@ -99997,7 +99945,7 @@
         "why": "solid ranged alternative",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Prideful_Hunter's_Planar_Ripper",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -100023,7 +99971,8 @@
           }
         ],
         "effect": "When used, it rapidly fires bullets. Musket balls turn into fast lightning bolts which do not pierce enemies or tiles, inflict the Electrified debuff, and explode when enemies are killed.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "stats": "79 ranged dmg"
       },
       {
         "id": "superradiant-slaughterer",
@@ -100034,7 +99983,7 @@
         "why": "solid ranged alternative",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Superradiant_Slaughterer",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -100046,7 +99995,7 @@
           {
             "name": "Speed Blaster",
             "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Speed_Blaster"
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Speed_Blaster"
           },
           {
             "name": "Luminite Bar",
@@ -100065,92 +100014,132 @@
           }
         ],
         "effect": "When held, it charges up a handheld buzzsaw which deals 150% damage on contact. As continuously held, the buzzsaw grows to a medium size after 0.5 seconds and full size after 2 seconds, as well as linearly scaling from 100% to 500% damage and 1 to 6 pierce over 2 seconds.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "127 ranged dmg"
+      },
+      {
+        "id": "golden-eagle",
+        "name": "Golden Eagle",
+        "slot": "weapon",
+        "icon": "calamity/golden-eagle.png",
+        "subclass": "gun",
+        "stats": "88 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Golden_Eagle",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires golden rounds.",
+        "why": "Fires golden rounds",
+        "source": "Dropped by The Dragonfolly",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "onyx-chain-blaster",
+        "name": "Onyx Chain Blaster",
+        "slot": "weapon",
+        "icon": "calamity/onyx-chain-blaster.png",
+        "subclass": "gun",
+        "stats": "58 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Onyx_Chain_Blaster",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a spread of bullets and onyx shards; 50% ammo save.",
+        "why": "Fires a spread of bullets and onyx shards; 50% ammo save",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Onyx Blaster",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Onyx_Blaster"
+          },
+          {
+            "name": "Chain Gun",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Chain_Gun"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          }
+        ]
+      },
+      {
+        "id": "shredder",
+        "name": "Shredder",
+        "slot": "weapon",
+        "icon": "calamity/shredder.png",
+        "subclass": "gun",
+        "stats": "48 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shredder",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires energy bolts that split and bounce.",
+        "why": "Fires energy bolts that split and bounce",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Frostbite Blaster",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Frostbite_Blaster"
+          },
+          {
+            "name": "Bullet-Filled Shotgun",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bullet-Filled_Shotgun"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          }
+        ]
+      },
+      {
+        "id": "chromatic-eruption",
+        "name": "Chromatic Eruption",
+        "slot": "weapon",
+        "icon": "calamity/chromatic-eruption.png",
+        "subclass": "gun",
+        "stats": "94 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Chromatic_Eruption",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A flamethrower that sprays prismatic fire.",
+        "why": "A flamethrower that sprays prismatic fire",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Wildfire Bloom",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wildfire_Bloom"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          },
+          {
+            "name": "Life Alloy",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+          },
+          {
+            "name": "Vortex Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+          }
+        ]
       }
     ],
     "armor": [
-      {
-        "id": "lunic-corps-armor",
-        "name": "Lunic Corps armor",
-        "slot": "armor",
-        "icon": "armor-sets/lunic-corps-armor.png",
-        "source": "Crafted at Ancient Manipulator",
-        "why": "class-specific armor alternative",
-        "tags": [],
-        "topPick": false,
-        "tier": "best",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lunic_Corps_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Lunic Corps Boots",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Lunic Corps Helmet",
-            "materials": [
-              {
-                "name": "Night Vision Helmet",
-                "qty": 1,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Night_Vision_Helmet"
-              },
-              {
-                "name": "Astral Bar",
-                "qty": 6,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              },
-              {
-                "name": "Glass",
-                "qty": 20,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Glass"
-              }
-            ]
-          },
-          {
-            "piece": "Lunic Corps Vest",
-            "materials": [
-              {
-                "name": "Rover Drive",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rover_Drive"
-              },
-              {
-                "name": "Astral Bar",
-                "qty": 11,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Chlorophyte Bar",
-                "qty": 11,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Chlorophyte_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Lunic Corps Helmet",
-          "Lunic Corps Vest",
-          "Lunic Corps Boots"
-        ],
-        "defense": 56,
-        "effect": "20% increased jump speed · MJOLNIR Shield - Projects a bubble shield that absorbs up to 50 damage · Halves Adrenaline lost on hit if the shield fully absorbs the hit · The shield starts recharging 5 seconds after being hit · Recharging from zero to full charge takes 2 seconds · Being hit again while recharging restarts the charge timer · 'Finish the fight'",
-        "desc": "Lunic Corps armor is a Hardmode ranger armor set."
-      },
       {
         "id": "vortex-armor",
         "name": "Vortex armor",
@@ -100160,7 +100149,7 @@
         "why": "Toggle stealth to raise ranged damage and make enemies less likely to target you.",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armor#Vanilla_Armor_Changes",
         "pieceRecipes": [
           {
@@ -100215,76 +100204,10 @@
           "Vortex Breastplate",
           "Vortex Leggings"
         ],
-        "effect": "+36% ranged damage · +27% ranged critical strike chance · +25% ammo conservation · +10% movement speed · Double-tap Down to toggle stealth: turn nearly invisible and stop most enemies from targeting you. While stealthed, boosts ramp up to +80% ranged damage, +20% ranged critical strike chance, +50% ranged knockback, and -1200 aggro, at 0.3x movement speed; taking damage or using an item breaks it.",
-        "desc": "Vortex armor is a Hardmode, post- Moon Lord ranged armor set consisting of the Vortex Helmet, Vortex Breastplate, and Vortex Leggings."
-      },
-      {
-        "id": "astral-armor",
-        "name": "Astral armor",
-        "slot": "armor",
-        "icon": "armor-sets/astral-armor.png",
-        "source": "Crafted at Ancient Manipulator",
-        "why": "all-class armor option",
-        "tags": [],
-        "topPick": false,
-        "tier": "other",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Astral Breastplate",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 9,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Helm",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 8,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 6,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          },
-          {
-            "piece": "Astral Leggings",
-            "materials": [
-              {
-                "name": "Astral Bar",
-                "qty": 10,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Astral_Bar"
-              },
-              {
-                "name": "Meteorite Bar",
-                "qty": 8,
-                "wikiUrl": "https://terraria.wiki.gg/wiki/Meteorite_Bar"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Astral Helm",
-          "Astral Breastplate",
-          "Astral Leggings"
-        ],
-        "defense": 63,
-        "effect": "Increases your max number of minions by 3 · 10% increased damage and critical strike chance · Whenever you crit an enemy, a barrage of stars will rain down · This effect has a 1 second cooldown before it can trigger again",
-        "desc": "Astral armor is a Hardmode armor set. If the full set is visible (whether equipped or in social slots), the player emits an afterimage effect.",
-        "allClass": true
+        "effect": "Double-tap ▼ Down to toggle stealth: turn nearly invisible so enemies stop firing at you while you are not using items. Stealth grants +40% ranged damage and +15% ranged critical strike chance (Calamity reduces the vanilla +80%/+20%), -1200 aggro, +50% ranged knockback, and 0.3x movement speed. Moving or grappling keeps stealth; dashing, mounting, or taking damage cancels it.",
+        "desc": "Vortex armor is a Hardmode, post- Moon Lord ranged armor set consisting of the Vortex Helmet, Vortex Breastplate, and Vortex Leggings.",
+        "headpiece": "Vortex Helmet",
+        "headpieceBonus": "+30% ranged damage · +25% ranged critical strike chance · +25% ammo conservation · +10% movement speed (Calamity lowers the helmet to +10% ranged damage and +5% crit)"
       }
     ],
     "accessories": [
@@ -100507,7 +100430,50 @@
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "the-absorber",
+          "name": "The Absorber",
+          "slot": "accessory",
+          "icon": "calamity/the-absorber.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "categories": [
+            "all-around"
+          ],
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Absorber",
+          "materials": [
+            {
+              "name": "Grand Gelatin",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Grand_Gelatin"
+            },
+            {
+              "name": "Baroclaw",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Baroclaw"
+            },
+            {
+              "name": "Giant Tortoise Shell",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Giant_Tortoise_Shell"
+            },
+            {
+              "name": "Mollusk Husk",
+              "qty": 5,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mollusk_Husk"
+            },
+            {
+              "name": "Meld Blob",
+              "qty": 14,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Meld_Blob"
+            }
+          ],
+          "station": "Ancient Manipulator",
+          "effect": "Grants immunity to knockback · 12% increased movement and jump speed · Attackers take immense damage and are afflicted with Absorber Affliction · Using a healing potion will spawn a green aura that lasts for 30 seconds · Walking into the aura removes all debuffs once and grants 2 HP/s regen, 8% damage, and 5% damage reduction · 5% of the damage from enemy attacks is converted into healing"
+        }
       },
       {
         "id": "calpool-the-absorber",
@@ -100550,7 +100516,45 @@
           }
         ],
         "station": "Ancient Manipulator",
-        "effect": "Grants immunity to knockback · 12% increased movement and jump speed · Attackers take immense damage and are afflicted with Absorber Affliction · Using a healing potion will spawn a green aura that lasts for 30 seconds · Walking into the aura removes all debuffs once and grants 2 HP/s regen, 8% damage, and 5% damage reduction · 5% of the damage from enemy attacks is converted into healing"
+        "effect": "Grants immunity to knockback · 12% increased movement and jump speed · Attackers take immense damage and are afflicted with Absorber Affliction · Using a healing potion will spawn a green aura that lasts for 30 seconds · Walking into the aura removes all debuffs once and grants 2 HP/s regen, 8% damage, and 5% damage reduction · 5% of the damage from enemy attacks is converted into healing",
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "ambrosial-ampoule",
@@ -100590,7 +100594,8 @@
         "categories": [
           "survivability"
         ],
-        "altOf": "The Absorber"
+        "altOf": "The Absorber",
+        "classicHide": true
       },
       {
         "id": "dynamo-stem-cells",
@@ -101751,7 +101756,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
         "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
-        "stats": "1700 dmg"
+        "stats": "1700 dmg",
+        "altOf": "Eye of Magnus"
       },
       {
         "id": "rod-of-discord",
@@ -101765,85 +101771,86 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Eye of Magnus"
       }
     ],
     "ammo": [
       {
-        "id": "endless-musket-pouch",
-        "name": "Endless Musket Pouch",
+        "id": "elysian-arrow",
+        "name": "Elysian Arrow",
         "slot": "ammo",
-        "icon": "calamity/endless-musket-pouch.png",
-        "source": "Crafted at Crystal Ball",
-        "why": "An infinite stack of Musket Balls, so ammo never runs out.",
+        "icon": "calamity/elysian-arrow.png",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 9999,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          }
-        ],
-        "station": "Crystal Ball",
-        "effect": "While in the inventory, it acts as an infinite source of Musket Balls."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Arrow",
+        "why": "High-damage holy arrow."
       },
       {
-        "id": "venom-arrow",
-        "name": "Venom Arrow",
+        "id": "luminite-arrow",
+        "name": "Luminite Arrow",
         "slot": "ammo",
-        "icon": "calamity/venom-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
+        "icon": "calamity/luminite-arrow.png",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Venom_Arrow",
-        "materials": [
-          {
-            "name": "Wooden Arrow",
-            "qty": 35,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Wooden_Arrow"
-          },
-          {
-            "name": "Vial of Venom",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Vial_of_Venom"
-          }
-        ],
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "effect": "It has the highest base damage of all arrows and inflicts the Acid Venom debuff for 10 seconds upon hitting enemies."
+        "source": "Crafted from Luminite Bars",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Arrow",
+        "why": "Fires piercing energy on hit.",
+        "altOf": "Elysian Arrow"
       },
       {
-        "id": "wooden-arrow",
-        "name": "Wooden Arrow",
+        "id": "holy-fire-bullet",
+        "name": "Holy Fire Bullet",
         "slot": "ammo",
-        "icon": "calamity/wooden-arrow.png",
-        "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
-        "why": "The default arrow.",
+        "icon": "calamity/holy-fire-bullet.png",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wooden_Arrow",
-        "materials": [
-          {
-            "name": "Any Wood",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Wood"
-          },
-          {
-            "name": "Stone Block",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Stone_Block"
-          }
-        ],
-        "station": "Work Bench",
-        "dropRate": "1/3 (33.33%)",
-        "effect": "It has no special properties and is used for crafting a variety of more advanced ammunition. When fired with certain bows, Wooden Arrows will be converted into a special projectile (e.g. the Molten Fury converting them into Flaming Arrows)."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
+        "why": "Homing holy bullet."
+      },
+      {
+        "id": "luminite-bullet",
+        "name": "Luminite Bullet",
+        "slot": "ammo",
+        "icon": "calamity/luminite-bullet.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted from Luminite Bars",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bullet",
+        "why": "Fires piercing energy on hit.",
+        "altOf": "Holy Fire Bullet"
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
+      },
+      {
+        "id": "fallen-star",
+        "name": "Fallen Star",
+        "slot": "ammo",
+        "icon": "calamity/fallen-star.png",
+        "stats": "Star Cannon ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Falls from the sky at night",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star",
+        "why": "Ammunition for the Star Cannon.",
+        "effect": "Ammunition for the Star Cannon."
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-providence",

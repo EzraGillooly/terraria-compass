@@ -1673,7 +1673,14 @@ export function Loadouts() {
                           {a.pieces.map((p) => (
                             <span
                               key={p}
-                              className={`${styles.armorPiece} pixel-frame pixel-hollow ${p === a.headpiece ? styles.armorPieceHead : ''}`}
+                              /* Highlight the helmet only when the set offers a
+                                 real helmet choice (headVariants, e.g. Shroomite).
+                                 A single-helmet set has nothing to choose, so the
+                                 highlight would read as a selection that is not
+                                 there. */
+                              className={`${styles.armorPiece} pixel-frame pixel-hollow ${
+                                p === a.headpiece && (a.headVariants?.length ?? 0) > 0 ? styles.armorPieceHead : ''
+                              }`}
                             >
                               {p}
                             </span>
