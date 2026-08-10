@@ -109249,8 +109249,8 @@
         "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
         "why": "",
         "tags": [],
-        "topPick": true,
-        "tier": "best",
+        "topPick": false,
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Angelic_Shotgun",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -109271,7 +109271,8 @@
           }
         ],
         "effect": "Each time the weapon is fired, it shoots 5-6 bullets and summons a radiant beam from the sky towards the cursor. The beam deals 200% of the weapon's damage, pierces infinitely and passes through tiles.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "blood-boiler",
@@ -109293,7 +109294,8 @@
           }
         ],
         "effect": "It uses health for ammunition, with a 20% chance to not consume ammo. When used, it fires two long and continuous streams of bloodfire.",
-        "subclass": "other"
+        "subclass": "other",
+        "secondary": true
       },
       {
         "id": "ontological-despoiler",
@@ -109325,7 +109327,8 @@
           }
         ],
         "effect": "It does not consume any ammo.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "445 ranged dmg"
       },
       {
         "id": "spyker",
@@ -109336,7 +109339,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Spyker",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -109357,21 +109360,194 @@
           }
         ],
         "effect": "When used with Musket Balls, bullets are converted into spikes which stick to enemies and tiles and explode into more spikes, which also have a delayed explosion and inflict the Acid Venom debuff.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "secondary": true
       },
       {
         "id": "telluric-glare",
         "name": "Telluric Glare",
         "slot": "weapon",
         "icon": "calamity/telluric-glare.png",
-        "source": "Dropped by Providence",
+        "source": "Dropped by Providence, the Profaned Goddess",
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Telluric_Glare",
         "effect": "When used, it rapidly fires volleys of arrows and radiant arrows in a sequential stream, with slight variation in their position of origin. Wooden Arrows are all converted into radiant greatarrows that deal 120% base damage.",
-        "subclass": "bow"
+        "subclass": "bow",
+        "stats": "83 ranged dmg",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "the-sevens-striker",
+        "name": "The Sevens Striker",
+        "slot": "weapon",
+        "icon": "calamity/the-sevens-striker.png",
+        "subclass": "gun",
+        "stats": "777 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Sevens_Striker",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires lucky sevens for high burst damage.",
+        "why": "Fires lucky sevens for high burst damage",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Coin Gun",
+            "qty": 1,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Coin_Gun"
+          },
+          {
+            "name": "Platinum Coin",
+            "qty": 7,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Coin"
+          },
+          {
+            "name": "Gold Coin",
+            "qty": 77,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Gold_Coin"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 12,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          },
+          {
+            "name": "Twisting Nether",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Twisting_Nether"
+          }
+        ]
+      },
+      {
+        "id": "pristine-fury",
+        "name": "Pristine Fury",
+        "slot": "weapon",
+        "icon": "calamity/pristine-fury.png",
+        "subclass": "gun",
+        "stats": "60 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pristine_Fury",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "A holy flamethrower.",
+        "why": "A holy flamethrower",
+        "source": "Dropped by Providence, the Profaned Goddess",
+        "dropRate": "10%"
+      },
+      {
+        "id": "the-storm",
+        "name": "The Storm",
+        "slot": "weapon",
+        "icon": "calamity/the-storm.png",
+        "subclass": "bow",
+        "stats": "40 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Storm",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a flurry of arrows.",
+        "why": "Fires a flurry of arrows",
+        "source": "Dropped by the Storm Weaver",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "w-lsr-phalanx-surge",
+        "name": "W-LSR: Phalanx Surge",
+        "slot": "weapon",
+        "icon": "calamity/w-lsr-phalanx-surge.png",
+        "subclass": "gun",
+        "stats": "175 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/W-LSR%3A_Phalanx_Surge",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "A laser rifle firing rapid beams.",
+        "why": "A laser rifle firing rapid beams",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Mysterious Circuitry",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mysterious_Circuitry"
+          },
+          {
+            "name": "Dubious Plating",
+            "qty": 15,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dubious_Plating"
+          },
+          {
+            "name": "Uelibloom Bar",
+            "qty": 8,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Uelibloom_Bar"
+          },
+          {
+            "name": "Luminite Bar",
+            "qty": 4,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
+          }
+        ]
+      },
+      {
+        "id": "blissful-bombardier",
+        "name": "Blissful Bombardier",
+        "slot": "weapon",
+        "icon": "calamity/blissful-bombardier.png",
+        "subclass": "launcher",
+        "stats": "550 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blissful_Bombardier",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires holy explosive rounds.",
+        "why": "Fires holy explosive rounds",
+        "source": "Dropped by Providence, the Profaned Goddess",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
+      },
+      {
+        "id": "seadragon",
+        "name": "Seadragon",
+        "slot": "weapon",
+        "icon": "calamity/seadragon.png",
+        "subclass": "gun",
+        "stats": "154 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Seadragon",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires alternating bullets and pressurized water jets.",
+        "why": "Fires alternating bullets and pressurized water jets",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Megalodon",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Megalodon"
+          },
+          {
+            "name": "Necroplasm",
+            "qty": 9,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Necroplasm"
+          },
+          {
+            "name": "Sea Prism",
+            "qty": 10,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Sea_Prism"
+          },
+          {
+            "name": "Armored Shell",
+            "qty": 3,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Armored_Shell"
+          }
+        ]
       }
     ],
     "armor": [
@@ -109500,9 +109676,9 @@
         ],
         "headpiece": "Tarragon Visage",
         "defense": 88,
-        "effect": "Increased heart pickup range · Enemies have a chance to drop extra hearts on death",
+        "effect": "+10% damage reduction · +2 HP/s · Heartreach effect (larger heart pickup range) · Enemies have a chance to drop extra hearts on death",
         "desc": "Tarragon armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit faint pulses.",
-        "headpieceBonus": "Ranged projectiles spawn homing life energy and leaves on enemy hits"
+        "headpieceBonus": "+30% ranged damage · +23% ranged critical strike chance · +10% movement speed · Ranged projectiles split into 2 homing life energies and leaf projectiles on hit (1s cooldown); life energies deal 33% of the hit (softcap 200), leaves deal 25% (softcap 150)"
       }
     ],
     "accessories": [
@@ -109662,7 +109838,30 @@
         "categories": [
           "offense"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "the-community",
+          "name": "The Community",
+          "slot": "accessory",
+          "icon": "calamity/the-community.png",
+          "source": "Dropped by Leviathan and Anahita",
+          "why": "all-around stat boost accessory",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/The_Community",
+          "station": "Shimmer Transmutation",
+          "materials": [
+            {
+              "name": "Shattered Community",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Shattered_Community"
+            }
+          ],
+          "effect": "When equipped, it grants the player various offensive, defensive, and mobility stat boosts which scale as the player progresses through the game by defeating more bosses.",
+          "categories": [
+            "all-around"
+          ]
+        }
       },
       {
         "id": "blood-pact",
@@ -109679,7 +109878,40 @@
         "categories": [
           "survivability"
         ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "quiver-of-nihility",
+          "name": "Quiver of Nihility",
+          "slot": "accessory",
+          "icon": "calamity/quiver-of-nihility.png",
+          "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+          "why": "",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Quiver_of_Nihility",
+          "station": "Mythril Anvil or Orichalcum Anvil",
+          "materials": [
+            {
+              "name": "Any Quiver",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Any_Quiver"
+            },
+            {
+              "name": "Vortex Fragment",
+              "qty": 5,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Vortex_Fragment"
+            },
+            {
+              "name": "Dark Plasma",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Dark_Plasma"
+            }
+          ],
+          "effect": "While equipped, it grants +5% ranged critical strike chance. It also summons four void fields that orbit around the player.",
+          "categories": [
+            "offense"
+          ]
+        }
       },
       {
         "id": "the-community",
@@ -109703,7 +109935,26 @@
         "effect": "When equipped, it grants the player various offensive, defensive, and mobility stat boosts which scale as the player progresses through the game by defeating more bosses.",
         "categories": [
           "all-around"
-        ]
+        ],
+        "classicAlt": {
+          "id": "blood-pact",
+          "name": "Blood Pact",
+          "slot": "accessory",
+          "icon": "calamity/blood-pact.png",
+          "source": "Dropped by the Ravager",
+          "why": "large max-life boost",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
+          "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
+          "categories": [
+            "survivability"
+          ],
+          "expertOnly": true,
+          "markers": [
+            "expert"
+          ]
+        }
       },
       {
         "id": "quiver-of-nihility",
@@ -109738,7 +109989,8 @@
         "categories": [
           "offense"
         ],
-        "altOf": "The Community"
+        "altOf": "The Community",
+        "classicHide": true
       }
     ],
     "buffs": [
@@ -110193,63 +110445,71 @@
         "name": "Bloodfire Arrow",
         "slot": "ammo",
         "icon": "calamity/bloodfire-arrow.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Arrow",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ],
-        "effect": "They drain 1 HP from the player when fired, travel at a noticeably higher speed than most arrows, and are not affected by gravity. When hitting an enemy, they deal 1.3x damage and will increase the player's health regeneration and heal the player for 1-4 HP depending on their missing health."
-      },
-      {
-        "id": "endless-musket-pouch",
-        "name": "Endless Musket Pouch",
-        "slot": "ammo",
-        "icon": "calamity/endless-musket-pouch.png",
-        "source": "Crafted at Crystal Ball",
-        "why": "An infinite stack of Musket Balls, so ammo never runs out.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Endless_Musket_Pouch",
-        "materials": [
-          {
-            "name": "Musket Ball",
-            "qty": 9999,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Musket_Ball"
-          }
-        ],
-        "station": "Crystal Ball",
-        "effect": "While in the inventory, it acts as an infinite source of Musket Balls."
-      },
-      {
-        "id": "luminite-arrow",
-        "name": "Luminite Arrow",
-        "slot": "ammo",
-        "icon": "calamity/luminite-arrow.png",
         "source": "Crafted at an Ancient Manipulator",
-        "why": "",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Arrow",
+        "why": "Homing arrow that inflicts God Slayer Inferno."
+      },
+      {
+        "id": "elysian-arrow",
+        "name": "Elysian Arrow",
+        "slot": "ammo",
+        "icon": "calamity/elysian-arrow.png",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Luminite_Arrow",
-        "station": "Ancient Manipulator",
-        "materials": [
-          {
-            "name": "Luminite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
-          }
-        ],
-        "effect": "When a Luminite Arrow dissipates, a Luminite Arrow Trail projectile will be fired after a short delay which copies the arrow's flying trail and deals the same base damage as the arrow. The Luminite Arrow and its trail can pierce 3 enemies, and their damage decreases by 4% per enemy pierced. [ 1 ] Both the arrow and its trail also dissipate upon contact with blocks or after 0.75 seconds."
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Arrow",
+        "why": "High-damage holy arrow.",
+        "altOf": "Bloodfire Arrow"
+      },
+      {
+        "id": "bloodfire-bullet",
+        "name": "Bloodfire Bullet",
+        "slot": "ammo",
+        "icon": "calamity/bloodfire-bullet.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Bullet",
+        "why": "Homing bullet that inflicts God Slayer Inferno."
+      },
+      {
+        "id": "holy-fire-bullet",
+        "name": "Holy Fire Bullet",
+        "slot": "ammo",
+        "icon": "calamity/holy-fire-bullet.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
+        "why": "Homing holy bullet.",
+        "altOf": "Bloodfire Bullet"
+      },
+      {
+        "id": "platinum-coin",
+        "name": "Platinum Coin",
+        "slot": "ammo",
+        "icon": "calamity/platinum-coin.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Currency",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Platinum_Coin",
+        "why": "Coin ammo for the Coin Gun and The Sevens Striker.",
+        "stats": "Coin Gun ammo"
+      },
+      {
+        "id": "gel",
+        "name": "Gel",
+        "slot": "ammo",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
+        "tags": [],
+        "topPick": false,
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -110790,7 +111050,8 @@
           }
         ],
         "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
+        "stats": "60 magic dmg",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "relic-of-deliverance",
@@ -110803,7 +111064,8 @@
         "topPick": false,
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Relic_of_Deliverance",
         "effect": "When used, it mounts the player on the spear, which can be freely turned. Right-clicking dismounts the spear.",
-        "stats": "1700 dmg"
+        "stats": "1700 dmg",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "rod-of-discord",
@@ -110817,9 +111079,12 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Claret Cannon"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-polterghast",
