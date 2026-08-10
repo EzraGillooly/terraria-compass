@@ -14,6 +14,8 @@ import { lazyRoute } from './lib/lazy-retry';
    fetch the current build instead of white-screening. */
 const Bosses = lazyRoute(() => import('./pages/Bosses').then((m) => ({ default: m.Bosses })));
 const Loadouts = lazyRoute(() => import('./pages/Loadouts').then((m) => ({ default: m.Loadouts })));
+// Internal Calamity hardening audit. Unlisted; reachable at #/calamity-audit.
+const CalamityAudit = lazyRoute(() => import('./pages/CalamityAudit').then((m) => ({ default: m.CalamityAudit })));
 // Biomes, Crafting and Materials are hidden from the public for now. The pages
 // still build; their routes fall through to the "*" redirect below. Restore the
 // lazy imports, routes and nav links (Header.tsx) to bring them back.
@@ -30,6 +32,7 @@ export default function App() {
           <Route path="/"          element={<Home />} />
           <Route path="/bosses"    element={<Bosses />} />
           <Route path="/loadouts"  element={<Loadouts />} />
+          <Route path="/calamity-audit" element={<CalamityAudit />} />
           {/* /biomes, /crafting, /materials are hidden for now - they fall
               through to this redirect instead of rendering. */}
           <Route path="*"          element={<Navigate to="/" replace />} />

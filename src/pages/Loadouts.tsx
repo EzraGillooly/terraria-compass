@@ -460,9 +460,11 @@ function AccCell({
      dims like a Classic-locked pick and carries the Expert marker even though
      the item itself (Ankh Shield) is a plain accessory - the slot is what needs
      Expert, not the pick. */
-  const markers = expertSlot && !(item.markers ?? []).includes('expert')
-    ? [...(item.markers ?? []), 'expert']
-    : item.markers ?? [];
+  /* The Expert tag reflects the item's own data - the same source the audit page
+     reads - not the slot. A Demon-Heart slot still dims and explains itself in the
+     tooltip, but it no longer stamps a non-Expert pick as Expert (which made the
+     loadout and the audit disagree). */
+  const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty) || !!expertSlot;
   /* The cell is the primary card plus, when the guide offers a swap, an "or" and
      a smaller card beneath it - both outside the primary's frame, so the pick
@@ -518,13 +520,17 @@ function AccCell({
         between, so the two read as the choice the guide is offering. */}
     {alts.map((alt) => {
       const altImg = iconSrcs(alt.icon, alt.wikiUrl);
+      /* An "or" pick can be Expert-gated on its own (Blood Pact under a
+         Classic-usable holder). Dim it by its own obtainability, plus the
+         slot lock (a Demon-Heart slot dims both cards). */
+      const altLocked = !isObtainable(alt, difficulty) || !!expertSlot;
       return (
         <Fragment key={alt.id}>
           <span className={styles.accOr}>or</span>
           <button
             type="button"
-            className={`${styles.accAlt} pixel-frame pixel-hollow ${locked ? styles.locked : ''}`}
-            title={alt.name}
+            className={`${styles.accAlt} pixel-frame pixel-hollow ${altLocked ? styles.locked : ''}`}
+            title={altLocked && !expertSlot ? 'Not obtainable in a Classic world' : alt.name}
             onClick={() => onOpen(alt)}
           >
             <img
