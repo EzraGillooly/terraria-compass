@@ -118131,11 +118131,14 @@
         "source": "Dropped by The Old Duke",
         "why": "",
         "tags": [],
-        "topPick": true,
+        "topPick": false,
         "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Fetid_Emesis",
         "effect": "It fires bullets at a gradually increasing rate, up to a maximum of 20 bullets per second after 5 seconds. After 7 seconds, the gun fires a massive spread of 11 rotten chunks outwards which deal 250% base damage and inflict the Sulphuric Poisoning debuff.",
-        "subclass": "gun"
+        "subclass": "gun",
+        "stats": "214 ranged dmg",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
       },
       {
         "id": "halleys-inferno",
@@ -118146,18 +118149,18 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Halley's_Inferno",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
           {
             "name": "Elf Melter",
             "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Elf_Melter"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elf_Melter"
           },
           {
             "name": "Lumenyl",
-            "qty": 6,
+            "qty": 8,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Lumenyl"
           },
           {
@@ -118167,12 +118170,13 @@
           },
           {
             "name": "Exodium Cluster",
-            "qty": 12,
+            "qty": 20,
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Exodium_Cluster"
           }
         ],
         "effect": "It uses Gel for ammunition, with a 50% chance to not consume ammo. When used with its primary fire (⚒ Use / Attack), it fires a rapid burst of five blue comets that pierce four times.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "444 ranged dmg"
       },
       {
         "id": "monsoon",
@@ -118203,27 +118207,29 @@
             "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
           },
           {
-            "name": "Depth Cells",
+            "name": "Depth Cell",
             "qty": 10,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cell"
           }
         ],
         "effect": "When firing Wooden Arrows, four of the five arrows are converted into sharks, and the fifth, middle arrow is converted into a Typhoon Arrow. Typhoon Arrows erupt into a swirling typhoon on contact with enemies or tiles, dealing damage over time in a wide area.",
-        "subclass": "bow"
+        "subclass": "bow",
+        "stats": "156 ranged dmg"
       },
       {
         "id": "sulphuric-acid-cannon",
         "name": "Sulphuric Acid Cannon",
         "slot": "weapon",
         "icon": "calamity/sulphuric-acid-cannon.png",
-        "source": "Dropped by the Mauler miniboss in the Tier 3 Acid Rain",
+        "source": "Dropped by the Mauler during Tier 3 of the Acid Rain",
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "good",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Sulphuric_Acid_Cannon",
         "effect": "When used, it slowly fires acid rockets which home in on enemies and stick to them. After being stuck to an enemy for 3.33 seconds, the acid rocket creates a large sulphuric mist explosion, dealing 200% base damage and inflicting the Sulphuric Poisoning debuff.",
-        "subclass": "launcher"
+        "subclass": "launcher",
+        "stats": "550 ranged dmg"
       },
       {
         "id": "tau-cannon",
@@ -118234,7 +118240,7 @@
         "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "other",
+        "tier": "best",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Tau_Cannon",
         "station": "Mythril Anvil or Orichalcum Anvil",
         "materials": [
@@ -118265,7 +118271,101 @@
           }
         ],
         "effect": "It is one of the final upgrades to the Magna Cannon and Opal Striker, alongside the Ontological Despoiler. While holding, the player channels a glowing blue orb at the tip of the cannon which increases in charge level every second, as indicated by a pulse.",
-        "subclass": "other"
+        "subclass": "gun",
+        "stats": "620 ranged dmg"
+      },
+      {
+        "id": "starfleet",
+        "name": "Starfleet",
+        "slot": "weapon",
+        "icon": "calamity/starfleet.png",
+        "subclass": "gun",
+        "stats": "3170 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Starfleet",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires a barrage of star bullets.",
+        "why": "Fires a barrage of star bullets",
+        "source": "Crafted at an Ancient Manipulator",
+        "station": "Ancient Manipulator",
+        "materials": [
+          {
+            "name": "Super Star Shooter",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Super_Star_Shooter"
+          },
+          {
+            "name": "Ruinous Soul",
+            "qty": 4,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
+          },
+          {
+            "name": "Fallen Star",
+            "qty": 15,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Fallen_Star"
+          },
+          {
+            "name": "Stardust Fragment",
+            "qty": 5,
+            "wikiUrl": "https://terraria.wiki.gg/wiki/Stardust_Fragment"
+          }
+        ]
+      },
+      {
+        "id": "pearl-god",
+        "name": "Pearl God",
+        "slot": "weapon",
+        "icon": "calamity/pearl-god.png",
+        "subclass": "gun",
+        "stats": "160 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Pearl_God",
+        "tier": "good",
+        "topPick": false,
+        "tags": [],
+        "effect": "Alternates a lifesteal bullet and three pearlescent bullets.",
+        "why": "Alternates a lifesteal bullet and three pearlescent bullets",
+        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
+        "station": "Mythril Anvil or Orichalcum Anvil",
+        "materials": [
+          {
+            "name": "Arietes 41",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Arietes_41"
+          },
+          {
+            "name": "White Pearl",
+            "qty": 1,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/White_Pearl"
+          },
+          {
+            "name": "Life Alloy",
+            "qty": 5,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+          },
+          {
+            "name": "Ruinous Soul",
+            "qty": 2,
+            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
+          }
+        ]
+      },
+      {
+        "id": "daemons-flame",
+        "name": "Daemon's Flame",
+        "slot": "weapon",
+        "icon": "calamity/daemons-flame.png",
+        "subclass": "bow",
+        "stats": "162 ranged dmg",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Daemon%27s_Flame",
+        "tier": "best",
+        "topPick": false,
+        "tags": [],
+        "effect": "Fires arrows that spawn homing flames.",
+        "why": "Fires arrows that spawn homing flames",
+        "source": "Dropped by Polterghast",
+        "dropRate": "25%",
+        "dropRateExpert": "33.33%"
       }
     ],
     "armor": [
@@ -118305,92 +118405,9 @@
         ],
         "headpiece": "Bloodflare Demon Helm",
         "defense": 94,
-        "effect": "Enemies below 50% life drop a heart when struck · This effect has a 5 second cooldown",
+        "effect": "Enemies below 50% health drop a heart when hit (5-second cooldown).",
         "desc": "Bloodflare armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit faint pulses.",
-        "headpieceBonus": "Armor Set Bonus to unleash the lost souls of polterghast[ sic ] to destroy your enemies · This effect has a 30 second cooldown · Ranged weapons fire bloodsplosion orbs every 2.5 seconds"
-      },
-      {
-        "id": "omega-blue-armor",
-        "name": "Omega Blue armor",
-        "slot": "armor",
-        "icon": "armor-sets/omega-blue-armor.png",
-        "source": "Crafted at Mythril Anvil or Orichalcum Anvil",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Omega_Blue_armor",
-        "pieceRecipes": [
-          {
-            "piece": "Omega Blue Chestplate",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 5,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 18,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          },
-          {
-            "piece": "Omega Blue Helmet",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 3,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 12,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 1,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          },
-          {
-            "piece": "Omega Blue Tentacles",
-            "materials": [
-              {
-                "name": "Reaper Tooth",
-                "qty": 4,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Reaper_Tooth"
-              },
-              {
-                "name": "Depth Cells",
-                "qty": 15,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Depth_Cells"
-              },
-              {
-                "name": "Ruinous Soul",
-                "qty": 2,
-                "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ruinous_Soul"
-              }
-            ]
-          }
-        ],
-        "pieces": [
-          "Omega Blue Helmet",
-          "Omega Blue Chestplate",
-          "Omega Blue Tentacles"
-        ],
-        "defense": 50,
-        "effect": "Increases your max number of minions by 2 · Short-ranged tentacles heal you by sucking enemy life · Abyssal Madness - Armor Set Bonus to go berserk for 5 seconds · While active, tentacles attack with greater range and aggression, and always critically strike · This also grants 10% increased damage and critical strike chance · This effect has a 25 second cooldown",
-        "desc": "Omega Blue armor is a post- Moon Lord armor set. If the full set is visible (whether equipped or in social slots), the player will emit a pulsating aura around them.",
-        "allClass": true
+        "headpieceBonus": "+32% ranged damage · +25% ranged critical strike chance · +25% ammo cost reduction · +17% movement speed · Ranged weapons fire bloodsplosion orbs (80% of the weapon’s damage, softcap 120; 2.5s cooldown) · Set Bonus key fires 16 homing bloodflare souls (300 damage, scale with ranged bonuses; 30s cooldown)"
       }
     ],
     "accessories": [
@@ -118525,23 +118542,6 @@
         ]
       },
       {
-        "id": "affliction",
-        "name": "Affliction",
-        "slot": "accessory",
-        "icon": "calamity/affliction.png",
-        "source": "Dropped by Polterghast in Expert Mode",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
-        "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
-        "categories": [
-          "all-around"
-        ],
-        "expertOnly": true
-      },
-      {
         "id": "reaper-tooth-necklace",
         "name": "Reaper Tooth Necklace",
         "slot": "accessory",
@@ -118573,8 +118573,28 @@
         "effect": "When equipped, it increases all damage by 20% and increases armor penetration by 30.",
         "categories": [
           "offense"
+        ]
+      },
+      {
+        "id": "affliction",
+        "name": "Affliction",
+        "slot": "accessory",
+        "icon": "calamity/affliction.png",
+        "source": "Dropped by Polterghast in Expert Mode",
+        "why": "",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Affliction",
+        "effect": "While equipped, all the player's teammates in the same team are granted the Afflicted buff, which provides all the bonuses that the accessory itself provides.",
+        "categories": [
+          "all-around"
         ],
-        "altOf": "Affliction"
+        "expertOnly": true,
+        "altOf": "Reaper Tooth Necklace",
+        "markers": [
+          "expert"
+        ]
       },
       {
         "id": "dynamo-stem-cells",
@@ -118591,24 +118611,45 @@
         "categories": [
           "offense"
         ],
-        "expertOnly": true
-      },
-      {
-        "id": "blood-pact",
-        "name": "Blood Pact",
-        "slot": "accessory",
-        "icon": "calamity/blood-pact.png",
-        "source": "Dropped by the Ravager",
-        "why": "large max-life boost",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
-        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
-        "categories": [
-          "survivability"
-        ],
-        "expertOnly": true
+        "expertOnly": true,
+        "classicAlt": {
+          "id": "ambrosial-ampoule",
+          "name": "Ambrosial Ampoule",
+          "slot": "accessory",
+          "icon": "calamity/ambrosial-ampoule.png",
+          "source": "Crafted at an Ancient Manipulator",
+          "why": "defensive accessory",
+          "tags": [],
+          "topPick": false,
+          "wikiUrl": "https://calamitymod.wiki.gg/wiki/Ambrosial_Ampoule",
+          "station": "Ancient Manipulator",
+          "materials": [
+            {
+              "name": "Living Dew",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Living_Dew"
+            },
+            {
+              "name": "Radiant Ooze",
+              "qty": 1,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Radiant_Ooze"
+            },
+            {
+              "name": "Life Alloy",
+              "qty": 3,
+              "wikiUrl": "https://calamitymod.wiki.gg/wiki/Life_Alloy"
+            },
+            {
+              "name": "Solar Fragment",
+              "qty": 6,
+              "wikiUrl": "https://terraria.wiki.gg/wiki/Solar_Fragment"
+            }
+          ],
+          "effect": "+1 to +3 HP/s life regen based on missing health (Current: +[REGEN] HP/s) · Natural life regen is 50% more potent and returns 100% faster · You emit yellow light if visibility is enabled",
+          "categories": [
+            "survivability"
+          ]
+        }
       },
       {
         "id": "the-community",
@@ -118668,6 +118709,26 @@
           "offense"
         ],
         "altOf": "The Community"
+      },
+      {
+        "id": "blood-pact",
+        "name": "Blood Pact",
+        "slot": "accessory",
+        "icon": "calamity/blood-pact.png",
+        "source": "Dropped by the Ravager",
+        "why": "large max-life boost",
+        "tags": [],
+        "topPick": false,
+        "tier": "good",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Blood_Pact",
+        "effect": "When equipped, it increases the player's maximum health by 25%, grants immunity to the Bleeding, Burning Blood & Heavy Bleeding debuffs, and increases the amount of health restored from drinking healing potions by 33%.",
+        "categories": [
+          "survivability"
+        ],
+        "expertOnly": true,
+        "markers": [
+          "expert"
+        ]
       }
     ],
     "buffs": [
@@ -119180,125 +119241,63 @@
     ],
     "ammo": [
       {
+        "id": "bloodfire-arrow",
+        "name": "Bloodfire Arrow",
+        "slot": "ammo",
+        "icon": "calamity/bloodfire-arrow.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Arrow",
+        "why": "Homing arrow that inflicts God Slayer Inferno."
+      },
+      {
+        "id": "elysian-arrow",
+        "name": "Elysian Arrow",
+        "slot": "ammo",
+        "icon": "calamity/elysian-arrow.png",
+        "tags": [],
+        "topPick": false,
+        "source": "Crafted at an Ancient Manipulator",
+        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Elysian_Arrow",
+        "why": "High-damage holy arrow.",
+        "altOf": "Bloodfire Arrow"
+      },
+      {
         "id": "bloodfire-bullet",
         "name": "Bloodfire Bullet",
         "slot": "ammo",
         "icon": "calamity/bloodfire-bullet.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "source": "Crafted at an Ancient Manipulator",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodfire_Bullet",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Bloodstone Core",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Bloodstone_Core"
-          }
-        ],
-        "effect": "They can pass through tiles and accelerate the player's natural life regeneration rate by 3 on enemy hits. Additionally, their damage is increased by the player's current life regeneration, which calculates when the enemy gets hit up to a maximum of 1.1x increased flat damage."
+        "why": "Homing bullet that inflicts God Slayer Inferno."
       },
       {
         "id": "holy-fire-bullet",
         "name": "Holy Fire Bullet",
         "slot": "ammo",
         "icon": "calamity/holy-fire-bullet.png",
-        "source": "Crafted at a Mythril Anvil or Orichalcum Anvil",
-        "why": "",
         "tags": [],
         "topPick": false,
-        "tier": "good",
+        "source": "Crafted at an Ancient Manipulator",
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Holy_Fire_Bullet",
-        "station": "Mythril Anvil or Orichalcum Anvil",
-        "materials": [
-          {
-            "name": "Exploding Bullet",
-            "qty": 333,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Exploding_Bullet"
-          },
-          {
-            "name": "Unholy Essence",
-            "qty": 1,
-            "wikiUrl": "https://calamitymod.wiki.gg/wiki/Unholy_Essence"
-          }
-        ],
-        "effect": "They deal up to 15% increased damage based on how close it is to the player, as well as explode upon collision with any enemy or tile, creating explosions which deal 33% of the bullet's damage and inflicting the Holy Flames debuff. Explosions shrink the longer the bullet has remained in the air, reducing down to half size after 0.27 seconds, and cannot hit enemies the bullet has hit."
+        "why": "Homing holy bullet.",
+        "altOf": "Bloodfire Bullet"
       },
       {
-        "id": "luminite-bullet",
-        "name": "Luminite Bullet",
+        "id": "gel",
+        "name": "Gel",
         "slot": "ammo",
-        "icon": "calamity/luminite-bullet.png",
-        "source": "Crafted at Ancient Manipulator",
-        "why": "The highest base damage of any bullet.",
+        "icon": "calamity/gel.png",
+        "stats": "flamethrower ammo",
         "tags": [],
         "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Luminite_Bullet",
-        "station": "Ancient Manipulator",
-        "materials": [
-          {
-            "name": "Luminite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Luminite_Bar"
-          }
-        ],
-        "effect": "The Luminite Bullet can hit an infinite number of targets. The damage of the Luminite Bullet decreases by 4% each time it hits a target."
-      },
-      {
-        "id": "mini-nuke-i",
-        "name": "Mini Nuke I",
-        "slot": "ammo",
-        "icon": "calamity/mini-nuke-i.png",
-        "source": "Crafted at an Autohammer",
-        "why": "",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Mini_Nuke_I",
-        "materials": [
-          {
-            "name": "Rocket III",
-            "qty": 100,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Rocket_III"
-          },
-          {
-            "name": "Shroomite Bar",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Shroomite_Bar"
-          }
-        ],
-        "station": "Autohammer",
-        "effect": "Unlike the Mini Nuke II, it does not destroy tiles. It is a direct upgrade to the Rocket III, dealing more damage over a larger blast radius, but with lower knockback."
-      },
-      {
-        "id": "wooden-arrow",
-        "name": "Wooden Arrow",
-        "slot": "ammo",
-        "icon": "calamity/wooden-arrow.png",
-        "source": "Sold by the Merchant, or dropped by Skeletons and Zombies",
-        "why": "The default arrow.",
-        "tags": [],
-        "topPick": false,
-        "tier": "good",
-        "wikiUrl": "https://calamitymod.wiki.gg/wiki/Wooden_Arrow",
-        "materials": [
-          {
-            "name": "Any Wood",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Any_Wood"
-          },
-          {
-            "name": "Stone Block",
-            "qty": 1,
-            "wikiUrl": "https://terraria.wiki.gg/wiki/Stone_Block"
-          }
-        ],
-        "station": "Work Bench",
-        "dropRate": "1/3 (33.33%)",
-        "effect": "It has no special properties and is used for crafting a variety of more advanced ammunition. When fired with certain bows, Wooden Arrows will be converted into a special projectile (e.g. the Molten Fury converting them into Flaming Arrows)."
+        "source": "Dropped by slimes",
+        "wikiUrl": "https://terraria.wiki.gg/wiki/Gel",
+        "why": "Fuel for flamethrowers like the Shadethrower.",
+        "effect": "Ammunition for flamethrowers."
       }
     ],
     "accessoryPool": [
@@ -119930,7 +119929,8 @@
           }
         ],
         "effect": "When used, it fires a blue-white energy mass that does not pierce nor pass through tiles, restores 20 mana and heals the player 10% of the damage dealt upon hitting an enemy, and inflicts the Marked for Death debuff. It sharply homes in on enemies within a 20-tile radius, gradually turning its trail pink as it moves closer to the target.",
-        "stats": "60 magic dmg"
+        "stats": "60 magic dmg",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "rod-of-discord",
@@ -119944,7 +119944,8 @@
         "wikiUrl": "https://calamitymod.wiki.gg/wiki/Rod_of_Discord",
         "effect": "When used, it instantly teleports the player to the location of the cursor and inflicts the Chaos State debuff on the player for 6 seconds. Using the Rod of Discord while this debuff is active causes the player to lose health equal to 1/7 (14.29%) of their maximum health.",
         "dropRate": "1%",
-        "dropRateExpert": "2%"
+        "dropRateExpert": "2%",
+        "altOf": "Claret Cannon"
       },
       {
         "id": "stratus-sphere",
@@ -119980,9 +119981,12 @@
           }
         ],
         "effect": "When used, it fires a massive planetary stratus orb that can pass through tiles.",
-        "stats": "400 dmg"
+        "stats": "400 dmg",
+        "altOf": "Claret Cannon"
       }
-    ]
+    ],
+    "supportJoin": "and",
+    "curated": true
   },
   {
     "phase": "cal-pre-dog",
