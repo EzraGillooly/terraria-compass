@@ -10,7 +10,7 @@ export const SubclassId = z.string();
 
 export const ItemSlot = z.enum(['weapon', 'armor', 'accessory', 'buff', 'ammo']);
 
-export const Item = z.object({
+const ItemBase = z.object({
   id: z.string(),
   name: z.string(),
   slot: ItemSlot,
@@ -110,6 +110,12 @@ export const Item = z.object({
    */
   expertOnly: z.boolean().optional(),
   /**
+   * Hide this alternative when the Classic difficulty is selected. Used when the
+   * same item is promoted to a primary slot on Classic (via a `classicAlt`
+   * elsewhere) and must not also appear as an "or" under another holder.
+   */
+  classicHide: z.boolean().optional(),
+  /**
    * Names a family rather than a single item ("Wings", "Extra jump"). Worth
    * listing as an option, but it can never fill a slot - you cannot equip
    * "Wings" - so substitution has to skip it.
@@ -127,12 +133,12 @@ export const Item = z.object({
   ammoRole: z.enum(['single-target', 'crowd-control', 'special']).optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
-  /** the Expert/Master drop rate, shown instead of `dropRate` when the world is
+  /** the Expert drop rate, shown instead of `dropRate` when the world is
    * Expert - many drops double in Expert (Keybrand 0.5% -> 1%). */
   dropRateExpert: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
-  /** A pick recommended only for the Expert/Master extra accessory slot: the item
+  /** A pick recommended only for the Expert extra accessory slot: the item
    * itself is obtainable in Classic, but there is no sixth slot to hold it, so it
    * is dropped there with a distinct note (unlike `markers: ['expert']`, which is
    * for content that cannot be obtained in Classic at all). */
@@ -200,6 +206,8 @@ export const Item = z.object({
     'expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos',
     'tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
     'calamity-changed', 'pairs',
+    // Rogue playstyle tags: which of the two builds an accessory favours.
+    'stealth', 'spam',
   ])).optional(),
   wikiUrl: z.string().url().optional(),
   /**
@@ -217,6 +225,17 @@ export const Item = z.object({
     group: z.string().optional(),
     wikiUrl: z.string().url().optional(),
   })).optional(),
+});
+
+/**
+ * An accessory shown in this slot on Classic in place of the holder, when the
+ * guide's real (Expert-tier) pick does not apply to a Classic world - e.g.
+ * pre-Lunar melee runs Blood Pact on Expert but Celestial Shell on Classic.
+ * One level deep only (a Classic pick has no Classic pick of its own), which
+ * keeps the schema out of true recursion.
+ */
+export const Item = ItemBase.extend({
+  classicAlt: ItemBase.optional(),
 });
 
 export const Loadout = z.object({

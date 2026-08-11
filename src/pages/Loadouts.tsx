@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -69,11 +69,9 @@ const PHASE_BOSS: Record<PhaseId, string> = {
   'cal-pre-polterghast': 'polterghast',
   'cal-pre-dog': 'the-devourer-of-gods',
   'cal-pre-yharon': 'yharon-dragon-of-rebirth',
-  'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material, distinct from post-Exo
-  'cal-post-calamitas': 'supreme-witch-calamitas',
-  'cal-post-exo': 'exo-mechs',
-  // cal-post-golem (prismatic crystal) and cal-endgame (compass) have no single
-  // boss, so they are left out - the banner falls back to their own map art.
+  'cal-pre-exo': 'auric-bar',                  // Auric Bar - the tier's endgame material
+  // cal-endgame (compass) has no single boss, so it is left out - the banner
+  // falls back to its own map art.
   // Thorium phases → the boss whose map icon marks that tier.
   'thor-pre-boss': 'the-grand-thunder-bird',
   'thor-pre-evil': 'brain-of-cthulhu',
@@ -252,7 +250,7 @@ const ARMOR_EFFECT_LINES = 3;
 /* Post-Moon Lord in Calamity, where the Celestial Onion becomes available. */
 const CALAMITY_POST_ML = new Set<string>([
   'cal-pre-providence', 'cal-pre-polterghast', 'cal-pre-dog',
-  'cal-pre-yharon', 'cal-pre-exo', 'cal-post-calamitas', 'cal-post-exo', 'cal-endgame',
+  'cal-pre-yharon', 'cal-pre-exo', 'cal-endgame',
 ]);
 
 /* Hardmode, where the Wall of Flesh has dropped its bag and the Demon Heart is
@@ -264,7 +262,7 @@ const CALAMITY_POST_ML = new Set<string>([
 const HARDMODE_PHASES = new Set<PhaseId>([
   'pre-mech', 'pre-plantera', 'pre-golem', 'pre-cultist', 'pre-moonlord', 'endgame',
   'cal-pre-mech', 'cal-post-mech1', 'cal-post-mech2', 'cal-pre-plantera',
-  'cal-pre-golem', 'cal-post-golem', 'cal-pre-lunar', 'cal-pre-ml',
+  'cal-pre-golem', 'cal-pre-lunar', 'cal-pre-ml',
   // Thorium hardmode phases (Post-Wall of Flesh and later).
   'thor-post-wof', 'thor-pre-mech', 'thor-post-mech', 'thor-pre-lunar',
   'thor-pre-primordials', 'thor-endgame',
@@ -404,6 +402,7 @@ const MARKER_LABEL: Record<string, string> = {
   tedious: 'Tedious', risky: 'Risky', 'crowd-control': 'Crowd control',
   support: 'Support', upgradeable: 'Upgradeable',
   'calamity-changed': 'Changed', pairs: 'Pair',
+  stealth: 'Stealth', spam: 'Spam',
 };
 const MARKER_TITLE: Record<string, string> = {
   expert: 'Expert Mode and above only',
@@ -419,6 +418,8 @@ const MARKER_TITLE: Record<string, string> = {
   upgradeable: 'Variants and upgrades of this are also viable',
   'calamity-changed': 'Calamity changes how this works',
   pairs: 'Meant to be used together with another item',
+  stealth: 'Best for the Stealth playstyle - fill the stealth meter, then strike',
+  spam: 'Best for the Spam playstyle - attack constantly for mobility',
 };
 /* The two packs tag accessories from different sources and the sets do not
    overlap, so each shows only its own key - a Calamity reader has no use for
@@ -462,9 +463,11 @@ function AccCell({
      dims like a Classic-locked pick and carries the Expert marker even though
      the item itself (Ankh Shield) is a plain accessory - the slot is what needs
      Expert, not the pick. */
-  const markers = expertSlot && !(item.markers ?? []).includes('expert')
-    ? [...(item.markers ?? []), 'expert']
-    : item.markers ?? [];
+  /* The Expert tag reflects the item's own data - the same source the audit page
+     reads - not the slot. A Demon-Heart slot still dims and explains itself in the
+     tooltip, but it no longer stamps a non-Expert pick as Expert (which made the
+     loadout and the audit disagree). */
+  const markers = item.markers ?? [];
   const locked = !isObtainable(item, difficulty) || !!expertSlot;
   /* The cell is the primary card plus, when the guide offers a swap, an "or" and
      a smaller card beneath it - both outside the primary's frame, so the pick
@@ -504,7 +507,7 @@ function AccCell({
             </span>
           ))}
           {markers.map((m) => (
-            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+            <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
               {MARKER_LABEL[m]}
             </span>
           ))}
@@ -520,13 +523,17 @@ function AccCell({
         between, so the two read as the choice the guide is offering. */}
     {alts.map((alt) => {
       const altImg = iconSrcs(alt.icon, alt.wikiUrl);
+      /* An "or" pick can be Expert-gated on its own (Blood Pact under a
+         Classic-usable holder). Dim it by its own obtainability, plus the
+         slot lock (a Demon-Heart slot dims both cards). */
+      const altLocked = !isObtainable(alt, difficulty) || !!expertSlot;
       return (
         <Fragment key={alt.id}>
           <span className={styles.accOr}>or</span>
           <button
             type="button"
-            className={`${styles.accAlt} pixel-frame pixel-hollow ${locked ? styles.locked : ''}`}
-            title={alt.name}
+            className={`${styles.accAlt} pixel-frame pixel-hollow ${altLocked ? styles.locked : ''}`}
+            title={altLocked && !expertSlot ? 'Not obtainable in a Classic world' : alt.name}
             onClick={() => onOpen(alt)}
           >
             <img
@@ -539,7 +546,7 @@ function AccCell({
             {(alt.expertOnly && !(alt.markers ?? []).includes('expert')
               ? [...(alt.markers ?? []), 'expert']
               : alt.markers ?? []).map((m) => (
-              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+              <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
                 {MARKER_LABEL[m]}
               </span>
             ))}
@@ -586,7 +593,7 @@ function PoolRow(
               <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>{item.quality}</span>
             )}
             {markers.map((m) => (
-              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>{MARKER_LABEL[m]}</span>
+              <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>{MARKER_LABEL[m]}</span>
             ))}
           </span>
         )}
@@ -596,7 +603,7 @@ function PoolRow(
 }
 
 /** Key to the accessory tags, so the colours mean something on first read. */
-function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
+function AccLegend({ packId, hasQuality, activeClass }: { packId: string; hasQuality: boolean; activeClass: string }) {
   const markers = PACK_MARKERS[packId] ?? [];
   /* Thorium tags accessories with the wiki's own 12 accessory types; every other
      pack uses the app's own accessory categories. */
@@ -625,7 +632,7 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
         <>
           <span className={styles.accLegendSep} aria-hidden="true" />
           {markers.map((m) => (
-            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+            <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
               {MARKER_LABEL[m]}
             </span>
           ))}
@@ -634,6 +641,17 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
       <span className={styles.accLegendNote}>
         class tags show on that class only
       </span>
+      {/* Rogue's two playstyles change which accessories help. The guide colours
+          each pick; this explains the split so the tags read on their own. */}
+      {activeClass === 'rogue' && (
+        <p className={styles.playstyleNote}>
+          <span className={`${styles.accMarker} ${styles.markerStealth}`}>Stealth</span>
+          {' '}fills the stealth meter while still, then lands one powerful Stealth Strike.{' '}
+          <span className={`${styles.accMarker} ${styles.markerSpam}`}>Spam</span>
+          {' '}attacks nonstop for more mobility at lower damage. Accessories are tagged
+          for the playstyle they favor; untagged ones suit both.
+        </p>
+      )}
     </div>
   );
 }
@@ -663,7 +681,7 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
     label: 'Menacing vs Lucky vs Warding on the wiki',
   },
   calamity: {
-    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds four modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
+    intro: 'Reforge at the Goblin Tinkerer. Warding is still the default, but Calamity adds modifiers of its own and retunes several vanilla ones - Hard drops its defense for 3% damage reduction, and Guarding, Armored and Brisk all gain a second bonus.',
     list: [
       { name: 'Warding', stat: '+4 defense', note: 'survive more hits, best on most builds' },
       { name: 'Menacing', stat: '+4% damage', note: 'most damage' },
@@ -671,8 +689,6 @@ const REFORGES: { vanilla: ReforgeSet } & Record<string, ReforgeSet> = {
       { name: 'Quick', stat: '+4% move speed', note: 'player movement only, try to avoid using' },
       { name: 'Silent', stat: '+8% stealth regen', note: 'Calamity only, and only useful to rogue', onlyClass: 'rogue' },
       { name: 'Friendly', stat: '+1 minion', note: 'Calamity only, and only useful to summoner', onlyClass: 'summoner' },
-      { name: 'Dauntless', stat: '+20 max life', note: 'Calamity only' },
-      { name: 'Invigorating', stat: '+0.25 HP/s regen', note: 'Calamity only' },
     ],
     href: 'https://calamitymod.wiki.gg/wiki/Modifiers',
     label: 'Calamity modifier table on the wiki',
@@ -873,6 +889,14 @@ export function Loadouts() {
   };
 
   const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
+  /* A class can skip phases the guide never covers (Calamity's Rogue has no
+     post-mech split), so the phase rail only shows phases this class has a
+     loadout for. */
+  const classPhaseIds = useMemo(
+    () => new Set(loadouts.filter((l) => l.class === activeClassId).map((l) => l.phase)),
+    [loadouts, activeClassId],
+  );
+  const visiblePhases = phases.filter((p) => classPhaseIds.has(p.id));
   const classDef = classes.find((c) => c.id === activeClassId)!;
   const phaseDef = phases.find((p) => p.id === activePhaseId);
   const phaseName = phaseDef?.name ?? '';
@@ -1029,8 +1053,7 @@ export function Loadouts() {
    *
    * Celestial Onion: Calamity's, dropped by the Moon Lord. Not Expert-gated the
    * way the Demon Heart is - in Classic, where the Demon Heart cannot be had,
-   * the Onion grants the sixth slot instead of the seventh. It does nothing in
-   * Master, which this filter does not model.
+   * the Onion grants the sixth slot instead of the seventh.
    *
    * So Expert runs 5 -> 6 at hardmode -> 7 post-Moon Lord, which is what the
    * class guides equip, and Classic runs 5 -> 6 post-Moon Lord.
@@ -1127,7 +1150,7 @@ export function Loadouts() {
         .map((a) => family(a.name)).filter(Boolean) as string[],
     );
     /* When the obtainable holders already fill every slot, an Expert-only holder
-       is a genuine extra (Master/Expert has more slots than Classic), so it is
+       is a genuine extra (Expert has more slots than Classic), so it is
        dropped rather than swapped for a pool pick - that is what keeps both the
        Shield of Cthulhu and its slotmate Fire Gauntlet as their own slots in an
        Expert world, while a Classic world simply loses the Shield. The reader is
@@ -1136,6 +1159,11 @@ export function Loadouts() {
     const out: Item[] = [];
     for (const holder of slotFitHolders) {
       if (isObtainable(holder, difficulty)) { out.push(holder); continue; }
+      /* An Expert-only pick (Bloody Worm Scarf, Amalgamated Brain) is the guide's
+         real choice, so it stays in its slot - dimmed and marked Expert - rather
+         than being swapped for a pool pick like Star Veil. This matches how the
+         "or" alternatives and the Demon Heart slot already surface Expert content. */
+      if ((holder.markers ?? []).includes('expert') || holder.expertOnly === true) { out.push(holder); continue; }
       if (haveEnough) { substitutions.push({ original: holder, replacement: null, reason: 'expert' }); continue; }
 
       const ownAlt = (altsBy.get(holder.name) ?? [])
@@ -1267,11 +1295,11 @@ export function Loadouts() {
         {/* Boss progression map */}
         <div
           className={styles.bossmap}
-          style={{ '--wp-count': phases.length } as React.CSSProperties}
+          style={{ '--wp-count': visiblePhases.length } as React.CSSProperties}
           role="group"
           aria-label="Select phase"
         >
-          {phases.map((p, i) => {
+          {visiblePhases.map((p, i) => {
             const done = p.order < activeOrder;
             const active = p.id === activePhaseId;
             const state = phaseState(p.order);   // 'open' | 'next' | 'locked'
@@ -1369,7 +1397,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  {classDef.id === 'summoner' ? 'Viable Picks' : 'Top Picks'}
+                  Top Picks
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button
@@ -1383,12 +1411,6 @@ export function Loadouts() {
                   </button>
                 ))}
               </div>
-            )}
-
-            {classDef.id === 'summoner' && (
-              <p className={styles.summonerNote}>
-                I&rsquo;m still working out the best minion, sentry, and whip for each phase.
-              </p>
             )}
 
             {safeLoadout.note && (
@@ -1554,13 +1576,19 @@ export function Loadouts() {
               </div>
             )}
             <div className={styles.accGrid}>
-              {accSlots.map((acc, i) => (
+              {accSlots.map((acc, i) => {
+                /* On Classic, a slot shows its `classicAlt` in place of the
+                   Expert-tier holder (Celestial Shell for Blood Pact, etc.).
+                   Expert keeps the holder. */
+                const shown = acc && difficulty === 'normal' && acc.classicAlt ? acc.classicAlt : acc;
+                return (
                 <AccCell
-                  key={acc?.id ?? `slot-${i}`}
-                  item={acc}
-                  alts={acc
-                    ? (altsBy.get(acc.name) ?? []).filter((a) =>
-                        isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true)
+                  key={shown?.id ?? `slot-${i}`}
+                  item={shown}
+                  alts={shown
+                    ? (altsBy.get(shown.name) ?? []).filter((a) =>
+                        !(difficulty === 'normal' && a.classicHide)
+                        && (isObtainable(a, difficulty) || (a.markers ?? []).includes('expert') || a.expertOnly === true))
                     : undefined}
                   demonHeart={(demonHeartUnlocked || demonHeartPreview) && i === slotCount - 1}
                   expertSlot={demonHeartPreview && i === slotCount - 1}
@@ -1568,7 +1596,8 @@ export function Loadouts() {
                   difficulty={difficulty}
                   onOpen={setModalItem}
                 />
-              ))}
+                );
+              })}
             </div>
             {accessoryPool.length > 0 && (
               <div className={styles.poolWrap}>
@@ -1604,7 +1633,7 @@ export function Loadouts() {
             )}
             <WeaponReforgeBlocks packId={packId} activeClass={activeClassId} />
             <ReforgeBlock packId={packId} activeClass={activeClassId} />
-            <AccLegend packId={packId} hasQuality={poolHasQuality} />
+            <AccLegend packId={packId} hasQuality={poolHasQuality} activeClass={activeClassId} />
           </div>
 
           </div>
@@ -1665,7 +1694,14 @@ export function Loadouts() {
                           {a.pieces.map((p) => (
                             <span
                               key={p}
-                              className={`${styles.armorPiece} pixel-frame pixel-hollow ${p === a.headpiece ? styles.armorPieceHead : ''}`}
+                              /* Highlight the helmet only when the set offers a
+                                 real helmet choice (headVariants, e.g. Shroomite).
+                                 A single-helmet set has nothing to choose, so the
+                                 highlight would read as a selection that is not
+                                 there. */
+                              className={`${styles.armorPiece} pixel-frame pixel-hollow ${
+                                p === a.headpiece && (a.headVariants?.length ?? 0) > 0 ? styles.armorPieceHead : ''
+                              }`}
                             >
                               {p}
                             </span>

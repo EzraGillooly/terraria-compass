@@ -43,14 +43,13 @@ function dropObtainable(mode: BossDrop['mode'], difficulty: string, calamityMode
   if (mode === 'expert') return difficulty === 'expert';
   if (mode === 'revengeance') return calamityMode === 'revengeance' || calamityMode === 'death';
   if (mode === 'death') return calamityMode === 'death';
-  return false; // master - not modeled by the difficulty filter
+  return false;
 }
 
 const LOCK_LABEL: Record<NonNullable<BossDrop['mode']>, string> = {
   expert: 'Expert worlds only',
   revengeance: 'Revengeance or Death only',
   death: 'Death Mode only',
-  master: 'Master Mode only',
 };
 
 // Display labels for the detail-panel stage tag. Falls back to the phase name for

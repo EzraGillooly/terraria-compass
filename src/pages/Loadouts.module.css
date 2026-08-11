@@ -488,6 +488,15 @@
   box-shadow: inset 0 0 0 1px rgba(150,180,230,.45);
   cursor: help;
 }
+/* Rogue playstyle badges: purple = Stealth, blue = Spam, matching the guide. */
+.markerStealth {
+  color: #d98cf0;
+  box-shadow: inset 0 0 0 1px rgba(200,120,230,.6);
+}
+.markerSpam {
+  color: #6fb6f2;
+  box-shadow: inset 0 0 0 1px rgba(90,165,235,.6);
+}
 
 .accLegend {
   display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
@@ -496,6 +505,10 @@
 .accLegendLabel { font-weight: 800; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #A9BCE0; margin-right: 2px; }
 .accLegendSep { width: 1px; height: 12px; background: rgba(150,180,230,.35); margin: 0 4px; }
 .accLegendNote { font-size: 10.5px; color: #7F93B8; margin-left: 2px; }
+.playstyleNote {
+  flex-basis: 100%; margin: 8px 0 0; font-size: 11.5px; line-height: 1.55; color: #9FB2D6;
+}
+.playstyleNote .accMarker { cursor: default; vertical-align: middle; }
 
 /* "+N more" hint under a truncated set-bonus list. Muted: it is an
    instruction, not part of the bonus itself. */

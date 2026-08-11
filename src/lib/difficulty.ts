@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 
-/* Master is deliberately absent. Its only exclusive drops are mounts, pets and
-   relics, none of which this site lists, so as a filter it was identical to
-   Expert and just gave the reader a third button that changed nothing. */
+/* Only Classic and Expert are modeled. The site tracks two worlds - Classic
+   ("normal") and Expert - and nothing it lists differs above Expert. */
 export type DifficultyFilter = 'normal' | 'expert';
 
 const STORAGE_KEY = 'tc.difficultyFilter';
 
 function readStoredDifficulty(): DifficultyFilter {
   const storedValue = window.localStorage.getItem(STORAGE_KEY);
-  // anyone still holding the retired 'master' lands on Expert, which is what
-  // Master actually behaved as for everything this site shows
+  // any retired third-difficulty value lands on Expert, which is what it
+  // behaved as for everything this site shows
   if (storedValue === 'expert' || storedValue === 'master') return 'expert';
   return 'normal';
 }
@@ -34,7 +33,7 @@ export function isItemRelevantToDifficulty(
   tags: string[],
   difficulty: DifficultyFilter,
 ) {
-  const isExpertOnly = tags.includes('expert-only') || tags.includes('master-only');
+  const isExpertOnly = tags.includes('expert-only');
   return difficulty === 'expert' || !isExpertOnly;
 }
 
@@ -54,6 +53,6 @@ export function isObtainable(
   return !(
     item.expertOnly === true
     || (item.markers ?? []).includes('expert')
-    || (item.tags ?? []).some((t) => t === 'expert-only' || t === 'master-only')
+    || (item.tags ?? []).some((t) => t === 'expert-only')
   );
 }

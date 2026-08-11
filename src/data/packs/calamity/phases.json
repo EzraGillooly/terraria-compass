@@ -140,22 +140,8 @@
     "bossIcon": "cal-pre-golem"
   },
   {
-    "id": "cal-post-golem",
-    "order": 10,
-    "name": "Post-Golem",
-    "triggeredBy": "After Golem",
-    "description": "Golem defeated, unlocking the Plaguebringer Goliath and the Astral biome push toward the Lunar Events.",
-    "cues": [
-      "Golem beaten, lihzahrd content cleared",
-      "Plaguebringer Goliath available",
-      "Preparing for the Lunatic Cultist"
-    ],
-    "guideNote": "Defeating Golem gives you access to Scoria Ore in the third layer of the Abyss, and Plague enemies will begin spawning in the Jungle. Make sure to consume a Miracle Fruit to increase your maximum HP.",
-    "bossIcon": "cal-post-golem"
-  },
-  {
     "id": "cal-pre-lunar",
-    "order": 11,
+    "order": 10,
     "name": "Pre-Lunar Events",
     "triggeredBy": "Before the Lunar Events",
     "description": "Approaching the Lunatic Cultist and the Lunar Events, fighting the Ravager and Astrum Deus.",
@@ -169,7 +155,7 @@
   },
   {
     "id": "cal-pre-ml",
-    "order": 12,
+    "order": 11,
     "name": "Pre-Moon Lord",
     "triggeredBy": "Before the Moon Lord",
     "description": "Lunar Pillars are being cleared to summon and defeat the Moon Lord, the last vanilla boss.",
@@ -183,7 +169,7 @@
   },
   {
     "id": "cal-pre-providence",
-    "order": 13,
+    "order": 12,
     "name": "Pre-Providence",
     "triggeredBy": "After the Moon Lord, before Providence",
     "description": "Post-Moon Lord, entering Calamity's true endgame and preparing for Providence in the Hallow or Underworld.",
@@ -197,7 +183,7 @@
   },
   {
     "id": "cal-pre-polterghast",
-    "order": 14,
+    "order": 13,
     "name": "Pre-Polterghast",
     "triggeredBy": "Before Polterghast",
     "description": "Providence is down, unlocking Post-Providence bosses like the Storm Weaver and Ceaseless Void before Polterghast.",
@@ -211,7 +197,7 @@
   },
   {
     "id": "cal-pre-dog",
-    "order": 15,
+    "order": 14,
     "name": "Pre-Devourer of Gods",
     "triggeredBy": "Before the Devourer of Gods",
     "description": "Polterghast beaten, opening the Sunken Sea/Abyss content and the Old Duke, heading toward the Devourer of Gods.",
@@ -225,7 +211,7 @@
   },
   {
     "id": "cal-pre-yharon",
-    "order": 16,
+    "order": 15,
     "name": "Pre-Yharon",
     "triggeredBy": "Before Yharon, Dragon of Rebirth",
     "description": "Post-Devourer of Gods, wielding cosmilite/endgame gear and preparing for Yharon, Dragon of Rebirth.",
@@ -239,7 +225,7 @@
   },
   {
     "id": "cal-pre-exo",
-    "order": 17,
+    "order": 16,
     "name": "Pre-Exo Mechs / Supreme Calamitas",
     "triggeredBy": "Before the Exo Mechs / Supreme Calamitas",
     "description": "Yharon is down, facing the final challenge bosses: the Exo Mechs and Supreme Calamitas.",
@@ -252,36 +238,8 @@
     "bossIcon": "cal-pre-exo"
   },
   {
-    "id": "cal-post-calamitas",
-    "order": 18,
-    "name": "Post-Supreme Calamitas",
-    "triggeredBy": "After Supreme Calamitas, before the Exo Mechs",
-    "description": "Supreme Witch Calamitas is down and the Exo Mechs still stand, leaving Ashes of Calamity gear and the Shattered Community on the way to the last fight.",
-    "cues": [
-      "Supreme Calamitas defeated",
-      "Exo Mechs not yet beaten",
-      "Ashes of Calamity weapons craftable"
-    ],
-    "guideNote": "Defeating Supreme Witch, Calamitas grants Ashes of Calamity, used to craft the Shattered Community and a set of powerful weapons for the run at the Exo Mechs.",
-    "bossIcon": "cal-post-calamitas"
-  },
-  {
-    "id": "cal-post-exo",
-    "order": 19,
-    "name": "Post-Exo Mechs",
-    "triggeredBy": "After the Exo Mechs, before Supreme Calamitas",
-    "description": "Draedon's Exo Mechs are beaten and Supreme Calamitas remains, opening Exo weapons, Gem Tech armor and Draedon's Heart for the final duel.",
-    "cues": [
-      "Exo Mechs defeated",
-      "Supreme Calamitas not yet beaten",
-      "Exo Prisms and Gem Tech armor available"
-    ],
-    "guideNote": "Defeating the Exo Mechs grants Exo Prisms, used to craft Gem Tech armor, Draedon's Heart and the Exo weapons for the fight against Supreme Calamitas.",
-    "bossIcon": "cal-post-exo"
-  },
-  {
     "id": "cal-endgame",
-    "order": 20,
+    "order": 17,
     "name": "Endgame",
     "triggeredBy": "After the final bosses",
     "description": "All Calamity bosses including the Exo Mechs and Supreme Calamitas are defeated, with the strongest gear in the game.",
