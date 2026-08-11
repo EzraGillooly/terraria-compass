@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ItemModal } from '../components/ItemModal/ItemModal';
@@ -402,6 +402,7 @@ const MARKER_LABEL: Record<string, string> = {
   tedious: 'Tedious', risky: 'Risky', 'crowd-control': 'Crowd control',
   support: 'Support', upgradeable: 'Upgradeable',
   'calamity-changed': 'Changed', pairs: 'Pair',
+  stealth: 'Stealth', spam: 'Spam',
 };
 const MARKER_TITLE: Record<string, string> = {
   expert: 'Expert Mode and above only',
@@ -417,6 +418,8 @@ const MARKER_TITLE: Record<string, string> = {
   upgradeable: 'Variants and upgrades of this are also viable',
   'calamity-changed': 'Calamity changes how this works',
   pairs: 'Meant to be used together with another item',
+  stealth: 'Best for the Stealth playstyle - fill the stealth meter, then strike',
+  spam: 'Best for the Spam playstyle - attack constantly for mobility',
 };
 /* The two packs tag accessories from different sources and the sets do not
    overlap, so each shows only its own key - a Calamity reader has no use for
@@ -504,7 +507,7 @@ function AccCell({
             </span>
           ))}
           {markers.map((m) => (
-            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+            <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
               {MARKER_LABEL[m]}
             </span>
           ))}
@@ -543,7 +546,7 @@ function AccCell({
             {(alt.expertOnly && !(alt.markers ?? []).includes('expert')
               ? [...(alt.markers ?? []), 'expert']
               : alt.markers ?? []).map((m) => (
-              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+              <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
                 {MARKER_LABEL[m]}
               </span>
             ))}
@@ -590,7 +593,7 @@ function PoolRow(
               <span className={`${styles.accQuality} ${styles[`q_${item.quality}`]}`}>{item.quality}</span>
             )}
             {markers.map((m) => (
-              <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>{MARKER_LABEL[m]}</span>
+              <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>{MARKER_LABEL[m]}</span>
             ))}
           </span>
         )}
@@ -600,7 +603,7 @@ function PoolRow(
 }
 
 /** Key to the accessory tags, so the colours mean something on first read. */
-function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean }) {
+function AccLegend({ packId, hasQuality, activeClass }: { packId: string; hasQuality: boolean; activeClass: string }) {
   const markers = PACK_MARKERS[packId] ?? [];
   /* Thorium tags accessories with the wiki's own 12 accessory types; every other
      pack uses the app's own accessory categories. */
@@ -629,7 +632,7 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
         <>
           <span className={styles.accLegendSep} aria-hidden="true" />
           {markers.map((m) => (
-            <span key={m} className={styles.accMarker} title={MARKER_TITLE[m]}>
+            <span key={m} className={`${styles.accMarker}${m === 'stealth' ? ' ' + styles.markerStealth : m === 'spam' ? ' ' + styles.markerSpam : ''}`} title={MARKER_TITLE[m]}>
               {MARKER_LABEL[m]}
             </span>
           ))}
@@ -638,6 +641,17 @@ function AccLegend({ packId, hasQuality }: { packId: string; hasQuality: boolean
       <span className={styles.accLegendNote}>
         class tags show on that class only
       </span>
+      {/* Rogue's two playstyles change which accessories help. The guide colours
+          each pick; this explains the split so the tags read on their own. */}
+      {activeClass === 'rogue' && (
+        <p className={styles.playstyleNote}>
+          <span className={`${styles.accMarker} ${styles.markerStealth}`}>Stealth</span>
+          {' '}fills the stealth meter while still, then lands one powerful Stealth Strike.{' '}
+          <span className={`${styles.accMarker} ${styles.markerSpam}`}>Spam</span>
+          {' '}attacks nonstop for more mobility at lower damage. Accessories are tagged
+          for the playstyle they favor; untagged ones suit both.
+        </p>
+      )}
     </div>
   );
 }
@@ -875,6 +889,14 @@ export function Loadouts() {
   };
 
   const loadout = loadouts.find((l) => l.phase === activePhaseId && l.class === activeClassId);
+  /* A class can skip phases the guide never covers (Calamity's Rogue has no
+     post-mech split), so the phase rail only shows phases this class has a
+     loadout for. */
+  const classPhaseIds = useMemo(
+    () => new Set(loadouts.filter((l) => l.class === activeClassId).map((l) => l.phase)),
+    [loadouts, activeClassId],
+  );
+  const visiblePhases = phases.filter((p) => classPhaseIds.has(p.id));
   const classDef = classes.find((c) => c.id === activeClassId)!;
   const phaseDef = phases.find((p) => p.id === activePhaseId);
   const phaseName = phaseDef?.name ?? '';
@@ -1273,11 +1295,11 @@ export function Loadouts() {
         {/* Boss progression map */}
         <div
           className={styles.bossmap}
-          style={{ '--wp-count': phases.length } as React.CSSProperties}
+          style={{ '--wp-count': visiblePhases.length } as React.CSSProperties}
           role="group"
           aria-label="Select phase"
         >
-          {phases.map((p, i) => {
+          {visiblePhases.map((p, i) => {
             const done = p.order < activeOrder;
             const active = p.id === activePhaseId;
             const state = phaseState(p.order);   // 'open' | 'next' | 'locked'
@@ -1611,7 +1633,7 @@ export function Loadouts() {
             )}
             <WeaponReforgeBlocks packId={packId} activeClass={activeClassId} />
             <ReforgeBlock packId={packId} activeClass={activeClassId} />
-            <AccLegend packId={packId} hasQuality={poolHasQuality} />
+            <AccLegend packId={packId} hasQuality={poolHasQuality} activeClass={activeClassId} />
           </div>
 
           </div>

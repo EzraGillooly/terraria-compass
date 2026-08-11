@@ -206,6 +206,8 @@ const ItemBase = z.object({
     'expert', 'tank', 'corruption', 'crimson', 'whips', 'yoyos',
     'tedious', 'risky', 'crowd-control', 'support', 'upgradeable',
     'calamity-changed', 'pairs',
+    // Rogue playstyle tags: which of the two builds an accessory favours.
+    'stealth', 'spam',
   ])).optional(),
   wikiUrl: z.string().url().optional(),
   /**
