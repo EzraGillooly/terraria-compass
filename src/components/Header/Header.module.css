@@ -451,6 +451,12 @@
   /* Calamity mode sits in flow under World rather than overlaid. */
   .worldColumn { display: flex; flex-direction: column; gap: 8px; }
   .underWorld { position: static; align-items: flex-start; }
+  /* The Calamity mode and Class bars stack instead of sharing a row, so the
+     Class chips get the full width and never run off-screen; here (and only
+     here) the chips wrap onto a second line. */
+  .classRow { flex-direction: column; align-items: stretch; gap: 8px; }
+  .classBar { width: 100%; white-space: normal; }
+  .classBar .calModeOpts { flex-wrap: wrap; }
 }
 
 /* "Soon" badge on packs that aren't populated yet (mod dropdown) */
@@ -467,14 +473,8 @@
 
 /* Class dropdown items carry the class weapon sprite alongside the label - the
    only .diffItem variant with an icon, so it centres icon + label as a row. */
-.classItemIcon { width: 18px; height: 18px; object-fit: contain; flex: none; }
-.classPick {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-/* Unpicked sprites recede so the active class reads first. */
-.classPick .classItemIcon { opacity: .6; transition: opacity .12s; }
-.classPick:hover .classItemIcon,
-.diffItemOn.classPick .classItemIcon { opacity: 1; }
+/* Class chips in the segmented bar: small sprite next to the name. */
+.classSeg { display: inline-flex; align-items: center; gap: 4px; }
+.classSegIcon { width: 14px; height: 14px; object-fit: contain; flex: none; opacity: .7; transition: opacity .12s; }
+.classSeg:hover .classSegIcon,
+.calModeItemOn .classSegIcon { opacity: 1; }
