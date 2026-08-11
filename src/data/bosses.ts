@@ -21,7 +21,7 @@ export interface BossDrop {
   /** only for a summon item - how it is obtained (drops omit it; it is implied) */
   source?: string;
   /** difficulty gate; omitted = every mode */
-  mode?: 'expert' | 'revengeance' | 'death' | 'master';
+  mode?: 'expert' | 'revengeance' | 'death';
   wikiUrl?: string;
   /** craft recipe, shown for a summon item so the reader can make it */
   materials?: { name: string; qty: number; wikiUrl?: string }[];

@@ -1031,8 +1031,7 @@ export function Loadouts() {
    *
    * Celestial Onion: Calamity's, dropped by the Moon Lord. Not Expert-gated the
    * way the Demon Heart is - in Classic, where the Demon Heart cannot be had,
-   * the Onion grants the sixth slot instead of the seventh. It does nothing in
-   * Master, which this filter does not model.
+   * the Onion grants the sixth slot instead of the seventh.
    *
    * So Expert runs 5 -> 6 at hardmode -> 7 post-Moon Lord, which is what the
    * class guides equip, and Classic runs 5 -> 6 post-Moon Lord.
@@ -1129,7 +1128,7 @@ export function Loadouts() {
         .map((a) => family(a.name)).filter(Boolean) as string[],
     );
     /* When the obtainable holders already fill every slot, an Expert-only holder
-       is a genuine extra (Master/Expert has more slots than Classic), so it is
+       is a genuine extra (Expert has more slots than Classic), so it is
        dropped rather than swapped for a pool pick - that is what keeps both the
        Shield of Cthulhu and its slotmate Fire Gauntlet as their own slots in an
        Expert world, while a Classic world simply loses the Shield. The reader is
@@ -1376,7 +1375,7 @@ export function Loadouts() {
                   onClick={() => { clearSubclassFilters(); setShowRest(false); }}
                   aria-pressed={showingAll}
                 >
-                  {classDef.id === 'summoner' ? 'Viable Picks' : 'Top Picks'}
+                  Top Picks
                 </button>
                 {availableSubclasses.map((sc) => (
                   <button
@@ -1390,12 +1389,6 @@ export function Loadouts() {
                   </button>
                 ))}
               </div>
-            )}
-
-            {classDef.id === 'summoner' && (
-              <p className={styles.summonerNote}>
-                I&rsquo;m still working out the best minion, sentry, and whip for each phase.
-              </p>
             )}
 
             {safeLoadout.note && (

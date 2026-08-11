@@ -133,12 +133,12 @@ const ItemBase = z.object({
   ammoRole: z.enum(['single-target', 'crowd-control', 'special']).optional(),
   /** the rate a player actually sees, e.g. "33%" or "1/7 (14.29%)" */
   dropRate: z.string().optional(),
-  /** the Expert/Master drop rate, shown instead of `dropRate` when the world is
+  /** the Expert drop rate, shown instead of `dropRate` when the world is
    * Expert - many drops double in Expert (Keybrand 0.5% -> 1%). */
   dropRateExpert: z.string().optional(),
   tags: z.array(z.string()).default([]),
   topPick: z.boolean().default(false),
-  /** A pick recommended only for the Expert/Master extra accessory slot: the item
+  /** A pick recommended only for the Expert extra accessory slot: the item
    * itself is obtainable in Classic, but there is no sixth slot to hold it, so it
    * is dropped there with a distinct note (unlike `markers: ['expert']`, which is
    * for content that cannot be obtained in Classic at all). */
