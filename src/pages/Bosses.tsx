@@ -155,7 +155,6 @@ export function Bosses() {
   // Empty by default so the selection resolves to the first boss in the active
   // pack's order (see `selected` below) rather than a hardcoded vanilla boss.
   const [selectedId, setSelectedId] = useState<string>('');
-  const [showHardmode, setShowHardmode] = useState(false);
   const [modalItem, setModalItem] = useState<Item | null>(null);
 
   // Bosses grouped by the active pack's phases, optional ones first within each
@@ -209,8 +208,6 @@ export function Bosses() {
     }));
   }, [phases, bosses, isHard, strictBossOrder, bossClusters]);
 
-  const preHard = useMemo(() => stages.filter((s) => !s.hard), [stages]);
-  const hardStages = useMemo(() => stages.filter((s) => s.hard), [stages]);
   const flat = useMemo(() => stages.flatMap((s) => s.nodes), [stages]);
 
   // Progression Mode: `progress` is the furthest boss reached. With nothing
@@ -257,19 +254,6 @@ export function Bosses() {
     }
   };
 
-  // Switch the whole rail between the pre-hardmode and hardmode sets.
-  const setPhase = (hard: boolean) => {
-    if (hard === showHardmode) return;
-    const selIsHard = isHard(selected.stage);
-    const firstMain = (list: Stage[]) => {
-      const nodes = list[0]?.nodes ?? [];
-      return (nodes.find((b) => !b.side) ?? nodes[0])?.id;
-    };
-    if (hard && !selIsHard) setSelectedId(firstMain(hardStages) ?? selectedId);
-    if (!hard && selIsHard) setSelectedId(firstMain(preHard) ?? selectedId);
-    setShowHardmode(hard);
-  };
-
   const renderStage = (s: Stage) => (
     <div key={s.stage}>
       <div className={styles.stageCol} data-hard={s.hard}>
@@ -294,7 +278,7 @@ export function Bosses() {
       {/* Full-page biome backdrop - underworld for pre-hardmode, hallow for hardmode */}
       <div
         className={styles.backdrop}
-        style={{ backgroundImage: `url(${BASE}biomes/${showHardmode ? 'hallow' : 'underworld'}.png)` }}
+        style={{ backgroundImage: `url(${BASE}biomes/${isHard(selected.stage) ? 'hallow' : 'underworld'}.png)` }}
         aria-hidden="true"
       />
       <div className={styles.backdropWash} aria-hidden="true" />
@@ -306,30 +290,9 @@ export function Bosses() {
 
       {/* ── Scroll rail ── */}
       <section className={styles.railSection} aria-label="Boss order timeline">
-        <div className={styles.phaseBar} role="tablist" aria-label="Progression phase">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={!showHardmode}
-            className={`${styles.phaseBtn} pixel-frame ${!showHardmode ? styles.phasePre : 'pixel-hollow'}`}
-            onClick={() => setPhase(false)}
-          >
-            Pre-Hardmode
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={showHardmode}
-            className={`${styles.phaseBtn} pixel-frame ${showHardmode ? styles.phaseHard : 'pixel-hollow'}`}
-            onClick={() => setPhase(true)}
-          >
-            Hardmode
-          </button>
-        </div>
-
         <div className={styles.railScroll}>
           <div className={styles.rail}>
-            {(showHardmode ? hardStages : preHard).map(renderStage)}
+            {stages.map(renderStage)}
           </div>
         </div>
         <p className={styles.scrollHint}>Tap a boss for its summon method and key drops</p>
